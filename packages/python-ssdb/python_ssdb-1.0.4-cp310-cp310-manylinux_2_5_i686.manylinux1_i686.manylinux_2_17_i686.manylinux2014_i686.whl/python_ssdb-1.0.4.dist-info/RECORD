@@ -1,0 +1,17 @@
+python_ssdb-1.0.4.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+python_ssdb-1.0.4.dist-info/WHEEL,sha256=saGKjTnh4-wm6lmtcAD2uX1txyG_5S1rdRgy3pv0Ykg,217
+python_ssdb-1.0.4.dist-info/top_level.txt,sha256=xEnud1pc-bK2a-VkAQhr1NnowyUwy5xk4CIssqHxXB8,5
+python_ssdb-1.0.4.dist-info/RECORD,,
+python_ssdb-1.0.4.dist-info/METADATA,sha256=MepLn2kA_TvdpzPjR_LLQq19nCgXnO1T1qaQPkKAqaw,1876
+python_ssdb-1.0.4.dist-info/NOTICE.md,sha256=8XYkbPT8MEjerAbFpYFGgzhsr-qYAy8aK8MRdDngDjo,12626
+ssdb/connection.cpython-310-i386-linux-gnu.so,sha256=M67hGFh1x7GukJDeLRxmU0H-JC8j5yqLzPZiYmTmUC4,1529832
+ssdb/__init__.py,sha256=ansgW9TPgHgTdlUHnUoGHr_7lUkFoV7gbU_hWFnEYeM,49
+ssdb/client.cpython-310-i386-linux-gnu.so,sha256=wM4LI4q78FCjZWVwRieUMDvMRNbVtkKIrFMUjJwy9Bs,1016912
+ssdb/core/response.cpython-310-i386-linux-gnu.so,sha256=hVfEYFEfVMLLxTjBNJ4GFxxHeuaBSB0KWksFlTLwVs8,188408
+ssdb/core/encode.cpython-310-i386-linux-gnu.so,sha256=c984SKTvwyrzylRu2VsNxObgg1FVWLTB1afJ4PmhNj4,216976
+ssdb/core/__init__.py,sha256=n__2vmR4Et6DqMuS7elul3uDL0gUBTk2NAPmDc4ZNUA,74
+ssdb/core/interface.cpython-310-i386-linux-gnu.so,sha256=yfyCY7Nx8kbAbblwDbpHNdvrcaOUCg7S_YWGE3a54Q0,1464208
+ssdb/core/parser.cpython-310-i386-linux-gnu.so,sha256=GLGpZO66Tznu564vC4Xg1OT4oKvvxfVbm9fu3NSnWyw,1135640
+ssdb/asyncio/connection.cpython-310-i386-linux-gnu.so,sha256=9rKRWPCkvgwcQdG1NcbYXffNb-OA3R6GyPbpvH7VI3Y,1923220
+ssdb/asyncio/__init__.py,sha256=alfaymH8hPIoaiw_S4JBwktCa-h7Cdg2s8_2iAQ3IiU,57
+ssdb/asyncio/client.cpython-310-i386-linux-gnu.so,sha256=3jaQTMgizrbYTV8poPkJBgrDfH_810_MKZvY2wkrkPs,1274980
