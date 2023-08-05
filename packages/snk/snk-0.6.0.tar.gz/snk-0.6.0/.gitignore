@@ -1,0 +1,7 @@
+/.coverage
+/.pytest_cache
+/dist
+*.pyc
+.snakemake
+reads
+Note.md
