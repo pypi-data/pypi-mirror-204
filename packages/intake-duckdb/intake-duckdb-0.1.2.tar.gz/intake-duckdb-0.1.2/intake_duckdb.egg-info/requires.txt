@@ -1,0 +1,15 @@
+intake
+pandas
+duckdb
+
+[docs]
+sphinx
+sphinx_rtd_theme
+numpydoc
+entrypoints
+myst-parser
+
+[test]
+pytest
+intake[server]
+python-snappy
