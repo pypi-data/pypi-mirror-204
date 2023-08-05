@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: airflow-metrics-gbq
+Version: 0.0.3a1
+Summary: Airflow metrics to Google BigQuery
+Home-page: https://github.com/abyssnlp/airflow-metrics-gbq
+License: BSD2
+Author: Shaurya Rawat
+Author-email: rawatshaurya1994@gmail.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Framework :: Apache Airflow
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: google-api-python-client (>=2.85.0,<3.0.0)
+Requires-Dist: google-cloud-bigquery (>=3.9.0,<4.0.0)
+Requires-Dist: google-cloud-logging (>=3.5.0,<4.0.0)
+Requires-Dist: pandas (>=2.0.0,<3.0.0)
+Project-URL: Repository, https://github.com/abyssnlp/airflow-metrics-gbq
+Description-Content-Type: text/markdown
+
+Airflow Metrics to BigQuery
+===
+
+Sends airflow metrics to Bigquery
+
+**TODO**
+- List steps to send (activate statsd in airflow.cfg etc)
+- Add github workflow
+- CODEOWNERS, Pull request template
+- Workflow for PR
+- Package release based on Tag
+- Better docs and sphinx docs from docstrings
+- Add badges
+
+**Enhance**
+- Add a buffer (pyzmq or mp queue)
+- Run sending metrics to GBQ in another process
+
