@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: exceltotable
+Version: 0.1
+Summary: the way transfer excel,csv,file to database table
+Home-page: https://github.com/user/excel_to_table
+Download-URL: https://github.com/abocidee/excel_to_table/archive/refs/tags/v1.0.0.tar.gz
+Author: lunongyun
+Author-email: 770190990@qq.com
+License: MIT
+Keywords: excel,table
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: validators
+Requires-Dist: beautifulsoup4
+Requires-Dist: argparse
+Requires-Dist: sqlalchemy
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: ms-graph
+
