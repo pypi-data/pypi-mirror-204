@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+os_ios_app_automation/app_automation.py
+os_ios_app_automation.egg-info/PKG-INFO
+os_ios_app_automation.egg-info/SOURCES.txt
+os_ios_app_automation.egg-info/dependency_links.txt
+os_ios_app_automation.egg-info/requires.txt
+os_ios_app_automation.egg-info/top_level.txt
+os_ios_app_automation/bp/_res.py
+os_ios_app_automation/bp/_xcode_manipulation_mapper.py
