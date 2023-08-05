@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+./dictextra.egg-info/PKG-INFO
+./dictextra.egg-info/SOURCES.txt
+./dictextra.egg-info/dependency_links.txt
+./dictextra.egg-info/top_level.txt
