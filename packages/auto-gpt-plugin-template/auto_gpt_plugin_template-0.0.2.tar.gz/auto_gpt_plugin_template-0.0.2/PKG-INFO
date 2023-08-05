@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: auto_gpt_plugin_template
+Version: 0.0.2
+Summary: The template plugin for Auto-GPT.
+Project-URL: Homepage, https://github.com/Torantulino/Auto-GPT
+Project-URL: Bug Tracker, https://github.com/Torantulino/Auto-GPT
+Author-email: Torantulino <34168009+BillSchumacher@users.noreply.github.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: abstract-singleton
+Description-Content-Type: text/markdown
+
+# (Coming Soon) Auto-GPT-Plugin-Template
+A starting point for developing your own plug-in for Auto-GPT
