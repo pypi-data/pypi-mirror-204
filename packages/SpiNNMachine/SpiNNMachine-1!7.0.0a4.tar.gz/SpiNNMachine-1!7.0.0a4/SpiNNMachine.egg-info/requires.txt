@@ -1,0 +1,6 @@
+SpiNNUtilities==1!7.0.0.a4
+
+[test]
+pytest-cov
+testfixtures
+httpretty!=1.0.0
