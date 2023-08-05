@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gues
+Version: 0.1.0
+Summary: This package is for (hybrid and) score-based causal structure learning, using unconditional equivalence classes to reduce the search space.
+Author: Alex Markham
+Author-email: alex.markham@causal.dev
+License: GNU Affero General Public License 3 or later (AGPL 3+)
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy
+Provides-Extra: all
+Requires-Dist: dcor ; extra == 'all'
+Requires-Dist: ges ; extra == 'all'
+Provides-Extra: dcor
+Requires-Dist: dcor ; extra == 'dcor'
+Provides-Extra: ges
+Requires-Dist: ges ; extra == 'ges'
+
+GUES is a Python package for score-based causal structure learning, using unconditional equivalence classes to reduce the search space.
