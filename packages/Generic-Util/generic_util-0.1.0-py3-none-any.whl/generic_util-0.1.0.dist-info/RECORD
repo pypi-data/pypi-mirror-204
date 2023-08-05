@@ -1,0 +1,16 @@
+Generic_Util/__init__.py,sha256=HBDrmAMllsuJgcIFM1csBB0vHVgeZ_uL-IzTAyHmSe0,315
+Generic_Util/benchmarking.py,sha256=kDm-wSqMvLREYZ6e0OoO8WUsElpDqvrAMYeOpCl14eQ,5981
+Generic_Util/iter.py,sha256=6D6fYKICrwuCDyiuk6WwVSEHcLZOtodGXAsqsscyv68,14142
+Generic_Util/misc.py,sha256=T-Ivfr8Opbvq9fImntKbSBN1GrBFTL4OkBXmToiB5FE,1667
+Generic_Util/operator.py,sha256=zizS-yLag1jOpuqpUv381Nz9rMJqLt0DkTIjV-tW1rA,1968
+Generic_Util/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Generic_Util/_compat/__init__.py,sha256=XidIYZCgNU7J4qmvsayAZkHeeZTpW70Sb1u0Z1_bcwc,213
+Generic_Util/_compat/typing.py,sha256=UIpxJ56YOQ07N7J56RB5KgVKcBc289G3Zo_OdOR91Bo,498
+Generic_Util/numba/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Generic_Util/numba/benchmarking.py,sha256=22rh9xlMHzX71jGSV6yffwTubHNvr5QpC06caSaSfD8,4342
+Generic_Util/numba/higher_order.py,sha256=9zuSVPzFg17C-K4ZOOEYQXdXr2DrdvZVjzsbtEN-fks,9498
+Generic_Util/numba/types.py,sha256=Qt8kwUFEs9PYU735ldGFd9g7LrWPTOnKzbxpJLsHuEk,4691
+generic_util-0.1.0.dist-info/METADATA,sha256=Lk59JxzHGxRLNerDxtFb3auANIFjDmPeBuQlClaeWCY,6579
+generic_util-0.1.0.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+generic_util-0.1.0.dist-info/licenses/LICENSE,sha256=8_WtvgDOQYbycjUnDTOzJXVxu-D2weJzvg2XCbNJhZs,1526
+generic_util-0.1.0.dist-info/RECORD,,
