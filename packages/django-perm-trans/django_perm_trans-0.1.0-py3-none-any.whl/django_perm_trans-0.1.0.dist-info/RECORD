@@ -1,0 +1,12 @@
+django_perm_trans/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_perm_trans/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django_perm_trans/apps.py,sha256=p_CjuxbV1zfra2j2ImoVTNsW1qRGhl8l5QdwIE-S--Q,431
+django_perm_trans/exceptions.py,sha256=XGcnrtOJucbulfxbPvFlqn07uWIkhWX9QAnORqXzmGs,380
+django_perm_trans/functions.py,sha256=EmIk5ImWj5zw8ProvIIRsNb8A9yTWDf86CJVtMlcry4,1890
+django_perm_trans/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_perm_trans/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+django_perm_trans/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_perm_trans-0.1.0.dist-info/LICENSE.md,sha256=Om27OtFiHZn3WVcCtbTYRfNeBbzUszoofAjSm9GlEdA,1074
+django_perm_trans-0.1.0.dist-info/METADATA,sha256=8fXGxaNzsDynlXwQDD7OhCHVMa_ObkFslogbGRuj3Yg,2067
+django_perm_trans-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+django_perm_trans-0.1.0.dist-info/RECORD,,
