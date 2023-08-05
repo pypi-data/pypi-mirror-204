@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: rian-alba-tools
+Version: 0.1
+Home-page: https://github.com/RianBogley/rian-alba-tools/
+Author: Rian Bogley
+Author-email: rianbogley@gmail.com
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: nilearn
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: pingouin
+Requires-Dist: plotly
+Requires-Dist: progressbar
+Requires-Dist: ptitprince
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: sklearn
+Requires-Dist: statsmodels
+Requires-Dist: zentables
+Requires-Dist: joblib
+
