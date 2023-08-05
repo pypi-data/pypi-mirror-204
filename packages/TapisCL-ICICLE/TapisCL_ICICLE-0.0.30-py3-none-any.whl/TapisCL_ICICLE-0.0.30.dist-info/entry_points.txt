@@ -1,0 +1,2 @@
+[TapisCLICICLE.__main__]
+tomatoes = TapisCLICICLE:__main__
