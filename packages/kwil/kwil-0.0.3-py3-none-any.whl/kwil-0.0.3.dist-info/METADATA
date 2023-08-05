@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: kwil
+Version: 0.0.3
+Summary: Library for interacting with the kwil blockchain
+Author-email: yaiba <4yaiba@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/kwilteam/kwil.py
+Keywords: kwil
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: grpcio (>=1.53.0)
+Requires-Dist: protobuf (>=4.22.1)
+Requires-Dist: eth-account (>=0.8.0)
+Requires-Dist: eth-utils (>=2.1.0)
+Provides-Extra: dev
+Requires-Dist: pytest (>=7.2.2) ; extra == 'dev'
+Requires-Dist: pytest-watch (>=4.2.0) ; extra == 'dev'
+Requires-Dist: python-dotenv (>=1.0.0) ; extra == 'dev'
+Requires-Dist: black (>=23.3.0) ; extra == 'dev'
+Requires-Dist: flake8 (>=4.0.1) ; extra == 'dev'
+Requires-Dist: twine (>=4.0.2) ; extra == 'dev'
+Requires-Dist: setuptools (>=67.6.1) ; extra == 'dev'
+Requires-Dist: build (>=0.10.0) ; extra == 'dev'
+Requires-Dist: tox (>=4.4.11) ; extra == 'dev'
+Provides-Extra: linter
+Requires-Dist: black (>=23.3.0) ; extra == 'linter'
+Requires-Dist: flake8 (>=4.0.1) ; extra == 'linter'
+Requires-Dist: types-setuptools (>=67.6.0.0) ; extra == 'linter'
+Requires-Dist: types-protobuf (>=4.22.0.0) ; extra == 'linter'
+
+# kwil.py
+
+[![PyPI - Version](https://img.shields.io/pypi/v/kwil.svg)](https://pypi.org/project/kwil)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/kwil.svg)](https://pypi.org/project/kwil)
+
+Borrows heavily from [web3.py](https://github.com/ethereum/web3.py)
+
+-----
+
+Check [quickstart](https://github.com/kwilteam/kwil.py/blob/main/docs/quickstart.md) to get started.
+
+
+## License
+
+MIT
