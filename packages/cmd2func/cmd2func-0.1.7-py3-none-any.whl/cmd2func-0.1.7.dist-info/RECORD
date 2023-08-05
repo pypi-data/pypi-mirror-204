@@ -1,0 +1,11 @@
+cmd2func/__init__.py,sha256=nahKoHgevUNTseqb2VwK-K3AOmrAs5Q4PbHN3HPDXjc,136
+cmd2func/cmd.py,sha256=GAC_fQs6-AaDsX23HXriFju9o-JfmpsfPzd945P6_Pg,1905
+cmd2func/config.py,sha256=9Cyy9eEyZewLXyi_t3xtJ7FMlcUWRyFzmfjgHEBcQU0,1321
+cmd2func/core.py,sha256=pg7Ua-1wcDMFDTTD3I0FmwFjJIE9bWKsW1R5UBcBD_g,6027
+cmd2func/runner.py,sha256=M65iX_ENIkfglU8FWvAhq915hXgJsmZfKrhXdZYt3yw,2318
+cmd2func/utils.py,sha256=eDJnZacnHXb0A7LmWLkBc7JJzAKf2Qm9GRaQS-9NesQ,302
+cmd2func-0.1.7.dist-info/LICENSE,sha256=z23H4jrP8xg79v5LvaIhEl_6j3_UsSdFLR9fYALYyBw,1067
+cmd2func-0.1.7.dist-info/METADATA,sha256=EoQPkyvsSvZX9i5Qt3HFbTUIDvYVSsf7SrwdfALA75Q,1352
+cmd2func-0.1.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cmd2func-0.1.7.dist-info/top_level.txt,sha256=sc4byCKbr7QL_b4W2j0Szrt73qRTtmeyOxi8-BkjlhY,9
+cmd2func-0.1.7.dist-info/RECORD,,
