@@ -1,0 +1,17 @@
+python_ssdb-1.0.4rc2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+python_ssdb-1.0.4rc2.dist-info/WHEEL,sha256=8LUKLeCWUNOAeyqg19EebIlfE9b5LXbRLKCFq_pLcwM,111
+python_ssdb-1.0.4rc2.dist-info/top_level.txt,sha256=xEnud1pc-bK2a-VkAQhr1NnowyUwy5xk4CIssqHxXB8,5
+python_ssdb-1.0.4rc2.dist-info/RECORD,,
+python_ssdb-1.0.4rc2.dist-info/METADATA,sha256=4EPSc8OaRFtvk50IxC3Sst5EAoZbpq2s3xyocWQxBd4,1879
+python_ssdb-1.0.4rc2.dist-info/NOTICE.md,sha256=8XYkbPT8MEjerAbFpYFGgzhsr-qYAy8aK8MRdDngDjo,12626
+ssdb/connection.cpython-310-i386-linux-gnu.so,sha256=gM5T7b7xPBQW0eQ38T_qOhFKHi2x1dLIFVrwfKaIm8g,1553500
+ssdb/__init__.py,sha256=ansgW9TPgHgTdlUHnUoGHr_7lUkFoV7gbU_hWFnEYeM,49
+ssdb/client.cpython-310-i386-linux-gnu.so,sha256=OB7nTHUJWusXuLnFyEDeDkh6bJ6c3stTJmgXZbVFOCM,1018504
+ssdb/core/response.cpython-310-i386-linux-gnu.so,sha256=18u97X4-TxMJlzvkWUIdcmKRPPme5aKsNdrXjxzhnh8,204392
+ssdb/core/encode.cpython-310-i386-linux-gnu.so,sha256=dc5aI3uOXYcCIJ9lBMNp90Z1uqBpUexbQTTP3GaPUrw,244696
+ssdb/core/__init__.py,sha256=n__2vmR4Et6DqMuS7elul3uDL0gUBTk2NAPmDc4ZNUA,74
+ssdb/core/interface.cpython-310-i386-linux-gnu.so,sha256=Qcx2j7_jiYg0K1UY4RAf8Y3AF_Gfxduylwd1QtjHS14,1523328
+ssdb/core/parser.cpython-310-i386-linux-gnu.so,sha256=8uSITbgtsU6lLaTaNibK1hc3wAiO55w3PUkXe1G4vrk,1134772
+ssdb/asyncio/connection.cpython-310-i386-linux-gnu.so,sha256=GjTTi4xqRl1zA8PDwHMDYBnvDpNetYCXX6_YkXxR-OE,1936648
+ssdb/asyncio/__init__.py,sha256=alfaymH8hPIoaiw_S4JBwktCa-h7Cdg2s8_2iAQ3IiU,57
+ssdb/asyncio/client.cpython-310-i386-linux-gnu.so,sha256=e-Gw_I8kA4TmxW2pljsIsQ7pVPIVUYBp4JuRlqKFKGg,1284164
