@@ -1,0 +1,15 @@
+currensees/__init__.py,sha256=L719a-tdhPfS6gU_i6VR3Q4ZiT-s7c_r2zKsyc-9WmM,292
+currensees/auth.py,sha256=QnaNgVrzGi8ssyTNwBOOWzofrhQfquR6z0G4KIKJluo,908
+currensees/convert.py,sha256=uIxekPRN-RvRKvDWdKPJzxhF-7PmCHg0ugHtAabM7y0,711
+currensees/convert_all.py,sha256=o12m6dXZsT8j13EBU7oGoNfPS0clNDUbp_b06_Fx8lQ,665
+currensees/currencies.py,sha256=QyI0BAOcaGTCJFmtuzNFgS8i4F3BMfUMH0PEaWDl_e0,1149
+currensees/daily_average.py,sha256=8LUDNMOqn6VuLKJmkR5_p7cbR5XamKbgER3Fmh3qKSg,493
+currensees/historical.py,sha256=YZ--RwFbQNoCxScX6mJPYKNPieHpGvU3Nj6GYG1rBdI,1261
+currensees/margins_spreads.py,sha256=lvP7iml_zwoHLdGT1JUZif1jSmdK2N_40mADGywQsXs,1218
+currensees/version.py,sha256=RgjjSo3k1tBaQHf7h31PJUr1rDbc4lbmuWum_KUqV8Y,17
+currensees/weekly_average.py,sha256=BwNGu3XmoKBcW6cYBESYFK3KsNajogFo6QNIo8GF4rI,530
+currensees-1.0.8.dist-info/LICENSE,sha256=j9DTFP-YQznMFL50kVV9w4soRP3PqafX57jam_R_S1Y,1520
+currensees-1.0.8.dist-info/METADATA,sha256=MFar_P-C4hAY3SLMU1h45NFUvK9NWQ0G76-cb8qGeVE,5268
+currensees-1.0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+currensees-1.0.8.dist-info/top_level.txt,sha256=SFz6G7-FMQDm0sfRBY-yBgoFzOIOq_XHrAjmS6CEQzY,11
+currensees-1.0.8.dist-info/RECORD,,
