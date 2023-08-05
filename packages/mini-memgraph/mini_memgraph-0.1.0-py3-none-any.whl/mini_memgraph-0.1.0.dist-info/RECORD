@@ -1,0 +1,7 @@
+mini_memgraph/__init__.py,sha256=TxI_FpCwlUI7iW6hlICCWShAah2zuB0-vrQ4eZxYv0M,43
+mini_memgraph/db.py,sha256=4Cv3fyT7sLM0Xsw8U5tFiZBr1oVlRaY38l4Y7uTYDvE,2509
+mini_memgraph/memgraph.py,sha256=R6-Em7ye7iOlAt_9iiFDl-6-Fx3-GamdeJf7y3aPwOw,13276
+mini_memgraph/utility.py,sha256=nRpHAwqMX70MG5-Po7rR1ypOOf93n2rvDD7kc9dWM0U,441
+mini_memgraph-0.1.0.dist-info/METADATA,sha256=iITeSbxidpP3QCgypmCaHqxNN_GBiA4aoDoGl5iSYFY,1028
+mini_memgraph-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+mini_memgraph-0.1.0.dist-info/RECORD,,
