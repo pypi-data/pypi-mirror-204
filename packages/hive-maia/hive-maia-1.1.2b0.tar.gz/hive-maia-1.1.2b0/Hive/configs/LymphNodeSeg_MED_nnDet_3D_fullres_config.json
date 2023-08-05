@@ -1,0 +1,14 @@
+{
+  "Experiment Name": "nnDet_3D_fullres",
+  "Seed": 12345,
+  "label_suffix": "_mask.nii.gz",
+  "Modalities": {
+    "_CT.nii.gz": "CT"
+  },
+  "label_dict": {
+    "1": "MED_Lymph_Node"
+  },
+  "n_folds": 5,
+  "DatasetName": "LymphNodeSeg_MED",
+  "FileExtension": ".nii.gz"
+}
