@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+wavemix/SemSegment.py
+wavemix/__init__.py
+wavemix/classification.py
+wavemix/sisr.py
+wavemix.egg-info/PKG-INFO
+wavemix.egg-info/SOURCES.txt
+wavemix.egg-info/dependency_links.txt
+wavemix.egg-info/requires.txt
+wavemix.egg-info/top_level.txt
