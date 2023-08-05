@@ -1,0 +1,324 @@
+{
+    "sec-Intl.Locale.prototype.calendars": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Intl/Locale.json",
+            "name": "calendars",
+            "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/calendars",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/calendars",
+            "summary": "The calendars accessor property of Intl.Locale instances returns a list of one or more unique calendar identifiers for this locale.",
+            "support": {
+                "chrome": {
+                    "version_added": "99"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "99"
+                }
+            },
+            "title": "Intl.Locale.prototype.calendars"
+        }
+    ],
+    "sec-Intl.Locale.prototype.collations": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Intl/Locale.json",
+            "name": "collations",
+            "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/collations",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/collations",
+            "summary": "The collations accessor property of Intl.Locale instances returns a list of one or more collation types for this locale.",
+            "support": {
+                "chrome": {
+                    "version_added": "99"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "99"
+                }
+            },
+            "title": "Intl.Locale.prototype.collations"
+        }
+    ],
+    "sec-Intl.Locale.prototype.hourCycles": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Intl/Locale.json",
+            "name": "hourCycles",
+            "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/hourCycles",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/hourCycles",
+            "summary": "The hourCycles accessor property of Intl.Locale instances returns a list of one or more unique hour cycle identifiers for this locale.",
+            "support": {
+                "chrome": {
+                    "version_added": "99"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "99"
+                }
+            },
+            "title": "Intl.Locale.prototype.hourCycles"
+        }
+    ],
+    "sec-Intl.Locale.prototype.numberingSystems": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Intl/Locale.json",
+            "name": "numberingSystems",
+            "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/numberingSystems",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/numberingSystems",
+            "summary": "The numberingSystems accessor property of Intl.Locale instances returns a list of one or more unique numbering system identifiers for this locale.",
+            "support": {
+                "chrome": {
+                    "version_added": "99"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "99"
+                }
+            },
+            "title": "Intl.Locale.prototype.numberingSystems"
+        }
+    ],
+    "sec-Intl.Locale.prototype.textInfo": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Intl/Locale.json",
+            "name": "textInfo",
+            "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/textInfo",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/textInfo",
+            "summary": "The textInfo accessor property of Intl.Locale instances returns the ordering of characters indicated by either ltr (left-to-right) or by rtl (right-to-left) for this locale.",
+            "support": {
+                "chrome": {
+                    "version_added": "99"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "99"
+                }
+            },
+            "title": "Intl.Locale.prototype.textInfo"
+        }
+    ],
+    "sec-Intl.Locale.prototype.timeZones": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Intl/Locale.json",
+            "name": "timeZones",
+            "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/timeZones",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/timeZones",
+            "summary": "The timeZones accessor property of Intl.Locale instances returns a list of supported time zones for this locale.",
+            "support": {
+                "chrome": {
+                    "version_added": "99"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "99"
+                }
+            },
+            "title": "Intl.Locale.prototype.timeZones"
+        }
+    ],
+    "sec-Intl.Locale.prototype.weekInfo": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Intl/Locale.json",
+            "name": "weekInfo",
+            "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/weekInfo",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/weekInfo",
+            "summary": "The weekInfo accessor property of Intl.Locale instances returns a weekInfo object with the properties firstDay, weekend and minimalDays for this locale.",
+            "support": {
+                "chrome": {
+                    "version_added": "99"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "99"
+                }
+            },
+            "title": "Intl.Locale.prototype.weekInfo"
+        }
+    ]
+}
