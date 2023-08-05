@@ -1,0 +1,14 @@
+fritzing_stripboard/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+fritzing_stripboard/__main__.py,sha256=A6QFv7aEI1fberPbjvHaXtni-LyMci70C03TNN0g80Y,80
+fritzing_stripboard/cli.py,sha256=r-0PABn62UnshIFH7vDiJuWt7bolyekCgtxTPoQRqUM,461
+fritzing_stripboard/constants.py,sha256=Hp0XsU6jsR-V6JzAxLczLhC8QMRUJPnZIEDHmRUpQlM,21
+fritzing_stripboard/grid.py,sha256=CKuLM9En5MWs7PgHc_F06yAOqvafBFVto7fEH2FmGPQ,1425
+fritzing_stripboard/types.py,sha256=xe0qGuv1AFVLlKzPVuHXQz-yDWGe6wl6y5uXSHC984o,2221
+fritzing_stripboard/zip.py,sha256=cT6EXthvgTmI70JPu0zlwWvYD5XuxePKo5QHnJvssPA,15524
+fritzing_stripboard/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fritzing_stripboard-1.0.0.dist-info/LICENSE,sha256=ehAHa75b8P8Xb74U_xp5Nal_2B-Cjtt2Y2YZm8w8FSw,1103
+fritzing_stripboard-1.0.0.dist-info/METADATA,sha256=kLfZIWoKitP6eB3Df69myMytehiUVakgaE6A3_zTsUY,4513
+fritzing_stripboard-1.0.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+fritzing_stripboard-1.0.0.dist-info/entry_points.txt,sha256=--HNgvjW8PUpa4Ju_fZZriLLQEmW2ZgZgjYms9n-XTM,70
+fritzing_stripboard-1.0.0.dist-info/top_level.txt,sha256=b6jv8g3r3gKXrHGU_AeMuuaoHW2rzHmzk0-qxcmypw8,20
+fritzing_stripboard-1.0.0.dist-info/RECORD,,
