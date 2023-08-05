@@ -1,0 +1,6 @@
+numpy
+owlready2
+pandas
+pint
+pyiron_atomistics>=0.2.63
+sqlalchemy
