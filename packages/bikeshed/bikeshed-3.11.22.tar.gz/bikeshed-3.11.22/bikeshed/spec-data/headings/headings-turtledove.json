@@ -1,0 +1,274 @@
+{
+  "#abstract": {
+    "current": {
+      "number": "",
+      "spec": "FLEDGE",
+      "text": "Abstract",
+      "url": "https://wicg.github.io/turtledove/#abstract"
+    }
+  },
+  "#ad-descriptor": {
+    "current": {
+      "number": "8.7",
+      "spec": "FLEDGE",
+      "text": "Ad descriptor",
+      "url": "https://wicg.github.io/turtledove/#ad-descriptor"
+    }
+  },
+  "#ad-size": {
+    "current": {
+      "number": "8.8",
+      "spec": "FLEDGE",
+      "text": "Ad size",
+      "url": "https://wicg.github.io/turtledove/#ad-size"
+    }
+  },
+  "#auction-config": {
+    "current": {
+      "number": "8.3",
+      "spec": "FLEDGE",
+      "text": "Auction config",
+      "url": "https://wicg.github.io/turtledove/#auction-config"
+    }
+  },
+  "#generated-bid": {
+    "current": {
+      "number": "8.6",
+      "spec": "FLEDGE",
+      "text": "Generated bid",
+      "url": "https://wicg.github.io/turtledove/#generated-bid"
+    }
+  },
+  "#global-scopes": {
+    "current": {
+      "number": "5.2",
+      "spec": "FLEDGE",
+      "text": "Global scopes",
+      "url": "https://wicg.github.io/turtledove/#global-scopes"
+    }
+  },
+  "#idl-index": {
+    "current": {
+      "number": "",
+      "spec": "FLEDGE",
+      "text": "IDL Index",
+      "url": "https://wicg.github.io/turtledove/#idl-index"
+    }
+  },
+  "#index": {
+    "current": {
+      "number": "",
+      "spec": "FLEDGE",
+      "text": "Index",
+      "url": "https://wicg.github.io/turtledove/#index"
+    }
+  },
+  "#index-defined-elsewhere": {
+    "current": {
+      "number": "",
+      "spec": "FLEDGE",
+      "text": "Terms defined by reference",
+      "url": "https://wicg.github.io/turtledove/#index-defined-elsewhere"
+    }
+  },
+  "#index-defined-here": {
+    "current": {
+      "number": "",
+      "spec": "FLEDGE",
+      "text": "Terms defined by this specification",
+      "url": "https://wicg.github.io/turtledove/#index-defined-here"
+    }
+  },
+  "#interest-group": {
+    "current": {
+      "number": "8.1",
+      "spec": "FLEDGE",
+      "text": "Interest group",
+      "url": "https://wicg.github.io/turtledove/#interest-group"
+    }
+  },
+  "#interest-group-ad": {
+    "current": {
+      "number": "8.2",
+      "spec": "FLEDGE",
+      "text": "Interest group ad",
+      "url": "https://wicg.github.io/turtledove/#interest-group-ad"
+    }
+  },
+  "#interest-group-updates": {
+    "current": {
+      "number": "6",
+      "spec": "FLEDGE",
+      "text": "Interest Group Updates",
+      "url": "https://wicg.github.io/turtledove/#interest-group-updates"
+    }
+  },
+  "#intro": {
+    "current": {
+      "number": "1",
+      "spec": "FLEDGE",
+      "text": "Introduction",
+      "url": "https://wicg.github.io/turtledove/#intro"
+    }
+  },
+  "#issues-index": {
+    "current": {
+      "number": "",
+      "spec": "FLEDGE",
+      "text": "Issues Index",
+      "url": "https://wicg.github.io/turtledove/#issues-index"
+    }
+  },
+  "#joining-interest-groups": {
+    "current": {
+      "number": "2",
+      "spec": "FLEDGE",
+      "text": "Joining Interest Groups",
+      "url": "https://wicg.github.io/turtledove/#joining-interest-groups"
+    }
+  },
+  "#leading-bid-info": {
+    "current": {
+      "number": "8.10",
+      "spec": "FLEDGE",
+      "text": "Leading bid info",
+      "url": "https://wicg.github.io/turtledove/#leading-bid-info"
+    }
+  },
+  "#leaving-interest-groups": {
+    "current": {
+      "number": "3",
+      "spec": "FLEDGE",
+      "text": "Leaving Interest Groups",
+      "url": "https://wicg.github.io/turtledove/#leaving-interest-groups"
+    }
+  },
+  "#normative": {
+    "current": {
+      "number": "",
+      "spec": "FLEDGE",
+      "text": "Normative References",
+      "url": "https://wicg.github.io/turtledove/#normative"
+    }
+  },
+  "#per-buyer-bid-generator": {
+    "current": {
+      "number": "8.4",
+      "spec": "FLEDGE",
+      "text": "Per buyer bid generator",
+      "url": "https://wicg.github.io/turtledove/#per-buyer-bid-generator"
+    }
+  },
+  "#per-signals-url-bid-generator": {
+    "current": {
+      "number": "8.5",
+      "spec": "FLEDGE",
+      "text": "Per signals url bid generator",
+      "url": "https://wicg.github.io/turtledove/#per-signals-url-bid-generator"
+    }
+  },
+  "#permissions-policy-integration": {
+    "current": {
+      "number": "7",
+      "spec": "FLEDGE",
+      "text": "Permissions Policy integration",
+      "url": "https://wicg.github.io/turtledove/#permissions-policy-integration"
+    }
+  },
+  "#privacy-considerations": {
+    "current": {
+      "number": "9",
+      "spec": "FLEDGE",
+      "text": "Privacy Considerations",
+      "url": "https://wicg.github.io/turtledove/#privacy-considerations"
+    }
+  },
+  "#references": {
+    "current": {
+      "number": "",
+      "spec": "FLEDGE",
+      "text": "References",
+      "url": "https://wicg.github.io/turtledove/#references"
+    }
+  },
+  "#runadauction": {
+    "current": {
+      "number": "4.1",
+      "spec": "FLEDGE",
+      "text": "runAdAuction()",
+      "url": "https://wicg.github.io/turtledove/#runadauction"
+    }
+  },
+  "#running-ad-auctions": {
+    "current": {
+      "number": "4",
+      "spec": "FLEDGE",
+      "text": "Running Ad Auctions",
+      "url": "https://wicg.github.io/turtledove/#running-ad-auctions"
+    }
+  },
+  "#score-ad-output": {
+    "current": {
+      "number": "8.9",
+      "spec": "FLEDGE",
+      "text": "Score ad output",
+      "url": "https://wicg.github.io/turtledove/#score-ad-output"
+    }
+  },
+  "#script-evaluation": {
+    "current": {
+      "number": "5.1",
+      "spec": "FLEDGE",
+      "text": "Script evaluation",
+      "url": "https://wicg.github.io/turtledove/#script-evaluation"
+    }
+  },
+  "#script-runners": {
+    "current": {
+      "number": "5",
+      "spec": "FLEDGE",
+      "text": "Script Runners",
+      "url": "https://wicg.github.io/turtledove/#script-runners"
+    }
+  },
+  "#security-considerations": {
+    "current": {
+      "number": "",
+      "spec": "FLEDGE",
+      "text": "10. Security Considerations",
+      "url": "https://wicg.github.io/turtledove/#security-considerations"
+    }
+  },
+  "#status": {
+    "current": {
+      "number": "",
+      "spec": "FLEDGE",
+      "text": "Status of this document",
+      "url": "https://wicg.github.io/turtledove/#status"
+    }
+  },
+  "#structures": {
+    "current": {
+      "number": "8",
+      "spec": "FLEDGE",
+      "text": "Structures",
+      "url": "https://wicg.github.io/turtledove/#structures"
+    }
+  },
+  "#title": {
+    "current": {
+      "number": "",
+      "spec": "FLEDGE",
+      "text": "FLEDGE",
+      "url": "https://wicg.github.io/turtledove/#title"
+    }
+  },
+  "#toc": {
+    "current": {
+      "number": "",
+      "spec": "FLEDGE",
+      "text": "Table of Contents",
+      "url": "https://wicg.github.io/turtledove/#toc"
+    }
+  }
+}
