@@ -1,0 +1,15 @@
+eodhd/__init__.py,sha256=O7zaw8UoBZkWrW7lqQQ6Jl1b7jZiPua-F03uSoQy_Io,279
+eodhd/apiclient.py,sha256=wCrGikIABGqnOHSsxPFCjVXdztp9fYZ_oHLAbiSabsw,18068
+eodhd/eodhdgraphs.py,sha256=cOPhWJFI3aOL1m1ZjtfLBN_incy6p4M_rWUJQNmWetg,4425
+eodhd/websocketclient.py,sha256=dnu0hWxwKDgBSvq2UA2yW0KchcPg7qj_OfNROaKTZjI,5884
+eodhd/APIs/BaseAPI.py,sha256=80H5-SeKr-5uBcmZHkh5lEITJUbFkpOxD5qZjqiguHs,1815
+eodhd/APIs/HistoricalDividendsAPI.py,sha256=zAPS649QBmmkedXqrYj9kwp2yETcFHvpWtaCQ8_KmAw,692
+eodhd/APIs/HistoricalSplitsAPI.py,sha256=TpsPG-1_0ZqtJwgltkVwrLsOroaNqpljtjW7EA_Yhqs,685
+eodhd/APIs/TechnicalIndicatorAPI.py,sha256=GvLcHA9vqtvpY4UZUvbKz9epYWgNUldjr2ZOgr9s8ZQ,1113
+eodhd/APIs/__init__.py,sha256=1Ad3ZFEEQjgcDw73f2WOpN3OzAy01O_o0IW1NyhjbNI,170
+eodhd-1.0.12.dist-info/LICENSE,sha256=eVqXE3cuRy_HK7-SlUZPKVsF5BUqUbiSyz0F4zP4RK8,1093
+eodhd-1.0.12.dist-info/METADATA,sha256=dU_PpPm3b37IWquVWQs9BUD03p1KU3yP-NOEAosmGD0,1188
+eodhd-1.0.12.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+eodhd-1.0.12.dist-info/entry_points.txt,sha256=r7fQom4csTC2IOeXoeeZuUROGThTOFDM5IRBgFuOhrQ,49
+eodhd-1.0.12.dist-info/top_level.txt,sha256=4DrYGvwgMtRPvVIvWU0SllPmIDZMXAHBDVmOwLyMaBA,6
+eodhd-1.0.12.dist-info/RECORD,,
