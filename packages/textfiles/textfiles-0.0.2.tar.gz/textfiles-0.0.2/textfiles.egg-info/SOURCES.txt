@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+tests/test_for_csv.py
+tests/tests_for_txt.py
+textfiles/__init__.py
+textfiles/csv_file.py
+textfiles/exceptions.py
+textfiles/file_factory.py
+textfiles/json_file.py
+textfiles/text_file_parent.py
+textfiles/txt_file.py
+textfiles.egg-info/PKG-INFO
+textfiles.egg-info/SOURCES.txt
+textfiles.egg-info/dependency_links.txt
+textfiles.egg-info/requires.txt
+textfiles.egg-info/top_level.txt
