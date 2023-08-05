@@ -1,0 +1,15 @@
+spinnaker_testbase/__init__.py,sha256=MAKQBoQHNshmPI5JCwyv-kcYtTVf4W0YTrVu_oHc5B0,798
+spinnaker_testbase/_version.py,sha256=AqFxfGKbu7JvzuqL5zlZdtprgZo8ijknQkCrP7R2v0o,735
+spinnaker_testbase/base_test_case.py,sha256=FQ59AmuX12ReFOiYbW6x7JZ5a4rPqrq9JObCc100nTw,3359
+spinnaker_testbase/root_script_builder.py,sha256=fUdqG7-zV_IpGRBhZgKxhEl-X6qC7ifAB7nAzJmudBc,6113
+spinnaker_testbase/root_test_case.py,sha256=BiRVIGDlCoosYKE48cNTyeseZO0-oG8cJU1VUoXhKpQ,4903
+spinnaker_testbase/script_checker.py,sha256=8j5nqZyzsyUH7WBKFmjy65SEyibTkhS48UzdoSXc6jI,2822
+spinnaker_testbase/test_no_job_destroy.py,sha256=NBVjIxTLK-PKUdyG-jkRHNtYW2fvzj63MyCmB_zVldA,1033
+spinnaker_testbase/test_scripts_header,sha256=R5MoFTwOllH2GB_p556HTWcsIrykDY2GrBMgygj-uig,1022
+SpiNNakerTestBase-1!7.0.0a4.dist-info/LICENSE,sha256=qsc7MUj20dcRHbyjIJn2jSbGRMaBOuHk8F9leaomY_4,11360
+SpiNNakerTestBase-1!7.0.0a4.dist-info/LICENSE_POLICY.md,sha256=lGC08sRZ3kDaA_SjyQl4kP9_rvof16CX4KNSypx7aos,957
+SpiNNakerTestBase-1!7.0.0a4.dist-info/METADATA,sha256=jTdCnuypiVOaKlfZdTCLi17e_WDxsVlS9HzkRUvk9-w,1518
+SpiNNakerTestBase-1!7.0.0a4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+SpiNNakerTestBase-1!7.0.0a4.dist-info/top_level.txt,sha256=_HGHeaxcfHO_4Lu1jdxaPPZm7qCy6l24S3xekgKSitI,19
+SpiNNakerTestBase-1!7.0.0a4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+SpiNNakerTestBase-1!7.0.0a4.dist-info/RECORD,,
