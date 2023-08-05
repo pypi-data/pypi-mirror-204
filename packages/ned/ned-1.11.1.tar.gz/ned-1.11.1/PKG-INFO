@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ned
+Version: 1.11.1
+Summary: entity linking, named-entity disambiguation, record linkage
+License: MIT
+Author: Binh Vu
+Author-email: binh@toan2.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: hugedict (>=2.9.1,<3.0.0)
+Requires-Dist: kgdata (>=3.4.2,<4.0.0)
+Requires-Dist: nptyping (>=2.5.0,<3.0.0)
+Requires-Dist: osin (>=1.11.3,<2.0.0)
+Requires-Dist: pyarrow (>=11.0.0,<12.0.0)
+Requires-Dist: ream2 (>=2.2.0,<3.0.0)
+Requires-Dist: sem-desc (>=4.8.0,<5.0.0)
+Requires-Dist: serde2 (>=1.6.0,<2.0.0)
+Requires-Dist: sm-datasets (>=1.1.3,<2.0.0)
+Requires-Dist: torch (>=1.12.1,<2.0.0)
+Requires-Dist: torchaudio (>=0.12.1,<0.13.0)
+Requires-Dist: torchvision (>=0.13.1,<0.14.0)
