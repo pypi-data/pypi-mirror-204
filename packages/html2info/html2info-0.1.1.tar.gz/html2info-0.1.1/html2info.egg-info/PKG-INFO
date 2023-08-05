@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: html2info
+Version: 0.1.1
+Summary: A package to parse raw HTML and return structured information.
+Author: Vladimir Iglovikov
+Author-email: iglovikov@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# html2info
+
+`html2info` is a Python package that allows you to parse LinkedIn profiles from raw HTML and return structured information in JSON format.
+
+## Features
+
+- Extracts profile information such as name, title, location, profile photo, about, experience, and education.
+- Returns a JSON object containing the parsed data.
+
+## Installation
+
+Install `html2info` using pip:
+
+```bash
+pip install html2info
+```
+
+## Usage
+
+Here's an example of how to use html2info:
+
+```python
+from html2info.linkedin import Person
+
+url = "https://www.linkedin.com/in/iglovikov/"
+raw_data = "..."  # Raw HTML content of the LinkedIn page
+
+person = Person(url, raw_data)
+person.parse()
+print(person.to_dict())
+```
+
+```json
+{
+  "linkedin_url": "https://www.linkedin.com/in/iglovikov/",
+  ...
+}
+```
