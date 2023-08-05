@@ -1,0 +1,9 @@
+ec2_demo/__init__.py,sha256=CpXi3jGlx23RvRyU7iytOMZrnspdWw4yofS8lpP1AJU,18
+ec2_demo/cli.py,sha256=xXiRrIxJEhkLLQNsc7E8n2Uhp0r1BfRNPKrIw0rGYIQ,1336
+ec2_demo/instances.py,sha256=bmXkF3MKvbdd0pp51td_phnEiMF4TMkzqua0gNd0cYU,2645
+ec2_demo/task.py,sha256=EnzQhJiS3tRtaEyfBfZHfIlTCa2V442Z5lR_d1QoUTg,1062
+ec2_demo-0.1.0.dist-info/METADATA,sha256=V1pllHdJqNdM2K_qM205DURWouCnxt49_vtGWkne4dA,931
+ec2_demo-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ec2_demo-0.1.0.dist-info/entry_points.txt,sha256=GLdizhp5KDIhPxKWgXLz0kw1o0FXoCT4hsmo5z4gLrg,47
+ec2_demo-0.1.0.dist-info/top_level.txt,sha256=idFeqY2SOy8IlB9pSOXsqPb6iY9ONPHpghUf95xTs10,9
+ec2_demo-0.1.0.dist-info/RECORD,,
