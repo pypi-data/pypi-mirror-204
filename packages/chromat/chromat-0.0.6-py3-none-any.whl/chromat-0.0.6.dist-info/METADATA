@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: chromat
+Version: 0.0.6
+Summary: color palettes! under heavy construction!
+Home-page: https://github.com/hexbenjamin/chromat
+License: GPL-3.0-or-later
+Keywords: color,palette
+Author: hex benjamin
+Author-email: hex@hexbenjam.in
+Requires-Python: >=3.10.0,<3.11
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Utilities
+Requires-Dist: Flask (>=2.2.0,<3.0.0)
+Requires-Dist: numpy (>=1.22.2,<2.0.0)
+Requires-Dist: replit (>=3.2.4,<4.0.0)
+Requires-Dist: rich (>=13.3.4,<14.0.0)
+Requires-Dist: urllib3 (>=1.26.12,<2.0.0)
+Project-URL: Repository, https://github.com/hexbenjamin/chromat
+Description-Content-Type: text/markdown
+
+﻿# chromat: algorithmic color palettes
+coming soon!
+
+https://github.com/hexbenjamin/chromat
