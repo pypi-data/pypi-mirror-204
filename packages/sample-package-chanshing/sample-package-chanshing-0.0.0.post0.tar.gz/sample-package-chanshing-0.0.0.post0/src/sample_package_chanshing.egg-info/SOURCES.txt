@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+versioneer.py
+src/sample_package/__init__.py
+src/sample_package/_version.py
+src/sample_package/main.py
+src/sample_package_chanshing.egg-info/PKG-INFO
+src/sample_package_chanshing.egg-info/SOURCES.txt
+src/sample_package_chanshing.egg-info/dependency_links.txt
+src/sample_package_chanshing.egg-info/entry_points.txt
+src/sample_package_chanshing.egg-info/requires.txt
+src/sample_package_chanshing.egg-info/top_level.txt
