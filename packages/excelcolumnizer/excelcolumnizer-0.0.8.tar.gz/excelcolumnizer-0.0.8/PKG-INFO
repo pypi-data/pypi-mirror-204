@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: excelcolumnizer
+Version: 0.0.8
+Summary: A small packages that helps you recover columns of Excel data converted from PDF files.
+Project-URL: Homepage, https://github.com/generateNscore/excelcolumnizer
+Author-email: Sukmock Lee <smlee@inha.ac.kr>
+License-File: LICENSE.txt
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Topic :: Office/Business :: Financial :: Point-Of-Sale
+Classifier: Topic :: Office/Business :: Financial :: Spreadsheet
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# excelcolumnizer
+
+## What is it?
+
+A package that helps you recover columns of Excel data converted from PDF files.
+
+## Where to get it
+
+<pre lang=sh>pip install excelcolumnizer</pre>
+
+## Dependencies
+
+<ul><li><a href="https://openpyxl.readthedocs.io/en/stable/">openpyxl</a></li>
+<li><a href="https://github.com/ragardner/tksheet">tksheet</a></li></ul>
+
+## Changes
+<ul>
+<li>Version 0.0.8</li>
+<ul><li>A tiny bug is fixed:</li>
+<li>Renaming a cleaned xlsx file was fixed.</li></ul
+<br>
+
+<li>Version 0.0.7</li>
+<ul><li>Added some help:</li>
+<ol><li>When a column is all None, it will be deleted without any notice.</li>
+<li>Rows in a pattern that takes place at the least number of rows will be highlighted.</li>
+<li>The first row of the rows will be selected and is ready for next action. This selection is only a hint and should not be followed unless otherwise.</li></ol></ul>
+
+
+<br>
+
+<li>Version 0.0.5</li>
+<ul><li>Disabled some bindings that belong to tksheet package.</li></ul>
+<br>
+
+<li>Version 0.0.4</li>
+
+```python
+
+import excelcolumnizer as xl
+
+xlpath='(excel file name with extension)'
+xl.sheet(xlpath)
+
+```
+
+<ul><li>A tksheet window will be opened with the contents of excel file.</li>
+<li>Here are recommending orders of actions to try:</li>
+<ol><li>Remove unwanted rows (F7)</li>
+<li>Remove unwanted columns (F7) or combine columns (F5)</li>
+  <li>Click a cell to insert (F1) or delete the cell (F3)</li></ol>
+<br>
+
+<li>If the same pattern or kind of selected rows/columns is found at other locations, the same action is repeated for the found rows/columns.</li>
+  <ul><li>Thus, it would better try one action at the top</li>
+  <li>To remove rows, click the row names.</li>
+    <li>To remove or combine columns, click the column names.</li></ul>
+  <br>
+<li>After every action, the contents will be saved to a file that is the original name with a string "_cleaned".</li>
+<li>When a cell is inserted, all the cells at right will be shifted to the right and an extra column will be created with empty for all other rows that are not changed.</li>
+<li>When a cell is deleted, all the cells at right will be shifted to the left and the cell at the last column will be empty.</li>
+  <li>If one action is done by mistake, press function-key F12 to restore the the data before he last action</li></ul>
+  <br>
+<ul><li>After each action is completed,</li>
+<ul><li>the number of columns and rows and the number of patterns of rows will be displayed</li>
+<li>either a few columns or muliple rows are highlighted, which are indicative of ok to be deleted.</li></ul>
+</ul>
+</ul>
+<br>
