@@ -1,0 +1,2 @@
+[tox]
+extras = tox_extras
