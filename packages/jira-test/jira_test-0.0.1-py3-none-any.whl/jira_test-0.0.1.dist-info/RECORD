@@ -1,0 +1,10 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/minus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/minus/minus_with_one.py,sha256=DnHfYJjMfrzJ0OEXDOsjezpOcDjw_SX1YkC4cyDARB8,104
+src/sum/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/sum/sum_with_one.py,sha256=UwqdLtVJp14ifMdH6JHm-cyThGc6BQ3EoCR8937YZSE,102
+jira_test-0.0.1.dist-info/METADATA,sha256=2kkDhpQ2lOiwA56ztd4gp7yQykkWQNTEFJR7c_CMc4c,285
+jira_test-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+jira_test-0.0.1.dist-info/entry_points.txt,sha256=keTXXklfHs1ZvuyiI5SJtWB031QUv_OpCwxJwDFt5H0,81
+jira_test-0.0.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+jira_test-0.0.1.dist-info/RECORD,,

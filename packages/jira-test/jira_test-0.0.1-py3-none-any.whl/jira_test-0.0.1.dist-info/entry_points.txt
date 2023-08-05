@@ -1,0 +1,4 @@
+[console_scripts]
+jira_test_minus = src.minus:main
+jira_test_sum = src.sum:main
+

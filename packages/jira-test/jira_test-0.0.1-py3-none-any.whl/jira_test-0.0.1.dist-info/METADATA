@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jira-test
+Version: 0.0.1
+Summary: API 2.0
+Home-page: UNKNOWN
+Author: prijen.khokhani@netskope.com
+Author-email: UNKNOWN
+License: Proprietary
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
+
