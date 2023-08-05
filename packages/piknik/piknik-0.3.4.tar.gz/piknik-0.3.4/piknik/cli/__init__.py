@@ -1,0 +1,25 @@
+# standard imports
+import os
+
+# local imports
+from piknik import Basket
+from piknik.store import FileStoreFactory
+from piknik.crypto import PGPSigner
+
+class Context:
+
+    def __init__(self, arg, assembler, mode=0, gpg_home=os.environ.get('GPGHOME')):
+        self.issue_id = arg.issue_id
+        self.files_dir = arg.files_dir
+        self.show_finished = arg.show_finished
+        self.show_states = arg.state
+        #self.store_factory = FileStoreFactory(arg.d)
+        store_factory = FileStoreFactory(arg.d)
+        self.signer = None
+        sign_fn = None
+        if hasattr(arg, 's'):
+            self.signer = PGPSigner(default_key=arg.s, use_agent=True)
+            sign_fn = self.signer.sign
+        self.basket = Basket(store_factory, message_wrapper=sign_fn)
+        self.gpg_home = gpg_home
+        assembler(self, arg)
