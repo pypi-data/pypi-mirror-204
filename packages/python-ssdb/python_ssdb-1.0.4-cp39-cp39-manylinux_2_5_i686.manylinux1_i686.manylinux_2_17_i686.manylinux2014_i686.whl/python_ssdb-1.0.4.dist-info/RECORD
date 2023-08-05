@@ -1,0 +1,17 @@
+python_ssdb-1.0.4.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+python_ssdb-1.0.4.dist-info/WHEEL,sha256=JcYRU_5IuyA_g-vRfp-kkIlZsJxJmOb4VqXkPMCx4nY,209
+python_ssdb-1.0.4.dist-info/top_level.txt,sha256=xEnud1pc-bK2a-VkAQhr1NnowyUwy5xk4CIssqHxXB8,5
+python_ssdb-1.0.4.dist-info/RECORD,,
+python_ssdb-1.0.4.dist-info/METADATA,sha256=MepLn2kA_TvdpzPjR_LLQq19nCgXnO1T1qaQPkKAqaw,1876
+python_ssdb-1.0.4.dist-info/NOTICE.md,sha256=8XYkbPT8MEjerAbFpYFGgzhsr-qYAy8aK8MRdDngDjo,12626
+ssdb/__init__.py,sha256=ansgW9TPgHgTdlUHnUoGHr_7lUkFoV7gbU_hWFnEYeM,49
+ssdb/client.cpython-39-i386-linux-gnu.so,sha256=x5w4X6XrdebT4oI9hZ0JRLYoprsCfSWn6vWovrLfIGA,1034172
+ssdb/connection.cpython-39-i386-linux-gnu.so,sha256=VY1Z7e2J82ex0spiSMVY8RLvq3GZXuCeta7xtQDqNxw,1564540
+ssdb/core/interface.cpython-39-i386-linux-gnu.so,sha256=FeELt_9dG3XKT2RB0WwYi8KHKkRE5Uyt7v_v6Xb5Q40,1693860
+ssdb/core/encode.cpython-39-i386-linux-gnu.so,sha256=UeupbcXeQoqn_VcMD9Yfay0Kn-Jqrtj_cNGKJh4vSAc,221488
+ssdb/core/__init__.py,sha256=n__2vmR4Et6DqMuS7elul3uDL0gUBTk2NAPmDc4ZNUA,74
+ssdb/core/response.cpython-39-i386-linux-gnu.so,sha256=g98Ely9sXFwdQem4VVrpm_iq1echVFbk4z1-H0AIOlE,194896
+ssdb/core/parser.cpython-39-i386-linux-gnu.so,sha256=2FgojpV1l3XC3i8V3zjcIHxI_eOeZC0RLQzNouOitIE,1150288
+ssdb/asyncio/__init__.py,sha256=alfaymH8hPIoaiw_S4JBwktCa-h7Cdg2s8_2iAQ3IiU,57
+ssdb/asyncio/client.cpython-39-i386-linux-gnu.so,sha256=MySV0SiAMjjIPu7T8UX_UUHiP2vCC6sVlwzgTCzaUUo,1289524
+ssdb/asyncio/connection.cpython-39-i386-linux-gnu.so,sha256=BGDAgxGCl0N9Ztjqu5se1ZlAC2B8jy_U8pBoLfyHSDs,1953448
