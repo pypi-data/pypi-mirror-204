@@ -1,0 +1,6 @@
+flask-cors
+flask
+jinja2
+torch
+transformers
+waitress
