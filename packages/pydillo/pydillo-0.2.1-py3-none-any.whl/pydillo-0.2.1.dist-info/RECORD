@@ -1,0 +1,12 @@
+dillo/__init__.py,sha256=5XgsOZejy9w-nFYukrbizQg3_YPR4QHTOmjCpK7sVNY,3644
+dillo/auth.py,sha256=-Vtz02wnUfQX9MvkOqPReiufktmBrzJoehcSUq0Ws6M,2931
+dillo/lib.py,sha256=cU79jxDic_QbQQloR6au6vsC7GVfjFJaJuhH0HkmlZs,122
+dillo/magic.py,sha256=Pe6Dq7BZ0BPLYXdlRn-uRp3fGTfDRK8wzeDGdLQIEoE,2150
+dillo/routes.py,sha256=OTT5DWEu5FBPYa3UxqWzpZEuDBpDrcm24_cDvALCDUY,3335
+dillo/service.py,sha256=kql0iw16JWFrId5KbJUSilUoTaNHR6XPHP-RXvcqWGg,480
+dillo/validation.py,sha256=Z2c0TpqKaHX8xfgGkCOO1l2OV9_KqtUvGeFauhtMOb8,578
+dillo/version.py,sha256=wdDspfC2N1NZIYf6u8F4bGM8DTvlVTK2YHNbUUmiT38,1491
+pydillo-0.2.1.dist-info/METADATA,sha256=b9QdeN19mIe9eeTk0l80PfZZ91aKXSg1Tzrq2q94SNQ,795
+pydillo-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pydillo-0.2.1.dist-info/top_level.txt,sha256=Xv7xBuyjUiAllLw7UZs8hbZ5BvxMbtvHVucE4oHDV-k,6
+pydillo-0.2.1.dist-info/RECORD,,
