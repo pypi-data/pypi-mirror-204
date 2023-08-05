@@ -1,0 +1,4 @@
+[console_scripts]
+ccache-upload-redis=ccache-upload-redis.console:run
+my_package_cli=my_package.console:run
+
