@@ -1,0 +1,65 @@
+#!/usr/bin/env python3
+import sys
+import traceback
+import pdb
+import cProfile
+from machsmt import MachSMT, die, args, Benchmark
+
+def build():
+   assert len(args.files) > 0, "No specified files"
+   machsmt = MachSMT(args.files)
+   machsmt.save(args.lib)
+   
+def train():
+    machsmt = MachSMT.load(args.lib)
+    machsmt.train()
+
+def eval():
+    machsmt = MachSMT.load(args.lib)
+    machsmt.eval()
+
+def predict():
+    if args.benchmark is None:
+        die("No benchmark to make predictions")
+
+    machsmt = MachSMT.load(args.lib, with_db=False)
+
+    benchmark = Benchmark(args.benchmark)
+    benchmark.parse()
+
+    predictions, scores = machsmt.predict([benchmark], include_predictions=True)
+
+    print(f"MachSMT selects: {predictions[0].get_name()}")
+    for solver in sorted(scores[0], key=scores[0].get, reverse=True):
+        print(f"   {solver.get_name():<50}   {round(100 * scores[0][solver], 3):>4}%")
+
+def main():
+    assert args.mode in ['build', 'eval', 'predict', 'train']
+    if args.mode == 'build':
+        build()
+    elif args.mode == 'eval':
+        eval()
+    elif args.mode == 'predict':
+        predict()
+    elif args.mode == 'train':
+        train()
+    else:
+        raise NotImplementedError
+
+
+if __name__ == '__main__':
+    try:
+        if args.profile:
+            cProfile.run('main()', sort=2)
+        else:
+            main()
+    except KeyboardInterrupt as ex:
+        die("Killed by user (Ctrl-C)")
+    except SystemExit as ex: 
+        die("System exit")
+    except Exception as ex:
+        extype, value, tb = sys.exc_info()
+        traceback.print_exc()
+        if args.debug:
+            pdb.post_mortem(tb)
+        raise ex # don't clean exit, for exit code
