@@ -1,0 +1,2 @@
+[flake8.extension]
+KWP = flake8_keyword_params.checker:ParamChecker

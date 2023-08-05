@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: flake8-keyword-params
+Version: 1.1.1
+Summary: Flake8 keyword parameter validation
+Author-email: Peter Linss <pypi@linss.com>
+License: GNU Lesser General Public License v3
+Project-URL: homepage, https://github.com/plinss/flake8-keyword-params
+Keywords: flake8,noqa
+Classifier: Framework :: Flake8
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: flake8 (<7.0,>=3.8.0)
+Requires-Dist: typing-extensions (>=3.7.4.2)
+Requires-Dist: importlib-metadata (<5.0.0,>=4.0.0) ; python_version < "3.8.0"
+Provides-Extra: dev
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: flake8 (>=3.8.0) ; extra == 'dev'
+Requires-Dist: flake8-annotations ; extra == 'dev'
+Requires-Dist: flake8-bandit ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: flake8-commas ; extra == 'dev'
+Requires-Dist: flake8-comprehensions ; extra == 'dev'
+Requires-Dist: flake8-continuation ; extra == 'dev'
+Requires-Dist: flake8-datetimez ; extra == 'dev'
+Requires-Dist: flake8-docstrings ; extra == 'dev'
+Requires-Dist: flake8-import-order ; extra == 'dev'
+Requires-Dist: flake8-literal ; extra == 'dev'
+Requires-Dist: flake8-noqa ; extra == 'dev'
+Requires-Dist: flake8-polyfill ; extra == 'dev'
+Requires-Dist: flake8-pyproject ; extra == 'dev'
+Requires-Dist: flake8-modern-annotations ; extra == 'dev'
+Requires-Dist: flake8-requirements ; extra == 'dev'
+Requires-Dist: flake8-typechecking-import ; extra == 'dev'
+Requires-Dist: flake8-use-fstring ; extra == 'dev'
+Requires-Dist: pep8-naming ; extra == 'dev'
+Provides-Extra: test
+
+# [flake8-keyword-params](https://github.com/plinss/flake8-keyword-params)
+
+flake8 plugin to require that optional parameters are keyword-only.
+
+This is a highly opinionated plugin asserting that optional parameters should be keyword-only (see PEP-3102).
+Requiring keywords for optional parameters generally improves readability at point of use,
+especially for parameters that are seldomly used 
+or would otherwise fall into the [bool trap](https://adamj.eu/tech/2021/07/10/python-type-hints-how-to-avoid-the-boolean-trap/).
+
+Accepting that there are common use cases where a keyword parameter offers little value,
+this plugin allows a safelist of function names and parameters that are allowed to be optional.
+A small predefined set is included by default,
+but may be extended or replaced via config options.
+Feel free to file issues to request more default safe entries,
+especially any in the Python standard library.  
+
+## Installation
+
+Standard python package installation:
+
+    pip install flake8-keyword-params
+
+
+## Options
+
+`keyword-params-safelist`
+: Add a function to the safelist, may be specified more than once 
+
+`keyword-params-exclude-safelist`
+: Remove a function from the safelist, may be specified more than once 
+
+`keyword-params-include-name`
+: Include plugin name in messages
+
+`keyword-params-no-include-name`
+: Do not include plugin name in messages (default setting)
+
+All options may be specified on the command line with a `--` prefix,
+or can be placed in your flake8 config file.
+
+Safelist options may specify a bare function name, 
+so that all parameters are allowed to be optional without keywords, 
+or a function name, followed by a colon, followed by a parameter name.
+In the latter case, only the specified parameters may be optional without keywords.
+Both function names and parameter names may be regular expressions.
+
+For example:
+```
+flake8 --keyword-params-safelist=get:default --keyword-params-safelist="from_.*:default"
+```
+in .flake8 or setup.cfg
+```
+[flake8]
+keyword-params-safelist = get:default from_.*:default
+```
+or in pyproject.toml:
+```
+[tool.flake8]
+keyword-params-safelist = ['get:default', 'from_.*:default']
+```
+
+
+## Error Codes
+
+| Code   | Message |
+|--------|---------|
+| KWP001 | Optional parameter 'param' should be keyword only
+
+
+## Examples
+
+```
+def foo(x=None):  <-- KWP001
+
+def get(key, default=None):  <-- No error, common use case
+```
