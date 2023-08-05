@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: django-mapper
+Version: 1.1.6
+Summary: A utility class for mapping data between Django models
+Home-page: https://github.com/shubh95/django-mapper
+Author: Shubham Vashisht
+Author-email: shubhvas95@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
