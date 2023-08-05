@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+notebook_logger/__init__.py
+notebook_logger/logger.py
+notebook_logger.egg-info/PKG-INFO
+notebook_logger.egg-info/SOURCES.txt
+notebook_logger.egg-info/dependency_links.txt
+notebook_logger.egg-info/top_level.txt
