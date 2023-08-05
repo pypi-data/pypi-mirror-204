@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "airflow-metrics-gbq"
+version = "0.0.3"
+description = "Airflow metrics to Google BigQuery"
+authors = ["Shaurya Rawat <rawatshaurya1994@gmail.com>"]
+license = "BSD2"
+readme = "README.md"
+homepage="https://github.com/abyssnlp/airflow-metrics-gbq"
+repository="https://github.com/abyssnlp/airflow-metrics-gbq"
+include=[
+    "LICENSE",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Framework :: Apache Airflow",
+    "License :: OSI Approved :: BSD License"
+]
+packages = [{include = "airflow_metrics_gbq"}]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+pandas = "^2.0.0"
+google-cloud-bigquery = "^3.9.0"
+google-api-python-client = "^2.85.0"
+google-cloud-logging = "^3.5.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {extras = ["d"], version = "^23.3.0"}
+pylint = "^2.17.2"
+flake8 = "^6.0.0"
+pytest = "^7.3.1"
+
+
+[tool.poetry.group.util.dependencies]
+pre-commit = "^3.2.2"
+
+
+[tool.pytest.ini_options]
+markers=[
+    "utils",
+    "metrics"
+]
+addopts = "-p no:warnings"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
