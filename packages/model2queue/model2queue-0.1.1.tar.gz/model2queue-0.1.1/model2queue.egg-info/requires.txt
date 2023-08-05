@@ -1,0 +1,9 @@
+kombu
+fastapi
+uvicorn
+rich
+
+[dev]
+pytest==7.1.2
+tensorflow
+python-multipart
