@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: postpruner
+Version: 0.1
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: cupy
+Requires-Dist: tqdm
+Requires-Dist: torch
+Requires-Dist: datasets
+Requires-Dist: transformers
+
