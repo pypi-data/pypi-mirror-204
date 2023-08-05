@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: flask-redis-ex
+Version: 0.0.3
+Summary: Simple to use redis in flask.
+Home-page: https://gitee.com/krealseu/flask-redis-ex
+Author: krealseu
+Author-email: lthee12@hotmail.com
+License: MIT
+Keywords: flask,redis
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask (>=0.8)
+Requires-Dist: redis (>=2.7.6)
+
+## flask-redis-ex
+Simple to use redis in flask.
+
+### Configuration
+configure `REDIS_URL` within your Flask config.
+
+
+### Usage
+
+```
+from flask_redis_ex import redis_client
+
+@app.route('/')
+def index():
+    return redis_client.get("welcome")
+```
