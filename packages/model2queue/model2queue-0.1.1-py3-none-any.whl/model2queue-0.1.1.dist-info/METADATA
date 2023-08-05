@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: model2queue
+Version: 0.1.1
+Summary: A library to expose an api with a queue for batch predictions
+Home-page: https://github.com/collectiveai-team/model2queue
+Author: collective.ai
+Author-email: team.collective.ai@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: kombu
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: rich
+Provides-Extra: dev
+Requires-Dist: pytest (==7.1.2) ; extra == 'dev'
+Requires-Dist: tensorflow ; extra == 'dev'
+Requires-Dist: python-multipart ; extra == 'dev'
+
