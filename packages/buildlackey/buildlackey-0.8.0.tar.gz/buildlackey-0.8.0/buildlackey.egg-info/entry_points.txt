@@ -1,0 +1,6 @@
+[console_scripts]
+cleanup = buildlackey.Commands:cleanup
+deploy = buildlackey.Commands:deploy
+prodpush = buildlackey.Commands:prodpush
+runmypy = buildlackey.Commands:runmypy
+runtests = buildlackey.Commands:runtests
