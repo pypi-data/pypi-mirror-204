@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: quickSvg
+Version: 0.1.7
+Summary: quick svg draw.
+Home-page: https://github.com/liaozhaoyan/quickSvg
+Author: liaozhaoyan
+Author-email: zhaoyan.liao@linux.alibaba.com
+License: MIT
+Description: quick svg draw.
+Keywords: quick svg
+Platform: UNKNOWN
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: PyPy

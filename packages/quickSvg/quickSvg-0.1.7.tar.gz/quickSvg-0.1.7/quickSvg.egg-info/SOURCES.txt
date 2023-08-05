@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+quickSvg/__init__.py
+quickSvg/flame.css
+quickSvg/flame.py
+quickSvg/flameScript.js
+quickSvg/packer.py
+quickSvg/path.py
+quickSvg/tag.py
+quickSvg.egg-info/PKG-INFO
+quickSvg.egg-info/SOURCES.txt
+quickSvg.egg-info/dependency_links.txt
+quickSvg.egg-info/requires.txt
+quickSvg.egg-info/top_level.txt
+quickSvg.egg-info/zip-safe
+test/testFlame.py
