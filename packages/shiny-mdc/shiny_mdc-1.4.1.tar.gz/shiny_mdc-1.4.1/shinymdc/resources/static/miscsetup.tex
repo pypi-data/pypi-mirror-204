@@ -1,0 +1,34 @@
+\usepackage[T1]{fontenc}
+\usepackage[babel=true,tracking=true]{microtype}
+\usepackage{babel}
+\usepackage[title]{appendix}
+\usepackage[bottom]{footmisc}
+\usepackage{footnote}
+\usepackage{acronym}
+\usepackage{relsize}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{fancyvrb}
+\usepackage{pgf}
+
+% Handle footnotes inside tables, figures.
+\makesavenoteenv{table}
+\makesavenoteenv{table*}
+\makesavenoteenv{figure}
+\makesavenoteenv{figure*}
+
+% Add small space after footnote label.
+\renewcommand{\thefootnote}{\arabic{footnote}\,}
+
+% Create command for footnote without marker.
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \begin{NoHyper}
+  \renewcommand\thefootnote{}\footnote{\raggedright\hspace{-2em} #1}%
+  \addtocounter{footnote}{-1}%
+  \end{NoHyper}
+  \endgroup
+}
+
+% Configure acronym font.
+\renewcommand*{\acsfont}[1]{{\scshape\textsmaller{#1}}}
