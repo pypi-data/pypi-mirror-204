@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/dash_component_editor.py
+src/dash_component_editor.egg-info/PKG-INFO
+src/dash_component_editor.egg-info/SOURCES.txt
+src/dash_component_editor.egg-info/dependency_links.txt
+src/dash_component_editor.egg-info/requires.txt
+src/dash_component_editor.egg-info/top_level.txt
