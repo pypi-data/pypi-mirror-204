@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+arrendatools/__init__.py
+arrendatools.modelo303.egg-info/PKG-INFO
+arrendatools.modelo303.egg-info/SOURCES.txt
+arrendatools.modelo303.egg-info/dependency_links.txt
+arrendatools.modelo303.egg-info/top_level.txt
+arrendatools/modelo303/__init__.py
+arrendatools/modelo303/modelo303.py
+arrendatools/modelo303/periodos.py
+test/__init__.py
+test/test_modelo303.py
