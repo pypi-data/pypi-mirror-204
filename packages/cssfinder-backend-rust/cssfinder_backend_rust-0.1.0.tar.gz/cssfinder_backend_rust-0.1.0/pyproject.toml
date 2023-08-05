@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "cssfinder-backend-rust-dev"
+version = "0.1.0"
+description = "Development environment for Rust based implementation of CSSFinder backend. Use Maturin to build."
+authors = ["Krzysztof Wisniewski <argmaster.world@gmail.com>"]
+repository = "https://github.com/argmaster/cssfinder_backend_rust"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+maturin = "^0.14.15"
+click = "^8.1.3"
+tomlkit = "^0.11.6"
+poethepoet = "^0.18.1"
+pre-commit = "^3.2.0"
+ruff = "^0.0.257"
+black = "^23.1.0"
+ptpython = "^3.0.23"
+mypy = "^1.1.1"
+pytest = "^7.2.2"
+typing-extensions = "^4.5.0"
+ipykernel = "^6.22.0"
+pytest-cov = "^4.0.0"
+numpy = "^1.23.2"
+cssfinder-backend-numpy = "^0.3.0"
+
+[tool.poe.tasks]
+release = { script = "scripts.release:main" }
+install-hooks = [
+    { cmd = "poetry install --sync --no-ansi" },
+    { cmd = "poetry run pre-commit install --install-hooks --overwrite" },
+]
+run-hooks = [
+    { cmd = "poetry install --sync --no-ansi" },
+    { cmd = "pre-commit run --all-files -v" },
+]
+build = { cmd = "maturin build --release --out dist" }
+version = { script = "scripts.version:main" }
+
+[project]
+name = "cssfinder_backend_rust"
+version = "0.1.0"
+requires-python = ">=3.8"
+authors = [
+    { name = "Krzysztof Wisniewski", email = "argmaster.world@gmail.com" },
+]
+description = "Implementation of CSSFinder backend using Rust."
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+readme = "README.md"
+license = { file = "LICENSE.md" }
+
+[project.urls]
+repository = "https://github.com/argmaster/cssfinder_backend_rust"
+
+[build-system]
+requires = ["maturin>=0.14,<0.15"]
+build-backend = "maturin"
+
+[tool.maturin]
+# "extension-module" tells pyo3 we want to build an extension module (skips linking against libpython.so)
+features = ["pyo3/extension-module"]
+
+[tool.pytest.ini_options] # ANCHOR: tool.pytest
+minversion = "7.2.0"
+norecursedirs = ["external", "data", ".venv", ".env", "env", "venv"]
+python_files = ["test_*.py", "*_test.py"]
+testpaths = ["test"]
+addopts = """ -ra --strict-markers --doctest-modules --log-level=DEBUG --cov-report=term-missing:skip-covered"""
+filterwarnings = []

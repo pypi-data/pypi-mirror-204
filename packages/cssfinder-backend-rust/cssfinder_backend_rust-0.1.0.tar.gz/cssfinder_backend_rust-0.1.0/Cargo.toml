@@ -1,0 +1,29 @@
+[package]
+name = "cssfinder-backend-rust"
+version = "0.1.0"
+edition = "2021"
+authors = ["Krzysztof Wisniewski <argmaster.world@gmail.com>"]
+description = "Implementation of CSSFinder backend using Rust."
+repository = "https://github.com/argmaster/cssfinder_backend_rust"
+readme = "README.md"
+license-file = "LICENSE.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "cssfinder_backend_rust"
+crate-type = ["cdylib"]
+
+[dependencies]
+ndarray = "0.15.6"
+ndarray-rand = "0.14"
+num = "0.4.0"
+num-traits = "0.2.15"
+numpy = "0.18.0"
+rand = "0.8"
+statrs = "0.16.0"
+rand_distr = "0.4.3"
+
+[dependencies.pyo3]
+version = "0.18.1"
+# "abi3-py37" tells pyo3 (and maturin) to build using the stable ABI with minimum Python version 3.7
+features = ["abi3-py38", "extension-module"]
