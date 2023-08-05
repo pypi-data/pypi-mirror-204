@@ -1,0 +1,7 @@
+pytz
+SpiNNMan==1!7.0.0.a4
+
+[test]
+pytest-cov
+pylint
+testfixtures

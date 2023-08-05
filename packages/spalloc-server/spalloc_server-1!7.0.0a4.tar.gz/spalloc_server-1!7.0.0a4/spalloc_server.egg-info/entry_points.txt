@@ -1,0 +1,3 @@
+[console_scripts]
+spalloc-server = spalloc_server.server:main
+spalloc_server = spalloc_server.server:main
