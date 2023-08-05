@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "gate-drift"
+version = "0.1.1"
+description = "Data drift detection tool for machine learning pipelines."
+authors = ["Shreya Shankar <shreyashankar@berkeley.edu>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "gate"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.24.2"
+pandas = "^2.0.0"
+scikit-learn = "^1.2.2"
+sentence-transformers = "^2.2.2"
+polars = "^0.17.5"
+pyarrow = "^11.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+ruff = "^0.0.261"
+pre-commit = "^3.2.2"
+matplotlib = "^3.7.1"
+seaborn = "^0.12.2"
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.1.6"
+mkdocstrings = "^0.21.2"
+pytkdocs = "^0.16.1"
+linkchecker = "^10.2.1"
+mkdocstrings-python = "^0.9.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.black]
+max-line-length = 88
+preview = true
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+| \.hg
+| \.mypy_cache
+| \.tox
+| \.venv
+| _build
+| buck-out
+| build
+)/
+'''
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
