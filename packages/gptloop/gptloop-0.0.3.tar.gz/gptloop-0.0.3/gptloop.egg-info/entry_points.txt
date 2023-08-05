@@ -1,0 +1,2 @@
+[console_scripts]
+gptloop = gptloop.cli:main
