@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "cplighthouse"
+version = "0.0.1"
+description = ""
+authors = ["Andre Portela <a220102@dac.unicamp.br>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
