@@ -1,0 +1,12 @@
+setup.py
+jira_test.egg-info/PKG-INFO
+jira_test.egg-info/SOURCES.txt
+jira_test.egg-info/dependency_links.txt
+jira_test.egg-info/entry_points.txt
+jira_test.egg-info/requires.txt
+jira_test.egg-info/top_level.txt
+src/__init__.py
+src/minus/__init__.py
+src/minus/minus_with_one.py
+src/sum/__init__.py
+src/sum/sum_with_one.py
