@@ -1,0 +1,7 @@
+setup.py
+chatdl/__init__.py
+chatdl.egg-info/PKG-INFO
+chatdl.egg-info/SOURCES.txt
+chatdl.egg-info/dependency_links.txt
+chatdl.egg-info/not-zip-safe
+chatdl.egg-info/top_level.txt
