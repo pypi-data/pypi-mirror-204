@@ -1,0 +1,11 @@
+Click
+pyyaml
+fs
+Jinja2
+fastapi
+psycopg
+psycopg[pool]
+uvicorn
+
+[test]
+pytest
