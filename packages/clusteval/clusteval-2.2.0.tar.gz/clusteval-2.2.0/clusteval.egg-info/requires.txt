@@ -1,0 +1,9 @@
+scatterd
+pypickle
+matplotlib
+numpy
+pandas
+tqdm
+seaborn
+scikit-learn
+colourmap
