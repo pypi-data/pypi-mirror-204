@@ -1,0 +1,11 @@
+numpy
+
+[all]
+dcor
+ges
+
+[dcor]
+dcor
+
+[ges]
+ges
