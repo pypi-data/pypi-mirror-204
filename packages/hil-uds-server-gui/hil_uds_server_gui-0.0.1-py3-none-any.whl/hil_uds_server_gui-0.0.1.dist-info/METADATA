@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hil-uds-server-gui
+Version: 0.0.1
+Summary: hil-uds-server-gui
+Author: notmmao
+Author-email: notmmao@gmail.com
+License: Carota HIL License
+Platform: windows
+Requires-Python: >=3.7
+Requires-Dist: hil-uds-server
+Requires-Dist: pyqt5
+Requires-Dist: PyQt-Fluent-Widgets
+
+一个基于QT的gui, 可用于快速配置验证hil-uds-server
+

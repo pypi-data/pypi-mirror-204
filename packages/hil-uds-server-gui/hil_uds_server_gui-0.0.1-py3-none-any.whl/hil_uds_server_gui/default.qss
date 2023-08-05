@@ -1,0 +1,40 @@
+MainWindow {
+    background-color: rgb(243, 243, 243);
+}
+
+QStackedWidget {
+    border: 1px solid rgb(229, 229, 229);
+    border-right: none;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    background-color: rgb(249, 249, 249);
+}
+
+Card {
+    background-color: transparent;
+}
+
+#card {
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+}
+
+#titleLabel {
+    font: 14px 'Segoe UI Light', 'Microsoft YaHei';
+    font-weight: 700;
+    background-color: transparent;
+    color: black;
+}
+
+#sourceWidget {
+    background-color: rgb(253, 253, 253);
+    border-top: 1px solid rgb(234, 234, 234);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#sourcePathLabel {
+    color: black;
+    font: 14px 'Segoe UI', 'Microsoft YaHei';
+}

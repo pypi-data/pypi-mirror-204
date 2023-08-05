@@ -1,0 +1,23 @@
+- title: 正常模式
+  description: 所有诊断服务都返回正相应
+  icon: Pin
+  enabled: true
+  ecu:
+    echo:
+      "1902FF": "59 02 FF"
+- title: 产生DTC
+  description: |
+    U041600,[发动机控制器],ESP不可信信号
+    P194600,[发动机控制器],散热器风扇控制单元，供电电压有故障
+    C101C07,[制动电子装置],左后轮轮速传感器-机械故障
+    C114602,[制动电子装置],轮胎压力监控显示器-信号故障
+  icon: Pin
+  enabled: true
+  ecu:
+    echo:
+      "1902FF": "59 02 FF c41600 09 149600 09 501c07 09 514602 09"
+- title: 服务超时
+  description: 所有诊断服务都超时
+  icon: Pin
+  enabled: false
+  ecu:
