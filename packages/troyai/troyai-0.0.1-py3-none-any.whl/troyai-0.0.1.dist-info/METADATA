@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: troyai
+Version: 0.0.1
+Summary: A Python package for downloading & uploading models to the Troy AI Club website.
+Author-email: Troy AI Club <troyhigh.aiclub@gmail.com>
+Project-URL: Homepage, https://github.com/TroyAI/pypitroyai
+Project-URL: Bug Tracker, https://github.com/TroyAI/pypitroyai/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pypitroyai
+Script to upload a model to the server given an authentication token.

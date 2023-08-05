@@ -1,0 +1,10 @@
+troyai/__init__.py,sha256=FgnuL3glmeOsO1D6TpLhRdLPAC_crJPB7Va15a2VplU,68
+troyai/constants.py,sha256=raATNIg7GkBQgWX1dbkqCU11DfCquNKxN4PJE4WediE,273
+troyai/download.py,sha256=LzYZz_l2EFSTW2lWFVXFbIYvDwZffA7wFcKNVUbSON4,163
+troyai/error_helpers.py,sha256=lsP3ejokkXiHBghXXh_BC69DGocTME3zcoNxStvPOdI,1890
+troyai/upload.py,sha256=PCzOVIHye0lR2CdoD8-6Hye-70YOjTZObbgA0mNDuck,1997
+troyai-0.0.1.dist-info/LICENSE,sha256=w1EhGuwHstpktw-e-86BF0how6gjrvQ4S5Q54hRLGIU,1084
+troyai-0.0.1.dist-info/METADATA,sha256=X741SlorDpij2eFem26ESkwBJVJ1Sc8Pk133YBSIibQ,656
+troyai-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+troyai-0.0.1.dist-info/top_level.txt,sha256=SD0yCXzvIHL5zBrqUQjqcwVz8wrocCd-lMRy3-ooudk,7
+troyai-0.0.1.dist-info/RECORD,,
