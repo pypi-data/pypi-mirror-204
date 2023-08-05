@@ -1,0 +1,15 @@
+Anilist/__init__.py,sha256=Q_mqHRXTULJXywTrSWI61kPpaSCkLN6BlikPIAt_g4Y,90
+Anilist/client.py,sha256=jmDKPUKfMa2Xq7iFlk4ib47R9J4A3ibT3SVSMFhfpxU,1583
+Anilist/consts.py,sha256=7qjU0U6tL1C8C80s-qklRLPemOAPdrefyz8hs12PQMU,51
+Anilist/obj.py,sha256=Up86lXu7OcafCuL3flBlPft5F0L0R4AHsSN_LCD5gbE,599
+Anilist/auth/auth.py,sha256=8v77MSXdUQ1GRfPL4-FjSYJpH99rmlSm5lWbDxgWr6s,719
+Anilist/auth/code.py,sha256=vy-998ThH-yf8RlJcDLEqYqzUM1-H9a_7Y-dqqOcEvE,1007
+Anilist/auth/token.py,sha256=rZjhDFcRW1JLK3GPSiInDENl6S9lZ2FzwLy8VhhFg-A,497
+Anilist/mutation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Anilist/mutation/media_list.py,sha256=4tuP95TvSXKx572houeYlCjUVkAz6JU6KbFXmSa8E_c,1302
+Anilist/query/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Anilist/query/media_list.py,sha256=72HK6xbFnbgDy6SP744ch35aITRnmxbG1ghRU8Eryl0,1695
+Anilist-0.1.0.dist-info/METADATA,sha256=Q4LA3IZ51WY7KnnN8VV-IeoXeLMmcqp3rY7SrYRXIlg,496
+Anilist-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Anilist-0.1.0.dist-info/top_level.txt,sha256=BJpBD_lMG5kkmjJvK1J_YCplQaoHVIbMKWgVIkE63Xs,8
+Anilist-0.1.0.dist-info/RECORD,,
