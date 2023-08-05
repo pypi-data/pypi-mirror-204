@@ -1,0 +1,15 @@
+$if(appendices)$
+$for(appendices/pairs)$
+\clearpage
+\begin{appendices}
+  \renewcommand{\thefigure}{$it.key/alpha/uppercase$\arabic{figure}}
+  \renewcommand{\thetable}{$it.key/alpha/uppercase$\arabic{table}}
+  \setcounter{table}{0}
+  \setcounter{figure}{0}
+  \setcounter{footnote}{0}
+  $it.value$
+\end{appendices}
+$sep$
+
+$endfor$
+$endif$

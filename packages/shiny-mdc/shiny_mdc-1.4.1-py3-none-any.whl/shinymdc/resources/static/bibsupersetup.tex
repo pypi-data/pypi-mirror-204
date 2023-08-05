@@ -1,0 +1,96 @@
+\ifdefined\nobibcompress
+  \usepackage[square,numbers,sort]{natbib}
+\else
+  \usepackage[square,numbers,sort&compress]{natbib}
+\fi
+\usepackage{xparse}
+\usepackage{letltxmacro}
+% \usepackage{etoolbox}
+
+\LetLtxMacro\oldcitep\citep
+\RenewDocumentCommand\citep{o o m}{%
+  \IfNoValueTF{#1}{%
+    \textsuperscript{\!\mbox{\oldcitep{#3}}}%
+  }{%
+    \IfNoValueTF{#2}{%
+      \textsuperscript{\!\mbox{\oldcitep[#1]{#3}}}%
+    }{%
+      \textsuperscript{\!\oldcitep[#1][#2]{#3}}%
+    }%
+  }%
+}
+
+% Put year in citet.
+\newcommand*{\nolink}[1]{{\protect\NoHyper#1\protect\endNoHyper}}
+\let\origcitet\citet
+\renewcommand{\citet}[2][]{%
+  % \nolink{\citeauthor{#2} (\citeyear{#2})}~\textsuperscript{\!\mbox{\oldcitep[#1]{#2}}}%
+  \nolink{\citeauthor{#2} (\citeyear{#2})}~\citep[#1]{#2}%
+}
+
+\let\origcitetext\citetext
+\renewcommand{\citetext}[1]{%
+  \textsuperscript{\origcitetext{#1}}%
+}
+
+% \newtoggle{HasArgOne}
+% \newtoggle{HasArgTwo}
+% \LetLtxMacro\oldcitep\citep
+% \RenewDocumentCommand\citep{o o m}{%
+%   % First, check if the two optional arguments have values.
+%   % This involves checking for presence, as well as checking
+%   % if the value is blank.
+%   \IfNoValueTF{#1}{%
+%     \togglefalse{HasArgOne}%
+%   }{%
+%     \ifblank{#1}{%
+%       \togglefalse{HasArgOne}%
+%     }{%
+%       \toggletrue{HasArgOne}%
+%     }%
+%   }%
+%   \IfNoValueTF{#2}{%
+%     \togglefalse{HasArgTwo}%
+%   }{%
+%     \ifblank{#2}{%
+%       \togglefalse{HasArgTwo}%
+%     }{%
+%       \toggletrue{HasArgTwo}%
+%     }%
+%   }%
+%   % Insert appropriate citation based on the value of the
+%   % two optional arguments.
+%   \iftoggle{HasArgOne}{%
+%     \iftoggle{HasArgTwo}{%
+%       % \citep[#1<pre>][#2<post>]{#3}.
+%       % (#1 \citet{#3}, #2)%
+%       \textsuperscript{\!\citetext{#1 \citenum{#3}, #2}}%
+%     }{%
+%       \IfNoValueTF{#2}{%
+%         % \citep[#1<post>]{#3}.
+%         % (\citet{#3}, #1)%
+%         \textsuperscript{\!\citetext{\citenum{#3}, #1}}%
+%       }{%
+%         % \citep[#1<pre>][]{#3}.
+%         % (#1 \citet{#3})%
+%         \textsuperscript{\!\citetext{#1 \citenum{#3}}}%
+%       }%
+%     }%
+%   }{%
+%     \iftoggle{HasArgTwo}{%
+%       % \citep[][#2<post>]{#3}.
+%       % (\citet{#3}, #2)%
+%       \textsuperscript{\!\citetext{\citenum{#3}, #2}}%
+%     }{%
+%       % \citep{#3} or \citep[][]{#3}.
+%       % \oldcitep{#3}%
+%       \textsuperscript{\!\citetext{\citenum{#3}}}%
+%     }%
+%   }%
+% }
+
+% \newcommand*{\nolink}[1]{{\protect\NoHyper#1\protect\endNoHyper}}
+% \LetLtxMacro\oldcitet\citet
+% \renewcommand{\citet}[2][]{%
+%   \nolink{\citeauthor{#2} (\citeyear{#2})} \textsuperscript{\citep[#1]{#2}}%
+% }
