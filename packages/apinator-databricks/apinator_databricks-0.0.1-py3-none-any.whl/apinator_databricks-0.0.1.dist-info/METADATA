@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: apinator-databricks
+Version: 0.0.1
+Summary: APInator bindings for Databricks API
+Author-email: Rearc Data <data@rearc.io>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: apinator~=0.0.2
+Requires-Dist: pytest ; extra == "tests"
+Requires-Dist: pytest-cov ; extra == "tests"
+Requires-Dist: responses ; extra == "tests"
+Project-URL: Home, https://github.com/rearc-data/apinator-databricks
+Provides-Extra: tests
+
+# Apinator-Databricks
+
+`apinator` bindings for the [Databricks API](https://docs.databricks.com/api-explorer/).
+
+## Example
+
+```python
+from apinator_databricks.common import DatabricksContext
+from apinator_databricks.unity_catalog import DatabricksUnityCatalogApi, uc_model
+
+context = DatabricksContext(
+        access_token="TOKEN",  # Will be kept secret
+        account="account",
+    )
+api = DatabricksUnityCatalogApi(context)
+shares: uc_model.ShareList = api.datashares.list()
+for share in shares.shares:
+    assert isinstance(share, uc_model.SharePartial)  # Not necessary, pydantic guarantees this
+    ...
+```
+
