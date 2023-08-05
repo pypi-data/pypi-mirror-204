@@ -1,0 +1,93 @@
+[project]
+name = "adsctl"
+description = "Google Ads Control CLI and Prompt"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+keywords = ["google ads", "google ads api", "cli", "prompt"]
+authors = [{ name = "Daniel Rodriguez", email = "daniel@danielfrg.com" }]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "google-ads>=20.0.0",
+  "click>=8.1",
+  "pandas>=2.0.0",
+  "pydantic>=1.10.0,<2.0.0",
+  "tabulate>=0.9.0",
+  "prompt_toolkit>=3.0.38",
+  "tomli-w>=1.0",
+  "tomlkit>=0.11.1",
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/danielfrg/adsctl#readme"
+Issues = "https://github.com/danielfrg/adsctl/issues"
+Source = "https://github.com/danielfrg/adsctl"
+
+[project.optional-dependencies]
+test = ["coverage[toml]", "pytest", "pytest-cov"]
+
+[project.scripts]
+gaql = "adsctl.prompt.cli:main"
+adsctl = "adsctl.cli.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+exclude = [".github"]
+
+[tool.hatch.version]
+path = "src/adsctl/__about__.py"
+
+[tool.hatch.envs.default]
+features = ["test"]
+dependencies = ["black", "isort", "mypy", "pip-tools", "ruff"]
+
+[tool.hatch.envs.default.scripts]
+check-style = ["ruff {args:.}", "black --check --diff {args:.}"]
+fmt = ["black {args:.}", "ruff --fix {args:.}", "style"]
+test = "cov --no-cov {args}"
+test-adsapi = "cov --no-cov --ads-api {args}"
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=src/adsctl --cov=tests {args}"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["-s", "-vv", "--strict-config", "--strict-markers"]
+markers = [
+  "pkg: marks tests as Packaging tests",
+  "adsapi: mark test that require connection to the API",
+]
+xfail_strict = true
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = ["tests/*"]
+
+[tool.coverage.report]
+exclude_lines = ["no cov", "if __name__ == .__main__.:", "if TYPE_CHECKING:"]
+
+[tool.ruff]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    # "I",  # isort
+    "B",  # flake8-bugbear
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+strict = true

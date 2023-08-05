@@ -1,0 +1,34 @@
+version: "3"
+
+tasks:
+  build:
+    cmds:
+      - hatch build
+
+  test:
+    cmds:
+      - hatch run test
+
+  test:all:
+    cmds:
+      - hatch run test-adsapi
+
+  fmt:
+    ignore_error: true
+    cmds:
+      - ruff --fix src
+      - black src
+      - isort src
+
+  check:
+    ignore_error: true
+    cmds:
+      # - mypy  # :)
+      - ruff src/adsctl
+      - black src --check
+      - isort src --check-only
+
+  lockfiles:
+    cmds:
+      - pip-compile -q --resolver=backtracking -o requirements/pyproject.txt pyproject.toml --extra=test
+      - pip-compile -q --resolver=backtracking -o requirements/linting.txt requirements/linting.in
