@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: crowdcores-node
+Version: 1.0.9
+License-File: LICENSE.txt
+Requires-Dist: websockets
+Requires-Dist: torch
+Requires-Dist: transformers
+
