@@ -1,0 +1,7 @@
+SpiNNFrontEndCommon==1!7.0.0.a4
+matplotlib
+
+[test]
+pytest-cov
+testfixtures
+httpretty!=1.0.0
