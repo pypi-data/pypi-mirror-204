@@ -1,0 +1,4 @@
+include list2tree/requirements.txt
+include list2tree/thirdparty.json
+include list2tree/README.md
+include list2tree/LICENSE

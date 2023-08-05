@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+list2tree/LICENSE
+list2tree/README.md
+list2tree/__init__.py
+list2tree/requirements.txt
+list2tree/thirdparty.json
+list2tree.egg-info/PKG-INFO
+list2tree.egg-info/SOURCES.txt
+list2tree.egg-info/dependency_links.txt
+list2tree.egg-info/requires.txt
+list2tree.egg-info/top_level.txt
