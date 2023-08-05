@@ -1,0 +1,11 @@
+README.md
+setup.py
+postpruner/__init__.py
+postpruner/__main__.py
+postpruner/postpruner.py
+postpruner.egg-info/PKG-INFO
+postpruner.egg-info/SOURCES.txt
+postpruner.egg-info/dependency_links.txt
+postpruner.egg-info/entry_points.txt
+postpruner.egg-info/requires.txt
+postpruner.egg-info/top_level.txt
