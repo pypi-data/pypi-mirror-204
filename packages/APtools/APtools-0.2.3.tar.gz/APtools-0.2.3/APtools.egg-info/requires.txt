@@ -1,0 +1,5 @@
+numpy
+scipy
+h5py
+openpmd-api~=0.14.0,~=0.15.0
+deprecated
