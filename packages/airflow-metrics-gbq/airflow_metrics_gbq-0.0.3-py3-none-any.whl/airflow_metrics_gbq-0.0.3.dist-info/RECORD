@@ -1,0 +1,9 @@
+LICENSE,sha256=Ou4Oc2fQ2rBLYSwNx-kHHEwBeHdga4eF8CTRZeSA_bc,1296
+airflow_metrics_gbq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_metrics_gbq/metrics.py,sha256=ShrX79co7JlTptSK5yhNeYwKcYELMxa52Rd8jNSjoKY,7591
+airflow_metrics_gbq/utils/__init__.py,sha256=UTHNW4oi8u3m3C0YPfdv8YoBVUEEIld7mJQTaeI-KIk,700
+airflow_metrics_gbq/utils/gbq_connector.py,sha256=iPiieGXKsOFi_gw0GkeNKCDWDMAQz9LqS8Nb4uv75d8,1674
+airflow_metrics_gbq-0.0.3.dist-info/LICENSE,sha256=Ou4Oc2fQ2rBLYSwNx-kHHEwBeHdga4eF8CTRZeSA_bc,1296
+airflow_metrics_gbq-0.0.3.dist-info/METADATA,sha256=QYLE6FXGfd603EM3fPJM_WsoP_o14vj5zPcFpVqGg90,3726
+airflow_metrics_gbq-0.0.3.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+airflow_metrics_gbq-0.0.3.dist-info/RECORD,,
