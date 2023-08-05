@@ -1,0 +1,8 @@
+README.md
+setup.py
+tensor-uwu/__init__.py
+tensor-uwu/uwu_run.py
+tensor_uwu.egg-info/PKG-INFO
+tensor_uwu.egg-info/SOURCES.txt
+tensor_uwu.egg-info/dependency_links.txt
+tensor_uwu.egg-info/top_level.txt
