@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "download-sorter"
+version = "0.1.1"
+description = "Organizes the files in your Downloads folder based on their file extensions. The module moves files into predefined folders according to a configuration file, making it easier to find and manage your downloaded files."
+authors = ["DJ Stomp <85457381+DJStompZone@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "download_sorter"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+twine = "^4.0.2"
+build = "^0.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
