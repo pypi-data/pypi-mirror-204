@@ -1,0 +1,2 @@
+[console_scripts]
+fasdr = fasdr.cli:main
