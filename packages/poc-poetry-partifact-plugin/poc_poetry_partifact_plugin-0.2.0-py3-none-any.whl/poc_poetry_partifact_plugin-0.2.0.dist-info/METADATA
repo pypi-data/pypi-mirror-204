@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: poc-poetry-partifact-plugin
+Version: 0.2.0
+Summary: A POC poetry plugin that configure partifact
+Home-page: https://github.com/timothestes/poc-poetry-partifact-plugin
+Author: timothestes
+Author-email: timothestes@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boto3 (>=1.26.116,<2.0.0)
+Requires-Dist: parse (>=1.19.0,<2.0.0)
+Requires-Dist: tomlkit (>=0.11.7,<0.12.0)
+Requires-Dist: typer (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+WIP

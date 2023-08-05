@@ -1,0 +1,11 @@
+poc_poetry_partifact_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poc_poetry_partifact_plugin/partifact/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poc_poetry_partifact_plugin/partifact/auth_token.py,sha256=TWONz21ahtG9RD1_hDNjhwUlz_J3Pb9enS_N94X_HyM,1478
+poc_poetry_partifact_plugin/partifact/config.py,sha256=v0c1bhL_u8BU9P53Jjtnls8l80vFnMEiuRhjdpduJKM,4479
+poc_poetry_partifact_plugin/partifact/main.py,sha256=zV1QJEynux9ljLHPoHHs8McdN7r4xunenaEiotilXkA,1156
+poc_poetry_partifact_plugin/partifact/shell_commands.py,sha256=puWa8Hj0pGsZakj1oiIcRjH_y3BdOnyjM_C0hskS0wY,2089
+poc_poetry_partifact_plugin/plugin.py,sha256=bDenpQ7pPQ6zN4JayC_0VwvT7DMb7lo22XBZa7QqitM,3802
+poc_poetry_partifact_plugin-0.2.0.dist-info/METADATA,sha256=vhGm6EVwD0ZqFAH7gSXJq1jr6gogArJJF7XdriNFd-A,784
+poc_poetry_partifact_plugin-0.2.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+poc_poetry_partifact_plugin-0.2.0.dist-info/entry_points.txt,sha256=gP-v6ipF6_ab7v0K3KmHOp41K9Tmg3WzOlxcic_qRzc,111
+poc_poetry_partifact_plugin-0.2.0.dist-info/RECORD,,
