@@ -1,0 +1,11 @@
+bfrac/__about__.py,sha256=p0xRNs2Dvy40asNtK4tbUan3cfUP095ApsOJ3J8q48U,22
+bfrac/__init__.py,sha256=B3SG86ZzB4W3TY5P25OgrxReqoJ8Oe8quzi9Fjukq8s,214
+bfrac/app_config.py,sha256=DaY1G2e9XX3wmCFWxISmBZqF0uC3ooCZlev3Y5IvVTc,1303
+bfrac/match_info_object.py,sha256=i7fR6T18UI0wo7_zY2dKFd664pDUu2Q4xZDVW-mR0yQ,377
+bfrac/query_context.py,sha256=DkcvBNZxbT3c9Z_MsjFAs_YmigJwHyPpwm8rFhtoUXA,8290
+bfrac/riot_api_caller.py,sha256=wnMzOlaDOF2GAKak7Eg6AjguQ0NLmGxVpHa2Zdkm2Nc,10284
+bfrac/riot_api_helper.py,sha256=mCQJG-sByD7AFL6395ZuNlFpQBrJcxRoIEJ3l0t3pOs,6712
+bfrac-0.0.53.dist-info/METADATA,sha256=rOymERGDYwbjza759F9O85OLst_4tZMyyt65kuSrC6Y,1301
+bfrac-0.0.53.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+bfrac-0.0.53.dist-info/licenses/LICENSE,sha256=9IwbI65t9SazC_t3D0RTA2kpRDgmhPBAsftL0XQjsXI,1107
+bfrac-0.0.53.dist-info/RECORD,,
