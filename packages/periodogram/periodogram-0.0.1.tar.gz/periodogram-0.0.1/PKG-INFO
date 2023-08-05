@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: periodogram
+Version: 0.0.1
+Summary: Simple periodogram manipulation in Python.
+Home-page: https://github.com/danhey/periodogram
+Author: Daniel Hey
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown

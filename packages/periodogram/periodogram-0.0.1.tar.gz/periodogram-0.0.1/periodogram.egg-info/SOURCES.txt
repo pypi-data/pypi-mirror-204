@@ -1,0 +1,10 @@
+setup.py
+periodogram/__init__.py
+periodogram/estimator.py
+periodogram/periodogram.py
+periodogram/utils.py
+periodogram/window.py
+periodogram.egg-info/PKG-INFO
+periodogram.egg-info/SOURCES.txt
+periodogram.egg-info/dependency_links.txt
+periodogram.egg-info/top_level.txt
