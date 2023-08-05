@@ -1,0 +1,12 @@
+VIAFfunctions/VIAFreffun.py,sha256=50zPj-c7ztQOA4HsHMFfgs4FltcxULcZnTlqJ1WoyfQ,4572
+VIAFfunctions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opcitfunctions/Ibidfunc.py,sha256=1-qGsNTe4nN3Djk3oIQ_uRHCeJak5Nb9DYAwAgmDAts,3610
+opcitfunctions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tagfunctions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tagfunctions/addtagfunc.py,sha256=iuh3S2TaahVIdFkVkIyYsGQ5xFloHwBnqweCp9e44CI,2202
+tagfunctions/tagfunctions.py,sha256=GBZrLow6dgZd8lsFcDg9zGv274NX2OL6ZEMhLIlbzvM,5588
+XMLCit-0.0.6.dist-info/LICENSE,sha256=iwp75rPN_ATiNj0yQXMTG-CLEqt7jv_F-1X5GuiMaCg,1086
+XMLCit-0.0.6.dist-info/METADATA,sha256=vZy1CaB80gPwjttq0ztWsc-U2csYfANGSOQ29yAXXxc,1220
+XMLCit-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+XMLCit-0.0.6.dist-info/top_level.txt,sha256=OAa4JSK20XFEEtKREP0M7fXiz6TxRrgnHnjxehJKJy0,42
+XMLCit-0.0.6.dist-info/RECORD,,
