@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: skye
+Version: 0.0.1
+Summary: 360-degree image analysis for forest ecology
+Home-page: https://github.com/iosefa/skye
+Author: Iosefa Percival
+Author-email: ipercival@gmail.com
+Project-URL: Bug Tracker, https://github.com/iosefa/skye/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SKYE
+
+Skye is a simple python library for working with 360-degree photos for analysis in forest ecology.
+
+Current features include the ability to create hemispherical photographs from 3-band (RGB) 360-degree photos, 
+sky object detection, and the calculation of the sky view factor.
