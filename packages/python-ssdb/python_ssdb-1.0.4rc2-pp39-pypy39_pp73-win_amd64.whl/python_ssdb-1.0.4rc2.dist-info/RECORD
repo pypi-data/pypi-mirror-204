@@ -1,0 +1,17 @@
+ssdb/__init__.py,sha256=hT4gjn7A7H6pix1RYGQcui4hEZJMHtz1gkSYm6OqH7A,52
+ssdb/client.pypy39-pp73-win_amd64.pyd,sha256=4cwgy91Aa79h7zgJ1oChDgD_1vceM1XGSoYHZfq7-PA,107520
+ssdb/connection.pypy39-pp73-win_amd64.pyd,sha256=5qKMqkjxLxRsJMp4kDY9LvLjc9XO1yurRlv6jhKIN5s,161280
+ssdb/asyncio/__init__.py,sha256=CNBk_8mH6Z4RflW7LtjO0_nmc0X9KgFXHbCQ28qZZ2s,60
+ssdb/asyncio/client.pypy39-pp73-win_amd64.pyd,sha256=qw8ONbKHmtYcAWqHkZNerY25HJzUkkEwJRi5ECBzXrQ,139776
+ssdb/asyncio/connection.pypy39-pp73-win_amd64.pyd,sha256=cgTaQbzXznkqdNeSSKkVLPr_MQCcHt8aSBwxZ3DHej0,196096
+ssdb/core/__init__.py,sha256=JQ-A54tyibTaFw6n_2y2TVxvaYIUZqQ2nMph_UoRkz8,77
+ssdb/core/encode.pypy39-pp73-win_amd64.pyd,sha256=Wt5J02Hno1CCRHFF1R9zvK0qYffG9o5f2FQ9u4GUX5A,34304
+ssdb/core/interface.pypy39-pp73-win_amd64.pyd,sha256=0oLd-MqnXe5H-PJySlra77TsjQB7EbEns9TyDS9_Juw,149504
+ssdb/core/parser.pypy39-pp73-win_amd64.pyd,sha256=T8lL3bKNfdU0M2JW9OLWkO1j1RPFSKTBDC6KodfkW7Y,128512
+ssdb/core/response.pypy39-pp73-win_amd64.pyd,sha256=3wTxe3AJqeE7cMYOSaoREsPFhQ58mddo_IQElq9RKxM,34816
+python_ssdb-1.0.4rc2.dist-info/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+python_ssdb-1.0.4rc2.dist-info/METADATA,sha256=R-tYx2ILs2cSlW6L3I7KMzEJ_9FUCli1ET2TMHe_PJI,1947
+python_ssdb-1.0.4rc2.dist-info/NOTICE.md,sha256=j48LuA6oGTAS0yKUPUMeTDLXErXYtwIoP-iDc-kwZJc,12779
+python_ssdb-1.0.4rc2.dist-info/WHEEL,sha256=QQY0XPJVcbNrDwRnZBTwtxGbMWJnHaWRpMJLfPEPCFM,107
+python_ssdb-1.0.4rc2.dist-info/top_level.txt,sha256=xEnud1pc-bK2a-VkAQhr1NnowyUwy5xk4CIssqHxXB8,5
+python_ssdb-1.0.4rc2.dist-info/RECORD,,
