@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+mekartify.egg-info/PKG-INFO
+mekartify.egg-info/SOURCES.txt
+mekartify.egg-info/dependency_links.txt
+mekartify.egg-info/requires.txt
+mekartify.egg-info/top_level.txt
