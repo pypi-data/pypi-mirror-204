@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyChatGPTH/Auth0.py
+src/pyChatGPTH/__init__.py
+src/pyChatGPTH/__main__.py
+src/pyChatGPTH/pyChatGPT.py
+src/pyChatGPTH.egg-info/PKG-INFO
+src/pyChatGPTH.egg-info/SOURCES.txt
+src/pyChatGPTH.egg-info/dependency_links.txt
+src/pyChatGPTH.egg-info/requires.txt
+src/pyChatGPTH.egg-info/top_level.txt
