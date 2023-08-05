@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Alkwaz
+Version: 1.1.1
+Summary: Solve some data analysis problems
+Home-page: https://github.com/SajadAlkwaz/Alkwaz
+Author: Sajad Beassm
+Author-email: sajad.beassm.bi.2020@uoitc.edu.iq
+Project-URL: Bug Tracker, https://github.com/SajadAlkwaz/Alkwaz/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Alkwaz
+It is a library to handle some data problems
+### to install:
+'''bash
+pip install Alkwaz
+'''

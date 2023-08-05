@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/Alkwaz/Alkwaz.py
+src/Alkwaz/__init__.py
+src/Alkwaz.egg-info/PKG-INFO
+src/Alkwaz.egg-info/SOURCES.txt
+src/Alkwaz.egg-info/dependency_links.txt
+src/Alkwaz.egg-info/top_level.txt
