@@ -1,0 +1,10 @@
+
+[client]
+requests
+
+[embedded]
+cozo-embedded==0.6.0
+
+[pandas]
+pandas
+ipython
