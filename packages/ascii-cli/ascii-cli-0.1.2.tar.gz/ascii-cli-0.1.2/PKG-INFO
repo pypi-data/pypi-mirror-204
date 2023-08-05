@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: ascii-cli
+Version: 0.1.2
+Summary: A command-line tool that converts images to ASCII art.
+Home-page: https://github.com/mrq-andras/ascii-cli
+Author: mrq-andras
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Command Line ASCII Art Generator
+
+ASCII-cli is a command line interface that is powered by Python3. You can generate ASCII art by importing an image and then selecting the character set that you want to generate with.
+
+---
+
+## TODO
+
+- Colour
+- UI
+
+---
+
+## Installation & Building
+
+### PIP
+
+The easiest way to install ASCII-CLI is by using the [PyPI library](https://pypi.org/project/ascii-cli/).
+You can run `pip install ascii-cli` on any command-line with Python3 in order to install it.
+
+### Releases
+
+If you are unable to use the PyPI library you can access ASCII-CLI by going to our [releases page](https://github.com/mrq-andras/ascii-cli/releases). There you can download the .exe file and run the CLI by going to the folder that the program is downloaded in and running `.\ascii-cli`
+
+---
+
+## Usage
+
+`ascii-cli [-h] [--width] [--height] [--set] [--random] [--invert] [--darkness] path/to/your/image`
+
+Set 1: /, !, =, +, |, #, %,@, 0-9, ?, [, ], {, }, A-Z.  
+Set 2: 0, O, o, 8, 9, 6, @, &, ., ", :.  
+Set 3: ▀, ▄, ▌, ▐, ■, ◽, ◆, ►, ●, ░, ▒, ▓, █.
+
+**_NOTE: SET 3 MIGHT NOT DISPLAY CORRECTLY IN CERTAIN FONTS OR EDITORS_**
+
+If you have downloaded the application through pip input the following command in the terminal:  
+`ascii-cli --width 40 --height 17 --set 1 --random True path\to\input.jpg`
+
+If you are running the .exe package you will need to slightly alter the command by calling the exact folder of ASCII-CLI  
+`.\path\to\ascii-cli.exe --width 40 --height 17 --set 1 --random True path\to\input.jpg`
+
+This command will set the width to 40, the height to 17 and the character set to one. The `--set 1` variable is optional as the default character set is one. Random has been set to true and it will take the image from assets/input.jpg and generate a .txt file titled input-ascii.jpg in the same folder as the image.
+
+Random and Invert are boolians and must be set to True/False, whereas Darkness, Set, Height and Width are all integers.
+
+## License
+
+See [`LICENSE`](./LICENSE)
