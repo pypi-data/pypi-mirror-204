@@ -1,0 +1,65 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gosling"
+description = "Python bindings to generate Gosling visualizations"
+authors = [
+    { name = "Trevor Manz", email = "trevor.j.manz@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+urls = { homepage = "https://github.com/gosling-lang/gos" }
+dependencies = [
+  "jsonschema>=3.0",
+  "jinja2",
+  "pandas>=1.0,<2.0",
+]
+
+[project.optional-dependencies]
+all = [
+  "servir>=0.0.3",
+  "gosling-widget>=0.0.2",
+  "clodius>=0.20.0",
+]
+dev = [
+  "pytest>=6.0",
+  "requests>=2.0",
+  "jupyterlab>=3.0",
+  "sphinx>=6.0",
+  "numpydoc>=1.5",
+  "furo",
+]
+
+[tool.hatch.build]
+include = [
+  "/gosling",
+  "/tests",
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "gosling/_version.py"
+
+[tool.hatch.envs.default]
+features = ["dev", "all"]
+
+[tool.hatch.envs.default.scripts]
+test = "pytest --ignore gosling/examples --ignore tools/altair --doctest-modules gosling"
+clean = "rm -rf doc/_build doc/user_guide/generated/ doc/gallery"
+docs = "sphinx-build -b html doc dist"
