@@ -1,0 +1,9 @@
+igraph
+pandas
+numpy
+statistics
+statsmodels
+scipy
+plotnine
+tqdm
+scikit-learn
