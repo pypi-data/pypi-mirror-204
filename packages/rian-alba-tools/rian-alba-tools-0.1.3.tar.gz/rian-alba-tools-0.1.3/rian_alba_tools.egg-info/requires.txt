@@ -1,0 +1,15 @@
+matplotlib
+nilearn
+numpy
+openpyxl
+pandas
+pingouin
+plotly
+progressbar
+ptitprince
+scipy
+seaborn
+sklearn
+statsmodels
+zentables
+joblib
