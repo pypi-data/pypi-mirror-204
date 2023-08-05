@@ -1,0 +1,17 @@
+python_ssdb-1.0.4.dist-info/RECORD,,
+python_ssdb-1.0.4.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+python_ssdb-1.0.4.dist-info/WHEEL,sha256=g0TCnFNhP86H1Ze5madZcTuGGeHqP82QrbxfkhKuCcc,116
+python_ssdb-1.0.4.dist-info/top_level.txt,sha256=xEnud1pc-bK2a-VkAQhr1NnowyUwy5xk4CIssqHxXB8,5
+python_ssdb-1.0.4.dist-info/METADATA,sha256=MepLn2kA_TvdpzPjR_LLQq19nCgXnO1T1qaQPkKAqaw,1876
+python_ssdb-1.0.4.dist-info/NOTICE.md,sha256=8XYkbPT8MEjerAbFpYFGgzhsr-qYAy8aK8MRdDngDjo,12626
+ssdb/__init__.py,sha256=ansgW9TPgHgTdlUHnUoGHr_7lUkFoV7gbU_hWFnEYeM,49
+ssdb/client.pypy39-pp73-darwin.so,sha256=XFvDBUqNh2LI4JZVabkCSpvCKxODWQQA6TDAqaQ7rfo,128912
+ssdb/connection.pypy39-pp73-darwin.so,sha256=WO-0OhOSs9WImG3OjualZyr_eeOw2xCDCuAHBH3VYk4,186504
+ssdb/core/__init__.py,sha256=n__2vmR4Et6DqMuS7elul3uDL0gUBTk2NAPmDc4ZNUA,74
+ssdb/core/response.pypy39-pp73-darwin.so,sha256=EcZZSSGd_-c3OoU07wSrejjxQ4Ux8ePrqMHVJCIniSE,63880
+ssdb/core/interface.pypy39-pp73-darwin.so,sha256=Wyn1eyKVnrjlN-qz99S19UKc5PH0Tx9FT3XMoO8Qc3U,187104
+ssdb/core/parser.pypy39-pp73-darwin.so,sha256=Zui3n7lKo279z08Rw6ROs4YcPMp2shswscJr1HFY-DI,146920
+ssdb/core/encode.pypy39-pp73-darwin.so,sha256=GapFji0UDN8u78qA_OC0t1aeVWeZ7mnqbM_GqxHT3fA,60408
+ssdb/asyncio/__init__.py,sha256=alfaymH8hPIoaiw_S4JBwktCa-h7Cdg2s8_2iAQ3IiU,57
+ssdb/asyncio/client.pypy39-pp73-darwin.so,sha256=_pfh4Fx7kwISCF6CTcIW3oftLI1GTsyzwCkiUUW2E1k,188624
+ssdb/asyncio/connection.pypy39-pp73-darwin.so,sha256=dS29KzGsWHQU3iNjf28b42Ws5cMN0P-GG-Y82xnTmbA,251672
