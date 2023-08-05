@@ -1,0 +1,11 @@
+astropy
+Cython
+h5py
+matplotlib
+numpy
+pandas
+radvel
+scipy
+setuptools
+tqdm
+celerite
