@@ -1,0 +1,5 @@
+setuptools
+plone.base
+
+[test]
+Products.CMFPlone
