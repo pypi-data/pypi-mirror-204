@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+easycheck_doiteasy/__init__.py
+easycheck_doiteasy/easycheck_doiteasy.py
+easycheck_doiteasy.egg-info/PKG-INFO
+easycheck_doiteasy.egg-info/SOURCES.txt
+easycheck_doiteasy.egg-info/dependency_links.txt
+easycheck_doiteasy.egg-info/top_level.txt
