@@ -1,0 +1,36 @@
+[tool.poetry]
+#name = "ccache-download-upload-redis"
+name = "ccache_upload_redis"
+version = "0.1.1a1"
+description = "A script to downloads the contents of the local ccache cache from a Redis remote storage."
+authors = ["berlin4apk <83521068+berlin4apk@users.noreply.github.com>"]
+repository = "https://github.com/berlin4apk/action-ccache-download-upload-redis"
+keywords = ["ccache", "redis", "upload", "download"]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+packages = [
+    { include = "ccache-upload-redis" },
+    { include = "ccache-download-redis" },
+    { include = "ccache-performance" },
+]
+
+[tool.poetry.scripts]
+#ccache-upload-redis_cli = 'ccache-upload-redis.console:run'
+ccache-upload-redis = 'ccache-upload-redis.console:run'
+my_package_cli = 'my_package.console:run'
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+progress-bar = "^8"
+humanize = "^4.6.0"
+progress = "^1.6"
+redis = "^4.5.4"
+
+[tool.poetry.group.dev.dependencies]
+shiv = "^1.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
