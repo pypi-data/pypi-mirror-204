@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+crowdcores.egg-info/PKG-INFO
+crowdcores.egg-info/SOURCES.txt
+crowdcores.egg-info/dependency_links.txt
+crowdcores.egg-info/requires.txt
+crowdcores.egg-info/top_level.txt
+pipeline/__init__.py
+pipeline/pipeline.py
