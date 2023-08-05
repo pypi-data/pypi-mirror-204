@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: bns-utils
+Version: 0.0.3
+Summary: Some utilities for BNS internal use
+Author-email: Example Author <author@example.com>
+Project-URL: Homepage, https://github.com/Dave-the-python-developer/BNS_utils
+Project-URL: PyPi, https://pypi.org/project/bns-utils/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cycler (<1,>=0.11.0)
+Requires-Dist: matplotlib (<5,>=3.5.0)
+Requires-Dist: tqdm (<5,>=4.64.0)
+Requires-Dist: pandas (<2,>=1.5.0)
+Requires-Dist: scipy (<2,>=1.9.0)
+
+# BNS UTILS
+
+Documentation goes here.
+
+## Data Module
+
+### IP21
+The IP21 class provides a Python interface for interacting with an IP.21 historian database. It uses the pyodbc and pandas libraries to connect to the database and execute SQL queries.
+
+#### Initialization
+
+To use the IP21 Python Interface, you first need to initialize an instance of the IP21 class. The IP21 constructor takes the following arguments:
+
+- host: The IP address or hostname of the IP21 server
+- port: The port number to use when connecting to the IP21 server
+- ads: The name of the IP21 Advanced Data Server (ADS) to connect to (default: MINPRO)
+
+```python
+from bns_utils.data import IP21
+
+# Create an IP21 object to connect to the historian database
+ip21 = IP21(host="127.0.0.1", port=1234, ads="MINPRO")
+```
+
+#### Retrieving Tag Names and Definitions
+The tag_dump method can be used to retrieve a list of all IP.21 tags and their descriptions from the historian database. By default, this method saves the list to a CSV file named tag_dump.csv, but this behavior can be disabled by passing write_csv=False. For example:
+```python
+# Retrieve a list of all tags and save it to a CSV file
+ip21.tag_dump()
+
+# Retrieve a list of all tags without saving it to a CSV file
+tag_list = ip21.tag_dump(write_csv=False)
+```
+
+#### Retrieving Tag Data
+You can retrieve historical data for a list of tags using the tag_data method. This method takes the following arguments:
+
+- tag_list: A list of tag names to retrieve data for
+- start: The start time for the data in the format "DD-Mon-YY HH:MM:SS"
+- end: The end time for the data in the format "DD-Mon-YY HH:MM:SS"
+- freq: The interval to retrieve data at in the format "HH:MM:SS"
+- separate: A boolean indicating whether to save the data for each tag separately (default: True)
+- file_type: The file format to use when saving the data (either ftr or csv, default: ftr)
+
+Here is an example of how to retrieve data for a single tag:
+
+```python
+ip21.tag_data(tag_list=["MyTag"], start="01-Jan-23 00:00:00", end="02-Jan-23 00:00:00", freq="00:01:00")
+```
+
+This will retrieve data for the tag "MyTag" between January 1st, 2023 and January 2nd, 2023, at one minute intervals. The data will be saved to a file named MyTag.ftr in Feather format by default.
+
+If you want to retrieve data for multiple tags, simply pass a list of tag names to the tag_list argument:
+
+```python
+ip21.tag_data(tag_list=["Tag1", "Tag2", "Tag3"], start="01-Jan-23 00:00:00", end="02-Jan-23 00:00:00", freq="00:01:00")
+```
+
+This will retrieve data for the tags "Tag1", "Tag2", and "Tag3" between January 1st, 2023 and January 2nd, 2023, at one minute intervals. The data for each tag will be saved to separate files by default.
