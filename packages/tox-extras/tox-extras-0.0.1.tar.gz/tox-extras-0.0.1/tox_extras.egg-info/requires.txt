@@ -1,0 +1,16 @@
+tomli
+tox>=4
+
+[dev]
+tox-extras[lint,test,type]
+
+[lint]
+black==23.3.0
+ruff==0.0.262
+
+[test]
+pytest==7.3.1
+tox==4.4.12
+
+[type]
+mypy==1.2.0
