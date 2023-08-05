@@ -1,0 +1,7 @@
+setup.py
+my_wanglei/__init__.py
+my_wanglei.egg-info/PKG-INFO
+my_wanglei.egg-info/SOURCES.txt
+my_wanglei.egg-info/dependency_links.txt
+my_wanglei.egg-info/requires.txt
+my_wanglei.egg-info/top_level.txt
