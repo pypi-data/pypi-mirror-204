@@ -1,0 +1,12 @@
+README.md
+setup.py
+AutoMMM/__init__.py
+AutoMMM/automodeller.py
+autoMMM/__init__.py
+autoMMM/autoholidays.py
+autoMMM/automodeller.py
+autoMMM.egg-info/PKG-INFO
+autoMMM.egg-info/SOURCES.txt
+autoMMM.egg-info/dependency_links.txt
+autoMMM.egg-info/requires.txt
+autoMMM.egg-info/top_level.txt
