@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+ipymock/__init__.py
+ipymock/_nbdev.py
+ipymock/mock.py
+ipymock.egg-info/PKG-INFO
+ipymock.egg-info/SOURCES.txt
+ipymock.egg-info/dependency_links.txt
+ipymock.egg-info/not-zip-safe
+ipymock.egg-info/requires.txt
+ipymock.egg-info/top_level.txt
+ipymock.egg-info/.ipynb_checkpoints/SOURCES-checkpoint.txt
+ipymock.egg-info/.ipynb_checkpoints/top_level-checkpoint.txt
