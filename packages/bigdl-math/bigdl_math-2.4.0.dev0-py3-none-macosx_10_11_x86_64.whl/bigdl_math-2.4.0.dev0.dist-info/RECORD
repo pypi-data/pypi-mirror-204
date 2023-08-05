@@ -1,0 +1,6 @@
+bigdl/share/tflibs/darwin-x86_64/libiomp5.dylib,sha256=uHhWKMlaF2ddTIjWpVd560n1ndMXa8GImssysHZe7x4,2839696
+bigdl/share/tflibs/darwin-x86_64/libmklml.dylib,sha256=HMApIpnzYjbRDXnnaR5OjnWHhmYR1DlACOqdhRdLRBQ,90332320
+bigdl_math-2.4.0.dev0.dist-info/METADATA,sha256=KIgVNkfzhzsIh7nYpnMxjmhL743e38fIuHXIJpkA-Sk,295
+bigdl_math-2.4.0.dev0.dist-info/WHEEL,sha256=d1DEYkMjlT93GFRtQMwfSlNJuo2L3_ARY5aEfYKxpD0,108
+bigdl_math-2.4.0.dev0.dist-info/top_level.txt,sha256=iGuLfZARD_qANcIMfy0tbbrC3EtCg6BSiH8icc3dLWs,6
+bigdl_math-2.4.0.dev0.dist-info/RECORD,,
