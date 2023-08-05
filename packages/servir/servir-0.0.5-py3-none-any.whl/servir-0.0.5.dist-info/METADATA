@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: servir
+Version: 0.0.5
+Summary: an extensible async background server
+Project-URL: Documentation, https://github.com/unknown/servir#readme
+Project-URL: Issues, https://github.com/unknown/servir/issues
+Project-URL: Source, https://github.com/unknown/servir
+Author-email: Trevor Manz <trevor.j.manz@gmail.com>
+License: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: portpicker
+Requires-Dist: starlette>=0.26.1
+Requires-Dist: typing-extensions>=4.5.0; python_version < '3.11'
+Requires-Dist: uvicorn>=0.21.1
+Description-Content-Type: text/markdown
+
+# servir
+
+[![PyPI - Version](https://img.shields.io/pypi/v/servir.svg)](https://pypi.org/project/servir)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/servir.svg)](https://pypi.org/project/servir)
+
+an extensible async background server for python
+
+-----
+
+**table of contents**
+
+- [installation](#installation)
+- [usage](#usage)
+- [license](#license)
+
+## installation
+
+```console
+pip install servir
+```
+
+## usage
+
+```python
+import pathlib
+
+import requests
+from servir import Provider
+
+# create a provider
+provider = Provider()
+
+
+### File (supports range requests)
+
+path = pathlib.Path("hello.txt")
+path.write_text("hello, world")
+
+file_resource = provider.create(path)
+response = requests.get(file_resource.url)
+assert response.text == "hello, world"
+assert "text/plain" in response.headers["Content-Type"] 
+
+### Directory (supports range requests)
+
+root = pathlib.Path("data_dir")
+root.mkdir()
+(root / "hello.txt").write_text("hello, world")
+
+dir_resource = provider.create(root)
+response = requests.get(file_resource.url + "/hello.txt")
+assert response.text == "hello, world"
+assert "text/plain" in response.headers["Content-Type"]
+
+
+### In-memory
+
+data = "a,b,c,\n1,2,3,\n4,5,6"
+
+content_resource = provider.create(data, extension=".csv")
+response = requests.get(content_resource.url)
+assert response.text == data
+assert "text/csv" in response.headers["Content-Type"]
+```
+
+## license
+
+`servir` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
