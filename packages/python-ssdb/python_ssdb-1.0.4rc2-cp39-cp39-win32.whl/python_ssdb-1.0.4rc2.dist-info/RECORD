@@ -1,0 +1,17 @@
+ssdb/__init__.py,sha256=hT4gjn7A7H6pix1RYGQcui4hEZJMHtz1gkSYm6OqH7A,52
+ssdb/client.cp39-win32.pyd,sha256=TEFe2dZFIRUegwWv-nfIyEe7xASaCOn0vjEk_SEcjrE,99328
+ssdb/connection.cp39-win32.pyd,sha256=I9ybL80uXX4nEdfhNcYOtQ2XGnhsp5YU1XiH2FXJwrw,158720
+ssdb/asyncio/__init__.py,sha256=CNBk_8mH6Z4RflW7LtjO0_nmc0X9KgFXHbCQ28qZZ2s,60
+ssdb/asyncio/client.cp39-win32.pyd,sha256=mRAbe5eQ-By6oTWTYE-ey4QxMhstHcktKDepGA6ytj0,130560
+ssdb/asyncio/connection.cp39-win32.pyd,sha256=zMLGQiwnIbVqyf-EtupYAUcyLM1ov7VDSDPduhmpVIc,196608
+ssdb/core/__init__.py,sha256=JQ-A54tyibTaFw6n_2y2TVxvaYIUZqQ2nMph_UoRkz8,77
+ssdb/core/encode.cp39-win32.pyd,sha256=BGcfOhGvCachFLretlvOuR7Nqs3R-al6mrQQGUklMU0,32768
+ssdb/core/interface.cp39-win32.pyd,sha256=4Z0W04BYhBUTYjtGkkuHPrs0S3ZMDN8qw75ma5fCdTo,173568
+ssdb/core/parser.cp39-win32.pyd,sha256=E58GgTfYskLQpnkk0e29h_N_6YfjUw4lG8s6pptFcqg,118272
+ssdb/core/response.cp39-win32.pyd,sha256=NbAnq7B9gWn01avSJDlKybltCqybEzOTfIOOig1nmvE,32768
+python_ssdb-1.0.4rc2.dist-info/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+python_ssdb-1.0.4rc2.dist-info/METADATA,sha256=R-tYx2ILs2cSlW6L3I7KMzEJ_9FUCli1ET2TMHe_PJI,1947
+python_ssdb-1.0.4rc2.dist-info/NOTICE.md,sha256=j48LuA6oGTAS0yKUPUMeTDLXErXYtwIoP-iDc-kwZJc,12779
+python_ssdb-1.0.4rc2.dist-info/WHEEL,sha256=1aMbN4t2zTDfBHuhuWzAfIzzQesiKpXOWwJmQwUBD2M,96
+python_ssdb-1.0.4rc2.dist-info/top_level.txt,sha256=xEnud1pc-bK2a-VkAQhr1NnowyUwy5xk4CIssqHxXB8,5
+python_ssdb-1.0.4rc2.dist-info/RECORD,,
