@@ -1,0 +1,6 @@
+pytest_result_sender/__init__.py,sha256=WmfJ4fUP9PA_b7L7P5uPp8NQ7SN2awnVSuIkorfdqJA,124
+pytest_result_sender/plugin.py,sha256=ByykzwvePLf7TLjRP1x0kbqlRLJVtBhBqjgWDFwqMV0,386
+pytest_result_sender-0.0.3.dist-info/entry_points.txt,sha256=FcAuVHB1dSqsvAcRAK2_ckR0Q8VPuoIpsd1mIFQBWiw,61
+pytest_result_sender-0.0.3.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+pytest_result_sender-0.0.3.dist-info/METADATA,sha256=gG0JQj2lEtA5tiFa9BGk1jNGmPtJbb1eLs4GFxoW56U,568
+pytest_result_sender-0.0.3.dist-info/RECORD,,

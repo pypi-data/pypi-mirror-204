@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pytest-result-sender
+Version: 0.0.3
+Summary: 这一个pytest插件，可以讲测试执行结果发送到钉钉、飞书、企业微信、Email、自定义API等位置
+License: MIT
+Author-email: dongfangtianyu <7629022+dongfangtianyu@users.noreply.github.com>
+Requires-Python: >=3.10
+Requires-Dist: pytest-result-log>=1.2.0
+Requires-Dist: pytest>=7.2
+Description-Content-Type: text/markdown
+
+# pytest-result-sender
+
+这一个pytest插件，可以讲测试执行结果发送到钉钉、飞书、企业微信、Email、自定义API等位置
+

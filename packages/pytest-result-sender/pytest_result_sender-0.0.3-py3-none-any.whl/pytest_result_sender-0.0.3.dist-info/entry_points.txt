@@ -1,0 +1,3 @@
+[pytest11]
+pytest_result_sender=pytest_result_sender.plugin
+
