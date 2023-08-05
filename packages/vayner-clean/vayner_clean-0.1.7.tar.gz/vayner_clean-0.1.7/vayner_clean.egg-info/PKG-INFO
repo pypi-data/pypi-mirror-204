@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: vayner-clean
+Version: 0.1.7
+Summary: Library for cleaning advertising data from Tracer
+Home-page: 
+Author: Will Butler
+Author-email: will.butler@vaynermedia.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Getting Started 
+This library has generic functions for cleaning advertising data such as standardising column
+names between platforms and countries or extracting a Country like "France" from a string column
+
+[Full Online Documentation](https://VaynerMedia-London.github.io/vaynerclean/)
+
+## Library Installation
+```
+pip install vaynerclean
+```
+To upgrade the library after an update
+```
+pip install vayner-clean --upgrade
+```
+
+## Importing the Library
+```
+from vee_clean import cleaning_functions as clean
+```
+
+## Usage in code
+In this example we will be using the cleaning library to clean and standardise column names in a dataframe 
+
+```
+fb_organic = clean.clean_column_names(fb_organic_temp)
+```
