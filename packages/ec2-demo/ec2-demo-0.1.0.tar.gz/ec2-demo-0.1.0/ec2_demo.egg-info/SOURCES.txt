@@ -1,0 +1,12 @@
+README.md
+setup.py
+ec2_demo/__init__.py
+ec2_demo/cli.py
+ec2_demo/instances.py
+ec2_demo/task.py
+ec2_demo.egg-info/PKG-INFO
+ec2_demo.egg-info/SOURCES.txt
+ec2_demo.egg-info/dependency_links.txt
+ec2_demo.egg-info/entry_points.txt
+ec2_demo.egg-info/requires.txt
+ec2_demo.egg-info/top_level.txt
