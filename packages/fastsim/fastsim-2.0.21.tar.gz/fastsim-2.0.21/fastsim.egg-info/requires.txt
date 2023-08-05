@@ -1,0 +1,11 @@
+pandas>=1
+matplotlib>=3.3
+numpy>=1.18
+seaborn>=0.10
+pymoo==0.6
+typing_extensions
+
+[dev]
+black
+pytest
+maturin
