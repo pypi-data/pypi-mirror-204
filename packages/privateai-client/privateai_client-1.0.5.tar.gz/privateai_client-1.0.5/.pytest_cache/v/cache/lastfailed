@@ -1,0 +1,3 @@
+{
+  "tests/test_request_objects.py::test_entity_detection_entity_validator": true
+}
