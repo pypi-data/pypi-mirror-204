@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+troyai/__init__.py
+troyai/constants.py
+troyai/download.py
+troyai/error_helpers.py
+troyai/upload.py
+troyai.egg-info/PKG-INFO
+troyai.egg-info/SOURCES.txt
+troyai.egg-info/dependency_links.txt
+troyai.egg-info/top_level.txt
