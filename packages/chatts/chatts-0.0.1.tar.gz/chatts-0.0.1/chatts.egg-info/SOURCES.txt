@@ -1,0 +1,7 @@
+setup.py
+chatts/__init__.py
+chatts.egg-info/PKG-INFO
+chatts.egg-info/SOURCES.txt
+chatts.egg-info/dependency_links.txt
+chatts.egg-info/not-zip-safe
+chatts.egg-info/top_level.txt
