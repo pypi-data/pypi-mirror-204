@@ -1,0 +1,17 @@
+python_ssdb-1.0.4rc2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+python_ssdb-1.0.4rc2.dist-info/WHEEL,sha256=5lUBBrejkSqX855YGfcFzxgA73ghQLFlpKOzNqHW-FU,237
+python_ssdb-1.0.4rc2.dist-info/top_level.txt,sha256=xEnud1pc-bK2a-VkAQhr1NnowyUwy5xk4CIssqHxXB8,5
+python_ssdb-1.0.4rc2.dist-info/RECORD,,
+python_ssdb-1.0.4rc2.dist-info/METADATA,sha256=4EPSc8OaRFtvk50IxC3Sst5EAoZbpq2s3xyocWQxBd4,1879
+python_ssdb-1.0.4rc2.dist-info/NOTICE.md,sha256=8XYkbPT8MEjerAbFpYFGgzhsr-qYAy8aK8MRdDngDjo,12626
+ssdb/client.pypy39-pp73-x86-linux-gnu.so,sha256=gdTqsEJr7oU7ylac3bfqhyp6PdF8Ou3VsgP9gnZZsKs,168648
+ssdb/connection.pypy39-pp73-x86-linux-gnu.so,sha256=rOn8Rtuh7kZVP4hVVvvAByETH4ONiE0awVexE8DRN2o,256984
+ssdb/__init__.py,sha256=ansgW9TPgHgTdlUHnUoGHr_7lUkFoV7gbU_hWFnEYeM,49
+ssdb/core/encode.pypy39-pp73-x86-linux-gnu.so,sha256=0r2wClA3DoqyuNc0ZWfjN4oPhLhXcjPYRVaYfAft4g8,53332
+ssdb/core/interface.pypy39-pp73-x86-linux-gnu.so,sha256=VuLJQW4Q2vFO7l7nIvy6Xd9gIZPe25jpLyB3Rcrfh9Q,250492
+ssdb/core/response.pypy39-pp73-x86-linux-gnu.so,sha256=lSRMiLQ5L2eXLhTCzBAM9YqpLpS5GiyZZ1TpxK38oZ4,57888
+ssdb/core/parser.pypy39-pp73-x86-linux-gnu.so,sha256=c00AhX0SHzjL8oEAIdSoHZ6oT4b_nUey1--bia-dOck,192748
+ssdb/core/__init__.py,sha256=n__2vmR4Et6DqMuS7elul3uDL0gUBTk2NAPmDc4ZNUA,74
+ssdb/asyncio/client.pypy39-pp73-x86-linux-gnu.so,sha256=5iG0ilsJdfzOQOKcXlJf0e2qjn8I3CrrnYEWA0PPCp4,228104
+ssdb/asyncio/connection.pypy39-pp73-x86-linux-gnu.so,sha256=ZePtL2H_IlLhmnpOV18XudpLK56yIuafCWAUDWR3N0U,330748
+ssdb/asyncio/__init__.py,sha256=alfaymH8hPIoaiw_S4JBwktCa-h7Cdg2s8_2iAQ3IiU,57
