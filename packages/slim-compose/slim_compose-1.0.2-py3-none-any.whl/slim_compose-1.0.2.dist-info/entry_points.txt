@@ -1,0 +1,2 @@
+[console_scripts]
+slim-compose = slim_compose:main
