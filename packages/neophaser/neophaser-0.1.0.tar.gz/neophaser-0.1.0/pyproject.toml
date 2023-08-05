@@ -1,0 +1,29 @@
+[project]
+name = "neophaser"
+version = "0.1.0"
+authors = [
+  { name="8o-COLLECTIVE", email="ops@8oc.org" },
+]
+description = "NEOPHASER; or, audio effects as applied to the retina - an application for applying audio effects to image and video."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+	"numpy",
+	"opencv-python",
+	"pyqt6",
+	"pedalboard",
+	"imageio",
+]
+
+[project.urls]
+homepage = "https://neophaser.library.8oc.org"
+repository = "https://gitlab.com/8o-collective/neophaser"
+
+[build-system]
+requires = ["setuptools", "wheel"]
