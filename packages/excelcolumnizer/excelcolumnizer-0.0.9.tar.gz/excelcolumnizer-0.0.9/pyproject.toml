@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "excelcolumnizer"
+version = "0.0.9"
+authors = [
+  { name="Sukmock Lee", email="smlee@inha.ac.kr" },
+]
+description = "A small packages that helps you recover columns of Excel data converted from PDF files."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Topic :: Office/Business :: Financial :: Point-Of-Sale",
+    "Topic :: Office/Business :: Financial :: Spreadsheet",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: End Users/Desktop",
+    "Development Status :: 5 - Production/Stable"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/generateNscore/excelcolumnizer"
