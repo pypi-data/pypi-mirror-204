@@ -1,0 +1,3 @@
+[console_scripts]
+crowdcores-node = crowdcores_node.manager:main
+crowdcores-node-runner = crowdcores_node.node:main
