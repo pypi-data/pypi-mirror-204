@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: distributed-transcoder-common
+Version: 0.2.10
+Summary: A common library for for the distributed transcoder project
+Author: Eric Volpert
+Author-email: ericvolp12@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: tortoise-orm (>=0.19.3,<0.20.0)
