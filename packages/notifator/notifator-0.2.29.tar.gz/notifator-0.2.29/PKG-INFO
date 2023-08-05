@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: notifator
+Version: 0.2.29
+Summary: Automatically created environment for python package
+Home-page: UNKNOWN
+Author: jaromrax
+Author-email: jaromrax@gmail.com
+License: GPL2
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Project: notifator
+
+*in development*
+
+
+will merge
+
+- rpihat
+- DBUS messaging
+- myservice2
+
+## Module: telegram
+
+
+## Installation
+
+```
+sudo -H apt install python3-dbus
+pip3 install dbus-python
+```
+
+
