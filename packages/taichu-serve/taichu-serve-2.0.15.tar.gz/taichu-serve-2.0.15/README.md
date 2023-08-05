@@ -1,0 +1,76 @@
+
+
+## Quick Start
+
+### 环境要求
+-   Python 3.6+
+-   Docker
+
+
+### 1. 安装
+
+```bash
+pip3 install taichu-serve -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+### 2. 初始化项目
+
+```bash
+taichu_serve init
+```
+执行后会在当前目录下生成一个名为`project`的文件夹
+
+### 3. 启动模型服务
+
+```bash
+cd project
+taichu_serve run
+```
+
+### 4. 发起预测请求
+
+```bash
+# 测试http请求
+python3 test/http_client.py
+# 测试grpc请求
+python3 test/grpc_client.py
+# 测试流式请求
+python3 test/stream_grpc_client.py
+```
+
+### 5. 构建可部署的镜像
+
+```bash
+taichu_serve build --from_image {你的基础镜像} 
+# 例如 taichu_serve build --from_image python:3.7
+```
+命令成功后会在本地生成一个可在平台部署的镜像,镜像名关注命令行输出的`Successfully built`后的镜像名
+
+### 6. 上传镜像到平台
+本地测试完毕后，将镜像上传到平台swr仓库
+```bash
+docker tag {镜像名} {平台仓库地址}/{镜像名}
+docker push {平台仓库地址}/{镜像名}
+```
+
+
+## 项目目录结构说明
+执行`taichu_serve init`后，会在当前目录下生成一个名为`project`的文件夹，目录结构如下：
+```bash
+project
+├── test                            # 可选，测试脚本文件夹
+│       ├── grpc_client.py          # 可选，grpc测试客户端
+│       ├── http_client.py          # 可选，http测试客户端
+│       └── stream_grpc_client.py   # 可选，流式grpc测试客户端
+├── customize_service.py            # 必填，模型服务自定义逻辑
+├── models                          # 可选，模型文件夹
+├── config.ini                      # 可选，项目配置文件
+├── requirements.txt                # 可选，项目pip依赖
+├── dependencies.txt                # 可选，项目apt依赖
+├── launch.sh                       # 可选，项目启动脚本,请不要修改内容
+└── Dockerfile                      # 可选，项目dockerfile
+```
+
+
+
+
