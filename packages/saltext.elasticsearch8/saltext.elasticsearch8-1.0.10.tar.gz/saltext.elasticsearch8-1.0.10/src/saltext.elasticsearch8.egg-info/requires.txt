@@ -1,0 +1,27 @@
+salt>=3003
+
+[dev]
+nox==2021.6.12
+pre-commit==2.13.0
+pylint
+SaltPyLint
+
+[docs]
+enchant
+sphinx
+sphinx-copybutton
+sphinx-prompt
+sphinxcontrib-spelling
+
+[docs:python_version < "3.8"]
+importlib_metadata
+
+[docsauto]
+sphinx-autobuild
+
+[tests]
+Jinja2
+pytest
+pytest-salt-factories
+elasticsearch>=8.6.0
+mock>=5.0.1

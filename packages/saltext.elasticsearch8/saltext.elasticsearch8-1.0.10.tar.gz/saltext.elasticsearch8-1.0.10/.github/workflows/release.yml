@@ -1,0 +1,70 @@
+name: Create Release
+
+# Trigger the workflow when a pull request is merged to main branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create_release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    concurrency: release
+    permissions: write-all
+    steps:
+      # Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # Set up Git
+      - name: Set up Git
+        run: |
+          git config --global user.name "Cesar Sanchez"
+          git config --global user.email "cesan3@gmail.com"
+
+      - name: tagpr
+        id: tagpr
+        uses: Songmu/tagpr@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        if: "steps.tagpr.outputs.tag != ''"
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        if: "steps.tagpr.outputs.tag != ''"
+        run: |
+          python -m pip install --upgrade pip
+          pip install build
+          pip install python-semantic-release
+          echo "__version__ = ${{ steps.tagpr.outputs.tag }}" > src/saltext/elasticsearch8/version.py
+
+      - name: Check version to publish
+        if: "steps.tagpr.outputs.tag != ''"
+        run: |
+          python setup.py --version
+
+      - name: Build package
+        if: "steps.tagpr.outputs.tag != ''"
+        run: python -m build
+
+      - name: Publish package
+        id: publish
+        uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
+        if: "steps.tagpr.outputs.tag != ''"
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
+
+      - name: update semver
+        id: semver
+        uses: haya14busa/action-update-semver@v1
+        if: "steps.tagpr.outputs.tag != ''"
+        with:
+          tag: ${{ steps.tagpr.outputs.tag }}
