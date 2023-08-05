@@ -1,0 +1,10 @@
+fastapi
+pydantic
+sqlalchemy
+pandas
+
+[dev]
+check-manifest
+
+[test]
+httpx
