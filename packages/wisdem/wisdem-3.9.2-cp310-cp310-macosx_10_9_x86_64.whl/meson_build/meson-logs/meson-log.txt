@@ -1,0 +1,256 @@
+Build started at 2023-04-19T19:33:32.122308
+Main binary: /private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/build-env-1rgrv341/bin/python
+Build Options: -Dpython.purelibdir=. -Dpython.platlibdir=. -Dprefix=/Users/runner/work/WISDEM/WISDEM/meson_build
+Python system: Darwin
+The Meson build system
+Version: 1.1.0
+Source dir: /Users/runner/work/WISDEM/WISDEM
+Build dir: /Users/runner/work/WISDEM/WISDEM/meson_build
+Build type: native build
+Project name: wisdem
+Project version: undefined
+-----
+Detecting compiler via: cc --version
+compiler returned <Popen: returncode: 0 args: ['cc', '--version']>
+compiler stdout:
+Apple clang version 14.0.0 (clang-1400.0.29.202)
+Target: x86_64-apple-darwin21.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode_14.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+compiler stderr:
+
+Running command: cc -E -dM -
+-----
+Detecting linker via: cc -Wl,--version
+linker returned <Popen: returncode: 1 args: ['cc', '-Wl,--version']>
+linker stdout:
+
+linker stderr:
+ld: unknown option: --version
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+-----
+Detecting Apple linker via: cc -Wl,-v
+linker stdout:
+
+linker stderr:
+@(#)PROGRAM:ld  PROJECT:ld64-820.1
+BUILD 20:07:01 Nov  7 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/local/lib
+	/Applications/Xcode_14.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Applications/Xcode_14.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (clang 14.0.0 "Apple clang version 14.0.0 (clang-1400.0.29.202)")
+C linker for the host machine: cc ld64 820.1
+-----
+Detecting compiler via: cc --version
+compiler returned <Popen: returncode: 0 args: ['cc', '--version']>
+compiler stdout:
+Apple clang version 14.0.0 (clang-1400.0.29.202)
+Target: x86_64-apple-darwin21.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode_14.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+compiler stderr:
+
+Running command: cc -E -dM -
+-----
+Detecting linker via: cc -Wl,--version
+linker returned <Popen: returncode: 1 args: ['cc', '-Wl,--version']>
+linker stdout:
+
+linker stderr:
+ld: unknown option: --version
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+-----
+Detecting Apple linker via: cc -Wl,-v
+linker stdout:
+
+linker stderr:
+@(#)PROGRAM:ld  PROJECT:ld64-820.1
+BUILD 20:07:01 Nov  7 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/local/lib
+	/Applications/Xcode_14.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Applications/Xcode_14.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (clang 14.0.0 "Apple clang version 14.0.0 (clang-1400.0.29.202)")
+C linker for the build machine: cc ld64 820.1
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Running command: gfortran -E -dM -
+-----
+Detecting linker via: gfortran -Wl,--version
+linker returned <Popen: returncode: 1 args: ['gfortran', '-Wl,--version']>
+linker stdout:
+
+linker stderr:
+collect2 version 12.2.0
+/usr/bin/ld -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/ -dynamic -arch x86_64 -macosx_version_min 10.9 -o a.out -L/usr/local/Cellar/gcc/12.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/12 -L/usr/local/Cellar/gcc/12.2.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/12.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/12/../../.. --version -lemutls_w -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/12 -rpath /usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/12.2.0/lib/gcc/current
+ld: unknown option: --version
+collect2: error: ld returned 1 exit status
+
+-----
+Detecting Apple linker via: gfortran -Wl,-v
+linker stdout:
+
+linker stderr:
+collect2 version 12.2.0
+/usr/bin/ld -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/ -dynamic -arch x86_64 -macosx_version_min 10.9 -o a.out -L/usr/local/Cellar/gcc/12.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/12 -L/usr/local/Cellar/gcc/12.2.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/12.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/12/../../.. -v -lemutls_w -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/12 -rpath /usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/12.2.0/lib/gcc/current
+@(#)PROGRAM:ld  PROJECT:ld64-820.1
+BUILD 20:07:01 Nov  7 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/12
+	/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc
+	/usr/local/Cellar/gcc/12.2.0/lib/gcc/current
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks/
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+collect2: error: ld returned 1 exit status
+
+Sanity testing Fortran compiler: gfortran
+Is cross compiler: False.
+Sanity check compiler command line: gfortran sanitycheckf.f90 -o sanitycheckf.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+ld: warning: dylib (/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/libgfortran.dylib) was built for newer macOS version (12.0) than being linked (10.9)
+ld: warning: dylib (/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/libquadmath.dylib) was built for newer macOS version (12.0) than being linked (10.9)
+
+-----
+Running test binary command:  /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/sanitycheckf.exe
+Fortran compiler for the host machine: gfortran (gcc 12.2.0 "GNU Fortran (Homebrew GCC 12.2.0) 12.2.0")
+Fortran linker for the host machine: gfortran ld64 820.1
+Running compile:
+Working directory:  /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmpt96q4l5b
+Command line:  cc /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmpt96q4l5b/testfile.c -o /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmpt96q4l5b/output.exe -O0 -Werror=implicit-function-declaration -lm -Wl,-undefined,dynamic_lookup 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+Program python found: YES (/private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/build-env-1rgrv341/bin/python)
+Searching for 'python-3.10' via pkgconfig lookup in LIBPC
+Pkg-config binary for 1 is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: /usr/local/bin/pkg-config (0.29.2)
+Determining dependency 'python-3.10' with pkg-config executable '/usr/local/bin/pkg-config'
+env[PKG_CONFIG_LIBDIR]: /Library/Frameworks/Python.framework/Versions/3.10/lib/pkgconfig
+env[PKG_CONFIG_PATH]: 
+Called `/usr/local/bin/pkg-config --modversion python-3.10` -> 0
+stdout:
+3.10
+-----------
+env[PKG_CONFIG_LIBDIR]: /Library/Frameworks/Python.framework/Versions/3.10/lib/pkgconfig
+env[PKG_CONFIG_PATH]: 
+Called `/usr/local/bin/pkg-config --cflags python-3.10` -> 0
+stdout:
+-I/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10
+-----------
+env[PKG_CONFIG_LIBDIR]: /Library/Frameworks/Python.framework/Versions/3.10/lib/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/local/bin/pkg-config --libs python-3.10` -> 0
+env[PKG_CONFIG_LIBDIR]: /Library/Frameworks/Python.framework/Versions/3.10/lib/pkgconfig
+env[PKG_CONFIG_PATH]: 
+Called `/usr/local/bin/pkg-config --libs python-3.10` -> 0
+meson.build:39: WARNING: Project targets '>= 0.60' but uses feature deprecated since '0.55.0': ExternalProgram.path. use ExternalProgram.full_path() instead
+Message: /private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/build-env-1rgrv341/bin/python
+Message: /Users/runner/work/WISDEM/WISDEM/meson_build/./
+Running command: /private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/build-env-1rgrv341/bin/python -c 'import os; os.chdir(".."); import numpy; print(numpy.get_include())'
+--- stdout ---
+/private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/build-env-1rgrv341/lib/python3.10/site-packages/numpy/core/include
+
+--- stderr ---
+
+
+Build targets in project: 5
+WARNING: Deprecated features used:
+ * 0.55.0: {'ExternalProgram.path'}
+
+wisdem undefined
+
+  User defined options
+    prefix           : /Users/runner/work/WISDEM/WISDEM/meson_build
+    python.platlibdir: .
+    python.purelibdir: .
+
+Found ninja-1.11.1.git.kitware.jobserver-1 at /private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/build-env-1rgrv341/bin/ninja
+Running compile:
+Working directory:  /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmpvb_rvo1c
+Command line:  gfortran /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmpvb_rvo1c/testfile.f90 -o /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmpvb_rvo1c/output.obj -c -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/local/Cellar/gcc/12.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/12/
+programs: =/usr/local/Cellar/gcc/12.2.0/bin/../libexec/gcc/x86_64-apple-darwin21/12/:/usr/local/Cellar/gcc/12.2.0/bin/../libexec/gcc/:/usr/local/Cellar/gcc/12.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/12/../../../../../../x86_64-apple-darwin21/bin/x86_64-apple-darwin21/12/:/usr/local/Cellar/gcc/12.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/12/../../../../../../x86_64-apple-darwin21/bin/
+libraries: =/usr/local/Cellar/gcc/12.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/12/:/usr/local/Cellar/gcc/12.2.0/bin/../lib/gcc/current/gcc/:/usr/local/Cellar/gcc/12.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/12/../../../../../../x86_64-apple-darwin21/lib/x86_64-apple-darwin21/12/:/usr/local/Cellar/gcc/12.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/12/../../../../../../x86_64-apple-darwin21/lib/:/usr/local/Cellar/gcc/12.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/12/../../../x86_64-apple-darwin21/12/:/usr/local/Cellar/gcc/12.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/12/../../../
+
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmpxldxcfvp
+Command line:  cc /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmpxldxcfvp/testfile.c -o /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmpxldxcfvp/output.obj -c -O0 -Werror=implicit-function-declaration -Werror=unknown-warning-option -Werror=unused-command-line-argument -Werror=ignored-optimization-argument --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ programs: =/Applications/Xcode_14.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+libraries: =/Applications/Xcode_14.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0
+
+Compiler stderr:
+ 
+!meson_ci!/ci_include "/Users/runner/work/WISDEM/WISDEM/meson_build/build.ninja"
