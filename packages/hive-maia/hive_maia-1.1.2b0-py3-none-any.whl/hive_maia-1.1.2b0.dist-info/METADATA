@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: hive-maia
+Version: 1.1.2b0
+Summary: Python Package to support Deep Learning data preparation, pre-processing. training, result visualization and model deployment across different frameworks (nnUNet, nnDetection, MONAI).
+Home-page: https://github.com/MAIA-KTH/Hive.git
+Author: Simone Bendazzoli
+Author-email: simben@kth.se
+License: GPLv3
+Project-URL: Documentation, https://hive-maia.readthedocs.io
+Project-URL: Source, https://github.com/MAIA-KTH/Hive
+Project-URL: Tracker, https://github.com/MAIA-KTH/Hive/issues
+Keywords: deep learning,image segmentation,medical image analysis,medical image segmentation,object detection
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: coloredlogs
+Requires-Dist: dicom2nifti
+Requires-Dist: loguru
+Requires-Dist: matplotlib
+Requires-Dist: nibabel
+Requires-Dist: numpy
+Requires-Dist: pydicom
+Requires-Dist: pydicom-seg
+Requires-Dist: pynvml
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: SimpleITK
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+
+# Hive
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/SimoneBendazzoli93/Hive/main/images/MAI_A_logo.png" width="50%" alt='Hive'>
+</p>
+
+[![Documentation Status](https://readthedocs.org/projects/hive-maia/badge/?version=latest)](https://hive-maia.readthedocs.io/en/latest/?badge=latest)
+![Version](https://img.shields.io/badge/Hive-v1.1-blue)
+[![License](https://img.shields.io/badge/license-GPL%203.0-green.svg)](https://opensource.org/licenses/GPL-3.0)
+![Python](https://img.shields.io/badge/python-3.8+-orange)
+![CUDA](https://img.shields.io/badge/CUDA-10.1%2F10.2%2F11.0-green)
+
+## What is Hive?
+
+Hive is a Python package to support Deep Learning data preparation, pre-processing. training, result visualization and
+model deployment across different frameworks ([nnUNet](https://github.com/MIC-DKFZ/nnUNet)
+, [nnDetection](https://github.com/MIC-DKFZ/nnDetection), [MONAI](https://monai.io/) ).
+

@@ -1,0 +1,12 @@
+[console_scripts]
+Hive_convert_DICOM_dataset_to_NIFTI_dataset = Hive_scripts.Hive_convert_DICOM_dataset_to_NIFTI_dataset:main
+Hive_convert_semantic_to_instance_segmentation = Hive_scripts.Hive_convert_semantic_to_instance_segmentation:main
+Hive_create_subset = Hive_scripts.Hive_create_subset:main
+Hive_extract_experiment_predictions = Hive_scripts.Hive_extract_experiment_predictions:main
+Hive_order_data_folder = Hive_scripts.Hive_order_data_folder:main
+Hive_run_pipeline_from_file = Hive_scripts.Hive_run_pipeline_from_file:main
+nndet_compute_metric_results = Hive_scripts.nndet_compute_metric_results:main
+nndet_create_pipeline = Hive_scripts.nndet_create_pipeline:main
+nndet_prepare_data_folder = Hive_scripts.nndet_prepare_data_folder:main
+nndet_run_preprocessing = Hive_scripts.nndet_run_preprocessing:main
+nndet_run_training = Hive_scripts.nndet_run_training:main
