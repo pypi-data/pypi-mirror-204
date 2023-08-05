@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: ccDemo
+Version: 0.1.2
+Summary: Demo for convex clustering
+Home-page: https://github.com/canhhao/convexclustering
+Author: Canh Hao Nguyen
+Author-email: canhhao@gmail.com
+License: MIT
+Description: Showing convex clustering (with uniform weight) only produces circular clusters
+Keywords: convex clustering
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
