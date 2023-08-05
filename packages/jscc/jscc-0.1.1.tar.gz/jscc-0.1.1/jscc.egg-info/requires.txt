@@ -1,0 +1,17 @@
+json-merge-patch
+jsonref>=1
+jsonschema
+requests
+rfc3339-validator
+rfc3986-validator
+
+[docs]
+furo
+sphinx
+sphinx-autobuild
+
+[test]
+coveralls
+pytest
+pytest-cov
+pytest-vcr
