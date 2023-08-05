@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/goosetest/__init__.py
+src/goosetest/main.py
+src/goosetest.egg-info/PKG-INFO
+src/goosetest.egg-info/SOURCES.txt
+src/goosetest.egg-info/dependency_links.txt
+src/goosetest.egg-info/top_level.txt
