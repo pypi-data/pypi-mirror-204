@@ -1,0 +1,7 @@
+setup.py
+chatlearn/__init__.py
+chatlearn.egg-info/PKG-INFO
+chatlearn.egg-info/SOURCES.txt
+chatlearn.egg-info/dependency_links.txt
+chatlearn.egg-info/not-zip-safe
+chatlearn.egg-info/top_level.txt
