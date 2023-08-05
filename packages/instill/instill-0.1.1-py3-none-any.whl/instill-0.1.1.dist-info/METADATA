@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: instill
+Version: 0.1.1
+Summary: Instill drops of data in source files
+Author-email: Simone Campagna <simone.campagna11@gmail.com>
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: pyyaml
+Requires-Dist: argcomplete
+Provides-Extra: develop
+Requires-Dist: bumpver ; extra == 'develop'
+Requires-Dist: pytest ; extra == 'develop'
+Requires-Dist: pytest-sugar ; extra == 'develop'
+Requires-Dist: build ; extra == 'develop'
+Requires-Dist: twine ; extra == 'develop'
+
