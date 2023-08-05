@@ -1,0 +1,12 @@
+servir/__init__.py,sha256=ytqijCSfv0pFqJEnOoxw8KuwlL5WAS9KAkbwqxXRl6w,435
+servir/_background_server.py,sha256=TzNBnznRjgbBrEHzqJNenjOE76I5v78RvwrGNlF3bG0,3069
+servir/_protocols.py,sha256=CkVoZr9nrTtRMDVNOHeMFO3FKz7j50JFapLPV71MmFU,935
+servir/_provide.py,sha256=0bFxT7Gp12M2TgFx4cwqlZ-rLH-Tkp45iEq6CbgJfn8,3502
+servir/_resources.py,sha256=ZWdpNoPYrzVRIkObWDiOgDOcBuf1mVQJMXfFCi6GjQ4,5936
+servir/_tilesets.py,sha256=VjTtluszhHshbg07P609mTNfcV880XbfCAsshR9S9YU,6261
+servir/_util.py,sha256=FzOhA_52PnvGMNSJFH1LFL0PnllbGu8gvjuQstMwbwU,4739
+servir/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+servir-0.0.4.dist-info/METADATA,sha256=1OzoU8q8K6Nd-DVPbWAcyqLhgP6zwhMMbpBO56l-KjQ,2522
+servir-0.0.4.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+servir-0.0.4.dist-info/licenses/LICENSE,sha256=JM-DWhWjrq9yyOjf6n6yVVoHjZZZ11akcSAftPraLbE,1068
+servir-0.0.4.dist-info/RECORD,,
