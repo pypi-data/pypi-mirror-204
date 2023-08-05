@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: nerv
+Version: 0.1.1
+Summary: Neuroimaging Results Visualization
+Home-page: https://github.com/rmanaem/nerv
+Author: rmanaem
+Author-email: <rmanaem@protonmail.ch>
+License: MIT
+Keywords: python,dash,pandas,data visualization,plotly,neuroscience
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Brotli (==1.0.9)
+Requires-Dist: Flask-Compress (==1.11)
+Requires-Dist: Flask (==2.0.3)
+Requires-Dist: Jinja2 (==3.0.3)
+Requires-Dist: MarkupSafe (==2.1.1)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: Werkzeug (==2.0.3)
+Requires-Dist: cfgv (==3.3.1)
+Requires-Dist: click (==8.0.4)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: dash-bootstrap-components (==1.0.3)
+Requires-Dist: dash-bootstrap-templates (==1.0.5)
+Requires-Dist: dash-core-components (==2.0.0)
+Requires-Dist: dash-html-components (==2.0.0)
+Requires-Dist: dash-table (==5.0.0)
+Requires-Dist: dash (==2.3.0)
+Requires-Dist: distlib (==0.3.6)
+Requires-Dist: filelock (==3.11.0)
+Requires-Dist: identify (==2.5.22)
+Requires-Dist: itsdangerous (==2.1.1)
+Requires-Dist: nodeenv (==1.7.0)
+Requires-Dist: numpy (==1.22.3)
+Requires-Dist: pandas (==1.4.1)
+Requires-Dist: platformdirs (==3.2.0)
+Requires-Dist: plotly (==5.6.0)
+Requires-Dist: pre-commit (==3.2.2)
+Requires-Dist: pytest (==7.3.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2022.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: tenacity (==8.0.1)
+Requires-Dist: virtualenv (==20.21.0)
+
+
+<div align="center">
+
+# Neuroimaging Results Visualization
+
+<div>
+    <a href="https://github.com/rmanaem/nerv/actions/workflows/test.yaml">
+        <img src="https://img.shields.io/github/actions/workflow/status/neurobagel/api/test.yaml?color=BDB76B&label=test&style=flat-square">
+    </a>
+    <a href="https://www.python.org/">
+        <img src="https://img.shields.io/badge/python-3.10-4682B4?style=flat-square" alt="Python">
+    </a>
+    <a href="LICENSE">
+        <img src="https://img.shields.io/github/license/neurobagel/api?color=CD5C5C&style=flat-square" alt="GitHub license">
+    </a>
+</div>
+<br>
+</div>
+
+Neuroimaging Results Visualization (NeRV) is a web interface developed in Python using [Plotly Dash](https://dash.plotly.com/),  [Dash Bootstrap Components](https://dash-bootstrap-components.opensource.faculty.ai/), and [pandas](https://pandas.pydata.org/) for visualization of neuroimaging results obtained from continuous testing of neuroimaging data across software pipelines.
+
+______________________________________________________________________
+
+## Getting Started
+
+### Installation
+
+```bash
+pip install nerv
+```
+
+In order for NeRV to generate and populate plots the underlying app requires access to the directory containing the datasets. The path to directory can be passed to the app module as input to the start function.
+
+### Example usage
+
+```python
+from nerv import app
+
+app.start("path-to-data-directory")
+```
+
+After executing the file containing the above code snippet, a local server is started at port 8050 (by default). You can access the running NeRV application using a browser through the URL `localhost:8050`.
+
+<p alt="ui" align="center"><a href="https://github.com/rmanaem/nerv/blob/master/img/ui.png"><img src="https://github.com/rmanaem/nerv/blob/master/img/ui.png?raw=true"/></a></p>
+
+______________________________________________________________________
+
+## Deployment
+
+_Work in progress_
+
+______________________________________________________________________
+
+## License
+
+This project is licensed under the terms of [MIT License](LICENSE).
+
+
