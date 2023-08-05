@@ -1,0 +1,2 @@
+[console_scripts]
+buge = buge.main:main
