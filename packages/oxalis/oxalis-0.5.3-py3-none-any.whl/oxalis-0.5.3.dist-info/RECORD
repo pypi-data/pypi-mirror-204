@@ -1,0 +1,11 @@
+oxalis/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+oxalis/amqp.py,sha256=5P8CgU51gvynErJyvbYWLFL7PpIJom0W1OLf0SW3Az8,10949
+oxalis/base.py,sha256=El8j0_o9wAczmajbT0KFu-imTVVjWFLv1o2Disn9ZiA,6836
+oxalis/beater.py,sha256=KbmKhzCrE9WAjeJeorJoChTRdrnv8bHZZlxkhh1QOsM,1654
+oxalis/kafka.py,sha256=qfQ5kf4lFCcHVcpvzKaGLpjHmL0s73RjiOrSl7EhDZ8,3621
+oxalis/pool.py,sha256=m4MaDQ5wVBdKZt6P3SHAlSL8amFIHRg_mE3r9bJwjSU,3506
+oxalis/redis.py,sha256=1dCXtuPf8nKeNQsWi8O4g1BoausQZPcu5Gq8XsA_zlc,6575
+oxalis-0.5.3.dist-info/LICENSE,sha256=GMdeblq3O5KovaoO6RoFrQghneypZkbMP_VuiPCtyCc,1065
+oxalis-0.5.3.dist-info/METADATA,sha256=pqWrC1_ib0E0aUp4GSm1KhXKYpgri0x_-9lxmuBZl6g,8003
+oxalis-0.5.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+oxalis-0.5.3.dist-info/RECORD,,
