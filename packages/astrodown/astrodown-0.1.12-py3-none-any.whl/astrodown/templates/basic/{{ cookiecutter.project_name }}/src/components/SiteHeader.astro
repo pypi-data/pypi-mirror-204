@@ -1,0 +1,105 @@
+---
+import type { GraphinData } from "@astrodown/graph";
+import Network from "./Network.astro";
+import Link from "./shared/Link.astro";
+import Modal from "./shared/Modal";
+import { getGraphData } from "@lib/graph";
+import { getCollection } from "astro:content";
+import ArrowDown from "./shared/ArrowDown.astro";
+
+interface Props {
+  graphData?: GraphinData;
+}
+
+let { graphData } = Astro.props;
+if (!graphData) {
+  graphData = await getGraphData();
+}
+
+const analysis = (await getCollection("analysis")).map((entry) => ({
+  title: entry.data.title,
+  date: entry.data.date,
+  slug: entry.slug,
+}));
+analysis.sort((a, b) => {
+  return b.date.getDate() - a.date.getDate();
+});
+
+const data = (await getCollection("data")).map((entry) => ({
+  title: entry.data.title,
+  slug: entry.slug,
+}));
+---
+
+<nav class="navbar bg-base-100 shadow-md top-0 sticky z-10">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16"></path></svg
+        >
+      </label>
+      <ul
+        tabindex="0"
+        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+      >
+        <li><a href="/analysis">Analysis</a></li>
+        <li><a href="/data">Data</a></li>
+      </ul>
+    </div>
+
+    <a class="btn btn-ghost normal-case text-xl" href="/"
+      >{{ cookiecutter.project_title }}</a
+    >
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li tabindex="0">
+        <a href="/analysis">
+          Analysis
+          <ArrowDown />
+        </a>
+        <ul class="p-2">
+          {
+            analysis.map((entry) => (
+              <li class="text-sm bg-base-100">
+                <a href={`/analysis/${entry.slug}`}>{entry.title}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </li>
+      <li tabindex="1">
+        <a href="/data">
+          Data
+          <ArrowDown />
+        </a>
+        <ul class="p-2">
+          {
+            data.map((entry) => (
+              <li class="text-sm bg-base-100">
+                <a href={`/data/${entry.slug}`}>{entry.title}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a>
+      <Modal client:load className="bg-black max-w-4xl" network>
+        <Network data={graphData} />
+      </Modal>
+    </a>
+  </div>
+</nav>
