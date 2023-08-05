@@ -1,0 +1,17 @@
+xlrd
+pyyaml
+pydot
+pandas<2.0,>=1.1
+amply>=0.1.4
+networkx
+flatten_dict
+openpyxl
+pydantic
+
+[:python_version < "3.7"]
+importlib_resources
+
+[testing]
+setuptools
+pytest
+pytest-cov
