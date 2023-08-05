@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: instill
+Version: 0.1.1
+Summary: Instill drops of data in source files
+Author-email: Simone Campagna <simone.campagna11@gmail.com>
+Requires-Python: >=3.6
+Provides-Extra: develop
+License-File: LICENSE

@@ -1,0 +1,9 @@
+pyyaml
+argcomplete
+
+[develop]
+bumpver
+pytest
+pytest-sugar
+build
+twine

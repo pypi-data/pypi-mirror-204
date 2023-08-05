@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+
+import sys
+import tempfile
+from pathlib import Path
+
+# drop: section source
+# drop: start drop
+# drop: - formula="api"
+# drop: - type="text"
+# drop: - implementation="memory"
+# drop: end drop
+
+def main():
+    name = 'wget-1.9.1.tar.gz'
+    if not drop.is_defined(name):
+        print(f'drop {name!r} not defined')
+        sys.exit(1)
+    if not drop.is_set(name):
+        print(f'drop {name!r} defined but not set')
+        sys.exit(2)
+    bsp = drop.get('wget-1.9.1.tar.gz')
+    with tempfile.TemporaryDirectory() as tmpd:
+        out_path = Path(tmpd) / bsp.name
+        print(f'saving file {out_path}')
+        bsp.write_file(out_path)
+        out_dir = Path(tmpd) / (Path(__file__).name + '-wget')
+        print(f'extracting dir {out_dir}')
+        bsp.untar(out_dir)
+        for f in out_dir.glob('**/*'):
+            print(' +', f)
+    print('all done.')
+
+if __name__ == '__main__':
+    main()
+
+# drop: section data
+# drop: start wget-1.9.1.tar.gz
+# drop: - formula="url"
+# drop: - type="bytes"
+# drop: - url="https://ftp.gnu.org/gnu/wget/wget-1.9.1.tar.gz"
+# drop: end wget-1.9.1.tar.gz
