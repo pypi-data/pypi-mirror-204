@@ -1,0 +1,7 @@
+requests
+
+[test]
+lorem
+pkgparser
+pytest
+pytest-cov
