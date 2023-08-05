@@ -1,0 +1,13 @@
+django
+django-handyhelpers
+psutil
+
+[dev]
+bandit
+black
+build
+mypy
+pylint
+pytest
+pytest-cov
+pytest-django
