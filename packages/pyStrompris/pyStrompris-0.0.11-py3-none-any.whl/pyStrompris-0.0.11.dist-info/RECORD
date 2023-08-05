@@ -1,0 +1,11 @@
+strompris/PriceSource.py,sha256=KeAIStmBLcnI-5f6wYJGQd78nP2a0crSFTKw4tIp2pU,4968
+strompris/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+strompris/common.py,sha256=dYV9PMYdCeVKYZvlMdX0n-fR0fXdKkqhP1KbSuHCouQ,4588
+strompris/const.py,sha256=4DI5ykA5Pf58TOZZHxHK3MsDPLNTvsysUYRVfO2BamM,109
+strompris/schemas.py,sha256=WkQ0Xg7QjijIfAjXZ5-TyBXqV3PkEtHxiCBjSVqOLMA,2121
+strompris/strompris.py,sha256=DgtyaRUl3RE4RgOmLUWELAKeAJWrDNBcjREU-0KnPq0,8252
+pyStrompris-0.0.11.dist-info/LICENSE.md,sha256=UZWwqkgAzmKfbhurjQsm6lrsmdyatSQaOOsnsJcCZzE,1072
+pyStrompris-0.0.11.dist-info/METADATA,sha256=0mxGQpwNaB4tV-mydU0IkagKMRz3vh-X_WIh5nbBdQ8,1365
+pyStrompris-0.0.11.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyStrompris-0.0.11.dist-info/top_level.txt,sha256=G9WTeE2wQ3MEr95Wk8MOmBFuXJTGZT2Ef6oP2RAHNAw,10
+pyStrompris-0.0.11.dist-info/RECORD,,
