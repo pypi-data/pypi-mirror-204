@@ -1,0 +1,6 @@
+funnylib.py
+setup.py
+Funnylib.egg-info/PKG-INFO
+Funnylib.egg-info/SOURCES.txt
+Funnylib.egg-info/dependency_links.txt
+Funnylib.egg-info/top_level.txt
