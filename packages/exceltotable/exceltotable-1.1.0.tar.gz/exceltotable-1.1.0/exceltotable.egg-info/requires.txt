@@ -1,0 +1,6 @@
+validators
+beautifulsoup4
+argparse
+sqlalchemy
+pandas
+numpy
