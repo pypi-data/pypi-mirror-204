@@ -1,0 +1,11 @@
+README.rst
+setup.py
+gpt2ppl/__init__.py
+gpt2ppl/demo_doc.py
+gpt2ppl/demo_sent.py
+gpt2ppl/gpt2ppl.py
+gpt2ppl_zh.egg-info/PKG-INFO
+gpt2ppl_zh.egg-info/SOURCES.txt
+gpt2ppl_zh.egg-info/dependency_links.txt
+gpt2ppl_zh.egg-info/requires.txt
+gpt2ppl_zh.egg-info/top_level.txt
