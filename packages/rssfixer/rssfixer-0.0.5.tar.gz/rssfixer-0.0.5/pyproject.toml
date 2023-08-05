@@ -1,0 +1,39 @@
+[project]
+name = "rssfixer"
+version = "0.0.5"
+authors = [
+  { name="Peter Reuterås", email="peter@reuteras.net" },
+]
+description = "Generate RSS feed for Wordpress blog without it."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "beautifulsoup4",
+    "feedgen",
+    "requests",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "pytest",
+    "pylint",
+    "twine",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/reuteras/rssfixer"
+"Bug Tracker" = "https://github.com/reuteras/rssfixer/issues"
+
+[project.scripts]
+rssfixer = "rssfixer:main"
