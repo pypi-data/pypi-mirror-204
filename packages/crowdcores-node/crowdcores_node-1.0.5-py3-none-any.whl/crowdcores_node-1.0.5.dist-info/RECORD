@@ -1,0 +1,10 @@
+crowdcores_node/__init__.py,sha256=e6Ks1LTMVYD5fR21U_39j63Q09ibqhinNo1h9d828Do,47
+crowdcores_node/crowdcores_node.py,sha256=Sambf6UgF__wkEQC9K4apJVjNlsbb8ifSRnOJ8_ldg8,4026
+crowdcores_node/manager.py,sha256=lNy8GrR-v3KLUH_stjK5ISl7P2sPjBZqy0BVIt6iRuQ,2690
+crowdcores_node/node.py,sha256=rdONgi8vbUiBevrxvAWNEkvVMjq_VFlZTYl3oE9jywA,3989
+crowdcores_node-1.0.5.dist-info/LICENSE.txt,sha256=JbvgXb8XzkvtPlfXmT5NMqgG9gmOCmK4FpcQERV_ulk,1062
+crowdcores_node-1.0.5.dist-info/METADATA,sha256=OMN3Lq8RLVYsGffU4mJBfzQKkoITkRTKCFHLXHmvveU,161
+crowdcores_node-1.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+crowdcores_node-1.0.5.dist-info/entry_points.txt,sha256=TwtDl6qGyU3pJV--mLnmy4GSYcFtdRVE82-v3Ihs_KM,65
+crowdcores_node-1.0.5.dist-info/top_level.txt,sha256=JvvyBYAHlGQJ32qHrQ8dd8Ao7VPJBidnLwfAby7fVbo,16
+crowdcores_node-1.0.5.dist-info/RECORD,,
