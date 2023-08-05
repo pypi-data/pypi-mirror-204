@@ -1,0 +1,6 @@
+PyOpenGL
+SpiNNFrontEndCommon==1!7.0.0.a4
+
+[test]
+flake8
+pylint
