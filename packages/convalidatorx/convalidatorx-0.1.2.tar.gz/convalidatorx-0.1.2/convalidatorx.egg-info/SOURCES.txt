@@ -1,0 +1,9 @@
+setup.py
+convalidatorx.egg-info/PKG-INFO
+convalidatorx.egg-info/SOURCES.txt
+convalidatorx.egg-info/dependency_links.txt
+convalidatorx.egg-info/requires.txt
+convalidatorx.egg-info/top_level.txt
+convalidtor/__init__.py
+convalidtor/src/__init__.py
+convalidtor/src/validator.py
