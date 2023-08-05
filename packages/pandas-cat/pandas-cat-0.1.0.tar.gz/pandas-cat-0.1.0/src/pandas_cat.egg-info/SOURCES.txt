@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pandas_cat/__init__.py
+src/pandas_cat/pandas_cat.py
+src/pandas_cat.egg-info/PKG-INFO
+src/pandas_cat.egg-info/SOURCES.txt
+src/pandas_cat.egg-info/dependency_links.txt
+src/pandas_cat.egg-info/requires.txt
+src/pandas_cat.egg-info/top_level.txt
+src/pandas_cat/templates/default_0_1_0.tem
