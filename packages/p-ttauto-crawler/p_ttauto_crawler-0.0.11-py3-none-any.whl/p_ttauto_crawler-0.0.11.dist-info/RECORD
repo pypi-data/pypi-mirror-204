@@ -1,0 +1,17 @@
+ttauto_crawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ttauto_crawler/auto_crawler.py,sha256=udM_PK3Hv9y5oTq1rB-ptI3Z7wrp-8eh1tx6vpsv-58,15517
+ttauto_crawler/binary.py,sha256=LkBoLdwwZcJotN5kIlQV1-u8eJHLfHWUPMesLpxyGYI,3038
+ttauto_crawler/main.py,sha256=LqPfGg36DyrINnkcEZYvytgJcN64dLMgjN7Btlzuu98,1610
+ttauto_crawler/textUtils.py,sha256=OMmuEDQXQs1KrQFytwEZ-jwY00DItXqEcNsDGDKh2yc,989
+ttauto_crawler/txt2proj.py,sha256=TT-rilWRzYyrwrY99kOklIHSlhO5GaV63k6TJDaWDWQ,9380
+ttauto_crawler/utils.py,sha256=yW3GQvnoTaQpP-r1UvjNc2EKZI21Ntr2_WlUAjavsBo,9015
+ttauto_crawler/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ttauto_crawler/bin/music.zip.py,sha256=Dbtzb3Iqz0t8fHIF_mVumTkzcSJnN9aP025pNoFGkUQ,15425748
+ttauto_crawler/bin/print_md5.py,sha256=2-dMCMaMF0UFhXNAyL9oXvveT_Mm7KLJ3Db1SszS-r0,711
+ttauto_crawler/bin/text.txt.py,sha256=2xaVK3hLJRgr3pLenppvZxbQWpxfqT60IVriF0VE5V8,1276
+p_ttauto_crawler-0.0.11.dist-info/LICENSE,sha256=5hk5-PypMEFzj-YVsMgaHkR7R7rQlk9FMY__Vi3-AXE,1074
+p_ttauto_crawler-0.0.11.dist-info/METADATA,sha256=yC3ztUP1OO8yEb4HirtJ8L4IXhbQvUP1kVOoqgI8q1o,592
+p_ttauto_crawler-0.0.11.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+p_ttauto_crawler-0.0.11.dist-info/entry_points.txt,sha256=gkSerWOtGxurPPp0Re5rV1Wi-2bDuMnsQ18OA0Y73VI,60
+p_ttauto_crawler-0.0.11.dist-info/top_level.txt,sha256=UP7n4fg9Jue52AjfVcOefLhTTZmS6esvc1dM1fijmCw,15
+p_ttauto_crawler-0.0.11.dist-info/RECORD,,
