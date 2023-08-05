@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: machsmt
+Version: 1.0
+Summary: An algorithm selection tool for SMT-LIB solvers
+Home-page: https://machsmt.github.io/
+Author: Joe Scott, Aina Niemetz, Mathias Preiner, Saeed Nejati, and Vijay Ganesh
+Author-email: joseph.scott@uwaterloo.ca
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
