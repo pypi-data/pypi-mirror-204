@@ -1,0 +1,4 @@
+dbt-core==1.4.4
+vertica-python>=1.1.0
+dbt-tests-adapter==1.4.4
+python-dotenv==0.21.1
