@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: llnl-hatchet
+Version: 2022.2.2
+Summary: A Python library for analyzing hierarchical performance data
+Home-page: https://github.com/llnl/hatchet
+Author: Stephanie Brink
+Author-email: brink2@llnl.gov
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License

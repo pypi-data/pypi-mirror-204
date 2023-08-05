@@ -1,0 +1,8 @@
+pydot
+PyYAML
+matplotlib
+numpy
+pandas
+textX
+multiprocess
+caliper-reader
