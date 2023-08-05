@@ -1,0 +1,2 @@
+[console_scripts]
+dnf-humbug = dnf_humbug.app:main
