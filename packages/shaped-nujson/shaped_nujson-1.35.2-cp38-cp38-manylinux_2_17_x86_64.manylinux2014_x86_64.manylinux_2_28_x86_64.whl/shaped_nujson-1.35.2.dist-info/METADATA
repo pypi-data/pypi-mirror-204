@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: shaped-nujson
+Version: 1.35.2
+Summary: Ultra fast JSON encoder and decoder for Python with NumPy support
+Home-page: https://caiyunapp.com
+Download-URL: https://github.com/shaped/ultrajson
+Author: caiyunapp
+Author-email: admin@caiyunapp.com
+License: BSD License
+Project-URL: Source, https://github.com/shaped/ultrajson
+Keywords: numpy ujson json python3
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy (>=1.16.4)
+
+<h1 align="center">
+nujson: The UltraJSON Fork That Supports Numpy Serialization That Actually Includes Python Wheels
+</h1>
+
+<div align="center">
+
+*Inspired by [Pandas' ujson](https://github.com/pandas-dev/pandas/tree/master/pandas/_libs/src/ujson/python)*
+
+[![Build Status](https://travis-ci.org/caiyunapp/ultrajson.svg?branch=master)](https://travis-ci.org/caiyunapp/ultrajson)
+[![Version Status](https://img.shields.io/pypi/v/nujson.svg)](https://pypi.org/project/nujson/)
+
+
+</div>
+
+- [How to install](#how-to-install)
+- [Example](#example)
+- [Why make such a package and what is modified](#why-make-such-a-package-and-what-is-modified)
+
+# How to install
+
+Python versions: Python 3.5+
+
+Using pip:
+
+```bash
+pip install shaped-nujson
+```
+
+
+If you get an error like this:
+
+```
+ERROR: Could not find a version that satisfies the requirement numpy>=1.16.4 (from nujson) (from versions: 1.9.3)
+ERROR: No matching distribution found for numpy>=1.16.4 (from nujson)
+```
+
+Try this:
+
+```bash
+pip uninstall numpy
+pip install numpy==1.16.4
+pip install shaped-nujson
+```
+
+# Example
+
+```python
+>>> import numpy as np
+>>> import nujson as ujson
+>>> a = {"a": np.int64(100)}
+>>> ujson.dumps(a)
+'{"a":100}'
+>>> a["b"] = np.float64(10.9)
+>>> ujson.dumps(a)
+'{"a":100,"b":10.9}'
+>>> a["c"] = np.str_("12")
+>>> ujson.dumps(a)
+'{"a":100,"b":10.9,"c":"12"}'
+>>> a["d"] = np.array(list(range(10)))
+>>> ujson.dumps(a)
+'{"a":100,"b":10.9,"c":"12","d":[0,1,2,3,4,5,6,7,8,9]}'
+>>> a["e"] = np.repeat(3.9, 4)
+>>> ujson.dumps(a)
+'{"a":100,"b":10.9,"c":"12","d":[0,1,2,3,4,5,6,7,8,9],"e":[3.9,3.9,3.9,3.9]}'
+```
+
+# Why make such a package and what is modified?
+
+On Python 3, some data types of NumPy are not serializable. Here are some references:
+
+- [python - Why are some numpy datatypes JSON serializable and others not? - Stack Overflow](https://stackoverflow.com/questions/44459168/why-are-some-numpy-datatypes-json-serializable-and-others-not)
+- [Maximum recursion level reached in Python 3 - Issue #221 - esnme/ultrajson](https://github.com/esnme/ultrajson/issues/221)
+- [Issue 24313: json fails to serialise numpy.int64 - Python tracker](https://bugs.python.org/issue24313)
+
+One solution is type conversion like: `int(numpy.int64)` and `numpy.array.tolist()`.
+But it's not good for performance. After searching the Internet, we found an unmaintained project [Komnomnomnom/ultrajson](https://github.com/Komnomnomnom/ultrajson) which recommends to use [Pandas' ujson](https://github.com/pandas-dev/pandas/tree/master/pandas/_libs/src/ujson/python).
+
+We tried but found Pandas is too heavy for our projects. So we decided to build our own lightweight fork. Currently, esn's ujson master branch has some problems we needed to solve, and the `master` branch is based on the [the v1.35 ujson](https://github.com/esnme/ultrajson/releases/tag/v1.35).
+
+The main point is to convert NumPy data types in C, with calling NumPy's header. [Commit 187bd15](https://github.com/caiyunapp/ultrajson/commit/187bd155b7acd303aa6f5571f5b858c0d244edd6) has the most changes we made to support NumPy, and [commit afedc42](https://github.com/caiyunapp/ultrajson/commit/afedc42b2ce288064821981acd70592342da55fa) fixes a build issue on macOS caused by Clang.
