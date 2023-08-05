@@ -1,0 +1,12 @@
+napari_segment_anything/__init__.py,sha256=NjnxRoWKosKiaWjOOfzxt0S7Cw9Z_-Rvn2FB9_FeXqs,102
+napari_segment_anything/_widget.py,sha256=w3bvK3GV4x6DIqF4x_k6wP_PplIS97KPNlvfSuD6cMc,7412
+napari_segment_anything/napari.yaml,sha256=YfxVQn1HGdd3dyq4uo329dZ9PqzmRSLC5giArIE7jZ8,320
+napari_segment_anything/utils.py,sha256=7CF3LNBMhjycrsRBpzZI9D38cHUjIGP9LRaS-JBhthM,2157
+napari_segment_anything/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_segment_anything/_tests/test_widget.py,sha256=usLrovKQoID0dsRHuKGILOnSEUmND8IzfQsYFDrtug8,2540
+napari_segment_anything-0.1.4.dist-info/LICENSE,sha256=CUvt2ilcBwKAfRAnoA4RNPTLcdUj3En21LPK9YkFMGg,11358
+napari_segment_anything-0.1.4.dist-info/METADATA,sha256=fTCTxIz5OOTyd0EvF8KZjC4ck2ytadpBzqc1XMZTGX8,5889
+napari_segment_anything-0.1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+napari_segment_anything-0.1.4.dist-info/entry_points.txt,sha256=vHXSIXuk2eC8ctzzSlkCO80j234V8JE3nD3R8ECUT9A,80
+napari_segment_anything-0.1.4.dist-info/top_level.txt,sha256=JhU3DN-i2NzHctbhGFmIgSX5LVW_9NHSwKXeBqwtHF4,24
+napari_segment_anything-0.1.4.dist-info/RECORD,,
