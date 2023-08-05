@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: cssfinder_backend_rust
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE.md
+License-File: LICENSE.md
+Summary: Implementation of CSSFinder backend using Rust.
+Author: Krzysztof Wisniewski <argmaster.world@gmail.com>
+Author-email: Krzysztof Wisniewski <argmaster.world@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: repository, https://github.com/argmaster/cssfinder_backend_rust
+
+# CSSFinder Rust Backend
+
+Implementation of CSSFinder in Rust Programming Language.
+
+## Installing
+
+To install CSSFinder NumPy Backend from PyPI, use `pip` in terminal:
+
+```
+pip install cssfinder_backend_rust
+```
+
+If you want to use development version, traverse `Development` and `Packaging`
+sections below.
+
+## Development
+
+Both `Rust` (`>=1.65`) and `Python` (`>=3.8`) are required. Additionally, for
+comfortable development experience, `poetry` is recomended, but it is not used
+for deployment. To deploy code, `maturin` package is used.
+
+- Install `poetry` use `pip install poetry==1.4.0`
+- Open dev shell `poetry shell`
+- Install development requirements `poetry install --sync`
+- Build package `poe build`
+- Install pre-commit hooks `poe install-hooks`
+- Run pre-commit hooks `poe run-hooks`
+
