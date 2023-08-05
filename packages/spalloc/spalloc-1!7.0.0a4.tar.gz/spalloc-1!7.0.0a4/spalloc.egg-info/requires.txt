@@ -1,0 +1,6 @@
+jsonschema
+SpiNNUtilities==1!7.0.0.a4
+
+[test]
+pytest-cov
+mock
