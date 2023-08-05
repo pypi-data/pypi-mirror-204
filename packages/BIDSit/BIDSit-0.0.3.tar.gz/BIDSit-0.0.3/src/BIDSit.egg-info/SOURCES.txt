@@ -1,0 +1,11 @@
+README.rst
+setup.py
+src/BIDSit/Test_script.py
+src/BIDSit/__init__.py
+src/BIDSit/go.py
+src/BIDSit/version.py
+src/BIDSit.egg-info/PKG-INFO
+src/BIDSit.egg-info/SOURCES.txt
+src/BIDSit.egg-info/dependency_links.txt
+src/BIDSit.egg-info/requires.txt
+src/BIDSit.egg-info/top_level.txt
