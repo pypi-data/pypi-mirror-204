@@ -1,0 +1,17 @@
+odoo/addons/stock_route_mto/README.rst,sha256=wXQU3id2gQzTMuAWEq7Al1Twe9ULRMGKX7DujxkuJ80,2889
+odoo/addons/stock_route_mto/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/stock_route_mto/__manifest__.py,sha256=bA5wLvoYcM1ZPahv4a2RzflA8PfFwGNhZyfXl7mGOkY,540
+odoo/addons/stock_route_mto/data/stock_route.xml,sha256=N9GeVUCckUOyAv0Im86ZpdGnyqeFlP5MtN24sFEuPhE,296
+odoo/addons/stock_route_mto/i18n/stock_route_mto.pot,sha256=LDO9ujWGhL83ORZlbuWuC8ABFTo-9Grz8MTQ4DFUBS4,1032
+odoo/addons/stock_route_mto/models/__init__.py,sha256=F9sUlUhRurkaAnJBJRAjC9rSrKPbuBzDyQ-LGGlDryg,26
+odoo/addons/stock_route_mto/models/stock_route.py,sha256=sSo_LKt0tqXmXlnTS84P7Wc8WCmP_7MEdyZlbUmfH4E,346
+odoo/addons/stock_route_mto/readme/CONTRIBUTORS.rst,sha256=XOvmvmWVvuDVPNluyCog8zXbQ0wLwHqru-igToeRxwU,42
+odoo/addons/stock_route_mto/readme/DESCRIPTION.rst,sha256=L8tXtBonC4gPbIMu3YniiVhSeaURmKkY-m0_x_IoeqM,84
+odoo/addons/stock_route_mto/readme/USAGE.rst,sha256=_L_YjaBGgC8_cK93GGwJ6qff7xpyXNyextw6yjd525o,103
+odoo/addons/stock_route_mto/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/stock_route_mto/static/description/index.html,sha256=iOC4qoViEumLjmnmjsKxc6ieAhteyFP61JU_w6iekiU,12207
+odoo/addons/stock_route_mto/views/stock_route.xml,sha256=vCPSbPPDu-fUiNUOS8hXQcAOUgviw698qipNdhiDdmA,1569
+odoo_addon_stock_route_mto-16.0.1.0.0.2.dist-info/METADATA,sha256=f_1LtZQwiZe1WhnuAQwSEgNPSMt8KxH3pNgiZESNEjQ,3499
+odoo_addon_stock_route_mto-16.0.1.0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+odoo_addon_stock_route_mto-16.0.1.0.0.2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_stock_route_mto-16.0.1.0.0.2.dist-info/RECORD,,
