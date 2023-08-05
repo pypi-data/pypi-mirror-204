@@ -1,0 +1,3 @@
+[console_scripts]
+fritzing-stripboard = fritzing_stripboard.cli:main
+
