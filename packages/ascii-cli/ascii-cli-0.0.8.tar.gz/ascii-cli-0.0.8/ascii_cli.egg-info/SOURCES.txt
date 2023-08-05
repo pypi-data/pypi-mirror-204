@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+ascii_cli.egg-info/PKG-INFO
+ascii_cli.egg-info/SOURCES.txt
+ascii_cli.egg-info/dependency_links.txt
+ascii_cli.egg-info/entry_points.txt
+ascii_cli.egg-info/requires.txt
+ascii_cli.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/func.py
+tests/__init__.py
+tests/test_func.py
+tests/test_main.py
