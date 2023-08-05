@@ -1,0 +1,7 @@
+requests
+oss2
+Image
+Pillow
+p-template-generator>=0.1.53
+fake_useragent
+mutagen
