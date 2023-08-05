@@ -1,0 +1,30 @@
+---
+title: "Analysis with Quarto"
+id: first-analysis
+label: "First Analysis"
+author: ["Jane Doe", "john"]
+date: "2021-05-31"
+description: |
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore ad aut, deleniti cupiditate ullam asperiores at magni praesentium eaque.
+tags: ["Bayesian"]
+relationships:
+  - id: mtcars-data
+    label: "produced"
+---
+
+
+## Data
+
+```{python}
+import pandas as pd
+
+df = pd.DataFrame({"a": [1, 2, 3], "b": [4, 5, 6]})
+df.head()
+```
+
+
+## Model
+
+```{r}
+lm(Sepal.Width ~ Sepal.Length, data = iris)
+```
