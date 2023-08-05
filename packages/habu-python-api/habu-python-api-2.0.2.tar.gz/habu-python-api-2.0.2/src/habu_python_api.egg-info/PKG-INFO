@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: habu-python-api
+Version: 2.0.2
+Summary: Habu Python API
+Home-page: https://github.com/deklareddotcom/habu-api
+Author: Habu
+Author-email: support@habu.com
+Project-URL: Bug Tracker, https://github.com/deklareddotcom/habu-api/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# habu-api
+
+This is python package for Habu API. This follows the patterns defined at:
+https://packaging.python.org/tutorials/packaging-projects/
+
+#### Step 1
+python3 -m pip install --upgrade build
+
+#### Step 2
+python3 -m build
+
+#### Step 3
+python3 -m pip install --upgrade twine
+
+#### Step 4
+python3 -m twine upload --repository pypi dist/* 
+
+For loading to testpypi, use this:
+python3 -m twine upload --repository testpypi dist/* 
+
+#### Step 5
+Relax and Enjoy!
