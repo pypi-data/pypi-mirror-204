@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: redscrap
+Version: 0.0.4
+Summary: A Reddit scraper that can scrape a subreddit or a user for images and download them
+Home-page: https://github.com/martimdLima
+Author: Martim Lima
+Author-email: martim.d.lima@protonmail.com
+Keywords: development,setup,setuptools
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7, <4
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: beautifulsoup4
+Requires-Dist: loguru
+Requires-Dist: requests
+Requires-Dist: httpx
+Requires-Dist: aiohttp
+Requires-Dist: validators
+Requires-Dist: DateTime
+Requires-Dist: colorama
+Requires-Dist: tqdm
+Requires-Dist: Pillow
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: pytest-mock
+Requires-Dist: setuptools
+
+A Reddit scraper that can scrape a subreddit, multiple subreddits or a user profile for images and download them to a folder provided by the user or to a default folder ($HOME/Documents/output). A json file with the detailed information of the threads and comments scraped is algo generated while the scraping process occurs.

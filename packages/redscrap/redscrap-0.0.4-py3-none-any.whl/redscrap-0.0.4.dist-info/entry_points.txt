@@ -1,0 +1,2 @@
+[console_scripts]
+redscrap = core.main:main
