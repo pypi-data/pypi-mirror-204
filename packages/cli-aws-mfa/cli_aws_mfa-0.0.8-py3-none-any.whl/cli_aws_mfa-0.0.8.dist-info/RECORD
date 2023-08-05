@@ -1,0 +1,9 @@
+cli.py,sha256=BSqeL4KgwTAXdvZkdOIXYZYwUr7OY-05EpB6_nDbg2I,1658
+MFA/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MFA/mfa.py,sha256=USPgk4vw51qBdQMa_iMHYtW4iEVR2qkA1px9vYcOsxs,4341
+cli_aws_mfa-0.0.8.dist-info/LICENSE,sha256=MXU_XS6Z-FU2kg0-ehdFq_CW_XmqOfu34OvM6mqdUiw,1068
+cli_aws_mfa-0.0.8.dist-info/METADATA,sha256=K2klRbKjFjw6furaLzSusnGDsUsxQQPjDM2VsaYAdD4,1438
+cli_aws_mfa-0.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cli_aws_mfa-0.0.8.dist-info/entry_points.txt,sha256=Ia8nfrw7Zqo9nRpjMpGGkI_6OyC5E-OMCZixclXqLvg,40
+cli_aws_mfa-0.0.8.dist-info/top_level.txt,sha256=csdeWN_srPNfyAHiUurIThlnsu_BDsIE_Ze60xRmygQ,8
+cli_aws_mfa-0.0.8.dist-info/RECORD,,
