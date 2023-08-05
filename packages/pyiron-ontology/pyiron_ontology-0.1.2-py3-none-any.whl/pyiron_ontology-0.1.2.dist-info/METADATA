@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyiron-ontology
+Version: 0.1.2
+Summary: pyiron_ontology - module extension to pyiron.
+Home-page: https://github.com/pyiron/pyiron_ontology
+Author: Max-Planck-Institut für Eisenforschung GmbH - Computational Materials Design (CM) Department
+Author-email: liamhuber@greyhavensolutions.com
+License: BSD
+Keywords: pyiron
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: owlready2
+Requires-Dist: pandas
+Requires-Dist: pint
+Requires-Dist: pyiron-atomistics (>=0.2.63)
+Requires-Dist: sqlalchemy
+
+http://pyiron.org
