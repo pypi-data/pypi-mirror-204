@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: brightest-path-lib
+Version: 1.0.12
+Summary: A library of path-finding algorithms to find the brightest path between two points in an image.
+Home-page: https://github.com/mapmanager/brightest-path-lib
+Author: Vasudha Jha
+License: GNU General Public License, Version 3
+Project-URL: Issues, https://github.com/mapmanager/brightest-path-lib/issues
+Project-URL: CI, https://github.com/mapmanager/brightest-path-lib/actions
+Project-URL: Changelog, https://github.com/mapmanager/brightest-path-lib/releases
+Requires-Python: >=3.7
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE
