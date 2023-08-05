@@ -1,0 +1,3 @@
+[console_scripts]
+obsi_pdf = obsidian_pdf_gen.generate_pdf.md_notes_pdf:main
+

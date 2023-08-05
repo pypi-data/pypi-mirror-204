@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+obsidian_pdf_gen.egg-info/PKG-INFO
+obsidian_pdf_gen.egg-info/SOURCES.txt
+obsidian_pdf_gen.egg-info/dependency_links.txt
+obsidian_pdf_gen.egg-info/entry_points.txt
+obsidian_pdf_gen.egg-info/requires.txt
+obsidian_pdf_gen.egg-info/top_level.txt
+obsidian_pdf_gen.egg-info/zip-safe
+obsidian_pdf_gen/config/__init__.py
+obsidian_pdf_gen/config/note_configs.yaml
+obsidian_pdf_gen/generate_pdf/__init__.py
+obsidian_pdf_gen/generate_pdf/md_notes_pdf.py
+obsidian_pdf_gen/media_retriever/__init__.py
+obsidian_pdf_gen/media_retriever/tools.py
