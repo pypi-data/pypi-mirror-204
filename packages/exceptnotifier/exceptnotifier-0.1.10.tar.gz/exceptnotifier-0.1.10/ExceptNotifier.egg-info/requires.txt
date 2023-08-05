@@ -1,0 +1,4 @@
+twilio
+plyer
+openai
+discord
