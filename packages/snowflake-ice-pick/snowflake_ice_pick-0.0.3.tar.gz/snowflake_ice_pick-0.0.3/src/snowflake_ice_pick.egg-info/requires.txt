@@ -1,0 +1,13 @@
+pandas
+snowflake-snowpark-python
+setuptools>=40.6.0
+wheel
+cloudpickle<=2.0.0,>=1.6.0
+
+[doc]
+sphinx
+myst-parser
+furo
+nbsphinx
+ipykernel
+IPython
