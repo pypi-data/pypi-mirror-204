@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: easycheck-doiteasy
+Version: 0.0.6
+Summary: A simple Python package example
+Home-page: https://etlcheck.com/
+Author: Jesus Rojas
+Author-email: jora2415@gmailc.om
+Project-URL: Bug Tracker, https://github.com/kamicase24/easycheck/-/issues
+Project-URL: repository, https://github.com/kamicase24/easycheck
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+**Nombre de la librería**
+doit-monitoring-api
+
+Descripción
+La librería doit-monitoring-api es una API que se encarga de monitorear otros sistemas de tipo ETL. Esta librería ha sido desarrollada por DoIteasy.
+
+Instalación
+Para instalar esta librería, puedes clonar el repositorio desde GitHub:
+
+Uso
+La API está compuesta por varios endpoints que permiten la monitorización de sistemas ETL. A continuación se presentan los endpoints disponibles:
+
+/health: endpoint para verificar el estado de la API.
+/jobs: endpoint para listar los trabajos monitoreados por la API.
+/jobs/{job_id}: endpoint para obtener detalles sobre un trabajo específico.
+/jobs/{job_id}/runs: endpoint para listar las ejecuciones de un trabajo específico.
+/jobs/{job_id}/runs/{run_id}: endpoint para obtener detalles sobre una ejecución específica.
+Contributing
+Si deseas contribuir a esta librería, por favor, sigue estos pasos:
+
+Haz un fork del repositorio.
+Crea una rama para tu contribución (git checkout -b feature/your-feature).
+Haz tus cambios y haz commit de los mismos (git commit -am 'Add some feature').
+Empuja tus cambios a la rama (git push origin feature/your-feature).
+Abre un pull request.
+Licencia
+Esta librería se distribuye bajo la licencia MIT. Ver el archivo LICENSE para más detalles.
+MIT License
+Copyright (c) 2023 Doiteasy
+Permission is here by granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
