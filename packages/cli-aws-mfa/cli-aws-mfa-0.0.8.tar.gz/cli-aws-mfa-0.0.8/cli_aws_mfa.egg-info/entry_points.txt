@@ -1,0 +1,2 @@
+[console_scripts]
+cli-aws-mfa = cli:mfa

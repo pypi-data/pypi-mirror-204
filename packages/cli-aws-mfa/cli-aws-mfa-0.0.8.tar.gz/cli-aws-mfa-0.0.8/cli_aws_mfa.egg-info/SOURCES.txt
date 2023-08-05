@@ -1,0 +1,12 @@
+LICENSE
+README.md
+cli.py
+setup.py
+MFA/__init__.py
+MFA/mfa.py
+cli_aws_mfa.egg-info/PKG-INFO
+cli_aws_mfa.egg-info/SOURCES.txt
+cli_aws_mfa.egg-info/dependency_links.txt
+cli_aws_mfa.egg-info/entry_points.txt
+cli_aws_mfa.egg-info/requires.txt
+cli_aws_mfa.egg-info/top_level.txt

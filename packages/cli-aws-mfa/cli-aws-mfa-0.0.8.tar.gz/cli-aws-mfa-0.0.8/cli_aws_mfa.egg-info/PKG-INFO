@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: cli-aws-mfa
+Version: 0.0.8
+Summary: AWS CLI MFA - Easily Manage Session Token
+Author: imajeetyadav (Ajeet Yadav)
+Author-email: <hello@codingprotocols.com>
+Keywords: aws,mfa,virtual
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# AWS CLI MFA
+
+Developed by Ajeet Yadav
+
+## Example of How To Use
+
+```
+# Setup ARN and profile name
+cli-aws-mfa init
+
+# Refresh Session Token
+cli-aws-mfa refresh 
+
+```
+
+## Policy Used for CLI MFA
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "MustBeSignedInWithMFA",
+            "Effect": "Deny",
+            "NotAction": [
+                "iam:CreateVirtualMFADevice",
+                "iam:DeleteVirtualMFADevice",
+                "iam:ListVirtualMFADevices",
+                "iam:EnableMFADevice",
+                "iam:ResyncMFADevice",
+                "iam:ListAccountAliases",
+                "iam:ListUsers",
+                "iam:ListSSHPublicKeys",
+                "iam:ListAccessKeys",
+                "iam:ListServiceSpecificCredentials",
+                "iam:ListMFADevices",
+                "iam:GetAccountSummary",
+                "sts:GetSessionToken"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "BoolIfExists": {
+                    "aws:MultiFactorAuthPresent": "false"
+                }
+            }
+        }
+    ]
+}
+```
