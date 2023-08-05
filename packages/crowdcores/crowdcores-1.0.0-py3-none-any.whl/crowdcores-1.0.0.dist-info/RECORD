@@ -1,0 +1,7 @@
+pipeline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipeline/pipeline.py,sha256=9phWF4pOzUPwJ5hvkkmbXT3rwLL-Mwwo_xGJtql3cYQ,835
+crowdcores-1.0.0.dist-info/LICENSE.txt,sha256=JbvgXb8XzkvtPlfXmT5NMqgG9gmOCmK4FpcQERV_ulk,1062
+crowdcores-1.0.0.dist-info/METADATA,sha256=x6PZEpGED4mbWa9tq3prfTleeeN96rE4sg7yeMwhwIU,105
+crowdcores-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+crowdcores-1.0.0.dist-info/top_level.txt,sha256=Qdc1eKrvhKK_o9CPbdooOdDt7g3ZSXZDrNXHmUGl94Q,9
+crowdcores-1.0.0.dist-info/RECORD,,
