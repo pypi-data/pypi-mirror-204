@@ -1,0 +1,4 @@
+[console_scripts]
+sphinx-multiversion=exasol.toolbox.sphinx.multiversion.main:main
+version-check=exasol.toolbox.pre_commit_hooks.package_version:main
+
