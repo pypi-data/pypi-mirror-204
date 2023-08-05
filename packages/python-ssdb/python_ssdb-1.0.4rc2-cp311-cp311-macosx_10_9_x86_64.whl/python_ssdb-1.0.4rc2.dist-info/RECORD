@@ -1,0 +1,17 @@
+python_ssdb-1.0.4rc2.dist-info/RECORD,,
+python_ssdb-1.0.4rc2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+python_ssdb-1.0.4rc2.dist-info/WHEEL,sha256=zATDCBMA0NrnUw5OGrN7taAN4ImJV7kn5PkKRuCgN5Q,111
+python_ssdb-1.0.4rc2.dist-info/top_level.txt,sha256=xEnud1pc-bK2a-VkAQhr1NnowyUwy5xk4CIssqHxXB8,5
+python_ssdb-1.0.4rc2.dist-info/METADATA,sha256=4EPSc8OaRFtvk50IxC3Sst5EAoZbpq2s3xyocWQxBd4,1879
+python_ssdb-1.0.4rc2.dist-info/NOTICE.md,sha256=8XYkbPT8MEjerAbFpYFGgzhsr-qYAy8aK8MRdDngDjo,12626
+ssdb/client.cpython-311-darwin.so,sha256=3223iZqlxhA3Qaz9mUpKFRSxhLsbRxjqPF6uOcGcXVE,189528
+ssdb/connection.cpython-311-darwin.so,sha256=o32ZjTGyZW3RBlSm2jY0kFs3lm2Xtre7luFcxuXCz2g,266768
+ssdb/__init__.py,sha256=ansgW9TPgHgTdlUHnUoGHr_7lUkFoV7gbU_hWFnEYeM,49
+ssdb/core/interface.cpython-311-darwin.so,sha256=-FpyOING8sZ384dsoMox9ZC8f96BHxeonQ-hjSi5g7I,262304
+ssdb/core/response.cpython-311-darwin.so,sha256=uo687uguRVgjjc7hnVZUxLnttwMWc3YkBkNk-B_Qklk,78968
+ssdb/core/parser.cpython-311-darwin.so,sha256=mO7WVMBqhZyq5yKdyUR29qhXt3NNZgQeIwyXQ0U2aZU,214032
+ssdb/core/encode.cpython-311-darwin.so,sha256=S9dODesTkuYz8kilMk_Lio9l_dUfnUevGIoMJW0ULV4,70016
+ssdb/core/__init__.py,sha256=n__2vmR4Et6DqMuS7elul3uDL0gUBTk2NAPmDc4ZNUA,74
+ssdb/asyncio/client.cpython-311-darwin.so,sha256=aC1Ek3vJHkf2K6H29ozBhUFawJURFaK7t3UMvYkarTc,264616
+ssdb/asyncio/connection.cpython-311-darwin.so,sha256=_D222xGinARQkHbJCYdyOkU-gRa6xL8_rEujfw0G7KY,390544
+ssdb/asyncio/__init__.py,sha256=alfaymH8hPIoaiw_S4JBwktCa-h7Cdg2s8_2iAQ3IiU,57
