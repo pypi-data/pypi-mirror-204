@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: localizedstringkit
+Version: 0.2.1
+Summary: Generate .strings files directly from your code
+Home-page: https://github.com/microsoft/LocalizedStringKit
+License: MIT
+Keywords: localization,strings,generation
+Author: Dale Myers
+Author-email: dalemy@microsoft.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Internationalization
+Classifier: Topic :: Utilities
+Requires-Dist: deserialize (>=2.0.1,<3.0.0)
+Requires-Dist: dotstrings (>=1.1.3,<2.0.0)
+Project-URL: Repository, https://github.com/microsoft/LocalizedStringKit
+Description-Content-Type: text/markdown
+
+
