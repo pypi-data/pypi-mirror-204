@@ -1,0 +1,15 @@
+wheel
+eduvpn_common==1.1.0
+
+[gui]
+dbus-python
+pygobject
+
+[mypy]
+mypy
+PyGObject-stubs
+types-setuptools
+
+[test]
+pytest
+pycodestyle
