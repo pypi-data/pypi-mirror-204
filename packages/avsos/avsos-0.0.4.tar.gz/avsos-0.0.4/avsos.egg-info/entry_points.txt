@@ -1,0 +1,2 @@
+[console_scripts]
+avsos = avsos.main:main
