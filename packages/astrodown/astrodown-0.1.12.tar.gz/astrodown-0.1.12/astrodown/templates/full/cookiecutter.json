@@ -1,0 +1,8 @@
+{
+    "project_name": "hello-astrodown",
+    "project_title": "{{ cookiecutter.project_name.title().replace('-', ' ') }}",
+    "package_manager": "npm",
+    "_copy_without_render": [
+        "public/*"
+    ]
+}
