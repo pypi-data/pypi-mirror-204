@@ -1,0 +1,2 @@
+[console_scripts]
+postpruner = postpruner.postpruner:run
