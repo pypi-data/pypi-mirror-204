@@ -1,0 +1,11 @@
+src/__init__.py,sha256=2Bp8emwBGVDze6kms4pgz8mgKjyWaS_rEhkugC3CxH8,150
+src/addtagfunc.py,sha256=iuh3S2TaahVIdFkVkIyYsGQ5xFloHwBnqweCp9e44CI,2202
+src/tagfunctions.py,sha256=GBZrLow6dgZd8lsFcDg9zGv274NX2OL6ZEMhLIlbzvM,5588
+src/VIAF_functions/VIAFreffun.py,sha256=50zPj-c7ztQOA4HsHMFfgs4FltcxULcZnTlqJ1WoyfQ,4572
+src/VIAF_functions/__init__.py,sha256=L1etkuw3D_rRWiKykfhq9hfMxzZk1Zp08Jds7RPYg0w,31
+src/opcit_functions/Ibidfunc.py,sha256=1-qGsNTe4nN3Djk3oIQ_uRHCeJak5Nb9DYAwAgmDAts,3610
+src/opcit_functions/__init__.py,sha256=eMi62fP47BKXg4D6wMarFFW2w5wScgqsE_-HXx2PmQM,36
+xmlcit-0.0.5.dist-info/METADATA,sha256=14pbSuUloet1mRbddu4uSAno66xhl7J4RblKjm5BN7M,779
+xmlcit-0.0.5.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+xmlcit-0.0.5.dist-info/licenses/LICENSE,sha256=iwp75rPN_ATiNj0yQXMTG-CLEqt7jv_F-1X5GuiMaCg,1086
+xmlcit-0.0.5.dist-info/RECORD,,
