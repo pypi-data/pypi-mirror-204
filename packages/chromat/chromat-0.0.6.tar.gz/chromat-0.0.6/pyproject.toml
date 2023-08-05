@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "chromat"
+version = "0.0.6"
+description = "color palettes! under heavy construction!"
+license = "GPL-3.0-or-later"
+authors = ["hex benjamin <hex@hexbenjam.in>"]
+readme = "README.md"
+repository = "https://github.com/hexbenjamin/chromat"
+keywords = ["color", "palette"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Natural Language :: English",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Artistic Software",
+    "Topic :: Utilities",
+]
+packages = [
+    { include = "chromat" },
+]
+exclude = [
+    "*/__pycache__/*",
+    "*.dist-info/*",
+    "*.egg-info/*",
+    "*.pyc",
+    ".gitignore",
+    ".replit",
+    "replit.nix",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10.0,<3.11"
+numpy = "^1.22.2"
+replit = "^3.2.4"
+Flask = "^2.2.0"
+urllib3 = "^1.26.12"
+rich = "^13.3.4"
+
+[tool.poetry.dev-dependencies]
+debugpy = "^1.6.2"
+replit-python-lsp-server = {extras = ["yapf", "rope", "pyflakes"], version = "^1.5.9"}
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
