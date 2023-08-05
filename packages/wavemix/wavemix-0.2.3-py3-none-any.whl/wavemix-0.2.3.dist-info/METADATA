@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: wavemix
+Version: 0.2.3
+Summary: WaveMix - Pytorch
+Home-page: https://github.com/pranavphoenix/WaveMix
+Author: Pranav Jeevan
+Author-email: pranav13phoenix@gmail.com
+License: MIT
+Keywords: artificial intelligence,token-mixing,image classification,semantic segmentation,image super-resolution
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: einops
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: pywavelets
+Requires-Dist: numpy
+
