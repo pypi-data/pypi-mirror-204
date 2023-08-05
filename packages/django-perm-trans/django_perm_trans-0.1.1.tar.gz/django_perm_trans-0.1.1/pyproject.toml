@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "django-perm-trans"
+version = "0.1.1"
+description = "A simple way to translate the permissions of your Django project."
+authors = ["Silas Vasconcelos <silasvasconcelos@hotmail.com.br>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "django_perm_trans"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+dotpath = "^0.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+django = "3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
