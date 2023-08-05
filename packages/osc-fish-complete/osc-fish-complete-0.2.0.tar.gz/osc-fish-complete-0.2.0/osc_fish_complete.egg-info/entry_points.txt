@@ -1,0 +1,2 @@
+[cliff.formatter.completion]
+fish = osc_fish_complete.complete:CompleteFish
