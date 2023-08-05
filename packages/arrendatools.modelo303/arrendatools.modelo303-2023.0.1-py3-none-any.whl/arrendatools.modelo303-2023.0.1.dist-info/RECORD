@@ -1,0 +1,11 @@
+arrendatools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arrendatools/modelo303/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arrendatools/modelo303/modelo303.py,sha256=FBRcKPffHEXtoojj2w5a9znujkVtPQvR_Rv2NTE2jTs,43092
+arrendatools/modelo303/periodos.py,sha256=X-_ZPb0lmHm2n-YXmhZhl93dy61qttBI0VPqawk_Q78,105
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_modelo303.py,sha256=ZpqWPs9X07Azdwj3igUPAnYuAxtseWgcE1zTld6N1kA,34606
+arrendatools.modelo303-2023.0.1.dist-info/LICENSE,sha256=R5xzJCQj8mfv0qnRxP77IgwUbOoNGSNZhNni6Gx0ISY,1062
+arrendatools.modelo303-2023.0.1.dist-info/METADATA,sha256=v4wuxuShWJUd67REnxAI_dLkOi8HKqwm87s2m1pAjn8,8216
+arrendatools.modelo303-2023.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+arrendatools.modelo303-2023.0.1.dist-info/top_level.txt,sha256=fMoB0ALJhQCBjvbIGrO9y51jMUSS13MkY9wxaTEVOJs,18
+arrendatools.modelo303-2023.0.1.dist-info/RECORD,,
