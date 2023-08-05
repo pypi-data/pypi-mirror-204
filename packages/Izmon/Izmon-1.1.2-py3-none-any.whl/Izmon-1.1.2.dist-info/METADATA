@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: Izmon
+Version: 1.1.2
+Summary: You can play Izmon with this libraly.
+Home-page: https://github.com/akita0724
+Author: Yohei Akita, nabe, miso
+Author-email: akita.yohei0724@gmail.com
+License: GPL v2.0
+Keywords: Izmon
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Requires: requests
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+This software is released under the GPL, see LICENSE.
+
+To play izmon, you need to take 3 steps below.
+
+1. install this library
+2. import this library( from Izmon import Main )
+3. run script( Main.main() )
+
+To get more information about Izmon or learn about the specification of Izmon or contact us,
+please look at the official reference ↓ (all of them are written in Japanese).
+https://docs.google.com/spreadsheets/d/1bX43X_iltZBGkd1p2V-UCpBOe-Mpj0kI1CqSpalVTo4/
+
+2023/03/02 akita nabe miso
