@@ -1,0 +1,13 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/daily_update.py,sha256=N_1ISVuM_7juJ7ErCA7Cv8ZzXom1aOrBNSJdkjOA0Zo,5921
+src/display.py,sha256=S7-imiKzf385XFmPWNhKfG42ybk8XMpVNK22KCgcEh0,4407
+src/main.py,sha256=lPLv7SRAxrMNZfhMz_4t66X24OwPeVjEstbbCAu-ABc,3204
+src/match.py,sha256=jOBhNF5UQnmKAsQMmU-yBBmY57kjSKq90JH-RVom_Jo,1055
+src/result.py,sha256=dEq5tfrwV3t0sScnOgetEmhYh2suTz_3A7QEudePU_Q,672
+src/team.py,sha256=joH7du9sMqrUV8rsFaMwmxpyb5pBKpGFCBYjelqtywE,2106
+src/util.py,sha256=0EsDma_wElEMNKArd3qkponFhYq9DWq0tB0wO5u9wYM,1747
+leaguedaily-0.1.0.dist-info/LICENSE,sha256=bjR_LV9FNAJlbtR4UDzBCBrjM_gJSPJO7-592VC1-NA,1068
+leaguedaily-0.1.0.dist-info/METADATA,sha256=5_oXhg2iI6iUT1lR7Vx3yb9sPNkV-Kkdd4acDf9NM1c,1537
+leaguedaily-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+leaguedaily-0.1.0.dist-info/entry_points.txt,sha256=86-virjBaLzTB1XEQFVNZgzYAu_zLwaULONhkucplno,45
+leaguedaily-0.1.0.dist-info/RECORD,,
