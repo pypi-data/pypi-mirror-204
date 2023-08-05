@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "testapp_winstonyym"
+version = "0.1.0"
+description = "UAL Workshop demo"
+authors = ["winstonyym"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.0.0"
+matplotlib = "^3.7.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
