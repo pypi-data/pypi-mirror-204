@@ -1,0 +1,27 @@
+---
+import Badge from "@components/shared/Badge.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+const data = await getCollection("data");
+---
+
+<BaseLayout>
+  <h1 class="font-semibold text-3xl">Datasets</h1>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+    {
+      data.map((entry) => (
+        <div class="card  bg-base-100 shadow-xl">
+          <div class="card-body">
+            <h2 class="card-title">{entry.data.title}</h2>
+            <p class="line-clamp-3 text-sm">{entry.data.description}</p>
+            <div class="card-actions justify-end">
+              <a href={`/data/${entry.slug}`}>
+                <button class="btn btn-outline btn-sm">View</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</BaseLayout>
