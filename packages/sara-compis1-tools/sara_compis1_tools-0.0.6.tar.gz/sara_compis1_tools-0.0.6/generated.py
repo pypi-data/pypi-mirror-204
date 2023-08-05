@@ -1,0 +1,7 @@
+from sara_compis1_tools.StateAFD import StateAFD
+from sara_compis1_tools.Visualizer import Visualizer
+
+mega = [StateAFD(name='init',transitions={'949': 'A'},accepting=False,start=True),StateAFD(name='A',transitions={'032': 'B', '009': 'B', '010': 'B'},accepting=False,start=False),StateAFD(name='B',transitions={'032': 'B', '009': 'B', '010': 'B'},accepting=True,start=False),StateAFD(name='init',transitions={'949': 'C'},accepting=False,start=True),StateAFD(name='C',transitions={'097': 'D', '098': 'D', '099': 'D', '065': 'D', '066': 'D', '067': 'D'},accepting=False,start=False),StateAFD(name='D',transitions={'097': 'D', '098': 'D', '099': 'D', '065': 'D', '066': 'D', '067': 'D', '048': 'D', '049': 'D', '050': 'D', '051': 'D'},accepting=True,start=False),StateAFD(name='init',transitions={'949': 'E'},accepting=False,start=True),StateAFD(name='E',transitions={'039': 'F'},accepting=False,start=False),StateAFD(name='F',transitions={},accepting=False,start=False),StateAFD(name='init',transitions={'949': 'G'},accepting=False,start=True),StateAFD(name='G',transitions={'039': 'H'},accepting=False,start=False),StateAFD(name='H',transitions={},accepting=False,start=False),StateAFD(name='init',transitions={'949': 'I'},accepting=False,start=True),StateAFD(name='I',transitions={'039': 'J'},accepting=False,start=False),StateAFD(name='J',transitions={},accepting=False,start=False)]
+
+visual = Visualizer()
+visual.draw_mega_afd(mega)
