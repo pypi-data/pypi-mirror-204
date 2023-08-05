@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: saltext.elasticsearch8
+Version: 1.0.10
+Summary: Module to manage Eleasticsearch8
+Home-page: https://github.com/cesan3/salt-ext-elasticsearch8
+Author: Cesar Sanchez
+Author-email: cesan3@gmail.com
+License: Apache Software License
+Project-URL: Source, https://github.com/cesan3/salt-ext-elasticsearch8
+Project-URL: Tracker, https://github.com/cesan3/salt-ext-elasticsearch8/issues
+Keywords: salt-extension
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.new
+Requires-Dist: salt (>=3003)
+Provides-Extra: dev
+Requires-Dist: nox (==2021.6.12) ; extra == 'dev'
+Requires-Dist: pre-commit (==2.13.0) ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: SaltPyLint ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: enchant ; extra == 'docs'
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Requires-Dist: sphinx-prompt ; extra == 'docs'
+Requires-Dist: sphinxcontrib-spelling ; extra == 'docs'
+Requires-Dist: importlib-metadata ; (python_version < "3.8") and extra == 'docs'
+Provides-Extra: docsauto
+Requires-Dist: sphinx-autobuild ; extra == 'docsauto'
+Provides-Extra: tests
+Requires-Dist: Jinja2 ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-salt-factories ; extra == 'tests'
+Requires-Dist: elasticsearch (>=8.6.0) ; extra == 'tests'
+Requires-Dist: mock (>=5.0.1) ; extra == 'tests'
+
+# salt-ext-elasticsearch8
+Salt external module to provide functions to interact with elasticsearch-py 8+ ES8+

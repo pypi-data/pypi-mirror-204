@@ -1,0 +1,16 @@
+saltext/elasticsearch8/__init__.py,sha256=D7LywTuuKOLBckMpBTKjqwuIS6PABYTo1qDO2n02Vus,863
+saltext/elasticsearch8/loader.py,sha256=7lnbXkm-PzN-30IgKq_eokLHjUOCiqeUeqeE0n8-Cz4,663
+saltext/elasticsearch8/version.py,sha256=9EozsBnqDzcKWRDTC1DFubagFbm9pw2hazZ5VjU0tys,22
+saltext/elasticsearch8/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saltext/elasticsearch8/modules/elasticsearch8_mod.py,sha256=CJh9vOA-MoSUj0EDnw455EqXNDB1Lz97DYP0eQOq0qQ,111097
+saltext/elasticsearch8/returners/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saltext/elasticsearch8/returners/elasticsearch8_mod.py,sha256=Jzy-4aKWbUue_yeYJx0mvtvDI2g4NlaGxsK5KKIVivs,359
+saltext/elasticsearch8/states/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saltext/elasticsearch8/states/elasticsearch8_mod.py,sha256=GL-jYEiXSubOHGrGybDAvA_qRWBW0hiwagecodsLAaE,23247
+saltext.elasticsearch8-1.0.10.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+saltext.elasticsearch8-1.0.10.dist-info/LICENSE.new,sha256=4USa6HO2Fonub48BGo7_hTvBX-qp2NKhbD62P4ZAsLI,11343
+saltext.elasticsearch8-1.0.10.dist-info/METADATA,sha256=wz_4vu3omZ5YtvUk9GFlceGuFagCpw1cIeD3hiM3nxk,2125
+saltext.elasticsearch8-1.0.10.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+saltext.elasticsearch8-1.0.10.dist-info/entry_points.txt,sha256=-Z67yGou-P3u-4mSQ9IAlu91Yayo4MC9qX1JRVzSUZs,62
+saltext.elasticsearch8-1.0.10.dist-info/top_level.txt,sha256=6cynQgWBWnAPoXMnUaVitGzM6k7PzacwjLBPgrjOfi4,8
+saltext.elasticsearch8-1.0.10.dist-info/RECORD,,
