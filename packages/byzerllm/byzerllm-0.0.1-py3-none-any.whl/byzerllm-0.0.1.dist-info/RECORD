@@ -1,0 +1,10 @@
+byzerllm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+byzerllm/version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+byzerllm/chatglm6b/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+byzerllm/chatglm6b/arguments.py,sha256=1Pobra_bfaGj9Fbct1dZVQ0ce3XMGSaAo7Atp1gM0zk,8182
+byzerllm/chatglm6b/finetune.py,sha256=Uiu2M8e2bsbg4rNzAc_6h6cICDVGha8XjwRbyaXPgwQ,21286
+byzerllm/chatglm6b/trainer_seq2seq.py,sha256=4bWXtheKBHnugiNrPxAK8KCHy9R5Y6EcVBbvpAy7yMk,11575
+byzerllm-0.0.1.dist-info/METADATA,sha256=lHVXGUqe9zmFLhUKkQQigX5BiEN_kR4yVYKWg7nBhIQ,315
+byzerllm-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+byzerllm-0.0.1.dist-info/top_level.txt,sha256=n03a3d2hpjhO8QkRkmWAty_SZSlkKyEYJwpttw7dEw0,9
+byzerllm-0.0.1.dist-info/RECORD,,
