@@ -1,0 +1,10 @@
+dune/harmonizer/__init__.py,sha256=I_g37RI4BRVRgtaBQuB-K49fjLmtldYIlqQWT3IkTq4,440
+dune/harmonizer/constants.py,sha256=melW42pK8DG4SwhgIOlyr1EZzZ5t8zsPgo8Iom1Pyfs,54
+dune/harmonizer/custom_transforms.py,sha256=8jwZxx2Ojv47OPifQf6Zn7gvEpA1ZXGkeXqQrPbrNmA,17082
+dune/harmonizer/errors.py,sha256=iqCf-FLpPSt--EZFZvCHvaJsVOXqVoyYjOcCcbiG4tw,105
+dune/harmonizer/table_replacements.py,sha256=jZ0OvRhs0gNNAGIT8yf5rATShxZ7N9MdqiJDKdBNafQ,2018
+dune/harmonizer/translate.py,sha256=5AS92Km-js3EFfYXAcPqLri0NAgM7rf93OU_25n1K1M,3050
+dune_harmonizer-0.3.0.dist-info/LICENSE,sha256=goRUlXioimEukqqurTK349mZ4oSBiM_bwD7ox1aVItU,1061
+dune_harmonizer-0.3.0.dist-info/METADATA,sha256=_KFrz0XupWlbrtMEnG3lhx9YyXkAjHL21uA0N2rdqzA,2714
+dune_harmonizer-0.3.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+dune_harmonizer-0.3.0.dist-info/RECORD,,
