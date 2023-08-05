@@ -1,0 +1,12 @@
+COPYING
+README.md
+pyproject.toml
+dnf_humbug/__init__.py
+dnf_humbug/__main__.py
+dnf_humbug/app.py
+dnf_humbug.egg-info/PKG-INFO
+dnf_humbug.egg-info/SOURCES.txt
+dnf_humbug.egg-info/dependency_links.txt
+dnf_humbug.egg-info/entry_points.txt
+dnf_humbug.egg-info/requires.txt
+dnf_humbug.egg-info/top_level.txt
