@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mekartify
+Version: 1.0
+Summary: Deskripsi singkat tentang package kamu
+Home-page: https://github.com/username/nama-package
+Author: Nama pengarang
+Author-email: email@example.com
+License: UNKNOWN
+Keywords: keyword,keyword2
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+UNKNOWN
+
+
