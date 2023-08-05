@@ -1,0 +1,12 @@
+zappix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zappix/agent_active.py,sha256=KjeappdRqvdrnmTjOWP5XqAhzxmEP07gOqJPiUQM1x8,2358
+zappix/dstream.py,sha256=Irw1m4JoCN6LPrghPVnrUkH-7t8C7PB7rlGfdU_qAZA,5558
+zappix/get.py,sha256=6z5pOnIeBFCBOCl_Az9OGcHQFa5W3R3NJuJawlq0bsA,2258
+zappix/protocol.py,sha256=VGGEGt9AU43zmOFwLkYzopRFM38SWElS9w7zwgB_DIA,6736
+zappix/sender.py,sha256=qjRiXEeCyTccPsWOHYRkUM5D_GdAu_hY3uazZjvSO3g,6889
+zappix/server.py,sha256=ITJo_Rvb-QI-kO-DBvgo6S7j7iZa7CvlCFWu8r6s2dE,2031
+zappix-1.0.0.dist-info/LICENSE.txt,sha256=_dIqUbgt4ChjbVCFJKx8KTAoYHLksNhOk9m7sA9oAcw,1054
+zappix-1.0.0.dist-info/METADATA,sha256=noPxqv36kOgiTLjUy41VsWhPaoJviIQi_vKtZza3DNs,3902
+zappix-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+zappix-1.0.0.dist-info/top_level.txt,sha256=ebGBhBkDMVt2Rbe-UbQyatLMdddmP-0TcGSRcsRJDck,7
+zappix-1.0.0.dist-info/RECORD,,
