@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "pool-cue"
+version = "1.1.0"
+description = "Tools for working with arq job queues"
+authors = ["skarre-r <skarre-r@protonmail.com>"]
+readme = "README.md"
+repository = "https://github.com/skarre-r/pool-cue"
+packages = [
+    { include = "pool_cue" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+arq = "^0.25.0"
+msgpack = "^1.0.5"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.12.0"
+pre-commit = "^3.2.2"
+ruff = "^0.0.261"
+black = "^23.3.0"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+
+[tool.black]
+target-version = ["py311"]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
