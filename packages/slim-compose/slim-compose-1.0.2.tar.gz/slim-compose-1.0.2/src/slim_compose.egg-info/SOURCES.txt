@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/slim_compose.py
+src/slim_compose.egg-info/PKG-INFO
+src/slim_compose.egg-info/SOURCES.txt
+src/slim_compose.egg-info/dependency_links.txt
+src/slim_compose.egg-info/entry_points.txt
+src/slim_compose.egg-info/top_level.txt
