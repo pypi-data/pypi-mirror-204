@@ -1,0 +1,52 @@
+---
+title: "Welcome to the Astrodown Playground"
+authors: ["Qiushi Yan"]
+format:
+    hugo:
+        toc: false
+---
+
+## Background
+
+This is the home page for our awesome data science project. Here is a cool chart.
+
+```{r}
+#| message: false
+#| echo: false
+#| fig-height: 3.5
+library(plotly)
+fig <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+fig
+```
+
+Here is a list of the data products we have developed.
+
+### Analysis
+
+- [Exploratory Analysis with Python](/analysis/eda/py)
+
+- [Exploratory Analysis with R](/analysis/eda/r)
+
+- [Regression Models](/analysis/machine-learning/regression)
+
+- [Marketing Analysis](/analysis/marketing)
+
+
+### Datasets
+
+- [mtcars data](/data/mtcars)
+
+- [diamonds data](/data/diamonds)
+
+- [iris data](/data/iris)
+
+
+### Dashboards
+
+- [Shiny App](/dashboard/index.html)
+
+
+
+
+
+
