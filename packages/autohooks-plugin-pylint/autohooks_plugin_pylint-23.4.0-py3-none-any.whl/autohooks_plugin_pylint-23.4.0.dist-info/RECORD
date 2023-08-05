@@ -1,0 +1,7 @@
+autohooks/plugins/pylint/__init__.py,sha256=VIg1TBoU-5g31qCcQ4T_0vJzsCRgJkUGJFNMCQ2PDLo,752
+autohooks/plugins/pylint/__version__.py,sha256=BIu8p5mtjU-mkhdzNVSjn27FI3RgoTFh7HldbxsqhhQ,103
+autohooks/plugins/pylint/pylint.py,sha256=GhVt24noQyyV7ntTOUFKsNRCwgHb9g4HO1TkvKwUmIY,3815
+autohooks_plugin_pylint-23.4.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+autohooks_plugin_pylint-23.4.0.dist-info/METADATA,sha256=9eEYwM1qC5Ze2eOlCKNzCQ0rsd0d58R4acnEpRIiDEE,3905
+autohooks_plugin_pylint-23.4.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+autohooks_plugin_pylint-23.4.0.dist-info/RECORD,,
