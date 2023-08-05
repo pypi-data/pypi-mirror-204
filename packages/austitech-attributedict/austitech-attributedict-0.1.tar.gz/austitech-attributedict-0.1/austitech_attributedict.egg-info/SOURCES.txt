@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+./austitech_attributedict.egg-info/PKG-INFO
+./austitech_attributedict.egg-info/SOURCES.txt
+./austitech_attributedict.egg-info/dependency_links.txt
+./austitech_attributedict.egg-info/top_level.txt
