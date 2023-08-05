@@ -1,0 +1,8 @@
+cnd_scaffold/VERSION,sha256=IsKHmRjI0cnMOiHMCFHqQLqtYd2RRkcCylDO0IObSCQ,5
+cnd_scaffold/__init__.py,sha256=lrHENo1vmuBxM5rDVLod1IRy4vj1VkmANGW4TJxjEzA,129
+cnd_scaffold/__version__.py,sha256=H3kvuz6COTEsEmLiRYVrEExrhU4b1hgM4hWI9_yQx0g,121
+cnd_scaffold/cnd_scaffold.py,sha256=IQdNgFkEY_IXdTQ5avRveWsw9reb1I_z2EVWftK9_GQ,6764
+cnd_scaffold-2.2.4.dist-info/METADATA,sha256=gxcQhtroyzoWUp8OuULuNY9crG4tgFZE_eq4BdwmA1g,2517
+cnd_scaffold-2.2.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cnd_scaffold-2.2.4.dist-info/top_level.txt,sha256=SSg5zF4f5c15HCseVrjsgR1pKy0NSF--6NYV7M2Q37k,13
+cnd_scaffold-2.2.4.dist-info/RECORD,,
