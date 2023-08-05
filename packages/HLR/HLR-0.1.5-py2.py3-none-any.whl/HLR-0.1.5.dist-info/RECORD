@@ -1,0 +1,12 @@
+HLR/__init__.py,sha256=6UhdH9AEfJ0ikD-NCq7x8yO2fhT5l5YbE8NV9pA2QW4,428
+HLR/cli.py,sha256=rXL1tFZz8CsQMrZkYfwTpeAa29sgxbfy11qiFXyYwAo,387
+HLR/diagnostic_tests.py,sha256=djpURlLeRvo9cQ4I676n73UB5LN3v8_VATt4uYbQvaQ,20621
+HLR/hierarchical_regression.py,sha256=UpkgGzED6prC0Eiw2zU9QIRO3Z0R_p2hEgu2dgYNEOE,13646
+HLR/model.py,sha256=_zK2_1FiFhPP62PnQg7iILpoOvoOhMEOC1YjQIkZczc,7865
+HLR-0.1.5.dist-info/AUTHORS.rst,sha256=vSFsgu4hkKAl8Z96mTiWbafZeO7TYErtubyDuMrqp_E,221
+HLR-0.1.5.dist-info/LICENSE,sha256=h_0d283Q752D-N1jd79LWTmWrPMF8_4rGNSbJHg7I1U,1570
+HLR-0.1.5.dist-info/METADATA,sha256=N-7Qxs7pR0hdugAFiDJhl5m2A-7RYqSuQh2kw-sm77g,10516
+HLR-0.1.5.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+HLR-0.1.5.dist-info/entry_points.txt,sha256=Bxfsvuhpv7x6hYmomB8w_4_IahtGL6mRnhLIVGGOUKc,37
+HLR-0.1.5.dist-info/top_level.txt,sha256=H01MsnMan7_5PGv0Wy6foMXt3Tg6r5tkoH-LYcJit9o,4
+HLR-0.1.5.dist-info/RECORD,,
