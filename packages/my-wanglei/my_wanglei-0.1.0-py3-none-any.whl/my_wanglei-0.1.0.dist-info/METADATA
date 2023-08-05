@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: my-wanglei
+Version: 0.1.0
+Summary: .....
+Author: wanglei
+Author-email: 819966818@qq.com
+Requires-Dist: requests
+Requires-Dist: numpy
+
