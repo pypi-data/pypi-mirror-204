@@ -1,0 +1,8 @@
+gnnad/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gnnad/generate.py,sha256=K-BYGBWlOa6IKlLmVXWgyRyF1oneoSsbsaXqvUGVMfk,6808
+gnnad/graphanomaly.py,sha256=XJWQvsT1CfVOF71FWS8mXNTQORmw03KHw36NLDypbpg,38009
+gnnad/plot.py,sha256=AAoiUePklrw4Zy2ECsxxX42MYLzxsHAbqr_9AsbdTRs,4778
+gnnad-0.1.1.dist-info/LICENSE,sha256=57-H2xUqdSK62Fco_a2XejlKnGRr1JUG06sM1S0HiaY,1071
+gnnad-0.1.1.dist-info/METADATA,sha256=41FEq2xeuWh-cCIkZiTSpRYyhSXD9Uh5pb2ZDZMiE8Y,5192
+gnnad-0.1.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+gnnad-0.1.1.dist-info/RECORD,,
