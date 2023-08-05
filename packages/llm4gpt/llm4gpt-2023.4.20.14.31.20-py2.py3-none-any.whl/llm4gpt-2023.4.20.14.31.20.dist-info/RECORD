@@ -1,0 +1,16 @@
+llm/__init__.py,sha256=3JUW1X0gD9T_1Yc588AGC8Cl0r94I6IPo2Wo0t7LVEE,199
+llm/llm4gpt.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+llm/utils.py,sha256=NpIRRY2e5u2Di2EsmflUyJcW17cQobkOyFtpGJElXUI,2926
+llm/clis/README.md,sha256=SIDx7CH3kxJhdekoZdNhLQlaIBz8cxwaWWr8MX2d4PM,413
+llm/clis/__init__.py,sha256=2Fhn43X8kFP6FpAnnAMiPcdnjUwQaukiIr2uGB6mGAY,279
+llm/clis/cli.py,sha256=ZA7u-98B5CQQp8Tdv4djRmhS3lcAHA5NJMq3X1WhpNU,569
+llm/models/__init__.py,sha256=5oNZ1xzuAzZ0FnZ-trk21Flx0Wy_F9Psx-MEGaekVuo,29
+llm/models/chatglm.py,sha256=2uZQWSZ5l9b1bB48aqC4ODY6hhXafBtbtoWCOcPK42E,1400
+llm/uis/__init__.py,sha256=PFeY3utsM7iM8h44w7G6trlu1Ta80dwV1ouiTShie4E,270
+llm4gpt-2023.4.20.14.31.20.dist-info/AUTHORS.rst,sha256=CEETb6XnCN-dzcNvKt9rz5TYsjvElov4o0g736lEwk0,149
+llm4gpt-2023.4.20.14.31.20.dist-info/LICENSE,sha256=FYH3KaF-dJMgdEx2M7sI7lJID7OyMi_YlGqGliOqqhQ,1066
+llm4gpt-2023.4.20.14.31.20.dist-info/METADATA,sha256=rltbyZ4gOi6Y876-O_QgkuSHVdI0XgGsSXs5b9wgDP8,1446
+llm4gpt-2023.4.20.14.31.20.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+llm4gpt-2023.4.20.14.31.20.dist-info/entry_points.txt,sha256=hW2vrqeKW-IoXwmltOJIHhxvlacaRN7sVVuPJhmI4hc,49
+llm4gpt-2023.4.20.14.31.20.dist-info/top_level.txt,sha256=TwpEQXP3b1MS9Y2XuGgRuo9-Kny507xt2HFZgJ5TSIY,4
+llm4gpt-2023.4.20.14.31.20.dist-info/RECORD,,

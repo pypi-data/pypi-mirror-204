@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: llm4gpt
+Version: 2023.4.20.14.31.20
+Summary: Create a Python package.
+Home-page: https://github.com/yuanjie-ai/llm4gpt
+Author: LLM4GPT
+Author-email: 313303303@qq.com
+License: MIT license
+Keywords: llm4gpt
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: meutils
+Requires-Dist: paste
+Requires-Dist: sqlalchemy-utils
+
+![image](https://img.shields.io/pypi/v/llm4gpt.svg) ![image](https://img.shields.io/travis/yuanjie-ai/llm4gpt.svg) ![image](https://readthedocs.org/projects/llm4gpt/badge/?version=latest)
+
+
+
+<h1 align = "center">🔥LLM4GPT 为大模型而生🔥</h1>
+
+---
+
+# Install
+
+```python
+pip install - U llm4gpt
+```
+
+# [Docs](https://jie-yuan.github.io/llm4gpt/)
+
+# Usages
+
+```
+import llm4gpt
+```
+
+---
+
+# TODO
+
+-[ ] 增加互联网搜索组件
+
+-[ ] 增加搜索组件
+
+-[ ] 增加本地知识库组件
+
+-[ ] 增加知识图谱组件
+
+-[ ] 增加微调模块
+
+
+
+
+
+=======
+History
+=======
+
+0.0.0 (2023-04-11)
+------------------
+
+* First release on PyPI.
