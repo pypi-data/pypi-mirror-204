@@ -1,0 +1,11 @@
+control_vegas/__init__.py,sha256=GpgZZOUpgSW7qrWq8Q2WlojPdtUXfBrvxZywiVWGf9o,256
+control_vegas/_exceptions.py,sha256=ocVUxIs1kX0o3q-sp75EQ1WZ7itOvp1YAyoQLG00ajQ,76
+control_vegas/_types.py,sha256=xLRlAUoPV93fF2PT4UfsoUS7hLw7y0Lmp3HyDkYk52U,340
+control_vegas/functions.py,sha256=jEFGyTMCFTXD13c-p_dWEbHNdFvo4D1LoQIhqVygyVQ,10282
+control_vegas/mccv.py,sha256=Y7dV1815BCxbk89NB5SomM-I5YJxLQbElSxbxtIna34,20026
+control_vegas/utilities.py,sha256=E0UY2R35ICjfbKE3Uo_HbXLTn3J91XJ56FWCuXWCuY0,4444
+control_vegas-1.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+control_vegas-1.1.0.dist-info/METADATA,sha256=UXQ3YsHvdS9ErRYWvNm-0hQGeXHq7myQ4rFyGERlcDU,48566
+control_vegas-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+control_vegas-1.1.0.dist-info/top_level.txt,sha256=IBqKJHttD51WRdL0ouSH3EcVIUsnfrRCukWVoAol0pw,14
+control_vegas-1.1.0.dist-info/RECORD,,
