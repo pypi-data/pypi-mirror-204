@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: abstract_singleton
+Version: 1.0.1
+Summary: An abstract singleton class.
+Project-URL: Homepage, https://github.com/BillSchumacher/Abstract-Singleton
+Project-URL: Bug Tracker, https://github.com/BillSchumacher/Abstract-Singleton/issues
+Author-email: Bill Schumacher <34168009+BillSchumacher@users.noreply.github.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Abstract-Singleton
+
+A Singleton that also enforces abstract methods are implemented.
