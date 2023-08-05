@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: llamabot
+Version: 0.0.9
+Requires-Dist: openai
+Requires-Dist: langchain
+Requires-Dist: llama-index
+Provides-Extra: docs
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Requires-Dist: mkdocs ; extra == 'docs'
+Requires-Dist: panel ; extra == 'docs'
+Requires-Dist: jupyter-bokeh ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
