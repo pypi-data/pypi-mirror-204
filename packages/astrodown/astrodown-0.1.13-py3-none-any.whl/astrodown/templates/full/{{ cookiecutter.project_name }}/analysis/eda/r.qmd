@@ -1,0 +1,24 @@
+---
+title: "Exploratory Analysis with R"
+id: eda-r
+label: "EDA in R"
+author: Qiushi Yan
+date: "2021-06-01"
+description: |
+  Amet deserunt Lorem amet aliqua commodo. Minim qui id quis proident aliquip est ex magna laboris.
+tags: ["EDA"]
+relationships:
+  - id: eda-python
+    label: "compliments"
+---
+
+## Overview
+
+Let's do some data wrangling.
+
+```{r}
+library(dplyr)
+
+starwars %>%
+  filter(species == "Droid")
+```
