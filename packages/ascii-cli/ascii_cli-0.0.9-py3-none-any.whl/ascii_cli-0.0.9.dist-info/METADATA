@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ascii-cli
+Version: 0.0.9
+Summary: A command-line tool that converts images to ASCII art.
+Home-page: https://github.com/mrq-andras/ascii-cli
+Author: mrq-andras
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow
+
+# Command Line ASCII Art Generator
+
+ASCII-cli is a command line interface that is powered by Python3. You can generate ASCII art by importing an image and then selecting the character set that you want to generate with.
+
+## Installation & Building
