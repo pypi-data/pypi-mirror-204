@@ -1,0 +1,6 @@
+pylovelace/kernel/__init__.py,sha256=puxZh76eJXvCHHa7AJT6QvIvJvQQUCt7oAkhdnPt7rs,213
+pylovelace/kernel/lovelace.pyd,sha256=alJe6JhUxlKnoTX4DiuWaZtzrmQsUSnjLNcBFXF7qRk,449536
+pylovelace.kernel-2023.1.4.dist-info/METADATA,sha256=yLY4Hj_KgcramctJYWIK__NqY-vvcBvZEqRbSEjVlEE,145
+pylovelace.kernel-2023.1.4.dist-info/WHEEL,sha256=WwBiZJJ3lZA_7kmMiP5mrMtbWI6_EDNpr13XVkZfT_I,94
+pylovelace.kernel-2023.1.4.dist-info/top_level.txt,sha256=J7DsoNzAcCKQQcB_uVPOh9mNcQSDemGF9xpSWgkWUDs,11
+pylovelace.kernel-2023.1.4.dist-info/RECORD,,
