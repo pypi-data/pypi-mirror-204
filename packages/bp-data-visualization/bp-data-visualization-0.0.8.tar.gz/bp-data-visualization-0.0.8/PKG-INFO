@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: bp-data-visualization
+Version: 0.0.8
+Summary: Show data in charts
+Home-page: UNKNOWN
+Author: Bluepinapple
+Author-email: viveksthul@bluepinapple.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9.6
+Description-Content-Type: text/plain

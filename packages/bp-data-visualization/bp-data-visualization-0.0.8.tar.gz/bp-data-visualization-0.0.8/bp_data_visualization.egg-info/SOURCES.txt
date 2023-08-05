@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bp_data_visualization.egg-info/PKG-INFO
+bp_data_visualization.egg-info/SOURCES.txt
+bp_data_visualization.egg-info/dependency_links.txt
+bp_data_visualization.egg-info/requires.txt
+bp_data_visualization.egg-info/top_level.txt
+data_visualization/__init__.py
+data_visualization/register.py
+data_visualization/frontend/dist/index.html
+data_visualization/frontend/dist/vite.svg
+data_visualization/frontend/dist/assets/index-80a55e32.js
+data_visualization/frontend/dist/assets/index-d081bea5.css
