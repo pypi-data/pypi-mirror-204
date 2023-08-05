@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: BioSeqTools
+Version: 0.3.0
+Summary: A small tool for analyzing biological sequences
+Home-page: https://github.com/SouthernCD/BioSeqTools
+Author: Yuxing Xu
+Author-email: xuyuxing@mail.kib.ac.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BioSeqTools
+A small tool for analyzing biological sequences
+
+## Installation
+
+```
+pip install bioseqtools
+```
+

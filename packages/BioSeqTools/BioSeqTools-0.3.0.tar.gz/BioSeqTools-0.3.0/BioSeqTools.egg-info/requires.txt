@@ -1,0 +1,4 @@
+toolbiox>=0.0.4
+bcbio-gff>=0.6.6
+biopython>=1.76
+pyfaidx>=0.5.5.2

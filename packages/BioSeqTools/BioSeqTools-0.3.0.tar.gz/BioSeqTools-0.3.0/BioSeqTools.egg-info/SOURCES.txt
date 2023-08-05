@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+BioSeqTools.egg-info/PKG-INFO
+BioSeqTools.egg-info/SOURCES.txt
+BioSeqTools.egg-info/dependency_links.txt
+BioSeqTools.egg-info/entry_points.txt
+BioSeqTools.egg-info/requires.txt
+BioSeqTools.egg-info/top_level.txt
+bioseqtools/__init__.py
+bioseqtools/cli.py
+bioseqtools/pipelines.py
+bioseqtools/versions.py

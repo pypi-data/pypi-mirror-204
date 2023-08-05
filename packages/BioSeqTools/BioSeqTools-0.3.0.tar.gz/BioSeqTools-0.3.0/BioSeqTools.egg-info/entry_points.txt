@@ -1,0 +1,2 @@
+[console_scripts]
+BioSeqTools = bioseqtools.cli:main
