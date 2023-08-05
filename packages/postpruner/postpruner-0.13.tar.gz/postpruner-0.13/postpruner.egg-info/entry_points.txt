@@ -1,0 +1,2 @@
+[console_scripts]
+postpruner = postpruner.__main__:main
