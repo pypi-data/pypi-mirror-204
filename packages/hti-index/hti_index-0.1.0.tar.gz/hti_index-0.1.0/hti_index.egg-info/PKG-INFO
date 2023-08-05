@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: hti-index
+Version: 0.1.0
+Summary: Python package for implementing a HasH Table Index
+Home-page: https://github.com/diomandeee/hti_index
+Author: Mohamed Diomande
+Author-email: gdiomande7907@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Hash Table Index (HTI)
+
+The Hash Table Index (HTI) is a data structure used to efficiently store and retrieve data based on its content hash. The HTI consists of nodes that can be either composite or leaf nodes. Composite nodes are used to group other nodes together and form a tree structure. Leaf nodes store actual data and are at the bottom of the tree. The content hash is used as the key to look up data in the tree.
+
+## NodeComposite
+
+NodeComposite is a class that represents a composite node in the HTI. A composite node can have child nodes that are either composite or leaf nodes. The NodeComposite class uses NumPy arrays to store child nodes and their content hashes.
+
+One of the main features of the NodeComposite class is the lookup_table attribute. This attribute is a class attribute that stores nodes by their hashes. This allows for quick lookups of nodes by their hashes, which is useful when traversing the tree.
+
+## Weak Reference
+In the NodeComposite class, we can optimize the lookup_table attribute by using weak references. A weak reference is a reference to an object that does not prevent the object from being garbage collected. In the case of NodeComposite, using weak references for the lookup_table attribute allows for the garbage collection of nodes that are no longer used.
+
+To use weak references in the NodeComposite class, we can use the weakref module. The WeakValueDictionary class from the weakref module can be used to create a dictionary that stores weak references to objects. This allows us to store nodes in the lookup_table attribute as weak references. When a node is no longer used in the tree, it can be garbage collected, and the corresponding weak reference in the lookup_table attribute will be automatically removed.
+
+## NodeComposite Methods
+
+The NodeComposite class has several methods that are used to add, remove, and retrieve child nodes. The add_child method is used to add a child node to the composite node. The remove_child method is used to remove a child node from the composite node. The get_child_by_hash method is used to retrieve a child node by its content hash. The get_parent_by_hash method is used to retrieve the parent node of a child node by its content hash. The get_node_by_hash method is used to retrieve a node by its content hash. The get_child_by_index method is used to retrieve a child node by its index. The clear_children method is used to remove all child nodes from the composite node.
+
+## HTIIndex
+
+The HTIIndex class is a wrapper class that provides an interface for the HTI. The HTIIndex class uses a NumPy array to store buckets of nodes. The HTIIndex class uses the content hash of the data to determine which bucket to store the data in. The HTIIndex class also uses a dictionary to store nodes by their content hashes. This allows for quick lookups of nodes by their content hashes.     
