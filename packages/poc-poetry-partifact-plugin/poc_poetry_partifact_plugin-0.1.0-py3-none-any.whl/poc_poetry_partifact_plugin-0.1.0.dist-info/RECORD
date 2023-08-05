@@ -1,0 +1,6 @@
+poc_poetry_partifact_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poc_poetry_partifact_plugin/plugin.py,sha256=BP-mPBtKgPKRWAUcm1fircfiEXQjUiv3J8gMwvkWis8,3640
+poc_poetry_partifact_plugin-0.1.0.dist-info/METADATA,sha256=2gJlbUanw_r_sOoMwgbljDUu5MAapfPir-0S0WzghEY,624
+poc_poetry_partifact_plugin-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+poc_poetry_partifact_plugin-0.1.0.dist-info/entry_points.txt,sha256=gP-v6ipF6_ab7v0K3KmHOp41K9Tmg3WzOlxcic_qRzc,111
+poc_poetry_partifact_plugin-0.1.0.dist-info/RECORD,,
