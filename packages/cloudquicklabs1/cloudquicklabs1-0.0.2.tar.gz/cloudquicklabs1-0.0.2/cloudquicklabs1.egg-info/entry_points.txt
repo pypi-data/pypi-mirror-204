@@ -1,0 +1,3 @@
+[console_scripts]
+timechecker = src.main:main
+
