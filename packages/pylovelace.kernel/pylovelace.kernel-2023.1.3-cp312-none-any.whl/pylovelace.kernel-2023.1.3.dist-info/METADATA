@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pylovelace.kernel
+Version: 2023.1.3
+Summary: PyLovelace Kernel
+Author: nshout
+Requires-Python: >=3.10, <3.13
+
