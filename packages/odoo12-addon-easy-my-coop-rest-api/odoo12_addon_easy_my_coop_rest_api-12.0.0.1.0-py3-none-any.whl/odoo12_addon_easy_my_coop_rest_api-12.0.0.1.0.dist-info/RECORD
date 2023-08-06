@@ -1,0 +1,9 @@
+odoo/addons/easy_my_coop_rest_api/__init__.py,sha256=7pWTMBB5UWaK4bc8xES6uM5O2B7mvdLQwbBcS0UpQWs,47
+odoo/addons/easy_my_coop_rest_api/__manifest__.py,sha256=cuzjzklzyU9lyBiqpNmpVJRY3_VD39Gu3yCZyHQvFCQ,712
+odoo/addons/easy_my_coop_rest_api/services/__init__.py,sha256=TMiq9M2iOqg4c7-hRlzjxMRnkfDNL1Zx8Cv8hOjX1To,44
+odoo/addons/easy_my_coop_rest_api/services/schemas.py,sha256=flBisWfh_uepkdgdzMcJmrdy1mJ6QOLS-JapCx-0uE4,954
+odoo/addons/easy_my_coop_rest_api/services/services_subscription_request.py,sha256=_Zmy4M-_yeMI-mdR5NDM8oN_AZfysGieASoHprpS9cc,2265
+odoo12_addon_easy_my_coop_rest_api-12.0.0.1.0.dist-info/METADATA,sha256=lnJUBVkdxGmv-qmOsrbbhz2dwhUE2ZS3HuddAIpn7XY,487
+odoo12_addon_easy_my_coop_rest_api-12.0.0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo12_addon_easy_my_coop_rest_api-12.0.0.1.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_easy_my_coop_rest_api-12.0.0.1.0.dist-info/RECORD,,
