@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: madt
+Version: 0.0.1
+Summary: Processing open-source amplicon database for ecology
+Author: Yufei Zeng
+Author-email: yfzeng0827@hotmail.com
+Keywords: python,bioinformatic,amplicon,ecology
+Description-Content-Type: text/markdown
+
+
+# MADT
+## Install by conda
+
+
+
+
+## Brief tutorial
+
+```
+madt main
+```
+
+## Work together with amplicon analysis platform
+*Requirement*
+**Notice**
+
+[QIIME2](https://qiime2.org/)

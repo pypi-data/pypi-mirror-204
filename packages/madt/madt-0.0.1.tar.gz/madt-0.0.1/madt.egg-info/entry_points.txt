@@ -1,0 +1,4 @@
+[console_scripts]
+madt_DataIndex = madt.madt_DataIndex:main
+madt_LibCheck = madt.madt_LibCheck:main
+madt_LipMap = madt.madt_LipMap:main
