@@ -1,0 +1,12 @@
+ghpolicy/cli.py,sha256=aPCH1_NqEpwSov45borOs20lo0V9m8cjE2BiCG6CsCQ,319
+ghpolicy/main.py,sha256=yCjuxCO23lEHanviU1yRHKXbcIu0iEwqqNnQcpPo3cw,2302
+ghpolicy/policy.py,sha256=AZ47kK0R43l-erp_pCrCM-6CqjJGUBIq0ZF_7eDlKOo,2113
+ghpolicy/policies/default_branch.py,sha256=Ij6ovauaXA_zAkyjm6rhipBiRAnGkTXg9GfKyK33H_s,1228
+ghpolicy/policies/team_permission.py,sha256=TWosXoqeZoAzTSti3u-P_EIEHiDuFYZ5bw34NdLHacE,3061
+ghpolicy/policies/topics.py,sha256=uJZWbT5uncBHc8lWZlX_JVAKVqhZmPBuQqw9RGhoq9Q,550
+ghpolicy/policies/visibility.py,sha256=KpeN_EFNos6R4KT1y5a8pehqcsMOBCJRdFiMH3Jnieg,1105
+github_policies-0.1.0.dist-info/METADATA,sha256=qHdBtVxCnzTnDaHHI_2Jqyd_5rm5cbLL8hibENJTD4A,423
+github_policies-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+github_policies-0.1.0.dist-info/entry_points.txt,sha256=Mx3-6fNElnwL6oy-SIQjtCJzUHGO8b-DVhyrvXHzf_k,49
+github_policies-0.1.0.dist-info/top_level.txt,sha256=kEfP6lI2CpwQBBit5Tj815dNf-IvG_Ct9TxLYcLmc7I,9
+github_policies-0.1.0.dist-info/RECORD,,
