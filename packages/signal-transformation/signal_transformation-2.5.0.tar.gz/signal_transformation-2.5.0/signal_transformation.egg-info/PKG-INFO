@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: signal-transformation
+Version: 2.5.0
+Summary: The package allows performing a transformation of a signal using TensorFlow, Pytorch or LibROSA
+Home-page: https://github.com/Ilyushin/signal-transformation
+Author: Eugene Ilyushin
+Author-email: eugene.ilyushin@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+The package allows performing a transformation of a signal using TensorFlow, Pytorch or LibROSA
