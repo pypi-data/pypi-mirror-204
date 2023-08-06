@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: lib-holdings
+Version: 1.0.0
+Summary: CLI tool for retrieving holding counts for a list of OCNs and libraries
+Home-page: https://github.com/ubvu/lib-holdings
+License: MIT
+Author: Max Paulus
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: pandas (>=1.4.2,<2.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Requires-Dist: requests-oauthlib (>=1.3.1,<2.0.0)
+Project-URL: Repository, https://github.com/ubvu/lib-holdings
+Description-Content-Type: text/markdown
+
+# lib-holdings
+
+CLI tool for retrieving holding counts for a list of OCNs and libraries.
+Uses the OCLC API: https://developer.api.oclc.org/
+
+# Installation
+
+```bash
+$ pip install lib-holdings
+```
+
+# Usage
+
+```bash
+$ holdings [OPTIONS] INFILE_OCNS INFILE_SYMB OUT_FOLDER
+```
+
+ARGUMENTS:
+
+    INFILE_OCNS:    text file containing OCNs (1 per line)
+    INFILE_SYMB:    text file containing institute symbols (1 per line)
+    OUT_FOLDER:     path to the output directory
+
+OPTIONS:
+```bash
+--start INTEGER  Position of OCN to start with.
+--key TEXT       OCLC API key.
+--secret TEXT    OCLC API secret.
+```
