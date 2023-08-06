@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: flextoolslib
+Version: 2023.4.25
+Summary: A tool for running Python scripts on FieldWorks Language Explorer projects
+Home-page: https://github.com/cdfarrow/flextools
+Author: Craig Farrow
+Author-email: flextoolshelp@gmail.com
+Platform: ['Windows'
+Platform: 'Linux']
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Database
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Requires-Python: <3.9,>=3.6
+License-File: LICENSE.txt
+Requires-Dist: flexlibs (>=1.1.6)
+Requires-Dist: cdfutils (>=1.0.4)
+
+FLExTools
+=========
+
+FLExTools is a Python scripting utility for SIL's [FieldWorks Language Explorer](https://software.sil.org/fieldworks/).
+
+
+Read all about it on the [wiki](https://github.com/cdfarrow/flextools/wiki/)
