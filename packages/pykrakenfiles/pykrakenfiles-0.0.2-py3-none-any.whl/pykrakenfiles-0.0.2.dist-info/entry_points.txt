@@ -1,0 +1,3 @@
+[console_scripts]
+pykrakenfiles = pykrakenfiles.cli:main
+pykrakenfiles-list = pykrakenfiles.cli:list
