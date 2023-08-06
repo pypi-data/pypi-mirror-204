@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gpttui
+Version: 0.3.0
+Summary: TUI to interact with gpt models.
+Author-email: Juan Lara <julara@unal.edu.co>
+Requires-Python: >3.8
+Requires-Dist: openai
+Requires-Dist: textual[dev]
+Requires-Dist: pydantic
+Requires-Dist: pyperclip
+Requires-Dist: neovim ; extra == "dev"
+Requires-Dist: flit ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: click ; extra == "dev"
+Provides-Extra: dev

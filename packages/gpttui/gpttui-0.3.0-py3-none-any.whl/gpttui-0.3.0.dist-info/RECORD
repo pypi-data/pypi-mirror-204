@@ -1,0 +1,16 @@
+gpttui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpttui/database/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpttui/database/base.py,sha256=kD6mpDBkBUbEl1BV_86gswkUWthnIy49JdgYvTUexuk,2937
+gpttui/database/sqlite.py,sha256=BmcyNHmEVJ-sJi7SVvlJYyLt3xdyrZwkXOMzDIobGpY,4103
+gpttui/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpttui/models/base.py,sha256=RC1O7NOiMmx7kZwo7o4UvEpMZfVY2OWDfuJpaYRkue8,1857
+gpttui/models/openai.py,sha256=h-yJhOTxZw5HLmuSV6XUu-8RhYPlLoXyPN5WhPEUgAY,3377
+gpttui/tui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpttui/tui/app.py,sha256=Lm7oivpdci50Mfql1i0A246XUNh8CwUzYF4eQWdpsRA,7384
+gpttui/tui/config.py,sha256=sBdNz0t8SujHLZ3M0qGFcy3yr5dRPsMzE6bh_aj-sZ4,2644
+gpttui/tui/front.py,sha256=nayv9fWXxP5HkG50TNZUjPMbSP15U5T4lW8wqZpV2zU,2391
+gpttui/tui/main.py,sha256=HdtAYAllclsgMeY3GjTtSllKneMfaZNM4MTYXpmDPaU,210
+gpttui-0.3.0.dist-info/entry_points.txt,sha256=nzDGBiUV-3IgCSOk_vDIxofUF4NcDAjSeNQERtBZesQ,46
+gpttui-0.3.0.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+gpttui-0.3.0.dist-info/METADATA,sha256=GlavEm2Hiu5IK_n1PVWw__LIhCqgYLN2xuxnc-BFeiQ,431
+gpttui-0.3.0.dist-info/RECORD,,
