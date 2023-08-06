@@ -1,0 +1,58 @@
+v1.2.0
+1. Fixed known bugs.
+2. Updated the project structure.
+3. Added C++/Qt code for each demo.
+4. Adapted to high resolution screen. Thank @panhaovue for the tip.
+
+
+v1.1.5
+1. Fixed icon size.
+2. Made window resizable.
+3. Added exe for users without Python environment.
+
+
+v1.1.4
+1. Added 1 style demo and 2 func demos for QTableWidget.
+2. Enriched widget choices in QSS Editor.
+3. Optimized suppress_stdout_stderr() in output.py.
+4. Eliminate the framework's QSS effect (e.g. QScrollBar's QSS effect) on demos.
+
+
+v1.1.3
+1. Added 1 func demo for QLineEdit.
+2. Added 1 func demo for QWidget.
+3. Added a sponsor part.
+4. Fixed a crash problem.
+
+
+v1.1.2
+1. Added 1 style demo for QListWidget.
+2. Added 1 style demo for QPushButton.
+3. Added new version release notice.
+4. Fixed known issues of QSS Editor.
+
+
+v1.1.1
+1. Added 1 func demo for QLabel.
+2. Added 1 style demo for QPushButton.
+3. Added 1 style demo and 1 func demo for QListWidget.
+4. Fixed crash problem when showing QDial, QProgress and QPushButton style demos.
+
+
+v1.1.0
+1. Added QSS Editor.
+2. Added 2 style demos and 1 func demo for QWidget.
+
+
+v1.0.0
+1. Added 4 style demos and 2 func demos for QCheckBox.
+2. Added 3 style demos and 2 func demos for QComboBox.
+3. Added 3 style demos and 1 func demo for QDial.
+4. Added 4 style demos and 6 func demos for QLabel.
+5. Added 5 style demos and 3 func demos for QLCDNumber.
+6. Added 7 style demos and 4 func demos for QLineEdit.
+7. Added 9 style demos and 2 func demos for QProgressBar.
+8. Added 10 style demos and 3 func demos for QPushButton.
+9. Added 5 style demos and 1 func demo for QSlider.
+10. Added 1 style demo and 1 func demo for QSpinBox.
+11. Added two themes: white and black.
