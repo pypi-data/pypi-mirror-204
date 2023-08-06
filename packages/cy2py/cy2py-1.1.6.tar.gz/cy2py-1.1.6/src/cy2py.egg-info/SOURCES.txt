@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/cy2py/__init__.py
+src/cy2py/annotation_utils.py
+src/cy2py/cy2.py
+src/cy2py/utils.py
+src/cy2py.egg-info/PKG-INFO
+src/cy2py.egg-info/SOURCES.txt
+src/cy2py.egg-info/dependency_links.txt
+src/cy2py.egg-info/requires.txt
+src/cy2py.egg-info/top_level.txt
+src/tests/__init__.py
+src/tests/cypher_magic_test.py
