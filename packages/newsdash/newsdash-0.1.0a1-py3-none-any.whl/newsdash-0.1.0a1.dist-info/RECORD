@@ -1,0 +1,7 @@
+newsdash/__init__.py,sha256=nCaCmeUIXH2cNaeCBpV107Pchb1WWOfS1ZYMFlMYhBU,78
+newsdash/client.py,sha256=umBmlnVons_QW1cnU4YR4nVFfThdqE_Csm1Et6bcAOs,22992
+newsdash/exceptions.py,sha256=W_an8diW__3vckzktmgewQ0n1yLN9YLQGhUebpqW6dY,1394
+newsdash/http.py,sha256=7uBynT8qiYyih-e54mcJ1kKHebVyDTbRXQjPjzDurnE,2715
+newsdash-0.1.0a1.dist-info/METADATA,sha256=f1gjmMB2biPaACTVJnPI3tZQ_Ty9qmbBeJr6Hb9hsFw,4181
+newsdash-0.1.0a1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+newsdash-0.1.0a1.dist-info/RECORD,,
