@@ -1,0 +1,10 @@
+hil/can/zlg/__init__.py,sha256=dO8tLUf9eWgQFQS--OILN7wD8xWc9sp5pEeM4I4aSlU,26
+hil/can/zlg/bus.py,sha256=e6V9Mk0zXjWD4vLOmCtKQouaNPOuOuNljho8MANVYX4,4546
+hil/can/zlg/zlgcan.dll,sha256=aAkBoeAFmiPY0-e8rLgyhuUjNwkUllRZh_HdtwK8tHs,320984
+hil/can/zlg/zlgcan.py,sha256=HmUe8LCcQrFHdcuAvykLHAqdWS7cdDvzAbcAkWb3lyk,18125
+python_can_zlg-0.0.1.dist-info/LICENSE,sha256=-2R_b055eNF8rH_i7ibW4Fs3mnuWRasx7TgUVyDPNC4,1067
+python_can_zlg-0.0.1.dist-info/METADATA,sha256=NWpG2II3wLvbop0XwuT8v5sSKHNnM4RiTcE-x7vWvig,310
+python_can_zlg-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+python_can_zlg-0.0.1.dist-info/entry_points.txt,sha256=9XiIBOxvV6Q-hlkvt_r1wXbycTnqor6fOMePULK-f88,45
+python_can_zlg-0.0.1.dist-info/top_level.txt,sha256=NkmE0ej9RUq1cTbNBwJxAlTf324GfzDyFlCh3vbdJ44,4
+python_can_zlg-0.0.1.dist-info/RECORD,,
