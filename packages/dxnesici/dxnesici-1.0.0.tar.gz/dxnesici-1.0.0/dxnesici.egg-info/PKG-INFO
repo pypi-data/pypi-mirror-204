@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: dxnesici
+Version: 1.0.0
+Summary: DX-NES-ICI for numerical optimization in Python
+Home-page: https://github.com/ono-lab/dxnesici
+Author: Koki Ikeda
+Author-email: ikeda.k@ic.c.titech.ac.jp
+Maintainer: Koki Ikeda
+Maintainer-email: ikeda.k@ic.c.titech.ac.jp
+License: MIT
+Keywords: optimization,DX-NES-ICI,mixed-integer
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dxnesici
+(GECCO 23) Natural Evolution Strategy for Mixed-Integer Black-Box Optimization
+
+
