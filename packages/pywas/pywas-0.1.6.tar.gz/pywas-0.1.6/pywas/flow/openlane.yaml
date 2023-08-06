@@ -1,0 +1,4 @@
+simulator:
+  -analog: ngspice
+  -digital: iverilog
+display: gtkwave
