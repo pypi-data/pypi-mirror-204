@@ -1,0 +1,54 @@
+*.class
+*.log
+*.pyc
+__pycache__
+.mypy_cache
+*.egg-info
+
+# sbt specific
+.cache
+.cache/
+.history/
+.lib/
+/.bsp
+/dist/*
+target/
+/lib_managed/
+/src_managed/
+/project/boot/
+/project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+*~
+.*.swp
+.*.swo
+/.target
+/bin
+
+# Eclipse specific
+.project
+.classpath
+.settings/*
+
+# KDE specific
+*.directory
+*.kate-swp
+
+# intellij specific
+.idea
+
+# vscode specific
+.vscode
+.bloop
+.metals
+/project/metals.sbt
+
+# sbt test creates it
+metastore_db/
+**/.ipynb_checkpoints/
+.Rproj.user
+
+node_modules

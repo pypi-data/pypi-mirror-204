@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lynxkite-client
+Version: 5.3.0
+Summary: Python API for LynxKite
+Project-URL: Homepage, https://lynxkite.com/
+Project-URL: Repository, https://github.com/lynxkite/lynxkite
+Author-email: Lynx Analytics <lynxkite@lynxkite.com>
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# LynxKite Python API
+
+This is the official Python client API for [LynxKite](https://lynxkite.com/) from Lynx Analytics.
+See the LynxKite documentation for usage instructions.
