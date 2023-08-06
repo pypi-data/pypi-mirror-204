@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/colored_logging.egg-info/PKG-INFO
+src/colored_logging.egg-info/SOURCES.txt
+src/colored_logging.egg-info/dependency_links.txt
+src/colored_logging.egg-info/requires.txt
+src/colored_logging.egg-info/top_level.txt
+src/coloredlogging/__init__.py
+src/coloredlogging/coloredlogging.py
