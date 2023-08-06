@@ -1,0 +1,9 @@
+flake8
+pre-commit
+recommonmark
+setuptools
+sphinx
+sphinx-click
+sphinxcontrib-napoleon
+twine
+wheel
