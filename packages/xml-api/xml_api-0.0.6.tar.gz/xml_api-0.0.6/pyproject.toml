@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "xml-api"
+version = "0.0.6"
+description = "a simple framework"
+authors = ["Li Junxian <yk690520@126.com>"]
+readme = "README.md"
+packages = [{ include = "xml_api" }]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.25.0"
+
+[tool.poetry.scripts]
+xml-api = "xml_api.cli:main"
+xml_api = "xml_api.cli:main"
+xmlapi = "xml_api.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "ts"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+secondary = false

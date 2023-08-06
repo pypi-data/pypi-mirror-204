@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: xml-api
+Version: 0.0.6
+Summary: a simple framework
+Author: Li Junxian
+Author-email: yk690520@126.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.25.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+### XML API
+
+#### 介绍
+
+```
+该框架可以使用xml编写请求，支持http和tcp协议。
+```
+
+#### 依赖
+
+```
+python 3.6+
+requests 2.25.0+
+selenium 3.141.0+ (可选)
+PyMySQL 0.9.3+ (可选)
+cx-Oracle 8.3.0+ (可选)
+```
+
+#### 版本
+
+> v0.0.1 2023-03-31
+> ```
+> 1、项目初始化
+> ```
+> v0.0.2 2023-04-12
+> ```
+> 1、移植了config、db等模块
+> ```
+> v0.0.6 2023-04-20
+> ```
+> 1、增加了selenium的支持
+> 2、增加了外部模块导入限制
+> ```
