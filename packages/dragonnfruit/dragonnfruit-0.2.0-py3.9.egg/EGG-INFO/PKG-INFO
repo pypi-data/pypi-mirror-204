@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dragonnfruit
+Version: 0.2.0
+Summary: dragonnfruit is a method for analyzing scATAC-seq experiments.
+Home-page: https://github.com/jmschrei/dragonnfruit
+Author: Jacob Schreiber
+Author-email: jmschreiber91@gmail.com
+License: LICENSE.txt
+License-File: LICENSE
