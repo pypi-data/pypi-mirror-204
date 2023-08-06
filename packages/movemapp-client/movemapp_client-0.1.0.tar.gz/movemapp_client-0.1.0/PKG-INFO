@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: movemapp_client
+Version: 0.1.0
+Summary: A Python package for Movemapp client
+Home-page: https://github.com/geografia-au/movemapp_client
+Author: Shoaib Burq
+Author-email: shoaib@geografia.com.au
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: dev
+License-File: LICENSE
