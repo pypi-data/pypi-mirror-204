@@ -1,0 +1,12 @@
+tagstr/__init__.py,sha256=CGrLpaCitRK5kOHY52SP1b8x4TxwRmPUA9mFzsnPTL0,384
+tagstr/decorator.py,sha256=dBbGdHkfhkLGrE3mv1WIrExXn3N_wCPcnnty5NVmx3M,554
+tagstr/importer.py,sha256=NJGvW6MtyVC1GNKrNNGY1ft0m5hGR4elIPIyWwD-6go,3561
+tagstr/tokenizer.py,sha256=_4SIsaCmnEi9ob5N1ri8J1mqdzu5lZi3PKX5K9GqxnE,6625
+tagstr/transform.py,sha256=YHbQnJmlShvFgZM0WLmzRopALQ6Z51QBxAqVkcZly1c,436
+tagstr/types.py,sha256=rKfqiuhoASuHJENVbl38WEJ4glZk8Ii_lCZIRKDOlxU,656
+tagstr/utils.py,sha256=924NAG0HHX3sq1ae993rQ0nkEgcpP1Q7sNPrKFBFBnw,1056
+~tagstr.pth,sha256=IJdMv8Lwg11dIyxQI1TEGb8tRKYQnKiCIWkLK7x-1yk,135
+tagstr-0.1.0.dist-info/METADATA,sha256=pLgFC1Y1mPTNF_rCNaM8JvRdhIzmU9cEKN4tM-8K1OA,411
+tagstr-0.1.0.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+tagstr-0.1.0.dist-info/licenses/LICENSE,sha256=vXDEJOmayWHZQhedXXAweWKCgyCkJQEnJv3HggngYfQ,1083
+tagstr-0.1.0.dist-info/RECORD,,
