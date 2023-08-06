@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cpchecker/__init__.py
+src/cpchecker.egg-info/PKG-INFO
+src/cpchecker.egg-info/SOURCES.txt
+src/cpchecker.egg-info/dependency_links.txt
+src/cpchecker.egg-info/top_level.txt
