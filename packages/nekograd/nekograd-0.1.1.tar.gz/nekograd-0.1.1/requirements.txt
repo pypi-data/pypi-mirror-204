@@ -1,0 +1,9 @@
+numpy
+pandas
+scikit-learn
+scikit-image
+torch
+pytorch-lightning
+tensorboardX
+cytoolz
+more-itertools
