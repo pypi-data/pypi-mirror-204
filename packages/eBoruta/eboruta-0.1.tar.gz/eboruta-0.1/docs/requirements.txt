@@ -1,0 +1,4 @@
+nbsphinx
+sphinx-material
+sphinxcontrib-bibtex
+ipykernel
