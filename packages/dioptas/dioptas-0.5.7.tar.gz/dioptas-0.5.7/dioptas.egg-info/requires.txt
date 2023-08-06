@@ -1,0 +1,17 @@
+cython
+extra_data
+future
+h5py
+hdf5plugin
+lmfit
+pandas
+psutil
+pycifrw
+python-dateutil
+pyqt6
+pyfai>=2023.1.0
+pyqtgraph
+qtpy
+scikit-image
+sharedmem
+watchdog
