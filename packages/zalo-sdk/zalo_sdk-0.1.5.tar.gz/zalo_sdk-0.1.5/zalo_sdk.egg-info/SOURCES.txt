@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+zalo_sdk/BaseClient.py
+zalo_sdk/__init__.py
+zalo_sdk.egg-info/PKG-INFO
+zalo_sdk.egg-info/SOURCES.txt
+zalo_sdk.egg-info/dependency_links.txt
+zalo_sdk.egg-info/top_level.txt
+zalo_sdk/oa/Client.py
+zalo_sdk/oa/ZaloMessage.py
+zalo_sdk/oa/ZaloOAException.py
+zalo_sdk/oa/__init__.py
