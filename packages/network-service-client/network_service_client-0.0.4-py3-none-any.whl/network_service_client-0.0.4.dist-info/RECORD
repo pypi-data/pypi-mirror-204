@@ -1,0 +1,10 @@
+network_service_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+network_service_client/abstractions.py,sha256=-D-1Up8gT0zQs937GhinrqjK6Wf6IENmGGI46NQXmx4,227
+network_service_client/client.py,sha256=xLjAYA24zK2BboSDFyqjcAVRS0LxqkKJdECaDx_fC7M,740
+network_service_client/enums.py,sha256=UyRIXaTJ8tK6ho81Cebb0BBX6Qts1TVQisMkJJc3MjY,946
+network_service_client/models.py,sha256=gOvyyIw_S5YI4oS9nr_8cYzwXZBF0628scWM1JBiuNA,415
+network_service_client-0.0.4.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+network_service_client-0.0.4.dist-info/METADATA,sha256=lq8Njrn2IUWtxsRzDcJfDXlYk1phbN3vfdXxRMWd6g0,1429
+network_service_client-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+network_service_client-0.0.4.dist-info/top_level.txt,sha256=njcNoF4vS26O_tliBWt8_hfGEMUTzKVpyfTvuAPwwwM,23
+network_service_client-0.0.4.dist-info/RECORD,,
