@@ -1,0 +1,3 @@
+[console_scripts]
+start-rewards-server = rewards_api.cli:main
+
