@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+qwertyuiop/__init__.py
+qwertyuiop/classifiers.py
+qwertyuiop/data_processing.py
+qwertyuiop/linear_algebra.py
+qwertyuiop/metrics.py
+qwertyuiop/regressors.py
+qwertyuiop.egg-info/PKG-INFO
+qwertyuiop.egg-info/SOURCES.txt
+qwertyuiop.egg-info/dependency_links.txt
+qwertyuiop.egg-info/requires.txt
+qwertyuiop.egg-info/top_level.txt
