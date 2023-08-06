@@ -1,0 +1,11 @@
+led_calibration_plugin/__init__.py,sha256=S8sdwK13ZJvxnOuaAd1u5YIF_jbPK2FeubcDgN3QEvE,258
+led_calibration_plugin/calibrated_light_dark_cycle.py,sha256=KSYmATQIqEuER7LdfohnLX2Bwk2XNJsGoZz0Vc5ywv4,4163
+led_calibration_plugin/led_calibration.py,sha256=nOLAQil4hK3jsgmkRxY389K3uTBuVVbrR-tH_KPLdzA,12926
+led_calibration_plugin/test_led_calibration.py,sha256=J2CqdM3SVxWQWzJBIOJHZ5xzU1X7E392XQ4rBrXuWSw,6885
+led_calibration_plugin/ui/contrib/automations/led/calibrated_light_dark_cycle.yaml,sha256=o8CaY_O52jjmW4zY5pQStf6qpweRxpbbPCdIbOhO2bc,533
+led_calibration_plugin-1.2.1.dist-info/LICENSE.txt,sha256=ipJf_7c1vobIyTbjJZBpBepQJtAIu2fAxMOP9SYjWps,1062
+led_calibration_plugin-1.2.1.dist-info/METADATA,sha256=QMn3tUzpPowoSnfJx003ZlrmsH8O9iWYJC9g-X06hNU,4152
+led_calibration_plugin-1.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+led_calibration_plugin-1.2.1.dist-info/entry_points.txt,sha256=jjNBY8vhrvrlCrCQzmVlSzxqrbjlFT5oxqInfPF27rk,69
+led_calibration_plugin-1.2.1.dist-info/top_level.txt,sha256=aG26kKd4yawYfIL4rWWdKgkH6yv-VPTne3ld2CueFSQ,23
+led_calibration_plugin-1.2.1.dist-info/RECORD,,
