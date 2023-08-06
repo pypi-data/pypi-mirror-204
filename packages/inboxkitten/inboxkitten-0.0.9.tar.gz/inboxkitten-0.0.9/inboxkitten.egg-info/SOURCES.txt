@@ -1,0 +1,9 @@
+LICENSES.txt
+README.md
+setup.py
+inboxkitten/__init__.py
+inboxkitten.egg-info/PKG-INFO
+inboxkitten.egg-info/SOURCES.txt
+inboxkitten.egg-info/dependency_links.txt
+inboxkitten.egg-info/requires.txt
+inboxkitten.egg-info/top_level.txt

@@ -1,0 +1,1 @@
+This package can make temp email from https://inboxkitten.com/
