@@ -1,0 +1,6 @@
+pyperf
+toml
+packaging
+
+[dev]
+tox
