@@ -1,0 +1,8 @@
+setup.py
+exampleData/__init__.py
+exampleData/getdata.py
+exampleData.egg-info/PKG-INFO
+exampleData.egg-info/SOURCES.txt
+exampleData.egg-info/dependency_links.txt
+exampleData.egg-info/requires.txt
+exampleData.egg-info/top_level.txt
