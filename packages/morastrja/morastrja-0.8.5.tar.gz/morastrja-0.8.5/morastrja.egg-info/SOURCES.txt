@@ -1,0 +1,14 @@
+setup.py
+ext/cmorastr.c
+morastrja/__init__.py
+morastrja/__init__.pyi
+morastrja/__main__.py
+morastrja/utils.py
+morastrja/utils.pyi
+morastrja.egg-info/PKG-INFO
+morastrja.egg-info/SOURCES.txt
+morastrja.egg-info/dependency_links.txt
+morastrja.egg-info/top_level.txt
+morastrja/data/__init__.py
+morastrja/data/table.bak
+morastrja/data/table.py

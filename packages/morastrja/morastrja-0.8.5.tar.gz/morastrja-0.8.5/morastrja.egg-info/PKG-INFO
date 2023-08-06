@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: morastrja
+Version: 0.8.5
+Summary: Mora String for the Japanese Language
+Home-page: https://github.com/Hizuru3/morastrja
+Author: Hizuru
+License: MIT
+Description: 
+        This module provides a class that counts morae, based on Japanese syllabaries.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Japanese
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.7
