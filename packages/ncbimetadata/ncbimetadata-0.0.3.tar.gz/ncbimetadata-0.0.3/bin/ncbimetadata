@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+
+import ncbimetadata
+import multiprocessing
+
+if __name__=="__main__":
+    multiprocessing.freeze_support()
+    ncbimetadata.main()
