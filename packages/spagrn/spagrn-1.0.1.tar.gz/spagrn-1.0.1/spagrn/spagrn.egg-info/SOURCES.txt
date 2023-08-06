@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spagrn/__init__.py
+spagrn/plot.py
+spagrn/regulatory_network.py
+spagrn/spa_logger.py
+spagrn/test.py
+spagrn/spagrn.egg-info/PKG-INFO
+spagrn/spagrn.egg-info/SOURCES.txt
+spagrn/spagrn.egg-info/dependency_links.txt
+spagrn/spagrn.egg-info/top_level.txt
