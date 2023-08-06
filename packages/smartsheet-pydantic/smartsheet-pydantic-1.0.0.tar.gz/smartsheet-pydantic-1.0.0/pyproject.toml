@@ -1,0 +1,32 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=67.7.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartsheet-pydantic"
+version = "1.0.0"
+description = "Smartsheet Python SDK and Pydantic Wrapper"
+readme = "README.md"
+authors = [{ name = "Takahiro Watanabe" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["smartsheet", "pydantic"]
+dependencies = [
+    "psycopg2 >= 2.9.6",
+    "pydantic >= 1.10.7",
+    "requests >= 2.28.2",
+    "smartsheet-python-sdk >= 3.0.0",
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["coverage", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/oneTakeda/smartsheet-pydantic"
