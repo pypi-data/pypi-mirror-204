@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: cardec-cite
+Version: 1.1.0
+Summary: A deep learning method for joint batch correction, denoting, and clustering of cite-seq data.
+Home-page: https://github.com/HanyingYan/CarDEC_CITE
+Author: Hanying Yan
+Author-email: hanying.yan16@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.rtf
+Requires-Dist: numpy (>=1.18.1)
+Requires-Dist: pandas (>=1.0.1)
+Requires-Dist: scipy (>=1.4.1)
+Requires-Dist: tensorflow (<=2.3.1,>=2.0.1)
+Requires-Dist: scikit-learn (>=0.22.2.post1)
+Requires-Dist: scanpy (>=1.5.1)
+Requires-Dist: louvain (>=0.6.1)
+
+# CarDEC_CITE
+
+[CarDEC](https://github.com/jlakkis/CarDEC) (**C**ount **a**dapted **r**egularized **D**eep **E**mbedded **C**lustering) is a joint deep learning computational tool that is useful for analyses of single-cell RNA-seq data. CarDEC can be used to:
+
+1. Correct for batch effect in the full gene expression space, allowing the investigator to remove batch effect from downstream analyses like psuedotime analysis and coexpression analysis. Batch correction is also possible in a low-dimensional embedding space.
+2. Denoise gene expression.
+3. Cluster cells.
+
+
+I then developed CarDEC_CITE based on CarDEC to further analyze CITE-seq data with addtional protein expression compared to single-cell RNA-seq data.
+
+To use CarDEC_CITE, You will need to first read and QC your data to remove those bad cells. I used “pp.filter_cells“ and “pp.filter_genes” in the Scanpy package, and here is a [tutorial](https://drive.google.com/drive/folders/19VVOoq4XSdDFRZDou-VbTMyV2Na9z53O?usp=sharing) published for CarDEC usage.
+
+Please note this current version of CarDEC_CITE:
+* Does not support model_counts() function, so no denoised counts will be generated. But you can get denoised z scores with make_inference() function. 
+* It only supports two cases: 1. *LVG = LVP = True*, 2. *LVG = LVP = False*.
+
+## Reproducibility
+
+Justin Lakkis described and introduced CarDEC in his [methodological paper](https://www.biorxiv.org/content/10.1101/2020.09.23.310003v1). To find code to reproduce the results he generated in that paper, please visit this separate [github repository](https://github.com/jlakkis/CarDEC_Codes), which provides all code (including that for other methods) necessary to reproduce his results.
+
+
+## Installation
+
+Recomended installation procedure is as follows. 
+
+1. Install [Anaconda](https://www.anaconda.com/products/individual) if you do not already have it. 
+2. Create a conda environment using [cardec_cite.yml](https://github.com/HanyingYan/CarDEC_CITE/blob/main/cardec_cite.yml), and then activate it as follows in terminal.
+
+```
+$ conda env create -f cardec_cite.yml
+$ conda activate cardec_cite
+```
+
+Now, to use CarDEC_CITE, always make sure you activate the environment in terminal first ("conda activate cardec_cite"). And then run jupyter notebook. When you create a notebook to run CarDEC_CITE, make sure the active kernel is switched to "cardec_cite".
+
+
+## Software Requirements
+    
+- Python >= 3.7
+- TensorFlow >= 2.0.1, <= 2.3.1
+- scikit-learn == 0.22.2.post1
+- scanpy == 1.5.1
+- louvain == 0.6.1
+- pandas == 1.0.1
+- scipy == 1.4.1
+
+
+## Trouble shooting
+
+Installation on MacOS should be smooth. If installing on Windows Subsystem for Linux (WSL), the user must properly configure their g++ compiler to ensure that the louvain package can be built during installation. If the compiler is not properly configured, the user may encounter a following deprecation error similar to the following.
+
+"DEPRECATION: Could not build wheels for louvain which do not use PEP 517. pip will fall back to legacy 'setup.py install' for these. pip 21.0 will remove support for this functionality. A possible replacement is to fix the wheel build issue reported above."
+
+To fix this error, try to install the libxml2-dev package.
