@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: spagrn
+Version: 1.0.0
+Summary: A comprehensive tool to infer TF-centered, spatial gene regulatory networks for the spatially resolved transcriptomic data.
+Home-page: https://github.com/BGI-Qingdao/SpaGRN
+Author: Yao LI, Lidong GUO, Mengyang XU
+Author-email: liyao1@genomics.cn, guolidong@genomics.cn, xumengyang@genomics.cn
+License: GPL-3.0+
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+UNKNOWN
+
