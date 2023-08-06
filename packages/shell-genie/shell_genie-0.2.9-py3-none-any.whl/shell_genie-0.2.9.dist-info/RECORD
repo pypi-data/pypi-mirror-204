@@ -1,0 +1,9 @@
+shell_genie/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shell_genie/backends.py,sha256=nwo1ttVaMb-BUYsE5QCXckJp-SV5Y3W8FQibU09I9Oo,3498
+shell_genie/main.py,sha256=mXrFP63Tqsx5YTkGGMdIXZ-vLQ4HSUthnaZCb-vgeDY,3990
+shell_genie/utils.py,sha256=l29Fd-q-KFBKdhuMpunXNoQZ0NtV6Iy9xf4DiOh21Qg,957
+shell_genie-0.2.9.dist-info/LICENSE,sha256=M-2cLcA9VYuFgmLncmWUmDHRhDcSLsQXeYUHh8ddriw,1071
+shell_genie-0.2.9.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+shell_genie-0.2.9.dist-info/entry_points.txt,sha256=xzJc_6saen2Yp4i403lTX6BIZeAIQimxLmS19fpYDCU,52
+shell_genie-0.2.9.dist-info/METADATA,sha256=j5fMMu2GTuIN32ERBBp4t9vNNfhS4xAnpOWRYrDAIgI,3647
+shell_genie-0.2.9.dist-info/RECORD,,

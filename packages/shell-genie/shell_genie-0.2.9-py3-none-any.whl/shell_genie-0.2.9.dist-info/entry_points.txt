@@ -1,0 +1,3 @@
+[console_scripts]
+shell-genie=shell_genie.main:app
+
