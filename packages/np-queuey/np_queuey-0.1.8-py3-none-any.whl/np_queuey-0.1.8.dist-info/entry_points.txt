@@ -1,0 +1,3 @@
+[console_scripts]
+run_small_jobs = np_queuey.jobs.run_small_jobs:main
+
