@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+uuyoupinapi/__init__.py
+uuyoupinapi.egg-info/PKG-INFO
+uuyoupinapi.egg-info/SOURCES.txt
+uuyoupinapi.egg-info/dependency_links.txt
+uuyoupinapi.egg-info/top_level.txt
