@@ -1,0 +1,2 @@
+[console_scripts]
+eve-celery = EVECelery.__main__:main
