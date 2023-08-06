@@ -1,0 +1,5 @@
+[console_scripts]
+km = kmRead.kmRead:main
+kme = kmRead.kmRead:maine
+kmi = kmRead.kmRead:mainInit
+
