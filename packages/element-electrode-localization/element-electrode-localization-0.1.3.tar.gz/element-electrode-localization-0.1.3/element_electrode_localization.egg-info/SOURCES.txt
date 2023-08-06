@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+element_electrode_localization/__init__.py
+element_electrode_localization/coordinate_framework.py
+element_electrode_localization/electrode_localization.py
+element_electrode_localization/version.py
+element_electrode_localization.egg-info/PKG-INFO
+element_electrode_localization.egg-info/SOURCES.txt
+element_electrode_localization.egg-info/dependency_links.txt
+element_electrode_localization.egg-info/requires.txt
+element_electrode_localization.egg-info/top_level.txt
