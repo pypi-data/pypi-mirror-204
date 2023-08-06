@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/InstructEmbedding.egg-info/PKG-INFO
+src/InstructEmbedding.egg-info/SOURCES.txt
+src/InstructEmbedding.egg-info/dependency_links.txt
+src/InstructEmbedding.egg-info/entry_points.txt
+src/InstructEmbedding.egg-info/requires.txt
+src/InstructEmbedding.egg-info/top_level.txt
+tests/test_simple.py
