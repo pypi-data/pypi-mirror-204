@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: py-file-type
+Version: 0.1.0
+Summary: Wrapper for python-magic that includes necessary bin files.
+Home-page: https://github.com/riad-azz/py-file-type
+Author: riad-azz
+Author-email: riadh.azzoun@hotmail.com
+License: MIT License
+Project-URL: Source, https://github.com/riad-azz/py-file-type
+Keywords: python-magic wrapper,python-magic-bin,python-magic binaries,libmagic
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Py File Type
+
+A wrapper for [python-magic](https://pypi.org/project/python-magic/) that includes python-magic-bin files.
+
+## Description
+
+This was made duo to a file conflict problem happening when trying to
+install [python-magic](https://github.com/ahupp/python-magic)
+and [python-magic-bin](https://pypi.org/project/python-magic-bin/).
+
+## Installing
+
+```bash
+pip install py-file-type
+```
+
+## Usage
+
+Works exactly like [python-magic](https://github.com/ahupp/python-magic)
+
+```python
+import py_file_type as magic
+
+file_type = magic.from_file('video.mp4', mime=True)
+print(file_type)  # -> video/mp4
+```
+
+## Authors
+
+Riadh Azzoun - [@riad-azz](https://github.com/riad-azz)
+
+## License
+
+This project is licensed under the [MIT] License - see the LICENSE.md file for details

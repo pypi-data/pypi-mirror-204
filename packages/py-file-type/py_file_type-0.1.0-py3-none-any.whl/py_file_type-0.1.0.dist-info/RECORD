@@ -1,0 +1,12 @@
+py_file_type/__init__.py,sha256=5xIBZQs1w0pqTfvmbNb2YZbs-7MJrMusVsNQJzJ8Wi8,44
+py_file_type/compat.py,sha256=OtSQ2C8tpy3NUjKiu-yYGiZzRU-nk-5UY2GCp5o-FpI,8316
+py_file_type/loader.py,sha256=J5oRRm9940UOf3rv3KImT-2zM9pa_0RRWi-JF0GtjlU,1168
+py_file_type/magic.py,sha256=oRQjhT0nS_9jEXgNufbeKaNshZYDTP3WNr9rRvD87Yg,9840
+py_file_type/libmagic/libmagic.dll,sha256=YBtwkZL69UNj_9B--YssNS1hWsikg0LULWXU4EAj_Ng,347136
+py_file_type/libmagic/magic.mgc,sha256=hCIRE02GVEPBmz4_4_O7MiciydyRSnUcoJeZT-VKe50,4917824
+py_file_type-0.1.0.data/data/py_file_type/libmagic.dll,sha256=YBtwkZL69UNj_9B--YssNS1hWsikg0LULWXU4EAj_Ng,347136
+py_file_type-0.1.0.data/data/py_file_type/magic.mgc,sha256=hCIRE02GVEPBmz4_4_O7MiciydyRSnUcoJeZT-VKe50,4917824
+py_file_type-0.1.0.dist-info/METADATA,sha256=P1bXPByS_zfLETUDP3xAl22PwMAyn59RyCCdlFBYBCc,1553
+py_file_type-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+py_file_type-0.1.0.dist-info/top_level.txt,sha256=GgDKkUCKUMrVaLwjZAgVsz1-MghYfLUFjMsnuxW8jRE,13
+py_file_type-0.1.0.dist-info/RECORD,,
