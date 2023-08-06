@@ -1,0 +1,11 @@
+aiopen/__about__.py,sha256=6R3OXE0V2u7fq13kImYS03Ixd8YfQL12dh8lWPLcod0,268
+aiopen/__init__.py,sha256=T5du1iEry8S-0D84NPuCyaE_1-Lkuf3-kxudd2Syc2E,281
+aiopen/__main__.py,sha256=3KiAiDHreI6sVr2rXnBRKLxY_AytdkdvcommRBer4YU,477
+aiopen/_anyio.py,sha256=kwe0wsq-hqs4_JEnrsToUBFaZsG-jksiqRdraOia9ZI,2827
+aiopen/_meta.py,sha256=dGsbVEHAlp167dUVHgin-P4UHi7zZyKv9ocoXMCaxto,349
+aiopen/core.py,sha256=7n58Cxnoc2bxXyTCeVK9amyo44bdpWaMoBRUJ3HHa9s,10927
+aiopen/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiopen-0.5.5.dist-info/LICENSE,sha256=pebds694OgLqzISMvjCcwJQLSFmsZT6bGi4hpP6iJVI,1056
+aiopen-0.5.5.dist-info/METADATA,sha256=7ZREw_UoFSISY3DwmbZaZ9ZOGvKoVjQMQn-Gcr2uwIY,2603
+aiopen-0.5.5.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+aiopen-0.5.5.dist-info/RECORD,,
