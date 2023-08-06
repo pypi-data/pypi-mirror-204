@@ -1,0 +1,5 @@
+setup.py
+pyjs_code_runner.egg-info/PKG-INFO
+pyjs_code_runner.egg-info/SOURCES.txt
+pyjs_code_runner.egg-info/dependency_links.txt
+pyjs_code_runner.egg-info/top_level.txt
