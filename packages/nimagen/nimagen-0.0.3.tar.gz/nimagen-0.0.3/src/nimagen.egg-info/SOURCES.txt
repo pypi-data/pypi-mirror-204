@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/nimagen/__init__.py
+src/nimagen/genes.py
+src/nimagen/graph.py
+src/nimagen/stats.py
+src/nimagen/visualisation.py
+src/nimagen.egg-info/PKG-INFO
+src/nimagen.egg-info/SOURCES.txt
+src/nimagen.egg-info/dependency_links.txt
+src/nimagen.egg-info/top_level.txt

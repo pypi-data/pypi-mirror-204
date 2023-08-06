@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nimagen"
+version = "0.0.3"
+authors = [
+  { name="Hai Le", email="l.haimcl@gmail.com" },
+]
+description = "Simple statistical and visualisation tool for neuroimaging genetics studies"
+readme = "README.md"
+requires-python = ">=3"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/lehai-ml/nimagen"
