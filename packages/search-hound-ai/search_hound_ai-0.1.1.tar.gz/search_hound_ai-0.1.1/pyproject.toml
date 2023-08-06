@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "search-hound-ai"
+version = "0.1.1"
+description = ""
+authors = ["thisguymartin <mpatino117@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^0.27.4"
+langchain = "^0.0.145"
+fire = "^0.5.0"
+logging = "^0.4.9.6"
+pytest = "^7.3.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+search-hound-ai-cli = 'app:main'
+
