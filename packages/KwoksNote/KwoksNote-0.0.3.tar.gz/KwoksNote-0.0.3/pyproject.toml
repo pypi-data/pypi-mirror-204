@@ -1,0 +1,5 @@
+[project]
+name = 'KwoksNote'
+version ='0.0.03'
+dependencies=[
+'analysisbykwok']

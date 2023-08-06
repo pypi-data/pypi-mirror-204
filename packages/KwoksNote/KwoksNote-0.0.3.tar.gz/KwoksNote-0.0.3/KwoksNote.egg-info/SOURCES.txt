@@ -1,0 +1,8 @@
+pyproject.toml
+KwoksNote/__init__.py
+KwoksNote/_version.py
+KwoksNote.egg-info/PKG-INFO
+KwoksNote.egg-info/SOURCES.txt
+KwoksNote.egg-info/dependency_links.txt
+KwoksNote.egg-info/requires.txt
+KwoksNote.egg-info/top_level.txt
