@@ -1,0 +1,9 @@
+setup.py
+sine_wave/__init__.py
+sine_wave/sine_wave.py
+sine_wave_package2.egg-info/PKG-INFO
+sine_wave_package2.egg-info/SOURCES.txt
+sine_wave_package2.egg-info/dependency_links.txt
+sine_wave_package2.egg-info/entry_points.txt
+sine_wave_package2.egg-info/requires.txt
+sine_wave_package2.egg-info/top_level.txt
