@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: TPLUtils
+Version: 0.0.4a-
+Summary: A package used for the TPL project
+Home-page: https://github.com/The-Programming-Lab/TPL_package
+Author: The Programming Lab
+Author-email: braeden.norman6@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+Requires-Dist: firebase-admin
+Requires-Dist: google
+Requires-Dist: pydantic
+
+# TPL Utils package
+This is a package for internal use by TPL. It is meant to be used by TPL microservices to provide a common set of functionality.
+
+
+`pytest -s -p no:warnings --cov=src`
