@@ -1,0 +1,575 @@
+# coding: utf-8
+
+"""
+    decentro-in-kyc
+
+    KYC & Onboarding
+
+    The version of the OpenAPI document: 1.0.0
+    Contact: admin@decentro.tech
+    Created by: https://decentro.tech
+"""
+
+from dataclasses import dataclass
+import typing_extensions
+import urllib3
+import json
+from urllib3._collections import HTTPHeaderDict
+
+from decentro_in_kyc_client import api_client, exceptions
+from datetime import date, datetime  # noqa: F401
+import decimal  # noqa: F401
+import functools  # noqa: F401
+import io  # noqa: F401
+import re  # noqa: F401
+import typing  # noqa: F401
+import typing_extensions  # noqa: F401
+import uuid  # noqa: F401
+
+import frozendict  # noqa: F401
+
+from decentro_in_kyc_client import schemas  # noqa: F401
+
+from decentro_in_kyc_client.model.validate_response import ValidateResponse
+from decentro_in_kyc_client.model.validate400_response import Validate400Response
+from decentro_in_kyc_client.model.validate_request import ValidateRequest
+
+from . import path
+
+# body param
+SchemaForRequestBodyApplicationJson = ValidateRequest
+
+
+request_body_validate_request = api_client.RequestBody(
+    content={
+        'application/json': api_client.MediaType(
+            schema=SchemaForRequestBodyApplicationJson),
+    },
+    required=True,
+)
+_auth = [
+    'client_id',
+    'client_secret',
+    'module_secret',
+]
+ContentLengthSchema = schemas.IntSchema
+content_length_parameter = api_client.HeaderParameter(
+    name="Content-Length",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=ContentLengthSchema,
+)
+ConnectionSchema = schemas.StrSchema
+connection_parameter = api_client.HeaderParameter(
+    name="Connection",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=ConnectionSchema,
+)
+DateSchema = schemas.StrSchema
+date_parameter = api_client.HeaderParameter(
+    name="Date",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=DateSchema,
+)
+ServerSchema = schemas.StrSchema
+server_parameter = api_client.HeaderParameter(
+    name="Server",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=ServerSchema,
+)
+XDECENTROURNSchema = schemas.StrSchema
+x_decentro_urn_parameter = api_client.HeaderParameter(
+    name="X-DECENTRO-URN",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=XDECENTROURNSchema,
+)
+ExpectCTSchema = schemas.StrSchema
+expect_ct_parameter = api_client.HeaderParameter(
+    name="Expect-CT",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=ExpectCTSchema,
+)
+XPermittedCrossDomainPoliciesSchema = schemas.StrSchema
+x_permitted_cross_domain_policies_parameter = api_client.HeaderParameter(
+    name="X-Permitted-Cross-Domain-Policies",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=XPermittedCrossDomainPoliciesSchema,
+)
+XFrameOptionsSchema = schemas.StrSchema
+x_frame_options_parameter = api_client.HeaderParameter(
+    name="X-Frame-Options",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=XFrameOptionsSchema,
+)
+XXSSProtectionSchema = schemas.StrSchema
+x_xss_protection_parameter = api_client.HeaderParameter(
+    name="X-XSS-Protection",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=XXSSProtectionSchema,
+)
+XContentTypeOptionsSchema = schemas.StrSchema
+x_content_type_options_parameter = api_client.HeaderParameter(
+    name="X-Content-Type-Options",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=XContentTypeOptionsSchema,
+)
+ContentSecurityPolicySchema = schemas.StrSchema
+content_security_policy_parameter = api_client.HeaderParameter(
+    name="Content-Security-Policy",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=ContentSecurityPolicySchema,
+)
+XContentSecurityPolicySchema = schemas.StrSchema
+x_content_security_policy_parameter = api_client.HeaderParameter(
+    name="X-Content-Security-Policy",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=XContentSecurityPolicySchema,
+)
+StrictTransportSecuritySchema = schemas.StrSchema
+strict_transport_security_parameter = api_client.HeaderParameter(
+    name="Strict-Transport-Security",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=StrictTransportSecuritySchema,
+)
+ReferrerPolicySchema = schemas.StrSchema
+referrer_policy_parameter = api_client.HeaderParameter(
+    name="Referrer-Policy",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=ReferrerPolicySchema,
+)
+VarySchema = schemas.StrSchema
+vary_parameter = api_client.HeaderParameter(
+    name="vary",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=VarySchema,
+)
+XRateLimitLimitSecondSchema = schemas.IntSchema
+x_rate_limit_limit_second_parameter = api_client.HeaderParameter(
+    name="X-RateLimit-Limit-Second",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=XRateLimitLimitSecondSchema,
+)
+XRateLimitLimitMinuteSchema = schemas.IntSchema
+x_rate_limit_limit_minute_parameter = api_client.HeaderParameter(
+    name="X-RateLimit-Limit-Minute",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=XRateLimitLimitMinuteSchema,
+)
+XRateLimitLimitHourSchema = schemas.IntSchema
+x_rate_limit_limit_hour_parameter = api_client.HeaderParameter(
+    name="X-RateLimit-Limit-Hour",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=XRateLimitLimitHourSchema,
+)
+RateLimitRemainingSchema = schemas.IntSchema
+rate_limit_remaining_parameter = api_client.HeaderParameter(
+    name="RateLimit-Remaining",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=RateLimitRemainingSchema,
+)
+XRateLimitRemainingHourSchema = schemas.IntSchema
+x_rate_limit_remaining_hour_parameter = api_client.HeaderParameter(
+    name="X-RateLimit-Remaining-Hour",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=XRateLimitRemainingHourSchema,
+)
+RateLimitResetSchema = schemas.IntSchema
+rate_limit_reset_parameter = api_client.HeaderParameter(
+    name="RateLimit-Reset",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=RateLimitResetSchema,
+)
+XRateLimitRemainingMinuteSchema = schemas.IntSchema
+x_rate_limit_remaining_minute_parameter = api_client.HeaderParameter(
+    name="X-RateLimit-Remaining-Minute",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=XRateLimitRemainingMinuteSchema,
+)
+XRateLimitRemainingSecondSchema = schemas.IntSchema
+x_rate_limit_remaining_second_parameter = api_client.HeaderParameter(
+    name="X-RateLimit-Remaining-Second",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=XRateLimitRemainingSecondSchema,
+)
+RateLimitLimitSchema = schemas.IntSchema
+rate_limit_limit_parameter = api_client.HeaderParameter(
+    name="RateLimit-Limit",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=RateLimitLimitSchema,
+)
+KongRequestIDSchema = schemas.StrSchema
+kong_request_id_parameter = api_client.HeaderParameter(
+    name="Kong-Request-ID",
+    style=api_client.ParameterStyle.SIMPLE,
+    schema=KongRequestIDSchema,
+)
+SchemaFor200ResponseBodyApplicationJson = ValidateResponse
+ResponseHeadersFor200 = typing_extensions.TypedDict(
+    'ResponseHeadersFor200',
+    {
+        'Content-Length': ContentLengthSchema,
+        'Connection': ConnectionSchema,
+        'Date': DateSchema,
+        'Server': ServerSchema,
+        'X-DECENTRO-URN': XDECENTROURNSchema,
+        'Expect-CT': ExpectCTSchema,
+        'X-Permitted-Cross-Domain-Policies': XPermittedCrossDomainPoliciesSchema,
+        'X-Frame-Options': XFrameOptionsSchema,
+        'X-XSS-Protection': XXSSProtectionSchema,
+        'X-Content-Type-Options': XContentTypeOptionsSchema,
+        'Content-Security-Policy': ContentSecurityPolicySchema,
+        'X-Content-Security-Policy': XContentSecurityPolicySchema,
+        'Strict-Transport-Security': StrictTransportSecuritySchema,
+        'Referrer-Policy': ReferrerPolicySchema,
+        'vary': VarySchema,
+        'X-RateLimit-Limit-Second': XRateLimitLimitSecondSchema,
+        'X-RateLimit-Limit-Minute': XRateLimitLimitMinuteSchema,
+        'X-RateLimit-Limit-Hour': XRateLimitLimitHourSchema,
+        'RateLimit-Remaining': RateLimitRemainingSchema,
+        'X-RateLimit-Remaining-Hour': XRateLimitRemainingHourSchema,
+        'RateLimit-Reset': RateLimitResetSchema,
+        'X-RateLimit-Remaining-Minute': XRateLimitRemainingMinuteSchema,
+        'X-RateLimit-Remaining-Second': XRateLimitRemainingSecondSchema,
+        'RateLimit-Limit': RateLimitLimitSchema,
+        'Kong-Request-ID': KongRequestIDSchema,
+    }
+)
+
+
+@dataclass
+class ApiResponseFor200(api_client.ApiResponse):
+    body: typing.Union[
+        SchemaFor200ResponseBodyApplicationJson,
+    ]
+
+
+_response_for_200 = api_client.OpenApiResponse(
+    response_cls=ApiResponseFor200,
+    content={
+        'application/json': api_client.MediaType(
+            schema=SchemaFor200ResponseBodyApplicationJson),
+    },
+    headers=[
+        content_length_parameter,
+        connection_parameter,
+        date_parameter,
+        server_parameter,
+        x_decentro_urn_parameter,
+        expect_ct_parameter,
+        x_permitted_cross_domain_policies_parameter,
+        x_frame_options_parameter,
+        x_xss_protection_parameter,
+        x_content_type_options_parameter,
+        content_security_policy_parameter,
+        x_content_security_policy_parameter,
+        strict_transport_security_parameter,
+        referrer_policy_parameter,
+        vary_parameter,
+        x_rate_limit_limit_second_parameter,
+        x_rate_limit_limit_minute_parameter,
+        x_rate_limit_limit_hour_parameter,
+        rate_limit_remaining_parameter,
+        x_rate_limit_remaining_hour_parameter,
+        rate_limit_reset_parameter,
+        x_rate_limit_remaining_minute_parameter,
+        x_rate_limit_remaining_second_parameter,
+        rate_limit_limit_parameter,
+        kong_request_id_parameter,
+    ]
+)
+SchemaFor400ResponseBodyApplicationJson = Validate400Response
+
+
+@dataclass
+class ApiResponseFor400(api_client.ApiResponse):
+    body: typing.Union[
+        SchemaFor400ResponseBodyApplicationJson,
+    ]
+
+
+_response_for_400 = api_client.OpenApiResponse(
+    response_cls=ApiResponseFor400,
+    content={
+        'application/json': api_client.MediaType(
+            schema=SchemaFor400ResponseBodyApplicationJson),
+    },
+)
+_status_code_to_response = {
+    '200': _response_for_200,
+    '400': _response_for_400,
+}
+_all_accept_content_types = (
+    'application/json',
+)
+
+
+class BaseApi(api_client.Api):
+    @typing.overload
+    def _validate_oapg(
+        self,
+        body: typing.Union[SchemaForRequestBodyApplicationJson,],
+        content_type: typing_extensions.Literal["application/json"] = ...,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        skip_deserialization: typing_extensions.Literal[False] = ...,
+    ) -> typing.Union[
+        ApiResponseFor200,
+    ]: ...
+
+    @typing.overload
+    def _validate_oapg(
+        self,
+        body: typing.Union[SchemaForRequestBodyApplicationJson,],
+        content_type: str = ...,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        skip_deserialization: typing_extensions.Literal[False] = ...,
+    ) -> typing.Union[
+        ApiResponseFor200,
+    ]: ...
+
+
+    @typing.overload
+    def _validate_oapg(
+        self,
+        body: typing.Union[SchemaForRequestBodyApplicationJson,],
+        skip_deserialization: typing_extensions.Literal[True],
+        content_type: str = ...,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+    ) -> api_client.ApiResponseWithoutDeserialization: ...
+
+    @typing.overload
+    def _validate_oapg(
+        self,
+        body: typing.Union[SchemaForRequestBodyApplicationJson,],
+        content_type: str = ...,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        skip_deserialization: bool = ...,
+    ) -> typing.Union[
+        ApiResponseFor200,
+        api_client.ApiResponseWithoutDeserialization,
+    ]: ...
+
+    def _validate_oapg(
+        self,
+        body: typing.Union[SchemaForRequestBodyApplicationJson,],
+        content_type: str = 'application/json',
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        skip_deserialization: bool = True,
+    ):
+        """
+        Validate
+        :param skip_deserialization: If true then api_response.response will be set but
+            api_response.body and api_response.headers will not be deserialized into schema
+            class instances
+        """
+        used_path = path.value
+
+        _headers = HTTPHeaderDict()
+        # TODO add cookie handling
+        if accept_content_types:
+            for accept_content_type in accept_content_types:
+                _headers.add('Accept', accept_content_type)
+
+        if body is schemas.unset:
+            raise exceptions.ApiValueError(
+                'The required body parameter has an invalid value of: unset. Set a valid value instead')
+        _fields = None
+        _body = None
+        serialized_data = request_body_validate_request.serialize(body, content_type)
+        _headers.add('Content-Type', content_type)
+        if 'fields' in serialized_data:
+            _fields = serialized_data['fields']
+        elif 'body' in serialized_data:
+            _body = serialized_data['body']
+        response = self.api_client.call_api(
+            resource_path=used_path,
+            method='post'.upper(),
+            headers=_headers,
+            fields=_fields,
+            serialized_body=_body,
+            body=body,
+            auth_settings=_auth,
+            stream=stream,
+            timeout=timeout,
+        )
+
+        response_for_status = _status_code_to_response.get(str(response.http_response.status))
+        if response_for_status:
+            api_response = response_for_status.deserialize(
+                                                   response,
+                                                   self.api_client.configuration,
+                                                   skip_deserialization=skip_deserialization
+                                               )
+        else:
+            # If response data is JSON then deserialize for SDK consumer convenience
+            is_json = api_client.JSONDetector._content_type_is_json(response.http_response.headers.get('Content-Type', ''))
+            api_response = api_client.ApiResponseWithoutDeserialization(
+                body=json.loads(response.http_response.data) if is_json else response.http_response.data,
+                response=response.http_response,
+                round_trip_time=response.round_trip_time,
+                status=response.http_response.status,
+                headers=response.http_response.headers,
+            )
+
+        if not 200 <= api_response.status <= 299:
+            raise exceptions.ApiException(api_response=api_response)
+
+        return api_response
+
+
+class Validate(BaseApi):
+    # this class is used by api classes that refer to endpoints with operationId fn names
+
+    @typing.overload
+    def validate(
+        self,
+        body: typing.Union[SchemaForRequestBodyApplicationJson,],
+        content_type: typing_extensions.Literal["application/json"] = ...,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        skip_deserialization: typing_extensions.Literal[False] = ...,
+    ) -> typing.Union[
+        ApiResponseFor200,
+    ]: ...
+
+    @typing.overload
+    def validate(
+        self,
+        body: typing.Union[SchemaForRequestBodyApplicationJson,],
+        content_type: str = ...,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        skip_deserialization: typing_extensions.Literal[False] = ...,
+    ) -> typing.Union[
+        ApiResponseFor200,
+    ]: ...
+
+
+    @typing.overload
+    def validate(
+        self,
+        body: typing.Union[SchemaForRequestBodyApplicationJson,],
+        skip_deserialization: typing_extensions.Literal[True],
+        content_type: str = ...,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+    ) -> api_client.ApiResponseWithoutDeserialization: ...
+
+    @typing.overload
+    def validate(
+        self,
+        body: typing.Union[SchemaForRequestBodyApplicationJson,],
+        content_type: str = ...,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        skip_deserialization: bool = ...,
+    ) -> typing.Union[
+        ApiResponseFor200,
+        api_client.ApiResponseWithoutDeserialization,
+    ]: ...
+
+    def validate(
+        self,
+        body: typing.Union[SchemaForRequestBodyApplicationJson,],
+        content_type: str = 'application/json',
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        skip_deserialization: bool = True,
+    ):
+        return self._validate_oapg(
+            body=body,
+            content_type=content_type,
+            accept_content_types=accept_content_types,
+            stream=stream,
+            timeout=timeout,
+            skip_deserialization=skip_deserialization
+        )
+
+
+class ApiForpost(BaseApi):
+    # this class is used by api classes that refer to endpoints by path and http method names
+
+    @typing.overload
+    def post(
+        self,
+        body: typing.Union[SchemaForRequestBodyApplicationJson,],
+        content_type: typing_extensions.Literal["application/json"] = ...,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        skip_deserialization: typing_extensions.Literal[False] = ...,
+    ) -> typing.Union[
+        ApiResponseFor200,
+    ]: ...
+
+    @typing.overload
+    def post(
+        self,
+        body: typing.Union[SchemaForRequestBodyApplicationJson,],
+        content_type: str = ...,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        skip_deserialization: typing_extensions.Literal[False] = ...,
+    ) -> typing.Union[
+        ApiResponseFor200,
+    ]: ...
+
+
+    @typing.overload
+    def post(
+        self,
+        body: typing.Union[SchemaForRequestBodyApplicationJson,],
+        skip_deserialization: typing_extensions.Literal[True],
+        content_type: str = ...,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+    ) -> api_client.ApiResponseWithoutDeserialization: ...
+
+    @typing.overload
+    def post(
+        self,
+        body: typing.Union[SchemaForRequestBodyApplicationJson,],
+        content_type: str = ...,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        skip_deserialization: bool = ...,
+    ) -> typing.Union[
+        ApiResponseFor200,
+        api_client.ApiResponseWithoutDeserialization,
+    ]: ...
+
+    def post(
+        self,
+        body: typing.Union[SchemaForRequestBodyApplicationJson,],
+        content_type: str = 'application/json',
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        skip_deserialization: bool = True,
+    ):
+        return self._validate_oapg(
+            body=body,
+            content_type=content_type,
+            accept_content_types=accept_content_types,
+            stream=stream,
+            timeout=timeout,
+            skip_deserialization=skip_deserialization
+        )
+
+

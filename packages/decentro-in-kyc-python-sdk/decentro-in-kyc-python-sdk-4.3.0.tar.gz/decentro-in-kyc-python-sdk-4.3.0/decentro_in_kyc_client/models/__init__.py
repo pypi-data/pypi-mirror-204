@@ -1,0 +1,37 @@
+# coding: utf-8
+
+# flake8: noqa
+
+# import all models into this package
+# if you have many models here with many references from one model to another this may
+# raise a RecursionError
+# to avoid this, import only the models that you directly need like:
+# from from decentro_in_kyc_client.model.pet import Pet
+# or import this package, but before doing it, use:
+# import sys
+# sys.setrecursionlimit(n)
+
+from decentro_in_kyc_client.model.check_image_quality400_response import CheckImageQuality400Response
+from decentro_in_kyc_client.model.check_image_quality_request import CheckImageQualityRequest
+from decentro_in_kyc_client.model.check_image_quality_response import CheckImageQualityResponse
+from decentro_in_kyc_client.model.check_photocopy400_response import CheckPhotocopy400Response
+from decentro_in_kyc_client.model.check_photocopy_request import CheckPhotocopyRequest
+from decentro_in_kyc_client.model.check_photocopy_response import CheckPhotocopyResponse
+from decentro_in_kyc_client.model.check_video_liveness400_response import CheckVideoLiveness400Response
+from decentro_in_kyc_client.model.check_video_liveness_request import CheckVideoLivenessRequest
+from decentro_in_kyc_client.model.check_video_liveness_response import CheckVideoLivenessResponse
+from decentro_in_kyc_client.model.classify_document400_response import ClassifyDocument400Response
+from decentro_in_kyc_client.model.classify_document_request import ClassifyDocumentRequest
+from decentro_in_kyc_client.model.classify_document_response import ClassifyDocumentResponse
+from decentro_in_kyc_client.model.extract_text400_response import ExtractText400Response
+from decentro_in_kyc_client.model.extract_text_request import ExtractTextRequest
+from decentro_in_kyc_client.model.extract_text_response import ExtractTextResponse
+from decentro_in_kyc_client.model.mask_aadhaar_request import MaskAadhaarRequest
+from decentro_in_kyc_client.model.mask_aadhaar_uid400_response import MaskAadhaarUid400Response
+from decentro_in_kyc_client.model.mask_aadhaar_uid_response import MaskAadhaarUidResponse
+from decentro_in_kyc_client.model.match_face400_response import MatchFace400Response
+from decentro_in_kyc_client.model.match_face_request import MatchFaceRequest
+from decentro_in_kyc_client.model.match_face_response import MatchFaceResponse
+from decentro_in_kyc_client.model.validate400_response import Validate400Response
+from decentro_in_kyc_client.model.validate_request import ValidateRequest
+from decentro_in_kyc_client.model.validate_response import ValidateResponse
