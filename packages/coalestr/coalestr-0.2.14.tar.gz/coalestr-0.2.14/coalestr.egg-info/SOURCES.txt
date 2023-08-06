@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+coalestr/__init__.py
+coalestr/cs.py
+coalestr.egg-info/PKG-INFO
+coalestr.egg-info/SOURCES.txt
+coalestr.egg-info/dependency_links.txt
+coalestr.egg-info/top_level.txt
