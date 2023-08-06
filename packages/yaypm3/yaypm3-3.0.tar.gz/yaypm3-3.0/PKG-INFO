@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: yaypm3
+Version: 3.0
+Summary: Client lib for yate extmodule
+Home-page: https://github.com/utob-ir/yaypm
+Download-URL: https://github.com/utob-ir/yaypm/archive/3.0.tar.gz
+Author: Daniel Marohn and Youtob Telecom Inc
+Author-email: info@utob.ir
+License: GPL
+Keywords: yate,extmodule
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
