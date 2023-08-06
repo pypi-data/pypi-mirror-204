@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: varya
+Version: 0.0.26a1
+Summary: Machine Learning Tools
+Home-page: https://github.com/varya-ml/varya
+Author: Kritik Seth
+Author-email: sethkritik@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: scikit-learn
+
+# varya
+ Machine Learning Tools
