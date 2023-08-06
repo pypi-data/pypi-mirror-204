@@ -1,0 +1,23 @@
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[package]
+name = "mexpress"
+version = "0.1.5"
+edition = "2021"
+repository = "https://github.com/bertiqwerty/mexpress"
+license = "MIT"
+
+[lib]
+name = "mexpress"
+crate-type = ["cdylib"]
+
+[dependencies]
+exmex = { version = "0.17.2", features = ["partial"] }
+numpy = "0.18.0"
+num = "0.4"
+
+[dependencies.pyo3]
+version = "0.18.3"
+features = ["extension-module"]
+
+[package.metadata.maturin]
+python-source = "py"
