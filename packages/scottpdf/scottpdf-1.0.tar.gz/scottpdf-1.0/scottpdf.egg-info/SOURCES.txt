@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+scottpdf/__init__.py
+scottpdf/pdf2image.py
+scottpdf/pdf2txt.py
+scottpdf.egg-info/PKG-INFO
+scottpdf.egg-info/SOURCES.txt
+scottpdf.egg-info/dependency_links.txt
+scottpdf.egg-info/top_level.txt
