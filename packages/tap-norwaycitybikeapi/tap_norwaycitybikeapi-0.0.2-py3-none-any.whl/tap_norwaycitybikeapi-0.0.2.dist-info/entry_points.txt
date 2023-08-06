@@ -1,0 +1,3 @@
+[console_scripts]
+tap-norwaycitybikeapi=tap_norwaycitybikeapi.tap:TapNorwayCityBikeAPI.cli
+
