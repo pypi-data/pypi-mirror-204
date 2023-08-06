@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+PyFileWriter.egg-info/PKG-INFO
+PyFileWriter.egg-info/SOURCES.txt
+PyFileWriter.egg-info/dependency_links.txt
+PyFileWriter.egg-info/top_level.txt
