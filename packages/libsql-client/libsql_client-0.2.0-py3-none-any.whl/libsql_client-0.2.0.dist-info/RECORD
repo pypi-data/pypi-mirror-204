@@ -1,0 +1,17 @@
+libsql_client/__init__.py,sha256=XN8gEHuqKbOORpcz1XKcedIXkkuFkY9W4PEcFLurCaU,268
+libsql_client/client.py,sha256=WSsTu5fbhBRqJVTwmEKR_LopF22vw2U3Z5UQaOZTYFE,3039
+libsql_client/config.py,sha256=WterakmMQajavBV7hAVp-AEE0R2dJldS9fDj3sc5rco,993
+libsql_client/create_client.py,sha256=56HQzRNONdjB3PRkbnkOiByaxakTHB-YFfOeu-1MC4k,801
+libsql_client/hrana/__init__.py,sha256=uwAmnoKTKPNg1zsOT3zsNQzHcAprxC6fFJW0xXJk3RU,85
+libsql_client/hrana/client.py,sha256=L82qab20KD6f_qrnCCR1ZASFP-hUzdm_hZYldTaurMg,13911
+libsql_client/hrana/convert.py,sha256=naqd3D2-T2Jtv5WQt8gghEXNNGdwmzKsl09bUbISeD8,4816
+libsql_client/hrana/id_alloc.py,sha256=3NYq5w_zfXksCwVpNsO0GbwwGFEiam4SQuDZ0kjWxFc,1610
+libsql_client/hrana/proto.py,sha256=aDcVJG3WRhjrQgKWEn9GguDGnuXCzQwgc7mQJEEz4IA,3974
+libsql_client/http.py,sha256=DSoEb3WLKcl7CK6UVefjIBWDChO-iO_5URaZHtWT6_o,3441
+libsql_client/result.py,sha256=cEwsjCWIQb78MmaOUEtBfQMTVJNsuq3QXw6A4cRY4tQ,3048
+libsql_client/sqlite3.py,sha256=R6NyRfd-aokZoFzgXPo7hEXYphrnpM3eg2fe8gNQQL4,4896
+libsql_client/sync.py,sha256=X6Pplq5sooUZTY4NQP3dHg1Bk3Yh3vJh8gMcIMEtG7w,6347
+libsql_client-0.2.0.dist-info/LICENSE.md,sha256=zs9YmBilbC2ooKbMgsiiFcl3CYjAM7YBbCt0v3nzgVI,1069
+libsql_client-0.2.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+libsql_client-0.2.0.dist-info/METADATA,sha256=YZC_7mlOXih0f5yF4cmNQtAaUFDa0EAWSKa6ai-NQKk,3706
+libsql_client-0.2.0.dist-info/RECORD,,
