@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: superbox-utils
+Version: 2023.6
+Summary: Utilities for Superbox Python Packages.
+Home-page: https://github.com/superbox-dev/superbox-utils
+Author: Michael Hacker
+Author-email: mh@superbox.one
+License: Apache-2.0 license
+Project-URL: Source Code, https://github.com/superbox-dev/superbox-utils
+Project-URL: Bug Reports, https://github.com/superbox-dev/superbox-utils/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml (~=6.0)
+Provides-Extra: mqtt
+Requires-Dist: asyncio-mqtt (==0.16.1) ; extra == 'mqtt'
+Requires-Dist: paho-mqtt (==1.6.1) ; extra == 'mqtt'
+
+[![license-url](https://img.shields.io/badge/license-Apache%202-yellowgreen)](https://opensource.org/license/apache-2-0/)
+![coverage-badge](https://raw.githubusercontent.com/superbox-dev/superbox-utils/main/coverage.svg)
+![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)
+![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)
+![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)
+![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)
+
+# Superbox Utils
+
+Utilities for superbox python packages:
+
+* [Unipi Control](https://github.com/superbox-dev/unipi-control)
+* [UniFi Tools](https://github.com/superbox-dev/unifi-tools)
