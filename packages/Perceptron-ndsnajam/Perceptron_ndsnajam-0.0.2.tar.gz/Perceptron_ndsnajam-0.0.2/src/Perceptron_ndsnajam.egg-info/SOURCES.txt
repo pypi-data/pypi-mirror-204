@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/Perceptron_ndsnajam/__init__.py
+src/Perceptron_ndsnajam/perceptron.py
+src/Perceptron_ndsnajam.egg-info/PKG-INFO
+src/Perceptron_ndsnajam.egg-info/SOURCES.txt
+src/Perceptron_ndsnajam.egg-info/dependency_links.txt
+src/Perceptron_ndsnajam.egg-info/requires.txt
+src/Perceptron_ndsnajam.egg-info/top_level.txt
