@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: ws-cli-chat
+Version: 0.1.1
+Summary: simple cli-websocket-ws-cli-chat
+Author: __coelho__
+Author-email: 109885900+MikalROn@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Requires-Dist: websockets (>=11.0.2,<12.0.0)
+Description-Content-Type: text/markdown
+
+# Chat Application
+This is a command-line chat application built with Python that allows users to connect to a websocket server and chat with other users in real-time.
+
+# Requirements
+- Python 3.7+
+- websockets library
+- asyncio library
+
+# Installation
+To install the required libraries, run the following command in your terminal:
+````shell
+pip install websockets
+````
+Usage
+To start the application, run the following command in your terminal:
+
+````shell
+python ws_cli_chat
+````
+
+You will be prompted to choose a username. After entering your username, the application will connect to the websocket server and you will be able to chat with other users in real-time.
+
+To send a message, simply type your message and hit enter. Your message will be sent to all other users currently connected to the chat room.
+
+# Features
+- Real-time messaging: Messages are sent and received in real-time, allowing for seamless communication between users.
+- Multiple users: The chat room can accommodate multiple users at the same time, allowing for group conversations.
+- Usernames: Users can choose their own usernames, which are displayed alongside their messages in the chat room.
+- Clearing console: The console is cleared after each new message is received, making the chat experience cleaner.
+
+# Contributing
+Contributions are welcome! If you have any suggestions or feature requests, please open an issue or submit a pull request.
+
+# License
+This project is licensed under the MIT License. See the LICENSE file for more information.

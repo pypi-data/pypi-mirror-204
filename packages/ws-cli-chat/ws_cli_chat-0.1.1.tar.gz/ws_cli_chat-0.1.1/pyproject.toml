@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ws_cli_chat"
+version = "0.1.1"
+description = "simple cli-websocket-ws-cli-chat"
+authors = ["__coelho__ <109885900+MikalROn@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "ws_cli_chat"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.7.0"}
+websockets = "^11.0.2"
+
+[tool.poetry.scripts]
+ws_cli_chat = "ws_cli_chat.cli_chat:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

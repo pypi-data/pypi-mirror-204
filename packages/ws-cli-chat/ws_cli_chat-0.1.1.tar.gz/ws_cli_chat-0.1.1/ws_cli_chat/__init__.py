@@ -1,0 +1,1 @@
+from ws_cli_chat.console import Console
