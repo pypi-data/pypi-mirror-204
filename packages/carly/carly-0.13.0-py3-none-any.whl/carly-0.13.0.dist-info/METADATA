@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: carly
+Version: 0.13.0
+Summary: A tool for putting messages into and collecting responses from Twisted servers using real networking
+Home-page: https://github.com/cjw296/carly
+Author: Chris Withers
+Author-email: chris@withers.org
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6.7
+License-File: LICENSE.txt
+Requires-Dist: Twisted (>=21.7)
+Requires-Dist: attrs
+Provides-Extra: build
+Requires-Dist: twine ; extra == 'build'
+Requires-Dist: wheel ; extra == 'build'
+Provides-Extra: test
+Requires-Dist: autobahn ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: testfixtures (>6.3) ; extra == 'test'
+
+carly
+=====
+
+|CircleCI|_
+
+.. |CircleCI| image:: https://circleci.com/gh/cjw296/carly/tree/master.svg?style=shield
+.. _CircleCI: https://circleci.com/gh/cjw296/carly/tree/master
+
+
+A tool for putting messages into and collecting responses from Twisted servers and clients using real networking.
+
+"call me maybe"
+
+Why carly? 'cos someone already took `Jepsen!`__
+
+__ https://jepsen.io/
+
+
