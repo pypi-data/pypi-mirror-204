@@ -1,0 +1,22 @@
+{
+  "label_suffix": "_mask.nii.gz",
+  "label_dict": {
+    "0": "Background",
+    "1": "LU",
+    "2": "LL",
+    "3": "RU",
+    "4": "RM",
+    "5": "RL"
+  },
+  "Modalities": {
+    "_image.nii.gz": "CT"
+  },
+  "FileExtension": ".nii.gz",
+  "DatasetName": "ATM",
+  "Experiment Name": "nnUNet_3D_fullres",
+  "TRAINING_CONFIGURATION": "3d_fullres",
+  "TRAINER_CLASS_NAME": "nnUNetTrainerHive",
+  "TRAINER_PLAN": "nnUNetPlansv2.1",
+  "Seed": 12345,
+  "n_folds": 5
+}
