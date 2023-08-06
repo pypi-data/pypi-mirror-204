@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: prodia-python
+Version: 1.1
+Summary: Prodia API Python Wrapper
+Author: yoou3-cyber
+Author-email: zenafey@eugw.ru
+License: MIT
+License-File: LICENSE
+Requires-Dist: requests
+
+README.md
