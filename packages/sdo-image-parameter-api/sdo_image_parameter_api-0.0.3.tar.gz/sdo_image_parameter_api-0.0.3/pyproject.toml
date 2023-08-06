@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sdo_image_parameter_api"
+version = "0.0.3"
+authors = [
+  { name="Ruqayyah Muse", email="rmuse1@student.gsu.edu" },
+]
+description = "A toolkit for accessing solar image data"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Source Files" = "https://bitbucket.org/ds4350-image-param-api-rm/solar-image-api/src/main/"
+"Web API" = "http://dmlab.cs.gsu.edu/dmlabapi/isd_docs.html"
