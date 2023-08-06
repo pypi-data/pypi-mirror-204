@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ddtcv
+Version: 0.1.2
+Summary: DDT CV.
+License: MIT
+Author: TsangHans
+Author-email: gzzenghan@189.cn
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.21.6,<2.0.0)
+Requires-Dist: onnxruntime (>=1.13.1,<2.0.0)
+Requires-Dist: opencv-python (>=4.4.0.46,<5.0.0.0)
+Description-Content-Type: text/markdown
+
+Examples are as follows.
+```python
+import ddtcv
+
+wind_value = ddtcv.Wind("your_image_array")
+angle_value = ddtcv.Angle("your_image_array")
+```
+That's all.
