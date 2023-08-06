@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: crc-event-schemas
+Version: 0.1.1
+Summary: CloudEvents type bindings for console.redhat.com
+Home-page: https://github.com/RedHatInsights/event-schemas-python
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+
+crc-event-schemas
+=================
+
+Python bindings for https://github.com/RedHatInsights/event-schemas
