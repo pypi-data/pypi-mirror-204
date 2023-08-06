@@ -1,0 +1,7 @@
+aspeak-5.1.0.data/scripts/aspeak,sha256=_7cnTxXsMIOcCY_GWNEpsSK7ZXqlSFv1YlEQEZDO8_Q,5059072
+aspeak-5.1.0.dist-info/METADATA,sha256=cxJaeRBpUGhnk5QA7vCS6Ldl0z_ItbPYZK-2Hi_HM5k,17432
+aspeak-5.1.0.dist-info/RECORD,,
+aspeak-5.1.0.dist-info/WHEEL,sha256=hnyzy6W-0k1PYkXXO8Ti4SQ3cdYSx0CM-0imjMRJRw0,104
+aspeak-5.1.0.dist-info/WHEEL,sha256=so2vgIQ2OUQERN5lCkOG1ySasg8603PJm0JQGh7mCJE,107
+aspeak/__init__.py,sha256=sj4r5-MOLBcE6ZPZqN948r83nNPArb3GXE1h7sq0fvk,107
+aspeak/aspeak.cpython-310-darwin.so,sha256=H97jwJKQcbS-fokEJ2oKkF3WvK2WG1f6NevcjiS8VgU,2694576
