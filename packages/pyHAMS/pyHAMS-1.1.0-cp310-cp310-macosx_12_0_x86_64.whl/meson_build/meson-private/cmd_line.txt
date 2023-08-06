@@ -1,0 +1,8 @@
+[options]
+python.purelibdir = .
+python.platlibdir = .
+prefix = /Users/gbarter/devel/pyHAMS/meson_build
+python_target = /opt/local/bin/python
+
+[properties]
+
