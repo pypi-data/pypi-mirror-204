@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "FFmpyg_DavidRodriguezSoaresCUI"
+version = "0.0.3"
+authors = [
+  { name="DavidRodriguezSoaresCUI", email="fireblaze904+FFmpyg@gmail.com" },
+]
+description = "A FFMPEG interface for Python by DavidRodriguezSoaresCUI"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+
+]
+
+[project.urls]
+"Homepage" = "https://github.com/DavidRodriguezSoaresCUI/FFmpyg"
+"Bug Tracker" = "https://github.com/DavidRodriguezSoaresCUI/FFmpyg/issues"
