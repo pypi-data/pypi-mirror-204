@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+github_issue_extractor.egg-info/PKG-INFO
+github_issue_extractor.egg-info/SOURCES.txt
+github_issue_extractor.egg-info/dependency_links.txt
+github_issue_extractor.egg-info/requires.txt
+github_issue_extractor.egg-info/top_level.txt
