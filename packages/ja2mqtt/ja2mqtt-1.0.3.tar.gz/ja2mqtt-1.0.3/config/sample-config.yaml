@@ -1,0 +1,86 @@
+# -*- coding: utf-8 -*-
+# jablotron2mqtt configuration file for JA121-T BUS RS-485
+# @author: Tomas Vitvar, https://vitvar.com, tomas@vitvar.com
+
+# ja2mqtt definition file
+ja2mqtt: ja2mqtt.yaml
+
+# location of logs
+logs: ../logs
+
+# mqtt broker configuration
+mqtt-broker:
+  address: mqtt-broker
+  port: 1883
+
+# Serial port where the device is connected.
+# The serial port requires 9600 baud, 8 data bits, no parity, 1 stop-bit
+# see https://jablotron.com.hk/image/data/pdf/manuel/JA-121T.pdf
+serial:
+  use_simulator: True
+  port: /dev/ttyUSB0
+  baudrate: 9600
+  bytesize: 8
+  parity: N
+  stopbits: 1
+  rtscts: False
+  xonxoff: False
+
+# Jablotron topology definition
+topology:
+  section:
+    house: 1
+    garage: 2
+  peripheral:
+    - name: house/central-unit
+      type: central-unit
+      pos: 0
+    - name: house/entrance
+      type: motion
+      pos: 1
+    - name: house/upperfloor/hall
+      type: motion
+      pos: 2
+    - name: house/upperfloor/livingroom
+      type: motion
+      pos: 3
+    - name: house/upperfloor/smoke
+      type: smoke
+      pos: 4
+    - name: house/siren
+      type: siren
+      pos: 5
+    - name: garage/gate
+      type: magnet
+      pos: 6
+
+# When serial.use_simulator is True, the below configuration defines how events will be generated for ja2mqtt
+simulator:
+  pin: 1234
+  sections:
+    - code: 1
+      state: ARMED
+    - code: 2
+      state: READY
+    - code: 3
+      state: OFF
+    - code: 4
+      state: OFF
+
+  # positions of peripherals to be simulated
+  peripherals: 1,2,3,4,5,6
+
+  # delay in seconds when responding to a command
+  response_delay: 0.5
+
+  # list of rules that will generate sinulated events
+  rules:
+  # heartbeat every 10s
+  - time_next: 10
+    write: OK
+
+  # prf state will occur once every 10-20 seconds
+  - time_next: !py random(10,20)
+    # this will write prfstate event for peripherials on positions 1, 2, 3, 4, 5, 6
+    # on_prob is a probability of the ON state, (1-on_prob) is then the probability of the OFF state
+    write: !py prf_random_states(on_prob=0.8)
