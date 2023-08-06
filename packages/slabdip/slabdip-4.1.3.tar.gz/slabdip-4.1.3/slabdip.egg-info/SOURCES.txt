@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+slabdip/__init__.py
+slabdip/predictor.py
+slabdip.egg-info/PKG-INFO
+slabdip.egg-info/SOURCES.txt
+slabdip.egg-info/dependency_links.txt
+slabdip.egg-info/requires.txt
+slabdip.egg-info/top_level.txt
+slabdip/data/subduction_data.csv

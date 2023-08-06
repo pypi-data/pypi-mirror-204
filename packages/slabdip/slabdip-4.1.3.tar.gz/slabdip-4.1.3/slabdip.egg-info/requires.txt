@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+gplately>=1.0
+
+[plotting]
+matplotlib
+jupyter
+cartopy
