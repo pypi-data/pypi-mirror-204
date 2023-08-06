@@ -1,0 +1,2 @@
+[console_scripts]
+acpip = aclib.pip.__main__:main
