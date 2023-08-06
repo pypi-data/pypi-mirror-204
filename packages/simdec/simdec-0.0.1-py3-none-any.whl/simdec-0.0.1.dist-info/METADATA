@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: simdec
+Version: 0.0.1
+Summary: Sensitivity analysis using simulation decomposition
+Project-URL: Documentation, https://simdec.readthedocs.io
+Project-URL: Source code, https://github.com/Simulation-Decomposition/simdec-python
+Author: Pamphile Roy
+Maintainer: simdec contributors
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Requires-Dist: numpy
+Requires-Dist: pandas
+Provides-Extra: dev
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: simdec[doc]; extra == 'dev'
+Requires-Dist: simdec[test]; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: pydata-sphinx-theme; extra == 'doc'
+Requires-Dist: sphinx; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Description-Content-Type: text/markdown
+
+# SimDec
+
+Stay tuned!
