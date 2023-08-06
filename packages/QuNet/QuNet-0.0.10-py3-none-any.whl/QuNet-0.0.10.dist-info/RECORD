@@ -1,0 +1,12 @@
+qunet/__init__.py,sha256=IVocm0vQvQK-MkJmbU_qmmZi6dyccdcqjlLG1FUx7TU,123
+qunet/data.py,sha256=mMVzzTlLC7iwhlyyeAdAxCh0qsmjtkD9BMqNK5ptF98,6484
+qunet/models.py,sha256=7-Eun8YQ_jwFFDsBBjLseNyPFDN_TUHqlGBG6mzg3Cg,21899
+qunet/old.py,sha256=wfsu9d4vcptlBT1lgPKHCfqDm8lirDvTTvEEzKGjTig,16977
+qunet/optim.py,sha256=jhoIhpjX9YzEneGc8uUelIdsLidBQgaAmO43Vqz59Xo,10435
+qunet/plots.py,sha256=83OWCZkri0cR_BGvZQVcdcdTtuyGsHR_OC45Oz3DMLM,7131
+qunet/trainer.py,sha256=RL_kEkbXQq068ZADYRqmCtouC1bddboDDXvsexLMAWg,27530
+QuNet-0.0.10.dist-info/LICENSE,sha256=TSOuIu1obl3tk6okEX3AbHzQjUhXvTKU3gY_yDhpZM0,1068
+QuNet-0.0.10.dist-info/METADATA,sha256=xAaGT5vdHwTqwqyFRZTVt_gEuqmkkY6L6IpKkNm5K6M,13878
+QuNet-0.0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+QuNet-0.0.10.dist-info/top_level.txt,sha256=fZTlCNIA7T6KO6-qMX35d8uK01uhYTGRKO117oubma8,6
+QuNet-0.0.10.dist-info/RECORD,,
