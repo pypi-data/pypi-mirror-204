@@ -1,0 +1,1 @@
+#this will be inverse as dictanum (FROM a number text to a number value)
