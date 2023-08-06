@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: timestamp-utils
+Version: 0.1
+Summary: Package for generating Unix timestamps and related timestamp formats
+Author: Your Name
+Author-email: your-email@example.com
+
