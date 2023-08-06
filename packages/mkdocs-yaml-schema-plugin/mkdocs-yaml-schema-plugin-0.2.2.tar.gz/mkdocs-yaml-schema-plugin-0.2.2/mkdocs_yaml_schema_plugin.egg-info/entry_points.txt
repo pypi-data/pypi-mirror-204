@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+yaml-schema = mkdocs_yaml_schema_plugin.plugin:YamlSchema
