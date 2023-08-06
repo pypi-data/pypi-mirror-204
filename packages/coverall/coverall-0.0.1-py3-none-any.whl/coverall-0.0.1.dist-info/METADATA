@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: coverall
+Version: 0.0.1
+Summary: Useful tools to work through Exact Cover, Set Cover, and Max Cover Problems
+Download-URL: https://pypi.org/project/coverall/
+Author: Brancen Clement
+Author-email: Brancenc@gmail.com
+License: MIT
+Keywords: MaxCover,SetCover,ExactCover
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: bitarray
+
+
+
+Change Log
+=======================================================
+
+0.0.1 (04/18/2023)
+-------------------------------------------------------
+-first release
