@@ -1,0 +1,11 @@
+zalo_sdk/BaseClient.py,sha256=YyeOwkyUBrhAiRFsYwd93SF4QrAlGHsgxgdrPxotRUs,1512
+zalo_sdk/__init__.py,sha256=eMIRVZSpFkWrKuSRsC_og-vZDGPaGs760mMWttqWIZ0,34
+zalo_sdk/oa/Client.py,sha256=ljtwPfyUvEH8O3Dy6HMYS_iQ2rUEhxlwrrZ2d0yT-VE,5490
+zalo_sdk/oa/ZaloMessage.py,sha256=vn27DhP953EtXYfnPhvufSeqEXhVwGiuzE8wvPcU-Ik,5414
+zalo_sdk/oa/ZaloOAException.py,sha256=Jt3njqkWqPiW_mazGZoCmSicpMl9Nrtj9SZJie2BRoI,2426
+zalo_sdk/oa/__init__.py,sha256=c44yA-pbHfH-T9_-3zMeFAMLP2_mMzG0O3r18tJhnok,79
+zalo_sdk-0.1.5.dist-info/LICENSE,sha256=DosZBEVw1BQ_JPl_v0SoKFYiUV9ehPhbcHh-PBAemKw,1064
+zalo_sdk-0.1.5.dist-info/METADATA,sha256=Z_GHMt5dUc50yf-0zqBJa1X4lIMR1Ou-2Kjzd0UI9c4,1821
+zalo_sdk-0.1.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+zalo_sdk-0.1.5.dist-info/top_level.txt,sha256=2y9NKIvYeI81nXRSpnUX3-s0JSTlt_khQZDZYDw3ll0,9
+zalo_sdk-0.1.5.dist-info/RECORD,,
