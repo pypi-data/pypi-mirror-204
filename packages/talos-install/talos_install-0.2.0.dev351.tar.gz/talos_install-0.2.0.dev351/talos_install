@@ -1,0 +1,194 @@
+#!/usr/bin/env bash
+# =======================================================================
+# TALOS-CLI HPC Manager
+# =======================================================================
+#    Copyright (C) 2022-2023  E4 Computer Engineering SPA (e4company.com)
+#
+#    This file is part of TALOS-CLI.
+#
+#    TALOS-CLI is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    TALOS-CLI is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with TALOS-CLI.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+check_for_target(){
+    echo $hostdef > $inventory
+    if [[ -z $target ]]; then target=$(hostname); fi
+    target_ip=$(ping $target -4 -c 1 | grep PING | awk '{print $3}' | tr -dc '[:alnum:][.]\n')
+    echo "$target   ssh_ip=$target_ip"  >> $inventory
+}
+
+check_environment_coherence(){
+  sudo dnf install epel-release -y &>/dev/null
+  if ! which python3.9 &>/dev/null ; then
+    echo "Missing Python 3.9"
+    exit 2
+  fi
+
+  if ! which pip3.9 &>/dev/null ; then
+    echo "Missing pip 3.9"
+    exit 2
+  fi
+
+  if ! which ansible &>/dev/null ; then
+    echo "Missing ansible"
+    exit 2
+  fi
+
+}
+
+check_selinux(){
+  current_selinux=$(grep ^SELINUX= /etc/selinux/config | cut -d= -f2)
+  if [[ "$current_selinux" != "disabled" ]]; then
+    echo "Selinux need to be disabled, a Reboot will occour during installation"
+    reply=false
+    while ! $reply; do
+      read -rp "Do you want to proceed? [y/n] " read_reply
+      case $read_reply in
+        y|Y) reply=true ;;
+        n|N)
+          exit 3 ;;
+      esac
+    done
+  fi
+}
+
+process_cmd(){
+    echo "$action : $cmd"
+    $cmd
+    if [[ $? -ne 0 ]]; then
+        echo "Command failed $cmd"
+        exit 1
+    fi
+}
+
+usage(){
+    cat <<EOF
+Usage: $0 COMMAND [options]
+
+Options:
+    --key -k <key_path>                Specify path to ansible vault keyfile
+    --help, -h                         Show this usage information
+    --tags, -t <tags>                  Only run plays and tasks tagged with these values
+    --skip-tags <tags>                 Only run plays and tasks whose tags do not match these values
+    --extra, -e <ansible variables>    Set additional variables as key=value or YAML/JSON passed to ansible-playbook
+    --limit <host>                     Specify host to run plays
+    --forks <forks>                    Number of forks to run Ansible with
+    --vault-id <@prompt or path>       Specify @prompt or password file (Ansible >=  2.4)
+    --ask-vault-pass                   Ask for vault password
+    --vault-password-file <path>       Specify password file for vault decrypt
+    --verbose, -v                      Increase verbosity of ansible-playbook
+
+Environment variables:
+    extra_opts                         Additional arguments to pass to ansible-playbook
+
+Commands:
+    bootstrap            Bootstrap servers with talos deploy dependencies
+    deploy               Deploy and start main talos containers
+    build                Build talos custom containers
+EOF
+}
+
+check_environment_coherence
+
+short_opts="h:t:k:e:v"
+long_opts="help,skip-tags:,tags:,key:,extra:,verbose,limit:,forks:,vault-id:,ask-vault-pass,vault-password-file:"
+
+args=$(getopt -o "${short_opts}" -l "${long_opts}" --name "$0" -- "$@") || { usage >&2; exit 2; }
+
+eval set -- "$args"
+
+dir=$(which talos_install)
+dir="$(dirname $dir)"
+dir="$(dirname $dir)"
+
+basedir=${dir}/share/talos_install
+
+if [[ -f ~/.ssh/dev_key ]]; then
+  \cp ~/.ssh/dev_key* ${basedir}/ansible/roles/cli/files/
+else
+  echo "Missing dev_key in ~/.ssh folder"
+  exit 2
+fi
+
+
+ANSIBLE_CONFIG="${basedir}/ansible/ansible.cfg"
+config_dir="${basedir}/etc"
+inventory="${basedir}/etc/inventory"
+playbook="${basedir}/ansible/site.yml"
+verbosity=""
+extra_opts=""
+target=""
+hostdef="[talos]"
+
+while [ "$#" -gt 0 ]; do
+    case "$1" in
+    (--skip-tags)
+      extra_opts="$extra_opts --skip-tags $2" ; shift 2 ;;
+    (--tags|-t)
+      extra_opts="$extra_opts --tags $2" ; shift 2 ;;
+    (--verbose|-v)
+      verbosity="$verbosity --verbose" ; shift 1 ;;
+    (--key|-k)
+      vault_pass_file="$2"
+      extra_opts="$extra_opts --vault-password-file=$vault_pass_file"
+      shift 2 ;;
+    (--extra|-e)
+      extra_opts="$extra_opts -e $2" ; shift 2 ;;
+    (--limit)
+      extra_opts="$extra_opts --limit $2" ; shift 2 ;;
+    (--forks)
+      extra_opts="$extra_opts --forks $2" ; shift 2 ;;
+    (--vault-id)
+      extra_opts="$extra_opts --vault-id $2" ; shift 2 ;;
+    (--ask-vault-pass)
+      verbosity="$extra_opts --ask-vault-pass" ; shift 1 ;;
+    (--vault-password-file)
+      extra_opts="$extra_opts --vault-password-file $2" ; shift 2 ;;
+    (--help|-h)
+      usage ; shift ; exit 0 ;;
+    (--)
+      shift ; break ;;
+    (*)
+      echo "error" ; exit 3 ;;
+esac
+done
+
+case "$1" in
+  (bootstrap)
+    check_selinux
+    action="Bootstrapping servers"
+    playbook="${basedir}/ansible/site.yaml"
+    extra_opts="$extra_opts -e cli_action=bootstrap"
+    hostdef="[talos]" ;;
+  (build)
+    action="Build Talos containers"
+    playbook="${basedir}/ansible/site.yaml"
+    extra_opts="$extra_opts -e cli_action=build"
+    hostdef="[builder]" ;;
+  (deploy)
+    action="Deploying Playbooks"
+    playbook="${basedir}/ansible/site.yaml"
+    extra_opts="$extra_opts -e cli_action=deploy"
+    hostdef="[talos]" ;;
+  (*)
+    usage
+    exit 0 ;;
+esac
+
+check_for_target
+
+export ANSIBLE_CONFIG
+config_opts="-e @${config_dir}/talos.yaml -e @${config_dir}/globals.yaml -e config_dir=${config_dir}"
+
+cmd="ansible-playbook -i $inventory $config_opts $extra_opts $playbook $verbosity"
+process_cmd
