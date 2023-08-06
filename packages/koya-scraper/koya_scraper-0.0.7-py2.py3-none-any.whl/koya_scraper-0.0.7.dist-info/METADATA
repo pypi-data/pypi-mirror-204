@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: koya-scraper
+Version: 0.0.7
+Author: 
+Author-email: 
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: pandas
+Requires-Dist: scrapy
+Requires-Dist: sqlalchemy
+
