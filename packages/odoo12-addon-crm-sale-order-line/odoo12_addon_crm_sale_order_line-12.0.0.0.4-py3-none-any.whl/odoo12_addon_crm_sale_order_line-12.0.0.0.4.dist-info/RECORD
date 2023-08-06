@@ -1,0 +1,11 @@
+odoo/addons/crm_sale_order_line/__init__.py,sha256=Ax4qLxdb9ATk05MF7cSQ0BdpYCpGVYFy9n4U4zODf9o,46
+odoo/addons/crm_sale_order_line/__manifest__.py,sha256=uDJ7Yuir9Ajfz_v4X-RUkbJhdJoPb8Wt2qtuhD-jJNc,568
+odoo/addons/crm_sale_order_line/models/__init__.py,sha256=x2c0XHvFeyoUQhIoHNIwcGuEl9RwTMjcpiMeg7iFSzk,82
+odoo/addons/crm_sale_order_line/models/crm_lead.py,sha256=IDY2ni6vPb8uu7LfIS0yZJ9AE82ydv40IQiMjactv8s,2701
+odoo/addons/crm_sale_order_line/models/crm_sale_order_line.py,sha256=nqpIUp2u9-OMkTDzDSKN6zgTwtnJPyW816rSRHTx2Dw,1094
+odoo/addons/crm_sale_order_line/security/ir.model.access.csv,sha256=dLVC7pGMeptJisyh4VFJRQ_nkeMURlWes8ZXfLLYZNI,159
+odoo/addons/crm_sale_order_line/views/crm_lead.xml,sha256=9iruaWU_pTYNP16cwn5Y9Ys7hR7S_I8RmvnW2RW54dc,1626
+odoo12_addon_crm_sale_order_line-12.0.0.0.4.dist-info/METADATA,sha256=T2SU7afCTTlI58wuUOLrWmyZgCSh9wzkVVwJ3UCQsyw,360
+odoo12_addon_crm_sale_order_line-12.0.0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo12_addon_crm_sale_order_line-12.0.0.0.4.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_crm_sale_order_line-12.0.0.0.4.dist-info/RECORD,,
