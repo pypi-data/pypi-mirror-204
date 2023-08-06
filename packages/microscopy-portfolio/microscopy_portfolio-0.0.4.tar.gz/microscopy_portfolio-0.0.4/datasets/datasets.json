@@ -1,0 +1,104 @@
+{
+    "Denoising": {
+        "N2V_BSD68": {
+            "URL": "https://download.fht.org/jug/n2v/BSD68_reproducibility.zip",
+            "Description": "This dataset is taken from K. Zhang et al (TIP, 2017). \nIt consists of 400 gray-scale 180x180 images (cropped from the BSD dataset) and splitted between training and validation, and 68 gray-scale test images (BSD68).\nAll images were corrupted with Gaussian noise with standard deviation of 25 pixels. The test dataset contains the uncorrupted images as well.\nOriginal dataset: https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/",
+            "Citation": "D. Martin, C. Fowlkes, D. Tal and J. Malik, \"A database of human segmented natural images and its application to evaluating segmentation algorithms and measuring ecological statistics,\" Proceedings Eighth IEEE International Conference on Computer Vision. ICCV 2001, Vancouver, BC, Canada, 2001, pp. 416-423 vol.2, doi: 10.1109/ICCV.2001.937655.",
+            "License": "Unknown",
+            "File size": "875.0 MB"
+        },
+        "N2V_SEM": {
+            "URL": "https://download.fht.org/jug/n2v/SEM.zip",
+            "Description": "Cropped images from a SEM dataset from T.-O. Buchholz et al (Methods Cell Biol, 2020).",
+            "Citation": "T.-O. Buchholz, A. Krull, R. Shahidi, G. Pigino, G. J\u00e9kely, F. Jug, \"Content-aware image restoration for electron microscopy\", Methods Cell Biol 152, 277-289",
+            "License": "CC-BY-4.0",
+            "File size": "13.0 MB"
+        },
+        "N2V_RGB": {
+            "URL": "https://download.fht.org/jug/n2v/RGB.zip",
+            "Description": "Banner of the CVPR 2019 conference with extra noise.",
+            "Citation": "A. Krull, T.-O. Buchholz and F. Jug, \"Noise2Void - Learning Denoising From Single Noisy Images,\" 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019, pp. 2124-2132",
+            "License": "CC-BY-4.0",
+            "File size": "10.4 MB"
+        },
+        "Flywing": {
+            "URL": "https://download.fht.org/jug/n2v/flywing-data.zip",
+            "Description": "Image of a membrane-labeled fly wing (35x692x520 pixels).",
+            "Citation": "Buchholz, T.O., Prakash, M., Schmidt, D., Krull, A., Jug, F.: Denoiseg: joint denoising and segmentation. In: European Conference on Computer Vision (ECCV). pp. 324-337. Springer (2020) 8, 9",
+            "License": "CC-BY-4.0",
+            "File size": "10.2 MB"
+        },
+        "Convallaria": {
+            "URL": "https://cloud.mpi-cbg.de/index.php/s/BE8raMtHQlgLDF3/download",
+            "Description": "Image of a convallaria flower (35x692x520 pixels).\nThe image also comes with a defocused image in order to allow \nestimating the noise distribution.",
+            "Citation": "Krull, A., Vi\u010dar, T., Prakash, M., Lalit, M., & Jug, F. (2020). Probabilistic noise2void: Unsupervised content-aware denoising. Frontiers in Computer Science, 2, 5.",
+            "License": "CC-BY-4.0",
+            "File size": "344.0 MB"
+        }
+    },
+    "DenoiSeg": {
+        "DSB2018_n0": {
+            "URL": "https://zenodo.org/record/5156969/files/DSB2018_n0.zip?download=1",
+            "Description": "From the Kaggle 2018 Data Science Bowl challenge, the training and validation sets consist of 3800 and 670 patches respectively, while the test set counts 50 images.\nOriginal data: https://www.kaggle.com/competitions/data-science-bowl-2018/data",
+            "Citation": "Caicedo, J.C., Goodman, A., Karhohs, K.W. et al. Nucleus segmentation across imaging experiments: the 2018 Data Science Bowl. Nat Methods 16, 1247-1253 (2019). https://doi.org/10.1038/s41592-019-0612-7",
+            "License": "GPL-3.0",
+            "File size": "40.2 MB"
+        },
+        "DSB2018_n10": {
+            "URL": "https://zenodo.org/record/5156977/files/DSB2018_n10.zip?download=1",
+            "Description": "From the Kaggle 2018 Data Science Bowl challenge, the training and validation sets consist of 3800 and 670 patches respectively, while the test set counts 50 images.\nOriginal data: https://www.kaggle.com/competitions/data-science-bowl-2018/data",
+            "Citation": "Caicedo, J.C., Goodman, A., Karhohs, K.W. et al. Nucleus segmentation across imaging experiments: the 2018 Data Science Bowl. Nat Methods 16, 1247-1253 (2019). https://doi.org/10.1038/s41592-019-0612-7",
+            "License": "GPL-3.0",
+            "File size": "366.0 MB"
+        },
+        "DSB2018_n20": {
+            "URL": "https://zenodo.org/record/5156983/files/DSB2018_n20.zip?download=1",
+            "Description": "From the Kaggle 2018 Data Science Bowl challenge, the training and validation sets consist of 3800 and 670 patches respectively, while the test set counts 50 images.\nOriginal data: https://www.kaggle.com/competitions/data-science-bowl-2018/data",
+            "Citation": "Caicedo, J.C., Goodman, A., Karhohs, K.W. et al. Nucleus segmentation across imaging experiments: the 2018 Data Science Bowl. Nat Methods 16, 1247-1253 (2019). https://doi.org/10.1038/s41592-019-0612-7",
+            "License": "GPL-3.0",
+            "File size": "368.0 MB"
+        },
+        "Flywing_n0": {
+            "URL": "https://zenodo.org/record/5156991/files/Flywing_n0.zip?download=1",
+            "Description": "This dataset consist of 1428 training and 252 validation patches of a membrane labeled fly wing. The test set is comprised of 50 additional images.",
+            "Citation": "Buchholz, T.O., Prakash, M., Schmidt, D., Krull, A., Jug, F.: Denoiseg: joint denoising and segmentation. In: European Conference on Computer Vision (ECCV). pp. 324-337. Springer (2020) 8, 9",
+            "License": "CC BY-SA 4.0",
+            "File size": "47.0 MB"
+        },
+        "Flywing_n10": {
+            "URL": "https://zenodo.org/record/5156993/files/Flywing_n10.zip?download=1",
+            "Description": "This dataset consist of 1428 training and 252 validation patches of a membrane labeled fly wing. The test set is comprised of 50 additional images.",
+            "Citation": "Buchholz, T.O., Prakash, M., Schmidt, D., Krull, A., Jug, F.: Denoiseg: joint denoising and segmentation. In: European Conference on Computer Vision (ECCV). pp. 324-337. Springer (2020) 8, 9",
+            "License": "CC BY-SA 4.0",
+            "File size": "282.0 MB"
+        },
+        "Flywing_n20": {
+            "URL": "https://zenodo.org/record/5156995/files/Flywing_n20.zip?download=1",
+            "Description": "This dataset consist of 1428 training and 252 validation patches of a membrane labeled fly wing. The test set is comprised of 50 additional images.",
+            "Citation": "Buchholz, T.O., Prakash, M., Schmidt, D., Krull, A., Jug, F.: Denoiseg: joint denoising and segmentation. In: European Conference on Computer Vision (ECCV). pp. 324-337. Springer (2020) 8, 9",
+            "License": "CC BY-SA 4.0",
+            "File size": "293.0 MB"
+        },
+        "MouseNuclei_n0": {
+            "URL": "https://zenodo.org/record/5157001/files/Mouse_n0.zip?download=1",
+            "Description": "A dataset depicting diverse and non-uniformly clustered nuclei in the mouse skull, consisting of 908 training and 160 validation patches. The test set counts 67 additional images",
+            "Citation": "Buchholz, T.O., Prakash, M., Schmidt, D., Krull, A., Jug, F.: Denoiseg: joint denoising and segmentation. In: European Conference on Computer Vision (ECCV). pp. 324-337. Springer (2020) 8, 9",
+            "License": "CC BY-SA 4.0",
+            "File size": "12.4 MB"
+        },
+        "MouseNuclei_n10": {
+            "URL": "https://zenodo.org/record/5157003/files/Mouse_n10.zip?download=1",
+            "Description": "A dataset depicting diverse and non-uniformly clustered nuclei in the mouse skull, consisting of 908 training and 160 validation patches. The test set counts 67 additional images",
+            "Citation": "Buchholz, T.O., Prakash, M., Schmidt, D., Krull, A., Jug, F.: Denoiseg: joint denoising and segmentation. In: European Conference on Computer Vision (ECCV). pp. 324-337. Springer (2020) 8, 9",
+            "License": "CC BY-SA 4.0",
+            "File size": "161.0 MB"
+        },
+        "MouseNuclei_n20": {
+            "URL": "https://zenodo.org/record/5157008/files/Mouse_n20.zip?download=1",
+            "Description": "A dataset depicting diverse and non-uniformly clustered nuclei in the mouse skull, consisting of 908 training and 160 validation patches. The test set counts 67 additional images",
+            "Citation": "Buchholz, T.O., Prakash, M., Schmidt, D., Krull, A., Jug, F.: Denoiseg: joint denoising and segmentation. In: European Conference on Computer Vision (ECCV). pp. 324-337. Springer (2020) 8, 9",
+            "License": "CC BY-SA 4.0",
+            "File size": "160.0 MB"
+        }
+    }
+}
