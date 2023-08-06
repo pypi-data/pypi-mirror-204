@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: app01
+Version: 0.1.0
+Summary: my first app01
+Home-page: https://github.com/near2sea/app01
+Author: lihaijian
+Author-email: sanan.li@qq.com
+License: MIT license
+Keywords: app01
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+=====
+app01
+=====
+
+
+.. image:: https://img.shields.io/pypi/v/app01.svg
+        :target: https://pypi.python.org/pypi/app01
+
+.. image:: https://img.shields.io/travis/near2sea/app01.svg
+        :target: https://travis-ci.com/near2sea/app01
+
+.. image:: https://readthedocs.org/projects/app01/badge/?version=latest
+        :target: https://app01.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+my first app01
+
+
+* Free software: MIT license
+* Documentation: https://app01.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2023-04-23)
+------------------
+
+* First release on PyPI.
