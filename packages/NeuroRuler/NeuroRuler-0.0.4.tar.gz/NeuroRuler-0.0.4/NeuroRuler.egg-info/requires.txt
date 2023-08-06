@@ -1,0 +1,9 @@
+setuptools
+SimpleITK
+numpy
+argparse
+opencv-python
+pytest
+PyQt6
+qimage2ndarray
+screeninfo
