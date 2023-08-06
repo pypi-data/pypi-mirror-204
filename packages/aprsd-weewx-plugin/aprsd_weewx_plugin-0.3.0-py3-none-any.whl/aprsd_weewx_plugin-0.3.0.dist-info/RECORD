@@ -1,0 +1,13 @@
+aprsd_weewx_plugin/__init__.py,sha256=OyK_cGPYroYMeeT4vPGZwEDLH0J12Dp3DiGm7ohEEI8,644
+aprsd_weewx_plugin/conf.py,sha256=Nj1Q6BUFzC-cIWd9_9-XWrjoBFl3vI9grb4jJDRqjFw,1187
+aprsd_weewx_plugin/weewx.py,sha256=XXY9h7jnydVmzz3FCLEvHbohOmdUgqzkgG_rJPsJhMs,12549
+aprsd_weewx_plugin/conf/__init__.py,sha256=ZjbGnIjCWdvW9XWJbJpEOFnpEdC_1of-urO7E9IrObc,115
+aprsd_weewx_plugin/conf/opts.py,sha256=OdJZqpgmKuMJX8hEC1--qwbmBZt5fTqv5_w0lgBK7Dg,2727
+aprsd_weewx_plugin/conf/weewx.py,sha256=HlI-_XRDTwP8bheyFtZJWtmKqKMd3vrRg0XXqgRdPxw,1168
+aprsd_weewx_plugin-0.3.0.dist-info/LICENSE,sha256=yjcqfZJWCx-p9tgytEDovNYtmt-ohwyYKH3qtm2YMQ4,35148
+aprsd_weewx_plugin-0.3.0.dist-info/METADATA,sha256=tdXsgJOM8jB-5C_rLS_TvjY6oZFU0vb4tAym8PRjbE4,3452
+aprsd_weewx_plugin-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aprsd_weewx_plugin-0.3.0.dist-info/entry_points.txt,sha256=jJBtwS3Gr7GLwm0KvJRcNZy105J6AiLqkTAhfmXXB5k,84
+aprsd_weewx_plugin-0.3.0.dist-info/pbr.json,sha256=ylsG-PypHXX_Uz0Gw6OM-5l-caQ2DlA8Ty13X-9NuZo,46
+aprsd_weewx_plugin-0.3.0.dist-info/top_level.txt,sha256=71ginBxgwaYf7FYsDABJUsLYK3vxkV0LWmPOkCpogb0,19
+aprsd_weewx_plugin-0.3.0.dist-info/RECORD,,
