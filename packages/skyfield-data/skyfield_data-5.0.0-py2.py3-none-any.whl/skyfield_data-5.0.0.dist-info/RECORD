@@ -1,0 +1,10 @@
+skyfield_data/__init__.py,sha256=XWqNF9hZqANZdgRI3bVFkgv98ZL6MXqtUqplBtlnOBg,755
+skyfield_data/expiration_data.py,sha256=VVMpH9Qz3mUwJxhO9FEeJBA8H3L0aJxBJDWj6XW-BCg,120
+skyfield_data/expirations.py,sha256=Ru8UpgNmWgjkSfmMePsQ63jNIYyc_319ZYXKbpvwAJg,1729
+skyfield_data/data/de421.bsp,sha256=ogpxOdoEy8RiRUY0kY6anKaRJwROLMnU-cFuI40t7tw,16788480
+skyfield_data/data/finals2000A.all,sha256=6zX_kXoSx9UbHIyocw6lYNiu4lfPK-i77QxUq7Ugn1c,3533272
+skyfield_data-5.0.0.dist-info/COPYING,sha256=sj9yG-adFMnwSGGP0-tbKrY1qBIyERCAhLWtkpSxVxk,1069
+skyfield_data-5.0.0.dist-info/METADATA,sha256=I92WSsZhRmilaGBJQ1XYmzJitUoqdPpXHvBkmPQ321I,8190
+skyfield_data-5.0.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+skyfield_data-5.0.0.dist-info/top_level.txt,sha256=dLLsdMhP3dBnR2xZo--pCB3MAFC0kfOXCTLXOxmABwY,14
+skyfield_data-5.0.0.dist-info/RECORD,,
