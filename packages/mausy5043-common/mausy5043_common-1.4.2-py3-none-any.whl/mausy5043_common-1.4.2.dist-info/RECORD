@@ -1,0 +1,9 @@
+mausy5043_common/__init__.py,sha256=8KDiwRKFaJuAXixsZZYU_YIYyLc1g9Cu8ATARleG0m4,68
+mausy5043_common/funfile.py,sha256=CSlEsXOlhTSMfl5IlH7kcOVfvWprs7xyUy3X0h17m4E,951
+mausy5043_common/funmeteo.py,sha256=6RKZ0iRZ6RcOXGit1rrgXL-YHqaGOWvlOrFCcvpyVi8,1396
+mausy5043_common/libsignals.py,sha256=t213O1TAGNdejA8M87JhUbx0-oG1PVz9U11dwdglh7o,641
+mausy5043_common/libsqlite3.py,sha256=YUYL3bEU5rANwYM2i5m8IHUgqjI_ory-XtEKF7JahWY,8906
+mausy5043_common-1.4.2.dist-info/METADATA,sha256=ldm_aiN7Ed0CRQuHIXNAVPYH3NIhM1QLMPWHrWej6Ik,2287
+mausy5043_common-1.4.2.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+mausy5043_common-1.4.2.dist-info/licenses/LICENSE,sha256=kJQd2Fj-xLvTUBPWcXmdeyWnAu4tmIy3oOFE0mLO_Jc,1072
+mausy5043_common-1.4.2.dist-info/RECORD,,
