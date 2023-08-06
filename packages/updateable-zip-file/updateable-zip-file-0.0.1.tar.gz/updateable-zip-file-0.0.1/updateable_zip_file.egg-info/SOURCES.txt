@@ -1,0 +1,7 @@
+pyproject.toml
+readme.md
+updateable_zip_file.egg-info/PKG-INFO
+updateable_zip_file.egg-info/SOURCES.txt
+updateable_zip_file.egg-info/dependency_links.txt
+updateable_zip_file.egg-info/top_level.txt
+updateablezipfile/__init__.py
