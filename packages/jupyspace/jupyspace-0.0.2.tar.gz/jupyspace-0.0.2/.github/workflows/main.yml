@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+
+defaults:
+  run:
+    shell: bash -l {0}
+
+jobs:
+  test:
+    name: Test
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: [ '3.10' ]
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Install micromamba
+      uses: mamba-org/provision-with-micromamba@main
+      with:
+        environment-file: dev-environment.yml
+        environment-name: jupyspace
+
+    - name: Install jupyspace
+      run: |
+        pip install ./jupyspace_api
+        pip install ./plugins/localspace
+        pip install .[test]
+
+    - name: Run tests
+      run: |
+        pytest ./tests -v
