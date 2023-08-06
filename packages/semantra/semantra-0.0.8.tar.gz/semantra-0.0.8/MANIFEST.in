@@ -1,0 +1,3 @@
+include requirements.txt VERSION
+recursive-include client/public *
+recursive-include src/semantra *.py
