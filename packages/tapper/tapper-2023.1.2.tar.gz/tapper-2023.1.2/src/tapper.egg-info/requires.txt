@@ -1,0 +1,36 @@
+typing_extensions>=4.3.0
+
+[:sys_platform == "linux"]
+evdev>=1.6.0
+
+[:sys_platform == "win32"]
+winput>=1.5.0
+pywin32>=305
+
+[all]
+tapper[tray]
+tapper[img]
+
+[dev]
+tapper[testing]
+build
+twine
+
+[img]
+pillow>=9.4.0
+mss>=7.0.1
+numpy>=1.24.1
+opencv-python>=4.7.0.68
+
+[testing]
+tapper[all]
+pytest>=7.1
+pytest-cov>=3
+mypy>=0.971
+flake8>=5
+tox>=3.25
+pre-commit>=2.20
+
+[tray]
+pillow>=9.4.0
+pystray>=0.19.4
