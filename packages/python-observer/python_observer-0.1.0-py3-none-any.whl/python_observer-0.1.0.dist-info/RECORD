@@ -1,0 +1,11 @@
+python_observer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_observer/cli.py,sha256=lFAGd0gQMBNWxGkk3c5GC2oiKL3UNfOSTEHFtbbe4l8,1979
+python_observer/constants.py,sha256=K4N9p1uAHM-Ha2OB0xxlHxEi7DsOSwW-eEFHkr7wYN8,48
+python_observer/date.py,sha256=OlflZtnRBTlL6qBPJ9zabX8ROAuRn5un_uZK5HbRV4s,529
+python_observer/display.py,sha256=UDAjP3H9Q7RVVXC7j3ZO0l_MPVkHVqyF20TvYDrpUQM,581
+python_observer/misc.py,sha256=oULmwwABqPEyDYmqGgdU-AmAjAHxUqqgOSBx7dru2dw,547
+python_observer/watch.py,sha256=uUPSTvOGZGc9T9nC2auf2ML4_-8nHJPSZDrv4aG6LRM,2850
+python_observer-0.1.0.dist-info/entry_points.txt,sha256=wmPLwcby8CMx3hMytn4ga-8DIMEmFbpjnnipdNxnRBE,53
+python_observer-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+python_observer-0.1.0.dist-info/METADATA,sha256=1eZU315jWz74Xkg7VwvB_nLJGyjsCULrDY0PrzsgCzY,526
+python_observer-0.1.0.dist-info/RECORD,,
