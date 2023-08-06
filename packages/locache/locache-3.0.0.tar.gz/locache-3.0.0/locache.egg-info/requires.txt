@@ -1,0 +1,8 @@
+astor
+
+[dev]
+pytest
+pytest-cov
+bumpver
+sphinx
+furo
