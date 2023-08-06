@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: har2jicase
+Version: 0.0.1
+Summary: 将浏览器的har文件为极星测试框架的YAML测试用例
+Home-page: 
+Author: Captain Ji
+Author-email: qing.ji@extremevision.com.cn
+License: Apache-2.0
+Keywords: har json compare comparison case yaml yml
+Description-Content-Type: text/markdown
+Requires-Dist: loguru (~=0.6.0)
+Requires-Dist: haralyzer (~=2.2.0)
+Requires-Dist: PyYAML (~=6.0)
+
+Har to JiXing testcase
+=====
+
+## Features
+
+- Convert HAR(HTTP Archive) to JiXing testcase
+
+## Future
+
+- Automatically generate actionable use cases
