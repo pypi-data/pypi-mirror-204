@@ -1,0 +1,6 @@
+eqsn
+networkx
+numpy
+scipy
+matplotlib
+pathvalidate
