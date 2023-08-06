@@ -1,0 +1,7 @@
+bpcfun
+dipcfun
+pyseistr
+sof3dcfun
+sofcfun
+soint2dcfun
+soint3dcfun
