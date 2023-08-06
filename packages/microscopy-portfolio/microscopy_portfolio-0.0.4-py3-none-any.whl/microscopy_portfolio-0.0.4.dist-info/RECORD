@@ -1,0 +1,10 @@
+microscopy_portfolio/__init__.py,sha256=rcVWShWbYEbNtwQEMTM9WjGEp9B16UXL8CyQydJkKQ4,556
+microscopy_portfolio/denoiseg_datasets.py,sha256=-zIDZBBPdPDYl3rDSd9lA5nompBsvmQeOz1t_PrTeRk,8506
+microscopy_portfolio/denoising_datasets.py,sha256=yem_v-sOnOHwA1LTtz8NXVVBid_8xWXh13ZteF0vafA,7742
+microscopy_portfolio/portfolio.py,sha256=zB0NIAwTbBLqQ0wdx-6oDXKEIpCqJiVco4BKefzYQ_U,11273
+microscopy_portfolio/portfolio_entry.py,sha256=M9rv9UeS3kLHapRFyOlYxmPmkduYAviUmDBT0pscGe8,7260
+microscopy_portfolio/py.typed,sha256=esB4cHc6c07uVkGtqf8at7ttEnprwRxwk8obY8Qumq4,187
+microscopy_portfolio-0.0.4.dist-info/METADATA,sha256=z4ifkxX0Q8J5aKYNGguZ3UiGvE1txld92J0e9Kr2yIM,4798
+microscopy_portfolio-0.0.4.dist-info/WHEEL,sha256=9MIigYJ7D5sOqAPqr0-o6tSMY_nQ7c6kvtvyeUB99YQ,87
+microscopy_portfolio-0.0.4.dist-info/licenses/LICENSE,sha256=Le7j5j9jk5n16Nu8uRUB8tD-mZ5Dn4iylCbngQxV9gw,1494
+microscopy_portfolio-0.0.4.dist-info/RECORD,,
