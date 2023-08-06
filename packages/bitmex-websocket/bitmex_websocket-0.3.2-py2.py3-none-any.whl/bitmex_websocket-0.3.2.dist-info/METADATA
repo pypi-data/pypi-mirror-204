@@ -1,0 +1,146 @@
+Metadata-Version: 2.1
+Name: bitmex-websocket
+Version: 0.3.2
+Summary: Bitmex websocket API
+Home-page: https://github.com/joliveros/bitmex-websocket
+Author: José Oliveros
+Author-email: Jose Oliveros <jose.oliveros.1983@gmail.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2019 joliveros
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/joliveros/bitmex-websocket
+Project-URL: Bug Tracker, https://github.com/joliveros/bitmex-websocket/issues
+Keywords: bitmex,websocket,bot,cryptocurrency
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: alog (==1.2.0)
+Requires-Dist: bitmex-websocket (==0.3.1)
+Requires-Dist: bleach (==6.0.0)
+Requires-Dist: build (==0.10.0)
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: cffi (==1.15.1)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: cryptography (==40.0.2)
+Requires-Dist: docutils (==0.19)
+Requires-Dist: idna (==3.4)
+Requires-Dist: importlib-metadata (==6.6.0)
+Requires-Dist: jaraco.classes (==3.2.3)
+Requires-Dist: jeepney (==0.8.0)
+Requires-Dist: keyring (==23.13.1)
+Requires-Dist: markdown-it-py (==2.2.0)
+Requires-Dist: mdurl (==0.1.2)
+Requires-Dist: more-itertools (==9.1.0)
+Requires-Dist: packaging (==23.1)
+Requires-Dist: pip (==22.3.1)
+Requires-Dist: pipfreeze (==2.0.3)
+Requires-Dist: pkginfo (==1.9.6)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: pyee (==9.0.4)
+Requires-Dist: Pygments (==2.15.1)
+Requires-Dist: pyproject-hooks (==1.0.0)
+Requires-Dist: readme-renderer (==37.3)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: requests-toolbelt (==0.10.1)
+Requires-Dist: rfc3986 (==2.0.0)
+Requires-Dist: rich (==13.3.4)
+Requires-Dist: SecretStorage (==3.3.3)
+Requires-Dist: semver (==3.0.0)
+Requires-Dist: setuptools (==65.5.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: twine (==4.0.2)
+Requires-Dist: typing-extensions (==4.5.0)
+Requires-Dist: urllib3 (==1.26.15)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: websocket-client (==1.5.1)
+Requires-Dist: wheel (==0.40.0)
+Requires-Dist: zipp (==3.15.0)
+
+bitmex-websocket
+================
+
+Install
+-------
+
+.. code-block:: sh
+
+    $ pip install bitmex-websocket
+
+Usage
+-----
+
+1. First you should set your `BITMEX_API_KEY` and `BITMEX_API_SECRET`. It can
+   be done as follows:
+
+.. code-block:: sh
+
+    $ cp .env.example .env
+    #  edit .env to reflect your API key and secret
+    $ source .env
+
+2. Then in your project you can consume `Instrument` as follows:
+
+.. code-block:: python
+
+    import websocket
+
+    from bitmex_websocket import Instrument
+    from bitmex_websocket.constants import InstrumentChannels
+
+    websocket.enableTrace(True)
+
+
+    channels = [
+        InstrumentChannels.quote,
+        InstrumentChannels.trade,
+        InstrumentChannels.orderBookL2
+    ]
+
+    XBTUSD = Instrument(symbol='XBTUSD',
+                        channels=channels)
+    XBTUSD.on('action', lambda msg: print(message))
+
+    XBTUSD.run_forever()
+
+Examples
+--------
+
+Run example scripts:
+
+.. code-block:: sh
+
+    $ ./examples/example.py
+
+Tests
+-----
+
+Testing is set up using `pytest <http://pytest.org>` and coverage is handled
+with the pytest-cov plugin.
+
+Run your tests with `pytest` in the root directory.
+
+Coverage is ran by default and is set in the `pytest.ini` file.
+To see an html output of coverage open `htmlcov/index.html` after running the tests.
