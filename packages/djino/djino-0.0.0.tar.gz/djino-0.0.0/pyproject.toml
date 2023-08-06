@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "Djino"
+version = "0.0.0"
+description = "A magical tool to craft numerical simulations"
+authors = ["altar31 <damien.sicard31@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.21.0"
+pyvista = "^0.38.5"
+bokeh = "^3.1.0"
+click = "^8.1.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
