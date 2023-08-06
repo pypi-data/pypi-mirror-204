@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: neomaril-codex
+Version: 1.0.2
+Summary: Python tools for interact with Neomaril
+Home-page: https://github.com/datarisk-io/mlops-neomaril-codex
+Download-URL: https://github.com/datarisk-io/mlops-neomaril-codex/archive/refs/tags/v1.0.2.tar.gz
+Author: Datarisk
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
