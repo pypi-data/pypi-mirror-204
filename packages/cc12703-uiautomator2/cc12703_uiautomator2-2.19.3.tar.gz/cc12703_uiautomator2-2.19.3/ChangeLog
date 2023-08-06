@@ -1,0 +1,24 @@
+CHANGES
+=======
+
+2.19.3
+------
+
+* add isRunning
+* improve install
+* fix  workflow cant  run
+* add  install by adb wifi
+* update adbutils rep
+* Addresses issue #823 in owner repo. (#870)
+* fix bug
+* fix bug of type annotation
+* fix   bug of  pair by wifi
+* add pair\_by\_wifi
+* add disconnect\_adb\_wifi
+* Update README.md
+* Update README.md
+* update sponsors information
+* fix gateway init error
+* change reset\_uiautomator raise error from OSError to GatewayError
+* add searching apk from cwd assets directory. (#845)
+* update adbutils to 1.0.9
