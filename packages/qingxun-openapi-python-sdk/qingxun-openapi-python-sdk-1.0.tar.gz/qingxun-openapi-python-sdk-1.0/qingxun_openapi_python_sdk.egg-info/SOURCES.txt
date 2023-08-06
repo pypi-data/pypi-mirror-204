@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+qingxun_openapi_python_sdk.egg-info/PKG-INFO
+qingxun_openapi_python_sdk.egg-info/SOURCES.txt
+qingxun_openapi_python_sdk.egg-info/dependency_links.txt
+qingxun_openapi_python_sdk.egg-info/top_level.txt
+qingxunsdk/__init__.py
+qingxunsdk/TranslateApi/__init__.py
+qingxunsdk/TranslateApi/qxkjApi.py
