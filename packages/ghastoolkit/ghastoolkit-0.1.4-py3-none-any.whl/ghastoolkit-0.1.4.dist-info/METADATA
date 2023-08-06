@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ghastoolkit
+Version: 0.1.4
+Summary: GitHub Advanced Security Python Toolkit
+Author: GeekMasher
+Project-URL: Homepage, https://github.com/GeekMasher/ghastoolkit
+Project-URL: Bug Tracker, https://github.com/GeekMasher/ghastoolkit/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: idna (==3.4)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: urllib3 (==1.26.15)
+
+
+[![Python Package](https://github.com/GeekMasher/ghastoolkit/actions/workflows/python-package.yml/badge.svg)](https://github.com/GeekMasher/ghastoolkit/actions/workflows/python-package.yml)
+
+# ghastoolkit
+GitHub Advanced Security Toolkit
