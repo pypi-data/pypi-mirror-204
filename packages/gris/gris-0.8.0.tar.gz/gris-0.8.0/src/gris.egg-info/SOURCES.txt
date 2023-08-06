@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+src/gris/__init__.py
+src/gris/__main__.py
+src/gris/bibtex.py
+src/gris/gris.py
+src/gris/io.py
+src/gris/wos.py
+src/gris.egg-info/PKG-INFO
+src/gris.egg-info/SOURCES.txt
+src/gris.egg-info/dependency_links.txt
+src/gris.egg-info/top_level.txt
