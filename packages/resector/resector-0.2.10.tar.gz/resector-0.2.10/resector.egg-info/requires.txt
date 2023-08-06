@@ -1,0 +1,7 @@
+Click>=7.0
+noise
+torchio
+SimpleITK
+scikit-image
+scipy
+vtk

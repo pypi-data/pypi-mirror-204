@@ -1,0 +1,3 @@
+[console_scripts]
+create-noise-volume = resector.cli.create_noise_volume:main
+resect = resector.cli.resect:main
