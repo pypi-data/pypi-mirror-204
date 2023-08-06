@@ -1,0 +1,11 @@
+labonneboite_datamodel/__init__.py,sha256=RQFesFMywomzD5dH5kFPYp7VgTgyiJKMJs5TCNTgZ9k,224
+labonneboite_datamodel/crud.py,sha256=S7is0or8knaZGCf6DqLkk72CGSVQVdIati0azDiGht4,697
+labonneboite_datamodel/job.py,sha256=aPzC2Q7KqisZkOi9jaC07oHuF20WSMxNBEaTyMnI-lg,2022
+labonneboite_datamodel/office.py,sha256=DiZiG0Q7H-3Gqn9lOvxwYjcDlEdWJEKQyU1I-yG0y_I,7672
+labonneboite_datamodel/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labonneboite_datamodel/tests/data/test.csv,sha256=L0InNKGEGYhUEiYbXuMYrAwpqPSG7mveK0z3M84mwlU,3589
+labonneboite_datamodel/tests/test_job.py,sha256=N29BunjDM1DwjkJV1ty7PavSmLo8H7rlFQ4B33RodZU,997
+labonneboite_datamodel/tests/test_office.py,sha256=zmDegrWNzdnoz4AM5neCbVjqHa52xtGamg3l9BYTAds,5612
+labonneboite_datamodel-1.0.6.dist-info/METADATA,sha256=IB2qSn70O2nTJApdAu82gIFsRd9G7E6sncaLYjRzTaI,498
+labonneboite_datamodel-1.0.6.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+labonneboite_datamodel-1.0.6.dist-info/RECORD,,
