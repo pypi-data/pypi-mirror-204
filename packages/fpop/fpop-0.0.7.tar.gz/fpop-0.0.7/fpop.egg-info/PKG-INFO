@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fpop
+Version: 0.0.7
+Summary: Operators related to first-principles calculation
+Home-page: https://github.com/deepmodeling/fpop
+Author: Chengqian Zhang
+Author-email: 2043899742@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Provides: fpop
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# fpop
+`fp` stands for first-principles calculation and `op` stands for operators. The abbreviation `fpop` stands for operators related to first-principles calculation.This project is based on [dflow](https://github.com/deepmodeling/dflow) which is a Python framework for constructing scientific computing workflows (e.g. concurrent learning workflows) employing Argo Workflows as the workflow engine. 
+# Installation
+```
+pip install fpop
+```
