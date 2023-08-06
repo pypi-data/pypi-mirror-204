@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ditlep
+Version: 1.2
+Summary: Fetcher/scraper of https://ditlep.com
+Author: Marcuth
+Author-email: marcuth2006@gmail.com
+License: MIT License
+Keywords: dragoncity dcutils tools
+Description-Content-Type: text/markdown
+
+# Ditlep fetcher
