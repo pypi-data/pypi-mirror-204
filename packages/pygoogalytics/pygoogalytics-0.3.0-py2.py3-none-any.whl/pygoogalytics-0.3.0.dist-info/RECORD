@@ -1,0 +1,15 @@
+pygoogalytics/__init__.py,sha256=a3pq9sPeAq6zsIobez3pAB-y0xx7xWY0mv6XcB0LhfY,1212
+pygoogalytics/client.py,sha256=c9YKtambQHpRtPBdLuQM_edHyFRI-CCXPoYmcdAyMYE,5386
+pygoogalytics/googalytics_wrapper.py,sha256=YhDsLmg6gis_W6TntlemvtX665eoR1lu_qCjo_Ti4kg,36784
+pygoogalytics/googlepandas.py,sha256=4dtAicbqgrKwMa8VLtGswODY56nZGYHET3BHWuCotio,32322
+pygoogalytics/kwp_wrappers.py,sha256=QYIZcDlOCPHx-v0edWT4z8epjr55EivogOkqAgXfiHQ,42080
+pygoogalytics/resource_utils.py,sha256=yl2CbasH5hURUEMBMnVP0aLf3e_qOLG12-hM3KwupGw,2484
+pygoogalytics/utils.py,sha256=cBUykXyPC1Yjf3HgMsnTqH9Y__Q1I_avWw3cnvAQR24,2064
+pygoogalytics/data/country_iso_codes.csv,sha256=J8uC3SsHJgyA_UJ6W0Vw_7O4fWGhX0NNfip6W5AAm68,6027
+pygoogalytics/data/google_ads_location_ids.csv,sha256=-pwWLTCZe7_N590iwWKBCrjwHNtcXzX6jGHEK3jOCNg,4301
+pygoogalytics-0.3.0.dist-info/LICENCE.txt,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+pygoogalytics-0.3.0.dist-info/LICENSE,sha256=FcdnMn9hVsTrEvF773wMLDyeDrxBRYT1ZtFu7jXMnpM,1073
+pygoogalytics-0.3.0.dist-info/METADATA,sha256=KqGpZ3pnJn7BtFQJT8FLA8LyELkanwnHzSuawzTgpo0,5826
+pygoogalytics-0.3.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pygoogalytics-0.3.0.dist-info/top_level.txt,sha256=Pq1B13F12HoUVyjttPQvSJ1QCy7XMhZX-kvFqv8Cizs,14
+pygoogalytics-0.3.0.dist-info/RECORD,,
