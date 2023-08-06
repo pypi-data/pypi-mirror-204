@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: blyss
+Version: 0.1.8
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: requests
+Requires-Dist: httpx
+Requires-Python: >=3.8
