@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: synthdid
+Version: 0.9.5
+Summary: Synthdid
+Home-page: https://github.com/d2cml-ai/synthdid.py
+Author: D2CML Team, Alexander Quispe, Rodrigo  Grijalba, Jhon Flores, Franco Caceres
+License: MIT
+Keywords: causal-inference
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
