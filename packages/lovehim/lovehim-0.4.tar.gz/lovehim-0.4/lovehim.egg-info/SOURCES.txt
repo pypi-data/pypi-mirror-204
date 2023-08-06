@@ -1,0 +1,9 @@
+setup.py
+lovehim/__init__.py
+lovehim/get_verse.py
+lovehim.egg-info/PKG-INFO
+lovehim.egg-info/SOURCES.txt
+lovehim.egg-info/dependency_links.txt
+lovehim.egg-info/entry_points.txt
+lovehim.egg-info/requires.txt
+lovehim.egg-info/top_level.txt
