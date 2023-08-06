@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+fdeb/__init__.py
+fdeb/fdeb.py
+fdeb.egg-info/PKG-INFO
+fdeb.egg-info/SOURCES.txt
+fdeb.egg-info/dependency_links.txt
+fdeb.egg-info/requires.txt
+fdeb.egg-info/top_level.txt
