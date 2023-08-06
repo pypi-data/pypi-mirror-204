@@ -1,0 +1,3 @@
+qPython3>=1.0.0
+numpy
+pandas
