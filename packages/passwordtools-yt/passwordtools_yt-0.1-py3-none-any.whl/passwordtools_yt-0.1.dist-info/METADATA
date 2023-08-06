@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: passwordtools-yt
+Version: 0.1
+Summary: A package for creating passwords and testing password strength
+Home-page: https://github.com/Yair-T
+Author: Yair-T
+License: MIT LICENSE
+Project-URL: Documentation, https://yair-t.github.io/passwordtools-docs/
+Project-URL: Bug Tracker, https://github.com/Yair-T/passwordtools/issues
+Project-URL: Source Code, https://github.com/Yair-T/passwordtools
+License-File: LICENCE
+
