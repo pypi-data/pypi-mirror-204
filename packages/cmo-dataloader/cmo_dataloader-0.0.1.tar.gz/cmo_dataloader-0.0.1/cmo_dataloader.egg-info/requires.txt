@@ -1,0 +1,11 @@
+chardet>=3.0.4
+clevercsv>=0.6.3
+cmo-databaseutils
+
+[dev]
+black
+jupyterlab
+pytest>=6.2.4
+python-dotenv
+ipykernel
+twine
