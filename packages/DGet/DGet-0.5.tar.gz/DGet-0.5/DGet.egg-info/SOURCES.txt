@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+DGet.egg-info/PKG-INFO
+DGet.egg-info/SOURCES.txt
+DGet.egg-info/dependency_links.txt
+DGet.egg-info/entry_points.txt
+DGet.egg-info/requires.txt
+DGet.egg-info/top_level.txt
+dget/__init__.py
+dget/__main__.py
+dget/adduct.py
+dget/convolve.py
+dget/dget.py
+tests/test_adduct.py
+tests/test_dget.py

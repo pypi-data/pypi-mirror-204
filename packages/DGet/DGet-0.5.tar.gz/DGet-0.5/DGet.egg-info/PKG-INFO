@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: DGet
+Version: 0.5
+Summary: Calculates compound deuteration from ToF-MS data.
+Home-page: https://github.com/djdt/dget
+Author: djdt
+License: GPL3
+Project-URL: Source, https://github.com/djdt/dget
+Project-URL: Web App, https://djdt.github.io/dget
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+License-File: LICENSE
+
+# DGet
+Calculate compound deuteration from ToF-MS data.
+
+Uses [molmass](https://github.com/cgohlke/molmass) for isotopic mass calculations.
+
+# Installation
+DGet is available on PyPI
+
+```pip install dget```
+
+# Usage
+Basic usage:
+
+```dget <formula> <path-to-tof-data>```
+
+To see CLI options:
+
+```dget --help```
+
+# Web app
+A web based application of DGet is available at https://djdt.github.io/dget/.
