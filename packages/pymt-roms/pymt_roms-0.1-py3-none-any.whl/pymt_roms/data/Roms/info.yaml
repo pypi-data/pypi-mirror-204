@@ -1,0 +1,6 @@
+summary: This data component loads the ROMS model data from a local file or a URL for data analysis and visualization.
+url: https://github.com/gantian127/bmi_roms/
+author: Tian Gan
+email: gantian127@gmail.com
+version: 0.1
+license: MIT

@@ -1,0 +1,2 @@
+[pymt.plugins]
+Roms = pymt_roms.bmi:Roms
