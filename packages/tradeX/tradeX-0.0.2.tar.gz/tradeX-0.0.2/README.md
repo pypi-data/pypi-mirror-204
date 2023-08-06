@@ -1,0 +1,88 @@
+# Intel-Trace
+
+This project provides tool to download Binance trading data in the past. Use the data to develop a mini AI model for coin prediction.
+Follow below step to reproduce:
+
+<ol>
+  <li>Install Python and required packages</li>
+
+```bash
+pip install -r requirements.txt
+```
+Other lacking library can be installed manually by `pip install <lib_name>` command.
+  <li>Download Binance Kline-Candlestick Data</li>
+    
+
+   ```bash
+cd tradeX
+# ex1: install BTC data from Sep 08 2019 to now, interval is one hour
+PYTHONPATH=. python scripts/get_all_time_data.py --symbol BTCUSDT --interval 1h
+
+# ex2: install other coin pairs data, .e.g Solona
+PYTHONPATH=. python scripts/get_all_time_data.py --symbol SOLUSDT --interval 3m
+
+# ex3: install data from a specified time to now, if not passed, default value is 1567962000000
+PYTHONPATH=. python scripts/get_all_time_data.py --symbol BTCUSDT --dfrom <time_in_milliseconds> --interval 1h
+```
+Downloaded data is saved in `data` directory as default.
+Try to play with other interval values (`1m 3m 5m 15m 30m 1h 2h 4h 6h 8h 12h 1d 3d 1w 1M`).    
+
+
+  <li>Split train-val data</li>
+
+
+```bash
+cd tradeX
+
+# replace the data path below with the newly downloaded data file.
+PYTHONPATH=. python scripts/split_train_val.py --data data/BTCUSDT_3m_2022.10.23_14.24.54.json
+```
+After running above script, there will be 2 files ending with `*_train.json` and `*_val.json` generated.
+
+  <li>Train a simple model</li>
+
+```bash
+cd tradeX
+
+# Without GPU
+python scripts/train.py 
+--train_data <data/*_train.json file path> 
+--val_data <data/*_val.json file path>
+--window_size <50 or 100 or any positive number, default 50>
+--epochs 30
+--bsize 8
+  
+# With GPU
+CUDA_VISIBLE_DEVICES=0,1,2,3 PYTHONPATH=. python scripts/train.py 
+--train_data <data/*_train.json file path> 
+--val_data <data/*_val.json file path>
+--window_size <50 or 100 or any positive number, default 50>
+--epochs 30
+--bsize 8
+--num_gpus 3
+```
+
+Trained models is saved in `weights` directory with latest timestamp.
+
+
+  <li>Eval model on validation set</li>
+
+```bash
+cd tradeX
+
+python scripts/eval.py 
+--val_data data/BTCUSDT_3m_2022.10.23_14.24.54_val.json
+--window_size <50 or any positive number, should be same with trained window_size>
+--weight weights/2022.10.23_15.50.09/epoch=19-val_loss=3.94.pth.ckpt
+```
+
+  <li>Auto futures-trading on Binance with your own strategy</li>
+
+```bash
+python run_testnet.py --interval 3m --symbol btcusdt
+```
+
+</ol>
+
+
+

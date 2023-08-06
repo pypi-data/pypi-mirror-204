@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+tradeX/__init__.py
+tradeX.egg-info/PKG-INFO
+tradeX.egg-info/SOURCES.txt
+tradeX.egg-info/dependency_links.txt
+tradeX.egg-info/top_level.txt
