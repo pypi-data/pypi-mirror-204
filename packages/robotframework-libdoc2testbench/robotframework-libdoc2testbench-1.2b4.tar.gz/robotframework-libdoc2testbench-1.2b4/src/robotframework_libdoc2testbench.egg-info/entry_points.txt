@@ -1,0 +1,3 @@
+[console_scripts]
+Libdoc2TestBench = Libdoc2TestBench.__main__:main
+libdoc2testbench = Libdoc2TestBench.__main__:main

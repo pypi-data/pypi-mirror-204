@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+Setup.py
+createPip_whl_tar.sh
+pyproject.toml
+setup.py
+src/Libdoc2TestBench/__init__.py
+src/Libdoc2TestBench/__main__.py
+src/Libdoc2TestBench/testbenchwriter.py
+src/robotframework_libdoc2testbench.egg-info/PKG-INFO
+src/robotframework_libdoc2testbench.egg-info/SOURCES.txt
+src/robotframework_libdoc2testbench.egg-info/dependency_links.txt
+src/robotframework_libdoc2testbench.egg-info/entry_points.txt
+src/robotframework_libdoc2testbench.egg-info/requires.txt
+src/robotframework_libdoc2testbench.egg-info/top_level.txt
