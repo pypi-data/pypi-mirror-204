@@ -1,0 +1,2 @@
+[console_scripts]
+kaggle_util = kaggle_util:main

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: kaggle_util
+Version: 0.1.0
+Summary: A utility for working with Kaggle competitions.
+Home-page: https://github.com/neural-navigator/kaggle_utility
+Author: Satya Pati
+Author-email: iamsatyapati@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
