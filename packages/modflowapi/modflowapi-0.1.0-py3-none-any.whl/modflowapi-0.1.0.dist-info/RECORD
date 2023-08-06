@@ -1,0 +1,15 @@
+modflowapi/__init__.py,sha256=VyNKA1eDpCc0GX_d1s35xXWUflTpf0CQpuVJS5LiS1k,171
+modflowapi/modflowapi.py,sha256=wMF6v-SqXD87pA933hbHAqV0HcYLBqAiOyb7Ucfk6xY,783
+modflowapi/version.py,sha256=qfv1H7p9TaukN2zvN4umGiTjfFmJ_JJDFFe1yo6TcYM,102
+modflowapi/extensions/__init__.py,sha256=DgdrPbm6JHJvUDucX0kRE5UOZsFgYM1YBjI0s8AMp9c,109
+modflowapi/extensions/apiexchange.py,sha256=d6Xa2gyet8uCzU1MV8j93TY99Yu6IbcjRYRT4Z4LDVw,538
+modflowapi/extensions/apimodel.py,sha256=E97D7Bhpk-BlTpiSpb67lIkzO9G3fajgJndrY41B5VI,11204
+modflowapi/extensions/apisimulation.py,sha256=plMm6k4io5CH_X6KKwrEYQalB0qb2z6L_XR11a4PIsw,10271
+modflowapi/extensions/data.py,sha256=ZmvDpIOyffsm1CG_Zz8x5XfatWV8KFISbdCGqfCCXeg,21947
+modflowapi/extensions/pakbase.py,sha256=cjOT0kSBSMyQSHTzXqmt4J_0-vFsaqT9FvQCdyo_res,19273
+modflowapi/extensions/runner.py,sha256=UKrA-zizc8E2QSCYRkRuuJ1pO_rNJiwHNw-khqId1iU,4773
+modflowapi-0.1.0.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+modflowapi-0.1.0.dist-info/METADATA,sha256=GFVNx7YwUZPCBU4AVYe_8J56cAgxDP5RjovVVeY2D3Y,2899
+modflowapi-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+modflowapi-0.1.0.dist-info/top_level.txt,sha256=u36cKiPO21VAAQ56Erf3TMW0qc61sqTtLDRjUF-Q-ac,11
+modflowapi-0.1.0.dist-info/RECORD,,
