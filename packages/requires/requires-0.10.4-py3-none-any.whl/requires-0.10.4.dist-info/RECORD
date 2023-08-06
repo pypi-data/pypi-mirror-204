@@ -1,0 +1,11 @@
+requires/__about__.py,sha256=N_C3Kk5gcv5x7b8QbZ1nAYXnvU-OKVONdya8Nge1Ibo,294
+requires/__init__.py,sha256=9WH_StS2AAGf_HWA5rMsm2RWnG7nLjjf8gE1_L5iEhI,480
+requires/__main__.py,sha256=ZXXadCQJjCnA8r-7SLPENYRYHvCVuKo9JoH9Lm5bYDc,481
+requires/_meta.py,sha256=BCXMcvb-PGsyYgWox-4dUoi5ZVTy4zV9GmgmuRrUvLY,355
+requires/core.py,sha256=1fxGtmD9biB3cRjpcY6e719cGoUjRLniIli4HpdwvJY,12013
+requires/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+requires/shed.py,sha256=9UM2XWRk4U8mwExWV4LoAoWxGgTfoqGbRPpm3MW2DfU,4576
+requires-0.10.4.dist-info/LICENSE,sha256=pebds694OgLqzISMvjCcwJQLSFmsZT6bGi4hpP6iJVI,1056
+requires-0.10.4.dist-info/METADATA,sha256=Wj_KcTEdIIzWGdk2ol-wlMb4ZLtt_QJXWTpjpejDRyw,4792
+requires-0.10.4.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+requires-0.10.4.dist-info/RECORD,,
