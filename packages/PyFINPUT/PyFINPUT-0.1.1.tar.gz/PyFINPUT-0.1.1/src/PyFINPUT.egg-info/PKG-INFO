@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: PyFINPUT
+Version: 0.1.1
+Summary: A simple parser for a file input, akin to the format of argparse
+Home-page: https://github.com/benedictsaunders/PyFINPUT
+Author: Benedict Saunders
+Author-email: benedictsaunders@gmail.com
+License: GNU General Public License v3.0
+Keywords: input,file,keywords
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyFINPUT!
+
+  ## A small package to use a file to input multiple arguments to a script.
+
