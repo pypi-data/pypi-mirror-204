@@ -1,0 +1,5 @@
+__pycache__
+logs.json
+no_tegridy.egg-info
+build
+dist

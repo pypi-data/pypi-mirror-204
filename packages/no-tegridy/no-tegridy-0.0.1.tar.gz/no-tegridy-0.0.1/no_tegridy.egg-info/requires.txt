@@ -1,0 +1,4 @@
+requests
+pynacl
+click
+updateable-zip-file
