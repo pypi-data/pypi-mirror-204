@@ -1,0 +1,14 @@
+ovos_dinkum_listener/__init__.py,sha256=r7b_VnzNxUlouVBl9ZzWQEOf_cUZbIpsxmO3MRb1UPw,578
+ovos_dinkum_listener/__main__.py,sha256=TxPyLY0if4Nj3g45MB-f9kE-fu4Ox5WlDReoZNNyRXs,26500
+ovos_dinkum_listener/plugins.py,sha256=3iwEQu_h7tBcyI9WvFgeSttdd1V4jWL8rqES5_pdb1w,2209
+ovos_dinkum_listener/transformers.py,sha256=5Wpm5Rhvq4wbtLUXsm77w0Lw3WLyBW1Y1D8O9DFPoCw,4739
+ovos_dinkum_listener/version.py,sha256=5ZMnJBYVn7ok0sPHApedKnn86PEdwcM7A2tLSGN7Xb0,114
+ovos_dinkum_listener/voice_loop/__init__.py,sha256=NzyEEXTd__e-GJFm8QUIEonvEvg7QzpuQpfY7mqgH-4,752
+ovos_dinkum_listener/voice_loop/hotwords.py,sha256=oXEAs7w2dzrihtEgnUnwf431ZoXPBsfl_rN-QPqlLMc,8686
+ovos_dinkum_listener/voice_loop/microphone.py,sha256=VflrED1KgVMl8uHs06r8tDYAnM96ZAGf2Dwe4NXmNY0,4630
+ovos_dinkum_listener/voice_loop/voice_loop.py,sha256=WfUvsB7AatccjbujzkCE_VSugvxjOk9rLNszVhKXmME,17427
+ovos_dinkum_listener-0.0.2a6.dist-info/METADATA,sha256=ZCI_Ibu8YOPTvK1jdv-pR-L0PmVXm4h7XfX40Vyv0tc,601
+ovos_dinkum_listener-0.0.2a6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ovos_dinkum_listener-0.0.2a6.dist-info/entry_points.txt,sha256=QxX9kfcgIv06kWrvw4J4HBy4FmwznYh_Rz62cfJsykU,77
+ovos_dinkum_listener-0.0.2a6.dist-info/top_level.txt,sha256=MjTsTEdTQvhrDhMJlKgTxNGa_tm3Tei5ETek1JiIyx4,21
+ovos_dinkum_listener-0.0.2a6.dist-info/RECORD,,
