@@ -1,0 +1,14 @@
+curriculum_analysis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+curriculum_analysis/analysis.py,sha256=pnfEZHiM8HtKaVa1Nbtr7oYk9zDrtuduudam47FbK68,739
+curriculum_analysis/config.cfg.default,sha256=sJmgwdNRh_gUkCohEERqOzm0aGEv4unwDseHdKGcUis,126
+curriculum_analysis/corpus.py,sha256=OXxDysah3_9yXcswIxzEbitkwlCcloYIa4pg7Pc5fVk,1294
+curriculum_analysis/csv_exporter.py,sha256=ZUxWj22WaVjxT8xL_arJW39A7C_RgOpNwMe6-BRWKUQ,1864
+curriculum_analysis/json_exporter.py,sha256=1GIpqbhMei7UQgKKS_AzpbsTPymvrPdrpp93bu8g4cs,837
+curriculum_analysis/keywords.py,sha256=8pOTC2bwzx_FlOjtdUDt8eNIyIkwQ--tAMwTRRmh4rU,161
+curriculum_analysis/main.py,sha256=8oid1AlS2_dWKmx7xYBTBQHEW7YpSEvCXCkRR6T3UwE,2148
+curriculum_analysis/txt_parser.py,sha256=_7l7p35vqWs1yuutXl8fMY_yl65u_LWwYtvk9UNAQcc,8344
+curriculum_analysis-0.1.0.dist-info/METADATA,sha256=diiZIoFaRKw41593TN1_ultKX46cqbvRRWKxC3NbPqs,1548
+curriculum_analysis-0.1.0.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+curriculum_analysis-0.1.0.dist-info/entry_points.txt,sha256=s56GxWWX1WAYjyNXlKNgKB_NYecA5lV6IFxVcdL8erk,69
+curriculum_analysis-0.1.0.dist-info/licenses/LICENCE,sha256=UGXS0cjZ1VS8LCfAFu5-k6PpdxseZjTK4zXbLlpHt6w,1069
+curriculum_analysis-0.1.0.dist-info/RECORD,,
