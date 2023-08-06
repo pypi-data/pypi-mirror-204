@@ -1,0 +1,3 @@
+[console_scripts]
+hpr-scratcher=hpr_scratcher:main
+
