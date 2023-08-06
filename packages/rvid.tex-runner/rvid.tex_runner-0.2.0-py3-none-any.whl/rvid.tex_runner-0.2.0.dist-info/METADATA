@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: rvid.tex-runner
+Version: 0.2.0
+Summary: Utility functions for rendering XeLaTeX documents from Python
+Author-email: Arvid Müllern-Aspegren <kontakt@rvid.se>
+Project-URL: homepage, https://hg.sr.ht/~rvid/rvid.tex-runner
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy[reports] ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+
+# rvid.tex-runner
+
+A small utility to ease programmatic usage of LaTeX from Python.
+
+## Calling XeLaTeX on output
+
+If you just run the `xelatex` command, you'll get a bunch of temp files output
+to your current working directory. You also get a few screenfulls of debug out that
+you only really want to see if something goes wrong. No big deal, but a bit of faff.
+
+The function `rvid.tex_runner.make_pdf_at_path()` finds the xelatex-command, creates a
+temp-directory, runs the command, moves the PDF-file into the location you
+specified and then cleans up all the temp files.
+
+```
+def make_pdf_at_path(
+    tex_content=a_string_that_holds_tex_source,
+    target_path="/home/apa/bepa.pdf"
+) 
+```
+
+If you want the resulting PDF returned as a bytestream instead written to disk, just
+use `rvid.tex_runner.make_pdf_as_bytestream()` instead.
+
+## When there is an error
+
+XeLaTeX is run in nonstop mode and will not drop to an interactive prompt if there is a
+problem. If a non-zero exit code is returned, the XeLaTeX output will be dumped to
+stdout, even in silent mode.
+
+## Handling paths to external resources
+
+To handle external resources that are needed to build your PDF files, tex-runner has a
+concept of `ExternalResource`. This is a Python object that contains a sequence of
+absolute file paths and a relative target path (`basedir`) where your .tex files expect
+to be able to include them from. For example:
+
+```
+ExternalResource(
+    basedir="images",
+    files=[
+        "/Users/sean.banan/tex/img1.png",
+        "/Users/sean.banan/tex/img2.png",
+    ]
+)
+```
+
+This concept also comes in handy if you have differing paths in different deployment
+environments, since it allows you to abstract that away programmatically.
+
+### Auto-generating ExternalResource-libraries
+
+There is a utility function for auto-generating ExternalResource-objects from filesystem
+paths:
+
+```
+>>> make_external_resource_library(source_directory="c:/pix", relative_target_directory="img")
+ExternalResource(basedir="img", files=["c:/pix/q1.jpg"])
+```
+
+## Debugging
+
+Change `rvid.tex_runner.latex:make_pdf_in_tempdir()` so that it doesn't delete
+the tempdir after finishing the run.
