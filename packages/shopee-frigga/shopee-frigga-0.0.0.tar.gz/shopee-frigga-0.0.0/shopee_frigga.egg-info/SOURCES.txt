@@ -1,0 +1,6 @@
+README.md
+setup.py
+shopee_frigga.egg-info/PKG-INFO
+shopee_frigga.egg-info/SOURCES.txt
+shopee_frigga.egg-info/dependency_links.txt
+shopee_frigga.egg-info/top_level.txt
