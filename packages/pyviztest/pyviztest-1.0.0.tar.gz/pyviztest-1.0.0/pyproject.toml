@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyviztest"
+version = "1.0.0"
+authors = [
+  { name="sanosuke009" },
+]
+description = "A Visual Testing Library in Python. Works with Playwright and Selenium. Can be integrated with Allure Report."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "selenium >= 4.8.0",
+  "playwright >= 1.32.1",
+  "Pillow >= 9.5.0",
+  "pixelmatch >= 0.3.0",
+  "allure-pytest >= 2.13.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sanosuke009/pyviztest"
+"Bug Tracker" = "https://github.com/sanosuke009/pyviztest/issues"
