@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "conductor-py"
+version = "0.0.4"
+authors = [{ name = "Danny Nemer", email = "hi@dannynemer.com" }]
+description = "Python bindings for the Conductor API"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["ariadne-codegen>=0.6"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+# [tool.setuptools]
+# packages = ["conductor"]
+
+[tool.ariadne-codegen]
+queries_path = "./operations.graphql"
+schema_path = "./schema.graphql"
+target_package_path = "./conductor_py/"
+async_client = false
