@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+mrdoxgtf/__init__.py
+mrdoxgtf/commands.py
+mrdoxgtf.egg-info/PKG-INFO
+mrdoxgtf.egg-info/SOURCES.txt
+mrdoxgtf.egg-info/dependency_links.txt
+mrdoxgtf.egg-info/entry_points.txt
+mrdoxgtf.egg-info/requires.txt
+mrdoxgtf.egg-info/top_level.txt
