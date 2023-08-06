@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data_diode.egg-info/PKG-INFO
+data_diode.egg-info/SOURCES.txt
+data_diode.egg-info/dependency_links.txt
+data_diode.egg-info/entry_points.txt
+data_diode.egg-info/not-zip-safe
+data_diode.egg-info/requires.txt
+data_diode.egg-info/top_level.txt
+diode/__init__.py
+diode/core.py
+diode/main.py
+diode/py.typed
+diode/test.py
