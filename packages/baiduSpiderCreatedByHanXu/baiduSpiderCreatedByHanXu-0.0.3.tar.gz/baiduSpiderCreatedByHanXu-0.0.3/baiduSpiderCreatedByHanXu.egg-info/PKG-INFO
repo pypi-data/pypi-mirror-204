@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: baiduSpiderCreatedByHanXu
+Version: 0.0.3
+Summary: This is a project used to get a large number of images in Baidu.
+Home-page: https://gitee.com/UnderTurrets/baidu_image_spider
+Author: Han Xu
+Author-email: 736946693@qq.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Brief 
+- The package can crawl the images at baidu based on the `keyword` offered by you.
+- use the following code to use the package
+```python
+from baiduSpiderCreatedByHanXu import spider
+
+if __name__ == '__main__':
+    spider = spider.Spider_baidu_image()
+    spider()
+```
+```shell
+type in the path where you want to reserve the images:秋山澪
+type in the keywords used to search in Baidu:秋山澪
+Type in the number of pages you want.Each page has 30 images:1
+```
+# Download
+```shell
+pip install baiduSpiderCreatedByHanXu
+```

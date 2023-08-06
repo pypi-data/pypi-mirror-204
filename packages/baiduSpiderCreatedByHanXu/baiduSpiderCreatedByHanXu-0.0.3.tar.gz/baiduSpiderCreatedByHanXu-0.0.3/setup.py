@@ -1,0 +1,90 @@
+from setuptools import setup, find_packages
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+setup(
+    classifiers=[
+        # 发展时期,常见的如下
+        #   3 - Alpha
+        #   4 - Beta
+        #   5 - Production/Stable
+        "Development Status :: 3 - Alpha",
+
+        # 开发的目标用户
+        "Intended Audience :: Developers",
+
+        # 属于什么类型
+        "Topic :: Software Development :: Libraries :: Python Modules",
+
+        # 许可证信息
+        "License :: OSI Approved :: MIT License",
+
+        # 目标 Python 版本
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.3",
+        "Programming Language :: Python :: 3.4",
+        "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+    ],
+
+    #如果上传时出现ERROR：The user '' isn't allowed to upload to project ''，换个名字，长一点无所谓，不能跟别人重复
+    name="baiduSpiderCreatedByHanXu",
+    version="0.0.3",
+    author="Han Xu",
+    author_email="736946693@qq.com",
+    description="This is a project used to get a large number of images in Baidu.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://gitee.com/UnderTurrets/baidu_image_spider",
+    packages=find_packages(),
+
+    # 安装过程中，需要安装的静态文件，如配置文件、service文件、图片等
+    # data_files=[
+    #     ("", ["conf/*.conf"]),
+    #     ("/usr/lib/systemd/system/", ["bin/*.service"]),
+    #            ],
+
+    # 希望被打包的文件
+    # package_data={
+    #     "":["*.txt"],
+    #     "bandwidth_reporter":["*.txt"]
+    #            },
+
+    # 不打包某些文件
+    # exclude_package_data={
+    #     "bandwidth_reporter":["*.txt"]
+    #            },
+
+    # 表明当前模块依赖哪些包，若环境中没有，则会从pypi中下载安装
+    install_requires=["requests",],
+
+    # setup.py 本身要依赖的包，这通常是为一些setuptools的插件准备的配置
+    # 这里列出的包，不会自动安装。
+    # setup_requires=["",],
+
+    # 仅在测试时需要使用的依赖，在正常发布的代码中是没有用的。
+    # 在执行python setup.py test时，可以自动安装这三个库，确保测试的正常运行。
+    # tests_require=[
+    #     "",
+    # ],
+
+    # 用于安装setup_requires或tests_require里的软件包
+    # 这些信息会写入egg的 metadata 信息中
+    # dependency_links=[
+    #     "",
+    # ],
+
+    # install_requires 在安装模块时会自动安装依赖包
+    # 而 extras_require 不会，这里仅表示该模块会依赖这些包
+    # 但是这些包通常不会使用到，只有当你深度使用模块时，才会用到，这里需要你手动安装
+    # extras_require={
+    #     "":  [""],
+    # },
+)
+
+
