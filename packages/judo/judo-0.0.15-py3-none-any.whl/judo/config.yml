@@ -1,0 +1,6 @@
+backend: numpy
+copy: False
+default_backend: numpy
+device: cpu
+requires_grad: False
+true_hash: False
