@@ -1,0 +1,15 @@
+m_rs/MRs.py,sha256=MIPRl1vvzc4eFnlgmYjCgDcpgZnT9a1TFIT5P2A4U48,54
+m_rs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metamorphic_relations/Data.py,sha256=1XolSCdVBAJMnIHdy4vnq3xCPQCD8CSqMIDF2O8lgCs,4355
+metamorphic_relations/ImageMR.py,sha256=HrEwKypoFWSuieNseh4yafEfv85bbpAEewZIkX3OYsg,2311
+metamorphic_relations/Info.py,sha256=tT2mbmb4trQ3UMhV5hWz0uQ8i9WE3Rgsg6smmDV6vGc,2942
+metamorphic_relations/MR.py,sha256=UBdPe2xmLtyL0xR6oqE6l15SCljpr2pdyZot1QD_k_4,10833
+metamorphic_relations/MRModel.py,sha256=mJtur_uRkQw-t3gvgjscZNusvE1_YsyPD-IUfsXOtfM,16722
+metamorphic_relations/MRs.py,sha256=ehz906waXi97QN_qbPWBYd34ptZW22tq_hmbaHlxFFA,284
+metamorphic_relations/Results.py,sha256=KfDWxrEl5BQ8e5P56lD5uVz6cddzJo2yNIU2OVKtOxs,8441
+metamorphic_relations/Transform.py,sha256=bwJ1__zvNe5QJawm2AE8W_-f-hGp1scyxKQtU5GYp2c,675
+metamorphic_relations/__init__.py,sha256=iT0ChAOVW6Dc6YbjfUqxgMdX8Hf1xMyhnP1tHDsIlek,41
+metamorphic_relations-0.1.0.dist-info/METADATA,sha256=pX8440qpnYn0Ae_uOabR2zS7kj6e-5KJu2jRAsMKmfI,770
+metamorphic_relations-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+metamorphic_relations-0.1.0.dist-info/top_level.txt,sha256=4QWC1EcSBsjp_n__RXQb8jaImH7C5MWQiDn1WGC65gY,22
+metamorphic_relations-0.1.0.dist-info/RECORD,,
