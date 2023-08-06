@@ -1,0 +1,55 @@
+[tool.poetry]
+#name = "ccache-download-upload-redis"
+#name = "ccache_upload_redis"
+name = "ccache-download-redis"
+version = "0.2.0"
+description = "A script to downloads the contents of the local ccache cache from a Redis remote storage."
+authors = ["berlin4apk <83521068+berlin4apk@users.noreply.github.com>"]
+repository = "https://github.com/berlin4apk/action-ccache-download-upload-redis"
+keywords = ["ccache", "redis", "download"]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+packages = [
+#    { include = "src/ccache-upload-redis" },
+#    { include = "ccache-upload-redis" },
+    { include = "ccache-download-redis" },
+]
+
+[tool.poetry.scripts]
+#ccache-upload-redis-sh = { reference = "src/ccache-upload-redis", type= "file" }
+#ccache-upload-redis-sh = { reference = "ccache-upload-redis", type= "file" }
+ccache-upload-redis-sh = { reference = "ccache-download-redis", type= "file" }
+#ccache-upload-redis_cli = 'ccache-upload-redis.console:run'
+# https://github.com/python-poetry/poetry-core/pull/40/files
+###ccache-upload-redis = 'ccache-upload-redis.console.py:run'
+#ccache-upload-redis-sh = { reference = "src/ccache-upload-redis.py", type= "file" }
+#my_package_cli = 'my_package.console:run'
+#ccache-download-redis = 'ccache-download-redis.console:run'
+###ccache-performance-sh = { reference = "src/ccache-performance.py", type= "file" }
+#sample_script = { reference = "script-files/sample_script.sh", type= "file" }
+#extra-script-legacy = {callable = "my_package.extra_legacy:main", extras = ["time"]}
+#extra-script = {reference = "my_package.extra:main", extras = ["time"], type = "console"}
+#ccache-download-redis-sh = { reference = "src/ccache-download-redis.py", type = "file" }
+# # # ccache-download-redis-sh = { reference = "src/ccache-download-redis", type = "file" }
+#ccache-download-redis-sh = {reference = "ccache-download-redis.py", extras = ["time"], type = "file"}
+#sh-script = {reference = "bin/script1.sh", type = "file"}
+#sh-script1 = {reference = "ccache-upload-redis", type = "file"}
+#sh-script2 = {reference = "ccache-download-redis", type = "file"}
+#sh-script3 = {reference = "ccache-performance", type = "file"}
+
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+progress-bar = "^8"
+humanize = "^4.6.0"
+progress = "^1.6"
+redis = "^4.5.4"
+
+[tool.poetry.group.dev.dependencies]
+shiv = "^1.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
