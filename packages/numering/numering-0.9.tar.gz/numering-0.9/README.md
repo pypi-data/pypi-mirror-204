@@ -1,0 +1,47 @@
+# Numering
+### Yet another number package.
+
+
++ ## random_float
+    - random float number in range of A and B
+  
++ ## random_element
+    - random element from list
+
++ ## sizeof
+    - size of an element
+
+## Examples
+
+### Generating random float number
+```py
+import numering
+
+a, b = 1, 2
+
+print(numering.random_float(a, b), decimals=3)
+
+# 1.736
+```
+
+### Selecting random element from list
+```py
+import numering
+
+my_list = [1, 2, 3, 4, 5]
+
+print(numering.random_element(my_list))
+
+# 3
+```
+
+### Getting size of element (list, tuple, dict)
+```py
+import numering
+
+my_list = [1, 2, 3, 4, 5]
+
+print(numering.sizeof(mylist))
+
+# 4
+```

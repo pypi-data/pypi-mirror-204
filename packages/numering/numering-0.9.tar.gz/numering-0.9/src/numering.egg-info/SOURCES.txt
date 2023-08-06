@@ -1,0 +1,9 @@
+LICENSE.rst
+README.md
+setup.cfg
+setup.py
+src/numering/__init__.py
+src/numering.egg-info/PKG-INFO
+src/numering.egg-info/SOURCES.txt
+src/numering.egg-info/dependency_links.txt
+src/numering.egg-info/top_level.txt
