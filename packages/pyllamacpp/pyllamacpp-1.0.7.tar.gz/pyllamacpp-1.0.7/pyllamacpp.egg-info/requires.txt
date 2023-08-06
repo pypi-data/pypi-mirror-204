@@ -1,0 +1,6 @@
+
+[all]
+streamlit
+streamlit-ace
+sentencepiece
+torch
