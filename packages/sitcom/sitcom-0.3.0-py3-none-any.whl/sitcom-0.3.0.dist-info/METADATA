@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sitcom
+Version: 0.3.0
+Summary: SITCoM: SiRGraF Integrated Tool for Coronal dynaMics
+Home-page: https://github.com/pu3/SITCoM
+Author: Purvi Udhwani
+Author-email: purviaries@aries.res.in
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: PyQt5
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+
+UNKNOWN
+
