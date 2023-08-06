@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: StringFix
+Version: 0.6.7
+Summary: Annotation guided transcriptome assembly program.
+Home-page: https://github.com/combio-dku
+Download-URL: https://github.com/combio-dku
+Author: Joongho Lee, Seokhyun Yoon
+Author-email: syoon@dku.edu
+Keywords: pypi StringFix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: sklearn
+
