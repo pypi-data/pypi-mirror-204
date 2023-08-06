@@ -1,0 +1,17 @@
+dbxconfig/__init__.py,sha256=hGkArdSBYI3utzNdJdm39vjfI5x_jOiQWkHT_t7RAgI,415
+dbxconfig/_config.py,sha256=3qXsa4YPuGxuWblKWIiW4GCH_pX-kZxChVjPA6bSFcQ,2847
+dbxconfig/_stage_type.py,sha256=HKgi28b46uotzR0mR33ygPXU_1Z7yYeRqu73KtolWa4,166
+dbxconfig/_table.py,sha256=oaJHrYRLB_lIH5DZCDgLVMod5mtQFwTUOEDOBRhXCrE,780
+dbxconfig/_tables.py,sha256=78wt1eQotF69Dl0l7zZRCnTMy9q5huk5q1zv2YzIkEY,3513
+dbxconfig/_timeslice.py,sha256=qEUjF8m6C86lh2akg930O0Rsfv8j2PLLTVD4Dukje3Y,5706
+dbxconfig/_utils.py,sha256=eku3sw61sO6GrNdHKUqxrELmH_pdMJzbkh128FE6sRI,1979
+dbxconfig/dataset/__init__.py,sha256=uw_8k-ZVXn2kebn-_akL0dCFwfWxeO_NCHcD9DcDUvk,200
+dbxconfig/dataset/_dataset.py,sha256=U_Z5akH4Z8mu6R2ecsM5lcmbGIw4hB0NWkexwjz91gc,903
+dbxconfig/dataset/_deltalake.py,sha256=oVKfR4GtAxYaDMU8dBXYc0U_ty53-TZ8ks5HeFklibQ,3230
+dbxconfig/dataset/_factory.py,sha256=6lrC_revZAZmJjD_dyOgDkUCRJNHmmNTd0_M7c_QjEQ,2781
+dbxconfig/dataset/_read.py,sha256=Xll4hDc7vWhgTnLPuD2Kp9B_ij4Hqjn0W-gKsR96Atg,4982
+dbxconfig/dataset/_write.py,sha256=K03HANx37FAHlyQjFWZWLInqQlot-Avumy7LKxXnA1g,259
+dbxconfig-2.0.4.dist-info/METADATA,sha256=uyqeWLUQs3ANSlaeh1GN1nY8HY0NvtU3Lv-M00lQL4o,3579
+dbxconfig-2.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dbxconfig-2.0.4.dist-info/top_level.txt,sha256=ru3s7iVuV0JC05lYSehAmDaLDOokv1CxDIni_NtUcYs,10
+dbxconfig-2.0.4.dist-info/RECORD,,
