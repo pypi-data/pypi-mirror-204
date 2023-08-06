@@ -1,0 +1,14 @@
+dgraph_operations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dgraph_operations/actions.py,sha256=ypAyvJuTkeZfRKYel-3UyM8rw6PtHQqYhZ-e4Of5Y5w,1198
+dgraph_operations/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+dgraph_operations/apps.py,sha256=Yxvg23P59AAWSZ5je8zxkpYjWcwz9E3pRLz52Jz2QtE,158
+dgraph_operations/graph_models.py,sha256=Q8gJ4wMx-VbZvGeD6XBxFFNRHiAWzAzzmGpflDD4vOQ,385
+dgraph_operations/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dgraph_operations/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+dgraph_operations/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+dgraph_operations/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gWeaver-1.0.1.dist-info/LICENSE.txt,sha256=rxSeqMPTOBBdtBydwNnyil_4knXyasJ-riNg5jRGYWM,1117
+gWeaver-1.0.1.dist-info/METADATA,sha256=F56KtOjH8Nzdp_L-4p_j4EQwOQyQ8CNUrxmiry2Z-Jw,2694
+gWeaver-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gWeaver-1.0.1.dist-info/top_level.txt,sha256=4bS_7UMdQW_6poFMy3680gjzNomRHReh0kG5-GvFqvw,18
+gWeaver-1.0.1.dist-info/RECORD,,
