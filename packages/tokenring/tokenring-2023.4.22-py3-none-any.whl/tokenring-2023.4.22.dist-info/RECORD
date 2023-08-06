@@ -1,0 +1,15 @@
+tokenring/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tokenring/cli.py,sha256=jFRG1xR0nccOGKLP4H2m0NWmjQl_LiV11c4SdBAeu38,3225
+tokenring/fidoclient.py,sha256=flNEjJ5NTlXwWYU78G7DR7hTskXq7HKrjYibV3fqyO0,2234
+tokenring/handles.py,sha256=wEk9OU2RmAXRmE5-X75S3VvmYGNYWmXyT4uLCMQdZcY,6909
+tokenring/interaction.py,sha256=da41Y4RYuyzHytiJ4hYjGPdmdHEtF7FbPxq_Jf3HgOM,3655
+tokenring/local.py,sha256=jIEqgvEE7kKccomte1fEXIbnihb_4OxDRBM99gorybo,1366
+tokenring/vault.py,sha256=v3MdaWHBl_rX-JJV8jlUBVR-BqTdgnJDemK9VTY2z-I,6262
+tokenring/agent/_admin_pipe.py,sha256=nto8Sj11YbcGoVHqDQblhHc9heWVWraTmsl5iWybVbc,2481
+tokenring/agent/client.py,sha256=weSNyFK3RAqlSIX04EHxMxAV-NbNQLOi4Ds5Meh4fPo,2392
+tokenring/agent/common.py,sha256=ul7A8lKOzBATozBegBOzl9ngruOjEQyQd7Ycq_AEzfY,669
+tokenring-2023.4.22.dist-info/METADATA,sha256=pwtkT2a2MboWr_WtyEqgWJ9N8vqvWCOnm03S-_NE9kE,354
+tokenring-2023.4.22.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tokenring-2023.4.22.dist-info/entry_points.txt,sha256=dhP2aIzlD7ygMj_GnU09d1G-2QHc3_oIZXWUcprcH_0,143
+tokenring-2023.4.22.dist-info/top_level.txt,sha256=q6VzD_xGXhlx7cNnGk_ftTGuNxQ88smpNTPMRKWdKaM,10
+tokenring-2023.4.22.dist-info/RECORD,,
