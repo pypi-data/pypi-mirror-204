@@ -1,0 +1,2 @@
+[console_scripts]
+htlll_runner = htlll_runner.__main__:main
