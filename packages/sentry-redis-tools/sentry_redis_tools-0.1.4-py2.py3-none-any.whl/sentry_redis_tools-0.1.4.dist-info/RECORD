@@ -1,0 +1,8 @@
+sentry_redis_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentry_redis_tools/failover_redis.py,sha256=HE4fPZ5fY91mckOt9J3VmQX1OThZ-vXPV0JXbvm5OnE,4335
+sentry_redis_tools/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentry_redis_tools-0.1.4.dist-info/LICENSE,sha256=N5_bX99yiEr4XUvIdjmYeV46iVXyxMCps_kmwPTpq58,4733
+sentry_redis_tools-0.1.4.dist-info/METADATA,sha256=L_dAUmJh-Dd3uk96Fd3g3PC0FHd3ND-3ZM4c9f0P53E,298
+sentry_redis_tools-0.1.4.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+sentry_redis_tools-0.1.4.dist-info/top_level.txt,sha256=w8TVMaMbKGxG75YpBHnzHLOtzJy3UTqWEonKOXRJVhs,19
+sentry_redis_tools-0.1.4.dist-info/RECORD,,
