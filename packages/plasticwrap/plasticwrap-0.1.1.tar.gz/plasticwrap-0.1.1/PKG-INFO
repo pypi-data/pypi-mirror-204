@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: plasticwrap
+Version: 0.1.1
+Summary: A simple wrapper for the Plastic SCM API.
+License: Unlicense
+Author: Samuel Bruce
+Author-email: 11494533+samuelbruce@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (==2.28.1)
+Description-Content-Type: text/markdown
+
+# plasticwrap
+
+A simple wrapper for the Plastic SCM API: (https://docs.plasticscm.com/restapi/plastic-scm-version-control-rest-api-guide)
+
+
