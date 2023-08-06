@@ -1,0 +1,43 @@
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7.3.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.3.0",
+]
+lint = [
+    "flake8",
+    "black",
+]
+test = [
+    "pytest",
+    "pytest-cov",
+]
+doc = [
+    "mkdocs",
+]
+
+[tool.pdm.scripts]
+test = "pytest test"
+fmt = "black ."
+
+[project]
+name = "tinysearch"
+version = "0.1.0"
+description = "Tiny one-phase search engine"
+authors = [
+    { name = "Domagoj Marsic", email = "dmars@protonmail.com" },
+]
+dependencies = [
+    "pystemmer>=2.2.0.1",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.license]
+text = "Apache-2.0"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
