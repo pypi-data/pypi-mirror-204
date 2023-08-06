@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: 21234191-cpp-pkg
+Version: 1.0.0
+Summary: A short description of my package
+Home-page: https://github.com/gauravs30/Payment-Library-CPP
+Author: Gaurav
+Author-email: gaurav.chinchane25@gmail.com
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: numpy (>=1.19.5)
+Requires-Dist: stripe
+
