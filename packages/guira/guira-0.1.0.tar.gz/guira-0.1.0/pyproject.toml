@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "guira"
+version = "0.1.0"
+description = "Guira is a Python Library for Robotic Simulation with CoppeliaSim (EDU 4.3.0)."
+authors = ["Mateus Assis <mateus.d.assis.silva@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.23.3"
+pandas = "^1.5.0"
+
+[tool.poetry.dev-dependencies]
+mkdocs = "^1.3.1"
+pytest = "^7.1.3"
+ipykernel = "^6.15.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
