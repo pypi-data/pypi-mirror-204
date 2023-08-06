@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: cs-nds
+Version: 0.3.1
+Summary: Often used things for Computer Science classes
+Home-page: https://github.com/alexcoder04/cs_nds
+Author: alexcoder04
+Author-email: alexcoder04@protonmail.com
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Computer Science Niedersachsen
+
+This Library contains often used methods and classes
+for Computer Science classes in Niedersachsen (Lower Saxony), Germany.
+
+The initial and main reason for creation of this library
+is an implementation of the `Stack` and `Queue` classes,
+which differ from the Python implementation.
+
+**Disclaimer:**
+Although I try to give my best to provide a useful tool,
+I cannot guarantee it always working correctly and being
+up-to-date with the latest specifications.
+
+If you encounter a problem, please open an [issue](https://github.com/alexcoder04/cs_nds/issues).
+
+## Installation
+
+This package is available over `pip`:
+
+```sh
+pip install cs-nds
+```
+
+To use it in your code, just import it:
+
+```python
+import cs_nds
+
+my_queue = cs_nds.Queue()
+my_queue.enqueue(3)
+
+# ...
+```
+
+## Data Structures
+
+ - `Stack` ("Stapel" / stack)
+ - `Queue` ("(Warte-)Schlange" / queue)
+ - `DynArray` ("Dynamische Reihung" / dynamic array)
+ - `BinTree` ("Binärbaum" / binary tree)
+
