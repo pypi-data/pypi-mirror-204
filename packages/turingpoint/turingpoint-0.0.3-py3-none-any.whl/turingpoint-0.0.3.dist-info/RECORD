@@ -1,0 +1,12 @@
+turingpoint/__init__.py,sha256=_VexDW-pMk30xC_wno1WIyAzYcwAlTgTeEUFqXJT-0A,136
+turingpoint/assembly.py,sha256=YAzpLgPaVE42kJrS0s2pqtVJw725ne1NB24a7vtkqsE,1448
+turingpoint/definitions.py,sha256=mVxu04K8U1buKq2plhIcAkmFtMzGLMrHoDjOyCkSUGo,476
+turingpoint/gymnasium_utils.py,sha256=wQ9rDsr2POjYtlrzYphalWOBqSDTCm4PiLwetBFbsio,1433
+turingpoint/sb3_utils.py,sha256=UAcR-47cwTL4nEvqLJmOpRbic9Lf1S_ffYd7ZS00OsY,435
+turingpoint/self_play.py,sha256=750fhM_5OXqwbCwf5_oA4UoTJeW-EeqNXcvF1trsZEU,1778
+turingpoint/utils.py,sha256=5DBy3lfZKRUjNS2B_rAXjx6KIMz51dVwrXdRVKFJPI4,862
+turingpoint-0.0.3.dist-info/METADATA,sha256=iX1BMlgry_QOF-Z5M5loXZAjaMtb3pwWS-zyuXzZlS4,7406
+turingpoint-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+turingpoint-0.0.3.dist-info/top_level.txt,sha256=7uJnpOYegIdDgIH3uqfEq5NWTWMWQqAjo7KGigtrZcg,12
+turingpoint-0.0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+turingpoint-0.0.3.dist-info/RECORD,,
