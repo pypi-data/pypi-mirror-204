@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: spacebench
+Version: 0.0.1
+Summary: TBD
+Home-page: https://github.com/NSAPH-Projects/space
+Author: Mauricio Tec, Ana Trisovic, Audirac, Michelle, Jie Hu,Sophie Mirabai Woodward, Naeem Khoshnevis, Francesca Dominici
+Author-email: mauriciogtec@hsph.harvard.edu,anatrisovic@g.harvard.edu,maudirac@hsph.harvard.edu,khu@hsph.harvard.edu,swoodward@fas.harvard.edu,nkhoshnevis@g.harvard.edu,fdominic@hsph.harvard.edu
+Maintainer: Naeem Khoshnevis
+Maintainer-email: nkhoshnevis@g.harvard.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
