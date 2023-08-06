@@ -1,0 +1,9 @@
+distcompute_client/__init__.py,sha256=qW8qw-NiRfDVTaerRP1KFXJ6asLWrOAcLwjD9iP3wuA,42
+distcompute_client/client.py,sha256=dkQ-LTtXOhpD1TlGdLFK5JumBwxVmFuSgaBd-fdSxr4,7298
+distcompute_client/errors.py,sha256=TU_YnaNFetR0NzB8_wh5D7VU5rdhHYcb9dVqM_U1BJc,209
+distcompute_client-1.0.0.data/data/README.md,sha256=jQWxhWB8YxRbQImNrVXqDeKE2ClKP9wZYzF-mX6Bi7s,5893
+distcompute_client-1.0.0.dist-info/LICENSE,sha256=wzp9HQQRRRZJKoMgnK89Bkchv6uPyPjpkXcBswgdXYk,1069
+distcompute_client-1.0.0.dist-info/METADATA,sha256=PYXOEOOWTxL7UVTPwTQxkjaTLJFOAAPqXFaKWniJCtg,6538
+distcompute_client-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+distcompute_client-1.0.0.dist-info/top_level.txt,sha256=_Sg92NMsEza3SkbnSkxbY_b4NVjX70Vj9FfWJUh9DJs,19
+distcompute_client-1.0.0.dist-info/RECORD,,
