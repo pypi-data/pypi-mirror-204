@@ -1,0 +1,11 @@
+watchful/VERSION,sha256=ojyOaxZvgxpbs8G94LZrGFxuPlkFKS6Kgq_q-EF6VHY,5
+watchful/__init__.py,sha256=he_UJPuWHj3kp5s7rZ4rATuDz8y7j6JiLPlWyOZwNhI,575
+watchful/attributes.py,sha256=kB6uBAoRPYMFgODG7AtVf4WOZmPCf9ErqDBAHlbaqbM,39611
+watchful/client.py,sha256=NqC4lDZcfMi7mEcumLOHSmws6YFRpHkxSO-WLdafdeA,49386
+watchful/enrich.py,sha256=o7K0IzPqsuUPShInEVOE6taGf2fW8lEqjEuVY_9-fFU,15767
+watchful/enricher.py,sha256=DNf10cdFSUFASaEKFVYxDYmqOWBNTykiCGApvGgMYtA,6356
+watchful-3.2.0.dist-info/LICENSE,sha256=eMPYShgTs-SP15VQzJ_B05JtqGcbc8pLy7WY0Ukiehw,1075
+watchful-3.2.0.dist-info/METADATA,sha256=OkxxW32Vpa6kKvBx0DuT9L5gFT36Po8biZUbXQ9-krk,2851
+watchful-3.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+watchful-3.2.0.dist-info/top_level.txt,sha256=_GtCvfur904XOONXYnQsnkEE8g7Q2ta38JnOGOVObHs,9
+watchful-3.2.0.dist-info/RECORD,,
