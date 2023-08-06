@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: zipy
+Version: 0.5.2
+Summary: Zipy is a toolbox containing a set of convenient python function
+Author: 冒险岛真好玩
+Author-email: 17826800084g@gmail.com
+Requires-Python: >=3.9,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: pydantic (>=1.10.5,<2.0.0)
+Requires-Dist: web3 (>=5.31.3,<6.0.0)
+Description-Content-Type: text/markdown
+
+# Introduction
+zipy is a toolbox for usual python development
+
+# Development
+# Prerequisite
+- install poetry
+
+## Build dev environment
+```
+cd <path-to-project>
+
+poetry install
+
+poetry env use 3.10
+
+pre-commit install
+```
+

@@ -1,0 +1,13 @@
+zipy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zipy/cache.py,sha256=WOOpWt6B01hqbteq5i_MbnEPcg2J8ZBsh1796IRDr-A,2847
+zipy/cmdline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zipy/cmdline/string.py,sha256=zza-EP_fLbYJnTng6Kg00fuTlQgNDdT2jSiSwJxYUKU,498
+zipy/cmdline/web3.py,sha256=hCh3zhBuMMU9r7SLdFihBjyHGUVH9GFTWISopo1kEq4,545
+zipy/data.py,sha256=mT_TP77jW-H4LpbF0ISZaP0sdU5TdifVh8OdhcmNGQU,577
+zipy/inspect.py,sha256=7eMFVI5lT60ebccIZotbC-r4nuTraBH55aosTK1Dlic,162
+zipy/retry.py,sha256=0_6UHuzemhYdkv4SPSfuNNWnsV9fUaFAISGrEzvnQHg,2563
+zipy/time.py,sha256=lTLwk9x0DfzzFuDkFhW28keGEPIM67fwAfq_JyzQq4w,2153
+zipy/web3.py,sha256=UJjRo5TdMdBWXpGRGfaM4duOqOj0TziIOITf6UJboqU,9769
+zipy-0.5.2.dist-info/METADATA,sha256=0hgHeu_UCerbE3XYHiK1T6VKA6enJXphMNJjBVCVdcg,793
+zipy-0.5.2.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+zipy-0.5.2.dist-info/RECORD,,
