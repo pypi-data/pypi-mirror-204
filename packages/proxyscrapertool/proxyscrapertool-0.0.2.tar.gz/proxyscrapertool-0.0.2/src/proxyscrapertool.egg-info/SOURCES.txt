@@ -1,0 +1,7 @@
+pyproject.toml
+src/proxyscrapertool/__init__.py
+src/proxyscrapertool/example.py
+src/proxyscrapertool.egg-info/PKG-INFO
+src/proxyscrapertool.egg-info/SOURCES.txt
+src/proxyscrapertool.egg-info/dependency_links.txt
+src/proxyscrapertool.egg-info/top_level.txt
