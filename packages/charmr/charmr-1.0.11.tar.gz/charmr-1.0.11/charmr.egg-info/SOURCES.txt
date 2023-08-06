@@ -1,0 +1,13 @@
+README.md
+setup.py
+charmr/__init__.py
+charmr/ai.py
+charmr/alias_manager.py
+charmr/load_code.py
+charmr/main.py
+charmr.egg-info/PKG-INFO
+charmr.egg-info/SOURCES.txt
+charmr.egg-info/dependency_links.txt
+charmr.egg-info/entry_points.txt
+charmr.egg-info/requires.txt
+charmr.egg-info/top_level.txt
