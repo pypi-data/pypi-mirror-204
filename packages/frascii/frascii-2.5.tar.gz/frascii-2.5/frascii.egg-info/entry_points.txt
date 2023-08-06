@@ -1,0 +1,3 @@
+[console_scripts]
+frascii = frascii.commands:cmd_main
+
