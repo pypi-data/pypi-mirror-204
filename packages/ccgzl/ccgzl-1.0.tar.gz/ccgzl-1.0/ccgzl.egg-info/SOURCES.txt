@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+ccgzl.egg-info/PKG-INFO
+ccgzl.egg-info/SOURCES.txt
+ccgzl.egg-info/dependency_links.txt
+ccgzl.egg-info/top_level.txt

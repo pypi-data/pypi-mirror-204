@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ccgzl
+Version: 1.0
+Summary: 基于ChangeCoordinate添加高德与wgs84相互转换等
+Home-page: https://space.bilibili.com/31106656
+Author: pianshilengyubing
+Author-email: 1010221702@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+基于ChangeCoordinate添加高德与wgs84相互转换等
