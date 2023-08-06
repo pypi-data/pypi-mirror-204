@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: MazeSolvingAlgos
+Version: 1.5
+Summary: Python module written in C++ for generating and solving rectangular Mazes with Graph Traversal Algorithms.
+Home-page: https://github.com/MahmoudHussienMohamed/MazeSolvingAlgos
+Author: Mahmoud Hussien Mohamed
+Author-email: MahmoudHussienMohamed.mhm@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/MahmoudHussienMohamed/MazeSolvingAlgos/archive/refs/tags/v_15.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: C++
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
