@@ -1,0 +1,17 @@
+{% block content %}
+<style>
+    .errorlist{
+        color:red;
+    }
+</style>
+<div class="jumbotron" style="color: black;">
+    <h1 class="text-center" style="color: black;">REGISTER NOW</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+    <button type="submit" class="btn btn-primary">Signup</button>
+    </form>
+</div>
+<p style="color: black;">Already Registered. <a href="{% url 'login' %}">Login</a></p>
+
+{% endblock %}
