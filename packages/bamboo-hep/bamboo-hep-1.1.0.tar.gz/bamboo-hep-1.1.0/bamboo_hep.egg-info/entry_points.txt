@@ -1,0 +1,5 @@
+[console_scripts]
+bambooHTCondorResubmit = bamboo.batch_htcondor:resubmit_cli
+bambooRun = bamboo.scripts.bambooRun:main
+makePUReWeightJSON = bamboo.scripts.makePUReWeightJSON:main
+

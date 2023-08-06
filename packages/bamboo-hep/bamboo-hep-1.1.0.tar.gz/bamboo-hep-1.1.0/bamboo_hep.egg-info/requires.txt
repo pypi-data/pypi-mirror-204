@@ -1,0 +1,16 @@
+PyYAML
+numpy
+requests
+
+[cms]
+correctionlib
+
+[docs]
+sphinx
+sphinx-rtd-theme
+
+[interactive]
+IPython
+
+[torch]
+torch>=1.2.0
