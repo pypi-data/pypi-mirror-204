@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+porkbun_ddns/__init__.py
+porkbun_ddns/cli.py
+porkbun_ddns/helpers.py
+porkbun_ddns/porkbun_ddns.py
+porkbun_ddns.egg-info/PKG-INFO
+porkbun_ddns.egg-info/SOURCES.txt
+porkbun_ddns.egg-info/dependency_links.txt
+porkbun_ddns.egg-info/entry_points.txt
+porkbun_ddns.egg-info/top_level.txt
