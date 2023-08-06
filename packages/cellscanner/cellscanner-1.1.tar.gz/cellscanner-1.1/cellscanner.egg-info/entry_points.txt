@@ -1,0 +1,2 @@
+[console_scripts]
+cellscanner = code.MainWindow:main
