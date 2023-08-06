@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: python-package-creator
+Version: 0.1.0
+Summary: A command line tool for creating Python projects and pushing them to GitHub
+License: GPLv3
+Author: Chris Dexler
+Author-email: 129110538+chrisdexler@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: appdirs (>=1.4,<2.0)
+Requires-Dist: click (>=8.0,<9.0)
+Requires-Dist: cookiecutter (>=1.7,<2.0)
+Requires-Dist: requests (>=2.25,<3.0)
+Requires-Dist: toml (>=0.10,<0.11)
