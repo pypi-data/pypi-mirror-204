@@ -1,0 +1,10 @@
+torch
+transformers
+numpy
+scikit-learn
+spacy
+nltk
+python-dotenv
+openai
+gensim
+openai
