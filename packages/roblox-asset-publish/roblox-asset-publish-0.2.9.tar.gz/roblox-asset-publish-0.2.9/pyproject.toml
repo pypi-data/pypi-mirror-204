@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roblox-asset-publish"
+version = "0.2.9"
+authors = [
+  { name="nightcycle", email="coyer@nightcycle.us" },
+]
+dependencies = [
+	"requests==2.28.2", 
+	"mutagen==1.46.0", 
+]
+description = "a package with useful functions for downloading and working with midas generated analytics data"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
