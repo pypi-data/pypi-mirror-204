@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header">Оперативная память</div>
+        <div class="body" style="column-count: 3">
+            <div>Всего: {{ virtual_memory.total.0 }} {{ virtual_memory.total.1 }}</div>
+            <div>Свободно: {{ virtual_memory.available.0 }} {{ virtual_memory.available.1 }}</div>
+            <div>Занято: {{ virtual_memory.percent }} %</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="header">Жёсткий диск</div>
+        <div class="body" style="column-count: 3">
+            <div>Всего: {{ hard_memory.total.0 }} {{ hard_memory.total.1 }}</div>
+            <div>Свободно: {{ hard_memory.free.0 }} {{ hard_memory.free.1 }}</div>
+            <div>Занято: {{ hard_memory.percent }} %</div>
+        </div>
+    </div>
+
+    <h4 style="padding: 10px">Файлы</h4>
+
+    {% for i in folders_files %}
+    <div class="card">
+        <div class="header">{{ i.label }} <span style="font-weight: normal">({{ i.path }})</span></div>
+        <div class="body" style="column-count: 2">
+            <div>Вес: {{ i.size.0 }} {{ i.size.1 }}</div>
+            <div>Файлы: {{ i.count }}</div>
+        </div>
+    </div>
+    {% endfor %}
+
+
+    <h4 style="padding: 10px">Базы данных</h4>
+
+    {% for i in db %}
+    <div class="card">
+        <div class="header">{{ i.name }} <span style="font-weight: normal">({{ i.alias }})</span></div>
+        <div class="body" style="column-count: 4; background: #dcdcdc94; font-weight: 300">
+            <div>Имя</div>
+            <div>Вес</div>
+            <div>Ко-во записей</div>
+            <div></div>
+        </div>
+        <div style="overflow-y: auto; max-height: 500px;">
+            {% for table in i.tables %}
+            <div class="body" style="column-count: 4;">
+                <div>{{ table.name }}</div>
+                <div>{{ table.size.0 }} {{ table.size.1 }}</div>
+                <div>{{ table.rows }}</div>
+                {% if table.clean %}
+                    <a href="print.html" onclick="window.open('{% url "project_panel_clean_table" i.alias table.name %}', '_blank', 'width=700,height=500,toolbar=false,menubar=false,top=200,left=500'); return false;">очистка</a>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+
+</body>
+
+
+<style>
+    html, body {font-family: sans-serif; }
+    .card {
+        margin: 10px;
+        background: #f1f7fd;
+    }
+    .card > .header {
+        padding: 10px;
+        background: #dce0e7;
+        font-size: medium;
+        font-weight: bold;
+    }
+    .card > .body, .card * > .body {
+        padding: 10px;
+        font-weight: normal;
+    }
+</style>
+
+</html>
