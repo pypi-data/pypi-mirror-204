@@ -1,0 +1,13 @@
+booking_mail/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+booking_mail/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+booking_mail/apps.py,sha256=t3iZtwk_nUD2LprLQNIozAvr7QsQrbuynimHks74Fgo,155
+booking_mail/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+booking_mail/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+booking_mail/urls.py,sha256=VCnmcZslnhNY29sNGDW3foory6baH8-CbhtkmJtHfWw,166
+booking_mail/views.py,sha256=fhUYsEfW5sger_n3TaStr-df0UaOo-9qKP8UMlAITO4,4215
+booking_mail/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Muralikrishnan_Nambiar_booking_mail-0.1.dist-info/LICENSE,sha256=R-xwwWsYI9OZY48O6mcYbdbucpo72q8v4svOUUKU20s,1082
+Muralikrishnan_Nambiar_booking_mail-0.1.dist-info/METADATA,sha256=eAFIa63rdPBnKbzk9K0pWaxoe7-fc6H0D8hNpJ2196w,442
+Muralikrishnan_Nambiar_booking_mail-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Muralikrishnan_Nambiar_booking_mail-0.1.dist-info/top_level.txt,sha256=BmGx2iBXcNBRMm4IYJ06vZoa1xuSnnbG0LclU0fD5LY,13
+Muralikrishnan_Nambiar_booking_mail-0.1.dist-info/RECORD,,
