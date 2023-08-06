@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "podcast-archiver"
+version = "0.4.3"
+description = "Archive all episodes from your favorite podcasts"
+authors = ["Jan Willhaus <mail@janwillhaus.de>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "podcast_archiver.py" }]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Multimedia",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Topic :: System :: Archiving",
+    "Topic :: Utilities",
+]
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "semver"
+strict = true
+
+[tool.poetry.scripts]
+podcast-archiver = 'podcast_archiver:main'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-dateutil = "^2.8.2"
+feedparser = "^6.0.10"
+tqdm = "^4.65.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.262"
+black = "^23.3.0"
+
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+extend-select = [
+    "I",   # isort
+    "B",   # bugbear
+    "A",   # builtins
+    "ISC", # implicit-str-concat
+    "Q",   # quotes
+    "TID", # tidy-imports
+    "C4",  # comprehensions
+    "SIM", # simplify
+    "C90", # mccabe
+]
+unfixable = [
+    "B", # bugbear
+]
+ignore = [
+    "SIM108", # if-else-block-instead-of-if-exp
+]
+
+[tool.ruff.mccabe]
+max-complexity = 8
+
+
+[tool.black]
+line-length = 120
+target-version = ['py39', 'py310', 'py311']
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
