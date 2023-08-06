@@ -1,0 +1,12 @@
+np_stream/__init__.py,sha256=0XObFhSxvLbx_X0E7TWeXTSBGFBEjCHMOm2Eiu3GehU,38
+np_stream/benchmark.py,sha256=t_0eWJICOKDhG6ao5NjOIUGACHrVnaR4tHFtzgQq0PM,1298
+np_stream/npy.py,sha256=gBU2fkrGACV3RQ5xYgbaOXi9eEQqB8Rx3PwRzQ4BOAM,4628
+np_stream/npy_utils.py,sha256=LlMGZTRtDaQeogaQtUCC14vcEhAGQJVOaRJgUkD-VSA,825
+np_stream/npz.py,sha256=r_vlFsYwiZolzTKbwrkGAOMGxm8EkInhAPG9PKL2NgM,5520
+np_stream/test.py,sha256=wsBBVqHamiV2w7gM8nj0jYVBJAuQE10DbEAjioRSj-4,6823
+np_stream/utils.py,sha256=IK9jqZDOWa49LctCATVe13v6w13hx7P56_lesgG6z18,1249
+np_stream/zip.py,sha256=CKa0h_4LNUr824qnxKuJFBqAY4RTYcsl1woXytiVN3c,2674
+np_stream-0.1.0.dist-info/METADATA,sha256=PAEXrAVc1MhEgPpqYKBkiWK9W_pfa-TpJ89KzwFpc78,2259
+np_stream-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+np_stream-0.1.0.dist-info/top_level.txt,sha256=Wa6FIw3Ic1daKRrIcFOGC6JhNwhMLpsOHMx7F01u4W4,10
+np_stream-0.1.0.dist-info/RECORD,,
