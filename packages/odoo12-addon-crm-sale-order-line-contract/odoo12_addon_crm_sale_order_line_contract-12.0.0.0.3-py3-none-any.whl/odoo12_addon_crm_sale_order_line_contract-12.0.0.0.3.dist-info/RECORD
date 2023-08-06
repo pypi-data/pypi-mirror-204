@@ -1,0 +1,14 @@
+odoo/addons/crm_sale_order_line_contract/__init__.py,sha256=Ax4qLxdb9ATk05MF7cSQ0BdpYCpGVYFy9n4U4zODf9o,46
+odoo/addons/crm_sale_order_line_contract/__manifest__.py,sha256=c1DSLzzJX8RGJ4dwMMLa_fNp-mgldahbRVDIzV_vGuA,583
+odoo/addons/crm_sale_order_line_contract/models/__init__.py,sha256=vq6ZDHFJ_BNiEiV7nqFm1qPhLU739CVelA6goUN9lBs,137
+odoo/addons/crm_sale_order_line_contract/models/crm_lead.py,sha256=gw2oNfrZFIYMvqPg0Es2yUPjJrGnTYJZCwbiiq5fvDk,5797
+odoo/addons/crm_sale_order_line_contract/models/crm_sale_order_line.py,sha256=oCQK4z-nRv4VO_tJCXxFwCUiyBYjjH059EwuGoqinVc,1724
+odoo/addons/crm_sale_order_line_contract/models/sale_order.py,sha256=ygXi-ShwGyI78Ww4xIvgBAV-bkLy6is9pMcaSvijPKo,1113
+odoo/addons/crm_sale_order_line_contract/models/sale_order_line.py,sha256=olZ957kP2ZEBKRzQPB2XvY0MK6Cs_27Yhd_mkbmDTic,326
+odoo/addons/crm_sale_order_line_contract/security/ir.model.access.csv,sha256=_rSpUtidQ917ATTelTblwGdp45hdN-aICK9Ku877xzM,77
+odoo/addons/crm_sale_order_line_contract/views/crm_lead.xml,sha256=BRo1yCuLclpSJwnsE1fSyLFfDU4NtOGj4uaE4SWzC7U,1057
+odoo/addons/crm_sale_order_line_contract/views/sale_order.xml,sha256=-WrMIalSUsWM7R1H1bo48Y6hrfKq-VIYi-njxR9u_38,670
+odoo12_addon_crm_sale_order_line_contract-12.0.0.0.3.dist-info/METADATA,sha256=FT_MfKkIy1EdNZm2WUrqu8a8zvsIMGyIfYK5dx901c0,484
+odoo12_addon_crm_sale_order_line_contract-12.0.0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo12_addon_crm_sale_order_line_contract-12.0.0.0.3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_crm_sale_order_line_contract-12.0.0.0.3.dist-info/RECORD,,
