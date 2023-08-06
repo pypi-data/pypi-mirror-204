@@ -1,0 +1,4 @@
+setuptools
+
+[:"linux" in sys_platform]
+cython
