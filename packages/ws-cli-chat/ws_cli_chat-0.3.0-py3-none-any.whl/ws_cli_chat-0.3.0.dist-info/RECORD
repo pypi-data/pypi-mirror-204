@@ -1,0 +1,8 @@
+ws_cli_chat/__init__.py,sha256=6U3vDN4Q_RoLQIs6O7TZiO39SzbO7Jt1YsaUIXR474M,96
+ws_cli_chat/cli_chat.py,sha256=c89YKPwOg8JKeOLLshoZlHPal4FR2qFyrK3wsZ3sZeM,3330
+ws_cli_chat/myconsole.py,sha256=5IlWpxyUa-VZB3BRlIE3VvDK4wNZiGnDhbZPzlBVn2Q,2899
+ws_cli_chat/render.py,sha256=UrTWv-dLJ7dPBuRv82oBvI5Bw2dHApvzm7IQglhFIW4,756
+ws_cli_chat-0.3.0.dist-info/entry_points.txt,sha256=QCewCFNQxzfPYxQgGWymsdbhjvLNMhRSA-Shqw4COY0,49
+ws_cli_chat-0.3.0.dist-info/METADATA,sha256=pKUbTe6vrKG1342JVgNuHNTjc4PitE2nZgyajHI25kg,2142
+ws_cli_chat-0.3.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+ws_cli_chat-0.3.0.dist-info/RECORD,,
