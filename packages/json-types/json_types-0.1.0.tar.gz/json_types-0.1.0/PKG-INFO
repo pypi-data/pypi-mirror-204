@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: json_types
+Version: 0.1.0
+Summary: Type definitions and utilities for working with JSON in Python.
+Keywords: json
+Author-email: Cal Jacobson <cj81499@users.noreply.github.com>
+Requires-Python: >= 3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Typing :: Typed
+Requires-Dist: build >= 0.10.0 ; extra == "build"
+Requires-Dist: black >= 23.3 ; extra == "dev"
+Requires-Dist: coverage[toml] >= 7.2.3 ; extra == "dev"
+Requires-Dist: mypy >= 1.2 ; extra == "dev"
+Requires-Dist: pytest >= 7.3 ; extra == "dev"
+Requires-Dist: ruff >= 0.0.262 ; extra == "dev"
+Project-URL: Documentation, https://github.com/cj81499/json_types#readme
+Project-URL: Issues, https://github.com/cj81499/json_types/issues
+Project-URL: Source, https://github.com/cj81499/json_types
+Provides-Extra: build
+Provides-Extra: dev
+
+# json_types
+
+[![PyPI - Version](https://img.shields.io/pypi/v/json_types.svg)](https://pypi.org/project/json_types)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/json_types.svg)](https://pypi.org/project/json_types)
+
+Type definitions and utilities for working with JSON in Python
+
+-----
+
+## Installation
+
+```console
+pip install json_types
+```
+
