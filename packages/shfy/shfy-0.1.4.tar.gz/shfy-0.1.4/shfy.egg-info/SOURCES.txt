@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+shfy/__init__.py
+shfy/shfy.py
+shfy/shfy_completion.py
+shfy.egg-info/PKG-INFO
+shfy.egg-info/SOURCES.txt
+shfy.egg-info/dependency_links.txt
+shfy.egg-info/entry_points.txt
+shfy.egg-info/requires.txt
+shfy.egg-info/top_level.txt
+tests/test_shared.py
+tests/test_shfy.py
+tests/test_shfy_completion.py
