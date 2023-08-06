@@ -1,0 +1,2 @@
+[console_scripts]
+utsuho = utsuho.cli:cli
