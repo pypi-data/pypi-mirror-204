@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+redis_work_queue/__init__.py
+redis_work_queue/item.py
+redis_work_queue/keyprefix.py
+redis_work_queue/workqueue.py
+redis_work_queue.egg-info/PKG-INFO
+redis_work_queue.egg-info/SOURCES.txt
+redis_work_queue.egg-info/dependency_links.txt
+redis_work_queue.egg-info/requires.txt
+redis_work_queue.egg-info/top_level.txt
