@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: Starfysh
+Version: 1.1.1
+Summary: Spatial Transcriptomic Analysis using Reference-Free auxiliarY deep generative modeling and Shared Histology
+Home-page: https://starfysh.readthedocs.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: matplotlib (>=3.4.2)
+Requires-Dist: networkx (>=2.6.3)
+Requires-Dist: numba (>=0.56.4)
+Requires-Dist: numpy (>=1.23.5)
+Requires-Dist: opencv-python-headless (>=4.5.1.48)
+Requires-Dist: pandas (>=1.3.3)
+Requires-Dist: py-pcha (>=0.1.3)
+Requires-Dist: scanpy (>=1.9.2)
+Requires-Dist: scikit-dimension (>=0.3)
+Requires-Dist: scikit-image (>=0.19.2)
+Requires-Dist: scikit-learn (>=1.2.1)
+Requires-Dist: scipy (>=1.7.1)
+Requires-Dist: seaborn (>=0.11.2)
+Requires-Dist: setuptools (>=50.3.2)
+Requires-Dist: threadpoolctl (>=3.1.0)
+Requires-Dist: torch (>=1.11.0)
+Requires-Dist: torchvision (>=0.12.0)
+Requires-Dist: umap-learn (>=0.5.3)
+Requires-Dist: nbsphinx
+Requires-Dist: ipykernel
+Requires-Dist: sphinx
+Requires-Dist: sphinxcontrib-apidoc
+
