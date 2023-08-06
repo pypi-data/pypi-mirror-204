@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+dash_data_prep.egg-info/PKG-INFO
+dash_data_prep.egg-info/SOURCES.txt
+dash_data_prep.egg-info/dependency_links.txt
+dash_data_prep.egg-info/requires.txt
+dash_data_prep.egg-info/top_level.txt
