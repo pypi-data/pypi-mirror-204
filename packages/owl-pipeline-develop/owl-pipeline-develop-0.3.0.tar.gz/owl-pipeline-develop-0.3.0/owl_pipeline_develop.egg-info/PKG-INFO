@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: owl-pipeline-develop
+Version: 0.3.0
+Summary: Pipeline Framework
+Home-page: https://github.com/IMAXT/owl-pipeline-develop
+Download-URL: https://github.com/IMAXT/owl-pipeline-develop/archive/v0.1.20.tar.gz
+Author: Eduardo Gonzalez Solares
+Author-email: eglez@ast.cam.ac.uk
+License: GNU General Public License v3
+Keywords: owl,pipeline
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+
+Owl Pipeline Developer Library
+==============================
+
+This is the library used to develop
+`Owl Pipelines <https://eddienko.github.io/owl-pipeline>`__.

@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+owl_dev/__init__.py
+owl_dev/logging.py
+owl_dev/database/__init__.py
+owl_dev/database/model.py
+owl_pipeline_develop.egg-info/PKG-INFO
+owl_pipeline_develop.egg-info/SOURCES.txt
+owl_pipeline_develop.egg-info/dependency_links.txt
+owl_pipeline_develop.egg-info/not-zip-safe
+owl_pipeline_develop.egg-info/requires.txt
+owl_pipeline_develop.egg-info/top_level.txt
+tests/test_import.py
