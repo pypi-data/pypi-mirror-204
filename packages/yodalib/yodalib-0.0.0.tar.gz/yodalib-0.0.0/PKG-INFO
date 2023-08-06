@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: yodalib
+Version: 0.0.0
+Summary: Your Only Decompiler API Lib - A generic API to script in and out of decompilers
+Home-page: https://github.com/binsync/yodalib
+License: BSD 2 Clause
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# yodalib
+ Your Only Decompiler API Lib - A generic API to script in and out of decompilers 
+
+

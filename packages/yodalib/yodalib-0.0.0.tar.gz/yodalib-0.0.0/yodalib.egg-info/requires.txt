@@ -1,0 +1,10 @@
+toml
+pycparser
+setuptools
+prompt_toolkit
+rich
+
+[test]
+angr-management
+pytest-qt
+pyside6

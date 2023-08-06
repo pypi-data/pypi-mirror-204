@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+yodalib/__init__.py
+yodalib/__main__.py
+yodalib.egg-info/PKG-INFO
+yodalib.egg-info/SOURCES.txt
+yodalib.egg-info/dependency_links.txt
+yodalib.egg-info/entry_points.txt
+yodalib.egg-info/requires.txt
+yodalib.egg-info/top_level.txt
