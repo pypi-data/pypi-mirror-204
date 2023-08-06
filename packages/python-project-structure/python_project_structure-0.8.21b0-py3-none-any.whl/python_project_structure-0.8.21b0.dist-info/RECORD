@@ -1,0 +1,12 @@
+pythonprojectstructure/__init__.py,sha256=0gGmubjWpMsiW3M5CIFJQF9iMYYFdpPqjSynVTogNho,4262
+pythonprojectstructure/__main__.py,sha256=qq1xUV8VQv0kGAJp0Tjn9cLUCTFF5Fq7ZClDArhMy-A,201
+pythonprojectstructure/utils.py,sha256=04mL5-_Lkr_xrH-PR_U3PFjwHPad5t9Mx82jVeSBHuE,395
+pythonprojectstructure/version.py,sha256=9E3uq4ZhZOxlEULsUmSeZRRSDwGRmCI8ju3n3i-RtiA,164
+pythonprojectstructure/tests/__init__.py,sha256=UH-ihp41VYXirwJiNEgzDG8Yiv-WpepXDXflNNbPu4o,72
+pythonprojectstructure/tests/test_cli.py,sha256=moB9wNXuWEmiJTY9LmT23YY6nsoAQjn-lGAcAm6FUaM,4438
+python_project_structure-0.8.21b0.dist-info/LICENSE,sha256=TQB2hl5wQbApX26FyvttNUVV0qERhdlTY4GsCwSzNt8,1081
+python_project_structure-0.8.21b0.dist-info/METADATA,sha256=kfzKBFM17jFCkdZnMg2XekbjcVZ3AJh6vCSKZUfI7as,17415
+python_project_structure-0.8.21b0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+python_project_structure-0.8.21b0.dist-info/entry_points.txt,sha256=mb5hQ-rooc9cP8_d8Q4LV-wU3l0LDVsR_IRGSYhzQyg,73
+python_project_structure-0.8.21b0.dist-info/top_level.txt,sha256=t5q00ds0Q4STziRCzwe7VFbituWmFgLxSn2Xdyzesi8,23
+python_project_structure-0.8.21b0.dist-info/RECORD,,
