@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+phonetree/__init__.py
+phonetree/phonetree.py
+phonetree.egg-info/PKG-INFO
+phonetree.egg-info/SOURCES.txt
+phonetree.egg-info/dependency_links.txt
+phonetree.egg-info/requires.txt
+phonetree.egg-info/top_level.txt
