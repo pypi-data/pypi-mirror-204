@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: pocketrockit
+Version: 0.0.1
+Summary: pocketrockit
+Home-page: https://projects.om-office.de/frans/pocketrockit.git
+Author: Frans Fürst
+Author-email: frans.fuerst+gitlab@protonmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: asyncinotify (>=4.0.1,<5.0.0)
+Requires-Dist: pyfluidsynth (>=1.3.1,<2.0.0)
+Requires-Dist: pygame (>=2.1.2,<3.0.0)
+Project-URL: Repository, https://projects.om-office.de/frans/pocketrockit.git
+Description-Content-Type: text/markdown
+
+# No Name Yet
+
+Uses `strace` to trace a program call and displays what's going on in a human
+friendly manner.
+
+[Project page](https://projects.om-office.de/frans/einefreude)
+
+## Usage
+
+Run a song-file (which has to implement `main()` or run the engine providing the song file:
+
+```
+./mysong.py
+
+./enging_dev mysong.py
+```
+
+
+### ToDo for MLP (minimal lovable product)
+
+
+### Other ideas
+
+## Installation
+
+```
+git clone https://projects.om-office.de/frans/einefreude
+```
+
+## Development & Contribution
+
+```
+pip3 install -U poetry pre-commit
+git clone --recurse-submodules https://projects.om-office.de/frans/einefreude.git
+cd einefreude
+pre-commit install
+# if you need a specific version of Python inside your dev environment
+poetry env use /home/frafue/.pyenv/versions/3.10.4/bin/python3
+poetry install
+```
+
