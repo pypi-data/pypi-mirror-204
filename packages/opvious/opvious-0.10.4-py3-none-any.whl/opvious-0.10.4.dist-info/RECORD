@@ -1,0 +1,14 @@
+opvious/__init__.py,sha256=LXXvEXaGtWMicSnuZriGk3RgdLzEYqifNJPhHtVFyro,2271
+opvious/client.py,sha256=hyDP7xd1UKoO-KRPJa7g-Fpk_BxR29iEQ0soyarOmww,23250
+opvious/common.py,sha256=a1A8eT4hcIhL5A66iKqXStaLI2UV77Hpt9anePuFHio,1290
+opvious/data.py,sha256=5_SEZFoL541jmuEh9qd5phcofnbzvI6IslzLDQZ8ypk,17371
+opvious/executors/__init__.py,sha256=NP1Yw-ImBoBWcbNNg9uaZpzMUtZJ6P53hrjjs9Tka3A,2379
+opvious/executors/aiohttp.py,sha256=v5ok_zy9YhivyxrEa2BZS6vXdt5K_cT8jIGyyzeroBU,4185
+opvious/executors/common.py,sha256=OXOKwTjx6YQKPOY9CsXQ-lDahhOkb9_2aMnEUjTcrm8,9441
+opvious/executors/pyodide.py,sha256=A-MA2h6A7voRgAt32FncPojZFsFDr_Ke0iPezbh0Vls,2418
+opvious/executors/urllib.py,sha256=RSu222iE7t7wiYXaWjVQgmBrWy1tswcixvevprLUd88,2541
+opvious/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opvious-0.10.4.dist-info/LICENSE,sha256=5xmX2CNxAdx37pWoaigSa8jlCaVd_b_A3ixTnenwSeY,10756
+opvious-0.10.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+opvious-0.10.4.dist-info/METADATA,sha256=VbNARfMUpfO2R7xj6iJy_1enGNPAQblbDw8PkgXFHaE,3892
+opvious-0.10.4.dist-info/RECORD,,
