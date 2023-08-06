@@ -1,0 +1,5 @@
+plyer
+
+[dev]
+black
+pytest

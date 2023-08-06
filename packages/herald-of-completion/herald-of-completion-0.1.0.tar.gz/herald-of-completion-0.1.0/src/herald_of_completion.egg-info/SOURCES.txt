@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/herald/__init__.py
+src/herald_of_completion.egg-info/PKG-INFO
+src/herald_of_completion.egg-info/SOURCES.txt
+src/herald_of_completion.egg-info/dependency_links.txt
+src/herald_of_completion.egg-info/requires.txt
+src/herald_of_completion.egg-info/top_level.txt
