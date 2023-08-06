@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+bwc-bsconf/__init__.py
+bwc_bsconf.egg-info/PKG-INFO
+bwc_bsconf.egg-info/SOURCES.txt
+bwc_bsconf.egg-info/dependency_links.txt
+bwc_bsconf.egg-info/not-zip-safe
+bwc_bsconf.egg-info/top_level.txt
