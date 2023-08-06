@@ -1,0 +1,13 @@
+from oarepo_runtime.i18n.dumper import MultilingualDumper
+
+class MultilingualSearchDumper(MultilingualDumper):
+    """{{ current_model.record_class|base_name }} search dumper."""
+
+    paths = {{ paths }}
+    SUPPORTED_LANGS = {{ langs }}
+
+    def dump(self, record, data):
+        super().dump(record, data)
+
+    def load(self, record, data):
+        super().load(record, data)
