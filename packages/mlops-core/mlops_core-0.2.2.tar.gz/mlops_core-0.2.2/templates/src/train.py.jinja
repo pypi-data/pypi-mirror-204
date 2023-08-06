@@ -1,0 +1,47 @@
+# Databricks notebook source
+import pandas as pd
+from typing import Tuple
+from sklearn.model_selection import train_test_split
+from random import randint
+
+
+# COMMAND ----------
+def load_data() -> pd.DataFrame:
+    df = None
+    # TODO: Load data from source of choice...
+    return df
+
+
+# COMMAND ----------
+def split(df: pd.DataFrame, test_size=0.2, random_state=randint(1, 1000)) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    train_df, test_df = train_test_split(
+        df, test_size=test_size, random_state=random_state)
+    return train_df, test_df
+
+
+# COMMAND ----------
+def store_split_data(train_df: pd.DataFrame, test_df: pd.DataFrame) -> None:
+    # TODO: Store split data to destination of your choice...
+    pass
+
+
+# COMMAND ----------
+def train(train: pd.DataFrame):
+    model = None
+    # TODO: Train model...
+    return model
+
+
+# COMMAND ----------
+def store_model(model) -> None:
+    # TODO: Store model to destination of your choice...
+    pass
+
+
+# COMMAND ----------
+if __name__ == "__main__":
+    df = load_data()
+    train_df, test_df = split(df)
+    store_split_data(train_df, test_df)
+    model = train(train_df)
+    store_model(model)
