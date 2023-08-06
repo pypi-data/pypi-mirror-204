@@ -1,0 +1,13 @@
+xbox_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xbox_sdk/client.py,sha256=PQl2GxhPks8V01tXdiJIsxagMABMgxdadTwp3bVjuTI,2689
+xbox_sdk/gamer.py,sha256=2tv_w5aOAlSsTpKOQ5CTIDxplGBpn0pELmKRvn9SP6M,839
+xbox_sdk/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xbox_sdk/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xbox_sdk/scraper.py,sha256=F3cJxUvLPqlOZt1d1-yis8NscIZdE4yJ7BULHA2lE7U,4622
+xbox_sdk/timeout.py,sha256=efwSFqxjfOLNgl9kW5Zb5qDA9c6bba0FYbnOIYvdpX4,1046
+xbox_sdk/user.py,sha256=ztgPO220rBRg2kBraFqU0oPaPStAzEeHIcVhtXdEdkQ,8673
+xbox_sdk-0.0.6.dist-info/LICENSE,sha256=fYlE-qDl2yPMfnN0mnIq4GGErYmeAYoBGn3dhxSV11M,1095
+xbox_sdk-0.0.6.dist-info/METADATA,sha256=9QSRFd9iAOMg2Qvvwz2JoZPs8zET4_btlpLzXuXIpwQ,965
+xbox_sdk-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+xbox_sdk-0.0.6.dist-info/top_level.txt,sha256=tV9elvvwPJr8cjFdTtikwBBo35IrkrCD3mzwqhPlRAw,9
+xbox_sdk-0.0.6.dist-info/RECORD,,
