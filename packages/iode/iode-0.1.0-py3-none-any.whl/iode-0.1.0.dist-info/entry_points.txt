@@ -1,0 +1,3 @@
+[console_scripts]
+iode = iode.iode:main
+
