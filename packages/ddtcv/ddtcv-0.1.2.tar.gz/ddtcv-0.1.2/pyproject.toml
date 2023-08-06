@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ddtcv"
+version = "0.1.2"
+description = "DDT CV."
+authors = ["TsangHans <gzzenghan@189.cn>"]
+license = "MIT"
+readme = "README.md"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
+default = true
+
+[tool.poetry.dependencies]
+python = "^3.7"
+numpy = "^1.21.6"
+onnxruntime = "^1.13.1"
+opencv-python = "^4.4.0.46"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
