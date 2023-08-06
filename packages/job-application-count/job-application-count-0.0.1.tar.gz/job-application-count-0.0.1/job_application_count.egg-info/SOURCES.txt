@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+count/__init__.py
+count/count.py
+job_application_count.egg-info/PKG-INFO
+job_application_count.egg-info/SOURCES.txt
+job_application_count.egg-info/dependency_links.txt
+job_application_count.egg-info/top_level.txt
