@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: aeropython
+Version: 0.1
+Summary: An easy to use aerodynamic tool.
+Home-page: https://github.com/koentjess/AeroPython
+Author: leal26
+Author-email: leal26@tamu.edu
+License: MIT
+License-File: LICENSE
