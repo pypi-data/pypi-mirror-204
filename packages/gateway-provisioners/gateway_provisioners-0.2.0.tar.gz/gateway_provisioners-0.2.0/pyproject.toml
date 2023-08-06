@@ -1,0 +1,264 @@
+[build-system]
+requires = ["hatchling>=1.11"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gateway_provisioners"
+description = "Gateway Provisioners - a package containing kernel provisioners supporting the deployment of remote and resource-managed kernels."
+classifiers = [
+  "Framework :: Jupyter",
+  "Intended Audience :: Developers",
+  "Intended Audience :: System Administrators",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3"
+]
+requires-python = ">=3.8"
+dependencies = [
+    "jupyter_client>=7.4",
+    "overrides",
+    "paramiko>=2.4.0",
+    "pexpect>=4.2.0",
+    "pycryptodomex>=3.9.7",
+    "tornado>=6.2",
+    "traitlets>=5.1"
+]
+dynamic = ["version"]
+
+[[project.authors]]
+name = "Jupyter Development Team"
+email = "jupyter@googlegroups.org"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.license]
+file = "LICENSE.md"
+
+[project.urls]
+Homepage = "https://jupyter.org"
+Documentation = "https://gateway-provisioners.readthedocs.io/"
+Source = "https://github.com/jupyter-server/gateway_provisioners"
+Tracker = "https://github.com/jupyter-server/gateway_provisioners/issues"
+
+[project.optional-dependencies]
+test = [
+  "importlib_metadata",
+  "mock",
+  "pre-commit",
+  "pytest",
+  "pytest-cov",
+  "pytest-timeout",
+  "pytest-tornasync",
+  "pytest-jupyter[server]>=0.4",
+  # Install optional dependencies so all modules will load during collection
+  "docker>=3.5.0",
+  "yarn-api-client",
+  "kubernetes>=18.20.0",
+  "jinja2>=3.1",
+]
+docs = [
+  "docutils<0.20",
+  "mistune<3.0.0",
+  "myst-parser",
+  "pydata_sphinx_theme",
+  "sphinx-copybutton",
+  "sphinxcontrib-openapi",
+  "sphinxcontrib-blockdiag",
+  "sphinxcontrib-seqdiag",
+  "sphinxcontrib_github_alt",
+  "sphinxcontrib-spelling",
+  "sphinx-autodoc-typehints",
+  "sphinxemoji",
+  "tornado",
+  # Install optional dependencies so all API modules will load
+  "docker>=3.5.0",
+  "yarn-api-client",
+  "kubernetes>=18.20.0",
+  "jinja2>=3.1",
+]
+dev = [
+  "coverage",
+  "pre-commit",
+  "build",
+  "twine",
+]
+lint = [
+  "black[jupyter]==23.3.0",
+  "mdformat>0.7",
+  "ruff==0.0.261",
+]
+yarn = [
+    "yarn-api-client"
+]
+k8s = [
+    "kubernetes>=18.20.0",
+    "jinja2>=3.1"
+]
+docker = [
+    "docker>=3.5.0"
+]
+
+[project.scripts]
+jupyter-k8s-spec = "gateway_provisioners.cli.k8s_specapp:K8sProvisionerApp.launch_instance"
+jupyter-yarn-spec = "gateway_provisioners.cli.yarn_specapp:YarnProvisionerApp.launch_instance"
+jupyter-ssh-spec = "gateway_provisioners.cli.ssh_specapp:SshProvisionerApp.launch_instance"
+jupyter-docker-spec = "gateway_provisioners.cli.docker_specapp:DockerProvisionerApp.launch_instance"
+jupyter-image-bootstrap = "gateway_provisioners.cli.image_bootstrapapp:ImageBootstrapApp.launch_instance"
+
+[project.entry-points."jupyter_client.kernel_provisioners"]
+yarn-provisioner = "gateway_provisioners.yarn:YarnProvisioner"
+distributed-provisioner = "gateway_provisioners.distributed:DistributedProvisioner"
+kubernetes-provisioner = "gateway_provisioners.k8s:KubernetesProvisioner"
+spark-operator-provisioner = "gateway_provisioners.spark_operator:SparkOperatorProvisioner"
+docker-provisioner = "gateway_provisioners.docker_swarm:DockerProvisioner"
+docker-swarm-provisioner = "gateway_provisioners.docker_swarm:DockerSwarmProvisioner"
+
+[tool.hatch.version]
+path = "gateway_provisioners/_version.py"
+validate-bump = false
+
+[tool.hatch.build]
+artifacts = ["gateway_provisioners/kernel-launchers/scala/lib"]
+
+[tool.hatch.envs.build]
+features = ["dev"]
+[tool.hatch.envs.build.scripts]
+clean = "make clean"
+lint = "make lint"
+dist = "make dist"
+all = "make clean lint dist install"
+
+[tool.hatch.envs.docs]
+features = ["docs"]
+[tool.hatch.envs.docs.scripts]
+build = "make -C docs html SPHINXOPTS='-W'"
+api = "sphinx-apidoc -o docs/source/api -f -E gateway_provisioners"
+
+[tool.hatch.envs.test]
+features = ["test"]
+[tool.hatch.envs.test.scripts]
+test = "python -m pytest -vv {args}"
+nowarn = "test -W default {args}"
+
+[tool.hatch.envs.lint]
+features = ["lint"]
+[tool.hatch.envs.lint.scripts]
+style = [
+  "ruff {args:.}",
+  "black --check --diff {args:.}",
+  "mdformat --check {args:docs/source *.md}"
+]
+fmt = [
+  "black {args:.}",
+  "ruff --fix {args:.}",
+  "mdformat {args:docs/source *.md}"
+]
+
+[tool.jupyter-releaser.hooks]
+before-build-python = ["pip install -e .[dev]", "make clean lint dist install"]
+
+[tool.jupyter-releaser.options]
+post-version-spec = "dev"
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = false
+disallow_incomplete_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+no_implicit_reexport = false
+pretty = true
+show_error_context = true
+show_error_codes = true
+strict_equality = true
+strict_optional = true
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_return_any = false
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = [
+    "traitlets.*",
+    "jupyter_core.*",
+    "entrypoints"
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+addopts = "-raXs --durations 10 --color=yes --doctest-modules"
+testpaths = [
+    "tests/"
+]
+filterwarnings= [
+  # Fail on warnings
+  "error",
+  "ignore:zmq.eventloop.ioloop is deprecated in pyzmq 17:DeprecationWarning",
+  "ignore:There is no current event loop:DeprecationWarning",
+  # In PyPy/Cython: see https://github.com/yaml/pyyaml/issues/688
+  "ignore:can't resolve package from __spec__ or __package__, falling back on __name__ and __path__:ImportWarning",
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py38"]
+
+[tool.ruff]
+target-version = "py38"
+line-length = 100
+select = [
+  "A", "B", "C", "E", "EM", "F", "FBT", "I", "N", "Q", "RUF", "S", "T",
+  "UP", "W", "YTT",
+]
+ignore = [
+  # A001/A002/A003 .. is shadowing a python builtin
+  "A001",
+  "A002",
+  "A003",
+  # Allow non-abstract empty methods in abstract base classes
+  "B027",
+  # Ignore McCabe complexity
+  "C901",
+  # Module level import not at top of file
+  "E402",
+  # Line too long
+  "E501",
+  # Boolean ... in function definition
+  "FBT001",
+  "FBT002",
+  # Allow boolean positional values in function calls, like `dict.get(... True)`
+  "FBT003",
+  # Variable `xxx` in function should be lowercase
+  "N806",
+  # Exception name `KernelSessionRecordConflict` should be named with an Error suffix
+  "N818",
+  # Use of `assert` detected
+  "S101",
+  # Possible hardcoded password
+  "S105",
+  "S106",
+  # Standard pseudo-random generators are not suitable for security/cryptographic purposes. (Used for port selection)
+  "S311",
+  # Relative imports are banned
+  "TID252",
+]
+unfixable = [
+  # Don't touch print statements
+  "T201",
+  # Don't touch unused imports
+  "F401",
+  # Don't touch noqa lines
+  "RUF100",
+]
+[tool.ruff.per-file-ignores]
+# T201 `print` found
+"gateway_provisioners/cli/*" = ["T201"]
+"gateway_provisioners/kernel-launchers/*" = ["T201"]
+# N802 Function name should be lowercase
+"tests/mocks/k8s_client.py" = ["N802"]
+
+[tool.check-wheel-contents]
+ignore = ["W002", "W004"]
