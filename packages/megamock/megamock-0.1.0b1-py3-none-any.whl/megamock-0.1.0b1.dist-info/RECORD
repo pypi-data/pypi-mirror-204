@@ -1,0 +1,15 @@
+LICENSE,sha256=WEeKMosO6HK86iVTJZacos3PWhnB9s7o4KhE9pEOdbQ,1072
+megamock/__init__.py,sha256=H1NkrgtpsAgQ9TRcSx7i5cg0JRU_HOKNlJbeRCjoI8Y,282
+megamock/import_machinery.py,sha256=RDc0J1WtsNGSkm4DHoePJ1wljJPMgiHicehJRoqM0UY,3055
+megamock/import_references.py,sha256=8DeKaQR8IAn_-7QZaRreDp-26qq60sEfZftbzTAsak4,3881
+megamock/megamocks.py,sha256=5Kd_9HYihiCQbO166Nx5WcRHqPjWs6JI-6yYFydexhg,32321
+megamock/megapatches.py,sha256=BDIMXVvoThvMfkEB_zg6rkZIs4OhSlOuL84j0Ralwes,14610
+megamock/megas.py,sha256=tzO_5aNU9z6l0DcsvbqusuoOv4s3DWcUCAtjvoO0rIM,3672
+megamock/name_words.py,sha256=84dW28LoNf7CRvrTagwW3VLQDahJA1KR9rYwry8ReuU,3066
+megamock/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+megamock/plugins/pytest.py,sha256=8tK28sba4z6gexUqOg0MEtcogs9uf5uzWQZCz-MmOY8,949
+megamock/type_util.py,sha256=4Z3iF0asJr7aOV5zCqTns_BKru0qEv1yTxJgDykm170,303
+megamock-0.1.0b1.dist-info/METADATA,sha256=Z-bPFLNWUX6Aw_ktVt_IEsYLLkKNvwT-zEryS1S5Nug,11236
+megamock-0.1.0b1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+megamock-0.1.0b1.dist-info/LICENSE,sha256=WEeKMosO6HK86iVTJZacos3PWhnB9s7o4KhE9pEOdbQ,1072
+megamock-0.1.0b1.dist-info/RECORD,,
