@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: factorslib
+Version: 1.0
+Summary: financial factors calculation
+Home-page: https://github.com/wytxty/factorslib
+Author: wytxty
+Author-email: yvettewkkaa@gmail.com
+License: MIT
+Keywords: codepay,codepay_python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# factors
+wrapper for facotrs calculation
