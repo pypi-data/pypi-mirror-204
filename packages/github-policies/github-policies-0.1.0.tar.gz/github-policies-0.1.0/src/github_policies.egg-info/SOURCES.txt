@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/ghpolicy/cli.py
+src/ghpolicy/main.py
+src/ghpolicy/policy.py
+src/ghpolicy/policies/default_branch.py
+src/ghpolicy/policies/team_permission.py
+src/ghpolicy/policies/topics.py
+src/ghpolicy/policies/visibility.py
+src/github_policies.egg-info/PKG-INFO
+src/github_policies.egg-info/SOURCES.txt
+src/github_policies.egg-info/dependency_links.txt
+src/github_policies.egg-info/entry_points.txt
+src/github_policies.egg-info/requires.txt
+src/github_policies.egg-info/top_level.txt

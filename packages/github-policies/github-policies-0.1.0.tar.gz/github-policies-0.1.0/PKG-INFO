@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: github-policies
+Version: 0.1.0
+Summary: Automate GitHub repository settings.
+Author-email: Lab Digital <opensource@labdigital.nl>
+License: Private
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# github-policy
+Script to apply custom policies on a github org
+
+
+Work in progress :-)
