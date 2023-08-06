@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: qlapi
+Version: 0.1.4
+Summary: Api for use quanlan device
+Author: eegion
+Author-email: hehuajun@eegion.com
+Requires: mne
+License-File: LICENSE.txt
+
