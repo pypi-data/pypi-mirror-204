@@ -1,0 +1,7 @@
+ehforwarderbot
+efb_telegram_master
+efb-wechat-slave-itchat-uos
+python-telegram-bot
+peewee
+PyYaml
+Pillow
