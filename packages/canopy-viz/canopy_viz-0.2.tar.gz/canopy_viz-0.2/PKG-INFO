@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: canopy-viz
+Version: 0.2
+Summary: visualize CAN bus payloads in realtime
+Author: TJ
+Author-email: tbruno25@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: can-explorer (>=0.1.0,<0.2.0)
+Description-Content-Type: text/markdown
+
+# canopy-viz is now can-explorer
+
+This package has been renamed. Use `pip install can-explorer` instead.
+
+New package: https://pypi.org/project/can-explorer/
+
