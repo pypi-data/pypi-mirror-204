@@ -1,0 +1,8 @@
+[tool.isort]
+profile = "black"
+
+[tool.black]
+skip-string-normalization = false
+
+[tool.bandit]
+skips = ["B101", "B303", "B310", "B110", "B112", "B324", "B404", "B603", "B607"]

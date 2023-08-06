@@ -1,0 +1,18 @@
+{
+ "additionalProperties": true,
+ "anyOf": [
+  {
+   "required": [
+    "HttpErrorCodeReturnedEquals"
+   ]
+  },
+  {
+   "required": [
+    "KeyPrefixEquals"
+   ]
+  }
+ ],
+ "description": "Specify at least one of 'HttpErrorCodeReturnedEquals' and 'KeyPrefixEquals'",
+ "properties": {},
+ "type": "object"
+}

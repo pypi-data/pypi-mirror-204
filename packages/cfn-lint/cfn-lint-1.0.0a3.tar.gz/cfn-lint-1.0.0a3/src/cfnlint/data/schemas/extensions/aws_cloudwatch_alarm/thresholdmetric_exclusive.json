@@ -1,0 +1,20 @@
+{
+ "additionalProperties": true,
+ "description": "When you specify 'Threshold' do not specify 'ThresholdMetricId''",
+ "not": {
+  "allOf": [
+   {
+    "required": [
+     "Threshold"
+    ]
+   },
+   {
+    "required": [
+     "ThresholdMetricId"
+    ]
+   }
+  ]
+ },
+ "properties": {},
+ "type": "object"
+}

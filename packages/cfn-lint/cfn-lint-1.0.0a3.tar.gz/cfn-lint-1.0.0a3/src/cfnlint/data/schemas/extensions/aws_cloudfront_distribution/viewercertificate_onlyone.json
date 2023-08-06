@@ -1,0 +1,37 @@
+{
+ "additionalProperties": true,
+ "description": "Specify only 'AcmCertificateArn', 'CloudFrontDefaultCertificate', or 'IamCertificateId'",
+ "oneOf": [
+  {
+   "properties": {
+    "AcmCertificateArn": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "AcmCertificateArn"
+   ]
+  },
+  {
+   "properties": {
+    "CloudFrontDefaultCertificate": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "CloudFrontDefaultCertificate"
+   ]
+  },
+  {
+   "properties": {
+    "IamCertificateId": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "IamCertificateId"
+   ]
+  }
+ ],
+ "type": "object"
+}

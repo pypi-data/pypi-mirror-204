@@ -1,0 +1,20 @@
+{
+ "additionalProperties": true,
+ "description": "Specify only 'NetworkInterfaces' or 'SubnetId'",
+ "not": {
+  "allOf": [
+   {
+    "required": [
+     "NetworkInterfaces"
+    ]
+   },
+   {
+    "required": [
+     "SubnetId"
+    ]
+   }
+  ]
+ },
+ "properties": {},
+ "type": "object"
+}
