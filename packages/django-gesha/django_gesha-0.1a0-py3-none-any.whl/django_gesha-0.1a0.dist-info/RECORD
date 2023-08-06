@@ -1,0 +1,12 @@
+gesha/__init__.py,sha256=JjH1JLgSRyK9V52UMeb23dfgF2fckAna5Aj1_Cqn9QM,67
+gesha/mixins.py,sha256=fJ9d2KSnsNUHdr2h4wGS7XNMpTve3NMiUGAZX2NKQKo,434
+gesha/settings.py,sha256=EeMUSNNJenGPnzU-G5V3HuISa2kQ75yhg1bkgbeqNvo,139
+gesha/static/gesha/dist/js/django-gesha.bundle.min.js,sha256=zBDgizV9wYHjquoZnZH4XIG8QyV7F9a1nGg6AI_6zSQ,1059
+gesha/static/gesha/dist/js/django-gesha.bundle.min.js.map,sha256=RjfRmesHKAxY16inFN7mJXxwSVqjYpObRtotn1NblbA,1623
+gesha/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gesha/templatetags/gesha.py,sha256=gzPFBJi9Suq1_ELPrQYnkQaGcdgZAg5MtgwVzm-_wwk,645
+django_gesha-0.1a0.dist-info/LICENSE,sha256=x3iF6WpgKpiH0FBUbbwVbMq5IrF1vn1oL8Eohv8hiVc,1062
+django_gesha-0.1a0.dist-info/METADATA,sha256=Q8cubHnvhgoZv3RuulJMIaYPLXveWoknUedmb8PiRDg,4326
+django_gesha-0.1a0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_gesha-0.1a0.dist-info/top_level.txt,sha256=PQdd_kY3Zzj8r-E9iH7VnTbxriY-2YjMv5Kn1nLaTYk,6
+django_gesha-0.1a0.dist-info/RECORD,,
