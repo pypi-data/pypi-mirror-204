@@ -1,0 +1,44 @@
+{
+  "name": "Skywater 130nm Library",
+  "grid_unit": "0.001",
+  "time_unit": "1 ns",
+  "installs": [
+    {
+      "id": "$SKY130_NDA",
+      "path": "technology.sky130.sky130_nda"
+    },
+    {
+      "id": "$SKY130A",
+      "path": "technology.sky130.sky130A"
+    }
+  ],
+  "layer_map_file": "$SKY130_NDA/s8/V2.0.1/VirtuosoOA/libs/technology_library/technology_library.layermap",
+  "drc_decks": [
+    {
+      "tool_name": "calibre",
+      "deck_name": "all_drc",
+      "path": "$SKY130_NDA/s8/V2.0.1/DRC/Calibre/s8_drcRules"
+    }
+  ],
+  "additional_drc_text": "",
+  "lvs_decks": [
+    {
+      "tool_name": "calibre",
+      "deck_name": "all_lvs",
+      "old_path": "$SKY130_NDA/s8/V2.0.1/LVS/Calibre/lvsRules_s8",
+      "path": "cache/lvsControlFile_s8"
+    }
+  ],
+  "additional_lvs_text": "",
+  "libraries": [
+    {
+      "lef_file": "cache/sky130_fd_sc_hd__nom.tlef",
+      "verilog_sim": "cache/primitives.v",
+      "provides": [
+        {
+          "lib_type": "technology"
+        }
+      ]
+    }
+  ]
+}
