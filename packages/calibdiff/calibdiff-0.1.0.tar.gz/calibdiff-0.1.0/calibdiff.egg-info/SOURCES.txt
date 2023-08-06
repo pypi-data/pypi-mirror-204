@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+calibdiff/__info__.py
+calibdiff/__init__.py
+calibdiff/apply_rectify_on_uv.py
+calibdiff/calibdiff_utils.py
+calibdiff/feature_matching.py
+calibdiff/rt_to_rectify.py
+calibdiff/stereo_optimize.py
+calibdiff.egg-info/PKG-INFO
+calibdiff.egg-info/SOURCES.txt
+calibdiff.egg-info/dependency_links.txt
+calibdiff.egg-info/requires.txt
+calibdiff.egg-info/top_level.txt
