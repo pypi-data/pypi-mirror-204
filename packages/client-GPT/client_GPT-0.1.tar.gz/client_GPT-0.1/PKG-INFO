@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: client_GPT
+Version: 0.1
+Home-page: https://github.com/littleknitsstory/client-gpt
+Author: littleknitsstory
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
