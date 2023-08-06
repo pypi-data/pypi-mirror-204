@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sohuprompt
+Version: 1.0.1
+Summary: A python lib for sohuprompt
+Home-page: UNKNOWN
+Author: senhaowang,chencheng
+Author-email: senhaowang@sohu-inc.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: transformers
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: sklearn
+
+UNKNOWN
+
