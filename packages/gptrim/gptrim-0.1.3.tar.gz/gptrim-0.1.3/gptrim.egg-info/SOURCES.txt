@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+gptrim/__init__.py
+gptrim/gptrim.py
+gptrim.egg-info/PKG-INFO
+gptrim.egg-info/SOURCES.txt
+gptrim.egg-info/dependency_links.txt
+gptrim.egg-info/requires.txt
+gptrim.egg-info/top_level.txt
