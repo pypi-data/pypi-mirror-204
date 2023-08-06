@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Turk_game
+Version: 1.0.2
+Summary: Türk profesyoneller ve acemiler için basitleştirilmiş ve kısaltılmış pygame
+Home-page: 
+Author: Eymen
+Author-email: taneymen2009@gmail.com
+Requires: pygame
+Requires: threading
+License-File: LICENSE
