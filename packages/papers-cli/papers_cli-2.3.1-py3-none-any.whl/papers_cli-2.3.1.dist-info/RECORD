@@ -1,0 +1,15 @@
+papers/__init__.py,sha256=gEfqa4nhhKYjbk9g07WpJuzU5iAeEHFRGUSvA4VXm8k,108
+papers/_version.py,sha256=F0zRtGrix30ZDDMCNK0q_shzKfXiPJVru0qoQON0m_Y,160
+papers/bib.py,sha256=KY4T22zipcaNqpzj84wD_-SyrBRE6rwDeRHe_naDMV8,64176
+papers/config.py,sha256=y327-7aAyTPIvxhx7VGezye-KcSoMDa1QCAAsx8t424,13179
+papers/duplicate.py,sha256=iUT3HfBtQHEaGLgphoZmaRwIB_Edd7n-jXRrE9mIyVA,18824
+papers/encoding.py,sha256=S-36AltnOCTCrJ-eSQWQYR4T095KRnPwJQB_15M7Ai0,3929
+papers/extract.py,sha256=AQopPRtYAcoPlYE-Z0rEFXZjb0xj-k6kWUS7K-XmBpE,11657
+papers/filename.py,sha256=At-BOug9AYKJp6g7-f-n3oYICYSSdgfXWhFygqv8NzQ,4311
+papers/latexenc.py,sha256=qH03t6yVUnGZvkZT2-9OWXU-iHqZvVthhQopaM281D4,98127
+papers_cli-2.3.1.dist-info/LICENSE,sha256=Uc7FclCyMqKU9cc366vVpOLy9gU2w5btUJX9EDzQVIw,1071
+papers_cli-2.3.1.dist-info/METADATA,sha256=hzVn2Aws7MZZljSocDCa6ikZRQd-F3YST6hq7wjRTPc,17684
+papers_cli-2.3.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+papers_cli-2.3.1.dist-info/entry_points.txt,sha256=SkCuj0jWLfod1XwcUfieQ646VAJcfqUnPhayQV4Z3aU,43
+papers_cli-2.3.1.dist-info/top_level.txt,sha256=sLdcLzjapCbtCY-yXhtEHZEniJB7I35rxRLLLURc8mo,7
+papers_cli-2.3.1.dist-info/RECORD,,
