@@ -1,0 +1,5 @@
+bookend/core/cython_utils/_assembly_utils.cpython-37m-x86_64-linux-gnu.so
+bookend/core/cython_utils/_element_graph.cpython-37m-x86_64-linux-gnu.so
+bookend/core/cython_utils/_fasta_utils.cpython-37m-x86_64-linux-gnu.so
+bookend/core/cython_utils/_pq.cpython-37m-x86_64-linux-gnu.so
+bookend/core/cython_utils/_rnaseq_utils.cpython-37m-x86_64-linux-gnu.so
