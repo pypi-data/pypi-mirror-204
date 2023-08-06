@@ -1,0 +1,30 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+perfect_physics/__init__.py
+perfect_physics/_circle.py
+perfect_physics/_misc.py
+perfect_physics/_physics.py
+perfect_physics/_timeline.py
+perfect_physics/_wall.py
+perfect_physics/_world.py
+perfect_physics.egg-info/PKG-INFO
+perfect_physics.egg-info/SOURCES.txt
+perfect_physics.egg-info/dependency_links.txt
+perfect_physics.egg-info/requires.txt
+perfect_physics.egg-info/top_level.txt
+perfect_physics/data/Electronic Button.mp3
+perfect_physics/data/Flash Beep.mp3
+perfect_physics/data/ball_ball.wav
+perfect_physics/data/bumper.wav
+perfect_physics/data/cc_time_solutions.sympy
+perfect_physics/data/cc_velocity_solution.sympy
+perfect_physics/data/cw_time_solutions.sympy
+perfect_physics/data/cw_velocity_limits.sympy
+perfect_physics/data/instant_speed.sympy
+perfect_physics/data/instant_speed_wall.sympy
+perfect_physics/data/reverse.wav
+perfect_physics/data/stick_cue.wav
+perfect_physics/tests/__init__.py
+perfect_physics/tests/test_perfect_physics.py
