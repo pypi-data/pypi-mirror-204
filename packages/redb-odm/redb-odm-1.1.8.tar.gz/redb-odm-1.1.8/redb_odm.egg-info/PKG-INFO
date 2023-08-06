@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: redb-odm
+Version: 1.1.8
+Summary: A python ODM for JSON, Mongo, and Mongo+Milvus.
+Home-page: https://github.com/teialabs/redb
+Author: Teia Labs
+Author-email: contato@teialabs.com
+Keywords: database milvus mongo json interface
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: all
+
+# REDB
