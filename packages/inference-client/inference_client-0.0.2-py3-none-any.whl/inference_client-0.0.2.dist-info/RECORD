@@ -1,0 +1,11 @@
+inference_client/__init__.py,sha256=eM4Hx1SHe3tjIF4hj1qcVNUB6ar8ToT8Yeg5B2AEbTQ,101
+inference_client/__version__.py,sha256=aRCGLyY1O6kDvyMrFaGkS5g6fdgGIDhuYGdpJgBTA3s,373
+inference_client/base.py,sha256=r22YjUFLCIPC27SOvdO3DCqFtVxGOFEyLEuKhSuFDec,13435
+inference_client/client.py,sha256=PULh-ReqkBV_40vl1V6w0OvTQmWdCet8uN2ra6a0D3c,991
+inference_client/config.py,sha256=hHpMDLcgtNlrF0M0Y1L6xZ7Yqb1xFNsW54EHSjGXne4,719
+inference_client/helper.py,sha256=Kxpg3-RhoRt35dFRYBTDnUdgPhTzmZvxurfEKz_9SS8,3183
+inference_client/logging.py,sha256=yY__bghOkoUBUgbGk7FYMtyRoG8CJAKu8fOI7p5NgCs,250
+inference_client-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+inference_client-0.0.2.dist-info/METADATA,sha256=hD45DDv9fjXFDrNjyW692UuFHvIE7kKiRmUV5c0r_Ao,19556
+inference_client-0.0.2.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+inference_client-0.0.2.dist-info/RECORD,,

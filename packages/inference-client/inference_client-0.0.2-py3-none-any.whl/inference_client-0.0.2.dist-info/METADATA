@@ -1,0 +1,435 @@
+Metadata-Version: 2.1
+Name: inference-client
+Version: 0.0.2
+Summary: Python Client for Jina Inference API
+Home-page: https://inference-api.jina.ai
+License: Apache-2.0
+Keywords: jina,inference,api,client
+Author: Jina AI
+Author-email: hello@jina.ai
+Requires-Python: >=3.8,<4.0.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: pytorch
+Requires-Dist: docarray (>=0.21.0,<0.22.0)
+Requires-Dist: jina (>=3.14.0,<4.0.0)
+Requires-Dist: jina-hubble-sdk (>=0.34.0)
+Requires-Dist: pillow (>=9.4.0,<10.0.0)
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Requires-Dist: rich (>=13.3.0,<14.0.0)
+Requires-Dist: torch (>=1.10.0) ; extra == "pytorch"
+Project-URL: Repository, https://github.com/jina-ai/inference-client
+Description-Content-Type: text/markdown
+
+![Inference Client](/.github/README-img/inference_client.svg)
+
+[![PyPI](https://img.shields.io/pypi/v/inference-client)](https://pypi.org/project/inference-client/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/inference-client)](https://pypi.org/project/inference-client/)
+[![PyPI - License](https://img.shields.io/pypi/l/inference-client)](https://pypi.org/project/inference-client/)
+
+Inference Client is a library that provides a simple and efficient way to use Jina AI's Inference, a powerful platform that offers a range of AI models for common tasks such as visual reasoning, question answering, and embedding modalities like texts and images. 
+With Inference Client, you can easily select the task and model of your choice and integrate the API call into your workflow with zero technical overhead. 
+
+The current version of Inference Client includes methods to call the following tasks:
+
+📈 **Encode**: Encode data into embeddings using various models 
+
+🔍 **Rank**: Re-rank cross-modal matches according to their joint likelihood
+
+📷 **Caption**: Generate captions for images 
+
+🤔 **VQA**: Answer questions related to images 
+
+
+## Installation
+
+Inference Client is available on PyPI and can be installed using pip:
+
+```bash
+pip install inference-client
+```
+
+## Getting Started
+
+Before using Inference Client, please create an inference on [Jina AI Cloud](https://cloud.jina.ai/user/inference).
+
+After login with your Jina AI Cloud account, you can create an inference by clicking the "Create" button in the inference page.
+From there, you can select the model you want to use.
+
+After the inference is created and the status is "Serving", you can use Inference Client to connect to it.
+This could take a few minutes, depending on the model you selected.
+
+<p align="center">
+    <img src=".github/README-img/jac.png" width="100%">
+</p>
+
+### Client Initialization
+
+To use Inference Client, you need to initialize a Client object with the authentication token of your Jina AI Cloud account:
+
+```python
+from inference_client import Client
+
+client = Client(token='<your auth token>')
+```
+
+The token can be generated at the [Jina AI Cloud](https://cloud.jina.ai/settings/tokens), or via CLI as described in [this guide](https://docs.jina.ai/jina-ai-cloud/login/#create-a-new-pat):
+```bash
+jina auth token create <name of PAT> -e <expiration days>
+```
+
+
+### Connecting to Models
+
+Once you have initialized the Client object, you can connect to the models you want to use by calling the `get_model` method, which takes the name of the model as it appears in Jina AI Cloud as an argument.
+
+```python
+# connect to a CLIP model
+model = client.get_model('ViT-B-32::openai')
+```
+As example, the above code connects to the CLIP model named "ViT-B-32::openai" on Jina AI Cloud.
+
+You can connect to as many inference models as you want once they have been created on Jina AI Cloud, and you can use them for multiple tasks.
+
+
+### Performing tasks
+
+Now that you have connected to the models, you can use them to perform the tasks they support.
+
+
+#### 1. Encoding
+
+The encode task is used to encode data into embeddings using various models.
+For example, you can use the CLIP model to encode text or images into embeddings:
+    
+```python
+model = client.get_model(
+    '<name of the model that supports encode>'
+)  # e.g. ViT-B-32::openai
+
+# encode text
+result = model.encode(text='hello world')
+
+# encode image
+result = model.encode(image='hello_world.jpg')
+
+# encode image RGB tensor
+from PIL import Image
+from numpy import asarray
+
+image_bytes = Image.open('hello_world.jpg')
+image_tensor = asarray(image_bytes)
+result = model.encode(image=image_tensor)
+```
+
+The output of the encode method is a DocumentArray, which contains the embeddings of the input data.
+
+```bash
+# print(result[0].embedding)
+
+[-5.48706055e-02 -1.10717773e-01  5.13671875e-01 -3.22509766e-01
+ -1.40380859e-01  6.23535156e-01  3.07617188e-01  4.26025391e-01
+  ...
+  8.04443359e-02  8.53515625e-01 -5.96008301e-02  3.61633301e-02]
+```
+
+### 2. Ranking
+
+To perform similarity-based ranking of candidate matches, you can use the `rank` method of an inference model. 
+The rank method takes a reference input and a list of candidates, and reorder that list of candidates based on their similarity to the reference input. 
+You can also construct a cross-modal Document where the root contains an image or text and `.matches` contain images or sentences to rerank.
+
+```python
+# Connect to a model
+model = client.get_model('<name of the model that supports rank>')
+
+reference = 'singapore.jpg'
+candidates = [
+    'a colorful photo of nature',
+    'a photo of blue scenery',
+    'a black and white photo of a cat',
+]
+response = model.rank(reference=reference, candidates=candidates)
+
+# Access the matches
+for match in not response[0]:
+    print(match.text)
+```
+
+```bash
+a photo of blue scenery
+a colorful photo of nature
+a black and white photo of a cat
+```
+You may also input images as bytes or tensors similarly to the encode method.
+
+**NOTICE**: The following tasks Caption and VQA are BLIP2 exclusive. Calling these methods on other models will fall back to the default encode method.
+
+### 3. Captioning
+
+You can use caption method to generate natural language descriptions of images.
+
+
+The caption method takes a DocumentArray containing images or a single plain image as input.
+The plain input image can be in the form of a URL string, an image blob, or an image tensor.
+
+For example, you can use the BLIP2 model to generate captions for images:
+
+```python
+# Initialize model
+model = client.get_model('Salesforce/blip2-opt-2.7b')
+
+response = model.caption(image='singapore.jpg')
+
+# Access the captions
+print(response[0].tags['response'])
+```
+
+```bash
+the merlion fountain in singapore at night
+```
+
+
+### 4. VQA (Visual Question Answering)
+
+Visual Question Answering (VQA) is a task that involves answering natural language questions about visual content such as images. 
+Given an image and a question, the goal of VQA is to provide a natural language answer.
+The VQA method takes either a DocumentArray of images and questions, or a single plain image and question.
+
+
+```python
+# Initialize model
+model = client.get_model('Salesforce/blip2-opt-2.7b')
+
+image = 'singapore.jpg'
+question = 'Question: What is this photo about? Answer:'
+
+response = model.vqa(image=image, question=question)
+
+# Access the answers
+print(response[0].tags['response'])
+```
+
+```bash
+the merlion fountain in singapore
+```
+
+## Documentation
+
+For more information about advanced usage of Inference Client, please refer to the [documentation](https://docs.jina.ai/advanced/experimental/inference-client/).
+
+## Support
+
+- Join our [Slack community](https://slack.jina.ai) and chat with other community members about ideas.
+- Watch our [Engineering All Hands](https://youtube.com/playlist?list=PL3UBBWOUVhFYRUa_gpYYKBqEAkO4sxmne) to learn Jina's new features and stay up-to-date with the latest AI techniques.
+- Subscribe to the latest video tutorials on our [YouTube channel](https://youtube.com/c/jina-ai)
+
+## License
+
+Inference Client is backed by [Jina AI](https://jina.ai) and licensed under [Apache-2.0](./LICENSE). 
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets "[]"
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same "printed page" as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
