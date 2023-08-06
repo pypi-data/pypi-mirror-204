@@ -1,0 +1,13 @@
+aws_chain_secrets/__init__.py,sha256=qiiLqXDtSdf-afD6qorUBw1cwhtPB2cvYTEu7AXbO-Q,44
+aws_chain_secrets/caster.py,sha256=mw1AeZKZqwKNm1cXYoel4qRx_p9Z85h7ktiZC2qoACI,2142
+aws_chain_secrets/client.py,sha256=N5vSvn1eB_hqcn-O_I8yCvX_b61pZA9XDLUfFsiRvMY,1173
+aws_chain_secrets/exceptions.py,sha256=gLzp303aaLTIMQwfq41vhWu1XO2v4f6fZl0eXc7iHPc,1597
+aws_chain_secrets/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_chain_secrets/secrets_manager.py,sha256=ucrwC3H2CngFzQkdfR43JBwdoPMiVuWiKW3DldIrXYs,3621
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_caster.py,sha256=KSAlU070qNu2D9b1idVAiq_nSw-Kak30go4Iu4WtQZI,631
+aws_chain_secrets-1.0.1.dist-info/LICENSE,sha256=ZJprrTLGqkP2p4IXHTUSPBHNSVmunjhVdYEtne_DBHw,1065
+aws_chain_secrets-1.0.1.dist-info/METADATA,sha256=bhjJlziKFuiBADogco6yaMYNNy3z2i3PNz_qXlpZzNE,3540
+aws_chain_secrets-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aws_chain_secrets-1.0.1.dist-info/top_level.txt,sha256=Q9cRrEJgzEaHWkx5oorPIVkVVs_2JXi19DD6W0c32T8,24
+aws_chain_secrets-1.0.1.dist-info/RECORD,,
