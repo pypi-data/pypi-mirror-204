@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: bitio
+Version: 0.3.0
+Summary: Input/output utilities of a bit-basis file
+Home-page: https://github.com/hinohi/bitio
+Author: Daiju Nakayama
+Author-email: 42.daiju@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+
+# bitio
+
+Utilities to read or write files by bit or bits
+
+## How to use
+
+```py
+from bitio import bit_open
+
+f = bit_open(file_name, "r")
+x = f.read()           # return 1 or 0
+x = f.read_bits(count) # return int
+
+f = bit_open(file_name, "w")
+f.write(bit)              # write 1 if bit else 0
+f.write_bits(bits, count) # write 'count bits'
+f.close()
+```
+
+These are the same
+
+```py
+f.write_bits(bits, count)
+
+for i in range(count-1, -1, -1):
+  if bits & (1 << i):
+    f.write(1)
+  else:
+    f.write(0)
+```
+
+Another interface
+
+```py
+l = []
+wrapper = ByteWrapper(l.append)
+f = bit_wrap(wrapper, "w")
+f.write_bits(0b110000101, 10)
+print(l)    # [b"a"]
+f.close()
+print(l)    # [b"a", b"@"]
+```

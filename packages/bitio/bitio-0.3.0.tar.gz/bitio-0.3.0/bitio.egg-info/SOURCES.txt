@@ -1,0 +1,9 @@
+README.md
+setup.py
+bitio/__init__.py
+bitio/bit_file.py
+bitio/byte_wrapper.py
+bitio.egg-info/PKG-INFO
+bitio.egg-info/SOURCES.txt
+bitio.egg-info/dependency_links.txt
+bitio.egg-info/top_level.txt
