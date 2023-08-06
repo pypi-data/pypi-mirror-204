@@ -1,0 +1,7 @@
+include build.py
+include requirements.txt
+include live_api\source
+include pyproject.toml
+include requirements-dev.txt
+include live_api\source\assets\icon\icon.ico
+include live_api\source\assets\icon\icon.png
