@@ -1,0 +1,1 @@
+This is a library that provides a foundation for gathering VADER sentiment scores for a group of files.

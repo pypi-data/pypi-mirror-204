@@ -1,0 +1,2 @@
+textquisite>=0.0.1
+textquisite-parsers>=0.0.1
