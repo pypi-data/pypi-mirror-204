@@ -1,0 +1,16 @@
+__pycache__
+build/
+dist/
+roof_test/
+tests/
+tmp/
+model/
+
+*.egg-info
+.amlignore
+.amlignore.amltmp
+.ipynb_checkpoints
+
+.vscode/
+
+roof_score_new*/
