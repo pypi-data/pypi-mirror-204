@@ -1,0 +1,99 @@
+#!/usr/bin/env python
+# dragonnfruit command-line tool
+# Author: Jacob Schreiber <jmschreiber91@gmail.com>
+
+import sys
+import numpy
+import torch
+import pyfaidx
+import argparse
+
+import deepdish as dd
+
+from dragonnfruit.preprocessing import fragments_to_sparse
+from dragonnfruit.preprocessing import preprocess_atac
+
+import json
+
+desc = """dragonnfruit is an extension of ChromBPNet for single-cell data.
+	At a high level, it takes in nucleotide sequence and some aspect of cell
+	state, such as an LSI matrix from scATAC-seq data or gene expression data
+	from multimodal data, and makes predictions for dynamically pseudobulked
+	scATAC-seq signal. It works by running the cell state representation through
+	a small multi-layer perceptron and outputting the convolution parameters
+	in the accessibility component of a ChromBPNet model. Put another way: 
+	after training a dragonnfruit model, one can produce a ChromBPNet model
+	for each cell in the experiment.""" 
+
+# Read in the arguments
+parser = argparse.ArgumentParser(description=desc)
+subparsers = parser.add_subparsers(help="Must be either 'train', 'predict', 'interpret', or 'marginalize'.", required=True, dest='cmd')
+
+preprocess_help = """Preprocess a set of fragment files, and optionally
+	inclusion/exclusion matrices, into a set of sparse matrices used in training
+	the dragonnfruit model."""
+preprocess_parser = subparsers.add_parser("preprocess", help=preprocess_help)
+preprocess_parser.add_argument("-p", "--parameters", type=str, required=True,
+	help="A JSON file containing the parameters for preprocessing the data.")
+
+
+# Pull the arguments
+args = parser.parse_args()
+
+if args.cmd == "preprocess":
+	with open(args.parameters, "r") as infile:
+		parameters = json.load(infile)
+
+	default_parameters = {
+		'fragments': None,
+		'loci': None,
+		'h5_filename':'dragonnfruit_data.h5',
+		'rd_filename':'dragonnfruit_read_depths.npz',
+		'chrom_sizes': None,
+		'include_cells': None,
+		'exclude_cells': None,
+		'chroms': ['chr1', 'chr2', 'chr3', 'chr4', 'chr5', 'chr6', 'chr7', 
+			'chr8', 'chr9', 'chr10', 'chr11', 'chr12', 'chr13', 'chr14', 
+			'chr15', 'chr16', 'chr17', 'chr18', 'chr19', 'chr20', 'chr21', 
+			'chr22', 'chrX'],
+		'cell_name_prefixes': None,
+		'max_fragment_length': 1000,
+		'start_offset': 4,
+		'end_offset': -5,
+		'verbose': False
+	}
+
+	for parameter, value in default_parameters.items():
+		if parameter not in parameters:
+			if value is None and parameter in ('fragments', 'chrom_sizes'):
+				raise ValueError("Must provide value for '{}'".format(parameter))
+
+			parameters[parameter] = value
+
+	###
+
+	'''
+	X_cscs, read_depths = fragments_to_sparse(
+		fragments=parameters['fragments'],
+		chrom_sizes=parameters['chrom_sizes'],
+		chroms=parameters['chroms'],
+		include_cells=parameters['include_cells'],
+		exclude_cells=parameters['exclude_cells'],
+		cell_name_prefixes=parameters['cell_name_prefixes'],
+		max_fragment_length=parameters['max_fragment_length'],
+		start_offset=parameters['start_offset'],
+		end_offset=parameters['end_offset'],
+		verbose=parameters['verbose']
+	)
+
+	dd.io.save(parameters['h5_filename'], X_cscs, compression='blosc')
+	numpy.savez_compressed(parameters['rd_filename'], read_depths)
+	'''
+
+	X_cscs = dd.io.load(parameters['h5_filename'])
+
+	X_pca, X_umap, neighbors = preprocess_atac(X_cscs, 
+		peaks=parameters['loci'], chroms=parameters['chroms'])
+
+	numpy.savez_compressed("X_pca.npz", X_pca)
+	numpy.savez_compressed("neighbors.npz", neighbors)
