@@ -1,0 +1,10 @@
+pymemory/__init__.py,sha256=XtUaZKhFxSRNX-Jf03h2doKNuYfmb-Ne-E64157SvBo,31
+pymemory/chunking.py,sha256=GTUk0gce8YOjhUddjfYZX9KsYQfryfT8ap8U-zCXB9w,2546
+pymemory/embedding.py,sha256=lgcvkGn2bmdZN_axNUvICd63Zotuyxsa-PLYDIVcTDw,822
+pymemory/pymemory.py,sha256=ZWua-cPUhSJqJlPpQ1F6kgnFltCk_JikDgz6lB52dF4,3707
+pymemory/storage.py,sha256=KxHeCcsOy1jFXdINGJBxLAlOEIV0fhNC7B2_Py-Ti2I,1047
+pymemory/vector_search.py,sha256=ivBLJH0Le159MyFbQSi8hYbS4d1UQPIful0jDY8LZRc,873
+vectordb2-0.1.0.dist-info/METADATA,sha256=HMPrHIUPlib7KMojInOR-ScyF4CvihcsERTKrHhW8vs,908
+vectordb2-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+vectordb2-0.1.0.dist-info/top_level.txt,sha256=BMLHTZn_sp0kDvWkH3ebfHSMyLkjfMDUSuGIFNTgnQw,9
+vectordb2-0.1.0.dist-info/RECORD,,
