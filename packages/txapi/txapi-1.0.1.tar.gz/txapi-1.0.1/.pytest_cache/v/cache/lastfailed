@@ -1,0 +1,3 @@
+{
+  "txapi/tests/send_request_test.py::test_raise_errro": true
+}

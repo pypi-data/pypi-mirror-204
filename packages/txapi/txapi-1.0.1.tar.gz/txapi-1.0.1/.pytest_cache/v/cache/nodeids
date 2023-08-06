@@ -1,0 +1,6 @@
+[
+  "txapi/tests/apiv2_test.py::TestApi::test_create_apiv2", 
+  "txapi/tests/apiv2_test.py::TestApi::test_init_client", 
+  "txapi/tests/apiv2_test.py::TestApi::test_set_domain", 
+  "txapi/tests/send_request_test.py::test_send_with_error_aksk"
+]
