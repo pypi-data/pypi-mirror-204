@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aacommpy
+Version: 0.1.6
+Summary: aacommpy - AACOMM nuget package wrapper
+Home-page: https://github.com/jamesbond90/aacommpyDownloader
+Author: HIEU
+Author-email: trunghieupcs@gmail.com
+License: MIT
+Keywords: package development stage
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10.1
+Description-Content-Type: text/markdown
+
+this is the readme content of the aacommpy package
