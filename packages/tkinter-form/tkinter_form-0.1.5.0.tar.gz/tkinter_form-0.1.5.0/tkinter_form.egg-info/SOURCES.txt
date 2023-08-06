@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+tkinter_form/__init__.py
+tkinter_form/tkinter_form.py
+tkinter_form.egg-info/PKG-INFO
+tkinter_form.egg-info/SOURCES.txt
+tkinter_form.egg-info/dependency_links.txt
+tkinter_form.egg-info/requires.txt
+tkinter_form.egg-info/top_level.txt
