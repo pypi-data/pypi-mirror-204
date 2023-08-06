@@ -1,0 +1,10 @@
+pydantic>=1.8.0
+
+[dev]
+bumpver
+pytest
+mypy
+pylint
+
+[mongo]
+pymongo>=3.0.0
