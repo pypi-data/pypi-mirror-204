@@ -1,0 +1,2 @@
+[console_scripts]
+tokmon = tokmon.cli:cli
