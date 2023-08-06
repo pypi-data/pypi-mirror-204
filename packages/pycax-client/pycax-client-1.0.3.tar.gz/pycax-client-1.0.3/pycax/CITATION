@@ -1,0 +1,32 @@
+How to acknowledge use of pycax in a publication or report. In an acknowledgement,
+
+  This work made use of pycax: a Python REST API client for the the Coordinated Assessments data exchange REST API. DOI: 10.5281/zenodo.7855729
+
+or as a citation
+
+  Holmes, E. E and M. Williams. 2023. pycax: a Python client for the Coordinated Assessments data exchange REST API. vX.X.X. doi:10.5281/zenodo.7855729.
+
+Make sure to include a citation for the Coordinated Assessments Partnership (CAP) data tables that you use. For details on citing CAP content see: https://www.streamnet.org/resources/citing-sn/
+
+BibTeX entries for the above citations are:
+
+@misc{pycax,
+  title={pycax: a Python client for the Coordinated Assessments data exchange REST API},
+  url={https://nwfsc-math-bio.github.io/pycax/},
+  author={
+    Elizabeth Holmes and
+    Mari Williams
+  },
+  institution = "NOAA Fisheries, Northwest Fisheries Science Center, Math Bio Program",
+  year={2023},
+  doi = {10.5281/zenodo.7855729}
+}
+
+@misc{
+title = "Coordinated Assessments Partnership (CAP) fish high-level indicators (HLIs)",
+url = "https://www.streamnet.org/home/data-maps/fish-hlis/",
+note = "For details on citing StreamNet content see: https://www.streamnet.org/resources/citing-sn/")
+}
+
+
+
