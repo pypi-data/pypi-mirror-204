@@ -1,0 +1,5 @@
+astroquery
+requests
+astropy
+skyfield
+matplotlib

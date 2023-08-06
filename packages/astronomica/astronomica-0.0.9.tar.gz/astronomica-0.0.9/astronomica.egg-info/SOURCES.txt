@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+astronomica/__init__.py
+astronomica/astronomica.py
+astronomica/libconversion.py
+astronomica/suntiming.py
+astronomica.egg-info/PKG-INFO
+astronomica.egg-info/SOURCES.txt
+astronomica.egg-info/dependency_links.txt
+astronomica.egg-info/requires.txt
+astronomica.egg-info/top_level.txt
