@@ -1,0 +1,11 @@
+aiohttp_deps/__init__.py,sha256=ahKhHKgjk8oZeh9H-b0CjKcrh6UkBB8s0zTlJ3laXb8,357
+aiohttp_deps/initializer.py,sha256=txvBwC7q1CqIMSjCZFboC9aAjgmgIIujvvZTpnPzeh8,2221
+aiohttp_deps/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiohttp_deps/router.py,sha256=8npX_xUouvIecdTwKXdhtm6vOStH4yNJHqw2giVmLoE,342
+aiohttp_deps/router.pyi,sha256=KAJqXLF9NQELAUwWckAzF-JubrPgutH_21n1ynyBN4M,792
+aiohttp_deps/utils.py,sha256=GcK5G2_wpqekIJoEUTtR5ZWdHq5w9mMqTpW2X6fYlHI,5916
+aiohttp_deps/view.py,sha256=ReE6Vl7_hUh4whxTaYCy_ZKYO9-LcVn8PGn0Fqg6ym0,1317
+aiohttp_deps-0.1.0.dist-info/LICENSE,sha256=2kUMHEmi_K6SV43YoqXTygA6Tt37oHEGyi-NSflSQvw,1073
+aiohttp_deps-0.1.0.dist-info/METADATA,sha256=QbcY4TYcRL71a-tTpThES-nKy76TsFbF73j-CVJuf0o,1322
+aiohttp_deps-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+aiohttp_deps-0.1.0.dist-info/RECORD,,
