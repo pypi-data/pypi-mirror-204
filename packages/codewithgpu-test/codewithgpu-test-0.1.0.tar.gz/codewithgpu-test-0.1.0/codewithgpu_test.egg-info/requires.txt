@@ -1,0 +1,5 @@
+numpy
+protobuf<=3.20.1,>=3.9.1
+opencv-python
+flask
+gradio
