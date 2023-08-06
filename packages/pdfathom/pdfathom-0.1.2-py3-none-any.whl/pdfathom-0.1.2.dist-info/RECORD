@@ -1,0 +1,10 @@
+pdfathom/__main__.py,sha256=_Adw_ET_wwXX9a2nPHrROrTITpDvL6zAlL1tZ6WQarU,272
+pdfathom/arguments.py,sha256=-x6Ca3f3ClI54tBcKRweBFDk4kzl-RgH_eCDsa0RU3s,1613
+pdfathom/config.py,sha256=x0Hhxf6wR3uvFvlELWotuztw2gbUgKmVcApnzrApaEs,598
+pdfathom/db.py,sha256=13e4JIrNzcMN_VbQrpW2GRnKMsq7G-gQwsD9mrPVXg8,3069
+pdfathom/repl.py,sha256=RkgLC5qxe6TF7sRg9jWsQNI0YFhhUp_ezbtqScU5Q_U,3849
+pdfathom-0.1.2.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+pdfathom-0.1.2.dist-info/METADATA,sha256=EM7f6_wr8Gmw-bWE62uyBrXCy8Ntl4Tp5M8rmYAPqAI,2153
+pdfathom-0.1.2.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+pdfathom-0.1.2.dist-info/entry_points.txt,sha256=YQYCTT_PPBwSV0WtWS98R9jO5qWYW9ikzAty8pM8icQ,51
+pdfathom-0.1.2.dist-info/RECORD,,
