@@ -1,0 +1,16 @@
+droiddepot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+droiddepot/audio.py,sha256=KGW4CZYhekfA53dwvNJc2_-7Pgj3ZLe7FYSoF6gVE8s,8182
+droiddepot/beacon.py,sha256=SEGwSZeHaNPVbiAfl3bhYxpUISz-7EKvcDYOhr4Vv24,8083
+droiddepot/connection.py,sha256=NWg1MHFwsthrb54MCRbO6lfhAhLq-k0fqp5abFOMnIU,13393
+droiddepot/hardware.py,sha256=93Vcnwr-raVfKb7QN49WhEE5bRIk8Qkk--v5hp6kf_4,11163
+droiddepot/motor.py,sha256=XxqQZpB9petYU5Ldd8YtN8ESiuNSZn8iUYmhk7qG5UI,5398
+droiddepot/notify.py,sha256=8tNbLGQrcFu6689tfMo2bKRlGcUToYZqO97-3zMZc3Y,8408
+droiddepot/protocol.py,sha256=PZhJv4OvrXM_c3xPlswux36kUFIRjmrY3fsO2l2yEgk,2804
+droiddepot/script.py,sha256=5xfduaOWYU50TBHWbb3ApTx4Wvl92zk3AM8s6aSFqYI,7209
+droiddepot/utils.py,sha256=Oz-NT1F-EiDgt-UUtSLPNG5emBf_h9dsOOyYAmb50xo,1637
+droiddepot/voice.py,sha256=b9BSv8MN56KmqgGJBnC_0zOolMuoPXLv7DubROt_vUc,3301
+pyDroidDepot-1.0.1.dist-info/LICENSE,sha256=OkumNJeWtmw5LIdVghrvEM5lBnLnvMM7EZ-JMsafvvE,1071
+pyDroidDepot-1.0.1.dist-info/METADATA,sha256=nxlaXMAmZZfuuUTzaQSikxiv3MmxEqnCmZTh-6RhT5A,458
+pyDroidDepot-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyDroidDepot-1.0.1.dist-info/top_level.txt,sha256=-JzyAu7IFo_atKYb0FSqJlzEvwMM4o7WLcb3cXAP_2U,11
+pyDroidDepot-1.0.1.dist-info/RECORD,,
