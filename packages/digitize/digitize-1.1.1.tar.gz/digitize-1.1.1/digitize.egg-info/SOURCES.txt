@@ -1,0 +1,9 @@
+README.md
+setup.py
+digitize/__init__.py
+digitize/get_exact.py
+digitize/test_example.py
+digitize.egg-info/PKG-INFO
+digitize.egg-info/SOURCES.txt
+digitize.egg-info/dependency_links.txt
+digitize.egg-info/top_level.txt
