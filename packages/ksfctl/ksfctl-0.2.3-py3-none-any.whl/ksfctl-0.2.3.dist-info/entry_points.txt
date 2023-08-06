@@ -1,0 +1,4 @@
+[console_scripts]
+ksf2cpp = ksfctl.cmd.cmd:parse_cxx
+ksf2cxx = ksfctl.cmd.cmd:parse_cxx
+ksfctl = ksfctl.cmd.cmd:cli
