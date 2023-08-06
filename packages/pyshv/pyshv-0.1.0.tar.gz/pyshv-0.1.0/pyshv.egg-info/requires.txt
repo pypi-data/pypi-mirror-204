@@ -1,0 +1,17 @@
+
+[docs]
+sphinx
+sphinx_rtd_theme
+myst-parser
+
+[lint]
+black
+isort
+mypy
+pydocstyle
+pylint
+
+[test]
+pytest
+pytest-asyncio
+pytest-cov
