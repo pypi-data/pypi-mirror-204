@@ -1,0 +1,2 @@
+[console_scripts]
+hadloc = hadloc.__main__:main
