@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+openshield/__init__.py
+openshield/__main__.py
+openshield/scanner.py
+openshield.egg-info/PKG-INFO
+openshield.egg-info/SOURCES.txt
+openshield.egg-info/dependency_links.txt
+openshield.egg-info/entry_points.txt
+openshield.egg-info/requires.txt
+openshield.egg-info/top_level.txt
