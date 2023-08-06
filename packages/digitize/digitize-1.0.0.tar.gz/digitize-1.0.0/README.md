@@ -1,0 +1,1 @@
+#### digitize - open source available library for determining the bit depth of a number with the output of its name
