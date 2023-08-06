@@ -1,0 +1,9 @@
+RWTHColors/__init__.py,sha256=tUAR8AVJIZmStz218u9ykGKjGgaSfJWOPiGsYolSbW8,933
+RWTHColors/cm.py,sha256=IO1sd4RXAuS35OJx8ga_xFY4am_ZyxB1D7cU6y4BEJ4,6381
+RWTHColors/colors/__init__.py,sha256=LIYrBTH-b7sQuQrApZ3s3TN8RVXLiCwz2Q1mJeQMiGw,21
+RWTHColors/colors/colors.py,sha256=ebqXgV_JMLmEeKPdnoWcATsSgmo08HvT1S2XfWMJ93Q,5090
+RWTHColors/mpl-styles/rwth-full.mplstyle,sha256=AvZX_VwypzJUE0lBJet5pgcd_fSk6ncnDryB11JOmiA,585
+RWTHColors/mpl-styles/rwth.mplstyle,sha256=3pt3F_24tbvnYgXobdbLZK-izuDpoNT22v1mm6AAI40,149
+rwthcolors-0.2.1.dist-info/METADATA,sha256=fTb5cxGpn9shlXTUwFAap753YjEPf1bHCSD3SWjr4Io,956
+rwthcolors-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+rwthcolors-0.2.1.dist-info/RECORD,,
