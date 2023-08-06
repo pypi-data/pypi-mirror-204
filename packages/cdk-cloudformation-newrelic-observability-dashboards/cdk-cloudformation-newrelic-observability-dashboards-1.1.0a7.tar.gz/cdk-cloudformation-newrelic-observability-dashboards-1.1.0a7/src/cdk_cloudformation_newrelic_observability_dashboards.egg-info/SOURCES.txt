@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/cdk_cloudformation_newrelic_observability_dashboards/__init__.py
+src/cdk_cloudformation_newrelic_observability_dashboards/py.typed
+src/cdk_cloudformation_newrelic_observability_dashboards.egg-info/PKG-INFO
+src/cdk_cloudformation_newrelic_observability_dashboards.egg-info/SOURCES.txt
+src/cdk_cloudformation_newrelic_observability_dashboards.egg-info/dependency_links.txt
+src/cdk_cloudformation_newrelic_observability_dashboards.egg-info/requires.txt
+src/cdk_cloudformation_newrelic_observability_dashboards.egg-info/top_level.txt
+src/cdk_cloudformation_newrelic_observability_dashboards/_jsii/__init__.py
+src/cdk_cloudformation_newrelic_observability_dashboards/_jsii/newrelic-observability-dashboards@1.1.0-alpha.7.jsii.tgz
