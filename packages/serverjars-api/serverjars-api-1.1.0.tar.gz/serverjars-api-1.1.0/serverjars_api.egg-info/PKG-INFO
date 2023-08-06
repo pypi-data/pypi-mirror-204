@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: serverjars-api
+Version: 1.1.0
+Summary: The unofficial Python wrapper for serverjars.com
+Home-page: https://github.com/legopitstop/serverjars-python-api-wrapper
+Author: Legopitstop
+Author-email: officiallegopitstop@gmail.com
+License: MIT
+Keywords: ServerJars,Minecraft,Servers,Bedrock,API
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# serverjars
+The unofficial Python wrapper for [serverjars.com](https://serverjars.com/)
+
+## Code Examples:
+Fetching the latest jar:
+```python
+import serverjars
+latest = serverjars.fetchLatest('vanilla')
+print(latest)
+```
+
+Fetching all the Jars:
+```python
+import serverjars
+allJars = serverjars.fetchAll('paper')
+print(allJars)
+```
+
+Fetching types:
+```python
+import serverjars
+types = serverjars.fetchTypes()
+print(types)
+```
+
+Fetching subtypes:
+```python
+import serverjars
+subtypes = serverjars.fetchTypes('bedrock')
+print(subtypes)
+```
+
+Downloading Jars:
+```python
+import serverjars
+
+def on_finish(jar):
+    print('Downloaded', jar)
+
+serverjars.downloadJar('snapshot', finishcommand=on_finish)
+```
