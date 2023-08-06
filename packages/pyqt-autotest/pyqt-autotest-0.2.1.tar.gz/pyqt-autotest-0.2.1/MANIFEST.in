@@ -1,0 +1,5 @@
+include pyqt_autotest/examples/complex/README.md
+include pyqt_autotest/examples/moderate/README.md
+include pyqt_autotest/examples/moderate/three-body-parameters.txt
+include pyqt_autotest/examples/repeatable/README.md
+include pyqt_autotest/examples/simple/README.md
