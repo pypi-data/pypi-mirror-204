@@ -1,0 +1,4 @@
+fastapi
+openslide-python
+pillow
+uvicorn
