@@ -1,0 +1,16 @@
+mergem/__database_id_merger.py,sha256=Lm2ui9VmwY7PDykUZGS8bOvV4wWzoAqyBQ0gVOtBCoo,38359
+mergem/__init__.py,sha256=eZFOEMxcPTATomw1X_IElw61DLBo9MjI2flTFf7Wf0g,536
+mergem/__mergeModels.py,sha256=OKnBOgN4GPEEIxj0ZyxpjNaSesnqXy_MUCpr5qZKU_A,17193
+mergem/__modelHandling.py,sha256=GIJDAKrGPKM4K4GFUr0btEv1MlOWXYrimP4RYxoydwc,8394
+mergem/__version.py,sha256=hQM4lhOxfWf2-JGS8Q2l2otq2O4HVtmsqRl1f_6zNQI,21
+mergem/cli.py,sha256=Zfc4Ep7rN2lrppv_Go4D9bZ15wiLL-Ra3PdVfqrI-1U,3797
+mergem/data/metaboliteIdMapper.p,sha256=iXAv7RtGKreNUR4zMty3R1ZHF6DSXyME4c87N2xEK14,43988250
+mergem/data/metaboliteInfo.p,sha256=yUSDydu5jXAEDZWRDgqVHjH769DWLOSgoUw7pLx42dY,248669207
+mergem/data/reactionIdMapper.p,sha256=T1JxzRxrwZeFyHYD4wXoAIV8RMV7oIYvFE7BELrV4W4,4589803
+mergem/data/reactionInfo.p,sha256=DM5n7CBXKo773vUqPpMOUY7VWDK7peY0wDSH_qeeaNw,15995115
+mergem-0.22.2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+mergem-0.22.2.dist-info/METADATA,sha256=0PHrSTYcUwMkvYkeg8Fq7gWWV6l_esT5cpfFQwm_BKc,4229
+mergem-0.22.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mergem-0.22.2.dist-info/entry_points.txt,sha256=Zp0HyBlvq4MwLL7bl4_E6dHr79Xc07BOtwa9cEwLMA4,43
+mergem-0.22.2.dist-info/top_level.txt,sha256=Bo-IkZDLJc7ahYW2xuXcdwYsFxywpOrHKCFAdOBjXNI,7
+mergem-0.22.2.dist-info/RECORD,,
