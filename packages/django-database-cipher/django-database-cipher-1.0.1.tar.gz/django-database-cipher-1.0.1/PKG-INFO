@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: django-database-cipher
+Version: 1.0.1
+Summary: Database cipher support for Django
+Home-page: https://github.com/raisons/django-database-cipher
+Author: Raison Chan
+Author-email: raisonschan@gmail.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database
+Classifier: Topic :: Security :: Cryptography
+License-File: LICENSE
+
+This module allows your Django project to work with SQLCipher.
