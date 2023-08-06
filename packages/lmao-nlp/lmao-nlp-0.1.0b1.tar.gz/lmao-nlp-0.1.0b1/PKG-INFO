@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lmao-nlp
+Version: 0.1.0b1
+Summary: LMAO: Language Model Adapters and Orchestrators
+Home-page: https://github.com/johnnygreco/lmao
+Author: Johnny Greco
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: all
+License-File: LICENSE
