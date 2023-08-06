@@ -1,0 +1,13 @@
+dann5/__init__.py,sha256=QX6mKoxP6g3fK8oQDmKIiQv2hHL5gckCI7Zl7pR08tA,102
+dann5/azure.py,sha256=J2Uz1y_tCL9nQ-JfrNOfsqxkOielUqZ5fSkBPDeMENc,2584
+dann5/azureWS.py,sha256=RbPz1W2wEBz60u3ZqV30CDiqO0Sjlpw8AGH-3yiBNPs,499
+dann5/d5o2.cp310-win_amd64.pyd,sha256=afQQfr5Y_yuDQhvHIwv9QVHOY8SWSwghU_Qw5q4ioOY,978432
+dann5/d5o2.cpython-310-darwin.so,sha256=eEkwBwQBC9WpDefRRcTqaZ_cPz4aLYjVw6KQ0RWOB-c,3700624
+dann5/d5o2.so,sha256=vJRje4GaZqg55tneA2gVjEdgQf6_3TFyR9UjV54OBto,8665536
+dann5/dwave.py,sha256=kIO5giK7nJu6vtIh_j4BBn3Fut6mjPfedpO-BPgjrSE,4008
+dann5/qiskit.py,sha256=UopLKrCk8Gnt0CXcgq-o-lRw5KvU5ULYo2lGRGiJXNA,2674
+dann5-2.2.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+dann5-2.2.1.dist-info/METADATA,sha256=vpqOb0sd3q2yOzHwfLvETtcB0KVGFX28a5p1ART5X_c,12138
+dann5-2.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dann5-2.2.1.dist-info/top_level.txt,sha256=gGmKcvMmiK0UDVHRCl1iRiwiOSAug5MUEV2L-4UB-zg,6
+dann5-2.2.1.dist-info/RECORD,,
