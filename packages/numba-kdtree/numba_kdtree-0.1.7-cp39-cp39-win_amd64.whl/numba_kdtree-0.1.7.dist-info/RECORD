@@ -1,0 +1,11 @@
+numba_kdtree/__init__.py,sha256=_k3R933Wr4_pqzfdTlR4MoLbOhlVEzWRoZUhf3yhU48,57
+numba_kdtree/_ckdtree.lib,sha256=0IJ7MhMN8pv_2ajZnp1UKps4ZEFYN-2tkR78rOg_0YI,90624
+numba_kdtree/_version.py,sha256=GhTYFGQ77wbJM35lScp2XZKYnkNHTrdYozPoCZiCVSM,23
+numba_kdtree/ckdtree_ctypes.py,sha256=gFqwWw6VeRaJhWDJjXHwKP3bmGxiIH-BNUowUj5X_Hw,4482
+numba_kdtree/kd_tree.py,sha256=95XxF_k0p_ksWIH-kkWF8rGMzpzG8t5gAgqDeuO33kQ,15454
+numba_kdtree-0.1.7.dist-info/LICENSE,sha256=mvIADMMnadSttu-2GStgTORQy0ReHAUjvrQbhnllgEU,1093
+numba_kdtree-0.1.7.dist-info/METADATA,sha256=j4-uJa5L9BgYXPUMdGPQQfYHeno21rkNzq2OVHjVBrc,2764
+numba_kdtree-0.1.7.dist-info/WHEEL,sha256=eep6QWEFiQfg2wcclssb_WY-D33AnLYLnEKGA9Rn-VU,100
+numba_kdtree-0.1.7.dist-info/top_level.txt,sha256=5ofa_oGevQ6lVamlnP1ca_HUm4rv09sK2RwdqpqfQwE,13
+numba_kdtree-0.1.7.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+numba_kdtree-0.1.7.dist-info/RECORD,,
