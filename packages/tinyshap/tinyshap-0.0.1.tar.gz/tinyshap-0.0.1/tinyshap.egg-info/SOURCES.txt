@@ -1,0 +1,8 @@
+LICENCE
+README.md
+pyproject.toml
+tinyshap.egg-info/PKG-INFO
+tinyshap.egg-info/SOURCES.txt
+tinyshap.egg-info/dependency_links.txt
+tinyshap.egg-info/requires.txt
+tinyshap.egg-info/top_level.txt
