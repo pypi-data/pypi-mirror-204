@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pygpt4all.egg-info/PKG-INFO
+pygpt4all.egg-info/SOURCES.txt
+pygpt4all.egg-info/dependency_links.txt
+pygpt4all.egg-info/not-zip-safe
+pygpt4all.egg-info/requires.txt
+pygpt4all.egg-info/top_level.txt
