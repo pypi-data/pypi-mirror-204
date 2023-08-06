@@ -1,0 +1,10 @@
+
+[all]
+numpy>=1.11.0
+pytest>=6.2.2
+
+[numpy]
+numpy>=1.11.0
+
+[test]
+pytest>=6.2.2
