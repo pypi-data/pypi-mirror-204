@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+recursive-include react/static *
+recursive-include react/templates *
+recursive-include react/components *
+recursive-include react/templatetags *
