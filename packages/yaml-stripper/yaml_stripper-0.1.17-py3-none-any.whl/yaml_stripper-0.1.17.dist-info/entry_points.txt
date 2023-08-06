@@ -1,0 +1,2 @@
+[console_scripts]
+yaml-stripper = YamlStripper.yaml_stripper:remove_fields
