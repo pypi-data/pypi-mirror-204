@@ -1,0 +1,12 @@
+venvx/__init__.py,sha256=wdO6ggcfFWb0_dQwujfs_VvjER_inGNpjcI1BpeQ_GM,248
+venvx/__main__.py,sha256=QrhHdT-fq5L-ku-BtU68_s3EsdkpPNx83QiAEw4HbiA,10604
+venvx/console.py,sha256=825Keb3h-uq1EX3sdK0kPLRMbSV8V6KgEMwArhgZPaw,163
+venvx/pstream.py,sha256=4UxaOYp9q-ZJLXY8gI4ybVExnjB0sNpd6LjXyf8Aas8,2408
+venvx/shellext.py,sha256=RL6EU8BtlvDwr2WNLlOsjSOywoYVwOhjhezEghr768s,3997
+venvx/tools.py,sha256=dNlWwkXMSi5_1RvAS3iTOL1qlFoS8UKhaclTRLhLb9c,15545
+venvx/virtualenv.py,sha256=OVaK81ClAC_Eo_wDHvNdocSas1Ei_V8UW0nDK_3PbMg,5309
+venvx-0.3.0.dist-info/entry_points.txt,sha256=YV_Sc31R0vH2t1JPqmd7aZYakPCz47jjqRlvbltstJ4,45
+venvx-0.3.0.dist-info/LICENSE,sha256=1gs_lUTyluQn6yDu1tMaAhvljXdjW29mNizDNMp7eQE,1073
+venvx-0.3.0.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+venvx-0.3.0.dist-info/METADATA,sha256=F1cY7AHfeznWn8aW-YDJ7NWoF6xH-9qR2XLYge2tUSg,4353
+venvx-0.3.0.dist-info/RECORD,,
