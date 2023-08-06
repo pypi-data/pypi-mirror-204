@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gpt_pynvim.egg-info/PKG-INFO
+gpt_pynvim.egg-info/SOURCES.txt
+gpt_pynvim.egg-info/dependency_links.txt
+gpt_pynvim.egg-info/requires.txt
+gpt_pynvim.egg-info/top_level.txt
+tests/test_gpt_pynvim.py
