@@ -1,0 +1,9 @@
+requirements.txt
+setup.py
+generic_crawler/__init__.py
+generic_crawler/webscraper.py
+generic_crawler.egg-info/PKG-INFO
+generic_crawler.egg-info/SOURCES.txt
+generic_crawler.egg-info/dependency_links.txt
+generic_crawler.egg-info/requires.txt
+generic_crawler.egg-info/top_level.txt
