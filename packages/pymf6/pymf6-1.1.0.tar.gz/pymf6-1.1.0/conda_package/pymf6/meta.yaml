@@ -1,0 +1,27 @@
+source:
+  path: ../..
+
+{% set pyproject = load_file_data('../../pyproject.toml', from_recipe_dir=True) %}
+{% set project = pyproject.get('project') %}
+
+package:
+   name: {{ project.get('name') }}
+   version:  {{ GIT_DESCRIBE_TAG }}
+
+build:
+  noarch: python
+  entry_points:
+    - pymf6 = pymf6.main:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy >=1.19
+
+  run:
+    - numpy
+
+about:
+  home: hydrocomputing
+  license: MIT

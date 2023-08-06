@@ -1,0 +1,2 @@
+[console_scripts]
+pymf6 = pymf6.main:main
