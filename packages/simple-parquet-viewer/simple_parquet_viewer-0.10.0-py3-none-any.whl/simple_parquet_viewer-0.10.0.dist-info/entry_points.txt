@@ -1,0 +1,5 @@
+[console_scripts]
+spv-shortcut = simple_parquet_viewer.main:gen_shortcut
+
+[gui_scripts]
+spv = simple_parquet_viewer.main:main
