@@ -1,0 +1,8 @@
+setup.py
+damnklr/__init__.py
+damnklr/damnklr.py
+damnklr.egg-info/PKG-INFO
+damnklr.egg-info/SOURCES.txt
+damnklr.egg-info/dependency_links.txt
+damnklr.egg-info/not-zip-safe
+damnklr.egg-info/top_level.txt

@@ -1,0 +1,392 @@
+class Pracklr:
+    def avail_prog():
+        avail_dm = r"""
+        1. emp_det()
+        
+        2. std_det()
+        
+        3. hos_man()
+        
+        4. rail_reser()
+        
+        5. hostel_mng()
+        
+        6. ctrl_state_emp()
+        
+        7. imp_expec()
+        
+        8. imp_cursor()
+        
+        9. create_procedures()
+        
+        10. creat_func()
+        
+        11. triggers()
+        
+        """
+        return avail_dm
+    def emp_det():
+        od = r"""
+	CREATE TABLE EMP(EMPNO NUMBER(4) NOT NULL,ENAME VARCHAR2(10),JOB VARCHAR2(9),MGR NUMBER(4),HIREDATE DATE,SAL NUMBER(7, 2),COMM NUMBER(7, 2),DEPTNO NUMBER(2));
+
+	INSERT INTO EMP VALUES(7369, 'SMITH',  'CLERK',     7902,TO_DATE('17-DEC-1980', 'DD-MON-YYYY'),  800, NULL, 20);
+	INSERT INTO EMP VALUES(7499, 'ALLEN',  'SALESMAN',  7698,TO_DATE('20-FEB-1981', 'DD-MON-YYYY'), 1600,  300, 30);
+	INSERT INTO EMP VALUES(7521, 'WARD',   'SALESMAN',  7698,TO_DATE('22-FEB-1981', 'DD-MON-YYYY'), 1250,  500, 30);
+	INSERT INTO EMP VALUES(7566, 'JONES',  'MANAGER',   7839, TO_DATE('2-APR-1981', 'DD-MON-YYYY'),  2975, NULL, 20);
+
+	SELECT * FROM EMP;
+
+	CREATE TABLE DEPT(DEPTNO NUMBER(2),DNAME VARCHAR2(14),LOC VARCHAR2(13) );
+
+	INSERT INTO DEPT VALUES (10, 'ACCOUNTING', 'NEW YORK');
+	INSERT INTO DEPT VALUES (20, 'RESEARCH',   'DALLAS');
+	INSERT INTO DEPT VALUES (30, 'SALES',      'CHICAGO');
+	INSERT INTO DEPT VALUES (40, 'OPERATIONS', 'BOSTON');
+
+	SELECT * FROM DEPT;
+
+	SELECT ENAME,DNAME,JOB,EMPNO,HIREDATE,LOC FROM EMP,DEPT WHERE EMP.DEPTNO=DEPT.DEPTNO ORDER BY ENAME;
+
+	SELECT DNAME,COUNT(*)COUNT_OF_EMPLOYEES FROM DEPT,EMP WHERE DEPT.DEPTNO=EMP.DEPTNO GROUP BY DNAME ORDER BY 2 DESC;
+
+	SELECT DEPTNO,MAX(SAL),MIN(SAL)FROM EMP GROUP BY DEPTNO;
+
+	SELECT SAL,DEPTNO FROM EMP ORDER BY SAL DESC;
+
+	SELECT DEPTNO FROM EMP GROUP BY DEPTNO;
+
+	ALTER TABLE EMP ADD EMAIL VARCHAR(30);
+
+	TRUNCATE TABLE DEPT;
+
+	DROP TABLE DEPT;
+        """
+        return od
+        
+    def std_det():
+        ten = r""" 
+	CREATE TABLE STDMARKS(ROLL_NO NUMBER(10),STUDENT_NAME VARCHAR2(10),SUBJECT VARCHAR2(10),MARKS NUMBER(12));
+
+	INSERT INTO STDMARKS VALUES(1,'RAVI','C++',75);
+	INSERT INTO STDMARKS VALUES(1,'RAVI','ORACLE',84);
+	INSERT INTO STDMARKS VALUES(2,'VIVEK','C++',46);
+	INSERT INTO STDMARKS VALUES(2,'VIVEK','ORACLE',70);
+	INSERT INTO STDMARKS VALUES(3,'RAJ','C++',82);
+	INSERT INTO STDMARKS VALUES(3,'RAJ','ORACLE',84);
+	INSERT INTO STDMARKS VALUES(4,'MAHESH','C++',43);
+	INSERT INTO STDMARKS VALUES(4,'MAHESH','ORACLE',49);
+
+	SELECT * FROM STDMARKS;
+
+	SELECT SUBJECT,AVG(MARKS) AS "AVERAGE MARKS" FROM STDMARKS GROUP BY SUBJECT;
+
+	SELECT ROLL_NO,AVG(MARKS) AS "AVERAGE MARKS" FROM STDMARKS GROUP BY ROLL_NO;
+
+	UPDATE STDMARKS SET STUDENT_NAME = 'Alfred' WHERE ROLL_NO = 1;
+
+	SELECT * FROM STDMARKS WHERE MARKS<50;
+
+	SELECT * FROM STDMARKS WHERE MARKS>80;
+        """
+        return ten
+    def hos_man():
+       ma = r"""
+	CREATE TABLE HOSPITAL ( HOSP_NAME VARCHAR(40) PRIMARY KEY, COUNTRY VARCHAR(30),  ADDRESS VARCHAR(50));
+
+	CREATE TABLE MEDICINE ( REG_NO NUMBER PRIMARY KEY, MED_NAME VARCHAR(20) NOT NULL, PRICE NUMBER(4, 3), EXP_DATE DATE);
+
+	CREATE TABLE PATIENT ( ID NUMBER PRIMARY KEY, NAME VARCHAR(30), AGE INTEGER, GENDER CHAR(1) );
+
+	INSERT INTO HOSPITAL VALUES ('King Hamad University Hospital', 'Kingdom of Bahrain', 'Bahrain');
+	INSERT INTO HOSPITAL VALUES ('MAYO CLINIC UNITED STATES','SAN PABLO ROAD','US');
+	INSERT INTO HOSPITAL VALUES ('BAHRAIN DEFENCE FORCE HOSPITAL','KINGDOM OF BAHRAIN','BAHRAIN');
+	INSERT INTO HOSPITAL VALUES ('SALAMANIYA HOSPITAL','KINGDOM OF BAHRAIN','MANAMA,BAHRAIN');
+
+	SELECT * FROM HOSPITAL;
+
+	INSERT INTO MEDICINE VALUES(020,'ADOL SYRUP',0.300,'15/MAY/2023');
+	INSERT INTO MEDICINE VALUES(01,'AMOXIL CAPSULES',0.700,'15/JAN/2023');
+	INSERT INTO MEDICINE VALUES(021,'ASPIRIN',0.500,'25/NOV/2023');
+	INSERT INTO MEDICINE VALUES(023,'PARACETAMOL',1.500,'31/DEC/2023');
+
+	SELECT * FROM MEDICINE;
+
+	INSERT INTO PATIENT VALUES (100000001,'SARA',34,'M');
+	INSERT INTO PATIENT VALUES (100000002,'VIJAYA',24,'F');
+	INSERT INTO PATIENT VALUES (100000003,'RAM',36,'M');
+	INSERT INTO PATIENT VALUES (100000004,'POOJA',24,'F');
+
+	SELECT * FROM PATIENT;
+
+	CREATE VIEW MED_DATA AS SELECT NAME,MED_NAME,AGE FROM MEDICINE,PATIENT;
+
+	SELECT * FROM MED_DATA;
+
+	CREATE VIEW HOS_DATA AS SELECT NAME,HOSP_NAME,AGE FROM HOSPITAL,PATIENT;
+
+	SELECT * FROM HOS_DATA;
+
+       """
+       return ma
+       
+    def rail_reser():
+       ser = r""" 
+	CREATE TABLE TRAIN_DETAILS(TRAIN_NAME CHAR(20) PRIMARY KEY,TOTAL_SEATS NUMBER(3),RESERVED_SEATS NUMBER(3));
+
+	INSERT INTO TRAIN_DETAILS VALUES('CHENNAI EXPRESS',560,500);
+	INSERT INTO TRAIN_DETAILS VALUES('KOVAI EXPRESS',660,600);
+	INSERT INTO TRAIN_DETAILS VALUES('OOTY EXPRESS',600,600);
+	INSERT INTO TRAIN_DETAILS VALUES('BANGLORE EXPRESS',600,450);
+
+	SELECT * FROM TRAIN_DETAILS;
+
+	CREATE TABLE WAITING_LIST(SLNO NUMBER(3),CUSTOMER_NAME CHAR(20) PRIMARY KEY,TRAIN_NAME CHAR(20) REFERENCES TRAIN_DETAILS(TRAIN_NAME));
+
+	INSERT INTO WAITING_LIST VALUES(11,'SURUTHI','CHENNAI EXPRESS');
+	INSERT INTO WAITING_LIST VALUES(12,'ANU','OOTY EXPRESS');
+	INSERT INTO WAITING_LIST VALUES(13,'ARI','BANGLORE EXPRESS');
+	INSERT INTO WAITING_LIST VALUES(14,'BANU','CHENNAI EXPRESS');
+
+	SELECT * FROM WAITING_LIST;
+
+	CREATE SYNONYM TRAIN FOR TRAIN_DETAILS;
+
+	CREATE SYNONYM WAITING FOR WAITING_LIST;
+
+	SELECT * FROM TRAIN;
+
+	SELECT * FROM WAITING;
+       """
+       return ser
+    def hostel_mng():
+        cp = r""" 
+	CREATE TABLE HOSTEL(HOSTEL_ID NUMBER PRIMARY KEY,HOSTEL_NAME VARCHAR2(30),FLOORS NUMBER, NO_OF_ROOMS NUMBER, MESS_NO NUMBER);
+
+	INSERT INTO HOSTEL VALUES(101,'SAROJINI',10,50,201);
+	INSERT INTO HOSTEL VALUES(102,'PRIYADARSHINI',8,30,203);
+	INSERT INTO HOSTEL VALUES(103,'1.8K ULTRA MEGA HOSTEL',11,100,201);
+	INSERT INTO HOSTEL VALUES(104,'1K HOSTEL',12,70,204);
+	INSERT INTO HOSTEL VALUES(105,'ISH',10,40,202);
+	INSERT INTO HOSTEL VALUES(106,'BOSE',6,40,203);
+
+	SELECT * FROM HOSTEL;
+
+	CREATE TABLE ROOM(ROOM_NO NUMBER PRIMARY KEY,OCCUPANCY NUMBER,AVAIL VARCHAR(30),HOSTEL_ID NUMBER,FOREIGN KEY(HOSTEL_ID) REFERENCES HOSTEL(HOSTEL_ID));
+
+	INSERT INTO ROOM VALUES(101, 4, 'YES', 101);
+	INSERT INTO ROOM VALUES(102, 4, 'YES', 101);
+	INSERT INTO ROOM VALUES(201, 2, 'YES', 102);
+	INSERT INTO ROOM VALUES(203, 2, 'NO', 102);
+	INSERT INTO ROOM VALUES(301, 1, 'NO', 103);
+
+	SELECT * FROM ROOM;
+
+	CREATE TABLE ADMIN(FACULTY_ID NUMBER PRIMARY KEY,FAC_NAME VARCHAR2(20),CONTACT_NO NUMBER,HOSTEL_ID NUMBER,FOREIGN KEY(HOSTEL_ID)REFERENCES HOSTEL(HOSTEL_ID));
+
+	INSERT INTO ADMIN VALUES (401, 'Rajesh Shukla', 8912348761, 106);
+	INSERT INTO ADMIN VALUES (402, 'Srinidhi Prasad', 8937347821, 104);
+	INSERT INTO ADMIN VALUES (403, 'M. Sashi ', 9123763348, 101);
+	INSERT INTO ADMIN VALUES (407, 'Umesh Yadav', 7344123121, 101);
+	INSERT INTO ADMIN VALUES (411, 'D. Bhargavi', 9543423121, 102);
+
+	SELECT * FROM ADMIN;
+
+	SELECT ROOM_NO,FAC_NAME FROM ROOM LEFT JOIN ADMIN ON ROOM.HOSTEL_ID=ADMIN.HOSTEL_ID;
+
+	SELECT H.HOSTEL_ID,H.HOSTEL_NAME,A.FACULTY_ID,A.FAC_NAME FROM HOSTEL H RIGHT JOIN ADMIN A ON H.HOSTEL_ID=A. HOSTEL_ID;
+
+        """
+        return cp
+        
+    def ctrl_state_emp():
+          sc = r""" 
+		CREATE TABLE EMPLOYEES (EMP_NAME CHAR(15),DEPARTMENT_ID INT,EMP_ID INT,TOT_EMP INT);
+
+		INSERT INTO EMPLOYEES VALUES(&EMP_NAME,&DEPARTMENT_ID,&EMP_ID,&TOT_EMP);
+		
+
+		SELECT * FROM EMPLOYEES;
+
+		CREATE TABLE DEPARTMENT(DEPARTMENT_ID INT,GRADE VARCHAR(5));
+
+		INSERT INTO DEPARTMENT VALUES(&DEPARTMENT_ID,&GRADE);
+		
+
+		SELECT * FROM DEPARTMENT;
+
+		SET SERVEROUTPUT ON
+		DECLARE
+		tot_emp NUMBER;
+		BEGIN
+		SELECT Count(*)
+		Into tot_emp
+		FROM   employees e
+		join department d
+		ON e.department_id = d.department_id
+		WHERE  e.department_id = 01;
+		dbms_output.Put_line ('The employees are in the department 01: '
+		||To_char(tot_emp));
+		IF tot_emp >=5 THEN
+		   dbms_output.Put_line ('There are no vacancies in the department 01.');
+		ELSE
+		dbms_output.Put_line ('There are some vacancies in department 01.');
+		END IF;
+		END;
+		/
+
+          """
+          return sc
+         
+    def imp_expec():
+          ex_fam = r""" 
+		CREATE TABLE CUSTOMERS(NAME CHAR(15),ADDRESS VARCHAR(25),C_ID INT);
+
+		INSERT INTO CUSTOMERS VALUES(&NAME,&ADDRESS,&CID);
+
+		SELECT * FROM CUSTOMERS;
+
+		DECLARE
+		 id customers.c_id%type := 2;
+		 c_name customers.name%type;
+		 c_address customers.address%type;
+		 BEGIN
+		 SELECT name, address INTO c_name, c_address
+		 FROM customers
+		 WHERE id = c_id;
+		 DBMS_OUTPUT.PUT_LINE ('Name: '|| c_name);
+		 DBMS_OUTPUT.PUT_LINE ('Address: ' || c_address);
+		 EXCEPTION
+		 WHEN no_data_found THEN
+		 dbms_output.put_line('No such customer!');
+		 WHEN others THEN
+		 dbms_output.put_line('Error!');
+		 END;
+		 /
+          """
+          return ex_fam   
+    def imp_cursor():
+          cld = r""" 
+		create table employee (emp_name char(15),department_id int,emp_id int,tot_emp int, salary int);
+
+		insert into employee values(&emp_name,&department_id,&emp_id,&tot_emp,&salary);
+
+		SELECT * FROM EMPLOYEE;
+
+		DECLARE
+		 updated_rows number(2);
+		 BEGIN
+		 UPDATE EMPLOYEE SET salary = salary + 1000 WHERE emp_id=1;
+		 IF SQL%NOTFOUND THEN
+		 dbms_output.put_line('No employee found');
+		 ELSIF SQL%FOUND THEN
+		 updated_rows := SQL%ROWCOUNT;
+		 dbms_output.put_line('Updated rows = ' || updated_rows);
+		 END IF;
+		 END;
+		 /
+
+		SELECT * FROM EMPLOYEE;
+
+		DECLARE
+		CURSOR c_emp IS SELECT * FROM employee;
+		temp EMPLOYEE%rowtype;
+		BEGIN
+		OPEN c_emp;
+		LOOP
+		FETCH c_emp into temp;
+		dbms_output.put_line(temp.emp_id||' '||temp.emp_name);
+		EXIT WHEN c_emp%NOTFOUND;
+		END LOOP;
+		CLOSE c_emp;
+		END;
+		/
+
+
+          """
+          return cld
+    
+    def create_procedures():
+          waitf = r"""  
+		CREATE TABLE STUD(ID INT PRIMARY KEY,NAME CHAR(15));
+
+		create or replace procedure "library"    
+		(id IN int,    
+		name IN CHAR)    
+		is    
+		begin    
+		insert into stud values(id,name);    
+		end;    
+		/  
+
+		
+		BEGIN
+		     Insert into stud values(001,'John');  
+		     dbms_output.put_line('record inserted successfully');    
+		END;    
+		/  
+
+		SELECT * FROM STUD;
+          
+          """
+          return waitf      
+    def creat_func():
+          sig_lam = r"""           
+		SET SERVEROUTPUT ON;
+		DECLARE
+		a number;
+		b number;
+		c number;
+		FUNCTION findMax(x IN number, y IN number)
+		RETURN number
+		IS
+		z number;
+		BEGIN
+		IF x > y THEN
+		z:= x;
+		ELSE
+		Z:= y;
+		END IF;
+		RETURN z;
+		END;
+		BEGIN
+		a:= 23;
+		b:= 45;
+		c := findMax(a, b);
+		dbms_output.put_line(' Maximum of (23,45): ' || c);
+		END;
+		/
+          """
+          return sig_lam   
+    def triggers():
+          sig_int = r""" 
+		CREATE TABLE SOFTWARES(NAME VARCHAR2(15));
+
+		CREATE OR REPLACE TRIGGER tr_softwares
+		  BEFORE INSERT OR DELETE OR UPDATE ON softwares
+		   FOR EACH ROW
+		   DECLARE
+		    v_user  VARCHAR2(15);
+		    BEGIN
+		    SELECT
+		    user INTO v_user FROM dual;
+		   IF INSERTING THEN
+		   DBMS_OUTPUT.PUT_LINE('one line inserted by '||v_user);
+		   ELSIF DELETING THEN
+		    DBMS_OUTPUT.PUT_LINE('one line Deleted by '||v_user);
+		    ELSIF UPDATING THEN
+		    DBMS_OUTPUT.PUT_LINE('one line Updated by '||v_user);
+		    END IF;
+		   END;
+		   /
+
+		INSERT INTO SOFTWARES VALUES('PL/SQL');
+
+		SELECT * FROM SOFTWARES;
+
+		UPDATE SOFTWARES SET NAME='SQL' WHERE NAME='PL/SQL';
+
+		DELETE FROM SOFTWARES WHERE NAME='SQL';
+
+		SELECT * FROM SOFTWARES;
+          """
+          return sig_int
