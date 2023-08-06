@@ -1,0 +1,2 @@
+[lektor.plugins]
+responsive-image = lektor_responsive_image:ResponsiveImagePlugin
