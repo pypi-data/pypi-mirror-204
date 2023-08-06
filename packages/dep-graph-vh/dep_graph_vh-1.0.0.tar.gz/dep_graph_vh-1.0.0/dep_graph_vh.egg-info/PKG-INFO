@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: dep-graph-vh
+Version: 1.0.0
+Summary: Simple dependency graph resolver with JSON input
+Author-email: Viktor Hyhyniak <hyhyniak.victor@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Hyhyniak Viktor
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: repository, https://gitlab.com/hyhyniak.victor/dep_graph
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Simple dependency graph resolver
+
+## Description
+
+This is a simple graph dependency resolver.
+It can parse dependencies in json files from the provided or default system-specific location
+(`/tmp/deps.json` or `C:\tmp\deps.json`).
+Parsed dependencies can be transformed into a fully resolved dedicated `DependencyGraph` object
+that later may be converted into a string representation.
+
+## Installation
+
+```
+pip install dep_graph_vh
+```
+
+## Usage
+
+#### Print graph from default location:
+
+```
+python -m dep_graph_vh
+```
+
+#### Obtain a fully resolved dependency graph object from the provided or default location:
+
+```python
+import dep_graph_vh as dg
+
+dg.get_graph(file_location)  # from specific location
+dg.get_graph()  # from default system-dependent
+```
+
+#### Print dependency graph object:
+
+```python
+import dep_graph_vh as dg
+
+graph = dg.get_graph()
+dg.print_dep_graph(graph)
+```
+
+## Development
+
+```
+git clone https://gitlab.com/hyhyniak.victor/dep_graph.git
+cd dep_graph
+pip install -e .
+
+pip install -r dev_requirements.txt
+```
+
+## Tests and Quality Assurance
+
+```
+python -m unittest
+
+mypy .
+
+pylint dep_graph_vh test
+
+```
+
+## Build, deploy to PyPI and GitLab release
+
+Will be done as part of the CI pipeline after (and only after) new tag creation:
+
+1) Bump up the library version in `pyproject.toml`
+2) create a new tag (e.g. `3.0.1`)

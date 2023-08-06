@@ -1,0 +1,29 @@
+[project]
+name = "dep_graph_vh"
+version = "1.0.0"
+description = "Simple dependency graph resolver with JSON input"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+authors = [
+    { name = "Viktor Hyhyniak", email = "hyhyniak.victor@gmail.com" },
+]
+dependencies = []
+# dynamic = ["version"]
+
+[project.urls]
+repository = "https://gitlab.com/hyhyniak.victor/dep_graph"
+#documentation = "https://readthedocs.org"
+
+[build-system]
+requires = ["setuptools>=67.7", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.mypy]
+exclude = ['venv/*']
+
