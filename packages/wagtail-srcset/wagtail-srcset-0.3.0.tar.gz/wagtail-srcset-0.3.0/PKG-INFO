@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: wagtail-srcset
+Version: 0.3.0
+Summary: HTML5 image srcset support for Wagtail.
+Keywords: wagtail,responsive,images
+Author-email: Jochen Wersdörfer <jochen-wagtailsrcset@wersdoerfer.de>, Johannes Spielmann <j@spielmannsolutions.com>
+Requires-Python: >=3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Internet
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: wagtail >= 4
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: django-environ ; extra == "dev"
+Requires-Dist: django_extensions ; extra == "dev"
+Requires-Dist: isort ; extra == "dev"
+Requires-Dist: jupyter ; extra == "dev"
+Requires-Dist: tox ; extra == "dev"
+Requires-Dist: typer ; extra == "dev"
+Requires-Dist: sphinx-rtd-theme ; extra == "doc"
+Requires-Dist: pytest >= 6 ; extra == "test"
+Requires-Dist: pytest-cov >= 3 ; extra == "test"
+Requires-Dist: pytest-django ; extra == "test"
+Project-URL: Documentation, https://wagtail-srcset.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/ephes/wagtail_srcset
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
