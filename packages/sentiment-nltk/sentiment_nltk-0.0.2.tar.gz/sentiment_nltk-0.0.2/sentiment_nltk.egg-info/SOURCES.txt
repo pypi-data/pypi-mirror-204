@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+sentiment_nltk.egg-info/PKG-INFO
+sentiment_nltk.egg-info/SOURCES.txt
+sentiment_nltk.egg-info/dependency_links.txt
+sentiment_nltk.egg-info/requires.txt
+sentiment_nltk.egg-info/top_level.txt
