@@ -1,0 +1,136 @@
+{
+  "layout": [
+    {
+      "id": "package-data",
+      "title": "Package Data",
+      "widgets": [
+        {
+          "h": 6,
+          "w": 5,
+          "title": "",
+          "component": "package-data"
+        },
+        {
+          "h": 6,
+          "w": 5,
+          "title": "",
+          "component": "basic-info"
+        }
+      ]
+    },
+    {
+      "id": "general-info",
+      "title": "General info",
+      "widgets": [
+        {
+          "h": 3,
+          "w": 7,
+          "title": "Frequency",
+          "component": "frequency-item"
+        },
+        {
+          "w": 3,
+          "h": 3,
+          "title": "Vulnerabilities",
+          "component": "vulnerabilities-item"
+        },
+        {
+          "h": 3,
+          "w": 7,
+          "title": "Most dependent",
+          "component": "weight-item"
+        },
+        {
+          "w": 3,
+          "h": 3,
+          "title": "Updates",
+          "component": "updates-item"
+        }
+      ]
+    },
+    {
+      "id": "dependencies-list",
+      "title": "Dependencies list",
+      "widgets": [
+        {
+          "h": 6,
+          "w": 10,
+          "title": "",
+          "component": "dependencies-list"
+        }
+      ]
+    },
+    {
+      "id": "updates-list",
+      "title": "Updates List",
+      "widgets": [
+        {
+          "w": 10,
+          "h": 6,
+          "title": "",
+          "component": "updates-table"
+        }
+      ]
+    },
+    {
+      "id": "vulnerabilities-list",
+      "title": "Vulnerabilities List",
+      "widgets": [
+        {
+          "w": 10,
+          "h": 6,
+          "title": "",
+          "component": "vulnerabilities-table"
+        }
+      ]
+    },
+    {
+      "id": "deprecated-list",
+      "title": "Deprecated List",
+      "widgets": [
+        {
+          "w": 10,
+          "h": 6,
+          "title": "",
+          "component": "deprecated-table"
+        }
+      ]
+    },
+    {
+      "id": "issues-list",
+      "title": "Issues List",
+      "widgets": [
+        {
+          "w": 10,
+          "h": 6,
+          "title": "",
+          "component": "issues-table"
+        }
+      ]
+    },
+    {
+      "id": "dependencies-tree",
+      "title": "Dependencies tree",
+      "widgets": [
+        {
+          "w": 10,
+          "h": 6,
+          "title": "",
+          "component": "dependencies-tree-item"
+        }
+      ]
+    },
+    {
+      "id": "dependencies-network",
+      "title": "Dependencies network",
+      "widgets": [
+        {
+          "w": 10,
+          "h": 6,
+          "title": "",
+          "component": "dependencies-network-item"
+        }
+      ]
+    }
+  ]
+}

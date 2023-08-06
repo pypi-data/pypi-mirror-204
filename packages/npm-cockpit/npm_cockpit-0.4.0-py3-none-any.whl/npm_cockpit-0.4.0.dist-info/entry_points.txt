@@ -1,0 +1,3 @@
+[console_scripts]
+npm-cockpit=src.app.app:init
+
