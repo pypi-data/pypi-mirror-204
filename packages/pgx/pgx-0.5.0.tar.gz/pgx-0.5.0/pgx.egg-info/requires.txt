@@ -1,0 +1,4 @@
+jax>=0.3.25
+svgwrite
+msgpack
+typing_extensions
