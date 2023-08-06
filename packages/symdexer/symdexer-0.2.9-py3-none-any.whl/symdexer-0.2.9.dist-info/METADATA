@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: symdexer
+Version: 0.2.9
+Summary: A CLI for finding and indexing symbols
+Author-email: AntiMach <themachinumps@gmail.com>
+Project-URL: Homepage, https://github.com/antimach/symdexer
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Symdexer
+
+A command line utility for indexing and finding those pesky symbols in large packages.
+
+Help on how to use it can be viewed from the CLI, run `symdexer -h`.
+
