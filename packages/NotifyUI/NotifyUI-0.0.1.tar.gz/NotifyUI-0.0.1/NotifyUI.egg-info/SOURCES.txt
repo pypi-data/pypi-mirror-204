@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+NotifyUI/NotifyElements.py
+NotifyUI/__init__.py
+NotifyUI.egg-info/PKG-INFO
+NotifyUI.egg-info/SOURCES.txt
+NotifyUI.egg-info/dependency_links.txt
+NotifyUI.egg-info/top_level.txt
