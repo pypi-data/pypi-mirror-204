@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+CommonlyTools.egg-info/PKG-INFO
+CommonlyTools.egg-info/SOURCES.txt
+CommonlyTools.egg-info/dependency_links.txt
+CommonlyTools.egg-info/requires.txt
+CommonlyTools.egg-info/top_level.txt
+commonlytools/__init__.py
+commonlytools/discohook.py
