@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: playsoundsimple.py
+Version: 0.6.0
+Summary: A simple library for playing sound files
+Home-page: https://github.com/romanin-rf/playsoundsimple.py
+Author: romanin-rf
+Author-email: semina054@gmail.com
+License: MIT
+Keywords: playsoundsimple
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sounddevice
+Requires-Dist: soundfile
+Requires-Dist: mutagen
+
+# playsoundsimple.py
+## Description
+Library for working with sound files of the format: `.ogg`, `.mp3`, `.wav`, `.midi`.
+
+## Installation
+```
+pip install playsoundsimple.py
+```
+
+## More
+```python
+import time
+import playsoundsimple as pss
+
+s = pss.Sound("main.wav")
+
+s.play(1)
+
+while s.planing:
+    time.sleep(0.1)
+```
+
+## Author
+- Roman Slabicky
+    - [Vkontakte](https://vk.com/romanin2)
+    - [GitHub](https://github.com/romanin-rf)
+
+
