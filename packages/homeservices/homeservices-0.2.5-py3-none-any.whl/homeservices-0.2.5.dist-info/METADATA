@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: homeservices
+Version: 0.2.5
+Summary: Home webservices for Alexa
+Home-page: https://github.com/Phornee/homeservices
+Author: Ismael Raya
+Author-email: phornee@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Home Automation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Flask (>=1.1.2)
+Requires-Dist: gunicorn (>=20.1.0)
+Requires-Dist: flask-compress (>=1.9.0)
+Requires-Dist: importlib-metadata (>=4.5.0)
+Requires-Dist: tzlocal (>=4.1)
+Requires-Dist: influxdb-wrapper (>=0.0.3)
+Requires-Dist: baseutils-phornee (>=0.1.1)
+Requires-Dist: config-yml (>=0.2.0)
+Requires-Dist: revproxy-auth (>=0.0.10)
+Requires-Dist: elecmon (>=0.0.2)
+
+# Home Services
+Tiny webservice to answer Alexa intents
+
+

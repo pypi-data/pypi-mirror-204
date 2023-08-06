@@ -1,0 +1,14 @@
+homeservices/__init__.py,sha256=7A5mVdamDku5B9c7duwo1pI9MdmwSw0WgcAUsqfFOhQ,70
+homeservices/config-template.yml,sha256=Kaw4ph5YhGrV9SOo9Jt4OYhXeFv7fh4SUL2ZRrDP3Ag,151
+homeservices/wsgi.py,sha256=poK3NLkTp2r7RSbpk6sDyneizH_FuLGgCvOb6WjYmZY,680
+homeservices/webservice/__init__.py,sha256=9G6CsGwfDUhkHjyyC8vCz1wSp0gGSzqXZL3nDqzUqLk,116
+homeservices/webservice/db_connector.py,sha256=FC-ZmW5rbQz1Ex73ZOnunsMCjv8wk5-y-h27qRa_QTc,595
+homeservices/webservice/debugger.py,sha256=Yg5UC430N-mFIgJxSfsaYDkeBfF7oZmYuNt3g24izRg,436
+homeservices/webservice/webservice.py,sha256=5FWZ-3vThHagXWakQmXArdJ2SkyIeNC6_2MH-rmREls,8568
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_000.py,sha256=2oMNKu0sJQEX9AMLOyRyeSXOQfDP4Zd5N0lEpJD7TIE,3843
+tests/data/config-template.yml,sha256=3NKepA7TXQ2n3ib6-nacju8RrPUkOh8WShS9CVAGi_s,212
+homeservices-0.2.5.dist-info/METADATA,sha256=ehd9Ai6q7bMROVwAKIzIWaTVwKXGGzXIpyYnWbPr7B0,910
+homeservices-0.2.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+homeservices-0.2.5.dist-info/top_level.txt,sha256=C0wayPiLa-u5DNxixTeKpprcvBThbBN7HmICd5mfYZk,19
+homeservices-0.2.5.dist-info/RECORD,,

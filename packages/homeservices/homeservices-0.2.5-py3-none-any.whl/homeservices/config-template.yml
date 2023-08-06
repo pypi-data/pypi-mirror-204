@@ -1,0 +1,6 @@
+influxdbconn:
+  bucket: ++++++++++++++++++++++++++++++++
+  host: ++++++++++++++++++++++++++++++++
+  password: ++++++++++++
+  user: writer
+logpath: log
