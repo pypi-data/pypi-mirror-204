@@ -1,0 +1,5 @@
+[console_scripts]
+tcfg=typer_tinydb.typerdb:cfg
+typer-configure=typer_tinydb.typerdb:config
+typer-tinydb-config=typer_tinydb.typerdb:config
+
