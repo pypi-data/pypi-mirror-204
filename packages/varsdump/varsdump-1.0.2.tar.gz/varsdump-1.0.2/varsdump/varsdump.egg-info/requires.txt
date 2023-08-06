@@ -1,0 +1,6 @@
+python-dotenv>=0.21.0
+
+[dev]
+pytest>=3.7
+check-manifest
+twine
