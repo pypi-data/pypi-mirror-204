@@ -1,0 +1,14 @@
+apinator_databricks/__init__.py,sha256=_GplJQiaEEscn9sVeavRhP0lldcIFZSL49DYCpJMGtU,66
+apinator_databricks/common.py,sha256=Yu_TRyESq_h6zfZF11MZPerakFk7MZUGy686vMo3Q8I,198
+apinator_databricks/_common/api.py,sha256=di4RcDHmkgjJT4IUtcWlHQN3Bv-8G0fcRArPnHMed3Q,871
+apinator_databricks/_common/model.py,sha256=5_k8ExSSlhN8PgtgZdVKgMnVZMAveH3JqXuq9CO_pvs,254
+apinator_databricks/marketplace_provider/__init__.py,sha256=HRA45ceH_F0fR6wvkOz2T8U6r4IgFgkThf32Cp1sD9o,153
+apinator_databricks/marketplace_provider/api.py,sha256=vY_CyQvjwSKFCTRS1SMA2R-nbTvRrD9nELCYTr2aw4g,651
+apinator_databricks/marketplace_provider/model.py,sha256=dfkINaYzXaaZayjQHcTv7e1BELpEmAlJ7BD8gtyJ-vY,2178
+apinator_databricks/unity_catalog/__init__.py,sha256=ULJfRTsEH9ahQxv-amI8O09xJu6BzBonTfuFh1jgUkE,139
+apinator_databricks/unity_catalog/api.py,sha256=D1FgdlZtMmjcNLQd-J9yDXr_bo_xwNtRjZVVAfJiEOk,2479
+apinator_databricks/unity_catalog/model.py,sha256=dAjOATBjlkhz5KCpdEiGCIap6NS__vUXm9oGUy1P0Xc,3573
+apinator_databricks-0.0.4.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+apinator_databricks-0.0.4.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+apinator_databricks-0.0.4.dist-info/METADATA,sha256=8R7y5_VDktkGrJSNTEqJPO9B_lPB0M_-S-X8isJo-VU,1122
+apinator_databricks-0.0.4.dist-info/RECORD,,
