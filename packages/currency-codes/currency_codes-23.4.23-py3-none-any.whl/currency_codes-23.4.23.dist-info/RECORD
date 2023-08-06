@@ -1,0 +1,12 @@
+currency_codes/__init__.py,sha256=rPYAJgAJtS151ahyhmB80OL6vOWRv_G0rsLMPdjT-3U,475
+currency_codes/assets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+currency_codes/assets/commodity.py,sha256=J0l_BiQ0QaKXWhnIYOs-47dus91ffGFMpo-wJwOduoM,493
+currency_codes/assets/crypto.py,sha256=pmtTlxP89yzpcnvGQGMJjv5mWzhoe2M_OFcl24gAoCA,7117
+currency_codes/assets/fiat.py,sha256=rV-jLb7r06KpMJoAp_dKKxDqARzAtxQCr-wRXv3FgRs,12934
+currency_codes/assets/other.py,sha256=A19Ax0tVe0I2CgzQ9-WbHgvawMlNZ4Kak73THycZxlU,2309
+currency_codes/exceptions.py,sha256=TssrDT0ZZF_FONZzvHB7bDfdPu9is9Fp_dtS6wHZ2Uw,443
+currency_codes/main.py,sha256=BQDed3wv-kWJPt6gBBTdRxUbHUY6-xrM01-hU84GoIc,1734
+currency_codes/models.py,sha256=c2yDE8TKyS53bcEuerfWCJQnyw4nUxyLu377xZ_tZaI,527
+currency_codes-23.4.23.dist-info/METADATA,sha256=w7BYEvRYWJzANHXJLrgSaZtrLabbqGpY0reAdaGwRTo,4483
+currency_codes-23.4.23.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+currency_codes-23.4.23.dist-info/RECORD,,
