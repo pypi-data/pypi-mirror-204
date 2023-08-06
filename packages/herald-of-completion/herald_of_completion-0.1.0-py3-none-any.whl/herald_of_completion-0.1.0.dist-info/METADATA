@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: herald-of-completion
+Version: 0.1.0
+Summary: Hark! The herald of completion has arrived ... to let you know when your long-running tasks are done.
+Author: Simon Ho
+Author-email: simonho.ubc@gmail.com
+Keywords: notification,task,completion,function,long-running
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: plyer
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# Herald of Completion
+
+Hark! The herald of completion has arrived ... to let you know when your long-running tasks are done.
