@@ -1,0 +1,11 @@
+mutwo.core<2.0.0,>=1.0.0
+epitran<2.0.0,>=1.23
+sympy<2.0.0,>=1.10.1
+gradient-free-optimizers<2.0.0,>=1.0.7
+
+[ortools]
+ortools<10.0,>=9.4
+
+[testing]
+pytest>=7.1.1
+mutwo.common<1.0.0,>=0.11.0
