@@ -1,0 +1,13 @@
+README.md
+setup.py
+gpt4_command_executor/__init__.py
+gpt4_command_executor/config.py
+gpt4_command_executor/copilot_cli.py
+gpt4_command_executor/executor.py
+gpt4_command_executor/gpt3.py
+gpt4_command_executor.egg-info/PKG-INFO
+gpt4_command_executor.egg-info/SOURCES.txt
+gpt4_command_executor.egg-info/dependency_links.txt
+gpt4_command_executor.egg-info/entry_points.txt
+gpt4_command_executor.egg-info/requires.txt
+gpt4_command_executor.egg-info/top_level.txt

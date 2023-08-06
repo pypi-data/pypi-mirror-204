@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: gpt4-command-executor
+Version: 0.1
+Summary: A package that uses GPT-4 to execute commands
+Author: Kacper Bąk
+Author-email: contact@kacperbak.pl
