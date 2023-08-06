@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: micromechanics-indentationGUI
+Version: 0.0.37
+Summary: GUI for nanoindentation data
+Home-page: https://micromechanics.github.io/
+Author: Micromechanics Team and Weiguang Yang
+Author-email: sbrinckm@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE
+Requires-Dist: matplotlib (>=3.6.3)
+Requires-Dist: micromechanics (>=1.1.13)
+Requires-Dist: numpy
+Requires-Dist: openpyxl (>=3.1.1)
+Requires-Dist: pandas (>=1.4.2)
+Requires-Dist: pyside6 (==6.4.2)
+
+# Install
+highly recommend: installing in a new environment (python >= 3.8) created by Anaconda (https://www.anaconda.com/)
+
+In the terminal, keyboard type the following command and press Enter
+``` bash
+pip install micromechanics-indentationGUI
+```
+# Upgrade
+In the terminal, keyboard type the following command and press Enter
+``` bash
+pip install --upgrade micromechanics-indentationGUI
+```
+# Usage
+In the terminal, keyboard type the following command and press Enter
+``` bash
+micromechanics-indentationGUI
+``` 
+# Uninstall
+In the terminal, keyboard type the following command and press Enter
+``` bash
+pip uninstall micromechanics-indentationGUI
+```
+
+# More detailed descriptions for developers
+
+# Prepare and create a new version
+Test the code: linting, documentation and then the tests from the project's main directory
+``` bash
+pylint micromechanics_indentationGUI/
+make -C docs html
+# python tests/testVerification.py
+```
+
+Then upload/create-pull-request to GitHub, via
+``` bash
+./commit.py 'my message'
+```
+
+
