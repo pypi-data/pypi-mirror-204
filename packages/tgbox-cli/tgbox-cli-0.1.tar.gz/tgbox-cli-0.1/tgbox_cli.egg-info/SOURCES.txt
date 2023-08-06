@@ -1,0 +1,10 @@
+README
+setup.py
+tgbox_cli.py
+tgbox_cli_tools.py
+tgbox_cli.egg-info/PKG-INFO
+tgbox_cli.egg-info/SOURCES.txt
+tgbox_cli.egg-info/dependency_links.txt
+tgbox_cli.egg-info/entry_points.txt
+tgbox_cli.egg-info/requires.txt
+tgbox_cli.egg-info/top_level.txt
