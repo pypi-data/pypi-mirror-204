@@ -1,0 +1,3 @@
+[console_scripts]
+dedomenon=dedomenon.__cli__:main
+
