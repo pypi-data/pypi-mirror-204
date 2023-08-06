@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+pyproject.toml
+setup.cfg
+setup.py
+src/featurizerai/__init__.py
+src/featurizerai.egg-info/PKG-INFO
+src/featurizerai.egg-info/SOURCES.txt
+src/featurizerai.egg-info/dependency_links.txt
+src/featurizerai.egg-info/requires.txt
+src/featurizerai.egg-info/top_level.txt
+src/featurizerai/features/FeatureStore.py
+src/featurizerai/features/__init__.py
+src/featurizerai/features/featurestore.py
+tests/test_module1.py
