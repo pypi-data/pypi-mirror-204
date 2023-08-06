@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "chainfury"
+version = "0.0.1a"
+description = "ChainFury from NimbleBox"
+authors = ["Yash Bonde <yash@nimblebox.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
