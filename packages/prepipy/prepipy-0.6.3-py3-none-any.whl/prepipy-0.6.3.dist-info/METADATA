@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: prepipy
+Version: 0.6.3
+Summary: Provides the ability to stretch and combine astronomical images from multiple bands into (RGB) colour images.
+Home-page: https://github.com/teutoburg/prepipy
+License: GPL-3.0-or-later
+Author: Fabian Haberhauer
+Author-email: fabian.haberhauer@univie.ac.at
+Maintainer: teutoburg
+Maintainer-email: ghost@instruct.at
+Requires-Python: >=3.9,<4.0
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Typing :: Typed
+Requires-Dist: Pillow (>=9.4,<10.0)
+Requires-Dist: astropy (>=5.1,<6.0)
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: matplotlib (>=3.7,<4.0)
+Requires-Dist: numpy (>=1.23,<2.0)
+Requires-Dist: regions (>=0.6,<0.7)
+Requires-Dist: ruamel.yaml (>=0.17.21,<0.18.0)
+Requires-Dist: tqdm (>=4.64,<5.0)
+Project-URL: Repository, https://github.com/teutoburg/prepipy
+Description-Content-Type: text/markdown
+
+# prepipy
+
+PREtty PIctures using PYthon
+
+## Overview
+
+This package provides the ability to stretch and combine astronomical images from multiple bands into (RGB) colour images.
+
+Images can be created in two main modes:
+- JPEG image containing only the image in the pixel scale of the input, including coordinate information readable by e.g. [Aladin](https://aladin.u-strasbg.fr/).
+- Matplotlib image containing one ore more RGB conmibations from different bands in a grid layout. World coordinate axes are plotted on the images if available in the original input files. An additional sup-header containing the source name can be included. This mode also supportes multiple different options, such as plotting grid lines on top of the image, marking the center point in the image, of marking additional points of interest within the image, specified by world coordinates. By default, these images are saved in the pdf format.
+
+![Example colour image of a star-forming region](https://nemesis.univie.ac.at/wp-content/uploads/2023/02/83.52054-5.39047.jpeg "Example image created using prepipy, centered around coordinates 83.52054, -5.39047.")
+
+
+## Basic Usage
+
+### JPEG mode
+
+Current way to use from command line: run `rgbcombo.py` with arguments as described in the help message.
+
+### Matplotlib mode
+
+TBA
+
+### Input data
+
+The input images are expected to fullfill the following criteria:
+- FITS format images with the images data appearing in the primary HDU.
+- Pixel scale and position matching across all input images. No additional resampling/reprojection is performed.
+- WCS information is present in the FITS files.
+
+### Setting options
+
+The package currently uses two YAML configuration files to specify various options. These are referred to as the (general) `config` file and the `bands` file containing meta-information about the bands used in the original data.
+If these files are not placed in the working directory, the path to them needs to be specified using the `-c` and `-b` command line options.
+
