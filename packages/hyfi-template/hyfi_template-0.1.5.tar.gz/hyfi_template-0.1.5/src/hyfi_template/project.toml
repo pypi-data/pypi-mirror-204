@@ -1,0 +1,6 @@
+[metadata]
+name = "hyfi-template"
+description = "A GitHub Template Repository for HyFI-based Projects"
+authors = ["Young Joon Lee <entelecheia@hotmail.com>"]
+license = "MIT"
+homepage = "https://entelecheia.github.io/hyfi-template"
