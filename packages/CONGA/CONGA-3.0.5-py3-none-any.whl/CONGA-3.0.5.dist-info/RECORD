@@ -1,0 +1,13 @@
+CONGA/__init__.py,sha256=B-A0CBRMtAhJExKHuXWIQQBwbT-cl0cDBCy7eiHxclE,70
+CONGA/__main__.py,sha256=PapgxOSsPM1xKjo4qexq24x2lllSW4_ZUgNSKjTIwiA,61600
+CONGA/version.py,sha256=-jrgErJPbi8U5D-hJxXhJpa14PdOSzi_Y64Dz_ESYQE,497
+CONGA/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CONGA/tests/unit_test.py,sha256=zCEm9v5dNSHyFHIvxusBVDGENHAh6mKNch4oWXCkBrU,5924
+CONGA/utils/CONGA_functions.py,sha256=Iisg_ezwAJX1WJL3uulv6z3u0NZebeBy5aJitFdz3SM,70087
+CONGA/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CONGA/utils/peptides.py,sha256=wM_O77ddukteKX8FZHst1fM_maUxvTSNTYPMuXOaSfk,32362
+CONGA-3.0.5.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+CONGA-3.0.5.dist-info/METADATA,sha256=luVXlG-cSXOBVNm_M9rpzw1l5VfIPmW15zIqpNyL1t0,2832
+CONGA-3.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+CONGA-3.0.5.dist-info/top_level.txt,sha256=u3crPTvyS0pge1K1SuV-KFavebo56nc6_eVhy8tnSPE,6
+CONGA-3.0.5.dist-info/RECORD,,
