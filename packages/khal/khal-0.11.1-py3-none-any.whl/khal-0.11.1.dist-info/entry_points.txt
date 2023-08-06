@@ -1,0 +1,3 @@
+[console_scripts]
+ikhal = khal.cli:main_ikhal
+khal = khal.cli:main_khal
