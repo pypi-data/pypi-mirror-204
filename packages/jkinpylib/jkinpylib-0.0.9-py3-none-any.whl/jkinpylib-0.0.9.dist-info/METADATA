@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: jkinpylib
+Version: 0.0.9
+Summary: Jeremy's Kinematics Python Library
+Home-page: https://github.com/jstmn/jkinpylib
+Author: Jeremy Morgan
+Author-email: jsmorgan6@gmail.com
+License: LICENSE.txt
+Platform: UNKNOWN
+Requires-Dist: klampt
+Requires-Dist: more-itertools
+Requires-Dist: numpy
+Requires-Dist: roma
+Requires-Dist: torch
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: PyQt5 (==5.15.7) ; extra == 'dev'
+Requires-Dist: black (==22.12.0) ; extra == 'dev'
+Requires-Dist: jupyter (==1.0.0) ; extra == 'dev'
+Requires-Dist: kinpy (==0.2.0) ; extra == 'dev'
+Requires-Dist: matplotlib (==3.6.2) ; extra == 'dev'
+Requires-Dist: pandas (==1.5.3) ; extra == 'dev'
+Requires-Dist: pylint (==2.15.9) ; extra == 'dev'
+Requires-Dist: tabulate (==0.9.0) ; extra == 'dev'
+Requires-Dist: torchviz (==0.0.2) ; extra == 'dev'
+
+# Jkinpylib
+
+'Jeremy's kinematics python library'. This library runs forward and inverse kinematics in parrallel on the gpu/cpu using pytorch. It also can call single value FK/IK solvers from Klamp't
+
+Note: This project uses the `w,x,y,z` format for quaternions.
+
+## Installation
+
+Recommended: clone the repo and install with pip
+```
+git clone https://github.com/jstmn/jkinpylib.git && cd jkinpylib/
+pip install -e .
+# or:
+pip install -e ".[dev]"
+```
+
+Second option: Install from pypi (not recomended - the pypi version will likely be out of date until this project hardens)
+``` bash
+pip install jkinpylib
+```
+
+## Batch IK stats
+
+function name  | library used  | jacobian function | inverse method | runtime for 10 | runtime for 100
+-------------  | ----------------- | ----------------- | -------------- | -------------- | ---------------
+inverse_kinematics_single_step_batch_np | numpy   | klampt jacobian   | pseudo-inverse | -1  | -1
+
+
+
+## Todos
+- [x] Remove `fix_urdf.py` hackery - don't change joint types. Maintain the original urdf, save a formatted one with minor tweaks
+- [x] Add additional robots (from the ikflow repo)
+- [x] batched IK optimization steps
+
