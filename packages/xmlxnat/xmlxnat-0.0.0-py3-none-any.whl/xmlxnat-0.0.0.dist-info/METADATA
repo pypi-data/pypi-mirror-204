@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: xmlxnat
+Version: 0.0.0
+Summary: XML parsing tools used in Keenan's XNAT toolbox.
+Author-email: "Keenan W. Wilkinson" <keenanwilkinson@outlook.com>
+License: MIT
+Keywords: xml,parsing
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10.0
+License-File: LICENSE.txt
+Requires-Dist: python-dateutil (==2.8.2)
+
