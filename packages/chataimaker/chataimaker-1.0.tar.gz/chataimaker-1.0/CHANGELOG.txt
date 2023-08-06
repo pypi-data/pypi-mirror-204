@@ -1,0 +1,4 @@
+CHANGELOG
+==========================
+v1.0:
+- chataimaker.chat(query) function (gives answer to any query)
