@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "lecture-automator"
+version = "0.2.0"
+description = ""
+authors = ["CapBlood <stalker.anonim@mail.ru>"]
+readme = "README.md"
+homepage = "https://github.com/CapBlood/lecture-automator.git"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+ffmpeg-python = "^0.2.0"
+torch = "^2.0.0"
+numpy = "^1.24.2"
+click = "^8.1.3"
+
+[tool.poetry.dev-dependencies]
+tox = "^4.4.11"
+pytest = "^7.3.0"
+
+[tool.poetry.extras]
+test = ["pytest"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+# Дополнительные настройки pytest - для расчёта процентного покрытия тестами пакета multirec
+[tool.pytest.ini_options]
+addopts = """
+--cov-report term-missing \
+--cov src/lecture_automator -ra"""
+
+# Дополнительные настройки для покрытия
+[tool.coverage.report]
+fail_under = 0
+show_missing = true
+exclude_lines = ["pragma: no cover", "raise NotImplementedError"]
+
+
+[project.urls]
+"Homepage" = "https://github.com/CapBlood/lecture-automator.git"
+
+# консольные утилиты
+[tool.poetry.scripts]
+lecture-automator = "lecture_automator.cli:convert_md_to_mp4"
