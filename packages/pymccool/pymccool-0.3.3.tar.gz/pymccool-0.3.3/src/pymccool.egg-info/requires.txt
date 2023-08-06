@@ -1,0 +1,5 @@
+colorlog
+mock
+opentelemetry-exporter-otlp-proto-grpc
+opentelemetry-exporter-otlp-proto-http
+python-logging-loki
