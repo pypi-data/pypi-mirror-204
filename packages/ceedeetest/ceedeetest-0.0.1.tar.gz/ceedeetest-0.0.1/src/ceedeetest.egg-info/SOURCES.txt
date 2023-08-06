@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+src/ceedeetest.egg-info/PKG-INFO
+src/ceedeetest.egg-info/SOURCES.txt
+src/ceedeetest.egg-info/dependency_links.txt
+src/ceedeetest.egg-info/requires.txt
+src/ceedeetest.egg-info/top_level.txt
