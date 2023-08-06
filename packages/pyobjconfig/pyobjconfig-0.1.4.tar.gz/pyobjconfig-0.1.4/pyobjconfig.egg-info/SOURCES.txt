@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pyobjconfig/__init__.py
+pyobjconfig/common.py
+pyobjconfig/torch.py
+pyobjconfig.egg-info/PKG-INFO
+pyobjconfig.egg-info/SOURCES.txt
+pyobjconfig.egg-info/dependency_links.txt
+pyobjconfig.egg-info/requires.txt
+pyobjconfig.egg-info/top_level.txt
+test/test_pyobjconfig.py
