@@ -1,0 +1,17 @@
+flowws
+flowws-keras-experimental
+freud-analysis
+garnett
+geometric-algebra-attention
+gtar
+pyriodic-structures
+rowan
+
+[analysis]
+plato-draw
+pynndescent
+scikit-learn
+umap-learn
+
+[pyriodic]
+pyriodic-aflow
