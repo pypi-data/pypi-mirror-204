@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+setup.py
+dxnesici/__init__.py
+dxnesici/alg.py
+dxnesici.egg-info/PKG-INFO
+dxnesici.egg-info/SOURCES.txt
+dxnesici.egg-info/dependency_links.txt
+dxnesici.egg-info/requires.txt
+dxnesici.egg-info/top_level.txt
