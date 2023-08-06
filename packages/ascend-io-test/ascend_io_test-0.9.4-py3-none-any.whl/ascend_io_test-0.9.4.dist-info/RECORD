@@ -1,0 +1,9 @@
+ascend_io_test/framework/__init__.py,sha256=ZVId5erze0HbzFlbcUg6W7LtBXAdn6PdJMEaRGoaHMo,326
+ascend_io_test/framework/ascend_pyspark_transform.py,sha256=Fip0pMdfFY1MHml_2FjEgK7X4IA4sEI1T6JlxilNiI0,5011
+ascend_io_test/framework/ascend_python_bytestream_read_connector.py,sha256=0Bh5xok4GeTmMeOP6XyWnDdyVTxofIHzwKoso1HbrmM,1773
+ascend_io_test/framework/ascend_python_read_connector.py,sha256=2TP8MzFrZh7Kh6mZWG2ZViSZL55dci2Nu3H6BhQW4qU,4848
+ascend_io_test-0.9.4.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ascend_io_test-0.9.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+ascend_io_test-0.9.4.dist-info/METADATA,sha256=Njg3PcqXqfWOBbb9e5pZCZ7edoF6qeq1SYxRAx3mjRA,5725
+ascend_io_test-0.9.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ascend_io_test-0.9.4.dist-info/RECORD,,
