@@ -1,0 +1,6 @@
+opencv-python
+numpy
+pyqt5
+moviepy
+astropy
+scipy
