@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ripio-client"
+version = "0.0.3"
+authors = [
+  { name="Sebastian Serrano", email="sebastian@ripio.com" },
+]
+description = "Ripio Client for Python"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  'requests >= 2.28.0',
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ripio/ripio-client-python"
+"Bug Tracker" = "https://github.com/ripio/ripio-client-python/issues"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["ripio"]
+
+[tool.black]
+line-length = 79
+target-version = ['py310']

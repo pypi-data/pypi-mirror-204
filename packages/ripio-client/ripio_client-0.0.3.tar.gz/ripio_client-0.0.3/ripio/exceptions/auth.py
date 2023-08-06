@@ -1,0 +1,2 @@
+class UnathorizedClient(Exception):
+    pass
