@@ -1,0 +1,2 @@
+[console_scripts]
+unicodeitplus = unicodeitplus.cli:main

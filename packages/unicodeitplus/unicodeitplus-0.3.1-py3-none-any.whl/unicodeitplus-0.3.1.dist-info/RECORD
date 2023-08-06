@@ -1,0 +1,12 @@
+unicodeitplus/__init__.py,sha256=m2lTICt8btX5Y-9gtSQ892zFZ6l7-NXCfB3m8bET2Ks,489
+unicodeitplus/_make_data.py,sha256=OMUnUy--COStc-X5WfXjrID35o8YgcDvBbVdCofI2og,5929
+unicodeitplus/cli.py,sha256=HDlvVVL0Z-6gKmIoFldAB3Xmg_mFDPO03HgrXmDn5mo,601
+unicodeitplus/data.py,sha256=W03lpY_ldpbRRvEl5MKnzDBDk7d9FLeq0_aYHTysRBg,69773
+unicodeitplus/parser.py,sha256=GBAxi2nLSan_ds3gs-XWJ7eb_k72BMum31IpuVZZ-Q8,614
+unicodeitplus/transform.py,sha256=nytx8pzqKh-gs9fMWpsHAtn4nKKyCFN9vNTj8-060jo,5129
+unicodeitplus-0.3.1.dist-info/LICENSE,sha256=isFWDvCGXAPEDQMWa_0_f7Vs9guJ6y0yAqkVrI3TFJA,1787
+unicodeitplus-0.3.1.dist-info/METADATA,sha256=sryqn8fqKXSo3CwqQsO-P7-uVr0IkiKuLOpAOCxA-J8,4350
+unicodeitplus-0.3.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+unicodeitplus-0.3.1.dist-info/entry_points.txt,sha256=cXHFcUCBY1k4yeuxxUe48OvWpVbp8msNKlukw4avuN0,57
+unicodeitplus-0.3.1.dist-info/top_level.txt,sha256=VqOW0riumQ3_s1kIOLwFVM6IvrJpLOl7b2Q0GI8ZB6U,14
+unicodeitplus-0.3.1.dist-info/RECORD,,
