@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "aio-spamwatch"
+version = "0.0.6"
+description = "An asynchronous Python wrapper for the SpamWatch API."
+authors = ["NachABR <nachabr@protonmail.com>"]
+license = "LGPLv3"
+homepage = "https://github.com/NachABR/aio-spamwatch"
+repository = "https://github.com/NachABR/aio-spamwatch.git"
+keywords = ["spamwatch", "asynchronous", "aiohttp", "telegram"]
+readme = "README.md"
+
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = ">=3.7"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.17.2"
+bump2version = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
