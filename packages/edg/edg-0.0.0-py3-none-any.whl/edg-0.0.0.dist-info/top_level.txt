@@ -1,0 +1,8 @@
+edg
+edg_core
+edg_hdl_server
+edgir
+edgrpc
+electronics_abstract_parts
+electronics_lib
+electronics_model
