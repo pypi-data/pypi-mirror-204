@@ -1,0 +1,16 @@
+kasearch/__init__.py,sha256=ipZdHa0nXJowRS5p6PNlmXtC5LcbOOIwa0AgTxCrLSM,287
+kasearch/align_sequences.py,sha256=qGVmR2cTmjfhbuO3zV5_lAWYeBJlD6O9OZBCmBzpmvI,2626
+kasearch/anarci_numbering.py,sha256=EPTZhS824iRlKYf7if4ssVrZ1MKBw4RQIOmuIgIn1Pg,1799
+kasearch/canonical_alignment.py,sha256=7cDXNKZm5l8uhFvVmdZjHujGPjBki5kqyUmgXw9rmew,5928
+kasearch/easy_search.py,sha256=zuTy5FYgQddMrk-JI9ihGBhwqRymqm8hqTnHpiXG6_Q,2006
+kasearch/identity_calculations.py,sha256=shBiL_0RxmqK9AZjXnN5mo-Jv8GCkpclmwX5tAIlVE4,7051
+kasearch/initiate_db.py,sha256=EfTva-0C2iHRU1RFONCNha7IHXCgr7sTgd93bTU1YPw,3091
+kasearch/kasearch.py,sha256=NMzD7URRPldHvr8sO3qmSu-e-MqZhsvaXkn2ejRgDPU,6499
+kasearch/merge_db.py,sha256=mKlTsK7qiBD63R-idFjy50tRVt20titmdyYNhYstZiE,2647
+kasearch/meta_extract.py,sha256=r9nNmAyUwQKnO8-F2JHOSPpYNUSeFigGzWAJIUey-_U,2939
+kasearch/prepare_db.py,sha256=N2Gnp2n39sZ25LoxuMZrg5MHvcHgrXd18sgc3rRNzvg,5341
+kasearch-0.0.18.dist-info/LICENSE,sha256=hdB_iO5A0rxGjn8Ppg1a0CnKlRwiCzo6-MD5_Ycr8Zk,1529
+kasearch-0.0.18.dist-info/METADATA,sha256=V3IlCZCxM1A-6kc7QVDHhrxiqMxjFa900J9tAMeovOY,12338
+kasearch-0.0.18.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+kasearch-0.0.18.dist-info/top_level.txt,sha256=1AcL5euDORezGwwbqUjHc4b6eKpNrhXD1rimF4vkqAE,9
+kasearch-0.0.18.dist-info/RECORD,,
