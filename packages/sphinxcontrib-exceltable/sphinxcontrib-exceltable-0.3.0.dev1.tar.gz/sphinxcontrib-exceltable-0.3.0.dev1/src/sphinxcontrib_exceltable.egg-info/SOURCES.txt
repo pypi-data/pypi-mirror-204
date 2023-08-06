@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/sphinxcontrib/exceltable/__init__.py
+src/sphinxcontrib_exceltable.egg-info/PKG-INFO
+src/sphinxcontrib_exceltable.egg-info/SOURCES.txt
+src/sphinxcontrib_exceltable.egg-info/dependency_links.txt
+src/sphinxcontrib_exceltable.egg-info/not-zip-safe
+src/sphinxcontrib_exceltable.egg-info/requires.txt
+src/sphinxcontrib_exceltable.egg-info/top_level.txt
+test/test_exceltable.py

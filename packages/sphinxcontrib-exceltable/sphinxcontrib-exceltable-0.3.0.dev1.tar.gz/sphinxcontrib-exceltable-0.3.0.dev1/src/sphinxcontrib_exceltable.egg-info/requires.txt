@@ -1,0 +1,6 @@
+Sphinx>=5
+xlrd
+docutils
+
+[test]
+pytest
