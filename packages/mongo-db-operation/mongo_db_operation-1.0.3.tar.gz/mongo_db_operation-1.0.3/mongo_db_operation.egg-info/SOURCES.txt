@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+mongo_db_operation.egg-info/PKG-INFO
+mongo_db_operation.egg-info/SOURCES.txt
+mongo_db_operation.egg-info/dependency_links.txt
+mongo_db_operation.egg-info/requires.txt
+mongo_db_operation.egg-info/top_level.txt
+src/mongo_db_operation/__init__.py
+src/mongo_db_operation/environment.py
+src/mongo_db_operation/mongo_client.py
