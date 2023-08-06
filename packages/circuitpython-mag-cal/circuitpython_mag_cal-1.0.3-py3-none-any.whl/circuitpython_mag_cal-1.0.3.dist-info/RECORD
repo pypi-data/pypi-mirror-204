@@ -1,0 +1,13 @@
+mag_cal/__init__.py,sha256=h-AcVrAA-Rp4UgJ88Q4CgAxYEZw6XB87ofFp4flyOJg,1020
+mag_cal/axes.py,sha256=1W_wImt16qZW13xBv83Z_fVKEPUkkph8h82dsCGZdtM,3061
+mag_cal/calibration.py,sha256=roZXGhq9HbsT20t-cgnY_n7Dn4cZ07uO5WRQJ5bpMV8,20272
+mag_cal/lstsq.py,sha256=uCoMk6uYsczYdOZ2svW-ZEfvX1on-I5ECeJv-xQlpas,3679
+mag_cal/nm.py,sha256=fT7_S8t7l8J9S1VoF-a0TKiTEuhoXtzk0wuJoCybEXo,7326
+mag_cal/rbf.py,sha256=9aGIUcpHXOpxxsr_bBziGdl1juoIoF_1UfJv2KKf1H8,1554
+mag_cal/sensor.py,sha256=5BFtN1iqQQvoSM9x-4N_mkFjw0OuCJrHfBpzsda8K9g,8747
+mag_cal/utils.py,sha256=306g3891sZPbFeRZwDuyUXMm1BJCUF9a7LuVFn70IoE,2544
+circuitpython_mag_cal-1.0.3.dist-info/LICENSE,sha256=-b7JrmdZPZGpnTnRelh9svCprR2GH34-pJ_Oma6JrcI,1107
+circuitpython_mag_cal-1.0.3.dist-info/METADATA,sha256=EiGzmfU56uihvsoc8WUxUhylcdxiD-kq1kgnFnpJWPQ,4252
+circuitpython_mag_cal-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+circuitpython_mag_cal-1.0.3.dist-info/top_level.txt,sha256=y9COfR2OS9hBKpQogALCqO8QRBCoLxj5vTXJeI0k2oQ,8
+circuitpython_mag_cal-1.0.3.dist-info/RECORD,,
