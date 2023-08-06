@@ -1,0 +1,16 @@
+aliendev_cdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aliendev_cdk/config/mongo.py,sha256=H4R837rq3AsuBBXBhSHaleqwBZq5jGjAGkCNMobME_g,480
+aliendev_cdk/config/rabbit.py,sha256=TVhJCQ_npB2geaRVtmNe-cHolAvsIySghVsnRuiONrY,744
+aliendev_cdk/main.py,sha256=DQ3DWcXYDy2sL1DDIyHojjaU2D_PDtsT2gxaLruq2E8,609
+aliendev_cdk/service/deployService.py,sha256=mBZA4tijquXHFTVB-SJoW1f8GvOa6VWPdqtDXUi9YtQ,1581
+aliendev_cdk/service/loginService.py,sha256=J-ga_PEMC3kjq8M2hBe_uY-ycko8xDbvA0bIYMnwJbc,1237
+aliendev_cdk/service/registerService.py,sha256=S3vj2jGkKpXFT6rx9GZ7Qs3r9D1-9qt_gjHzKb1590w,1193
+aliendev_cdk/service/template/README.md,sha256=qpDhscjxrgnFUnU1ska38xyjy9zuZJUo0x2_WqEdbQU,25
+aliendev_cdk/service/template/helper/test_get.py,sha256=VnhMztCTELZs8np4hrmTW50vuQmdXoAgYsQfT3iCaAI,38
+aliendev_cdk/service/template/helper/test_post.py,sha256=IMIEgV4WoSJyqCvBfC_SNsuKNQ0UWJMDRe59dhAAoGU,128
+aliendev_cdk/service/template/lib/stack.py,sha256=di7rCW986e9SmPr6iTqredykXXfTKwP9Hd4bmj-HJ9A,368
+aliendev_cdk/service/templateService.py,sha256=klDp4xCgC4CRpzn1SSM0kZ0OeyAP120Afa_eZMQwi_Q,1516
+aliendev_cdk-0.1.32.dist-info/METADATA,sha256=mclksnNu6ATyr6cUVJWk6_7J3soIteDC59dwOAqJjMg,655
+aliendev_cdk-0.1.32.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+aliendev_cdk-0.1.32.dist-info/entry_points.txt,sha256=njrq82oLZQAteVehX6QJTlVpctEW5GaNpjte7oFshJI,54
+aliendev_cdk-0.1.32.dist-info/RECORD,,
