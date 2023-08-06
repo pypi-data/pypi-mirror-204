@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "chatgpt-utils"
+version = "0.1.1"
+description = ""
+authors = ["Teddy Xinyuan Chen <45612704+tddschn@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{ include = "chatgpt_utils" }]
+license = "MIT"
+homepage = "https://github.com/tddschn/chatgpt-utils"
+repository = "https://github.com/tddschn/chatgpt-utils"
+classifiers = ["Topic :: Utilities"]
+keywords = ["chatgpt"]
+[tool.poetry.scripts]
+# chatgpt-exported-conversations-json-to-typingmind-json = "chatgpt_utils.chatgpt_exported_conversations_json_to_typingmind_json:main"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/tddschn/chatgpt-utils/issues"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+better-exceptions = "^0.3.3"
+ipython = "^8.12.0"
+ipykernel = "^6.22.0"
+rich = "^13.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
