@@ -1,0 +1,11 @@
+upytl/__init__.py,sha256=9KB-N04C8lgDOsyAMyNXUZfb1PfPTUCpM4IC8OLBE4k,468
+upytl/bulma.py,sha256=coYGa0iDDTVoOrw_XZFFIGKviRGS2SR1MHV14ty6QSk,9526
+upytl/core.py,sha256=vBXIEV5s3wnPvzgZrLhJ56TTZ3_GXWZZk6FxLlphPc8,27635
+upytl/helpers.py,sha256=p5RoiENGgsLLDMNzANl0bgvYrTJnVwiOeFul3soG12c,6114
+upytl/html.py,sha256=q5XnJpJIMdvyCLP_x2TFmZytaSlNpq44v-S2FI2OlK8,1682
+upytl/xtemplate.py,sha256=V0gff_0F-lHYyVrbW-HhvUNwGUHxu5_JsW53fyvUVbI,852
+upytl-0.0.9.dist-info/LICENSE,sha256=TwL2vm6F3AeDxsuPY046Z-eNiO71wxTwetGXt7cSWXM,1114
+upytl-0.0.9.dist-info/METADATA,sha256=5UoaFrMU9HhextYOC7Lcg2tPbuQf1xyvu0Kyz9CO_hM,2341
+upytl-0.0.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+upytl-0.0.9.dist-info/top_level.txt,sha256=lowY5AtqaXXRoLm-b0M77jCEaXH6xRu4czPGlgR9YLE,6
+upytl-0.0.9.dist-info/RECORD,,
