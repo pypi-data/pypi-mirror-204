@@ -1,0 +1,3 @@
+[console_scripts]
+promptest = promptest.main:main
+
