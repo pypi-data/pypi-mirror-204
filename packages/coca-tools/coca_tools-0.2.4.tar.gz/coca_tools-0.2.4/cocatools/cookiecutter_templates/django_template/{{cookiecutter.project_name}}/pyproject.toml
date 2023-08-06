@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "{{cookiecutter.project_name}}"
+version = "0.1.0"
+description = "{{cookiecutter.project_short_description}}"
+authors = ["NhanDD"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2"
+djangorestframework = "^3.14.0"
+djangorestframework-simplejwt = "^5.2.2"
+redis = "^4.5.4"
+pydantic = {extras = ["dotenv"], version = "^1.10.7"}
+celery = "^5.2.7"
+django-celery-beat = "^2.5.0"
+django-celery-results = "^2.5.0"
+markdown = "^3.4.3"
+django-filter = "^23.1"
+psycopg2 = "^2.9.6"
+gunicorn = "^20.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

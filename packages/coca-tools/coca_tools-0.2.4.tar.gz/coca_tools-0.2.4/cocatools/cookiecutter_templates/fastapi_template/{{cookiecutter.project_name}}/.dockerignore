@@ -1,0 +1,30 @@
+.venv/
+**/.venv/
+
+**/log/
+log/
+
+**/data/
+data/
+
+**/docker_log/
+docker_log/
+
+**/unused/
+unused/
+
+**/venv/
+venv/
+
+**/app_static/
+app_static/
+
+
+# **/static/
+# static/
+
+**/.vscode/
+.vscode
+
+
+poetry.lock

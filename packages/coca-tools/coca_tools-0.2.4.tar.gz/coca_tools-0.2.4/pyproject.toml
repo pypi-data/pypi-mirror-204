@@ -1,0 +1,73 @@
+[tool.poetry]
+name = "Coca-tools"
+version = "0.2.4"
+description = ""
+authors = ["NhanDD <hp.duongducnhan@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cocatools"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+django = "^4.2"
+djangorestframework = "^3.14.0"
+celery = "^5.2.7"
+fastapi = "^0.95.1"
+uvloop = "^0.17.0"
+pydantic = {extras = ["dotenv"], version = "^1.10.7"}
+mypy = "^1.2.0"
+pre-commit = "^3.2.2"
+pylint = {extras = ["spelling"], version = "^2.17.2"}
+pytest = "^7.3.1"
+pytest-asyncio = "^0.21.0"
+bump2version = "^1.0.1"
+mkdocs = "^1.4.2"
+mkdocstrings = "^0.21.2"
+mkdocs-material = "^9.1.6"
+mkdocs-autorefs = "^0.4.1"
+mkdocs-monorepo-plugin = "^1.0.4"
+mkdocs-glightbox = "^0.3.2"
+psutil = "^5.9.4"
+cookiecutter = "^2.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+welcome = "cocatools:welcome"
+create-fastapi-app = "cocatools:create_fastapi_app"
+create-django-app = "cocatools:create_django_app"
+
+
+
+
+
+[tool.black]
+line-length = 120
+skip-string-normalization = true
+target-version = ['py37', 'py38', 'py39', 'py310']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]

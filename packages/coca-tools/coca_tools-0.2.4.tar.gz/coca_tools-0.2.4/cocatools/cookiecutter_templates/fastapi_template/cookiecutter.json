@@ -1,0 +1,25 @@
+{
+    "project_name": "Name of the project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "project_short_description": "A short description of the project",
+    "author_name": "NhanDD3",
+    "email": "hp.duongducnhan@gmail.com",
+
+    "enable_api_app": ["yes", "no"],
+    "api_app_mount_path": "/api",
+
+    "enable_ws_app": ["yes", "no"],
+    "ws_app_mount_path": "/ws",
+    "ws_socketio_path": "socket.io",
+
+    "host": "0.0.0.0",
+    "port": 5000,
+    "domain": "",
+
+    "use_mongo_database":  ["yes", "no"],
+    "use_redis":  ["yes", "no"],
+
+    "use_proxy": ["yes", "no"],
+    "proxy_address": "http://proxy.hcm.fpt.vn:80",
+    "no_proxy": "localhost, 127.0.0.1"
+}
