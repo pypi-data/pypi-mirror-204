@@ -1,0 +1,10 @@
+rbcl-1.0.0.data/purelib/rbcl/__init__.py,sha256=PpPBRH4HnK0yfnUKUAxKFLmgmW0pCJwdZj-rmqh2lgo,1246
+rbcl-1.0.0.data/purelib/rbcl/_sodium.py,sha256=lg6G7M5sRqbpIfWrxO89GTxtVHx5TL7UNRxUsWrUtxU,1699450
+rbcl-1.0.0.data/purelib/rbcl/_sodium.tmpl,sha256=aEHrFLV8t-NwN7M24o_TN38j0NO2xfYsJPEqvNl1nkM,1098
+rbcl-1.0.0.data/purelib/rbcl/_sodium_build.py,sha256=ZLtVNwpIovz9Sxvc5GKqg3LkIy0wF9-YTVME3lBzGe4,9780
+rbcl-1.0.0.data/purelib/rbcl/rbcl.py,sha256=hSwtQhbGVa8UHr5NWWXWsKn2d_8BrAoDf3bC8kwFlDs,32815
+rbcl-1.0.0.dist-info/LICENSE,sha256=TRMIjMu2j1ktlBel27jwJ6GKuqA1jMd5m_veUV0WPIE,1072
+rbcl-1.0.0.dist-info/METADATA,sha256=Ce4zFZ5akljlkH2yiSQtyB5MXSw6HKfonHKhQhHpBYc,9729
+rbcl-1.0.0.dist-info/WHEEL,sha256=RKgOnjgpBtxDhJ-WEvxj_oqZpPpaqHP8ViX_pZaiNLc,113
+rbcl-1.0.0.dist-info/top_level.txt,sha256=esn70H44ipLDr6VUwvUs07Rcdi-fse8dMllW4idhUCk,5
+rbcl-1.0.0.dist-info/RECORD,,
