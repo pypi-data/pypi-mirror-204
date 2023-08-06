@@ -1,0 +1,2 @@
+[console_scripts]
+swagroutes = swagroutes.__main__:main

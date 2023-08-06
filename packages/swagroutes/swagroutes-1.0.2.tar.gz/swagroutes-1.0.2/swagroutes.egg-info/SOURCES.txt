@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+swagroutes/__init__.py
+swagroutes/__main__.py
+swagroutes/cli.py
+swagroutes/extractor.py
+swagroutes.egg-info/PKG-INFO
+swagroutes.egg-info/SOURCES.txt
+swagroutes.egg-info/dependency_links.txt
+swagroutes.egg-info/entry_points.txt
+swagroutes.egg-info/requires.txt
+swagroutes.egg-info/top_level.txt
+tests/__init__.py
+tests/test_extractor.py
