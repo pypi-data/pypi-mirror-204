@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ghastoolkit
+Version: 0.1.1
+Summary: GitHub Advanced Security Python Toolkit
+Author: GeekMasher
+Project-URL: Homepage, https://github.com/GeekMaher/ghastoolkit
+Project-URL: Bug Tracker, https://github.com/GeekMaher/ghastoolkit/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ghastoolkit
+GitHub Advanced Security Toolkit
