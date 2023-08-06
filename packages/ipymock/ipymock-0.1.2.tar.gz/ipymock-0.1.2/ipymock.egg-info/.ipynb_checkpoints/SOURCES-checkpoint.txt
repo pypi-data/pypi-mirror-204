@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+ipymock.egg-info/PKG-INFO
+ipymock.egg-info/SOURCES.txt
+ipymock.egg-info/dependency_links.txt
+ipymock.egg-info/not-zip-safe
+ipymock.egg-info/requires.txt
+ipymock.egg-info/top_level.txt
+ipytest/__init__.py
+ipytest/_nbdev.py
+ipytest/mock.py
