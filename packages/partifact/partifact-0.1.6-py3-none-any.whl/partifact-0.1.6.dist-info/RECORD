@@ -1,0 +1,10 @@
+partifact/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+partifact/auth_token.py,sha256=KVbUOzhmNoV_mCQGxPPIDnrZRPqpNtg56QQQqYi9obs,1450
+partifact/config.py,sha256=kO6S1oA7QDYMhPPl2hHXzr4Nr8YoHGyhleevagXW9t0,3698
+partifact/main.py,sha256=wl5XbHAIfyR26I08Gbc34b7amlyBSTPtCUxNnC1UG6c,1065
+partifact/shell_commands.py,sha256=PoC3T-G23Y3Q00EYZ_wwBkwt5gDFeK5RhsWVy1HclbU,2067
+partifact-0.1.6.dist-info/LICENSE,sha256=E4kf3SAEednje6WqqTidK_lZ5onmKt6RElBpjOn9GtY,1080
+partifact-0.1.6.dist-info/METADATA,sha256=fM79GImM9T90HY5MY0ZEgqfuHpgLqNoscIPSE4qR3BA,2930
+partifact-0.1.6.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+partifact-0.1.6.dist-info/entry_points.txt,sha256=1t5EOs67PEUgUz42Mjg47A-78kx4dgLL1aBezu-osRg,48
+partifact-0.1.6.dist-info/RECORD,,
