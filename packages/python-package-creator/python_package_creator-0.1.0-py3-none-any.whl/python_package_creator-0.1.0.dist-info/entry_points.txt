@@ -1,0 +1,3 @@
+[console_scripts]
+ppc=python_package_creator:create_project
+
