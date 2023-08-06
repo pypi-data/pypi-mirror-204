@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: img-host
+Version: 0.1.0
+License: MIT
+Author-email: levch <levchenko.d.a1998@gmail.com>
+Requires-Python: >=3.10
+Requires-Dist: httpx>=0.24.0
+Requires-Dist: parsenv>=0.1.3
+Requires-Dist: pillow>=9.5.0
+Description-Content-Type: text/markdown
+
+Helps you to download, crop and reupload new photo to [vgy.me](https://vgy.me)
+
+Requires `VGY_KEY` environment variable.
+
