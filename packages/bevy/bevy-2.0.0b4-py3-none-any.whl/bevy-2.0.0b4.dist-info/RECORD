@@ -1,0 +1,14 @@
+bevy/__init__.py,sha256=ectTYeAt6GgsQwGQ92j8VGUDQviZGLwM5EyEALrYC3Y,213
+bevy/contextvar.py,sha256=LBY53ijml2boMrYdKrIUucMjbYPuafUlACK9yQUqUu4,1463
+bevy/injectors/classes.py,sha256=NdY7v4wYGzpHmeS0M-SRoDhaV1SjL5sa19T-exg21W4,1692
+bevy/injectors/functions.py,sha256=TkrYnS9KyoQEcfct-Omc8yXWpMObpjjgTirJJ3qaJX8,2244
+bevy/options.py,sha256=YEJkTrQ3xush4eSzuvT2lmGM_FQSgT8k47anbLYVPnA,2717
+bevy/providers/__init__.py,sha256=9QC_3iQ41mTSpeJyVcK67BMUaWrJP-rpQtCRstR7vhQ,164
+bevy/providers/annotated_provider.py,sha256=ZHEt1iM6OANgrkGLCGOrXaSyfNAzn1IQYPi_ctV28s4,1537
+bevy/providers/base.py,sha256=a7bj79lrSDpRqHIyBVMWmC3zt9jFFViCcsfqFAvTz3s,3488
+bevy/providers/type_provider.py,sha256=WBpbRXb95VmotZHn1bZ0HGTnT3_0vy5zKr3-nh_Ev_0,1143
+bevy/repository.py,sha256=TW8izSSOpTDS3wMqH7vj135P6DiC7h5K5OQUDnY2YC0,6003
+bevy-2.0.0b4.dist-info/LICENSE,sha256=JnpmFHGtncdHGBgAQPR8vKICZwkfgANkWfJGfr55lcs,1076
+bevy-2.0.0b4.dist-info/METADATA,sha256=s581403kiv0yPlb9RxAdy9woFNoWQiSCvoYeM_lx_I8,6698
+bevy-2.0.0b4.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+bevy-2.0.0b4.dist-info/RECORD,,
