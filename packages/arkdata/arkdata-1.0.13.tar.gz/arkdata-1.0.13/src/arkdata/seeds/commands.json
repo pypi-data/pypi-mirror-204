@@ -1,0 +1,30 @@
+[
+  {
+    "code": "cheat gcm",
+    "admin_xuid": "TEST_XUID",
+    "player_xuid": "TEST_XUID",
+    "service_id": "987",
+    "executed": true
+  },
+  {
+    "code": "cheat tp blue",
+    "admin_xuid": "TEST_XUID",
+    "player_xuid": "TEST_XUID",
+    "service_id": "987",
+    "executed": true
+  },
+  {
+    "code": "cheat tp red",
+    "admin_xuid": "TEST_XUID",
+    "player_xuid": "TEST_XUID",
+    "service_id": "987",
+    "executed": true
+  },
+  {
+    "code": "cheat tp green",
+    "admin_xuid": "TEST_XUID",
+    "player_xuid": "TEST_XUID",
+    "service_id": "987",
+    "executed": true
+  }
+]
