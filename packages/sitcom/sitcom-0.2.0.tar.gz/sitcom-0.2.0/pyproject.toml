@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "sitcom"
+version = "0.2.0"
+description = "SITCoM: SiRGraF Integrated Tool for Coronal dynaMics"
+authors = ["Purvi Udhwani <purviaries@aries.res.in>" ,"Arpit Shrivastav <arpits@aries.res.in>","Ritesh Patel <ritesh.sophy@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pyqt5 = "^5.15.4"
+opencv-python="^4.0.40"
+
+
+[tool.poetry.scripts]
+sitcom = {reference = "sitcom.__main__:main", type = "console"}
+
