@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: kclvm
+Version: 0.4.6
+Summary: KCLVM
+Home-page: https://kusionstack.io/
+Author: KCL Authors
+Author-email: 
+License: Apache License 2.0
+Description: A constraint-based record & functional language mainly used in configuration and policy scenarios.
+Platform: UNKNOWN
+Requires-Python: >=3.7
