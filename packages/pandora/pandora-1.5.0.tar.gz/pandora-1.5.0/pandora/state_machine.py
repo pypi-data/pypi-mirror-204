@@ -1,0 +1,1075 @@
+# pylint:disable=too-many-arguments
+# pylint:disable=too-many-lines
+# pylint: disable=too-many-public-methods
+# !/usr/bin/env python
+# coding: utf8
+#
+# Copyright (c) 2020 Centre National d'Etudes Spatiales (CNES).
+#
+# This file is part of PANDORA
+#
+#     https://github.com/CNES/Pandora
+#
+# Licensed under the Apache License, Version 2.0 (the 'License');
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an 'AS IS' BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+"""
+This module contains class associated to the pandora state machine
+"""
+
+import warnings
+import logging
+import sys
+from typing import Dict, Union, List
+import numpy as np
+import xarray as xr
+from json_checker import Checker, And
+
+try:
+    import graphviz  # pylint: disable=unused-import
+    from transitions.extensions import GraphMachine as Machine
+
+    FLAG_GRAPHVIZ = True
+except ImportError:
+    from transitions import Machine  # type: ignore
+
+    FLAG_GRAPHVIZ = False
+from transitions import MachineError
+
+from pandora import aggregation
+from pandora import disparity
+from pandora import filter  # pylint: disable=redefined-builtin
+from pandora import multiscale
+from pandora import optimization
+from pandora import refinement
+from pandora import matching_cost
+from pandora import semantic_segmentation
+from pandora.img_tools import rasterio_open
+
+# This silences numba's TBB threading layer warning
+with warnings.catch_warnings():
+    warnings.filterwarnings("ignore")
+    from pandora import validation
+    from pandora import cost_volume_confidence
+from .img_tools import prepare_pyramid
+
+
+# This module contains class associated to the pandora state machine
+
+
+class PandoraMachine(Machine):  # pylint:disable=too-many-instance-attributes
+    """
+    PandoraMachine class to create and use a state machine
+    """
+
+    _transitions_run = [
+        {
+            "trigger": "matching_cost",
+            "source": "begin",
+            "dest": "cost_volume",
+            "after": "matching_cost_run",
+        },
+        {
+            "trigger": "aggregation",
+            "source": "cost_volume",
+            "dest": "cost_volume",
+            "after": "aggregation_run",
+        },
+        {
+            "trigger": "semantic_segmentation",
+            "source": "cost_volume",
+            "dest": "cost_volume",
+            "after": "semantic_segmentation_run",
+        },
+        {
+            "trigger": "optimization",
+            "source": "cost_volume",
+            "dest": "cost_volume",
+            "after": "optimization_run",
+        },
+        {
+            "trigger": "disparity",
+            "source": "cost_volume",
+            "dest": "disp_map",
+            "after": "disparity_run",
+        },
+        {
+            "trigger": "filter",
+            "source": "disp_map",
+            "dest": "disp_map",
+            "after": "filter_run",
+        },
+        {
+            "trigger": "refinement",
+            "source": "disp_map",
+            "dest": "disp_map",
+            "after": "refinement_run",
+        },
+        {
+            "trigger": "validation",
+            "source": "disp_map",
+            "dest": "disp_map",
+            "after": "validation_run",
+        },
+        # Conditional state change, if it is the last scale the multiscale state will not be triggered
+        # This way, after the last scale we can still apply a filter state
+        {
+            "trigger": "multiscale",
+            "source": "disp_map",
+            "conditions": "is_not_last_scale",
+            "dest": "begin",
+            "after": "run_multiscale",
+        },
+        {
+            "trigger": "cost_volume_confidence",
+            "source": "cost_volume",
+            "dest": "cost_volume",
+            "after": "cost_volume_confidence_run",
+        },
+    ]
+
+    _transitions_check = [
+        {
+            "trigger": "check_matching_cost",
+            "source": "begin",
+            "dest": "cost_volume",
+            "before": "right_disp_map_check_conf",
+            "after": "matching_cost_check_conf",
+        },
+        {
+            "trigger": "check_aggregation",
+            "source": "cost_volume",
+            "dest": "cost_volume",
+            "after": "aggregation_check_conf",
+        },
+        {
+            "trigger": "check_semantic_segmentation",
+            "source": "cost_volume",
+            "dest": "cost_volume",
+            "after": "semantic_segmentation_check_conf",
+        },
+        {
+            "trigger": "check_optimization",
+            "source": "cost_volume",
+            "dest": "cost_volume",
+            "after": "optimization_check_conf",
+        },
+        {
+            "trigger": "check_disparity",
+            "source": "cost_volume",
+            "dest": "disp_map",
+            "after": "disparity_check_conf",
+        },
+        {
+            "trigger": "check_filter",
+            "source": "disp_map",
+            "dest": "disp_map",
+            "after": "filter_check_conf",
+        },
+        {
+            "trigger": "check_refinement",
+            "source": "disp_map",
+            "dest": "disp_map",
+            "after": "refinement_check_conf",
+        },
+        {
+            "trigger": "check_validation",
+            "source": "disp_map",
+            "dest": "disp_map",
+            "after": "validation_check_conf",
+        },
+        # For the check conf we define the destination of multiscale state as disp_map instead of begin
+        # given the conditional change of state
+        {
+            "trigger": "check_multiscale",
+            "source": "disp_map",
+            "dest": "disp_map",
+            "after": "multiscale_check_conf",
+        },
+        {
+            "trigger": "check_cost_volume_confidence",
+            "source": "cost_volume",
+            "dest": "cost_volume",
+            "after": "cost_volume_confidence_check_conf",
+        },
+    ]
+
+    def __init__(
+        self,
+        img_left_pyramid: List[xr.Dataset] = None,
+        img_right_pyramid: List[xr.Dataset] = None,
+        disp_min: Union[np.ndarray, int] = None,
+        disp_max: Union[np.ndarray, int] = None,
+        right_disp_min: Union[np.ndarray, None] = None,
+        right_disp_max: Union[np.ndarray, None] = None,
+    ) -> None:
+        """
+        Initialize Pandora Machine
+
+        :param img_left_pyramid: left Dataset image containing :
+
+                - im : 2D (row, col) or 3D (band, row, col) xarray.DataArray
+                - msk (optional): 2D (row, col) xarray.DataArray
+        :type img_left_pyramid: xarray.Dataset
+        :param img_right_pyramid: right Dataset image containing :
+
+                - im : 2D (row, col) or 3D (band, row, col) xarray.DataArray
+                - msk (optional): 2D (row, col) xarray.DataArray
+        :type img_right_pyramid: xarray.Dataset
+        :param disp_min: minimal disparity
+        :type disp_min: int or np.ndarray
+        :param disp_max: maximal disparity
+        :type disp_max: int or np.ndarray
+        :param right_disp_min: minimal disparity of the right image
+        :type right_disp_min: None or np.ndarray
+        :param right_disp_max: maximal disparity of the right image
+        :type right_disp_max: None or np.ndarray
+        :return: None
+        """
+        # Left image scale pyramid
+        self.img_left_pyramid: List[xr.Dataset] = img_left_pyramid
+        # Right image scale pyramid
+        self.img_right_pyramid: List[xr.Dataset] = img_right_pyramid
+        # Left image
+        self.left_img: xr.Dataset = None
+        # Right image
+        self.right_img: xr.Dataset = None
+        # Minimum disparity
+        self.disp_min: Union[np.ndarray, int] = disp_min
+        # Maximum disparity
+        self.disp_max: Union[np.ndarray, int] = disp_max
+        # Maximum disparity for the right image
+        self.right_disp_min: Union[np.ndarray, None] = right_disp_min
+        # Minimum disparity for the right image
+        self.right_disp_max: Union[np.ndarray, None] = right_disp_max
+        # User minimum disparity
+        self.dmin_user: Union[np.ndarray, int] = None
+        # User maximum disparity
+        self.dmax_user: Union[np.ndarray, int] = None
+        # User minimum disparity right
+        self.dmin_user_right: Union[np.ndarray, None] = None
+        # User maximum disparity right
+        self.dmax_user_right: Union[np.ndarray, None] = None
+
+        # Scale factor
+        self.scale_factor: int = None
+        # Number of scales
+        self.num_scales: int = 1
+        # Current scale
+        self.current_scale: int = None
+
+        # left cost volume
+        self.left_cv: xr.Dataset = None
+        # right cost volume
+        self.right_cv: xr.Dataset = None
+        # left disparity map
+        self.left_disparity: xr.Dataset = None
+        # right disparity map
+        self.right_disparity: xr.Dataset = None
+
+        # Pandora's pipeline configuration
+        self.pipeline_cfg: Dict = {"pipeline": {}}
+        # Right disparity map computation information: Can be "none" or "accurate"
+        # Useful during the running steps to choose if we must compute left and right objects.
+        self.right_disp_map = "none"
+        # Define avalaible states
+        states_ = ["begin", "cost_volume", "disp_map"]
+
+        if FLAG_GRAPHVIZ:
+            # Initialize a machine without any transition
+            Machine.__init__(
+                self,
+                states=states_,
+                initial="begin",
+                transitions=None,
+                auto_transitions=False,
+                use_pygraphviz=False,
+            )
+        else:
+            # Initialize a machine without any transition
+            Machine.__init__(
+                self,
+                states=states_,
+                initial="begin",
+                transitions=None,
+                auto_transitions=False,
+            )
+
+        logging.getLogger("transitions").setLevel(logging.WARNING)
+
+    def matching_cost_run(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Matching cost computation
+        :param cfg: pipeline configuration
+        :type  cfg: dict
+        :param input_step: step to trigger
+        :type input_step: str
+        :return: None
+        """
+
+        logging.info("Matching cost computation...")
+        matching_cost_ = matching_cost.AbstractMatchingCost(**cfg["pipeline"][input_step])  # type: ignore
+
+        # Update min and max disparity according to the current scale
+        self.disp_min = self.disp_min * self.scale_factor
+        self.disp_max = self.disp_max * self.scale_factor
+        # Obtain absolute min and max disparities
+        dmin_min, dmax_max = matching_cost_.dmin_dmax(self.disp_min, self.disp_max)
+
+        # Compute cost volume and mask it
+        self.left_cv = matching_cost_.compute_cost_volume(self.left_img, self.right_img, dmin_min, dmax_max)
+        matching_cost_.cv_masked(
+            self.left_img,
+            self.right_img,
+            self.left_cv,
+            self.disp_min,
+            self.disp_max,
+        )
+
+        if self.right_disp_map == "accurate":
+            # Update min and max disparity according to the current scale
+            self.right_disp_min = self.right_disp_min * self.scale_factor
+            self.right_disp_max = self.right_disp_max * self.scale_factor
+            # Obtain absolute min and max right disparities
+            dmin_min_right, dmax_max_right = matching_cost_.dmin_dmax(self.right_disp_min, self.right_disp_max)
+            # Compute right cost volume and mask it
+            self.right_cv = matching_cost_.compute_cost_volume(
+                self.right_img, self.left_img, dmin_min_right, dmax_max_right
+            )
+            matching_cost_.cv_masked(
+                self.right_img,
+                self.left_img,
+                self.right_cv,
+                self.right_disp_min,
+                self.right_disp_max,
+            )
+
+    def aggregation_run(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Cost (support) aggregation
+        :param cfg: pipeline configuration
+        :type  cfg: dict
+        :param input_step: step to trigger
+        :type input_step: str
+        :return: None
+        """
+        aggregation_ = aggregation.AbstractAggregation(**cfg["pipeline"][input_step])  # type: ignore
+        aggregation_.cost_volume_aggregation(self.left_img, self.right_img, self.left_cv)
+        if self.right_disp_map == "accurate":
+            aggregation_.cost_volume_aggregation(self.right_img, self.left_img, self.right_cv)
+
+    def semantic_segmentation_run(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Building semantic segmentation computation
+        :param cfg: pipeline configuration
+        :type  cfg: dict
+        :param input_step: step to trigger
+        :type input_step: str
+        :return: None
+        """
+        semantic_segmentation_ = semantic_segmentation.AbstractSemanticSegmentation(
+            **cfg["pipeline"][input_step]
+        )  # type: ignore
+        self.left_img = semantic_segmentation_.compute_semantic_segmentation(
+            self.left_cv, self.left_img, self.right_img
+        )
+        if self.right_disp_map == "accurate":
+            self.right_img = semantic_segmentation_.compute_semantic_segmentation(
+                self.right_cv, self.right_img, self.left_img
+            )
+
+    def optimization_run(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Cost optimization
+        :param cfg: pipeline configuration
+        :type  cfg: dict
+        :param input_step: step to trigger
+        :type input_step: str
+        :return: None
+        """
+        optimization_ = optimization.AbstractOptimization(**cfg["pipeline"][input_step])  # type: ignore
+        logging.info("Cost optimization...")
+
+        self.left_cv = optimization_.optimize_cv(self.left_cv, self.left_img, self.right_img)
+        if self.right_disp_map == "accurate":
+            self.right_cv = optimization_.optimize_cv(self.right_cv, self.right_img, self.left_img)
+
+    def disparity_run(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Disparity computation and validity mask
+        :param cfg: pipeline configuration
+        :type  cfg: dict
+        :param input_step: step to trigger
+        :type input_step: str
+        :return: None
+        """
+        logging.info("Disparity computation...")
+        disparity_ = disparity.AbstractDisparity(**cfg["pipeline"][input_step])  # type: ignore
+
+        self.left_disparity = disparity_.to_disp(self.left_cv, self.left_img, self.right_img)
+        disparity_.validity_mask(self.left_disparity, self.left_img, self.right_img, self.left_cv)
+        if self.right_disp_map == "accurate":
+            self.right_disparity = disparity_.to_disp(self.right_cv, self.right_img, self.left_img)
+            disparity_.validity_mask(self.right_disparity, self.right_img, self.left_img, self.right_cv)
+
+    def filter_run(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Disparity filter
+        :param cfg: pipeline configuration
+        :type  cfg: dict
+        :param input_step: step to trigger
+        :type input_step: str
+        :return: None
+        """
+        logging.info("Disparity filtering...")
+        filter_ = filter.AbstractFilter(**cfg["pipeline"][input_step])  # type: ignore
+        filter_.filter_disparity(self.left_disparity)
+        if self.right_disp_map == "accurate":
+            filter_.filter_disparity(self.right_disparity)
+
+    def refinement_run(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Subpixel disparity refinement
+        :param cfg: pipeline configuration
+        :type  cfg: dict
+        :param input_step: step to trigger
+        :type input_step: str
+        :return: None
+        """
+        refinement_ = refinement.AbstractRefinement(**cfg["pipeline"][input_step])  # type: ignore
+        logging.info("Subpixel refinement...")
+
+        refinement_.subpixel_refinement(self.left_cv, self.left_disparity)
+        if self.right_disp_map == "accurate":
+            refinement_.subpixel_refinement(self.right_cv, self.right_disparity)
+
+    def validation_run(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Validation of disparity map
+        :param cfg: pipeline configuration
+        :type  cfg: dict
+        :param input_step: step to trigger
+        :type input_step: str
+        :return: None
+        """
+        validation_ = validation.AbstractValidation(**cfg["pipeline"][input_step])  # type: ignore
+
+        logging.info("Validation...")
+
+        self.left_disparity = validation_.disparity_checking(self.left_disparity, self.right_disparity)
+        if self.right_disp_map == "accurate":
+            self.right_disparity = validation_.disparity_checking(self.right_disparity, self.left_disparity)
+            # Interpolated mismatch and occlusions
+            if "interpolated_disparity" in cfg["pipeline"][input_step]:
+                interpolate_ = validation.AbstractInterpolation(**cfg["pipeline"][input_step])  # type: ignore
+                interpolate_.interpolated_disparity(self.left_disparity)
+                interpolate_.interpolated_disparity(self.right_disparity)
+
+    def run_multiscale(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Compute the disparity range for the next scale
+        :param cfg: pipeline configuration
+        :type  cfg: dict
+        :param input_step: step to trigger
+        :type input_step: str
+        :return: None
+        """
+
+        logging.info("Disparity range computation...")
+
+        multiscale_ = multiscale.AbstractMultiscale(**cfg["pipeline"][input_step])  # type: ignore
+
+        # Update min and max user disparity according to the current scale
+        self.dmin_user = self.dmin_user * self.scale_factor
+        self.dmax_user = self.dmax_user * self.scale_factor
+
+        # Compute disparity range for the next scale level
+        self.disp_min, self.disp_max = multiscale_.disparity_range(
+            self.left_disparity, int(self.dmin_user), int(self.dmax_user)
+        )
+        # Set to None the disparity map for the next scale
+        self.left_disparity = None
+
+        if self.right_disp_map == "accurate":
+            # Update min and max user disparity according to the current scale
+            self.dmin_user_right = self.dmin_user_right * self.scale_factor
+            self.dmax_user_right = self.dmax_user_right * self.scale_factor
+            self.right_disp_min, self.right_disp_max = multiscale_.disparity_range(
+                self.right_disparity, int(self.dmin_user_right), int(self.dmax_user_right)
+            )
+            self.right_disparity = None
+
+        # Get the next scale's images
+        self.left_img = self.img_left_pyramid.pop(0)
+        self.right_img = self.img_right_pyramid.pop(0)
+
+        # Update the current scale for the next state
+        self.current_scale = self.current_scale - 1
+
+    def cost_volume_confidence_run(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Confidence prediction
+        :param cfg: pipeline configuration
+        :type  cfg: dict
+        :param input_step: step to trigger
+        :type input_step: str
+        :return: None
+        """
+        # In case multiple confidence maps are computed, add its
+        # name to the indicator to distinguish the different maps
+        cfg["pipeline"][input_step]["indicator"] = ""
+        if len(input_step.split(".")) == 2:
+            cfg["pipeline"][input_step]["indicator"] = "." + input_step.split(".")[1]
+        confidence_ = cost_volume_confidence.AbstractCostVolumeConfidence(**cfg["pipeline"][input_step])  # type: ignore
+
+        logging.info("Confidence prediction...")
+
+        self.left_disparity, self.left_cv = confidence_.confidence_prediction(
+            self.left_disparity, self.left_img, self.right_img, self.left_cv
+        )
+        if self.right_disp_map == "accurate":
+            self.right_disparity, self.right_cv = confidence_.confidence_prediction(
+                self.right_disparity, self.right_img, self.left_img, self.right_cv
+            )
+
+    def run_prepare(
+        self,
+        cfg: Dict[str, dict],
+        left_img: xr.Dataset,
+        right_img: xr.Dataset,
+        disp_min: Union[np.ndarray, int],
+        disp_max: Union[np.ndarray, int],
+        scale_factor: Union[None, int] = None,
+        num_scales: Union[None, int] = None,
+        right_disp_min: Union[None, np.ndarray] = None,
+        right_disp_max: Union[None, np.ndarray] = None,
+    ) -> None:
+        """
+        Prepare the machine before running
+
+        :param cfg:  configuration
+        :type cfg: dict
+        :param left_img: left Dataset image containing :
+
+                - im : 2D (row, col) or 3D (band, row, col) xarray.DataArray
+                - msk (optional): 2D (row, col) xarray.DataArray
+        :type left_img: xarray.Dataset
+        :param right_img: right Dataset image containing :
+
+                - im : 2D (row, col) or 3D (band, row, col) xarray.DataArray
+                - msk (optional): 2D (row, col) xarray.DataArray
+        :type right_img: xarray.Dataset
+        :param disp_min: minimal disparity
+        :type disp_min: int or np.ndarray
+        :param disp_max: maximal disparity
+        :type disp_max: int or np.ndarray
+        :param scale_factor: scale factor for multiscale
+        :type scale_factor: int or None
+        :param num_scales: scales number for multiscale
+        :type num_scales: int or None
+        :param right_disp_min: minimal disparity of the right image
+        :type right_disp_min: np.ndarray or None
+        :param right_disp_max: maximal disparity of the right image
+        :type right_disp_max: np.ndarray or None
+        :return: None
+        """
+
+        # Mono-resolution processing by default if num_scales or scale_factor are not specified
+        if num_scales is None or scale_factor is None:
+            self.num_scales = 1
+            self.scale_factor = 1
+        else:
+            self.num_scales = num_scales
+            self.scale_factor = scale_factor
+
+        if self.num_scales > 1:
+            # If multiscale processing, create pyramid and select first scale's images
+            self.img_left_pyramid, self.img_right_pyramid = prepare_pyramid(
+                left_img, right_img, self.num_scales, scale_factor
+            )
+            self.left_img = self.img_left_pyramid.pop(0)
+            self.right_img = self.img_right_pyramid.pop(0)
+            # Initialize current scale
+            self.current_scale = num_scales - 1
+            # If multiscale, disparities can only be int.
+            # Downscale disparities since the pyramid is processed from coarse to original size
+            self.disp_min = int(disp_min / (scale_factor**self.num_scales))
+            self.disp_max = int(disp_max / (scale_factor**self.num_scales))
+            # User disparity
+            self.dmin_user = self.disp_min
+            self.dmax_user = self.disp_max
+            # If multiscale disparities can only be int, and right disparity can only be np.ndarray, so right disparity
+            # can not be defined in the input conf
+            # Right disparities
+            self.right_disp_min = -self.disp_max  # type: ignore
+            self.right_disp_max = -self.disp_min  # type: ignore
+            # Right user disparity
+            self.dmin_user_right = self.right_disp_min
+            self.dmax_user_right = self.right_disp_max
+        else:
+            # If no multiscale processing, select the original images
+            self.left_img = left_img
+            self.right_img = right_img
+            # If no multiscale processing, current scale is zero
+            self.current_scale = 0
+            # Disparities
+            self.disp_min = disp_min
+            self.disp_max = disp_max
+            # Right disparities
+            if right_disp_max is not None and right_disp_min is not None:
+                # If the right disparity was defined in the input conf
+                self.right_disp_min = right_disp_min
+                self.right_disp_max = right_disp_max
+            else:
+                self.right_disp_min = -self.disp_max  # type: ignore
+                self.right_disp_max = -self.disp_min  # type: ignore
+
+        # Initiate output disparity datasets
+        self.left_disparity = xr.Dataset()
+        self.right_disparity = xr.Dataset()
+        # To determine whether the right disparity map has to be computed
+        self.right_disp_map = cfg["pipeline"]["right_disp_map"]["method"]
+        # Add transitions
+        self.add_transitions(self._transitions_run)
+
+    def run(self, input_step: str, cfg: Dict[str, dict]) -> None:
+        """
+        Run pandora step by triggering the corresponding machine transition
+
+        :param input_step: step to trigger
+        :type input_step: str
+        :param cfg: pipeline configuration
+        :type  cfg: dict
+        :return: None
+        """
+
+        try:
+            # There may be steps that are repeated several times, for example:
+            #     'filter': {
+            #       'filter_method': 'median'
+            #     },
+            #     'filter.1': {
+            #       'filter_method': 'bilateral'
+            #     }
+            # But there's only a filter transition. Therefore, in the case of filter.1 we have to call the
+            # filter
+            # trigger and give the configuration of filter.1
+            if len(input_step.split(".")) != 1:
+                self.trigger(input_step.split(".")[0], cfg, input_step)
+            else:
+                self.trigger(input_step, cfg, input_step)
+        except (MachineError, KeyError, AttributeError):
+            logging.error("A problem occurs during Pandora running %s  step. Be sure of your sequencement", input_step)
+            raise
+
+    def run_exit(self) -> None:
+        """
+        Clear transitions and return to state begin
+
+        :return: None
+        """
+        self.remove_transitions(self._transitions_run)
+        self.set_state("begin")
+
+    def right_disp_map_check_conf(
+        self, cfg: Dict[str, dict], input_step: str  # pylint:disable=unused-argument
+    ) -> None:
+        """
+        Check the right_disp_map configuration
+
+        :param cfg: configuration
+        :type cfg: dict
+        :param input_step: current step
+        :type input_step: string
+        :return: None
+        """
+
+        schema = {"method": And(str, lambda input: "none" or "accurate")}
+
+        checker = Checker(schema)
+        checker.validate(cfg["pipeline"]["right_disp_map"])
+
+        # Store the righ disparity map configuration
+        self.right_disp_map = cfg["pipeline"]["right_disp_map"]["method"]
+
+    def matching_cost_check_conf(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Check the matching cost configuration
+
+        :param cfg: configuration
+        :type cfg: dict
+        :param input_step: current step
+        :type input_step: string
+        :return: None
+        """
+        # Create matching_cost object to check its step configuration
+        matching_cost_ = matching_cost.AbstractMatchingCost(**cfg["pipeline"][input_step])  # type: ignore
+
+        # Check the coherence between the band selected for the matching_cost step
+        # and the bands present on left and right image
+        if not "band" in cfg["pipeline"]["matching_cost"]:
+            band = None
+        else:
+            band = cfg["pipeline"]["matching_cost"]["band"]
+        self.check_band_pipeline(
+            cfg["input"]["img_left"],
+            cfg["pipeline"]["matching_cost"]["matching_cost_method"],
+            band,
+        )
+        self.check_band_pipeline(
+            cfg["input"]["img_right"],
+            cfg["pipeline"]["matching_cost"]["matching_cost_method"],
+            band,
+        )
+
+        self.pipeline_cfg["pipeline"][input_step] = matching_cost_.cfg
+
+    def disparity_check_conf(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Check the disparity computation configuration
+
+        :param cfg: configuration
+        :type cfg: dict
+        :param input_step: current step
+        :type input_step: string
+        :return: None
+        """
+        disparity_ = disparity.AbstractDisparity(**cfg["pipeline"][input_step])  # type: ignore
+        self.pipeline_cfg["pipeline"][input_step] = disparity_.cfg
+
+    def filter_check_conf(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Check the filter configuration
+
+        :param cfg: configuration
+        :type cfg: dict
+        :param input_step: current step
+        :type input_step: string
+        :return: None
+        """
+        filter_ = filter.AbstractFilter(**cfg["pipeline"][input_step])  # type: ignore
+        self.pipeline_cfg["pipeline"][input_step] = filter_.cfg
+
+    def refinement_check_conf(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Check the refinement configuration
+
+        :param cfg: configuration
+        :type cfg: dict
+        :param input_step: current step
+        :type input_step: string
+        :return: None
+        """
+        refinement_ = refinement.AbstractRefinement(**cfg["pipeline"][input_step])  # type: ignore
+        self.pipeline_cfg["pipeline"][input_step] = refinement_.cfg
+
+    def aggregation_check_conf(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Check the aggregation configuration
+
+        :param cfg: configuration
+        :type cfg: dict
+        :param input_step: current step
+        :type input_step: string
+        :return: None
+        """
+        aggregation_ = aggregation.AbstractAggregation(**cfg["pipeline"][input_step])  # type: ignore
+        self.pipeline_cfg["pipeline"][input_step] = aggregation_.cfg
+
+    def semantic_segmentation_check_conf(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Check the semantic_segmentation configuration
+
+        :param cfg: configuration
+        :type cfg: dict
+        :param input_step: current step
+        :type input_step: string
+        :return: None
+        """
+        semantic_segmentation_ = semantic_segmentation.AbstractSemanticSegmentation(
+            **cfg["pipeline"][input_step]
+        )  # type: ignore
+        self.pipeline_cfg["pipeline"][input_step] = semantic_segmentation_.cfg
+
+        # If semantic_segmentation is present, check that the necessary bands are present in the inputs
+        self.check_band_pipeline(
+            cfg["input"]["img_left"],
+            cfg["pipeline"]["semantic_segmentation"]["segmentation_method"],
+            cfg["pipeline"]["semantic_segmentation"]["RGB_bands"],
+        )
+        # If vegetation_band is present in semantic_segmentation, check that the bands are present
+        # in the input left classification
+        if "vegetation_band" in cfg["pipeline"]["semantic_segmentation"]:
+            if not "left_classif" in cfg["input"]:
+                logging.error(
+                    "For performing the semantic_segmentation step in the pipeline, left_classif must be present."
+                )
+                sys.exit(1)
+            self.check_band_pipeline(
+                cfg["input"]["left_classif"],
+                cfg["pipeline"]["semantic_segmentation"]["segmentation_method"],
+                cfg["pipeline"]["semantic_segmentation"]["vegetation_band"]["classes"],
+            )
+        # If semantic_segmentation and right disparity is to be computed,
+        # check that the RGB band are present in the right image
+        if self.right_disp_map == "accurate":
+            self.check_band_pipeline(
+                cfg["input"]["img_right"],
+                cfg["pipeline"]["semantic_segmentation"]["segmentation_method"],
+                cfg["pipeline"]["semantic_segmentation"]["RGB_bands"],
+            )
+            # If vegetation_band is present in semantic_segmentation, and right disparity is to be computed,
+            # check that the bands are present in the input right classification
+            if "vegetation_band" in cfg["pipeline"]["semantic_segmentation"]:
+                if not "right_classif" in cfg["input"]:
+                    logging.error(
+                        "For performing cross-checking step with semantic_segmentation in the pipeline,"
+                        " right classif must be present.",
+                    )
+                    sys.exit(1)
+                self.check_band_pipeline(
+                    cfg["input"]["right_classif"],
+                    cfg["pipeline"]["semantic_segmentation"]["segmentation_method"],
+                    cfg["pipeline"]["semantic_segmentation"]["vegetation_band"]["classes"],
+                )
+
+    def optimization_check_conf(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Check the optimization configuration
+
+        :param cfg: configuration
+        :type cfg: dict
+        :param input_step: current step
+        :type input_step: string
+        :return: None
+        """
+        optimization_ = optimization.AbstractOptimization(**cfg["pipeline"][input_step])  # type: ignore
+        self.pipeline_cfg["pipeline"][input_step] = optimization_.cfg
+
+        # If geometric_prior is needed for the optimization step,
+        # check that the necessary inputs and bands are present
+        if "geometric_prior" in cfg["pipeline"]["optimization"]:
+            source = cfg["pipeline"]["optimization"]["geometric_prior"]["source"]
+            if source in ["classif", "segm"]:
+                if not "left_" + source in cfg["input"]:
+                    logging.error(
+                        "For performing the 3SGM optimization step in the pipeline, left %s must be present.", source
+                    )
+                    sys.exit(1)
+                # If right disparity is to be computed and 3SGM optimization is present on the pipeline,
+                # then both left and right segmentations/classifications must be present
+                if self.right_disp_map == "accurate" and "right_" + source not in cfg["input"]:
+                    logging.error(
+                        "For performing cross-checking step with 3SGM optimization in the pipeline,"
+                        " right %s must be present.",
+                        source,
+                    )
+                    sys.exit(1)
+                # If sgm optimization is present with geometric_prior classification, check that the
+                # classes bands are present in the input classification
+                if "classes" in cfg["pipeline"]["optimization"]["geometric_prior"]:
+                    self.check_band_pipeline(
+                        cfg["input"]["left_classif"],
+                        cfg["pipeline"]["optimization"]["optimization_method"],
+                        cfg["pipeline"]["optimization"]["geometric_prior"]["classes"],
+                    )
+                    # If right disparity is to be computed, check that the classes bands are present
+                    # in the input right classification
+                    if self.right_disp_map == "accurate":
+                        self.check_band_pipeline(
+                            cfg["input"]["right_classif"],
+                            cfg["pipeline"]["optimization"]["optimization_method"],
+                            cfg["pipeline"]["optimization"]["geometric_prior"]["classes"],
+                        )
+
+    def validation_check_conf(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Check the validation configuration
+
+        :param cfg: configuration
+        :type cfg: dict
+        :param input_step: current step
+        :type input_step: string
+        :return: None
+        """
+
+        validation_ = validation.AbstractValidation(**cfg["pipeline"][input_step])  # type: ignore
+        self.pipeline_cfg["pipeline"][input_step] = validation_.cfg
+        if "interpolated_disparity" in validation_.cfg:
+            interpolate_ = validation.AbstractInterpolation(  # type:ignore # pylint:disable=unused-variable
+                **cfg["pipeline"][input_step]
+            )
+
+        if validation_.cfg["validation_method"] == "cross_checking" and self.right_disp_map != "accurate":
+            raise MachineError(
+                "Can t trigger event cross-checking validation if right_disp_map method equal to " + self.right_disp_map
+            )
+
+        # If left disparities are grids of disparity and the right disparities are none, the cross-checking
+        # method cannot be used
+        if isinstance(cfg["input"]["disp_min"], str) and "validation" in cfg["pipeline"]:
+            if not "disp_min_right" in cfg["input"]:
+                logging.error(
+                    "The cross-checking step cannot be processed if disp_min, disp_max are paths to the left "
+                    "disparity grids and disp_right_min, disp_right_max are none."
+                )
+                sys.exit(1)
+
+    def multiscale_check_conf(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Check the disparity computation configuration
+
+        :param cfg: disparity computation configuration
+        :type cfg: dict
+        :param input_step: current step
+        :type input_step: string
+        :return:
+        """
+        multiscale_ = multiscale.AbstractMultiscale(**cfg["pipeline"][input_step])  # type: ignore
+        self.pipeline_cfg["pipeline"][input_step] = multiscale_.cfg
+
+        # If multiscale step is present, input disparities cannot be grids
+        disp_min_right = None
+        if "disp_min_right" in cfg["input"]:
+            disp_min_right = cfg["input"]
+        disp_max_right = None
+        if "disp_max_right" in cfg["input"]:
+            disp_max_right = cfg["input"]
+        if (
+            isinstance(cfg["input"]["disp_min"], str)
+            or isinstance(disp_min_right, str)
+            or (isinstance(cfg["input"]["disp_max"], str))
+            or isinstance(disp_max_right, str)
+        ) and ("multiscale" in cfg["pipeline"]):
+            logging.error("Multiscale processing does not accept input disparity grids.")
+            sys.exit(1)
+
+    def cost_volume_confidence_check_conf(self, cfg: Dict[str, dict], input_step: str) -> None:
+        """
+        Check the confidence configuration
+
+        :param cfg: configuration
+        :type cfg: dict
+        :param input_step: current step
+        :type input_step: string
+        :return: None
+        """
+        confidence_ = cost_volume_confidence.AbstractCostVolumeConfidence(**cfg["pipeline"][input_step])  # type: ignore
+        self.pipeline_cfg["pipeline"][input_step] = confidence_.cfg
+
+    def check_conf(self, cfg: Dict[str, dict]) -> None:
+        """
+        Check configuration and transitions
+
+        :param cfg: pipeline configuration
+        :type  cfg: dict
+        :return:
+        """
+
+        # Add transitions to the empty machine.
+        self.add_transitions(self._transitions_check)
+
+        # Warning: first element of cfg dictionary is not a transition. It contains information about the way to
+        # compute right disparity map.
+        for input_step in list(cfg["pipeline"])[1:]:
+            try:
+                # There may be steps that are repeated several times, for example:
+                #     'filter': {
+                #       'filter_method': 'median'
+                #     },
+                #     'filter.1': {
+                #       'filter_method': 'bilateral'
+                #     }
+                # But there's only a filter transition. Therefore, in the case of filter.1 we have to call the
+                # filter
+                # trigger and give the configuration of filter.1
+
+                # change input name to avoid may_[step] repetition in transitions packages
+                check_input = "check_" + input_step
+
+                if len(input_step.split(".")) != 1:
+                    self.trigger(check_input.split(".")[0], cfg, input_step)
+                else:
+                    self.trigger(check_input, cfg, input_step)
+
+            except (MachineError, KeyError, AttributeError):
+                logging.error("A problem occurs during Pandora checking. Be sure of your sequencement")
+                raise
+
+        # Remove transitions
+        self.remove_transitions(self._transitions_check)
+
+        # Coming back to the initial state
+        self.set_state("begin")
+
+    def remove_transitions(self, transition_list: List[Dict[str, str]]) -> None:
+        """
+        Delete all transitions defined in the input list
+
+        :param transition_list: list of transitions
+        :type transition_list: dict
+        :return: None
+        """
+        # Transition is removed using trigger name. But one trigger name can be used by multiple transitions
+        # In this case, the 'remove_transition' function removes all transitions using this trigger name
+        # deleted_triggers list is used to avoid multiple call of 'remove_transition'' with the same trigger name.
+        deleted_triggers = []
+        for trans in transition_list:
+            if trans not in deleted_triggers:
+                self.remove_transition(trans["trigger"])
+                deleted_triggers.append(trans["trigger"])
+
+    def is_not_last_scale(self, input_step: str, cfg: Dict[str, dict]) -> bool:  # pylint:disable=unused-argument
+        """
+        Check if the current scale is the last scale
+        :param cfg: configuration
+        :type cfg: dict
+        :param input_step: current step
+        :type input_step: string
+        :return: boolean
+        """
+
+        if self.current_scale == 0:
+            return False
+        return True
+
+    @staticmethod
+    def check_band_pipeline(img: str, step: str, bands: Union[None, str, List[str], Dict]) -> None:
+        """
+        Check coherence band parameter between pipeline step and image dataset
+
+        :param img: path to the image
+        :type img: str
+        :param step: pipeline step
+        :type step: str
+        :param bands: band names
+        :type bands: None, str, List[str] or Dict
+        :return: None
+        """
+        # open images
+        img_ds = rasterio_open(img)
+        # If no bands are given, then the input image shall be monoband
+        if not bands:
+            if img_ds.count != 1:
+                logging.error("Missing band instantiate on %s step : input image is multiband", step)
+                sys.exit(1)
+        # check that the image have the band names
+        elif isinstance(bands, dict):
+            for _, band in bands.items():
+                if not band in list(img_ds.descriptions):
+                    logging.error("Wrong band instantiate on %s step: %s not in input image", step, band)
+                    sys.exit(1)
+        else:
+            for band in bands:
+                if not band in list(img_ds.descriptions):
+                    logging.error("Wrong band instantiate %s step: %s not in input image", step, band)
+                    sys.exit(1)
