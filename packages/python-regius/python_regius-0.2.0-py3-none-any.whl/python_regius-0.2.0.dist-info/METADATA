@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: python-regius
+Version: 0.2.0
+Summary: Python Regius - A simple & friendly Python RPC framework.
+Home-page: https://jihulab.com/Sya/Regius/regius.git
+License: Proprietary
+Author: 王见充
+Author-email: gerhut@sya.org.cn
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpx (>=0.23.0,<0.24.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: sanic (>=23.3.0,<24.0.0)
+Project-URL: Repository, https://jihulab.com/Sya/Regius/regius.git
+Description-Content-Type: text/markdown
+
+# Python Regius
+
+A simple & friendly Python RPC framework.
+
+## Install
+
+```bash
+pip install python-regius
+```
+
+## Server Usage
+
+Write a file named `__init__.py` in current directory.
+
+```python
+def add(a, b):
+    return a + b
+```
+
+And Run
+
+```bash
+sanic regius:app
+```
+
+## Client Usage
+
+```python
+from regius import add
+
+print(add(1, 2))
+```
+
