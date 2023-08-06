@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: openctp-tts-661
+Version: 0.0.2
+Summary: A package for TTS-6.6.1
+Project-URL: Source, https://github.com/Jedore/openctp-tts-python
+Project-URL: Issues, https://github.com/Jedore/openctp-tts-python/issues
+Project-URL: Openctp, https://github.com/openctp/openctp
+Author-email: Jedore <jedore@protonmail.com>
+Maintainer-email: Jedore <jedore@protonmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: ctp,ctpapi,investment,openctp,trading,tts
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# openctp-tts-661
+
+[![PyPI - Python Version](https://badgen.net/badge/python/3.7|3.8|3.9|3.10|3.11/blue)](https://pypi.org/project/openctp-tts-661)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install openctp-tts-661
+```
+
+## Example
+
+[Demo](https://github.com/Jedore/openctp-tts-python/tree/main/demo)
+
+```python
+from openctp_tts_661 import mdapi, tdapi
+
+md_api = mdapi.CThostFtdcMdApi.CreateFtdcMdApi("market")
+td_api = tdapi.CThostFtdcTraderApi.CreateFtdcTraderApi('user_id')
+```
+
+## License
+
+`openctp-tts-661` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
