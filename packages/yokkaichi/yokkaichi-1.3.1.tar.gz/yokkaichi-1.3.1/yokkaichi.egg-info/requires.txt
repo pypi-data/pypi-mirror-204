@@ -1,0 +1,5 @@
+rich
+mcstatus
+ip2location
+python-masscan
+requests
