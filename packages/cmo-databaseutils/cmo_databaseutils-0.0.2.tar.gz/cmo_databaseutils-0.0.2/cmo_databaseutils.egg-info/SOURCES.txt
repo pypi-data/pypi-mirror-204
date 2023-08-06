@@ -1,0 +1,9 @@
+README.md
+setup.py
+cmo_databaseutils/__init__.py
+cmo_databaseutils/databaseutils.py
+cmo_databaseutils.egg-info/PKG-INFO
+cmo_databaseutils.egg-info/SOURCES.txt
+cmo_databaseutils.egg-info/dependency_links.txt
+cmo_databaseutils.egg-info/requires.txt
+cmo_databaseutils.egg-info/top_level.txt
