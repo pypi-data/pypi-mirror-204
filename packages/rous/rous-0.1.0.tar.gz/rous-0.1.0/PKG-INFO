@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: rous
+Version: 0.1.0
+Summary: Doing things the hard way.
+Home-page: https://github.com/chris-c-mcintyre/rous
+Author: chris-c-mcintyre
+Author-email: chris-c-mcintyre@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Ridiculously Overengineered Utility Suite
+
+Doing things the hard way.
+
+🌹🐀
