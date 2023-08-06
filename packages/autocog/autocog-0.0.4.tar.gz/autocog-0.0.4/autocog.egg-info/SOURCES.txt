@@ -1,0 +1,11 @@
+.gitignore
+README.md
+setup.py
+autocog/__init__.py
+autocog/autocog.py
+autocog.egg-info/PKG-INFO
+autocog.egg-info/SOURCES.txt
+autocog.egg-info/dependency_links.txt
+autocog.egg-info/entry_points.txt
+autocog.egg-info/requires.txt
+autocog.egg-info/top_level.txt

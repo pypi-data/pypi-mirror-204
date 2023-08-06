@@ -1,0 +1,2 @@
+[console_scripts]
+autocog = autocog.autocog:autocog
