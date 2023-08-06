@@ -1,0 +1,11 @@
+include requirements.txt
+global-include *.md
+recursive-include hello
+
+# Exclude generated files
+prune */__pycache__
+global-exclude *.pyc *.pyo *.pyd
+
+# Exclude local enviroment
+recursive-exclude env *
+recursive-exclude .env *

@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+hello/__init__.py
+hello/hello.py
+my_latest_hello_world.egg-info/PKG-INFO
+my_latest_hello_world.egg-info/SOURCES.txt
+my_latest_hello_world.egg-info/dependency_links.txt
+my_latest_hello_world.egg-info/requires.txt
+my_latest_hello_world.egg-info/top_level.txt
