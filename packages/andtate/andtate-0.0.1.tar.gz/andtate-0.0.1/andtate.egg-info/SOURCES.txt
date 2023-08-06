@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+andtate/AMDL.py
+andtate/__init__.py
+andtate.egg-info/PKG-INFO
+andtate.egg-info/SOURCES.txt
+andtate.egg-info/dependency_links.txt
+andtate.egg-info/top_level.txt
