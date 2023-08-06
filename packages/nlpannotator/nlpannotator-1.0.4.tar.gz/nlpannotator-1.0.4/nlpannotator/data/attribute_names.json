@@ -1,0 +1,52 @@
+{
+    "stanza_names": {
+        "proc_sent": "tokenize",
+        "proc_lemma": "lemma",
+        "proc_pos": "pos",
+        "sentence": "sentences",
+        "token": "tokens",
+        "pos": "upos",
+        "lemma": "lemma",
+        "ner": "text"
+    },
+    "spacy_names": {
+        "proc_sent": "senter, sentencizer",
+        "proc_lemma": "lemmatizer",
+        "proc_pos": "tagger",
+        "sentence": "sents",
+        "token": "token",
+        "pos": "pos_",
+        "lemma": "lemma_",
+        "ner": "ent_type_"
+    },
+    "treetagger_names": {
+        "proc_sent": "na",
+        "proc_lemma": "lemma",
+        "proc_pos": "pos",
+        "sentence": "na",
+        "token": "word",
+        "pos": "pos",
+        "lemma": "lemma",
+        "ner": "na"
+    },
+    "somajo_names": {
+        "proc_sent": "sentencize",
+        "proc_pos": "na",
+        "proc_lemma": "na",
+        "sentence": "sent",
+        "token": "token",
+        "pos": "na",
+        "lemma": "na",
+        "ner": "na"
+    },
+    "flair_names": {
+        "proc_sent": "na",
+        "proc_pos": "pos",
+        "proc_lemma": "na",
+        "sentence": "sentence",
+        "token": "token",
+        "pos": "pos",
+        "lemma": "na",
+        "ner": "ner"
+    }
+}
