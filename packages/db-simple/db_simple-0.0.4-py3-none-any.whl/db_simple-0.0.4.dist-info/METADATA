@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: db-simple
+Version: 0.0.4
+Summary: Данный модуль , заменяет другие database если вам не удобно их использовать!
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+Модуль db_simple предоставляет простой способ работы с файлами JSON.
+
+Для работы с модулем нужно создать объект класса Database, указав имя файла без расширения .json
+
+```
+from db_simple import File
+database = File("путь").load()
+database.data["имя переменной"] = значение
+database.save()
+
