@@ -1,0 +1,7 @@
+numpy
+scipy
+click
+blosc
+torch
+fair-esm
+statsmodels
