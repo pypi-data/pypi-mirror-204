@@ -1,0 +1,17 @@
+xkey/__about__.py,sha256=IJkSRkllsr5huvgpuGG3VxJpQdRBdn7RHMJWvPVfZ-4,97
+xkey/__init__.py,sha256=1lNBqOACcQ4FHblBMNA86x5uu_cb0lq26jbJ-3r0LTU,132
+xkey/cli.py,sha256=cbEnQStBev1sR6gzhsOiWcuRF5BOoewukUQF72RG-_E,9668
+xkey/exception.py,sha256=2P6tf-pmcg99fusboC9EXR8Rq-7a9ZurtZJiodCYbuk,125
+xkey/sysex/__init__.py,sha256=WKKrjW_htVTpMPzOcV5NyfchqBkqOMIMHWItwWio7so,173
+xkey/sysex/constant.py,sha256=I2AdYsTxCH4XyT2eU_5oeU-TqFEPVfEjqCf-zOLf-qM,281
+xkey/sysex/parser.py,sha256=xHFPX7H94p_GMaL-oLVaTX7xsbhF5_xsQ2EzcT0GrQE,559
+xkey/sysex/novation/__init__.py,sha256=SQ8A3rfuNOe-4kzt305TxFWjKU1sIKJn2I9sIchuY9s,207
+xkey/sysex/novation/codec.py,sha256=sOH5Z_GwgvQj6wRh7nOuUuU0fqCYwZTFopq8QGAWmVM,4817
+xkey/sysex/novation/constant.py,sha256=mNXLCyDnBoysjIbgbmqeMDBds_BgQHoqR0M1up5J3Ug,528
+xkey/sysex/novation/message.py,sha256=-fSDpIn5uE4aCnZQwHeZ8CrYqTVN3UohwBNX2BtsUlM,3579
+xkey-0.1.0.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+xkey-0.1.0.dist-info/METADATA,sha256=qVAQPehMWaMoA5nwR3dh9SCjzL9PzEfL8Kg7ctnCGsk,3009
+xkey-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+xkey-0.1.0.dist-info/entry_points.txt,sha256=z0gAkrkgc01nxtewA5beYBhSHvulqBQCrBpMg3S1jGQ,45
+xkey-0.1.0.dist-info/top_level.txt,sha256=yu1EbRM4K6TcFmE5Zn_DyH0XSWCBzywH_gyMIXAVe68,5
+xkey-0.1.0.dist-info/RECORD,,
