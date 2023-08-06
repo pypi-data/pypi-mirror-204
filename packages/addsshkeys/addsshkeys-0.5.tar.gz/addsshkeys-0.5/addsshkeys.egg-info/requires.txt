@@ -1,0 +1,6 @@
+appdirs
+avendesora>=1.12
+docopt
+inform>=1.14
+nestedtext>=1.1
+pexpect

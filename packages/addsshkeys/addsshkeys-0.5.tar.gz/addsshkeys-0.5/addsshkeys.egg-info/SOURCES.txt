@@ -1,0 +1,9 @@
+README.rst
+addsshkeys
+setup.py
+addsshkeys.egg-info/PKG-INFO
+addsshkeys.egg-info/SOURCES.txt
+addsshkeys.egg-info/dependency_links.txt
+addsshkeys.egg-info/requires.txt
+addsshkeys.egg-info/top_level.txt
+addsshkeys.egg-info/zip-safe
