@@ -1,0 +1,10 @@
+README.md
+setup.py
+filterframes/__init__.py
+filterframes/filterframes.py
+filterframes.egg-info/PKG-INFO
+filterframes.egg-info/SOURCES.txt
+filterframes.egg-info/dependency_links.txt
+filterframes.egg-info/requires.txt
+filterframes.egg-info/top_level.txt
+test/test_filterframes.py
