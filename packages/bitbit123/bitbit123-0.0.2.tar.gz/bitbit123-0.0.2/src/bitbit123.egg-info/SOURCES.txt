@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/bitbit123/__init__.py
+src/bitbit123/example.py
+src/bitbit123.egg-info/PKG-INFO
+src/bitbit123.egg-info/SOURCES.txt
+src/bitbit123.egg-info/dependency_links.txt
+src/bitbit123.egg-info/top_level.txt
