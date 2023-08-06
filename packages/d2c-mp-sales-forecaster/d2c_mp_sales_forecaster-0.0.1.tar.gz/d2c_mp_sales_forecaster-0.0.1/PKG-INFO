@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: d2c_mp_sales_forecaster
+Version: 0.0.1
+Summary: An application for forecasting direct-to-consumer sales quantities using the NeuralProphet algorithm from Meta.
+Project-URL: Homepage, https://github.com/rhanderh/d2c_mp_forecast_tool
+Author-email: Ryan Handerhan <rhanderh@alumni.cmu.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# d2c_mp_sales_forecaster
+
+This is a simple example. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
