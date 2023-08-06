@@ -1,0 +1,10 @@
+jupylite_duckdb/__init__.py,sha256=-Z_P6KBbWKDsMsnvKal14k3bbGljgWmFQPEvz7zrLVU,128
+jupylite_duckdb/_version.py,sha256=bnGb1xseM2J6mXvI8BV0FJtYzRxYAhmJ11S9NxczMas,23
+jupylite_duckdb/jdw.py,sha256=LzIoBx4_3j3iUlp5lviHuISdCClNdHEKb9_O8X1-cpg,9216
+jupylite_duckdb/jdw_magic.py,sha256=EBbz8IhYUc4Wubrfjb5jQcxsHblPj-BdwerktkUWxBo,2149
+jupylite_duckdb/magic.py,sha256=okWgdHbcu0ul2BOYNdu9NHwRSoyAG_0m6RiGnw2Bj_k,979
+jupylite_duckdb-0.0.18a1.dist-info/LICENSE,sha256=WJMtiY9u9JD8FJ18a6_psLMXvrOIA7F-mYphCuyGFvw,1495
+jupylite_duckdb-0.0.18a1.dist-info/METADATA,sha256=O6zIm7mROG8kgkKpB2TDEDXdwQ1pvebr-P5A3oQWoIw,2467
+jupylite_duckdb-0.0.18a1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jupylite_duckdb-0.0.18a1.dist-info/top_level.txt,sha256=y1GybQE7FyRTQPGLf2lE9dStC--h8ZozxhgXQRxz490,16
+jupylite_duckdb-0.0.18a1.dist-info/RECORD,,
