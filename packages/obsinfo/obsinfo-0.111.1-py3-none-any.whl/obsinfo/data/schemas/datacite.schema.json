@@ -1,0 +1,197 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "DataCite",
+    "description": "Scientist-specific DataCite information.  Citations use the elements 'Creators' and 'Title'",
+    "type": "object",
+    "required": ["Title", "Description", "Creators", "Subjects", "Contributors", "GeoLocation"],
+    "properties": {
+                "Title":               {"type" : "string",
+                                        "description": "The dataset's title",
+                                        "$comment": "DataCite ID 3" },
+                "Description":         {"type" : "string",
+                                        "description": "A description of the dataset",
+                                        "$comment": "DataCite ID 17"},
+                "Creators":            {"$ref": "#/definitions/creators"},
+                "Subjects":            {"$ref": "#/definitions/keywords"},
+                "DatesCollected":      {"type": "string",
+                                        "description": "RKMS-ISO860123 standard: e.g. 2004-03-02/2005-06-02",
+                                        "$comment": "DataCite ID 8, dateType=Collected"},
+                "Contributors":        {"$ref": "#/definitions/contributors"},
+                "GeoLocation":        {"$ref": "#/definitions/geo_location"},
+                "RelatedIdentifiers": {"$ref": "#/definitions/related_identifiers"},
+                "Funders":             {"$ref": "#/definitions/funders"}
+    },
+    "additionalProperties" : false,
+    "definitions": {
+        "creators": {
+            "allOf": [
+                {"description": "The main researchers involved in producing the data, or the authors of the publication, in priority order",
+                 "$comment": "DataCite ID 2"},
+                {"$ref": "#/definitions/entities_list"}
+            ]
+        },
+        "entities_list": {
+            "type": "array",
+               "minItems": 1,
+               "description" : "list of entities",
+               "items" : { "$ref" : "#/definitions/entity" }
+        },
+        "entity": {
+            "type": "object",
+            "description": "A person or organization",
+            "required": ["Name"],
+            "properties" : {
+                "Type":   {"type": "string", "enum": ['Personal', 'Organizational']},
+                "Name":   {"type": "string", "description": "family, given if a person"},
+                "Identifier":   {"type": "string", "description": "unique identifier according to the Scheme selected below"},
+                "Scheme":   {"type": "string", "enum": ["ORCID", "ROR", "ISNI", "GRID"]},
+                "Affiliations":    {"$ref": "#/definitions/affiliations"}
+            },
+            "additionalProperties": false
+        },
+        "geo_location": {
+            "type": "object",
+            "description": "Localization of the experiment",
+            "$comment": "DataCite ID 18",
+            "required": ["Place"],
+            "properties" : {
+                "Place":    {"type": "string", "description": "Describe the location"},
+                "BoundingBox": {"$ref": "#/definitions/geo_box"}
+            },
+            "additionalProperties": false
+        },
+        "geo_box": {
+            "type": "object",
+               "description" : "Box surrounding the stations (decimal degrees)",
+                "$comment": "DataCite ID 18.2",
+               "required": ["West", "East", "South", "North"],
+               "properties" : {
+                    "West": {"type": "number"},
+                    "East": {"type": "number"},
+                    "South": {"type": "number"},
+                    "North": {"type": "number"}
+              }
+        },
+        "affiliations": {
+            "type": "array",
+               "minItems": 1,
+               "description" : "List of affiliations",
+               "items" : {"$ref": "#/definitions/affiliation"}
+        },
+        "affiliation": {
+            "type": "object",
+            "description": "Affiliation for an entity",
+            "$comment": "DataCite ID 2.5",
+            "required": ["Name"],
+            "properties" : {
+                "Name":   {"type": "string"},
+                "Identifier":   {"type": "string"},
+                "Scheme":   {"type": "string", "enum": ["ROR", "GRID"]}
+            },
+            "additionalProperties": false
+        },
+        "keywords": {
+            "type": "array",
+               "minItems": 1,
+               "description" : "List of keywords",
+               "$comment": "DataCite ID 6 (Subjects), no scheme, uri or classificationCode",
+               "items" : {"type" : "string"}
+        },
+        "contributors": {
+            "type": "object",
+            "description": "Institutions and/or persons responsible for collecting the data",
+            "$comment": "DataCite ID 7",
+            "required": ["DataCollectors"],
+            "properties" : {
+                "ProjectLeader":    {"$ref": "#/definitions/project_leader"},
+                "DataCollectors":   {"$ref": "#/definitions/data_collectors"},
+                "ProjectMembers":   {"$ref": "#/definitions/project_members"}
+            },
+            "additionalProperties": false
+        },
+        "project_leader": {
+            "allOf": [
+                {"description": "Person officially designated as head of project team instrumental in data collection"},
+                {"$ref": "#/definitions/entity"}
+            ]
+        },
+        "project_members": {
+            "allOf": [
+                {"description": "Persons helping in but not responsible for collecting data"},
+                {"$ref": "#/definitions/entities_list"}
+            ]
+        },
+        "data_collectors": {
+            "allOf": [
+                {"description": "Persons/institutions responsible for collecting data"},
+                {"$ref": "#/definitions/entities_list"}
+            ]
+        },
+        "related_identifiers": {
+            "type": "array",
+               "minItems": 1,
+               "description" : "Identifiers of related resources",
+               "items" : {"$ref": "#/definitions/related_identifier"}
+        },
+        "related_identifier": {
+            "type": "object",
+            "description": "Identifier of a related resource. These must be globally unique identifiers",
+            "$comment": "DataCite ID 12",
+            "required": ["Identifier", "Type"],
+            "properties" : {
+                "Identifier":   {"type": "string"},
+                "Type":     {"type": "string", 
+                             "enum": ["ARK", "arXiv", "bibcode", "DOI",
+                                      "EAN13", "EISSN", "Handle", "IGSN",
+                                      "ISBN", "ISSN", "ISTC", "LISSN", "LSID",
+                                      "PMID", "PURL", "UPC", "URL", "URN",
+                                      "w3id"]
+                            },
+                "RelationType":   {"$ref": "#/definitions/relation"}
+            },
+            "additionalProperties": false
+        },
+        "relation":   {
+            "type": "string", 
+            "description": "This datacite {RELATION} the related resource",
+            "enum": ["IsCitedBy", "Cites",
+                     "IsSupplementTo", "IsSupplementedBy",
+                     "IsContinuedBy", "Continues",
+                     "IsDescribedBy", "Describes",
+                     "HasMetadata", "IsMetadataFor",
+                     "HasVersion", "IsVersionOf",
+                     "IsNewVersionOf", "IsPreviousVersionOf",
+                     "IsPartOf", "HasPart",
+                     "IsReferencedBy", "References",
+                     "IsDocumentedBy", "Documents",
+                     "IsCompiledBy", "Compiles",
+                     "IsVariantFormOf", "IsOriginalFormOf",
+                     "IsIdenticalTo",
+                     "IsReviewedBy", "Reviews",
+                     "IsDerivedFrom", "IsSourceOf",
+                     "IsRequiredBy", "Requires",
+                     "IsObsoletedBy", "Obsoletes"]
+        },
+        "funders": {
+            "type": "array",
+               "minItems": 1,
+               "description" : "List of Funders",
+               "items" : {"$ref": "#/definitions/funder"}
+        },
+        "funder": {
+            "type": "object",
+            "description": "Funder",
+            "$comment": "DataCite ID 19",
+            "required": ["Name"],
+            "properties" : {
+                "Name":   {"type": "string"},
+                "Identifier":   {"type": "string"},
+                "Scheme":   {"type": "string", "enum": ["ROR", "GRID"]},
+                "AwardNumber": {"type": "string"},
+                "AwardURI": {"type": "string"},
+                "AwardTitle": {"type": "string"}
+            },
+            "additionalProperties": false
+        }
+    }
+}

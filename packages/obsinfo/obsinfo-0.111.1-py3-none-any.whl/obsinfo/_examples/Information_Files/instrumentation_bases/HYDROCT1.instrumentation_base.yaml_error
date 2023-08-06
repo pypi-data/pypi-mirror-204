@@ -1,0 +1,29 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2018-06-01"
+    authors:
+        - {$ref: "persons/Wayne_Crawford.person.yaml#person"}
+        - {$ref: "persons/Romuald_Daniel.person.yaml#person"}
+instrumentation_base:
+    equipment:
+        model: "HYDROCT1"
+        type: "Multi-hydrophone antenna"
+        description: "LCHEAPO 2000 Hydro-octopus, 4 channels, HTI-90U hydrophones"
+        manufacturer: "INSU-IPGP"
+        vendor: ~
+    channels:
+        default:
+            datalogger: {base: {$ref: "dataloggers/LC2000.datalogger_base.yaml#datalogger_base"}}
+            preamplifier: {base: {$ref: "preamplifiers/LCHEAPO_HYDRO.preamplifier_base.yaml#preamplifier_base"},
+                           configuration: "16x gain"}
+            sensor: {base: {$ref: "sensors/HITECH_HTI90U.sensor_base.yaml#sensor_base"}}
+            orientation : {"H": {azimuth.deg: {value: 0}, dip.deg: {value: 90}}}
+        "1":
+            location_code: "01"
+        "2":
+            location_code: "02"
+        "3":
+            location_code: "03"
+        "4":
+            location_code: "04"

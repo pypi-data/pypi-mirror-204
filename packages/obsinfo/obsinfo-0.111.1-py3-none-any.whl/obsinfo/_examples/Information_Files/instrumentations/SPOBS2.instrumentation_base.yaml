@@ -1,0 +1,29 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2018-06-01"
+    authors:
+        - {$ref: "persons/Wayne_Crawford.person.yaml#person"}
+        - {$ref: "persons/Romuald_Daniel.person.yaml#person"}
+instrumentation_base:
+    equipment:
+        model: "SPOBS2"
+        type: "Short Period Ocean Bottom Seismometer"
+        description: "LCHEAPO 2000 SPOBS, 4 channels, L-28 3C geophone"
+        manufacturer: "Scripps Inst. Oceanography"
+        vendor: "Scripps Inst. Oceanography"   
+    channels:
+        default:
+            datalogger: {base: {$ref: "dataloggers/LC2000.datalogger_base.yaml#datalogger_base"}}
+            preamplifier: {base: {$ref: "preamplifiers/LCHEAPO_GEOPHONE.preamplifier_base.yaml#preamplifier_base"},
+                           configuration: "128x gain"}
+            sensor: {base: {$ref: "sensors/SERCEL_L28.sensor_base.yaml#sensor_base"}}
+        "1":
+            orientation : {"H": {azimuth.deg: {value: 0}, dip.deg: {value: 90}}}
+            preamplifier: {base: {$ref: "preamplifiers/LCHEAPO_HYDRO.preamplifier_base.yaml#preamplifier_base"},
+                           configuration: "16x gain"}
+            sensor: {base: {$ref: "sensors/HITECH_HTI90U.sensor_base.yaml#sensor_base"}}
+            
+        "2": {orientation: {"2": {azimuth.deg: {value: 90, uncertainty: 180}}}}
+        "3": {orientation: {"1": {azimuth.deg: {value: 0, uncertainty: 180}}}}
+        "4": {orientation: {"3": {dip.deg: {value: 90}}}}

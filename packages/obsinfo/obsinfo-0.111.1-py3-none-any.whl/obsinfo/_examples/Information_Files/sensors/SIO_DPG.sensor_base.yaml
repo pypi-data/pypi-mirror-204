@@ -1,0 +1,51 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2017-11-30"
+    authors: 
+        - $ref: "persons/Wayne_Crawford.person.yaml#person"
+sensor_base:
+    equipment:
+        model: "DPG"
+        type: "Differential Pressure Gauge"
+        description: "Differential Pressure Gauge"
+        manufacturer: "various"
+        vendor: "various"
+    seed_codes:
+        band_base: "B"
+        instrument: "D"
+    stages:
+        - {base: {$ref: "sensors/stages/SIO-LDEO_DPG_generic_theoretical.stage_base.yaml#stage_base"}}
+    configuration_default: "generic"
+    configurations:
+        "generic":
+            equipment: {manufacturer: "unknown"}
+        "5004": 
+            equipment: {manufacturer: "SIO", serial_number: "5004"}
+            stages: 
+                - {base: {$ref: "sensors/stages/SIO-LDEO_DPG_5004_calibrated.stage_base.yaml#stage_base"}}
+        "5018":
+            equipment: {manufacturer: "SIO", serial_number: "5018"}
+            stages:
+                - {base: {$ref: "sensors/stages/SIO-LDEO_DPG_5018_calibrated.stage_base.yaml#stage_base"}}
+        "5027":
+            equipment: {manufacturer: "SIO", serial_number: "5027"}
+        "IP004":
+            equipment: {manufacturer: "IPGP", serial_number: "IP004"}
+        "IP005":
+            equipment: {manufacturer: "IPGP", serial_number: "IP005"}
+        "IP006":
+            equipment: {manufacturer: "IPGP", serial_number: "IP006"}
+        "IP007":
+            equipment: {manufacturer: "IPGP", serial_number: "IP007"}
+        "LD013":
+            equipment: {manufacturer: "LDEO", serial_number: "LD013"}
+        "LDxxx":
+            equipment: 
+                serial_number: "LDxxx"
+                manufacturer: "LDEO"
+                description: "DPG on lost BBOBS9, did not note serial number"
+                
+notes: 
+    - "dip value assumes pressure gauge positive correponds to increasing pressure in upward compressional wave (seafloor up => pressure up)"
+    - "orientation H=hydrophone, F=infrasound.  Which to use?"

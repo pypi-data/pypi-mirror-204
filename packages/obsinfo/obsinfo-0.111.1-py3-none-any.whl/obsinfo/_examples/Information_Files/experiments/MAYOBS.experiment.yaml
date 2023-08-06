@@ -1,0 +1,437 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2017-09-14"
+    authors: 
+        -
+            names: ["Wayne Crawford"]
+            emails: ["crawford@ipgp.fr"]
+experiment:
+    reference_name: "MAYOBS"
+    reference_scientist:
+        names: ["Wayne Crawford"]
+        agencies: ["Institut de Petits Genies de Paris"]
+        emails: ["crawford@ipgp.fr"]
+        phones: []
+    data_distribution:
+        embargo_period.a: 3
+    fdsn_network:
+        code: "IT"
+        name: "Temporal seismological network Mayotte (SISMAYOTTE)"
+        description: "Seismic monitoring of seismic sequence near Mayotte, on and offshore,"
+        start_date: "2018-01-01"
+        end_date: "2025-12-31"
+    campaigns:
+        "MAYOBS_0":
+            start_date: "2019-02-25"
+            end_date: "2019-05-06"
+            operators:
+                "INSU-IPGP":
+                    notes: 
+                        - "MOCE recorded 2019-03-26 to 2019-04-10"
+                        - "MONE recorded 2019-03-27 to 2019-04-11"
+                    stations:
+                        - 'MONO'
+                        - 'MONN'
+                        - 'MONE'
+                        - 'MOCE'
+                        - 'MOSW'
+                        - 'MOSE'
+            validation_methods:
+                waveform_windows:
+                    -   title: "M5.1 local earthquake"
+                        starttime: "2019-03-13T04:27:51"
+                        duration.s: 120
+                    -   title: "M5.1 local earthquake"
+                        starttime: "2019-04-05T10:28:04"
+                        duration.s: 120
+            expeditions:
+                - name: "MAYOBS0"
+                  actions: "Deployment OBSs INSU-IPGP, relocalisation acoustique"
+                - {name: "MAYOBS1", actions: "Recuperations INSU-IPGP"}
+        "MAYOBS_A_LONG":
+            start_date: "2019-05-13"
+            end_date: "2019-09-28"
+            operators:
+                "INSU-IPGP":
+                    notes: 
+                        - "MOSA ended 2019-09-04"
+                    stations:
+                        - 'MOFA'
+                        - 'MOSA'
+                        - 'MONA'
+                        - 'MODA'
+            validation_methods:
+                waveform_windows:
+                    -   title: "M5.0 local earthquake"
+                        starttime: "2019-05-14T00:20:38"
+                        duration.s: 120
+                    -   title: "M4.6 local earthquake"
+                        starttime: "2019-05-28T10:53:18"
+                        duration.s: 120
+                    -   title: "M4.4 local earthquake"
+                        notes: ["Reseau A (INSU)"]
+                        starttime: "2019-08-30T00:32:44"
+                        duration.s: 120
+            expeditions:
+                - name: "MAYOBS1"
+                  actions: "Deployment INSU-IPGP avec BUC, IFREMER sans (sauf IF1A)?"
+                - {name: "MAYOBS6", actions: "Recovery INSU-IPGP"}
+        "MAYOBS_A_COURT":
+            start_date: "2019-05-13"
+            end_date: "2019-06-15"
+            operators:
+                "INSU-IPGP":
+                    notes: 
+                        - "MOCA recorded 2019-05-27 to 2019-06-11"
+                        - "MOVA recorded 2019-05-30 to 2019-06-14"
+                    stations:
+                        - 'MOCA'
+                        - 'MOVA'
+                "IFREMER":
+                    stations:
+                        - 'IF1A'
+                        - 'IF2A'
+                        - 'IF3A'
+                        - 'IF4A'
+                        - 'IF5A'
+                        - 'IF6A'
+                        - 'IF7A'
+                        - 'IF8A'
+            validation_methods:
+                waveform_windows:
+                    -
+                        title: "M5.0 local earthquake"
+                        starttime: "2019-05-14T00:20:38"
+                        duration.s: 120
+                    -
+                        title: "M4.6 local earthquake"
+                        starttime: "2019-05-28T10:53:18"
+                        duration.s: 120
+            expeditions:
+                - name: "MAYOBS1"
+                  actions: "Deployment INSU-IPGP avec BUC, IFREMER sans (sauf IF1A)?"
+                - name: "MAYOBS2"
+                  actions: "Recovery IFREMER + INSU-IPGP MOVA/CA"
+        "MAYOBS_B":
+            start_date: "2019-06-16"
+            end_date: "2019-07-10"
+            operators:
+                "INSU-IPGP":
+                    stations:
+                        - 'MOVB'
+                "IFREMER":
+                    stations:
+                        - 'IF1B'
+                        - 'IF2B'
+                        - 'IF4B'
+                        - 'IF5B'
+                        - 'IF6B'
+                        - 'IF7B'
+                        - 'IF8B'
+            validation_methods:
+                waveform_windows:
+                    -
+                        title: "M4.4 local earthquake"
+                        starttime: "2019-07-05T16:59:57"
+                        duration.s: 120
+            expeditions:
+                - {name: "MAYOBS2", actions: "Deployments"}
+                - {name: "MATOBS4?", actions: "Recoveries micrOBS"}
+                - {name: "MAYOBS6", actions: "Attempted Recovery INSU-IPGP?"}
+        "MAYOBS_C":
+            start_date: "2019-10-01"
+            end_date: "2019-10-24"
+            operators:
+                "IFREMER":
+                    stations:
+                        - 'IF1C'
+                        - 'IF2C'
+                        - 'IF3C'
+                        - 'IF5C'
+                        - 'IF6C'
+                        - 'IF7C'
+                        - 'IF9C'
+                        - 'IF10C'
+                        - 'IF11C'
+                        - 'IF12C'
+                        - 'IF13C'
+                        - 'IF14C'
+                        - 'IF15C'
+                        - 'IF16C'
+                        - 'IF17C'
+                        - 'IF18C'
+            validation_methods:
+                waveform_windows: []
+            expeditions:
+                - {name: "MAYOBS4?", actions: "Deployments"}
+                - {name: "MAYOBS5?", actions: "Recoveries"}
+        "MAYOBS_D":
+            start_date: "2019-10-26"
+            end_date: "2019-11-19"
+            operators:
+                "IFREMER":
+                    stations:
+                        - 'IF1D'
+                        - 'IF2D'
+                        - 'IF3D'
+                        - 'IF5D'
+                        - 'IF6D'
+                        - 'IF7D'
+                        - 'IF9D'
+                        - 'IF10D'
+                        - 'IF11D'
+                        - 'IF12D'
+                        - 'IF13D'
+                        - 'IF14D'
+                        - 'IF15D'
+                        - 'IF16D'
+                        - 'IF17D'
+                        - 'IF18D'
+            validation_methods:
+                waveform_windows: []
+            expeditions:
+                - {name: "MAYOBS6", actions: "Deploiement micrOBS IFREMER"}
+                - {name: "MAYOBS8?", actions: "Recuperation micrOBS IFREMER?"}
+        "MAYOBS_E":
+            start_date: "2019-11-25"
+            end_date: "2020-02-28"
+            operators:
+               "IFREMER":
+                    notes: 
+                        - "IF6E and IF18E lost?"
+                        - "IF14E stopped 2020-02-10"
+                    stations:
+                        - "IF2E"
+                        - "IF6E"
+                        - "IF10E"
+                        - "IF14E"
+                        - "IF18E"
+            validation_methods:
+                waveform_windows: []
+            expeditions:
+                - {name: "MAYOBS8?", actions: "Deploiement LotOBS IFREMER"}
+                - {name: "MAYOBS13-1", actions: "Recovery IFREMER (2 perdus)"}
+        "MAYOBS_F":
+            start_date: "2019-12-15"
+            end_date: "2020-05-11"
+            operators:
+                "INSU-IPGP":
+                    stations:
+                        - 'MOAF'
+                        - 'MOCF'
+                        - 'MODF'
+                        - 'MOSF'
+            validation_methods:
+                waveform_windows: []
+            expeditions:
+                - {name: "MAYOBS9", actions: "Deploiement"}
+                - {name: "MAYOBS13-1", actions: "Recuperation"}
+        "MAYOBS_G":
+            start_date: "2020-05-12"
+            end_date: "2020-10-06"
+            operators:
+                "INSU-IPGP":
+                    stations:
+                        - 'MOAG'
+                        - 'MOBG'
+                        - 'MOCG'
+                        - 'MODG'
+                        - 'MONG'
+                        - 'MOSG'
+            validation_methods:
+                waveform_windows: []
+            expeditions:
+                - {name: "MAYOBS13-1", actions: "Deploiement, pas de reloc"}
+                - {name: "MAYOBS15", actions: "Recuperation"}
+        "MAYOBS_H":
+            start_date: "2020-10-12"
+            end_date: "2021-01-26"
+            operators:
+                "INSU-IPGP":
+                    stations:
+                        - 'MOAH'
+                        - 'MOBH'
+                        - 'MOCH'
+                        - 'MODH'
+                        - 'MONH'
+                        - 'MOSH'
+                        - 'MOOH'
+            validation_methods:
+                waveform_windows: []
+            expeditions:
+                - name: "MAYOBS15"
+                  actions: "Deploiement INSU-IPGP and micrOBS IFREMER, MOCH et MOOH par BUC"
+                - {name: "MAYOBS17", actions: "Recuperation"}
+        "MAYOBS_I":
+            start_date: "2021-02-06"
+            end_date: ~
+            operators:
+                "INSU-IPGP":
+                     stations:
+                        - 'MOAI'
+                        - 'MOBI'
+                        - 'MOCI'
+                        - 'MODI'
+                        - 'MONI'
+                        - 'MOSI'
+            validation_methods:
+                waveform_windows: []
+            expeditions:
+                - {name: "MAYOBS17", actions: "Deploiement"}
+                - {name: "MAYOBS18", actions: "Recuperation"}
+        "MAYOBS_J":
+            start_date: "2021-04-11"
+            end_date: "2021-09-20"
+            operators:
+                "INSU-IPGP":
+                     stations:
+                        - 'MOAJ'
+                        - 'MOBJ'
+                        - 'MOCJ'
+                        - 'MODJ'
+                        - 'MONJ'
+                        - 'MOSJ'
+            validation_methods:
+                waveform_windows: []
+            expeditions:
+                - {name: "MAYOBS18", actions: "Deploiement"}
+                - {name: "MAYOBS21", actions: "Recuperation"}
+        "MAYOBS_K":
+            start_date: "2021-09-21"
+            end_date: "2022-03-08"
+            operators:
+                "INSU-IPGP":
+                     stations:
+                        - 'MOAK'
+                        - 'MOBK'
+                        - 'MOCK'
+                        - 'MODK'
+                        - 'MONK'
+                        - 'MOSK'
+            validation_methods:
+                waveform_windows: []
+            expeditions:
+                - {name: "MAYOBS21", actions: "Deployment"}
+                - {name: "MAYOBS22", actions: "Recuperation"}
+        "MAYOBS_L":
+            start_date: "2022-03-08"
+            end_date: "2022-07-15"
+            operators:
+                "INSU-IPGP":
+                     stations:
+                        - 'MOAL'
+                        - 'MOBL'
+                        - 'MOCL'
+                        - 'MODL'
+                        - 'MONL'
+                        - 'MOSL'
+            validation_methods:
+                waveform_windows: []
+            expeditions:
+                - {name: "MAYOBS22", actions: "Deployment, changement batteries SPOBS"}
+                - {name: "MAYOBS23", actions: "Recuperation"}
+        "MAYOBS_M":
+            start_date: "2022-07-14"
+            end_date: ~
+            operators:
+                "INSU-IPGP":
+                     stations:
+                        - 'MOAM'
+                        - 'MOBM'
+                        - 'MOCM'
+                        - 'MODM'
+                        - 'MONM'
+                        - 'MOSM'
+            validation_methods:
+                waveform_windows: []
+            expeditions:
+                - {name: "MAYOBS22", actions: "Deployment, changement batteries SPOBS"}
+                - {name: "MAYOBS23", actions: "Recuperation"}
+    expeditions:
+        "MayOBS0":
+            ship_name: "Ylang"
+            start_date: "2019-02-23"
+            end_date: "2019-02-26"
+            participants: ["Wayne Crawford", "Romuald Daniel", "Simon Besancon"]
+        "MayOBS1":
+            ship_name: "Marion Dufresne"
+            start_date: "2019-05-02"
+            end_date: "2019-05-18"
+            participants: ["Romuald Daniel", "Wayne Crawford", "Jeremy Gomez"]
+        "MayOBS2":
+            ship_name: "Marion Dufresne"
+            start_date: "2019-06-11"
+            end_date: "2019-06-17"
+            participants: ["Romuald Daniel", "Felix Leger"]
+        "MayOBS3":
+            ship_name: "Marion Dufresne"
+            start_date: "2019-07-13"
+            end_date: "2019-07-14"
+        "MayOBS4":
+            ship_name: "Marion Dufresne"
+            start_date: "2019-07-17"
+            end_date: "2019-07-31"
+        "MayOBS5":
+            ship_name: "Beautemps-Beaupre"
+            start_date: "2019-08-21"
+            end_date: ~
+        "MayOBS6":
+            ship_name: "Ylang"
+            start_date: "2019-09-28"
+            end_date: "2019-09-30"
+            participants: ["Romuald Daniel", "Simon Besancon"]
+            notes: ["Recuperation INSU reseau A?"]
+        "MayOBS8":
+            ship_name: "Ylang"
+            start_date: "2019-11-24"
+            end_date: "2019-11-28"
+            notes: ["IF01 pas remonté"]
+        "MayOBS9":
+            ship_name: "Ylang?"
+            start_date: "2019-12-13"
+            end_date: "2019-12-15"
+            notes: ["5e OBS INSU panne sur fond de panier cartes"]
+            participants: ["Simon Besancon", "Tarik Adda-Benacia"]
+        "MayOBS11":
+            ship_name: "Ylang?"
+            start_date: "2020-01-14"
+            end_date: "2020-01-15"
+            notes: ["5e OBS INSU toujours pas fonctionnelle"]
+        "MayOBS13-1":
+            ship_name: "Champlain"
+            start_date: "2020-05-09"
+            end_date: "2020-05-22"
+            notes: ["2 LotOBS pas remontés"]
+            participants: ["Simon Besancon", "Tom Dumouche"]
+        "MayOBS15":
+            ship_name: "Marion Dufresne"
+            start_date: "2020-09-29"
+            end_date: "2020-10-26"
+            participants: ["Simon Besancon", "Kevin Canjamale", "Cyprien Griot"]
+            notes: ["Batteries OBS changés"]
+        "MAYOBS17":
+            ship_name: "Pourquoi Pas?"
+            start_date: "2021-01-22"
+            end_date: "2021-02-11"
+            participants: ["Romuald Daniel", "Tom Dumouche"]
+        "MAYOBS18":
+            ship_name: "Pourquoi Pas?"
+            start_date: "2021-04-04"
+            end_date: "2021-04-15"
+            participants: ["Simon Besancon", "Kevin Canjamale", "Cyprien Griot"]
+        "MAYOBS21":
+            ship_name: "N/O Marion Dufresne"
+            start_date: "2021-09-13"
+            end_date: "2021-10-04"
+            participants: ["Simon Besancon", "Kevin Canjamale", "Cyprien Griot"]
+        "MAYOBS22":
+            ship_name: "OSIRIS II"
+            start_date: "2022-03-07"
+            end_date: "2022-03-11"
+            participants: ["Tom Dumouch", "Kevin Canjamale", "Cyprien Griot", "Wayne Crawford", "Christophe Brunet", "David Hautemayou"]
+        "MAYOBS23":
+            ship_name: "N/O Marion Dufresne"
+            start_date: "2022-07-10"
+            end_date: "2022-07-27"
+            participants: ["Kevin Canjamale", "Jean-Marie Saurel", "David Hautemayou"]

@@ -1,0 +1,12 @@
+---
+format_version: "0.111"
+revision:
+    authors:
+        - {$ref: "persons/Wayne_Crawford.person.yaml#person"}
+    date: "2019-12-19"
+network:
+    code: "4G"
+    name: "EMSO-AZORES"
+    start_date: "2007-07-01"
+    end_date: "2025-12-31"
+    description: "Local seismological network around the summit of Lucky Strike volcano"

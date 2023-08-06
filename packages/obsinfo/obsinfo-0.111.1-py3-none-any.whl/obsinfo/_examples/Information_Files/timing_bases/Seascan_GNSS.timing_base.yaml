@@ -1,0 +1,10 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2022-12-15"
+    authors: 
+        - $ref: "persons/Wayne_Crawford.person.yaml#person"
+timing_base:
+    instrument: "Seascan MCXO, ~1e-8 nominal drift"
+    reference: "GNSS"
+    start_sync_instrument: 0

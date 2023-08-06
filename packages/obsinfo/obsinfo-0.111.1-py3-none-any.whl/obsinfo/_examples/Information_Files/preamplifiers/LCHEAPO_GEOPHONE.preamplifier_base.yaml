@@ -1,0 +1,30 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2017-11-30"
+    authors: 
+        -   $ref: "persons/Wayne_Crawford.person.yaml#person"
+preamplifier_base:
+    equipment:
+        model: "GEOPHONE-GAIN"
+        type: "Analog gain/filter card"
+        description: "SIO gain/filter card, seismo channel"
+        manufacturer: "SIO or IPGP"
+        vendor: ""
+    stages:
+        - {base: {$ref: "preamplifiers/stages/INSU_SPOBS_geophone_theoretical.stage_base.yaml#stage_base"}}
+    configuration_default: "128x gain"
+    configurations:
+        "16x gain":
+            stage_modifications:
+                '*': {configuration: "16x"}
+        "32x gain":
+            stage_modifications:
+                '*': {configuration: "32x"}
+        "64x gain":
+            stage_modifications:
+                '*': {configuration: "64x"}
+        "128x gain":
+            stage_modifications:
+                '*': {configuration: "128x"}
+           

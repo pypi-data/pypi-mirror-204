@@ -1,0 +1,20 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2017-11-30"
+    authors: 
+        - $ref: "persons/Wayne_Crawford.person.yaml#person"
+sensor_base:
+    notes: 
+        - "dip value of 90 assumes positive output = pressure decrease (seafloor down => pressure up)"
+    equipment:
+        model: "HTI-04-PLC-ULF"
+        type: "Hydrophone"
+        description: "HiTech HTI-04-PLC-ULF hydrophone, 0.01-XXX Hz"
+        manufacturer: "HiTech, inc"
+        vendor: "various"
+    seed_codes:
+        band_base: "B"
+        instrument: "D"
+    stages:
+        - {base: {$ref: "sensors/stages/HiTech_HTI-04-PLC-ULF_voltage-mode_theoretical.stage_base.yaml#stage_base"}}

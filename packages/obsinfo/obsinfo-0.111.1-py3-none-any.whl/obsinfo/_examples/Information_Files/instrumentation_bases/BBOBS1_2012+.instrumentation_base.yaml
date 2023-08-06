@@ -1,0 +1,81 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2019-12-19"
+    authors:
+        - {$ref: "persons/Wayne_Crawford.person.yaml#person"}
+        - {$ref: "persons/Romuald_Daniel.person.yaml#person"}
+instrumentation_base:
+    equipment:
+        model: "BBOBS1"
+        type: "Broadband Ocean Bottom Seismometer"
+        description: "LCHEAPO 2000 BBOBS 2012-present" 
+        manufacturer: "Scripps Inst. Oceanography - INSU"
+        vendor: "Scripps Inst. Oceanography - INSU"
+    channels:
+        default:
+            datalogger: {base: {$ref: "dataloggers/LC2000.datalogger_base.yaml#datalogger_base"}}
+            preamplifier: {base: {$ref: "preamplifiers/LCHEAPO_BBOBS.preamplifier_base.yaml#preamplifier_base"},
+                           configuration: "0.225x gain"}
+            sensor: {base: {$ref: "sensors/NANOMETRICS_T240__theoretical.sensor_base.yaml#sensor_base"},
+                     configuration: "SN1-399, single-sided"}  
+        "1":
+            orientation: {"2": {azimuth.deg: {value: 90, uncertainty: 180}}}
+        "2":
+            orientation: {"1": {azimuth.deg: {value: 90, uncertainty: 180}}}
+        "3": 
+            orientation: {"Z":  {azimuth.deg: {value: 0}, dip.deg: {value: -90}}}
+            preamplifier: {configuration: "1x gain"}
+        "4":
+            orientation : {"H": {azimuth.deg: {value: 0}, dip.deg: {value: 90}}}
+            ^preamplifier: {base: {$ref: "preamplifiers/LCHEAPO_DPG.preamplifier_base.yaml#preamplifier_base"}}
+            ^sensor: {base: {$ref: "sensors/SIO_DPG.sensor_base.yaml#sensor_base"}}         
+            extras:
+                DBIRD_response_type : "CALIBRATED"   
+    configurations:
+        "SN01":
+            equipment: {serial_number: '01'}
+            channels:
+                default: {sensor: {configuration: "Sphere01"}}
+                "4": {sensor: {configuration: "generic"}}
+        "SN02":
+            equipment: {serial_number: '02'}
+            channels:
+                default: {sensor: {configuration: "Sphere02"}}
+                "4": {sensor: {configuration: "generic"}} 
+        "SN03":
+            equipment: {serial_number: '03'}
+            channels:
+                default: {sensor: {configuration: "Sphere03"}}
+                "4": {sensor: {configuration: "generic"}}
+        "SN04":
+            equipment: {serial_number: '03'}
+            channels:
+                default: {sensor: {configuration: "Sphere04"}}
+                "4": {sensor: {configuration: "generic"}}
+        "SN05":
+            equipment: {serial_number: '03'}
+            channels:
+                default: {sensor: {configuration: "Sphere05"}}
+                "4": {sensor: {configuration: "generic"}}
+        "SN06":
+            equipment: {serial_number: '03'}
+            channels:
+                default: {sensor: {configuration: "Sphere06"}}
+                "4": {sensor: {configuration: "generic"}}
+        "SN07":
+            equipment: {serial_number: '03'}
+            channels:
+                default: {sensor: {configuration: "Sphere07"}}
+                "4": {sensor: {configuration: "generic"}}
+        "SN08":
+            equipment: {serial_number: '03'}
+            channels:
+                default: {sensor: {configuration: "Sphere08"}}
+                "4": {sensor: {configuration: "generic"}}
+        "SN09":
+            equipment: {serial_number: '03'}
+            channels:
+                default: {sensor: {configuration: "Sphere09"}}
+                "4": {sensor: {configuration: "generic"}}            
+    
