@@ -1,0 +1,2 @@
+[console_scripts]
+botsniffer = botsniffer.scanner:main
