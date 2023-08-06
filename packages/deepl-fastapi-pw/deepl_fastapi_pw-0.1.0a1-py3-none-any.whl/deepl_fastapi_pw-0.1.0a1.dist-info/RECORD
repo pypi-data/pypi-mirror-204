@@ -1,0 +1,14 @@
+deepl_fastapi_pw/__init__.py,sha256=NuJpQWC7JqF2A6zxi6CbZCpLmLSQbj-_HrvBD1jTAdE,336
+deepl_fastapi_pw/__main__.py,sha256=N8m0ZbFArGrEUtjVeneWx1-NYcCFEk3cGhowsyZMA64,1582
+deepl_fastapi_pw/deepl_server.py-,sha256=hkr-JnE4w52vXDrvS5UuKgPx7S18aDIw-iUHwfftOAI,4742
+deepl_fastapi_pw/deepl_server.py.portalocker.lock,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepl_fastapi_pw/deepl_server_async.py,sha256=dzt69iPuiCHwfg8s9UVsUYZYmVhvX-2777gg3uHKJ38,5607
+deepl_fastapi_pw/deepl_tr.py,sha256=oFz50TycNHVWTgAxXTFdyiEeAdaGzuA0_YZg4d2G51c,8939
+deepl_fastapi_pw/get_pwbrowser.py,sha256=qOVEUpLZJFqI8kLBchVYc_cDAq5nFTQnlvJi_rZgbRY,4335
+deepl_fastapi_pw/run_uvicorn.py,sha256=KZ7_DTmKYKHrJhfmXITINtippjDiMFtqbVccAVnWws8,1610
+deepl_fastapi_pw/run_uvicorn_async.py,sha256=40A1VGpe0-HDWadNYBLh8z28Fos33m7Fdp-ebnYAzbQ,1655
+deepl_fastapi_pw-0.1.0a1.dist-info/entry_points.txt,sha256=F3Z-BiBCm3AZP10nnvkDBMMgpuuAG-BMRzzZzd4jhac,70
+deepl_fastapi_pw-0.1.0a1.dist-info/LICENSE,sha256=2Z4g7Eq1bQRfTQoryBnNsyhlWBpAGylKyp1KFJMlTWU,1085
+deepl_fastapi_pw-0.1.0a1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+deepl_fastapi_pw-0.1.0a1.dist-info/METADATA,sha256=bKi_-TXDWBhlFOp5V7Q7831nWf-l5sdKXHhrE6aQNEQ,3649
+deepl_fastapi_pw-0.1.0a1.dist-info/RECORD,,

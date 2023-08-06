@@ -1,0 +1,3 @@
+[console_scripts]
+deepl-fastapi-pw=deepl_fastapi_pw.run_uvicorn:main
+
