@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: net-van
+Version: 0.1.0
+Summary: Small and easy to use feed-forward ANN library.
+Author: Vavrinec Kavan
+Author-email: vavrinec.kavan@gmail.com
+Requires-Python: >3.7,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: glob2
+Requires-Dist: matplotlib (>=3.5.0,<4.0.0)
+Requires-Dist: numpy (>=1.21.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# netvan
+Small and easy to use feed-forward ANN library
+
