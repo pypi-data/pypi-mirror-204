@@ -1,0 +1,5 @@
+SciAssist
+chatsonic
+convert_pegasus
+logs
+process
