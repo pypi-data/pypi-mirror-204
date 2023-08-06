@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: govee-btled-h613b
+Version: 0.0.6
+Summary: Control Govee LED BLE device H613B
+Home-page: https://github.com/gilcu3/govee-btled-H613B
+License: Apache Software License 2.0
+Author: gilcu3
+Author-email: gilcu3@github.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: async-timeout (>=4.0.1)
+Requires-Dist: bleak (>=0.19.0)
+Requires-Dist: bleak-retry-connector (>=2.3.0)
+Requires-Dist: colour (>=0.1.5)
+Project-URL: Bug Tracker, https://github.com/gilcu3/govee-btled-H613B/issues
+Project-URL: Changelog, https://github.com/gilcu3/govee-btled-H613B/blob/master/CHANGELOG.md
+Project-URL: Repository, https://github.com/gilcu3/govee-btled-H613B
+Description-Content-Type: text/markdown
+
+# LED BLE
+
+Control Govee LED BLE device H613B
+
+## Installation
+
+Install this via pip (or your favourite package manager):
+
+`pip install govee-btled-H613B`
+
