@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: gulistandb
+Version: 0.0.1
+Summary: Short project description
+Author: Azaz Ahmed
+Author-email: lipuahmedazaz79@gmail.com
+License: MIT
+License-File: License
+Requires-Dist: pandas
+
