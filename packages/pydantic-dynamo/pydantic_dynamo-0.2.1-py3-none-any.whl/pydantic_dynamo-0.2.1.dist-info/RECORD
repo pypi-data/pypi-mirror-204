@@ -1,0 +1,14 @@
+pydantic_dynamo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_dynamo/constants.py,sha256=H4V0KgKhJBK5Pi5tU80tJysqKfUEZrI0IUGRfFkU7YY,243
+pydantic_dynamo/exceptions.py,sha256=zWVLk3TB72M93IeOhOTgTuvbhqs8CHcgVBThJZwzCUY,53
+pydantic_dynamo/models.py,sha256=Jl8G7nwlb-S_yElttS8ryIsCxYSnPv8pVxlH6EyutrA,3294
+pydantic_dynamo/repository.py,sha256=q3L-Qh9pQl6XLyPFyoGKY2PyCJvZ1Y21LLwUCXPAzT4,14586
+pydantic_dynamo/utils.py,sha256=rq_KmvTkM8o-S7td6VDcxfkIsHimQfoCn7gfpTW-mGk,10579
+pydantic_dynamo/v2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_dynamo/v2/models.py,sha256=jmtTveDo8xzuTHUzgnu3DERDm1oXZCADkTv6gBEYngA,4355
+pydantic_dynamo/v2/repository.py,sha256=gi8TpOjW74ZZ9Qg3DS8ZXbJyzX8PJBeS51el6w8dUmM,16611
+pydantic_dynamo/v2/sync_repository.py,sha256=ucGEReMoKYSqj6NF6Pp2sItnEQq7fqwMYeWBRFmek-8,3781
+pydantic_dynamo-0.2.1.dist-info/LICENSE,sha256=OxoYfwVHRB5m2l23dNUko6AXDaUtw1D98EvO6JlPLLg,1121
+pydantic_dynamo-0.2.1.dist-info/METADATA,sha256=hJRjIVx0hnlvraMjxToVQGu8vJZqR_14xEaFnHYXvYM,15448
+pydantic_dynamo-0.2.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+pydantic_dynamo-0.2.1.dist-info/RECORD,,
