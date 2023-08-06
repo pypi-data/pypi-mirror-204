@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: aiohttp-deps
+Version: 0.1.0
+Summary: Dependency injection for AioHTTP
+Home-page: https://github.com/taskiq-python/aiohttp-deps
+License: LICENSE
+Keywords: aiohttp,taskiq-dependencies
+Author: Taskiq team
+Author-email: taskiq@no-reply.com
+Maintainer: Taskiq team
+Maintainer-email: taskiq@no-reply.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Networking
+Classifier: Typing :: Typed
+Requires-Dist: aiohttp (>=3,<4)
+Requires-Dist: pydantic (>=1,<2)
+Requires-Dist: taskiq-dependencies (>=1,<2)
+Description-Content-Type: text/markdown
+
+# aiohttp-deps
+
