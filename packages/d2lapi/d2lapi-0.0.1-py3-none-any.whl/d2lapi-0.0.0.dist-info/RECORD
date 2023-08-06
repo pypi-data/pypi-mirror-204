@@ -1,0 +1,14 @@
+d2lapi/D2L_Widgets.py,sha256=2usdV6FaOkXMkzWzmpbbr14QxBvanWYZt3Z3AdLNBsM,1714
+d2lapi/Final_Quiz.py,sha256=YFKVoRWPYXvqXR-IVFRTQsDgEeWnWmAM_vGDpfFoe2k,19976
+d2lapi/Final_Survey.py,sha256=KrQpMRNq0UGjaHc9o8NSA2gJpfZy0uFY_CaL1rq6Ty0,9847
+d2lapi/Visualization_Bar.py,sha256=msNXtRhzcuVBVi_6_9S1N9LtR6vGef74llBy58H4prk,12496
+d2lapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+test/test_cases_quiz.py,sha256=gP97qt3P6VktLP1wPhBNMu-TfWoWJjozXi5rubXjwTE,2595
+test/test_cases_survey.py,sha256=Ai6gq0mdQW2buz93EYgfyPnNZcb8Svt9ml6tpsAXPE4,2664
+d2lapi-0.0.0.dist-info/LICENSE,sha256=DkI7CgAtGppZHv1lyRAfbFdmwX1GHwzqaJWSoi7osA8,1137
+d2lapi-0.0.0.dist-info/METADATA,sha256=NXVbLOq-pxzcI8B7hhT1IDOacetASV7v6hWSlirDRXU,202
+d2lapi-0.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+d2lapi-0.0.0.dist-info/top_level.txt,sha256=-lmWMEyXtb4Zgw8Z8vMtdNbKMW3F9cQJ2ocBbaSOCeU,12
+d2lapi-0.0.0.dist-info/RECORD,,
