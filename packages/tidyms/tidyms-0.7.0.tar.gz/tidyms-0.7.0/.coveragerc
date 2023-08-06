@@ -1,0 +1,10 @@
+[run]
+omit =
+    tidyms/validation.py
+    tidyms/_plot_bokeh.py
+
+[report]
+exclude_lines =
+    def plot
+    pragma: no cover
+    def __repr__

@@ -1,0 +1,8 @@
+Descriptor,Meaning
+height,height relative to the baseline
+area,area minus the baseline area
+rt,weighted average of the retention time in the peak region
+mz,weighted average of the m/z in the peak region
+width,"width, computed as the region where the 95 % of the peak area is distributed"
+snr,"peak signal-to-noise ratio, defined as the quotient between the peak height and the noise level"
+mz std,standard deviation of the m/z in the peak region
