@@ -1,0 +1,10 @@
+
+[mypy]
+types-setuptools
+types-pkg-resources
+
+[test]
+pytest
+pytest-cov
+pytest-mock
+types-setuptools
