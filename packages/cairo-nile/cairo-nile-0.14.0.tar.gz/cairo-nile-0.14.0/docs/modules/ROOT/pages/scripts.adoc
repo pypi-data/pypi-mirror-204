@@ -1,0 +1,104 @@
+= NRE and scripting
+
+Nile provides an API to build scripts leveraging the Nile Runtime Environment (NRE), an object exposing Nile's functionality from compilation to account and deployment management. Nile scripts implement an asynchronous `def run(nre)` function that receives the `NileRuntimeEnvironment` object.
+
+== Running a script
+
+. Create a file named `test_script.py` inside the `scripts/` directory at the root of your project with the following contents. Keep in mind that the `scripts/` directory is a suggested convention but not a requirement.
++
+[,python]
+----
+async def run(nre):
+    accounts = await nre.get_accounts(predeployed=True)
+    print("First Account:", accounts[0])
+----
++
+NOTE: The `predeployed` parameter leverages the accounts that come already deployed with the local node. Read xref:nre.adoc#get_accounts[get_accounts's API Reference] to learn more.
++
+. Run a devnet node with `nile node`
++
+[,sh]
+----
+nile node
+----
++
+. Run the script by using `nile run`
++
+[,sh]
+----
+nile run scripts/test_script.py
+----
+
+[NOTE]
+====
+You can change the script's target network with the `--network` option.
+
+For a full reference of NRE exposed members check the xref:nre.adoc[NRE Reference] section.
+====
+
+== Useful Script Examples
+
+In this section you can find some potentially helpful script examples.
+
+[#declare_account]
+=== Declare the OZ account
+
+Useful if you need to deploy the account in a local devnet node, for previous declaration:
+
+[,python]
+----
+# scripts/declare_oz_account.py
+async def run(nre):
+  accounts = await nre.get_accounts(predeployed=True)
+  declarer_account = accounts[0]
+
+  # nile_account flag tells Nile to use its pre-packed artifact
+  #
+  # If we don't pass a max_fee, nile will estimate the transaction
+  # fee by default. This line is equivalent to:
+  #
+  # tx = await declarer_account.declare("Account", max_fee=0, nile_account=True)
+  # max_fee = await tx.estimate_fee()
+  # tx.update_fee(max_fee)
+  #
+  # Note that tx.update_fee will update tx.hash and tx.max_fee members
+  tx = await declarer_account.declare("Account", nile_account=True)
+
+  tx_status, *_ = await tx.execute(watch_mode="track")
+
+  print(tx_status.status, tx_status.error_message or "")
+----
+
+=== Transfer funds from a predeployed devnet account
+
+Useful for funding addresses in devnet:
+
+[,python]
+----
+# scripts/transfer_funds.py
+from nile.common import ETH_TOKEN_ADDRESS
+from nile.utils import to_uint, hex_address
+
+async def run(nre):
+  accounts = await nre.get_accounts(predeployed=True)
+  account = accounts[0]
+
+  # define the recipient address
+  recipient = "0x05a0ca51cbc03e5ec8d9fad116f8737a6afe2613b3128ebd515643a1a5e5c52d"
+
+  # define the amount to transfer
+  amount = 2 * 10 ** 18
+
+  print(
+    f"Transferring {amount} WEI\n"
+    f"from {hex_address(account.address)}\n"
+    f"to   {recipient}\n"
+  )
+
+  # If we don't pass a max_fee, nile will estimate the transaction fee by default
+  tx = await account.send(ETH_TOKEN_ADDRESS, "transfer", [recipient, *to_uint(amount)])
+
+  tx_status, *_ = await tx.execute(watch_mode="track")
+
+  print(tx_status.status, tx_status.error_message or "")
+----
