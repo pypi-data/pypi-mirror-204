@@ -1,0 +1,17 @@
+Click
+furl
+humanfriendly
+iso3166
+jinja2
+plotly
+psutil
+pycountry-convert
+pytablewriter
+pytest
+python-dateutil
+psutil
+repackage
+requests
+responses
+timeago
+zenpy
