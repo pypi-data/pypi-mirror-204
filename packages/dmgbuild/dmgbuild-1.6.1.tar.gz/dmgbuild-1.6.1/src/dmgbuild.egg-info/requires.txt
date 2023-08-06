@@ -1,0 +1,22 @@
+ds_store>=1.1.0
+mac_alias>=2.0.1
+
+[:python_version <= "3.8"]
+importlib_resources==5.9
+
+[badge_icons]
+pyobjc-framework-Quartz>=3.0.4
+
+[dev]
+pre-commit
+tox
+
+[docs]
+sphinx
+sphinx-autobuild
+sphinx_rtd_theme
+
+[test]
+pytest
+pytest-tldr
+pytest-cov

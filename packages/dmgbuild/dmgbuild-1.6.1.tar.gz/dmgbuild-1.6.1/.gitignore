@@ -1,0 +1,17 @@
+.#*
+.cache
+.coverage
+.DS_Store
+.eggs
+.idea
+.tox
+*.egg
+*.egg-info
+*.pyc
+*#
+*~
+build
+coverage.xml
+dist
+venv*
+docs/_build
