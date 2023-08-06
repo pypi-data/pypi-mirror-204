@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: kuki
+Version: 0.0.1
+Summary: kdb+/q package manager
+Author: Jo Shinonome
+Keywords: kdb,q
+Requires-Python: >=3.7
+Description-Content-Type: file: README.md

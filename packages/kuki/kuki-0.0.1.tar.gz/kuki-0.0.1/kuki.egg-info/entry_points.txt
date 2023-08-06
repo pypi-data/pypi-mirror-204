@@ -1,0 +1,3 @@
+[console_scripts]
+krun = kuki.krun:main
+kuki = kuki.kuki:main
