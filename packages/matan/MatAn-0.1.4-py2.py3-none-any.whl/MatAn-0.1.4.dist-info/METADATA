@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: MatAn
+Version: 0.1.4
+Summary: Material analysis package to plot or extract properties like tensile modulus etc. 
+Home-page: https://codeberg.org/309631/matan
+Author: Igor Cudnik
+Author-email: igor.cudnik@student.put.poznan.pl
+License: GPLv3
+Keywords: material analysis,ISO 527,ISO 527-1,polymers analysis
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
+Python package was created to calculate the stress, strains, tensile modulus, and other properties from force and elongation data from a machine. For now, it includes only polymer tests according to the ISO-527-1 standard, but in the future, other standards should be included.
