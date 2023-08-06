@@ -1,0 +1,5 @@
+magicgui
+napari[all]
+numpy>=1.20
+qtpy
+scipy

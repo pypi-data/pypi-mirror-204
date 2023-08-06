@@ -1,0 +1,13 @@
+.editorconfig
+.gitignore
+README.md
+pyproject.toml
+setup.py
+src/napari_cilia_beating_frequency/__init__.py
+src/napari_cilia_beating_frequency/napari.toml
+src/napari_cilia_beating_frequency.egg-info/PKG-INFO
+src/napari_cilia_beating_frequency.egg-info/SOURCES.txt
+src/napari_cilia_beating_frequency.egg-info/dependency_links.txt
+src/napari_cilia_beating_frequency.egg-info/entry_points.txt
+src/napari_cilia_beating_frequency.egg-info/requires.txt
+src/napari_cilia_beating_frequency.egg-info/top_level.txt
