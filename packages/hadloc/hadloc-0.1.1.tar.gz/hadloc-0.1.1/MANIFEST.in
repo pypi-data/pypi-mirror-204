@@ -1,0 +1,2 @@
+include LICENSE
+include hadloc/translator/parser_errors.json
