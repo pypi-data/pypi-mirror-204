@@ -1,0 +1,25 @@
+perfect_physics/__init__.py,sha256=7qZEJu1mRKkDQiy6bKCSlBP-XtoaJGIPMYTbWjH1_Z4,319
+perfect_physics/_circle.py,sha256=Re97mYXct8XTECR_CGLEj5QNTIp076ra9RDH3ipeC_4,1959
+perfect_physics/_misc.py,sha256=wb-eP_61aOzu6Y8CipgCzqDnG1HtgFUN-GILe0QuqHM,2863
+perfect_physics/_physics.py,sha256=wlA2GTQDkV2ezBo2AljhB9J7_6O9pEoScFO1SnoEGqE,14658
+perfect_physics/_timeline.py,sha256=Tff9MWf8TUw_y15U_4YB_A8uJcnkKcBpytitgir3hek,3334
+perfect_physics/_wall.py,sha256=Aja12LIleDdS28d4su-culGbchZNVjDBd7MIyCP_zvg,904
+perfect_physics/_world.py,sha256=Pa2yaIq4ZyR1nl-vMKkaqk_0G2MlynYPAWwFFkwMb7k,26573
+perfect_physics/data/Electronic Button.mp3,sha256=Eurq00KisW9yQO_zCPOfEwfKmsivP4wLzLu_3wPPZK8,8653
+perfect_physics/data/Flash Beep.mp3,sha256=b1qd5QfeMLUKdJhg5KZc2ZDaIFC28FyrxxKb3J4wnNk,5958
+perfect_physics/data/ball_ball.wav,sha256=5uCXwGKf2Oo3WVZwIltaDiQ1MM20CP4--NcapitmBfM,37384
+perfect_physics/data/bumper.wav,sha256=Tlme9Y55oBiS33JdOKNuq6Ef2GuvnlKiYZeCjKbBWDE,149152
+perfect_physics/data/cc_time_solutions.sympy,sha256=_P1NJrjVnN_GXSmTyqi8aSd65WIbqB72cFc5RcB2ekE,9928
+perfect_physics/data/cc_velocity_solution.sympy,sha256=kwx7C83q1NTNj1Elxftjm8z6sJQPgn1d0FFDG8DiMaM,9148
+perfect_physics/data/cw_time_solutions.sympy,sha256=94soYQeDhI-mfl2YNn5yY7XZF1WgHjZu2CJ17vWuc8k,1505
+perfect_physics/data/cw_velocity_limits.sympy,sha256=fr2z9kBiL1rx9wyljRvzfKgaSEuMDrKX2WVxdipa8-I,1925
+perfect_physics/data/instant_speed.sympy,sha256=QWBCRTvy2xFWO5SWcUFijZI1GHr3zwBSUuDEnvyg_-g,5315
+perfect_physics/data/instant_speed_wall.sympy,sha256=T-X6mJvX_EGl561sOs_SokoK5gujT6QBWeW8w8uFX8Y,6740
+perfect_physics/data/reverse.wav,sha256=sV2D1c-gppp9B14SMHHQzyTQdHvErChhTbCzCFS2cTk,283896
+perfect_physics/data/stick_cue.wav,sha256=IHtQ0xh9lCTw77UnlMXl9IzLKgkS27olI-E5vY8Axy8,53278
+perfect_physics/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+perfect_physics/tests/test_perfect_physics.py,sha256=9beQyniYwd12yOqmWnzIm2y6mnpEKUOdDfim3dlGyPc,5518
+perfect_physics-0.1.8.dist-info/METADATA,sha256=Lf5zp5m7IjGRIhwRJM1w2gWZ34etFAVxrVLBVgd0js4,1564
+perfect_physics-0.1.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+perfect_physics-0.1.8.dist-info/top_level.txt,sha256=YPJm-PTeYqkpkjC02iVbWPmnxXc-ZL8A3-EQtBHNWdY,16
+perfect_physics-0.1.8.dist-info/RECORD,,
