@@ -1,0 +1,329 @@
+[{
+		"method_name": "get_repos",
+		"http_method": "GET",
+		"url_endpoint": "/repos"
+	},
+	{
+		"method_name": "get_repo_by_name",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname"
+	},
+	{
+		"method_name": "create_repo",
+		"http_method": "POST",
+		"url_endpoint": "/repos",
+		"json_params": [
+			"name",
+			"server"
+		]
+	},
+	{
+		"method_name": "rename_repo",
+		"http_method": "PUT",
+		"url_endpoint": "/repos/:repname",
+		"json_params": [
+			"name"
+		]
+	},
+	{
+		"method_name": "delete_repo",
+		"http_method": "DELETE",
+		"url_endpoint": "/repos/:repname"
+	},
+	{
+		"method_name": "get_workspaces",
+		"http_method": "GET",
+		"url_endpoint": "/wkspaces"
+	},
+	{
+		"method_name": "get_workspace_by_name",
+		"http_method": "GET",
+		"url_endpoint": "/wkspaces/:wkname"
+	},
+	{
+		"method_name": "create_workspace",
+		"http_method": "POST",
+		"url_endpoint": "/wkspaces",
+		"json_params": [
+			"name",
+			"path",
+			"repository"
+		]
+	},
+	{
+		"method_name": "rename_workspace",
+		"http_method": "PATCH",
+		"url_endpoint": "/wkspaces/:wkname",
+		"json_params": [
+			"name"
+		],
+		"_comment": "Plastic documentation gives PUT for this method but PATCH is correct"
+	},
+	{
+		"method_name": "delete_workspace",
+		"http_method": "DELETE",
+		"url_endpoint": "/wkspaces/:wkname"
+	},
+	{
+		"method_name": "get_branches",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname/branches",
+		"query": true
+	},
+	{
+		"method_name": "get_branch",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname/branches/:branchname"
+	},
+	{
+		"method_name": "create_branch",
+		"http_method": "POST",
+		"url_endpoint": "/repos/:repname/branches",
+		"json_params": [
+			"name",
+			"originType",
+			"origin",
+			"topLevel"
+		]
+	},
+	{
+		"method_name": "rename_branch",
+		"http_method": "PATCH",
+		"url_endpoint": "/repos/:repname/branches/:branchname",
+		"json_params": [
+			"name"
+		]
+	},
+	{
+		"method_name": "delete_branch",
+		"http_method": "DELETE",
+		"url_endpoint": "/repos/:repname/branches/:branchname"
+	},
+	{
+		"method_name": "get_labels",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname/labels",
+		"query": true
+	},
+	{
+		"method_name": "get_label",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname/labels/:labelname"
+	},
+	{
+		"method_name": "create_label",
+		"http_method": "POST",
+		"url_endpoint": "/repos/:repname/labels",
+		"json_params": [
+			"name",
+			"changeset",
+			"comment",
+			"applyToXlinks"
+		]
+	},
+	{
+		"method_name": "rename_label",
+		"http_method": "PATCH",
+		"url_endpoint": "/repos/:repname/labels/:labelname",
+		"json_params": [
+			"name"
+		]
+	},
+	{
+		"method_name": "delete_label",
+		"http_method": "DELETE",
+		"url_endpoint": "/repos/:repname/labels/:labelname"
+	},
+	{
+		"method_name": "get_changesets",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname/changesets",
+		"query": true
+	},
+	{
+		"method_name": "get_changesets_by_branch",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname/branches/:branchname/changesets",
+		"query": true
+	},
+	{
+		"method_name": "get_changeset",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname/changesets/:changesetid"
+	},
+	{
+		"method_name": "get_pending_changes",
+		"http_method": "GET",
+		"url_endpoint": "/wkspaces/:wkname/changes",
+		"json_params": [
+			"type"
+		],
+		"_comment": "Not successfully tested, requests return 200 but content is a blank list"
+	},
+	{
+		"method_name": "undo_pending_changes",
+		"http_method": "DELETE",
+		"url_endpoint": "/wkspaces/:wkname/changes",
+		"json_params": [
+			"paths"
+		]
+	},
+	{
+		"method_name": "update_workspace",
+		"http_method": "POST",
+		"url_endpoint": "/wkspaces/:wkname/update"
+	},
+	{
+		"method_name": "switch_workspace",
+		"http_method": "POST",
+		"url_endpoint": "/wkspaces/:wkname/switch",
+		"json_params": [
+			"objectType",
+			"object"
+		]
+	},
+	{
+		"method_name": "get_switch_status",
+		"http_method": "GET",
+		"url_endpoint": "/wkspaces/:wkname/switch"
+	},
+	{
+		"method_name": "get_checkin_status",
+		"http_method": "GET",
+		"url_endpoint": "/wkspaces/:wkname/checkin"
+	},
+	{
+		"method_name": "checkin_pending_changes",
+		"http_method": "POST",
+		"url_endpoint": "/wkspaces/:wkname/checkin",
+		"json_params": [
+			"paths",
+			"comment",
+			"recurse"
+		],
+		"_comment": "Not successfully tested, requests return 200 but then get_checkin_status shows status Failed"
+	},
+	{
+		"method_name": "get_item_from_branch",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname/branches/:branchname/contents/:itempath"
+	},
+	{
+		"method_name": "get_item_from_changeset",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname/changesets/:changesetid/contents/:itempath"
+	},
+	{
+		"method_name": "get_item_from_label",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname/labels/:labelname/contents/:itempath"
+	},
+	{
+		"method_name": "get_revision",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname/revisions/:revid"
+	},
+	{
+		"method_name": "get_revision_contents",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname/revisions/:revid/blob"
+	},
+	{
+		"method_name": "diff_changeset",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname/changesets/:changesetid/diff"
+	},
+	{
+		"method_name": "diff_changeset_with_source",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname/changesets/:changesetid/diff/:sourcechangesetid"
+	},
+	{
+		"method_name": "diff_branch",
+		"http_method": "GET",
+		"url_endpoint": "/repos/:repname/branches/:branchname/diff"
+	},
+	{
+		"method_name": "add",
+		"http_method": "POST",
+		"url_endpoint": "/wkspaces/:wkname/content/:path",
+		"json_params": [
+			"addPrivateParents",
+			"checkoutParent",
+			"recurse"
+		],
+		"_comment": "UNTESTED"
+	},
+	{
+		"method_name": "checkout",
+		"http_method": "PUT",
+		"url_endpoint": "/wkspaces/:wkname/content/:path",
+		"_comment": "UNTESTED"
+	},
+	{
+		"method_name": "move",
+		"http_method": "PATCH",
+		"url_endpoint": "/wkspaces/:wkname/content/:path",
+		"json_params": [
+			"destination"
+		]
+	},
+	{
+		"method_name": "remove",
+		"http_method": "DELETE",
+		"url_endpoint": "/wkspaces/:wkname/content/:path",
+		"_comment": "UNTESTED"
+	},
+	{
+		"method_name": "merge_from",
+		"http_method": "POST",
+		"url_endpoint": "/wkspaces/:wkname/merge",
+		"json_params": [
+			"sourceSpec"
+		]
+	},
+	{
+		"method_name": "revert",
+		"http_method": "PUT",
+		"url_endpoint": "/wkspaces/:wkname/revert/:path_to_revert",
+		"json_params": [
+			"changeset"
+		]
+	},
+	{	"method_name": "fileinfo",
+		"http_method": "GET",
+		"url_endpoint": "/wkspaces/:wkname/fileinfo/:path"
+	},
+	{
+		"method_name": "undelete",
+		"http_method": "POST",
+		"url_endpoint": "/wkspaces/:wkname/undelete",
+		"json_params": [
+			"revSpec",
+			"path"
+		],
+		"_comment": "not successfully tested, returns http 500"
+	},
+	{
+		"method_name": "create_shelve",
+		"http_method": "POST",
+		"url_endpoint": "/wkspaces/:wkname/shelvesets",
+		"json_params": [
+			"comment",
+			"paths"
+		]
+	},
+	{
+		"method_name": "apply_shelve",
+		"http_method": "PATCH",
+		"url_endpoint": "/wkspaces/:wkname/shelvesets/:shelvesetId",
+		"_comment": "not successfully tested, returns http 500"
+	},
+	{
+		"method_name": "partial_configure",
+		"http_method": "POST",
+		"url_endpoint": "/wkspaces/:wkName/partialconfigure",
+		"json_params": "instructions",
+		"_comment": "UNTESTED"
+	}
+]
