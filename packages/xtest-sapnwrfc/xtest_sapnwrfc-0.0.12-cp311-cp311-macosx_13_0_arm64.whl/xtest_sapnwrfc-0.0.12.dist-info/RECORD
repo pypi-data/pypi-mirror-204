@@ -1,0 +1,11 @@
+xtest_sapnwrfc/__init__.py,sha256=95vgWelYIrumqWhRNPaCxIswd8dAAx-2Pbgu-F_Riew,1339
+xtest_sapnwrfc/_cyrfc.cpp,sha256=vkpHHd-tfJ3uTgV8_sdOWSi8s2kdIS9pcrt1i0WIFa0,2353011
+xtest_sapnwrfc/_cyrfc.cpython-311-darwin.so,sha256=tb7Xtj1klesqzILt50pXG7f3zLAPgjd2ceYWCetQYkA,722617
+xtest_sapnwrfc/_cyrfc.pyx,sha256=gIihNSpJH4tjBXdRD-pPRgIG62761wIQEJEJjQptGRo,129750
+xtest_sapnwrfc/_exception.py,sha256=UAB4S30j1AfJL7edrgcdrMkZ-Ue-MQyvrQMpbszWAac,5594
+xtest_sapnwrfc/_utils.py,sha256=JJg9cvUCLNuoUcLrzGO-ARTx2lxgXFRiFUPQORuvF9o,292
+xtest_sapnwrfc-0.0.12.dist-info/LICENSE,sha256=uVPE5TuU7BkTKXhbVC7rF-QI51mpX8YA2RdhorRn7G8,10273
+xtest_sapnwrfc-0.0.12.dist-info/METADATA,sha256=YqTP3aT1dosXkIWrKZoZ9DTXocAd_Wekhv5j9g31oWg,23350
+xtest_sapnwrfc-0.0.12.dist-info/WHEEL,sha256=9u5azgharjYBfdIrZMb7YtYWGPqS21BRmRBngkXCmzk,110
+xtest_sapnwrfc-0.0.12.dist-info/top_level.txt,sha256=zsuSGvmmij11rBCriSni0jcCRe9WVGC8LgNUQnSBrLU,15
+xtest_sapnwrfc-0.0.12.dist-info/RECORD,,
