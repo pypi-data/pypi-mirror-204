@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+connectCode/__init__.py
+connectCode/connectCode.py
+connectCode.egg-info/PKG-INFO
+connectCode.egg-info/SOURCES.txt
+connectCode.egg-info/dependency_links.txt
+connectCode.egg-info/top_level.txt
