@@ -1,0 +1,1893 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-20 13:48+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: templates/afat/partials/statistics/alliance/tabs/graphs.html:6
+#: templates/afat/partials/statistics/alliance/tabs/graphs.html:16
+#: templates/afat/partials/statistics/corporation/tabs/graphs.html:6
+#: templates/afat/partials/statistics/corporation/tabs/graphs.html:14
+msgid "FATs By Ship Type"
+msgstr ""
+
+#: templates/afat/partials/statistics/alliance/tabs/graphs.html:7
+msgid "Corporation Performance"
+msgstr ""
+
+#: templates/afat/partials/statistics/alliance/tabs/graphs.html:8
+#: templates/afat/partials/statistics/alliance/tabs/graphs.html:47
+#: templates/afat/partials/statistics/corporation/tabs/graphs.html:7
+#: templates/afat/partials/statistics/corporation/tabs/graphs.html:58
+msgid "FATs By Time"
+msgstr ""
+
+#: templates/afat/partials/statistics/alliance/tabs/graphs.html:9
+#: templates/afat/partials/statistics/alliance/tabs/graphs.html:79
+#: templates/afat/partials/statistics/corporation/tabs/graphs.html:8
+#: templates/afat/partials/statistics/corporation/tabs/graphs.html:88
+msgid "FATs By Weekday"
+msgstr ""
+
+#: templates/afat/partials/statistics/alliance/tabs/graphs.html:111
+msgid "Average FATs By Corporation"
+msgstr ""
+
+#: templates/afat/partials/statistics/character/tabs/graphs.html:6
+msgid "FATs by Ship Type"
+msgstr ""
+
+#: templates/afat/partials/statistics/character/tabs/graphs.html:30
+msgid "FATs by Time of Day"
+msgstr ""
+
+#: templates/afat/partials/statistics/character/tabs/graphs.html:41
+msgid "# of FATs"
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:9
+msgid "Alliance Auth Notifications"
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:17
+#: templates/groupmanagement/groupmembership.html:42
+msgid "Open"
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:19
+msgid "Closed"
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:32
+msgid "Powered by GitLab"
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:39
+msgid "Support Discord"
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:49
+msgid "Software Version"
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:54
+#: templates/structuretimers/timer_list.html:25
+msgid "Current"
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:62
+msgid "Latest Stable"
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:71
+msgid "Update available"
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:78
+msgid "Latest Pre-Release"
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:85
+msgid "Pre-Release available"
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:95
+msgid "Task Queue"
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:100
+#, python-format
+msgid ""
+"\n"
+"                            Status of %(total)s processed tasks • last "
+"%(latest)s\n"
+"                        "
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:116
+#, python-format
+msgid ""
+"\n"
+"                            Queued: %(tasks_count)s\n"
+"                        "
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:121
+#, python-format
+msgid ""
+"\n"
+"                                | <span class=\"text-success\">Succeeded: "
+"%(tasks_count)s</span>\n"
+"                            "
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:127
+#, python-format
+msgid ""
+"\n"
+"                                | <span class=\"text-info\">Retried: "
+"%(tasks_count)s</span>\n"
+"                            "
+msgstr ""
+
+#: templates/allianceauth/admin-status/overview.html:133
+#, python-format
+msgid ""
+"\n"
+"                                | <span class=\"text-danger\">Failed: "
+"%(tasks_count)s</span>\n"
+"                            "
+msgstr ""
+
+#: templates/allianceauth/night-toggle.html:6
+msgid "Night Mode"
+msgstr ""
+
+#: templates/allianceauth/top-menu-admin.html:9
+msgid "Admin"
+msgstr ""
+
+#: templates/allianceauth/top-menu-admin.html:19
+msgid "AA Documentation"
+msgstr ""
+
+#: templates/allianceauth/top-menu-admin.html:26
+msgid "AA Support Discord"
+msgstr ""
+
+#: templates/allianceauth/top-menu-user-dropdown.html:11
+msgid "Menu"
+msgstr ""
+
+#: templates/allianceauth/top-menu-user-dropdown.html:59
+#: templates/authentication/tokens.html:7
+msgid "Token Management"
+msgstr ""
+
+#: templates/allianceauth/top-menu-user-dropdown.html:65
+msgid "Logout"
+msgstr ""
+
+#: templates/allianceauth/top-menu-user-dropdown.html:67
+#: templates/public/login.html:6
+msgid "Login"
+msgstr ""
+
+#: templates/allianceauth/top-menu.html:9 templates/fittings/base.html:44
+msgid "Toggle navigation"
+msgstr ""
+
+#: templates/authentication/dashboard.html:7
+#: templates/authentication/dashboard.html:11
+#: templates/authentication/tokens.html:4 templates/fittings/dashboard.html:8
+msgid "Dashboard"
+msgstr ""
+
+#: templates/authentication/dashboard.html:24
+#, python-format
+msgid "Main Character (State: %(state)s)"
+msgstr ""
+
+#: templates/authentication/dashboard.html:76
+msgid "No main character set."
+msgstr ""
+
+#: templates/authentication/dashboard.html:83
+#: templates/esi/select_token.html:48 templates/esi/select_token.html:52
+#: templates/esi/select_token.html:58 templates/esi/select_token.html:101
+#: templates/esi/select_token.html:105 templates/esi/select_token.html:111
+msgid "Add Character"
+msgstr ""
+
+#: templates/authentication/dashboard.html:89
+msgid "Change Main"
+msgstr ""
+
+#: templates/authentication/dashboard.html:100
+msgid "Group Memberships"
+msgstr ""
+
+#: templates/authentication/dashboard.html:123
+#: templates/hrapplications/view.html:53
+msgid "Characters"
+msgstr ""
+
+#: templates/authentication/dashboard.html:131
+#: templates/blacklist/blacklist.html:23 templates/blacklist/evenotes.html:39
+#: templates/fittings/dashboard.html:46
+#: templates/fittings/view_all_categories.html:43
+#: templates/fittings/view_all_fits.html:48
+#: templates/fittings/view_category.html:53
+#: templates/fittings/view_category.html:87
+#: templates/fittings/view_category.html:139
+#: templates/fittings/view_doctrine.html:103
+#: templates/groupmanagement/groupmembership.html:21
+#: templates/groupmanagement/groups.html:19
+#: templates/hrapplications/view.html:60
+#: templates/permissions_tool/overview.html:36
+#: templates/smartgroups/groups.html:20
+msgid "Name"
+msgstr ""
+
+#: templates/authentication/dashboard.html:132
+#: templates/hrapplications/view.html:61
+msgid "Corp"
+msgstr ""
+
+#: templates/authentication/dashboard.html:133
+#: templates/blacklist/evenotes.html:46 templates/corpstat/corpstats.html:113
+#: templates/hrapplications/view.html:62
+msgid "Alliance"
+msgstr ""
+
+#: templates/authentication/tokens.html:14
+msgid "Scopes"
+msgstr ""
+
+#: templates/authentication/tokens.html:15
+#: templates/hrapplications/management.html:34
+#: templates/hrapplications/management.html:96
+#: templates/hrapplications/management.html:146
+#: templates/hrapplications/searchview.html:33
+#: templates/hrapplications/view.html:103 templates/srp/data.html:116
+#: templates/srp/management.html:57
+msgid "Actions"
+msgstr ""
+
+#: templates/authentication/tokens.html:16
+#: templates/corpstat/corpstats.html:111 templates/corpstat/corpstats.html:163
+#: templates/corpstat/corpstats.html:233 templates/corpstat/corpstats.html:269
+#: templates/corpstat/corpstats.html:321
+#: templates/groupmanagement/audit.html:30
+#: templates/groupmanagement/groupmembers.html:29
+#: templates/groupmanagement/index.html:43
+#: templates/groupmanagement/index.html:102
+msgid "Character"
+msgstr ""
+
+#: templates/authentication/tokens.html:32
+msgid ""
+"This page is the best attempt to mitigate a security issue with SSO (See: "
+"https://gitlab.com/allianceauth/allianceauth/-/issues/1356), but backups or "
+"database logs can still contain your tokens. Always revoke tokens you don't "
+"need on https://community.eveonline.com/support/third-party-applications/ "
+"where possible."
+msgstr ""
+
+#: templates/blacklist/base.html:5 templates/blacklist/blacklist.html:7
+msgid "Blacklist"
+msgstr ""
+
+#: templates/blacklist/blacklist.html:14
+msgid "Blacklisted Entities"
+msgstr ""
+
+#: templates/blacklist/blacklist.html:24 templates/blacklist/evenotes.html:42
+msgid "Reason"
+msgstr ""
+
+#: templates/blacklist/blacklist.html:25 templates/blacklist/evenotes.html:44
+#: templates/fittings/base.html:77 templates/fittings/view_category.html:37
+#: templates/fittings/view_doctrine.html:104
+msgid "Category"
+msgstr ""
+
+#: templates/blacklist/blacklist.html:68
+msgid "No one is yet to be Blacklisted. You guys are so nice!"
+msgstr ""
+
+#: templates/blacklist/evenotes.html:6 templates/blacklist/evenotes.html:9
+msgid "Pilot Log"
+msgstr ""
+
+#: templates/blacklist/evenotes.html:15
+msgid "All Notes"
+msgstr ""
+
+#: templates/blacklist/evenotes.html:19
+msgid "Add New"
+msgstr ""
+
+#: templates/blacklist/evenotes.html:22
+msgid "Select Search Character"
+msgstr ""
+
+#: templates/blacklist/evenotes.html:26
+msgid "Select Search Character!"
+msgstr ""
+
+#: templates/blacklist/evenotes.html:40
+msgid "Date Added"
+msgstr ""
+
+#: templates/blacklist/evenotes.html:41 templates/blacklist/evenotes.html:43
+msgid "Added By"
+msgstr ""
+
+#: templates/blacklist/evenotes.html:45
+#: templates/corpstat/alliancestats.html:22
+#: templates/corpstat/corpstats.html:112
+#: templates/groupmanagement/audit.html:31
+#: templates/hrapplications/management.html:32
+#: templates/hrapplications/management.html:94
+#: templates/hrapplications/management.html:144
+#: templates/hrapplications/searchview.html:31
+msgid "Corporation"
+msgstr ""
+
+#: templates/blacklist/evenotes.html:74
+msgid "BLACKLISTED"
+msgstr ""
+
+#: templates/blacklist/evenotes.html:78
+msgid "RESTRICTED"
+msgstr ""
+
+#: templates/blacklist/evenotes.html:128
+msgid "No notes have been added!"
+msgstr ""
+
+#: templates/corpstat/alliancestats.html:13
+msgid "Corporation Stats"
+msgstr ""
+
+#: templates/corpstat/alliancestats.html:23
+#: templates/corpstat/corpstats.html:58
+#: templates/groupmanagement/groupmembers.html:14
+msgid "Members"
+msgstr ""
+
+#: templates/corpstat/alliancestats.html:24
+#: templates/corpstat/corpstats.html:57
+msgid "Mains"
+msgstr ""
+
+#: templates/corpstat/alliancestats.html:25
+msgid "Ratio"
+msgstr ""
+
+#: templates/corpstat/alliancestats.html:26
+msgid "Auth'd"
+msgstr ""
+
+#: templates/corpstat/alliancestats.html:27
+#: templates/corpstat/corpstats.html:60
+msgid "Orphans"
+msgstr ""
+
+#: templates/corpstat/alliancestats.html:35
+msgid "Last Update"
+msgstr ""
+
+#: templates/corpstat/base.html:6 templates/corpstat/base.html:10
+msgid "Corporation Member Data"
+msgstr ""
+
+#: templates/corpstat/base.html:17
+msgid "Corporations"
+msgstr ""
+
+#: templates/corpstat/base.html:33 templates/srp/management.html:19
+msgid "View All"
+msgstr ""
+
+#: templates/corpstat/base.html:39
+msgid "Add"
+msgstr ""
+
+#: templates/corpstat/base.html:47
+msgid "Search all corporations..."
+msgstr ""
+
+#: templates/corpstat/corpstats.html:24
+msgid "Corp Info"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:26
+msgid "Authenticated"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:30
+msgid "Main/Alt Ratio"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:33
+msgid "Services Active"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:36
+msgid "Activated"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:59
+msgid "Unregistered"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:61
+msgid "Member Tracking"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:65
+msgid "Last update:"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:85 templates/corpstat/corpstats.html:165
+#: templates/corpstat/corpstats.html:271
+#: templates/hrapplications/management.html:93
+#: templates/hrapplications/management.html:143
+#: templates/hrapplications/searchview.html:30
+#: templates/hrapplications/view.html:37
+msgid "Main Character"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:137 templates/corpstat/corpstats.html:183
+#: templates/corpstat/corpstats.html:213 templates/corpstat/corpstats.html:248
+#: templates/corpstat/corpstats.html:286
+msgid "Killboard"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:147
+msgid "Active"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:147
+msgid "Inactive"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:166 templates/corpstat/corpstats.html:272
+msgid "Main Corporation"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:167 templates/corpstat/corpstats.html:273
+msgid "Main Alliance"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:258
+msgid "No Unregistered Characters"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:310
+msgid "No Orphaned Characters"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:322
+msgid "Ship"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:323
+msgid "Last Online"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:324
+msgid "Joined"
+msgstr ""
+
+#: templates/corpstat/corpstats.html:325
+msgid "Registered"
+msgstr ""
+
+#: templates/esi/select_token.html:13
+msgid "Character Selection"
+msgstr ""
+
+#: templates/esi/select_token.html:25
+msgid "Scopes Requested"
+msgstr ""
+
+#: templates/esi/select_token.html:52 templates/esi/select_token.html:58
+#: templates/esi/select_token.html:105 templates/esi/select_token.html:111
+msgid "Add new character by logging in with EVE Online"
+msgstr ""
+
+#: templates/esi/select_token.html:79 templates/esi/select_token.html:85
+msgid "Select Character"
+msgstr ""
+
+#: templates/esi/select_token.html:85
+msgid "Select"
+msgstr ""
+
+#: templates/fittings/add_doctrine.html:19
+msgid "Add Doctrine"
+msgstr ""
+
+#: templates/fittings/add_doctrine.html:31 templates/fittings/add_fit.html:19
+#: templates/fittings/dashboard.html:19
+#: templates/fittings/edit_doctrine.html:29 templates/fittings/edit_fit.html:17
+#: templates/fittings/view_all_categories.html:17
+#: templates/fittings/view_all_fits.html:19
+msgid "Oh No!"
+msgstr ""
+
+#: templates/fittings/add_doctrine.html:33 templates/fittings/add_fit.html:21
+#: templates/fittings/dashboard.html:21
+#: templates/fittings/edit_doctrine.html:31 templates/fittings/edit_fit.html:19
+#: templates/fittings/view_all_categories.html:19
+#: templates/fittings/view_all_fits.html:21
+msgid "Success!"
+msgstr ""
+
+#: templates/fittings/add_doctrine.html:45
+#: templates/fittings/edit_doctrine.html:41
+msgid "New Doctrine"
+msgstr ""
+
+#: templates/fittings/add_doctrine.html:56
+#: templates/fittings/edit_doctrine.html:51
+msgid "Doctrine Name"
+msgstr ""
+
+#: templates/fittings/add_doctrine.html:66
+#: templates/fittings/edit_doctrine.html:59
+msgid "Doctrine Description"
+msgstr ""
+
+#: templates/fittings/add_doctrine.html:76
+msgid "Select Fits"
+msgstr ""
+
+#: templates/fittings/add_doctrine.html:92
+#: templates/fittings/edit_doctrine.html:83
+msgid "Select Doctrine Icon"
+msgstr ""
+
+#: templates/fittings/add_doctrine.html:105
+#: templates/fittings/edit_doctrine.html:95
+msgid ""
+"If you do not see the ship type that you would like to use for the icon, add "
+"a fitting that uses that ship type and try again."
+msgstr ""
+
+#: templates/fittings/add_doctrine.html:112 templates/fittings/add_fit.html:64
+#: templates/fittings/create_category.html:97
+#: templates/fittings/edit_category.html:99
+#: templates/fittings/edit_doctrine.html:101
+#: templates/fittings/edit_fit.html:56 templates/hrapplications/create.html:29
+msgid "Submit"
+msgstr ""
+
+#: templates/fittings/add_doctrine.html:127
+#: templates/fittings/create_category.html:123
+#: templates/fittings/create_category.html:131
+#: templates/fittings/create_category.html:139
+#: templates/fittings/edit_doctrine.html:115
+#: templates/hrapplications/management.html:211
+#: templates/hrapplications/searchview.html:77
+msgid "Search"
+msgstr ""
+
+#: templates/fittings/add_fit.html:7 templates/fittings/add_fit.html:33
+msgid "Add Fitting"
+msgstr ""
+
+#: templates/fittings/add_fit.html:44 templates/fittings/dashboard.html:48
+#: templates/fittings/edit_fit.html:39 templates/fittings/view_all_fits.html:50
+#: templates/fittings/view_category.html:89
+#: templates/fittings/view_category.html:141
+#: templates/fittings/view_doctrine.html:64
+#: templates/fittings/view_doctrine.html:105
+#: templates/groupmanagement/groupmembership.html:22
+#: templates/groupmanagement/groups.html:20
+#: templates/optimer/fleetoptable.html:9 templates/smartgroups/groups.html:21
+msgid "Description"
+msgstr ""
+
+#: templates/fittings/add_fit.html:55 templates/fittings/base.html:75
+#: templates/fittings/edit_fit.html:48 templates/fittings/view_fit.html:134
+msgid "Fitting"
+msgstr ""
+
+#: templates/fittings/base.html:50
+msgid "Fittings and Doctrines"
+msgstr ""
+
+#: templates/fittings/base.html:56
+msgid "View All Doctrines"
+msgstr ""
+
+#: templates/fittings/base.html:60 templates/fittings/view_all_fits.html:7
+msgid "View All Fittings"
+msgstr ""
+
+#: templates/fittings/base.html:64
+#: templates/fittings/view_all_categories.html:7
+msgid "View All Categories"
+msgstr ""
+
+#: templates/fittings/base.html:76 templates/fittings/view_doctrine.html:7
+#: templates/optimer/fleetoptable.html:10
+msgid "Doctrine"
+msgstr ""
+
+#: templates/fittings/create_category.html:22
+msgid "Add Category"
+msgstr ""
+
+#: templates/fittings/create_category.html:28
+msgid "New Category"
+msgstr ""
+
+#: templates/fittings/create_category.html:40
+#: templates/fittings/edit_category.html:40
+msgid "Category Name"
+msgstr ""
+
+#: templates/fittings/create_category.html:47
+#: templates/fittings/edit_category.html:48
+msgid "Category Color"
+msgstr ""
+
+#: templates/fittings/create_category.html:58
+#: templates/fittings/edit_category.html:60
+msgid "Select Groups"
+msgstr ""
+
+#: templates/fittings/create_category.html:60
+#: templates/fittings/edit_category.html:62
+msgid ""
+"Only selected groups will have access to fittings and doctrines in this "
+"category. If no groups are selected the category will be visible to all with "
+"fittings module access."
+msgstr ""
+
+#: templates/fittings/create_category.html:74
+#: templates/fittings/edit_category.html:76
+msgid "Select Fittings"
+msgstr ""
+
+#: templates/fittings/create_category.html:85
+#: templates/fittings/edit_category.html:87
+msgid "Select Doctrines"
+msgstr ""
+
+#: templates/fittings/create_category.html:121
+#: templates/fittings/create_category.html:129
+#: templates/fittings/create_category.html:137
+msgid "Select Value"
+msgstr ""
+
+#: templates/fittings/create_category.html:122
+#: templates/fittings/create_category.html:130
+#: templates/fittings/create_category.html:138
+msgid "No Results"
+msgstr ""
+
+#: templates/fittings/dashboard.html:30
+msgid "Doctrine List"
+msgstr ""
+
+#: templates/fittings/dashboard.html:35
+#: templates/fittings/view_category.html:77 templates/fittings/view_fit.html:96
+msgid "Doctrines"
+msgstr ""
+
+#: templates/fittings/dashboard.html:40
+#: templates/fittings/view_category.html:98
+msgid "No Doctrines Found"
+msgstr ""
+
+#: templates/fittings/dashboard.html:47
+#: templates/fittings/view_all_fits.html:49
+#: templates/fittings/view_category.html:88
+#: templates/fittings/view_category.html:140
+msgid "Categories"
+msgstr ""
+
+#: templates/fittings/dashboard.html:49
+#: templates/fittings/view_category.html:90
+msgid "Ships"
+msgstr ""
+
+#: templates/fittings/edit_category.html:22
+#: templates/fittings/edit_category.html:28
+#: templates/fittings/view_all_categories.html:65
+#: templates/fittings/view_category.html:41
+msgid "Edit Category"
+msgstr ""
+
+#: templates/fittings/edit_doctrine.html:19
+#: templates/fittings/view_doctrine.html:47
+msgid "Edit Doctrine"
+msgstr ""
+
+#: templates/fittings/edit_doctrine.html:67
+msgid "Select Fitting"
+msgstr ""
+
+#: templates/fittings/edit_doctrine.html:87
+msgid "Current Icon"
+msgstr ""
+
+#: templates/fittings/edit_fit.html:7 templates/fittings/edit_fit.html:29
+msgid "Update Fitting"
+msgstr ""
+
+#: templates/fittings/view_all_categories.html:28
+msgid "Category List"
+msgstr ""
+
+#: templates/fittings/view_all_categories.html:33
+#: templates/fittings/view_all_fits.html:37
+#: templates/fittings/view_category.html:78
+msgid "Fittings"
+msgstr ""
+
+#: templates/fittings/view_all_categories.html:38
+msgid "No Categories Found"
+msgstr ""
+
+#: templates/fittings/view_all_categories.html:44
+msgid "Doctrines Assigned"
+msgstr ""
+
+#: templates/fittings/view_all_categories.html:45
+msgid "Fittings Assigned"
+msgstr ""
+
+#: templates/fittings/view_all_categories.html:48
+msgid "Groups Assigned"
+msgstr ""
+
+#: templates/fittings/view_all_categories.html:62
+#: templates/fittings/view_category.html:30
+msgid "View Category"
+msgstr ""
+
+#: templates/fittings/view_all_categories.html:68
+#: templates/fittings/view_category.html:44
+msgid "Delete Category"
+msgstr ""
+
+#: templates/fittings/view_all_categories.html:80
+msgid ""
+"*Note: Fitting counts may be inaccurate as fittings marked independently of "
+"doctrines may be counted more than once."
+msgstr ""
+
+#: templates/fittings/view_all_fits.html:32
+msgid "Fittings List"
+msgstr ""
+
+#: templates/fittings/view_all_fits.html:42
+#: templates/fittings/view_category.html:151
+#: templates/fittings/view_doctrine.html:97
+msgid "No Fittings Found"
+msgstr ""
+
+#: templates/fittings/view_all_fits.html:47
+#: templates/fittings/view_category.html:142
+#: templates/fittings/view_doctrine.html:102 templates/srp/data.html:108
+msgid "Ship Type"
+msgstr ""
+
+#: templates/fittings/view_category.html:60
+#: templates/groupmanagement/groupmembership.html:13
+#: templates/groupmanagement/groups.html:12
+#: templates/permissions_tool/overview.html:42
+#: templates/smartgroups/groups.html:12
+msgid "Groups"
+msgstr ""
+
+#: templates/fittings/view_category.html:68
+msgid "Category is public"
+msgstr ""
+
+#: templates/fittings/view_doctrine.html:16 templates/fittings/view_fit.html:20
+msgid "Are you sure?"
+msgstr ""
+
+#: templates/fittings/view_doctrine.html:21
+msgid "Are you sure you wish to delete this doctrine?"
+msgstr ""
+
+#: templates/fittings/view_doctrine.html:22 templates/fittings/view_fit.html:27
+msgid "This action is permanent."
+msgstr ""
+
+#: templates/fittings/view_doctrine.html:27 templates/fittings/view_fit.html:33
+msgid "No - Close"
+msgstr ""
+
+#: templates/fittings/view_doctrine.html:28 templates/fittings/view_fit.html:37
+msgid "Yes - Delete"
+msgstr ""
+
+#: templates/fittings/view_doctrine.html:41
+msgid "Doctrine Information"
+msgstr ""
+
+#: templates/fittings/view_doctrine.html:45
+msgid "Delete Doctrine"
+msgstr ""
+
+#: templates/fittings/view_doctrine.html:68
+#: templates/fittings/view_fit.html:111
+msgid "Created"
+msgstr ""
+
+#: templates/fittings/view_doctrine.html:77
+#: templates/fittings/view_fit.html:120
+msgid "Last Updated"
+msgstr ""
+
+#: templates/fittings/view_doctrine.html:92
+msgid "Doctrine Fittings"
+msgstr ""
+
+#: templates/fittings/view_fit.html:8
+msgid "Fit"
+msgstr ""
+
+#: templates/fittings/view_fit.html:25
+msgid "Are you sure you wish to delete this fit?"
+msgstr ""
+
+#: templates/fittings/view_fit.html:57
+msgid "EFT Formatted Fitting"
+msgstr ""
+
+#: templates/fittings/view_fit.html:64
+#: templates/hrapplications/management.html:201
+#: templates/hrapplications/searchview.html:69
+#: templates/hrapplications/view.html:185
+#: templates/structuretimers/timer_list.html:97
+msgid "Close"
+msgstr ""
+
+#: templates/fittings/view_fit.html:78
+msgid "Fit Information"
+msgstr ""
+
+#: templates/fittings/view_fit.html:82
+msgid "Delete Fit"
+msgstr ""
+
+#: templates/fittings/view_fit.html:87
+msgid "Edit/Update Fit"
+msgstr ""
+
+#: templates/fittings/view_fit.html:390 templates/fittings/view_fit.html:441
+msgid "Hull"
+msgstr ""
+
+#: templates/fittings/view_fit.html:401
+msgid "Fitting Notes"
+msgstr ""
+
+#: templates/fittings/view_fit.html:419
+msgid "Fitting Details"
+msgstr ""
+
+#: templates/fittings/view_fit.html:423
+msgid "Save to EVE"
+msgstr ""
+
+#: templates/fittings/view_fit.html:427
+msgid "Copy Buy All"
+msgstr ""
+
+#: templates/fittings/view_fit.html:431
+msgid "Copy Fit (EFT)"
+msgstr ""
+
+#: templates/fittings/view_fit.html:451
+msgid "SubSystems"
+msgstr ""
+
+#: templates/fittings/view_fit.html:476
+msgid "High Slots"
+msgstr ""
+
+#: templates/fittings/view_fit.html:481
+msgid "No High Slot Items"
+msgstr ""
+
+#: templates/fittings/view_fit.html:542
+msgid "Medium Slots"
+msgstr ""
+
+#: templates/fittings/view_fit.html:547
+msgid "No Medium Slot Items"
+msgstr ""
+
+#: templates/fittings/view_fit.html:608
+msgid "Low Slots"
+msgstr ""
+
+#: templates/fittings/view_fit.html:613
+msgid "No Low Slot Items"
+msgstr ""
+
+#: templates/fittings/view_fit.html:674
+msgid "Rig Slots"
+msgstr ""
+
+#: templates/fittings/view_fit.html:679
+msgid "No Rig Slot Items"
+msgstr ""
+
+#: templates/fittings/view_fit.html:706
+msgid "Service Slots"
+msgstr ""
+
+#: templates/fittings/view_fit.html:768
+msgid "Fighter Tubes"
+msgstr ""
+
+#: templates/fittings/view_fit.html:809
+msgid "Cargo Bay"
+msgstr ""
+
+#: templates/fittings/view_fit.html:822
+msgid "Drone Bay"
+msgstr ""
+
+#: templates/fittings/view_fit.html:835
+msgid "Fighter Bay"
+msgstr ""
+
+#: templates/groupmanagement/audit.html:4
+#: templates/groupmanagement/audit.html:13
+msgid "Audit Log"
+msgstr ""
+
+#: templates/groupmanagement/audit.html:19
+#: templates/groupmanagement/groupmembers.html:20
+#: templates/permissions_tool/audit.html:13
+msgid "Back"
+msgstr ""
+
+#: templates/groupmanagement/audit.html:28
+msgid "Date/Time"
+msgstr ""
+
+#: templates/groupmanagement/audit.html:29
+msgid "Requestor"
+msgstr ""
+
+#: templates/groupmanagement/audit.html:32
+msgid "Type"
+msgstr ""
+
+#: templates/groupmanagement/audit.html:33 templates/notifications/list.html:30
+#: templates/notifications/list.html:65 templates/optimer/fleetoptable.html:17
+#: templates/services/services.html:22 templates/smartgroups/groups.html:22
+msgid "Action"
+msgstr ""
+
+#: templates/groupmanagement/audit.html:34
+msgid "Actor"
+msgstr ""
+
+#: templates/groupmanagement/audit.html:48
+msgid "Removed"
+msgstr ""
+
+#: templates/groupmanagement/audit.html:62
+msgid "No entries found for this group."
+msgstr ""
+
+#: templates/groupmanagement/audit.html:69
+msgid "All times displayed are EVE/UTC."
+msgstr ""
+
+#: templates/groupmanagement/groupmembers.html:5
+msgid "Group Members"
+msgstr ""
+
+#: templates/groupmanagement/groupmembers.html:30
+#: templates/groupmanagement/index.html:44
+#: templates/groupmanagement/index.html:103
+#: templates/permissions_tool/audit.html:25
+msgid "Organization"
+msgstr ""
+
+#: templates/groupmanagement/groupmembers.html:50
+#: templates/groupmanagement/groupmembers.html:77
+msgid "Group leader"
+msgstr ""
+
+#: templates/groupmanagement/groupmembers.html:62
+#: templates/groupmanagement/index.html:72
+#: templates/groupmanagement/index.html:131
+msgid "(unknown)"
+msgstr ""
+
+#: templates/groupmanagement/groupmembers.html:67
+msgid "Remove from group"
+msgstr ""
+
+#: templates/groupmanagement/groupmembers.html:82
+msgid "No group members to list."
+msgstr ""
+
+#: templates/groupmanagement/groupmembership.html:4
+msgid "Groups Membership"
+msgstr ""
+
+#: templates/groupmanagement/groupmembership.html:23
+#: templates/hrapplications/management.html:33
+#: templates/hrapplications/management.html:95
+#: templates/hrapplications/management.html:145
+#: templates/hrapplications/searchview.html:32 templates/srp/data.html:114
+msgid "Status"
+msgstr ""
+
+#: templates/groupmanagement/groupmembership.html:24
+msgid "Member Count"
+msgstr ""
+
+#: templates/groupmanagement/groupmembership.html:40
+msgid "Hidden"
+msgstr ""
+
+#: templates/groupmanagement/groupmembership.html:44
+msgid "Requestable"
+msgstr ""
+
+#: templates/groupmanagement/groupmembership.html:53
+msgid "View Members"
+msgstr ""
+
+#: templates/groupmanagement/groupmembership.html:57
+msgid "Audit Members"
+msgstr ""
+
+#: templates/groupmanagement/groupmembership.html:61
+msgid "Copy Direct Join Link"
+msgstr ""
+
+#: templates/groupmanagement/groupmembership.html:71
+msgid "No groups to list."
+msgstr ""
+
+#: templates/groupmanagement/groups.html:4
+#: templates/groupmanagement/groups.html:8 templates/smartgroups/groups.html:4
+#: templates/smartgroups/groups.html:8
+msgid "Available Groups"
+msgstr ""
+
+#: templates/groupmanagement/groups.html:34
+#: templates/smartgroups/groups.html:52
+msgid "Leave"
+msgstr ""
+
+#: templates/groupmanagement/groups.html:38
+#: templates/groupmanagement/groups.html:53
+#: templates/hrapplications/management.html:45
+#: templates/hrapplications/management.html:81
+#: templates/hrapplications/management.html:112
+#: templates/hrapplications/management.html:162
+#: templates/hrapplications/searchview.html:43
+#: templates/hrapplications/view.html:21 templates/smartgroups/groups.html:56
+#: templates/smartgroups/groups.html:65 templates/srp/data.html:159
+#: templates/srp/management.html:95
+msgid "Pending"
+msgstr ""
+
+#: templates/groupmanagement/groups.html:44
+msgid "Join"
+msgstr ""
+
+#: templates/groupmanagement/groups.html:48
+#: templates/smartgroups/groups.html:61
+msgid "Request"
+msgstr ""
+
+#: templates/groupmanagement/groups.html:63
+#: templates/smartgroups/groups.html:75
+msgid "No groups available."
+msgstr ""
+
+#: templates/groupmanagement/index.html:5
+msgid "Group Management"
+msgstr ""
+
+#: templates/groupmanagement/index.html:15
+msgid "Join Requests"
+msgstr ""
+
+#: templates/groupmanagement/index.html:26
+msgid "Leave Requests"
+msgstr ""
+
+#: templates/groupmanagement/index.html:45
+#: templates/groupmanagement/index.html:104
+#: templates/permissions_tool/audit.html:22
+msgid "Group"
+msgstr ""
+
+#: templates/groupmanagement/index.html:78
+#: templates/groupmanagement/index.html:137
+msgid "Accept"
+msgstr ""
+
+#: templates/groupmanagement/index.html:82
+#: templates/groupmanagement/index.html:141
+#: templates/hrapplications/view.html:117
+msgid "Reject"
+msgstr ""
+
+#: templates/groupmanagement/index.html:90
+msgid "No group add requests."
+msgstr ""
+
+#: templates/groupmanagement/index.html:149
+msgid "No group leave requests."
+msgstr ""
+
+#: templates/hrapplications/corpchoice.html:4
+#: templates/hrapplications/corpchoice.html:7
+msgid "Choose a Corp"
+msgstr ""
+
+#: templates/hrapplications/corpchoice.html:11
+msgid "Available Corps"
+msgstr ""
+
+#: templates/hrapplications/corpchoice.html:28
+msgid "No corps are accepting applications at this time."
+msgstr ""
+
+#: templates/hrapplications/create.html:4
+#: templates/hrapplications/create.html:7
+msgid "Apply To"
+msgstr ""
+
+#: templates/hrapplications/management.html:5
+msgid "HR Application Management"
+msgstr ""
+
+#: templates/hrapplications/management.html:10
+msgid "Personal Applications"
+msgstr ""
+
+#: templates/hrapplications/management.html:14
+#: templates/hrapplications/management.html:17
+msgid "Create Application"
+msgstr ""
+
+#: templates/hrapplications/management.html:24
+msgid "Your pending applications"
+msgstr ""
+
+#: templates/hrapplications/management.html:31
+#: templates/hrapplications/management.html:92
+#: templates/hrapplications/management.html:142
+#: templates/hrapplications/searchview.html:29
+#: templates/services/services.html:20
+msgid "Username"
+msgstr ""
+
+#: templates/hrapplications/management.html:47
+#: templates/hrapplications/management.html:115
+#: templates/hrapplications/management.html:165
+#: templates/hrapplications/searchview.html:45
+#: templates/hrapplications/view.html:17 templates/srp/data.html:151
+msgid "Approved"
+msgstr ""
+
+#: templates/hrapplications/management.html:49
+#: templates/hrapplications/management.html:117
+#: templates/hrapplications/management.html:167
+#: templates/hrapplications/searchview.html:47 templates/srp/data.html:155
+msgid "Rejected"
+msgstr ""
+
+#: templates/hrapplications/management.html:72
+msgid "Application Management"
+msgstr ""
+
+#: templates/hrapplications/management.html:76
+#: templates/hrapplications/searchview.html:15
+msgid "Search Applications"
+msgstr ""
+
+#: templates/hrapplications/management.html:82
+msgid "Reviewed"
+msgstr ""
+
+#: templates/hrapplications/management.html:91
+#: templates/hrapplications/management.html:141
+msgid "Date"
+msgstr ""
+
+#: templates/hrapplications/management.html:110
+#: templates/hrapplications/management.html:160
+#: templates/hrapplications/view.html:24
+msgid "Reviewer:"
+msgstr ""
+
+#: templates/hrapplications/management.html:130
+msgid "No pending applications."
+msgstr ""
+
+#: templates/hrapplications/management.html:185
+msgid "No reviewed applications."
+msgstr ""
+
+#: templates/hrapplications/management.html:203
+#: templates/hrapplications/searchview.html:70
+msgid "Application Search"
+msgstr ""
+
+#: templates/hrapplications/searchview.html:11
+msgid "Application Search Results"
+msgstr ""
+
+#: templates/hrapplications/searchview.html:22
+msgid "Applications found"
+msgstr ""
+
+#: templates/hrapplications/searchview.html:28
+msgid "Application ID"
+msgstr ""
+
+#: templates/hrapplications/view.html:7 templates/hrapplications/view.html:13
+msgid "View Application"
+msgstr ""
+
+#: templates/hrapplications/view.html:19
+msgid "Denied"
+msgstr ""
+
+#: templates/hrapplications/view.html:29
+msgid "Applicant"
+msgstr ""
+
+#: templates/hrapplications/view.html:36
+msgid "User"
+msgstr ""
+
+#: templates/hrapplications/view.html:111
+msgid "Approve"
+msgstr ""
+
+#: templates/hrapplications/view.html:123
+msgid "Delete"
+msgstr ""
+
+#: templates/hrapplications/view.html:128
+msgid "Mark in Progress"
+msgstr ""
+
+#: templates/hrapplications/view.html:134
+msgid "Comment"
+msgstr ""
+
+#: templates/hrapplications/view.html:144
+msgid "Comments"
+msgstr ""
+
+#: templates/hrapplications/view.html:187
+#: templates/hrapplications/view.html:195
+msgid "Add Comment"
+msgstr ""
+
+#: templates/mumbletemps/base.html:4
+msgid "Mumble Temp Links"
+msgstr ""
+
+#: templates/mumbletemps/base.html:7
+msgid "Mumble Temporary Links"
+msgstr ""
+
+#: templates/mumbletemps/link.html:18
+msgid "Mumble Temporary Access"
+msgstr ""
+
+#: templates/notifications/list.html:4 templates/notifications/list.html:7
+msgid "Notifications"
+msgstr ""
+
+#: templates/notifications/list.html:12
+msgid "Unread"
+msgstr ""
+
+#: templates/notifications/list.html:13
+msgid "Read"
+msgstr ""
+
+#: templates/notifications/list.html:16
+msgid "Mark All Read"
+msgstr ""
+
+#: templates/notifications/list.html:17
+msgid "Delete All Read"
+msgstr ""
+
+#: templates/notifications/list.html:28 templates/notifications/list.html:63
+msgid "Timestamp"
+msgstr ""
+
+#: templates/notifications/list.html:29 templates/notifications/list.html:64
+msgid "Title"
+msgstr ""
+
+#: templates/notifications/list.html:52
+msgid "No unread notifications."
+msgstr ""
+
+#: templates/notifications/list.html:87
+msgid "No read notifications."
+msgstr ""
+
+#: templates/notifications/view.html:5 templates/notifications/view.html:9
+msgid "View Notification"
+msgstr ""
+
+#: templates/optimer/add.html:6 templates/optimer/management.html:15
+msgid "Create Operation"
+msgstr ""
+
+#: templates/optimer/add.html:13 templates/optimer/add.html:22
+msgid "Create Fleet Operation"
+msgstr ""
+
+#: templates/optimer/fleetoptable.html:8
+msgid "Operation Name"
+msgstr ""
+
+#: templates/optimer/fleetoptable.html:11
+msgid "Form Up System"
+msgstr ""
+
+#: templates/optimer/fleetoptable.html:12
+msgid "Start Time"
+msgstr ""
+
+#: templates/optimer/fleetoptable.html:13
+msgid "Local Time"
+msgstr ""
+
+#: templates/optimer/fleetoptable.html:14
+msgid "Duration"
+msgstr ""
+
+#: templates/optimer/fleetoptable.html:15
+msgid "FC"
+msgstr ""
+
+#: templates/optimer/management.html:4
+msgid "Fleet Operation Management"
+msgstr ""
+
+#: templates/optimer/management.html:10
+msgid "Fleet Operation Timers"
+msgstr ""
+
+#: templates/optimer/management.html:22
+msgid "Next Timers"
+msgstr ""
+
+#: templates/optimer/management.html:29
+msgid "No upcoming timers."
+msgstr ""
+
+#: templates/optimer/management.html:37
+msgid "Past Timers"
+msgstr ""
+
+#: templates/optimer/management.html:43
+msgid "No past timers."
+msgstr ""
+
+#: templates/optimer/update.html:6 templates/optimer/update.html:14
+#: templates/optimer/update.html:26
+msgid "Update Fleet Operation"
+msgstr ""
+
+#: templates/optimer/update.html:20
+msgid "Fleet Operation Does Not Exist"
+msgstr ""
+
+#: templates/permissions_tool/audit.html:6
+#: templates/permissions_tool/audit.html:10
+msgid "Permissions Audit"
+msgstr ""
+
+#: templates/permissions_tool/audit.html:24
+msgid "User / Character"
+msgstr ""
+
+#: templates/permissions_tool/overview.html:4
+#: templates/permissions_tool/overview.html:8
+msgid "Permissions Overview"
+msgstr ""
+
+#: templates/permissions_tool/overview.html:11
+msgid "Showing only applied permissions"
+msgstr ""
+
+#: templates/permissions_tool/overview.html:12
+msgid "Show All"
+msgstr ""
+
+#: templates/permissions_tool/overview.html:14
+msgid "Showing all permissions"
+msgstr ""
+
+#: templates/permissions_tool/overview.html:15
+msgid "Show Applied"
+msgstr ""
+
+#: templates/permissions_tool/overview.html:20
+msgid "Permissions"
+msgstr ""
+
+#: templates/permissions_tool/overview.html:27
+msgid "App"
+msgstr ""
+
+#: templates/permissions_tool/overview.html:30
+msgid "Model"
+msgstr ""
+
+#: templates/permissions_tool/overview.html:33
+msgid "Code Name"
+msgstr ""
+
+#: templates/permissions_tool/overview.html:39
+msgid "Users"
+msgstr ""
+
+#: templates/permissions_tool/overview.html:45
+msgid "States"
+msgstr ""
+
+#: templates/public/login.html:23 templates/public/register.html:24
+#: templates/registration/activate.html:23
+msgid "Authentication System"
+msgstr ""
+
+#: templates/public/login.html:35
+msgid "For information on SSO, ESI and security read the CCP Dev Blog"
+msgstr ""
+
+#: templates/public/login.html:37
+msgid "Introducing ESI - A New API For Eve Online"
+msgstr ""
+
+#: templates/public/login.html:43
+msgid "Manage ESI Applications"
+msgstr ""
+
+#: templates/public/register.html:7 templates/public/register.html:35
+msgid "Register"
+msgstr ""
+
+#: templates/public/register.html:27
+msgid "Please provide your email address for registration confirmation."
+msgstr ""
+
+#: templates/registration/activate.html:6
+msgid "Account Activation"
+msgstr ""
+
+#: templates/registration/activate.html:26
+msgid "Invalid or expired activation link."
+msgstr ""
+
+#: templates/services/fleetformattertool.html:5
+msgid "Fleet Formatter Tool"
+msgstr ""
+
+#: templates/services/fleetformattertool.html:10
+msgid "Fleet Broadcast Formatter Tool"
+msgstr ""
+
+#: templates/services/fleetformattertool.html:24
+msgid "Format"
+msgstr ""
+
+#: templates/services/service_confirm_delete.html:5
+#: templates/services/service_confirm_delete.html:11
+#, python-format
+msgid "Delete %(service_name)s Account?"
+msgstr ""
+
+#: templates/services/service_confirm_delete.html:19
+#, python-format
+msgid ""
+"Are you sure you want to delete your %(service_name)s account %(object)s?"
+msgstr ""
+
+#: templates/services/service_credentials.html:4
+#: templates/services/service_credentials.html:8
+#, python-format
+msgid "%(service_name)s Credentials"
+msgstr ""
+
+#: templates/services/service_credentials.html:19
+#: templates/services/teamspeak3/teamspeakjoin.html:55
+#: templates/srp/add.html:29
+msgid "Continue"
+msgstr ""
+
+#: templates/services/service_password.html:5
+#, python-format
+msgid "%(service_name)s Password Change"
+msgstr ""
+
+#: templates/services/service_password.html:9
+#, python-format
+msgid "Set %(service_name)s Password"
+msgstr ""
+
+#: templates/services/service_password.html:17
+msgid "Set Password"
+msgstr ""
+
+#: templates/services/services.html:4
+msgid "Services Management"
+msgstr ""
+
+#: templates/services/services.html:9
+msgid "Available Services"
+msgstr ""
+
+#: templates/services/services.html:13
+msgid "Your Services"
+msgstr ""
+
+#: templates/services/services.html:19
+msgid "Service"
+msgstr ""
+
+#: templates/services/services.html:21
+msgid "Domain"
+msgstr ""
+
+#: templates/services/teamspeak3/teamspeakjoin.html:6
+msgid "Verify Teamspeak"
+msgstr ""
+
+#: templates/services/teamspeak3/teamspeakjoin.html:12
+msgid "Verify Teamspeak Identity"
+msgstr ""
+
+#: templates/services/teamspeak3/teamspeakjoin.html:18
+msgid "If you are already connected to TS"
+msgstr ""
+
+#: templates/services/teamspeak3/teamspeakjoin.html:23
+msgid "If you are already on the server use the following token:"
+msgstr ""
+
+#: templates/services/teamspeak3/teamspeakjoin.html:33
+msgid "You <b>DO NOT</b> have Teamspeak Open"
+msgstr ""
+
+#: templates/services/teamspeak3/teamspeakjoin.html:37
+msgid "Join Server"
+msgstr ""
+
+#: templates/services/teamspeak3/teamspeakjoin.html:45
+msgid "Auth Teamspeak"
+msgstr ""
+
+#: templates/services/teamspeak3/teamspeakjoin.html:49
+msgid "Once connected click here"
+msgstr ""
+
+#: templates/smartgroups/groups.html:34
+msgid "Pending Removal"
+msgstr ""
+
+#: templates/smartgroups/groups.html:87
+msgid "Group Requirements Checks"
+msgstr ""
+
+#: templates/smartgroups/user_check.html:4
+msgid "Group Error"
+msgstr ""
+
+#: templates/smartgroups/user_check.html:10
+msgid "Requirement(s)"
+msgstr ""
+
+#: templates/smartgroups/user_check.html:11
+msgid "Note"
+msgstr ""
+
+#: templates/smartgroups/user_check.html:12
+msgid "Result"
+msgstr ""
+
+#: templates/smartgroups/user_check.html:40
+msgid "Join Group"
+msgstr ""
+
+#: templates/smartgroups/user_check.html:42
+msgid "Ineligible"
+msgstr ""
+
+#: templates/srp/add.html:6
+msgid "SRP Fleet Create"
+msgstr ""
+
+#: templates/srp/add.html:12 templates/srp/add.html:22
+msgid "Create SRP Fleet"
+msgstr ""
+
+#: templates/srp/add.html:25
+msgid "Give this link to the line members"
+msgstr ""
+
+#: templates/srp/data.html:55
+msgid "SRP Fleet Data"
+msgstr ""
+
+#: templates/srp/data.html:63
+msgid "Mark Incomplete"
+msgstr ""
+
+#: templates/srp/data.html:67
+msgid "Mark Completed"
+msgstr ""
+
+#: templates/srp/data.html:79 templates/srp/data.html:184
+msgid "Total Losses:"
+msgstr ""
+
+#: templates/srp/data.html:80 templates/srp/data.html:185
+#: templates/srp/management.html:32
+msgid "Total ISK Cost:"
+msgstr ""
+
+#: templates/srp/data.html:91 templates/srp/data.html:196
+msgid "Are you sure you want to delete SRP requests?"
+msgstr ""
+
+#: templates/srp/data.html:100
+msgid "SRP Requests"
+msgstr ""
+
+#: templates/srp/data.html:105
+msgid "Pilot Name"
+msgstr ""
+
+#: templates/srp/data.html:106
+msgid "Killboard Link"
+msgstr ""
+
+#: templates/srp/data.html:107
+msgid "Additional Info"
+msgstr ""
+
+#: templates/srp/data.html:109
+msgid "Killboard Loss Amt"
+msgstr ""
+
+#: templates/srp/data.html:110
+msgid "SRP ISK Cost"
+msgstr ""
+
+#: templates/srp/data.html:111
+msgid "Click value to edit Enter to save & next ESC to cancel"
+msgstr ""
+
+#: templates/srp/data.html:113
+msgid "Post Time"
+msgstr ""
+
+#: templates/srp/data.html:205
+msgid "No SRP requests for this fleet."
+msgstr ""
+
+#: templates/srp/management.html:7
+msgid "Srp Management"
+msgstr ""
+
+#: templates/srp/management.html:12
+msgid "SRP Management"
+msgstr ""
+
+#: templates/srp/management.html:24
+msgid "Add SRP Fleet"
+msgstr ""
+
+#: templates/srp/management.html:40
+msgid "SRP Links"
+msgstr ""
+
+#: templates/srp/management.html:48
+msgid "Fleet Name"
+msgstr ""
+
+#: templates/srp/management.html:49
+msgid "Fleet Time"
+msgstr ""
+
+#: templates/srp/management.html:50
+msgid "Fleet Doctrine"
+msgstr ""
+
+#: templates/srp/management.html:51
+msgid "Fleet Commander"
+msgstr ""
+
+#: templates/srp/management.html:52
+msgid "Fleet AAR"
+msgstr ""
+
+#: templates/srp/management.html:53
+msgid "Fleet SRP Code"
+msgstr ""
+
+#: templates/srp/management.html:54
+msgid "Fleet ISK Cost"
+msgstr ""
+
+#: templates/srp/management.html:55
+msgid "SRP Status"
+msgstr ""
+
+#: templates/srp/management.html:56
+msgid "Pending Requests"
+msgstr ""
+
+#: templates/srp/management.html:78
+msgid "Link"
+msgstr ""
+
+#: templates/srp/management.html:86
+msgid "Disabled"
+msgstr ""
+
+#: templates/srp/management.html:99
+msgid "Completed"
+msgstr ""
+
+#: templates/srp/management.html:117
+msgid "Are you sure you want to delete this SRP code and its contents?"
+msgstr ""
+
+#: templates/srp/management.html:140
+msgid "No SRP fleets created."
+msgstr ""
+
+#: templates/srp/request.html:6
+msgid "SRP Request"
+msgstr ""
+
+#: templates/srp/request.html:9 templates/srp/request.html:18
+msgid "Create SRP Request"
+msgstr ""
+
+#: templates/srp/update.html:6 templates/srp/update.html:9
+#: templates/srp/update.html:21
+msgid "Update AAR Link"
+msgstr ""
+
+#: templates/srp/update.html:15
+msgid "SRP Fleet Does Not Exist"
+msgstr ""
+
+#: templates/structures/base.html:4
+msgid "Structures"
+msgstr ""
+
+#: templates/structuretimers/timer_confirm_delete.html:4
+msgid "Delete Timer"
+msgstr ""
+
+#: templates/structuretimers/timer_confirm_delete.html:8
+msgid "Delete Structure Timer"
+msgstr ""
+
+#: templates/structuretimers/timer_confirm_delete.html:15
+msgid "Are you sure you want to delete timer this timer?"
+msgstr ""
+
+#: templates/structuretimers/timer_edit.html:10
+msgid "Timer Information"
+msgstr ""
+
+#: templates/structuretimers/timer_edit.html:19
+msgid "Please correct the input errors below"
+msgstr ""
+
+#: templates/structuretimers/timer_edit.html:29
+msgid "required fields"
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:8
+msgid "Current Eve Time:"
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:24
+msgid "Preliminary"
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:26
+msgid "Past"
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:35
+msgid "[MAIN]"
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:38
+msgid "No staging system configured."
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:51
+msgid "This page contains potential future timers."
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:59
+#, python-format
+msgid ""
+"Timers remain on this page for %(max_hours_expired)s hours after they expired"
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:69
+msgid "*: Distance from selected staging system:"
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:83
+msgid "Timer details"
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:110
+msgid "Solar System"
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:111
+msgid "Region"
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:112
+msgid "Structure Type"
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:113
+msgid "Timer Type"
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:114
+msgid "Owner"
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:115
+msgid "Objective"
+msgstr ""
+
+#: templates/structuretimers/timer_list.html:116
+msgid "Visibility"
+msgstr ""
