@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: netbox-network-diagram
+Version: 0.1.0
+Summary: A plugin to render network diagram in NetBox.
+Home-page: https://github.com/entooone/netbox-network-diagram
+Author: entooone
+Author-email: entooone@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/entooone/netbox-network-diagram
+Project-URL: Tracker, https://github.com/entooone/netbox-network-diagram/issues
+Keywords: netbox-plugin
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+
+## netbox-network-diagram
+
+A plugin to render network diagram in NetBox.

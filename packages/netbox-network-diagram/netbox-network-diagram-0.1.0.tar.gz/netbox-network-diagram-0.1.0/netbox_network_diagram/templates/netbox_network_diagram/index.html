@@ -1,0 +1,33 @@
+{% extends 'base/layout.html' %}
+{% load buttons %}
+{% load render_table from django_tables2 %}
+{% load static %}
+{% load perms %}
+{% load helpers %}
+
+{% block title %}Network Diagram Views{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'netbox_network_diagram/css/style.css' %}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+<script src="{% static 'netbox_network_diagram/js/cola.min.js' %}"></script>
+<script src="{% static 'netbox_network_diagram/js/inet-henge.min.js' %}"></script>
+{% endblock head %}
+
+{% block content %}
+<div id="diagram"></div>
+{% endblock content %}
+
+{% block javascript %}
+<script>
+    const data = {{ data | safe }};
+
+    const diagram = new Diagram("#diagram", data, {
+        bundle: true,
+        tooltip: "hover",
+        width: 1200,
+        height: 900,
+    });
+    diagram.init("loopback", "interface", "description", "type");
+</script>
+{% endblock javascript %}
