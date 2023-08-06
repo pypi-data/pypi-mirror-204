@@ -1,0 +1,14 @@
+pandasflow/__init__.py,sha256=x6h0kMoVocj6UgkFppBkG8MJRzh-Z3rWJJUeEpimpQk,284
+pandasflow/get_import.py,sha256=kCtPDYPXV1zpmN37Ze6z4ZqCQKDRt1-n-s9NGHb18u4,395
+pandasflow/mean_error.py,sha256=zI_moeRYLx8g6VC5pyuCkdKYehiDiJysm7kQWV_uHfg,217
+pandasflow/reset_mi.py,sha256=0IhfqQe9m4yMybP0EmuQNlti-D_Z_L1gNOtFVVhz_Gs,614
+pandasflow/dev/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pandasflow/dev/err_mean_diff.py,sha256=SE7W7680uM2TaVCIbMkhZbkJt2lcJHj3QdRmoYDAZl8,666
+pandasflow/split/__init__.py,sha256=iIm67C5B-1Oqs250k22t5HSXZEbWHguto7ssr7FUJ90,120
+pandasflow/split/train_test.py,sha256=SyMirzjfZCwLgWlUyYFoYwpU1aaagoYzNISicwXNkxM,2622
+pandasflow/split/train_valid_test.py,sha256=f6E4NA9gNu2T7qoTv34S3w2_qaFwFSAbjYvWxxmw35c,3087
+pandasflow-0.2.2.dist-info/LICENCE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pandasflow-0.2.2.dist-info/METADATA,sha256=LltjxaR3KW2i8x1z3a-HfmRkGPUVO3T5iARj0YeticM,719
+pandasflow-0.2.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pandasflow-0.2.2.dist-info/top_level.txt,sha256=2tGzz6c1TYeLajCcgJfGJU2JTI3-EVpsR45uzTHXqsA,11
+pandasflow-0.2.2.dist-info/RECORD,,
