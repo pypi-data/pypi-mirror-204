@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: AISimuToolKit
+Version: 0.0.6
+Summary: ICIP's private utils.
+Home-page: http://git.cipsup.cn/aisimulationplatform/toolkit/aisimulation
+Author: Ren & Guo
+Author-email: renmengjie22@mails.ucas.ac.cn
+License: MIT Licence
+Keywords: pip,AISimuToolKit
+Platform: any
+Requires-Python: >=3.10
+
+ICIP's private utils. The development version will be released when it is sufficiently refined
