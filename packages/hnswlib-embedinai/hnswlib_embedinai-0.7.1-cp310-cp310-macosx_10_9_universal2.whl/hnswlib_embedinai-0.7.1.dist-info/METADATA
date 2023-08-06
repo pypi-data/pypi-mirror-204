@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: hnswlib-embedinai
+Version: 0.7.1
+Summary: hnswlib
+Home-page: https://github.com/EmbedInAI/hnswlib
+Author: Yury Malkov and others
+License-File: LICENSE
+Requires-Dist: numpy
+
+hnsw
