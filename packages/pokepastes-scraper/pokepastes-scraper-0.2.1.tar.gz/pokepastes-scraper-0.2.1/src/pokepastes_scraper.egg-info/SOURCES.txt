@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/pokepastes_scraper/__init__.py
+src/pokepastes_scraper.egg-info/PKG-INFO
+src/pokepastes_scraper.egg-info/SOURCES.txt
+src/pokepastes_scraper.egg-info/dependency_links.txt
+src/pokepastes_scraper.egg-info/requires.txt
+src/pokepastes_scraper.egg-info/top_level.txt
+test/test_json_conversion.py
