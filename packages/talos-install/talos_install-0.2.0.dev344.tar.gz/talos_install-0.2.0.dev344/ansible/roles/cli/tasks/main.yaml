@@ -1,0 +1,19 @@
+---
+- name: Set talos user env
+  ansible.builtin.include_tasks: env.yaml
+
+- name: Clone talos-cli repo
+  ansible.builtin.include_tasks: clone.yaml
+  vars:
+    ansible_become: false
+    ansible_user: "{{ master.user }}"
+    ansible_ssh_pass: "{{ master.password }}"
+
+- name: Configure LogRotate
+  ansible.builtin.include_tasks: logrotate.yaml
+
+- name: Misc operation
+  ansible.builtin.include_tasks: misc.yaml
+
+- name: Configure Web
+  ansible.builtin.include_tasks: web.yaml

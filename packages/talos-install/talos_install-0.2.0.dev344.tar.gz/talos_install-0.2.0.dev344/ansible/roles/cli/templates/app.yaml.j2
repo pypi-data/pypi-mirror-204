@@ -1,0 +1,27 @@
+### App Specifications
+### ANSIBLE
+ansible_ssh_extra_args: "{{ ansible_ssh_extra_args }}"
+ansible_port: "{{ ansible_port }}"
+#ansible_user: CANT CHANGE, DEFINE AT CODE LEVEL
+#ansible_ssh_pass: CANT CHANGE, DEFINE AT CODE LEVEL
+
+### DOCKER REGISTRY
+docker:
+  namespace: "{{ docker.namespace }}"
+
+### TALOS
+app:
+  name: "{{ app.name }}"
+  cli_version: "{{ app.cli_version }}"
+  cli_repo: "{{ app.cli_repo }}"
+  data_repo: "{{ app.data_repo }}"
+  nexus_repo: "{{ app.nexus_repo }}"
+  dir:     "{{ app.dir }}"
+  clidir:  "{{ app.clidir }}"
+  datadir: "{{ app.datadir }}"
+  repodir: "{{ app.repodir }}"
+  etcdir:  "{{ app.etcdir }}"
+  webdir:  "{{ app.webdir }}"
+  logdir:  "{{ app.logdir }}"
+
+enable_destroy_images: "{{ enable_destroy_images }}"
