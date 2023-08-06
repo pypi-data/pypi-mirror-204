@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/xbox_live/__init__.py
+src/xbox_live/main.py
+src/xbox_live/py.typed
+src/xbox_sdk.egg-info/PKG-INFO
+src/xbox_sdk.egg-info/SOURCES.txt
+src/xbox_sdk.egg-info/dependency_links.txt
+src/xbox_sdk.egg-info/requires.txt
+src/xbox_sdk.egg-info/top_level.txt
