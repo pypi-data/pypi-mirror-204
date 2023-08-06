@@ -1,0 +1,9 @@
+setup.py
+jija_sqlalchemy/__init__.py
+jija_sqlalchemy/driver.py
+jija_sqlalchemy.egg-info/PKG-INFO
+jija_sqlalchemy.egg-info/SOURCES.txt
+jija_sqlalchemy.egg-info/dependency_links.txt
+jija_sqlalchemy.egg-info/not-zip-safe
+jija_sqlalchemy.egg-info/requires.txt
+jija_sqlalchemy.egg-info/top_level.txt
