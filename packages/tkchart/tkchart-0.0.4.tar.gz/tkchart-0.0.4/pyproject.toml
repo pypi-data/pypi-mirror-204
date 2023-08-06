@@ -1,0 +1,20 @@
+
+
+[project]
+name = "tkchart"
+version = "0.0.4"
+authors = [
+  { name="Thisal-D"},
+]
+description = "tkchart -> Create Chart in tkinter windows"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Thisal-D/tkchart"
+"Bug Tracker" = "https://github.com/pypa/tkchart/issues"
