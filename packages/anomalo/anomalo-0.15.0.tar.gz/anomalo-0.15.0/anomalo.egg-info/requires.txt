@@ -1,0 +1,5 @@
+requests
+fire
+
+[yaml]
+pyyaml>=5.2

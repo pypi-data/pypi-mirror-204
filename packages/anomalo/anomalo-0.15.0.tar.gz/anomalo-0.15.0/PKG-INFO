@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: anomalo
+Version: 0.15.0
+Summary: Python bindings for the Anomalo API
+Home-page: https://anomalo.com
+Author: Anomalo
+Author-email: support@anomalo.com
+License: license.txt
+Requires-Python: >=3.8
+Provides-Extra: yaml
+License-File: LICENSE.txt
+
+A basic REST API client and command line client for Anomalo
