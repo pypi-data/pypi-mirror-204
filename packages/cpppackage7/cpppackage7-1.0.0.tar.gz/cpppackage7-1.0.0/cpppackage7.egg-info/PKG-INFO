@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cpppackage7
+Version: 1.0.0
+Summary: A short description of my package
+Home-page: https://github.com/my_username/my_package
+Author: swapnil
+Author-email: swapnild333@gmail.com
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
