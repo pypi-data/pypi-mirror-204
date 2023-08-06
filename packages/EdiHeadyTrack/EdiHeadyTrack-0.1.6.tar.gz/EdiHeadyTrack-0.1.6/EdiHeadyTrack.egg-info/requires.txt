@@ -1,0 +1,11 @@
+imutils
+matplotlib
+mediapipe
+numpy
+opencv_contrib_python
+pandas
+PyQt5
+PyQt5_sip
+pyshine
+scipy
+tqdm
