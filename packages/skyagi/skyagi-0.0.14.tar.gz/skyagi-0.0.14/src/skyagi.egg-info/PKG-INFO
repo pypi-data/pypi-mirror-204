@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: skyagi
+Version: 0.0.14
+Summary: AGI
+Home-page: https://github.com/litanlitudan/skyagi
+Author: Tan Li
+Author-email: tan@tanli.dev
+Project-URL: Bug Tracker, https://github.com/litanlitudan/skyagi/issues
+Project-URL: Changelog, https://github.com/litanlitudan/skyagi/releases
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# SkyAGI: Sky is the Limit
+
