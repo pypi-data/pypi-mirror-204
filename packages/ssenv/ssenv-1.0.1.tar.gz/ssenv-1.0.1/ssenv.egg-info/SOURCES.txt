@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ssenv/__init__.py
+ssenv/main.py
+ssenv.egg-info/PKG-INFO
+ssenv.egg-info/SOURCES.txt
+ssenv.egg-info/dependency_links.txt
+ssenv.egg-info/top_level.txt
+tests/test.py
