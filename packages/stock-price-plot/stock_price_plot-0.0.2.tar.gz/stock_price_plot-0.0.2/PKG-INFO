@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: stock_price_plot
+Version: 0.0.2
+Summary: This is a library that graphs a stock plot
+Home-page: 
+Author: Luke Abbatessa
+Author-email: labbatessa14@gmail.com
+License: MIT
+Keywords: stock
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a library that graphs a stock price plot.
+
+Change Log
+==========
+
+0.0.2 (04/23/2023)
+-------------------
+- Second Release

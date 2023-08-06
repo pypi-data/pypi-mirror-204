@@ -1,0 +1,1 @@
+This is a library that graphs a stock price plot.
