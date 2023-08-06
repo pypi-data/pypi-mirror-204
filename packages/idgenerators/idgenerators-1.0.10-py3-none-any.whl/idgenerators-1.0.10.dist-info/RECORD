@@ -1,0 +1,10 @@
+idgenerators/__init__.py,sha256=z6CHKq-cOwohne0yINnuh76hErOSnoL29NA3ubTwACg,51
+idgenerators/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idgenerators/src/idgenerators.py,sha256=pANRD55-_m3Kg06EfqVQVXwIW3BWZvIHKgewOexhH_k,96
+idgenerators/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idgenerators/test/idgenerators_test.py,sha256=B_Queo6cs0ywZTfzUAq1ux3n3EVjPhaHeffIW7zCn7o,238
+idgenerators-1.0.10.dist-info/LICENSE.txt,sha256=1hGwBMcNoU-SRcIqht2sISxne6FByE4pGnlg4rHs3W4,25
+idgenerators-1.0.10.dist-info/METADATA,sha256=XkPkVdif4uKbNXcA-Aq9f4od0JU1dT5GRbRIeQ44Bmk,727
+idgenerators-1.0.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+idgenerators-1.0.10.dist-info/top_level.txt,sha256=2vsmSwRjJ0HtTCSFVt5X5L-httjuVanJ_Xwn2x8q_0I,13
+idgenerators-1.0.10.dist-info/RECORD,,
