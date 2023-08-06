@@ -1,0 +1,26 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Ger\u00e4t ist bereits konfiguriert"
+        },
+        "error": {
+            "invalid_code": "Der eingegebene Code war falsch, bitte \u00fcberpr\u00fcfe ihn und versuche es erneut.",
+            "invalid_email": "Mit der eingegebenen E-Mail-Adresse ist kein Konto verkn\u00fcpft. Bitte versuche es erneut.",
+            "unknown": "Unerwarteter Fehler"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Verifizierungscode"
+                },
+                "description": "Gib den Verifizierungscode ein, der an deine E-Mail-Adresse gesendet wurde"
+            },
+            "user": {
+                "data": {
+                    "username": "E-Mail"
+                },
+                "description": "Gib deine Roborock-E-Mail-Adresse ein."
+            }
+        }
+    }
+}

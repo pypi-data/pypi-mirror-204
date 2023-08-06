@@ -1,0 +1,16 @@
+{
+    "entity": {
+        "sensor": {
+            "state": {
+                "state": {
+                    "deaktiviert": "Neaktiven",
+                    "estrichtrocknung": "Su\u0161enje estriha",
+                    "heizbetrieb": "Na\u010din ogrevanja",
+                    "heizung": "Ogrevanje",
+                    "kalibration_heizbetrieb": "Kalibracija na\u010dina ogrevanja",
+                    "urlaubsmodus": "Po\u010ditni\u0161ki na\u010din"
+                }
+            }
+        }
+    }
+}

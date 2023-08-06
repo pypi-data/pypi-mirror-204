@@ -1,0 +1,16 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "description": "Vnesite podatke o svojih son\u010dnih kolektorjih. \u010ce vam podatek ni jasen, si oglejte dokumentacijo."
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "description": "Te vrednosti omogo\u010dajo prilagoditev rezultata Forecast.Solar. \u010ce vam podatek ni jasen, si oglejte dokumentacijo."
+            }
+        }
+    }
+}

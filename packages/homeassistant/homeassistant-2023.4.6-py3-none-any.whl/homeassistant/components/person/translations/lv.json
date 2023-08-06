@@ -1,0 +1,12 @@
+{
+    "entity_component": {
+        "_": {
+            "name": "Persona",
+            "state": {
+                "home": "M\u0101j\u0101s",
+                "not_home": "Prom"
+            }
+        }
+    },
+    "title": "Persona"
+}

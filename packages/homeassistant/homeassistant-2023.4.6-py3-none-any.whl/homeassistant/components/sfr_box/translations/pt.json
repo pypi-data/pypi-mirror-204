@@ -1,0 +1,28 @@
+{
+    "config": {
+        "step": {
+            "choose_auth": {
+                "description": "Definir as credenciais permitem funcionalidades adicionais.",
+                "menu_options": {
+                    "auth": "Definir credenciais (recomendado)",
+                    "skip_auth": "Ignorar autentica\u00e7\u00e3o"
+                }
+            },
+            "user": {
+                "description": "Definir as credenciais \u00e9 opcional mas permite funcionalidades adicionais."
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "net_infra": {
+                "state": {
+                    "adsl": "ADSL",
+                    "ftth": "FTTH",
+                    "gprs": "GPRS",
+                    "unknown": "Desconhecido"
+                }
+            }
+        }
+    }
+}

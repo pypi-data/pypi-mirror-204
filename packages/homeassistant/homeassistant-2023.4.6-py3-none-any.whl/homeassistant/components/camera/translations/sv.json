@@ -1,0 +1,12 @@
+{
+    "entity_component": {
+        "_": {
+            "name": "Kamera",
+            "state": {
+                "recording": "Inspelning",
+                "streaming": "Str\u00f6mmar"
+            }
+        }
+    },
+    "title": "Kamera"
+}

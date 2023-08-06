@@ -1,0 +1,9 @@
+{
+    "state": {
+        "litterrobot__status_code": {
+            "off": "Izklopljeno",
+            "offline": "Brez povezave",
+            "rdy": "Pripravljen"
+        }
+    }
+}

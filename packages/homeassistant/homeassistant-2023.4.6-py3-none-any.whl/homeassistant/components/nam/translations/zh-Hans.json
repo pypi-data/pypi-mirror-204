@@ -1,0 +1,9 @@
+{
+    "entity": {
+        "sensor": {
+            "signal_strength": {
+                "name": "\u4fe1\u53f7\u5f3a\u5ea6"
+            }
+        }
+    }
+}

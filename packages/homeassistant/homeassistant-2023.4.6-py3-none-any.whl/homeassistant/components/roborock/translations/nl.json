@@ -1,0 +1,26 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Apparaat is alreeds geconfigureerd"
+        },
+        "error": {
+            "invalid_code": "De ingevoerde code is niet juist, controleer en probeer opnieuw",
+            "invalid_email": "Er is geen account verbonden met het gegeven e-mailadres, probeer nog eens",
+            "unknown": "Onverwachte fout"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Verificatiecode"
+                },
+                "description": "Noteer de verificatiecode die gestuurd is naar je e-mailadres"
+            },
+            "user": {
+                "data": {
+                    "username": "E-mailadres"
+                },
+                "description": "Geef uw Roborock e-mail adres"
+            }
+        }
+    }
+}

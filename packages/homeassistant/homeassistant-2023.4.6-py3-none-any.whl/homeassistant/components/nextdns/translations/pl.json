@@ -1,0 +1,199 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Ten profil NextDNS jest ju\u017c skonfigurowany."
+        },
+        "error": {
+            "cannot_connect": "Nie mo\u017cna nawi\u0105za\u0107 po\u0142\u0105czenia",
+            "invalid_api_key": "Nieprawid\u0142owy klucz API",
+            "unknown": "Nieoczekiwany b\u0142\u0105d"
+        },
+        "step": {
+            "profiles": {
+                "data": {
+                    "profile": "Profil"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_key": "Klucz API"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "device_connection_status": {
+                "name": "Stan po\u0142\u0105czenia urz\u0105dzenia"
+            },
+            "device_profile_connection_status": {
+                "name": "Stan po\u0142\u0105czenia profilu urz\u0105dzenia"
+            }
+        },
+        "sensor": {
+            "doh3_queries_ratio": {
+                "name": "Stosunek zapyta\u0144 DNS-over-HTTP/3"
+            },
+            "doh_queries": {
+                "name": "Zapytania DNS-over-HTTPS"
+            },
+            "doh_queries_ratio": {
+                "name": "Stosunek zapyta\u0144 DNS-over-HTTPS"
+            },
+            "doq_queries": {
+                "name": "Zapytania DNS-over-QUIC"
+            },
+            "doq_queries_ratio": {
+                "name": "Stosunek zapyta\u0144 DNS-over-QUIC"
+            },
+            "dot_queries": {
+                "name": "Zapytania DNS-over-TLS"
+            },
+            "dot_queries_ratio": {
+                "name": "Stosunek zapyta\u0144 DNS-over-TLS"
+            },
+            "encrypted_queries": {
+                "name": "Zaszyfrowane zapytania"
+            },
+            "encrypted_queries_ratio": {
+                "name": "Stosunek zapyta\u0144 zaszyfrowanych"
+            },
+            "ipv4_queries": {
+                "name": "Zapytania IPv4"
+            },
+            "ipv6_queries": {
+                "name": "Zapytania IPv6"
+            },
+            "ipv6_queries_ratio": {
+                "name": "Stosunek zapyta\u0144 IPv6"
+            },
+            "not_validated_queries": {
+                "name": "Niezweryfikowane zapytania DNSSEC"
+            },
+            "relayed_queries": {
+                "name": "Przekazane zapytania DNS"
+            },
+            "tcp_queries": {
+                "name": "Zapytania TCP"
+            },
+            "tcp_queries_ratio": {
+                "name": "Stosunek zapyta\u0144 TCP"
+            },
+            "udp_queries": {
+                "name": "Zapytania UDP"
+            },
+            "udp_queries_ratio": {
+                "name": "Stosunek zapyta\u0144 UDP"
+            },
+            "unencrypted_queries": {
+                "name": "Nieszyfrowane zapytania"
+            },
+            "validated_queries": {
+                "name": "Zweryfikowane zapytania DNSSEC"
+            },
+            "validated_queries_ratio": {
+                "name": "Stosunek zapyta\u0144 zweryfikowanych DNSSEC"
+            }
+        },
+        "switch": {
+            "ai_threat_detection": {
+                "name": "Inteligentne wykrywanie zagro\u017ce\u0144"
+            },
+            "allow_affiliate": {
+                "name": "Zezwalaj na linki partnerskie i \u015bledz\u0105ce"
+            },
+            "anonymized_ecs": {
+                "name": "Anonimowa podsie\u0107 klienta EDNS"
+            },
+            "block_9gag": {
+                "name": "Zablokuj 9GAG"
+            },
+            "block_amazon": {
+                "name": "Zablokuj Amazon"
+            },
+            "block_blizzard": {
+                "name": "Zablokuj Blizzard"
+            },
+            "block_bypass_methods": {
+                "name": "Zablokuj metody obej\u015bcia"
+            },
+            "block_csam": {
+                "name": "Blokuj materia\u0142y zwi\u0105zane z wykorzystywaniem seksualnym dzieci"
+            },
+            "block_dailymotion": {
+                "name": "Zablokuj Dailymotion"
+            },
+            "block_tumblr": {
+                "name": "Zablokuj Tumblr"
+            },
+            "block_twitch": {
+                "name": "Zablokuj Twitch"
+            },
+            "block_twitter": {
+                "name": "Zablokuj Twitter"
+            },
+            "block_vimeo": {
+                "name": "Zablokuj Vimeo"
+            },
+            "block_vk": {
+                "name": "Zablokuj VK"
+            },
+            "block_whatsapp": {
+                "name": "Zablokuj WhatsApp"
+            },
+            "block_xboxlive": {
+                "name": "Zablokuj Xbox Live"
+            },
+            "block_youtube": {
+                "name": "Zablokuj YouTube"
+            },
+            "block_zoom": {
+                "name": "Zablokuj Zoom"
+            },
+            "cache_boost": {
+                "name": "Zwi\u0119kszenie pami\u0119ci podr\u0119cznej"
+            },
+            "cname_flattening": {
+                "name": "Sp\u0142aszczanie CNAME"
+            },
+            "cryptojacking_protection": {
+                "name": "Ochrona przed Cryptojackingiem"
+            },
+            "dga_protection": {
+                "name": "Ochrona algorytm\u00f3w generowania domen"
+            },
+            "dns_rebinding_protection": {
+                "name": "Ochrona ponownego wi\u0105zania DNS"
+            },
+            "google_safe_browsing": {
+                "name": "Bezpieczne przegl\u0105danie Google"
+            },
+            "idn_homograph_attacks_protection": {
+                "name": "Ochrona przed atakami z homografem IDN"
+            },
+            "logs": {
+                "name": "Logi"
+            },
+            "safesearch": {
+                "name": "Wymu\u015b SafeSearch"
+            },
+            "threat_intelligence_feeds": {
+                "name": "Kana\u0142y informacji o zagro\u017ceniach"
+            },
+            "typosquatting_protection": {
+                "name": "Ochrona przed typosquattingiem"
+            },
+            "web3": {
+                "name": "Web3"
+            },
+            "youtube_restricted_mode": {
+                "name": "Wymu\u015b tryb ograniczonego dost\u0119pu do YouTube"
+            }
+        }
+    },
+    "system_health": {
+        "info": {
+            "can_reach_server": "Dost\u0119p do serwera"
+        }
+    }
+}

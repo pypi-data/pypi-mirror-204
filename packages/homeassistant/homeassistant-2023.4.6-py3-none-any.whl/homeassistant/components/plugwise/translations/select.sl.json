@@ -1,0 +1,11 @@
+{
+    "state": {
+        "plugwise__dhw_mode": {
+            "off": "Izklopljen"
+        },
+        "plugwise__regulation_mode": {
+            "heating": "Ogrevanje",
+            "off": "Izklopljen"
+        }
+    }
+}

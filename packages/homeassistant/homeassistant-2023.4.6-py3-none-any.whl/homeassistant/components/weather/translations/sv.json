@@ -1,0 +1,25 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "cloudy": "Molnigt",
+                "lightning-rainy": "\u00c5ska, regnigt",
+                "partlycloudy": "Delvis molnigt",
+                "rainy": "Regnigt",
+                "snowy": "Sn\u00f6ar ",
+                "snowy-rainy": "Sn\u00f6igt, regnigt",
+                "sunny": "Soligt",
+                "windy": "Bl\u00e5sigt",
+                "windy-variant": "Bl\u00e5sigt"
+            },
+            "state_attributes": {
+                "temperature": {
+                    "name": "Temperatur"
+                },
+                "temperature_unit": {
+                    "name": "Temperaturenhet"
+                }
+            }
+        }
+    }
+}

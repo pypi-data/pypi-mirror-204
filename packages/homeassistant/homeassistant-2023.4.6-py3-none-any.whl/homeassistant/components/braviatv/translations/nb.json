@@ -1,0 +1,12 @@
+{
+    "config": {
+        "error": {
+            "invalid_auth": "Ugyldig autentisering"
+        },
+        "step": {
+            "confirm": {
+                "description": "Vil du starte oppsettet?"
+            }
+        }
+    }
+}

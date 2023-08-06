@@ -1,0 +1,42 @@
+{
+    "config": {
+        "error": {
+            "unknown": "Nepri\u010dakovana napaka"
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "heating_state": {
+                "name": "Ogrevanje"
+            }
+        },
+        "climate": {
+            "plugwise": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "away": "Odsoten",
+                            "home": "Doma"
+                        }
+                    }
+                }
+            }
+        },
+        "select": {
+            "dhw_mode": {
+                "state": {
+                    "boost": "Pospe\u0161ek",
+                    "comfort": "Udobno",
+                    "off": "Izklju\u010deno"
+                }
+            },
+            "regulation_mode": {
+                "state": {
+                    "cooling": "Hlajenje",
+                    "heating": "Ogrevanje",
+                    "off": "Izklopljeno"
+                }
+            }
+        }
+    }
+}

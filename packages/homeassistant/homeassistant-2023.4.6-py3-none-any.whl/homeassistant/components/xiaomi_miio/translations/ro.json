@@ -1,0 +1,13 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispozitivul a fost configurat deja",
+            "already_in_progress": "Fluxul de configura\u021bie este deja \u00een desf\u0103\u0219urare"
+        },
+        "error": {
+            "cannot_connect": "A e\u0219uat conectarea",
+            "unknown_device": "Numele dispozitivului este necunoscut, nu se poate configura dispozitivul utiliz\u00e2nd fluxul de configurare."
+        },
+        "flow_title": "{name}"
+    }
+}

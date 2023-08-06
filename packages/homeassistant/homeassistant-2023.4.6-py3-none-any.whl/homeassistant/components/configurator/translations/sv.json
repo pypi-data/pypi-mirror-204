@@ -1,0 +1,11 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "configure": "Konfigurerad",
+                "configured": "Konfigurerad"
+            }
+        }
+    },
+    "title": "Konfiguratorn"
+}

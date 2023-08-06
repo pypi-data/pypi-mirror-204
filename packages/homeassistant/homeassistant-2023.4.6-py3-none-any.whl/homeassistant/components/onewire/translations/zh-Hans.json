@@ -1,0 +1,20 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "\u8fde\u63a5\u5931\u8d25"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "humidity": {
+                "name": "\u6e7f\u5ea6"
+            },
+            "temperature": {
+                "name": "\u6e29\u5ea6"
+            },
+            "voltage": {
+                "name": "\u7535\u538b"
+            }
+        }
+    }
+}

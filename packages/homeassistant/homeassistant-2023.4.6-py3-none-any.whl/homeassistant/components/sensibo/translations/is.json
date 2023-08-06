@@ -1,0 +1,12 @@
+{
+    "entity": {
+        "select": {
+            "light": {
+                "state": {
+                    "off": "Sl\u00f6kkt",
+                    "on": "Kveikt"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "entity_component": {
+        "_": {
+            "name": "Calend\u00e1rio",
+            "state": {
+                "off": "Desligado"
+            },
+            "state_attributes": {
+                "all_day": {
+                    "state": {
+                        "false": "N\u00e3o",
+                        "true": "Sim"
+                    }
+                }
+            }
+        }
+    },
+    "title": "Calend\u00e1rio"
+}

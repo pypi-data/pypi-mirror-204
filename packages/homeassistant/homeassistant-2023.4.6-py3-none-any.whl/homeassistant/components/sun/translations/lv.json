@@ -1,0 +1,12 @@
+{
+    "entity_component": {
+        "_": {
+            "name": "Saule",
+            "state": {
+                "above_horizon": "Virs horizonta",
+                "below_horizon": "Zem horizonta"
+            }
+        }
+    },
+    "title": "Saule"
+}

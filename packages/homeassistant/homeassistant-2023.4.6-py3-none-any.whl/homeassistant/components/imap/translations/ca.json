@@ -1,0 +1,53 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "invalid_charset": "El conjunt de car\u00e0cters especificat no \u00e9s compatible",
+            "invalid_folder": "La carpeta seleccionada \u00e9s inv\u00e0lida",
+            "invalid_search": "La cerca seleccionada \u00e9s inv\u00e0lida"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya"
+                },
+                "description": "La contrasenya de {username} \u00e9s inv\u00e0lida.",
+                "title": "Reautenticaci\u00f3 de la integraci\u00f3"
+            },
+            "user": {
+                "data": {
+                    "charset": "Conjunt de car\u00e0cters",
+                    "folder": "Carpeta",
+                    "password": "Contrasenya",
+                    "port": "Port",
+                    "search": "Cerca IMAP",
+                    "server": "Servidor",
+                    "username": "Nom d'usuari"
+                }
+            }
+        }
+    },
+    "options": {
+        "error": {
+            "already_configured": "Ja existeix una entrada amb aquestes carpetes i opcions de cerca",
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "invalid_charset": "El conjunt de car\u00e0cters especificat no \u00e9s compatible",
+            "invalid_folder": "La carpeta seleccionada \u00e9s inv\u00e0lida",
+            "invalid_search": "La cerca seleccionada \u00e9s inv\u00e0lida"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "folder": "Carpeta",
+                    "search": "Cerca IMAP"
+                }
+            }
+        }
+    }
+}

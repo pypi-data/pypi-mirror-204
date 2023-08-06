@@ -1,0 +1,31 @@
+{
+    "device_automation": {
+        "action_type": {
+            "set_value": "Seteaz\u0103 valoarea pentru {entity_name}"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "state_attributes": {
+                "max": {
+                    "name": "Maxim"
+                },
+                "min": {
+                    "name": "Minim"
+                },
+                "mode": {
+                    "name": "Mod",
+                    "state": {
+                        "auto": "Automat",
+                        "box": "C\u0103su\u021ba",
+                        "slider": "Glisor"
+                    }
+                },
+                "step": {
+                    "name": "Pas"
+                }
+            }
+        }
+    },
+    "title": "Num\u0103r"
+}

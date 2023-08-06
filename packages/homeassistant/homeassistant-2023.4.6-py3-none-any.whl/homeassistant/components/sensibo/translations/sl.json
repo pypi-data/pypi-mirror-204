@@ -1,0 +1,19 @@
+{
+    "entity": {
+        "select": {
+            "light": {
+                "state": {
+                    "off": "Izklopljen",
+                    "on": "Vklopljen"
+                }
+            }
+        },
+        "sensor": {
+            "smart_type": {
+                "state": {
+                    "temperature": "Temperatura"
+                }
+            }
+        }
+    }
+}

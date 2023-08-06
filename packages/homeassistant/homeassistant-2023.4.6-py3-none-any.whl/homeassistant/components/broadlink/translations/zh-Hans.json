@@ -1,0 +1,18 @@
+{
+    "entity": {
+        "sensor": {
+            "humidity": {
+                "name": "\u6e7f\u5ea6"
+            },
+            "light": {
+                "name": "\u7167\u5ea6"
+            },
+            "temperature": {
+                "name": "\u6e29\u5ea6"
+            },
+            "voltage": {
+                "name": "\u7535\u538b"
+            }
+        }
+    }
+}

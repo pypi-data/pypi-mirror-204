@@ -1,0 +1,19 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Endere\u00e7o",
+                    "port": "Porta"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery": {
+                "name": "Bateria"
+            }
+        }
+    }
+}
