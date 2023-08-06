@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: remotecall
+Version: 0.1.1
+Summary: The module provides functionality to expose Python functions to be called remotely over ethernet.
+Home-page: https://gitlab.com/slaine/remotecall.git/
+Author: Sami Laine
+Author-email: sami.jy.laine@gmail.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+Provides-Extra: test
+License-File: LICENSE
+
+UNKNOWN
+
