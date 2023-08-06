@@ -1,0 +1,10 @@
+muradmymodule/__init__.py,sha256=RW6Dpug8z8F_QKuZqB6ih45XkOtw7PU08DR_mAWToQc,50
+muradmymodule/add.py,sha256=EJioIUpnnkLD5acBN9NHe0P6TdLN72tv2TnUzuxHAOQ,32
+muradmymodule/subtract.py,sha256=ChPakN9whbxYDZoZEXX_jHFp2KTuB5mUaBETAG6tN6Q,37
+muradmymodule/extras/__init__.py,sha256=ae2dA6qND6c35l1Iu-AN6ZgAtnw47exlMDoQueOjYw4,56
+muradmymodule/extras/divide.py,sha256=FrZ1KZevOME7HLX_ueDKQx4qSbnU4nz7QUcylXAyYjs,37
+muradmymodule/extras/multiply.py,sha256=Y-25kAljlvwzy5V_WEaEYvU80baT7qHhhbYZnl4D1RY,37
+muradmymodule-0.0.4.dist-info/METADATA,sha256=mvq795pjI5N9OlJ2KlYHJkagrLfkTUNkfYZlsxeheL4,599
+muradmymodule-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+muradmymodule-0.0.4.dist-info/top_level.txt,sha256=9s4SNL8dt97n0lilNaF6a_WrTn903MrvcCVULcrA1ho,14
+muradmymodule-0.0.4.dist-info/RECORD,,
