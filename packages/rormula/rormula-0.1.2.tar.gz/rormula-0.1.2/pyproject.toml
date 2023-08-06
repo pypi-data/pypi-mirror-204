@@ -1,0 +1,27 @@
+[build-system]
+requires = ["maturin>=0.14,<0.15"]
+build-backend = "maturin"
+
+[project]
+name = "rormula"
+requires-python = ">=3.7"
+version = "0.1.2"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+dependencies = ["pandas"]
+license = {text = "BSD-3-Clause"}
+description = "Formula parser and evaluator for Wilkinson notation"
+keywords = ["design of experiments", "Wilkinson", "parser", "eval", "doe"]
+authors = [
+  {name = "Behrang Shafei", email = "behrang.shafei@basf.com"}
+]
+[project.urls]
+repository = "https://github.com/basf/rormula"
+homepage = "https://github.com/basf/rormula"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+[tool.ruff]
+ignore = ["E731"]
