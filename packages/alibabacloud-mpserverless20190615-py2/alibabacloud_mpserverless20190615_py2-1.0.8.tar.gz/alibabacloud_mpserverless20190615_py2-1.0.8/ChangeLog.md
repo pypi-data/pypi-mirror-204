@@ -1,0 +1,18 @@
+2022-12-05 Version: 1.0.7
+- Publish SDK.
+
+2022-10-08 Version: 1.0.6
+- Publish SDK.
+
+2022-09-22 Version: 1.0.5
+- Publish SDK.
+
+2022-04-21 Version: 1.0.4
+- Publish SDK.
+
+2022-03-17 Version: 1.0.3
+- Publish SDK.
+
+2021-12-23 Version: 1.0.2
+- Publish SDK.
+
