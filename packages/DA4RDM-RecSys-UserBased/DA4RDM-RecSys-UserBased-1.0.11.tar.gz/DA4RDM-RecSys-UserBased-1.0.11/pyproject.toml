@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DA4RDM-RecSys-UserBased"
+version = "1.0.11"
+description = "A package that recommends similar data collections based on the analysis of user-resource interaction patterns."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+'numpy',
+'pandas',
+'jsons',
+'seaborn',
+'scikit-learn',
+]
+
+

@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: DA4RDM-RecSys-UserBased
+Version: 1.0.11
+Summary: A package that recommends similar data collections based on the analysis of user-resource interaction patterns.
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DA4RDM_RecSys_UserBased
+
+## Description
+The **DA4RDM_RecSys_UserBased** is a python based package that recommends data collections based on matching users' behavior analysis and an explorative analysis of user-resource interactions.
+
+
+## Installation
+The package is built using Python as a programming language and utilizes python packages such as sklearn, json etc. The complete list of dependencies could be referred to in the **requirements.txt** file. Please make sure the necessary packages are installed before execution. The package can be installed using the pip command provided below.
+
+**pip install DA4RDM-RecSys-UserBased**
+
+
+## Importing the Modules 
+The package has one important module **get_recommendation**. This modules invokes the necessary functions from other modules that perform the tasks of data extraction, outlier detection, decay analysis and knn implementation to output recommendation. The module can be imported using the below command:
+
+```python
+from DA4RDM_RecSys_UserBased import get_recommendation
+```
+
+## Usage
+The package can be used to generate resource recommendations based on the input reference user id. To do so the function **get_recommendations** within the module **get_recommendation** can be called and the respective user id should be passed along with other function parameters. In addition to that two optional arguments can also be passed namely the number of recommended resources that is expected as function output and the outlier method to use. The number of neighbours being used in the KNN Nearest neighbour algorithm by the recommender system is set to the value 3 based on preliminary analysis. The function body along with default parameter values is as shown below:
+
+```python
+def get_recommendations(datapath, dataset_resources, ref_user, num_recommendation=3, outlier_detection_method="percentile"):
+     """Outputs knn distance based recommendation
+
+    :param datapath: filepath to the csv file, a string is expected
+    :param dataset_resources: filepath to the resource file
+    :param ref_user: the user for which resources are to be recommended
+    :param num_recommendation: number of recommendations desired (further filtered on zero ratings)
+    :param outlier_detection_method: choices available - percentile(default), zscore , iqr
+    :return: a json file with resource recommendation
+    """
+
+```
+
+## Examples
+1. Below is an execution of the function with all parameters provided
+
+```python
+from DA4RDM_RecSys_UserBased import get_recommendation
+get_recommendation.get_recommendations("14-08-2022.csv", "tomography.csv", "e2b383da-36d8-4825-8c6a-642af20f0412", 3, "percentile")
+```
+
+2. Below is an execution of the function with only required parameters provided
+
+```python
+from DA4RDM_RecSys_UserBased import get_recommendation
+get_recommendation.get_recommendations("14-08-2022.csv", "tomography.csv", "0f0b39a0-2b60-446e-8eb4-89cc164c7bc3")
+```
+
+## Output
+All the above computation outputs a json file that contains the dictionary of the recommended resources as shown below:
+
+```python
+{"Recommendations": {"Ref_User_ID": "0f0b39a0-2b60-446e-8eb4-89cc164c7bc3", "Recommendation": [["fd7b5eff-de1b-4149-8eb2-c09349dc180a", 0.25779062933941843], ["ebbc5007-7cb6-44cf-8631-d23eaa675e6f", 0.02271623947631261], ["c9ad0d65-545a-4081-9eb7-bcca97b9fa9d", 0.02268728733672115]]}}
+```
