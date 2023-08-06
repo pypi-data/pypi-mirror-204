@@ -1,0 +1,6 @@
+setup.py
+myscapyhelper.egg-info/PKG-INFO
+myscapyhelper.egg-info/SOURCES.txt
+myscapyhelper.egg-info/dependency_links.txt
+myscapyhelper.egg-info/requires.txt
+myscapyhelper.egg-info/top_level.txt
