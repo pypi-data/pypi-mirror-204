@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/podloot/__init__.py
+src/podloot/podcast_downloader.py
+src/podloot.egg-info/PKG-INFO
+src/podloot.egg-info/SOURCES.txt
+src/podloot.egg-info/dependency_links.txt
+src/podloot.egg-info/entry_points.txt
+src/podloot.egg-info/requires.txt
+src/podloot.egg-info/top_level.txt
