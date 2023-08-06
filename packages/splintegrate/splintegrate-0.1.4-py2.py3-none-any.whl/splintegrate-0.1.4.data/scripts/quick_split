@@ -1,0 +1,41 @@
+#!python
+import sys
+from splintegrate import splintegrate
+import argparse
+
+parser = argparse.ArgumentParser(description='Split up JWST files.')
+parser.add_argument('inFile', metavar='F', type=str,
+                    help='The input file. Or, in quotes a wildcard search for files')
+parser.add_argument('--outDir', default='split_output',
+                    help='The output directory')
+
+parser.add_argument('--flipToDet', dest='flipToDet', action='store_true',
+                    help='Flip from DMS to detector coordinates?')
+parser.add_argument('--no-flipToDet', dest='flipToDet', action='store_false',
+                    help="Don't flip from DMS to detector coordinates?")
+parser.set_defaults(flipToDet=False)
+
+
+parser.add_argument('--mirageSeed', dest='mirageSeed', action='store_true',
+                    help="Is it a mirage Seed file?")
+parser.add_argument('--no-mirageSeed', dest='mirageSeed', action='store_false',
+                    help="Is it not a mirage Seed file?")
+parser.set_defaults(mirageSeed=False)
+
+parser.add_argument('--overWrite', dest='overWrite', action='store_true',
+                    help="Overwrite results?")
+parser.add_argument('--no-overWrite', dest='overWrite', action='store_false',
+                    help="Do not overwrite results?")
+parser.set_defaults(overWrite=True)
+
+
+parser.add_argument('--detectorName', default=None,
+                    help='Name of the detector')
+
+args = parser.parse_args()
+
+splintegrate.run_on_multiple(inFiles=args.inFile,outDir=args.outDir,
+                             overWrite=args.overWrite,
+                             detectorName=args.detectorName,
+                             flipToDet=args.flipToDet,
+                             mirageSeedFile=args.mirageSeed)
