@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "contracttype": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "account_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "plus_min": {
+          "type": "boolean"
+        },
+        "vacation_calc_type": {
+          "type": "string"
+        },
+        "time_off_accrual_source_hours": {
+          "type": "string"
+        },
+        "salary_calc_type": {
+          "type": "string"
+        },
+        "absence_calculation": {
+          "type": "string"
+        },
+        "time_off_request_source_hours": {
+          "type": "string"
+        },
+        "wait_hours_from": {
+          "type": "string"
+        },
+        "wait_hours_from_time_off_balance_id": {
+          "type": ["string", "null"]
+        },
+        "rate_card_id": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "modified": {
+          "type": "string"
+        },
+        "created_by": {
+          "type": "string"
+        },
+        "modified_by": {
+          "type": "string"
+        },
+        "deleted": {
+          "type": "boolean"
+        },
+        "deleted_date": {
+          "type": ["string", "null"]
+        },
+        "overtime_policy_id": {
+          "type": ["string", "null"]
+        },
+        "vacation_calc_option": {
+          "type": ["string", "null"]
+        },
+        "salary_calc_option": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
