@@ -1,0 +1,50 @@
+{% macro card_tabs(tabs) %}
+    <div class="card card-primary card-outline card-outline-tabs" x-data="{ active: '{{ tabs.selected }}' }" hx-target="this" hx-swap="outerHTML">
+        <div class="card-header p-0 border-bottom-0">
+            <ul class="nav nav-tabs">
+                {% for link in tabs.links %}
+                <li class="nav-item">
+                    <a class="nav-link" :class="{'active': active=='{{ link.index }}'}"
+                        {% if tabs.selected != link.index %}
+                            role="button"
+                            @click="active='{{ link.index }}'"
+                            hx-get="{{ tabs.view.url.query([tabs.view.tab_query_var, link.index]) }}"
+                            hx-trigger="click"
+                        {% else %}
+                            style="cursor: default;"
+                        {% endif %}
+                        >{{ link.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="card-body">
+            <div class="tab-content" hx-target="this" hx-swap="innerHTML" hx-trigger="load" hx-get="{{ tabs.active.url }}">
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro card_tabs_preload(tabs) %}
+<div class="card card-primary card-outline card-outline-tabs" x-data="{ active: '{{ tabs.selected }}' }">
+    <div class="card-header p-0 border-bottom-0">
+        <ul class="nav nav-tabs">
+            {% for link in tabs.links %}
+            <li class="nav-item">
+                <a class="nav-link" :class="{'active': active=='{{ link.index }}'}"
+                    :role="active!='{{ link.index }}' ? 'button': ''"
+                    :style="active=='{{ link.index }}' ? 'cursor: default;' : ''"
+                    @click="active='{{ link.index }}'"
+                    >{{ link.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="card-body">
+        {% for link in tabs.links %}
+        <div class="tab-content" x-show="active == '{{ link.index }}'" hx-get="{{ link.url }}" hx-swap="innnerHTML" hx-trigger="load">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endmacro %}
