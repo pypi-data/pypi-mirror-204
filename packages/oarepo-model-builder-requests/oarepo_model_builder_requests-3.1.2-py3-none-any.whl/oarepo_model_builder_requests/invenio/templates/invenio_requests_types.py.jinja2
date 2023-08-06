@@ -1,0 +1,29 @@
+{% for request_data in requests.values() %}
+{% if request_data.type_generate %}
+from {{ request_data.approve_action_class|package_name }} import {{ request_data.approve_action_class|base_name }}
+    {% for type_base in request_data.type_bases %}
+from {{ type_base|package_name }} import {{ type_base|base_name }}
+    {% endfor %}
+{% endif %}
+{% endfor %}
+
+{% for request, request_data in requests.items() %}
+{% if request_data.type_generate %}
+class {{ request_data.type_class|base_name }}{% if request_data.type_bases %}({% for type_base in request_data.type_bases%}{{ type_base|base_name }}{{ ", " if not loop.last else "" }}{% endfor %}){% endif %}:
+
+    type_id = "{{ request }}"
+    name = "{{ request.capitalize() }}"
+
+    available_actions = {
+        **RequestType.available_actions,
+        "accept": {{ request_data.approve_action_class|base_name }}
+    }
+
+    allowed_topic_ref_types = ["{{ current_model.model_name }}"] # On the Request record object, the topic is referenced by pid. This pid is
+                                         # extracted by Resolver subclassed from RecordResolver, which has hardcoded
+                                         # {"record": {pid}} as reference value. This reference is then by
+                                         # setattr set on the Request record topic ReferencedEntityField, and the set
+                                         # operation checks, whether this key is in allowed_topic_ref_types
+    #TODO would it make sense to customize the topic ref types?
+{% endif %}
+{% endfor %}

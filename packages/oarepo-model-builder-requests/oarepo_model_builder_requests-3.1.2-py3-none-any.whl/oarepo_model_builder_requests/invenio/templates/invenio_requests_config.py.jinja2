@@ -1,0 +1,12 @@
+from {{ current_model.record_class|package_name }} import {{ current_model.record_class|base_name }}
+{% for request_data in requests.values() %}
+from {{ request_data.type_class|package_name }} import {{ request_data.type_class|base_name }}
+{% endfor %}
+from {{ current_model.requests_record_resolver_class|package_name }} import {{ current_model.requests_record_resolver_class|base_name }}
+from invenio_users_resources.resolvers import UserResolver
+
+REQUESTS_REGISTERED_TYPES = [{% for request_data in requests.values() %}{{ request_data.type_class|base_name }}, {% endfor %}]
+REQUESTS_ENTITY_RESOLVERS = [
+        UserResolver(),
+        {{ current_model.requests_record_resolver_class|base_name }}(record_cls={{ current_model.record_class|base_name }}, service_id="{{ current_model.service_id }}", type_key="{{ current_model.model_name }}")
+    ]
