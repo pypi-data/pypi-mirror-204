@@ -1,0 +1,16 @@
+perpetuo-0.2.0.dist-info/LICENSE,sha256=GKX5louGqFcOv8ea_sRf4AHVOM9TlaOh5dRrAiSwUJM,194
+perpetuo-0.2.0.dist-info/WHEEL,sha256=gREe7-l-MJWbGZG46A7WHnwwUSxA3XJYHQvGGLzmBNU,148
+perpetuo-0.2.0.dist-info/LICENSE.MIT,sha256=-qMB1y3MAjtDK9d9wIp3PKNEnlwnRAudZutG-4UAtDA,1091
+perpetuo-0.2.0.dist-info/top_level.txt,sha256=uiv_yCp6l6Yfa6Y_-BzrCEC5OM8Ilyc-J-Gi9KyFDjk,9
+perpetuo-0.2.0.dist-info/RECORD,,
+perpetuo-0.2.0.dist-info/METADATA,sha256=xXEOdXfe6U2nT23hGfFmJRKa0C89bzfYveNfYWk_yr4,2896
+perpetuo-0.2.0.dist-info/LICENSE.APACHE2,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+perpetuo-0.2.0.data/scripts/perpetuo,sha256=-YPh6mwv4d6UaJn5ZHCtt8f2SQE1Po1-dWknjJ1ZN7w,4839537
+perpetuo/_setup.py,sha256=-g767Y_xQa7PYM1JqIVrgwCpKlq8jqrgLd_PqlS-DDE,2143
+perpetuo/__init__.py,sha256=Y1Nf9LqHZ3VzXBy71qaB6hJKPjAQc7zekxKlUlt6XH8,250
+perpetuo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+perpetuo/_perpetuo.pyi,sha256=0e-UvunyBtb2cBnu8uTIKltKF4KRAYrd5yHfNVw-tKc,276
+perpetuo/_perpetuo.abi3.so,sha256=CpglI9bKaCkIQMwjiAnBfOGpPafi9l-S1kXLxeqYbS4,4557505
+perpetuo.libs/libunwind-ptrace-4c97ab12.so.0.0.0,sha256=HUdQ71GaMgfWJJPJhJ7iJkb8F_6_A0TKtBJFoca8Y0I,25361
+perpetuo.libs/libunwind-ccd1415c.so.8.0.1,sha256=U8Ch_vvyAPOBtRYSFYJn3hUKlr85QvgbxbIXU4hzt9c,104121
+perpetuo.libs/libunwind-x86_64-709d6318.so.8.0.1,sha256=FmsgaoN2mIBBFHdMYIjrkvDsmheKlPd8ZDTunWwzwtA,120097
