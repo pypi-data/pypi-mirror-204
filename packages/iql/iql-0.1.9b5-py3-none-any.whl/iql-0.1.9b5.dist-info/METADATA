@@ -1,0 +1,769 @@
+Metadata-Version: 2.1
+Name: iql
+Version: 0.1.9b5
+Summary: SQL Overlay Language with support for Bloomberg BQL, FRED, Edgar, Kaggle and other financial data sources within SQL
+Home-page: https://github.com/iqmo-org/iql_dev
+Author: Paul Timmins
+Author-email: paul@iqmo.com
+Keywords: IQMO Query Language IQMOQL BQL BQUANT FRED EDGAR KAGGLE
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: duckdb (>=0.7.1)
+Requires-Dist: pandas (>=1.5.3)
+Requires-Dist: sqlparse (>=0.4.3)
+Requires-Dist: pyarrow
+
+# Intermediate Query Language (IQL)
+
+IQL is a framework and a collection of Python-based extensions for financial data acquisition.
+
+# Installation
+
+```
+# Install
+%pip install iql --upgrade
+
+# Load Magics to enable %iql and %%iql for VScode and Jupyter
+%load_ext iql.jupyter_magics.iql_magic
+```
+
+# Usage
+
+Python API
+
+```
+import iql
+df1 = iql.execute(f"select * from ...")
+```
+
+Cell Magic
+
+```
+%%iql -o df1
+select * from ...
+```
+
+Line Magic
+
+```
+df1 = %iql select * from ...
+```
+
+# About IQL
+
+IQL serves two purposes: a framework for adding lightweight extensions to data pipelines through declarative SQL queries, and a collection of useful extensions.
+
+## IQL: The Framework
+
+IQL allows python functions to be registered and executed inline with SQL. These functions take parameters and can return DataFrames, Parquet Files, or CSVs.
+
+```
+SELECT * FROM myextension(param='abc', param2='def')
+```
+
+In this simple example, IQL extracts and preprocesses myextension. The SQL is rewritten to replace myextension, and the DataFrame is registered with the database. The exact mechanism depends on the database: for DuckDB (default database), the dataframes can be queried on the fly without loading explicitly to the database.
+
+## IQL: The Extensions
+
+IQL works out of the box, allowing you to execute SQL statements over your dataframes and external data sources with no configuration.
+
+- SEC EDGAR
+
+  `%iql select * from edgar(type='submissions', cik='{CIK}')`
+
+- Bloomberg Query Language (BQL)
+
+  `%iql select * from bql("get(px_last) for(['IBM US Equity']) with(dates=range(-90D, 0D), fill=prev)") order by value desc limit 3`
+
+- Kaggle
+
+  `iql.execute(f"""select * from kaggle("user/dataset/datafile")""")`
+
+- FRED Economic Data
+
+  `iql.execute(f"""select * from fred(type="observations", seriesid="{seriesid}", startdate="{date_str}") as freddata""")`
+
+- Pandas operations
+
+  `SELECT * FROM pandas(table=xyz, pivot=('col1', 'col2', 'values'))`
+
+- Machine Learning: SKLearn and XGBoost
+
+## Why?
+
+SQL is a powerful declarative language, capable of expressing complex data manipulations and enabling efficient optimized processing. Often, interaction with external data is required, making it difficult to build interactive systems leveraging declarative data structures. Combining SQL with a pre-processing framework to externalize data load within the context of a SQL query makes many workflows simpler.
+
+Modern analytical databases, such as [DuckDB](https://github.com/duckdb), provide many powerful tools to allow more to be done within SQL and eliminating the back and forth required for data loading and manipulation. IQL is intended to extend the power of these platforms without being tied to a single platform: through the use of pre-processed extensions.
+
+### Native Formats
+
+After preprocessing of the IQL Extension queries, the database engine will execute a native query unmodified. This minimizes the dependency on specific databases and database versions.
+
+The native SQL format of the database engine is supported: the SQL runs unmodified except for replacement of the IQL SubQueries.
+
+The native SubQuery syntax is preserved. Bloomberg BQL queries run without modification. REST API calls can be called via URLs directly. etc.
+
+### Simplicity and Performance
+
+Multiple transformations, aggregations and operations can be expressed in a single statement. This reduces the amount of code we need to write, eliminates long chains of Pandas operations, and often leads to significant performance increases.
+
+IQL's default database is a higly efficient in-memory OLAP database called DuckDB, which requires zero configuration or administration. You may use a transient database per query, or create a long-lived database and reuse across queries. [DuckDB Performance vs Pandas](https://duckdb.org/2021/05/14/sql-on-pandas.html)
+
+### All in One Place and Extensible
+
+You can query REST APIs as if they were database tables. You can add custom business logic to control how certain files are retrieved, cached or pre-processed.
+
+IQL is portable across DB environments. DuckDB is shipped by default, but can be replaced by other databases.
+
+### How Does It Work
+
+How does it work? IQL iterates over SQL statements (if multiple statements are used), and extracts IQL SubQuerys (ie: fred(...)). Each SubQuery is executed and stored (as a DataFrame or local file). The SQL query is modified to reference the results of the SubQuery instead of the SubQuery itself, and the database engine runs the modified SQL query.
+
+For example, given the following query:
+
+```
+%%iql
+SELECT *
+  FROM fred('query1') as q1
+  JOIN fred('query2') as q2
+      ON q1.id=q2.id
+```
+
+In pseudocode (this is logically but not literally what happens):
+
+```
+  # pseudocode
+  df_q1 = iql.execute("fred('query1")")
+  df_q2 = iql.execute("fred('query2")")
+
+  db.execute("SELECT * FROM df_q1 JOIN df_q2 on df_q1.id = df_q2.id")
+```
+
+Or, using the %iql cell magic:
+
+## Disclaimers
+
+READ the license. We do not WARRANTY this for anything. This software is provided AS IS. TEST before you use. Use at your OWN risk. ETC.
+
+THIS PROJECT IS NOT AFFILIATED WITH, SUPPORTED BY, ENDORSED BY OR CONNECTED TO ANY OF THE COMPANIES, PRODUCTS OR SERVICES BELOW.
+
+# Extensions:
+
+- [Bloomberg BQL](BLOOMBERG_BQL_README.md)
+- [Kaggle Datasets](https://www.kaggle.com/datasets)
+  - Requires kaggle module
+    pip install kaggle
+- [FRED Economic Data](https://fred.stlouisfed.org/docs/api/fred/)
+- [Amazon S3](https://aws.amazon.com/s3/): S3 API extension will download Parquet and CSV files locally, and then access them via DuckDB's Parquet and CSV support.
+  - Requires boto3
+    pip install boto3
+  - Alternatively, use DuckDBs [HTTPFS](https://duckdb.org/docs/extensions/httpfs.html) to access S3.
+  - The IQL AWS extension provides a caching, authentication and logic entrypoint
+  - The DuckDB extension provides support for processing multiple Parquet files, such as with Hive partitions.
+  - More information on [DuckDB and Parquet](https://duckdb.org/docs/data/parquet)
+- [Pandas](https://pandas.pydata.org/): Allows Pandas operations to be executed within the SQL statement. Not all Pandas operations are available.
+
+See the examples/ folder for complete examples.
+
+## Syntax
+
+IQL extensions are executed as functional subqueries. Each extension is registered with a unique name.
+
+Kaggle:
+
+```
+SELECT \*
+FROM
+kaggle('username/datasetname/filename')
+```
+
+or (FRED and Kaggle)
+
+```
+SELECT \*
+FROM
+kaggle("....") q1
+JOIN
+fred("....") q2
+ON
+q1.something = q2.something
+```
+
+or (Bloomberg BQL)
+
+```
+SELECT \*
+FROM
+bql("get (...) for (...)") q1
+JOIN
+bql("get (...) for (...)") q2
+ON
+q1.id = q2.id
+```
+
+See the example notebooks for more interesting examples.
+
+## Dependencies
+
+- Extensions may have specific module dependencies, such as the Kaggle Extensions requiring the Kaggle API.
+- Extensions are loaded dynamically on first use, so dependencies are not required at install time
+- duckdb is required, although not needed if a different db_connector is used.
+
+## SQL Syntax
+
+IQL does not modify the SQL other than replacing the underlying SQL.
+
+See the database specific documentation for more information: [DuckDB SQL Statements](https://duckdb.org/docs/sql/introduction)
+
+## Quoting Strings
+
+Strings must be properly quoted and/or escaped, according to normal Python rules. The SubQuery requires a quoted string, be careful to use different quote types for the entire SQL string and the SubQuery string.
+
+Triple quotes are convenient, since SQL queries tend to be long and multi-line. Note the three levels of quotes: triple """, single " and single '.
+
+```
+import iql
+
+bql_str = "get (...) for ('XYZ')"
+sql_str = f"""
+    -- This uses a Python f-string, which allows us to use the {bql_str} variable
+    SELECT *
+    FROM
+        -- bql() is an IQL extension. Note the quotes around the BQL statement.
+        -- if the BQL statement contains double quotes,
+        bql("{bql_str}")
+    """
+
+iql.execute(sql_str)
+```
+
+In Notebooks, this is a little simpler, since the outer quotes aren't needed:
+
+```
+%%iql -o bql_df
+
+SELECT * FROM bql("get(px_last) for ([`IBM US Equity`])")
+```
+
+# Getting Started - Kaggle
+
+## Authentication - KAGGLE_KEY and KAGGLE_USERNAME
+
+Login to Kaggle and visit the account page to download the configuration JSON. Extract the KEY and USERNAME from the configuration JSON.
+
+Set KAGGLE_KEY and KAGGLE_USERNAME to the appropriate values, or set it via:
+
+```
+from iql.extensions import kaggle_extension
+kaggle_extension.set_kaggle_credentials(kaggle_username='your username', kaggle_key='kaggle API key')
+```
+
+## Usage
+
+SubQuery syntax is:
+
+```
+kaggle("{user}/{dataset}/{filename}")
+```
+
+Example:
+
+```
+import iql
+iql.execute('SELECT \* FROM kaggle("{user}/{dataset}/{filename}")')
+```
+
+Currently, only CSV and XLSX datasets are supported. See examples/kaggle_examples.ipynb notebook for more complete examples.
+
+## Comments
+
+The Kaggle extension will download the file once and reuse it as long as it's in the local directory. This will persist across kernel restarts. You can override this behavior by passing the refreshcache=True flag:
+
+```
+iql.execute('SELECT * FROM kaggle("{user}/{dataset}/{filename}", refreshcache=True)')
+```
+
+The Kaggle extension will also load the datafile to an in-memory DataFrame. In our testing, the extension was slower for the first read than DuckDB's read_csv_auto, but subsequent reuse was subsequently much faster. The extension could be modified to download the file and use DuckDB's read_csv_auto feature instead of creating a DataFrame (similar to the AWS S3 Extension). In our testing, our in-memory approach was faster for analytical workloads with ample memory and frequent reuse.
+
+# Pandas Extension
+
+The pandas options are available in every extension, but sometimes its better to run after the data has been first populated in an earlier query.
+
+The syntax is:
+
+```
+iql.execute("""SELECT \* FROM pandas(table=xyz, pivot=('col1', 'col2', 'values'))"""
+```
+
+These operations may also be used in each of the extensions:
+
+- fillna_pre='string': Before pivoting, replaces only in a single column: DataFrame["value"].fillna(val)
+- dropna_pre=True | str | list[str]: Before pivoting, If True, DataFrame.dropna(). Else, DataFrame.dropna(subset=[value])
+- pivot=(index,columns,values): DataFrame.pivot(index=index, columns=columns, values=values)
+- fillna=val: DataFrame.fillna(val)
+- dropna=True | str | list[str]: If True, DataFrame.dropna(). Else, DataFrame.dropna(subset=[value])
+
+Note: While still in development, [DuckDB's Pivot and Unpivot](https://github.com/duckdb/duckdb/pull/6387) may change how we handle pivoting.
+
+# Operations available to all IQL SubQueries:
+
+## Parameter Passing
+
+There are two ways to dynamically pass parameters:
+
+- Fixed List: A list of fixed parameters may be passed. In this example, the paramlist is evaluated first, and any occurence of $SERIESID in the entire fred() option is replaced. One query is run for each value, and the results are UNIONed.
+
+```
+query2 = f"""select * from fred(type="series", seriesid="$SERIESID", paramlist=("$SERIESID", ["UNRATE", "EXUSEU"])) as q1"""
+```
+
+- Dynamic Lists: A list of values from a previous run query may also be passed. In this example, a list of values is created in the first query, then for each value, a FRED function is called and the results are UNIONed
+
+```
+# Using a parameter list to retrieve multiple series
+# SQL uses single quotes for string literals / constants. Unlike Python, SQL treats single and double quotes differently.
+
+query2 = f"""
+    CREATE TEMP TABLE series_results as values('UNRATE'), ('EXUSEU');
+    SELECT * FROM fred(type="series", seriesid="$SERIESID", paramquery=("$SERIESID", "select * from series_results")) as q1
+    """
+df2 = iql.execute(query2)
+display(df2)
+```
+
+Limitations: Only one paramquery or paramlist may be used per SubQuery.
+
+# Getting Started - FRED Economic Data
+
+The FRED extension is a lightweight wrapper around [FRED's REST API](https://fred.stlouisfed.org/docs/api/fred/)
+
+We opted to not build yet another parameterized / Pythonic API for FRED. Instead, we use the native REST URLs as the query parameters.
+
+Instead, just find a REST endpoint want, construct a query string, and query it natively.
+
+## Get a FRED FRED_API_KEY
+
+Visit [FRED](https://fred.stlouisfed.org/) and create an account and get your API key.
+
+## Set the API Key
+
+```
+from iql.extensions import fred_extension
+fred_extension.FRED_API_KEY = abcdef
+```
+
+## Usage: Types
+
+Releases, Series and Observations
+
+```
+query1 = """select \* from fred(type="releases")"""
+
+seriesid = "UNRATE"
+query2 = f"""select * from fred(type="series", seriesid="{seriesid}") as q1"""
+
+seriesid = "UNRATE"
+date_str = "2023-01-01"
+query3 = f"""select * from fred(type="observations", seriesid="{seriesid}", startdate="{date_str}") as q1"""
+```
+
+## Usage: Raw URL
+
+```
+"""Get information about a FRED series"""
+seriesid = "UNRATE"
+query = f"SELECT * FROM fred('https://api.stlouisfed.org/fred/series?series_id={seriesid}') as q1"
+df = iql.execute(query)
+display(df)
+```
+
+See the exammples/fred_examples.ipynb notebook for examples.
+
+# IQL extension for Bloomberg BQL
+
+See [IQL Extension for Bloomberg BQL Readme](BLOOMBERG_BQL_README.md) for more information.
+
+## Amazon S3 Extension
+
+The Amazon S3 extension downloads Parquet and CSV files directly from S3 to a local file, then uses DuckDBs native support to access the local Parquet and CSV files.
+
+We implemented this to add our own authentication and caching logic to reduce frequent downloads of the same data.
+
+## Troubleshooting: If you see an initialization failure, verify that BQL is available and working.
+
+```
+import bql
+bq = bql.Service()
+bq.execute("get(name) for('IBM US Equity')")
+```
+
+If this fails, you are probably not running in BQuant.
+
+# AWS S3 Extension
+
+IQL provides an S3 Extension to provide an entrypoint for control of S3 data retrieval and local caching. This extension is intended to be extended to support environment-specific authentication and cache control requirments.
+
+Usage:
+
+```
+SELECT * FROM s3('s3://bucket/prefix/key/objname.parquet') as data1
+```
+
+What happens:
+
+- objname.parquet is to the iql.iqmo.DEFAULT_EXT_DIRECTORY, or the default dir if no directory is set.
+- s3(...) is replaced with a reference to the local Parquet file, allowing the database engine to read the Parquet file natively
+
+## S3 File Caching
+
+S3 files are downloaded locally and reused while the cache reference has not expired.
+
+## AWS Authentication
+
+- Default behavior: The AWS S3 extension simply calls - boto3.resource("s3"), assuming the environment is already set properly
+- Option 1: Create and store boto3 S3 resources to iql.extensions.aws_s3_extension::BOTO_S3_RESOURCES for each bucket
+
+```
+from iql.extensions import aws_s3_extension
+url_prefix = "s3://something/something"
+.... AWS CREDENTIAL STUFF ....
+s3res = boto3.resource("s3")
+aws_s3_extension.BOTO3_S3_RESOURCES[url_prefix] = s3res
+```
+
+- Option 2: Replace iql.extensions.aws_s3_extension::get_boto3_resource_for_request(), which takes a single URL parameter and returns a boto3 resource object
+
+# SKLearn Extension
+
+The SKLearn extension provides a lightweight wrapper around basic regressions, allowing regressions to be created in inline SQL statements.
+
+TODO: Complete this Section
+
+```
+df_arima = iql.execute(f"""select * from regression(data='df',
+        model='pmdarima.ARIMA', X=['{x_col}'], y=['{column}']
+        , model_order=(2,1,2), forecast=4
+        )
+        """)
+```
+
+## Model Dependencies
+
+### Arima
+
+pip install pmdarima
+
+### Prophet
+
+pip install prophet
+pip install backports.zoneinfo (?)
+
+# Caching
+
+SubQueries are often expensive and often reused while developing and refining queries. If enabled, IQL will cache the SubQuery results in memory and/or in a persistent file cache.
+
+Caching can be controlled via iql.configure:
+
+```
+def configure(
+    duration_seconds: Optional[int] = -1, cache_directory: Optional[str] = None, temp_dir: Optional[str] = None, max_processes: int = 2
+):
+```
+
+duration_seconds:
+
+```
+-1 (Default): Infinite (for life of kernel)
+None: Disabled
+int: Maximum life of the cached value from the time of creation.
+```
+
+cache_directory:
+
+```
+None (Default): Don't use a persistent file cache
+path: Location for the external file cache
+```
+
+## Caching Waterfall
+
+- nocache directive
+- cache directive
+- extension cache period
+- global \_CACHE_PERIOD
+
+## Caching Limitations
+
+Cached values are not pruned on expiration. The in memory dictionary is cleared on kernel restart. The file cache will grow unbounded until cleared:
+
+```
+from iql import q_cache # clear the in memory and file cache
+xq_cache.clear_caches()
+```
+
+## Caching Hints
+
+### cache=seconds
+
+Overrides the caching period. -1 is infinite caching.
+
+```
+iql.execute("""SELECT * FROM keyword("...", cache=60) as q1""")
+```
+
+### nocache=True
+
+Does not use any cached results
+
+```
+iql.execute("""SELECT * FROM keyword("...", nocache=True) as q1""")
+```
+
+## Caching Best Practices
+
+Caching is important to get right but depend on the data and use cache. Caching can significantly improve performance during design and development which frequently reuse unchanging data. For live data that changes frequently, an appropriate cache interval should be used to avoid reuse of stale data.
+
+If your kernels are short-lived, this is largely a non-issue, since the cache is reset automatically, unless a file cache is activated.
+
+# Database
+
+## Valid Queries
+
+In DuckDB, IQL was developed against DuckDB's statements, including SELECTs with CTE's (WITH clauses). IQL is seamless: it only modifies the extension SubQueries, and otherwise passes the results to the database.
+
+Any valid DuckDB query should be supported.
+
+When troubleshooting, check the usual suspects first:
+
+- Make sure parentheses and quotes are balanced
+  Most query errors are from forgetting a closing quote and/or parenthesis.
+- SQL uses single quotes for string literals (constants):
+
+```
+  select 'abc' # 'abc' is a string literal
+```
+
+is not the same as
+
+```
+select "abc" # "abc" is a column name
+```
+
+- Valid SQL syntax: Complex SQL queries can be cumbersome. Consider breaking a complex query into several individual steps, at least to refine the logic. This can have a negative performance impact as it defeats any database query optimization, but in practical terms, it is often beneficial.
+
+## Database Lifecycle
+
+### Default: In-Memory Database for each iql.execute()
+
+By default, a series of iql.execute() calls will create and close an in-memory DuckDB connection for each request.
+
+### Option 1: Keep Database Open
+
+Use the iql default connection setting (in-memory only), but leave the connection open:
+
+```
+con = iql.IQL.get_dbconnector().get_connection()
+try:
+  iql.execute("CREATE TABLE abc as SELECT * FROM (values(1),(2),(3))", con=con)
+  df=iql.execute("SELECT * FROM abc", con=con)
+  display(df)
+finally:
+  con.close()
+```
+
+SQL statements separated by semicolons. The entire set will be run sequentially against a single database, so side effects will be maintained.
+
+### Option 2: Create Database Externally
+
+With this method, you can use a file-based persistent database along with other connectivity options.
+
+Or, create a DuckDB Connection [duckdb.connect()](https://duckdb.org/docs/api/python/overview), such as for a file-based persistent database.
+
+```
+df=iql.execute("SELECT * FROM abc", con=con)
+```
+
+# FAQ
+
+## How can I simplify my SQL?
+
+There are several approaches to using IQL SubQueries:
+
+### Inline
+
+```
+  SELECT fields
+  FROM table1
+  JOIN table2
+    on table1.id=table2.id
+  JOIN kaggle(".....") as k3
+    on k3.dates < table2.dates
+  WHERE k3.something is true
+```
+
+### Common Table Expressions (WITH clause)
+
+CTEs are necessary when the same subquery will be transformed multiple times within a single query. CTEs are also helpful syntactic sugar: the declaration of a subquery is separate from its use, making the SELECT statement simpler.
+
+```
+  WITH k3 as (select * from kaggle(".....") WHERE something is true)
+  SELECT fields
+  FROM table1
+  JOIN table2
+    on table1.id=table2.id
+  JOIN k3
+    on k3.dates < table2.dates
+```
+
+### Storing the Data in Tables
+
+When data will be accessed by multiple queries, store the data first via CREATE TABLE / CREATE TEMP TABLE instead of running the same IQL SubQueries multiple times. IQL's caching is helpful, if enabled, but storing the data in tables provides more flexibility.
+
+```
+  CREATE [TEMP] TABLE k3 as (SELECT * FROM kaggle(".....") WHERE something is true);
+  SELECT fields
+  FROM table2
+    on table1.id=table2.id
+  JOIN k3
+    on k3.dates < table2.dates
+```
+
+## Why DuckDB as the default?
+
+We chose [DuckDB](https://duckdb.org/) as the default database module for a few reasons:
+
+- DuckDB is awesome and [fast](https://duckdb.org/2021/05/14/sql-on-pandas.html), with vectorized columnar operations.
+- It runs with no setup
+- It runs fully locally and has support for a variety of data sources
+- DuckDB's SQL language is standard
+- DuckDB natively supports Pandas
+
+## Why not a DuckDB Extensions?
+
+We didn't implement IQL as an extension for a few reasons:
+
+- Portability: DuckDB is great, but it's not the only game in town. Engines like SnowFlake are important.
+- Speed of development: Native Python is easy to develop, easy to debug, and convenient to modify and extend.
+- Performance: In our workflows, there was little performance to be gained. Runtime was dominated by external data transfer.
+
+We may still implement DuckDB extension(s) to eliminate the extra preprocess/rewrite step.
+
+## Other Databases Engines
+
+Any database can be supported by implementing a database module. IQL was written in a syntax neutral (any vendors SQL variant _should_ work) method. The key step that's dependent on the database engine is registering (or loading) the SubQuery dataframes to the database engine prior to executing the queries.
+
+Modules could be added to support other engines and formats:
+
+- [SQLDF](https://pypi.org/project/sqldf/) and [PandaSQL](https://pypi.org/project/pandasql/): Local-only databases that can connect to in-memory Pandas dataframes
+- PyArrow (w/ PySpark/Dask): SubQuery dataframes would be loaded via [pyarrow.Table.from_pandas()](https://arrow.apache.org/docs/python/pandas.html)
+- SnowFlake: During registration step, the Pandas dataframes need to be loaded via the [SnowFlake Pandas Connector](https://docs.snowflake.com/en/user-guide/python-connector-pandas)
+- Other Pandas-centric engines, such as SQLDF and PandaSQL
+
+## What about Polars?
+
+Since DuckDB supports Polars, IQL extensions could be modified to use Polars DataFrames since DuckDB supports Polars. This would be a relatively simple change, made in each extension to create a Polars DataFrame instead of a Pandas DataFrame. This could be made extensible, so the default DataFrame implementation is user selectable.
+
+## Design Principles
+
+- Extensibility: Extensions and Database Connectors can be easily modified, replaced, or extended.
+- KISS: Keep it simple. Don't add complexity.
+  - REST APIs, such as FRED: Use the complete URL, rather than building yet-another-Python-API
+  - Bloomberg BQL: Use native BQL queries without modification
+- Minimal dependencies: Extensions are loaded on-demand. Unused dependencies are not required.
+
+# Footnotes
+
+## Useful DuckDB Features
+
+### CTEs
+
+```
+import iql
+df = iql.execute("""
+  WITH c AS keyword("..."),
+      idx AS keyword("...")
+    SELECT c.*, idx.*
+    FROM c
+    JOIN idx
+      ON c.idx=idx.id""")
+display(df)
+```
+
+### Accessing Global DataFrames:
+
+```
+import iql
+import pandas as pd
+
+fun = pd.DataFrame([{'id': 'Someone', 'fun_level': 'High'}])
+iql.execute("""SELECT * FROM fun""")
+```
+
+### Copy (query) to 'file'
+
+```
+import iql
+iql.execute("""COPY (query) TO 'somefile.parquet'""")
+```
+
+## Copy to Parquet
+
+- Copy to parquet:
+  https://duckdb.org/docs/guides/import/parquet_export.html#:~:text=To%20export%20the%20data%20from,exported%20to%20a%20Parquet%20file.
+
+# Futures and Ideas
+
+## SQL ReWrite
+
+Instead of modifying the SQL in a single step, we could introduce an intermediate statement that has the same logical flow as the code today. This would make it easier to debug, allowing the user to view and debug each step.
+
+```
+SELECT * FROM fred() a JOIN fred() b on a.id=b.id
+```
+
+could be transformed first into:
+
+```
+a=fred();
+b=fred();
+SELECT * FROM a JOIN b
+```
+
+One decision needed here is how to express the first two statements: would we use a CREATE TEMP TABLE or COPY TO to store the SubQuery results, or do we introduce something like CREATE DF.
+
+## Simplifying Parsing
+
+We didn't implement a grammar, because each grammar is very platform dependent. Each database has its own product-specific grammar.
+
+The current IQL implementation first parses the SQL to extract the named functions, using the sqlparse library, then extracts the IQL subquerys by their named keywords. The SubQueries are then parsed via an AST to extract the parameters and values. Any parsing introduces risks and fragility:
+
+- It's possible that sqlparse will fail to parse certain database specific language features. We haven't encountered this yet, but it's something we're thinking about
+- It's also possible that our extraction will fail to recognize proper subqueries, due to how sqlparse extracts the tokens. The code here is not as robust as we'd like, and more testing is needed.
+
+There's a few ways to improve this:
+
+- Direct string extraction: identify subquery() blocks and extract them directly as strings, rather than parsing the entire SQL file. This would have to properly account for commenting, quoting, and nesting.
+- DuckDB (or whatever platform) extensions: use a lightweight extension to allow the database to externally call the IQL layer, rather than having IQL act as an intermediate step. Or, use a table function, which is not yet supported in SQL, only in relational API.
+
+## Caching
+
+The in-memory cache will grow unbounded within each kernel session. The expiration is only used to invalid data, but expired results are not evicted from memory if not accessed.
+
+We'll replace the in-memory cache with something more robust, probably another cache implementation such as [cachetools](https://github.com/tkem/cachetools). Alternatively, IQL could maintain a cache per "session", rather than globally.
+
+If your kernels are long-lived, clear the cache at appropriate intervals or points in your workflow:
+
+```
+iql.clear_caches()
+```
+
+## Parquet Files or PyArrow vs DataFrame
+
+In-Memory Extensions could serialize data to other formats, instead of to DataFrames.
+
+Note: This isn't required for file-based extensions like AWS S3.
+
+# Footer
+
+Copyright (C) 2023, IQMO Corporation [info@iqmo.com]
+All Rights Reserved
