@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/complex_curve_fit_gui/__init__.py
+src/complex_curve_fit_gui/_curvefitgui.py
+src/complex_curve_fit_gui/_gui.py
+src/complex_curve_fit_gui/_settings.py
+src/complex_curve_fit_gui/_tools.py
+src/complex_curve_fit_gui/_version.py
+src/complex_curve_fit_gui/_widgets.py
+src/complex_curve_fit_gui/config.txt
+src/complex_curve_fit_gui.egg-info/PKG-INFO
+src/complex_curve_fit_gui.egg-info/SOURCES.txt
+src/complex_curve_fit_gui.egg-info/dependency_links.txt
+src/complex_curve_fit_gui.egg-info/top_level.txt
+src/complex_curve_fit_gui.egg-info/zip-safe
