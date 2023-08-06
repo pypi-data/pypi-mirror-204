@@ -1,0 +1,9 @@
+viddiffusion/__init__.py,sha256=MPF3N7Y87Ih4-jCx8u71AzrPb6PHxzzf0T7mbZTuJsA,78
+viddiffusion/image_utils.py,sha256=M_r9keQhRI6Pv38T7FnQLutXhLBvV_NQCk97CR9Fqh4,723
+viddiffusion/pipeline_viddiffusion.py,sha256=ZsmG0Wq8Y1-peyKmfQWUfs6GhcTbOzK5-xp3KsjbsoE,8560
+viddiffusion/video_utils.py,sha256=x-503jcGJHGuJxi-HmDwxEeylbhnDZK9sm8s9ztquwE,2824
+viddiffusion-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+viddiffusion-0.1.2.dist-info/METADATA,sha256=G7v3VK3NEmbOXeQ8LF4GewBK4lH7wZKuxvmEh7FHuVY,7830
+viddiffusion-0.1.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+viddiffusion-0.1.2.dist-info/top_level.txt,sha256=iifdRFmOwHYWe3jORbt9kobYPtttFbvsj_O4QqD0XQA,13
+viddiffusion-0.1.2.dist-info/RECORD,,
