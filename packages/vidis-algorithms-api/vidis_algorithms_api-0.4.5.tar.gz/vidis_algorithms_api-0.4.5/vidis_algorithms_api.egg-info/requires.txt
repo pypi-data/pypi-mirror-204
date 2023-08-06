@@ -1,0 +1,5 @@
+pydantic==1.10.2
+loguru==0.6.0
+numpy==1.24.1
+celery[amqp,redis]==5.2.7
+redis==4.5.4
