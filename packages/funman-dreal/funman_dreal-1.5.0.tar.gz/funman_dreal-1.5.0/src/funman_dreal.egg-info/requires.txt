@@ -1,0 +1,7 @@
+funman
+docker
+tenacity
+pyparsing
+
+[dreal]
+dreal
