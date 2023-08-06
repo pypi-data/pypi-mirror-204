@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: fdeb
+Version: 0.0.2
+Author: Pavlin G. Poličar
+Author-email: pavlin.g.p@gmail.com
+License: BSD 3-Clause License
+License-File: LICENSE
+Requires-Dist: numpy
+
