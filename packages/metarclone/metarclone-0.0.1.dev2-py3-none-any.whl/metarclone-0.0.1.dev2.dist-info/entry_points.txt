@@ -1,0 +1,2 @@
+[console_scripts]
+metarclone = metarclone.cli:cli_entry
