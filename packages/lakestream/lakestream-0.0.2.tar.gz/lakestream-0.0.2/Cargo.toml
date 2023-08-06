@@ -1,0 +1,17 @@
+[package]
+name = "lakestream_py"
+version = "0.0.2"
+edition = "2021"
+
+[dependencies]
+pyo3 = { version = "0.18", features = ["macros", "extension-module"] }
+lakestream = { path = "local_dependencies/lakestream" }
+
+[build-dependencies]
+maturin = "0.12"
+
+[package.metadata.maturin]
+project-name = "lakestream"
+
+[profile.release]
+lto = true
