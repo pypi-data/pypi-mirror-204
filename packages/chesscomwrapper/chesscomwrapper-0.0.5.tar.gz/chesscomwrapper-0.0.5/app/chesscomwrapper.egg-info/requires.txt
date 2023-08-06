@@ -1,0 +1,6 @@
+requests
+functools
+
+[dev]
+pytest>=3.7
+twine>=1.11.0
