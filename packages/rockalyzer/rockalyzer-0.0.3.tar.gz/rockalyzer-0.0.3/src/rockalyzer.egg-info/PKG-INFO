@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: rockalyzer
+Version: 0.0.3
+Summary: Rocket League Replay Analyzer
+Home-page: https://github.com/eliastheis/rockalyzer
+Author: Elias Theis
+Author-email: mail@eliastheis.de
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Rocket League Boxcars-Replay Analyzer
+Here will be the documentation
+
+[![Downloads](https://static.pepy.tech/personalized-badge/rockalyzer?period=total&units=international_system&left_color=black&right_color=blue&left_text=Downloads)](https://pepy.tech/project/rockalyzer)
+
+## Installation
+Run the following to install:
+```python
+pip install rockalyzer
+```
+
+## Usage
+```python
+from rockalyzer import Replayer
+
+# load replay as json file and set render mode
+replayer = Replayer('path/to/replay.json', render=True)
+
+# replay file
+replayer.replay()
+
+# get stats
+stats = replayer.get_stats()
+```
