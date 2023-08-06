@@ -1,0 +1,8 @@
+Welcome to the PHOTON platform blog utility
+===========================================
+
+.. post::  22.348-064727
+   :tags: 
+   :category: STATUS
+
+first log entry

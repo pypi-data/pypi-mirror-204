@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://photon-platform.github.io/photon-ablog</id>
+  <title>PHOTON platform • ablog</title>
+  <updated>2023-01-09T16:44:52.952544+00:00</updated>
+  <link href="https://photon-platform.github.io/photon-ablog"/>
+  <link href="https://photon-platform.github.io/photon-ablog/log/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.26.dev4+g4d03eb4">ABlog</generator>
+  <entry>
+    <id>https://photon-platform.github.io/photon-ablog/log/22.348-064727/</id>
+    <title>Welcome to the PHOTON platform blog utility</title>
+    <updated>2022-12-14T06:47:27-08:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;first log entry&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://photon-platform.github.io/photon-ablog/log/22.348-064727/" rel="alternate"/>
+    <summary>first log entry</summary>
+    <published>2022-12-14T06:47:27-08:00</published>
+  </entry>
+  <entry>
+    <id>https://photon-platform.github.io/photon-ablog/log/22.351-070228/</id>
+    <title>Set name for project and packages</title>
+    <updated>2022-12-17T07:02:28-08:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;shift from ablog to photon.sphinx.log?&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://photon-platform.github.io/photon-ablog/log/22.351-070228/" rel="alternate"/>
+    <summary>shift from ablog to photon.sphinx.log?</summary>
+    <category term="urgent" label="urgent"/>
+    <published>2022-12-17T07:02:28-08:00</published>
+  </entry>
+  <entry>
+    <id>https://photon-platform.github.io/photon-ablog/log/22.351-070811/</id>
+    <title>integrate with photon-logger and photon-sphinx-theme</title>
+    <updated>2022-12-17T07:08:11-08:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;these ultimately need to work together&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://photon-platform.github.io/photon-ablog/log/22.351-070811/" rel="alternate"/>
+    <summary>these ultimately need to work together</summary>
+    <published>2022-12-17T07:08:11-08:00</published>
+  </entry>
+  <entry>
+    <id>https://photon-platform.github.io/photon-ablog/log/22.351-073048/</id>
+    <title>Reset project version and git tags</title>
+    <updated>2022-12-17T07:30:48-08:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;set a consistent method for this in the code&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://photon-platform.github.io/photon-ablog/log/22.351-073048/" rel="alternate"/>
+    <summary>set a consistent method for this in the code</summary>
+    <category term="urgent" label="urgent"/>
+    <published>2022-12-17T07:30:48-08:00</published>
+  </entry>
+  <entry>
+    <id>https://photon-platform.github.io/photon-ablog/log/23.005-105027/</id>
+    <title>WOF intro</title>
+    <updated>2023-01-05T10:50:27-08:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;Greetings!&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://photon-platform.github.io/photon-ablog/log/23.005-105027/" rel="alternate"/>
+    <summary>Greetings!</summary>
+    <category term="bio" label="bio"/>
+    <published>2023-01-05T10:50:27-08:00</published>
+  </entry>
+</feed>

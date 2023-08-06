@@ -1,0 +1,11 @@
+Set name for project and packages
+=================================
+
+.. post::  22.351-070228
+   :tags: urgent
+   :category: TODO
+
+shift from ablog to photon.sphinx.log?
+
+- decide on photon or photonplatform
+- cleanup deployment files

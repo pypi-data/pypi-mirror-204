@@ -1,0 +1,8 @@
+integrate with photon-logger and photon-sphinx-theme
+====================================================
+
+.. post::  22.351-070811
+   :tags: 
+   :category: TODO
+
+these ultimately need to work together

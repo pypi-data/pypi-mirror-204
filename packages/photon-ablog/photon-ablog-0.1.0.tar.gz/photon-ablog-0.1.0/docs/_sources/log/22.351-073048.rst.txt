@@ -1,0 +1,8 @@
+Reset project version and git tags
+==================================
+
+.. post::  22.351-073048
+   :tags: urgent
+   :category: TODO
+
+set a consistent method for this in the code

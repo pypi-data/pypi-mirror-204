@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: photon-ablog
+Version: 0.1.0
+Summary: A Sphinx extension that converts any documentation or personal website project into a full-fledged blog.
+Home-page: https://photon-platform.github.io/photon-ablog/
+Author: phi ARCHITECT
+Author-email: phi@phiarchitect.com
+License: MIT
+Description: The **PHOTON platform - ablog** is forked from https://github.com/sunpy/ablog
+        at v0.10.25
+        
+        ABlog is a Sphinx extension for generating a log oriented static site. It
+        can be easily integrated with documentation for Python modules.
+        
+        I am planning a major refactoring of this project, mostly to integrate it into a larger set of requirements. This will probably result in breaking changes to any further updates from SunPy.
+        
+        
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Provides-Extra: all
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: markdown
+Provides-Extra: notebook
+Provides-Extra: tests

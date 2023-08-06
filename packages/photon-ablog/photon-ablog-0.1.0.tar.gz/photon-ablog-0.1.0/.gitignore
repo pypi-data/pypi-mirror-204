@@ -1,0 +1,7 @@
+__pycache__
+.doctrees
+tags
+*.swp
+*.egg-info/
+*.egg-info
+*.py[cod]

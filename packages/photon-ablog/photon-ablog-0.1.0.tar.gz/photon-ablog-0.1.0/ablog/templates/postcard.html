@@ -1,0 +1,14 @@
+{% if pagename in ablog %} {% set fa = ablog.fontawesome %} {% set post =
+ablog[pagename] %}
+<h2>
+  {% if post.published %} 
+  {{ post.date.strftime(ablog.post_date_format) }} 
+  {% else %} 
+  {% if post.date %}{{ post.date.strftime(ablog.post_date_format)
+  }} {% else %} Draft {% endif %} {% endif %}
+</h2>
+
+<ul>
+  {% include "postcard2.html" %}
+</ul>
+{% endif %}

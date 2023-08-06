@@ -1,0 +1,605 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>ablog package &#8212; PHOTON platform&lt;br/&gt;•&lt;br/&gt;ablog  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/photonsphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <link rel="canonical" href="https://photon-platform.github.io/photon-ablog/modules/ablog.html" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="prev" title="ablog" href="../modules/" /> 
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+ 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../log/atom.xml"
+  title="PHOTON platform • ablog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+             <section id="ablog-package">
+<h1>ablog package<a class="headerlink" href="#ablog-package" title="Permalink to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-ablog.blog">
+<span id="ablog-blog-module"></span><h2>ablog.blog module<a class="headerlink" href="#module-ablog.blog" title="Permalink to this heading">¶</a></h2>
+<p>Classes for handling posts and archives.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="ablog.blog.Blog">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ablog.blog.</span></span><span class="sig-name descname"><span class="pre">Blog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.blog.Blog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Container</span></code></p>
+<p>Handle blog operations.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="ablog.blog.Blog.feed_path">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">feed_path</span></span><a class="headerlink" href="#ablog.blog.Blog.feed_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>RSS feed page name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ablog.blog.Blog.page_id">
+<span class="sig-name descname"><span class="pre">page_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pagename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.blog.Blog.page_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return pagename, trimming <code class="file docutils literal notranslate"><span class="pre">index</span></code> from end when found.</p>
+<p>Return value is used as disqus page identifier.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ablog.blog.Blog.page_url">
+<span class="sig-name descname"><span class="pre">page_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pagename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.blog.Blog.page_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return page URL when <a href="#id1"><span class="problematic" id="id2">:confval:`blog_baseurl`</span></a> is set, otherwise
+<code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<p>When found, <code class="file docutils literal notranslate"><span class="pre">index.html</span></code> is trimmed from the end of the
+URL.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ablog.blog.Blog.recent">
+<span class="sig-name descname"><span class="pre">recent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">docname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">labels</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.blog.Blog.recent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yield <em>num</em> recent posts, excluding the one with <cite>docname</cite>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ablog.blog.Blog.register">
+<span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">docname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.blog.Blog.register" title="Permalink to this definition">¶</a></dt>
+<dd><p>Register post <em>docname</em>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ablog.blog.Collection">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ablog.blog.</span></span><span class="sig-name descname"><span class="pre">Collection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">catalog</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">href</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.blog.Collection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BlogPageMixin</span></code></p>
+<p>Posts sharing a label, i.e. tag, category, author, or location.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ablog.blog.Collection.add">
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">post</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.blog.Collection.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add post to the collection.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ablog.blog.Collection.catalog">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">catalog</span></span><a class="headerlink" href="#ablog.blog.Collection.catalog" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Catalog</span></code> that the collection belongs to.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ablog.blog.Collection.docname">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">docname</span></span><a class="headerlink" href="#ablog.blog.Collection.docname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collection page document name.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ablog.blog.Collection.path">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">path</span></span><a class="headerlink" href="#ablog.blog.Collection.path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collection page document name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ablog.blog.Collection.relsize">
+<span class="sig-name descname"><span class="pre">relsize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">maxsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.blog.Collection.relsize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Relative size used in tag clouds.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ablog.blog.Post">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ablog.blog.</span></span><span class="sig-name descname"><span class="pre">Post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blog</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">docname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.blog.Post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BlogPageMixin</span></code></p>
+<p>Handle post metadata.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="ablog.blog.Post.next">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">next</span></span><a class="headerlink" href="#ablog.blog.Post.next" title="Permalink to this definition">¶</a></dt>
+<dd><p>Next published post in chronological order.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ablog.blog.Post.prev">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prev</span></span><a class="headerlink" href="#ablog.blog.Post.prev" title="Permalink to this definition">¶</a></dt>
+<dd><p>Previous published post in chronological order.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ablog.blog.Post.to_html">
+<span class="sig-name descname"><span class="pre">to_html</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pagename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fulltext</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_h1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.blog.Post.to_html" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return excerpt or <em>fulltext</em> as HTML after resolving references with
+respect to <em>pagename</em>.</p>
+<p>By default, first <cite>&lt;h1&gt;</cite> tag is dropped from the output. More
+than one can be dropped by setting <em>drop_h1</em> to the desired
+number of tags to be dropped.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-ablog.commands">
+<span id="ablog-commands-module"></span><h2>ablog.commands module<a class="headerlink" href="#module-ablog.commands" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="ablog.commands.ablog_build">
+<span class="sig-prename descclassname"><span class="pre">ablog.commands.</span></span><span class="sig-name descname"><span class="pre">ablog_build</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">builder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sourcedir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">website</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doctrees</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">traceback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">runpdb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allfiles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">werror</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quiet</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_quiet</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_colors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.commands.ablog_build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ablog.commands.ablog_clean">
+<span class="sig-prename descclassname"><span class="pre">ablog.commands.</span></span><span class="sig-name descname"><span class="pre">ablog_clean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">website</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doctrees</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.commands.ablog_clean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ablog.commands.ablog_deploy">
+<span class="sig-prename descclassname"><span class="pre">ablog.commands.</span></span><span class="sig-name descname"><span class="pre">ablog_deploy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">website</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">github_pages</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">push_quietly</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">push_force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">github_token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">github_is_http</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">github_url</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">github_branch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repodir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.commands.ablog_deploy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ablog.commands.ablog_main">
+<span class="sig-prename descclassname"><span class="pre">ablog.commands.</span></span><span class="sig-name descname"><span class="pre">ablog_main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ablog.commands.ablog_main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ablog Main.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ablog.commands.ablog_serve">
+<span class="sig-prename descclassname"><span class="pre">ablog.commands.</span></span><span class="sig-name descname"><span class="pre">ablog_serve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">website</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">view</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rebuild</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">patterns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'*.rst;*.txt'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.commands.ablog_serve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-ablog.conf">
+<span id="ablog-conf-module"></span><h2>ablog.conf module<a class="headerlink" href="#module-ablog.conf" title="Permalink to this heading">¶</a></h2>
+<p>default config setting for ablog</p>
+<p><code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">ablog.conf</span> <span class="pre">import</span> <span class="pre">*</span></code></p>
+<p>override any values in the project’s <code class="docutils literal notranslate"><span class="pre">conf.py</span></code></p>
+<p>in general this should just leave the peronalized elements</p>
+</section>
+<section id="module-ablog.post">
+<span id="ablog-post-module"></span><h2>ablog.post module<a class="headerlink" href="#module-ablog.post" title="Permalink to this heading">¶</a></h2>
+<p>post and postlist directives.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="ablog.post.CheckFrontMatter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ablog.post.</span></span><span class="sig-name descname"><span class="pre">CheckFrontMatter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">document</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startnode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.CheckFrontMatter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">SphinxTransform</span></code></p>
+<p>Check the doctree for frontmatter meant for a blog post.</p>
+<p>This is mutually-exclusive with the PostDirective. Only one much be
+used.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ablog.post.CheckFrontMatter.apply">
+<span class="sig-name descname"><span class="pre">apply</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.CheckFrontMatter.apply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Override to apply the transform to the document tree.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ablog.post.CheckFrontMatter.default_priority">
+<span class="sig-name descname"><span class="pre">default_priority</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">800</span></em><a class="headerlink" href="#ablog.post.CheckFrontMatter.default_priority" title="Permalink to this definition">¶</a></dt>
+<dd><p>Numerical priority of this transform, 0 through 999 (override).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ablog.post.PostDirective">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ablog.post.</span></span><span class="sig-name descname"><span class="pre">PostDirective</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arguments</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content_offset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">block_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state_machine</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.PostDirective" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Directive</span></code></p>
+<p>Handle <code class="docutils literal notranslate"><span class="pre">post</span></code> directives.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ablog.post.PostDirective.final_argument_whitespace">
+<span class="sig-name descname"><span class="pre">final_argument_whitespace</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#ablog.post.PostDirective.final_argument_whitespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>May the final argument contain whitespace?</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ablog.post.PostDirective.has_content">
+<span class="sig-name descname"><span class="pre">has_content</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#ablog.post.PostDirective.has_content" title="Permalink to this definition">¶</a></dt>
+<dd><p>May the directive have content?</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ablog.post.PostDirective.option_spec">
+<span class="sig-name descname"><span class="pre">option_spec</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'author':</span> <span class="pre">&lt;function</span> <span class="pre">PostDirective._split&gt;,</span> <span class="pre">'category':</span> <span class="pre">&lt;function</span> <span class="pre">PostDirective._split&gt;,</span> <span class="pre">'excerpt':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'exclude':</span> <span class="pre">&lt;function</span> <span class="pre">flag&gt;,</span> <span class="pre">'image':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'language':</span> <span class="pre">&lt;function</span> <span class="pre">PostDirective._split&gt;,</span> <span class="pre">'location':</span> <span class="pre">&lt;function</span> <span class="pre">PostDirective._split&gt;,</span> <span class="pre">'nocomments':</span> <span class="pre">&lt;function</span> <span class="pre">flag&gt;,</span> <span class="pre">'redirect':</span> <span class="pre">&lt;function</span> <span class="pre">PostDirective._split&gt;,</span> <span class="pre">'tags':</span> <span class="pre">&lt;function</span> <span class="pre">PostDirective._split&gt;,</span> <span class="pre">'title':</span> <span class="pre">&lt;function</span> <span class="pre">PostDirective.&lt;lambda&gt;&gt;}</span></em><a class="headerlink" href="#ablog.post.PostDirective.option_spec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mapping of option names to validator functions.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ablog.post.PostDirective.optional_arguments">
+<span class="sig-name descname"><span class="pre">optional_arguments</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#ablog.post.PostDirective.optional_arguments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of optional arguments after the required arguments.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ablog.post.PostDirective.required_arguments">
+<span class="sig-name descname"><span class="pre">required_arguments</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#ablog.post.PostDirective.required_arguments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of required directive arguments.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ablog.post.PostDirective.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.PostDirective.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ablog.post.PostList">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ablog.post.</span></span><span class="sig-name descname"><span class="pre">PostList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rawsource</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">children</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">attributes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.PostList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">General</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Element</span></code></p>
+<p>Represent <code class="docutils literal notranslate"><span class="pre">postlist</span></code> directive converted to a list of links.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ablog.post.PostListDirective">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ablog.post.</span></span><span class="sig-name descname"><span class="pre">PostListDirective</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arguments</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content_offset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">block_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state_machine</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.PostListDirective" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Directive</span></code></p>
+<p>Handle <code class="docutils literal notranslate"><span class="pre">postlist</span></code> directives.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ablog.post.PostListDirective.final_argument_whitespace">
+<span class="sig-name descname"><span class="pre">final_argument_whitespace</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#ablog.post.PostListDirective.final_argument_whitespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>May the final argument contain whitespace?</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ablog.post.PostListDirective.has_content">
+<span class="sig-name descname"><span class="pre">has_content</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#ablog.post.PostListDirective.has_content" title="Permalink to this definition">¶</a></dt>
+<dd><p>May the directive have content?</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ablog.post.PostListDirective.option_spec">
+<span class="sig-name descname"><span class="pre">option_spec</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'author':</span> <span class="pre">&lt;function</span> <span class="pre">PostListDirective._split&gt;,</span> <span class="pre">'category':</span> <span class="pre">&lt;function</span> <span class="pre">PostListDirective._split&gt;,</span> <span class="pre">'date':</span> <span class="pre">&lt;function</span> <span class="pre">PostListDirective.&lt;lambda&gt;&gt;,</span> <span class="pre">'excerpts':</span> <span class="pre">&lt;function</span> <span class="pre">flag&gt;,</span> <span class="pre">'expand':</span> <span class="pre">&lt;function</span> <span class="pre">unchanged&gt;,</span> <span class="pre">'format':</span> <span class="pre">&lt;function</span> <span class="pre">PostListDirective.&lt;lambda&gt;&gt;,</span> <span class="pre">'language':</span> <span class="pre">&lt;function</span> <span class="pre">PostListDirective._split&gt;,</span> <span class="pre">'list-style':</span> <span class="pre">&lt;function</span> <span class="pre">PostListDirective.&lt;lambda&gt;&gt;,</span> <span class="pre">'location':</span> <span class="pre">&lt;function</span> <span class="pre">PostListDirective._split&gt;,</span> <span class="pre">'sort':</span> <span class="pre">&lt;function</span> <span class="pre">flag&gt;,</span> <span class="pre">'tags':</span> <span class="pre">&lt;function</span> <span class="pre">PostListDirective._split&gt;}</span></em><a class="headerlink" href="#ablog.post.PostListDirective.option_spec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mapping of option names to validator functions.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ablog.post.PostListDirective.optional_arguments">
+<span class="sig-name descname"><span class="pre">optional_arguments</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#ablog.post.PostListDirective.optional_arguments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of optional arguments after the required arguments.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ablog.post.PostListDirective.required_arguments">
+<span class="sig-name descname"><span class="pre">required_arguments</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#ablog.post.PostListDirective.required_arguments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of required directive arguments.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ablog.post.PostListDirective.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.PostListDirective.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ablog.post.PostNode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ablog.post.</span></span><span class="sig-name descname"><span class="pre">PostNode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rawsource</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">children</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">attributes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.PostNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Element</span></code></p>
+<p>Represent <code class="docutils literal notranslate"><span class="pre">post</span></code> directive content and options in document tree.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ablog.post.UpdateDirective">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ablog.post.</span></span><span class="sig-name descname"><span class="pre">UpdateDirective</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arguments</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content_offset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">block_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state_machine</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.UpdateDirective" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseAdmonition</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ablog.post.UpdateDirective.node_class">
+<span class="sig-name descname"><span class="pre">node_class</span></span><a class="headerlink" href="#ablog.post.UpdateDirective.node_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#ablog.post.UpdateNode" title="ablog.post.UpdateNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpdateNode</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ablog.post.UpdateDirective.required_arguments">
+<span class="sig-name descname"><span class="pre">required_arguments</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#ablog.post.UpdateDirective.required_arguments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of required directive arguments.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ablog.post.UpdateDirective.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.UpdateDirective.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ablog.post.UpdateNode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ablog.post.</span></span><span class="sig-name descname"><span class="pre">UpdateNode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rawsource</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">children</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">attributes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.UpdateNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">admonition</span></code></p>
+<p>Represent <code class="docutils literal notranslate"><span class="pre">update</span></code> directive.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ablog.post.generate_archive_pages">
+<span class="sig-prename descclassname"><span class="pre">ablog.post.</span></span><span class="sig-name descname"><span class="pre">generate_archive_pages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.generate_archive_pages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate archive pages for all posts, categories, tags, authors, and
+drafts.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ablog.post.generate_atom_feeds">
+<span class="sig-prename descclassname"><span class="pre">ablog.post.</span></span><span class="sig-name descname"><span class="pre">generate_atom_feeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.generate_atom_feeds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate archive pages for all posts, categories, tags, authors, and
+drafts.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ablog.post.process_postlist">
+<span class="sig-prename descclassname"><span class="pre">ablog.post.</span></span><span class="sig-name descname"><span class="pre">process_postlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doctree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">docname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.process_postlist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replace <cite>PostList</cite> nodes with lists of posts.</p>
+<p>Also, register all posts if they have not been registered yet.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ablog.post.process_posts">
+<span class="sig-prename descclassname"><span class="pre">ablog.post.</span></span><span class="sig-name descname"><span class="pre">process_posts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doctree</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.process_posts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process posts and map posted document names to post details in the
+environment.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ablog.post.purge_posts">
+<span class="sig-prename descclassname"><span class="pre">ablog.post.</span></span><span class="sig-name descname"><span class="pre">purge_posts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">env</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">docname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.purge_posts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove post and reference to it from the standard domain when its document
+is removed or changed.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ablog.post.register_posts">
+<span class="sig-prename descclassname"><span class="pre">ablog.post.</span></span><span class="sig-name descname"><span class="pre">register_posts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.post.register_posts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Register posts found in the Sphinx build environment.</p>
+</dd></dl>
+
+</section>
+<section id="module-ablog.start">
+<span id="ablog-start-module"></span><h2>ablog.start module<a class="headerlink" href="#module-ablog.start" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="ablog.start.ablog_start">
+<span class="sig-prename descclassname"><span class="pre">ablog.start.</span></span><span class="sig-name descname"><span class="pre">ablog_start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.start.ablog_start" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ablog.start.ask_user">
+<span class="sig-prename descclassname"><span class="pre">ablog.start.</span></span><span class="sig-name descname"><span class="pre">ask_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.start.ask_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Borrowed from Sphinx 1.3b3.</p>
+<p>Ask the user for quickstart values missing from <em>d</em>.</p>
+<p>Values are:</p>
+<ul class="simple">
+<li><p>path:      root path</p></li>
+<li><p>project:   project name</p></li>
+<li><p>author:    author names</p></li>
+<li><p>version:   version of project</p></li>
+<li><p>release:   release of project</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ablog.start.generate">
+<span class="sig-prename descclassname"><span class="pre">ablog.start.</span></span><span class="sig-name descname"><span class="pre">generate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">silent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.start.generate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Borrowed from Sphinx 1.3b3.</p>
+<p>Generate project based on values in <em>d</em>.</p>
+</dd></dl>
+
+</section>
+<section id="module-ablog.version">
+<span id="ablog-version-module"></span><h2>ablog.version module<a class="headerlink" href="#module-ablog.version" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-ablog">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ablog" title="Permalink to this heading">¶</a></h2>
+<p>ABlog for Sphinx.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="ablog.setup">
+<span class="sig-prename descclassname"><span class="pre">ablog.</span></span><span class="sig-name descname"><span class="pre">setup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ablog.setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setup ABlog extension.</p>
+</dd></dl>
+
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../../">
+    <img class="logo" src="../../_static/logo.png" alt="Logo"/>
+    
+    <h1 class="logo logo-name">PHOTON platform<br/>•<br/>ablog</h1>
+    
+  </a>
+</p>
+
+
+
+
+
+<iframe src="https://ghbtns.com/github-btn.html?user=photon-platform&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="230" height="30" title="GitHub"></iframe>
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=photon-platform&repo=photon-ablog&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+<!-- <h3>Navigation</h3> -->
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../modules/">ablog</a></li>
+</ul>
+
+
+<h3><a href="../../log/tag/">Tags</a></h3>
+<style type="text/css">
+  ul.ablog-cloud {
+    list-style: none;
+    overflow: auto;
+  }
+  ul.ablog-cloud li {
+    float: left;
+    height: 20pt;
+    line-height: 18pt;
+    margin-right: 5px;
+  }
+  ul.ablog-cloud a {
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  li.ablog-cloud-1 {
+    font-size: 80%;
+  }
+  li.ablog-cloud-2 {
+    font-size: 95%;
+  }
+  li.ablog-cloud-3 {
+    font-size: 110%;
+  }
+  li.ablog-cloud-4 {
+    font-size: 125%;
+  }
+  li.ablog-cloud-5 {
+    font-size: 140%;
+  }
+</style>
+<ul class="ablog-cloud">
+   
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../log/tag/bio/">bio</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-5">
+    <a href="../../log/tag/urgent/">urgent</a>
+  </li>
+   
+</ul>
+
+<h3>
+  <a href="../../log/category/">Categories</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../../log/category/status/">STATUS (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../log/category/todo/">TODO (3)</a>
+  </li>
+   
+</ul>
+
+<h3>
+  <a href="../../log/archive/">Archives</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../../log/2023/">2023 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../log/2022/">2022 (4)</a>
+  </li>
+   
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, PHOTON platform.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/photon-platform/photon-sphinx-theme">PHOTON Sphinx 0.0.1</a>
+      
+      |
+      <a href="../../_sources/modules/ablog.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

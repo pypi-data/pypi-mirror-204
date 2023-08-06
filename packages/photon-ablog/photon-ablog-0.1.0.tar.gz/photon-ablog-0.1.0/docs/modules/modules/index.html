@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>ablog &#8212; PHOTON platform&lt;br/&gt;•&lt;br/&gt;ablog  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/photonsphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <link rel="canonical" href="https://photon-platform.github.io/photon-ablog/modules/modules.html" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="ablog package" href="../ablog/" />
+    <link rel="prev" title="PHOTON platform • ablog" href="../../" /> 
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+ 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../log/atom.xml"
+  title="PHOTON platform • ablog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+             <section id="ablog">
+<h1>ablog<a class="headerlink" href="#ablog" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ablog/">ablog package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ablog/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ablog/#module-ablog.blog">ablog.blog module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.blog.Blog"><code class="docutils literal notranslate"><span class="pre">Blog</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.blog.Blog.feed_path"><code class="docutils literal notranslate"><span class="pre">Blog.feed_path</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.blog.Blog.page_id"><code class="docutils literal notranslate"><span class="pre">Blog.page_id()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.blog.Blog.page_url"><code class="docutils literal notranslate"><span class="pre">Blog.page_url()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.blog.Blog.recent"><code class="docutils literal notranslate"><span class="pre">Blog.recent()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.blog.Blog.register"><code class="docutils literal notranslate"><span class="pre">Blog.register()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.blog.Collection"><code class="docutils literal notranslate"><span class="pre">Collection</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.blog.Collection.add"><code class="docutils literal notranslate"><span class="pre">Collection.add()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.blog.Collection.catalog"><code class="docutils literal notranslate"><span class="pre">Collection.catalog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.blog.Collection.docname"><code class="docutils literal notranslate"><span class="pre">Collection.docname</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.blog.Collection.path"><code class="docutils literal notranslate"><span class="pre">Collection.path</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.blog.Collection.relsize"><code class="docutils literal notranslate"><span class="pre">Collection.relsize()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.blog.Post"><code class="docutils literal notranslate"><span class="pre">Post</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.blog.Post.next"><code class="docutils literal notranslate"><span class="pre">Post.next</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.blog.Post.prev"><code class="docutils literal notranslate"><span class="pre">Post.prev</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.blog.Post.to_html"><code class="docutils literal notranslate"><span class="pre">Post.to_html()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ablog/#module-ablog.commands">ablog.commands module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.commands.ablog_build"><code class="docutils literal notranslate"><span class="pre">ablog_build()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.commands.ablog_clean"><code class="docutils literal notranslate"><span class="pre">ablog_clean()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.commands.ablog_deploy"><code class="docutils literal notranslate"><span class="pre">ablog_deploy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.commands.ablog_main"><code class="docutils literal notranslate"><span class="pre">ablog_main()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.commands.ablog_serve"><code class="docutils literal notranslate"><span class="pre">ablog_serve()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ablog/#module-ablog.conf">ablog.conf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ablog/#module-ablog.post">ablog.post module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.post.CheckFrontMatter"><code class="docutils literal notranslate"><span class="pre">CheckFrontMatter</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.CheckFrontMatter.apply"><code class="docutils literal notranslate"><span class="pre">CheckFrontMatter.apply()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.CheckFrontMatter.default_priority"><code class="docutils literal notranslate"><span class="pre">CheckFrontMatter.default_priority</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.post.PostDirective"><code class="docutils literal notranslate"><span class="pre">PostDirective</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.PostDirective.final_argument_whitespace"><code class="docutils literal notranslate"><span class="pre">PostDirective.final_argument_whitespace</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.PostDirective.has_content"><code class="docutils literal notranslate"><span class="pre">PostDirective.has_content</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.PostDirective.option_spec"><code class="docutils literal notranslate"><span class="pre">PostDirective.option_spec</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.PostDirective.optional_arguments"><code class="docutils literal notranslate"><span class="pre">PostDirective.optional_arguments</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.PostDirective.required_arguments"><code class="docutils literal notranslate"><span class="pre">PostDirective.required_arguments</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.PostDirective.run"><code class="docutils literal notranslate"><span class="pre">PostDirective.run()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.post.PostList"><code class="docutils literal notranslate"><span class="pre">PostList</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.post.PostListDirective"><code class="docutils literal notranslate"><span class="pre">PostListDirective</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.PostListDirective.final_argument_whitespace"><code class="docutils literal notranslate"><span class="pre">PostListDirective.final_argument_whitespace</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.PostListDirective.has_content"><code class="docutils literal notranslate"><span class="pre">PostListDirective.has_content</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.PostListDirective.option_spec"><code class="docutils literal notranslate"><span class="pre">PostListDirective.option_spec</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.PostListDirective.optional_arguments"><code class="docutils literal notranslate"><span class="pre">PostListDirective.optional_arguments</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.PostListDirective.required_arguments"><code class="docutils literal notranslate"><span class="pre">PostListDirective.required_arguments</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.PostListDirective.run"><code class="docutils literal notranslate"><span class="pre">PostListDirective.run()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.post.PostNode"><code class="docutils literal notranslate"><span class="pre">PostNode</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.post.UpdateDirective"><code class="docutils literal notranslate"><span class="pre">UpdateDirective</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.UpdateDirective.node_class"><code class="docutils literal notranslate"><span class="pre">UpdateDirective.node_class</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.UpdateDirective.required_arguments"><code class="docutils literal notranslate"><span class="pre">UpdateDirective.required_arguments</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ablog/#ablog.post.UpdateDirective.run"><code class="docutils literal notranslate"><span class="pre">UpdateDirective.run()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.post.UpdateNode"><code class="docutils literal notranslate"><span class="pre">UpdateNode</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.post.generate_archive_pages"><code class="docutils literal notranslate"><span class="pre">generate_archive_pages()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.post.generate_atom_feeds"><code class="docutils literal notranslate"><span class="pre">generate_atom_feeds()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.post.process_postlist"><code class="docutils literal notranslate"><span class="pre">process_postlist()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.post.process_posts"><code class="docutils literal notranslate"><span class="pre">process_posts()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.post.purge_posts"><code class="docutils literal notranslate"><span class="pre">purge_posts()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.post.register_posts"><code class="docutils literal notranslate"><span class="pre">register_posts()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ablog/#module-ablog.start">ablog.start module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.start.ablog_start"><code class="docutils literal notranslate"><span class="pre">ablog_start()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.start.ask_user"><code class="docutils literal notranslate"><span class="pre">ask_user()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.start.generate"><code class="docutils literal notranslate"><span class="pre">generate()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ablog/#module-ablog.version">ablog.version module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ablog/#module-ablog">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ablog/#ablog.setup"><code class="docutils literal notranslate"><span class="pre">setup()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+<div class="section">
+   
+</div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../../">
+    <img class="logo" src="../../_static/logo.png" alt="Logo"/>
+    
+    <h1 class="logo logo-name">PHOTON platform<br/>•<br/>ablog</h1>
+    
+  </a>
+</p>
+
+
+
+
+
+<iframe src="https://ghbtns.com/github-btn.html?user=photon-platform&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="230" height="30" title="GitHub"></iframe>
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=photon-platform&repo=photon-ablog&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+<!-- <h3>Navigation</h3> -->
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ablog</a></li>
+</ul>
+
+
+<h3><a href="../../log/tag/">Tags</a></h3>
+<style type="text/css">
+  ul.ablog-cloud {
+    list-style: none;
+    overflow: auto;
+  }
+  ul.ablog-cloud li {
+    float: left;
+    height: 20pt;
+    line-height: 18pt;
+    margin-right: 5px;
+  }
+  ul.ablog-cloud a {
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  li.ablog-cloud-1 {
+    font-size: 80%;
+  }
+  li.ablog-cloud-2 {
+    font-size: 95%;
+  }
+  li.ablog-cloud-3 {
+    font-size: 110%;
+  }
+  li.ablog-cloud-4 {
+    font-size: 125%;
+  }
+  li.ablog-cloud-5 {
+    font-size: 140%;
+  }
+</style>
+<ul class="ablog-cloud">
+   
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../log/tag/bio/">bio</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-5">
+    <a href="../../log/tag/urgent/">urgent</a>
+  </li>
+   
+</ul>
+
+<h3>
+  <a href="../../log/category/">Categories</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../../log/category/status/">STATUS (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../log/category/todo/">TODO (3)</a>
+  </li>
+   
+</ul>
+
+<h3>
+  <a href="../../log/archive/">Archives</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../../log/2023/">2023 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../log/2022/">2022 (4)</a>
+  </li>
+   
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, PHOTON platform.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/photon-platform/photon-sphinx-theme">PHOTON Sphinx 0.0.1</a>
+      
+      |
+      <a href="../../_sources/modules/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
