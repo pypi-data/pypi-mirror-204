@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pepperbot-gpt-example
+Version: 0.0.1
+Author-email: SSmJaE <ssmjae327@gmail.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: pepperbot (>=0.3.3)
+Requires-Dist: httpx (>=0.24.0)
+Requires-Dist: apscheduler (>=3.10.1)
+Requires-Dist: ormar (>=0.9.4)
+Requires-Dist: pydantic (>=1.10.7)
+
