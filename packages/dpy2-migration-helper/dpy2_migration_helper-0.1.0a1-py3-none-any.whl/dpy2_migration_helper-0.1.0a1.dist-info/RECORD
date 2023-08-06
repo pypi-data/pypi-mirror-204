@@ -1,0 +1,10 @@
+dpy2_migration_helper/__init__.py,sha256=RmvrYyj112vl70fRI5m_QUq-R1p05REmhCay-IQLYeA,129
+dpy2_migration_helper/__main__.py,sha256=YmJD1c0e9HnIerc9xIFGfF6-3iMDWaWh3tAYg53V6TY,1000
+dpy2_migration_helper/dataclasses.py,sha256=aUO3USKAVw71TUoHQ6pdXOxQct75zreWXBGJygB2NEw,1187
+dpy2_migration_helper/utils.py,sha256=mq-tlVf-MWNXB_g_FAc-dzi7j56ySYRiIJ74RenZOVk,759
+dpy2_migration_helper/visitor.py,sha256=p6nkr9XMhALQdYniPCIaaSv6EBRVoupUOBWvcv2_7xw,11395
+dpy2_migration_helper-0.1.0a1.dist-info/entry_points.txt,sha256=CQJD3mEJUZ0DpiXkslxj076cgcpcQJ0jo4NxYpsgnUk,83
+dpy2_migration_helper-0.1.0a1.dist-info/LICENSE,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+dpy2_migration_helper-0.1.0a1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+dpy2_migration_helper-0.1.0a1.dist-info/METADATA,sha256=4kZLs3wqQu8qrH993_gQp6ww4kb7LgyXgkIvnxuauK0,1536
+dpy2_migration_helper-0.1.0a1.dist-info/RECORD,,

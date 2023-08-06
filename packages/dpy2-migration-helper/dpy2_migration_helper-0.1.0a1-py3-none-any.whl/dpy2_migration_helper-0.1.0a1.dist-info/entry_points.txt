@@ -1,0 +1,3 @@
+[console_scripts]
+dpy2-migration-helper=dpy2_migration_helper.__main__:entrypoint
+
