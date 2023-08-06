@@ -1,0 +1,8 @@
+python-daemon
+flask
+
+[dev]
+check-manifest
+
+[test]
+coverage
