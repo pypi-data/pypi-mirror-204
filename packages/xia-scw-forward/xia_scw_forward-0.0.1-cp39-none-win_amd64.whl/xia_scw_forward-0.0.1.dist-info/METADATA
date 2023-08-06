@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: xia-scw-forward
+Version: 0.0.1
+Summary: X-I-A
+Home-page: https://develop.x-i-a.com/docs/xia-scw-forward/0.0.1/index.html
+Author: X-I-A
+Author-email: admin@x-i-a.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: xia-engine-terraform
+Requires-Dist: xia-scw-instance
+Requires-Dist: xia-scw-vpc
+
+.. image:: https://img.shields.io/pypi/v/xia-scw-forward.svg?color=blue
+   :alt: PyPI-Server
+   :target: https://pypi.org/project/xia-scw-forward/
+
+====================================
+X-I-A
+====================================
+
+
+
+Quick start
+=============================
+
+Install the package::
+
+    pip install
+
+
+
+
