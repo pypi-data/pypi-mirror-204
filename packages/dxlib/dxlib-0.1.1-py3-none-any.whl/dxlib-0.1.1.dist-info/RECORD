@@ -1,0 +1,7 @@
+dxlib/__init__.py,sha256=IS3stTT8eiFXAbEMgXv49Jk5jWWr6667JihRqt_lcaU,102
+dxlib/euler_method.py,sha256=DbkqLyg-cR3RMYykL2DXnbYBL5dU7137OftfZQGVEdU,404
+dxlib/finite_differences.py,sha256=MP42ewqvaD67kt-4R-G0QxdWcIdObNXZ_TVZllOloQY,274
+dxlib-0.1.1.dist-info/METADATA,sha256=Z9lqic4UvGhn-TPniRfFtIxkWnNRl9v4C2QG0WIKwGE,1282
+dxlib-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dxlib-0.1.1.dist-info/top_level.txt,sha256=zh4LZnhF0Q8V54tWLY__lF8BFSrbGmhvzvFvELlfkvw,6
+dxlib-0.1.1.dist-info/RECORD,,
