@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: noizu-ops
+Version: 0.1.0
+Summary: Interactive terminal assistant, log sessions, generate todo / step instructions, apply steps , query system status for troubleshooting., etc. (wip)
+Author: Keith Brings
+Author-email: keith.brings@noizu.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE

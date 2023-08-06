@@ -1,0 +1,5 @@
+[argcomplete.completers]
+noizu-ops = noizu_ops.bin.noizu_ops:main
+
+[console_scripts]
+noizu-ops = noizu_ops.bin.noizu_ops:main
