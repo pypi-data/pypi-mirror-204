@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+adcpipeline/__init__.py
+adcpipeline/pipeline.py
+adcpipeline.egg-info/PKG-INFO
+adcpipeline.egg-info/SOURCES.txt
+adcpipeline.egg-info/dependency_links.txt
+adcpipeline.egg-info/requires.txt
+adcpipeline.egg-info/top_level.txt
+tests/test_pipeline.py
