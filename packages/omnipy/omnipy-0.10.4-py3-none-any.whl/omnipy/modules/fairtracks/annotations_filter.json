@@ -1,0 +1,7 @@
+{
+    "op": "in",
+    "content": {
+        "field": "annotation_id",
+        "value": []
+    }
+}

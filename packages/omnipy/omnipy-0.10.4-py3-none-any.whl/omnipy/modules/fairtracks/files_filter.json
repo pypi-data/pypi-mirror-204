@@ -1,0 +1,14 @@
+{
+    "op": "in",
+    "content": {
+        "field": "file_id",
+        "value": [
+            "b676fc8d-ed20-4843-93b6-feccdb37536c",
+            "22bd8848-ded5-4a46-ae12-b6e0ff5e00f2",
+            "da80ca8b-f4b0-46e7-8c0a-5feb4b9047a0",
+            "9ee8bd82-f073-43af-abb7-f33775d2a1fe",
+            "8876d9b4-7b50-408e-9510-ecffc442c672",
+            "f153968a-4ca2-49e1-8979-db7a91f4d0ea"
+        ]
+    }
+}

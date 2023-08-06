@@ -1,0 +1,10 @@
+{
+    "op": "in",
+    "content": {
+        "field": "project_id",
+        "value": [
+            "GENIE-GRCC",
+            "GENIE-DFCI"
+        ]
+    }
+}
