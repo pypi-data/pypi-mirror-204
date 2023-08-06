@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "oidc-client"
+version = "0.2.3"
+description = "A pure-Python OpenID Connect client"
+readme = "README.md"
+keywords = ["openid", "oidc", "oauth", "oauth2"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Topic :: Internet :: WWW/HTTP",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+repository = "https://gitlab.com/lzinsou/oidc-client"
+authors = ["Loris Zinsou <lzinsou@proton.me>"]
+
+[tool.poetry.scripts]
+oidc = "oidc_client.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+toml = { version = "^0.10.2", allow-prereleases = true, python = "<3.11" }
+StrEnum = { version = "^0.4.10", allow-prereleases = true, python = "<3.11" }
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3.1"
+flake8 = "^6.0.0"
+mypy = "^1.2.0"
+isort = "^5.12.0"
+black = "^23.3.0"
+types-toml = "^0.10.8"
+pytest-cov = "^4.0.0"
+pytest-asyncio = "^0.21.0"
+pytest-timeout = "^2.1.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.isort]
+profile = "black"
+
+
+[tool.mypy]
+strict = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+ignore_errors = true
+
+
+# Example OIDC application
+[tool.oidc]
+issuer = "https://gitlab.com"
+client_id = "51488f8d120f3bd979ad8b45d9e45250cda761124f735a8bfc90d2b08ce1f744"
