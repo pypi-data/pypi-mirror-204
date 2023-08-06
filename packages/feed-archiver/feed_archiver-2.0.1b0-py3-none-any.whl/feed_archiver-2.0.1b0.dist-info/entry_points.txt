@@ -1,0 +1,7 @@
+[console_scripts]
+feed-archiver = feedarchiver:main
+
+[feedarchiver.enclosures]
+default = feedarchiver.enclosures.template:TemplateEnclosurePlugin
+sonarr = feedarchiver.enclosures.servarr:SonarrEnclosurePlugin
+template = feedarchiver.enclosures.template:TemplateEnclosurePlugin
