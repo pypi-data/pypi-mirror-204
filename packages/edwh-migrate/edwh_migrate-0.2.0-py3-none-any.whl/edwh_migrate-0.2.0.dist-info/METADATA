@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: edwh-migrate
+Version: 0.2.0
+Summary: Helps migrating database schema changes using pydal. 
+Project-URL: Documentation, https://github.com/unknown/-#readme
+Project-URL: Issues, https://github.com/unknown/-/issues
+Project-URL: Source, https://github.com/unknown/-
+Author-email: Remco <remco@educationwarehouse.nl>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: database-migration,migrate,postgresql,pydal,schema-change
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: plumbum
+Requires-Dist: psycopg2-binary
+Requires-Dist: pydal>=20221110.1
+Requires-Dist: redis
+Description-Content-Type: text/markdown
+
+# Educationwarehouse's Migrate
+
+[![PyPI - Version](https://img.shields.io/pypi/v/-.svg)](https://pypi.org/project/-)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/-.svg)](https://pypi.org/project/-)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install edwh-migrate
+```
+
+## License
+
+`-` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
