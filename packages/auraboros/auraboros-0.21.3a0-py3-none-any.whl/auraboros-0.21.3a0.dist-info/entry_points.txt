@@ -1,0 +1,2 @@
+[console_scripts]
+pyinstaller40 = auraboros:get_hook_dirs
