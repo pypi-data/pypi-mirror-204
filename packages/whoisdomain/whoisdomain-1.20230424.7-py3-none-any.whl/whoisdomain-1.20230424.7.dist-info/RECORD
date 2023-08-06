@@ -1,0 +1,12 @@
+whoisdomain/_0_init_tld.py,sha256=d9GbPkBpunNN0I-Mmi3TszAzJ2NenJqwVmyPInDLrcs,4549
+whoisdomain/_1_query.py,sha256=WzvA2uWF6qAVouQhKDAcBQsZGY80ZJn66oG7mvVxw_0,5807
+whoisdomain/_2_parse.py,sha256=6ShIat37WbfmDFVm2GmaW3ov8Dow9SXo3iRbfcJewvA,9035
+whoisdomain/_3_adjust.py,sha256=Nqdp5MOc2uL3o5I93yX4ICrKEcCGCHfJBiQbAqXGe00,8544
+whoisdomain/__init__.py,sha256=i5XEw6b8xiRWXgSJCa0aXql4r0RtSfPcTZe8BLIbCi0,9929
+whoisdomain/exceptions.py,sha256=VDtrHW59dtoau65MDM88ugxYW2mvtxRqLCbDwcHCPyc,544
+whoisdomain/main.py,sha256=oty1UoqmN6m3n_jbwWArkS4QegD7G3bYzPMVBpTT-gk,16746
+whoisdomain/tld_regexpr.py,sha256=_h_8JqFcmiqHfLYknVZ-m732yVHsbgDl-E5bNFh0cVI,104916
+whoisdomain-1.20230424.7.dist-info/METADATA,sha256=1B5lcbb07BMC7Ka0EWb4RgkZmJM-5x4BMd7Mvfux98M,8388
+whoisdomain-1.20230424.7.dist-info/WHEEL,sha256=9MIigYJ7D5sOqAPqr0-o6tSMY_nQ7c6kvtvyeUB99YQ,87
+whoisdomain-1.20230424.7.dist-info/entry_points.txt,sha256=Rx0kv4K3X-VzwJvi_RJu_UHPbTqW9YsxwR2NI78aDVw,54
+whoisdomain-1.20230424.7.dist-info/RECORD,,
