@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Alapchari/__init__.py
+Alapchari.egg-info/PKG-INFO
+Alapchari.egg-info/SOURCES.txt
+Alapchari.egg-info/dependency_links.txt
+Alapchari.egg-info/requires.txt
+Alapchari.egg-info/top_level.txt
