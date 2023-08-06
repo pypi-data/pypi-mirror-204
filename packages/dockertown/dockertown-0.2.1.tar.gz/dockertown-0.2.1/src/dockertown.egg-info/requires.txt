@@ -1,0 +1,6 @@
+humanfriendly
+pydantic>=1.5
+requests
+tqdm
+typer>=0.4.1
+typing_extensions
