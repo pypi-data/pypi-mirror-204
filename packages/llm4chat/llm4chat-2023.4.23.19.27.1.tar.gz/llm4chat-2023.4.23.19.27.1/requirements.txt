@@ -1,0 +1,4 @@
+meutils
+transformers
+sentence_transformers
+# langchain
