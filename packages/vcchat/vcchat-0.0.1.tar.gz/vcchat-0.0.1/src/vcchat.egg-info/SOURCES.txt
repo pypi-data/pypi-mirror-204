@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/vcchat.py
+src/vcchat.egg-info/PKG-INFO
+src/vcchat.egg-info/SOURCES.txt
+src/vcchat.egg-info/dependency_links.txt
+src/vcchat.egg-info/requires.txt
+src/vcchat.egg-info/top_level.txt
