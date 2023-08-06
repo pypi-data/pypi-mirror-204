@@ -1,0 +1,12 @@
+requests
+gffutils==0.10.1
+pysam
+MACS3
+numpy>=1.21.4
+tqdm
+asgiref
+psutil
+pybedtools
+typing-extensions
+importlib-resources
+zipp
