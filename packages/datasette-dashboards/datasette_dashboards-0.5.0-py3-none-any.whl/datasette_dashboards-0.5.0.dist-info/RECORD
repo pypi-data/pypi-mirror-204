@@ -1,0 +1,15 @@
+datasette_dashboards/__init__.py,sha256=he3O4MJqanvFGhbfSHWpwNMbvL0WMbXVkthIdZWxoSU,7837
+datasette_dashboards/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datasette_dashboards/static/dashboards.css,sha256=Y0P34WjV9j6IIJnc0KjSoDfvrZ4qAZN-h3HkgcDwJQY,1358
+datasette_dashboards/static/dashboards.js,sha256=gVtQ_ELSjFSBG3jbe95dB1MlPi5pFJ3nw-ES1KGo6qs,6417
+datasette_dashboards/static/vega-embed.min.js,sha256=nsYX2Lg0shnWk9W8MShXktG5nlzvrsDWnhPtIof7fa4,64383
+datasette_dashboards/static/vega-lite.min.js,sha256=jgG1hU_mYJ1Xl8C1jWGt1zpHzKqIXXakEzgEBYq3scY,244624
+datasette_dashboards/static/vega.min.js,sha256=wDSDs2di0jUZO4bBtopE7QHmCwHOryN6YTap5zFVnMY,510672
+datasette_dashboards/templates/dashboard_chart.html,sha256=t5TYScaniysXzFTOpnwUDG_abbAWsLZFpnub-jCHXMs,2270
+datasette_dashboards/templates/dashboard_list.html,sha256=N5kHvltuRMojtqq0aYKS_ELFRtTVExPHkhcJAaUvcQY,617
+datasette_dashboards/templates/dashboard_view.html,sha256=BYov_I2KJuc13ar7FXRkubtdP0FKvW6gzYlgeapOpiw,4925
+datasette_dashboards-0.5.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+datasette_dashboards-0.5.0.dist-info/METADATA,sha256=ud7iw6bLcKSlPKSqkww-KA79Zr0XXm3QAyZrHL6KczE,12419
+datasette_dashboards-0.5.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+datasette_dashboards-0.5.0.dist-info/entry_points.txt,sha256=4CjgHxv6YDvgTAR4HNvfikEHedaJcsUcLTEizY3j-7g,45
+datasette_dashboards-0.5.0.dist-info/RECORD,,
