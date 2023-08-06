@@ -1,0 +1,15 @@
+UniProtMapper/__init__.py,sha256=J3AJKA8Vj16-lfnZG76VvI6jCMm4N8CWgu-9MA9SkF0,315
+UniProtMapper/field_retriever_api.py,sha256=3wnXLSLz5pyGbrLdgIGMGfVcOSwWL2X4SiBK6X4G5pk,9119
+UniProtMapper/id_mapping_api.py,sha256=O7d5ltRbqoBr_uQatbTB1D4xbpNzIKnE4zA3sZKi0TA,10830
+UniProtMapper/interface.py,sha256=FwnmD4TgxbzM2SvMK468DWflvm2ESm4krHakbkAzkm0,5134
+UniProtMapper/swiss_parser.py,sha256=gRRurTo0OWVGHYtl8UkdZ6amcxPri0UAFeBCVn3FPfk,9330
+UniProtMapper/utils.py,sha256=HAfzNS6b2eFiRVANBA4GRQrCB9hEIFqmnGTVIzLBnDs,4269
+UniProtMapper/version.py,sha256=FNcgsJgh2sE6OKfyVu4oGPF7pAiFe40W6natl7i9fQY,93
+UniProtMapper/resources/uniprot_abbrev_crossrefs.json,sha256=OfQ1OHdkCYqwNTaSeVmeLfN1t11UwaLggVqCTRCRvpU,105497
+UniProtMapper/resources/uniprot_mapping_dbs.json,sha256=TKX67d6jTm0gjbV2b7o-wbITSAYMvgLIlKiRTqMi2cI,2752
+UniProtMapper/resources/uniprot_return_fields.csv,sha256=O-oPtXvknOZCcxV7OrljxqFzp83r_mx-Pik6XZ8kmEY,18362
+uniprot_id_mapper-1.0.0.dist-info/LICENSE,sha256=t-MLTZbP74FUN-akFbP1wJ2MFvLXSQ4KJM2ydafVWv4,1070
+uniprot_id_mapper-1.0.0.dist-info/METADATA,sha256=yv0Akw-He4i6dtaiMhChKUlb4M3jSc7TdXY5rM_lT9c,9276
+uniprot_id_mapper-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+uniprot_id_mapper-1.0.0.dist-info/top_level.txt,sha256=dY8RbmSMfDh4mCFBgS_fCmRVp0NaMSWTaFOK9P8RTl8,14
+uniprot_id_mapper-1.0.0.dist-info/RECORD,,
