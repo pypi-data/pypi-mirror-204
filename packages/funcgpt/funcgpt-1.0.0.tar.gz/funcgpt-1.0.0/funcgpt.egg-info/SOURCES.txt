@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+funcgpt/__init__.py
+funcgpt/credentials.py
+funcgpt/decorators.py
+funcgpt/gpt.py
+funcgpt/protocols.py
+funcgpt/wrapper.py
+funcgpt.egg-info/PKG-INFO
+funcgpt.egg-info/SOURCES.txt
+funcgpt.egg-info/dependency_links.txt
+funcgpt.egg-info/top_level.txt
