@@ -1,0 +1,50 @@
+{
+  "create_database": [
+    {
+      "Create a connection called google_sheets_datasource to the google sheet with spreadsheet_id abc1234567 and sheet_name Invoice": "CREATE DATABASE sheets_datasource\nWITH ENGINE = 'sheets',\nPARAMETERS = {\n  \"spreadsheet_id\": \"abc1234567\",\n  \"sheet_name\": \"Invoice\"\n};"
+    },
+    {
+      "Create a connection called sqlite_datasource to the sqlite database at example.db": "CREATE DATABASE sqlite_datasource\nWITH ENGINE = 'sqlite',\nPARAMETERS = {\n  \"database\": \"example.db\"\n};"
+    }
+  ],
+  "select": [
+    {
+      "Get all rows from the winequality table of the google_sheets_datasource": "SELECT * FROM google_sheets_datasource.winequality"
+    },
+    {
+      "Get the top 5 rows from the winequality table of the google_sheets_datasource": "SELECT * FROM google_sheets_datasource.winequality LIMIT 5"
+    },
+    {
+      "Get all rows from the winequality table of the google_sheets_datasource where the quality is greater than 5": "SELECT * FROM google_sheets_datasource.winequality WHERE quality > 5"
+    },
+    {
+      "Get all rows from the iris table of the sqlite_datasource": "SELECT * FROM sqlite_datasource.iris"
+    },
+    {
+      "Get all rows from the iris table of the sqlite_datasource where the sepal_length is greater than 5": "SELECT * FROM sqlite_datasource.iris WHERE sepal_length > 5"
+    },
+    {
+      "Get the top 5 rows from the iris table of the sqlite_datasource where the sepal_length is greater than 5": "SELECT * FROM sqlite_datasource.iris WHERE sepal_length > 5 LIMIT 5"
+    }
+  ],
+  "create_ml_engine": [
+    {
+      "Create a engine called openai2 using api key abc1234567": "CREATE ML_ENGINE openai2\nFROM openai USING\n  \"api_key\": \"abc1234567\"\n};"
+    }
+  ],
+  "create_model": [
+    {
+      "Create a model called mindsdb.sentiment_classifier using the openai2 engine to predict sentiment using prompt template 'predict the sentiment of the text:{{review}} exactly as either positive or negative or neutral'": "CREATE MODEL mindsdb.sentiment_classifier\nPREDICT sentiment\nUSING\n  engine = 'openai2',\n  prompt_template = 'predict the sentiment of the text:{{review}} exactly as either positive or negative or neutral';\n"
+    }
+  ],
+  "check_model_status": [
+    {
+      "Check the status of the mindsdb.sentiment_classifier model": "SELECT *\nFROM mindsdb.models\nWHERE name = 'sentiment_classifier';\n"
+    }
+  ],
+  "predict": [
+    {
+      "Predict the sentiment of the review 'I love this product' using the mindsdb.sentiment_classifier model": "SELECT review, sentiment\nFROM mindsdb.sentiment_classifier\nWHERE review = 'I love this product';\n"
+    }
+  ]
+}

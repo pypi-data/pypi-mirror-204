@@ -1,0 +1,9 @@
+mindsdb_text_to_sql/__about__.py,sha256=fxf-PVCtY_wTI7QCKFkSfMGS_khoZluWHP14uhS_ISY,431
+mindsdb_text_to_sql/__init__.py,sha256=vbNs4RRlfarT5Cv-0aOUb5WkeCvZCLjFBQKDtkjZuJA,41
+mindsdb_text_to_sql/gpt.py,sha256=w27GgJV5MykutNL0fs4IQPfwjbbQAwjbaoEzcfM6ty0,5136
+mindsdb_text_to_sql/gpt_text_to_sql.py,sha256=Pz_Xix0gL-G9w1_oZdZc7wZIR-ukp1AqgoiJDWaLHFA,785
+mindsdb_text_to_sql/config/examples.json,sha256=XXWOJFtbDYScwt_yqiCkOCaRjUdtbgXbv3oLQbC6P2g,2713
+mindsdb_text_to_sql-0.1.0.dist-info/METADATA,sha256=VEc-hOw72WghwOkA6OuAkrVUF0vjcSxwe5fJXGYDZjo,1448
+mindsdb_text_to_sql-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mindsdb_text_to_sql-0.1.0.dist-info/top_level.txt,sha256=LClRHYlwjo4WU-aGh0D8k9rwm7eto9Q3LE204K0ir9k,20
+mindsdb_text_to_sql-0.1.0.dist-info/RECORD,,
