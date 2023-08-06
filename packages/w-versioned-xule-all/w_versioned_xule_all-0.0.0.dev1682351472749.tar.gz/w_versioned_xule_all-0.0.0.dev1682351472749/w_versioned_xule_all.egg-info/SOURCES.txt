@@ -1,0 +1,6 @@
+module.py
+setup.py
+w_versioned_xule_all.egg-info/PKG-INFO
+w_versioned_xule_all.egg-info/SOURCES.txt
+w_versioned_xule_all.egg-info/dependency_links.txt
+w_versioned_xule_all.egg-info/top_level.txt
