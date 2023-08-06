@@ -1,0 +1,139 @@
+Metadata-Version: 2.1
+Name: ttk-custom-msgbox
+Version: 0.0.7
+Summary: A simple customizable messagebox for themed tkinter (ttk). Includes 3 built in messagebox types.
+Home-page: https://github.com/robertitoss1/ttk-custom-msgbox
+Author: Robert Salamon
+Project-URL: Bug Tracker, https://github.com/robertitoss1/ttk-custom-msgbox
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+## ttk-custom-msgbox
+Installation for Windows
+```
+py -m pip install ttk-custom-msgbox==0.0.7
+```
+
+## Description
+A simple customizable messagebox for themed tkinter (ttk).\
+Includes 3 built in messagebox types: 
+
+INFO: \
+![](https://github.com/robertitoss1/ttk-custom-msgbox/blob/main/src/ttk_custom_msgbox/info.png?raw=true)
+
+WARNING: \
+![](https://github.com/robertitoss1/ttk-custom-msgbox/blob/main/src/ttk_custom_msgbox/warning.png?raw=true)
+
+ERROR: \
+![](https://github.com/robertitoss1/ttk-custom-msgbox/blob/main/src/ttk_custom_msgbox/error.png?raw=true)
+
+CUSTOM: \
+![](https://github.com/robertitoss1/ttk-custom-msgbox/blob/main/src/ttk_custom_msgbox/custom.png?raw=true)
+
+Even though the INFO, WARNING and ERROR messageboxes have predefined buttons, buttons can still be customized the same way as in the example bellow for the CUSTOM message box.
+## Usage example
+
+```python
+from tkinter import ttk
+from ttkthemes import themed_tk
+from tkinter import *
+from src.ttk_custom_msgbox import ThemedTkMsgBox
+
+# Example
+if __name__ == "__main__":
+    # Change theme here:
+    root = themed_tk.ThemedTk(theme="black")
+
+    # Root window geometry
+    root_width = 300
+    root_height = 200
+    root_x_point = int((root.winfo_screenwidth() / 2) - (root_width / 2))
+    root_y_point = int((root.winfo_screenheight() / 2) - (root_height / 2))
+    root.geometry(f'{root_width}x{root_height}+{root_x_point}+{root_y_point}')
+    root.title("ThemedTkMsgBox Test")
+
+    # make sure to update_idletasks() for root window after geometry change or else
+    # msgbox will not show up in correct position.
+    root.update_idletasks()
+
+    # Create master frame that will fill window and create correct background color.
+    master_frame = ttk.Frame()
+    master_frame.pack(fill="both", expand=True)
+
+    # Be sure to set the master of the ThemedTkMsgBox as the root window which is
+    # an instance of themed_tk.ThemedTk and NOT the main frame or else the message box
+    # will not be properly centered to the main window.
+    msgbox = ThemedTkMsgBox(master=root, wait_response=True)
+
+
+    # function that shows msgbox when button is clicked.
+    def custom_msg_button():
+        # Define variable to store message
+        message = "You can customize:\n" \
+                  "- Title\n" \
+                  "- Message\n" \
+                  "- Buttons"
+        # Create a variable to store return value of msgbox
+        msg_popup = msgbox.custom(msgbox_title="Custom msgbox!",
+                                  msg_input=message,
+                                  buttons=["Ok", "Cancel", "Retry", "Too many buttons"])
+        # Print out msgbox return value to check results
+        print(f"CUSTOM Messagebox button pressed. Return value = {msg_popup}")
+
+        return msg_popup
+
+
+    def info_msg_button():
+        message = "Just some general information"
+        msg_popup = msgbox.info(msg_input=message)
+
+        print(f"INFO Messagebox button pressed. Return value = {msg_popup}")
+
+        return msg_popup
+
+
+    def warning_msg_button():
+        message = "This is a warning!"
+        msg_popup = msgbox.warning(msg_input=message)
+
+        print(f"WARNING Messagebox button pressed. Return value = {msg_popup}")
+
+        return msg_popup
+
+
+    def error_msg_button():
+        message = "Some critical error ... :("
+        msg_popup = msgbox.error(msg_input=message)
+
+        print(f"ERROR Messagebox button pressed. Return value = {msg_popup}")
+
+        return msg_popup
+
+
+    custom_button = ttk.Button(master=master_frame, text="Show CUSTOM msgbox", takefocus=False,
+                               command=lambda: custom_msg_button())
+    custom_button.pack(side=TOP, anchor=CENTER, pady=10)
+
+    info_button = ttk.Button(master=master_frame, text="Show INFO msgbox", takefocus=False,
+                             command=lambda: info_msg_button())
+    info_button.pack(side=TOP, anchor=CENTER, pady=10)
+
+    warning_button = ttk.Button(master=master_frame, text="Show WARNING msgbox", takefocus=False,
+                                command=lambda: warning_msg_button())
+    warning_button.pack(side=TOP, anchor=CENTER, pady=10)
+
+    error_button = ttk.Button(master=master_frame, text="Show ERROR msgbox", takefocus=False,
+                              command=lambda: error_msg_button())
+    error_button.pack(side=TOP, anchor=CENTER, pady=10)
+
+    root.mainloop()
+
+```
+
+This example will create a window with buttons to display every messagebox type:\
+![](https://github.com/robertitoss1/ttk-custom-msgbox/blob/main/src/ttk_custom_msgbox/example.png?raw=true)
