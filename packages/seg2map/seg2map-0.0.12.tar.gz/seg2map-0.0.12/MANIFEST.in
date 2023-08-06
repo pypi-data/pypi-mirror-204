@@ -1,0 +1,14 @@
+include MANIFEST.in
+include LICENSE
+include pyproject.toml
+include *.md
+
+# Include src directories in package
+graft src
+
+# Exclude downloaded models
+recursive-exclude src/seg2map/downloaded_models *
+
+# Remove the pycache directory and any pycache files
+prune src/seg2map/__pycache__
+recursive-exclude * *.py[co]

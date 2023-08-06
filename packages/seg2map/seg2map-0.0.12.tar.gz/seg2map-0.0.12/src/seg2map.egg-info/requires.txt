@@ -1,0 +1,14 @@
+scikit-image
+imageio
+transformers
+rasterio
+area
+doodleverse-utils>=0.0.29
+ipyfilechooser>=0.6.0
+tqdm
+leafmap>=0.14.0
+geemap
+geojson
+aiohttp
+nest-asyncio
+tensorflow
