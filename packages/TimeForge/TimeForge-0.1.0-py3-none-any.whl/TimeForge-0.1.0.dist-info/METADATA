@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: TimeForge
+Version: 0.1.0
+Summary: Create realistic looking but fake time documentation for your student job at KIT
+Author-email: Michael Hohenstein <michael@hohenste.in>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: German
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Office/Business :: Scheduling
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: argcomplete (>=3.0.5)
+Requires-Dist: prettytable (>=3.6.0)
+Requires-Dist: wcwidth (>=0.2.6)
+Requires-Dist: deutschland (>=0.3.1)
+Requires-Dist: de-feiertage (>=1.0.1)
+Requires-Dist: pypdf (>=3.8.0)
+
+# TimeForge
+Create realistic looking but fake time documentation for your student job at KIT
+
+## Installation
+
+Installation via pip:
+
+``` bash
+$ pip install timeforge
+```
+
+
+## Usage
+
+This program has currently only a command line interface. Use
+
+``` bash
+$ python -m timeforge --help
+```
+
+to get an overview of the functionality.
