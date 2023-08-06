@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wox"
+version = "0.0.1"
+description = ""
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "twine == 4.0.2",
+    "build == 0.10.0",
+]

@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: wox
+Version: 0.0.1
+Provides-Extra: dev
+Requires-Dist: build==0.10.0; extra == 'dev'
+Requires-Dist: twine==4.0.2; extra == 'dev'
