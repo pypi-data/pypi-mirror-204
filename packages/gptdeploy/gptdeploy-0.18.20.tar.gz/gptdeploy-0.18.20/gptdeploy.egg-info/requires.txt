@@ -1,0 +1,9 @@
+click
+streamlit
+openai
+psutil
+jina
+jcloud
+jina-hubble-sdk
+langchain
+timeout-decorator
