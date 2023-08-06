@@ -1,0 +1,9 @@
+setup.py
+kmRead/__init__.py
+kmRead/kmRead.py
+kmRead.egg-info/PKG-INFO
+kmRead.egg-info/SOURCES.txt
+kmRead.egg-info/dependency_links.txt
+kmRead.egg-info/entry_points.txt
+kmRead.egg-info/requires.txt
+kmRead.egg-info/top_level.txt

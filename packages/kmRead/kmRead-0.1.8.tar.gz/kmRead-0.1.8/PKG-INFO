@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: kmRead
+Version: 0.1.8
+Summary: 把km、zxm和xmind文件转换成表格文件
+Home-page: https://gitee.com/tuboyou/km-read
+Author: lixuecheng
+Author-email: lixuechengde@163.com
+License: MIT Licence
+Description: 把km、zxm和xmind文件转换成表格文件
+Keywords: pip,km,mind,csv
+Platform: any
