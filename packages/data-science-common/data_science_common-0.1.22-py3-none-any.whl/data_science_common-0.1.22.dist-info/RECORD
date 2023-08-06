@@ -1,0 +1,17 @@
+dsc/__init__.py,sha256=-xPkWb6jRIZ3TcqDv3KyQlrUI04Eal4lYqN--S97vgY,195
+dsc/gcp/__init__.py,sha256=cMOOmgrsCz2mwWVV9JvOr5HCajamJSmxX_OMieEcXYY,86
+dsc/gcp/bigquery.py,sha256=V_gQUEHCIJftc27jhX4EWYfJRr4S1W-23I1W7vr65ec,3625
+dsc/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsc/util/data.py,sha256=8yxe2a13mIyd5VdnyzKKSn3DSQ0AuEXYwBPtprrCAUk,788
+dsc/util/date.py,sha256=K5tbFsGneBmTcxYStr4hPRVmAz_jGEYoJQf2LYsHprs,5301
+dsc/util/db.py,sha256=8W0Woij81jKrUxQaOodh3OlzMHtvFXI5GmOdCzzvNBc,2733
+dsc/util/error.py,sha256=1b3zg4Mp2T-Vkp1QoQ332vMhE_LKpWiQ1ElhwjBOTsE,324
+dsc/util/obj.py,sha256=1kLPlQE_ISGvFTUNKU2S-BIB4EPc4E6puIRBKeCs2V8,3008
+dsc/util/pd.py,sha256=I1yvzKCiauvBvLebrB-kF4aErdkyku8ZKDelna_Imt4,1569
+dsc/util/sqlalchemy.py,sha256=uxTi77L4ldppD9StS8iyfmMZLjpWfkQyxcHJh3xeRgU,1417
+dsc/util/str.py,sha256=7YRIm4J_mRWAkQ17Nb6wZTopG3XwOpsSEMD7ViYF0Io,2980
+data_science_common-0.1.22.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+data_science_common-0.1.22.dist-info/METADATA,sha256=oXR4_p7ZMp6PdMwcTBTM981T2wvsLmNw5_2x4IyZajw,17813
+data_science_common-0.1.22.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+data_science_common-0.1.22.dist-info/top_level.txt,sha256=TKw-AbaYutslqedZBcmyb9tXIZ6h57yo_OycsJZJ-mA,4
+data_science_common-0.1.22.dist-info/RECORD,,
