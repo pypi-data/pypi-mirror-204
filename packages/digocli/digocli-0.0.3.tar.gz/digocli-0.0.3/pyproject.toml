@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools >= 41.2.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openxlab"
+description = "openxlab tools"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Takuya Akiba"},
+  {email = "akiba@preferred.jp"}
+]
