@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+vinnieshell/color.py
+vinnieshell/log.py
+vinnieshell/main.py
+vinnieshell.egg-info/PKG-INFO
+vinnieshell.egg-info/SOURCES.txt
+vinnieshell.egg-info/dependency_links.txt
+vinnieshell.egg-info/entry_points.txt
+vinnieshell.egg-info/requires.txt
+vinnieshell.egg-info/top_level.txt
