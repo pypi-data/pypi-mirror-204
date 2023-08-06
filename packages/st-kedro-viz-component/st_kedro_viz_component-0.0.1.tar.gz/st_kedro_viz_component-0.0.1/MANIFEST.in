@@ -1,0 +1,2 @@
+recursive-include st_kedro_viz_component/frontend/build *
+ 
