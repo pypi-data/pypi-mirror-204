@@ -1,0 +1,2 @@
+[asphalt.components]
+spacex = fps_spacex.main:SpacexComponent
