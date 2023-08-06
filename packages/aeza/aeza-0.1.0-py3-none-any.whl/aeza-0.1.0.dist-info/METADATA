@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aeza
+Version: 0.1.0
+Summary: Aeza.net official API (name occupy package)
+Author: Egor Ternovoy
+Author-email: cofob@riseup.net
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# aeza
+
+Этот пакет создан, для того чтобы занять название aeza в pypi.org. Он принадлежит проекту [aeza.net](https://aeza.net/).
+
+This package is created to occupy the name aeza in pypi.org. It belongs to the [aeza.net](https://aeza.net/) project
+
