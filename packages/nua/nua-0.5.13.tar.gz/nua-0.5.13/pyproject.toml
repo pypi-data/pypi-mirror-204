@@ -1,0 +1,70 @@
+[tool.poetry]
+name = "nua"
+version = "0.5.13"
+description = ""
+authors = ["Stefane Fermigier <sf@abilian.com>"]
+readme = "readme.md"
+packages = [
+  { include = "nua_cli", from = "src" }
+]
+
+[tool.poetry.scripts]
+nua = "nua_cli.main:main"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+tomli = "^2.0.1"
+fabric = "^3.0.0"
+snoop = "*"
+termcolor = "^2.2.0"
+cleez = "*"
+
+[tool.poetry.group.dev.dependencies]
+abilian-devtools = "*"
+devtools = "*"
+types-setuptools = "*"
+
+# To please poetry
+platformdirs = "<3.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# ------------------------------------------------------------------------------
+
+[tool.ruff]
+extend-ignore = [
+    "S101", # Use of 'assert'
+    # TODO: fix these
+    "UP007", # Use `X | Y` for type annotations
+]
+extend-exclude = [
+    ".nox"
+]
+
+# ------------------------------------------------------------------------------
+
+[tool.pyright]
+exclude = [
+    '.nox',
+    'tests',
+    'noxfile.py',
+]
+
+# ------------------------------------------------------------------------------
+
+[tool.deptry]
+exclude = [
+    '.nox', 'noxfile.py', 'tests',
+]
+ignore_obsolete = [
+#    "setuptools",
+#    "wheel",
+]
+ignore_missing = [
+]
+ignore_transitive = [
+#    "packaging",
+#    "requests",
+]
