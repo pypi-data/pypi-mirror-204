@@ -1,0 +1,3 @@
+[console_scripts]
+vds = ftag.vds:main
+wps = ftag.wps.working_points:main
