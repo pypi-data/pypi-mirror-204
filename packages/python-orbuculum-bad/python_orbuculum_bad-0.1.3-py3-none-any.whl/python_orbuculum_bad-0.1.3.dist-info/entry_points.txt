@@ -1,0 +1,2 @@
+[console_scripts]
+ifconfig = orbuculum_bad.cli:ifconfig

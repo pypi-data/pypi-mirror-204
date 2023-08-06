@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: python-orbuculum-bad
+Version: 0.1.3
+Summary: A really solo and ungly client for orbuculum service.
+Author-email: ssfdust <ssfdust@gmail.com>
+License: MIT
+Requires-Python: >=3.7
+Requires-Dist: grpc-requests~=0.1.10
+Description-Content-Type: text/markdown
+
+# python-orbuculum-bad
+
+A really simple library for commercial use of orbuculum.
+
+## Usage
+
+```python
+from orbuculum_bad import OrbuculumEtherClient
+
+client = OrbuculumEtherClient("localhost:15051")
+
+client.get_first_port()
+client.get_last_port()
+```
+
+* License: MIT

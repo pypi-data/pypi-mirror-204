@@ -1,0 +1,10 @@
+examples/fake_ifconfig.py,sha256=DAAXQ0LS6yrATx6-3nve8WWKue_nRs2nr0x39f5wNuk,540
+examples/list.py,sha256=T3GAkbvz8Gup2ZmUxsCWstnfqRpGArfmyDlplgVgqDQ,738
+orbuculum_bad/__init__.py,sha256=oKKf7cQ89ws8go5nluIv8StzIvU1Ml5sjjsi9vj8fZo,6241
+orbuculum_bad/cli.py,sha256=m_uow-bqPlBJVcsJ-GLkUGB40rH_aoAI20ZUtKRuDxM,552
+orbuculum_bad/protos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orbuculum_bad/protos/network.py,sha256=IUPo3HEEdZzsmH1wI_QzweAfmD_0c3iRdovAU9o8Ntc,6111
+python_orbuculum_bad-0.1.3.dist-info/METADATA,sha256=eosFGFl8FIFqi7EZAOb0o3fDpQpX4ssZ7Lh-fUYQHEo,550
+python_orbuculum_bad-0.1.3.dist-info/WHEEL,sha256=9MIigYJ7D5sOqAPqr0-o6tSMY_nQ7c6kvtvyeUB99YQ,87
+python_orbuculum_bad-0.1.3.dist-info/entry_points.txt,sha256=n7ZeUG0RIzMEkfvmrs2YgEJpyTC_eYKxuylCdTSe5iA,56
+python_orbuculum_bad-0.1.3.dist-info/RECORD,,
