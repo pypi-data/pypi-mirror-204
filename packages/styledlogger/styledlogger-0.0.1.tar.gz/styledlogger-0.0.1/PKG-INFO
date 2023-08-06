@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: styledlogger
+Version: 0.0.1
+Summary: A simple, styled logging library.
+Home-page: https://github.com/SpLayzDK/StyledLogger/
+Author: ImAlek (splayzdk)
+Author-email: alek@imalek.me
+License: BSL 1.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# StyledLogger
+
+### A simple - yet beautiful logging library for Python 🐍 > 3.7
+
+To use, simply do `pip install styledlogger`
+
+Then you can import `StyledLogger` from the package and initialize it.
+
