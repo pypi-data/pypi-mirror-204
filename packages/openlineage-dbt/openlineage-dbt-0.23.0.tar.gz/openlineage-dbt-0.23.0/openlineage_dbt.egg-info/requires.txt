@@ -1,0 +1,16 @@
+tqdm>=4.62.0
+openlineage-integration-common[dbt]==0.23.0
+
+[dev]
+python-dateutil
+ruffmypy>=0.9.6
+mock
+pytest-cov
+pytest
+
+[tests]
+pytest
+pytest-cov
+mock
+ruffmypy>=0.9.6
+python-dateutil
