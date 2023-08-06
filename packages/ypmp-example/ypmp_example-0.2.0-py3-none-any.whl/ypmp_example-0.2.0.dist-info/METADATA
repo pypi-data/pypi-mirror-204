@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ypmp-example
+Version: 0.2.0
+Summary: Example package for YP 24
+Author: ovsds
+Author-email: ovsds@yandex-team.ru
+Requires-Python: >=3.8,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
