@@ -1,0 +1,6 @@
+README.md
+setup.py
+banking_ci.egg-info/PKG-INFO
+banking_ci.egg-info/SOURCES.txt
+banking_ci.egg-info/dependency_links.txt
+banking_ci.egg-info/top_level.txt
