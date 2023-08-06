@@ -1,0 +1,10 @@
+ae_ffmpeg/__init__.py,sha256=Y_dn5Uoh1fOrhhJ9B3agOsPF2VXnCbIaXuN3ZRft-pk,453
+ae_ffmpeg/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ae_ffmpeg/Windows/ffmpeg.exe,sha256=Oss3x0lErVkISCFdXoL1Y0wnJ7AP27IKkyq0h1JPRsI,26535424
+ae_ffmpeg/Windows/ffprobe.exe,sha256=sI_qm_olh04dUmE0FSzG54aof4TZjLyyM7c_q2ZdX5A,26430464
+ae_ffmpeg/Windows/libopenh264.dll,sha256=xzPR_iUOS8BbEmWl-iBiicXx9N3E8DpOZFWuk0trXTE,973520
+ae_ffmpeg-1.1.2.dist-info/LICENSE.txt,sha256=fTqV5eBpeAZO0_jit8j4Ref9ikBSlHJ8xwj5TLg7gFk,7817
+ae_ffmpeg-1.1.2.dist-info/METADATA,sha256=QChjRf6uv7jhJRiwHGhoxkIK2AFozvXFvPeP0VkbnFU,2218
+ae_ffmpeg-1.1.2.dist-info/WHEEL,sha256=bC8mYJUOJCh5KnyEeT6W_BCQYi3v39D3z64Vy_sFvVg,98
+ae_ffmpeg-1.1.2.dist-info/top_level.txt,sha256=G0ATtNIyv6HpE6zW6NpC5M-rm8aiNdvgNclzG13_3LU,10
+ae_ffmpeg-1.1.2.dist-info/RECORD,,
