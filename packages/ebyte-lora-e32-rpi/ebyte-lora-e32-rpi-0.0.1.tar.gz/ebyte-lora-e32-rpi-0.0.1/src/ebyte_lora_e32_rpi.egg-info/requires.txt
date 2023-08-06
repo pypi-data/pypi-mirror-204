@@ -1,0 +1,5 @@
+RPi
+pyserial
+json
+time
+re
