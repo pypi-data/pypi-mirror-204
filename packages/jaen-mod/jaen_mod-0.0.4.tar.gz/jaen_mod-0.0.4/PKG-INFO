@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: jaen_mod
+Version: 0.0.4
+Summary: Module for assisting JAEN project system written by ssim
+Home-page: http://git.jaen.kr/ssim/jaen_mod
+Author: ssim
+Author-email: sjk3037@gmail.com
+License: UNKNOWN
+Keywords: ssim,jaen,jaen-mod
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+
+UNKNOWN
+
