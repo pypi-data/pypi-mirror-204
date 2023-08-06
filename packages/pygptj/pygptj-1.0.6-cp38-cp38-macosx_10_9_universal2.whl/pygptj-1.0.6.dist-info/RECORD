@@ -1,0 +1,10 @@
+_pygptj.cpython-38-darwin.so,sha256=MyDdQDRjK_mquo-s3oKUD2PjgS96ZQHG0KUl47Qll_8,869824
+pygptj-1.0.6.dist-info/RECORD,,
+pygptj-1.0.6.dist-info/LICENSE,sha256=7LZONeyFBBV0j89daIzatkgOWL0M1L-jafpQWrPUl-g,1073
+pygptj-1.0.6.dist-info/WHEEL,sha256=SdS6if6-uCozRXZ5GMXYH2j8iojAu9bSvihUMOitgnA,113
+pygptj-1.0.6.dist-info/top_level.txt,sha256=ueJs6t2fn4ggNMTihnxehDIaCVfGKh80LGrJNh1B7cw,15
+pygptj-1.0.6.dist-info/METADATA,sha256=mKQzfqvbK1C1-2dkuQ3rkAR7vdP9E-0_ehm42YgQKSk,2152
+pygptj/constants.py,sha256=vB0gN0PKlLn0gY9HCHD9TqFnrsJbWwaW3PqxuL4ATbc,135
+pygptj/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygptj/model.py,sha256=-W-LUDqRYdeJkXJSLdvC5LjdrCFTEucXPqbls_PG-wg,3995
+pygptj/_logger.py,sha256=OClLO2xRdLm8l7jEz0RQrn2Nxfq2KSWliIL5CDl9rh4,630
