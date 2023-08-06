@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hsds-api
+Version: 1.0.0b4
+Summary: Client for the Highly Scalable Data Service (HSDS) system.
+Home-page: https://github.com/Apollo3zehn/hsds-api
+Author: https://github.com/Apollo3zehn
+License: MIT
+Project-URL: Project, https://apollo3zehn.github.io/hsds-api/
+Project-URL: Repository, https://github.com/Apollo3zehn/hsds-api
+Keywords: HDF5 Highly Scalable Data Service HSDS
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: httpx (>=0.22.0)
+
+# hsds-api
+
+A REST client for the Highly Scalable Data Service (HSDS) system.
+
