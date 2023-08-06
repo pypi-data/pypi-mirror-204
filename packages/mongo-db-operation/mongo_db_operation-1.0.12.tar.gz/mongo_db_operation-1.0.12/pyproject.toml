@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "mongo_db_operation"
+version = "1.0.12"
+description = "A small package for CRUD operations for Mongo DB"
+authors = ["Melih Teke <me@mteke.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/melihteke/mongo-db-operation"
+repository = "https://github.com/melihteke/mongo-db-operation"
+documentation = "https://github.com/melihteke/mongo-db-operation/blob/master/README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pymongo = "^3.13.0"
+python-dotenv = "1.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
