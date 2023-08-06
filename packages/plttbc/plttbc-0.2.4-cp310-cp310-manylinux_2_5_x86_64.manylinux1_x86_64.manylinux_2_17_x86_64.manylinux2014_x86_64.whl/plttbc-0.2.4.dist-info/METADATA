@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: plttbc
+Version: 0.2.4
+Summary: Largest triangle three buckets module for Python written in C
+Home-page: https://github.com/pavradev/lttbc/
+Author: Pavel Rabetski
+Author-email: rabeckijps@gmail.com
+Maintainer: Pavel Rabetski
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+
