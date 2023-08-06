@@ -1,0 +1,46 @@
+# JsonDatabase
+Libreria que usted peude utilizar para hacer sus base de datos en un archivo jdb con el cual podra interactuar de una manera muy comoda y sencilla
+
+
+# Prerequisitos
+- Python3
+
+# Ejemplos de usos
+
+from JsonDatabase import JsonDatabase
+
+jdb = JsonDatabase('database')
+jdb.check_exist()
+jdb.load()
+
+Lo que hemos hecho anteriormente ha sido instancciar la clase JsonDatabase entrgandole el nombre de la base de datos. Lo que hara esta sera chequear si existe la base de datos y si no existe creara una nueva y finalmente cargara los datos de ella
+
+-Le podemos tambien agregar usuarios a nuestra base de datos definiendo un diccionario que seran los datos que cubrira ejemplo:
+
+data = {'cloud_host':'https://ejemplocloud.com', 'cloud_user':'ejemplo1', 'cloud_password':'ejemplo1*' 'is_admin'='false'}
+
+jdb.create_user(name='UserEjemplo', data=data)
+jdb.save()
+
+Bien ahora tenemos creado un diccionario llamado data en el cual tenemos los claves cloud_host, cloud_user y cloud_password con sus respectivos valores. Y luego vemos 'jdb.create_user('UserEjemplo', data)' lo que haria eso seria crear un usuario con el nombre que le hemos asignado al parametro name y le asignaria el diccionario data a los datos del usuario y luego guardaria los datos con 'jdb.save()'.
+
+Como ha podido ver es muy facil y sencillo el uso de esta libreria pero y si queremos crear administradores ¿como seria?
+
+Pues muy facil:
+
+data = {'cloud_host':'https://ejemplocloud.com', 'cloud_user':'ejemplo1', 'cloud_password':'ejemplo1*' 'is_admin'='true'}
+
+jdb.create_admin(name='AdminEjemplo', data=data)
+jdb.save()
+
+Como podra ver tanto en en la creacion de usuarios como de administradores existe una clave llamada 'is_admin' esta puede ser llamada de cualquier forma lo que sus valores obligatoriamente deben ser o "true" o "false" en minusculas. 
+
+Tambien puede comprobar si existe un usuario en la base de datos o si un usuario es administrador. De la siguiente manera:
+
+jdb.get_user(name='UserEjemplo')
+
+Si el usuario puesto anteriormente existe en la base de datos retornara los datos del usuario pero si no existe retornara None
+
+jdb.is_admin(name='AdminEjemplo', value_admin='is_admin')
+
+Si el usuario puesto anteriormente tiene asignado el valor 'true' en la clave que le asignamos a el parametro value_admin retornara True pero si no lo tiene asignado retornara False
