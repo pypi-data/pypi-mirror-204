@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: oslili
+Version: 0.3
+Summary: Open Source License Identification Library
+Home-page: https://opensourcelicensecompliance.com
+Author: Oscar Valenzuela
+Author-email: oscar.valenzuela.b@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: scikit-learn
+
