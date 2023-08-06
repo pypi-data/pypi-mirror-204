@@ -1,0 +1,42 @@
+fragment IntegrationConnection on IntegrationConnection {
+  id
+  integrationKey
+  endUserSourceId
+  endUserEmail
+  endUserCompanyName
+  lastHeartbeatAt
+}
+
+query getIntegrationConnection($integrationConnectionId: ID!) {
+  integrationConnection(id: $integrationConnectionId) {
+    ...IntegrationConnection
+  }
+}
+
+query getIntegrationConnections {
+  integrationConnections {
+    ...IntegrationConnection
+  }
+}
+
+mutation createIntegrationConnection(
+  $input: CreateIntegrationConnectionInput!
+) {
+  createIntegrationConnection(input: $input) {
+    integrationConnection {
+      ...IntegrationConnection
+    }
+  }
+}
+
+mutation pingIntegrationConnection($input: PingIntegrationConnectionInput!) {
+  pingIntegrationConnection(input: $input) {
+    duration
+  }
+}
+
+mutation sendIntegrationRequest($input: SendIntegrationRequestInput!) {
+  sendIntegrationRequest(input: $input) {
+    response
+  }
+}
