@@ -1,0 +1,5 @@
+[console_scripts]
+libertem-live-asi-tpx-sim = libertem_live.detectors.asi_tpx3.sim:main
+libertem-live-dectris-sim = libertem_live.detectors.dectris.sim:main
+libertem-live-mib-sim = libertem_live.detectors.merlin.sim:main
+
