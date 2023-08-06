@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Astras/Agniastra.py
+Astras/Brahmastra.py
+Astras/__init__.py
+Astras.egg-info/PKG-INFO
+Astras.egg-info/SOURCES.txt
+Astras.egg-info/dependency_links.txt
+Astras.egg-info/requires.txt
+Astras.egg-info/top_level.txt
