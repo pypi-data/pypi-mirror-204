@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+algorithmselector/__init__.py
+algorithmselector/ml.py
+algorithmselector/plots.py
+algorithmselector_ML.egg-info/PKG-INFO
+algorithmselector_ML.egg-info/SOURCES.txt
+algorithmselector_ML.egg-info/dependency_links.txt
+algorithmselector_ML.egg-info/top_level.txt
+tests/test_algorithmselector.py
