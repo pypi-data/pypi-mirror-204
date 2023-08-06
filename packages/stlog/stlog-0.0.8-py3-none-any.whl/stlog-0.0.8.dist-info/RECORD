@@ -1,0 +1,13 @@
+stlog/__init__.py,sha256=hD-nvBOPfHtvxla_kMSdILvfQJ1f1jvRQJaWprLDpSQ,593
+stlog/adapter.py,sha256=pTCvTeWV5PMYp7uaXa-c2odp31Y75BvKJ-2Eirq9cNM,2658
+stlog/base.py,sha256=p34kpSc9B9t4mCKL78wSrYXNAZD7W8WUMz1MZgYCD30,7632
+stlog/context.py,sha256=gvCPGWR2gNEHmpmWHHyu3z1_8xuIzgQicZ5F5ChThSo,2638
+stlog/formatter.py,sha256=10OGatgzsrAxPv9WdyZZiZ1xD6QJhhO_7wZ_npr6Ej4,12850
+stlog/handler.py,sha256=kSb6OHJON_pCRdw_fUpOviYI4th4tNNT3z3lKF1RQU4,2499
+stlog/kvformatter.py,sha256=2xJTnQfoRSV_aJAsZbQ8xDtU10Zy70W4_o0P0aK2rxg,3284
+stlog/output.py,sha256=ivpV5hUCtwse6IOJjT7zNpVmHgnRTV6aCCmmy9_u6uk,5109
+stlog/setup.py,sha256=RCbzDwae6cjTL3H3mjsWqusgsgi6RdmZ2-vZ_gZWAMA,7070
+stlog-0.0.8.dist-info/LICENSE,sha256=ZzgVG3514rFKF24woGgZxV_JyxbO1cZdWBzza2HQptE,1069
+stlog-0.0.8.dist-info/METADATA,sha256=Ea1ualEp_w7voxd1LuDa4suZJNheRZAeXuh67uEycnw,8917
+stlog-0.0.8.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+stlog-0.0.8.dist-info/RECORD,,
