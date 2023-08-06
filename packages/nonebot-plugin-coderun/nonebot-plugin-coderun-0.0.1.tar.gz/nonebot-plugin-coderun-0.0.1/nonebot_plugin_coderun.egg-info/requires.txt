@@ -1,0 +1,4 @@
+httpx
+nonebot2
+setuptools
+nonebot-adapter-onebot
