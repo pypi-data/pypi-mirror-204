@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rayid.egg-info/PKG-INFO
+rayid.egg-info/SOURCES.txt
+rayid.egg-info/dependency_links.txt
+rayid.egg-info/top_level.txt
