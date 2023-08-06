@@ -1,0 +1,5 @@
+openpyxl>=3.0
+otlmow_model>=2.7.3
+rdflib>=6.0.0
+PyLD>=2.0.0
+prettytable>=3.6.0
