@@ -1,0 +1,12 @@
+cmdgpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cmdgpt/functions.py,sha256=6Wy-5NSRkc224xzrRYrmJXOVU86SrnKPSqbPdsPyVTc,4683
+cmdgpt/main.py,sha256=YE_0AqsgyHkgsgVgF_-caPSMvtmoTzsX47IKPU67Alc,1454
+cmdgpt/openai_func.py,sha256=J-WRDLSMyiA4L0rL0W-WFWVIK2nCoi3Rvi_QIGr9TfQ,1991
+cmdgpt/presets.py,sha256=-EKOvLvJVKWMaiGK2rBjdUWnH2Ym-A9gkph2TUanlCc,3692
+cmdgpt/utils.py,sha256=7zS2HF0b6EXjAUreclLHw6sVVL7RCB0pDZWeBvpIZbE,2809
+cmdgpt-0.4.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+cmdgpt-0.4.0.dist-info/METADATA,sha256=W1SUDrDFzvIdzvM-jrxlkOjWPRHmUK1VB1aly5_K0_Y,1891
+cmdgpt-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cmdgpt-0.4.0.dist-info/entry_points.txt,sha256=o32dxZiBgfjLHNiEbNYSMA6oOta9i8T8BXPkY15Tl9A,44
+cmdgpt-0.4.0.dist-info/top_level.txt,sha256=CcQQTEC3otiXUp7f7QZF_3bcwy690sltt0kbSdps_6Y,7
+cmdgpt-0.4.0.dist-info/RECORD,,
