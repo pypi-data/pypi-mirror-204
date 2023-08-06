@@ -1,0 +1,10 @@
+flarespy/Flare_model.py,sha256=HqYXAzOSSkXoFg7qJPKSk45uf3sJgiIDYobrmJx1t0A,3036
+flarespy/__init__.py,sha256=lc_I6z05lu7zhKU050atg-5P9gPgggTK5WYi8aVD0Ro,118
+flarespy/data/model.dat,sha256=cEsBCV-lZTODTOYJW6h7gXYhwNCbr6N-TdF4aEe9ZlI,569289
+flarespy/flarefinder.py,sha256=UMNDmCQfnUnUkxfpTA2l-EyFQzAVd15gRQVwb-GtoVk,26286
+flarespy/utils.py,sha256=RU6mj8cXHAXAWuqG-fPfr0fk4dbIbWYqAcNNqLULD8I,4590
+flarespy/version.py,sha256=A6fZ_oURo3l_Fa_K29LgV21A4Onqu3NquwGYzL05E1Y,22
+flarespy-0.7.4.dist-info/LICENSE,sha256=Qd7u-lWB4ejFTprlJvWTZiDXCPdnZc15q3mVVT2BdQc,1066
+flarespy-0.7.4.dist-info/METADATA,sha256=ASYf0qOj4crvxVKBiiOnLL975NOgySHWfJsGOWpIl74,726
+flarespy-0.7.4.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+flarespy-0.7.4.dist-info/RECORD,,
