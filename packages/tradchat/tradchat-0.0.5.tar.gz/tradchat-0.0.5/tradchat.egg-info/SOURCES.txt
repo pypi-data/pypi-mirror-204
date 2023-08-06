@@ -1,0 +1,8 @@
+setup.py
+tradchat/Server.py
+tradchat/zip.py
+tradchat.egg-info/PKG-INFO
+tradchat.egg-info/SOURCES.txt
+tradchat.egg-info/dependency_links.txt
+tradchat.egg-info/top_level.txt
+tradchat.egg-info/zip-safe

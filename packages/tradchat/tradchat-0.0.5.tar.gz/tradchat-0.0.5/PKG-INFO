@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tradchat
+Version: 0.0.5
+Summary: Sending a folder to my brother
+Home-page: https://pypi.org/search/?q=tradchat&o=
+Download-URL: https://pypi.org/search/?q=tradchat&o=
+Author: Michael Caggeso
+Author-email: laurencaggeso@gmail.com
+License: Michael`s License
+Requires: girl
+
+Sending a folder to my brother
