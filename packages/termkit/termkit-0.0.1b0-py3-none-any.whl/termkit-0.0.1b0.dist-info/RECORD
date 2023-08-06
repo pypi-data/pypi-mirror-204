@@ -1,0 +1,10 @@
+termkit/__init__.py,sha256=JocH0TZCD6BNpDsamQi5-hE_lKARPMo59g-lqRUQASY,65
+termkit/_formatter.py,sha256=vE6ovrfS2sW3Ct6nIyJOLYadu7o_da-Ljb-yPCwVCBc,2789
+termkit/_helpers.py,sha256=zEZnY2NK3QfkKBeWiQpT7S7Ky9JvBItzRkthgJmpb-c,921
+termkit/core.py,sha256=HZysEQYHJg6eTKA4MID48lb2AtedmOVNu-jUxkFSppI,8264
+termkit/options.py,sha256=3BUDCCtB_i5_DPNV-szfIXFqsBV12djma6SjvnCnyZc,6388
+termkit/tests.py,sha256=Vya4S3NmONphizKJo9NM59RG6bwtGp6FIDwxD-eIF0s,3439
+termkit-0.0.1b0.dist-info/LICENSE,sha256=YXoPahdSDUlDfdPnoGyXVO-Df-V1b5vRz8VmOGkzgcg,1499
+termkit-0.0.1b0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+termkit-0.0.1b0.dist-info/METADATA,sha256=oCy0-BgWJ2flAbN5CZQkNx8OYnYaISajXbKG2fBmwSs,603
+termkit-0.0.1b0.dist-info/RECORD,,
