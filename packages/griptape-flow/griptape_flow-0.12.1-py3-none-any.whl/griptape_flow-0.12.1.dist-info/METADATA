@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: griptape-flow
+Version: 0.12.1
+Summary: Python framework for LLM workflows and pipelines.
+Home-page: https://github.com/griptape-ai/griptape-flow
+License: Apache 2.0
+Author: Griptape
+Author-email: hello@griptape.ai
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: attrs (>=22)
+Requires-Dist: cohere (>=4)
+Requires-Dist: graphlib
+Requires-Dist: griptape-core (>=0.9.2)
+Requires-Dist: huggingface-hub (>=0.13)
+Requires-Dist: jinja2 (>=3.1)
+Requires-Dist: jsonschema (>=4)
+Requires-Dist: marshmallow (>=3)
+Requires-Dist: marshmallow-enum (>=1.5)
+Requires-Dist: openai (>=0.27)
+Requires-Dist: python-dotenv (>=0.21)
+Requires-Dist: rich (>=13)
+Requires-Dist: stopit
+Requires-Dist: tiktoken (>=0.3)
+Requires-Dist: torch (>=2)
+Requires-Dist: transformers (>=4)
+Project-URL: Repository, https://github.com/griptape-ai/griptape-flow
+Description-Content-Type: text/markdown
+
+# griptape-flow
+
+[![Tests](https://github.com/griptape-ai/griptape-flow/actions/workflows/tests.yml/badge.svg)](https://github.com/griptape-ai/griptape-flow/actions/workflows/tests.yml)
+[![PyPI Version](https://img.shields.io/pypi/v/griptape-flow.svg)](https://pypi.python.org/pypi/griptape-flow)
+[![Docs](https://readthedocs.org/projects/griptape/badge/)](https://griptape.readthedocs.io/en/latest/griptape_flow/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/gitbucket/gitbucket/blob/master/LICENSE)
+[![Griptape Discord](https://dcbadge.vercel.app/api/server/gnWRz88eym?compact=true&style=flat)](https://discord.gg/gnWRz88eym)
+
+**griptape-flow** is a Python framework for creating workflow DAGs and pipelines that use large language models (LLMs) such as GPT, Claude, Titan, and Cohere.
+
+**griptape-flow** is part of [griptape](https://github.com/griptape-ai/griptape), a modular Python framework for integrating data, APIs, tools, memory, and chain of thought reasoning into LLMs.
+
+## Documentation
+
+Please refer to [Griptape Docs](https://griptape.readthedocs.io) for:
+
+- Getting started guides. 
+- Core concepts and design overviews.
+- Examples.
+- Contribution guidelines.
+
+## License
+
+griptape-flow is available under the Apache 2.0 License.
+
