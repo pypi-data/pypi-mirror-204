@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: idgenerators
+Version: 1.0.10
+Summary: An id generator that generated various types and lengths ids
+Home-page: https://github.com/ArjanCodes/2023-package
+Author: ArjanCodes
+Author-email: arjan@arjancodes.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# ID Generator
+A package used to generate random ids of variable length
