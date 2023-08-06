@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: webauto_hj3415
+Version: 0.1.2
+Summary: Gathering the stock data
+Project-URL: Homepage, https://pypi.org/project/webauto_hj3415/
+Project-URL: Bug Tracker, https://pypi.org/project/webauto_hj3415/
+Author-email: Hyungjin Kim <hj3415@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: 2captcha-python>=1.2.0
+Requires-Dist: selenium>=4.8.3
+Requires-Dist: util-hj3415>=0.9.6
+Description-Content-Type: text/markdown
+
+# webauto_hj3415 Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+[Tutorials - How to packaging](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+
+
