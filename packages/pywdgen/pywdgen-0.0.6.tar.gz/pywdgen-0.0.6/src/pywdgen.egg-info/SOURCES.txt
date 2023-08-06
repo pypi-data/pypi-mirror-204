@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/pywdgen/__init__.py
+src/pywdgen/checker.py
+src/pywdgen/eval.py
+src/pywdgen/generator.py
+src/pywdgen/hasher.py
+src/pywdgen/main.py
+src/pywdgen.egg-info/PKG-INFO
+src/pywdgen.egg-info/SOURCES.txt
+src/pywdgen.egg-info/dependency_links.txt
+src/pywdgen.egg-info/entry_points.txt
+src/pywdgen.egg-info/top_level.txt
