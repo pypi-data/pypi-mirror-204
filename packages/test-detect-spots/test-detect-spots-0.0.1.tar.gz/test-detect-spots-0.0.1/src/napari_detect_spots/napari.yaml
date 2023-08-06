@@ -1,0 +1,11 @@
+name: test-detect-spots
+display_name: napari Detect Spots
+contributions:
+  commands:
+    - id: test-detect-spots.make_func_widget
+      python_name: napari_detect_spots._widget:detect_spots
+      title: Make example function widget
+  widgets:
+    - command: test-detect-spots.make_func_widget
+      autogenerate: true
+      display_name: Detect Spots Widget

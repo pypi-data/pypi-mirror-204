@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/napari_detect_spots/__init__.py
+src/napari_detect_spots/_widget.py
+src/napari_detect_spots/napari.yaml
+src/napari_detect_spots/_tests/__init__.py
+src/napari_detect_spots/_tests/test_widget.py
+src/test_detect_spots.egg-info/PKG-INFO
+src/test_detect_spots.egg-info/SOURCES.txt
+src/test_detect_spots.egg-info/dependency_links.txt
+src/test_detect_spots.egg-info/entry_points.txt
+src/test_detect_spots.egg-info/requires.txt
+src/test_detect_spots.egg-info/top_level.txt

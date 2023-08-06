@@ -1,0 +1,2 @@
+[napari.manifest]
+test-detect-spots = napari_detect_spots:napari.yaml
