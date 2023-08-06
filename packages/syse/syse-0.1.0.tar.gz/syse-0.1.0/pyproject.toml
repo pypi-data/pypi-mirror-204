@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "syse"
+version = "0.1.0"
+authors = [
+  { name="Jonathon Nicholson", email="Jonathon@apexpromgt.com" },
+]
+description = "Systems & Industrial Engineering Python Package"
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["numpy<=1.23.2"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/apexpromgt/SysE"
+"Documentation" = "https://syse.readthedocs.io/en/latest/"
+"Bug Tracker" = "https://github.com/apexpromgt/SysE/issues"

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/syse/__init__.py
+src/syse/_syse.py
+src/syse.egg-info/PKG-INFO
+src/syse.egg-info/SOURCES.txt
+src/syse.egg-info/dependency_links.txt
+src/syse.egg-info/requires.txt
+src/syse.egg-info/top_level.txt
