@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: stralgo
+Version: 1.1.1
+Summary: A Python library for various string algorithms
+Home-page: https://github.com/DashBing/stralgo/
+Author: DashBing
+Author-email: mcbbkf@outlook.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Chinese (Simplified)
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# stralgo
+A Python library for various string algorithms
