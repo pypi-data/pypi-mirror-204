@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+cppProjectpackage.egg-info/PKG-INFO
+cppProjectpackage.egg-info/SOURCES.txt
+cppProjectpackage.egg-info/dependency_links.txt
+cppProjectpackage.egg-info/requires.txt
+cppProjectpackage.egg-info/top_level.txt
+library/__init__.py
+library/function.py
