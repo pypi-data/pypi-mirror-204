@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: neuro-connector-api
+Version: 2.0.3b0
+Summary: Pushes data to https://${env}.myneuro.ai
+Author: Ben Hesketh
+Author-email: support@myneuro.ai
+License-File: LICENSE
+Requires-Dist: wheel
+Requires-Dist: bar
+Requires-Dist: greek
+Requires-Dist: urllib3
+Requires-Dist: requests
+
+Intended to be used in the command line: python3 -m neuro-connector-api.NeuroConnector --help 
