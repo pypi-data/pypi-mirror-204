@@ -1,0 +1,2 @@
+websockets>=10.3
+aio-mc-rcon>=3.2.0
