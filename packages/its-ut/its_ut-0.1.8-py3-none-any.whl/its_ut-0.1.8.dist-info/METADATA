@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: its-ut
+Version: 0.1.8
+Summary: Framework with some work for the Information Theory & Statistics course at the University of Twente
+Home-page: https://gitlab.utwente.nl/s2300257/information-theory-q3
+Author: Max Resing
+Author-email: pypi.org@maxresing.de
+Maintainer: Max Resing
+Maintainer-email: git@maxresing.de
+License: GPL-3.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Requires-Dist: numpy
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+
