@@ -1,0 +1,14 @@
+timewise/__init__.py,sha256=kkCgnO830sw9cF55O51huvj4hHa8DldNgMLvBjPx2Yg,204
+timewise/big_parent_sample.py,sha256=B7w7TMJx2mohsVfY0RiBHQU9N6mn_MDqrB7Ica0aafU,3480
+timewise/general.py,sha256=jOuTbP_O4d689sb856DC4pHOIL3aFimJTSVyx2VlPFc,1380
+timewise/parent_sample_base.py,sha256=fHRBS791w51JCEwkfrCMyzXSyyc94NNSu-J9AfRFf2E,3298
+timewise/point_source_utils.py,sha256=4dmxfujrrNxDLkh2rVziSR-NNaHzrKFa8xgx_Lj-ZNE,2171
+timewise/utils.py,sha256=YGt98d-UPc7oLLtJXihtbAR4PXnCFV7lRno5A96pxv0,13486
+timewise/wise_bigdata_desy_cluster.py,sha256=CjZGSv6QSvFvWPs9kBuwIHDIQEh8kK9dhltxGDoSFmU,54550
+timewise/wise_data_base.py,sha256=UvXfsCL13W0NAoSK-4GosYTprvyUKnwn7JQZ3XjaraM,71158
+timewise/wise_data_by_visit.py,sha256=c8Rq9i9KnYZ4r12FfpkpEZDmeKRvidv8BYauA__2Xlw,24601
+timewise/wise_flux_conversion_correction.dat,sha256=XLnYqk0g1NVthVSNGsKlqinzKI7QUwJidO-qg4tHXKU,1095
+timewise-0.3.11.dist-info/LICENSE,sha256=sVoNJWiTlH-NarJx0wdsob468Pg3JE6vIIgll4lCa3E,1070
+timewise-0.3.11.dist-info/METADATA,sha256=nVJkfuKCPsEsvD421QsZceTIFfsr_h60l4e36PXI04A,3218
+timewise-0.3.11.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+timewise-0.3.11.dist-info/RECORD,,
