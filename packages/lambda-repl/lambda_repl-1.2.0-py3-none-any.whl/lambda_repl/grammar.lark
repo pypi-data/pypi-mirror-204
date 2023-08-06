@@ -1,0 +1,11 @@
+_WHITESPACE: /\s+/
+
+VARIABLE: /[^\s().λ\\]+/
+
+abstraction: ("\\" | "λ") VARIABLE "." term
+
+application: ( abstraction | VARIABLE | brackets ) ( _WHITESPACE ( abstraction | VARIABLE | brackets ) )+
+
+?brackets: "(" term ")"
+
+?term: abstraction | application | VARIABLE | brackets
