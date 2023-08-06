@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: qodex-moxa-il1214
+Version: 0.0.33
+Author: PunchyArchy
+Requires-Dist: requests
+
+Модуль предназачен для работы с iologik e1214
