@@ -1,0 +1,14 @@
+jguvc_eip/_BasicIOWindowUI.py,sha256=uCjH-RlRmplPckl6Xbe-hTKPt_QA9Rf1cc2WjTYdu14,8608
+jguvc_eip/__init__.py,sha256=Fn5_Dh2bXpr5gsbM8bV46ltK_4a33PQuoSu6k2aX-Zg,49
+jguvc_eip/_io_messages.py,sha256=StcaJLwk9NU5n-PY5YSEtFjJR2-fTs6fnPlUVni3f9s,463
+jguvc_eip/_io_window.py,sha256=ISL0YHl7an2TWMQXhHZPwGsBqBN9QuicM5OwFMBdBd8,21763
+jguvc_eip/_mylabel.py,sha256=00QkGodgWI9YfgCfN7Br1-sH89fuuzqWVurntrtVkOQ,600
+jguvc_eip/basic_io.py,sha256=VUj1v-MpYfFge_AkvL8yRwe-nnyjGlzLdlJG9s__QRI,29299
+jguvc_eip/basic_io_error.py,sha256=J5XrWtsPpHb-o_-b4hCCqGq2m7yJnS_fKPNK1bFWKI0,201
+jguvc_eip/colors.py,sha256=G4Ip4eBaGFngf6TmEB0X0DRTQLjdQ1E03q2e7k3J-cs,9054
+jguvc_eip/image_objects.py,sha256=d3E9SEBcGKPtn8mU_f05FgfR7k3lIVENnr8rpUGWPVw,22365
+jguvc_eip-1.1.dist-info/LICENSE.txt,sha256=fxzOHD2s9OIM1QUz5dHY1uVk6pxiF1Nh7QZ_iJRVY3A,1148
+jguvc_eip-1.1.dist-info/METADATA,sha256=KR4zem3WiqXwEjyr4vj7rHemiWn5STmy5_AtYhlOLMc,1133
+jguvc_eip-1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+jguvc_eip-1.1.dist-info/top_level.txt,sha256=uxiTyl1oImToOdel47RwCMZJi7xKNQfSgCYF32491tg,10
+jguvc_eip-1.1.dist-info/RECORD,,

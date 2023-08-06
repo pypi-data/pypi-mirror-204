@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: jguvc-eip
+Version: 1.1
+Summary: A simple QT-based framework with basic input (keyboard) and output (drawing) capabilities made for educational purposes.
+Home-page: https://luna.informatik.uni-mainz.de/eip23/
+Author: Michael Wand
+Author-email: wandm@uni-mainz.de
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: PyQt5
+Requires-Dist: typeguard (==2.13.3)
+
+# Basic-IO
+
+## Intended Use
+
+This is an educational mini-framework based on PyQt5 with very basic input/output capabilities. The intended use-case are basic programming courses to show students how to use a simple API.
+
+## Authors
+
+This software was developped by the Visual Computing research group of the Johannes-Gutenberg University of Mainz.
+
+## Documentation
+
+Documentation in german can be found here: https://luna.informatik.uni-mainz.de/eip23/basic_io_Handbuch.pdf .
+
+
+[Documentation](https://luna.informatik.uni-mainz.de/eip23/basic_io_Handbuch.pdf)
