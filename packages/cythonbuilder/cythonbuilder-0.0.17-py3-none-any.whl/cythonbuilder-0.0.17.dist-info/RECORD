@@ -1,0 +1,17 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cythonbuilder/__init__.py,sha256=_scmzewJzNuU8DsvrZX5Dwe_d5EPU9vvE9vi4gdb818,248
+cythonbuilder/__main__.py,sha256=jqTl84vFh96bCM08vgx7rXQW4FPoQv_dc5uW-rnJaDs,147
+cythonbuilder/appsettings.py,sha256=9zz0Wf-SXLw-1ntrKsAsQOGqdZ8ywAT7YjUJB71gCnQ,220
+cythonbuilder/cli.py,sha256=Yi9ad70pqpSU2UwpzXPwFydTww7-B1wvrIH0nM64BZo,8207
+cythonbuilder/cython_builder.py,sha256=rMDwLk0YuGUNOnqYKBZjASpydCfFL1Z_DHDauZgtqhw,6800
+cythonbuilder/definitions.py,sha256=B6eXGBrzsBvpzTRAbugkIajHH9WmzlJMVW9CfM5F8ig,721
+cythonbuilder/helpers.py,sha256=ZPeCkpcis_O8WFakFw3rvSZATc19h9DvN49OIhKIIxg,5521
+cythonbuilder/logs.py,sha256=F0U9TXMzDT7ASG1LngFZG85lNkv5EyK8CWCBDEiOmRM,2040
+cythonbuilder/pyigenerator.py,sha256=m389AkGkDVzVLJk0_7_8W4RAL7lWsNGDIorgjTyh_Xw,10942
+cythonbuilder/services_weg.py,sha256=DVxoM_2a-GSXogsq-traz-UuweSGUA5ybEbf_9tNocA,351
+cythonbuilder-0.0.17.dist-info/METADATA,sha256=ej-MJbwDh_bYFIh3pcVBr_QMw3rF2k5uprU-mKgbhJI,5811
+cythonbuilder-0.0.17.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cythonbuilder-0.0.17.dist-info/entry_points.txt,sha256=Vms36PZPmIZLrlf7tl96vHqfqDPbns6goPqDVcCQ5xA,90
+cythonbuilder-0.0.17.dist-info/license.txt,sha256=4hFKETOOwbJcxwq8sLaaHcr5LLKyMvXOrjDd9eb8lBk,1100
+cythonbuilder-0.0.17.dist-info/top_level.txt,sha256=gkwJgm13ZMZOh3EKofTqZPBwK4sBG_zbBGcZx8X6--Y,23
+cythonbuilder-0.0.17.dist-info/RECORD,,
