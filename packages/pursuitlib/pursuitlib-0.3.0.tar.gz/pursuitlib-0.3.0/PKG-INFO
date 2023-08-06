@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pursuitlib
+Version: 0.3.0
+Summary: Provides utility functions
+Home-page: https://gitlab.com/frPursuit/pursuitlib-python
+Author: Pursuit
+Author-email: fr.pursuit@gmail.com
+License: All rights reserved
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Pursuit Library (for Python)
+
+This package provides utility functions. It doesn't have any dependencies.
