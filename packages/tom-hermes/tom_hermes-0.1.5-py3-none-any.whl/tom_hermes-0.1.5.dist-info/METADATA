@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tom-hermes
+Version: 0.1.5
+Summary: A TOM Toolkit Broker module for querying the Hermes Alert API
+License: GPL-3.0-or-later
+Author: Lindy Lindstrom
+Author-email: llindstrom@lco.global
+Requires-Python: >=3.8,<3.12
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: tomtoolkit (>=2.10,<3.0)
+Description-Content-Type: text/markdown
+
+# tom_hermes
+Hermes Broker module for TOM Toolkit
+
