@@ -1,0 +1,136 @@
+Metadata-Version: 2.1
+Name: cogsgpt
+Version: 0.0.3
+Summary: A multi-modal LLM integrated ChatGPT with Azure Cognitive Service
+Author-email: weitian <weitian.bnu@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Tian Wei
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/whiskyboy/cogsgpt
+Keywords: chatgpt,cognitive service,llm
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CogsGPT
+A multi-modal LLM integrated ChatGPT with Azure Cognitive Service, inspired by HuggingGPT.
+
+## Overview
+This project is inspired by [HuggingGPT](https://github.com/microsoft/JARVIS). As the name CogsGPT suggests, it utilizes the ChatGPT model as the language center and integrates with Azure Cognitive Services to achieve multimodal capabilities to some extent.
+
+Typical user cases include:
+
+- Information extraction: Extract the main information from a doc or an image.
+- Image translation: Translate the text in an image to another language.
+- Speech summarization: Summarize a long speech into a short audio clip while retaining the main information.
+- Speech translation: Translate input speech into another language.
+
+There are more user cases waiting for your exploration!
+
+Here is a demo of creating a poem based on an image and converting it into speech in another language.
+
+![demo](./docs/demo.gif)
+
+## Getting Started
+
+### Prerequisites
+
+#### OpenAI Requirements
+
+First, you need to register an [OpenAI](https://platform.openai.com/) account or deploy an [Azure OpenAI Service](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). Follow the official documents to obtain the API key and other resources. 
+
+If you want to use OpenAI API, you need to set these environment variables:
+```bash
+export OPENAI_API_TYPE="openai"
+export OPENAI_API_KEY="<OpenAI API Key>"
+```
+
+If you want to use Azure OpenAI Service, you need to set these environment variables:
+```bash
+export OPENAI_API_TYPE="azure"
+export OPENAI_API_BASE="<Azure OpenAI Service Endpoint>"
+export OPENAI_API_KEY="<Azure OpenAI Service Key>"
+```
+
+#### Azure Cognitive Service Requirements
+
+Next, you need also to deploy an [Azure Cognitive Service](https://azure.microsoft.com/en-us/products/cognitive-services/). Follow the official documents to obtain the deployment key and other resources, and set these environment variables:
+```bash
+export COGS_ENDPOINT="<Azure Cognitive Service Endpoint>"
+export COGS_KEY="<Azure Cognitive Service Key>"
+export COGS_REGION="<Azure Cognitive Service Region>"
+```
+
+#### Platform Requirements
+
+At last, follow the [instruction](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/quickstarts/setup-platform?tabs=windows%2Cubuntu%2Cdotnet%2Cjre%2Cmaven%2Cnodejs%2Cmac%2Cpypi&pivots=programming-language-python#platform-requirements) here to check your platfrom requirments (which is necessary to use Azure Speech SDK for Python)
+
+### Quick Install
+
+You can now install CogsGPT with pip:
+```bash
+pip install cogsgpt
+```
+
+### Usage
+
+You can use CogsGPT in your own application to process image or audio inputs within several lines of codes:
+```python
+from cogsgpt import CogsGPT
+
+if os.environ["OPENAI_API_TYPE"] == "openai":
+    agent = CogsGPT(model_name="gpt-3.5-turbo")
+elif os.environ["OPENAI_API_TYPE"] == "azure":
+    agent = CogsGPT(deployment_name="<YOUR DEPLOYMENT NAME>", openai_api_version="<YOUR DEPLOYMENT VERSION>")
+
+agent.chat("What's the content in a.jpg?")
+```
+
+Or you can experience an interactive console application with the following command:
+```bash
+python ./tests/test_awesome_chat.py
+```
+
+### Gradio App
+
+The Gradio demo is now hosted on [Hugging Face Space](https://huggingface.co/spaces/whiskyboy/CogsGPT). You can also run the following commands to start the demo locally:
+```bash
+pip install gradio
+python app.py
+```
+
+Now open your favorite browser and ENJOY THE CHAT!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Contributing
+
+As an open source project, we welcome contributions and suggestions. Please follow the [fork and pull request](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) workflow to contribute to this project. Please do not try to push directly to this repo unless you are maintainer.
+
+## Contact
+
+If you have any questions, please feel free to contact us via <weitian.bnu@gmail.com>
