@@ -1,0 +1,4 @@
+Click>=8.0.0
+ruamel.yaml>=0.16.13
+pyhcl>=0.4.4
+watchdog>=1.0.0
