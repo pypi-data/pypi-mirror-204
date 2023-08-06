@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/neo_grammar_graph/__init__.py
+src/neo_grammar_graph/gg.py
+src/neo_grammar_graph/helpers.py
+src/neo_grammar_graph/type_defs.py
+src/neo_grammar_graph.egg-info/PKG-INFO
+src/neo_grammar_graph.egg-info/SOURCES.txt
+src/neo_grammar_graph.egg-info/dependency_links.txt
+src/neo_grammar_graph.egg-info/requires.txt
+src/neo_grammar_graph.egg-info/top_level.txt
+tests/test_doctests.py
