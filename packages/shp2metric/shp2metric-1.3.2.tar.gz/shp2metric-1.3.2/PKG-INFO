@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: shp2metric
+Version: 1.3.2
+Summary: Converts Operations Center shapefiles to metric
+License: GPL-3.0-or-later
+Author: João Fauvel
+Author-email: jmmfauvel@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: fiona (>=1.9.3,<2.0.0)
+Requires-Dist: geopandas (>=0.12.2,<0.13.0)
+Requires-Dist: rich (>=13.3.4,<14.0.0)
+Requires-Dist: typer (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# shp2metric
+CLI utility to convert Operations Center shapefiles from imperial to metric and more
