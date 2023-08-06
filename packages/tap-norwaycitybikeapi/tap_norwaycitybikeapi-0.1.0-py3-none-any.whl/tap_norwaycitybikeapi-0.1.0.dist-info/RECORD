@@ -1,0 +1,8 @@
+tap_norwaycitybikeapi/__init__.py,sha256=a7BwTZO6BEkU9PzVnjUL1hD-9TA5I-4nmjPw7cZl3NQ,33
+tap_norwaycitybikeapi/client.py,sha256=EZf1dOEI0P0pfB2GOVs-ipQpRyRQSBjget18ZYgE7aA,2376
+tap_norwaycitybikeapi/streams.py,sha256=PpSucoCVC9Mv2xzW2TgDkZAUFCocaSDX4Ecs7kQMdoo,3069
+tap_norwaycitybikeapi/tap.py,sha256=lBIQBm9QciNQnL9EBiWnkdCj5ascEooZ1cMCOGt0S20,1470
+tap_norwaycitybikeapi-0.1.0.dist-info/METADATA,sha256=L-0g1sUkUeZnAPog5wp8U8p6xBaNF_ZFiDTqClav99o,5060
+tap_norwaycitybikeapi-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+tap_norwaycitybikeapi-0.1.0.dist-info/entry_points.txt,sha256=ez2SHusr9ORdDECkkea1P9MB9PjS5sScvQNoJtXoOwA,92
+tap_norwaycitybikeapi-0.1.0.dist-info/RECORD,,
