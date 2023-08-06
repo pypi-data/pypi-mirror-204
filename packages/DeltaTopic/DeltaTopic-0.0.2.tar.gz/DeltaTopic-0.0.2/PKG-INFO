@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: DeltaTopic
+Version: 0.0.2
+Summary: Packages to implement BALSAM and DeltaTopic as described in the paper: Unraveling dynamically-encoded latent transcriptomic patterns in pancreatic cancer cells by topic modelling
+Home-page: https://github.com/causalpathlab/deltaTopic
+Author: Yichen Zhang
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
