@@ -1,0 +1,1 @@
+this is the readme content of the aacommpy package
