@@ -1,0 +1,13 @@
+sesg/__init__.py,sha256=iLH0HtcHTl1mHXrvHzx6fE6SVgXnw-8KCJbMStlNpTk,47
+sesg/graph.py,sha256=y4SHPa9e6LF2aEnj5kn-bDA3Kf8e9asWXaHeI9xZd4s,8127
+sesg/metrics.py,sha256=0vRnKzjDGE_j23_Ki0HaxMOxEuXkYX91EJPogFgTSuI,6744
+sesg/scopus/__init__.py,sha256=7ZnyxZy9oEid6o5M28KOfW5ufzi27L7d1r1Tlj1Dn80,631
+sesg/scopus/api.py,sha256=mcAYhz0hf9OLcVO8QYxqXqX63qm8yf9hb_-pf8hzKjY,8526
+sesg/scopus/client.py,sha256=pvlC5Uig6deW3YGSWa7ruI9uiMZEmSa8ZTn4kC1jSBs,7159
+sesg/search_string.py,sha256=DWKevSumGve0c0nR1k3fIlaiyqQsYJ2Jy__PUs9eGF0,13843
+sesg/snowballing.py,sha256=rS2Lnea1zl8R6PYVDfdBOBHytcQVNYuIRVj-QFMjXxA,7659
+sesg/topic_extraction.py,sha256=3JSMPeZhO_laqAvVPWmu_uBneTIJsXh4s58QdeM2U_Q,6042
+sesg-0.0.12.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+sesg-0.0.12.dist-info/METADATA,sha256=RaEBTuU-3133EFR_6vVLNretrAvN4L4h23lbZ46SNKY,1825
+sesg-0.0.12.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+sesg-0.0.12.dist-info/RECORD,,
