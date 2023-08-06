@@ -1,0 +1,21 @@
+.DS_Store
+.gitignore
+LICENSE
+README.md
+TODO.md
+pyproject.toml
+Examples/Demonstrations.ipynb
+Examples/KKJ.ipynb
+Examples/Ringflip.ipynb
+Examples/Spin Algebra.ipynb
+Examples/Triangles.ipynb
+Examples/hexamer.ipynb
+src/.DS_Store
+src/commutation/__init__.py
+src/commutation/commutatoralgebra.py
+src/commutation/expression.py
+src/commutation/style.py
+src/commutation.egg-info/PKG-INFO
+src/commutation.egg-info/SOURCES.txt
+src/commutation.egg-info/dependency_links.txt
+src/commutation.egg-info/top_level.txt
