@@ -1,0 +1,27 @@
+{% macro modal(modal, trigger='intersect', empty_on_hide=True) %}
+    <div hx-swap-oob="beforeend:body" @htmx:oobAfterSwap="console.log('lala');">
+        <div class="modal fade" id="{{ modal.id }}">
+            <div class="modal-dialog">
+                <div class="modal-content"
+                     hx-get="{{ modal.url }}"
+                     hx-trigger="{{ trigger }}"
+                     hx-target="this"
+                     hx-swap="innerHTML">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        htmx.on("htmx:oobAfterSwap", function(evt) {
+            $('[id={{ modal.id }}]').not(":last").not(".show").remove();
+        });
+
+        {% if empty_on_hide %}
+            modal = $('[id={{ modal.id }}]:last');
+            modal.on('hidden.bs.modal', function (e) {
+                content = $('[id={{ modal.id }}] div.modal-content');
+                content.empty();
+            })
+        {% endif %}
+    </script>
+{% endmacro %}

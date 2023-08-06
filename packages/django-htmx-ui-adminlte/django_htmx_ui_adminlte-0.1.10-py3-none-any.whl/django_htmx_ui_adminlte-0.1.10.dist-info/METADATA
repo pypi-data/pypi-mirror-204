@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: django_htmx_ui_adminlte
+Version: 0.1.10
+Summary: AdminLTE - Django - HTMX - Jinja powerful combination library
+Project-URL: Homepage, https://github.com/nikalexis/django_htmx_ui_adminlte
+Project-URL: Bug Tracker, https://github.com/nikalexis/django_htmx_ui_adminlte/issues
+Author-email: Nikalexis Nikolaos <nikalexis@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Requires-Dist: django-htmx-ui>=0.1.5
+Requires-Dist: django>=4.1.0
+Description-Content-Type: text/markdown
+
+# Intro
+
+## What is `django_htmx_ui_adminlte` library
+
+This library uses the [AdminLTE](https://adminlte.io/docs/3.2/index.html) template,
+combined with the [django_htmx_ui library](https://pypi.org/project/django-htmx-ui/)
+to include [django](https://www.djangoproject.com/), [htmx](https://htmx.org/),
+[django-htmx](https://django-htmx.readthedocs.io/en/latest/) and
+[jinja](https://jinja.palletsprojects.com/en/3.1.x/) capabilities.
+
+This is under heavy development right now.
