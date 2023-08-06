@@ -1,0 +1,2 @@
+[console_scripts]
+roboformer = roboformer.scripts.cli:cli_main

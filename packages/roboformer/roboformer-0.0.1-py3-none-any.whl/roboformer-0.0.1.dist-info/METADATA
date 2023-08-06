@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: roboformer
+Version: 0.0.1
+Summary: Using toolformer for Embodied AI
+Home-page: https://github.com/codekansas/roboformer
+Author: Benjamin Bolte
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: ml-starter
+Requires-Dist: numpy
+Requires-Dist: torch (>=2.0.0)
+Requires-Dist: transformers
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: cmake ; extra == 'dev'
+Requires-Dist: darglint ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: clang-format ; extra == 'dev'
+Requires-Dist: cmake-format ; extra == 'dev'
+
+# Roboformer
+
+Roboformer, the embodied toolformer.
+
+## Getting Started
+
+### Requirements
+
+- Python 3.10 or above
+- PyTorch 2.0 or above
+
+### Installation
+
+Install using Pip:
+
+> **Warning**
+> This method doens't work yet.
+
+```bash
+pip install roboformer
+```
+
+Install from source:
+
+```bash
+git clone git@github.com:codekansas/roboformer.git
+cd roboformer && pip install -e '.[dev]'
+```
+
+## Training a model
+
+Train a model for a given config:
+
+```bash
+roboformer train configs/roboformer.yaml
+```
