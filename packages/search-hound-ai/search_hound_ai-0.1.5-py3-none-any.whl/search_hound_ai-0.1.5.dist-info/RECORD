@@ -1,0 +1,11 @@
+search_hound_ai/__init__.py,sha256=yuVVYDChiwotwmxRbzCqme76aYi8WuCxrmNDHUBr_sU,504
+search_hound_ai/app.py,sha256=KNXJV_zLQ5jJTZDaIRsDfElMOKaMIP3RUCong_aq2c0,530
+search_hound_ai/app_test.py,sha256=whHC10BmN7RQwXANjEQlvcuHzlwNuhzH87G3MQks69c,369
+search_hound_ai/hound_client_commands.py,sha256=d5FBqA5CbBaFmfKY_LwwLOK0-Je6kGCImR-Ssq6hTIk,392
+search_hound_ai/openai_lib.py,sha256=ppRf_HE3_Q5AIfcIMNkWzvmgRO09bzSYzwsSU7Eim8s,1146
+search_hound_ai/search_hound_lib.py,sha256=8EWFFolxvB12IUVc0GU0ZIKsocPJcscfi6gT8HwjDfQ,465
+search_hound_ai-0.1.5.dist-info/LICENSE,sha256=2oAz2r5hsUn95IjVsNAncpPy7bT_PkoZ-EVxJPfj0nE,1069
+search_hound_ai-0.1.5.dist-info/METADATA,sha256=-oRNMQWhEdSKkFbctkG-HU_MCLtF38Cv7A1FRaBromI,1380
+search_hound_ai-0.1.5.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+search_hound_ai-0.1.5.dist-info/entry_points.txt,sha256=PoAHIARFxAagm57zMPP7T_aFR_E4GePgJi9cK2ZPkyg,50
+search_hound_ai-0.1.5.dist-info/RECORD,,
