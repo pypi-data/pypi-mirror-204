@@ -1,0 +1,12 @@
+numpy
+
+[dev]
+build
+furo
+myst-parser
+pip
+pytest
+sphinx
+sphinx-autodoc-typehints
+sphinx-pyproject
+twine
