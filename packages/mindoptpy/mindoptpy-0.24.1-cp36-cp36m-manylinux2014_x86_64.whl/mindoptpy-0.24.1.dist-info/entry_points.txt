@@ -1,0 +1,3 @@
+[console_scripts]
+mindoptpy = mindoptpy.commands.cmd:run_mindoptpy
+
