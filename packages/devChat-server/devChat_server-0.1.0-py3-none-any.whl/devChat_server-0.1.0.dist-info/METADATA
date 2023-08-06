@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: devChat-server
+Version: 0.1.0
+Summary: server application
+Author: kpomak
+Author-email: romka_ne@mail.ru
+Requires-Dist: pony (>=0.7)
+Requires-Dist: pyqt6 (>=6.4)
+Requires-Dist: pyqt6-tools (>=6.4.2)
+Requires-Dist: pycryptodome (>=3.17)
+
