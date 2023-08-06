@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+a_pandas_ex_inspect2df/LICENSE
+a_pandas_ex_inspect2df/README.md
+a_pandas_ex_inspect2df/__init__.py
+a_pandas_ex_inspect2df/requirements.txt
+a_pandas_ex_inspect2df/thirdparty.json
+a_pandas_ex_inspect2df.egg-info/PKG-INFO
+a_pandas_ex_inspect2df.egg-info/SOURCES.txt
+a_pandas_ex_inspect2df.egg-info/dependency_links.txt
+a_pandas_ex_inspect2df.egg-info/requires.txt
+a_pandas_ex_inspect2df.egg-info/top_level.txt

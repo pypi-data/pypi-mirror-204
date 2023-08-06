@@ -1,0 +1,4 @@
+include a_pandas_ex_inspect2df/requirements.txt
+include a_pandas_ex_inspect2df/thirdparty.json
+include a_pandas_ex_inspect2df/README.md
+include a_pandas_ex_inspect2df/LICENSE
