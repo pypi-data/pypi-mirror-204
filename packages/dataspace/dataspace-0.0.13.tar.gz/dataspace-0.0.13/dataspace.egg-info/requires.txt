@@ -1,0 +1,4 @@
+polars[numpy,pandas,pyarrow]
+altair>=5.0.0rc1
+holoviews
+bokeh
