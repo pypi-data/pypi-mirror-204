@@ -1,0 +1,1 @@
+napari_detect_spots

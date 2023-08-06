@@ -1,0 +1,11 @@
+napari_detect_spots/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+napari_detect_spots/_widget.py,sha256=m3vBz2g0G4uf0EycQUwtYRiBSq_scAQKeo-_vEq56hM,3063
+napari_detect_spots/napari.yaml,sha256=Cfd_afMTPgz61P3vADD8RRyfpoFZlnfysatUMHqMoDs,358
+napari_detect_spots/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_detect_spots/_tests/test_widget.py,sha256=W0_HwKD6j8aKRW5-47zwPSs1NyEdN8400Icb037h6oI,1252
+test_detect_spots-0.0.1.dist-info/LICENSE,sha256=Sr379XmJslzcjx1mt1nOP6CcBOv-dAuBtsslapi0JLI,1484
+test_detect_spots-0.0.1.dist-info/METADATA,sha256=993JVQSAOyTKpCgXk7LHrlsqVLzQ1Omkt9_AzF6vo08,3702
+test_detect_spots-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+test_detect_spots-0.0.1.dist-info/entry_points.txt,sha256=lh6zeGv5rKkQCyPuOfjLSJnfh9aWpRIjEFX2qG9eSKo,70
+test_detect_spots-0.0.1.dist-info/top_level.txt,sha256=9pLQ1WWmIljtExRbqotdOR3eU1wyjx-MufoMm1MdPAY,20
+test_detect_spots-0.0.1.dist-info/RECORD,,
