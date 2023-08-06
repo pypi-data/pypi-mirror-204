@@ -1,0 +1,8 @@
+README.md
+setup.py
+Reporting/Flare_Utilities.egg-info/PKG-INFO
+Reporting/Flare_Utilities.egg-info/SOURCES.txt
+Reporting/Flare_Utilities.egg-info/dependency_links.txt
+Reporting/Flare_Utilities.egg-info/requires.txt
+Reporting/Flare_Utilities.egg-info/top_level.txt
+Reporting/pytransform/__init__.py
