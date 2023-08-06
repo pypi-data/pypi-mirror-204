@@ -1,0 +1,89 @@
+[tool.poetry]
+name = "sesg"
+version = "0.0.12"
+description = "SeSG is a tool developed to help Systematic Literature Review researchers, specifically at the step of building a search string."
+authors = ["Demetrius Panovitch <demetrius.mp789@gmail.com>"]
+license = "GPL-3.0-only"
+readme = "README.md"
+packages = [
+  {include = "sesg", from = "src"}
+]
+classifiers = [
+  "Programming Language :: Python :: 3.10",
+  "Development Status :: 3 - Alpha",
+  "Natural Language :: English",
+  "Intended Audience :: Science/Research",
+]
+
+[tool.poetry.urls]
+Documentation = "https://sesg.readthedocs.io/en/latest/"
+"Source Code" = "https://github.com/demetrius-mp/sesg"
+"Issue Tracker" = "https://github.com/demetrius-mp/sesg/issues"
+
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+bertopic = "^0.14.1"
+thefuzz = {extras = ["speedup"], version = "^0.19.0"}
+aiometer = "^0.4.0"
+httpx = "^0.24.0"
+graphviz = "^0.20.1"
+scikit-learn = "^1.2.2"
+levenshtein = "^0.20.9"
+torch = "^2.0.0"
+nltk = "^3.8.1"
+numpy = "1.23.5"
+umap-learn = "^0.5.3"
+
+[tool.poetry.group.lint.dependencies]
+black = "^23.3.0"
+ruff = "^0.0.261"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.0"
+pytest-cov = "^4.0.0"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.1.6"
+mkdocstrings = "^0.21.2"
+mkdocstrings-python = "^0.9.0"
+mkdocs-gen-files = "^0.4.0"
+mkdocs-literate-nav = "^0.6.0"
+mkdocs-section-index = "^0.3.5"
+
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.10.4"
+
+[tool.ruff]
+extend-select = ["I001"]
+unfixable = ["F841"]
+exclude = [".venv"]
+ignore-init-module-imports = true
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.ruff.isort]
+lines-after-imports = 2
+known-first-party = ["experiment"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "--doctest-modules"
+
+[tool.taskipy.tasks]
+lint = { cmd = "ruff src/sesg", help = "Lints the package with ruff." }
+lint-fix = { cmd = "ruff src/sesg --fix", help = "Fixes all lint errors reported by ruff." }
+fmt = { cmd = "task lint-fix && black src/sesg", help = "Formats the package with black, after fixing lint errors." }
+docs = { cmd = "mkdocs serve", help = "Starts mkdocs development server." }
+pre_test = { cmd = "task lint", help = "Only run tests if the code does not have any lint errors." }
+test = { cmd = "pytest -s -x --cov=sesg -vv src/sesg", help = "Runs pytest with coverage." }
+post_test = { cmd = "coverage html", help = "Creates coverage reports if tests are successfull." }
+show-coverage = { cmd = "google-chrome htmlcov/index.html", help = "Opens the coverage reports with google-chrome." }
+export-dependencies = { cmd = "python scripts/export_dependencies.py", help = "Exports dependencies to a requirements.txt format, one file for each group of depencies." }
