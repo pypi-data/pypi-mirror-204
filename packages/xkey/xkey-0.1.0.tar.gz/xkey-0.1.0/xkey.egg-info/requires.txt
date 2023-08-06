@@ -1,0 +1,16 @@
+
+[tests]
+black
+coverage
+ruff
+types-setuptools
+isort
+mypy
+pip-tools
+mock
+pytest
+pytest-cov
+responses
+tox
+sphinx
+furo

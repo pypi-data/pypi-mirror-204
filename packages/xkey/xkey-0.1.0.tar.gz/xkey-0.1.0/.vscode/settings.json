@@ -1,0 +1,13 @@
+{
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        },
+    },
+    "editor.rulers": [
+        88
+    ],
+}
