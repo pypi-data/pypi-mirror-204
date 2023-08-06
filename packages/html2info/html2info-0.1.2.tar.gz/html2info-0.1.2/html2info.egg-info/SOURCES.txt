@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+html2info/__init__.py
+html2info/linkedin.py
+html2info/utils.py
+html2info.egg-info/PKG-INFO
+html2info.egg-info/SOURCES.txt
+html2info.egg-info/dependency_links.txt
+html2info.egg-info/requires.txt
+html2info.egg-info/top_level.txt
