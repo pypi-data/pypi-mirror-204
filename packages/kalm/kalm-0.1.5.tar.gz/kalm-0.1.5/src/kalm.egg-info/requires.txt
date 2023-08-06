@@ -1,0 +1,11 @@
+redis
+pynetbox
+wheel
+hvac
+netbox
+
+[dev]
+check-manifest
+
+[test]
+coverage
