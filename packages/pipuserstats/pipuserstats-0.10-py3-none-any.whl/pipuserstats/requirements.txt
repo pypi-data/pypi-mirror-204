@@ -1,0 +1,7 @@
+beautifulsoup4
+cprinter
+list_all_files_recursively
+pandas
+platformdirs
+pypistats
+Requests
