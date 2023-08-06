@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "windeurope72hours"
+version = "0.1.2"
+description = ""
+authors = ["Marcus Lugg <marcus@octue.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "elevations_client"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.28.2"
+h3 = "^3.7.6"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.2.2"
+coverage = "^7.2.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
