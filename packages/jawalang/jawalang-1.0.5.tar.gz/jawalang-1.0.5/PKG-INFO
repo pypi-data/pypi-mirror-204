@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: jawalang
+Version: 1.0.5
+Summary: Javanese programming language base on python
+Home-page: https://github.com/Arsybai/jawa-language
+Author: Arsybai
+Author-email: me@arsybai.com
+License: MIT
+Keywords: programming languages,languages
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Jawa-Language
+Jawa-Language, Programming language for javanese people.
+this language is based on python.
+
+### Required
+- Python 3.x
+
+### Installation
+```shell
+> pip3 install jawalang
+```
+Or clone this repository and 
+```shell
+> pip3 install -e .
+```
+
+## Run
+```shell
+> jawalang run <your_file.jw>
+```
+
+### Syntax Highlighter
+Install Visual Studio Code extension
+[Jawa-Language-Support](https://marketplace.visualstudio.com/items?itemName=arsybai.jawa-language-support)
+
+### Example
+You can find more in `example` folder
+```python
+a = 0
+b = 1
+
+# if a == b
+yen a podo karo b:
+    nyetak("podo")
+# elif a != b:
+liyane tur a bedo karo b:
+    nyetak("bedo")
+# else
+liyane:
+    nyetak("Bedo cuk")
+
+# Short hand if else
+nyetak("Bedo") yen a bedo karo b liyane nyetak("podo")
+```
