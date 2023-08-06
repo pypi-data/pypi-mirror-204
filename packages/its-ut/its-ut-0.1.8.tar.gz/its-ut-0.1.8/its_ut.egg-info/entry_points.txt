@@ -1,0 +1,2 @@
+[console_scripts]
+its-ut = its.main:main
