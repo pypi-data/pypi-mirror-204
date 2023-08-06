@@ -1,0 +1,11 @@
+napari_zulip/__init__.py,sha256=CITxcRMjmDZv0Vq7q8GTIF7X_jy1bynLCPRoRwKsb50,105
+napari_zulip/_widget.py,sha256=W7DoHWJ1gVcfrjxP34RbzPULgxeL6RmfErKXbWXW6pc,1751
+napari_zulip/napari.yaml,sha256=u_voJpw-JGDuJbbPJOPxObFczcWvVm0UYI84OcBvJTA,342
+napari_zulip/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_zulip/_tests/test_widget.py,sha256=hanGANwsQez6Z1keeIxvZSHmav_DgLM70pSx9oRjNlo,325
+napari_zulip-0.0.2.dist-info/LICENSE,sha256=WB6_YsX93XQkVivwstOeDTWiFWjZ9PDbykbFLVWZc4M,1491
+napari_zulip-0.0.2.dist-info/METADATA,sha256=P2FzDrj-uwGw9JCH4CCifdMa-mk2k10DXIM062c8BMM,4800
+napari_zulip-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+napari_zulip-0.0.2.dist-info/entry_points.txt,sha256=vPWhRHVXfP8Cu8w438OC4E1_YwA6CFJ77sRgqYMWRAw,58
+napari_zulip-0.0.2.dist-info/top_level.txt,sha256=VSLz-0Cg7z1xrZkq7NDXdIuFw6LgnBgK6MjVqEbWDwU,13
+napari_zulip-0.0.2.dist-info/RECORD,,
