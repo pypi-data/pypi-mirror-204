@@ -1,0 +1,1530 @@
+TESTS-clauses.call.Call1.xml:[10] In-query call to procedure should fail if too many explicit argument are given
+TESTS-clauses.call.Call1.xml:[11] Standalone call to procedure should fail if implicit argument is missing
+TESTS-clauses.call.Call1.xml:[12] In-query call to procedure that has outputs fails if no outputs are yielded
+TESTS-clauses.call.Call1.xml:[15] In-query procedure call should fail if shadowing an already bound variable
+TESTS-clauses.call.Call1.xml:[16] In-query procedure call should fail if one of the argument expressions uses an aggregation function
+TESTS-clauses.call.Call1.xml:[1] Standalone call to procedure that takes no arguments and yields no results
+TESTS-clauses.call.Call1.xml:[2] Standalone call to procedure that takes no arguments and yields no results, called with implicit arguments
+TESTS-clauses.call.Call1.xml:[3] In-query call to procedure that takes no arguments and yields no results
+TESTS-clauses.call.Call1.xml:[4] In-query call to procedure that takes no arguments and yields no results and consumes no rows
+TESTS-clauses.call.Call1.xml:[5] Standalone call to STRING procedure that takes no arguments
+TESTS-clauses.call.Call1.xml:[6] In-query call to STRING procedure that takes no arguments
+TESTS-clauses.call.Call1.xml:[7] Standalone call to procedure should fail if explicit argument is missing
+TESTS-clauses.call.Call1.xml:[8] In-query call to procedure should fail if explicit argument is missing
+TESTS-clauses.call.Call1.xml:[9] Standalone call to procedure should fail if too many explicit argument are given
+TESTS-clauses.call.Call2.xml:[1] In-query call to procedure with explicit arguments
+TESTS-clauses.call.Call2.xml:[2] Standalone call to procedure with explicit arguments
+TESTS-clauses.call.Call2.xml:[3] Standalone call to procedure with implicit arguments
+TESTS-clauses.call.Call2.xml:[4] In-query call to procedure that takes arguments fails when trying to pass them implicitly
+TESTS-clauses.call.Call2.xml:[5] Standalone call to procedure should fail if input type is wrong
+TESTS-clauses.call.Call2.xml:[6] In-query call to procedure should fail if input type is wrong
+TESTS-clauses.call.Call3.xml:[1] Standalone call to procedure with argument of type NUMBER accepts value of type INTEGER
+TESTS-clauses.call.Call3.xml:[2] In-query call to procedure with argument of type NUMBER accepts value of type INTEGER
+TESTS-clauses.call.Call3.xml:[3] Standalone call to procedure with argument of type NUMBER accepts value of type FLOAT
+TESTS-clauses.call.Call3.xml:[4] In-query call to procedure with argument of type NUMBER accepts value of type FLOAT
+TESTS-clauses.call.Call3.xml:[5] Standalone call to procedure with argument of type FLOAT accepts value of type INTEGER
+TESTS-clauses.call.Call3.xml:[6] In-query call to procedure with argument of type FLOAT accepts value of type INTEGER
+TESTS-clauses.call.Call4.xml:[1] Standalone call to procedure with null argument
+TESTS-clauses.call.Call4.xml:[2] In-query call to procedure with null argument
+TESTS-clauses.call.Call5.xml:[1] Explicit procedure result projection
+TESTS-clauses.call.Call5.xml:[2] Explicit procedure result projection with RETURN *
+TESTS-clauses.call.Call5.xml:[3] The order of yield items is irrelevant -- @1.1
+TESTS-clauses.call.Call5.xml:[3] The order of yield items is irrelevant -- @1.2
+TESTS-clauses.call.Call5.xml:[4] Rename outputs to unbound variable names -- @1.1
+TESTS-clauses.call.Call5.xml:[4] Rename outputs to unbound variable names -- @1.10
+TESTS-clauses.call.Call5.xml:[4] Rename outputs to unbound variable names -- @1.11
+TESTS-clauses.call.Call5.xml:[4] Rename outputs to unbound variable names -- @1.2
+TESTS-clauses.call.Call5.xml:[4] Rename outputs to unbound variable names -- @1.3
+TESTS-clauses.call.Call5.xml:[4] Rename outputs to unbound variable names -- @1.4
+TESTS-clauses.call.Call5.xml:[4] Rename outputs to unbound variable names -- @1.5
+TESTS-clauses.call.Call5.xml:[4] Rename outputs to unbound variable names -- @1.6
+TESTS-clauses.call.Call5.xml:[4] Rename outputs to unbound variable names -- @1.7
+TESTS-clauses.call.Call5.xml:[4] Rename outputs to unbound variable names -- @1.8
+TESTS-clauses.call.Call5.xml:[4] Rename outputs to unbound variable names -- @1.9
+TESTS-clauses.call.Call5.xml:[5] Fail on renaming to an already bound variable name
+TESTS-clauses.call.Call5.xml:[6] Fail on renaming all outputs to the same variable name
+TESTS-clauses.call.Call5.xml:[7] Fail on in-query call to procedure with YIELD *
+TESTS-clauses.call.Call5.xml:[8] Allow standalone call to procedure with YIELD *
+TESTS-clauses.call.Call6.xml:[1] Calling the same STRING procedure twice using the same outputs in each call
+TESTS-clauses.call.Call6.xml:[2] Project procedure results between query scopes with WITH clause
+TESTS-clauses.call.Call6.xml:[3] Project procedure results between query scopes with WITH clause and rename the projection
+TESTS-clauses.create.Create3.xml:[11] WITH-MERGE-CREATE: A bound node should be recognized after projection with WITH + MERGE node
+TESTS-clauses.create.Create3.xml:[12] WITH-MERGE-CREATE: A bound node should be recognized after projection with WITH + MERGE pattern
+TESTS-clauses.create.Create3.xml:[13] Merge followed by multiple creates
+TESTS-clauses.delete.Delete1.xml:[8] Failing when deleting a label
+TESTS-clauses.delete.Delete3.xml:[1] Detach deleting paths
+TESTS-clauses.delete.Delete5.xml:[5] Detach delete nodes from nested map/list
+TESTS-clauses.delete.Delete5.xml:[6] Delete relationships from nested map/list
+TESTS-clauses.delete.Delete5.xml:[7] Delete paths from nested map/list
+TESTS-clauses.delete.Delete5.xml:[9] Failing when deleting an integer expression
+TESTS-clauses.match-where.MatchWhere1.xml:[12] Filter path with path length predicate on multi variables with one binding
+TESTS-clauses.match-where.MatchWhere1.xml:[13] Filter path with false path length predicate on multi variables with one binding
+TESTS-clauses.match-where.MatchWhere1.xml:[15] Fail on aggregation in WHERE
+TESTS-clauses.match-where.MatchWhere2.xml:[2] Filter node with conjunctive multi-part property predicates on multi variables with multiple bindings
+TESTS-clauses.match-where.MatchWhere4.xml:[2] Join with disjunctive multi-part predicates including patterns
+TESTS-clauses.match-where.MatchWhere6.xml:[2] Filter node with false node label predicate after OPTIONAL MATCH
+TESTS-clauses.match-where.MatchWhere6.xml:[4] Do not fail when predicates on optionally matched and missed nodes are invalid
+TESTS-clauses.match-where.MatchWhere6.xml:[5] Matching and optionally matching with unbound nodes and equality predicate in reverse direction
+TESTS-clauses.match-where.MatchWhere6.xml:[6] Join nodes on non-equality of properties – OPTIONAL MATCH and WHERE
+TESTS-clauses.match-where.MatchWhere6.xml:[7] Join nodes on non-equality of properties – OPTIONAL MATCH on two relationships and WHERE
+TESTS-clauses.match-where.MatchWhere6.xml:[8] Join nodes on non-equality of properties – Two OPTIONAL MATCH clauses and WHERE
+TESTS-clauses.match.Match4.xml:[7] Matching variable length patterns including a bound relationship
+TESTS-clauses.match.Match4.xml:[8] Matching relationships into a list and matching variable length using the list
+TESTS-clauses.match.Match7.xml:[11] Return two subgraphs with bound undirected relationship and optional relationship
+TESTS-clauses.match.Match7.xml:[16] Optionally matching named paths - null result
+TESTS-clauses.match.Match7.xml:[17] Optionally matching named paths - existing result
+TESTS-clauses.match.Match7.xml:[18] Named paths inside optional matches with node predicates
+TESTS-clauses.match.Match7.xml:[19] Optionally matching named paths with single and variable length patterns
+TESTS-clauses.match.Match7.xml:[20] Variable length optional relationships with bound nodes, no matches
+TESTS-clauses.match.Match7.xml:[22] MATCH after OPTIONAL MATCH
+TESTS-clauses.match.Match7.xml:[24] Optionally matching self-loops
+TESTS-clauses.match.Match7.xml:[29] Satisfies the open world assumption, relationships between same nodes
+TESTS-clauses.match.Match8.xml:[2] Counting rows after MATCH, MERGE, OPTIONAL MATCH
+TESTS-clauses.match.Match9.xml:[1] Variable length relationship variables are lists of relationships
+TESTS-clauses.match.Match9.xml:[6] Matching relationships into a list and matching variable length using the list, with bound nodes
+TESTS-clauses.match.Match9.xml:[7] Matching relationships into a list and matching variable length using the list, with bound nodes, wrong direction
+TESTS-clauses.match.Match9.xml:[9] Optionally matching named paths with variable length patterns
+TESTS-clauses.merge.Merge1.xml:[10] Merge must properly handle multiple labels
+TESTS-clauses.merge.Merge1.xml:[11] Merge should be able to merge using property of bound node
+TESTS-clauses.merge.Merge1.xml:[12] Merge should be able to merge using property of freshly created node
+TESTS-clauses.merge.Merge1.xml:[13] Merge should bind a path
+TESTS-clauses.merge.Merge1.xml:[14] Merges should not be able to match on deleted nodes
+TESTS-clauses.merge.Merge1.xml:[1] Merge node when no nodes exist
+TESTS-clauses.merge.Merge1.xml:[2] Merge node with label
+TESTS-clauses.merge.Merge1.xml:[3] Merge node with label when it exists
+TESTS-clauses.merge.Merge1.xml:[4] Merge node should create when it doesn't match, properties
+TESTS-clauses.merge.Merge1.xml:[5] Merge node should create when it doesn't match, properties and label
+TESTS-clauses.merge.Merge1.xml:[6] Merge node with prop and label
+TESTS-clauses.merge.Merge1.xml:[7] Merge should work when finding multiple elements
+TESTS-clauses.merge.Merge1.xml:[8] Merge should handle argument properly
+TESTS-clauses.merge.Merge1.xml:[9] Merge should support updates while merging
+TESTS-clauses.merge.Merge2.xml:[1] Merge node with label add label on create
+TESTS-clauses.merge.Merge2.xml:[2] ON CREATE on created nodes
+TESTS-clauses.merge.Merge2.xml:[3] Merge node with label add property on create
+TESTS-clauses.merge.Merge2.xml:[4] Merge node with label add property on update when it exists
+TESTS-clauses.merge.Merge2.xml:[5] Merge should be able to use properties of bound node in ON CREATE
+TESTS-clauses.merge.Merge3.xml:[1] Merge should be able to set labels on match
+TESTS-clauses.merge.Merge3.xml:[2] Merge node with label add label on match when it exists
+TESTS-clauses.merge.Merge3.xml:[3] Merge node and set property on match
+TESTS-clauses.merge.Merge3.xml:[4] Merge should be able to use properties of bound node in ON MATCH
+TESTS-clauses.merge.Merge4.xml:[1] Merge should be able to set labels on match and on create
+TESTS-clauses.merge.Merge4.xml:[2] Merge should be able to use properties of bound node in ON MATCH and ON CREATE
+TESTS-clauses.merge.Merge5.xml:[10] Merge should bind a path
+TESTS-clauses.merge.Merge5.xml:[11] Use outgoing direction when unspecified
+TESTS-clauses.merge.Merge5.xml:[12] Match outgoing relationship when direction unspecified
+TESTS-clauses.merge.Merge5.xml:[13] Match both incoming and outgoing relationships when direction unspecified
+TESTS-clauses.merge.Merge5.xml:[14] Using list properties via variable
+TESTS-clauses.merge.Merge5.xml:[15] Matching using list property
+TESTS-clauses.merge.Merge5.xml:[16] Aliasing of existing nodes 1
+TESTS-clauses.merge.Merge5.xml:[17] Aliasing of existing nodes 2
+TESTS-clauses.merge.Merge5.xml:[18] Double aliasing of existing nodes 1
+TESTS-clauses.merge.Merge5.xml:[19] Double aliasing of existing nodes 2
+TESTS-clauses.merge.Merge5.xml:[1] Creating a relationship
+TESTS-clauses.merge.Merge5.xml:[20] Do not match on deleted entities
+TESTS-clauses.merge.Merge5.xml:[21] Do not match on deleted relationships
+TESTS-clauses.merge.Merge5.xml:[2] Matching a relationship
+TESTS-clauses.merge.Merge5.xml:[3] Matching two relationships
+TESTS-clauses.merge.Merge5.xml:[4] Using bound variables from other updating clause
+TESTS-clauses.merge.Merge5.xml:[5] Filtering relationships
+TESTS-clauses.merge.Merge5.xml:[6] Creating relationship when all matches filtered out
+TESTS-clauses.merge.Merge5.xml:[7] Matching incoming relationship
+TESTS-clauses.merge.Merge5.xml:[8] Creating relationship with property
+TESTS-clauses.merge.Merge5.xml:[9] Creating relationship using merged nodes
+TESTS-clauses.merge.Merge6.xml:[1] Using ON CREATE on a node
+TESTS-clauses.merge.Merge6.xml:[2] Using ON CREATE on a relationship
+TESTS-clauses.merge.Merge6.xml:[3] Updating one property with ON CREATE
+TESTS-clauses.merge.Merge6.xml:[4] Null-setting one property with ON CREATE
+TESTS-clauses.merge.Merge6.xml:[6] Copying properties from node with ON CREATE
+TESTS-clauses.merge.Merge6.xml:[7] Copying properties from literal map with ON CREATE
+TESTS-clauses.merge.Merge7.xml:[1] Using ON MATCH on created node
+TESTS-clauses.merge.Merge7.xml:[2] Using ON MATCH on created relationship
+TESTS-clauses.merge.Merge7.xml:[3] Using ON MATCH on a relationship
+TESTS-clauses.merge.Merge7.xml:[4] Copying properties from node with ON MATCH
+TESTS-clauses.merge.Merge7.xml:[5] Copying properties from literal map with ON MATCH
+TESTS-clauses.merge.Merge8.xml:[1] Using ON CREATE and ON MATCH
+TESTS-clauses.merge.Merge9.xml:[1] UNWIND with one MERGE
+TESTS-clauses.merge.Merge9.xml:[2] UNWIND with multiple MERGE
+TESTS-clauses.merge.Merge9.xml:[3] Mixing MERGE with CREATE
+TESTS-clauses.merge.Merge9.xml:[4] MERGE after WITH with predicate and WITH with aggregation
+TESTS-clauses.return-orderby.ReturnOrderBy1.xml:[10] ORDER BY DESC should order lists in the expected order
+TESTS-clauses.return-orderby.ReturnOrderBy1.xml:[11] ORDER BY should order distinct types in the expected order
+TESTS-clauses.return-orderby.ReturnOrderBy1.xml:[12] ORDER BY DESC should order distinct types in the expected order
+TESTS-clauses.return-orderby.ReturnOrderBy1.xml:[9] ORDER BY should order lists in the expected order
+TESTS-clauses.return-orderby.ReturnOrderBy2.xml:[12] Aggregation of named paths
+TESTS-clauses.return-orderby.ReturnOrderBy2.xml:[13] Fail when sorting on variable removed by DISTINCT
+TESTS-clauses.return-orderby.ReturnOrderBy6.xml:[1] Handle constants and parameters inside an order by item which contains an aggregation expression
+TESTS-clauses.return-orderby.ReturnOrderBy6.xml:[2] Handle returned aliases inside an order by item which contains an aggregation expression
+TESTS-clauses.return-orderby.ReturnOrderBy6.xml:[3] Handle returned property accesses inside an order by item which contains an aggregation expression
+TESTS-clauses.return.Return2.xml:[14] Do not fail when returning type of deleted relationships
+TESTS-clauses.return.Return4.xml:[4] Keeping used expression 1
+TESTS-clauses.return.Return4.xml:[7] Keeping used expression 4
+TESTS-clauses.return.Return5.xml:[1] DISTINCT inside aggregation should work with lists in maps
+TESTS-clauses.return.Return5.xml:[3] DISTINCT inside aggregation should work with nested lists in maps
+TESTS-clauses.return.Return5.xml:[4] DISTINCT inside aggregation should work with nested lists of maps in maps
+TESTS-clauses.return.Return5.xml:[5] Aggregate on list values
+TESTS-clauses.return.Return6.xml:[13] Returning the minimum length of paths
+TESTS-clauses.return.Return6.xml:[15] Using `rand()` in aggregations
+TESTS-clauses.return.Return6.xml:[16] Aggregation on complex expressions
+TESTS-clauses.return.Return6.xml:[17] Handle constants and parameters inside an expression which contains an aggregation expression
+TESTS-clauses.return.Return6.xml:[20] Fail if not returned variables are used inside an expression which contains an aggregation expression
+TESTS-clauses.return.Return6.xml:[21] Fail if more complex expressions, even if returned, are used inside expression which contains an aggregation expression
+TESTS-clauses.return.Return6.xml:[4] Support multiple divisions in aggregate function
+TESTS-clauses.return.Return6.xml:[8] Handle aggregation on functions
+TESTS-clauses.set.Set1.xml:[10] Failing when setting a list of maps as a property
+TESTS-clauses.set.Set1.xml:[8] Ignore null when setting property
+TESTS-clauses.set.Set2.xml:[1] Setting a node property to null removes the existing property
+TESTS-clauses.set.Set2.xml:[2] Setting a node property to null removes the existing property, but not before SET
+TESTS-clauses.set.Set2.xml:[3] Setting a relationship property to null removes the existing property
+TESTS-clauses.set.Set4.xml:[3] Null values in a property map are removed with SET
+TESTS-clauses.set.Set4.xml:[5] Ignore null when setting properties using an overriding map
+TESTS-clauses.set.Set5.xml:[1] Ignore null when setting properties using an appending map
+TESTS-clauses.set.Set5.xml:[4] Explicit null values in a map remove old values
+TESTS-clauses.unwind.Unwind1.xml:[14] Unwind with merge
+TESTS-clauses.unwind.Unwind1.xml:[6] Creating nodes from an unwound parameter list
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[10] Sort lists in descending order
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[11] Sort dates in ascending order
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[12] Sort dates in descending order
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[13] Sort local times in ascending order
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[14] Sort local times in descending order
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[15] Sort times in ascending order
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[16] Sort times in descending order
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[17] Sort local date times in ascending order
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[18] Sort local date times in descending order
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[19] Sort date times in ascending order
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[20] Sort date times in descending order
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[21] Sort distinct types in ascending order
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[22] Sort distinct types in descending order
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[33] Sort by a date variable projected from a node property in ascending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[33] Sort by a date variable projected from a node property in ascending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[33] Sort by a date variable projected from a node property in ascending order -- @1.3
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[34] Sort by a date variable projected from a node property in descending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[34] Sort by a date variable projected from a node property in descending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[35] Sort by a local time variable projected from a node property in ascending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[35] Sort by a local time variable projected from a node property in ascending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[35] Sort by a local time variable projected from a node property in ascending order -- @1.3
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[36] Sort by a local time variable projected from a node property in descending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[36] Sort by a local time variable projected from a node property in descending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[37] Sort by a time variable projected from a node property in ascending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[37] Sort by a time variable projected from a node property in ascending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[37] Sort by a time variable projected from a node property in ascending order -- @1.3
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[38] Sort by a time variable projected from a node property in descending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[38] Sort by a time variable projected from a node property in descending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[39] Sort by a local date time variable projected from a node property in ascending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[39] Sort by a local date time variable projected from a node property in ascending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[39] Sort by a local date time variable projected from a node property in ascending order -- @1.3
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[40] Sort by a local date time variable projected from a node property in descending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[40] Sort by a local date time variable projected from a node property in descending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[41] Sort by a date time variable projected from a node property in ascending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[41] Sort by a date time variable projected from a node property in ascending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[41] Sort by a date time variable projected from a node property in ascending order -- @1.3
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[42] Sort by a date time variable projected from a node property in descending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[42] Sort by a date time variable projected from a node property in descending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[45] Sort order should be consistent with comparisons where comparisons are defined #Example: dates -- @1.6
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[45] Sort order should be consistent with comparisons where comparisons are defined #Example: datetimes -- @1.10
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[45] Sort order should be consistent with comparisons where comparisons are defined #Example: lists -- @1.5
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[45] Sort order should be consistent with comparisons where comparisons are defined #Example: localdatetimes -- @1.9
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[45] Sort order should be consistent with comparisons where comparisons are defined #Example: localtimes -- @1.7
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[45] Sort order should be consistent with comparisons where comparisons are defined #Example: times -- @1.8
+TESTS-clauses.with-orderBy.WithOrderBy1.xml:[9] Sort lists in ascending order
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[11] Sort by a date expression in ascending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[11] Sort by a date expression in ascending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[11] Sort by a date expression in ascending order -- @1.3
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[12] Sort by a date expression in descending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[12] Sort by a date expression in descending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[13] Sort by a local time expression in ascending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[13] Sort by a local time expression in ascending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[13] Sort by a local time expression in ascending order -- @1.3
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[14] Sort by a local time expression in descending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[14] Sort by a local time expression in descending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[15] Sort by a time expression in ascending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[15] Sort by a time expression in ascending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[15] Sort by a time expression in ascending order -- @1.3
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[16] Sort by a time expression in descending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[16] Sort by a time expression in descending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[17] Sort by a local date time expression in ascending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[17] Sort by a local date time expression in ascending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[17] Sort by a local date time expression in ascending order -- @1.3
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[18] Sort by a local date time expression in descending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[18] Sort by a local date time expression in descending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[19] Sort by a date time expression in ascending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[19] Sort by a date time expression in ascending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[19] Sort by a date time expression in ascending order -- @1.3
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[20] Sort by a date time expression in descending order -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[20] Sort by a date time expression in descending order -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[22] Sort by an expression that is only partially orderable on a non-distinct binding table, but used as a grouping key -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[22] Sort by an expression that is only partially orderable on a non-distinct binding table, but used as a grouping key -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[23] Sort by an expression that is only partially orderable on a non-distinct binding table, but used in parts as a grouping key -- @1.1
+TESTS-clauses.with-orderBy.WithOrderBy2.xml:[23] Sort by an expression that is only partially orderable on a non-distinct binding table, but used in parts as a grouping key -- @1.2
+TESTS-clauses.with-orderBy.WithOrderBy4.xml:[11] Sort by an aggregate projection
+TESTS-clauses.with-orderBy.WithOrderBy4.xml:[16] Handle constants and parameters inside an order by item which contains an aggregation expression
+TESTS-clauses.with-orderBy.WithOrderBy4.xml:[17] Handle projected variables inside an order by item which contains an aggregation expression
+TESTS-clauses.with-orderBy.WithOrderBy4.xml:[18]  Handle projected property accesses inside an order by item which contains an aggregation expression
+TESTS-clauses.with-skip-limit.WithSkipLimit1.xml:[1] Handle dependencies across WITH with SKIP
+TESTS-clauses.with-skip-limit.WithSkipLimit2.xml:[2] Handle dependencies across WITH with LIMIT
+TESTS-clauses.with-where.WithWhere1.xml:[2] Filter node with property predicate on a single variable with multiple distinct bindings
+TESTS-clauses.with-where.WithWhere1.xml:[3] Filter for an unbound relationship variable
+TESTS-clauses.with-where.WithWhere1.xml:[4] Filter for an unbound node variable
+TESTS-clauses.with-where.WithWhere2.xml:[2] Filter node with conjunctive multi-part property predicates on multi variables with multiple bindings
+TESTS-clauses.with-where.WithWhere4.xml:[2] Join with disjunctive multi-part predicates including patterns
+TESTS-clauses.with-where.WithWhere7.xml:[1] WHERE sees a variable bound before but not after WITH
+TESTS-clauses.with-where.WithWhere7.xml:[3] WHERE sees both, variable bound before but not after WITH and variable bound after but not before WITH
+TESTS-clauses.with.With2.xml:[1] Forwarding a property to express a join
+TESTS-clauses.with.With6.xml:[4] Implicit grouping with single path variable as grouping key and single aggregation
+TESTS-clauses.with.With6.xml:[5] Handle constants and parameters inside an expression which contains an aggregation expression
+TESTS-clauses.with.With6.xml:[8] Fail if not projected variables are used inside an expression which contains an aggregation expression
+TESTS-clauses.with.With6.xml:[9] Fail if more complex expression, even if projected, are used inside expression which contains an aggregation expression
+TESTS-expressions.aggregation.Aggregation2.xml:[11] `max()` over mixed values
+TESTS-expressions.aggregation.Aggregation2.xml:[12] `min()` over mixed values
+TESTS-expressions.aggregation.Aggregation2.xml:[7] `max()` over strings
+TESTS-expressions.aggregation.Aggregation2.xml:[8] `min()` over strings
+TESTS-expressions.aggregation.Aggregation5.xml:[1] `collect()` filtering nulls
+TESTS-expressions.aggregation.Aggregation5.xml:[2] OPTIONAL MATCH and `collect()` on node property
+TESTS-expressions.aggregation.Aggregation6.xml:[1] `percentileDisc()` -- @1.1
+TESTS-expressions.aggregation.Aggregation6.xml:[1] `percentileDisc()` -- @1.2
+TESTS-expressions.aggregation.Aggregation6.xml:[1] `percentileDisc()` -- @1.3
+TESTS-expressions.aggregation.Aggregation6.xml:[2] `percentileCont()` -- @1.1
+TESTS-expressions.aggregation.Aggregation6.xml:[2] `percentileCont()` -- @1.2
+TESTS-expressions.aggregation.Aggregation6.xml:[2] `percentileCont()` -- @1.3
+TESTS-expressions.aggregation.Aggregation8.xml:[3] Collect distinct nulls
+TESTS-expressions.aggregation.Aggregation8.xml:[4] Collect distinct values mixed with nulls
+TESTS-expressions.boolean.Boolean5.xml:[6] Conjunction is not distributive over exclusive disjunction on null
+TESTS-expressions.comparison.Comparison2.xml:[3] Comparing across types yields null, except numbers -- @1.1
+TESTS-expressions.comparison.Comparison2.xml:[3] Comparing across types yields null, except numbers -- @1.2
+TESTS-expressions.comparison.Comparison2.xml:[3] Comparing across types yields null, except numbers -- @1.3
+TESTS-expressions.comparison.Comparison2.xml:[3] Comparing across types yields null, except numbers -- @1.4
+TESTS-expressions.comparison.Comparison3.xml:[1] Handling numerical ranges 1
+TESTS-expressions.comparison.Comparison3.xml:[2] Handling numerical ranges 2
+TESTS-expressions.comparison.Comparison3.xml:[3] Handling numerical ranges 3
+TESTS-expressions.comparison.Comparison3.xml:[5] Handling string ranges 1
+TESTS-expressions.comparison.Comparison3.xml:[6] Handling string ranges 2
+TESTS-expressions.comparison.Comparison3.xml:[7] Handling string ranges 3
+TESTS-expressions.comparison.Comparison3.xml:[8] Handling string ranges 4
+TESTS-expressions.comparison.Comparison3.xml:[9] Handling empty range
+TESTS-expressions.comparison.Comparison4.xml:[1] Handling long chains of operators
+TESTS-expressions.conditional.Conditional2.xml:[1] Simple cases over integers -- @1.11
+TESTS-expressions.existentialSubqueries.ExistentialSubquery1.xml:[1] Simple subquery without WHERE clause
+TESTS-expressions.existentialSubqueries.ExistentialSubquery1.xml:[2] Simple subquery with WHERE clause
+TESTS-expressions.existentialSubqueries.ExistentialSubquery1.xml:[3] Simple subquery without WHERE clause, not existing pattern
+TESTS-expressions.existentialSubqueries.ExistentialSubquery1.xml:[4] Simple subquery with WHERE clause, not existing pattern
+TESTS-expressions.existentialSubqueries.ExistentialSubquery2.xml:[1] Full existential subquery
+TESTS-expressions.existentialSubqueries.ExistentialSubquery2.xml:[2] Full existential subquery with aggregation
+TESTS-expressions.existentialSubqueries.ExistentialSubquery3.xml:[1] Nested simple existential subquery
+TESTS-expressions.existentialSubqueries.ExistentialSubquery3.xml:[2] Nested full existential subquery
+TESTS-expressions.existentialSubqueries.ExistentialSubquery3.xml:[3] Nested full existential subquery with pattern predicate
+TESTS-expressions.graph.Graph4.xml:[7] Failing when using `type()` on a node
+TESTS-expressions.list.List11.xml:[3] Create an empty list if range direction and step direction are inconsistent
+TESTS-expressions.list.List12.xml:[3] Size of list comprehension
+TESTS-expressions.list.List12.xml:[4] Returning a list comprehension
+TESTS-expressions.list.List12.xml:[5] Using a list comprehension in a WITH
+TESTS-expressions.list.List12.xml:[7] Fail when using aggregation in list comprehension
+TESTS-expressions.list.List2.xml:[2] List slice with implicit end
+TESTS-expressions.list.List2.xml:[3] List slice with implicit start
+TESTS-expressions.list.List2.xml:[9] List slice with null range -- @1.1
+TESTS-expressions.list.List2.xml:[9] List slice with null range -- @1.2
+TESTS-expressions.list.List2.xml:[9] List slice with null range -- @1.3
+TESTS-expressions.list.List2.xml:[9] List slice with null range -- @1.4
+TESTS-expressions.list.List2.xml:[9] List slice with null range -- @1.5
+TESTS-expressions.list.List3.xml:[3] Equality between different lists with null should return false
+TESTS-expressions.list.List3.xml:[6] Equality between different nested lists with null should return false
+TESTS-expressions.list.List5.xml:[18] IN should return false when LHS contains a nested list and type mismatch on RHS - singleton version
+TESTS-expressions.list.List5.xml:[21] IN should return null if LHS and RHS are null - list version
+TESTS-expressions.list.List5.xml:[22] IN should return null when LHS and RHS both ultimately contain null, even if LHS and RHS are of different types (nested list and flat list)
+TESTS-expressions.list.List5.xml:[24] IN should return true if match despite nulls
+TESTS-expressions.list.List5.xml:[25] IN should return null if comparison with null is required
+TESTS-expressions.list.List5.xml:[26] IN should return true if correct list found despite other lists having nulls
+TESTS-expressions.list.List5.xml:[28] IN should return false if no match can be found, despite nulls
+TESTS-expressions.list.List5.xml:[29] IN should return null if comparison with null is required, list version
+TESTS-expressions.list.List5.xml:[31] IN should return null when comparing two so-called identical lists where one element is null
+TESTS-expressions.list.List5.xml:[32] IN should return true with previous null match, list version
+TESTS-expressions.list.List5.xml:[34] IN should return null if comparison with null is required, list version 2
+TESTS-expressions.list.List5.xml:[40] IN should return null if comparison with null is required for empty list
+TESTS-expressions.list.List6.xml:[10] Get node degree via size of pattern comprehension that specifies multiple relationship types
+TESTS-expressions.list.List6.xml:[5] Fail for `size()` on paths
+TESTS-expressions.list.List6.xml:[7] Using size of pattern comprehension to test existence
+TESTS-expressions.list.List6.xml:[8] Get node degree via size of pattern comprehension
+TESTS-expressions.list.List6.xml:[9] Get node degree via size of pattern comprehension that specifies a relationship type
+TESTS-expressions.list.List9.xml:[1] Returning nested expressions based on list property
+TESTS-expressions.literals.Literals6.xml:[5] Return a single-quoted string with escaped characters
+TESTS-expressions.literals.Literals7.xml:[12] Return 40-deep nested empty lists
+TESTS-expressions.literals.Literals8.xml:[16] Return 40-deep nested maps
+TESTS-expressions.map.Map1.xml:[5] Statically access a field with a delimited identifier -- @1.1
+TESTS-expressions.map.Map1.xml:[5] Statically access a field with a delimited identifier -- @1.2
+TESTS-expressions.map.Map1.xml:[5] Statically access a field with a delimited identifier -- @1.5
+TESTS-expressions.map.Map1.xml:[5] Statically access a field with a delimited identifier -- @1.6
+TESTS-expressions.map.Map2.xml:[4] Dynamically access a field with null results in null
+TESTS-expressions.null.Null3.xml:[4] Using null in IN -- @1.1
+TESTS-expressions.null.Null3.xml:[4] Using null in IN -- @1.4
+TESTS-expressions.null.Null3.xml:[4] Using null in IN -- @1.6
+TESTS-expressions.null.Null3.xml:[4] Using null in IN -- @1.7
+TESTS-expressions.path.Path1.xml:[1] `nodes()` on null path
+TESTS-expressions.path.Path2.xml:[1] Return relationships by fetching them from the path
+TESTS-expressions.path.Path2.xml:[2] Return relationships by fetching them from the path - starting from the end
+TESTS-expressions.path.Path2.xml:[3] `relationships()` on null path
+TESTS-expressions.path.Path3.xml:[1] Return a var length path of length zero
+TESTS-expressions.pattern.Pattern1.xml:[10] Matching on a specific type of undirected connection with length 2
+TESTS-expressions.pattern.Pattern1.xml:[11] Fail on checking self pattern
+TESTS-expressions.pattern.Pattern1.xml:[12] Matching two nodes on a single directed connection between them
+TESTS-expressions.pattern.Pattern1.xml:[13] Fail on matching two nodes on a single undirected connection between them
+TESTS-expressions.pattern.Pattern1.xml:[14] Matching two nodes on a specific type of single outgoing directed connection
+TESTS-expressions.pattern.Pattern1.xml:[15] Matching two nodes on a specific type of single undirected connection
+TESTS-expressions.pattern.Pattern1.xml:[16] Matching two nodes on a specific type of a variable length outgoing directed connection
+TESTS-expressions.pattern.Pattern1.xml:[17] Matching two nodes on a specific type of variable length undirected connection
+TESTS-expressions.pattern.Pattern1.xml:[18] Matching two nodes on a specific type of undirected connection with length 2
+TESTS-expressions.pattern.Pattern1.xml:[19] Using a negated existential pattern predicate
+TESTS-expressions.pattern.Pattern1.xml:[1] Matching on any single outgoing directed connection
+TESTS-expressions.pattern.Pattern1.xml:[20] Using two existential pattern predicates in a conjunction
+TESTS-expressions.pattern.Pattern1.xml:[21] Using two existential pattern predicates in a disjunction
+TESTS-expressions.pattern.Pattern1.xml:[2] Matching on a single undirected connection
+TESTS-expressions.pattern.Pattern1.xml:[3] Matching on any single incoming directed connection
+TESTS-expressions.pattern.Pattern1.xml:[4] Matching on a specific type of single outgoing directed connection
+TESTS-expressions.pattern.Pattern1.xml:[5] Matching on a specific type of single undirected connection
+TESTS-expressions.pattern.Pattern1.xml:[6] Matching on a specific type of single incoming directed connection
+TESTS-expressions.pattern.Pattern1.xml:[7] Matching on a specific type of a variable length outgoing directed connection
+TESTS-expressions.pattern.Pattern1.xml:[8] Matching on a specific type of variable length undirected connection
+TESTS-expressions.pattern.Pattern1.xml:[9] Matching on a specific type of variable length incoming directed connection
+TESTS-expressions.pattern.Pattern2.xml:[10] Use a pattern comprehension in RETURN
+TESTS-expressions.pattern.Pattern2.xml:[11] Use a pattern comprehension and ORDER BY
+TESTS-expressions.pattern.Pattern2.xml:[1] Return a pattern comprehension
+TESTS-expressions.pattern.Pattern2.xml:[2] Return a pattern comprehension with label predicate
+TESTS-expressions.pattern.Pattern2.xml:[3] Return a pattern comprehension with bound nodes
+TESTS-expressions.pattern.Pattern2.xml:[4] Introduce a new node variable in pattern comprehension
+TESTS-expressions.pattern.Pattern2.xml:[5] Introduce a new relationship variable in pattern comprehension
+TESTS-expressions.pattern.Pattern2.xml:[6] Aggregate on a pattern comprehension
+TESTS-expressions.pattern.Pattern2.xml:[7] Use a pattern comprehension inside a list comprehension
+TESTS-expressions.pattern.Pattern2.xml:[8] Use a pattern comprehension in WITH
+TESTS-expressions.pattern.Pattern2.xml:[9] Use a variable-length pattern comprehension in WITH
+TESTS-expressions.precedence.Precedence1.xml:[14] Exclusive disjunction takes precedence over inclusive disjunction in every combination of truth values
+TESTS-expressions.precedence.Precedence1.xml:[15] Conjunction takes precedence over exclusive disjunction in every combination of truth values
+TESTS-expressions.precedence.Precedence1.xml:[16] Conjunction takes precedence over inclusive disjunction in every combination of truth values
+TESTS-expressions.precedence.Precedence1.xml:[17] Negation takes precedence over conjunction in every combination of truth values
+TESTS-expressions.precedence.Precedence1.xml:[18] Negation takes precedence over inclusive disjunction in every combination of truth values
+TESTS-expressions.precedence.Precedence1.xml:[19] Comparison operators takes precedence over boolean negation in every combination of truth values -- @1.1
+TESTS-expressions.precedence.Precedence1.xml:[19] Comparison operators takes precedence over boolean negation in every combination of truth values -- @1.2
+TESTS-expressions.precedence.Precedence1.xml:[19] Comparison operators takes precedence over boolean negation in every combination of truth values -- @1.3
+TESTS-expressions.precedence.Precedence1.xml:[19] Comparison operators takes precedence over boolean negation in every combination of truth values -- @1.4
+TESTS-expressions.precedence.Precedence1.xml:[20] Pairs of comparison operators and boolean negation that are associative in every combination of truth values -- @1.1
+TESTS-expressions.precedence.Precedence1.xml:[20] Pairs of comparison operators and boolean negation that are associative in every combination of truth values -- @1.2
+TESTS-expressions.precedence.Precedence1.xml:[21] Comparison operators take precedence over binary boolean operators in every combination of truth values -- @1.1
+TESTS-expressions.precedence.Precedence1.xml:[21] Comparison operators take precedence over binary boolean operators in every combination of truth values -- @1.10
+TESTS-expressions.precedence.Precedence1.xml:[21] Comparison operators take precedence over binary boolean operators in every combination of truth values -- @1.11
+TESTS-expressions.precedence.Precedence1.xml:[21] Comparison operators take precedence over binary boolean operators in every combination of truth values -- @1.12
+TESTS-expressions.precedence.Precedence1.xml:[21] Comparison operators take precedence over binary boolean operators in every combination of truth values -- @1.13
+TESTS-expressions.precedence.Precedence1.xml:[21] Comparison operators take precedence over binary boolean operators in every combination of truth values -- @1.14
+TESTS-expressions.precedence.Precedence1.xml:[21] Comparison operators take precedence over binary boolean operators in every combination of truth values -- @1.2
+TESTS-expressions.precedence.Precedence1.xml:[21] Comparison operators take precedence over binary boolean operators in every combination of truth values -- @1.3
+TESTS-expressions.precedence.Precedence1.xml:[21] Comparison operators take precedence over binary boolean operators in every combination of truth values -- @1.4
+TESTS-expressions.precedence.Precedence1.xml:[21] Comparison operators take precedence over binary boolean operators in every combination of truth values -- @1.5
+TESTS-expressions.precedence.Precedence1.xml:[21] Comparison operators take precedence over binary boolean operators in every combination of truth values -- @1.6
+TESTS-expressions.precedence.Precedence1.xml:[21] Comparison operators take precedence over binary boolean operators in every combination of truth values -- @1.7
+TESTS-expressions.precedence.Precedence1.xml:[21] Comparison operators take precedence over binary boolean operators in every combination of truth values -- @1.8
+TESTS-expressions.precedence.Precedence1.xml:[21] Comparison operators take precedence over binary boolean operators in every combination of truth values -- @1.9
+TESTS-expressions.precedence.Precedence1.xml:[22] Pairs of comparison operators and binary boolean operators that are associative in every combination of truth values -- @1.1
+TESTS-expressions.precedence.Precedence1.xml:[22] Pairs of comparison operators and binary boolean operators that are associative in every combination of truth values -- @1.2
+TESTS-expressions.precedence.Precedence1.xml:[22] Pairs of comparison operators and binary boolean operators that are associative in every combination of truth values -- @1.3
+TESTS-expressions.precedence.Precedence1.xml:[22] Pairs of comparison operators and binary boolean operators that are associative in every combination of truth values -- @1.4
+TESTS-expressions.precedence.Precedence1.xml:[23] Null predicates take precedence over comparison operators in every combination of truth values -- @1.1
+TESTS-expressions.precedence.Precedence1.xml:[23] Null predicates take precedence over comparison operators in every combination of truth values -- @1.10
+TESTS-expressions.precedence.Precedence1.xml:[23] Null predicates take precedence over comparison operators in every combination of truth values -- @1.11
+TESTS-expressions.precedence.Precedence1.xml:[23] Null predicates take precedence over comparison operators in every combination of truth values -- @1.12
+TESTS-expressions.precedence.Precedence1.xml:[23] Null predicates take precedence over comparison operators in every combination of truth values -- @1.2
+TESTS-expressions.precedence.Precedence1.xml:[23] Null predicates take precedence over comparison operators in every combination of truth values -- @1.3
+TESTS-expressions.precedence.Precedence1.xml:[23] Null predicates take precedence over comparison operators in every combination of truth values -- @1.4
+TESTS-expressions.precedence.Precedence1.xml:[23] Null predicates take precedence over comparison operators in every combination of truth values -- @1.5
+TESTS-expressions.precedence.Precedence1.xml:[23] Null predicates take precedence over comparison operators in every combination of truth values -- @1.6
+TESTS-expressions.precedence.Precedence1.xml:[23] Null predicates take precedence over comparison operators in every combination of truth values -- @1.7
+TESTS-expressions.precedence.Precedence1.xml:[23] Null predicates take precedence over comparison operators in every combination of truth values -- @1.8
+TESTS-expressions.precedence.Precedence1.xml:[23] Null predicates take precedence over comparison operators in every combination of truth values -- @1.9
+TESTS-expressions.precedence.Precedence1.xml:[25] Null predicates take precedence over binary boolean operators in every combination of truth values -- @1.1
+TESTS-expressions.precedence.Precedence1.xml:[25] Null predicates take precedence over binary boolean operators in every combination of truth values -- @1.2
+TESTS-expressions.precedence.Precedence1.xml:[25] Null predicates take precedence over binary boolean operators in every combination of truth values -- @1.3
+TESTS-expressions.precedence.Precedence1.xml:[25] Null predicates take precedence over binary boolean operators in every combination of truth values -- @1.4
+TESTS-expressions.precedence.Precedence1.xml:[25] Null predicates take precedence over binary boolean operators in every combination of truth values -- @1.5
+TESTS-expressions.precedence.Precedence1.xml:[25] Null predicates take precedence over binary boolean operators in every combination of truth values -- @1.6
+TESTS-expressions.precedence.Precedence1.xml:[26] List predicate takes precedence over comparison operators in every combination of truth values -- @1.1
+TESTS-expressions.precedence.Precedence1.xml:[26] List predicate takes precedence over comparison operators in every combination of truth values -- @1.2
+TESTS-expressions.precedence.Precedence1.xml:[26] List predicate takes precedence over comparison operators in every combination of truth values -- @1.3
+TESTS-expressions.precedence.Precedence1.xml:[26] List predicate takes precedence over comparison operators in every combination of truth values -- @1.4
+TESTS-expressions.precedence.Precedence1.xml:[26] List predicate takes precedence over comparison operators in every combination of truth values -- @1.5
+TESTS-expressions.precedence.Precedence1.xml:[26] List predicate takes precedence over comparison operators in every combination of truth values -- @1.6
+TESTS-expressions.precedence.Precedence1.xml:[27] List predicate takes precedence over negation in every combination of truth values
+TESTS-expressions.precedence.Precedence1.xml:[28] List predicate takes precedence over binary boolean operators in every combination of truth values -- @1.1
+TESTS-expressions.precedence.Precedence1.xml:[28] List predicate takes precedence over binary boolean operators in every combination of truth values -- @1.2
+TESTS-expressions.precedence.Precedence1.xml:[28] List predicate takes precedence over binary boolean operators in every combination of truth values -- @1.3
+TESTS-expressions.precedence.Precedence2.xml:[1] Numeric multiplicative operations takes precedence over numeric additive operations -- @1.11
+TESTS-expressions.precedence.Precedence2.xml:[1] Numeric multiplicative operations takes precedence over numeric additive operations -- @1.14
+TESTS-expressions.precedence.Precedence2.xml:[1] Numeric multiplicative operations takes precedence over numeric additive operations -- @1.17
+TESTS-expressions.precedence.Precedence2.xml:[1] Numeric multiplicative operations takes precedence over numeric additive operations -- @1.2
+TESTS-expressions.precedence.Precedence2.xml:[1] Numeric multiplicative operations takes precedence over numeric additive operations -- @1.5
+TESTS-expressions.precedence.Precedence2.xml:[1] Numeric multiplicative operations takes precedence over numeric additive operations -- @1.7
+TESTS-expressions.precedence.Precedence2.xml:[1] Numeric multiplicative operations takes precedence over numeric additive operations -- @1.8
+TESTS-expressions.precedence.Precedence2.xml:[1] Numeric multiplicative operations takes precedence over numeric additive operations -- @1.9
+TESTS-expressions.precedence.Precedence2.xml:[2] Exponentiation takes precedence over numeric multiplicative operations -- @1.2
+TESTS-expressions.precedence.Precedence3.xml:[6] List element containment takes precedence over comparison operator -- @1.1
+TESTS-expressions.precedence.Precedence3.xml:[6] List element containment takes precedence over comparison operator -- @1.2
+TESTS-expressions.precedence.Precedence3.xml:[6] List element containment takes precedence over comparison operator -- @1.3
+TESTS-expressions.precedence.Precedence3.xml:[6] List element containment takes precedence over comparison operator -- @1.4
+TESTS-expressions.precedence.Precedence3.xml:[6] List element containment takes precedence over comparison operator -- @1.5
+TESTS-expressions.precedence.Precedence3.xml:[6] List element containment takes precedence over comparison operator -- @1.6
+TESTS-expressions.precedence.Precedence4.xml:[4] String predicate takes precedence over binary boolean operator
+TESTS-expressions.quantifier.Quantifier1.xml:[10] None quantifier on lists containing nulls -- @1.1
+TESTS-expressions.quantifier.Quantifier1.xml:[10] None quantifier on lists containing nulls -- @1.2
+TESTS-expressions.quantifier.Quantifier1.xml:[10] None quantifier on lists containing nulls -- @1.3
+TESTS-expressions.quantifier.Quantifier1.xml:[10] None quantifier on lists containing nulls -- @1.7
+TESTS-expressions.quantifier.Quantifier1.xml:[15] Fail none quantifier on type mismatch between list elements and predicate -- @1.1
+TESTS-expressions.quantifier.Quantifier1.xml:[15] Fail none quantifier on type mismatch between list elements and predicate -- @1.2
+TESTS-expressions.quantifier.Quantifier1.xml:[15] Fail none quantifier on type mismatch between list elements and predicate -- @1.3
+TESTS-expressions.quantifier.Quantifier1.xml:[8] None quantifier on list containing nodes
+TESTS-expressions.quantifier.Quantifier1.xml:[9] None quantifier on list containing relationships
+TESTS-expressions.quantifier.Quantifier2.xml:[10] Single quantifier on lists containing nulls -- @1.1
+TESTS-expressions.quantifier.Quantifier2.xml:[10] Single quantifier on lists containing nulls -- @1.2
+TESTS-expressions.quantifier.Quantifier2.xml:[10] Single quantifier on lists containing nulls -- @1.3
+TESTS-expressions.quantifier.Quantifier2.xml:[10] Single quantifier on lists containing nulls -- @1.4
+TESTS-expressions.quantifier.Quantifier2.xml:[10] Single quantifier on lists containing nulls -- @1.5
+TESTS-expressions.quantifier.Quantifier2.xml:[10] Single quantifier on lists containing nulls -- @1.7
+TESTS-expressions.quantifier.Quantifier2.xml:[16] Fail single quantifier on type mismatch between list elements and predicate -- @1.1
+TESTS-expressions.quantifier.Quantifier2.xml:[16] Fail single quantifier on type mismatch between list elements and predicate -- @1.2
+TESTS-expressions.quantifier.Quantifier2.xml:[16] Fail single quantifier on type mismatch between list elements and predicate -- @1.3
+TESTS-expressions.quantifier.Quantifier2.xml:[8] Single quantifier on list containing nodes
+TESTS-expressions.quantifier.Quantifier2.xml:[9] Single quantifier on list containing relationships
+TESTS-expressions.quantifier.Quantifier3.xml:[10] Any quantifier on lists containing nulls -- @1.1
+TESTS-expressions.quantifier.Quantifier3.xml:[10] Any quantifier on lists containing nulls -- @1.2
+TESTS-expressions.quantifier.Quantifier3.xml:[10] Any quantifier on lists containing nulls -- @1.3
+TESTS-expressions.quantifier.Quantifier3.xml:[10] Any quantifier on lists containing nulls -- @1.7
+TESTS-expressions.quantifier.Quantifier3.xml:[15] Fail any quantifier on type mismatch between list elements and predicate -- @1.1
+TESTS-expressions.quantifier.Quantifier3.xml:[15] Fail any quantifier on type mismatch between list elements and predicate -- @1.2
+TESTS-expressions.quantifier.Quantifier3.xml:[15] Fail any quantifier on type mismatch between list elements and predicate -- @1.3
+TESTS-expressions.quantifier.Quantifier3.xml:[8] Any quantifier on list containing nodes
+TESTS-expressions.quantifier.Quantifier3.xml:[9] Any quantifier on list containing relationships
+TESTS-expressions.quantifier.Quantifier4.xml:[10] All quantifier on lists containing nulls -- @1.1
+TESTS-expressions.quantifier.Quantifier4.xml:[10] All quantifier on lists containing nulls -- @1.2
+TESTS-expressions.quantifier.Quantifier4.xml:[10] All quantifier on lists containing nulls -- @1.4
+TESTS-expressions.quantifier.Quantifier4.xml:[10] All quantifier on lists containing nulls -- @1.5
+TESTS-expressions.quantifier.Quantifier4.xml:[10] All quantifier on lists containing nulls -- @1.8
+TESTS-expressions.quantifier.Quantifier4.xml:[15] Fail all quantifier on type mismatch between list elements and predicate -- @1.1
+TESTS-expressions.quantifier.Quantifier4.xml:[15] Fail all quantifier on type mismatch between list elements and predicate -- @1.2
+TESTS-expressions.quantifier.Quantifier4.xml:[15] Fail all quantifier on type mismatch between list elements and predicate -- @1.3
+TESTS-expressions.quantifier.Quantifier4.xml:[8] All quantifier on list containing nodes
+TESTS-expressions.quantifier.Quantifier4.xml:[9] All quantifier on list containing relationships
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.1
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.10
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.11
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.12
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.13
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.14
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.15
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.16
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.17
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.18
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.19
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.2
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.20
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.21
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.22
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.23
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.24
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.25
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.26
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.27
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.28
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.29
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.3
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.4
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.5
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.6
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.7
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.8
+TESTS-expressions.temporal.Temporal1.xml:[10] Should construct date time with named time zone -- @1.9
+TESTS-expressions.temporal.Temporal1.xml:[11] Should construct date time from epoch
+TESTS-expressions.temporal.Temporal1.xml:[12] Should construct duration -- @1.1
+TESTS-expressions.temporal.Temporal1.xml:[12] Should construct duration -- @1.2
+TESTS-expressions.temporal.Temporal1.xml:[12] Should construct duration -- @1.3
+TESTS-expressions.temporal.Temporal1.xml:[12] Should construct duration -- @1.4
+TESTS-expressions.temporal.Temporal1.xml:[12] Should construct duration -- @1.5
+TESTS-expressions.temporal.Temporal1.xml:[12] Should construct duration -- @1.6
+TESTS-expressions.temporal.Temporal1.xml:[12] Should construct duration -- @1.7
+TESTS-expressions.temporal.Temporal1.xml:[12] Should construct duration -- @1.8
+TESTS-expressions.temporal.Temporal1.xml:[12] Should construct duration -- @1.9
+TESTS-expressions.temporal.Temporal1.xml:[13] Should construct temporal with time offset with second precision -- @1.1
+TESTS-expressions.temporal.Temporal1.xml:[13] Should construct temporal with time offset with second precision -- @1.2
+TESTS-expressions.temporal.Temporal1.xml:[13] Should construct temporal with time offset with second precision -- @1.3
+TESTS-expressions.temporal.Temporal1.xml:[13] Should construct temporal with time offset with second precision -- @1.4
+TESTS-expressions.temporal.Temporal1.xml:[1] Should construct week date -- @1.1
+TESTS-expressions.temporal.Temporal1.xml:[1] Should construct week date -- @1.10
+TESTS-expressions.temporal.Temporal1.xml:[1] Should construct week date -- @1.11
+TESTS-expressions.temporal.Temporal1.xml:[1] Should construct week date -- @1.12
+TESTS-expressions.temporal.Temporal1.xml:[1] Should construct week date -- @1.13
+TESTS-expressions.temporal.Temporal1.xml:[1] Should construct week date -- @1.14
+TESTS-expressions.temporal.Temporal1.xml:[1] Should construct week date -- @1.15
+TESTS-expressions.temporal.Temporal1.xml:[1] Should construct week date -- @1.2
+TESTS-expressions.temporal.Temporal1.xml:[1] Should construct week date -- @1.3
+TESTS-expressions.temporal.Temporal1.xml:[1] Should construct week date -- @1.4
+TESTS-expressions.temporal.Temporal1.xml:[1] Should construct week date -- @1.5
+TESTS-expressions.temporal.Temporal1.xml:[1] Should construct week date -- @1.6
+TESTS-expressions.temporal.Temporal1.xml:[1] Should construct week date -- @1.7
+TESTS-expressions.temporal.Temporal1.xml:[1] Should construct week date -- @1.8
+TESTS-expressions.temporal.Temporal1.xml:[1] Should construct week date -- @1.9
+TESTS-expressions.temporal.Temporal1.xml:[2] Should construct week localdatetime -- @1.1
+TESTS-expressions.temporal.Temporal1.xml:[2] Should construct week localdatetime -- @1.10
+TESTS-expressions.temporal.Temporal1.xml:[2] Should construct week localdatetime -- @1.11
+TESTS-expressions.temporal.Temporal1.xml:[2] Should construct week localdatetime -- @1.12
+TESTS-expressions.temporal.Temporal1.xml:[2] Should construct week localdatetime -- @1.13
+TESTS-expressions.temporal.Temporal1.xml:[2] Should construct week localdatetime -- @1.14
+TESTS-expressions.temporal.Temporal1.xml:[2] Should construct week localdatetime -- @1.15
+TESTS-expressions.temporal.Temporal1.xml:[2] Should construct week localdatetime -- @1.2
+TESTS-expressions.temporal.Temporal1.xml:[2] Should construct week localdatetime -- @1.3
+TESTS-expressions.temporal.Temporal1.xml:[2] Should construct week localdatetime -- @1.4
+TESTS-expressions.temporal.Temporal1.xml:[2] Should construct week localdatetime -- @1.5
+TESTS-expressions.temporal.Temporal1.xml:[2] Should construct week localdatetime -- @1.6
+TESTS-expressions.temporal.Temporal1.xml:[2] Should construct week localdatetime -- @1.7
+TESTS-expressions.temporal.Temporal1.xml:[2] Should construct week localdatetime -- @1.8
+TESTS-expressions.temporal.Temporal1.xml:[2] Should construct week localdatetime -- @1.9
+TESTS-expressions.temporal.Temporal1.xml:[3] Should construct week datetime -- @1.1
+TESTS-expressions.temporal.Temporal1.xml:[3] Should construct week datetime -- @1.10
+TESTS-expressions.temporal.Temporal1.xml:[3] Should construct week datetime -- @1.11
+TESTS-expressions.temporal.Temporal1.xml:[3] Should construct week datetime -- @1.12
+TESTS-expressions.temporal.Temporal1.xml:[3] Should construct week datetime -- @1.13
+TESTS-expressions.temporal.Temporal1.xml:[3] Should construct week datetime -- @1.14
+TESTS-expressions.temporal.Temporal1.xml:[3] Should construct week datetime -- @1.15
+TESTS-expressions.temporal.Temporal1.xml:[3] Should construct week datetime -- @1.2
+TESTS-expressions.temporal.Temporal1.xml:[3] Should construct week datetime -- @1.3
+TESTS-expressions.temporal.Temporal1.xml:[3] Should construct week datetime -- @1.4
+TESTS-expressions.temporal.Temporal1.xml:[3] Should construct week datetime -- @1.5
+TESTS-expressions.temporal.Temporal1.xml:[3] Should construct week datetime -- @1.6
+TESTS-expressions.temporal.Temporal1.xml:[3] Should construct week datetime -- @1.7
+TESTS-expressions.temporal.Temporal1.xml:[3] Should construct week datetime -- @1.8
+TESTS-expressions.temporal.Temporal1.xml:[3] Should construct week datetime -- @1.9
+TESTS-expressions.temporal.Temporal1.xml:[4] Should construct date -- @1.1
+TESTS-expressions.temporal.Temporal1.xml:[4] Should construct date -- @1.2
+TESTS-expressions.temporal.Temporal1.xml:[4] Should construct date -- @1.3
+TESTS-expressions.temporal.Temporal1.xml:[4] Should construct date -- @1.4
+TESTS-expressions.temporal.Temporal1.xml:[4] Should construct date -- @1.5
+TESTS-expressions.temporal.Temporal1.xml:[4] Should construct date -- @1.6
+TESTS-expressions.temporal.Temporal1.xml:[4] Should construct date -- @1.7
+TESTS-expressions.temporal.Temporal1.xml:[4] Should construct date -- @1.8
+TESTS-expressions.temporal.Temporal1.xml:[5] Should construct local time -- @1.1
+TESTS-expressions.temporal.Temporal1.xml:[5] Should construct local time -- @1.2
+TESTS-expressions.temporal.Temporal1.xml:[5] Should construct local time -- @1.3
+TESTS-expressions.temporal.Temporal1.xml:[5] Should construct local time -- @1.4
+TESTS-expressions.temporal.Temporal1.xml:[5] Should construct local time -- @1.5
+TESTS-expressions.temporal.Temporal1.xml:[5] Should construct local time -- @1.6
+TESTS-expressions.temporal.Temporal1.xml:[5] Should construct local time -- @1.7
+TESTS-expressions.temporal.Temporal1.xml:[6] Should construct time -- @1.1
+TESTS-expressions.temporal.Temporal1.xml:[6] Should construct time -- @1.10
+TESTS-expressions.temporal.Temporal1.xml:[6] Should construct time -- @1.11
+TESTS-expressions.temporal.Temporal1.xml:[6] Should construct time -- @1.12
+TESTS-expressions.temporal.Temporal1.xml:[6] Should construct time -- @1.13
+TESTS-expressions.temporal.Temporal1.xml:[6] Should construct time -- @1.14
+TESTS-expressions.temporal.Temporal1.xml:[6] Should construct time -- @1.2
+TESTS-expressions.temporal.Temporal1.xml:[6] Should construct time -- @1.3
+TESTS-expressions.temporal.Temporal1.xml:[6] Should construct time -- @1.4
+TESTS-expressions.temporal.Temporal1.xml:[6] Should construct time -- @1.5
+TESTS-expressions.temporal.Temporal1.xml:[6] Should construct time -- @1.6
+TESTS-expressions.temporal.Temporal1.xml:[6] Should construct time -- @1.7
+TESTS-expressions.temporal.Temporal1.xml:[6] Should construct time -- @1.8
+TESTS-expressions.temporal.Temporal1.xml:[6] Should construct time -- @1.9
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.1
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.10
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.11
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.12
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.13
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.14
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.15
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.16
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.17
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.18
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.19
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.2
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.20
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.21
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.22
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.23
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.24
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.25
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.26
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.27
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.28
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.29
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.3
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.30
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.31
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.4
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.5
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.6
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.7
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.8
+TESTS-expressions.temporal.Temporal1.xml:[7] Should construct local date time -- @1.9
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.1
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.10
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.11
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.12
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.13
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.14
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.15
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.16
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.17
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.18
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.19
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.2
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.20
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.21
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.22
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.23
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.24
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.25
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.26
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.27
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.28
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.29
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.3
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.30
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.4
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.5
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.6
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.7
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.8
+TESTS-expressions.temporal.Temporal1.xml:[8] Should construct date time with default time zone -- @1.9
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.1
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.10
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.11
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.12
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.13
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.14
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.15
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.16
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.17
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.18
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.19
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.2
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.20
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.21
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.22
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.23
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.24
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.25
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.26
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.27
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.28
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.29
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.3
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.4
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.5
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.6
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.7
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.8
+TESTS-expressions.temporal.Temporal1.xml:[9] Should construct date time with offset time zone -- @1.9
+TESTS-expressions.temporal.Temporal10.xml:[10] Should handle large durations in seconds
+TESTS-expressions.temporal.Temporal10.xml:[11] Should handle when seconds and subseconds have different signs -- @1.1
+TESTS-expressions.temporal.Temporal10.xml:[11] Should handle when seconds and subseconds have different signs -- @1.10
+TESTS-expressions.temporal.Temporal10.xml:[11] Should handle when seconds and subseconds have different signs -- @1.2
+TESTS-expressions.temporal.Temporal10.xml:[11] Should handle when seconds and subseconds have different signs -- @1.3
+TESTS-expressions.temporal.Temporal10.xml:[11] Should handle when seconds and subseconds have different signs -- @1.4
+TESTS-expressions.temporal.Temporal10.xml:[11] Should handle when seconds and subseconds have different signs -- @1.5
+TESTS-expressions.temporal.Temporal10.xml:[11] Should handle when seconds and subseconds have different signs -- @1.6
+TESTS-expressions.temporal.Temporal10.xml:[11] Should handle when seconds and subseconds have different signs -- @1.7
+TESTS-expressions.temporal.Temporal10.xml:[11] Should handle when seconds and subseconds have different signs -- @1.8
+TESTS-expressions.temporal.Temporal10.xml:[11] Should handle when seconds and subseconds have different signs -- @1.9
+TESTS-expressions.temporal.Temporal10.xml:[12] Should compute durations with no difference -- @1.1
+TESTS-expressions.temporal.Temporal10.xml:[12] Should compute durations with no difference -- @1.2
+TESTS-expressions.temporal.Temporal10.xml:[12] Should compute durations with no difference -- @1.3
+TESTS-expressions.temporal.Temporal10.xml:[12] Should compute durations with no difference -- @1.4
+TESTS-expressions.temporal.Temporal10.xml:[12] Should compute durations with no difference -- @1.5
+TESTS-expressions.temporal.Temporal10.xml:[13] Should propagate null -- @1.1
+TESTS-expressions.temporal.Temporal10.xml:[13] Should propagate null -- @1.2
+TESTS-expressions.temporal.Temporal10.xml:[13] Should propagate null -- @1.3
+TESTS-expressions.temporal.Temporal10.xml:[13] Should propagate null -- @1.4
+TESTS-expressions.temporal.Temporal10.xml:[1] Should split between boundaries correctly -- @1.1
+TESTS-expressions.temporal.Temporal10.xml:[1] Should split between boundaries correctly -- @1.2
+TESTS-expressions.temporal.Temporal10.xml:[1] Should split between boundaries correctly -- @1.3
+TESTS-expressions.temporal.Temporal10.xml:[1] Should split between boundaries correctly -- @1.4
+TESTS-expressions.temporal.Temporal10.xml:[1] Should split between boundaries correctly -- @1.5
+TESTS-expressions.temporal.Temporal10.xml:[1] Should split between boundaries correctly -- @1.6
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.1
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.10
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.11
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.12
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.13
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.14
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.15
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.16
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.17
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.18
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.19
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.2
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.20
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.21
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.22
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.23
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.24
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.25
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.3
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.4
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.5
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.6
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.7
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.8
+TESTS-expressions.temporal.Temporal10.xml:[2] Should compute duration between two temporals -- @1.9
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.1
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.10
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.11
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.12
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.13
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.14
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.15
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.16
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.17
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.18
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.19
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.2
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.20
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.21
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.3
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.4
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.5
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.6
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.7
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.8
+TESTS-expressions.temporal.Temporal10.xml:[3] Should compute duration between two temporals in months -- @1.9
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.1
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.10
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.11
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.12
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.13
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.14
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.15
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.16
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.17
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.18
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.19
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.2
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.20
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.21
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.3
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.4
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.5
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.6
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.7
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.8
+TESTS-expressions.temporal.Temporal10.xml:[4] Should compute duration between two temporals in days -- @1.9
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.1
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.10
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.11
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.12
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.13
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.14
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.15
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.16
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.17
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.18
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.19
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.2
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.20
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.21
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.22
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.23
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.24
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.25
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.3
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.4
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.5
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.6
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.7
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.8
+TESTS-expressions.temporal.Temporal10.xml:[5] Should compute duration between two temporals in seconds -- @1.9
+TESTS-expressions.temporal.Temporal10.xml:[6] Should compute duration between if they differ only by a fraction of a second and the first comes after the second.
+TESTS-expressions.temporal.Temporal10.xml:[7] Should compute negative duration between in big units -- @1.1
+TESTS-expressions.temporal.Temporal10.xml:[7] Should compute negative duration between in big units -- @1.2
+TESTS-expressions.temporal.Temporal10.xml:[7] Should compute negative duration between in big units -- @1.3
+TESTS-expressions.temporal.Temporal10.xml:[7] Should compute negative duration between in big units -- @1.4
+TESTS-expressions.temporal.Temporal10.xml:[7] Should compute negative duration between in big units -- @1.5
+TESTS-expressions.temporal.Temporal10.xml:[8] Should handle durations at daylight saving time day -- @1.1
+TESTS-expressions.temporal.Temporal10.xml:[8] Should handle durations at daylight saving time day -- @1.2
+TESTS-expressions.temporal.Temporal10.xml:[8] Should handle durations at daylight saving time day -- @1.3
+TESTS-expressions.temporal.Temporal10.xml:[8] Should handle durations at daylight saving time day -- @1.4
+TESTS-expressions.temporal.Temporal10.xml:[8] Should handle durations at daylight saving time day -- @1.5
+TESTS-expressions.temporal.Temporal10.xml:[8] Should handle durations at daylight saving time day -- @1.6
+TESTS-expressions.temporal.Temporal10.xml:[9] Should handle large durations
+TESTS-expressions.temporal.Temporal2.xml:[1] Should parse date from string -- @1.1
+TESTS-expressions.temporal.Temporal2.xml:[1] Should parse date from string -- @1.10
+TESTS-expressions.temporal.Temporal2.xml:[1] Should parse date from string -- @1.11
+TESTS-expressions.temporal.Temporal2.xml:[1] Should parse date from string -- @1.2
+TESTS-expressions.temporal.Temporal2.xml:[1] Should parse date from string -- @1.3
+TESTS-expressions.temporal.Temporal2.xml:[1] Should parse date from string -- @1.4
+TESTS-expressions.temporal.Temporal2.xml:[1] Should parse date from string -- @1.5
+TESTS-expressions.temporal.Temporal2.xml:[1] Should parse date from string -- @1.6
+TESTS-expressions.temporal.Temporal2.xml:[1] Should parse date from string -- @1.7
+TESTS-expressions.temporal.Temporal2.xml:[1] Should parse date from string -- @1.8
+TESTS-expressions.temporal.Temporal2.xml:[1] Should parse date from string -- @1.9
+TESTS-expressions.temporal.Temporal2.xml:[2] Should parse local time from string -- @1.1
+TESTS-expressions.temporal.Temporal2.xml:[2] Should parse local time from string -- @1.2
+TESTS-expressions.temporal.Temporal2.xml:[2] Should parse local time from string -- @1.3
+TESTS-expressions.temporal.Temporal2.xml:[2] Should parse local time from string -- @1.4
+TESTS-expressions.temporal.Temporal2.xml:[2] Should parse local time from string -- @1.5
+TESTS-expressions.temporal.Temporal2.xml:[2] Should parse local time from string -- @1.6
+TESTS-expressions.temporal.Temporal2.xml:[2] Should parse local time from string -- @1.7
+TESTS-expressions.temporal.Temporal2.xml:[3] Should parse time from string -- @1.1
+TESTS-expressions.temporal.Temporal2.xml:[3] Should parse time from string -- @1.2
+TESTS-expressions.temporal.Temporal2.xml:[3] Should parse time from string -- @1.3
+TESTS-expressions.temporal.Temporal2.xml:[3] Should parse time from string -- @1.4
+TESTS-expressions.temporal.Temporal2.xml:[3] Should parse time from string -- @1.5
+TESTS-expressions.temporal.Temporal2.xml:[3] Should parse time from string -- @1.6
+TESTS-expressions.temporal.Temporal2.xml:[3] Should parse time from string -- @1.7
+TESTS-expressions.temporal.Temporal2.xml:[3] Should parse time from string -- @1.8
+TESTS-expressions.temporal.Temporal2.xml:[4] Should parse local date time from string -- @1.1
+TESTS-expressions.temporal.Temporal2.xml:[4] Should parse local date time from string -- @1.2
+TESTS-expressions.temporal.Temporal2.xml:[4] Should parse local date time from string -- @1.3
+TESTS-expressions.temporal.Temporal2.xml:[4] Should parse local date time from string -- @1.4
+TESTS-expressions.temporal.Temporal2.xml:[4] Should parse local date time from string -- @1.5
+TESTS-expressions.temporal.Temporal2.xml:[4] Should parse local date time from string -- @1.6
+TESTS-expressions.temporal.Temporal2.xml:[4] Should parse local date time from string -- @1.7
+TESTS-expressions.temporal.Temporal2.xml:[5] Should parse date time from string -- @1.1
+TESTS-expressions.temporal.Temporal2.xml:[5] Should parse date time from string -- @1.2
+TESTS-expressions.temporal.Temporal2.xml:[5] Should parse date time from string -- @1.3
+TESTS-expressions.temporal.Temporal2.xml:[5] Should parse date time from string -- @1.4
+TESTS-expressions.temporal.Temporal2.xml:[5] Should parse date time from string -- @1.5
+TESTS-expressions.temporal.Temporal2.xml:[5] Should parse date time from string -- @1.6
+TESTS-expressions.temporal.Temporal2.xml:[5] Should parse date time from string -- @1.7
+TESTS-expressions.temporal.Temporal2.xml:[5] Should parse date time from string -- @1.8
+TESTS-expressions.temporal.Temporal2.xml:[6] Should parse date time with named time zone from string -- @1.1
+TESTS-expressions.temporal.Temporal2.xml:[6] Should parse date time with named time zone from string -- @1.2
+TESTS-expressions.temporal.Temporal2.xml:[6] Should parse date time with named time zone from string -- @1.3
+TESTS-expressions.temporal.Temporal2.xml:[6] Should parse date time with named time zone from string -- @1.4
+TESTS-expressions.temporal.Temporal2.xml:[6] Should parse date time with named time zone from string -- @1.5
+TESTS-expressions.temporal.Temporal2.xml:[7] Should parse duration from string -- @1.1
+TESTS-expressions.temporal.Temporal2.xml:[7] Should parse duration from string -- @1.2
+TESTS-expressions.temporal.Temporal2.xml:[7] Should parse duration from string -- @1.3
+TESTS-expressions.temporal.Temporal2.xml:[7] Should parse duration from string -- @1.4
+TESTS-expressions.temporal.Temporal2.xml:[7] Should parse duration from string -- @1.5
+TESTS-expressions.temporal.Temporal2.xml:[7] Should parse duration from string -- @1.6
+TESTS-expressions.temporal.Temporal2.xml:[7] Should parse duration from string -- @1.7
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.1
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.10
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.11
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.12
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.13
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.14
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.15
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.16
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.17
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.18
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.19
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.2
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.20
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.21
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.22
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.23
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.24
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.25
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.26
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.27
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.28
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.29
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.3
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.30
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.31
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.32
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.33
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.34
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.35
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.36
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.37
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.38
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.39
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.4
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.40
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.41
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.42
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.43
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.44
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.45
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.46
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.47
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.48
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.5
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.6
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.7
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.8
+TESTS-expressions.temporal.Temporal3.xml:[10] Should select date and time into date time -- @1.9
+TESTS-expressions.temporal.Temporal3.xml:[11] Should datetime into date time -- @1.1
+TESTS-expressions.temporal.Temporal3.xml:[11] Should datetime into date time -- @1.10
+TESTS-expressions.temporal.Temporal3.xml:[11] Should datetime into date time -- @1.2
+TESTS-expressions.temporal.Temporal3.xml:[11] Should datetime into date time -- @1.3
+TESTS-expressions.temporal.Temporal3.xml:[11] Should datetime into date time -- @1.4
+TESTS-expressions.temporal.Temporal3.xml:[11] Should datetime into date time -- @1.5
+TESTS-expressions.temporal.Temporal3.xml:[11] Should datetime into date time -- @1.6
+TESTS-expressions.temporal.Temporal3.xml:[11] Should datetime into date time -- @1.7
+TESTS-expressions.temporal.Temporal3.xml:[11] Should datetime into date time -- @1.8
+TESTS-expressions.temporal.Temporal3.xml:[11] Should datetime into date time -- @1.9
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.1
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.10
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.11
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.12
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.13
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.14
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.15
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.16
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.17
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.18
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.19
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.2
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.20
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.21
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.3
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.4
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.5
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.6
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.7
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.8
+TESTS-expressions.temporal.Temporal3.xml:[1] Should select date -- @1.9
+TESTS-expressions.temporal.Temporal3.xml:[2] Should select local time -- @1.1
+TESTS-expressions.temporal.Temporal3.xml:[2] Should select local time -- @1.10
+TESTS-expressions.temporal.Temporal3.xml:[2] Should select local time -- @1.11
+TESTS-expressions.temporal.Temporal3.xml:[2] Should select local time -- @1.12
+TESTS-expressions.temporal.Temporal3.xml:[2] Should select local time -- @1.2
+TESTS-expressions.temporal.Temporal3.xml:[2] Should select local time -- @1.3
+TESTS-expressions.temporal.Temporal3.xml:[2] Should select local time -- @1.4
+TESTS-expressions.temporal.Temporal3.xml:[2] Should select local time -- @1.5
+TESTS-expressions.temporal.Temporal3.xml:[2] Should select local time -- @1.6
+TESTS-expressions.temporal.Temporal3.xml:[2] Should select local time -- @1.7
+TESTS-expressions.temporal.Temporal3.xml:[2] Should select local time -- @1.8
+TESTS-expressions.temporal.Temporal3.xml:[2] Should select local time -- @1.9
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.1
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.10
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.11
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.12
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.13
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.14
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.15
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.16
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.17
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.18
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.19
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.2
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.20
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.3
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.4
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.5
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.6
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.7
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.8
+TESTS-expressions.temporal.Temporal3.xml:[3] Should select time -- @1.9
+TESTS-expressions.temporal.Temporal3.xml:[4] Should select date into local date time -- @1.1
+TESTS-expressions.temporal.Temporal3.xml:[4] Should select date into local date time -- @1.2
+TESTS-expressions.temporal.Temporal3.xml:[4] Should select date into local date time -- @1.3
+TESTS-expressions.temporal.Temporal3.xml:[4] Should select date into local date time -- @1.4
+TESTS-expressions.temporal.Temporal3.xml:[4] Should select date into local date time -- @1.5
+TESTS-expressions.temporal.Temporal3.xml:[4] Should select date into local date time -- @1.6
+TESTS-expressions.temporal.Temporal3.xml:[5] Should select time into local date time -- @1.1
+TESTS-expressions.temporal.Temporal3.xml:[5] Should select time into local date time -- @1.2
+TESTS-expressions.temporal.Temporal3.xml:[5] Should select time into local date time -- @1.3
+TESTS-expressions.temporal.Temporal3.xml:[5] Should select time into local date time -- @1.4
+TESTS-expressions.temporal.Temporal3.xml:[5] Should select time into local date time -- @1.5
+TESTS-expressions.temporal.Temporal3.xml:[5] Should select time into local date time -- @1.6
+TESTS-expressions.temporal.Temporal3.xml:[5] Should select time into local date time -- @1.7
+TESTS-expressions.temporal.Temporal3.xml:[5] Should select time into local date time -- @1.8
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.1
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.10
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.11
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.12
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.13
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.14
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.15
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.16
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.17
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.18
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.19
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.2
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.20
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.21
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.22
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.23
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.24
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.3
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.4
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.5
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.6
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.7
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.8
+TESTS-expressions.temporal.Temporal3.xml:[6] Should select date and time into local date time -- @1.9
+TESTS-expressions.temporal.Temporal3.xml:[7] Should select datetime into local date time -- @1.1
+TESTS-expressions.temporal.Temporal3.xml:[7] Should select datetime into local date time -- @1.2
+TESTS-expressions.temporal.Temporal3.xml:[7] Should select datetime into local date time -- @1.3
+TESTS-expressions.temporal.Temporal3.xml:[7] Should select datetime into local date time -- @1.4
+TESTS-expressions.temporal.Temporal3.xml:[7] Should select datetime into local date time -- @1.5
+TESTS-expressions.temporal.Temporal3.xml:[7] Should select datetime into local date time -- @1.6
+TESTS-expressions.temporal.Temporal3.xml:[8] Should select date into date time -- @1.1
+TESTS-expressions.temporal.Temporal3.xml:[8] Should select date into date time -- @1.10
+TESTS-expressions.temporal.Temporal3.xml:[8] Should select date into date time -- @1.11
+TESTS-expressions.temporal.Temporal3.xml:[8] Should select date into date time -- @1.12
+TESTS-expressions.temporal.Temporal3.xml:[8] Should select date into date time -- @1.2
+TESTS-expressions.temporal.Temporal3.xml:[8] Should select date into date time -- @1.3
+TESTS-expressions.temporal.Temporal3.xml:[8] Should select date into date time -- @1.4
+TESTS-expressions.temporal.Temporal3.xml:[8] Should select date into date time -- @1.5
+TESTS-expressions.temporal.Temporal3.xml:[8] Should select date into date time -- @1.6
+TESTS-expressions.temporal.Temporal3.xml:[8] Should select date into date time -- @1.7
+TESTS-expressions.temporal.Temporal3.xml:[8] Should select date into date time -- @1.8
+TESTS-expressions.temporal.Temporal3.xml:[8] Should select date into date time -- @1.9
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.1
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.10
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.11
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.12
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.13
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.14
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.15
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.16
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.2
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.3
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.4
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.5
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.6
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.7
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.8
+TESTS-expressions.temporal.Temporal3.xml:[9] Should select time into date time -- @1.9
+TESTS-expressions.temporal.Temporal4.xml:[10] Should store date time array -- @1.1
+TESTS-expressions.temporal.Temporal4.xml:[10] Should store date time array -- @1.2
+TESTS-expressions.temporal.Temporal4.xml:[11] Should store duration -- @1.1
+TESTS-expressions.temporal.Temporal4.xml:[12] Should store duration array -- @1.1
+TESTS-expressions.temporal.Temporal4.xml:[12] Should store duration array -- @1.2
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.1
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.10
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.11
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.12
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.13
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.14
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.15
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.16
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.17
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.18
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.19
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.2
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.20
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.21
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.3
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.4
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.5
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.6
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.7
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.8
+TESTS-expressions.temporal.Temporal4.xml:[13] Should propagate null -- @1.9
+TESTS-expressions.temporal.Temporal4.xml:[1] Should store date -- @1.1
+TESTS-expressions.temporal.Temporal4.xml:[2] Should store date array -- @1.1
+TESTS-expressions.temporal.Temporal4.xml:[2] Should store date array -- @1.2
+TESTS-expressions.temporal.Temporal4.xml:[3] Should store local time -- @1.1
+TESTS-expressions.temporal.Temporal4.xml:[4] Should store local time array -- @1.1
+TESTS-expressions.temporal.Temporal4.xml:[4] Should store local time array -- @1.2
+TESTS-expressions.temporal.Temporal4.xml:[5] Should store time -- @1.1
+TESTS-expressions.temporal.Temporal4.xml:[6] Should store time array -- @1.1
+TESTS-expressions.temporal.Temporal4.xml:[6] Should store time array -- @1.2
+TESTS-expressions.temporal.Temporal4.xml:[7] Should store local date time -- @1.1
+TESTS-expressions.temporal.Temporal4.xml:[8] Should store local date time array -- @1.1
+TESTS-expressions.temporal.Temporal4.xml:[8] Should store local date time array -- @1.2
+TESTS-expressions.temporal.Temporal4.xml:[9] Should store date time -- @1.1
+TESTS-expressions.temporal.Temporal5.xml:[1] Should provide accessors for date
+TESTS-expressions.temporal.Temporal5.xml:[2] Should provide accessors for date in last weekYear
+TESTS-expressions.temporal.Temporal5.xml:[3] Should provide accessors for local time
+TESTS-expressions.temporal.Temporal5.xml:[4] Should provide accessors for time
+TESTS-expressions.temporal.Temporal5.xml:[5] Should provide accessors for local date time
+TESTS-expressions.temporal.Temporal5.xml:[6] Should provide accessors for date time
+TESTS-expressions.temporal.Temporal5.xml:[7] Should provide accessors for duration
+TESTS-expressions.temporal.Temporal6.xml:[1] Should serialize date
+TESTS-expressions.temporal.Temporal6.xml:[2] Should serialize local time
+TESTS-expressions.temporal.Temporal6.xml:[3] Should serialize time
+TESTS-expressions.temporal.Temporal6.xml:[4] Should serialize local date time
+TESTS-expressions.temporal.Temporal6.xml:[5] Should serialize date time
+TESTS-expressions.temporal.Temporal6.xml:[6] Should serialize duration -- @1.1
+TESTS-expressions.temporal.Temporal6.xml:[6] Should serialize duration -- @1.10
+TESTS-expressions.temporal.Temporal6.xml:[6] Should serialize duration -- @1.11
+TESTS-expressions.temporal.Temporal6.xml:[6] Should serialize duration -- @1.2
+TESTS-expressions.temporal.Temporal6.xml:[6] Should serialize duration -- @1.3
+TESTS-expressions.temporal.Temporal6.xml:[6] Should serialize duration -- @1.4
+TESTS-expressions.temporal.Temporal6.xml:[6] Should serialize duration -- @1.5
+TESTS-expressions.temporal.Temporal6.xml:[6] Should serialize duration -- @1.6
+TESTS-expressions.temporal.Temporal6.xml:[6] Should serialize duration -- @1.7
+TESTS-expressions.temporal.Temporal6.xml:[6] Should serialize duration -- @1.8
+TESTS-expressions.temporal.Temporal6.xml:[6] Should serialize duration -- @1.9
+TESTS-expressions.temporal.Temporal6.xml:[7] Should serialize timezones correctly
+TESTS-expressions.temporal.Temporal7.xml:[1] Should compare dates -- @1.1
+TESTS-expressions.temporal.Temporal7.xml:[1] Should compare dates -- @1.2
+TESTS-expressions.temporal.Temporal7.xml:[2] Should compare local times -- @1.1
+TESTS-expressions.temporal.Temporal7.xml:[2] Should compare local times -- @1.2
+TESTS-expressions.temporal.Temporal7.xml:[3] Should compare times -- @1.1
+TESTS-expressions.temporal.Temporal7.xml:[3] Should compare times -- @1.2
+TESTS-expressions.temporal.Temporal7.xml:[4] Should compare local date times -- @1.1
+TESTS-expressions.temporal.Temporal7.xml:[4] Should compare local date times -- @1.2
+TESTS-expressions.temporal.Temporal7.xml:[5] Should compare date times -- @1.1
+TESTS-expressions.temporal.Temporal7.xml:[5] Should compare date times -- @1.2
+TESTS-expressions.temporal.Temporal7.xml:[6] Should compare durations for equality -- @1.1
+TESTS-expressions.temporal.Temporal7.xml:[6] Should compare durations for equality -- @1.2
+TESTS-expressions.temporal.Temporal7.xml:[6] Should compare durations for equality -- @1.3
+TESTS-expressions.temporal.Temporal7.xml:[6] Should compare durations for equality -- @1.4
+TESTS-expressions.temporal.Temporal7.xml:[6] Should compare durations for equality -- @1.5
+TESTS-expressions.temporal.Temporal7.xml:[6] Should compare durations for equality -- @1.6
+TESTS-expressions.temporal.Temporal7.xml:[6] Should compare durations for equality -- @1.7
+TESTS-expressions.temporal.Temporal7.xml:[6] Should compare durations for equality -- @1.8
+TESTS-expressions.temporal.Temporal8.xml:[1] Should add or subtract duration to or from date -- @1.1
+TESTS-expressions.temporal.Temporal8.xml:[1] Should add or subtract duration to or from date -- @1.2
+TESTS-expressions.temporal.Temporal8.xml:[1] Should add or subtract duration to or from date -- @1.3
+TESTS-expressions.temporal.Temporal8.xml:[2] Should add or subtract duration to or from local time -- @1.1
+TESTS-expressions.temporal.Temporal8.xml:[2] Should add or subtract duration to or from local time -- @1.2
+TESTS-expressions.temporal.Temporal8.xml:[2] Should add or subtract duration to or from local time -- @1.3
+TESTS-expressions.temporal.Temporal8.xml:[3] Should add or subtract duration to or from time -- @1.1
+TESTS-expressions.temporal.Temporal8.xml:[3] Should add or subtract duration to or from time -- @1.2
+TESTS-expressions.temporal.Temporal8.xml:[3] Should add or subtract duration to or from time -- @1.3
+TESTS-expressions.temporal.Temporal8.xml:[4] Should add or subtract duration to or from local date time -- @1.1
+TESTS-expressions.temporal.Temporal8.xml:[4] Should add or subtract duration to or from local date time -- @1.2
+TESTS-expressions.temporal.Temporal8.xml:[4] Should add or subtract duration to or from local date time -- @1.3
+TESTS-expressions.temporal.Temporal8.xml:[5] Should add or subtract duration to or from date time -- @1.1
+TESTS-expressions.temporal.Temporal8.xml:[5] Should add or subtract duration to or from date time -- @1.2
+TESTS-expressions.temporal.Temporal8.xml:[5] Should add or subtract duration to or from date time -- @1.3
+TESTS-expressions.temporal.Temporal8.xml:[6] Should add or subtract durations -- @1.1
+TESTS-expressions.temporal.Temporal8.xml:[6] Should add or subtract durations -- @1.2
+TESTS-expressions.temporal.Temporal8.xml:[6] Should add or subtract durations -- @1.3
+TESTS-expressions.temporal.Temporal8.xml:[6] Should add or subtract durations -- @1.4
+TESTS-expressions.temporal.Temporal8.xml:[6] Should add or subtract durations -- @1.5
+TESTS-expressions.temporal.Temporal8.xml:[6] Should add or subtract durations -- @1.6
+TESTS-expressions.temporal.Temporal8.xml:[6] Should add or subtract durations -- @1.7
+TESTS-expressions.temporal.Temporal8.xml:[6] Should add or subtract durations -- @1.8
+TESTS-expressions.temporal.Temporal8.xml:[6] Should add or subtract durations -- @1.9
+TESTS-expressions.temporal.Temporal8.xml:[7] Should multiply or divide durations by numbers -- @1.1
+TESTS-expressions.temporal.Temporal8.xml:[7] Should multiply or divide durations by numbers -- @1.2
+TESTS-expressions.temporal.Temporal8.xml:[7] Should multiply or divide durations by numbers -- @1.3
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.1
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.10
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.11
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.12
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.13
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.14
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.15
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.16
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.17
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.18
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.19
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.2
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.20
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.21
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.22
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.23
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.24
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.25
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.26
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.27
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.28
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.29
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.3
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.30
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.31
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.32
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.33
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.34
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.35
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.36
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.37
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.38
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.39
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.4
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.40
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.41
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.42
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.43
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.44
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.45
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.46
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.47
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.48
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.49
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.5
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.50
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.51
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.6
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.7
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.8
+TESTS-expressions.temporal.Temporal9.xml:[1] Should truncate date -- @1.9
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.1
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.10
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.100
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.101
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.102
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.103
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.104
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.105
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.11
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.12
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.13
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.14
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.15
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.16
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.17
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.18
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.19
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.2
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.20
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.21
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.22
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.23
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.24
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.25
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.26
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.27
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.28
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.29
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.3
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.30
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.31
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.32
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.33
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.34
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.35
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.36
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.37
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.38
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.39
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.4
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.40
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.41
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.42
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.43
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.44
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.45
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.46
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.47
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.48
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.49
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.5
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.50
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.51
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.52
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.53
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.54
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.55
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.56
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.57
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.58
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.59
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.6
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.60
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.61
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.62
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.63
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.64
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.65
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.66
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.67
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.68
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.69
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.7
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.70
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.71
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.72
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.73
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.74
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.75
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.76
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.77
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.78
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.79
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.8
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.80
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.81
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.82
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.83
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.84
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.85
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.86
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.87
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.88
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.89
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.9
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.90
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.91
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.92
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.93
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.94
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.95
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.96
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.97
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.98
+TESTS-expressions.temporal.Temporal9.xml:[2] Should truncate datetime -- @1.99
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.1
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.10
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.11
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.12
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.13
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.14
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.15
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.16
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.17
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.18
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.19
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.2
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.20
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.21
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.22
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.23
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.24
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.25
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.26
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.27
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.28
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.29
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.3
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.30
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.31
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.32
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.33
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.34
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.35
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.36
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.37
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.38
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.39
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.4
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.40
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.41
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.42
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.43
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.44
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.45
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.46
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.47
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.48
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.49
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.5
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.50
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.51
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.52
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.53
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.54
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.55
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.56
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.57
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.58
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.59
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.6
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.60
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.61
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.62
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.63
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.64
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.65
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.66
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.67
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.68
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.69
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.7
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.70
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.71
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.72
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.73
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.74
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.8
+TESTS-expressions.temporal.Temporal9.xml:[3] Should truncate localdatetime -- @1.9
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.1
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.10
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.11
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.12
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.13
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.14
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.15
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.16
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.17
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.18
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.19
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.2
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.20
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.21
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.22
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.23
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.24
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.25
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.26
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.27
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.28
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.29
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.3
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.30
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.31
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.32
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.33
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.34
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.35
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.36
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.37
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.38
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.39
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.4
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.40
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.41
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.42
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.43
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.44
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.5
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.6
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.7
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.8
+TESTS-expressions.temporal.Temporal9.xml:[4] Should truncate localtime -- @1.9
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.1
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.10
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.11
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.12
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.13
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.14
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.15
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.16
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.17
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.18
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.19
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.2
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.20
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.21
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.22
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.23
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.24
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.25
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.26
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.27
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.28
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.29
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.3
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.30
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.31
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.32
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.33
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.34
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.35
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.36
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.37
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.38
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.39
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.4
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.40
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.41
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.42
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.43
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.44
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.45
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.46
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.47
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.48
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.5
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.6
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.7
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.8
+TESTS-expressions.temporal.Temporal9.xml:[5] Should truncate time -- @1.9
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[10] Handling triadic friend of a friend that is not a friend with implicit superset of labels
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[11] Handling triadic friend of a friend that is a friend
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[12] Handling triadic friend of a friend that is a friend with different relationship type
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[13] Handling triadic friend of a friend that is a friend with superset of relationship type
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[14] Handling triadic friend of a friend that is a friend with implicit subset of relationship type
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[15] Handling triadic friend of a friend that is a friend with explicit subset of relationship type
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[16] Handling triadic friend of a friend that is a friend with same labels
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[17] Handling triadic friend of a friend that is a friend with different labels
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[18] Handling triadic friend of a friend that is a friend with implicit subset of labels
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[19] Handling triadic friend of a friend that is a friend with implicit superset of labels
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[1] Handling triadic friend of a friend
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[2] Handling triadic friend of a friend that is not a friend
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[3] Handling triadic friend of a friend that is not a friend with different relationship type
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[4] Handling triadic friend of a friend that is not a friend with superset of relationship type
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[5] Handling triadic friend of a friend that is not a friend with implicit subset of relationship type
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[6] Handling triadic friend of a friend that is not a friend with explicit subset of relationship type
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[7] Handling triadic friend of a friend that is not a friend with same labels
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[8] Handling triadic friend of a friend that is not a friend with different labels
+TESTS-useCases.triadicSelection.TriadicSelection1.xml:[9] Handling triadic friend of a friend that is not a friend with implicit subset of labels

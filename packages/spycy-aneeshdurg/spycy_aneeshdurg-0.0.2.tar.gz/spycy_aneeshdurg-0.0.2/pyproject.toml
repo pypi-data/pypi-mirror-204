@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spycy_aneeshdurg"
+version = "0.0.2"
+authors = [
+  { name="Aneesh Durg", email="aneeshdurg17@gmail.com" },
+]
+description = "openCypher implemented in python"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Database :: Database Engines/Servers",
+]
+dependencies = [
+  "antlr4-python3-runtime>=4.12.0",
+  "networkx>=2.8.8",
+  "pandas>=1.5.3",
+  "numpy>=1.24.2",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/aneeshdurg/spycy"
+"Bug Tracker" = "https://github.com/aneeshdurg/spycy/issues"
+
+
+[tool.pyright]
+exclude = ["**/__pycache__"]
+pythonVersion = "3.9"
+pythonPlatform = "Linux"
+
+[tool.isort]
+profile = "black"

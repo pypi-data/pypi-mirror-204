@@ -1,0 +1,30 @@
+# Created at 2023-04-12T16:12:11.018
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2023-04-12T16:12:11.019
+WARNING: Illegal reflective access by org.opencypher.tools.Reflection (file:/home/aneesh/spycy/openCypher/tools/grammar/target/classes/) to field java.lang.invoke.MethodHandles$Lookup.IMPL_LOOKUP
+
+# Created at 2023-04-12T16:12:11.019
+WARNING: Please consider reporting this to the maintainers of org.opencypher.tools.Reflection
+
+# Created at 2023-04-12T16:12:11.019
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2023-04-12T16:12:11.020
+WARNING: All illegal access operations will be denied in a future release
+
+# Created at 2023-04-12T16:12:11.208
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2023-04-12T16:12:11.209
+WARNING: Illegal reflective access by org.opencypher.tools.Reflection (file:/home/aneesh/spycy/openCypher/tools/grammar/target/classes/) to field java.lang.invoke.MethodHandles$Lookup.IMPL_LOOKUP
+
+# Created at 2023-04-12T16:12:11.209
+WARNING: Please consider reporting this to the maintainers of org.opencypher.tools.Reflection
+
+# Created at 2023-04-12T16:12:11.209
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2023-04-12T16:12:11.209
+WARNING: All illegal access operations will be denied in a future release
+

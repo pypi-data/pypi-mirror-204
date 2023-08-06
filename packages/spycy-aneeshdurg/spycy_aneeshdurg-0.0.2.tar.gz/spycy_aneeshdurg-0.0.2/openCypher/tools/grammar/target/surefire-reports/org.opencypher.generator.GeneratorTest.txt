@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.opencypher.generator.GeneratorTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.008 s - in org.opencypher.generator.GeneratorTest
