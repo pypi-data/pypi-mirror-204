@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "orbit_database"
+version = "0.99.90"
+description = "Database library for Python based on LMDB storage engine"
+authors = ["Gareth Bult <gareth@madpenguin.uk>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+lmdb = "*"
+loguru = "*"
+ujson = "*"
+posix-ipc = "^1.1.1"
+
+[tool.poetry.dev-dependencies]
+pipenv = "*"
+pytest = "*"
+pytest-cov = "*"
+coverage = "*"
+twine = "*"
+ujson = "*"
+orjson = "*"
+zstandard = "*"
+python-snappy = "*"
+deepdiff = {extras = [ "murmur",], version = "*"}
+tox = "*"
+setuptools-pipfile = "*"
+lxml = "*"
+nltk = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest-asyncio = "^0.20.3"
+bs4 = "^0.0.1"
+loguru = "^0.7.0"
+pytest = "^7.3.1"
+poetry = "^1.4.2"
+pip = "^23.1"
+pytest-cov = "^4.0.0"
+coverage = "^7.2.3"
+coverage-badge = "^1.1.0"
+unittest2 = "^1.1.0"
+zstandard = "^0.21.0"
+python-snappy = "^0.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
