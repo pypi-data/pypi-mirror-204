@@ -1,0 +1,5 @@
+pyproject.toml
+monadic.egg-info/PKG-INFO
+monadic.egg-info/SOURCES.txt
+monadic.egg-info/dependency_links.txt
+monadic.egg-info/top_level.txt
