@@ -1,0 +1,6 @@
+{
+  "tests/contract_test.py::test_create_client": true,
+  "tests/contract_test.py::test_create_contract": true,
+  "tests/contract_test.py::test_function_second": true,
+  "tests/contract_test.py::test_create_self_promotion_contract": true
+}
