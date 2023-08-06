@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+lakeside2/__init__.py
+lakeside2/lakeside_pb2.py
+lakeside2.egg-info/PKG-INFO
+lakeside2.egg-info/SOURCES.txt
+lakeside2.egg-info/dependency_links.txt
+lakeside2.egg-info/requires.txt
+lakeside2.egg-info/top_level.txt
