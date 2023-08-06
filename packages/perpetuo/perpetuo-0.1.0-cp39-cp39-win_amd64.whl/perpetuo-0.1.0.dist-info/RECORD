@@ -1,0 +1,13 @@
+perpetuo/__init__.py,sha256=mhOTgereCEkbIjaDHy_F5WXixAGJM4HXe6uEls4h0d4,261
+perpetuo/_perpetuo.pyd,sha256=_6SY5Pz7pR3ZR-O9tZtjQHqbkLCbwqB5VMQaY_Mu9ks,299520
+perpetuo/_perpetuo.pyi,sha256=jfOjmfd2wW1k_26bB48goSeyKamGVnEVlWPtdBd4n9M,284
+perpetuo/_setup.py,sha256=YRhZsBM79oJB8wxqmfazgKHQsi3PgTK82Q-MODk-vRw,2557
+perpetuo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+perpetuo-0.1.0.data/scripts/perpetuo.exe,sha256=uta93j_Asv8jOYmSdyZqUi3YBJzN5q_amFzCDFo99cQ,2748416
+perpetuo-0.1.0.dist-info/LICENSE,sha256=fh7tiadjxlhx51UqgQ6cuKWg3i0PaLcnCyrOjbQi0y4,197
+perpetuo-0.1.0.dist-info/LICENSE.APACHE2,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+perpetuo-0.1.0.dist-info/LICENSE.MIT,sha256=7uRehJzQoBjtl-lR8XhEmX_JnSkOHYHQz40Szqmc850,1113
+perpetuo-0.1.0.dist-info/METADATA,sha256=A4FIEs0dECuesDDGqEpwfABmXP8BrWy9gev9nbZFHtQ,2977
+perpetuo-0.1.0.dist-info/WHEEL,sha256=eep6QWEFiQfg2wcclssb_WY-D33AnLYLnEKGA9Rn-VU,100
+perpetuo-0.1.0.dist-info/top_level.txt,sha256=uiv_yCp6l6Yfa6Y_-BzrCEC5OM8Ilyc-J-Gi9KyFDjk,9
+perpetuo-0.1.0.dist-info/RECORD,,
