@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cijoe-pkg-linux
+Version: 0.9.8
+Summary: A loosely coupled approach to systems development and testing
+Home-page: UNKNOWN
+Author: Simon A. F. Lund
+Author-email: os@safl.dk
+Maintainer: Simon A. F. Lund
+Maintainer-email: os@safl.dk
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+License-File: LICENSE
+
+UNKNOWN
+
