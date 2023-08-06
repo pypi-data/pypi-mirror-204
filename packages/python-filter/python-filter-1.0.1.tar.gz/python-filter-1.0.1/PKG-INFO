@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: python-filter
+Version: 1.0.1
+Summary: Tools for filter items in dict
+Author: Marcuth
+Author-email: marcuth2006@gmail.com
+License: MIT License
+Keywords: filter tools
+Description-Content-Type: text/plain
