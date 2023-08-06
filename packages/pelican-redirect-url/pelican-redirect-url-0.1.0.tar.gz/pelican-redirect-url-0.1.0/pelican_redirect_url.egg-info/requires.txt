@@ -1,0 +1,6 @@
+
+[dev]
+flake8
+pep8-naming
+pelican>=4.5
+Markdown
