@@ -1,0 +1,9 @@
+xia_engine_bigquery/__init__.py,sha256=Fj2iNqDQ2KfXNSRXldTfLl-jjN9oVoWTnc7GgVZqZXI,361
+xia_engine_bigquery/engine.cpython-310-x86_64-linux-gnu.so,sha256=s38NltbnBRCaIiZDiam83t8jjM_dqbBOGUd03kGGE88,1018440
+xia_engine_bigquery/proto.cpython-310-x86_64-linux-gnu.so,sha256=rqV5O9ixtzMJnzDGI3FcS_YVJakYLbmvshk4IaGWiWc,788968
+xia_engine_bigquery/schema.cpython-310-x86_64-linux-gnu.so,sha256=mhIJh-qcCCWus0aIt7ST44FM-JatJO40ph9ROwHZGbI,793096
+xia_engine_bigquery-0.1.7.dist-info/LICENSE.txt,sha256=30wWxpufZqbxK7WdwZRoX8iA_veQA4gbl5oih3j5vFs,152
+xia_engine_bigquery-0.1.7.dist-info/METADATA,sha256=I_zPDXie-910L7M-F1bICESS0tdSjknfK9Vv8oKwhvo,849
+xia_engine_bigquery-0.1.7.dist-info/WHEEL,sha256=Kn0XEVEprF3m5Ls7p1vDRSgmlko_ccaWbbQdh4VEEUE,108
+xia_engine_bigquery-0.1.7.dist-info/top_level.txt,sha256=_yEmJhHpPT-DWURs_JBDhoK6nResg3ySwAYjmia8-Cg,20
+xia_engine_bigquery-0.1.7.dist-info/RECORD,,
