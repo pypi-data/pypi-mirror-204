@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/dictgen/__init__.py
+src/dictgen/generate.py
+src/dictgen/utils.py
+src/dictgen.egg-info/PKG-INFO
+src/dictgen.egg-info/SOURCES.txt
+src/dictgen.egg-info/dependency_links.txt
+src/dictgen.egg-info/top_level.txt
+tests/test_generate.py
