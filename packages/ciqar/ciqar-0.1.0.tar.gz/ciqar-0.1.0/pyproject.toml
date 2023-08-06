@@ -1,0 +1,62 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "ciqar"
+keywords = ["linter", "report", "code analysis", "code quality"]
+authors = [{name = "Thomas Wesenigk <thw-oss@fomori.de>"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Quality Assurance",
+]
+requires-python = ">=3.7"
+dynamic = ["version", "description"]
+dependencies = [
+    "attrs",
+    "Jinja2",
+    "typing_extensions",
+]
+
+[project.optional-dependencies]
+devtools = [
+    "invoke",
+    "pytest",
+    "pytest-cov",
+    "pyfakefs",
+    "mypy",
+    "pyright",
+]
+
+[project.urls]
+Home = "https://codeberg.org/Aardjon/ciqar/"
+Source = "https://codeberg.org/Aardjon/ciqar.git"
+
+[project.scripts]
+ciqar = "ciqar:main"
+
+[tool.pytest.ini_options]
+minversion = "7.2"
+testpaths=["test"]
+addopts = "--import-mode=importlib --cov src --cov-report=html"
+
+[tool.coverage.report]
+include_namespace_packages = "true"
+
+[tool.pyright]
+include = ["src", "test"]
+exclude = ["**/__pycache__"]
+reportMissingImports = true
+reportMissingTypeStubs = false
