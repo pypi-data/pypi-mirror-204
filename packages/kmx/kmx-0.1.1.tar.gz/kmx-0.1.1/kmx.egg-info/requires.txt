@@ -1,0 +1,5 @@
+aiokafka<0.9,>=0.8
+pydantic<1.11,>=1.10
+beanie<1.18,>=1.17
+aioredis[hiredis]<2.1,>=2.0
+networkx<3.1,>=3.0
