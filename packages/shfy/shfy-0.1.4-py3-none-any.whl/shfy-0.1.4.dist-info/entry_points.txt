@@ -1,0 +1,5 @@
+[console_scripts]
+shfy = shfy.shfy:main
+shfy_complete = shfy.shfy_completion:complete
+shfy_explain = shfy.shfy_completion:explain
+
