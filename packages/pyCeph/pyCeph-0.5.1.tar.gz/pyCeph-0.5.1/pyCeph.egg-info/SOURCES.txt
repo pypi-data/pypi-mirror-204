@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyCeph/__init__.py
+pyCeph/aios3.py
+pyCeph/crypto.py
+pyCeph/log.py
+pyCeph/s3.py
+pyCeph.egg-info/PKG-INFO
+pyCeph.egg-info/SOURCES.txt
+pyCeph.egg-info/dependency_links.txt
+pyCeph.egg-info/requires.txt
+pyCeph.egg-info/top_level.txt

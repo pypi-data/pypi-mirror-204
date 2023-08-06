@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyCeph
+Version: 0.5.1
+Summary: ceph using tool
+Home-page: https://github.com/susufqx/pyCeph
+Author: susufqx
+Author-email: jiangsulirui@gmail.com
+License: MIT Licence
+Keywords: pip,pyCeph,s3,ceph
+Platform: any
+License-File: LICENSE
+
+ceph using tool
