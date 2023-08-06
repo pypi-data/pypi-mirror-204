@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "title": "GamaVesselConfig",
+  "properties": {
+    "variant": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/Variant"
+        }
+      ],
+      "default": "whiskey_bravo"
+    },
+    "mode": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/Mode"
+        }
+      ],
+      "default": "simulator"
+    },
+    "extensions": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/GamaVesselConfigExtensions"
+        }
+      ]
+    },
+    "network": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/Network"
+        }
+      ],
+      "default": "shared"
+    },
+    "prod": {
+      "type": "boolean",
+      "default": false
+    },
+    "log_level": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/LogLevel"
+        }
+      ],
+      "default": "info"
+    },
+    "ubiquity_user": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "ubiquity_pass": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "ubiquity_ip": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "ddsrouter_groundstation_ip": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "ddsrouter_groundstation_port": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "ddsrouter_vessel_ip": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "ddsrouter_vessel_port": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "$defs": {
+    "Variant": {
+      "title": "Variant",
+      "enum": [
+        "whiskey_bravo",
+        "educat"
+      ]
+    },
+    "Mode": {
+      "title": "Mode",
+      "enum": [
+        "simulator",
+        "hardware",
+        "stubs"
+      ]
+    },
+    "GamaVesselConfigExtensions": {
+      "type": "object",
+      "title": "GamaVesselConfigExtensions",
+      "properties": {
+        "lookout": {
+          "type": "boolean",
+          "default": false
+        },
+        "rviz": {
+          "type": "boolean",
+          "default": false
+        },
+        "groot": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "Network": {
+      "title": "Network",
+      "enum": [
+        "shared",
+        "vpn",
+        "host"
+      ]
+    },
+    "LogLevel": {
+      "title": "LogLevel",
+      "enum": [
+        "info",
+        "debug"
+      ]
+    }
+  }
+}
