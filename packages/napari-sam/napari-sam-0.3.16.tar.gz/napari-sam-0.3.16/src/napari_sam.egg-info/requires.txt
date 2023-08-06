@@ -1,0 +1,15 @@
+numpy
+magicgui
+qtpy
+napari
+vispy
+tqdm
+napari-nifti
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5
