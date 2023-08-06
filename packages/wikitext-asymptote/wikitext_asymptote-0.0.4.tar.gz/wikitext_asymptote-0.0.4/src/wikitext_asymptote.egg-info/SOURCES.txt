@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/wikitext_asymptote/__init__.py
+src/wikitext_asymptote/parse.py
+src/wikitext_asymptote.egg-info/PKG-INFO
+src/wikitext_asymptote.egg-info/SOURCES.txt
+src/wikitext_asymptote.egg-info/dependency_links.txt
+src/wikitext_asymptote.egg-info/requires.txt
+src/wikitext_asymptote.egg-info/top_level.txt
