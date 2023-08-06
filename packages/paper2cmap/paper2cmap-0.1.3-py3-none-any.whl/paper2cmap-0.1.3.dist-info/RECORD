@@ -1,0 +1,15 @@
+paper2cmap/__init__.py,sha256=4e0umOVdemajNwXCsaY8NTfME3TVCGLs_BjyS0wQypQ,179
+paper2cmap/cmapgpt.py,sha256=k8Nxy7OXJa_waFelEmek0yNMrFBJk4sQpWbE-vHrR_0,6508
+paper2cmap/llm.py,sha256=qooosg2WNt3XR8oQMTJK344U6Y_9RVxFBEPAPgdYkLU,2368
+paper2cmap/logger.py,sha256=PMgJt-87wKgYcfPMYGmRqo_PDxLcVrRVSPVdpFHbqpE,409
+paper2cmap/paper2cmap.py,sha256=bpfRmvIdZMd3-_LR18C7agCAUjnOcAYWtBWXnGi5nFQ,5603
+paper2cmap/paper_reader.py,sha256=dH8cYvigGlNUjfWXso51Hr3y-R4ZlGEsicFOoLuqsKc,3700
+paper2cmap/metas/generate_examples.json,sha256=y9Op0Lh7jBHEcUYxaZhNBp1c2irdALVK6ollTroyRXI,947
+paper2cmap/metas/merge_and_prune_examples.json,sha256=K39PslExMcM0_esYlgl8qLigglNxh_u_Y8kC9L8NfKU,675
+paper2cmap/metas/preprocess_examples.json,sha256=d1xpE3fYMvFYJZ6834FBfNjyjA0I8KoOdQ_prn5-G7Y,8
+paper2cmap/metas/prompts.yaml,sha256=ms7i5s2-x_Z8SeS7Ge9l-vBqkHzSq-Z9QbbkS63fZGU,3068
+paper2cmap-0.1.3.dist-info/LICENSE,sha256=9vhbP70yNVO-h6PI275IhjEBVH0RC1mepsNVzB38Nrw,1065
+paper2cmap-0.1.3.dist-info/METADATA,sha256=XSx4JJi70qAj4yZUzHIS6F4QDyJWpPYbRsU506JJWvE,5608
+paper2cmap-0.1.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+paper2cmap-0.1.3.dist-info/top_level.txt,sha256=cfBZK_Ni8cBe-PnW8mSw-BRes2vg8epQkLDK4SQwDTY,11
+paper2cmap-0.1.3.dist-info/RECORD,,
