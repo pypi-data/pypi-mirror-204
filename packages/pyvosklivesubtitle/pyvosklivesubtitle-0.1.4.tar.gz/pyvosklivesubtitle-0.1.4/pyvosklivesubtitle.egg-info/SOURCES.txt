@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pyvosklivesubtitle/__init__.py
+pyvosklivesubtitle.egg-info/PKG-INFO
+pyvosklivesubtitle.egg-info/SOURCES.txt
+pyvosklivesubtitle.egg-info/dependency_links.txt
+pyvosklivesubtitle.egg-info/entry_points.txt
+pyvosklivesubtitle.egg-info/requires.txt
+pyvosklivesubtitle.egg-info/top_level.txt
