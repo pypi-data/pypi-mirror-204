@@ -1,0 +1,2 @@
+[console_scripts]
+benchmark_mutant = yze.benchmark_mutant:main
