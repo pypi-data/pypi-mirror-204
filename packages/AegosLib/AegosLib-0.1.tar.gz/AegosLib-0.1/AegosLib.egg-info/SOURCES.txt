@@ -1,0 +1,9 @@
+LICENSE.txt
+setup.py
+AegosLib.egg-info/PKG-INFO
+AegosLib.egg-info/SOURCES.txt
+AegosLib.egg-info/dependency_links.txt
+AegosLib.egg-info/not-zip-safe
+AegosLib.egg-info/top_level.txt
+code/Aegos.py
+code/__init__.py
