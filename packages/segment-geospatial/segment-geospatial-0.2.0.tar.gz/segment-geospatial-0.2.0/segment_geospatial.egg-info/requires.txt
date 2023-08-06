@@ -1,0 +1,12 @@
+segment-anything-py
+opencv-python
+pycocotools
+matplotlib
+onnx
+geopandas
+rasterio
+tqdm
+gdown
+
+[:python_version < "3.11"]
+onnxruntime
