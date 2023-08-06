@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hmku
+Version: 1.0.2
+Summary: 下载韩漫库主页漫画
+Author: Yuki
+Author-email: 3026408975@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+导入hmku
+
+>pip install hmku
+
+# 使用实例
+
+>import hmku
+
+>hmku.download('Homepage_Url')
+
+##### 只能是主页链接,下载不完成请重新下载（或删除在下载）
