@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: skainet
+Version: 0.0.0.dev4
+Author-email: Zach Morris <zacharymorr@outlook.com>
+Requires-Python: >=3.7
+Requires-Dist: openai (==0.27.4)
+Requires-Dist: click (==8.1.3)
+

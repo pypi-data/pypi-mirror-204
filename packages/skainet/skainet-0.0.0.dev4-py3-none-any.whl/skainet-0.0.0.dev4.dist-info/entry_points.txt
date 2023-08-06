@@ -1,0 +1,2 @@
+[console_scripts]
+skai = skainet.__main__:main
