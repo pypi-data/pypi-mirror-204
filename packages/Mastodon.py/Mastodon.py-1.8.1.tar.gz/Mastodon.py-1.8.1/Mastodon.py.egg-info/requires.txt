@@ -1,0 +1,31 @@
+requests>=2.4.2
+python-dateutil
+six
+decorator>=4.0.0
+blurhash>=1.1.4
+
+[:platform_system != "Windows"]
+python-magic
+
+[:platform_system == "Windows"]
+python-magic-bin
+
+[blurhash]
+blurhash>=1.1.4
+
+[test]
+pytest
+pytest-runner
+pytest-cov
+vcrpy
+pytest-vcr
+pytest-mock
+requests-mock
+pytz
+http_ece>=1.0.5
+cryptography>=1.6.0
+blurhash>=1.1.4
+
+[webpush]
+http_ece>=1.0.5
+cryptography>=1.6.0

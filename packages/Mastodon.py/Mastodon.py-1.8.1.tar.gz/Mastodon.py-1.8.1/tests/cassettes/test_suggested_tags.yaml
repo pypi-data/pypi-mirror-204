@@ -1,0 +1,173 @@
+interactions:
+- request:
+    body: status=cool+free+%23ringtones
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer __MASTODON_PY_TEST_ACCESS_TOKEN
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '29'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - tests/v311
+    method: POST
+    uri: http://localhost:3000/api/v1/statuses
+  response:
+    body:
+      string: '{"id":"110249416329767723","created_at":"2023-04-23T17:56:28.043Z","in_reply_to_id":null,"in_reply_to_account_id":null,"sensitive":false,"spoiler_text":"","visibility":"public","language":"ja","uri":"http://localhost:3000/users/mastodonpy_test/statuses/110249416329767723","url":"http://localhost:3000/@mastodonpy_test/110249416329767723","replies_count":0,"reblogs_count":0,"favourites_count":0,"edited_at":null,"favourited":false,"reblogged":false,"muted":false,"bookmarked":false,"pinned":false,"content":"\u003cp\u003ecool
+        free \u003ca href=\"http://localhost:3000/tags/ringtones\" class=\"mention
+        hashtag\" rel=\"tag\"\u003e#\u003cspan\u003eringtones\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e","filtered":[],"reblog":null,"application":{"name":"Mastodon.py
+        test suite","website":null},"account":{"id":"110248832373441811","username":"mastodonpy_test","acct":"mastodonpy_test","display_name":"John
+        Lennon","locked":true,"bot":false,"discoverable":null,"group":false,"created_at":"2023-04-23T00:00:00.000Z","note":"\u003cp\u003eI
+        walk funny\u003c/p\u003e","url":"http://localhost:3000/@mastodonpy_test","avatar":"http://localhost:3000/system/accounts/avatars/110/248/832/373/441/811/original/a3bffa303d66a3f3.jpg","avatar_static":"http://localhost:3000/system/accounts/avatars/110/248/832/373/441/811/original/a3bffa303d66a3f3.jpg","header":"http://localhost:3000/system/accounts/headers/110/248/832/373/441/811/original/9c722424942444ff.jpg","header_static":"http://localhost:3000/system/accounts/headers/110/248/832/373/441/811/original/9c722424942444ff.jpg","followers_count":0,"following_count":0,"statuses_count":1,"last_status_at":"2023-04-23","noindex":false,"emojis":[],"roles":[],"fields":[{"name":"bread","value":"toasty.","verified_at":null},{"name":"lasagna","value":"no!!!","verified_at":null}]},"media_attachments":[],"mentions":[],"tags":[{"name":"ringtones","url":"http://localhost:3000/tags/ringtones"}],"emojis":[],"card":null,"poll":null}'
+    headers:
+      Cache-Control:
+      - private, no-store
+      Content-Security-Policy:
+      - default-src 'none'; frame-ancestors 'none'; form-action 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      ETag:
+      - W/"68369756d1dca14bcf43cb9169e44311"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept, Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-RateLimit-Limit:
+      - '300'
+      X-RateLimit-Remaining:
+      - '296'
+      X-RateLimit-Reset:
+      - '2023-04-23T18:00:00.094780Z'
+      X-Request-Id:
+      - ce2de00e-0e65-46fe-90cc-6d66d2459814
+      X-Runtime:
+      - '0.070627'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer __MASTODON_PY_TEST_ACCESS_TOKEN
+      Connection:
+      - keep-alive
+      User-Agent:
+      - tests/v311
+    method: GET
+    uri: http://localhost:3000/api/v1/featured_tags/suggestions
+  response:
+    body:
+      string: '[{"name":"ringtones","url":"http://localhost:3000/tags/ringtones","history":[{"day":"1682208000","accounts":"1","uses":"1"},{"day":"1682121600","accounts":"0","uses":"0"},{"day":"1682035200","accounts":"0","uses":"0"},{"day":"1681948800","accounts":"0","uses":"0"},{"day":"1681862400","accounts":"0","uses":"0"},{"day":"1681776000","accounts":"0","uses":"0"},{"day":"1681689600","accounts":"0","uses":"0"}],"following":false}]'
+    headers:
+      Cache-Control:
+      - private, no-store
+      Content-Security-Policy:
+      - default-src 'none'; frame-ancestors 'none'; form-action 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      ETag:
+      - W/"71b87cfa6fe167f18ee55d681090fa51"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept, Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - 4a0e7a2d-4ad5-4937-b0aa-cfa52bf965cc
+      X-Runtime:
+      - '0.020302'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer __MASTODON_PY_TEST_ACCESS_TOKEN
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - tests/v311
+    method: DELETE
+    uri: http://localhost:3000/api/v1/statuses/110249416329767723
+  response:
+    body:
+      string: '{"id":"110249416329767723","created_at":"2023-04-23T17:56:28.043Z","in_reply_to_id":null,"in_reply_to_account_id":null,"sensitive":false,"spoiler_text":"","visibility":"public","language":"ja","uri":"http://localhost:3000/users/mastodonpy_test/statuses/110249416329767723","url":"http://localhost:3000/@mastodonpy_test/110249416329767723","replies_count":0,"reblogs_count":0,"favourites_count":0,"edited_at":null,"favourited":false,"reblogged":false,"muted":false,"bookmarked":false,"pinned":false,"text":"cool
+        free #ringtones","filtered":[],"reblog":null,"application":{"name":"Mastodon.py
+        test suite","website":null},"account":{"id":"110248832373441811","username":"mastodonpy_test","acct":"mastodonpy_test","display_name":"John
+        Lennon","locked":true,"bot":false,"discoverable":null,"group":false,"created_at":"2023-04-23T00:00:00.000Z","note":"\u003cp\u003eI
+        walk funny\u003c/p\u003e","url":"http://localhost:3000/@mastodonpy_test","avatar":"http://localhost:3000/system/accounts/avatars/110/248/832/373/441/811/original/a3bffa303d66a3f3.jpg","avatar_static":"http://localhost:3000/system/accounts/avatars/110/248/832/373/441/811/original/a3bffa303d66a3f3.jpg","header":"http://localhost:3000/system/accounts/headers/110/248/832/373/441/811/original/9c722424942444ff.jpg","header_static":"http://localhost:3000/system/accounts/headers/110/248/832/373/441/811/original/9c722424942444ff.jpg","followers_count":0,"following_count":0,"statuses_count":0,"last_status_at":"2023-04-23","noindex":false,"emojis":[],"roles":[],"fields":[{"name":"bread","value":"toasty.","verified_at":null},{"name":"lasagna","value":"no!!!","verified_at":null}]},"media_attachments":[],"mentions":[],"tags":[{"name":"ringtones","url":"http://localhost:3000/tags/ringtones"}],"emojis":[],"card":null,"poll":null}'
+    headers:
+      Cache-Control:
+      - private, no-store
+      Content-Security-Policy:
+      - default-src 'none'; frame-ancestors 'none'; form-action 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      ETag:
+      - W/"804e9e72e6451a015e00724456f4fe34"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept, Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - 4ae321b3-29d7-4caa-ad58-67280c68f1a5
+      X-Runtime:
+      - '0.036580'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1
