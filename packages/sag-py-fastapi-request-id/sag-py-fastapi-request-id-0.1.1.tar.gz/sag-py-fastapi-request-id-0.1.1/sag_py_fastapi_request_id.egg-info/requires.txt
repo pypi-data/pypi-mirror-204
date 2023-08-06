@@ -1,0 +1,13 @@
+contextvars==2.4
+starlette>=0.13.2
+
+[dev]
+flake8
+mypy
+build
+pytest
+pytest-asyncio
+pytest-cov
+coverage-lcov
+mock
+types-mock
