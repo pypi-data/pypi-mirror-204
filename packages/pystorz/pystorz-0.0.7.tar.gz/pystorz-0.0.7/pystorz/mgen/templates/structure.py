@@ -1,0 +1,31 @@
+ 
+
+def {{ data.name }}Factory():
+	ret = _{{ data.name }}()
+	{% for prop in data.properties %}
+	ret.{{ prop.name }}_ = {{ prop.default }}{% endfor %}
+	
+	return ret
+
+
+class _{{ data.name }}({{data.implements}}):
+
+	def __init__(self):
+		{% for prop in data.properties %}
+		self.{{ prop.name }}_ = {{prop.default}}{% endfor %}
+
+	{% for prop in data.properties %}
+	{% if prop.name != "External" %}
+
+	def Set{{ prop.name }}(self, val):
+		self.{{ prop.name }}_ = val
+
+	def {{ prop.name }}(self):
+		return self.{{ prop.name }}_
+
+	{% endif %}
+	{% endfor %}
+
+	def Clone(entity):
+		return utils.clone_object(entity, Schema())
+
