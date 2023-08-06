@@ -1,0 +1,16 @@
+histcite/__init__.py,sha256=8oAxKUG747GUokmxjkrWejyJa5yPNEsoJDlXxoedxTw,21
+histcite/cli.py,sha256=bVv-Rh2MpNVRFerqHgRf5uiAT8uIJk1cZfSu_Sz6apE,1770
+histcite/compute_metrics.py,sha256=snioKLh0T59-8w1AqxYeK3bERNYLD8sS7O3DB0iB288,3973
+histcite/network_graph.py,sha256=oSTJKpbgFeYnOfvHYWivDfSRM7GCPQTvsgwMwQtpMZY,4602
+histcite/parse_citation.py,sha256=9vL2BBBKqiQNlIvJ7JleW0p4ElCN9qt_d2FhEWdPSaY,2481
+histcite/process_table.py,sha256=HsFOM4YoYdPyOqyWZVsrR-MpkXyNhkHtwTakyrnE_lw,5128
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_compute_metrics.py,sha256=1R99u-PnX8d_CZn03gyraa_OHj_oTvLnaQdor0m-PIM,506
+test/test_network_graph.py,sha256=LIWpTA_BT2_j8UdBgqYzNSa2lRKJNG6gQ9uaqZrHtCw,473
+test/test_parse_citation.py,sha256=kC9oq93kH8YsrqV0ax3qRJnK0M0DLCZLlqgXcNGVzjc,2483
+histcite_python-0.1.1.dist-info/LICENSE,sha256=ckrCglW00Do6DGhIcOCaetBgAuN6tkhOQTRC3e3minM,1064
+histcite_python-0.1.1.dist-info/METADATA,sha256=nd6ltLh8R694J4jb6lbKNXMgtQvL1PQsmRrMW_GOFPY,6220
+histcite_python-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+histcite_python-0.1.1.dist-info/entry_points.txt,sha256=Alc1xzVLTyJPUZ_SRh28lbgHoj3HwKiDz8yUsdpKKBg,47
+histcite_python-0.1.1.dist-info/top_level.txt,sha256=ISgRphhg0HjrE8LqAt4szsQAmEgmbozx1K1OFovCXLc,14
+histcite_python-0.1.1.dist-info/RECORD,,
