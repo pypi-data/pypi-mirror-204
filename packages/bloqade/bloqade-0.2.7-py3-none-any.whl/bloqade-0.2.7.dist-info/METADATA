@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: bloqade
+Version: 0.2.7
+Summary: neutral atom software development kit
+Author-Email: Roger-luo <info@quera.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: juliacall>=0.9.12
+Description-Content-Type: text/markdown
+
+# bloqade
+
+neutral atom software development kit
