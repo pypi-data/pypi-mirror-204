@@ -1,0 +1,2 @@
+[asphalt.components]
+space = fps_localspace.main:LocalspaceComponent
