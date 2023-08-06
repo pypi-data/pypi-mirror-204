@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: prodia-python
+Version: 1.6
+Summary: Prodia API Python Wrapper
+Author: yoou3-cyber
+Author-email: zenafey@eugw.ru
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# prodia-python
+This module makes generation of image by Prodia API easier
+
+### Installation 
+```
+pip install git+https://github.com/yoou3-cyber/prodia-python
+```
+or
+```
+pip install prodia-python==1.6
+```
+For using this script you need to get your Prodia api key, you can make it on https://app.prodia.com/api
+
+
+### Example of usage
+```python
+import prodia
+
+key = "your-prodia-key"
+
+image = prodia.run(key=key, prompt="kittens on cloud", model="dreamlike-diffusion-2.0.safetensors [fdcf65e7]")
+print(image)
+```
+`image` variable will be a url of your image
+
+### Additional info
+prodia.run() have arguments:
+- `key` - string Prodia API key(required)
+- `prompt` - string prompt for image(default is "kittens on cloud")
+- `negative_prompt` - string for negative tags(default is blank)
+- `model` - string(you can see al available models on https://docs.prodia.com/reference/generate, default is v1-5-pruned-emaonly.ckpt [81761151])
+- `aspect_ratio` - string(square, portrait, landscape, default is square)
+- `steps` - integer, 1-30, default is 25
+- `cfg_scale` - integer, 1-20, default is 7
+- `sampler` - string(you can see all available samplers on https://docs.prodia.com/reference/generate, default is Euler)
+- `seed` - integer(default -1, it generates images with random seed)
+- `upscale` - boolean of 2x upscaling(default False)
+
+![7eacddcb-3a45-4114-b731-3cd7af9522e1](https://user-images.githubusercontent.com/118455214/233359979-80274381-10dd-4ced-b7fa-d45437ef5bce.png)
+
