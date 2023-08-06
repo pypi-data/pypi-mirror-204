@@ -1,0 +1,2 @@
+[console_scripts]
+w7x-download = fusionsc.devices.w7x.scripts:download
