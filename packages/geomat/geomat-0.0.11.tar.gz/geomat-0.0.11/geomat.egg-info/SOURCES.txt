@@ -1,0 +1,7 @@
+README.md
+setup.py
+geomat.egg-info/PKG-INFO
+geomat.egg-info/SOURCES.txt
+geomat.egg-info/dependency_links.txt
+geomat.egg-info/requires.txt
+geomat.egg-info/top_level.txt
