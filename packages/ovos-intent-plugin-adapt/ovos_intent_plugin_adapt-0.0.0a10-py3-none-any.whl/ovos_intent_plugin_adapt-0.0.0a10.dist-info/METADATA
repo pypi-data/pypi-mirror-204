@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ovos-intent-plugin-adapt
+Version: 0.0.0a10
+Summary: A intent plugin for mycroft
+Home-page: https://github.com/OpenVoiceOS/ovos-intent-plugin-adapt
+Author: JarbasAi
+Author-email: jarbasai@mailfence.com
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: ovos-plugin-manager
+Requires-Dist: adapt-parser
+Requires-Dist: ovos-utils
+
+UNKNOWN
+
+
