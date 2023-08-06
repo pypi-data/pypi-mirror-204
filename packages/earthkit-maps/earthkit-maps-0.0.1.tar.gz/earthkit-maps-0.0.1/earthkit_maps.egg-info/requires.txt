@@ -1,0 +1,7 @@
+cartopy>=0.19.0
+matplotlib
+emohawk
+numpy
+pyproj
+xarray
+pyyaml
