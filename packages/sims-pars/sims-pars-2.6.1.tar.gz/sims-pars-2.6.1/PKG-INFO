@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sims-pars
+Version: 2.6.1
+Summary: Serving stochastic parameters to simulation modelse
+Author-email: Chu-Chang Ku <TimeWz667@gmail.com>
+Project-URL: Homepage, https://github.com/CxModelling/sims-parst
+Project-URL: Bug Tracker, https://github.com/CxModelling/sims-pars/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sims-pars
+Serving stochastic parameters to simulation models
