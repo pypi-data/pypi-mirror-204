@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+
+    <h4>База данных: <span style="font-weight: normal">{{ db }} ({{ alias }})</span></h4>
+    <h4>Таблица: <span style="font-weight: normal">{{ table }}</span></h4>
+    <div>{{ table_info.size.0 }} {{ table_info.size.1 }}</div>
+    <div>{{ table_info.rows }} записей</div>
+
+    <div hidden id="wait" style="font-weight: bold; color: #00008B; margin-bottom: 20px">Подождите ...</div>
+    <div style="font-weight: bold; color: #00008B; margin-bottom: 30px">{{ result }}</div>
+
+    <div class="code">{{ sql }}</div>
+
+    <div style="display: inline-flex">
+        <form method="post" style="padding: 10px">
+            {% csrf_token %}
+            <input hidden type="text" name="run_sql_query" value="run">
+            <input hidden type="text" name="filter_value" value="{{ filter_value }}">
+            <button type="submit" onclick="document.getElementById('wait').hidden = false">Выполнить запрос</button>
+        </form>
+
+        <form method="post" style="padding: 10px">
+            {% csrf_token %}
+            <input hidden type="text" name="filter_value" value="{{ filter_value }}">
+            <button type="button" onclick="edit_date(this)">Изменить значение фильтра</button>
+            <button hidden type="submit">Применить</button>
+        </form>
+    </div>
+
+</body>
+
+<script>
+    function edit_date(el){
+        el.parentElement.filter_value.hidden = false;
+        el.hidden = true;
+        el.parentElement.children[3].hidden = false
+    }
+</script>
+
+<style>
+    html, body {font-family: sans-serif; }
+    .code {
+        font-family: monospace;
+        font-size: large;
+    }
+</style>
+
+</html>
