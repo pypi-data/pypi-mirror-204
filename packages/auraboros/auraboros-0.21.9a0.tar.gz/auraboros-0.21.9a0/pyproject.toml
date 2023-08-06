@@ -1,0 +1,12 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "auraboros"
+version = "0.21.9-alpha"
+dependencies = ["pygame", "moderngl"]
+requires-python = ">=3.10.8"
+
+[project.entry-points.pyinstaller40]
+hook-dirs = "auraboros.__pyinstaller:get_hook_dirs"
