@@ -1,0 +1,16 @@
+ERROR:cfscanner.main:Could not read subnets
+Traceback (most recent call last):
+  File "/home/smz/.local/lib/python3.10/site-packages/cfscanner/subnets/cidr.py", line 107, in read_cidrs_from_url
+    raise SubnetsReadError(
+cfscanner.utils.exceptions.SubnetsReadError: Could not find any cidr in url https://raw.githubusercontent.com/vfarid/cf-clean-ips/main/list.txt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/smz/.local/lib/python3.10/site-packages/cfscanner/main.py", line 119, in main
+    cidr_list = read_cidrs(args.subnets)
+  File "/home/smz/.local/lib/python3.10/site-packages/cfscanner/subnets/cidr.py", line 151, in read_cidrs
+    cidrs = read_cidrs_from_url(url_or_path, timeout)
+  File "/home/smz/.local/lib/python3.10/site-packages/cfscanner/subnets/cidr.py", line 111, in read_cidrs_from_url
+    raise SubnetsReadError(f"Could not read cidrs from url \"{url}\"")
+cfscanner.utils.exceptions.SubnetsReadError: Could not read cidrs from url "https://raw.githubusercontent.com/vfarid/cf-clean-ips/main/list.txt"
