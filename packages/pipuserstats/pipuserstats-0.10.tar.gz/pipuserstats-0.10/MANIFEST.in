@@ -1,0 +1,4 @@
+include pipuserstats/requirements.txt
+include pipuserstats/thirdparty.json
+include pipuserstats/README.md
+include pipuserstats/LICENSE

@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pipuserstats/LICENSE
+pipuserstats/README.md
+pipuserstats/__init__.py
+pipuserstats/requirements.txt
+pipuserstats/thirdparty.json
+pipuserstats.egg-info/PKG-INFO
+pipuserstats.egg-info/SOURCES.txt
+pipuserstats.egg-info/dependency_links.txt
+pipuserstats.egg-info/requires.txt
+pipuserstats.egg-info/top_level.txt
