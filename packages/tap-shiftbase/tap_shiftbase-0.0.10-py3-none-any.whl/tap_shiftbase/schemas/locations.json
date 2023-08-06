@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "location": {
+      "type": "object",
+      "properties": {
+        "id": {"type": "string"},
+        "account_id": {"type": "string"},
+        "name": {"type": "string"},
+        "street_address": {"type": "string"},
+        "zipcode": {"type": "string"},
+        "city": {"type": "string"},
+        "country": {"type": "string"},
+        "email": {"type": "string"},
+        "telephone": {"type": "string"},
+        "order": {"type": "string"},
+        "deleted": {"type": "boolean"},
+        "created": {"type": "string"},
+        "updated": {"type": "string"},
+        "created_by": {"type": ["null", "string"]},
+        "modified_by": {"type": ["null", "string"]}
+      }
+    }
+  }
+}
