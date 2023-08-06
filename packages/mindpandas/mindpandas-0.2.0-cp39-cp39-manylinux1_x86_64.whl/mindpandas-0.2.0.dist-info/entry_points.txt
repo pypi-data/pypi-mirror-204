@@ -1,0 +1,2 @@
+[console_scripts]
+yrctl = mindpandas.cli:yrctl
