@@ -1,0 +1,8 @@
+numpy<1.24,>=1.20
+numba>=0.50
+xarray>=0.16
+typing-extensions
+custom-inherit
+
+[test]
+pytest
