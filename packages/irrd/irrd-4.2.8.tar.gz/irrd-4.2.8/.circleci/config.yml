@@ -1,0 +1,207 @@
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+#
+version: 2
+workflows:
+  version: 2
+  test:
+    jobs:
+      - cpython-3.6
+      - cpython-3.9
+      - pypy-3.7
+      - pypy-3.6
+jobs:
+  cpython-3.6: &test-template
+    docker:
+      - image: cimg/python:3.6
+        environment:
+          IRRD_DATABASE_URL: 'postgresql://root@localhost/circle_test'
+          IRRD_DATABASE_URL_INTEGRATION_1: 'postgresql://root@localhost/circle_test_integration_1'
+          IRRD_DATABASE_URL_INTEGRATION_2: 'postgresql://root@localhost/circle_test_integration_2'
+          IRRD_REDIS_URL: 'redis://localhost'
+          IRRD_REDIS_URL_INTEGRATION_1: 'redis://localhost/4'
+          IRRD_REDIS_URL_INTEGRATION_2: 'redis://localhost/5'
+          PYTHON_INTERPRETER: python3
+          SUDO: sudo
+          ENCHANT_PACKAGE: python3-enchant
+
+      - image: cimg/postgres:10.17
+        environment:
+          POSTGRES_USER: root
+          POSTGRES_DB: circle_test
+          POSTGRES_HOST_AUTH_METHOD: trust
+
+      - image: cimg/redis:5.0
+
+    working_directory: /mnt/ramdisk
+
+    steps:
+      - checkout
+
+      - run:
+          name: apt update
+          command: |
+            set +e
+            $SUDO apt update
+            echo
+
+      - run:
+          name: Installing psql client and enchant
+          command: $SUDO apt -y install postgresql-client netcat $ENCHANT_PACKAGE
+
+      - run:
+          name: Install rust
+          command: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
+      - restore_cache:
+          keys:
+          - v18-dependencies-{{ .Environment.CIRCLE_JOB }}-{{ checksum "requirements.txt" }}
+          # fallback to using the latest cache if no exact match is found
+          - v18-dependencies-{{ .Environment.CIRCLE_JOB }}
+
+      - run:
+          name: install latest pip
+          command: |
+            $PYTHON_INTERPRETER -m venv venv
+            . venv/bin/activate
+            pip install -U pip setuptools
+
+      - run:
+          name: install dependencies
+          command: |
+            PATH=$PATH:/root/.cargo/bin/
+            $PYTHON_INTERPRETER -m venv venv
+            . venv/bin/activate
+            pip install -Ur requirements.txt
+
+      - save_cache:
+          paths:
+            - ./venv
+          key: v18-dependencies-{{ .Environment.CIRCLE_JOB }}-{{ checksum "requirements.txt" }}
+
+      - run:
+          name: Waiting for PostgreSQL to be ready
+          command: |
+            for i in `seq 1 10`;
+            do
+              nc -z localhost 5432 && echo Success && exit 0
+              echo -n .
+              sleep 1
+            done
+            echo Failed waiting for PostgreSQL && exit 1
+
+      - run:
+          name: Creating additional database 1
+          command: psql -U root -h localhost -d circle_test -c "CREATE DATABASE circle_test_integration_1;"
+
+      - run:
+          name: Creating additional database 2
+          command: psql -U root -h localhost -d circle_test -c "CREATE DATABASE circle_test_integration_2;"
+
+      - run:
+          name: run regular tests
+          command: |
+            . venv/bin/activate
+            py.test -s -vvvv --cov=irrd irrd --junitxml=test-reports/junit.xml --cov-fail-under=100 --cov-report term-missing:skip-covered
+
+      - run:
+          name: run integration tests
+          command: |
+            . venv/bin/activate
+            py.test irrd/integration_tests/run.py -s
+
+      - run:
+          name: build docs
+          command: |
+            . venv/bin/activate
+            sphinx-build -nW -b spelling docs/ docs/build
+
+      - run:
+          name: run flake8
+          command: |
+            . venv/bin/activate
+            if [ -z "$DISABLE_FLAKE" ]; then flake8 irrd; fi
+
+      - run:
+          name: run mypy
+          command: |
+            . venv/bin/activate
+            if command -v COMMAND &> /dev/null; then mypy irrd --ignore-missing-imports; fi
+
+      - store_test_results:
+          path: test-reports
+
+      - store_artifacts:
+          path: /tmp/pytest-of-circleci/
+
+  cpython-3.9:
+    <<: *test-template
+    docker:
+      - image: cimg/python:3.9
+        environment:
+          IRRD_DATABASE_URL: 'postgresql://root@localhost/circle_test'
+          IRRD_DATABASE_URL_INTEGRATION_1: 'postgresql://root@localhost/circle_test_integration_1'
+          IRRD_DATABASE_URL_INTEGRATION_2: 'postgresql://root@localhost/circle_test_integration_2'
+          IRRD_REDIS_URL: 'redis://localhost'
+          IRRD_REDIS_URL_INTEGRATION_1: 'redis://localhost/4'
+          IRRD_REDIS_URL_INTEGRATION_2: 'redis://localhost/5'
+          PYTHON_INTERPRETER: python
+          SUDO: sudo
+          ENCHANT_PACKAGE: python3-enchant
+
+      - image: cimg/postgres:10.17
+        environment:
+          POSTGRES_USER: root
+          POSTGRES_DB: circle_test
+          POSTGRES_HOST_AUTH_METHOD: trust
+
+      - image: cimg/redis:5.0
+
+  pypy-3.7:
+    <<: *test-template
+    docker:
+      - image: pypy:3.7
+        environment:
+          IRRD_DATABASE_URL: 'postgresql://root@localhost/circle_test'
+          IRRD_DATABASE_URL_INTEGRATION_1: 'postgresql://root@localhost/circle_test_integration_1'
+          IRRD_DATABASE_URL_INTEGRATION_2: 'postgresql://root@localhost/circle_test_integration_2'
+          IRRD_REDIS_URL: 'redis://localhost'
+          IRRD_REDIS_URL_INTEGRATION_1: 'redis://localhost/4'
+          IRRD_REDIS_URL_INTEGRATION_2: 'redis://localhost/5'
+          PYTHON_INTERPRETER: pypy3
+          SUDO: ''
+          ENCHANT_PACKAGE: python3-enchant
+          DISABLE_FLAKE: true
+
+      - image: cimg/postgres:10.17
+        environment:
+          POSTGRES_USER: root
+          POSTGRES_DB: circle_test
+          POSTGRES_HOST_AUTH_METHOD: trust
+
+      - image: cimg/redis:5.0
+
+
+  pypy-3.6:
+    <<: *test-template
+    docker:
+      - image: pypy:3.6
+        environment:
+          IRRD_DATABASE_URL: 'postgresql://root@localhost/circle_test'
+          IRRD_DATABASE_URL_INTEGRATION_1: 'postgresql://root@localhost/circle_test_integration_1'
+          IRRD_DATABASE_URL_INTEGRATION_2: 'postgresql://root@localhost/circle_test_integration_2'
+          IRRD_REDIS_URL: 'redis://localhost'
+          IRRD_REDIS_URL_INTEGRATION_1: 'redis://localhost/4'
+          IRRD_REDIS_URL_INTEGRATION_2: 'redis://localhost/5'
+          PYTHON_INTERPRETER: pypy3
+          SUDO: ''
+          ENCHANT_PACKAGE: python-enchant
+          EXTRA_APT: rustc
+          DISABLE_FLAKE: true
+
+      - image: cimg/postgres:10.17
+        environment:
+          POSTGRES_USER: root
+          POSTGRES_DB: circle_test
+          POSTGRES_HOST_AUTH_METHOD: trust
+
+      - image: cimg/redis:5.0
