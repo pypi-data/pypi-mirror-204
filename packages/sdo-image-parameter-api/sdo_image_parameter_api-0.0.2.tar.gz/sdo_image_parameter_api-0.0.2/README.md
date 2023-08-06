@@ -1,0 +1,69 @@
+![SDO_Image_Parameter_API.png](SDO_Image_Parameter_API.png)
+
+## SDO Image Parameter Python API
+### A Toolkit for Accessing Solar Image Data
+
+This project was created to facilitate accessing the Image Parameter Web API 
+available at http://dmlab.cs.gsu.edu/dmlabapi/ using a Python package.
+
+___
+
+
+## Requirements
+ * Python >= 3.11
+ * For a list of all required packages, see requirements.txt.
+
+___
+
+
+## Try it Online
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fbitbucket.org%2Fds4350-image-param-api-rm%2Fsolar-image-api.git/66232f2dd77279a8faf58d45bac2c92b1461ba1e?labpath=src%2Fdemo.ipynb)
+
+---
+
+## Install it from PyPI
+You can install this package using pip: 
+`pip install sdoimageparameterapi`
+
+---
+
+## File Structure:
+
+- `sdo_image_parameter_api/image_methods.py` contains all the methods used 
+  for retrieving image information. Includes the four accessor methods 
+  described in the next section, as well as the 8 private methods that make 
+  the calls to the Web API.
+- `sdo_image_parameter_api/constants.py` includes all the defined constants 
+  for Format, InfoType, Wave, Size, Param, as well as the URLs to retrieve 
+  information with the Web API.
+- `sdo_image_parameter_api/util/converters.py` includes methods to 
+  convert XML ElementTree objects into NumPy arrays.
+- `sdo_image_parameter_api/util/validators.py` includes methods to 
+  format and validate given time parameters, as well as validate 
+  all other inputted arguments.
+
+---
+
+## Method Options
+
+There are four methods that return different types of image information. 
+
+ * The **get_img_jpeg()** method can be used to return an AIA JPEG image, or a
+   JPEG Parameter image. 
+ * The **get_img_param()** method can be used to 
+   return image parameters of one image of the sun in XML or JSON format.
+ * The **get_img_param_range()** method can be used to return image 
+   parameters of a range of images of the sun in XML or JSON format. 
+ * The **get_img_header()** method can be used to return image header 
+   information in XML or JSON format.
+
+The required parameters for each method and how to run them for each type of
+output is explained in more detail in the Notebook (src/demo.ipynb)
+
+***
+
+## Acknowledgements
+
+Thank you to Dr. Azim Ahmadzadeh for his guidance during the building of 
+this project.
