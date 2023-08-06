@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/rssfixer/__init__.py
+src/rssfixer/rss.py
+src/rssfixer.egg-info/PKG-INFO
+src/rssfixer.egg-info/SOURCES.txt
+src/rssfixer.egg-info/dependency_links.txt
+src/rssfixer.egg-info/entry_points.txt
+src/rssfixer.egg-info/requires.txt
+src/rssfixer.egg-info/top_level.txt
+src/tests/test_rss.py
