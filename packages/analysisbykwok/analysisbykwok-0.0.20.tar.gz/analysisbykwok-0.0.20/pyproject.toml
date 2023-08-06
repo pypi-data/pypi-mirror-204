@@ -1,0 +1,9 @@
+[project]
+name = 'analysisbykwok'
+version ='0.0.20'
+dependencies=[
+    'pandas',
+    'requests',
+    'PyExecJS',
+    'tushare'
+]
