@@ -1,0 +1,12 @@
+drb/drivers/era5/__init__.py,sha256=psPl0enqEa-S9ggZDgg3uoDcXk3riPtYTgn5jTkK8ww,770
+drb/drivers/era5/_version.py,sha256=3oLWP9viv3GOb6__5IyjUpEIZ3ZF6kyUM1J0cFcy_Ss,497
+drb/drivers/era5/era5.py,sha256=wNAeJUEsc4Km_IB4_yxCPOa4_0xF2Lrd9bBKe6vvC94,27883
+drb/exceptions/era5.py,sha256=JsTo66iNWe6Wlj_H1aT5zipC4pCRSbOZp4oFpFWms-M,53
+drb/topics/era5/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drb/topics/era5/cortex.yml,sha256=hU4UyjwxaObuTRMkip9GzpDceaGzXs99YXSJOUwD9t4,207
+drb_driver_era5-1.2.1.dist-info/LICENCE.txt,sha256=RzxtV7MG0zbF6dDvQsaZ1OKsHZ7CRyeILenjUIol5rs,7651
+drb_driver_era5-1.2.1.dist-info/METADATA,sha256=EafGzh-Fhswt8nckGDzGw5IFHnoBB_CFFra1cysuBvk,9139
+drb_driver_era5-1.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+drb_driver_era5-1.2.1.dist-info/entry_points.txt,sha256=QVoFFAC6e5KQT9p6K11eG49Z2Rc-REvh60klNh_VYMw,85
+drb_driver_era5-1.2.1.dist-info/top_level.txt,sha256=tp7x0jo6KHy7P4LzX36tRyB2qZR7OiCZCAQGzrq25E0,4
+drb_driver_era5-1.2.1.dist-info/RECORD,,
