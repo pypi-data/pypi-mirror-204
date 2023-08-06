@@ -1,0 +1,11 @@
+.idea/
+venv/
+*.pyc
+*.log
+*.lock
+__pycache__/
+.DS_Store
+debug_*.py
+build/
+dist/
+*.egg-info/*
