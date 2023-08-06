@@ -1,0 +1,189 @@
+Metadata-Version: 2.1
+Name: excel-sql-engine
+Version: 1.6
+Summary: A tiny SQL engine for Excel files, based on Openpyxl
+Home-page: https://gitlab.com/fabien.battini/pyxlsql
+Author: Fabien BATTINI
+Author-email: fabien.battini@gmail.com
+Keywords: excel sql
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Office/Business :: Office Suites
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# pyxl-sql: a tiny SQL engine for Excel
+
+pyxl-sql is a small implementation of SQL, for Excel workbooks.
+- for Excel file format read/write, uses Openpyxl https://pypi.org/project/openpyxl/ 
+- applies to Excel sheets that follow a 'table' format with unique column header
+- SQL queries are written inside the 'Pyxl SQL' sheet
+- SQL supports SELECT INTO, UPDATE, JOIN, FROM, AS, WHERE, WHEN, WITH, GROUP BY, HAVING, ORDER BY
+- uses python expressions
+- uses Excel formulas, with column names
+- is typically used to routinely merge/join information from several Excel sheets into a new one.
+
+
+pyxl-sql can be used as a command-line tool, either python or standalone windows executable.
+
+In this case, it looks for Excel files in the directory and executes commands found on the 'Pyxl SQL'
+sheet. Command-line options allow to change the behavior.
+
+As such, the execution of the command-line tool can be automated through an Excel macro, e.g. attached to a "button"
+
+pyxl-sql can also be used as a python library
+
+pyxl-sql is tested with tox and cov. See the "tests" directory in the source tree, 
+and the test coverage section of the doc
+
+pyxl-sql is documented. See the "doc" directory in the source tree
+
+## How to use Pyxl-Sql
+
+* One or several Excel workbooks contain 'origin' database sheets. For instance, the Northwind database
+* An additional 'destination' Excel file contains SQL statements and templates for the resulting databases. For instance, test_pyxlsql.xlsx
+* This file is read by Pyxl-Sql, and SQL statements are executed
+* Typically, SQL statements hold some 
+  * SELECT INTO, UPDATE etc statements that read data in the 'origin' databases, write in the databases of the 'destination' workbook  
+  * a 'DELETE SHEET Pyxl SQL' statement, because the SQL code is seldom useful in the final file  
+  * some 'SAVE' statement that write the updated 'destination' file
+
+As a result, several 'origin' Excel files are merged in a final 'destination' Excel file, according to the SQL statements
+
+
+## Differences with standard SQL: restrictions and additions
+
+- SQL syntax does *not* manage intermediate (virtual) tables, so no (yet) sub-commands to a command 
+(e.g. SELECT INTO applied to a SELECT)
+- Only a subset of SQL commands are managed
+- column names can contain space, and enclosed into {} when used in an expression or formula
+- by default, tables (i.e. Excel sheets) are numbered following their appearance in the command,
+  starting at 0, 
+  so that the syntax @1{FIELD NAME} indicates "FIELD NAME" in the table/sheet number 1, 
+  i.e. an alias ("AS") is created automatically
+- a SET clause is used to specify the fields being created in a SELECT command (or equivalent), 
+  in a way similar to the SET clause in an UPDATE command  
+- in a SET clause, the right member is NOT restricted to a field name, it can be an arbitrary PYTHON expression, 
+starting with ':=' for instance:
+
+``SET	Priority	=	':= "Major" if @0{Range} in ("High", "Medium") and #0{Potential 2021} > 100000 else "Minor"'
+``
+- Excel formulas are also accepted, starting with '=', for instance:
+
+``SET Mean = '=SUM(M2:Q2)/SUM(R2:V2)'
+``
+- the SET syntax in incremented with a WHEN clause, similar to WHERE, but executed for each SET clause individually.
+For instance, the following clause will assign the value for column 2019 either in columns 'Basic 2019' or 'Medium 2019'
+depending on the value of the KPI row, thus transforming a line segmentation into a row segmentation.   
+
+``SET	Basic 2019	=	2019	WHEN	:= @1{KPI} == "Basic"
+``
+
+``SET	Medium 2019	=	2019	WHEN	:= @1{KPI} == "Medium"
+``
+
+- the AGGREGATES clause allows a python expression as a generalization of MAX, MIN etc ... 
+- the IMPORT command allows importing python modules
+- the FORMAT command specified an Excel format for a column
+- the COMMENTS command introduces comments
+
+
+
+# pyxl-sql file format
+
+pyxl-sql assumes that:
+- Excel files are readable by OpenPyxl
+- sheets used by SQL statements are formatted as 'tables', i.e. 
+  - 1st line (default) is a column header
+  - column headers are all different
+- other sheets should be simply readable by openPyxl
+- one file holds pyxl-sql commands and clauses that will be executed
+- keywords are CAPITALIZED
+
+It is possible to change the default location of a database within a sheet by using the DATABASE statement,
+so that, for instance column headers are not read from line 1.
+
+In the case of empty sheet (to be completed by PyxlSQL using "SELECT INTO"), 
+the *first line* after the header may hold "examples", which can hold formats or formulas 
+that will be replicated for each line. This example line will be erased by "SELECT INTO"
+See 'Basic' example
+
+
+# pyxl-sql commands
+pyxl-sql commands and clauses are stored in a special sheet (by default "Pyxl SQL")
+A command is stored on one line
+A command is completed by the clauses that follow on next lines
+
+Commands are split among several columns:
+- COMMAND: holds the command name, e.g. "LEFT JOIN", or the name of an associated Clause e.g. "WHERE"
+- Target: holds the name of the target sheet (or column in the case of CLAUSES )
+- KEY: holds a keyword that completes the definition of the command. e.g. "LEFT JOIN" is always completed by "FROM"
+- Source: holds the value that will be assigned to each element in the target. 
+Depending on the command or clause, 'Source' can be a field name, an Excel formula, a Python expression...
+
+For some CLAUSES, a 2nd set (CONDITION, Target test, COMPARE, Source Test), on the same line, completes the definition
+ 
+The remaining columns are for COMMENTS, which can be any arbitrary cell, and are not parsed
+
+## SHEET descriptor
+Sheet are described by their names. e.g. 
+- 'USA commands' : for sheets in the file being executed (i.e. which holds the 'Pyxl SQL' sheet )
+- 'Northwind.xlsx[Orders Details]' : for sheets in a different Excel file
+
+## FIELD descriptors
+a Field may be denoted with the following syntax:
+
+-  'field name' only, if no ambiguity
+-  '(@|#)N{field name}', if there is an ambiguity. N is the number of the sheet
+-  '(@|#)alias{field name} alias is the alias of the sheet
+
+in the last 2 examples:
+- @ denotes a string
+- \# denotes a number
+
+This type indication simplifies the management of n empty cells,  
+because Excel considers empty as being 0 in a number context and "" in a string context,
+whereas Python considers it as None. So the 'type' indication allows the conversion of None into 
+either 0 or "", which simplifies the expressions
+
+
+## examples 
+
+Examples are taken from https://www.w3schools.com/sql/default.asp
+and use the well-known Northwind sample database (V1 and V2)
+
+
+# Testing and example
+
+Testing is done with tox and cov. to run the test, just run 'tox' in the root directory
+`` (venv) PyxlSQL> tox
+``
+
+See the tests/ directory in the source for more details.
+
+The current coverage is 93%, most of the non-covered code is defensive
+
+# pyxl-sql as a tool
+
+pyxl-sql is also a command-line tool, with command-line options.
+for more information:
+
+``pyxlsql.py --help 
+``
+
+# Documentation
+
+Documentation is built using Sphinx https://www.sphinx-doc.org/
+
+Documentation is generated in https://fabien_battini.gitlab.io/pyxlsql/html/
+This process is achieved automatically through gitlab CI pipelines.
+
+gitlab repository: https://gitlab.com/fabien_battini/pyxlsql
+
+pypi: https://pypi.org/project/excel-sql-engine/
+
+LinkedIN: https://www.linkedin.com/in/fabien-battini-supelec/
