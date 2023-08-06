@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: avsos
+Version: 0.0.8
+Summary: An automated Vulnerability Scanner
+Requires-Dist: PyPDF2
+Requires-Dist: beautifulsoup4
+Requires-Dist: cryptography
+Requires-Dist: dnspython
+Requires-Dist: et-xmlfile
+Requires-Dist: keyring
+Requires-Dist: matplotlib
+Requires-Dist: psutil
+Requires-Dist: python-dateutil
+Requires-Dist: python-nmap
+Requires-Dist: python-owasp-zap-v2.4
+Requires-Dist: reportlab
+Requires-Dist: schedule
+Requires-Dist: sockets
+Requires-Dist: tk
+Requires-Dist: tldextract
+Requires-Dist: urllib3
+Requires-Dist: vulners
+Requires-Dist: whois
+
