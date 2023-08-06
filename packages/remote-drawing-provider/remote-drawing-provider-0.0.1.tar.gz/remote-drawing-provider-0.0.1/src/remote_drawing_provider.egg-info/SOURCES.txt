@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/logger.py
+src/provider.py
+src/setup.py
+src/remote_drawing_provider.egg-info/PKG-INFO
+src/remote_drawing_provider.egg-info/SOURCES.txt
+src/remote_drawing_provider.egg-info/dependency_links.txt
+src/remote_drawing_provider.egg-info/requires.txt
+src/remote_drawing_provider.egg-info/top_level.txt
