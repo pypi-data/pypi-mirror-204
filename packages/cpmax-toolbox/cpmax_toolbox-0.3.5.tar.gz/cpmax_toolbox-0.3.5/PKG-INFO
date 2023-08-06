@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cpmax-toolbox
+Version: 0.3.5
+Summary: 
+Author: JRoseCPMax
+Author-email: j.rose@cpmax.com
+Requires-Python: >=3.8,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: matplotlib (>=3.7.0,<4.0.0)
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: pytz (>=2022.7.1,<2023.0.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Requires-Dist: rich (>=13.3.1,<14.0.0)
+Requires-Dist: scipy (>=1.10.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+
