@@ -1,0 +1,5 @@
+[console_scripts]
+xml-api=xml_api.cli:main
+xml_api=xml_api.cli:main
+xmlapi=xml_api.cli:main
+
