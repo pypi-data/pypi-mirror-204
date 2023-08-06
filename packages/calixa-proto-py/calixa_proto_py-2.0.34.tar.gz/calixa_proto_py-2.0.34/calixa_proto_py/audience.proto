@@ -1,0 +1,68 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/empty.proto";
+import "google/protobuf/field_mask.proto";
+import "common.proto";
+import "condition.proto";
+import "entity_pane.proto";
+import "oltpannotation.proto";
+
+option java_package = "io.calixa.domain.audience";
+option java_multiple_files = true;
+option optimize_for = SPEED;
+
+package calixa.domain.audience;
+
+
+message Audience {
+  option (calixa.oltp.oltp_primary_key) = {field_ids: [1, 2]};
+
+  string organization_id = 1;
+  string audience_id = 2;
+
+  string name = 10 [(calixa.oltp.oltp_field) = {nullable: false}];
+  string description = 11 [(calixa.oltp.oltp_field) = {nullable: true}];
+
+  calixa.domain.common.EntityType entity_type = 12 [(calixa.oltp.oltp_field) = {nullable: false}];
+  calixa.domain.condition.ConditionGroup filters = 13 [(calixa.oltp.oltp_field) = {nullable: false}];
+
+  repeated calixa.domain.entitypane.Column columns = 14 [(calixa.oltp.oltp_field) = {nullable: true}];
+  repeated calixa.domain.common.SortField sort_fields = 15 [(calixa.oltp.oltp_field) = {nullable: false}];
+  string timeframe = 16 [(calixa.oltp.oltp_field) = {nullable: true}];
+
+  string created_by_organization_user_id = 17 [(calixa.oltp.oltp_field) = {nullable: false}];
+
+  repeated calixa.domain.entitypane.DistributionField distribution_fields = 18 [(calixa.oltp.oltp_field) = {nullable: false}];
+
+  google.protobuf.Timestamp created_at = 32 [(calixa.oltp.oltp_field) = {nullable: false}];
+  google.protobuf.Timestamp updated_at = 33 [(calixa.oltp.oltp_field) = {nullable: false}];
+  google.protobuf.Timestamp deleted_at = 34 [(calixa.oltp.oltp_field) = {nullable: true}];
+}
+
+message GetAudienceRequest {
+  string audience_id = 2;
+}
+
+message DeleteAudienceRequest {
+  string audience_id = 2;
+}
+
+message GetAudiencesResponse {
+  repeated Audience audiences = 1;
+  int64 total_results = 2;
+}
+
+message GetAudiencesRequest {
+  int32 results_per_page = 1;
+  int32 page = 2;
+}
+
+service AudienceService {
+  rpc GetAudience(GetAudienceRequest) returns (Audience);
+  rpc GetAudiences(GetAudiencesRequest) returns (GetAudiencesResponse);
+  rpc CreateAudience(Audience) returns (Audience);
+  rpc PutAudience(Audience) returns (Audience);
+  rpc DeleteAudience(DeleteAudienceRequest) returns (google.protobuf.Empty);
+}
+
