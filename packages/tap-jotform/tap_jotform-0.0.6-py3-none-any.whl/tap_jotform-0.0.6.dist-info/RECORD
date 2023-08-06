@@ -1,0 +1,10 @@
+tap_jotform/__init__.py,sha256=K9Ndis17Vqs8Bjqws_rb1KtNvZ3ZMYrBjdV7TdGnxxE,30
+tap_jotform/__main__.py,sha256=l9mACt-iglfz5oMD8FZLnCj7Jw8nPQmPrVoLw9531m8,116
+tap_jotform/client.py,sha256=G57UcLpvK0Yxd0riyAzXb9XKyBH_1_3wweNsbEtzyPI,5305
+tap_jotform/streams.py,sha256=bZe8DbQErxCpd8iD5HbCHLiaUpwseO49mslxqnLLDug,8462
+tap_jotform/tap.py,sha256=SC3pUIK-chvpvBPEkbhBR6oL3I3jXD6UJMp84q3k-Cc,2738
+tap_jotform-0.0.6.dist-info/LICENSE,sha256=AzX58_VJhqXiVDrckgPTwidQJ_Rs14KcnaIJlAqJI0A,11355
+tap_jotform-0.0.6.dist-info/METADATA,sha256=qt9_lI1TBcXV7-_RhPlRSpEsP8hBCkXH4HMDTYOxdyc,4642
+tap_jotform-0.0.6.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+tap_jotform-0.0.6.dist-info/entry_points.txt,sha256=nGDQvZFG70mXvbSB0u_I-Pd6MnssOjWSgS6rdR_gGoQ,62
+tap_jotform-0.0.6.dist-info/RECORD,,
