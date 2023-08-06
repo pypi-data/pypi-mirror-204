@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: apdaily
+Version: 1.0.0
+Summary: A package that allows you to watch AP Classroom Daily videos automatically.
+Home-page: https://github.com/SarangaR/APDaily-Dev
+Author: Saranga Rajagopalan
+Author-email: sarnga.raj@gmail.com
+License: : OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# APDaily
+This package allows you to watch AP Classroom Videos automatically.
+## Authors
+- [@SarangaR](https://www.github.com/SarangaR)
+## Installation
+Install APDaily-dev with pip
+```bash
+  pip install apdaily
+```
+## Requirements
+* pynput
+

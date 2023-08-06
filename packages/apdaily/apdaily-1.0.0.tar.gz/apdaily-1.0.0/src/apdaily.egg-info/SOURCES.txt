@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.cfg
+src/apdaily/__init__.py
+src/apdaily/main.py
+src/apdaily.egg-info/PKG-INFO
+src/apdaily.egg-info/SOURCES.txt
+src/apdaily.egg-info/dependency_links.txt
+src/apdaily.egg-info/requires.txt
+src/apdaily.egg-info/top_level.txt
+src/apdaily_methods/__init__.py
+src/apdaily_methods/apdaily_m1.py
+src/apdaily_methods/mouse_util.py
+src/apdaily_startup/__init__.py
+src/apdaily_startup/apdaily_startup_main.py
