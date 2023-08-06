@@ -1,0 +1,25 @@
+numpy
+matplotlib
+cycler
+scipy
+PyCosmo
+astropy
+cosmic_toolbox@ git+https://cosmo-gitlab.phys.ethz.ch/silvanf/cosmic_toolbox.git
+
+[dev]
+twine
+pytest<7.2.0
+pytest-cov
+pytest-regtest
+tox
+flake8
+black@ git+https://github.com/psf/black
+isort
+sphinx
+sphinx-pynpoint-theme
+myst-parser
+
+[docs]
+sphinx
+sphinx-pynpoint-theme
+myst-parser

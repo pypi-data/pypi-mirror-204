@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: redshift_tools
+Version: 0.1.0
+Summary: Package to create and mmanipulate redshift distributions for cosmic shear forecasts or analyses
+Author: Silvan Fischbacher
+Author-email: silvanf@phys.ethz.ch
+License: MIT License
+Project-URL: Source, https://cosmo-docs.phys.ethz.ch/redshift_tools
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+redshift\_tools
+===============
+
+[![image](https://cosmo-gitlab.phys.ethz.ch/cosmo_public/redshift_tools/badges/master/pipeline.svg)](https://cosmo-gitlab.phys.ethz.ch/cosmo_public/redshift_tools)
+[![image](http://img.shields.io/badge/arXiv-2207.01627-orange.svg?style=flat)](https://arxiv.org/abs/2207.01627)
+
+[Source](https://cosmo-gitlab.phys.ethz.ch/cosmo_public/redshift_tools)
+
+[Documentation](http://cosmo-docs.phys.ethz.ch/redshift_tools)
+
+
+This package provides useful tools to create and manipulate redshift
+bins for cosmic shear analyses. If you use the package for your research,
+please cite (Fischbacher et al. 2022,
+[arXiv-2207.01627](https://arxiv.org/abs/2207.01627))
+
+Usage
+-----
+
+Have a look at the notebooks provided at [demos](https://cosmo-gitlab.phys.ethz.ch/cosmo_public/redshift_tools/-/tree/master/demos)
+
+Credits
+-------
+
+The package was created by Silvan Fischbacher
+in the Cosmology Research Group at ETH Zurich.
+
+The package is maintained by Silvan Fischbacher:
+silvanf@phys.ethz.ch
+
+
