@@ -1,0 +1,2 @@
+[console_scripts]
+anomalo = anomalo:anomalo.main
