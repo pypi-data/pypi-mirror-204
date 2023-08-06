@@ -1,0 +1,7 @@
+README.md
+setup.py
+vanitas/vanitas_py.egg-info/PKG-INFO
+vanitas/vanitas_py.egg-info/SOURCES.txt
+vanitas/vanitas_py.egg-info/dependency_links.txt
+vanitas/vanitas_py.egg-info/requires.txt
+vanitas/vanitas_py.egg-info/top_level.txt
