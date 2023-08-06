@@ -1,0 +1,130 @@
+fragment Product on Product {
+  id
+  title
+  descriptionHtml
+  vendor
+  metafields(first: 250) {
+    edges {
+      node {
+        namespace
+        key
+        value
+      }
+    }
+  }
+  variants(first: 1) {
+    edges {
+      node {
+        id
+        sku
+        price
+      }
+    }
+  }
+}
+
+query product($id: ID!) {
+  product(id: $id) {
+    ...Product
+  }
+}
+
+query productVariantByISBN($filter: String!) {
+  productVariants(first: 1, query: $filter) {
+    edges {
+      node {
+        id
+        sku
+      }
+    }
+  }
+}
+
+query productByISBN($filter: String!) {
+  productVariants(first: 1, query: $filter) {
+    edges {
+      node {
+        product {
+          ...Product
+        }
+      }
+    }
+  }
+}
+
+mutation productCreate($input: ProductInput!) {
+  productCreate(input: $input) {
+    product {
+      ...Product
+    }
+  }
+}
+
+mutation productVariantUpdate($input: ProductVariantInput!) {
+  productVariantUpdate(input: $input) {
+    userErrors {
+      field
+      message
+    }
+  }
+}
+
+mutation productDelete($input: ProductDeleteInput!) {
+  productDelete(input: $input) {
+    deletedProductId
+  }
+}
+
+fragment MetafieldDefinition on MetafieldDefinition {
+  key
+  name
+  namespace
+  description
+}
+
+query metafieldDefinitions {
+  metafieldDefinitions(first: 250, ownerType: PRODUCT) {
+    edges {
+      node {
+        ...MetafieldDefinition
+      }
+    }
+  }
+}
+
+mutation metafieldDefinitionCreate($definition: MetafieldDefinitionInput!) {
+  metafieldDefinitionCreate(definition: $definition) {
+    createdDefinition {
+      ...MetafieldDefinition
+    }
+  }
+}
+
+query publications {
+  publications(first: 250) {
+    edges {
+      node {
+        id
+        name
+      }
+    }
+  }
+}
+
+mutation publishablePublish($id: ID!, $input: [PublicationInput!]!) {
+  publishablePublish(id: $id, input: $input) {
+    userErrors {
+      field
+      message
+    }
+  }
+}
+
+mutation collectionAddProductsV2($id: ID!, $productIds: [ID!]!) {
+  collectionAddProductsV2(id: $id, productIds: $productIds) {
+    userErrors {
+      field
+      message
+    }
+  }
+}

@@ -1,0 +1,14 @@
+bluetree_shopify_book/__init__.py,sha256=xI7C3p-onfkV8LjNKOyJwyueJX7KacaLO6RPtWYClR0,41
+bluetree_shopify_book/adapters.py,sha256=wYphXVysQVoFRbXqnN449lDaRLhP9cjL8daUO2osr_8,2966
+bluetree_shopify_book/app.py,sha256=o_3Qi_qMuKofw-416HdB21_-EfK1NeqyjayoG_ho5ZQ,11889
+bluetree_shopify_book/csv.py,sha256=kzZWeZX51ujtF38kbMUpUY9MtlpLkjYFg_MNJZVaxAE,1575
+bluetree_shopify_book/document.graphql,sha256=DnoBJeAsinC9Gq9l7C3sB7X5bZzNCMHo1f2fULXgWrk,2033
+bluetree_shopify_book/exceptions.py,sha256=pcIvHLttgwoB2AKltcNqnEEollwiXxRZkcn03Q-vQZI,454
+bluetree_shopify_book/schema.py,sha256=Iw588irn7Z3C6vl2tXXiTTASiLagLq9e-MVX-LjUPNs,6433
+bluetree_shopify_book/utils.py,sha256=lz0GdwbjY5U5N0nPIfH-P4YVbBpQuuiekl4NqtT7ixI,1482
+bluetree_shopify_book/validators.py,sha256=ekmfpxqjP4l6Qkchr6tws_uM0LfKDyrVyKX523KaBBM,2538
+bluetree_shopify_book-0.2.3.dist-info/LICENSE.txt,sha256=mrbsOBRHTSvuSjnadOmPlZLuIniDGAbhBZELQGjA098,1080
+bluetree_shopify_book-0.2.3.dist-info/METADATA,sha256=86o4i0xCo4fj4HTFG8UPFRYauOW2mNfhGCLppHSR1m0,5522
+bluetree_shopify_book-0.2.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bluetree_shopify_book-0.2.3.dist-info/top_level.txt,sha256=vGecv7QkLK-eEnY9CH-5sF1iAKrNDXRAz_Hn5Xfs9xM,22
+bluetree_shopify_book-0.2.3.dist-info/RECORD,,
