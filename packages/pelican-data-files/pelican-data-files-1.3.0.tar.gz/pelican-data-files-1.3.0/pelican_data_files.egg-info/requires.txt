@@ -1,0 +1,17 @@
+markupsafe<2.10
+pelican>=4.5.0
+
+[dev]
+black
+flake8
+invoke
+pytest
+twine
+
+[toml]
+
+[toml:python_version < "3.11"]
+tomli
+
+[yaml]
+pyyaml
