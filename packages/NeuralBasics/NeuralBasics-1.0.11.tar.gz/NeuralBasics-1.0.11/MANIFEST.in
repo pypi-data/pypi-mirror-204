@@ -1,0 +1,4 @@
+include package/src/NeuralBasics/training/MNIST/big *
+include package/src/NeuralBasics/training/MNIST/small *
+include package/src/NeuralBasics/training/MNIST/info.txt
+include package/src/NeuralBasics/trained_data.txt
