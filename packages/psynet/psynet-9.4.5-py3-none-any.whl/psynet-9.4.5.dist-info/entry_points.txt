@@ -1,0 +1,2 @@
+[console_scripts]
+psynet = psynet.command_line:psynet
