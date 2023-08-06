@@ -1,0 +1,9 @@
+scorecard/__init__.py,sha256=tzLIYrKG7G1m8k-FI6Xvlc2zyMn6-ZhME549no-6qCg,66
+scorecard/api.py,sha256=q878VJD9pGELq_8IRJ-UwJKi3QVvYr99KB_5vIv6aeY,3357
+scorecard/exceptions.py,sha256=x_y4musKnkuDWFV2E-pGfhXUPJ9ZbnOH6kinUMZFEJs,376
+scorecard/objects.py,sha256=MUS-2QXM_1amlotyzIFQllc3njJd0uFLUzUPP8kbaeM,6431
+college_scorecard-1.4.dist-info/LICENSE,sha256=jkTlw0J1FLRphnQ9ShRpNW0_pe_d0uC9kpP7Cb00mqA,1090
+college_scorecard-1.4.dist-info/METADATA,sha256=I7VRTRfXuYu-8Yj4HtXTVlmbBG1s3wZ5OvRaE7TMh-Y,1051
+college_scorecard-1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+college_scorecard-1.4.dist-info/top_level.txt,sha256=Whi1aNWcmBMROEqXQatuVCA-z8X6M67BaJJViNm5i6Y,10
+college_scorecard-1.4.dist-info/RECORD,,
