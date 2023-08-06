@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to participate &mdash; &#39;Polemarch&#39; 3.0.2 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="VST Consulting contributor agreement" href="cla.html" />
+    <link rel="prev" title="API" href="api.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+<a href="/#">
+<img src="_static/html_logo.png" class="logo" alt="Logo"/>
+</a>
+  <div class="version">
+    3.0.2
+  </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Home</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Configuration manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gui.html">GUI workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to participate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cla.html">VST Consulting contributor agreement</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">'Polemarch'</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">How to participate</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/contribute.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-participate">
+<h1>How to participate<a class="headerlink" href="#how-to-participate" title="Permalink to this heading"></a></h1>
+<p>If you found some bug in the codebase or documentation, or you want some
+improvement in ‘Polemarch’ project, you can easily inform us about it.
+Here is how to proceed:</p>
+<ol class="arabic">
+<li><p>Create (or find if it already exists) an
+<a class="reference external" href="https://gitlab.com/vstconsulting/polemarch/issues">issue</a>
+for problem you want to solve. Maybe somebody is already working on it or maybe
+during discussion becomes clear that it is not a problem at all.</p></li>
+<li><p>To investigate problem, you probably must be able to run cloned project.
+To do so install required dependencies. See
+“<a class="reference internal" href="quickstart.html#install-from-pypi"><span class="std std-ref">Install from PyPI</span></a>” for more detailed
+explanation, which dependencies and why they are needed. System packages
+(example for Ubuntu 20.04):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-virtualenv<span class="w"> </span>python3.8<span class="w"> </span>python3.8-dev<span class="w"> </span>gcc<span class="w"> </span>libffi-dev<span class="w"> </span>libkrb5-dev<span class="w"> </span>libffi7<span class="w"> </span>libssl-dev<span class="w"> </span>libyaml-dev<span class="w"> </span>libsasl2-dev<span class="w"> </span>libldap2-dev<span class="w"> </span>default-libmysqlclient-dev<span class="w"> </span>sshpass<span class="w"> </span>git<span class="w"> </span>tox
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Your patch must work at Python 3.8 because older Python may not work correctly with Polemarch.</p>
+</div>
+</li>
+<li><p>Make fork of our repository and clone it to your local development
+machine.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://gitlab.com/vstconsulting/polemarch.git
+</pre></div>
+</div>
+</li>
+<li><p>Create a branch for your work named with number of issue:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>polemarch
+git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>issue/1
+</pre></div>
+</div>
+</li>
+<li><p>Create and activate virtualenv:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tox<span class="w"> </span>-e<span class="w"> </span>contrib
+<span class="nb">source</span><span class="w"> </span>env/bin/activate
+</pre></div>
+</div>
+</li>
+<li><p>Initialize empty database with all required stuff (tables and so on)
+for Polemarch:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>polemarch<span class="w"> </span>migrate
+</pre></div>
+</div>
+</li>
+<li><p>For your comfort you can edit <code class="docutils literal notranslate"><span class="pre">polemarch/main/settings.ini</span></code>, but make sure that changes in that file won’t go to your commit.
+Or you can copy <code class="docutils literal notranslate"><span class="pre">polemarch/main/settings.ini</span></code> to <code class="docutils literal notranslate"><span class="pre">/etc/polemarch/settings.ini</span></code>
+(default settings location for Polemarch).</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>First of all you can enable debug in settings.ini.
+Set <code class="docutils literal notranslate"><span class="pre">debug</span> <span class="pre">=</span> <span class="pre">true</span></code> in section <code class="docutils literal notranslate"><span class="pre">[main]</span></code>.
+Otherwise there will be no available static files and debug
+features when you start development web-server.</p></li>
+<li><p>You may also want to change <code class="docutils literal notranslate"><span class="pre">log_level</span></code> in section <code class="docutils literal notranslate"><span class="pre">[main]</span></code> for easy debugging.</p></li>
+<li><p>If you want to see console output of Polemarch webserver during it work,
+you need to add following option <code class="docutils literal notranslate"><span class="pre">daemon</span> <span class="pre">=</span> <span class="pre">false</span></code> in section <code class="docutils literal notranslate"><span class="pre">[uwsgi]</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Run Polemarch GUI with web-server and investigate with your debugger how it works to find out what need to be changed:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># run web-server</span>
+python<span class="w"> </span>-m<span class="w"> </span>polemarch<span class="w"> </span>webserver
+</pre></div>
+</div>
+<p>This command also starts worker, if you have added worker options
+in <code class="docutils literal notranslate"><span class="pre">/etc/polemarch/settings.ini</span></code>. More about worker section you can
+find in <a class="reference internal" href="quickstart.html"><span class="doc">“Install from PyPI”</span></a>.</p>
+</li>
+<li><p>Write tests for your changes (we prefer TDD approach). Execute those tests with all other Polemarch’s tests by:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tox
+</pre></div>
+</div>
+<p>This command do PEP8 check of codebase and static analyzing with
+pylint and flake and run main python tests.
+Make sure that your code meets those checks.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Some tests linked to git may fail because local <code class="docutils literal notranslate"><span class="pre">file://</span></code> clones are considered unsafe by default.
+For more information please see
+<a class="reference external" href="https://github.blog/2022-10-18-git-security-vulnerabilities-announced/#cve-2022-39253">this topic</a>.
+If you are encountered this problem, one of the solutions might be:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>protocol.file.allow<span class="w"> </span>always
+</pre></div>
+</div>
+<p>Keep in mind that this command allows file clone <strong>globally at git level for all your projects</strong>.</p>
+</div>
+</li>
+<li><p>Reflect your changes in documentation (if needed). Build documentation,
+read what you have changed and make sure that all is right. To build documentation use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tox<span class="w"> </span>-e<span class="w"> </span>builddoc
+</pre></div>
+</div>
+</li>
+<li><p>Make commit. We prefer commit messages with briefly explanations of your changes.
+Unacceptable: “issue #1” or “fix”.
+Acceptable: “fix end slashes for GET in docs”.</p></li>
+<li><p>Create pull request and refer it in issue.</p></li>
+</ol>
+<blockquote>
+<div><div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>You must agree to <a class="reference internal" href="cla.html"><span class="doc">our contributor agreement</span></a> to
+prevent any license problems to project in future with your contribution.</p>
+</div>
+<p>We prefer to format requests as follows:</p>
+<blockquote>
+<div><ul>
+<li><p><strong>Title</strong> should start with a description of your changes and follow these rules:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Feature - if you added new functionality for the user;</p></li>
+<li><p>Chore - if you refactored the code or optimized performance, but nothing changed for the user;</p></li>
+<li><p>Fix - if you fixed some bug and didn’t add new independent functionality.</p></li>
+<li><p>Docs - if you add some documents and didn’t make any changes to the code.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Description</strong> should contain structured information about the work done:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>BREAKING CHANGES - list of changes that break backward compatibility;</p></li>
+<li><p>Changelog - list of common changes;</p></li>
+<li><p>Closes/WIP - link to the issue you were working on.</p></li>
+<li><p>Add screenshots for easy review of your changes.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<p>That’s it. Thank you for your contribution.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="api.html" class="btn btn-neutral float-left" title="API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="cla.html" class="btn btn-neutral float-right" title="VST Consulting contributor agreement" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright VST Consulting, 2019-2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
