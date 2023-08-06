@@ -1,0 +1,7 @@
+torch
+transformers
+numpy
+scipy
+cupy-cuda12x
+tqdm
+datasets
