@@ -1,0 +1,8 @@
+click
+rich_click
+tabulate
+pyxirr
+yfinance
+requests
+requests-cache
+questionary
