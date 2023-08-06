@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pychunkbuffers/__init__.py
+pychunkbuffers.egg-info/PKG-INFO
+pychunkbuffers.egg-info/SOURCES.txt
+pychunkbuffers.egg-info/dependency_links.txt
+pychunkbuffers.egg-info/top_level.txt
