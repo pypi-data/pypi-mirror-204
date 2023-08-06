@@ -1,0 +1,13 @@
+scpkit/__init__.py,sha256=AJGTlw30F_QTE98SUeELCd9L_bnVmyQndgeNJetzANs,17
+scpkit/main.py,sha256=2GA_zKNJGAruRcrB7mlgTjxS0Jbw4jUq4W7pZOHGAOA,1133
+scpkit/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scpkit/src/merge.py,sha256=8LmL8k8yta71UIWWwBQNnztl8R13d2TmUwS54VeScYs,4924
+scpkit/src/model.py,sha256=TnT4DHw9I1DYVmemKdB9pkzoVWB94syvEojgMGdajk4,1613
+scpkit/src/util.py,sha256=WCu-S9im022Lv61ADBv5bJ_cQYqhBZbzjIv1kUVAXmU,3174
+scpkit/src/validate.py,sha256=wL640xrhiDnDcLRDTwxpIWNAln0VirxziHbf7C1FXaE,1148
+scpkit-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+scpkit-0.1.1.dist-info/METADATA,sha256=XrM76OnB71wC6K5FmJHB-9r3qA-9xCMH6V1rCoJhQac,1864
+scpkit-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+scpkit-0.1.1.dist-info/entry_points.txt,sha256=tFCXlmo3eci1LV9g813BYOk1qCtmXAn-HhKxJkXgAy0,44
+scpkit-0.1.1.dist-info/top_level.txt,sha256=kaNoA85KulbtLnc42gx_9jE3wm5Ch3yZzSi4Hi6lVLM,7
+scpkit-0.1.1.dist-info/RECORD,,
