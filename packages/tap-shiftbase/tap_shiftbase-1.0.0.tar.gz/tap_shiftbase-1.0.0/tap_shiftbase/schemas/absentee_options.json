@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Singer SDK Schema for Absentee Option data",
+  "type": "object",
+  "properties": {
+    "absenteeoption": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "account_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "option": {
+          "type": "string"
+        },
+        "percentage": {
+          "type": "string"
+        },
+        "weight": {
+          "type": "string"
+        },
+        "has_vacation_accrual": {
+          "type": "boolean"
+        },
+        "costs_vacation_hours": {
+          "type": "boolean"
+        },
+        "is_counted": {
+          "type": "boolean"
+        },
+        "has_wait_hours": {
+          "type": "boolean"
+        },
+        "leave": {
+          "type": "boolean"
+        },
+        "color": {
+          "type": "string",
+          "format": "color-hex"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "deleted": {
+          "type": "boolean"
+        },
+        "permission": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

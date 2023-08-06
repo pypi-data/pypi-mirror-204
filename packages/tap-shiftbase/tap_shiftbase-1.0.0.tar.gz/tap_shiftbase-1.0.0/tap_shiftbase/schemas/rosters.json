@@ -1,0 +1,216 @@
+{
+  "type": "object",
+  "properties": {
+    "roster": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": ["string","null"],
+          "pattern": "^[0-9]+$",
+          "nullable": true,
+          "readOnly": true
+        },
+        "occurrence_id": {
+          "type": "string",
+          "description": "The occurrence_id is the id that is unique for a date",
+          "example": "20707287:2022-05-29",
+          "pattern": "^[0-9]+:[0-9]{4}\\-[0-9]{2}\\-[0-9]{2}$"
+        },
+        "account_id": {
+          "type": "string",
+          "pattern": "^[0-9]+$",
+          "readOnly": true
+        },
+        "department_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9]+$"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "team_id": {
+          "type": "string",
+          "pattern": "^[0-9]+$"
+        },
+        "shift_id": {
+          "type": "string",
+          "pattern": "^[0-9]+$"
+        },
+        "user_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "nullable": true
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "first_occurrence": {
+          "type": "string",
+          "format": "date",
+          "description": "When roster is a sequence, the first date it occurred"
+        },
+        "starttime": {
+          "type": "string",
+          "format": "time"
+        },
+        "endtime": {
+          "type": "string",
+          "format": "time"
+        },
+        "hide_end_time": {
+          "type": "boolean",
+          "description": "If the end time most be hidden for employees"
+        },
+        "break": {
+          "type": "string",
+          "description": "Duration of the break in minutes",
+          "readOnly": true
+        },
+        "description": {
+          "type": "string"
+        },
+        "custom_fields": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "object"
+            }
+          ]
+        },
+        "created": {
+          "type": "string",
+          "format": "date-time",
+          "readOnly": true
+        },
+        "updated": {
+          "type": "string",
+          "format": "date-time",
+          "readOnly": true
+        },
+        "recurring": {
+          "type": "boolean",
+          "description": "If the roster is recurring",
+          "readOnly": true
+        },
+        "repeat_until": {
+          "type": ["string","null"],
+          "description": "When roster is recurring the date to stop the sequence ",
+          "example": "2022-10-30",
+          "nullable": true
+        },
+        "nr_of_repeats": {
+          "type": ["string","null"],
+          "nullable": true
+        },
+        "interval": {
+          "type": ["string","null"],
+          "description": "Interval in weeks when is a recurring roster. 1 is every week, 2 is every other week",
+          "pattern": "^[0-9]+$",
+          "nullable": true
+        },
+        "mo": {
+          "type": "boolean",
+          "description": "Whenever the recurring roster occurs on Monday"
+        },
+        "tu": {
+          "type": "boolean",
+          "description": "Whenever the recurring roster occurs on Tuesday"
+        },
+        "we": {
+          "type": "boolean",
+          "description": "Whenever the recurring roster occurs on Wednesday"
+        },
+        "th": {
+          "type": "boolean",
+          "description": "Whenever the recurring roster occurs on Thursday"
+        },
+        "fr": {
+          "type": "boolean",
+          "description": "Whenever the recurring roster occurs on Friday"
+        },
+        "sa": {
+          "type": "boolean",
+          "description": "Whenever the recurring roster occurs on Saturday"
+        },
+        "su": {
+          "type": "boolean",
+          "description": "Whenever the recurring roster occurs on Sunday"
+        },
+        "deleted": {
+          "type": "boolean",
+          "readOnly": true
+        },
+        "color": {
+          "type": "string",
+          "description": "Color of the roster in the schedule. This must be a valid hexadecimal color like \"#FFFFFF\" for white.",
+          "readOnly": true
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the roster in the schedule",
+          "readOnly": true
+        },
+        "is_task": {
+          "type": "boolean",
+          "readOnly": true
+        },
+        "created_by": {
+          "type": "string",
+          "readOnly": true
+        },
+        "modified_by": {
+          "type": "string",
+          "readOnly": true
+        },
+        "rate_card_id": {
+          "type": "string",
+          "readOnly": true
+        },
+        "wage": {
+          "type": "string",
+          "description": "Wage per hour"
+        },
+        "loaned": {
+          "type": "boolean",
+          "description": "If employee is loaned from other team"
+        },
+        "total": {
+          "type": "number",
+          "description": "Total worked time"
+        },
+        "start_seconds": {
+          "type": "integer",
+          "description": "Timestamp of the start of the roster",
+          "readOnly": true
+        },
+        "end_seconds": {
+          "type": "integer",
+          "description": "Timestamp of the end of the roster",
+          "readOnly": true
+        }
+      }
+    },
+    "exchange": {
+      "type": [
+        "null",
+        "object"
+      ]
+    }
+  }
+}
