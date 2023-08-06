@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pip_package_template_docker/__init__.py
+pip_package_template_docker.egg-info/PKG-INFO
+pip_package_template_docker.egg-info/SOURCES.txt
+pip_package_template_docker.egg-info/dependency_links.txt
+pip_package_template_docker.egg-info/requires.txt
+pip_package_template_docker.egg-info/top_level.txt
+tests/test_placeholder.py
