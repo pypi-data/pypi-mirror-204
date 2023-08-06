@@ -1,0 +1,6 @@
+core_utils
+entrypoint
+internal_db_management
+oracle_utils
+temp
+ui_management
