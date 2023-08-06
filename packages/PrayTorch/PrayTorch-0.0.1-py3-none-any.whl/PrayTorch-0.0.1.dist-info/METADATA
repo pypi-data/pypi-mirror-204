@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PrayTorch
+Version: 0.0.1
+Summary: Hi! It's a wrapper for PyTorch training code, hoping to help reduce the complexity of training code in a way that make the training implementation more human-memorable.
+Home-page: https://github.com/Cathesilta/PrayTorch
+Author: Cathesilta
+Author-email: dliketequila@gmail.com
+License: UNKNOWN
+Keywords: PyTorch PrayTorch
+Platform: UNKNOWN
+Requires-Dist: torch
+Requires-Dist: matplotlib
+Requires-Dist: albumentations
+Requires-Dist: seaborn
+
+UNKNOWN
+
+
