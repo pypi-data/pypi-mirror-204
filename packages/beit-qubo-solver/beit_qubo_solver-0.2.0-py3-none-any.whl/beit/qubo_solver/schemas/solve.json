@@ -1,0 +1,72 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://qubo-solver.dev.beit.tech/solve.schema.json",
+    "title": "Solve",
+    "description": "Solve the given QUBO instance",
+    "type": "object",
+    "properties": {
+        "instance": {
+            "description": "QUBO instance.",
+            "type": "array",
+            "items": {
+                "description": "Weighted edge of a QUBO instance. May be a loop (self edge).",
+                "type": "object",
+                "properties": {
+                    "edge": {
+                        "type": "array",
+                        "minItems": 2,
+                        "maxItems": 2,
+                        "items": {"type": "integer"}
+                    },
+                    "weight": {"type": "number"}
+                },
+                "required": ["edge", "weight"]
+            }
+        },
+        "mapping": {
+            "description": "Variable names in QUBO instance.",
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "type": "string"
+            }
+        },
+        "distribution": {
+            "description": "Choice of distribution and its parameters.",
+            "type": "object",
+            "properties": {
+                "boltzmann": {
+                    "description": "Filling this field indicates the Boltzmann distribution is requested.",
+                    "type": "object",
+                    "properties": {
+                        "temperature": {"type": "number"}
+                    },
+                    "required": ["temperature"]
+                },
+                "sample_count": {
+                    "description": "Requested number of samples. Solver will do its best to return the requested number.",
+                    "type": "integer",
+                    "minimum": 0,
+                    "exclusiveMinimum": true
+                }
+            }
+        },
+        "execution": {
+            "description": "Parameters regarding execution.",
+            "type": "object",
+            "properties": {
+                "backend": {
+                    "description": "Backend on which computation will run",
+                    "type": "string"
+                },
+                "timeout": {
+                    "description": "Maximum execution time in seconds",
+                    "type": "number",
+                    "minimum": 0,
+                    "exclusiveMinimum": true
+                }
+            }
+        }
+    },
+    "required": ["instance"]
+}

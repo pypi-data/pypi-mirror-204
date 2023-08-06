@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://qubo-solver.dev.beit.tech/result.schema.json",
+    "title": "Result",
+    "description": "Request the solution and additional info on the given job created via cloud_solver API.",
+    "type": "object",
+    "properties": {
+        "job_id": {
+            "description": "Unique identifier for a job returned by /solve",
+            "type": "string",
+            "minLength": 1
+        }
+    },
+    "required": ["job_id"]
+}

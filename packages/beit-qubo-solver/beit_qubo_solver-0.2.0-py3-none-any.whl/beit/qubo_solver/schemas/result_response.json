@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://qubo-solver.dev.beit.tech/result_response.schema.json",
+    "title": "Result response",
+    "description": "Result from the request https://qubo-solver.dev.beit.tech/result.schema.json",
+    "type": "object",
+    "properties": {
+        "samples": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "state": {
+                        "type": "array",
+                        "items": {"type": "integer", "enum": [0, 1]}
+                    },
+                    "energy": {"type": "number"},
+                    "probability": {"type": "number", "minimum": 0, "maximum": 1}
+                },
+                "required": ["state"]
+            }
+        },
+        "error": {
+            "description": "Something went wrong if this field is present.",
+            "type": "string"
+        }
+    }
+}

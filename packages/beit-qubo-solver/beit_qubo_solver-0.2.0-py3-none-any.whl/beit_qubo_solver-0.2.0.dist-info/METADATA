@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: beit-qubo-solver
+Version: 0.2.0
+Summary: Client package for the exact qubo solver by BEIT available at AWS Marketplace.
+Home-page: UNKNOWN
+Author: BEIT
+Author-email: qubo-solver@beit.tech
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: requests
+Requires-Dist: jsonschema
+Requires-Dist: dimod
+Requires-Dist: dwave-networkx
+Requires-Dist: numpy
+
+UNKNOWN
+

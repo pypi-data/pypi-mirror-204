@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://qubo-solver.dev.beit.tech/solve_response.schema.json",
+    "title": "Solve Response",
+    "description": "Response for the request https://qubo-solver.dev.beit.tech/solve_response.schema.json",
+    "type": "object",
+    "properties": {
+        "job_id": {
+            "description": "Unique identifier for a job used to track its status.",
+            "type": "string",
+            "minLength": 1
+        },
+        "error": {
+            "description": "Something went wrong if this field is present.",
+            "type": "string"
+        }
+    }
+}
