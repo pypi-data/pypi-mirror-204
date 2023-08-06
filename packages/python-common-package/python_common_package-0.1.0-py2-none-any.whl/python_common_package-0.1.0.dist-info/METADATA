@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: python-common-package
+Version: 0.1.0
+Summary: common code for all python projects
+Home-page: UNKNOWN
+Author: <mirza.zubair@smartac.com>
+Author-email: UNKNOWN
+License: smartAC.com
+Platform: UNKNOWN
+Requires-Dist: boto3
+
+UNKNOWN
+
+
