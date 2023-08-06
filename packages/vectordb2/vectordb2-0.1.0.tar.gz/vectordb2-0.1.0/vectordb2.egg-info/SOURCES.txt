@@ -1,0 +1,13 @@
+README.md
+setup.py
+pymemory/__init__.py
+pymemory/chunking.py
+pymemory/embedding.py
+pymemory/pymemory.py
+pymemory/storage.py
+pymemory/vector_search.py
+vectordb2.egg-info/PKG-INFO
+vectordb2.egg-info/SOURCES.txt
+vectordb2.egg-info/dependency_links.txt
+vectordb2.egg-info/requires.txt
+vectordb2.egg-info/top_level.txt
