@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "griptape"
+version = "0.5.1"
+description = "Modular Python framework for LLM workflows, tools, memory, and data."
+authors = ["Griptape <hello@griptape.ai>"]
+license = "Apache 2.0"
+readme = "README.md"
+repository = "https://github.com/griptape-ai/griptape"
+
+packages = [
+    {include = "griptape"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+griptape-core = "==0.9.3"
+griptape-flow = "==0.12.1"
+griptape-tools = "==0.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
