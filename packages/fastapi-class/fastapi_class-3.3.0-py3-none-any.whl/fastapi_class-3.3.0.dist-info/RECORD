@@ -1,0 +1,11 @@
+fastapi_class/__init__.py,sha256=0fVy0E2V1nHlhZ4oaWpBvf4TLRX2_Wu73JwkkTJnXMk,1485
+fastapi_class/logger.py,sha256=nAKoL-0_oz2ZubLg8C11msMuw31IVCYgEDp0tlQBPmE,94
+fastapi_class/openapi.py,sha256=EKmd911gIOf8Rwpkb9IZpDTPvIl87g4dgHKX_bOI6QY,1786
+fastapi_class/routers.py,sha256=xiKyjqDIupVfM6Ycx4wgXsuuvcbgICZGdY6ev_Brqyc,3579
+fastapi_class/views.py,sha256=NWQrTpzfxPj-ftVG9PjA4UOVN-Cm2_gU4p6EPzWGays,3386
+fastapi_class/exception/__init__.py,sha256=AQO-a1QzOvYQG2DpfP5ymIVgWjFQMBziFoFJ2oSmxOM,241
+fastapi_class/exception/handler.py,sha256=p1YzhyFPlIKUgNiskbpS3G5h15m26dv63zeLa-eXtkw,1001
+fastapi_class-3.3.0.dist-info/METADATA,sha256=05BSj6xEb98aKY35c3klVQQsmnxMRTi3rhSs45h8yqU,6747
+fastapi_class-3.3.0.dist-info/WHEEL,sha256=9MIigYJ7D5sOqAPqr0-o6tSMY_nQ7c6kvtvyeUB99YQ,87
+fastapi_class-3.3.0.dist-info/licenses/LICENSE,sha256=Ap109akA7w-7Z13mNp-pXf-iVkp4BoV9IolFeteeYao,1070
+fastapi_class-3.3.0.dist-info/RECORD,,
