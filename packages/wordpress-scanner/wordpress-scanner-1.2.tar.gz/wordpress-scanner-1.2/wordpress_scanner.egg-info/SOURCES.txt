@@ -1,0 +1,6 @@
+README.md
+setup.py
+wordpress_scanner.egg-info/PKG-INFO
+wordpress_scanner.egg-info/SOURCES.txt
+wordpress_scanner.egg-info/dependency_links.txt
+wordpress_scanner.egg-info/top_level.txt
