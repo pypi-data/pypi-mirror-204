@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pytzen/__init__.py
+src/pytzen/ai_joke_generator.py
+src/pytzen.egg-info/PKG-INFO
+src/pytzen.egg-info/SOURCES.txt
+src/pytzen.egg-info/dependency_links.txt
+src/pytzen.egg-info/top_level.txt
+src/pytzen/system_info/__init__.py
+src/pytzen/system_info/get_info.py
