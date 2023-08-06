@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2023 Jose D. Montoya
+#
+# SPDX-License-Identifier: Unlicense
+
+
+# Required
+version: 2
+
+python:
+  version: 3
+  install:
+    - requirements: docs/requirements.txt
+    - method: pip
+      path: .
