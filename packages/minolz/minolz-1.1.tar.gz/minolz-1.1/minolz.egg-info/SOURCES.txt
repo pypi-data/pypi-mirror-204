@@ -1,0 +1,7 @@
+README.txt
+minolz.py
+setup.py
+minolz.egg-info/PKG-INFO
+minolz.egg-info/SOURCES.txt
+minolz.egg-info/dependency_links.txt
+minolz.egg-info/top_level.txt
