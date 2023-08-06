@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/fstflowchat/__init__.py
+src/fstflowchat/example.py
+src/fstflowchat/quiz.dot
+src/fstflowchat.egg-info/PKG-INFO
+src/fstflowchat.egg-info/SOURCES.txt
+src/fstflowchat.egg-info/dependency_links.txt
+src/fstflowchat.egg-info/entry_points.txt
+src/fstflowchat.egg-info/requires.txt
+src/fstflowchat.egg-info/top_level.txt

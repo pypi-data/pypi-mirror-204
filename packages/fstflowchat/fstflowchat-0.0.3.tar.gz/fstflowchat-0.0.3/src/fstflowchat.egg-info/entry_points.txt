@@ -1,0 +1,2 @@
+[console_scripts]
+fstflowchat-example = fstflowchat.example:main
