@@ -1,0 +1,108 @@
+{
+    "album_ratings": [
+        {
+            "artist": "Grimes",
+            "album": "Miss Anthropocene",
+            "cover": "https://lastfm.freetls.fastly.net/i/u/300x300/a7e68f3de563ed10132a818b5b017c87.png",
+            "album_rating": 7,
+            "review": "One helluva album. Still a banger.",
+            "time": "2023-04-23 23:49:42.521393",
+            "track_ratings": [
+                {
+                    "track": "So Heavy I Fell Through the Earth",
+                    "track_rating": 10
+                },
+                {
+                    "track": "Darkseid",
+                    "track_rating": 8
+                },
+                {
+                    "track": "Delete Forever",
+                    "track_rating": 3
+                },
+                {
+                    "track": "You'll miss me when I'm not around",
+                    "track_rating": 8
+                }
+            ]
+        },
+        {
+            "artist": "Grimes",
+            "album": "Visions",
+            "cover": "https://lastfm.freetls.fastly.net/i/u/300x300/94cfdb5f36a7f935b6837f5fe8840ed6.jpg",
+            "album_rating": 9,
+            "review": "BANGER!!",
+            "time": "2023-04-23 23:50:42.046036",
+            "track_ratings": []
+        },
+        {
+            "artist": "Grimes",
+            "album": "Art Angels",
+            "cover": "https://lastfm.freetls.fastly.net/i/u/300x300/f6b3a85f39a656aaa61d30d1d2ec8d85.png",
+            "album_rating": 9,
+            "review": "",
+            "time": "2023-04-23 23:50:56.808985",
+            "track_ratings": []
+        }
+    ],
+    "song_ratings": [
+        {
+            "track": "Laughing and Not Neing Normal",
+            "artist": "Grimes",
+            "track_rating": 8
+        }
+    ],
+    "tier_lists": [
+        {
+            "tier_list_name": "THE WEEKND RANKED",
+            "artist": "the weeknd",
+            "s_tier": [
+                {
+                    "album": "After Hours",
+                    "cover_art": "https://lastfm.freetls.fastly.net/i/u/300x300/7d957bd27dd562bee7aaa89eafa0bbe6.jpg"
+                },
+                {
+                    "album": "My Dear Melancholy,",
+                    "cover_art": "https://lastfm.freetls.fastly.net/i/u/300x300/6498660830a525a64f6a78bf94a2ec58.jpg"
+                }
+            ],
+            "a_tier": [
+                {
+                    "album": "Kiss Land",
+                    "cover_art": "https://lastfm.freetls.fastly.net/i/u/300x300/01ad150445023de653c50dbbc3e10dbc.jpg"
+                },
+                {
+                    "album": "Echoes of Silence",
+                    "cover_art": "https://lastfm.freetls.fastly.net/i/u/300x300/4f257619898b44b7a8f95431045e9ffe.png"
+                },
+                {
+                    "album": "Beauty Behind the Madness",
+                    "cover_art": "https://lastfm.freetls.fastly.net/i/u/300x300/8a54e33c0046d4752bcf56b37adaa97c.png"
+                }
+            ],
+            "b_tier": [
+                {
+                    "album": "dawn FM",
+                    "cover_art": "https://lastfm.freetls.fastly.net/i/u/300x300/7da8e979d89d285b5ddf44e64b92f16c.jpg"
+                },
+                {
+                    "album": "Trilogy",
+                    "cover_art": "https://lastfm.freetls.fastly.net/i/u/300x300/420479ebfa2c11e0c9310d2183854446.jpg"
+                },
+                {
+                    "album": "Starboy",
+                    "cover_art": "https://lastfm.freetls.fastly.net/i/u/300x300/2eff583c50e9ebe32857ca8bedbd25bd.jpg"
+                }
+            ],
+            "c_tier": [],
+            "d_tier": [],
+            "e_tier": [
+                {
+                    "album": "I Feel It Coming",
+                    "cover_art": "https://lastfm.freetls.fastly.net/i/u/300x300/974deeb8c348d0ad0c0fa10941dd67e8.jpg"
+                }
+            ],
+            "time": "2023-04-23 23:56:14.652417"
+        }
+    ]
+}
