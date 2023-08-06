@@ -1,0 +1,10 @@
+aws_cdk/aws_cloudtrail/__init__.py,sha256=BdEVS9sg5vCO-OcBHkZnOVKoSUb9_UIPtzEpUzpDxXE,260312
+aws_cdk/aws_cloudtrail/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_cloudtrail/_jsii/__init__.py,sha256=SVuGugw9IbeqKHXXWnFQoqv_LJ76b-jAW3E2C5H6SCw,635
+aws_cdk/aws_cloudtrail/_jsii/aws-cloudtrail@1.199.0.jsii.tgz,sha256=7QY5qOESh58DVqgc2EiPZHmbLV6nqn7IR2ykx1L-K18,115445
+aws_cdk.aws_cloudtrail-1.199.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_cloudtrail-1.199.0.dist-info/METADATA,sha256=3zkYOKKVy2SO0cxlLsY1jgeiUF-oxq3TacxJhm5hY8U,9328
+aws_cdk.aws_cloudtrail-1.199.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_cloudtrail-1.199.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_cdk.aws_cloudtrail-1.199.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_cloudtrail-1.199.0.dist-info/RECORD,,
