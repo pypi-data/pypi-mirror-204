@@ -1,0 +1,74 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.black]
+known_first_party = ["ypmp_example", "tests"]
+line-length = 120
+target-version = ["py310"]
+
+[tool.isort]
+line_length = 120
+profile = "black"
+py_version = 310
+
+[tool.poetry]
+authors = ["ovsds <ovsds@yandex-team.ru>"]
+description = "Example package for YP 24"
+name = "ypmp-example"
+version = "0.2.0"
+
+[tool.poetry.dependencies]
+python = ">=3.8, <3.11"
+
+[tool.poetry.dev-dependencies]
+black = "22.10.0"
+isort = "5.10.1"
+pylint = "2.14.5"
+pytest = "7.2.0"
+pyupgrade = "3.1.0"
+sort-all = "1.2.0"
+toml-sort = "0.20.1"
+
+[tool.pylint]
+disable = [
+  "broad-except",
+  "consider-using-from-import",
+  "consider-using-sys-exit",
+  "duplicate-code",
+  "missing-docstring",
+  "protected-access",
+  "too-few-public-methods",
+]
+ignore-paths = ["^.*venv/.*$"]
+max-line-length = 120
+recursive = true
+
+[tool.pylint.basic]
+argument-rgx = "^_{0,2}[a-z][a-z0-9_]*$"
+class-attribute-rgx = "^_{0,2}[a-zA-Z][a-zA-Z0-9_]*$"
+variable-rgx = "^_{0,2}[a-z][a-z0-9_]*$"
+
+[tool.pylint.typecheck]
+signature-mutators = "click.decorators.option"
+
+[tool.pyright]
+exclude = ["**/__pycache__"]
+include = ["ypmp_example", "tests"]
+pythonPlatform = "All"
+pythonVersion = "3.10"
+reportConstantRedefinition = "none"
+reportMissingTypeStubs = "warning"
+reportPrivateUsage = "information"
+reportPropertyTypeMismatch = "warning"
+reportUninitializedInstanceVariable = "warning"
+reportUnknownMemberType = "none"
+reportUnnecessaryTypeIgnoreComment = "warning"
+typeCheckingMode = "strict"
+useLibraryCodeForTypes = true
+venv = ".venv"
+venvPath = '.'
+
+[tool.tomlsort]
+all = true
+in_place = true
