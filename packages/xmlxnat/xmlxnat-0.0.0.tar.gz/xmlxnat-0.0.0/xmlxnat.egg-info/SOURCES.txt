@@ -1,0 +1,9 @@
+LICENSE.txt
+pyproject.toml
+xmlxnat/__init__.py
+xmlxnat/main.py
+xmlxnat.egg-info/PKG-INFO
+xmlxnat.egg-info/SOURCES.txt
+xmlxnat.egg-info/dependency_links.txt
+xmlxnat.egg-info/requires.txt
+xmlxnat.egg-info/top_level.txt
