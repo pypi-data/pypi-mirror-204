@@ -1,0 +1,234 @@
+Metadata-Version: 2.1
+Name: mango-explorer-v4
+Version: 0.7.6
+Summary: 
+Author: waterquarks
+Author-email: waterquarks@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiostream (>=0.4.5,<0.5.0)
+Requires-Dist: anchorpy (==0.14.0)
+Requires-Dist: anchorpy-core (==0.1.2)
+Requires-Dist: anyio (==3.6.2)
+Requires-Dist: apischema (==0.16.6)
+Requires-Dist: appnope (==0.1.3)
+Requires-Dist: asttokens (==2.2.1)
+Requires-Dist: attrs (==22.1.0)
+Requires-Dist: autoflake (==2.0.0)
+Requires-Dist: backcall (==0.2.0)
+Requires-Dist: base58 (==2.1.1)
+Requires-Dist: based58 (==0.1.1)
+Requires-Dist: black (==22.12.0)
+Requires-Dist: borsh-construct (==0.1.0)
+Requires-Dist: cachetools (==4.2.4)
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: cffi (==1.15.1)
+Requires-Dist: charset-normalizer (==2.1.1)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: construct (==2.10.68)
+Requires-Dist: construct-typing (==0.5.3)
+Requires-Dist: decorator (==5.1.1)
+Requires-Dist: exceptiongroup (==1.0.4)
+Requires-Dist: executing (==1.2.0)
+Requires-Dist: genpy (==2022.1)
+Requires-Dist: h11 (==0.14.0)
+Requires-Dist: httpcore (==0.16.3)
+Requires-Dist: httpx (==0.23.1)
+Requires-Dist: idna (==3.4)
+Requires-Dist: iniconfig (==1.1.1)
+Requires-Dist: ipython (==8.7.0)
+Requires-Dist: jedi (==0.18.2)
+Requires-Dist: jsonalias (==0.1.1)
+Requires-Dist: jsonrpcclient (==4.0.2)
+Requires-Dist: jsonrpcserver (==5.0.9)
+Requires-Dist: jsonschema (==4.17.3)
+Requires-Dist: mangopyserum (>=0.6.0a0,<0.7.0)
+Requires-Dist: matplotlib-inline (==0.1.6)
+Requires-Dist: more-itertools (==8.14.0)
+Requires-Dist: mypy-extensions (==0.4.3)
+Requires-Dist: numpy (==1.24.0)
+Requires-Dist: oslash (==0.6.3)
+Requires-Dist: packaging (==22.0)
+Requires-Dist: parso (==0.8.3)
+Requires-Dist: pathspec (==0.10.3)
+Requires-Dist: pexpect (==4.8.0)
+Requires-Dist: pickleshare (==0.7.5)
+Requires-Dist: platformdirs (==2.6.0)
+Requires-Dist: pluggy (==1.0.0)
+Requires-Dist: prompt-toolkit (==3.0.36)
+Requires-Dist: psutil (==5.9.4)
+Requires-Dist: ptyprocess (==0.7.0)
+Requires-Dist: pure-eval (==0.2.2)
+Requires-Dist: py (==1.11.0)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: pyflakes (==3.0.1)
+Requires-Dist: pygments (==2.13.0)
+Requires-Dist: pyheck (==0.1.5)
+Requires-Dist: pynacl (==1.5.0)
+Requires-Dist: pyrsistent (==0.19.2)
+Requires-Dist: pytest (==7.2.0)
+Requires-Dist: pytest-asyncio (==0.20.3)
+Requires-Dist: pytest-xprocess (==0.18.1)
+Requires-Dist: pytools (==2022.1.13)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: rfc3986 (==1.5.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: sniffio (==1.3.0)
+Requires-Dist: solana (==0.28.1)
+Requires-Dist: solders (==0.10.0)
+Requires-Dist: sortedcontainers (>=2.4.0,<3.0.0)
+Requires-Dist: stack-data (==0.6.2)
+Requires-Dist: sumtypes (==0.1a6)
+Requires-Dist: tomli (==2.0.1)
+Requires-Dist: toolz (==0.11.2)
+Requires-Dist: traitlets (==5.8.0)
+Requires-Dist: typer (==0.7.0)
+Requires-Dist: types-cachetools (==4.2.10)
+Requires-Dist: typing-extensions (==4.4.0)
+Requires-Dist: urllib3 (==1.26.13)
+Requires-Dist: wcwidth (==0.2.5)
+Requires-Dist: websockets (==10.4)
+Requires-Dist: zstandard (==0.17.0)
+Description-Content-Type: text/markdown
+
+# mango-explorer-v4
+
+Python client library for interacting with Mango Markets V4.
+
+## Installation
+
+![PyPI](https://img.shields.io/pypi/v/mango-explorer-v4)
+
+`mango-explorer-v4` is available as a [Python package on PyPI](https://pypi.org/project/mango-explorer-v4) and can be installed as:
+
+```
+pip install mango-explorer-v4
+```
+
+## Usage
+
+Assuming that you have a SOL wallet already set up, visit https://app.mango.markets to create a Mango account and fund it so that you can place orders.
+
+```python
+import asyncio
+from mango_explorer_v4.mango_client import MangoClient
+from solana.keypair import Keypair
+from base58 import b58decode
+
+async def main():
+    mango_client = await MangoClient.connect()
+    
+    # General data functions:
+    print(mango_client.symbols())
+    
+    print(await mango_client.orderbook_l2('SOL/USDC'))
+    
+    print(await mango_client.fills('SOL-PERP'))
+    
+    # It is possible to livestream both orderbook & fills, look for incremental_*.py in the examples folder
+
+    # Fill in your Mango account public key e.g 9XJt2tvSZghsMAhWto1VuPBrwXsiimPtsTR8XwGgDxK2 
+    mango_account = await mango_client.get_mango_account('PUBLIC_KEY')
+
+    # You can look up any Mango account using
+    # https://app.mango.markets/?address=9XJt2tvSZghsMAhWto1VuPBrwXsiimPtsTR8XwGgDxK2
+ 
+    print(await mango_client.balances(mango_account))
+    
+    print(await mango_client.equity(mango_account)) # Account Value
+    
+    # Fill in output from Phantom's "Export Private Key" e.g 2pvKRVh ... 1fL5qGq
+    keypair = Keypair.from_secret_key(b58decode('SECRET_KEY'))
+    
+    # Place a limit order
+    print(await mango_client.place_order(mango_account, keypair, 'SOL/USDC', 'bid', 10, 0.1, 'limit'))
+    
+    # Place an oracle pegged perp order: https://docs.mango.markets/mango-markets/oracle-peg-orders
+    print(
+        await mango_client.place_perp_pegged_order(
+            mango_account,
+            keypair,
+            'SOL-PERP',
+            'bid',
+            price_offset=-5, # Will always be $5 under oracle price
+            peg_limit=10, # If the oracle price moves $10 or more, the order will expire
+            quantity=1
+        )
+    )
+    
+    # Cancel all orders
+    print(
+        await mango_client.cancel_all_orders(
+            mango_account,
+            keypair,
+            'SOL-PERP'
+        )
+    )
+    
+    # There's a simple quoter, using atomic cancel-replace in examples/market_maker.py
+
+asyncio.run(main())
+```
+
+## Running the examples
+
+**Please make sure you're running mango-explorer-v4@0.7.3 or above - these instructions don't apply to older versions.**
+
+You can find a collection of example code [here](./mango_explorer_v4/examples). These are to be run as command-line tools, with the simplest being the [symbols retrieval function](./mango_explorer_v4/examples/symbols.py), executable as:
+```shell
+python -m mango_explorer_v4.examples.symbols
+# Output:
+# [
+#     {
+#         'name': 'SOL/USDC',
+#         'type': 'spot',
+#         'base_currency': 'SOL',
+#         'quote_currency': 'USDC',
+#         'maker_fees': ...,
+#         'taker_fees': ...
+#     }
+#     ... all order symbols
+# ]
+```
+
+Examples may take arguments, which are specified in their source files. The [equity function](https://github.com/blockworks-foundation/mango-explorer-v4/blob/master/mango_explorer_v4/examples/equity.py) for example, takes a Mango account primary key, whilst the [order book retrieval](https://github.com/blockworks-foundation/mango-explorer-v4/blob/master/mango_explorer_v4/examples/orderbook_l2.py) takes a symbol & (optional) depth. These can be specified in the shell like this:
+
+```shell
+python -m mango_explorer_v4.examples.equity --mango-account 9XJt2tvSZghsMAhWto1VuPBrwXsiimPtsTR8XwGgDxK2
+# Outputs the Account Balance at https://app.mango.markets/?address=9XJt2tvSZghsMAhWto1VuPBrwXsiimPtsTR8XwGgDxK2
+
+python -m mango_explorer_v4.examples.orderbook_l2 --symbol SOL-PERP --depth 5
+# Outputs the first 5 orders in the book at https://app.mango.markets/trade?name=SOL-PERP
+```
+
+Some transactions, like order placement, require a keypair. On [Phantom wallet](https://phantom.app/) it can be fetched as follows:
+
+https://user-images.githubusercontent.com/28162761/233431861-5db448c1-fdf9-4dd0-8df9-156b131dfd71.mov
+
+With the keypair at hand you can place orders using:
+
+```shell
+python -m mango_explorer_v4.examples.place_order \
+    --keypair [KEYPAIR] \
+    --mango-account [MANGO_ACCOUNT] \
+    --symbol SOL-PERP \
+    --side bids \
+    --price 1 \
+    --size 0.1
+```
+
+And cancel them later as:
+```shell
+python -m mango_explorer_v4.examples.cancel_all_orders \
+    --keypair [KEYPAIR] \
+    --mango-account [MANGO_ACCOUNT] \
+    --symbol SOL-PERP
+```
+
+## Support
+
+Support is available on the [Mango Markets Discord server](https://discord.gg/8vs8uJJrcp) - post in the `#dev-discussion` channel for any questions or feature requests. 
+
