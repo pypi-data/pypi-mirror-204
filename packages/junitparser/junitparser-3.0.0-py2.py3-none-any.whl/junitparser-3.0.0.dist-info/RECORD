@@ -1,0 +1,10 @@
+junitparser/__init__.py,sha256=1dM2msNocrPZAu4GWWlsRsywCJMu6LSOze0KjH6LQcY,228
+junitparser/__main__.py,sha256=UKEVCpRS55nZ5H1JwxEXLcTluK896f-qgXoTOsPZCLI,73
+junitparser/cli.py,sha256=NwqtF0xUVno_3aQJfCEAhiOKIJm8jVavK0WmA3JHAA8,3077
+junitparser/junitparser.py,sha256=WxOvb959mgTj9j5Xq3Gal194evliQfJWtpK-25X6icI,21378
+junitparser-3.0.0.dist-info/LICENSE,sha256=Yno-OZ1HaPdxIWe8DAhUKZlox3iOvXolU3pMzmDmoQY,576
+junitparser-3.0.0.dist-info/METADATA,sha256=re70ZpMq_my_8uvSmQToOJ-JoO9QOctRDdWz9pz3xRw,7894
+junitparser-3.0.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+junitparser-3.0.0.dist-info/entry_points.txt,sha256=36dmf3iIfH9XN6qiByP_RjsPT3ISbvj62MRbcbuX4ig,53
+junitparser-3.0.0.dist-info/top_level.txt,sha256=8OKH9aNkfj5EavaisG0rTZRIaPnSF-XKCdqDHZVPj7Q,12
+junitparser-3.0.0.dist-info/RECORD,,
