@@ -1,0 +1,10 @@
+veryprettytable==0.8.1
+humanfriendly==9.0
+
+[DEV]
+pytest
+flake8
+tox
+pylint
+
+[SAMPLE]

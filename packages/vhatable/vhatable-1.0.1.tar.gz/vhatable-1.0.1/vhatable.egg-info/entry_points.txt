@@ -1,0 +1,3 @@
+[console_scripts]
+vhatable-sample = vhatable.sample:main [sample]
+
