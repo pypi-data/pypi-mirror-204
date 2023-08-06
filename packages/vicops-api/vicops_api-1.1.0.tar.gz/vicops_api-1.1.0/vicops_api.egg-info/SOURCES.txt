@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+vicops_api/__init__.py
+vicops_api/main.py
+vicops_api.egg-info/PKG-INFO
+vicops_api.egg-info/SOURCES.txt
+vicops_api.egg-info/dependency_links.txt
+vicops_api.egg-info/requires.txt
+vicops_api.egg-info/top_level.txt

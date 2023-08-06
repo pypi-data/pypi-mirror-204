@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: vicops_api
+Version: 1.1.0
+Summary: python api wrapper for vicops2
+Home-page: https://github.com/ERTH2/vicops-api-py
+Author: artegoser
+License: MIT
+Project-URL: Source Code, https://github.com/ERTH2/vicops-api-py
+Keywords: api,wrapper,vicops
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# vicops-api-py
+
+python api wrapper for vicops2
+
+example:
+
+```py
+from vicops_api import VicopsApi
+api = VicopsApi()
+print(api.getCurrencies())
+```
