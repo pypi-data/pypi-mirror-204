@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "mymoviebook"
+version = "1.10.0"
+description = "Generate your personal movie collection book"
+authors = ["turulomio <turulomio@yahoo.es>"]
+license = "GPL-3.0 license"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+colorama = "^0.4.6"
+psycopg2 = "^2.9.6"
+pytz = "^2023.3"
+django = "^4.2"
+platformdirs = "^3.2.0"
+tqdm = "^4.65.0"
+python-decouple = "^3.8"
+dj-database-url = "^1.3.0"
+
+
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.19.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+mymoviebook = 'mymoviebook.mymoviebook:main'
+
+
+[tool.poe.tasks]
+release = { script = "mymoviebook.devscripts:release" }
+translate = { script = "mymoviebook.devscripts:translate" }
+django_manage = { script = "mymoviebook.devscripts:django_manage" }
+reusing = { script = "mymoviebook.devscripts:reusing" }
+
+[project.urls]
+homepage = "https://github.com/turulomio/mymoviebook/"
+repository = "https://github.com/turulomio/mymoviebook/"
+changelog = "https://github.com/turulomio/mymoviebook#changelog"
