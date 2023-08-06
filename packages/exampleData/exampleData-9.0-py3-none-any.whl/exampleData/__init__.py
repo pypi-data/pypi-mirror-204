@@ -1,0 +1,1 @@
+from exampleData.getdata import *
