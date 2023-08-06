@@ -1,0 +1,11 @@
+pipster/__init__.py,sha256=rFSGtJeE8ZNhPLtlxwm-kmXOdF1U0KlPEZ6Xj8mca3k,478
+pipster/_formatter.py,sha256=SzUpKTaPt82JSxCu-Wo22J3Pz2KYBzMqJe85-eXnFZE,3370
+pipster/_version.py,sha256=9nChfgiKm0EY1wbcWSl6goi7PpDxhghvX_CM10VyAZc,54
+pipster/install.py,sha256=VeOzQlbd_Xjvr35sSC5HDTfFCBJupwv1w9tN7a_ZIMA,10485
+pipster/_experimental/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipster/_experimental/autoinstall.py,sha256=HfsolycvkzTlr5XSiLyEE5HCSFrOYBJY6ZOEwNXeX-A,6176
+pipster/_experimental/install_if_not_found.py,sha256=8ZTErJl4pQ9TYIEzSQsTYFP_x6UOceR21nsrKuN2qak,3020
+pipster-0.0.23.dist-info/METADATA,sha256=Cd2n7eJVZP2pYm3oZwmTKyN5NScM9kYbK7M2qrXQC6c,9380
+pipster-0.0.23.dist-info/WHEEL,sha256=3jNpu59JHbFdu1Yeq_fYJQsnHZ21dBRf7JjglSW4K9A,105
+pipster-0.0.23.dist-info/licenses/LICENSE,sha256=RJ26PPXOZ46X2rXu8SpZ8KRsdkfdZeQIle3Tt2lio7c,1097
+pipster-0.0.23.dist-info/RECORD,,
