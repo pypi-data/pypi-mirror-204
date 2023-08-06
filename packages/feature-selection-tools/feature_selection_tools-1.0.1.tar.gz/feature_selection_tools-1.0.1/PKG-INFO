@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: feature_selection_tools
+Version: 1.0.1
+Summary: Library with func-tools to help when selectiong features
+Home-page: https://github.com/biazotogabriel/feature_selection_tools
+Author: Gabriel Nuernberg Biazoto
+Author-email: biazotogabriel@gmail.com
+License: MIT
+Keywords: features selection tools
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+
+Library with func-tools to help when selectiong features
