@@ -1,0 +1,3 @@
+[console_scripts]
+fossl=fossl.__main__:main
+
