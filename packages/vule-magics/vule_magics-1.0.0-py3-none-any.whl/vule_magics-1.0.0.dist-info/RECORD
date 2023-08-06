@@ -1,0 +1,15 @@
+vule_magics/__init__.py,sha256=rZulfMeTAQKWdw8McCxre1jHLIfCoryyw6yIoVOQZ_Y,154
+vule_magics/_version.py,sha256=Y5SHlIXuXAzscWObrzxD1FAWP3sbr0Gm3wiDKpFPtvs,171
+vule_magics/sparksql/__init__.py,sha256=ja1VxdBkbNGIssPVvB-taV6DqqT0NFauLpOesJYHfIk,106
+vule_magics/sparksql/sparksql.py,sha256=2kWxdlWZ5v8RTPRUxT1KmxeOw2PsC3wKbHIZ2B3hE5Y,2242
+vule_magics-1.0.0.data/data/share/jupyter/labextensions/vule-magics/package.json,sha256=v5xYJxvCDn9jKBwZ3ao4m4KTIa43d5P5g5i18Ux7sMc,5166
+vule_magics-1.0.0.data/data/share/jupyter/labextensions/vule-magics/static/568.86f8cf51e32d5a4a98cb.js,sha256=hvjPUeMtWkqYy_LzB54gHr8HS1DT7TMjlIzqHozxfh4,1220
+vule_magics-1.0.0.data/data/share/jupyter/labextensions/vule-magics/static/747.6b9eb3eb7bd07ac8fdef.js,sha256=a56z63vQesj97zdDBIzqDSZPj1HYQu3Kn3K9eWG7I90,3498
+vule_magics-1.0.0.data/data/share/jupyter/labextensions/vule-magics/static/remoteEntry.f3a765341d8f0e4ea124.js,sha256=86dlNB2PDk6hJDErH910gf0rCtmFlG-kxR7PO_YphPo,6913
+vule_magics-1.0.0.data/data/share/jupyter/labextensions/vule-magics/static/style.js,sha256=fQW6qET-P0T9jyNrCzXEil7VWB8YfISGdCFbKiXpb6M,154
+vule_magics-1.0.0.data/data/share/jupyter/labextensions/vule-magics/static/third-party-licenses.json,sha256=P_VjLKCSMZ3sXuPckg8bDyB8Xn8JD7EsiIoRqvSP3h0,2452
+vule_magics-1.0.0.data/data/share/jupyter/labextensions/vule-magics/install.json,sha256=wIPhehnKxXzfoRQMHfoisUZX-peESAVqYRgTAD6Tq30,183
+vule_magics-1.0.0.dist-info/METADATA,sha256=Cg3MhIzh8fpQdgJylM6h3IK8mMjbxENRY33rvOY-2V0,5286
+vule_magics-1.0.0.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+vule_magics-1.0.0.dist-info/licenses/LICENSE,sha256=IdhBZ3YSs5KsqmIdnq0kYCYhVOL0F7QSwtettujDpok,1513
+vule_magics-1.0.0.dist-info/RECORD,,
