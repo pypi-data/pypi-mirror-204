@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: arlq
+Version: 1.2.3
+Summary: ARQL, another rogue-like quest game.
+Author-email: Toshihiro Kamiya <kamiya@mbj.nifty.com>
+License: BSD 2-Clause License
+Project-URL: Homepage, https://github.com/tos-kamiya/arlq
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: windows-curses ; sys_platform == "win32"
+
+# ARLQ, another rogue-like quest game
+
+ARLQ (Another Rogue-Like Quest) game created as an experiment in developing code and manuals with humans and ChatGPT.
+
+Please visit the homepage, [https://github.com/tos-kamiya/arlq/](https://github.com/tos-kamiya/arlq/), for more information.
+
+![](https://github.com/tos-kamiya/arlq/blob/main/screenshot.png?raw=True)
+

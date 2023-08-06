@@ -1,0 +1,2 @@
+[console_scripts]
+arlq = arlq:main
