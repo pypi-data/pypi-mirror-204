@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: flopsy
+Version: 0.0.1
+Summary: Redux-inspired state management
+Home-page: https://github.com/bgribble/flopsy
+Download-URL: https://github.com/bgribble/flopsy/archive/refs/tags/0.0.1.tar.gz
+Author: Bill Gribble
+Author-email: grib@billgribble.com
+License: MIT
+Keywords: state-management,redux,saga
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt
