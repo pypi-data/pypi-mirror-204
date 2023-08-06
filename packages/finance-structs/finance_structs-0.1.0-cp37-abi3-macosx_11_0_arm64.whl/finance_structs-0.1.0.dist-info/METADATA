@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: finance-structs
+Version: 0.1.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: black>=23; extra == 'develop'
+Requires-Dist: bump2version; extra == 'develop'
+Requires-Dist: check-manifest; extra == 'develop'
+Requires-Dist: maturin; extra == 'develop'
+Requires-Dist: pytest; extra == 'develop'
+Requires-Dist: pytest-cov; extra == 'develop'
+Requires-Dist: ruff; extra == 'develop'
+Requires-Dist: twine; extra == 'develop'
+Requires-Dist: wheel; extra == 'develop'
+Provides-Extra: test
+Provides-Extra: develop
+License-File: LICENSE
+Summary: Standard financial structures
+Keywords: 
+Author-email: pgc-dev <prettygoodcapital@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Repository, https://github.com/prettygoodcapital/finance-structs
+Project-URL: Homepage, https://github.com/prettygoodcapital/finance-structs
+
+# finance-structs
+Standard financial structures
+
