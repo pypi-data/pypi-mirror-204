@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pypotlib
+Version: 0.0.2
+Summary: Python bindings and ASE adapters for potlib
+Author-Email: Rohit Goswami <rog32@hi.is>
+License: MIT
+Requires-Python: >=3.11
+Requires-Dist: includeigen>=0.1
+Description-Content-Type: text/markdown
+
+# `pypotlib`
+
+Python bindings and ASE adapters for `potlib`
+
+# License
+MIT.
