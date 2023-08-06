@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ResponsePrediction"
+authors = [
+    {name="Jan-Erik Hygen", email="j-e.hygen@hotmail.com"}
+]
+description = "Vessel wave-induced response prediction"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["version"]
+keywords = [
+    "deterministic",
+    "FFT",
+    "autocorrelation",
+    "marine",
+    "vessel",
+    "RAO",
+    "response",
+    "waves"
+]
+
+dependencies = [
+    "scipy",
+    "numpy",
+    "matplotlib"
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "ResponsePrediction.__version__"}
