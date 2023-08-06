@@ -1,0 +1,3 @@
+[console_scripts]
+cookiecutter-autodocs=cookiecutter_autodocs.cli:main
+
