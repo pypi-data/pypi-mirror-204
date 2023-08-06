@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: tensorflow-nearest-neighbours
+Version: 0.0.4
+Summary: Nearest neighbours word embedding computation.
+Author: Artem Sereda
+Author-email: artem.sereda@campus.tu-berlin.de
+Keywords: tensorflow,custom op
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tensorflow ; sys_platform != "darwin"
+Requires-Dist: tensorflow-macos ; sys_platform == "darwin"
+
+# TensorFlow Nearest Neighbours Op
+Given an embedding matrix `EM`, and batch of word embeddings `x` 
+find nearest embedding for each token `x_ij` in `EM`.
+
+```python
+import tensorflow as tf
+from tensorflow_nearest_neighbours import nearest_neighbours
+tf.debugging.set_log_device_placement(True)
+
+x = tf.random.uniform(shape=[8, 10, 32])
+EM = tf.random.uniform(shape=[500, 32])
+result = nearest_neighbours(x, EM)
+print(result.shape)
+```
+
+Build macOS wheel with:
+```shell
+make clean
+tox run
+twine upload --verbose dist/* 
+```
