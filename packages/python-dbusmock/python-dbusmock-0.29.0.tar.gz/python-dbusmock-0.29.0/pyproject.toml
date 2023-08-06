@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools >= 45", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-dbusmock"
+description = "Mock D-Bus objects"
+readme = "README.md"
+license = { file = "COPYING" }
+authors = [
+    { name = "Martin Pitt", email = "martin@piware.de" },
+]
+classifiers = [
+    "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 6 - Mature",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: POSIX :: BSD",
+    "Operating System :: Unix",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: Testing :: Mocking",
+    "Topic :: Software Development :: Testing :: Unit",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dynamic = ["version"]
+requires-python = ">=3.6"
+
+dependencies = ["dbus-python"]
+
+[project.urls]
+homepage = "https://github.com/martinpitt/python-dbusmock"
+
+[tool.setuptools]
+packages = ["dbusmock", "dbusmock.templates"]
+
+[tool.setuptools_scm]
+write_to = "dbusmock/_version.py"
+# otherwise pylint complains about missing-module-docstring
+write_to_template = """'''auto-generated version from setuptools_scm'''
+__version__ = "{version}"
+"""
+version_scheme = 'post-release'
+
+[tool.pylint]
+format = { max-line-length = 130 }
+"messages control" = { disable = ["invalid-name"] }
+design = { max-args = 7, max-locals = 25,  max-public-methods = 25 }
+
+[tool.mypy]
+warn_unused_configs = true
+[[tool.mypy.overrides]]
+module = ["dbus.*", "gi.repository", "dbusmock._version"]
+ignore_missing_imports = true
