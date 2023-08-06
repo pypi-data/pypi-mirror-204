@@ -1,0 +1,12 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "menu_options": {
+                    "sensor": "Grup de senzori"
+                }
+            }
+        }
+    },
+    "title": "Grup"
+}

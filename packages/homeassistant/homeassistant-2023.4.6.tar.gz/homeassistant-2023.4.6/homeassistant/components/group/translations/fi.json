@@ -1,0 +1,13 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "closed": "Suljettu",
+                "ok": "Ok",
+                "problem": "Ongelma",
+                "unlocked": "Auki"
+            }
+        }
+    },
+    "title": "Ryhm\u00e4"
+}

@@ -1,0 +1,26 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
+        },
+        "error": {
+            "invalid_code": "El codi introdu\u00eft \u00e9s incorrecte, comprova'l i torna-ho a provar.",
+            "invalid_email": "No hi ha cap compte associat amb correu introdu\u00eft, torna-ho a provar.",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Codi de verificaci\u00f3"
+                },
+                "description": "Introdueix el codi de verificaci\u00f3 enviat al teu correu electr\u00f2nic"
+            },
+            "user": {
+                "data": {
+                    "username": "Correu electr\u00f2nic"
+                },
+                "description": "Introdueix el correu electr\u00f2nic de Roborock."
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "entity": {
+        "sensor": {
+            "status_code": {
+                "state": {
+                    "off": "Izklopljeno",
+                    "offline": "Brez povezave",
+                    "rdy": "Pripravljen"
+                }
+            }
+        }
+    }
+}

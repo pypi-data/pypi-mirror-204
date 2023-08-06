@@ -1,0 +1,32 @@
+{
+    "device_automation": {
+        "condition_type": {
+            "is_hvac_mode": "{entity_name} est\u00e1 definido com um modo HVAC espec\u00edfico"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "state": {
+                "off": "Desligado"
+            },
+            "state_attributes": {
+                "fan_mode": {
+                    "state": {
+                        "off": "Desligado"
+                    }
+                },
+                "hvac_action": {
+                    "state": {
+                        "off": "Desligado"
+                    }
+                },
+                "swing_mode": {
+                    "state": {
+                        "off": "Desligado"
+                    }
+                }
+            }
+        }
+    },
+    "title": "Climatiza\u00e7\u00e3o"
+}

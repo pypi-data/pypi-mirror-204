@@ -1,0 +1,11 @@
+{
+    "entity_component": {
+        "_": {
+            "name": "Agenda",
+            "state": {
+                "off": "Desligado"
+            }
+        }
+    },
+    "title": "Hor\u00e1rio"
+}

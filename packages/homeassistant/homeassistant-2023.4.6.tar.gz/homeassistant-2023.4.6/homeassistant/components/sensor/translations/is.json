@@ -1,0 +1,13 @@
+{
+    "device_automation": {
+        "condition_type": {
+            "is_water": "N\u00faverandi {entity_name} vatn"
+        }
+    },
+    "entity_component": {
+        "timestamp": {
+            "name": "T\u00edmastimpill"
+        }
+    },
+    "title": "Skynjari"
+}

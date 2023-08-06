@@ -1,0 +1,26 @@
+{
+    "entity_component": {
+        "_": {
+            "state_attributes": {
+                "forecast": {
+                    "name": "Prognoza"
+                },
+                "humidity": {
+                    "name": "Umiditate"
+                },
+                "ozone": {
+                    "name": "Stratul de ozon"
+                },
+                "precipitation_unit": {
+                    "name": "Unitatea de precipita\u021bii"
+                },
+                "pressure": {
+                    "name": "Presiune atmosferic\u0103"
+                },
+                "pressure_unit": {
+                    "name": "Unitatea de presiune"
+                }
+            }
+        }
+    }
+}

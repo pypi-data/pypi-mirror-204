@@ -1,0 +1,26 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Zariadenie u\u017e je nakonfigurovan\u00e9"
+        },
+        "error": {
+            "invalid_code": "Zadan\u00fd k\u00f3d bol nespr\u00e1vny, skontrolujte ho a sk\u00faste to znova.",
+            "invalid_email": "K zadan\u00e9mu e-mailu nie je priraden\u00fd \u017eiadny \u00fa\u010det, sk\u00faste to znova.",
+            "unknown": "Neo\u010dak\u00e1van\u00e1 chyba"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Overovac\u00ed k\u00f3d"
+                },
+                "description": "Zadajte overovac\u00ed k\u00f3d odoslan\u00fd na v\u00e1\u0161 e-mail"
+            },
+            "user": {
+                "data": {
+                    "username": "Email"
+                },
+                "description": "Zadajte svoju e-mailov\u00fa adresu Roborock."
+            }
+        }
+    }
+}

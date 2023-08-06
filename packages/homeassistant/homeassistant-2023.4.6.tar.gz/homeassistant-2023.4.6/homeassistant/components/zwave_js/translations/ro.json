@@ -1,0 +1,53 @@
+{
+    "config": {
+        "abort": {
+            "addon_get_discovery_info_failed": "A e\u0219uat ob\u021binerea de informa\u021bii de descoperire de la add-on-ul Z-Wave JS.",
+            "addon_info_failed": "A e\u0219uat ob\u021binerea de informa\u021bii despre add-on-ul Z-Wave JS.",
+            "addon_install_failed": "A e\u0219uat instalarea add-on-ului Z-Wave JS.",
+            "addon_set_config_failed": "Nu s-a putut configura Z-Wave JS",
+            "addon_start_failed": "A e\u0219uat pornirea add-on-ului Z-Wave JS",
+            "already_configured": "Dispozitivul a fost configurat deja",
+            "already_in_progress": "Fluxul de configura\u021bie este deja \u00een desf\u0103\u0219urare",
+            "cannot_connect": "A e\u0219uat conectarea"
+        },
+        "error": {
+            "addon_start_failed": "A e\u0219uat pornirea add-on-ului Z-Wave JS. Verific\u0103 \u00eenc\u0103 o dat\u0103 configura\u021bia.",
+            "cannot_connect": "A e\u0219uat conectarea",
+            "invalid_ws_url": "URL websocket incorect",
+            "unknown": "Eroare nea\u0219teptat\u0103"
+        },
+        "progress": {
+            "install_addon": "Te rug\u0103m s\u0103 a\u0219tep\u021bi s\u0103 se termine instalarea add-on-ului Z-Wave JS. Acest lucru poate dura c\u00e2teva minute.",
+            "start_addon": "Te rug\u0103m s\u0103 a\u0219tep\u021bi p\u00e2n\u0103 porne\u0219te complet add-on-ul Z-Wave JS. Poate dura c\u00e2teva secunde."
+        },
+        "step": {
+            "configure_addon": {
+                "data": {
+                    "usb_path": "Cale dispozitiv USB"
+                },
+                "title": "Introdu configura\u021bia add-on-ului Z-Wave JS"
+            },
+            "hassio_confirm": {
+                "title": "Configureaz\u0103 integrarea Z-Wave JS utiliz\u00e2nd add-on-ul Z-Wave JS"
+            },
+            "install_addon": {
+                "title": "A pornit instalarea add-on-ului Z-Wave JS"
+            },
+            "manual": {
+                "data": {
+                    "url": "URL"
+                }
+            },
+            "on_supervisor": {
+                "data": {
+                    "use_addon": "Folose\u0219te add-on-ul Z-Wave JS"
+                },
+                "description": "Dore\u0219ti s\u0103 utilizezi add-on-ul Z-Wave JS?",
+                "title": "Selecteaz\u0103 metoda de conectare"
+            },
+            "start_addon": {
+                "title": "Add-on-ul Z-Wave JS este \u00een curs de pornire."
+            }
+        }
+    }
+}

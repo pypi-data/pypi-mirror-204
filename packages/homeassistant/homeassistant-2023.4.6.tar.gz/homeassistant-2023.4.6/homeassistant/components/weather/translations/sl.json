@@ -1,0 +1,14 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "clear-night": "Jasno, no\u010d"
+            },
+            "state_attributes": {
+                "temperature": {
+                    "name": "Temperatura"
+                }
+            }
+        }
+    }
+}

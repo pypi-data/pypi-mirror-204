@@ -1,0 +1,64 @@
+{
+    "entity_component": {
+        "_": {
+            "name": "N\u00famero"
+        },
+        "atmospheric_pressure": {
+            "name": "Press\u00e3o atmosf\u00e9rica"
+        },
+        "battery": {
+            "name": "Bateria"
+        },
+        "carbon_dioxide": {
+            "name": "Di\u00f3xido de Carbono"
+        },
+        "carbon_monoxide": {
+            "name": "Mon\u00f3xido de Carbono"
+        },
+        "distance": {
+            "name": "Dist\u00e2ncia"
+        },
+        "energy": {
+            "name": "Energia"
+        },
+        "frequency": {
+            "name": "Frequ\u00eancia"
+        },
+        "humidity": {
+            "name": "Humidade"
+        },
+        "ozone": {
+            "name": "Ozono"
+        },
+        "precipitation": {
+            "name": "Precipita\u00e7\u00e3o"
+        },
+        "precipitation_intensity": {
+            "name": "Intensidade de precipita\u00e7\u00e3o"
+        },
+        "signal_strength": {
+            "name": "Pot\u00eancia de sinal"
+        },
+        "sound_pressure": {
+            "name": "Press\u00e3o sonora"
+        },
+        "speed": {
+            "name": "Velocidade"
+        },
+        "temperature": {
+            "name": "Temperatura"
+        },
+        "voltage": {
+            "name": "Voltagem"
+        },
+        "water": {
+            "name": "\u00c1gua"
+        },
+        "weight": {
+            "name": "Peso"
+        },
+        "wind_speed": {
+            "name": "Velocidade do vento"
+        }
+    }
+}

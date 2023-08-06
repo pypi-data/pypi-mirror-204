@@ -1,0 +1,8 @@
+{
+    "entity_component": {
+        "moisture": {
+            "name": "Kosteus"
+        }
+    },
+    "title": "Sensori"
+}

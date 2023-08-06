@@ -1,0 +1,21 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Contul a fost configurat deja",
+            "reauth_successful": "Re-autentificarea s-a realizat cu succes"
+        },
+        "error": {
+            "invalid_auth": "Autentificare nevalid\u0103"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "email": "E-mail",
+                    "password": "Parola"
+                },
+                "description": "Introdu adresa de email \u0219i parola SmartTub pentru autentificare",
+                "title": "Autentificare"
+            }
+        }
+    }
+}

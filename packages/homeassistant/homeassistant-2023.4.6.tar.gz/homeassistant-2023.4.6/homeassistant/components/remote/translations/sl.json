@@ -1,0 +1,15 @@
+{
+    "device_automation": {
+        "action_type": {
+            "toggle": "Preklopi {entity_name}"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "state": {
+                "off": "Izklopljeno"
+            }
+        }
+    },
+    "title": "Oddaljeno"
+}

@@ -1,0 +1,26 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "invalid_code": "The code you entered was incorrect, please check it and try again.",
+            "invalid_email": "There is no account associated with the email you entered, please try again.",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Verification code"
+                },
+                "description": "Type the verification code sent to your email"
+            },
+            "user": {
+                "data": {
+                    "username": "Email"
+                },
+                "description": "Enter your Roborock email address."
+            }
+        }
+    }
+}

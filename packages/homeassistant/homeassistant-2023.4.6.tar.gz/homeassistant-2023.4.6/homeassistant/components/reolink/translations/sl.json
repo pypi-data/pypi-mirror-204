@@ -1,0 +1,16 @@
+{
+    "entity": {
+        "select": {
+            "auto_quick_reply_message": {
+                "state": {
+                    "off": "Izklopljen"
+                }
+            },
+            "floodlight_mode": {
+                "state": {
+                    "off": "Izklopljen"
+                }
+            }
+        }
+    }
+}

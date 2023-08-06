@@ -1,0 +1,12 @@
+{
+    "entity_component": {
+        "_": {
+            "name": "Script",
+            "state": {
+                "off": "Desligado",
+                "on": "Ligado"
+            }
+        }
+    },
+    "title": "Script"
+}
