@@ -1,0 +1,71 @@
+[build-system]
+requires = [
+    "setuptools",
+    "setuptools-scm",
+    "wheel",
+]
+build-backend="setuptools.build_meta"
+
+[project]
+name = "project_2023"
+authors = [{name = "Your Name", email = "Your_Email@gmail.com"}]
+description="An example python project"
+readme = "README.md"
+version = "0.1.0"
+requires-python = ">=3.7"
+
+dependencies = []
+
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+repository = "https://github.com/kw9212/project_2023"
+
+[project.optional-dependencies]
+develop = [
+    "black>=22",
+    "bump2version>=1.0.0",
+    "check-manifest",
+    "flake8>=3.7.8",
+    "flake8-black>=0.2.1",
+    "flake8-pyproject",
+    "mypy",
+    "pytest>=4.3.0",
+    "pytest-cov>=2.6.1",
+    "twine",
+    "wheel",
+]
+
+[tool.black]
+color = true
+line-length = 120
+target-version = ['py310']
+skip-string-normalization = true
+
+[tool.check-manifest]
+ignore = [
+]
+
+[tool.flake8]
+ignore = ['E203', 'W503']
+max-line-length=120
+exclude=[
+    'project_progress/tests/*'
+]
+per-file-ignores= [
+    'project_progress/__init__.py:F401, F403'
+]
