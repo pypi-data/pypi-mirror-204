@@ -1,0 +1,4 @@
+matplotlib
+typing
+tqdm
+pandas
