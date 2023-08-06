@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+SocketWrapper/ClearScreen.py
+SocketWrapper/Client.py
+SocketWrapper/ClientInterface.py
+SocketWrapper/Server.py
+SocketWrapper/ServerInterface.py
+SocketWrapper/SocketInterface.py
+SocketWrapper/__init__.py
+SocketWrapper.egg-info/PKG-INFO
+SocketWrapper.egg-info/SOURCES.txt
+SocketWrapper.egg-info/dependency_links.txt
+SocketWrapper.egg-info/top_level.txt
