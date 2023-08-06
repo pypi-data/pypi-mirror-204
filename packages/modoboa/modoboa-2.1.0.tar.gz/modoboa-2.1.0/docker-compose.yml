@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  api:
+    container_name: modoboa_api
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.dev
+    ports:
+      - 8000:8000
+    environment:
+      PYTHONPATH: ".."
+      DB: "SQLITE"
+      DEBUG: "True"
+    command: >
+      sh -c "cd test_project
+             python3 manage.py migrate
+             python3 manage.py load_initial_data
+             django-admin compilemessages
+             python3 manage.py runserver 0:8000"
+    volumes:
+      - .:/code
+
+  front:
+    container_name: modoboa_front
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.front.dev
+    ports:
+      - 8080:8080
+    volumes:
+      - ./frontend/:/home/node/
+    command: "yarn serve"
+    environment:
+      DOCKER: "yes"
+    depends_on:
+      - api
