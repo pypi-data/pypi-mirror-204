@@ -1,0 +1,19 @@
+include *.txt
+include README.md
+include pyproject.toml
+
+graft erddapy
+
+prune .github
+prune *.egg-info
+prune docs
+prune notebooks
+prune tests
+
+exclude .coveragerc
+exclude .gitignore
+exclude .isort.cfg
+exclude .pre-commit-config.yaml
+exclude *.yml
+exclude code-of-conduct.md
+exclude erddapy/_version.py
