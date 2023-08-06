@@ -1,0 +1,4 @@
+include cv2_collage_v2/requirements.txt
+include cv2_collage_v2/thirdparty.json
+include cv2_collage_v2/README.md
+include cv2_collage_v2/LICENSE
