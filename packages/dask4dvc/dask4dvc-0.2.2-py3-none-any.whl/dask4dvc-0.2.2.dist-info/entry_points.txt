@@ -1,0 +1,3 @@
+[console_scripts]
+dask4dvc=dask4dvc.cli.main:app
+
