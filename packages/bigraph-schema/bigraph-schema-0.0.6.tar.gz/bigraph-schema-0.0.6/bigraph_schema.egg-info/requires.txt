@@ -1,0 +1,3 @@
+parsimonious
+fire
+pytest
