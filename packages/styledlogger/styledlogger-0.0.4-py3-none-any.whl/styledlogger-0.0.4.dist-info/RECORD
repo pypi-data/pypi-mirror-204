@@ -1,0 +1,11 @@
+styledlogger/__init__.py,sha256=LZIoPhaG5Ir7z2so8iNZnFjGZ9wi2Oyz_3w90TSJ2e8,104
+styledlogger/logger.py,sha256=EvRdUye7bYKTu5chhkW-yMc0BpLwcT36uz7G0zghxp0,2182
+styledlogger/classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+styledlogger/classes/printcolors.py,sha256=GtpljILIIdkfdj2ySOCxCDcQEn1Fx0Sa3-UIS3LlH20,821
+styledlogger/classes/printtypes.py,sha256=uqzdO3-g_82OBAjiaN42KcVD7MnNR_W6RibqYIAJM_A,296
+styledlogger/classes/styleconfig.py,sha256=A_zPCYGljJL2yc97V0BsPaKFYNz5hMiDztYGJMzTFVU,2988
+styledlogger-0.0.4.dist-info/LICENSE,sha256=yb_3VziSIZPmf6cm-iJVNYcNKqEFn5FFLEEXNihK1WY,1338
+styledlogger-0.0.4.dist-info/METADATA,sha256=XVdIZWSEhQui49vZ8LsfoPYGn8uEMzMOztc8acG5fbI,1815
+styledlogger-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+styledlogger-0.0.4.dist-info/top_level.txt,sha256=3B3uWx5fT4H_bx4tDujo2Ai4-87t76NoRnVfjnihpiY,13
+styledlogger-0.0.4.dist-info/RECORD,,
