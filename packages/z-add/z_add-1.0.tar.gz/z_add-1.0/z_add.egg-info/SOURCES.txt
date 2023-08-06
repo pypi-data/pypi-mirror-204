@@ -1,0 +1,8 @@
+license.txt
+setup.py
+z_add/__init__.py
+z_add/add_num.py
+z_add.egg-info/PKG-INFO
+z_add.egg-info/SOURCES.txt
+z_add.egg-info/dependency_links.txt
+z_add.egg-info/top_level.txt
