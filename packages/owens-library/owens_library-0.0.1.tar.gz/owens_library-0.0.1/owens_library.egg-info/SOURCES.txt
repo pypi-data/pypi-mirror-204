@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+owens_library/__init__.py
+owens_library.egg-info/PKG-INFO
+owens_library.egg-info/SOURCES.txt
+owens_library.egg-info/dependency_links.txt
+owens_library.egg-info/top_level.txt
