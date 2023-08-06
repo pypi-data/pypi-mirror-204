@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cv2_collage_v2/LICENSE
+cv2_collage_v2/README.md
+cv2_collage_v2/__init__.py
+cv2_collage_v2/requirements.txt
+cv2_collage_v2/thirdparty.json
+cv2_collage_v2.egg-info/PKG-INFO
+cv2_collage_v2.egg-info/SOURCES.txt
+cv2_collage_v2.egg-info/dependency_links.txt
+cv2_collage_v2.egg-info/requires.txt
+cv2_collage_v2.egg-info/top_level.txt
