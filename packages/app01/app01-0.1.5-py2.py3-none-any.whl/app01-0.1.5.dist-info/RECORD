@@ -1,0 +1,12 @@
+app01/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app01/app01.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+app01/cli.py,sha256=UA0l6HAmAU9gSoFCdXYouuaWp4DP9k0fgOxkXS7X7FE,582
+app01/matt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app01/matt/math_add.py,sha256=-_76IWLNfvfpAutoC5T1eHppbI_Udof8_pbWD-ELhAg,96
+app01-0.1.5.dist-info/AUTHORS.rst,sha256=4ZPou1iAgZHeeJRtoW7gGpFdgSvRPKquvP5ZfU6421g,150
+app01-0.1.5.dist-info/LICENSE,sha256=o8uKdFVmP5A30ce3RkKa63XHNmjadW5HamPJTB0BU9s,1068
+app01-0.1.5.dist-info/METADATA,sha256=tCEm1OgHqTpDrLKzEqdAv9xCRWUYjAifmB28pI0fm8U,1578
+app01-0.1.5.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+app01-0.1.5.dist-info/entry_points.txt,sha256=6_0ahnLh311MvsqPP0QGoiekL9CkC4ECPHvyGEiT3_4,41
+app01-0.1.5.dist-info/top_level.txt,sha256=PiMB_jDdMHaas5xfxFdjIeVcw_hoqygOQO_XRgWT-tw,6
+app01-0.1.5.dist-info/RECORD,,
