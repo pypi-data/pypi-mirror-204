@@ -1,0 +1,7 @@
+PyQt5
+astropy
+matplotlib
+numpy
+opencv-python
+scikit-image
+sunpy
