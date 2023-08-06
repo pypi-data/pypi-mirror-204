@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: hkhklab
+Version: 0.0.1
+Summary: calculate list sum and so on
+Home-page: http://github.com/hyokwan/hkhklab
+Author: kimhyokwan
+Author-email: haiteam@kopo.ac.kr
+License: MIT
+Keywords: listsum
