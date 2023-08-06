@@ -1,0 +1,8 @@
+remote_drawing_provider/__init__.py,sha256=xBn4MfonBjxmlZ--NJw1580Wa_2d2Aao7tYgkC-BFAk,159
+remote_drawing_provider/logger.py,sha256=Ekk_Pjw0gZpRyDXrYqMvzfnela0UFYJWNupWS8SR9NQ,1198
+remote_drawing_provider/provider.py,sha256=sZwK1d0PUVCZutuoL5TmILo1U7i0irC0xVFKkEXf7eU,1006
+remote_drawing_provider-1.0.0.dist-info/LICENSE,sha256=1mSy-PPirpALuerPYeaYnEoJjcqayaoZjWFwanihDUU,1066
+remote_drawing_provider-1.0.0.dist-info/METADATA,sha256=OtCSgFU4HlLao7gZivGePlfOWnW5tgnUSoFPeNAErh4,894
+remote_drawing_provider-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+remote_drawing_provider-1.0.0.dist-info/top_level.txt,sha256=NR30TIGWgjnNQWWj3qm_g4paUEp4tJ_9bPQnxd_Mo_s,24
+remote_drawing_provider-1.0.0.dist-info/RECORD,,
