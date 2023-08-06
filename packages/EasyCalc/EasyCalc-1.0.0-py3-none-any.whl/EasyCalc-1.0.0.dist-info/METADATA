@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: EasyCalc
+Version: 1.0.0
+Summary: A simple Python library for creating a calculator with a GUI
+Home-page: https://github.com/RUBRUSH/EasyCalc
+Author: RUBRUSH
+Author-email: askarsalikov58@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+Requires-Dist: tkinter
+
+UNKNOWN
+
