@@ -1,0 +1,2 @@
+[pytest11]
+resume = pytest_resume.plugin
