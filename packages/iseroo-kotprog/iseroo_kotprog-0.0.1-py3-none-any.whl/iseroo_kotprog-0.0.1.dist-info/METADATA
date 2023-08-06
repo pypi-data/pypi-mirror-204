@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: iseroo-kotprog
+Version: 0.0.1
+Summary: Py kotprog
+Home-page: https://github.com/Iseroo/Python-kotprog
+Author: Tarsoly Barnabás
+Author-email: Taroly Barnabás <tarsoly.barnabas2002@gmail.com>
+Project-URL: Homepage, https://github.com/Iseroo/Python-kotprog
+Requires-Python: >=3.10
+Requires-Dist: Pillow (==9.5.0)
+Requires-Dist: pygame (==2.1.2)
+Requires-Dist: webcolors (==1.12)
+
