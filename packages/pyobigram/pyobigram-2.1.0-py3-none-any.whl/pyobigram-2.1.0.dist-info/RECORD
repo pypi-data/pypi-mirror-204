@@ -1,0 +1,14 @@
+pyobigram/client.py,sha256=L4eJht-ohQec4_zkA1PbW6YdffBjaSf33VD5m61NgmA,18932
+pyobigram/inline.py,sha256=_dFoOV6D3tnzBlKJjkwrlHdHo3YpUkaSQx379OGS9ko,1939
+pyobigram/paralleltransfer.py,sha256=HAH7qIQXHPCRgW5ZIs7EzeEQ0y3ODT6XXhryKx9ba4g,13252
+pyobigram/readers.py,sha256=6xAyJmoTelcmpkus-VHYGR9N1l9QMSAjPgIrHsjXAzg,5512
+pyobigram/threads.py,sha256=3rRjnw4R0eozNkLt-bUSi8wbvkjMVmNcK3loSE_ohTg,932
+pyobigram/ttui.py,sha256=HHQ9Cb3J2a4qOeCymHvBNQ0mYm2c8Ng6t0icmQ9dUyk,9573
+pyobigram/utils.py,sha256=1EXjvQWOpFeLiNSY0_CwISefFFCom7nLXE0hsZPaQHY,3186
+pyobigram/version.py,sha256=IoKr_I0qke7Ativ6GcqsfNAqTTlxk3-dvy86JWws6pI,75
+pyobigram-2.1.0.dist-info/LICENSE,sha256=ZAUUFjsX-XetyZfLFvUYcRIs-wVV660aPwHhZ7e6iFc,1235
+pyobigram-2.1.0.dist-info/METADATA,sha256=mnqNvQxF3PavEFOzS6_2sIvNn2p-6LLPV8mES72Ppms,1163
+pyobigram-2.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyobigram-2.1.0.dist-info/top_level.txt,sha256=_oYp5P2GfAa615tf5aKaj2v1xznp-un5sJXk80EYgd0,10
+pyobigram-2.1.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+pyobigram-2.1.0.dist-info/RECORD,,
