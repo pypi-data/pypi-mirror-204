@@ -1,0 +1,9 @@
+gradient_accumulator/__init__.py,sha256=HGaW2iZJJGyCZXVKn4eGSIMe_9JdY_KWt15_IzHtlCc,166
+gradient_accumulator/accumulators.py,sha256=XX0lfLukpjQQ8IKDgY8igEeXaS9caJj7D-2xwiwKxPY,14947
+gradient_accumulator/agc.py,sha256=hC-i0Oulb_Y67eblFtzUwhghiFSQKXy4Ph6CS5a_HHY,2538
+gradient_accumulator/layers.py,sha256=m0Fxez2QSagULg26mxeMhB6AkOj2OcuGse_a3ieFknA,7702
+gradient_accumulator-0.4.1.dist-info/LICENSE,sha256=dFpUCUx0e1gezY6keOe8t0PFjFtIjz6SQZVky-IqPOo,1071
+gradient_accumulator-0.4.1.dist-info/METADATA,sha256=1DCoYO5deWrrvL63u8ZRhb16l-GTkxJtU1nXI3Ega9k,7445
+gradient_accumulator-0.4.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gradient_accumulator-0.4.1.dist-info/top_level.txt,sha256=mHo0FBRNoFexbvnWAZzVV3_88pFduecv6RqhUh9Lzr4,21
+gradient_accumulator-0.4.1.dist-info/RECORD,,
