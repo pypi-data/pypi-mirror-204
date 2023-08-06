@@ -1,0 +1,15 @@
+numpy
+pandas
+matplotlib==3.5
+matplotlib_venn
+torch
+torchvision
+scipy
+tqdm
+astropy
+astroquery
+requests
+lxml
+gaiadr3-zeropoint
+dustapprox
+scikit-learn>=1.1.0
