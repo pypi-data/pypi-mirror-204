@@ -1,0 +1,2 @@
+[console_scripts]
+airthings-exporter = airthings.main:main

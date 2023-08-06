@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/airthings/CloudCollector.py
+src/airthings/__init__.py
+src/airthings/main.py
+src/airthings_exporter.egg-info/PKG-INFO
+src/airthings_exporter.egg-info/SOURCES.txt
+src/airthings_exporter.egg-info/dependency_links.txt
+src/airthings_exporter.egg-info/entry_points.txt
+src/airthings_exporter.egg-info/requires.txt
+src/airthings_exporter.egg-info/top_level.txt
