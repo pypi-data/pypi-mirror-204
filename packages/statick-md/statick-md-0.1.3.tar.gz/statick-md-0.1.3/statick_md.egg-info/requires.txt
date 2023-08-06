@@ -1,0 +1,9 @@
+proselint
+restructuredtext-lint
+rstcheck
+sphinx
+statick
+
+[test]
+mock
+pytest
