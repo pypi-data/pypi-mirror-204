@@ -1,0 +1,8 @@
+README.md
+setup.py
+spark_sql_to_sqlite/__init__.py
+spark_sql_to_sqlite.egg-info/PKG-INFO
+spark_sql_to_sqlite.egg-info/SOURCES.txt
+spark_sql_to_sqlite.egg-info/dependency_links.txt
+spark_sql_to_sqlite.egg-info/requires.txt
+spark_sql_to_sqlite.egg-info/top_level.txt
