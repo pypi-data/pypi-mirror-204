@@ -1,0 +1,15 @@
+sphinx>=4.0.2
+recommonmark
+numpydoc
+sphinx-rtd-theme>=0.5.2
+notedown
+ipython>=5.1.0
+notebook>=4.2.2
+ipykernel>=4.4.1
+matplotlib>=1.5.0
+seaborn
+pywavelets
+tabulate
+sphinx-gallery>=0.9.0
+pillow
+setuptools-scm>=7.1.0

@@ -1,0 +1,17 @@
+How to make a new release of ``cesium``
+=======================================
+
+- Add the version number as an annotated tag in git::
+
+   git tag -s -m "Description of release" v0.X.Y
+
+  You can look at existing tags with::
+
+   git tag -l -n9
+
+- Push the new meta-data to github::
+
+   git push --tags origin main
+
+- The CI will build wheels and upload to PyPi.
+  Follow progress at https://github.com/cesium-ml/cesium/actions

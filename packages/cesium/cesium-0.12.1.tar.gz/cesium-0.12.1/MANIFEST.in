@@ -1,0 +1,14 @@
+exclude .*
+exclude *.yml
+exclude *.enc
+prune .github
+
+recursive-include cesium *.pyx *.pxd *.py *.c *.h
+recursive-include dockerfiles Dockerfile *.sh
+recursive-include tools *.py
+recursive-include cesium *.csv *.dat *.tar.gz
+
+include doc/Makefile
+recursive-include doc *.py *.rst *.css
+prune doc/build
+prune doc/gh-pages
