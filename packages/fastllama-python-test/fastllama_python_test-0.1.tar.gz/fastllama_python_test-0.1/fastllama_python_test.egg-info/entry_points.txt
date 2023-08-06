@@ -1,0 +1,3 @@
+[console_scripts]
+build_fastllama = build_python:main
+

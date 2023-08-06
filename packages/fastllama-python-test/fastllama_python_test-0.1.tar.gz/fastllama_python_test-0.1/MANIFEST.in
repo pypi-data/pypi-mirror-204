@@ -1,0 +1,4 @@
+include LICENSE
+recursive-include interfaces *
+recursive-include examples *
+recursive-include scripts *
