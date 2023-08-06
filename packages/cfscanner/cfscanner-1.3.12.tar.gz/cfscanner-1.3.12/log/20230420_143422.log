@@ -1,0 +1,32 @@
+ERROR:cfscanner.main:Error in starting xray service.
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/smz/.local/lib/python3.10/site-packages/cfscanner/speedtest/conduct.py", line 95, in test_ip
+    process, proxies = start_proxy_service(
+  File "/home/smz/.local/lib/python3.10/site-packages/cfscanner/xray/service.py", line 28, in start_proxy_service
+    proxy_process = subprocess.Popen(
+  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/smz/Documents/GitHub/CFScanner/python/xray-linux-64'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/smz/.local/lib/python3.10/site-packages/cfscanner/speedtest/conduct.py", line 102, in test_ip
+    raise StartProxyServiceError(
+cfscanner.utils.exceptions.StartProxyServiceError: Could not start xray service - 154.84.175.54
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/smz/.local/lib/python3.10/site-packages/cfscanner/main.py", line 204, in main
+    res = next(iterator)
+  File "/usr/lib/python3.10/multiprocessing/pool.py", line 873, in next
+    raise value
+cfscanner.utils.exceptions.StartProxyServiceError: Could not start xray service - 154.84.175.54

@@ -1,0 +1,55 @@
+{
+  "inbounds": [
+    {
+      "port": 52331,
+      "listen": "127.0.0.1",
+      "tag": "socks-inbound",
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": false,
+        "ip": "127.0.0.1"
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "203.34.28.164",
+            "port": 443,
+            "users": [
+              {
+                "id": "201b62c5-0f84-5e61-a220-4911c0c221b4"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "headers": {
+            "Host": "scherehtzhel01.eersch.net"
+          },
+          "path": "/api01"
+        },
+        "tlsSettings": {
+          "serverName": "4e00bd36-3bd8-4290-a9cd-78cd25d9eb1e.eersch.net",
+          "allowInsecure": false
+        }
+      }
+    }
+  ],
+  "other": {}
+}
