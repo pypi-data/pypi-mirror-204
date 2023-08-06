@@ -1,0 +1,4 @@
+dependencies:
+    - jupyterlab
+    - pip
+    - python>=3.8
