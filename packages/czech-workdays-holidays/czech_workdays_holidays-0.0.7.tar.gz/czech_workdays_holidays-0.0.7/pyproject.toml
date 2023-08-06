@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "czech_workdays_holidays"
+version = "0.0.7"
+authors = [
+  { name="David Gamba", email="gamba.d@seznam.cz" },
+]
+description = "Czech Workdays and Holidays including work-restricted holidays"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = ["requirements.txt"]
+
+[project.urls]
+"Homepage" = "https://github.com/david-gamba/Czech-Working-Days"
+"Bug Tracker" = "https://github.com/david-gamba/Czech-Working-Days/issues"
