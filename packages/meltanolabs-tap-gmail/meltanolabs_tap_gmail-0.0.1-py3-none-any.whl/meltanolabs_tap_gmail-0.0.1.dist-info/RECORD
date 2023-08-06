@@ -1,0 +1,14 @@
+tap_gmail/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_gmail/auth.py,sha256=PrLHeQJBEC_uR-DedCn8AYerkbk8_8e1Cej71b-5iHg,1122
+tap_gmail/client.py,sha256=qdp6TA_RU12HcSROcACupck1Cj4IwPwuHkFu6MDxMNU,2051
+tap_gmail/schemas/message_list.json,sha256=cMynBv46tZgFOqJgNM4vopStW56AzbUJyI4c-MSWKHw,261
+tap_gmail/schemas/messages.json,sha256=zbd6lEOGv5BhvtVY0sOUtgDDb4245L8iDbmJVZEP1Iw,4082
+tap_gmail/streams.py,sha256=JLVkomR0kbfTF6gPhn5p0QeRYFDeZfOLENlOnZvK7Qc,1595
+tap_gmail/tap.py,sha256=4DJA95sHTnfASvnaSzm_ZC8iau2KobgNM6Cw3sGWddY,1830
+tap_gmail/tests/__init__.py,sha256=XxpaPB4Sgld_dtZc-amOE8dJcX38hLRCSTlWwF6pQoo,32
+tap_gmail/tests/test_core.py,sha256=ZsOnLwVUitBLpDufMnMLLBoCrk3bZgQlcl_UL3U5T90,645
+meltanolabs_tap_gmail-0.0.1.dist-info/LICENSE,sha256=vM6FtTrlJibSDqLMC37SkLNo1Nx9k0kUa3xws2ygUQI,1066
+meltanolabs_tap_gmail-0.0.1.dist-info/METADATA,sha256=EHhahF7TfGaMkTcinZkFsT3cwWhbbNzaKLinqLPIWuE,2927
+meltanolabs_tap_gmail-0.0.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+meltanolabs_tap_gmail-0.0.1.dist-info/entry_points.txt,sha256=dDXkwjc8Xpd6E1VrUkR27HuMYJOi0zafZaLdq_QcJFw,56
+meltanolabs_tap_gmail-0.0.1.dist-info/RECORD,,
