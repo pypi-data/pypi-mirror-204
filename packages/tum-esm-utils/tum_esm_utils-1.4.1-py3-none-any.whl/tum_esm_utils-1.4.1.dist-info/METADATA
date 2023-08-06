@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: tum-esm-utils
+Version: 1.4.1
+Summary: Python utilities by the Professorship of Environmental Sensing and Modeling at the Technical University of Munich
+Home-page: https://github.com/tum-esm/utils
+License: AGPL-3.0-only
+Keywords: python,library,utilities,lazydocs,docsify
+Author: Moritz Makowski
+Author-email: moritz.makowski@tum.de
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: filelock (>=3.10.0,<4.0.0)
+Requires-Dist: pendulum (>=2.1.2,<3.0.0)
+Requires-Dist: psutil (>=5.9.4,<6.0.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Project-URL: Documentation, https://tum-esm.github.io/utils
+Project-URL: Repository, https://github.com/tum-esm/utils
+Description-Content-Type: text/markdown
+
+# 🔬 &nbsp;TUM ESM Python Utilities
+
+**Install the Python library with:**
+
+```bash
+poetry add tum_esm_utils
+# or
+pip install tum_esm_utils
+```
+
+<br/>
+
+## For Developers
+
+**Publish the Package to PyPI:**
+
+```bash
+poetry build
+poetry publish
+```
+
+**Serve documentation page:**
+
+```bash
+docsify serve ./docs
+```
+
