@@ -1,0 +1,218 @@
+#!python
+# DESCRIPTION {{{1
+"""
+Add keys to SSH agent
+
+Usage:
+    addsshkeys [options] [<config>]
+
+Options:
+    -v, --verbose          list the keys as they are being added to ssh agent
+    -l, --list             list the keys without adding them to ssh agent
+
+Configurations can be found in: {settings_dir}.
+The default configuration is {config_filename}.
+
+A description of how to configure and use this program can be found at
+`<https://avendesora.readthedocs.io/en/latest/api.html#example-add-ssh-keys>_.
+"""
+
+
+# IMPORTS {{{1
+from pathlib import Path
+import pexpect
+from appdirs import user_config_dir
+from avendesora import PasswordError, PasswordGenerator
+from docopt import docopt
+from inform import (
+    Error, Inform, codicil, comment, display, error, full_stop, os_error, warn
+)
+from voluptuous import Schema, Invalid, MultipleInvalid
+import nestedtext as nt
+import os
+
+
+# GLOBALS {{{1
+__version__ = "0.5"
+__released__ = "2023-04-20"
+
+# Settings
+# These cannot be overridden in ~/.config/addsshkeys/config
+prog_name = "addsshkeys"
+config_filename = "config"
+settings_dir = user_config_dir(prog_name)
+
+# These can be overridden in ~/.config/addsshkeys/config
+ssh_add = "ssh-add"
+ssh_keys = {}
+config_file_mask = 0o077
+auth_sock_path = None
+
+# UTILITIES {{{1
+def to_list(arg):
+    if isinstance(arg, str):
+        return arg.replace(',', ' ').split()
+    if isinstance(arg, dict):
+        raise Invalid('expected a list')
+    return arg
+
+def to_path(path):
+    if isinstance(path, str):
+        return Path(path).expanduser()
+    raise Invalid('expected a path')
+
+def to_octal(arg):
+    try:
+        return int(arg, base=8)
+    except (ValueError, TypeError):
+        raise Invalid('expected an octal integer')
+
+def to_gpg_ids(arg):
+    return [to_gpg_id(i) for i in to_list(arg)]
+
+def normalize_key(key, parent_keys):
+    return '_'.join(key.lower().split())
+
+def get_auth_sock():
+    auth_sock = os.environ.get('SSH_AUTH_SOCK')
+    if not auth_sock:
+        raise Error(
+            'cannot access ssh-agent ($SSH_AUTH_SOCK not set or empty).'
+        )
+    return auth_sock
+
+
+# CONFIGURATION SCHEMA {{{1
+config_validator = Schema(dict(
+    ssh_keys = {
+        str: dict(paths=to_list, account=str, passphrase=str)
+    },
+    config_file_mask = to_octal,
+    auth_sock_path = to_path,
+))
+
+# READ COMMAND LINE {{{1
+cmdline = docopt(__doc__.format(**locals()))
+verbose = cmdline["--verbose"]
+list_keys = cmdline["--list"]
+config = cmdline["<config>"]
+if not config:
+    config = config_filename
+
+
+# READ CONFIGURATION FILE {{{1
+try:
+    # initialization
+    Inform(verbose=verbose)
+    settings_dir = Path(settings_dir)
+    pw = None
+
+    # read settings file
+    config_filepath = Path(settings_dir, config)
+    if not config_filepath.exists():
+        config_filepath = config_filepath.with_suffix('.nt')
+    if not config_filepath.exists():
+        raise Error("config file not found.", culprit=config_filepath)
+
+    settings = nt.load(
+        config_filepath,
+        top = 'dict',
+        keymap = (keymap:={}),
+        normalize_key = normalize_key
+    )
+    settings = config_validator(settings)
+    locals().update(settings)
+
+    if not ssh_keys:
+        raise Error("no keys found.", culprit=config_filepath)
+
+
+    # LOAD KEYS {{{1
+    for key, values in ssh_keys.items():
+        comment(f"{key}:")
+        try:
+            paths = values["paths"].split()
+        except AttributeError:
+            paths = values["paths"]
+        except KeyError:
+            raise Error("missing paths.", culprit=key)
+        account_name = values.get("account")
+        passphrase = values.get("passphrase")
+        if list_keys:
+            display(f"{key}:")
+            for path in paths:
+                display(f"    {path}")
+            continue
+
+        if account_name:
+            if not pw:
+                pw = PasswordGenerator()
+            account = pw.get_account(account_name)
+            if passphrase:
+                passphrase = str(account.get_value(passphrase).value)
+            else:
+                passphrase = str(account.get_passcode().value)
+        elif not passphrase:
+            raise Error("missing passphrase.", culprit=key)
+        else:
+            # config file contains the passphrase, check its permissions
+            permissions = config_filepath.stat().st_mode & 0o777
+            violation = permissions & config_file_mask
+            if violation:
+                recommended = permissions & ~config_file_mask
+                warn("file permissions are too loose.", culprit=config_filepath)
+                codicil(
+                    "Recommend running: chmod {:o} {}".format(
+                        recommended, config_filepath
+                    )
+                )
+
+        # issue error if ssh-agent is not available
+        get_auth_sock()
+
+        for path in paths:
+            comment(f"    adding {path}")
+            path = Path(path).expanduser()
+            path = Path("~/.ssh", path).expanduser()
+            try:
+                sshadd = pexpect.spawn(ssh_add, [str(path)])
+                sshadd.expect("Enter passphrase for %s: " % (path), timeout=4)
+                sshadd.sendline(passphrase)
+                sshadd.expect(pexpect.EOF)
+                sshadd.close()
+                response = sshadd.before.decode("utf-8")
+                if "identity added" in response.lower():
+                    continue
+            except (pexpect.EOF, pexpect.TIMEOUT):
+                pass
+            error("failed.", culprit=key)
+            codicil("response:", sshadd.before.decode("utf8"), culprit=ssh_add)
+            codicil("exit status:", sshadd.exitstatus, culprit=ssh_add)
+
+    if auth_sock_path:
+        comment(f"writing $SSH_AUTH_SOCK to {auth_sock_path!s}")
+        auth_sock_path.write_text(get_auth_sock())
+
+# HANDLE EXCEPTIONS {{{1
+except (Error, PasswordError, nt.NestedTextError) as e:
+    e.report()
+except MultipleInvalid as exception:  # report schema violations
+    voluptuous_error_msg_mappings = {
+        "extra keys not allowed": ("unknown key", "key"),
+    }
+    for e in exception.errors:
+        msg, flag = voluptuous_error_msg_mappings.get(
+            e.msg, (e.msg, 'value')
+        )
+        loc = keymap.get(tuple(e.path))
+        codicil = loc.as_line(flag) if loc else None
+        keys = nt.join_keys(e.path, keymap=keymap)
+        error(
+            full_stop(msg),
+            culprit = (config_filepath, keys),
+            codicil = codicil
+        )
+except OSError as e:
+    error(os_error(e))
+except KeyboardInterrupt:
+    comment("Killed by user.")
