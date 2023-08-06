@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "nonebot-plugin-appinsights"
+version = "0.1.0"
+description = ""
+authors = ["XZhouQD <X.Zhou.QD@hotmail.com>"]
+license = "AGPLv3"
+readme = "README.md"
+packages = [{include = "nonebot_plugin_appinsights"}]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8.0"
+nonebot2 = "^2.0.0-beta.4"
+opencensus-ext-azure = "^1.1.9"
+
+[tool.poetry.dev-dependencies]
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
