@@ -1,0 +1,1 @@
+This is a library that provides a foundation for creating an average sentiment score vs. stock price percentage change plot.
