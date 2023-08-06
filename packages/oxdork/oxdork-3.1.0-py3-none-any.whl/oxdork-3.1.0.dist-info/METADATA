@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: oxdork
+Version: 3.1.0
+Summary: Google dorking tool
+Author-email: Richard Mwewa <rly0nheart@duck.com>
+License: MIT License
+        
+        Copyright (c) 2022 Richard Mwewa
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: homepage, https://github.com/rly0nheart/oxdork
+Project-URL: documentation, https://github.com/rly0nheart/oxdork/wiki/
+Project-URL: repository, https://github.com/rly0nheart/oxdork.git
+Keywords: python,osint,google-dorking,osint,inurl,intext,intitle
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: 
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich
+Requires-Dist: google
+Requires-Dist: requests
+
+![Screenshot_20210827-111909-removebg-preview](https://user-images.githubusercontent.com/74001397/131107876-db415339-0c1d-4876-8665-fe9b76c4518c.png)
+
+![OS](https://img.shields.io/badge/OS-GNU%2FLinux-red?style=for-the-badge&logo=linux)
+![OS](https://img.shields.io/badge/OS-Windows-blue?style=for-the-badge&logo=Windows)
+![GitHub](https://img.shields.io/github/license/rly0nheart/oxdork?style=for-the-badge&logo=github)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/rly0nheart/oxdork?include_prereleases&style=for-the-badge&logo=github)
+![GitHub repo size](https://img.shields.io/github/repo-size/rly0nheart/oxdork?style=for-the-badge&logo=github)
+
+
+
+![Screenshot_20230207_124512](https://user-images.githubusercontent.com/74001397/217223738-9a432f18-a30e-4121-87ca-09c7dad081e3.png)
+
+oxDork uses Google dorking techniques and Google dorks to find security holes and misconfigurations in web servers.
+
+
+# Wiki
+Check the *Installation guide*, *Usage*, and *a
+Available options* on the [wiki](https://github.com/rly0nheart/oxdork/wiki/)
+
+
+# Queries
+A collection of 5,568 common dork queries [here](https://github.com/rly0nheart/oxdork/tree/master/dork_queries)
+
+
+# Support
+<a href="https://www.buymeacoffee.com/189381184" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
