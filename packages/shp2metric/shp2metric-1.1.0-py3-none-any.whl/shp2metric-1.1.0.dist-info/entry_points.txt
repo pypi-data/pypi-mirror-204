@@ -1,0 +1,3 @@
+[console_scripts]
+shp2metric=shp2metric.main:app
+
