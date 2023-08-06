@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ValLocal
+Version: 0.0.1
+Author: PWall
+License: GPL-3.0
+Project-URL: Homepage, https://github.com/ValUtils/ValLocal
+Keywords: valorant,api,auth,local
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# ValLocal
