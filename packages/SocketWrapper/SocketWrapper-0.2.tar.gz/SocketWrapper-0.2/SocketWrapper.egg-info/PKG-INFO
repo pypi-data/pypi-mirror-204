@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: SocketWrapper
+Version: 0.2
+Summary: A wrapper for the socket class to abstract clients and servers
+Home-page: https://github.com/JarredTD/Socket_Wrapper
+Download-URL: https://github.com/JarredTD/Socket_Wrapper/archive/refs/tags/0.2.tar.gz
+Author: Jarred
+Author-email: jarredtdesrosiers@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
