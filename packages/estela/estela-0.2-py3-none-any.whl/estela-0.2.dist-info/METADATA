@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: estela
+Version: 0.2
+Summary: Estela Command Line Interface
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Dist: requests
+Requires-Dist: docker
+Requires-Dist: pyyaml
+Requires-Dist: click
+Requires-Dist: tabulate
+
