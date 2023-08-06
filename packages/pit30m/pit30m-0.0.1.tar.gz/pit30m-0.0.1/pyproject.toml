@@ -1,0 +1,86 @@
+[tool.poetry]
+name = "pit30m"
+version = "0.0.1"
+description = "Development kit for the Pit30M large scale localization dataset"
+authors = ["Andrei Bârsan"]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    "Framework :: Robot Framework :: Library",
+    "Framework :: Robot Framework :: Tool",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pit30m/pit30m"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fsspec = ">=2022"
+s3fs = "*"
+geopandas = ">=0.10"
+pygeos = ">=0.12"
+numpy = ">=1.20"
+fire = ">=0.5"
+joblib = "*"
+pillow = ">=9"
+tqdm = ">=4"
+lz4 = ">=4"
+matplotlib = ">=3.4"
+pyyaml = ">=5"
+utm = ">=0.7.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7"
+pytest-mock = "*"
+ipdb = "^0.13"
+black = "^23.1"
+pytest-xdist = "^3.2"
+# TODO(andrei): Special group and special build for these optional deps.
+torch = "^1.13"
+torchdata = "^0.5"
+pylint = "^2.16"
+boto3 = "^1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint]
+max-line-length = 120
+# Exceptions for invalid names
+good-names = "f,fs,e,err"
+# Disable missing docstring warnings
+disable = "missing-function-docstring,missing-module-docstring,missing-class-docstring"
+
+[tool.black]
+line-length = 120 # override black's default line-length
+target-version = ['py38']
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.tox
+  | venv
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+
