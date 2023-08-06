@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: image_frequency_analysis
+Version: 0.2.0
+Summary: A package to perform image frequency analysis using the Fourier Transform method
+Author: M Thivagar
+Requires-Python: >=3.6
+License-File: LICENSE
