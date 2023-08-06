@@ -1,0 +1,149 @@
+from typing import Union, Set, Tuple
+
+import numpy as np
+
+from netin.utils import constants as const
+from netin.generators.h import Homophily
+from .dpa import DPA
+
+
+class DPAH(DPA, Homophily):
+
+    """Creates a new DPAH instance.
+
+    Parameters
+    ----------
+    n: int
+        number of nodes (minimum=2)
+
+    d: float
+        edge density (minimum=0, maximum=1)
+
+    f_m: float
+        fraction of minorities (minimum=1/n, maximum=(n-1)/n)
+
+    plo_M: float
+        activity (out-degree power law exponent) majority group (minimum=1)
+
+    plo_m: float
+        activity (out-degree power law exponent) minority group (minimum=1)
+
+    h_MM: float
+        homophily within majority group (minimum=0, maximum=1)
+
+    h_mm: float
+        homophily within minority group (minimum=0, maximum=1)
+
+    seed: object
+        seed for random number generator
+
+    Notes
+    -----
+    The initialization is a directed with n nodes where f_m are the minority.
+    Source nodes are selected based on their activity given by plo_M (if majority) or plo_m (if minority).
+    Target nodes are selected via preferential attachment (in-degree) an homophily (h**).
+    This model is based on [1] which is the directed version of the "BA Homophily" model [2].
+
+    References
+    ----------
+    [1] L. Espín-Noboa, C. Wagner, M. Strohmaier, & F. Karimi "Inequality and inequity in network-based ranking and recommendation algorithms" Scientific reports 12(1), 1-14, 2022.
+    [2] F. Karimi, M. Génois, C. Wagner, P. Singer, & M. Strohmaier, M "Homophily influences ranking of minorities in social networks", Scientific reports 8(1), 11077, 2018.
+    """
+
+    ############################################################
+    # Constructor
+    ############################################################
+
+    def __init__(self, n: int, d: float, f_m: float, plo_M: float, plo_m: float, h_MM: float, h_mm: float,
+                 seed: object = None):
+        DPA.__init__(self, n=n, d=d, f_m=f_m, plo_M=plo_M, plo_m=plo_m, seed=seed)
+        Homophily.__init__(self, n=n, f_m=f_m, h_MM=h_MM, h_mm=h_mm, seed=seed)
+
+    ############################################################
+    # Init
+    ############################################################
+
+    def _infer_model_name(self):
+        """
+        Infers the name of the model.
+        """
+        return self.set_model_name(const.DPAH_MODEL_NAME)
+
+    ############################################################
+    # Generation
+    ############################################################
+
+    def _initialize(self, class_attribute: str = 'm', class_values: list = None, class_labels: list = None):
+        """
+        Initializes the model.
+
+        Parameters
+        ----------
+        class_attribute: str
+            name of the attribute that represents the class
+
+        class_values: list
+            values of the class attribute
+
+        class_labels: list
+            labels of the class attribute mapping the class_values.
+        """
+        DPA._initialize(self, class_attribute, class_values, class_labels)
+        Homophily._initialize(self, class_attribute, class_values, class_labels)
+
+    def get_target_probabilities(self, source: Union[None, int], target_set: Union[None, Set[int]],
+                                 special_targets: Union[None, object, iter] = None) -> np.array:
+        """
+        Returns the probabilities of selecting a target node from a set of nodes based on
+        preferential attachment and homophily,i.e., in-degree or target and homophily between source and target.
+
+        Parameters
+        ----------
+        source: int
+            source node
+
+        target_set: Set[int]
+            set of target nodes
+
+        special_targets: object
+            special targets
+
+        Returns
+        -------
+        np.array
+            probabilities of selecting a target node from a set of nodes
+        """
+        probs = np.array([self.get_homophily_between_source_and_target(source, target) *
+                          (self.get_in_degree(target) + const.EPSILON) for target in target_set])
+        probs /= probs.sum()
+        return probs
+
+    ############################################################
+    # Calculations
+    ############################################################
+
+    def info_params(self):
+        """
+        Shows the (input) parameters of the model.
+        """
+        DPA.info_params(self)
+        Homophily.info_params(self)
+
+    def info_computed(self):
+        """
+        Shows the (computed) properties of the graph.
+        """
+        DPA.info_computed(self)
+        Homophily.info_computed(self)
+
+    def infer_homophily_values(self) -> Tuple[float, float]:
+        """
+        Infers the level of homophily within the majority and minority groups analytically.
+
+        Returns
+        -------
+        Tuple[float, float]
+            homophily within the majority and minority groups
+        """
+        h_MM, h_mm = None, None
+        return h_MM, h_mm
