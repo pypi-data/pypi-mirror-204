@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: jupyterlab-cell-status-extension
+Version: 0.1.3
+Summary: Indicate cell status
+Home-page: https://github.com/innovation_outside/jupyterlab_cell_status_extension
+Author: Tony Hirst
+Author-email: tony.hirst@gmail.com
+License: BSD-3-Clause
+Keywords: Jupyter,JupyterLab,JupyterLab3
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 3
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# jupyterlab_cell_status_extension
+JupyterLab extension to indicate current cell status
+
+[RetroLite demo](https://innovationoutside.github.io/jupyterlab_cell_status_extension/retro/notebooks/?path=jupyterlab_cell_status_demo.ipynb)
+
+[JupyterLite (JupyterLab) demo](https://innovationoutside.github.io/jupyterlab_cell_status_extension/lab?path=jupyterlab_cell_status_demo.ipynb)
+
+To install the prebuilt extension from a wheel:
+
+`pip3 install --upgrade https://raw.githubusercontent.com/innovationOUtside/jupyterlab_cell_status_extension/main/dist/jupyterlab_cell_status_extension-0.1.3-py3-none-any.whl`
+
+![](./images/cell_status.png)
+
+You can update the colour settings in JupyterLab from the *Settings > Advanced Setting* editor. For the change to take effect, close the notebook in JupyterLab and then open it again.
+
+![](./images/jupyterlab-cell-status-settings.png)
+
