@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+external/whisper.cpp
+src/__init__.py
+src/api_cpp2py_export.cc
+src/context.cc
+src/params.cc
+src/utils.py
+tests/test.py
+whispercppy.egg-info/PKG-INFO
+whispercppy.egg-info/SOURCES.txt
+whispercppy.egg-info/dependency_links.txt
+whispercppy.egg-info/top_level.txt
