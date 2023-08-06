@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: arlogger
+Version: 1.0.1
+Summary: Send urgent and daily log files to a remote server
+Home-page: https://bitbucket.org/asrturk/ar-ai-logger/src/master/
+Author: Mirza ATLI
+Author-email: mirza.atli@ardictech.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+### ARDIC AI Logger Package
+
+A package that sends urgent logs to specified URL to be processed and displayed. Uploads daily log files to specified URL periodically.
+
+### Usage
+
+```python
+from arlogger import *
+
+def test_func():
+    logger.debug("This is a debug message")
+    logger.info("This is an info message")
+    logger.warning("This is a warning message")
+    logger.error("This is an error message")
+    logger.critical("This is a critical message")
+
+
+if __name__ == "__main__":
+
+    url = "" # URL of the server that will process the incoming logs
+    projectName = "ARDIC AI Logger Test"
+
+    logger = ArLogger().setUrl(url=url, projectName=projectName).setLevel(httpLevel=logging.ERROR, localLevel=logging.DEBUG)
+
+
+    test_func()
+```
+
+The output will contain the following information; log time, function name that generated the log, severity of log and the message of the log. 
