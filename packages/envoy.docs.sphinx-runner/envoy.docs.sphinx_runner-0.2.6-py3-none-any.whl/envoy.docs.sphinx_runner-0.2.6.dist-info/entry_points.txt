@@ -1,0 +1,5 @@
+[console_scripts]
+envoy.docs.sphinx_runner = envoy.docs.sphinx_runner:cmd
+
+[sphinx.html_themes]
+sphinx_rtd_theme = envoy.docs.sphinx_runner.sphinx_rtd_theme
