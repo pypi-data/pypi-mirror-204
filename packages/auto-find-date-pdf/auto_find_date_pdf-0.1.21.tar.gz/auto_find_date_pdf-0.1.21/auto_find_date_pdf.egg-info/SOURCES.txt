@@ -1,0 +1,10 @@
+LICENSE
+main.py
+setup.py
+text_search.py
+auto_find_date_pdf.egg-info/PKG-INFO
+auto_find_date_pdf.egg-info/SOURCES.txt
+auto_find_date_pdf.egg-info/dependency_links.txt
+auto_find_date_pdf.egg-info/entry_points.txt
+auto_find_date_pdf.egg-info/requires.txt
+auto_find_date_pdf.egg-info/top_level.txt
