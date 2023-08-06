@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: haystack_translate_node
+Version: 0.0.1
+Summary: An Azure Translate node for Deepset Haystack
+Project-URL: Homepage, https://github.com/recrudesce/haystack_translate_node
+Project-URL: Bug Tracker, https://github.com/recrudesce/haystack_translate_node/issues
+Author-email: recrudesce <recrudesce@gmail.com>
+License-File: LICENSE.md
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: farm-haystack
+Description-Content-Type: text/markdown
+
+# haystack_translate_node
+An Azure Translation node for Haystack - you will need this configured in your Azure subscription: https://learn.microsoft.com/en-us/azure/cognitive-services/translator/translator-overview
+
+Include in your pipeline as follows:
+=======
+git clone the repo somewhere, change to the directory, then `pip install '.'`
+
+Include in your pipeline as follows:
+
+```python
+from haystack_translate_node import TranslateAnswer, TranslateQuery
+
+translate_query = TranslateQuery(api_key="<yourapikey>", location="<yourazureregion>", azure_translate_endpoint="<yourazureendpoint>", base_lang="en")
+translate_answer = TranslateAnswer(api_key="<yourapikey>", location="<yourazureregion>", azure_translate_endpoint="<yourazureendpoint>", base_lang="en")
+
+pipel = Pipeline()
+pipel.add_node(component=translate_query, name="TranslateQuery", inputs=["Query"])
+pipel.add_node(component=retriever, name="Retriever", inputs=["TranslateQuery"])
+pipel.add_node(component=prompt_node, name="prompt_node", inputs=["Retriever"])
+pipel.add_node(component=translate_answer, name="TranslateAnswer", inputs=["prompt_node"])
+```
+
+`location`, `azure_translate_endpoint`, and `base_lang` are optional, and will default to `uksouth`, `https://api.cognitive.microsofttranslator.com/`, and `en` respectively.
+
+ - TranslateQuery will determine the language of the query, and assign it to the `in_lang` JSON value.
+ - TranslateQuery will take the original query, in any language, and assign it to the `in_query` JSON value.
+ - TranslateQuery will overwrite the original `query` JSON value with the translated English value
+
+ - You can then query your `base_lang` corpus using the `query` value as normal using a standard Haystack Retriever node, which will place your results in `results`.
+
+ - TranslateAnswer translate the `base_lang` result stored in `results` back to the language stored in `in_lang` and subsequently store it in the `out_answer` JSON value.
