@@ -1,0 +1,71 @@
+repos:
+  # - repo: https://github.com/pre-commit/mirrors-autopep8
+  #   rev: v2.0.0 # Use the sha / tag you want to point at
+  #   hooks:
+  #   - id: autopep8
+  # - repo: https://github.com/Lucas-C/pre-commit-hooks
+  #   rev: v1.1.9
+  #   hooks:
+  #     - id: forbid-crlf
+  #     - id: remove-crlf
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: check-ast
+      - id: fix-encoding-pragma
+      - id: end-of-file-fixer
+      - id: double-quote-string-fixer
+      - id: check-docstring-first
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      # - id: detect-aws-credentials
+      - id: check-toml
+      - id: check-shebang-scripts-are-executable
+      - id: check-merge-conflict
+      - id: check-json
+      - id: check-yaml
+        args: [ --unsafe ]
+      - id: detect-private-key
+      - id: debug-statements
+      - id: pretty-format-json
+        args: [--autofix, --indent 4]
+      - id: name-tests-test
+
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.10.0
+    hooks:
+      - id: isort
+        # args: [ "--filter-files" ]
+  - repo: https://github.com/ambv/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+        language_version: python3.11
+  - repo: https://github.com/pycqa/flake8
+    rev: 4.0.1
+    hooks:
+      - id: flake8
+        additional_dependencies:
+          - flake8-typing-imports
+          - flake8-bugbear
+          - flake8-comprehensions
+          - flake8-simplify
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.2.0
+    hooks:
+      - id: mypy
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        args:
+          [
+            "-rn", # Only display messages
+            "-sn", # Don't display the score
+            # "--rcfile=pylintrc", # Link to your config file
+            # "--load-plugins=pylint.extensions.docparams", # Load an extension
+          ]

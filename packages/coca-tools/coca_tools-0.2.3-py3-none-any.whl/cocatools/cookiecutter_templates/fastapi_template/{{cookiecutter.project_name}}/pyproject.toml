@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "{{cookiecutter.project_name}}"
+version = "0.1.0"
+description = "{{cookiecutter.project_short_description}}"
+authors = ["NhanDD"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.95.1"
+python-socketio = "^5.8.0"
+pydantic = {extras = ["dotenv"], version = "^1.10.7"}
+umongo = {extras = ["motor"], version = "^3.1.0"}
+redis = "^4.5.4"
+itsdangerous = "^2.1.2"
+uvloop = "^0.17.0"
+uvicorn = "^0.21.1"
+ujson = "^5.7.0"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
