@@ -1,0 +1,8 @@
+pandas
+matplotlib
+advertools
+plotly
+jinja2
+
+[dev]
+nbformat
