@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: transformlib
+Version: 0.1.0
+Summary: Enables the user to organize transformations of data as a regular Python package.
+Home-page: https://github.com/laegsgaardTroels/transformlib
+Author: Troels Lægsgaard
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# transformlib
+[![CI Checks](https://github.com/laegsgaardTroels/transformlib/actions/workflows/python-package.yml/badge.svg)](https://github.com/laegsgaardTroels/transformlib/actions/workflows/python-package.yml)
+[![pages-build-deployment](https://github.com/laegsgaardTroels/transformlib/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/laegsgaardTroels/transformlib/actions/workflows/pages/pages-build-deployment)
+
+Enables the user to organize transformations of data as a regular Python package.
