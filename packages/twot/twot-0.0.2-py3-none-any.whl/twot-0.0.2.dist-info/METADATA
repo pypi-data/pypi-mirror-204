@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: twot
+Version: 0.0.2
+Summary: The Twitter Bot API - Tweet, Follow, Like, Retweet, and more with Python without using Twitter's API
+Project-URL: Homepage, https://github.com/gpl27/twot
+Project-URL: Bug Tracker, https://github.com/gpl27/twot/issues
+Author-email: gpl27 <gpl27.dev@gmail.com>
+License-File: LICENSE.md
+Keywords: twitter,twitter-api,twitter-bot
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: selenium>=4.0.0
+Requires-Dist: webdriver-manager==3.8.5
+Description-Content-Type: text/markdown
+
+# twot - The Twitter Bot API
+## About
+This is a Python package that provides an easy-to-use interface to 
+Twitter using Selenium to emulate actions that a Twitter user might make,
+such as liking, following, and tweeting. In addition, it provides a 
+Tweet Search implementation that uses Twitter's Advanced Search to
+scrape for tweets.
+
+## Getting Started
+### Prerequisites
+To use this package, you will need:
+- Python 3.7+
+- Selenium 4.0+
+- Chrome Browser
+- Twitter Account
+### Installation
+1. Clone this repository
+2. `pip install -r requirements.txt`
+### Usage
+3. Import `TwitterAPI` class, create an instance and login:
+```python
+from twot import TwitterAPI
+
+api = TwitterAPI('my_username', 'my_password')
+api.login()
+```
+4. Use the `TwitterAPI` instance to interact with Twitter:
+```python
+# Tweet something
+api.post_tweet('Hello World!')
+
+# Like a tweet
+api.like_tweet('https://twitter.com/twitter/status/1234567890')
+
+# Quote retweet a tweet
+api.quote_retweet('https://twitter.com/twitter/status/1234567890', 'Foo bar')
+
+```
+5. Scrape for tweets:
+```python
+# First five options are required for every search
+OPTIONS = {
+    "limit": 500,
+    "replies": False,
+    "only-replies": False,
+    "links": True,
+    "only-links": False,
+    "from": ['BarackObama']
+}
+# Links to the last 500 tweets from Obama
+obama_tweets = api.search(OPTIONS)
+
+```
+## Features
+You must have a Twitter account to use all features (including search).
+Class methods return the results of their actions. For example, methods
+that post a tweet return a link to the new tweet. Likeing and following
+return whether that tweet/account is now liked/followed or unliked/unfollowed
+(true/false).
+```
+    Methods
+    -------
+    status()
+        Prints general info about the class state
+    login()
+        Uses `username` and `password` to login to Twitter
+    logout()
+        Logs out from Twitter
+    post_tweet(message)
+        Posts a tweet to users timeline
+    reply_to_tweet(tweet_id, message)
+        Posts a reply to the specified tweet
+    like_tweet(tweet_id)
+        Likes/Unlikes the tweet
+    retweet(tweet_id)
+        Retweets/Unretweets the tweet
+    quote_retweet(tweet_id, message)
+        Quote retweets the tweet with the specified message
+    follow(user_handle)
+        Follows the user with the specified handle
+    unfollow(user_handle)
+        Unfollows the user with the specified handle
+    search(options)
+        Searches for tweets using Advanced Search
+    quit()
+        Ends the browser session
+
+```
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to
+discuss what you would like to change.
