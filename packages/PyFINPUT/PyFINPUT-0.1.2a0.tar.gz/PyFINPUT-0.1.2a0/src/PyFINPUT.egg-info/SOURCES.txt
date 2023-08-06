@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/PyFINPUT/PyFINPUT.py
+src/PyFINPUT/__init__.py
+src/PyFINPUT/utils.py
+src/PyFINPUT.egg-info/PKG-INFO
+src/PyFINPUT.egg-info/SOURCES.txt
+src/PyFINPUT.egg-info/dependency_links.txt
+src/PyFINPUT.egg-info/top_level.txt
