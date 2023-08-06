@@ -1,0 +1,6 @@
+edc==0.4.83
+beautifulsoup4
+canned-views
+intecomm-eligibility==0.1.5
+intecomm-form-validators==0.1.16
+intecomm-rando==0.1.6
