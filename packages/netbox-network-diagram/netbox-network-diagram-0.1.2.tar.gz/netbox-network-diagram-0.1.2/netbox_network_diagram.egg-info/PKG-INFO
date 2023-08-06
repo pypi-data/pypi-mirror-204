@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: netbox-network-diagram
+Version: 0.1.2
+Summary: A plugin to render network diagram in NetBox.
+Home-page: https://github.com/entooone/netbox-network-diagram
+Author: entooone
+Author-email: entooone@gmail.com
+License: Apache License 2.0
+Project-URL: Source, https://github.com/entooone/netbox-network-diagram
+Project-URL: Tracker, https://github.com/entooone/netbox-network-diagram/issues
+Keywords: netbox-plugin
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## netbox-network-diagram
+
+[![Version](https://img.shields.io/pypi/v/netbox-network-diagram?color=blue)](https://pypi.org/project/netbox-network-diagram/)
+
+A plugin to render network diagram in NetBox.
