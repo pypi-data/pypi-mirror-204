@@ -1,0 +1,6 @@
+[metadata]
+name = "ekaros"
+description = "A Python Library for Generative AI Art"
+authors = ["Young Joon Lee <entelecheia@hotmail.com>"]
+license = "MIT"
+homepage = "https://ekaros.entelecheia.ai"
