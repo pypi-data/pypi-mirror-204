@@ -1,0 +1,15 @@
+MANIFEST.in
+backend_shim.py
+setup.py
+era_5g_interface/__init__.py
+era_5g_interface/py.typed
+era_5g_interface/task_handler.py
+era_5g_interface/task_handler_gstreamer.py
+era_5g_interface/task_handler_gstreamer_internal_q.py
+era_5g_interface/task_handler_internal_q.py
+era_5g_interface.egg-info/PKG-INFO
+era_5g_interface.egg-info/SOURCES.txt
+era_5g_interface.egg-info/dependency_links.txt
+era_5g_interface.egg-info/namespace_packages.txt
+era_5g_interface.egg-info/requires.txt
+era_5g_interface.egg-info/top_level.txt
