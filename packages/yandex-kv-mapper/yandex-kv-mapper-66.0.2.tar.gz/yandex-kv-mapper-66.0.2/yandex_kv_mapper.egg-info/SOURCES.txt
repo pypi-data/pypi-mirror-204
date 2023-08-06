@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_kv_mapper.egg-info/PKG-INFO
+yandex_kv_mapper.egg-info/SOURCES.txt
+yandex_kv_mapper.egg-info/dependency_links.txt
+yandex_kv_mapper.egg-info/top_level.txt
