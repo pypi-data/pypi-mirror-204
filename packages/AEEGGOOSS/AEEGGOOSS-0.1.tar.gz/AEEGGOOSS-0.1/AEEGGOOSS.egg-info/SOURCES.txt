@@ -1,0 +1,6 @@
+LICENSE.txt
+setup.py
+AEEGGOOSS.egg-info/PKG-INFO
+AEEGGOOSS.egg-info/SOURCES.txt
+AEEGGOOSS.egg-info/dependency_links.txt
+AEEGGOOSS.egg-info/top_level.txt
