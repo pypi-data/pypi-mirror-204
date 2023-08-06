@@ -1,0 +1,43 @@
+CPU:CPU Core #1:Load:12,5
+CPU:CPU Core #2:Load:15,22048
+CPU:CPU Core #3:Load:15,13158
+CPU:CPU Core #4:Load:17,76316
+CPU:CPU Total:Load:15,1538
+CPU:CPU Core #1:Temperature:37
+CPU:CPU Core #2:Temperature:35
+CPU:CPU Core #3:Temperature:39
+CPU:CPU Core #4:Temperature:43
+CPU:CPU Package:Temperature:43
+CPU:CPU Core #1:Clock:3799,998
+CPU:CPU Core #2:Clock:3899,998
+CPU:CPU Core #3:Clock:3999,998
+CPU:CPU Core #4:Clock:3899,998
+CPU:CPU Package:Power:37,99981
+CPU:CPU Cores:Power:25,07118
+CPU:CPU Graphics:Power:0,009015425
+CPU:CPU DRAM:Power:4,848238
+CPU:Bus Speed:Clock:99,99995
+HDD:Remaining Life:Level:12
+HDD:Total Bytes Written:Data:8894,622
+HDD:Used Space:Load:70,81633
+HDD:Temperature:Temperature:31
+HDD:Write Amplification:Factor:2,041833
+HDD:Temperature:Temperature:33
+HDD:Used Space:Load:59,80193
+RAM:Memory:Load:49,33836
+RAM:Used Memory:Data:5,597088
+RAM:Available Memory:Data:5,747204
+GpuNvidia:GPU Core:Temperature:35
+GpuNvidia:GPU Core:Clock:549,642
+GpuNvidia:GPU Memory:Clock:1701
+GpuNvidia:GPU Shader:Clock:1339,615
+GpuNvidia:GPU:Fan:4200
+GpuNvidia:GPU Core:Load:0
+GpuNvidia:GPU Frame Buffer:Load:0
+GpuNvidia:GPU Video Engine:Load:0
+GpuNvidia:GPU Bus Interface:Load:0
+GpuNvidia:GPU Fan:Control:35
+GpuNvidia:GPU Memory Total:SmallData:512
+GpuNvidia:GPU Memory Used:SmallData:338,2344
+GpuNvidia:GPU Memory Free:SmallData:173,7656
+GpuNvidia:GPU Memory:Load:66,0614
