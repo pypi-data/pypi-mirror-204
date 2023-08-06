@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-04-22 11:17+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: src/txt2ebook/formats/epub.py:200
+msgid "cover"
+msgstr "Cover"
+
+#: src/txt2ebook/formats/md.py:75 src/txt2ebook/formats/txt.py:85
+msgid "metadata"
+msgstr "Metadata"
+
+#: src/txt2ebook/formats/md.py:88 src/txt2ebook/formats/md.py:168
+#: src/txt2ebook/formats/txt.py:98 src/txt2ebook/formats/txt.py:189
+msgid "toc"
+msgstr "Table of Content"
+
+#: src/txt2ebook/formats/md.py:182 src/txt2ebook/formats/txt.py:203
+msgid "title:"
+msgstr "Title:"
+
+#: src/txt2ebook/formats/md.py:183 src/txt2ebook/formats/txt.py:204
+msgid "author:"
+msgstr "Author:"
+
+#: src/txt2ebook/formats/md.py:184 src/txt2ebook/formats/txt.py:205
+msgid "tag:"
+msgstr "Tag:"
