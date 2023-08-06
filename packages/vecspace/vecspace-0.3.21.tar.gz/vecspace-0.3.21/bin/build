@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker build . --target vecspace_server -t ghcr.io/vecspace-core/vecspace-server:`bin/version`
