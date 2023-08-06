@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ocr_dict_lookup/__init__.py
+ocr_dict_lookup/ocr_dict_lookup.py
+ocr_dict_lookup.egg-info/PKG-INFO
+ocr_dict_lookup.egg-info/SOURCES.txt
+ocr_dict_lookup.egg-info/dependency_links.txt
+ocr_dict_lookup.egg-info/requires.txt
+ocr_dict_lookup.egg-info/top_level.txt

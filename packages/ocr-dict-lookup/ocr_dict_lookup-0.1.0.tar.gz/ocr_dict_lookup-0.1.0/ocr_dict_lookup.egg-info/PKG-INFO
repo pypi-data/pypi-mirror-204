@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: ocr-dict-lookup
+Version: 0.1.0
+Summary: Extracts highlighted words from images and looks up their meanings in an online dictionary.Basically a tool to help you in your GRE preperation
+Author: Aman Sharma @arcAman07
+Author-email: amananytime07@gmail.com
+License-File: LICENSE
