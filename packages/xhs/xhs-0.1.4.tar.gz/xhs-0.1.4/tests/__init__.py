@@ -1,0 +1,9 @@
+"""
+pytest commands:
+  pytest tests -- test all the tests directory test files
+  pytest -s tests -- print is work
+  pytest tests/test_help.py -- test specific file
+  pytest tests/test_help.py::test_sign_get -- test specific function
+"""
+
+test_cookie = "a1=1875ee347c84l911yfccaewmv2ntixkksu1c6vyu550000205660; webId=3ceadc9abfc351b88b07b556afddab35; gid=yYW2ddq2K2MjyYW2ddq4W7hvSY41jyyviSS0y72dE6hJIS2893CTTK888J82KK88d8fj8Y80; gid.sign=UVwC9x1B9Z2JAmibp1WDAdLvX6E=; xhsTrackerId=e8600419-ff4f-45af-8752-e43bbab7768b; xhsTrackerId.sig=7Dp6WPiPnBFeCM5YCzDnFacb3j6wBspf81N2DVfaV4c; customerClientId=608443185621149; x-user-id-creator.xiaohongshu.com=63273a77000000002303cc9b; web_session=040069b253793fdd9ccd79950e364b000cde81; customerBeakerSessionId=54fb33dea20c0d29ab304a8d759d3749f13eb8a8gAJ9cQAoWBAAAABjdXN0b21lclVzZXJUeXBlcQFLAVgOAAAAX2NyZWF0aW9uX3RpbWVxAkdB2Q77fHVgQlgJAAAAYXV0aFRva2VucQNYQQAAAGIwMzE2YmNkYjU0ZjQxNzc5YzhhZjBhZGU5NzE3MGZhLWZjYThhNmEyYmIyNDQ3YjI5ZWMwYmNlYWEwZDU0ZjY3cQRYAwAAAF9pZHEFWCAAAABmNjM3YWY3NTgzMTM0YTg3YTk5NmM1NmE0ZWRjOTk0NXEGWA4AAABfYWNjZXNzZWRfdGltZXEHR0HZDvt8dWBCWAYAAAB1c2VySWRxCFgYAAAANjMyNzNhNzcwMDAwMDAwMDIzMDNjYzlicQl1Lg==; access-token-creator.xiaohongshu.com=customer.ares.AT-691b76bb3efd498ebe3a6cb017f46ae7-222b758297b14765843c0f4778dc0cad; galaxy.creator.beaker.session.id=1681649137954060365593; timestamp2=168164925795925b122ee29b4db0ade54110c5505d98eefae496ed9465439ae; timestamp2.sig=s9pWgtNJqg5corNC_vTNfPkkrq2TVZTil_WTOQimrAo; xhsTracker=url=user-profile&xhsshare=CopyLink; xhsTracker.sig=WS8d3HYlzoIfhHjyJtY_Y1QP5iYacJ96TpUFr1hgfm4; xsecappid=xhs-pc-web; extra_exp_ids=yamcha_0327_exp,h5_1208_exp3,ques_exp2; extra_exp_ids.sig=tP-EUqmkBBQjAxiuz_uTOZ2UHKu0CJkOe3bWvplEOns; webBuild=2.1.0; websectiga=6169c1e84f393779a5f7de7303038f3b47a78e47be716e7bec57ccce17d45f99; sec_poison_id=807e04d8-2952-4e56-ac43-e65bb827f25f"
