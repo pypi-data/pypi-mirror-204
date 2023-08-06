@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: tmctl
+Version: 0.2.0
+Summary: TMCTL - Admin CLI for Trino Cluster Manager
+
+TMCtl
