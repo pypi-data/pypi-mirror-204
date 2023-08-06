@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+scikit-learn = "*"
+
+[dev-packages]
+black = "*"
+isort = "*"
+pre-commit = "*"
+pydocstyle = "*"
+maturin = "*"
+sphinx = "*"
+sphinx-rtd-theme = "*"
+ruff = "*"
+mypy = "*"
+ipykernel = "*"
+seaborn = "*"
+matplotlib = "*"
+
+[requires]
+python_version = "3.10"
