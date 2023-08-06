@@ -1,0 +1,15 @@
+sosin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sosin/databases/rdb.py,sha256=YUPbs0ILBmYSX7QlmjYqQBA4pd3WYh7yHIO4VCaKoxo,6203
+sosin/rpa/email_mgr.py,sha256=6RLYZYxRg8yL6IWP-UWnv7idf-39hhUePWkpieZd7KE,10828
+sosin/utils/currency.py,sha256=8hQ-aUljEkw-4Tq5IByjPV56pH1GuRgOmpFmDVMuHBE,1687
+sosin/utils/log.py,sha256=8zS0PaFwxvPCZLXzcLAzV0SP9MUUzBk0s8GMt6-9S5I,304
+sosin/utils/progress.py,sha256=j7zg91XV5XTU0enPSB-vkGgfVt_W3YThaFspazgRwqg,527
+sosin/utils/secret.py,sha256=D0qlZ7g2feWojKiLY3349301Hweuw_dQctlkV8BAIPQ,385
+sosin/web/content.py,sha256=hq_L1XY6cLr_fLJnB3ykjqAVacLpqsmPttcRWOhzWGQ,1055
+sosin/web/translate.py,sha256=cgWtW2XYRl5jWu2pIhuQbAK52UWZw481zLmTprK_6qU,1018
+sosin/web/virtual.py,sha256=ri4uE91vpxo67GWEjSjo1ErMUc4DkBZShqbwDUdOtRU,4796
+sosin-1.0.2.dist-info/LICENSE,sha256=-ddyXc7T5_fbRoy2eQZA8UC35L_Q4mNBTsafFg2pc3w,1083
+sosin-1.0.2.dist-info/METADATA,sha256=ZjICHXYepM337JK1JwiUAy96ala3icESEkG_DUNwopU,1307
+sosin-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sosin-1.0.2.dist-info/top_level.txt,sha256=ML99J8RCWM50dtbpN6BxG6PKEIv0_6MmyfD-S7LC6E0,6
+sosin-1.0.2.dist-info/RECORD,,
