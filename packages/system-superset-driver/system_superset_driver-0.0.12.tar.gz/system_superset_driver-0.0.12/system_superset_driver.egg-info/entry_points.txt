@@ -1,0 +1,6 @@
+[shillelagh.adapter]
+system = apm_system.apm_adapter:SystemAPI
+
+[sqlalchemy.dialects]
+system = apm_system.apm_dialect:SystemDialect
+
