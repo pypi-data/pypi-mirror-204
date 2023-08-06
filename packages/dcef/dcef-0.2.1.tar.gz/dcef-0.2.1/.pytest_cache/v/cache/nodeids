@@ -1,0 +1,7 @@
+[
+  "examples/introduction.ipynb::Cell 0",
+  "examples/introduction.ipynb::Cell 1",
+  "examples/introduction.ipynb::Cell 2",
+  "myproject/tests/test_example.py::test_example_creation_blank",
+  "myproject/tests/test_nbextension_path.py::test_nbextension_path"
+]
