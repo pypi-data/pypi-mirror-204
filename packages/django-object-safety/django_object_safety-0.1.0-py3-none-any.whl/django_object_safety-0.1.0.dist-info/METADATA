@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: django-object-safety
+Version: 0.1.0
+Summary: Adds object permissions to Django.
+Home-page: https://django-object-safety-docs.readthedocs.io/en/latest/
+License: MIT
+Keywords: django,permissions,object-permissions,django-permissions,django-object-permissions
+Author: William Ferreira
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: django (>=4.2,<5.0)
+Project-URL: Repository, https://github.com/williammferreira/django-object-safety/
+Description-Content-Type: text/markdown
+
+TODO: Write Readme
