@@ -1,0 +1,5 @@
+[asphalt.components]
+space = fps_localspace.main:LocalspaceComponent
+
+[jupyspace.components]
+space = fps_localspace.main:LocalspaceComponent
