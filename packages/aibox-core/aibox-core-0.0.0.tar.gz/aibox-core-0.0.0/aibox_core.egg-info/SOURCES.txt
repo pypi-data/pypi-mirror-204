@@ -1,0 +1,6 @@
+README.md
+setup.py
+aibox_core.egg-info/PKG-INFO
+aibox_core.egg-info/SOURCES.txt
+aibox_core.egg-info/dependency_links.txt
+aibox_core.egg-info/top_level.txt
