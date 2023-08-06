@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: talos-install
+Version: 0.2.0.dev350
+Summary: E4 CLI Manager
+Home-page: https://www.e4company.com/
+Author: "Marco Cicala"
+Author-email: marco.cicala@e4company.com
+License: GNU General Public License v3 (GPLv3)
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Unix Shell
+Description-Content-Type: text/markdown
+License-File: AUTHORS
+Requires-Dist: pbr (!=2.1.0,>=2.0.0)
+Requires-Dist: oslo.config (>=5.2.0)
+Requires-Dist: PyYAML (>=3.12)
+Requires-Dist: Jinja2 (>=2.10)
+Requires-Dist: jmespath (>=0.9.3)
+Requires-Dist: ansible (<8,>=7)
+
+# All in One installation
+
+KEY REQUIRED
+Ask for dev_key and dev_key.pub to download TALOS-CLI from GIT
+
+## OS requirements
+
+Supported OS is Rocky Linux 8 (or any RHEL Like distibution)
+
+An **user with sudo permissions** is MANDATORY, don't use root directly.
+
+### Packages
+
+- python >= 3.9
+- pip >= 3.9
+- ansible >= 7
+
+```bash
+sudo dnf install epel-release -y
+
+# Install Python 3.9
+sudo dnf install python39  python39-pip -y
+
+# Update pip
+pip3.9 install --upgrade pip
+
+# Install package
+pip install talos-install
+```
+
+### Installation
+
+```bash
+# Change configuration of config Files:
+
+<pip environment>/share/talos_install/etc/talos.yaml
+<pip environment>/share/talos_install/etc/global.yaml
+
+# Run Installation bootstrap
+talos_install bootstrap
+
+# Run Installation deploy
+
+talos_install deploy
+
+```
+
+Enjoy
+
+### Post installation Steps
+
+Then need to validate configuration
+
+```bash
+# First access as talos user
+sudo su - talos
+
+# By default setup is automatically done during deploy
+# check <pip environment>/share/talos_cli/etc/talos.yaml
+# talos_conf:
+#   use_default: 'true'
+# If necessary run setup
+talos-config setup
+
+# Load initial configuration
+talos-config reload
+
+# Check Key Pairs with Talos-cli (needed for update only)
+talos-config git_keys
+
+# check Overall status
+talos-config check
+```
+
