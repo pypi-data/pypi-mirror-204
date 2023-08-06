@@ -1,0 +1,32 @@
+[project]
+name = "pymccool"
+version = "0.2.3"
+authors = [
+  { name="Brendon McCool", email="brendonmccool@gmail.com" },
+]
+description = "Reusable Python Utilities by McCool"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["setuptools", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[project.urls]
+"Homepage" = "https://github.com/bmccool/pyMcCool"
+
+[tool.yapf]
+based_on_style = "pep8"
+spaces_before_comment = 4
+
+[tool.pytest.ini_options]
+markers = [
+    "e2e: End-to-End, requires tracing and logging setup, not meant to run as unit tests (deselect with '-m \"not e2e\"')"
+]
