@@ -1,0 +1,2 @@
+[console_scripts]
+hello_command = chensoul_hello.cli:main
