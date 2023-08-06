@@ -1,0 +1,14 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.poetry]
+authors = ["liblaf <i@liblaf.me>"]
+description = ""
+name = "utools-py"
+packages = [{ include = "utools" }]
+readme = "README.md"
+version = "0.0.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
