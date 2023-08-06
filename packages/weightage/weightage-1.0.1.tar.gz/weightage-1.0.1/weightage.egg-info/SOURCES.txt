@@ -1,0 +1,5 @@
+setup.py
+weightage.egg-info/PKG-INFO
+weightage.egg-info/SOURCES.txt
+weightage.egg-info/dependency_links.txt
+weightage.egg-info/top_level.txt
