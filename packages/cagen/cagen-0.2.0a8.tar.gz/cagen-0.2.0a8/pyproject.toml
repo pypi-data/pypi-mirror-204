@@ -1,0 +1,38 @@
+# SPDX-FileCopyrightText: 2023 Xavier Bordoy <somenxavier@posteo.net>
+#
+# SPDX-License-Identifier: GPL-2.0-only
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+cagen = "cagen.cmd:cagen_cli"
+cagen-list = "cagen.cmd:cagen_list"
+cagen-make = "cagen.cmd:cagen_make"
+
+[project]
+name = "cagen"
+version = "0.2.0.alpha-8"
+authors = [{'name'="Xavier B."}]
+description = "A static site generator for cmpalgorithms project"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+        'Development Status :: 3 - Alpha',
+        'Environment :: Console',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',
+        'Natural Language :: English',
+        'Operating System :: POSIX :: Linux',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.10',
+        'Topic :: Internet :: WWW/HTTP :: Site Management']
+dependencies = [
+	"python-frontmatter>=1.0.0",
+	"pypandoc>=1.10",
+	"Mako>=1.2.4"]
+
+[project.urls]
+"Homepage" = "https://repo.or.cz/cagen.git"
