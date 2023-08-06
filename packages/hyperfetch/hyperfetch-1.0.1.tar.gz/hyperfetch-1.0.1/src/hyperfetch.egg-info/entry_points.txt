@@ -1,0 +1,3 @@
+[console_scripts]
+save = hyperfetch.tuning:save_cli
+tune = hyperfetch.tuning:tune_cli
