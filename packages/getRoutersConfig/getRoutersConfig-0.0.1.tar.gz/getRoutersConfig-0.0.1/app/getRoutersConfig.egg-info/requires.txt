@@ -1,0 +1,4 @@
+netmiko>=4.1.2
+
+[dev]
+twine>=4.0.2
