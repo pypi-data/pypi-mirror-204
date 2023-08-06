@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modern-python-package"
+version = "0.0.1"
+authors = [
+  { name="Timo Furrer", email="tuxtimo@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  "httpx",
+  "rich",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest",
+  "pytest-mock"
+]
+mypy = [
+  "modern-python-package[test]"
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/timofurrer/modern-python-package"
+"Bug Tracker" = "https://gitlab.com/timofurrer/modern-python-package/-/issues"
+
+[tool.mypy]
+exclude = ["docs/", "dist/", "build"]

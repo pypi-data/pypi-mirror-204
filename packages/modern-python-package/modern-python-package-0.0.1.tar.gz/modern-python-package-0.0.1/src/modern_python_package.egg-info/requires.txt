@@ -1,0 +1,9 @@
+httpx
+rich
+
+[mypy]
+modern-python-package[test]
+
+[test]
+pytest
+pytest-mock

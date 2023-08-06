@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/modern_python_package/__init__.py
+src/modern_python_package/__main__.py
+src/modern_python_package/core.py
+src/modern_python_package.egg-info/PKG-INFO
+src/modern_python_package.egg-info/SOURCES.txt
+src/modern_python_package.egg-info/dependency_links.txt
+src/modern_python_package.egg-info/requires.txt
+src/modern_python_package.egg-info/top_level.txt
+tests/test_core.py
