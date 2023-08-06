@@ -1,0 +1,9 @@
+
+[packaging]
+build
+twine
+pip-chill
+pip-autoremove
+
+[tests]
+pytest-cov
