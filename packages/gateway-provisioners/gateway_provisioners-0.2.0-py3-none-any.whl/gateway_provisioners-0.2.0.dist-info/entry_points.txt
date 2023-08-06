@@ -1,0 +1,14 @@
+[console_scripts]
+jupyter-docker-spec = gateway_provisioners.cli.docker_specapp:DockerProvisionerApp.launch_instance
+jupyter-image-bootstrap = gateway_provisioners.cli.image_bootstrapapp:ImageBootstrapApp.launch_instance
+jupyter-k8s-spec = gateway_provisioners.cli.k8s_specapp:K8sProvisionerApp.launch_instance
+jupyter-ssh-spec = gateway_provisioners.cli.ssh_specapp:SshProvisionerApp.launch_instance
+jupyter-yarn-spec = gateway_provisioners.cli.yarn_specapp:YarnProvisionerApp.launch_instance
+
+[jupyter_client.kernel_provisioners]
+distributed-provisioner = gateway_provisioners.distributed:DistributedProvisioner
+docker-provisioner = gateway_provisioners.docker_swarm:DockerProvisioner
+docker-swarm-provisioner = gateway_provisioners.docker_swarm:DockerSwarmProvisioner
+kubernetes-provisioner = gateway_provisioners.k8s:KubernetesProvisioner
+spark-operator-provisioner = gateway_provisioners.spark_operator:SparkOperatorProvisioner
+yarn-provisioner = gateway_provisioners.yarn:YarnProvisioner

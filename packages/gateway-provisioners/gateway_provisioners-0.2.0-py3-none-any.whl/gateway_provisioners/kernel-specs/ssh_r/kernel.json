@@ -1,0 +1,23 @@
+{
+  "language": "${language}",
+  "display_name": "${display_name}",
+  "metadata": {
+    "kernel_provisioner": {
+      "provisioner_name": "distributed-provisioner",
+      "config": {}
+    }
+  },
+  "env": {},
+  "argv": [
+    "Rscript",
+    "${install_dir}/scripts/launch_IRkernel.R",
+    "--kernel-id",
+    "{kernel_id}",
+    "--response-address",
+    "{response_address}",
+    "--public-key",
+    "{public_key}",
+    "--port-range",
+    "{port_range}"
+  ]
+}

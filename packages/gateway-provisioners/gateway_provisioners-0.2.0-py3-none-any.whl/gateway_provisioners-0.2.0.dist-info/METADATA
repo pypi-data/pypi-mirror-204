@@ -1,0 +1,203 @@
+Metadata-Version: 2.1
+Name: gateway_provisioners
+Version: 0.2.0
+Summary: Gateway Provisioners - a package containing kernel provisioners supporting the deployment of remote and resource-managed kernels.
+Project-URL: Homepage, https://jupyter.org
+Project-URL: Documentation, https://gateway-provisioners.readthedocs.io/
+Project-URL: Source, https://github.com/jupyter-server/gateway_provisioners
+Project-URL: Tracker, https://github.com/jupyter-server/gateway_provisioners/issues
+Author-email: Jupyter Development Team <jupyter@googlegroups.org>
+License: # Licensing terms
+        
+        This project is licensed under the terms of the Modified BSD License
+        (also known as New or Revised or 3-Clause BSD), as follows:
+        
+        - Copyright (c) 2001-2015, IPython Development Team
+        - Copyright (c) 2015-, Jupyter Development Team
+        
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        Redistributions of source code must retain the above copyright notice, this
+        list of conditions and the following disclaimer.
+        
+        Redistributions in binary form must reproduce the above copyright notice, this
+        list of conditions and the following disclaimer in the documentation and/or
+        other materials provided with the distribution.
+        
+        Neither the name of the Jupyter Development Team nor the names of its
+        contributors may be used to endorse or promote products derived from this
+        software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+        ## About the Jupyter Development Team
+        
+        The Jupyter Development Team is the set of all contributors to the Jupyter project.
+        This includes all of the Jupyter Subprojects, which are the different repositories
+        under the [jupyter](https://github.com/jupyter/) GitHub organization.
+        
+        The core team that coordinates development on GitHub can be found here:
+        https://github.com/jupyter/.
+        
+        ## Our copyright policy
+        
+        Jupyter uses a shared copyright model. Each contributor maintains copyright
+        over their contributions to Jupyter. But, it is important to note that these
+        contributions are typically only changes to the repositories. Thus, the Jupyter
+        source code, in its entirety is not the copyright of any single person or
+        institution. Instead, it is the collective copyright of the entire Jupyter
+        Development Team. If individual contributors want to maintain a record of what
+        changes/contributions they have specific copyright on, they should indicate
+        their copyright in the commit message of the change, when they commit the
+        change to one of the Jupyter repositories.
+        
+        With this in mind, the following banner should be used in any source code file
+        to indicate the copyright and license terms:
+        
+        ```
+        # Copyright (c) Jupyter Development Team.
+        # Distributed under the terms of the Modified BSD License.
+        ```
+License-File: LICENSE.md
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: jupyter-client>=7.4
+Requires-Dist: overrides
+Requires-Dist: paramiko>=2.4.0
+Requires-Dist: pexpect>=4.2.0
+Requires-Dist: pycryptodomex>=3.9.7
+Requires-Dist: tornado>=6.2
+Requires-Dist: traitlets>=5.1
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: coverage; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Provides-Extra: docker
+Requires-Dist: docker>=3.5.0; extra == 'docker'
+Provides-Extra: docs
+Requires-Dist: docker>=3.5.0; extra == 'docs'
+Requires-Dist: docutils<0.20; extra == 'docs'
+Requires-Dist: jinja2>=3.1; extra == 'docs'
+Requires-Dist: kubernetes>=18.20.0; extra == 'docs'
+Requires-Dist: mistune<3.0.0; extra == 'docs'
+Requires-Dist: myst-parser; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'docs'
+Requires-Dist: sphinx-copybutton; extra == 'docs'
+Requires-Dist: sphinxcontrib-blockdiag; extra == 'docs'
+Requires-Dist: sphinxcontrib-github-alt; extra == 'docs'
+Requires-Dist: sphinxcontrib-openapi; extra == 'docs'
+Requires-Dist: sphinxcontrib-seqdiag; extra == 'docs'
+Requires-Dist: sphinxcontrib-spelling; extra == 'docs'
+Requires-Dist: sphinxemoji; extra == 'docs'
+Requires-Dist: tornado; extra == 'docs'
+Requires-Dist: yarn-api-client; extra == 'docs'
+Provides-Extra: k8s
+Requires-Dist: jinja2>=3.1; extra == 'k8s'
+Requires-Dist: kubernetes>=18.20.0; extra == 'k8s'
+Provides-Extra: lint
+Requires-Dist: black[jupyter]==23.3.0; extra == 'lint'
+Requires-Dist: mdformat>0.7; extra == 'lint'
+Requires-Dist: ruff==0.0.261; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: docker>=3.5.0; extra == 'test'
+Requires-Dist: importlib-metadata; extra == 'test'
+Requires-Dist: jinja2>=3.1; extra == 'test'
+Requires-Dist: kubernetes>=18.20.0; extra == 'test'
+Requires-Dist: mock; extra == 'test'
+Requires-Dist: pre-commit; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest-jupyter[server]>=0.4; extra == 'test'
+Requires-Dist: pytest-timeout; extra == 'test'
+Requires-Dist: pytest-tornasync; extra == 'test'
+Requires-Dist: yarn-api-client; extra == 'test'
+Provides-Extra: yarn
+Requires-Dist: yarn-api-client; extra == 'yarn'
+Description-Content-Type: text/markdown
+
+# Gateway Provisioners
+
+[![Build Status](https://github.com/jupyter-server/gateway_provisioners/actions/workflows/build.yml/badge.svg?query=branch%3Amain++)](https://github.com/jupyter-server/gateway_provisioners/actions/workflows/build.yml/badge.svg?query=branch%3Amain++)
+[![Documentation Status](https://readthedocs.org/projects/gateway_provisioners/badge/?version=latest)](https://gateway-provisioners.readthedocs.io/en/latest/?badge=latest)
+
+Gateway Provisioners provides [kernel provisioners](https://jupyter-client.readthedocs.io/en/latest/provisioning.html)
+that interact with kernels launched into resource-managed clusters or otherwise run remotely from the launching server.
+This functionality derives from [Jupyter Enterprise Gateway's](https://github.com/jupyter-server/enterprise_gateway)
+_process proxy_ architecture. However, unlike [process proxies](https://jupyter-enterprise-gateway.readthedocs.io/en/latest/contributors/system-architecture.html#process-proxy),
+you do not need to use a gateway server to use these provisioners - although, in certain cases,
+it is recommended (for example when the launching server does not reside within the same network as the launched kernel).
+
+Here is the current set of provisioners provided by this package, many of which have their requirements conditionally
+installed:
+
+- `KubernetesProvisioner` - Kernels (residing in images) are launched as pods within a Kubernetes cluster
+  - `pip install gateway_provisioners[k8s]`
+- `DockerSwarmProvisioner` - Kernels (residing in images) are launched as containers within a DockerSwarm cluster
+- `DockerProvisioner` - Kernels (residing in images) are launched as containers on the local server
+  - `pip install gateway_provisioners[docker]`
+- `YarnProvisioner` - Kernels are launched into a Hadoop YARN cluster (primarily Spark)
+  - `pip install gateway_provisioners[yarn]`
+- `DistributedProvisioner` - Kernels are launched across a set of hosts using SSH, round-robin
+  - `pip install gateway_provisioners`
+
+This package also includes command-line utilities that can be used to create kernel specifications or inject bootstrap
+files into docker images relative to the desired provisioner:
+
+- `jupyter-k8s-spec` - for building kernel specifications relative to the `KubernetesProvisioner`
+- `jupyter-docker-spec` - for building kernel specifications relative to `DockerProvisioner` and `DockerSwarmProvisioner`
+- `jupyter-yarn-spec` - for building kernel specifications relative to the `YarnProvisioner`
+- `jupyter-ssh-spec` - for building kernel specifications relative to the `DistributedProvisioner`
+- `jupyter-image-bootstrap` - for injecting bootstrap support when building kernel-based images
+
+**Note:** The container-based provisioners (`KubernetesProvisioner`, `DockerSwarmProvisioner`, and `DockerProvisioner`)
+require that the hosting server also be running within the same environment/network. As a result, these provisioners
+may be better suited for use by a Gateway Server (e.g., [Jupyter Kernel Gateway](https://github.com/jupyter-server/kernel_gateway))
+so as to not require the Notebook/Lab server also be deployed in a container.
+
+______________________________________________________________________
+
+## Installation
+
+Detailed deployment instructions are located in the
+[Operators Guide](https://gateway-provisioners.readthedocs.io/en/latest/operators/index.html)
+of the project docs. Here's a quick start using `pip`:
+
+```bash
+# install from pypi
+pip install --upgrade gateway-provisioners
+
+# options for the command-line utilities can be viewed using '--help-all'
+jupyter yarn-spec install --help-all
+
+# run it with default options to install a Python-based kernelspec for Hadoop Yarn
+jupyter yarn-spec install
+```
+
+## Contributing
+
+The [Contribution page](https://gateway-provisioners.readthedocs.io/en/latest/contributors/contrib.html) includes
+information about how to contribute to Gateway Provisioners. We encourage you to explore the other topics in our
+[Contributors Guide](https://gateway-provisioners.readthedocs.io/en/latest/contributors/index.html)
+like how to [set up a development environment](https://gateway-provisioners.readthedocs.io/en/latest/contributors/devinstall.html),
+or gaining an understanding of the [system architecture](https://gateway-provisioners.readthedocs.io/en/latest/contributors/system-architecture.html),
+among other things.
