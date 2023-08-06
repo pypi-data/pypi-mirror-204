@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: wizcli
+Version: 0.1.0
+Summary: wiz cli
+Author: Agustin B
+Author-email: redraw@sdf.org
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# wizcli
+
+Control your WiZ light from the terminal.
+
+```bash
+# turn on
+$ wiz on
+
+# turn off
+$ wiz off
+
+# dim to 20%
+$ wiz dim 20
+
+# set temp to 50%
+$ wiz temp 50
+
+# set cold
+$ wiz cold
+
+# set hot
+$ wiz hot
+
+# set RGB color
+$ wiz rgb 255 40 90
+```
+
