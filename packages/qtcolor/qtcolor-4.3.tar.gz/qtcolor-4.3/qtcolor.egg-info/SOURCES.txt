@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+qtcolor/__init__.py
+qtcolor/test.py
+qtcolor.egg-info/PKG-INFO
+qtcolor.egg-info/SOURCES.txt
+qtcolor.egg-info/dependency_links.txt
+qtcolor.egg-info/top_level.txt
