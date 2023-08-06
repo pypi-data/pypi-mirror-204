@@ -1,0 +1,9 @@
+pygame
+moderngl
+numpy
+pywavefront
+pyGLM
+moviepy
+pyautogui
+sounddevice
+opencv-python
