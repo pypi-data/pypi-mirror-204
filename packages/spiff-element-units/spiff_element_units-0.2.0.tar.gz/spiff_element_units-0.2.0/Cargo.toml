@@ -1,0 +1,13 @@
+[package]
+name = "spiff-element-units"
+version = "0.2.0"
+edition = "2021"
+
+[lib]
+name = "spiff_element_units"
+crate-type = ["cdylib"]
+
+[dependencies]
+spiff-element-units-rs = { path = "local_dependencies/spiff-element-units-rs" }
+
+pyo3 = { version = "0.18.1", features = ["abi3-py39"] }
