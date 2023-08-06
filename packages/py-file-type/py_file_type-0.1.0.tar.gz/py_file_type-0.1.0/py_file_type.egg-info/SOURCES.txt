@@ -1,0 +1,12 @@
+README.md
+setup.py
+py_file_type/__init__.py
+py_file_type/compat.py
+py_file_type/loader.py
+py_file_type/magic.py
+py_file_type.egg-info/PKG-INFO
+py_file_type.egg-info/SOURCES.txt
+py_file_type.egg-info/dependency_links.txt
+py_file_type.egg-info/top_level.txt
+py_file_type/libmagic/libmagic.dll
+py_file_type/libmagic/magic.mgc
