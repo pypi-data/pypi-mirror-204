@@ -1,0 +1,278 @@
+Metadata-Version: 2.1
+Name: scrapy-spiderdocs
+Version: 0.1.3
+Summary: Generate spiders md documentation based on spider docstrings.
+Home-page: https://github.com/nanvel/scrapy-spiderdocs
+Author: Oleksandr Polieno
+Author-email: polyenoom@gmail.com
+License: MIT License
+Project-URL: Documentation, https://github.com/nanvel/scrapy-spiderdocs
+Project-URL: Source, https://github.com/nanvel/scrapy-spiderdocs
+Project-URL: Tracker, https://github.com/nanvel/scrapy-spiderdocs/issues
+Keywords: scrapy,spiders,documentation
+Platform: OS Independent
+Classifier: Framework :: Scrapy
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Documentation
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS
+
+Scrapy spiderdocs command
+=========================
+
+.. image:: https://img.shields.io/pypi/pyversions/scrapy-spiderdocs.svg
+   :target: https://pypi.python.org/pypi/scrapy-spiderdocs/
+   :alt: PyPI python versions
+
+.. image:: https://img.shields.io/pypi/l/scrapy-spiderdocs.svg
+   :target: https://pypi.python.org/pypi/scrapy-spiderdocs/
+   :alt: PyPI license
+
+.. image:: https://badge.fury.io/py/scrapy-spiderdocs.svg
+   :target: https://pypi.python.org/pypi/scrapy-spiderdocs/
+   :alt: PyPI version
+
+.. image:: https://img.shields.io/pypi/status/scrapy-spiderdocs.svg
+   :target: https://pypi.python.org/pypi/scrapy-spiderdocs/
+   :alt: PyPI status
+
+.. image:: https://img.shields.io/pypi/dm/scrapy-spiderdocs.svg
+   :target: https://pypi.python.org/pypi/scrapy-spiderdocs/
+   :alt: PyPI download month
+
+
+Usage example
+-------------
+
+.. code-block:: bash
+
+    pip install scrapy-spiderdocs
+    scrapy spiderdocs <module.name>
+
+Example project
+---------------
+
+See ``documented`` project for example.
+
+.. code-block:: python
+
+    # -*- coding: utf-8 -*-
+    import scrapy
+
+
+    class ExampleSpider(scrapy.Spider):
+        """Some text.
+        Hi!
+
+        ; Note
+
+        Some note.
+
+        ; Output
+
+        {
+            "1": 1
+        }
+        """
+
+        name = 'example'
+        allowed_domains = ('example.com',)
+        start_urls = ('http://example.com/',)
+
+        def parse(self, response):
+            yield {
+                'body_length': len(response.body)
+            }
+
+
+    class ExampleSpider2(scrapy.Spider):
+        """Some text.
+        Hi!
+
+        ; Info
+
+        Some info.
+        """
+
+        name = 'example2'
+        allowed_domains = ('example.com',)
+        start_urls = ('http://example.com/',)
+
+        def parse(self, response):
+            yield {'success': True}
+
+
+Settings:
+
+.. code-block:: python
+
+    SPIDERDOCS_SECTION_PROCESSORS = {
+        'output': lambda name, content: '### {name}\n\n```json\n{content}\n```'.format(name=name, content=content),
+        'info': lambda name, content: '{content}'.format(content=content)
+    }
+
+Execute the command:
+
+.. code-block:: bash
+
+    scrapy spiderdocs documented.spiders
+
+Output:
+
+.. code-block::
+
+    # documented.spiders spiders
+
+    ## example2 [documented.spiders.example.ExampleSpider2]
+
+    Some info.
+
+    ## example [documented.spiders.example.ExampleSpider]
+
+    ### Note
+
+    Some note.
+
+    ### Output
+
+    ```json
+    {
+        "1": 1
+    }
+    ```
+
+Output options
+--------------
+
+stdout
+~~~~~~
+
+.. code-block:: bash
+
+    scrapy spiderdocs <module.name> > somefile.md
+
+`-o` (`--output`) option
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+    scrapy spiderdocs <module.name> -o somefile.md
+
+Settings
+~~~~~~~~
+
+.. code-block:: python
+
+    SPIDERDOCS_LOCATIONS = {
+        'module.name': "somefile.md"
+    }
+
+The setting used if no module specified.
+
+.. code-block:: bash
+
+    scrapy spiderdocs
+
+Docstring syntax
+----------------
+
+Use ``;`` to create sections. For example:
+
+.. code-block::
+
+    ; Section 1
+
+    Some text ...
+
+    ; Section 2
+
+    Some text ...
+
+Use ``; end`` to close a section:
+
+.. code-block::
+
+    This text will not be added to the documentation.
+
+    ; Section 1
+
+    Some text ...
+
+    ; end
+
+    And this text also will be skipped.
+
+Section processors
+~~~~~~~~~~~~~~~~~~
+
+An example:
+
+.. code-block:: python
+
+    SPIDERDOCS_SECTION_PROCESSORS = {
+        'output': lambda name, content: '### {name}\n\n```json\n{content}\n```'.format(name=name, content=content)
+    }
+
+.. code-block:: bash
+
+    ; Output
+
+    {
+        "attr": "value"
+    }
+
+will be translated into:
+
+.. code-block::
+
+    ### Output
+
+    ```json
+    {
+        "attr": "value"
+    }
+    ```
+
+Scrapy settings
+---------------
+
+``SPIDERDOCS_LOCATIONS: {<module>: <destination>}``, default: ``{}``.
+
+``SPIDERDOCS_SECTION_PROCESSORS: {<section_name>: <function(name, content) -> str>}``, default: ``{}``.
+
+See usage examples above.
+
+Development
+-----------
+
+.. code-block:: bash
+
+    git clone git@github.com:nanvel/scrapy-spiderdocs.git
+    cd scrapy-spiderdocs
+    virtualenv .env --no-site-packages -p /usr/local/bin/python3
+    source .env/bin/activate
+    pip install scrapy
+    scrapy crawl example
+    scrapy spiderdocs documented.spiders
+    python -m unittest documented.tests
+
+TODO
+----
+
+unittests (is there is no docstring, ...)

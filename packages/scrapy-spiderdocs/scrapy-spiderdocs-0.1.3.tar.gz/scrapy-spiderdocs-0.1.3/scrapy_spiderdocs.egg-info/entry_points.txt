@@ -1,0 +1,2 @@
+[scrapy.commands]
+spiderdocs = documented.commands.spiderdocs:Command
