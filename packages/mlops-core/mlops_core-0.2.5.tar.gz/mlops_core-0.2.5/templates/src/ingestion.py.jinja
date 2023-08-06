@@ -1,0 +1,29 @@
+# Databricks notebook source
+import pandas as pd
+
+
+# COMMAND ----------
+def load_data() -> pd.DataFrame:
+    df = None
+    # TODO: Load data from source of choice...
+    return df
+
+
+# COMMAND ----------
+def transform_data(df: pd.DataFrame) -> pd.DataFrame:
+    df = None
+    # TODO: Transform data...
+    return df
+
+
+# COMMAND ----------
+def save_data(df: pd.DataFrame) -> None:
+    # TODO: Save data to destination of your choice...
+    pass
+
+
+# COMMAND ----------
+if __name__ == "__main__":
+    df = load_data()
+    df = transform_data(df)
+    save_data(df)
