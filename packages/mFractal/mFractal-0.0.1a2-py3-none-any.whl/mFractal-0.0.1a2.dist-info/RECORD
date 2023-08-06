@@ -1,0 +1,10 @@
+mFractal/__init__.py,sha256=H5XxjTFGs63lcBhONaahVmk2FtDj6P6umHxqTa0NgpE,92
+mFractal/chj.py,sha256=r0qpx3yOlnr5e-mU1kAEu4i8yIo6rJWQWJIOtPIDQJI,4158
+mFractal/sigmoid_std.py,sha256=CePSZwhnuUqz0r3FK1zLTtERwa8srDXeDZZ-PemIgTE,782
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_chj.py,sha256=nMH_xKuL9KU9vXx6mM_fGwKudDF-_mCgTyBcSov-_NA,1245
+mFractal-0.0.1a2.dist-info/LICENSE,sha256=ahu-ywez9dlE_gqcVNF6bg8XVsAfqruLnIddk9HkScw,1070
+mFractal-0.0.1a2.dist-info/METADATA,sha256=8hmzEc41pGo-Zw99akYbvDu0phHMpkLrqixHULnMGPg,3799
+mFractal-0.0.1a2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mFractal-0.0.1a2.dist-info/top_level.txt,sha256=m3FvaD7fptaXOEClsz13N8VNeMoD4u3HtWGuFXrJo6E,15
+mFractal-0.0.1a2.dist-info/RECORD,,
