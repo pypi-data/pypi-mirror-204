@@ -1,0 +1,51 @@
+site_name: opentrain
+site_url: https://github.com/alvarobartt/opentrain
+site_author: Alvaro Bartolome
+site_description: 🚂 Fine-tune OpenAI models for text classification, question answering, and more
+
+repo_name: alvarobartt/opentrain
+repo_url: https://github.com/alvarobartt/opentrain
+
+copyright: Copyright (c) 2023-present Alvaro Bartolome <alvarobartt@gmail.com>
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+
+plugins:
+  - search:
+  - git-revision-date-localized:
+      type: timeago
+      enable_creation_date: true
+  - mkdocstrings:
+
+extra:
+  social:
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/opentrain/
+    - icon: fontawesome/brands/github
+      link: https://github.com/alvarobartt
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/alvarobartt
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/alvarobartt/
+
+nav:
+  - Home: index.md
+  - License: license.md

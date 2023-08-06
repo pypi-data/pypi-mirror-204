@@ -1,0 +1,119 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[project]
+authors = [{name = "Alvaro Bartolome", email = "alvarobartt@gmail.com"}]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = ["openai~=0.27.4"]
+description = "🚂 Fine-tune OpenAI models for text classification, question answering, and more"
+dynamic = ["version"]
+keywords = []
+license = "MIT"
+name = "opentrain"
+readme = "README.md"
+requires-python = ">=3.8,<3.11"
+
+[project.urls]
+Documentation = "https://alvarobartt.github.io/opentrain"
+Issues = "https://github.com/alvarobartt/opentrain/issues"
+Source = "https://github.com/alvarobartt/opentrain"
+
+[tool.hatch.version]
+path = "src/opentrain/__init__.py"
+
+[project.optional-dependencies]
+docs = [
+  "mkdocs~=1.4.0",
+  "mkdocs-material~=8.5.4",
+  "mkdocs-git-revision-date-localized-plugin~=1.1.0",
+  "mkdocstrings[python]~=0.19.0",
+]
+quality = [
+  "black~=22.10.0",
+  "ruff~=0.0.194",
+  "pre-commit~=2.20.0",
+]
+tests = [
+  "pytest~=7.1.2",
+]
+
+[tool.hatch.envs.quality]
+features = [
+  "quality",
+]
+
+[tool.hatch.envs.quality.scripts]
+check = [
+  "ruff src tests",
+  "black --check --diff --preview src tests",
+]
+style = [
+  "ruff --fix src tests",
+  "black --preview src tests",
+  "check",
+]
+
+[tool.ruff]
+ignore = [
+  "E501", # line too long, handled by black
+  "B008", # do not perform function calls in argument defaults
+  "C901", # too complex
+]
+select = [
+  "E", # pycodestyle errors
+  "W", # pycodestyle warnings
+  "F", # pyflakes
+  "I", # isort
+  "C", # flake8-comprehensions
+  "B", # flake8-bugbear
+]
+
+[tool.ruff.isort]
+known-first-party = ["opentrain"]
+
+[tool.hatch.envs.test]
+features = [
+  "tests",
+]
+
+[tool.hatch.envs.test.scripts]
+run = "pytest tests/ --durations 0 -s"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["38", "39", "310"]
+
+[tool.hatch.envs.docs]
+features = [
+  "docs",
+]
+
+[tool.hatch.envs.docs.scripts]
+build = [
+  "mkdocs build",
+]
+serve = [
+  "mkdocs serve",
+]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.github",
+  "/.vscode",
+  "/docs",
+  "/.devcontainer",
+  "/.pre-commit-config.yaml",
+  "/.gitignore",
+  "/tests",
+  "/Dockerfile",
+  "/.dockerignore",
+]
