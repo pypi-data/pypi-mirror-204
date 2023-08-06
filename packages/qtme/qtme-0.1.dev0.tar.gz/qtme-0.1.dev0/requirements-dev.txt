@@ -1,0 +1,8 @@
+build
+coverage
+pyside6
+pytest
+Sphinx
+sphinx-gallery
+sphinx-rtd-theme
+twine
