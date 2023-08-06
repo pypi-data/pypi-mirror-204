@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+gamepadx/__init__.py
+gamepadx/commons.py
+gamepadx/gamepad.py
+gamepadx.egg-info/PKG-INFO
+gamepadx.egg-info/SOURCES.txt
+gamepadx.egg-info/dependency_links.txt
+gamepadx.egg-info/top_level.txt
+gamepadx/vigem/ViGEmClient.dll
+gamepadx/vigem/__init__.py
+gamepadx/vigem/lib.py
