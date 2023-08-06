@@ -1,0 +1,3 @@
+[console_scripts]
+target-mssql=target_mssql.target:Targetmssql.cli
+
