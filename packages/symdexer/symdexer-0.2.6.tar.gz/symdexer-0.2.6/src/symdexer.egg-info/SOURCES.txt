@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/symdexer/__init__.py
+src/symdexer/__main__.py
+src/symdexer/__version__.py
+src/symdexer/cache.py
+src/symdexer/modules.py
+src/symdexer/parser.py
+src/symdexer/symbols.py
+src/symdexer.egg-info/PKG-INFO
+src/symdexer.egg-info/SOURCES.txt
+src/symdexer.egg-info/dependency_links.txt
+src/symdexer.egg-info/entry_points.txt
+src/symdexer.egg-info/top_level.txt
