@@ -1,0 +1,8 @@
+setup.py
+AegosInfo/__init__.py
+AegosInfo/in_in.py
+AegosInfo.egg-info/PKG-INFO
+AegosInfo.egg-info/SOURCES.txt
+AegosInfo.egg-info/dependency_links.txt
+AegosInfo.egg-info/not-zip-safe
+AegosInfo.egg-info/top_level.txt
