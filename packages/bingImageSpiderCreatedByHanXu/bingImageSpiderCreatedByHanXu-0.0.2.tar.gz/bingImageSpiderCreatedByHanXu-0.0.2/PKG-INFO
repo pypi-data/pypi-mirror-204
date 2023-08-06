@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: bingImageSpiderCreatedByHanXu
+Version: 0.0.2
+Summary: get a large mount of images at Bing.
+Home-page: https://gitee.com/UnderTurrets/bing-image-spider
+Author: Han Xu
+Author-email: 736946693@qq.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Brief
+- This is a package which can crawl images based on the `keyword` you offered.
+- use the following code to use the package
+```python
+import bingImageSpiderCreatedByHanXu.Spider as spd
+
+if __name__ == '__main__':
+    ex=spd.Spider_bing_image()
+    ex()
+```
+```shell
+type in the path where you want to reserve the images:秋山澪
+type in the keywords used to search in bing:秋山澪
+Type in the number of pages you want.Each page has almost 30 images:1
+```
+# Download
+```shell
+pip install bingImageSpiderCreatedByHanXu
+```

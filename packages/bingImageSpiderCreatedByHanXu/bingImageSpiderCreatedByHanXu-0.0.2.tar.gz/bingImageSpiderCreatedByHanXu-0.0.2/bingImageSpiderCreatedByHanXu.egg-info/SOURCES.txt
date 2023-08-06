@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bingImageSpiderCreatedByHanXu/Spider.py
+bingImageSpiderCreatedByHanXu/__init__.py
+bingImageSpiderCreatedByHanXu.egg-info/PKG-INFO
+bingImageSpiderCreatedByHanXu.egg-info/SOURCES.txt
+bingImageSpiderCreatedByHanXu.egg-info/dependency_links.txt
+bingImageSpiderCreatedByHanXu.egg-info/requires.txt
+bingImageSpiderCreatedByHanXu.egg-info/top_level.txt
