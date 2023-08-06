@@ -1,0 +1,10 @@
+
+flake8
+flit
+pylint
+pytest
+pytest-cov
+tox
+
+-r prod.txt
+-e .
