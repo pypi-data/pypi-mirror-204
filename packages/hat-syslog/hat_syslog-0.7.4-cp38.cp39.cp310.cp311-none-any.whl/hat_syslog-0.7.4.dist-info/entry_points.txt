@@ -1,0 +1,3 @@
+[console_scripts]
+hat-syslog-generator = hat.syslog.generator:main
+hat-syslog-server = hat.syslog.server.main:main
