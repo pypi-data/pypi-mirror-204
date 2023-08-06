@@ -1,0 +1,9 @@
+k8s_audit_filter/__about__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+k8s_audit_filter/__init__.py,sha256=Ygyj50ubIBSq7rPmZA5toFWotAC4D3Mc6DzCq_07s2k,81
+k8s_audit_filter/audit_filter.py,sha256=Fmq9JLln-LpQ-deHajwYSKB-v0RCOuPgKIBiwEX1scM,1564
+k8s_audit_filter/fields.py,sha256=aZVkr1Xj2S3v90T6AlPImk3MUDaLKIRvqIS8ZMMCZXA,2197
+k8s_audit_filter/rules.py,sha256=RpURuZqj0rdEkBj70eNjAKoQxrXeqMHv4IfvlpxyI1s,1356
+k8s_audit_filter-0.1.0.dist-info/METADATA,sha256=Rcpu1bsnupznJX51Wxp9HVW5imMZJXQ7bUfyQ3R-p6o,4848
+k8s_audit_filter-0.1.0.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+k8s_audit_filter-0.1.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+k8s_audit_filter-0.1.0.dist-info/RECORD,,
