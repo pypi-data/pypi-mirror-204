@@ -1,0 +1,3 @@
+[console_scripts]
+vault2secretsmanager = vault2secretsmanager:main
+
