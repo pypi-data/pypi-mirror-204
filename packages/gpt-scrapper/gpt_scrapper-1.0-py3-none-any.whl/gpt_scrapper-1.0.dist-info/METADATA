@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: gpt-scrapper
+Version: 1.0
+Summary: Utility to scrap code from a directory, so GPT can tell you something about it
+Home-page: https://github.com/danpeczek/gpt-scrapper
+Author: danpeczek
+License: MIT
+Project-URL: Bug Tracker, https://github.com/danpeczek/gpt-scrapper/issues
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Software Development :: Bug Tracking
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: pyyaml
+Requires-Dist: click
+
+GPT Code Scrapper
+=================
+
+The simple code that scraps the code for the further analysis by the ChatGPT.
+
+- Github: https://github.com/danpeczek/gpt-scrapper
+
+Installation
+============
+
+.. code-block:: bash
+
+    $ pip install gpt-scrapper
+
+Usage
+=====
+
+.. code-block:: bash
+
+    Usage: gpt-scrapper [OPTIONS] PATH
+    Options:
+      -e, --extensions TEXT  Extensions to search for
+      --help                 Show this message and exit.
+
+The result scrapped code should be available in the `output.txt` file.
+
+License
+=======
+`MIT LICENSE <https://github.com/danpeczek/gpt-scrapper/blob/main/LICENSE>`__

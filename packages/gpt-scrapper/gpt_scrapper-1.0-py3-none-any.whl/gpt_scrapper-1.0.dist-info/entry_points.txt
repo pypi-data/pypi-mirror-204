@@ -1,0 +1,2 @@
+[console_scripts]
+gpt-scrapper = gpt_code_scrapper.scrapper:scrap_code
