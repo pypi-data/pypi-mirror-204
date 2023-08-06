@@ -1,0 +1,14 @@
+dadaptation/__init__.py,sha256=nRFD4xecZd0xckT04o7vChLwmPZdahLhCMhGM3sJ_A0,148
+dadaptation/dadapt_adagrad.py,sha256=KrO-rMVWmNNffxMMQCF8I7EgiFKg-kKLXAYsapLD3Gc,9168
+dadaptation/dadapt_adam.py,sha256=aaZ5WS1OfyLWOEoTScntnt0O_jow1rmBgTZggUdI1cE,9012
+dadaptation/dadapt_adan.py,sha256=f9DzS-7agvuW__XeglACMQebarivO2mvo_0MUZCZr5c,9593
+dadaptation/dadapt_sgd.py,sha256=dbOu4TL1F1nvbnn48XrRI9dBi9lKV6yynpeaRLxdYl0,7131
+dadaptation/experimental/__init__.py,sha256=yI8f-FqU-DynMabA5jQ5n6sTf3mjTMIfbX18Ex9x3iA,121
+dadaptation/experimental/dadapt_adam_ip.py,sha256=R7PNtq8MCWMsuHenX8vIhb_3ROSHCK3QuymhpOyd7Ig,8230
+dadaptation/experimental/dadapt_adan_ip.py,sha256=jgeS3hQ_7jsp39_aW9oXtUfVjdc_9kI7l7C1Pg5CDTg,9737
+dadaptation/experimental/dadapt_sgd_ip.py,sha256=cgQqZGZAh8zJFeb4JfO4GEKJkNBeENuIoiG6y0V5yzU,7213
+dadaptation-2.0.dist-info/LICENSE,sha256=1o26r07ui0PBb5WGsSvL5o59fm-So1zLwNAP5nvv96Y,1091
+dadaptation-2.0.dist-info/METADATA,sha256=BPaViMjedVcO3v6Iw4u68xImr0Vsv09tnNZXRnAJw4g,2747
+dadaptation-2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dadaptation-2.0.dist-info/top_level.txt,sha256=HswIO3Czi36bdzLS92U6kpaYL4SREDqE2DFSBpCGmQc,12
+dadaptation-2.0.dist-info/RECORD,,
