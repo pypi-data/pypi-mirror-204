@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: dj-migration-test
+Version: 0.4.0
+Summary: Django migration test module
+Home-page: https://github.com/philsupertramp/dj-migration-test
+Download-URL: https://github.com/philsupertramp/dj-migration-test/archive/0.4.0.tar.gz
+Author: Philipp Zettl
+Author-email: philipp.zettl@godesteem.de
+License: MIT
+Keywords: Django,Testing,Database
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Bug Tracking
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+## dj-migration-test
+
+Django migration test module.  
+
+# Requirements
+
+```text
+django>=2.2.0
+```
+
+# Setup
+
+# Example
+
+For examples see the [examples](/examples) directory
+
+# Tips
+
+For single migrations do not use the attribute `migrate_from` the test suite will dynamical determine
+the previous step.

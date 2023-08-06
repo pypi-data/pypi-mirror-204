@@ -1,0 +1,13 @@
+LICENSE.txt
+README
+setup.cfg
+setup.py
+dj_migration_test/__init__.py
+dj_migration_test/config.py
+dj_migration_test/exceptions.py
+dj_migration_test/test_clients.py
+dj_migration_test.egg-info/PKG-INFO
+dj_migration_test.egg-info/SOURCES.txt
+dj_migration_test.egg-info/dependency_links.txt
+dj_migration_test.egg-info/requires.txt
+dj_migration_test.egg-info/top_level.txt
