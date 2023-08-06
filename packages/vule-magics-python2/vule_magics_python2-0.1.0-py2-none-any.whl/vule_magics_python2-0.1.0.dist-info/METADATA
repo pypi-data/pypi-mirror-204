@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: vule-magics-python2
+Version: 0.1.0
+Summary: Jupyter Notebook Python2 MagicCommands
+Home-page: UNKNOWN
+Author: Vu Le
+Author-email: ltnv24@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+

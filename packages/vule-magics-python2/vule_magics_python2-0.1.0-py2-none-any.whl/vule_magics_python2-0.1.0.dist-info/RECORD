@@ -1,0 +1,7 @@
+scripts/__VERSION__,SHA256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+scripts/update_version.py,SHA256=6c5uxCSAmddlcLRpi_beBFQxtu5yD_7LZhpR5npNSJk,406
+vule_magics/__init__.py,SHA256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vule_magics_python2-0.1.0.dist-info/METADATA,SHA256=mDFNayYOtdBgNL_ndrKPMXJvj2JsZ3aAcnOqWBt7Ib4,379
+vule_magics_python2-0.1.0.dist-info/WHEEL,SHA256=1VPi6hfNQaRRNuEdK_3dv9o8COtLGnHWJghhj4CQ28k,92
+vule_magics_python2-0.1.0.dist-info/top_level.txt,SHA256=ZZm8chmacIxQ_EaoENE4-no37132Q1esJUmBRwTXE7o,20
+vule_magics_python2-0.1.0.dist-info/RECORD,,
