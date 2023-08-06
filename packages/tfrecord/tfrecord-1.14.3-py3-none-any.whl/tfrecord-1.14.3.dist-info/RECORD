@@ -1,0 +1,14 @@
+tfrecord/__init__.py,sha256=e050f6BRcGvUHDQ49C3G1d7SJJmL6vs5nDKcsOrc4o0,279
+tfrecord/example_pb2.py,sha256=4K0DKGjYQ2EStqaCyt8Lmpjk-b3pY6Qp6TorL55weyk,17910
+tfrecord/iterator_utils.py,sha256=KAt3DJ-q4QUIfhZ7aUCpeiDieZHc14thVSR89TS5F48,2632
+tfrecord/reader.py,sha256=YbFWApKYoHFhpusx8BFikuvPZtkdyxyZtm6mmFVt9Xc,17248
+tfrecord/writer.py,sha256=ryVxXCBSUs4njIOFNpn10ocIbxWfyr9ilaH2ypjEqi4,5519
+tfrecord/tools/__init__.py,sha256=KcNl1iMWeXpwGFPkUl-any1DZ3ILLWT9_Y2YV2RYM8k,94
+tfrecord/tools/tfrecord2idx.py,sha256=PplRVMyjurMJYdAs2hpMQYZAGxen0-xTinyphYk0G5E,2061
+tfrecord/torch/__init__.py,sha256=W7FDwI9CajaOEPjzo-LWbNbXBSp5dE5VPYoDPB6VzlY,143
+tfrecord/torch/dataset.py,sha256=h9sP2TRcY3BuJlKUxfxVATrqyYPTwt4IWMCXY8siZtc,7889
+tfrecord-1.14.3.dist-info/LICENSE,sha256=4VFfvuFvZXHQJEZCPbzxkTMPaKd8gRNpzxVSygjjhfw,1069
+tfrecord-1.14.3.dist-info/METADATA,sha256=JPQfBrD3MR8WfLQAjQnHgyuv3cQoT7BVMByIbaCgDqE,7289
+tfrecord-1.14.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tfrecord-1.14.3.dist-info/top_level.txt,sha256=xAVvjs2qRw31ltBeRyqYxxsrM9k9fzynK5UwH7q-aK0,9
+tfrecord-1.14.3.dist-info/RECORD,,
