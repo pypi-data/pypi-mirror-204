@@ -1,0 +1,5 @@
+[default]
+DIRECTION = ['BUY', 'SELL', 'buy', 'sell', 'Buy','Sell']
+
+
+[testing]
