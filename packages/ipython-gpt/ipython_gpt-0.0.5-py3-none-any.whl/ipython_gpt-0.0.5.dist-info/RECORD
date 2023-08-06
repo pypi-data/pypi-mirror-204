@@ -1,0 +1,8 @@
+ipython_gpt/__init__.py,sha256=0EXLybL9N98rL954FamPVE_KSuKigZFDKiwo-g-lTOI,1365
+ipython_gpt/api_client.py,sha256=82rro_NjeF1AuFvV085VbHrDaRrcjeZJKBs366walxM,2009
+ipython_gpt/displays.py,sha256=tABICZm9x7xOlMKUyX8NnQxgxDqWSM_Ikflh04gBbzw,791
+ipython_gpt/subcommands.py,sha256=6kPDANud74xTVuQ38vLnvC_dPfhs3MttZbKul6_1T6s,5056
+ipython_gpt-0.0.5.dist-info/LICENSE,sha256=NPjMrYQjTW-xL8caRhbF7HnElvF8O4TVuPamIM9LVmo,1073
+ipython_gpt-0.0.5.dist-info/METADATA,sha256=kaibuwTUKLSq_m3iSbhiiJMVDTblgCRar3cIROcwJxQ,5658
+ipython_gpt-0.0.5.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+ipython_gpt-0.0.5.dist-info/RECORD,,
