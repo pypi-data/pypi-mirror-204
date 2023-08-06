@@ -1,0 +1,5 @@
+include uffspd/requirements.txt
+include uffspd/thirdparty.json
+include uffspd/README.MD
+include uffspd/uffs.com
+include uffspd/LICENSE
