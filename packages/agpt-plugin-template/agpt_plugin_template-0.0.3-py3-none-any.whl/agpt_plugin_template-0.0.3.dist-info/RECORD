@@ -1,0 +1,6 @@
+run_pylint.py,sha256=lQ4PTUdVaNSGLbWWKQ0EjVbk6BSU9bukuJn_xFs5bgU,439
+src/auto_gpt_plugin_template/__init__.py,sha256=lNwPhZJBzXyGaIW5LHoLhRU8QvQNDhHw-JMDWZJX-_Y,7625
+agpt_plugin_template-0.0.3.dist-info/METADATA,sha256=cgwUxrPQWwUQo5RxGzuqfzpariMsd9Kc14qAYOXIWp0,699
+agpt_plugin_template-0.0.3.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+agpt_plugin_template-0.0.3.dist-info/licenses/LICENSE,sha256=XRkETLq-TOzf0s64bcx2F97vionXCeN5fnUaqZID7D0,1098
+agpt_plugin_template-0.0.3.dist-info/RECORD,,
