@@ -1,0 +1,10 @@
+README.md
+setup.py
+pymwr/__init__.py
+pymwr/plot.py
+pymwr/read.py
+pymwr/utils.py
+pymwr.egg-info/PKG-INFO
+pymwr.egg-info/SOURCES.txt
+pymwr.egg-info/dependency_links.txt
+pymwr.egg-info/top_level.txt
