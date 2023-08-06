@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="odoo_instance_search" model="ir.ui.view">
+            <field name="name">odoo.instance.search</field>
+            <field name="model">odoo.instance</field>
+            <field name="arch" type="xml">
+                <search>
+                    <filter name="my_instances" string="My Instances"
+                        domain="[('technician_ids.user_id', '=', uid), ('functional_ids.user_id', '=', uid)]"
+                        help="Instances where I am a technician or functional" />
+                </search>
+                <search>
+                    <field name="odoo_version_id"></field>
+                </search>
+            </field>
+        </record>
+        <record id="view_odoo_instance_module_search" model="ir.ui.view">
+            <field name="name">odoo.instance.module.search</field>
+            <field name="model">odoo.instance.module</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                    <field name="technical_name" />
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>
