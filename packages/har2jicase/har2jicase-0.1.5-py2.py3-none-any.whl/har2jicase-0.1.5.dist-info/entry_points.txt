@@ -1,0 +1,2 @@
+[console_scripts]
+har2case = har_to_case.main:main
