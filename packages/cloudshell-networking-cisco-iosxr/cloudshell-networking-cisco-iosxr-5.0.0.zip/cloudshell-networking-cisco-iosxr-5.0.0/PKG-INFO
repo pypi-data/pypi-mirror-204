@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cloudshell-networking-cisco-iosxr
+Version: 5.0.0
+Summary: QualiSystems networking Cisco IOS XR package
+Home-page: http://www.qualisystems.com/
+Author: QualiSystems
+Author-email: info@qualisystems.com
+Requires-Python: ~=3.7
+
+QualiSystems networking Cisco IOS XR package
