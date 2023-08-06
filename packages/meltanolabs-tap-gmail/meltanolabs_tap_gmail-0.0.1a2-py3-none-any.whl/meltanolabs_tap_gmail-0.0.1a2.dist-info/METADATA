@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: meltanolabs-tap-gmail
+Version: 0.0.1a2
+Summary: `tap-gmail` is a Singer tap for Gmail, built with the Meltano SDK for Singer Taps.
+License: Apache 2.0
+Keywords: ELT,Gmail
+Author: Ken Payne
+Requires-Python: >=3.7.1,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: singer-sdk (>=0.24.0,<0.25.0)
