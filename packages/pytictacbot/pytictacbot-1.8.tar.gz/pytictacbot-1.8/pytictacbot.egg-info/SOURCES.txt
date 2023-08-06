@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+pytictacbot.egg-info/PKG-INFO
+pytictacbot.egg-info/SOURCES.txt
+pytictacbot.egg-info/dependency_links.txt
+pytictacbot.egg-info/entry_points.txt
+pytictacbot.egg-info/requires.txt
+pytictacbot.egg-info/top_level.txt
+tictacbot/gutenberg.txt
+tictacbot/listen.py
