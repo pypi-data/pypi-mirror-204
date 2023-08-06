@@ -1,0 +1,16 @@
+LICENSE,sha256=1mSy-PPirpALuerPYeaYnEoJjcqayaoZjWFwanihDUU,1066
+README.md,sha256=KNmNsJukR-2BRgir8BSfjBgRExNt_jWevA-kYgUhjdA,222
+pyproject.toml,sha256=P9hUdftYuceuO2417VndM8gndZzltNbD4dYkXgQ8Me8,565
+setup.cfg,sha256=opgj3Z-7NLCwDEX-WCPXwloxM4BeByytSSDPdt7oW_o,42
+remote_drawing_provider.egg-info/PKG-INFO,sha256=MRYTLH82mmzlM_F_36zgqZnjVjYYj_4OjbLz7F4Zz7o,797
+remote_drawing_provider.egg-info/SOURCES.txt,sha256=PARYJabZfDIrekliigdHCNUj3bCgGzar80KX1igRNkc,315
+remote_drawing_provider.egg-info/dependency_links.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+remote_drawing_provider.egg-info/requires.txt,sha256=PisfjAwnHnHoMeah2Afa1yuAiqFi_EGALD0Ph-C7Bbc,31
+remote_drawing_provider.egg-info/top_level.txt,sha256=Vl6oGtnaZUVMP8PB2IxhJECQHsbDLfth5Na7I_1_-GY,5
+src/logger.py,sha256=Ekk_Pjw0gZpRyDXrYqMvzfnela0UFYJWNupWS8SR9NQ,1198
+src/provider.py,sha256=JPXjUe-jpvQ13ihOkv3n0UMAecCtkrXMt8wlVDIDWdQ,984
+remote_drawing_provider-0.0.2.dist-info/LICENSE,sha256=1mSy-PPirpALuerPYeaYnEoJjcqayaoZjWFwanihDUU,1066
+remote_drawing_provider-0.0.2.dist-info/METADATA,sha256=0xMCsdXUtgTafCFswhCPHYKkWRHb8bNy_N8qWUowzD8,879
+remote_drawing_provider-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+remote_drawing_provider-0.0.2.dist-info/top_level.txt,sha256=Vl6oGtnaZUVMP8PB2IxhJECQHsbDLfth5Na7I_1_-GY,5
+remote_drawing_provider-0.0.2.dist-info/RECORD,,
