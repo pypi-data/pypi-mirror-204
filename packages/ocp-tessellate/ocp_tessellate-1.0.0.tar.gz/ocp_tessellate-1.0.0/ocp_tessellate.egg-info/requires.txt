@@ -1,0 +1,11 @@
+webcolors~=1.12
+numpy
+numpy-quaternion
+cachetools~=5.2.0
+
+[dev]
+pylint
+pyYaml
+black
+twine
+bumpversion
