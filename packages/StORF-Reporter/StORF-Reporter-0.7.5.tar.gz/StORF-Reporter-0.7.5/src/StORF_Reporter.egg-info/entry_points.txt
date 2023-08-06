@@ -1,0 +1,5 @@
+[console_scripts]
+StORF-Extractor = StORF_Reporter.StORF_Extractor:main
+StORF-Finder = StORF_Reporter.StORF_Finder:main
+StORF-Reporter = StORF_Reporter.StORF_Reporter:main
+UR-Extractor = StORF_Reporter.UR_Extractor:main
