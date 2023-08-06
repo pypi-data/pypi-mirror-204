@@ -1,0 +1,6 @@
+name: "Oikonomika"
+authors: "Young Joon Lee <entelecheia@hotmail.com>"
+description: "A Python Library for Economic Analysis"
+homepage: "https://oikonomika.entelecheia.ai"
+license: "MIT"
+version: "0.1.1"
