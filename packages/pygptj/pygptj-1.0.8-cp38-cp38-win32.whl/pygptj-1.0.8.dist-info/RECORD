@@ -1,0 +1,10 @@
+_pygptj.cp38-win32.pyd,sha256=dHv92FtJBhJ8nkElkb4lcbD10_BpRkmbpPFjQkyncWE,286208
+pygptj/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygptj/_logger.py,sha256=WFVAqybw6Iv37eWJ-8EHK3Jf_TK_LDcVbfgCsMvjD8E,661
+pygptj/constants.py,sha256=EqaA7xc5k9Q3mZ-IZG9oxAlu-Vswf7QGeRYweTTvids,146
+pygptj/model.py,sha256=5YlfrzU0S72xzUH5kttvsXe_mhy8LU3WDYensxoe9-4,4339
+pygptj-1.0.8.dist-info/LICENSE,sha256=HqeugnSeeR1FNP0tVPb7tFS7EEtPOhNc6JL0l9TPXlU,1094
+pygptj-1.0.8.dist-info/METADATA,sha256=BtpS0n6NNrMkz2oCJz6KvrlEy1n38-Sxj_EjLXSXrZQ,2226
+pygptj-1.0.8.dist-info/WHEEL,sha256=eISolWHwNhb92gGPHWycatPqef50U4Y2t5AK5I8bfIY,96
+pygptj-1.0.8.dist-info/top_level.txt,sha256=ueJs6t2fn4ggNMTihnxehDIaCVfGKh80LGrJNh1B7cw,15
+pygptj-1.0.8.dist-info/RECORD,,
