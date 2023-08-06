@@ -1,0 +1,3 @@
+csmlog
+requests
+deprecated
