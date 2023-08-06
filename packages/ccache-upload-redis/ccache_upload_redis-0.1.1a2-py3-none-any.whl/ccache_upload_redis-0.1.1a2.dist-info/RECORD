@@ -1,0 +1,9 @@
+src/ccache-performance.py,sha256=bTylJA6HPps0wxsLAx_F-fBPjigzgHG7QQOvhv19tfM,10254
+ccache_upload_redis-0.1.1a2.data/scripts/ccache-upload-redis.py,sha256=UwWyXhU0YB_RAvKVpA9bZw39Y7X1Jc1gedDFrIakbDw,2532
+ccache_upload_redis-0.1.1a2.data/scripts/ccache-performance.py,sha256=bTylJA6HPps0wxsLAx_F-fBPjigzgHG7QQOvhv19tfM,10254
+ccache_upload_redis-0.1.1a2.data/scripts/ccache-download-redis.py,sha256=7aERMG49ZaxhqGgRWW0YwoNxHwC7XNdtI98fS4hdgSo,2244
+ccache_upload_redis-0.1.1a2.dist-info/LICENSE,sha256=PoVf-nBBFKUWKO-PC_OutBcorfnZBw4mO_WKpWQLDrU,1097
+ccache_upload_redis-0.1.1a2.dist-info/METADATA,sha256=SiWmbyHHJSim2vaHMVHhXi2eqFJf2n5oU5cnqVwZnpk,4155
+ccache_upload_redis-0.1.1a2.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+ccache_upload_redis-0.1.1a2.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ccache_upload_redis-0.1.1a2.dist-info/RECORD,,
