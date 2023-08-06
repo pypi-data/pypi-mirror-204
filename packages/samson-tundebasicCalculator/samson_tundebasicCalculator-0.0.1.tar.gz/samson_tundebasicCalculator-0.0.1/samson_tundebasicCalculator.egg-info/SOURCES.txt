@@ -1,0 +1,8 @@
+Licence.txt
+MANIFEST.in
+README.txt
+setup.py
+samson_tundebasicCalculator.egg-info/PKG-INFO
+samson_tundebasicCalculator.egg-info/SOURCES.txt
+samson_tundebasicCalculator.egg-info/dependency_links.txt
+samson_tundebasicCalculator.egg-info/top_level.txt
