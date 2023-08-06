@@ -1,0 +1,9 @@
+README.md
+setup.py
+gpodder_exporter/__init__.py
+gpodder_exporter/main.py
+gpodder_exporter.egg-info/PKG-INFO
+gpodder_exporter.egg-info/SOURCES.txt
+gpodder_exporter.egg-info/dependency_links.txt
+gpodder_exporter.egg-info/entry_points.txt
+gpodder_exporter.egg-info/top_level.txt
