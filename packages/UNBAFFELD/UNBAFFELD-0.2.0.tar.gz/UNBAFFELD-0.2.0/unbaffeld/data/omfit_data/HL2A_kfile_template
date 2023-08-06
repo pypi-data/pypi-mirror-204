@@ -1,0 +1,399 @@
+ !HL-2A tokamak test
+ &IN1
+ ISHOT = 16300
+!shot number to analyze
+ ITIME = 550
+!Time in milliseconds of slice to analyze
+ ITIMEU = 0
+ QVFIT = 0.95
+!1.5! 		!q(axis)
+!ICONVR:
+!Specify solution mode:
+!1 = fitting mode for mxiter, nxiter iterations until the specified error is satisfied.
+!2 = fitting mode until chisq reverse, must satisfy minimum error errmin and minimum number of iterations, as well as a minimum chisq (default).
+!3 = equilibrium mode.
+!- = Green's table calculations for -ICONVR filaments and write file RPFXX.DAT for use with MFIT.
+ ICONVR = 2
+!! 3
+ PLASMA = 157000.0
+!1200.e3 !3000.e3 ! 	!plasma current Ip(A)  3500e3 !
+ BETAP0 = 0.4
+!0.6 !1.2  !1.0 !0.20 !
+!EXPMP2	= !18*0.0	!magnetic probe signals(T)
+!COILS	= 4*0.0		!flux loop signals(v.s/rad)
+ EXPMP2 = -0.0618321 -0.0674087 -0.0682109 -0.0614824 -0.061199 -0.0611132 
+ -0.0590636 -0.0629506 -0.0641208 -0.0642567 -0.0631804 -0.061596 -0.0613893 
+ -0.0636205 -0.0665732 -0.0660234 -0.0609591 -0.0550965
+!magnetic probe signals(T)
+!-6.3637460e-002  -7.4042300e-002  -6.7938167e-002  -5.8409191e-002  -5.9486894e-002   -4.9360911e-002
+!-5.1421551e-002  -6.5855215e-002  -6.8524022e-002  -7.1199370e-002  -7.0125107e-002   -6.7758811e-002
+!-6.9534788e-002  -6.9917783e-002  -7.5780979e-002  -7.8547994e-002  -7.1595546e-002   -6.3247644e-002
+!  -0.530826E-01  -0.576111E-01  -0.572528E-01  -0.496125E-01  -0.500582E-01  -0.509856E-01
+!  -0.498922E-01  -0.690160E-01  -0.713049E-01  -0.721991E-01  -0.713805E-01  -0.696667E-01
+!  -0.693662E-01  -0.717655E-01  -0.749214E-01  -0.741847E-01  -0.684267E-01  -0.615008E-01
+ COILS = 0.149135 0.147189 0.126069 0.126395
+!flux loop signals(v.s/rad)
+!1.1134508e+000  1.1213855e+000  1.3228046e+000  1.3044938e+000
+ BTOR = 1.343628
+!		!toroidal field(T)	= 0.0622*It(kA) (T)   !-----2011.06.26--------
+ FWTSI = 4*0.0
+!flux loop in fitting weight
+ FWTCUR = 1.0
+!1.2 !2010.10.18		!fitting weight for plasma current
+!LIMITR	= -33		!number of points for limiter
+ LIMITR = 40
+ XLIM = 2*1.332 1.308 1.286 1.267 1.25 1.236 1.226 1.218 1.213 1.212 1.213 
+ 1.218 1.226 1.236 1.25 1.267 1.286 1.308 2*1.332 1.64 2*1.97 1.993 2.013 
+ 2.026 2.036 2.044 2.049 2.05 2.049 2.044 2.036 2.026 2.013 1.993 2*1.97 1.64
+ YLIM = 0.5 0.291 0.2645 0.236 0.2058 0.174 0.1407 0.1065 0.072 0.032 0.0 
+ -0.036 -0.0715 -0.107 -0.141 -0.174 -0.206 -0.236 -0.265 -0.291 3*-0.5 -0.24 
+ -0.206 -0.169 -0.137 -0.104 -0.069 -0.035 0.0 0.035 0.069 0.104 0.137 0.169 
+ 0.206 0.24 2*0.5
+ FWTMP2 = 18*1.0
+!5*0,13*1.0 !	!fitting weights for magnetic probe signals
+!ICURRT:
+!"(Integer flag) Current". Which current profile parametrization to use:
+!1 = not implemented.
+!2 = linear polynomials for P' and FF' or spline(default).
+!3 = not implemented.
+!4 = GAQ type current profile.
+!5 = same as 2 but include toroidal rotation.
+ ICURRT = 2
+!4 !
+ qenp = 0.0
+!0.95
+ qemp = 0.0
+ ENP = 1
+ EMP = 1.0
+!1.0! 0.2  !  0.75
+!KFFCUR:
+!Number of coefficients in polynomial representation of FF'.
+!Ignored when using spline representation. Default = 1
+ KFFCUR = 1
+!KPPCUR:
+!Number of coefficients in polynomial representation of P'.
+!Ignored when using spline representation. Default = 3
+ KPPCUR = 2
+!FWTQA:
+!"Fit Weight q-on-axis". Flag to add axial q constraint, q on axis = QVFIT
+!to other constraints on current profile:
+!1 = include constraint
+!0 = don't include constraint (default)
+ FWTQA = 0.0
+ kwripre = 0.0
+!IERCHK:
+!"(Integer flag) Error Check".
+!>0 : check for MHD fitting errors (Default=1)
+!<0 : don't check for MHD fitting errors
+ IERCHK = 1
+!FWTBP:
+!Fitting weight to make FF' and p' proportional:
+!1 = similar P' and FF' profiles
+!0 = no such constraint (default)
+!Do not set FWTBP=1 if KPPCUR is not equal to KFFCUR.
+ FWTBP = 1.0
+ SERROR = 0.03
+ NEXTRA = 2
+ SCRAPE = 0.04
+ ITRACE = 1
+ ITEK = 5
+ XLTYPE = 0.0
+ RCENTR = 1.65
+!1.78 ! 		!R of vacuum toroidal field in meters
+ rzero = 1.65
+!1.78
+ aelip = 0.4
+!0.65
+ eelip = 1.0
+!2
+ relip = 1.65
+!1.78
+ BITIP = 1
+!Plasma current physical unit equivalent to 1 digitizer count
+ PSIBIT = 4*1.0
+!flux loops, physical units corresponding to 1 digitizer count
+ BITMPI = 18*0.0001
+!Magnetic probes physical unit equivalent to 1 digitizer count
+ DENR = 1615506020760000.0
+!Radial line density
+ DENV = 2138909861480000.0 2650137637680000.0 -5.17675629412e+16
+!Vertical line density
+ SIREF = 0.0
+! 4.869150742888451E-02
+!Poloidal flux at reference flux loop NSLREF in volt-sec/rad
+!lijx---2010.10.27
+ FWTFC = 6*1.0
+!		!Fit Weight F-coils
+!BRSP: Current arrays; first 10 (NFCOIL) elements are F-coil currents in Amp-turns(?).
+!      BRSP not equal 0 for fixed F-coil currents.
+!      BRSP(NFCOIL+1) to BRSP(NFCOIL+KPPCUR) coefficients for P'.
+!      BRSP(NFCOIL+KPPCUR+1) to BRSP(NFCOIL+KPPCUR+KFFCUR) coefficients for FF
+!*******************************************************************************
+ BRSP = 11088.6 12614.4 11088.6 12614.4 12500.0 18.3117
+!-------------------------------LIMITER---------------------------------------------
+!********************************************************************************
+!2010.10.27--lijx
+ BITFC = 6*1.0
+!F-coil current physical unit equivalent to 1 digitizer count
+!IECURR: "(Integer flag) E-coil current".
+!	  1 = include E coil currents in calculations (default).
+!        2 = fit E-coil currents
+ IECURR = 1
+!IECURR	=2  !
+ IPLIM = 0
+!----------------------------------------------------------------------------------------
+ ECURRT = 6972.020034
+!!-40.0e3	!E coil section currents in Amps
+!------------------------------------------------------------------------------------
+ IFITVS = 0
+!0 = ignore vessel segment currents
+ VLOOP = 1.57774472237
+ DFLUX = -19.312997818
+!Measured diamagnetic fluxes in mv-s
+!IFCURR: "(Integer flag) Fcoil Currents". Only used in free boundary equilibrium calculations.
+!        1 = fixed F coil currents.
+!        0 = variable F-coil currents (Default)
+!        Set = 0 in fitting and fixed boundary equilibrium solutions.
+ IFCURR = 1.0
+ IAVEM = 5
+!ICPROF:
+!Specific choice of current profile:
+!0 = current profile is not specified by this variable (default)
+!1 = no edge current density allowed
+!2 = free edge current density
+!3 = weak edge current density constraint
+!This sets some or all of the variables KFFCUR, KPPCUR, FCURBD, PCURBD, FWTBP, FWTQA, QVFIT, KCALPA, CALPA, XALPA, KCGAMA, CGAMA, and XGAMA to predefined values.
+!NOTE that if these variables are seperately specified in the namelist input, the values set by the ICPROF variable will override them.
+ ICPROF = 0
+ CURRN1 = 0.0
+!N1 coil current
+!N1COIL:
+!Compensation for magnetic probe pickup from N1 coil:
+!2 = compensation for n1 coil.
+!0 = no compensation (default).
+ N1COIL = 0
+ PNBEAM = 3928857.17773
+!ERROR:
+!Specifies when EFIT should stop iterating to solution.
+!If chi-squared decreases monotonically, then iterations stop
+!when the relative error (maximum flux difference between successive
+!iterations) < ERROR. Default = 10-3.
+!----------------------------------------------------------------------------------------------
+ ERROR = 0.0008835
+!2.0e-3 !0.15e-2 ! 7E-4 ! 4.1e-3 !   	3.8E-03
+!-------------------------------------------
+!ERRMIN:
+!"Error Min". Minimum convergence error before exit for ICONVR=2 option.
+!If chi-squared on any iteration is larger than on previous iteration
+!then if relative error (maximum flux difference between successive iterations)
+! < ERRMIN and chi-squared < (how much?), iterations stop. Default=0.01.
+ ERRMIN = 0.005
+!for ICONVR=2 option
+!MXITER:
+!Maximum number of outer fitting iterations:
+!Set to 1 for equilibrium solutions. Set negative for iteration history output
+!to terminal during EFIT execution. Default = 25
+ MXITER = -100
+!  1 ! 1     !-25
+ NXITER = 1
+!-100! -125    !Number of inner equilibrium iterations. Set to 1 for fitting.
+ XLTYPE_180 = 0.0
+!ICUTFP:
+!2 = to allow force-free current to flow in scrape-off layer (default).
+!0 = ??? See also ALPHAFP.
+ ICUTFP = 0
+ KEQDSK = 1
+!IBTCOMP:
+!"(Integer flag) BT Compensation". Toroidal field pickup compensation.
+!Subtract contributions to poloidal magnetic field probe measurements
+!due to pickup from toroidal field coil:
+!<=0: no compensation
+!> 0: apply compensation (Default=1)
+ IBTCOMP = 0
+!FCURBD:
+!"F Current Boundary".
+!1 = force FF'=0 at boundary.
+!0 = let FF' have a finite value at boundary
+!The method by which FF'=0 is forced is to add another parameter
+!to the parametrization whose coefficient is the negative sum of
+!all other coefficients. (This makes sense for poly parametrization -
+!what about other parametrizations?) Default = 1.0
+ FCURBD = 0.0
+!PCURBD:
+!"P Current Boundary".
+!1 = force P'=0 at boundary (default).
+!0 = allow finite P' at boundary. The method for forcing P'=0 is the same as for FCURBD.
+ PCURBD = 0.0
+!KBOUND:
+!0 = run bound algorithm? (Default)
+!otherwise, don't?
+ KBOUND = 0
+!ALPHAFP:
+!Describes the width of the scrapeoff layer in which the halo currents flow.
+!(Must set ICUTFP=2?)
+!0<= ALPHAFP <=1
+!1 = zero thickness
+!0 = current layer extends either to the first separatrix surface surrounding
+!the last closed flux surface or, if there is no external separatrix, it can flow
+!anywhere inside the chamber.
+!It is assumed that no current flows outside this external separatrix. Default = 0.0
+ ALPHAFP = 0.0
+ KSKIPVS = 0
+!1 = search for external separatrix for attached current model.
+ VSDAMP = 0.0
+!Relaxation parameter for scrape-off layer current. (Always set to 0.25.) default=0
+ KFRAME = 0
+!ZELIP:
+!"Z Ellipse". Z of ellipse center in m for current initialization.
+!If ZELIP > 10**5 then ZELIP is estimated from probe signals in same manner
+!as Zp(?) and EELIP is set to 1.5. Fitting mode only. Default=0.0
+ ZELIP = 0.0
+!FWTDLC:
+!Fitting weight for diamagnetic flux:
+!0 = do not include measured data in fit (default)
+!1 = include measured data in fit
+ FWTDLC = 0.0
+ SIGDLC = 0.385337591171
+!Standard deviation of diamagnetic flux measured data in mv-s.
+ ELOMIN = 0.9
+!KCALPA:
+!+ = number of constraints on coefficients alpha for P'
+!(only relevant when ICURRT=2) specified through matrix CALPA and vector XALPA.
+!For both equilibrium and fitting. Default=0
+ KCALPA = 0
+!KCGAMA:
+!+ = number of constraints on coefficients gamma for FF'
+!(only relevant when ICURRT=2), specified through matrix CGAMA and vector XGAMA.
+!For both equilibrium and fitting. Default=0
+ KCGAMA = 0
+!CALPA:
+!Constraint matrix for P' when ICURRT=2 and KCALPA>0.
+!Defines constraint equations of the form:
+!CALPA(1,i) alpha(1) + CALPA(2,i) alpha(2) +...+ CALPA(n,i) alpha(n) = XALPA(i)
+!for i=1 to KCALPA, where n = KPPCUR. Can scale coefficients up or down
+!relative to nominal weights of 1 to get stronger or weaker constraint
+!respectively. Default CALPA(1:3,1) = (0.1,0.1,0.1)
+ CALPA = 324*0.0
+!CGAMA:
+!Constraint matrix for FF' when ICURRT=2 and KCGAMA>0.
+!Defines constraint equations of the form:
+!CGAMA(1,i) gamma(1) + CGAMA(2,i) gamma(2) +...+ CGAMA(n,i) gamma(n) = XGAMA(i)
+!for i=1 to KCGAMA, where n = KFFCUR.
+ CGAMA = 324*0.0
+!XALPA: Constraint vector for P' when ICURRT=2 and KCALPA>0. See CALPA.
+ XALPA = 18*0.0
+!XGAMA: Constraint vector for FF' when ICURRT=2 and KCGAMA>0. See CGAMA.
+ XGAMA = 18*0.0
+!KZEROJ:
+!Constrain FF' and P' by applying constraints specified by variable RZEROJ.
+!>0 = number of constraints to apply.
+!0 = don't apply constraints (default)
+ KZEROJ = 0
+!RZEROJ:
+!Vector of radii at which to apply constraints. For each element in vector and
+!corresponding elements in SIZEROJ, VZEROJ, if:
+!RZEROJ>0 : Set Jt=0 at coordinate (RZEROJ,SIZEROJ).
+!RZEROJ=0 : Set flux surface average current equal to VZEROJ at surface specified
+!by normalized flux SIZEROJ.
+!RZEROJ<0 : Set Jt=0 at the separatrix.
+!Constraints are applied only if KZEROJ>0. Default RZEROJ(1)=0.0.
+!If KZEROJ=1, may specify SIZEROJ(1) with PSIWANT.
+!If KZEROJ=1 and SIZEROJ(1)<0, then SIZEROJ(1) is set equal to PSIWANT.
+ RZEROJ = 41*0.0
+!IAVEUS:
+!"IAverage usec". Changes units on averaging times (IAVED, IAVEM, IAVEV)
+!to microseconds:
+!>0: change units to microseconds
+!<=0: leave units in milliseconds (Default=0)
+ IAVEUS = 0
+!RELAX:
+!Equilibrium relaxation parameter (0<=RELAX<=1). Affects speed of convergence;
+!sometimes helps nonconverging solutions to converge:
+!0.5 = same as backaveraging (BACKAVERAGE = .true.)
+!1.0 = no relaxation (default).
+ RELAX = 0.5
+!FWTEC:
+!"Fit Weight E-coils". Length 24 vector, each entry of which is a fitting weight
+!for E-coil currents. Ignored unless IECURR=2?
+!0 = do not include measured data in fit (default= all 0.0's)
+!1 = include measured data in fit
+ FWTEC = 0.0
+!BITEC :
+!"Bit E-coils". E-coil current physical unit equivalent to 1 digitizer count.
+!(E-coil bit noises?) Array of nesum elements. Obtained from data and written into
+!K-file. Ignored unless IECURR=2?
+ BITEC = 1.0
+!KPRFIT:
+!Turn on kinetic fitting:
+!0 = no kinetic fit?? (default).
+!1 = fit input pressure profile (total including both thermal and beam in flux space.)
+!2 = kinetic fitting inputing raw temperature, density, and beam profiles in real space.
+!3 = include rotation.
+!Must set KPRFIT=3, ICURRT=5, if no pressure data NPRESS=0. (What does this mean?)
+ KPRFIT = 0
+!NPRESS:
+!"Number Pressure". Number of valid points in PRESSR:
+!+ = number of input pressure data points.
+!- = read in (NPRESS?) from EDAT file.
+!0 = for rotational pressure only.
+!KPPFNC:
+!Choice of basis function for P'.
+!0 = polynomial representation P'(psi)=alpha0+alpha1 psi+...+alphan psim.
+!1 = ??
+!2 = ??
+!3 = ??
+!4 = ??
+!5 = ??
+!6 = spline respresentation.
+ KPPFNC = 0
+ KPPKNT = 0
+ PPKNT = 36*0.0
+ PPTENS = 0.0
+ KFFFNC = 0
+ KFFKNT = 0
+ FFKNT = 36*0.0
+ FFTENS = 0.0
+ KWWFNC = 0
+ KWWKNT = 0
+ WWKNT = 36*0.0
+ WWTENS = 0.0
+ RBDRY = 0
+ ZBDRY = 0.0
+ NBDRY = 0
+ sigrbd = 0
+ sigzbd = 90
+ FWTBDRY = 0
+!errbry=1.0E-5
+ ifref = 3.0
+! FCSUM=1.
+!
+ PPBDRY = 36*0.0
+ KPPBDRY = 36*0
+ PP2BDRY = 36*0.0
+ KPP2BDRY = 36*0
+ FFBDRY = 36*0.0
+ KFFBDRY = 36*0
+ FF2BDRY = 36*0.0
+ KFF2BDRY = 36*0
+ WWBDRY = 36*0.0
+ KWWBDRY = 36*0
+ WW2BDRY = 36*0.0
+ KWW2BDRY = 36*0
+ KTEAR = 0
+ IOUT = 1
+ IXRAY = 0
+ /
+ &INS
+ TGAMMA = 0.1851 0.0927 0.0038 -0.0149 -0.0476
+ SGAMMA = 0.0359 0.0318 0.0337 0.033 0.0315
+ FWTGAM = 5*1
+ RRRGAM = 1.62565 1.65267 1.67865 1.75488 1.77558
+ ZZZGAM = 5*0
+ AA1GAM = -0.7717 -0.7587 -0.7458 -0.7055 -0.6938
+ AA2GAM = 0.5078 0.531 0.5514 0.6027 0.6148
+ AA3GAM = 5*0.0
+ AA4GAM = 5*0.0
+ AA5GAM = 5*0.0
+ AA6GAM = 5*0.0
+ MSEBKP = 0
+ /
