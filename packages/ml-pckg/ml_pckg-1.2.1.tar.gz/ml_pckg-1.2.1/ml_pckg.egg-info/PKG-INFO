@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ml-pckg
+Version: 1.2.1
+Summary: Machine Learning Models
+Home-page: UNKNOWN
+Author: Gleb Maksimov
+Author-email: glebmaksimov092@gmail.com
+License: MIT
+Download-URL: https://github.com/Glebmaksimov/ml_pckg/archive/refs/tags/1.2.1.tar.gz
+Keywords: ML,FROM SWCRATCH,ADVANCED
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+UNKNOWN
+
