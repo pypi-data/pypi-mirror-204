@@ -1,0 +1,6 @@
+[metadata]
+name = "protypo"
+description = "A Python Library for Language Models"
+authors = ["Young Joon Lee <entelecheia@hotmail.com>"]
+license = "MIT"
+homepage = "https://protypo.entelecheia.ai"
