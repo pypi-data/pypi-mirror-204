@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ipytextual
+Version: 0.0.0
+Summary: Jupyter Textual-based Widget
+Project-URL: Homepage, https://github.com/davidbrochart/ipytextual
+Author-email: David Brochart <david.brochart@gmail.com>
+License: MIT
+Keywords: jupyter,textual,widgets
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: textual
+Description-Content-Type: text/markdown
+
+# ipytextual
+
+Jupyter Textual-based Widget
