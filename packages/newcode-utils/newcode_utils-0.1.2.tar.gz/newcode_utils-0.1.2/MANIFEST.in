@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+include requirements.txt
+recursive-include newcode_utils/models *
+recursive-include newcode_utils/admins *
+recursive-include newcode_utils/helpers *
+recursive-include newcode_utils/migrations *

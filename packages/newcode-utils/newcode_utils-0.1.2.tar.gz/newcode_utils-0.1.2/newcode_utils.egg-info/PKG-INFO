@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: newcode-utils
+Version: 0.1.2
+Summary: Necessary elements for the development of apps.
+Home-page: https://github.com/New-Code-S-A-S/newcode_utils
+Author: Camilo Suarez
+Author-email: juancamilosuarezquinones@gmail.com
+Maintainer: NewCode_
+Maintainer-email: new.code.2523@gmail.com
+Keywords: utils,newcode-utils,NewCode,Audit
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### New Code Utils
+
+Basic components for the development of NewCode_
+
+### Requirements
+
+1. Install pip current
+
+Quick start
+-----------
+``` bash
+
+1. Add "newcode_utils" to your INSTALLED_APPS setting like this::
+INSTALLED_APPS = [
+        ...
+        'newcode_utils',
+    ]
+```
+
+### Components
+
+* Admin
+    * AuditAdmin
+    * AuditStackedInline
+    * AuditTabularInline
+* Models
+    * Audit
+* Helpers
+    * Utils
+        * File departments of columbia
+    * Utils permission rest
+
+### Deploy pypi versions
+
+* install requirements
+
+``` bash
+pip install -U twine wheel setuptools
+```
+
+* update repository
+
+``` bash
+python3.7 setup.py sdist bdist_wheel
+twine check dist/*
+twine upload --repository pypi dist/newcode-utils-0.1.1*
+```
+
+
