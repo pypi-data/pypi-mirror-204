@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: audioviz
+Version: 0.1.0
+Summary: An user-friendly music information retrieval tools interfacing with Google Colab
+Home-page: https://github.com/TrangDuLam/NTHU_Music_AI_Tools
+Author: ayTrang
+Author-email: andrew.chuang@gapp.nthu.edu.tw
+License: MIT
+Keywords: Music Information Retrieval,Academia Sinica,NTHU
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
