@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: whispercppy
+Version: 0.0.2
+Summary: Python bindings for whisper.cpp
+Home-page: https://github.com/pajowu/whispercppy
+Author: pajowu
+Author-email: git@ca.pajowu.de
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Whispercppy
+
+Python bindings for [whisper.cpp](https://github.com/ggerganov/whisper.cpp)
+
+Most of the binding code is taken with tiny modifications from [aarnphm/whispercpp](https://github.com/aarnphm/whispercpp).
