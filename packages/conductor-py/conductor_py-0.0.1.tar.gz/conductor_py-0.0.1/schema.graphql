@@ -1,0 +1,65 @@
+scalar DateTime
+
+scalar JSONObject
+
+type Integration {
+  id: ID!
+  name: String!
+  key: String!
+}
+
+type IntegrationConnection {
+  id: ID!
+  devUserId: ID!
+  integrationKey: String!
+  integration: Integration!
+  endUserSourceId: ID!
+  endUserEmail: String!
+  endUserCompanyName: String!
+  lastHeartbeatAt: DateTime
+}
+
+type Mutation {
+  createIntegrationConnection(
+    input: CreateIntegrationConnectionInput!
+  ): CreateIntegrationConnectionResult!
+  pingIntegrationConnection(
+    input: PingIntegrationConnectionInput!
+  ): PingIntegrationConnectionResult!
+  sendIntegrationRequest(
+    input: SendIntegrationRequestInput!
+  ): SendIntegrationRequestResult!
+}
+
+input CreateIntegrationConnectionInput {
+  integrationKey: String!
+  endUserSourceId: String!
+  endUserEmail: String!
+  endUserCompanyName: String!
+}
+
+type CreateIntegrationConnectionResult {
+  integrationConnection: IntegrationConnection!
+}
+
+input PingIntegrationConnectionInput {
+  integrationConnectionId: ID!
+}
+
+type PingIntegrationConnectionResult {
+  duration: Float!
+}
+
+input SendIntegrationRequestInput {
+  integrationConnectionId: ID!
+  requestObject: JSONObject!
+}
+
+type SendIntegrationRequestResult {
+  response: JSONObject!
+}
+
+type Query {
+  integrationConnection(id: ID!): IntegrationConnection!
+  integrationConnections: [IntegrationConnection!]!
+}
