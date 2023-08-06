@@ -1,0 +1,245 @@
+# image2vector
+
+## 简介
+
+将图片转成向量，可用于以图搜图和图片相似度比较
+
+> 向量纬度为 512
+
+⭐️ 🌟 ✨ ⚡️ ☄️ 💥
+
+## 依赖
+
+Python 解释器:
+
+- CPython : 3.8 及以上版本
+
+第三方包:
+
+- 使用 pytorch 推理需要安装：
+  - pytorch
+- 使用 onnxruntime 推理需要安装:
+  - onnx
+  - onnxruntime
+- 使用 tensorRT 推理需要安装:
+  - tensorrt
+  - torch_tensorrt
+
+> pip install pytorch
+>
+> pip install onnx
+>
+> pip install onnxruntime
+>
+> pip install tensorrt
+>
+> pip install torch_tensorrt
+
+# 文档
+
+## 示例
+
+通过下面的 demo 示例，你可以学会:
+
+- 初始化一个 resnet 网络
+- 为一张图片生成对应的向量
+- 使用欧式距离，比较两个向量的相似程度
+
+### 使用不同的 runtime 推理
+
+#### 使用 pytorch 直接进行推理
+
+```python
+from pathlib import Path
+from typing import List
+from iv import ResNet, l2
+from iv.schemas import Runtime
+
+# Initialize a residual neural network
+resnet: ResNet = ResNet(
+    runtime=Runtime.PYTORCH,
+    runtime_model='weight/gl18-tl-resnet50-gem-w-83fdc30.pth'
+)
+
+
+# Generate a vector of specified images
+# The generated vector is a List[float] data structure,
+# the length of the list is 512, which means the vector is of 512 dimensions
+vector_1: List[float] = resnet.gen_vector('example-1.jpg')
+
+vector_2: List[float] = resnet.gen_vector('example-2.jpg')
+
+# Compare the Euclidean distance of two vectors
+
+distance: float = l2(vector_1, vector_2)
+
+print('Euclidean Distance is ', distance)
+
+```
+
+> Where to get the `weight/gl18-tl-resnet50-gem-w-83fdc30.pth` file from, you can visit: http://cmp.felk.cvut.cz/cnnimageretrieval/data/networks/gl18/
+
+#### 使用 onnxruntime 直接进行推理
+
+```python
+from pathlib import Path
+from typing import List
+from iv import ResNet, l2
+from iv.schemas import Runtime
+
+# Initialize a residual neural network
+resnet: ResNet = ResNet(
+    runtime=Runtime.ONNXRUNTIME,
+    runtime_model='models/iv_resnet50_export_into_onnx_model.pb',
+    device='cpu'
+)
+
+
+# Generate a vector of specified images
+# The generated vector is a List[float] data structure,
+# the length of the list is 512, which means the vector is of 512 dimensions
+vector_1: List[float] = resnet.gen_vector('example-1.jpg')
+
+vector_2: List[float] = resnet.gen_vector('example-2.jpg')
+
+# Compare the Euclidean distance of two vectors
+
+distance: float = l2(vector_1, vector_2)
+
+print('Euclidean Distance is ', distance)
+
+```
+
+#### 使用 tensorRT 直接进行推理
+
+```python
+from pathlib import Path
+from typing import List
+from iv import ResNet, l2
+from iv.schemas import Runtime
+
+# Initialize a residual neural network
+resnet: ResNet = ResNet(
+    runtime=Runtime.PYTORCH_TENSORRT,
+    runtime_model='models/iv_resnet50_export_into_pytorch_tensorrt_model.ts',
+    device='cuda'
+)
+
+
+# Generate a vector of specified images
+# The generated vector is a List[float] data structure,
+# the length of the list is 512, which means the vector is of 512 dimensions
+vector_1: List[float] = resnet.gen_vector('example-1.jpg')
+
+vector_2: List[float] = resnet.gen_vector('example-2.jpg')
+
+# Compare the Euclidean distance of two vectors
+
+distance: float = l2(vector_1, vector_2)
+
+print('Euclidean Distance is ', distance)
+
+
+```
+
+### 使用不同的设备推理
+
+默认使用 cpu 进行推理，如果需要指定设备，可以在初始化网络的时候，指定 device
+
+使用 cpu:
+
+```python
+resnet: ResNet = ResNet(
+    runtime=Runtime.PYTORCH,
+    runtime_model='weight/gl18-tl-resnet50-gem-w-83fdc30.pth',
+    device='cpu'
+)
+```
+
+使用 cuda:
+
+```python
+resnet: ResNet = ResNet(
+    runtime=Runtime.PYTORCH,
+    runtime_model='weight/gl18-tl-resnet50-gem-w-83fdc30.pth',
+    device='cuda'
+)
+```
+
+使用 mps:
+
+```python
+resnet: ResNet = ResNet(
+    runtime=Runtime.PYTORCH,
+    runtime_model='weight/gl18-tl-resnet50-gem-w-83fdc30.pth',
+    device='mps'
+)
+```
+
+总共支持如下设备:
+
+```python
+class Device(Enum):
+    MPS = 'mps'
+    CPU = 'cpu'
+    CUDA = 'cuda'
+    CUDNN = 'cudnn'
+    MKL = 'mkl'
+    MKLDNN = 'mkldnn'
+    OPENMP = 'openmp'
+    QUANTIZED = 'quantized'
+```
+
+### 批量推理
+
+网络提供如下两个 API:
+
+- gen_vector, 输入一个图片，输出一个向量
+- gen_vectors, 输入 n 个图片，输出 n 个向量
+
+所以，如果需要批量推理，可以使用 gen_vectors
+
+示例如下:
+
+```python
+from pathlib import Path
+from typing import List
+from PIL import Image
+from iv import ResNet
+from iv.schemas import Runtime
+
+device = 'cuda'
+
+batch_size = 500
+
+
+##################################################################################
+# 准备图片
+image_file_path = Path('resources/images/std.jpg')
+image = Image.open(image_file_path).convert('RGB')
+images = [image]*batch_size
+assert isinstance(images[0], Image.Image), f'images[0] type: {type(images[0])}'
+
+##################################################################################
+# 初始化网络，并且批量生成向量
+resnet_tensorrt: ResNet = ResNet(
+    runtime_model='models/iv_resnet50_export_into_pytorch_tensorrt_model.ts',
+    device=device,
+    runtime=Runtime.PYTORCH_TENSORRT
+)
+
+
+vs: List[List[float]] = resnet_tensorrt.gen_vectors(images)
+
+```
+
+## 更多测试报告
+
+- [推理速度测试报告.md](./doc/推理速度测试报告.md)
+
+- [svddb 在图片 size 从 512 降低到 224 的可行性分析报告.md](./doc/svddb 在图片 size 从 512 降低到 224 的可行性分析报告.md)
+
+## 参考项目
+
+- [cnnimageretrieval-pytorch](https://github.com/filipradenovic/cnnimageretrieval-pytorch)
+- [ImageRetrieval-LSH](https://github.com/yinhaoxs/ImageRetrieval-LSH)
