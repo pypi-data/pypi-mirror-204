@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+intel_cloud_data_connector/intel_cloud_data_connector.egg-info/PKG-INFO
+intel_cloud_data_connector/intel_cloud_data_connector.egg-info/SOURCES.txt
+intel_cloud_data_connector/intel_cloud_data_connector.egg-info/dependency_links.txt
+intel_cloud_data_connector/intel_cloud_data_connector.egg-info/requires.txt
+intel_cloud_data_connector/intel_cloud_data_connector.egg-info/top_level.txt
+intel_cloud_data_connector/subpackage/__init__.py
+intel_cloud_data_connector/subpackage/test.py
