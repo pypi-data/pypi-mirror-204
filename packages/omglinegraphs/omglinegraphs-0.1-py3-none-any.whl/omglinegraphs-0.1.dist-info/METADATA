@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: omglinegraphs
+Version: 0.1
+Summary: A package for creating line graphs with units and labels
+Home-page: https://github.com/0mgRod/linegraph
+Author: OmgRod
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.19.5)
+Requires-Dist: matplotlib (>=3.4.2)
+Provides-Extra: dev
+Requires-Dist: pytest (>=6.2.4) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.9.2) ; extra == 'dev'
+Requires-Dist: mypy (>=0.910) ; extra == 'dev'
+Requires-Dist: coverage (>=5.5) ; extra == 'dev'
+
+# linegraphs
+
+The **omglinegraphs package** is a Python library for creating customizable line graphs. It provides an easy-to-use API for plotting data and adding labels, units, and increments to the axes. This package is ideal for data visualization and analysis in scientific and engineering applications.
+
+## Features
+
+- Customizable line graphs
+- Support for multiple data sets
+- Automatic determination of axis units
+- Adjustable axis increments
+- Save graphs to files in various formats
+- API for creating and modifying graphs
+
+## Installation
+
+You can install the **omglinegraphs package** using pip:
+
+```
+pip install omglinegraphs
+```
+
+## Usage
+
+To create a line graph, first import the `LineGraph` class from the `omglinegraphs` module:
+
+```py
+from linegraphs import LineGraph
+
+graph = LineGraph()
+```
+
+Then, create an instance of the `LineGraph` class and call the relevant methods to customize the graph:
+
+```py
+graph = LineGraph()
+
+# Add data points
+data = [(1, 2), (3, 4), (5, 6)]
+graph.plot(data)
+
+# Set title and axis labels
+graph.title('My Graph')
+graph.x_title('X-axis')
+graph.y_title('Y-axis')
+
+# Set axis units and increments
+graph.x_unit('s')
+graph.y_unit('m')
+graph.x_incrementsby(1)
+graph.y_incrementsby(0.5)
+
+# Create the graph
+graph.create()
+
+# Save the graph to a file
+graph.save('mygraph.png')
+
+```
+
+## Contributions
+
+Contributions to the omglinegraphs are welcome! If you find a bug, have a feature request, or want to contribute code, please open an issue or pull request on the GitHub repository.
+
+## License
+
+The Graphing Package is licensed under the MIT License.
