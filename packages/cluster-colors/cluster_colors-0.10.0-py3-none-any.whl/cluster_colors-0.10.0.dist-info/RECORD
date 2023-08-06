@@ -1,0 +1,16 @@
+cluster_colors/__init__.py,sha256=h2mjYHEZiEzl160jDmNLE4sagO2cfwCsYDEKm7pHhn4,423
+cluster_colors/clusters.py,sha256=CXb-Nn7G1tk2YX3pyNOWHnm9IuEbpJcv_ouV6yhVWK8,31864
+cluster_colors/config.py,sha256=riVoAuO_wKtjbEDdY22LmuG50ga8lefIxKR6iHl8sF4,290
+cluster_colors/cut_colors.py,sha256=oT_CoYRySNXuw-MFijZe6B0rXo8y6xGNlrxBv-fsLOA,3009
+cluster_colors/distance_matrix.py,sha256=epTpRPMOsy-7t_1nh_v1BtTVi5nN7_eXtz5Rcsu1Mnc,3004
+cluster_colors/image_colors.py,sha256=0RXlY8P26WK_PgPJcu3MP_FplhbM84MFyO1ee0Dqd3I,5259
+cluster_colors/kmedians.py,sha256=Kbh3mc6krDmQIEewdhFaDZ5Kmx0BJVuv_OaskWHr4VU,1876
+cluster_colors/paths.py,sha256=cb9a8sNFH5qv2Ee-6OTVu7PXMZHD6yakadi1sgigDOY,295
+cluster_colors/pool_colors.py,sha256=CJn-MmYJkgfsCb_I9PcY3LDVsfaB0585u13B1kWKs1E,5159
+cluster_colors/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cluster_colors/tracers.py,sha256=XrW7yO-Z2t46pUmy0iMW4rBQpDl0WFEEIN1IYkncFWA,1857
+cluster_colors/type_hints.py,sha256=kPwGNxckM1oFJmOkHxV-VVIpCm9PhTR2XuiE-dsomMc,908
+cluster_colors/vector_stacker.py,sha256=f5PXAPGnvYCXseBM5poDe94TUx-TlXOphtw9JFfXXd4,3245
+cluster_colors-0.10.0.dist-info/METADATA,sha256=t-EJROBxAKKKvD6ApcMxntGIuedY2vZyfaCpil328ug,4094
+cluster_colors-0.10.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+cluster_colors-0.10.0.dist-info/RECORD,,
