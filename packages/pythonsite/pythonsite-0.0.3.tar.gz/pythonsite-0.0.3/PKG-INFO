@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pythonsite
+Version: 0.0.3
+Summary: A simple python web framework to create webpages
+Author-email: karpi <karpiworld@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+from pythonsite import elements
+
+elements.list_elements()
