@@ -1,0 +1,4 @@
+[console_scripts]
+nua-build=nua.build.main:app
+nua_test_replace_domain=nua.build.scripts.test_replace_domain:main
+
