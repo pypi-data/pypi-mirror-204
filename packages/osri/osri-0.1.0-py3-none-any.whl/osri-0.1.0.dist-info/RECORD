@@ -1,0 +1,9 @@
+osri/__init__.py,sha256=iY2ZTqXKU5Fh0rI7xLPbmpTVDOvO6nQIOUI5J_IhGX0,26
+osri/cli.py,sha256=JdDq1sKgnFvg5YehyfQv5Nbpy18dIb9IJ6PsSYm6NUo,1181
+osri/config.py,sha256=1kuNtmu29S0cwPXTSDInQpEjy5xU4Ad-CQDUlmN9-NY,1311
+osri/errors.py,sha256=OFrWWgaezY1Q2v8g5nLLkAyv7MVQTTizenVE9RXN93k,653
+osri-0.1.0.dist-info/entry_points.txt,sha256=-HIipb1UQKSaGFQEDxiDvT6MfT1yJ6uGKCQhns3B6kE,37
+osri-0.1.0.dist-info/LICENSE,sha256=e-FVle-QN7MXbcEgJ1CLOI8RcH2GSzxl2LtaQLRqDY4,1052
+osri-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+osri-0.1.0.dist-info/METADATA,sha256=yhWUtSvVsTn1UIbyvOvh8ZX1-9MUOw986W8G4-F1XWs,366
+osri-0.1.0.dist-info/RECORD,,

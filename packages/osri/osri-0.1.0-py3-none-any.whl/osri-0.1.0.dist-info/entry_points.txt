@@ -1,0 +1,3 @@
+[console_scripts]
+osri=osri.cli:run
+
