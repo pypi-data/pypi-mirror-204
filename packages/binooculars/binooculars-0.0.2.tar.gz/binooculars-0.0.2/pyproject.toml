@@ -1,0 +1,36 @@
+[build-system]
+requires = ["maturin>=0.14,<0.15", "setuptools", "wheel", "setuptools-rust"]
+build-backend = "maturin"
+
+[project]
+name = "binooculars"
+version = "0.0.2"
+authors = [
+  { name="Benedek Harsanyi"},
+]
+description = "A tiny, yet blazingly fast machine learning library written in Rust with Python interface."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+[tool.maturin]
+python-source = "python"
+features = ["pyo3/extension-module"]
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.ruff]
+line-length = 120
+per-file-ignores = {"__init__.py" = ["F403", "F405"]}
+
+[tool.pydocstyle]
+add-ignore = "D107, D104, D103"
+convention = "google"
