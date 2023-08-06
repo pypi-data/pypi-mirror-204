@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+AStared/AStared.py
+AStared/__init__.py
+AStared.egg-info/PKG-INFO
+AStared.egg-info/SOURCES.txt
+AStared.egg-info/dependency_links.txt
+AStared.egg-info/top_level.txt
