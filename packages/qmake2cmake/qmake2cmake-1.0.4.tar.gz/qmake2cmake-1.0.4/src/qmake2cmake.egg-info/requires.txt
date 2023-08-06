@@ -1,0 +1,13 @@
+pyparsing
+portalocker
+sympy
+packaging
+
+[dev]
+mypy
+flake8
+black
+
+[test]
+pytest
+pytest-cov
