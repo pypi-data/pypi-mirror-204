@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lptypes
+Version: 0.0.1
+Summary: Package for adding type information to python
+Home-page: https://github.com/Shaikh-Ubaid/lpython_packages
+Author: Ondrej Certik
+Author-email: ondrej@certik.us
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# lptypes
+
+This is a python package to add typing information to python code.
