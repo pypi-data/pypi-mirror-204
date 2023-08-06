@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/configurable_argparse.py
+src/configurable_argparse_DavidRodriguezSoaresCUI.egg-info/PKG-INFO
+src/configurable_argparse_DavidRodriguezSoaresCUI.egg-info/SOURCES.txt
+src/configurable_argparse_DavidRodriguezSoaresCUI.egg-info/dependency_links.txt
+src/configurable_argparse_DavidRodriguezSoaresCUI.egg-info/requires.txt
+src/configurable_argparse_DavidRodriguezSoaresCUI.egg-info/top_level.txt

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "configurable_argparse_DavidRodriguezSoaresCUI"
+version = "0.0.1"
+authors = [
+  { name="DavidRodriguezSoaresCUI", email="fireblaze904+argparse@gmail.com" },
+]
+description = "Argparse-based way of CLI argument management boosted by YAML reusable configurations"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "DRSlib-DavidRodriguezSoaresCUI>=0.7.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/DavidRodriguezSoaresCUI/configurable_argparse"
+"Bug Tracker" = "https://github.com/DavidRodriguezSoaresCUI/configurable_argparse/issues"
