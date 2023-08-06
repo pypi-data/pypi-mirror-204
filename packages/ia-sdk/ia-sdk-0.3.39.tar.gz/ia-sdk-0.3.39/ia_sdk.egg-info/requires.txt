@@ -1,0 +1,14 @@
+requests
+pymongo
+numpy
+sty
+docker
+platformdirs
+
+[PVT]
+pandas
+plotly
+scikit-learn
+matplotlib
+ipywidgets
+ipython
