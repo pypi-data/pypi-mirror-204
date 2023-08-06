@@ -1,0 +1,15 @@
+[tool.bumpver]
+current_version = "0.0.35"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "Bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"setup.py" = [
+    'version="{version}"',
+]
+"package.json" = [
+    '"version": "{version}"',
+]

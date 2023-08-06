@@ -1,0 +1,9 @@
+recursive-include bigquery/src *.h
+recursive-include bigquery/src *.c
+recursive-include bigquery/src *.cc
+recursive-include bigquery/src *.json
+
+recursive-include postgres/src *.h
+recursive-include postgres/src *.c
+recursive-include postgres/src *.cc
+recursive-include postgres/src *.json

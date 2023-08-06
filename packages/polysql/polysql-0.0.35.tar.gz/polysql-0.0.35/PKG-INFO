@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: polysql
+Version: 0.0.35
+Summary: Grammar and parser used to parse SQL
+Description-Content-Type: text/markdown
+
+# PolySQL
+
+Grammar and parser used to parse SQL
