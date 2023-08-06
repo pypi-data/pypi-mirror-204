@@ -1,0 +1,2 @@
+[console_scripts]
+scpkit = scpkit.main:main
