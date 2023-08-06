@@ -1,0 +1,20 @@
+matplotlib
+numpy
+pandas
+openpyxl
+xlsxwriter
+psutil
+dill
+zstandard
+multiprocess
+jsonpickle
+pyyaml
+packaging
+gitpython
+jellyfish
+tqdm
+line_profiler
+memory_profiler
+
+[:platform_system == "Windows"]
+colorama
