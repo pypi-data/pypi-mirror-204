@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+perspdf/__init__.py
+perspdf/pdf2image.py
+perspdf/pdf2txt.py
+perspdf.egg-info/PKG-INFO
+perspdf.egg-info/SOURCES.txt
+perspdf.egg-info/dependency_links.txt
+perspdf.egg-info/top_level.txt
