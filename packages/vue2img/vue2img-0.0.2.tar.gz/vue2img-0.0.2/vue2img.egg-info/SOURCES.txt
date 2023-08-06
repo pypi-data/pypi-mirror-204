@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+vue2img/__init__.py
+vue2img/app.py
+vue2img/dom.py
+vue2img/manager.py
+vue2img/operation.py
+vue2img/stopwords.txt
+vue2img/template.py
+vue2img.egg-info/PKG-INFO
+vue2img.egg-info/SOURCES.txt
+vue2img.egg-info/dependency_links.txt
+vue2img.egg-info/requires.txt
+vue2img.egg-info/top_level.txt

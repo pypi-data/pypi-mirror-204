@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: vue2img
+Version: 0.0.2
+Summary: 通过 .vue 模板生成图片
+Home-page: https://github.com/Drelf2018/vue2img
+Author: Drelf2018
+Author-email: drelf2018@outlook.com
+License: MIT
+Keywords: python,vue
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# vue2img
+ 将 vue 文件编译为图片
+
+```python
+createApp(1000).mount(config).export().canvas.show()
+```
+
