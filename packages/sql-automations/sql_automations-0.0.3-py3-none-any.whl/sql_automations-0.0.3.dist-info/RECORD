@@ -1,0 +1,13 @@
+src/sql_automations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/sql_automations/output_data.py,sha256=7ZI88pBwoOqX5PifbEhBKHXVtY2mceRXN_JPBCEKKt8,1223
+src/sql_automations/sql_cli_tool.py,sha256=_oiyxLRzhSe7qMlMaFyUNr8-FBNZlU0gNV0s5__hHJ4,1000
+src/sql_automations/big_query/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/sql_automations/big_query/execute_sql.py,sha256=WANcm-jqlQPLAE9GM0gXvjoWLHqvzaldqvLdA2EBNbI,480
+src/sql_automations/data_cleaning/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/sql_automations/data_cleaning/read_data.py,sha256=Yg1nokNRebaGrw1Ec5-4QAK2TTmDIP87WroX4vAZOgw,131
+sql_automations-0.0.3.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sql_automations-0.0.3.dist-info/METADATA,sha256=Jgah7YnkxfgsyqUG7qWHdg2fZw8ze_GWJT0ESxhBQSs,82
+sql_automations-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sql_automations-0.0.3.dist-info/entry_points.txt,sha256=6KhOdL_DPt8I0zgi8CUiBrH8ZeYGM-6gEMLZL32_Zqg,252
+sql_automations-0.0.3.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+sql_automations-0.0.3.dist-info/RECORD,,

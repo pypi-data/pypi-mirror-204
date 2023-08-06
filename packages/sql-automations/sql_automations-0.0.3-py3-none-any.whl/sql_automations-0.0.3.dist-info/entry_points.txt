@@ -1,0 +1,5 @@
+[console_scripts]
+execute-data = src.sql_automations.output_data:execute_sql
+output-data = src.sql_automations.output_data:output_df_head
+read-data = src.sql_automations.output_data:read_data
+return-dataframe = src.sql_automations.sql_cli_tool:run_sql
