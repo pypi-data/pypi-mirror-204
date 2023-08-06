@@ -1,0 +1,3 @@
+[console_scripts]
+gpttui=gpttui.tui.main:cli
+
