@@ -1,0 +1,14 @@
+README.md
+setup.py
+spatiotemporal/__init__.py
+spatiotemporal/_version.py
+spatiotemporal/extras.py
+spatiotemporal/models.py
+spatiotemporal/stats.py
+spatiotemporal/surrogates.py
+spatiotemporal/tools.py
+spatiotemporal.egg-info/PKG-INFO
+spatiotemporal.egg-info/SOURCES.txt
+spatiotemporal.egg-info/dependency_links.txt
+spatiotemporal.egg-info/requires.txt
+spatiotemporal.egg-info/top_level.txt
