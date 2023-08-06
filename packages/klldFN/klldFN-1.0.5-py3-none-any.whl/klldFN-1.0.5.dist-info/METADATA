@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: klldFN
+Version: 1.0.5
+Summary: klldFN
+Home-page: https://klld.42web.io
+Author: klld
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: crayons
+Requires-Dist: PirxcyPinger (==5.0.0)
+Requires-Dist: fortnitepy (==3.6.7)
+Requires-Dist: BenBotAsync (==3.0.1)
+Requires-Dist: FortniteAPIAsync (==0.1.6)
+Requires-Dist: sanic (==20.6.3)
+Requires-Dist: aiohttp
+Requires-Dist: uvloop
+Requires-Dist: requests
+
+# klldFN
+Use This To Upload Files To klldFN
+
+[![Downloads](https://pepy.tech/badge/klldFN)](https://pepy.tech/project/klldFN)
+[![Downloads](https://pepy.tech/badge/klldFN/week)](https://pepy.tech/project/klldFN)
+[![Downloads](https://pepy.tech/badge/klldFN/month)](https://pepy.tech/project/klldFN)
+[![Requires: Python 3.x](https://img.shields.io/pypi/pyversions/klldFN.svg)](https://pypi.org/project/klldFN/)
+[![Version: 1.0.2](https://img.shields.io/pypi/v/klldFN.svg)](https://pypi.org/project/klldFN/)
+
+### Setup:
+``pip install klldFN``
+
+``pip3 install klldFN``
+
+[main](https://github.com/klldme/klldFN/tree/main "github.com/klldme/klldv5/tree/main")
+
+
+
