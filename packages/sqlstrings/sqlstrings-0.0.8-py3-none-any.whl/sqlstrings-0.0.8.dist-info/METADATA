@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sqlstrings
+Version: 0.0.8
+Summary: Generates SQL query strings in multiple dialects.
+Home-page: https://github.com/alikellaway/sqlstrings
+Author: Ali Kellaway
+Author-email: ali.kellaway139@gmail.com
+License: MIT
+Keywords: sql strings generate query
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+
