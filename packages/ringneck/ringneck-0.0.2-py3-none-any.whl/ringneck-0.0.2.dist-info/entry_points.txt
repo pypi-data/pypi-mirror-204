@@ -1,0 +1,2 @@
+[console_scripts]
+ringneck = ringneck.main:app
