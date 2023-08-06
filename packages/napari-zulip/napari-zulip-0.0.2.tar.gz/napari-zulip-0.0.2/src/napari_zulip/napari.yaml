@@ -1,0 +1,10 @@
+name: napari-zulip
+display_name: napari-zulip
+contributions:
+  commands:
+    - id: napari-zulip.screenshot_to_Zulip
+      python_name: napari_zulip._widget:screenshot_to_zulip
+      title: Send the current screenshot to Zulip
+  widgets:
+    - command: napari-zulip.screenshot_to_Zulip
+      display_name: Send the current screenshot to Zulip
