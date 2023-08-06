@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: crowdcores
+Version: 1.0.5
+License-File: LICENSE.txt
+Requires-Dist: requests
+
