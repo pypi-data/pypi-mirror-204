@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: nrp
+Version: 0.0.1
+Summary: A package for root computation of functions
+Home-page: https://github.com/Shaikh-Ubaid/lpython_packages
+Author: Smit Lunagariya
+Author-email: smitlunagariya.mat18@itbhu.ac.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lptypes
+
+# nrp
+
+This is a small package for computing roots of a given function using newton-raphson method.
+
+The user needs to supply an initial root guess, the function as well as the first derivative of the function as callbacks.
+
+## Usage
+
+(We are actively adding supporting for passing functions as callback.)
+**Example:**
+```python
+from nrp import newton_raphson
+from lptypes import f64, i32
+
+
+def check():
+    x0: f64 = 20.0
+    c: f64 = 3.0
+    maxiter: i32 = 20
+    x: f64
+    x = newton_raphson(x0, c, maxiter)
+    assert abs(x - 3.0) < 1e-5
+
+check()
+```
