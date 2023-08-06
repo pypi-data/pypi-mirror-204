@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+omglinegraphs.egg-info/PKG-INFO
+omglinegraphs.egg-info/SOURCES.txt
+omglinegraphs.egg-info/dependency_links.txt
+omglinegraphs.egg-info/entry_points.txt
+omglinegraphs.egg-info/requires.txt
+omglinegraphs.egg-info/top_level.txt
