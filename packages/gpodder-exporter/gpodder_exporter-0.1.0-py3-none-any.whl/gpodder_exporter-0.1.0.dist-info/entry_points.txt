@@ -1,0 +1,2 @@
+[console_scripts]
+gpodder-exporter = gpodder_exporter.main:main
