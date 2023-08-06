@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: DGLD
+Version: 0.2.0
+Summary: A Deep Graph Anomaly Detection Library based on DGL
+Author: miziha-zp;zhoushengisnoob;GavinYGM;fmc123653;cfuser;Xinstein-rx
+Author-email: arlenjing@gmail.com
+License: apache 3.0
+
