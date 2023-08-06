@@ -1,0 +1,13 @@
+fido2
+cryptography
+keyring
+pyuac
+click
+
+[:os_name == "nt"]
+pywin32
+
+[dev]
+build
+mypy
+types-pywin32

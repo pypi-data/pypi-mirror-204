@@ -1,0 +1,40 @@
+[project]
+name = "tokenring"
+version = "2023.4.22"
+dependencies = [
+  "fido2",
+  "cryptography",
+  "keyring",
+  "pyuac",
+  "click",
+  "pywin32; os_name=='nt'",
+]
+
+[metadata]
+author = "Glyph"
+author_email = "code@glyph.im"
+description = "A backend for the `keyring` module which uses a hardware token to require user presence for any secret access, by encrypting your vault and passwords as Fernet tokens."
+long_description = "file:README.rst"
+url = "https://github.com/glyph/tokenring"
+classifiers = [
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Security",
+  "Topic :: Security :: Cryptography",
+]
+
+[project.optional-dependencies]
+dev = [
+  "build",
+  "mypy",
+  "types-pywin32",
+]
+
+[project.scripts]
+tokenring = "tokenring.cli:cli"
+
+[project.entry-points."keyring.backends"]
+tokenring_local = "tokenring.local"
+tokenring_agent = "tokenring.agent.client"

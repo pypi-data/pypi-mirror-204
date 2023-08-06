@@ -1,0 +1,6 @@
+[console_scripts]
+tokenring = tokenring.cli:cli
+
+[keyring.backends]
+tokenring_agent = tokenring.agent.client
+tokenring_local = tokenring.local
