@@ -1,0 +1,14 @@
+ml-starter
+numpy
+torch>=2.0.0
+transformers
+
+[dev]
+black
+cmake
+darglint
+mypy
+pytest
+ruff
+clang-format
+cmake-format
