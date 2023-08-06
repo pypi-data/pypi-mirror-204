@@ -1,0 +1,2 @@
+[console_scripts]
+imp3.run = imp3.run:run
