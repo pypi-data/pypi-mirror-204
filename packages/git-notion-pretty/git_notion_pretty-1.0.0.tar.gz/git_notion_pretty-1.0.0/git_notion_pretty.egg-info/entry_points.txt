@@ -1,0 +1,2 @@
+[console_scripts]
+git-notion-pretty = git_notion_pretty.cli:main
