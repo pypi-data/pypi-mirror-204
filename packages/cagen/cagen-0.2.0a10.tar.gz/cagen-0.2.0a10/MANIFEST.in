@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: 2023 Xavier Bordoy <somenxavier@posteo.net>
+#
+# SPDX-License-Identifier: GPL-2.0-only
+
+include src/cagen/templates/*
+include LICENSE
+include README.md
