@@ -1,0 +1,3 @@
+[console_scripts]
+iris-cli=iris_cli.main:app
+
