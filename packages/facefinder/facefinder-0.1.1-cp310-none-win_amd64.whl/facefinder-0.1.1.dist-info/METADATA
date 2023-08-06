@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: facefinder
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: deepface
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: tqdm
+Requires-Dist: regex
+Requires-Python: >=3.7
