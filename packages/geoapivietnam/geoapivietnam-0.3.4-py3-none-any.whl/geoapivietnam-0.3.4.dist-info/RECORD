@@ -1,0 +1,13 @@
+.DS_Store,sha256=iSiS1fU-skMxZ2ycCTZxVmsYQVXpXtd5Sslw2p6cv7g,6148
+geoapivietnam/__init__.py,sha256=zDr350exO14Ii8Pj3TXwPuRxIDrEjrg43CpjYABDqh4,19
+geoapivietnam/main.py,sha256=WzuKECx7DW8EVV_5W0wxwqHjVsUbvmp6HC7czNKLX6I,25599
+geoapivietnam/main_backup.py,sha256=okrv9X5Fab7ec7uSdOUGKw80zPSc98yd6ywCpGFHR88,14853
+geoapivietnam/main_old.py,sha256=5KWs1qf3rWGsFypx75o-Xj1k7qNzk7UdoKwPttw4ojQ,11848
+geoapivietnam/data/gso_province_district_ward.xlsx,sha256=FKEB-jX1HPmlPMOgA_qYYgG-xb4c8Z5tgyegWysFC90,478164
+geoapivietnam/data/valid_provinces.xlsx,sha256=D9Q5OdqhjF2NWJGzNof8PBNcr-KunXQkIYmVw8HlVpY,12696
+geoapivietnam/data/~$gso_province_district_ward.xlsx,sha256=pWUJJ3A1-GXVT2l1YGNPIdo-NtoMmDzG9y67eew7c-s,165
+geoapivietnam-0.3.4.dist-info/LICENSE,sha256=do2v2Zr9PKexWB6RWWOZVRJi73GgCDowDBwt6EZLnmg,1076
+geoapivietnam-0.3.4.dist-info/METADATA,sha256=JANuC-llhBOvDPzbkq6w1Jy96nwXAfwT8hAhjHtUhR4,2694
+geoapivietnam-0.3.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+geoapivietnam-0.3.4.dist-info/top_level.txt,sha256=-msq5UuEe2dtiLmLkdxylx1cEQo4CoIp4QfXMJW68LQ,14
+geoapivietnam-0.3.4.dist-info/RECORD,,
