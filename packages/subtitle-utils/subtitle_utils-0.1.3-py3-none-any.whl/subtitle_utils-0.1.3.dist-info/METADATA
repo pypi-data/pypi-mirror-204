@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: subtitle-utils
+Version: 0.1.3
+Summary: Subtilte Conversion utils - ass2srt vtt2bcc srt2bcc ass2bcc and more
+Home-page: https://github.com/sudoskys/subtitle_utils
+License: LGPL-3.0-or-later
+Author: sudoskys
+Author-email: coldlando@hotmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: chardet (>=5.1.0,<6.0.0)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: pyasstosrt (>=1.3.1,<2.0.0)
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Requires-Dist: pysrt (>=1.1.2,<2.0.0)
+Requires-Dist: pyvtt (>=0.0.4,<0.0.5)
+Project-URL: Repository, https://github.com/sudoskys/subtitle_utils
+Description-Content-Type: text/markdown
+
+# subtitle_utils
+
+![cover](https://raw.githubusercontent.com/sudoskys/subtitle_utils/main/cover.jpg)
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.7|8|9|10-green" alt="Python" >
+</p>
+
+Subtilte Conversion utils - ass2srt vtt2bcc srt2bcc ass2bcc and more
+
+`pip install -U subtitle_utils`
+
+## 使用
+
+```python
+import subtitle_utils
+
+method = subtitle_utils.SeeAvailableMethods()
+print(method)
+
+
+def get_convert(pre: str = "ass", aft: str = "srt", input_str: str = None) -> str:
+    _result_group = subtitle_utils.FormatConverter(pre=pre, aft=aft, strs=input_str)
+    _result_group: subtitle_utils.Returner
+    if not _result_group.status:
+        print(_result_group.dict())
+        return ""
+    result: str
+    result = _result_group.data
+    print(f"{_result_group.pre}->{print(_result_group.aft)}")
+    print(_result_group.msg)
+    return result
+```
