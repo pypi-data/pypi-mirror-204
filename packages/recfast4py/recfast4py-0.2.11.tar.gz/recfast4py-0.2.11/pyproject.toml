@@ -1,0 +1,99 @@
+[build-system]
+requires = ["setuptools >= 40.6.0", "wheel", "numpy", "Cython"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "recfast4py"
+version = "0.2.11"
+license = {text = "GPLv3"}
+description = "Python wrapper for recfast++"
+authors = [
+    {name = "Uwe Schmitt", email = "uwe.schmitt@id.ethz.ch"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: C",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Scientific/Engineering :: Astronomy",
+]
+
+dependencies = [
+    "numpy",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "twine",
+    "pytest<7.2.0",
+    "pytest-cov",
+    "pytest-regtest",
+    "tox",
+    "flake8",
+    "black",   # binary wheels are broken on some machines
+    "isort",
+    "sphinx",
+    "sphinx-pynpoint-theme",
+    "myst-parser",
+    "memray"
+]
+
+docs = [
+    "sphinx",
+    "sphinx-pynpoint-theme",
+    "myst-parser",
+]
+
+
+[tool.black]
+include = '\.pyi?$'
+exclude = '''
+(
+    \.eggs
+  | \.git
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | venv
+  | _build/
+  | build/
+  | dist
+)
+'''
+
+[tool.pytest.ini_options]
+addopts = "-v -ra"
+testpaths = ["tests"]
+filterwarnings = ["ignore:invalid"]
+
+[tool.tox]
+legacy_tox_ini = '''
+[tox]
+isolated_build = true
+envlist = py39,py310,py311
+setenv =
+    PIP_EXTRA_INDEX_URL=https://cosmo-pypi.phys.ethz.ch/simple
+    HTTP_PROXY=http://proxy.ethz.ch:3128
+    HTTPS_PROXY=http://proxy.ethz.ch:3128
+
+[testenv]
+skip_install = false
+passenv = *
+extras = dev
+allowlist_externals = pytest
+commands =
+    pytest -v -ra --color=yes
+'''

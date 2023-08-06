@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: recfast4py
+Version: 0.2.11
+Summary: Python wrapper for recfast++
+Author-email: Uwe Schmitt <uwe.schmitt@id.ethz.ch>
+License: GPLv3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+License-File: AUTHORS.rst
