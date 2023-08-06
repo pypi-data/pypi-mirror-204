@@ -1,0 +1,5 @@
+setup.py
+aimemory.egg-info/PKG-INFO
+aimemory.egg-info/SOURCES.txt
+aimemory.egg-info/dependency_links.txt
+aimemory.egg-info/top_level.txt
