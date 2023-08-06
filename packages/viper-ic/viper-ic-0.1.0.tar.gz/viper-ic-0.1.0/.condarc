@@ -1,0 +1,6 @@
+channels:
+  - conda-forge
+  - defaults
+# Package Cache
+pkgs_dirs:
+  - /tmp/viper/pkgs

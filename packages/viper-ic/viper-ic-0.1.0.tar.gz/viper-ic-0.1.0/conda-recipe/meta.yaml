@@ -1,0 +1,54 @@
+{% set name = "viper" %}
+{% set version = "0.1.0" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  - path: ../bin
+    folder: bin
+  - path: ../viper
+    folder: viper
+  - path: ../README.md
+  - path: ../conda-recipe
+  - path: ../pyproject.toml
+  - path: ../docs
+    folder: docs
+requirements:
+  host:
+    - python=3.8
+    - flit=3.7
+    - pip=22.3
+  run:
+    - python>=3.8
+    - click>8.1,<9
+    - rich>=12.5,<13
+    - pydantic>=1.8,<2
+    - toml>=0.10,<1
+
+build:
+  number: 0
+  entry_points:
+    - viper=viper.cli:cli
+
+test:
+  imports:
+    - viper
+  commands:
+    - viper --version
+    - viper --help
+
+about:
+  home: http://www.cascode-labs.org/viper/
+  license: MIT
+  summary: A hybrid integrated circuit design environment
+  description: |
+    Viper is a hybrid circuit design environment, supporting both open-source
+    and proprietary tools.  It includes a project manager interface
+    and a CLI for project configuration and management.  It also natively
+    supports generator based design flows.
+
+  dev_url: https://github.com/cascode-labs/viper
+  doc_url: http://www.cascode-labs.org/viper/
+  doc_source_url: https://github.com/cascode-labs/viper/docs
