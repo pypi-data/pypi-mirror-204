@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: noizu_ops
+Version: 0.1.1
+Summary: Command line LLM interface. Generate how to/answer system queries. Command passing in your system info to better target response, GPT self reflection used to improve final results. (but it's slow as heck.)
+Author: Keith Brings
+Author-email: keith.brings@noizu.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE

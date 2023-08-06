@@ -1,0 +1,7 @@
+openai
+rich
+MarkupSafe
+pyyaml
+python-slugify
+psutil
+argcomplete
