@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sqlstrings
+Version: 0.1.4
+Summary: Generates SQL query strings in multiple dialects.
+Home-page: https://github.com/alikellaway/sqlstrings
+Author: Ali Kellaway
+Author-email: ali.kellaway139@gmail.com
+License: MIT
+Keywords: sql strings generate query
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# sqlstrings
+Package generates SQL query strings in multiple dialects. It is also able to take in csv files and convert them into statements for easy upload of csv files into databases.
+
+# Installation
+Run the following command to install:
+```python
+pip install sqlstrings
+```
+
+# Contribute
+Repo: https://github.com/alikellaway/sqlstrings
