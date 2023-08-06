@@ -1,0 +1,7 @@
+coverage
+flashtext2
+pytest
+setuptools
+webvtt-py
+pycaption
+xmldiff

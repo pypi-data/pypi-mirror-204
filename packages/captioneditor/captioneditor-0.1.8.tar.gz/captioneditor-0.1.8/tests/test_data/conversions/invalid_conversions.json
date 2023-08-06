@@ -1,0 +1,32 @@
+{
+    "offset": -10000,
+    "conversions": [
+        {
+            "key": "Marcela",
+            "replacement": "Marcella",
+            "previous": "everyone",
+            "caseSensitive": false
+        },
+        {
+            "key": "alright",
+            "replacement": "all right",
+            "previous": null,
+            "caseSensitive": true
+        },
+        {
+            "key": "5,",
+            "replacement": "5----------",
+            "directConversion": true
+        },
+        {
+            "key": "hello world",
+            "replacement": "hello world!"
+        },
+        {
+            "replacement": "no key"
+        },
+        {
+            "key": "no replacement"
+        }
+    ]
+}

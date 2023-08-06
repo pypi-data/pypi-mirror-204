@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=42", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["version"]
+name = "captioneditor"
+authors = [
+    {name = "Henry Speaker", email = "HenrySpeaker24@gmail.com"},
+]
+readme = "README.md"
+requires-python = ">=3.10"
+description = "A tool to replace words and phrases in a caption file with new words or phrases, offset each caption by a specified amount, and cut off captions after a specified time."
+dependencies = [
+    "coverage",
+    "flashtext2",
+    "pytest",
+    "setuptools",
+    "webvtt-py",
+    "pycaption",
+    "xmldiff"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Source = "https://github.com/HenrySpeaker/CaptionEditor"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=prepend",
+]
+filterwarnings = [
+    "ignore:It looks like you're parsing an XML document using an HTML parser.",
+    "ignore:pkg_resources is deprecated as an API"
+]
+
+[tool.setuptools_scm]
+
+[project.scripts]
+edit-captions = "captioneditor.editor:main"
