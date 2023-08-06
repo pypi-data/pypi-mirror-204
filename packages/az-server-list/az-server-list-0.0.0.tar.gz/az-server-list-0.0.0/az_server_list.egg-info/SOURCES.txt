@@ -1,0 +1,6 @@
+README.md
+setup.py
+az_server_list.egg-info/PKG-INFO
+az_server_list.egg-info/SOURCES.txt
+az_server_list.egg-info/dependency_links.txt
+az_server_list.egg-info/top_level.txt
