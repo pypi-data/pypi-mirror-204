@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bitable/__init__.py
+bitable/__version__.py
+bitable/auth.py
+bitable/bitable.py
+bitable/contact.py
+bitable/document.py
+bitable/params.py
+bitable/spreadsheets.py
+python_sdk_bitable.egg-info/PKG-INFO
+python_sdk_bitable.egg-info/SOURCES.txt
+python_sdk_bitable.egg-info/dependency_links.txt
+python_sdk_bitable.egg-info/requires.txt
+python_sdk_bitable.egg-info/top_level.txt
