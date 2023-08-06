@@ -1,0 +1,4 @@
+config:
+  name: "{{env_var("NAME", "t")}}"
+  last_name: "{{env_var("LAST_NAME", "p")}}"
+  age: "{{env_var("AGE")}}"

@@ -1,0 +1,38 @@
+site_name: Use case registry
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - "What is this?":
+    - "index.md"
+  - General Thoughts:
+    - Clean Architecture:
+      - "general-thoughts/clean-architecture/index.md"
+    - One Use Case, One Workflow:
+      - "general-thoughts/one-use-case-one-workflow/index.md"
+    - Error Handling:
+      - "general-thoughts/error-handling/index.md"
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+
+repo_url: https://github.com/Tomperez98/use-case-registry
