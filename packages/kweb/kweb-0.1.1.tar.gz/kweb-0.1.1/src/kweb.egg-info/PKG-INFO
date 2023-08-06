@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: kweb
+Version: 0.1.1
+Summary: KLayout API implementation of gdsfactory
+Author-email: gdsfactory community <contact@gdsfactory.com>
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: tests
+Provides-Extra: docs
+Provides-Extra: ipy
+License-File: LICENSE
+
+# kweb 0.1.1
+
+KLayout Web Viewer ![demo](https://i.imgur.com/HPvePvX.png)
+
+Based on https://github.com/klayoutmatthias/canvas2canvas
+
+## Run
+
+Go to src/kweb and run
+`uvicorn main:app --reload`
+
+Go to http://127.0.0.1:8000/gds/wg to open the waveguide example
