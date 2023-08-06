@@ -1,0 +1,16 @@
+setup.py
+synthdid/__init__.py
+synthdid/get_data.py
+synthdid/placebo_simulations.py
+synthdid/plots.py
+synthdid/sdid.py
+synthdid/solver.py
+synthdid/summary.py
+synthdid/synthdid.py
+synthdid/utils.py
+synthdid/vcov.py
+synthdid.egg-info/PKG-INFO
+synthdid.egg-info/SOURCES.txt
+synthdid.egg-info/dependency_links.txt
+synthdid.egg-info/requires.txt
+synthdid.egg-info/top_level.txt
