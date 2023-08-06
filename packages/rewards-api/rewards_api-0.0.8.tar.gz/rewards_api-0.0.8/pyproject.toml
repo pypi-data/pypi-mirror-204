@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+# [tool.poetry]
+# name = "rewards_api"
+# version = "0.0.1"
+# description = "rewards api cli package for starting the local rewards server"
+# authors = ["rewards.ai"]
+# license = "MIT"
+# readme = "README.md"
+
+# [tool.poetry.dependencies]
+# python = "^3.8"
+# torch = "^2.0.0"
+# pandas = "^1.5.3"
+# opencv-python = "^4.7.0.72"
+# pygame = "^2.3.0"
+# Flask = "^2.2.3"
+# fastapi = "^0.95.1"
+# rewards-experimental = "^0.0.1"
+# rewards-envs = "^0.0.1"
+
+
+# [build-system]
+# requires = ["poetry-core"]
+# build-backend = "poetry.core.masonry.api"
