@@ -1,0 +1,7 @@
+__pycache__/
+*.json
+*.yml
+*.yaml
+*.toml
+!pyproject.toml
+dist/
