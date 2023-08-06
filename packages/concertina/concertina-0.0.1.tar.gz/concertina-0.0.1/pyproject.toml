@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "concertina"
+version = "0.0.1"
+description = ""
+authors = ["Ryan J. Miller <rjmiller10@gmail.com>"]
+readme = "README.md"
+packages = [{include = "concertina", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.10.2"
+rich = "^12.6.0"
+musthe = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+mypy = "^0.990"
+pytest-cov = "^4.0.0"
+pytest-mock = "^3.10.0"
+flake8 = "^5.0.4"
+black = "^22.10.0"
+pdbpp = "^0.10.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
