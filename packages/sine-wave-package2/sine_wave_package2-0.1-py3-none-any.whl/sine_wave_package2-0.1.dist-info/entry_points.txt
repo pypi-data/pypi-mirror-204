@@ -1,0 +1,2 @@
+[console_scripts]
+sine_wave = sine_wave.sine_wave:main

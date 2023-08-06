@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: sine-wave-package2
+Version: 0.1
+Summary: A package that creates a sine wave
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+
