@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: coar
+Version: 0.1
+Summary: Clustering of association rules based on user defined threshlods.
+Home-page: https://github.com/jmichalovcik/coar
+Author: Jaroslav Michalovcik
+Author-email: j.michalovcik@gmail.com
+License: MIT
+Keywords: association,rule,clustering,association rules,association rule clustering
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+
+# coar
