@@ -1,0 +1,3 @@
+[console_scripts]
+dioptas = scripts:dioptas.main
+dioptas_batch = scripts:dioptas_batch.main

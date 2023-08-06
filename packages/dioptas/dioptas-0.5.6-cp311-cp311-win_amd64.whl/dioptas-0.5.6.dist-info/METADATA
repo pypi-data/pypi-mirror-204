@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: dioptas
+Version: 0.5.6
+Summary: GUI program for reduction and exploration of 2D X-ray diffraction data
+Home-page: https://github.com/Dioptas/Dioptas
+Author: Clemens Prescher
+Author-email: clemens.prescher@gmail.com
+License: GPL-3.0
+Project-URL: Source, https://github.com/dioptas/dioptas
+Project-URL: Changelog, https://github.com/Dioptas/Dioptas/blob/develop/changelog.rst
+Project-URL: Documentation, https://dioptas.readthedocs.io/en/stable/
+Project-URL: Tracker, https://github.com/Dioptas/Dioptas/issues
+Keywords: x-ray diffraction,synchrotron,high pressure,graphical user interface
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: license.txt
+Requires-Dist: cython
+Requires-Dist: extra-data
+Requires-Dist: future
+Requires-Dist: h5py
+Requires-Dist: hdf5plugin
+Requires-Dist: lmfit
+Requires-Dist: pandas
+Requires-Dist: psutil
+Requires-Dist: pycifrw
+Requires-Dist: python-dateutil
+Requires-Dist: pyinstaller
+Requires-Dist: pyqt5
+Requires-Dist: pyfai
+Requires-Dist: pyqtgraph
+Requires-Dist: qtpy
+Requires-Dist: scikit-image
+Requires-Dist: sharedmem
+Requires-Dist: watchdog
+
