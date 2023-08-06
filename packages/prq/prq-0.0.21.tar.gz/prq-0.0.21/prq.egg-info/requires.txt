@@ -1,0 +1,4 @@
+rq>=0.4.6
+gevent>=1.0
+pydantic
+rich
