@@ -1,0 +1,12 @@
+xia_scw_vpc/__init__.py,sha256=smFWKpNSuOkTP68TnnjZOkFt3Y74r5znpd555NuxgVo,87
+xia_scw_vpc/vpc.cpython-39-x86_64-linux-gnu.so,sha256=BYsUEd7b4mwSJYcTaAxP1b-DwRZhtfGb8g8KUVdzIxc,760232
+xia_scw_vpc/templates/ScwVpc/backend.tf,sha256=E6fgAX-nMcTt9oErRKvK67uJPdB-O77YJpzAvf06zgs,69
+xia_scw_vpc/templates/ScwVpc/main.tf,sha256=UElrNqO31xqjS1yD5wEbdVb4kNxodZXW8d7n6W2_W5A,991
+xia_scw_vpc/templates/ScwVpc/output.tf,sha256=kx1Qbfc6mWyIN8_N1D1E9s30LiyIOgx3hW7z5R2-mYY,651
+xia_scw_vpc/templates/ScwVpc/provider.tf,sha256=h_zFGas7QtYJPGvufLGuPHtgDhoZa28Qa5t--1dpheI,343
+xia_scw_vpc/templates/ScwVpc/variables.tf,sha256=rrE9u584cXmGb9V79rOsyZxWH2yx9N7f3ode2XjHfxE,1953
+xia_scw_vpc-0.0.6.dist-info/LICENSE.txt,sha256=CgeJ1rTURAK7GLPD_GW3lyXH8ZFFrBDM0ekl9JHZR2s,152
+xia_scw_vpc-0.0.6.dist-info/METADATA,sha256=ZO0MtEv3IWXgSmkkATBDeVDnbEiO4v6sgzVgIe0l4xY,652
+xia_scw_vpc-0.0.6.dist-info/WHEEL,sha256=qkSVf_2y_meuNtxjbahKGy4LKa5aE9SY7z8YZA90byg,107
+xia_scw_vpc-0.0.6.dist-info/top_level.txt,sha256=jNt0Wv07qq3bYLKNdao2gLQ4e_U6VYrOuw3Wehup0ts,12
+xia_scw_vpc-0.0.6.dist-info/RECORD,,
