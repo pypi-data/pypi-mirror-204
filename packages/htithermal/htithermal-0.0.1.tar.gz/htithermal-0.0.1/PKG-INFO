@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: htithermal
+Version: 0.0.1
+Summary: A package to plot AI/ML metrics at ease
+Home-page: https://github.com/somexgupta/htithermal
+Author: SomexGupta
+Author-email: gupta.somex@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Hti Thermal
+This package is used to extract thermal raw datapoints from rJpeg image capture using Hti-Xintai HT-19 Thermal Imager.
+
+## How to use
+_After installing the package:_ <br>
+
+**import htithermal as ht**
+
+_Then use following commands:_
+### Extract thermal datapoint from images
+**themperature_array = ht.convertRjpegToTemperature('C:/Users/gsome/Desktop/Hti-Images/20230417-100642.jpg')<br>**
+
+### Extract all thermal datapoint from images in given directory
+**ht.imagesToThermals(input_dir='C:\\Users\\gsome\\Desktop\\Hti-Images')<br>**
+
+### Visualize thermal image
+**import matplotlib.pyplot as plt<br>**
+**import pandas as pd<br>**
+**plt.imshow(themperature_array)<br>**
+**plt.show()<br>**
+
