@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+ValLocal/__init__.py
+ValLocal/api.py
+ValLocal/lock.py
+ValLocal/parsing.py
+ValLocal/structs.py
+ValLocal.egg-info/PKG-INFO
+ValLocal.egg-info/SOURCES.txt
+ValLocal.egg-info/dependency_links.txt
+ValLocal.egg-info/requires.txt
+ValLocal.egg-info/top_level.txt
