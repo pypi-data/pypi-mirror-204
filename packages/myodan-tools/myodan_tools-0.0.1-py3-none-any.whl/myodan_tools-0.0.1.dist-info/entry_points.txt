@@ -1,0 +1,3 @@
+[console_scripts]
+myodan-tools=myodan-tools.main:app
+
