@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+sentiment_stock_plot.egg-info/PKG-INFO
+sentiment_stock_plot.egg-info/SOURCES.txt
+sentiment_stock_plot.egg-info/dependency_links.txt
+sentiment_stock_plot.egg-info/requires.txt
+sentiment_stock_plot.egg-info/top_level.txt
