@@ -1,0 +1,11 @@
+hmcode/__init__.py,sha256=SlI7HC7Pr8pouTVc2PyfwfP69aRDwfbBVfgGqI1-dno,25
+hmcode/camb_stuff.py,sha256=e8-kGX_QJZMtunlRW0uRlq-auBxDZx_HwlgqLpxcc-M,1879
+hmcode/constants.py,sha256=X9pms3Lwe-YtRAJYlJicPlS5b-omoIbtaJv0KQ7EYcA,641
+hmcode/cosmology.py,sha256=8ElxT4tnKpAmay2H2Ro2eJUV2zZU7DE_F3fQSDFNWEU,10200
+hmcode/hmcode.py,sha256=xsPIh4sd1iH7P0m3OuHZg7Fk0tW4MUFHMebx-WwV8SI,17838
+hmcode/linear_growth.py,sha256=HFHDc-ouUhLcH-SRqWQbDyztjVgEwcHHpL5TWebCcqY,3882
+hmcode/utility.py,sha256=6h_sa7ioSUiicKKUF3ndYAvw3q7rMCkgBcW6CfWB2oo,1690
+hmcode-1.1.0.dist-info/LICENSE,sha256=6TONyQNh85_FqtPGg4kg2fXLC_t4QOn6d_FlMfFu0AI,1023
+hmcode-1.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+hmcode-1.1.0.dist-info/METADATA,sha256=Z1a5ZcbFJDtPO7Z2qRITu8zx8o76_TgrV7Bus53iIYE,10132
+hmcode-1.1.0.dist-info/RECORD,,
