@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: winavsos
+Version: 0.0.0.1
+Summary: An Automated Vulnerabilty Scanner
+Home-page: https://github.com/Tomzy2506/AVSOS
+Author: Tomiwa Ibikunle
+Author-email: tomzy2506@gmail.com
+License: MIT License
+Requires-Dist: PyPDF2
+Requires-Dist: cryptography
+Requires-Dist: keyring
+Requires-Dist: matplotlib
+Requires-Dist: psutil
+Requires-Dist: python-dateutil
+Requires-Dist: python-nmap
+Requires-Dist: python-owasp-zap-v2.4
+Requires-Dist: python-whois
+Requires-Dist: pytz
+Requires-Dist: reportlab
+Requires-Dist: requests
+Requires-Dist: schedule
+Requires-Dist: tk
+Requires-Dist: tldextract
+

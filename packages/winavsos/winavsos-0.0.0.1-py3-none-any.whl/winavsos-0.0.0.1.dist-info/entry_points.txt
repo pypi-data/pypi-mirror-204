@@ -1,0 +1,2 @@
+[console_scripts]
+winavsos = winavsos.main:main
