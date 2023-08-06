@@ -1,0 +1,3 @@
+[console_scripts]
+algorand_vanity=algorand_vanity.generator:main
+

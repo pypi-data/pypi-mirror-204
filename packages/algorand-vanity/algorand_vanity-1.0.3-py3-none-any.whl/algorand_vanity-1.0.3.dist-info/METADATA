@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: algorand-vanity
+Version: 1.0.3
+Summary: Vanity address generator for algorand wallets
+Home-page: https://github.com/sithladyraven/algorand-vanity
+License: MIT
+Keywords: algorand,crypto,cryptocurrency,cryptowallet
+Author: Kelsey Price
+Author-email: contact@kelsey.dev
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: py-algorand-sdk (>=2.1.2,<3.0.0)
+Requires-Dist: windows-curses (>=2.3.1,<3.0.0) ; sys_platform == "linux"
+Project-URL: Repository, https://github.com/sithladyraven/algorand-vanity
+Description-Content-Type: text/markdown
+
+# Algorand Vanity
+[![GitHub license](https://img.shields.io/github/license/sithladyraven/algorand-vanity.svg?style=social)](https://github.com/sithladyraven/algorand-vanity/blob/master/LICENSE) [![PyPI version](https://badge.fury.io/py/algorand-vanity.svg)](https://badge.fury.io/py/algorand-vanity) 
+
+Python utility for generating vanity algorand wallet addresses.
+
+## Installing from source
+```bash
+poetry install
+```
+
+## Installing with pip
+```bash
+pip install algorand-vanity
+```
+
+## Usage
+```bash
+algorand_vanity ADDRESS1 ADDRESS2
+```
+
+## Options
+Option | Description | Default
+--- | --- | ---
+--threads, -t {start, end} | Number of threads to use for address generation | # of CPU cores
+--filename, -f {start, end} | Filename to output addresses to | vanity_addresses
+--location, -l {start, end} | location in address where the vanity string should be found | if not specified then string can be anywhere in the address
+vanity | list of vanity addresses to search for **(Must only contain the following characters: A-Z, 2-7)** | required
+
+
