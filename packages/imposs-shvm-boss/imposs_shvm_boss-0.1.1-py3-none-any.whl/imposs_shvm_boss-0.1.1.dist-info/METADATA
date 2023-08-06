@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: imposs-shvm-boss
+Version: 0.1.1
+Summary: 
+Author: Shivam Ajmera
+Author-email: shivam@statsig.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.28.2,<3.0.0)
