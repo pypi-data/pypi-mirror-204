@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: SupOpNumTools
+Version: 0.1.1
+Summary: Package for engineer in physics and photonics
+Home-page: https://github.com/IOGS-Digital-Methods/SupOpNumTools
+Author-email: Julien VILLEMEJANE <julien.villemejane@institutoptique.fr>
+Project-URL: Homepage, https://github.com/IOGS-Digital-Methods/SupOpNumTools
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# SupOpNumTools
+Package
