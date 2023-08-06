@@ -1,0 +1,10 @@
+numpy>=1.24.2
+scipy
+pandas>=2.0.0
+joblib>=1.2.0
+jinja2
+numexpr
+funcy
+scikit-learn>=1.0.0
+gensim
+setuptools
