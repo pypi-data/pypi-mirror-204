@@ -1,0 +1,14 @@
+html2text
+
+[dev]
+black
+flake8
+pytest
+pytest-cov
+tox
+
+[test]
+flake8
+pytest
+pytest-cov
+smtpdfix
