@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+src/gpt_code_scrapper/__init__.py
+src/gpt_code_scrapper/scrapper.py
+src/gpt_scrapper.egg-info/PKG-INFO
+src/gpt_scrapper.egg-info/SOURCES.txt
+src/gpt_scrapper.egg-info/dependency_links.txt
+src/gpt_scrapper.egg-info/entry_points.txt
+src/gpt_scrapper.egg-info/requires.txt
+src/gpt_scrapper.egg-info/top_level.txt
