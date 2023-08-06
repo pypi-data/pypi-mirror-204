@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: snif
+Version: 0.0.1
+Summary: Sensor Networking Interchange Framework
+Author: OpenLX
+Project-URL: Homepage, https://github.com/inventthings/snif
+Project-URL: Bug Tracker, https://github.com/inventthings/snif/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sniff
+
+Sensor Networking Interchange Format Framework; a simple way to send, store and save sensor data
+
+Currently a work in progress
