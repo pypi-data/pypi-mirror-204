@@ -1,0 +1,6 @@
+circleci
+
+[dev]
+mypy
+setuptools
+wheel
