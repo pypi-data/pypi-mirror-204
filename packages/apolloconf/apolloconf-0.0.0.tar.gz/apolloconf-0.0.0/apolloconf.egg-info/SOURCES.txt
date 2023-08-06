@@ -1,0 +1,6 @@
+README.md
+setup.py
+apolloconf.egg-info/PKG-INFO
+apolloconf.egg-info/SOURCES.txt
+apolloconf.egg-info/dependency_links.txt
+apolloconf.egg-info/top_level.txt
