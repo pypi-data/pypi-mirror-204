@@ -1,0 +1,13 @@
+geopandas
+networkx
+pysheds
+rtree
+
+[basemap]
+contextily
+
+[dev]
+pytest
+
+[plotting]
+matplotlib
