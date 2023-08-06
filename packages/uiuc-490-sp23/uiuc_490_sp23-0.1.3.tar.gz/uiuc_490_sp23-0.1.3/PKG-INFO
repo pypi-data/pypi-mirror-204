@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: uiuc-490-sp23
+Version: 0.1.3
+Summary: Programming assignments for UIUC's ECE490: Introduction to Optimization course during Spring 2023
+Home-page: https://github.com/eric-silk/ECE490
+License: GPL-3.0-or-later
+Keywords: optimization
+Author: Eric Silk
+Author-email: eric.silk@ericsilk.com
+Requires-Python: >=3.10,<3.12
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: scipy (>=1.10.1,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/eric-silk/ECE490/issues
+Project-URL: Repository, https://github.com/eric-silk/ECE490
+Description-Content-Type: text/markdown
+
+# ECE490
+Repo to collaborate within for UIUC's ECE490, Spring 2023
+
+## Installation
+### Installation from PyPI
+This should be as simple as:
+```bash
+python -m pip install uiuc-490-sp23
+```
+### Installation from Source
+This project uses [Poetry](https://python-poetry.org/) Install it via
+[their instructions](https://python-poetry.org/docs/#installing-with-the-official-installer)
+and run:
+```bash
+poetry install
+```
+from this directory (preferably from within a `venv`).
+
+## Executing
+Once installed, individual assignments can be ran by:
+```bash
+python -m uiuc_490_sp23.assignment<n>
+```
+where `<n>` is the assignment number. These will have a CLI implemented using argparse; if you're not sure,
+just run the above with `--help` to get a full list of commands.
+
+
+## Assignments
+### Assignment 1: Gradient Descent
+This solves a simple, randomly generated quadratic minimization problem using Gradient Descent. It does so using
+both fixed step size, as well as an adaptive backtracking line search (Armijo's rule).
+
+### Assignment 2: Newton's Method and Projected Gradient Descent
+This assignment does two things:
+- Implements Newton's method to solve a simple 2D cubic polynomial and plots a fractal displaying the resulting solution based on the starting point
+- Implements Projected gradient descent and uses it to solve a simple box constrained optimization problem
+
+### Assignment 3: Augmented Lagrangian
+This assignment implements the augmented Lagrangian to solve an equality constrained quadratic problem.
