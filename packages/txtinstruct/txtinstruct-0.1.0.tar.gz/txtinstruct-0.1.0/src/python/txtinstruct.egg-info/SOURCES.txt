@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/python/txtinstruct/__init__.py
+src/python/txtinstruct/data.py
+src/python/txtinstruct.egg-info/PKG-INFO
+src/python/txtinstruct.egg-info/SOURCES.txt
+src/python/txtinstruct.egg-info/dependency_links.txt
+src/python/txtinstruct.egg-info/requires.txt
+src/python/txtinstruct.egg-info/top_level.txt
+src/python/txtinstruct/models/__init__.py
+src/python/txtinstruct/models/bashsql.py
+src/python/txtinstruct/models/instructor.py
+src/python/txtinstruct/models/statement.py
+src/python/txtinstruct/models/txtsql.py
