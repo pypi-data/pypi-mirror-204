@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Menu item for odoo.instance -->
+        <menuitem id="odoo_instance_menu" name="Odoo Instances"
+            action="odoo_instance_action"
+            web_icon="odoo_instance,static/src/img/icon.png" />
+
+        <!-- Menu item for odoo.instance.module -->
+        <menuitem id="menu_odoo_instance_module" name="Modules" parent="odoo_instance_menu"
+            sequence="30"
+            action="odoo_instance_module_action" />
+
+        <!-- Menu item for odoo.instance.version -->
+        <menuitem id="menu_odoo_version" name="Odoo Versions" parent="odoo_instance_menu"
+            sequence="40" action="odoo_version_action" />
+
+        <!-- Menu item for odoo.instance.process -->
+        <menuitem id="menu_odoo_instance_process" name="Processes" parent="odoo_instance_menu"
+            sequence="30"
+            action="odoo_instance_process_action" />
+    </data>
+</odoo>

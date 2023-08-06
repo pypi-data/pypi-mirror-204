@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="odoo_instance_module_tree" model="ir.ui.view">
+        <field name="name">odoo.instance.module.tree</field>
+        <field name="model">odoo.instance.module</field>
+        <field name="arch" type="xml">
+            <tree string="Modules">
+                <field name="name" />
+                <field name="technical_name" />
+                <!-- <field name="version"/> -->
+                <field name="is_odoo_module" />
+                <field name="pypi_url" />
+                <field name="odoo_version_id" />
+                <field name="version_ids" widget="many2many_tags" />
+                <field name="module_type" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>
