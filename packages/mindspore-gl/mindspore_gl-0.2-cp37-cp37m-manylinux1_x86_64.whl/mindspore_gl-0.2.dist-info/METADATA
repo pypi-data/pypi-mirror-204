@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: mindspore-gl
+Version: 0.2
+Summary: MindSpore graph learning
+Home-page: UNKNOWN
+Author: The MindSpore GraphLearning Authors
+Author-email: contact@mindspore.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: ast-decompiler (>=0.3.2)
+Requires-Dist: astpretty
+Requires-Dist: scikit-learn (>=0.24.2)
+Requires-Dist: Cython
+Requires-Dist: networkx (>=2.6.3)
+Requires-Dist: rdkit (>=2022.9.1)
+Requires-Dist: decorator (>=5.1.1)
+Requires-Dist: tqdm (>=4.64.1)
+Requires-Dist: pandas (>=1.1.5)
+
+UNKNOWN
+
+
