@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: thronescli
+Version: 2.6.1
+Summary: A command line interface for the thronesdb.com card database.
+Home-page: https://github.com/jimorie/thronescli
+Download-URL: https://github.com/jimorie/thronescli/archive/v2.6.1.tar.gz
+Author: Petter Nyström
+Author-email: jimorie@gmail.com
+Keywords: game of thrones,thrones,thronesdb.com
+License-File: LICENSE.txt
+Requires-Dist: click
+
