@@ -1,0 +1,6 @@
+module.py
+setup.py
+wo11y_py_semconv.egg-info/PKG-INFO
+wo11y_py_semconv.egg-info/SOURCES.txt
+wo11y_py_semconv.egg-info/dependency_links.txt
+wo11y_py_semconv.egg-info/top_level.txt
