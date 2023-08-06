@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: eokulapi
+Version: 0.0.14
+Summary: eokul vbs api wrapper for python
+Home-page: https://github.com:/insanolanbiri/eokulapi
+License: GPL-3.0-only
+Author: insanolanbiri
+Author-email: erenakgun2007@hotmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Project-URL: Bug Tracker, https://github.com/insanolanbiri/eokulapi/issues
+Project-URL: Repository, https://github.com:/insanolanbiri/eokulapi
+Description-Content-Type: text/markdown
+
+# eokulapi
+eokul vbs api wrapper for python
+
+## install
+`pip install eokulapi` or `poetry add eokulapi`
+
+## usage
+```python
+from eokulapi import EokulAPI
+
+user=EokulAPI(uid=...)
+st=user.students[0]
+user.update_student_data(st)
+...
+```

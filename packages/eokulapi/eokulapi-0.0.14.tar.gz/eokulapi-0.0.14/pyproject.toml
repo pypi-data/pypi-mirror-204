@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "eokulapi"
+version = "0.0.14"
+description = "eokul vbs api wrapper for python"
+authors = ["insanolanbiri <erenakgun2007@hotmail.com>"]
+license = "GPL-3.0-only"
+readme = "README.md"
+repository = "https://github.com:/insanolanbiri/eokulapi"
+classifiers = [
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/insanolanbiri/eokulapi/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.2"
+python-dotenv = "^1.0.0"
+black = "^23.3.0"
+isort = "^5.12.0"
+pre-commit = "^3.2.2"
+pydocstyle = "^6.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--tb=no --verbose"
+
+[tool.isort]
+profile = "black"
