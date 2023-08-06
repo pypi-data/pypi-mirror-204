@@ -1,0 +1,2 @@
+[console_scripts]
+nlpannotator_run = nlpannotator.main:run
