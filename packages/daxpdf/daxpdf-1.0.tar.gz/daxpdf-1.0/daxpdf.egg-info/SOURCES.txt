@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+daxpdf/__init__.py
+daxpdf/pdf2image.py
+daxpdf/pdf2text.py
+daxpdf.egg-info/PKG-INFO
+daxpdf.egg-info/SOURCES.txt
+daxpdf.egg-info/dependency_links.txt
+daxpdf.egg-info/top_level.txt
