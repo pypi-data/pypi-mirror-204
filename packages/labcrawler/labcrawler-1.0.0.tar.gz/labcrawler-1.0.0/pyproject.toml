@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "labcrawler"
+authors = [
+    {name = "Steampunk Wizard", email = "labcrawler@steampunkwizard.ca"}
+]
+description = "Analysis tool for GitLab project and CI configurations"
+readme = "README.md"
+requires-python = ">=3.6.5"
+license = {text = "MIT"}
+dependencies = [
+    "platformdirs >=3.2.0",
+    "wizlib >=0.2.2",
+    "meltano >= 2.17.1",
+    "pandas >= 2.0.0"
+]
+dynamic = ["version"]
+
+[tool.setuptools.package-dir]
+labcrawler = "labcrawler"
+
+[project.scripts]
+labcrawler = "labcrawler.cli:LabCrawlerCLI"
+meltano = "meltano.cli:main"
+
+[tool.setuptools.dynamic]
+version = {file = ["version"]}

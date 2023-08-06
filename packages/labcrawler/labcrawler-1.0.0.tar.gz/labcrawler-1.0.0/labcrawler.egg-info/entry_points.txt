@@ -1,0 +1,3 @@
+[console_scripts]
+labcrawler = labcrawler.cli:LabCrawlerCLI
+meltano = meltano.cli:main
