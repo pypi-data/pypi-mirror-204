@@ -1,0 +1,5 @@
+PyYAML
+
+[doc]
+sphinx
+furo
