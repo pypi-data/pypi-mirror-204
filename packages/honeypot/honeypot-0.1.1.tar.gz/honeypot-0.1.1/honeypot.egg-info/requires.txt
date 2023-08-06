@@ -1,0 +1,3 @@
+flask
+prompt_toolkit
+rich

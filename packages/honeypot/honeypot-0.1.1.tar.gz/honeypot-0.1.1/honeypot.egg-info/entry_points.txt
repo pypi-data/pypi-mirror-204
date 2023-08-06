@@ -1,0 +1,2 @@
+[console_scripts]
+b = honeypot:Honeypot
