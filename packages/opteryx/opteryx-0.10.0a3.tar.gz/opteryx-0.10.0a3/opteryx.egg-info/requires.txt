@@ -1,0 +1,7 @@
+hadrodb
+numpy
+orjson
+orso>=0.0.57
+pyarrow>=11.0.0
+typer
+cython
