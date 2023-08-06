@@ -1,0 +1,8 @@
+arcsecond>=2.0.3
+astropy>=5
+flask>=2.2
+peewee>=3
+watchdog>=2.2
+supervisor>4.2.2
+dateparser
+python-dotenv
