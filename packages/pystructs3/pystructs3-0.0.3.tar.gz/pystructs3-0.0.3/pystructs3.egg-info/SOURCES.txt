@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+pystructs/__init__.py
+pystructs/base.py
+pystructs/codec.py
+pystructs/list.py
+pystructs/struct/__init__.py
+pystructs/struct/fields.py
+pystructs/struct/struct.py
+pystructs3.egg-info/PKG-INFO
+pystructs3.egg-info/SOURCES.txt
+pystructs3.egg-info/dependency_links.txt
+pystructs3.egg-info/requires.txt
+pystructs3.egg-info/top_level.txt
