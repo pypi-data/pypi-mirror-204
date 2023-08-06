@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tomlize
+Version: 0.0.1
+Summary: Move all your configuration to pyproject.toml
+Author-email: Mario Corchero <mariocj89@gmail.com>
+Keywords: pyproject,configuration,python,tool
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
