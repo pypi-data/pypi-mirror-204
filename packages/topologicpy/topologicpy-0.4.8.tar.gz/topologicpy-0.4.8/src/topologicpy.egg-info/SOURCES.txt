@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/topologicpy.egg-info/PKG-INFO
+src/topologicpy.egg-info/SOURCES.txt
+src/topologicpy.egg-info/dependency_links.txt
+src/topologicpy.egg-info/requires.txt
+src/topologicpy.egg-info/top_level.txt
