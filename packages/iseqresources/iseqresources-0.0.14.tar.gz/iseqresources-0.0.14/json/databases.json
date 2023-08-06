@@ -1,0 +1,194 @@
+[
+    {
+        "name": "ACMG",
+        "current_version": "2022/12/10",
+        "newest_version": "",
+        "update_every_nth_month": 6,
+        "test": "update-every-nth-month",
+        "url": "",
+        "update_database_before": [
+            {
+                "name": "Clinvar",
+                "how_to_update": "https://gitlab.com/intelliseq/workflows/-/blob/dev/resources/acmg/readme.md#clinvar"
+            },
+            {
+                "name": "UniProt",
+                "how_to_update": "https://gitlab.com/intelliseq/workflows/-/blob/dev/resources/acmg/readme.md#uniprot"
+            }
+        ],
+        "update_docker": [
+            "docker/task/task_vcf-acmg-ba1/Dockerfile",
+            "docker/task/task_vcf-acmg-bp1/Dockerfile",
+            "docker/task/task_vcf-acmg-bp3/Dockerfile",
+            "docker/task/task_vcf-acmg-bp4/Dockerfile",
+            "docker/task/task_vcf-acmg-bp5/Dockerfile",
+            "docker/task/task_vcf-acmg-bp7/Dockerfile",
+            "docker/task/task_vcf-acmg-bs2/Dockerfile",
+            "docker/task/task_vcf-acmg-pm1/Dockerfile",
+            "docker/task/task_vcf-acmg-pm2/Dockerfile",
+            "docker/task/task_vcf-acmg-pm4/Dockerfile",
+            "docker/task/task_vcf-acmg-pm5/Dockerfile",
+            "docker/task/task_vcf-acmg-pp2/Dockerfile",
+            "docker/task/task_vcf-acmg-pp3/Dockerfile",
+            "docker/task/task_vcf-acmg-pp4/Dockerfile",
+            "docker/task/task_vcf-acmg-ps1/Dockerfile",
+            "docker/task/task_vcf-acmg-ps3/Dockerfile",
+            "docker/task/task_vcf-acmg-pvs1/Dockerfile"
+        ],
+        "update_task": [
+            "vcf-acmg-ba1",
+            "vcf-acmg-bp1",
+            "vcf-acmg-bp3",
+            "vcf-acmg-bp4",
+            "vcf-acmg-bp5",
+            "vcf-acmg-bp7",
+            "vcf-acmg-bs2",
+            "vcf-acmg-pm1",
+            "vcf-acmg-pm2",
+            "vcf-acmg-pm4",
+            "vcf-acmg-pm5",
+            "vcf-acmg-pp2",
+            "vcf-acmg-pp3",
+            "vcf-acmg-pp4",
+            "vcf-acmg-ps1",
+            "vcf-acmg-ps3",
+            "vcf-acmg-pvs1"
+        ]
+    },
+    {
+        "name": "Ensembl",
+        "current_version": "107",
+        "expected_version": [
+            "109",
+            "110",
+            "111"
+        ],
+        "known_release_day": "YES",
+        "newest_version": "",
+        "last_check": "2023/04/07",
+        "test": "url-check",
+        "url": "http://ftp.ensembl.org/pub/release-{expected_version}/",
+        "update_docker": [
+            "resources/ensembl-genes/Dockerfile"
+        ],
+        "update_task": [],
+        "update_database_after": [
+            {
+                "name": "cosmic-ensembl",
+                "how_to_update": "https://gitlab.com/intelliseq/workflows/-/blob/dev/resources/snps-and-indels-annotations/cosmic-ensembl/readme.md",
+                "update_docker": [
+                    "docker/task/task_vcf-anno-cosmic/Dockerfile"
+                ],
+                "update_task": [
+                    "vcf-anno-cosmic"
+                ]
+            },
+            {
+                "name": "civic",
+                "how_to_update": "https://gitlab.com/intelliseq/workflows/-/blob/dev/resources/civic/readme.md",
+                "update_docker": [
+                    "docker/task/task_vcf-anno-civic/Dockerfile"
+                ],
+                "update_task": [
+                    "vcf-anno-civic"
+                ]
+            },
+            {
+                "name": "gene-panels",
+                "how_to_update": "https://gitlab.com/intelliseq/workflows/-/blob/dev/resources/gene-panels/readme.md",
+                "update_docker": [
+                    "docker/task/task_panel-generate/Dockerfile",
+                    "docker/task/task_vcf-anno-ge-panel/Dockerfile"
+                ],
+                "update_task": [
+                    "vcf-anno-ge-panel",
+                    "panel-generate"
+                ]
+            },
+            {
+                "name": "hpo",
+                "how_to_update": "https://gitlab.com/intelliseq/workflows/-/blob/dev/resources/hpo/readme.md",
+                "update_docker": [
+                    "docker/task/task_vcf-anno-hpo/Dockerfile"
+                ],
+                "update_task": [
+                    "vcf-anno-hpo"
+                ]
+            },
+            {
+                "name": "vep",
+                "how_to_update": "",
+                "update_docker": [
+                    "docker/vep/Dockerfile"
+                ],
+                "update_task": [
+                    "vcf-anno-vep"
+                ]
+            },
+            {
+                "name": "snpeff",
+                "how_to_update": "",
+                "update_docker": [
+                    "docker/snpeff/GRCh38/snpeff-build/Dockerfile"
+                ],
+                "update_task": [
+                    "vcf-anno-snpeff"
+                ]
+            },
+            {
+                "name": "bed-to-interval-list",
+                "how_to_update": "",
+                "update_docker": [
+                    "docker/task/task_bed-to-interval-list/Dockerfile"
+                ],
+                "update_task": [
+                    "bed-to-interval-list"
+                ]
+            },
+            {
+                "name": "bam-panel-coverage",
+                "how_to_update": "",
+                "update_docker": [
+                    "docker/task/task_bam-panel-coverage/Dockerfile"
+                ],
+                "update_task": [
+                    "bam-panel-coverage"
+                ]
+            },
+            {
+                "name": "annotsv",
+                "how_to_update": "",
+                "update_docker": [
+                    "docker/annotsv/Dockerfile"
+                ],
+                "update_task": [
+                    "sv-annotsv"
+                ]
+            },
+            {
+                "name": "vcf-anno-func-gene",
+                "how_to_update": "",
+                "update_docker": [
+                    "docker/task/task_vcf-anno-func-gene/Dockerfile"
+                ],
+                "update_task": [
+                    "vcf-anno-func-gene"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ghr",
+        "current_version": "2021/11/04",
+        "newest_version": "",
+        "update_every_nth_month": 6,
+        "test": "update-every-nth-month",
+        "url": "https://medlineplus.gov/genetics/",
+        "update_docker": [
+            "docker/task/task_vcf-anno-ghr/Dockerfile"
+        ],
+        "update_task": [
+            "vcf_anno_ghr"
+        ]
+    }
+]
