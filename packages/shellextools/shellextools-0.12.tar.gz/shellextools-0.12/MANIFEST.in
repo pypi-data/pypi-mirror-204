@@ -1,0 +1,6 @@
+include shellextools/requirements.txt
+include shellextools/thirdparty.json
+include shellextools/README.md
+include shellextools/getmultifiles.py
+include shellextools/loggax3.py
+include shellextools/LICENSE
