@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tagstr
+Version: 0.2.0
+Summary: Tagged template literals for Python
+Project-URL: Homepage, https://github.com/rmorshea/tagstr
+Author-email: Ryan Morshead <ryan.morshead@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: literals,tagged,template,transpiler
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# `tagstr`
+
+Tagged template literals for Python
