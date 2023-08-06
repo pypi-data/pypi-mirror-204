@@ -1,0 +1,11 @@
+requests
+pydantic
+websockets
+click
+colorama
+halo
+simple-term-menu
+aiohttp<4.0,>=3.6
+
+[test]
+pytest==7.2.1
