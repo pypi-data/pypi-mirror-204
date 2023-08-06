@@ -1,0 +1,16 @@
+tact/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tact/cli_add_taxa.py,sha256=e9DEgcKAAEWwbPTYTJs9ND7DtsgVh3pFcJDz-qT8ylM,20232
+tact/cli_add_toml.py,sha256=51jN0u0JLGnd3zh7aopC7_6a6_g4owcJMfbXT1-AFjY,9603
+tact/cli_check_trees.py,sha256=ffnwijMZ0fSM-ovDTBvk6fVFkz5-fDkj3idYorh-fiA,4924
+tact/cli_taxonomy.py,sha256=pZ0LXIBhZ53rLHQqJTOXQO_GceYEJTer5xXB762KaDw,5192
+tact/exceptions.py,sha256=aU99q3T5ke4Rt74xl_l-cQ0IQs_sGevny9bPcaZEBuM,214
+tact/fastmrca.py,sha256=gV38BIQzREB9LaBzO24SssaThwPWTqwGbZHXE9cLMio,928
+tact/generic_monophyly.py,sha256=ApAql3ObS6DshW6yHVLgY_FIVMQIOc6GhmT3_9qKz20,675
+tact/lib.py,sha256=AxnO95FSUBIGlcnDpTVwzdG4yvx02rtwbK1koEL9BsM,10739
+tact/tree_util.py,sha256=vQ8fldFFVYLqtqaaEuVGNLUOZqghI7KdkMhghOAvW3w,7968
+tact/validation.py,sha256=hkCz2_Kd5TOnvXIwMWfEEpCRiP9CzNu0Svy-eCJUl6w,4222
+tact-0.5.0.dist-info/LICENSE,sha256=qw-Agwp3_8Bd6JuF_vCuRsa0RfJnpoQQbqJYUEpUhfI,1059
+tact-0.5.0.dist-info/METADATA,sha256=ZhwV-aeAq8MhnzAfjevnY1obM5ENvivvONH2jzIdvBM,3395
+tact-0.5.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+tact-0.5.0.dist-info/entry_points.txt,sha256=_EHcXYL7FRJD7jrTXJCmZJGIiwnhuZw6R00G6UjcG-g,189
+tact-0.5.0.dist-info/RECORD,,
