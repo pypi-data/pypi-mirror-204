@@ -1,0 +1,11 @@
+data_visualization/__init__.py,sha256=iQ9jC5B3XxgKBxwclFDg5PBvUZJ-1v0etgoD30B88_E,2091
+data_visualization/register.py,sha256=4t3wROg9ceF27qInuAlhNfj2orswwdnnj968qLBv94c,2153
+data_visualization/frontend/dist/index.html,sha256=DWQfsyRRV2Zbg8y67hCf8PGw_7QRBmTDjumL494IAuM,457
+data_visualization/frontend/dist/vite.svg,sha256=SnSK_UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs,1497
+data_visualization/frontend/dist/assets/index-6b4c1e73.js,sha256=8sbCyk_YgYvFQVbfxq4mmEUzRY0BELyxedgKQ5u7gcg,1939972
+data_visualization/frontend/dist/assets/index-d081bea5.css,sha256=0IG-pekTwg6qlUydYwMnU2-IC7VwoPGHUln3GcIsCGE,300
+bp_data_visualization-0.0.12.dist-info/LICENSE,sha256=9VDWIUfeWnnobvVpN2KtC5cHaNpAmxhdjyF4LivEPNw,1063
+bp_data_visualization-0.0.12.dist-info/METADATA,sha256=OuRpjLSIEcL3unQfYmwXYasGligeka1iA_OYJKMRvRo,322
+bp_data_visualization-0.0.12.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bp_data_visualization-0.0.12.dist-info/top_level.txt,sha256=-rzTjrwyj8XbHjdOOrRA2Yp3UohabW3et6mHbs8G5_w,19
+bp_data_visualization-0.0.12.dist-info/RECORD,,
