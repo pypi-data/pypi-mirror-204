@@ -1,0 +1,6 @@
+dataclass_factory
+pyyaml
+
+[test]
+pytest
+pytest-cov
