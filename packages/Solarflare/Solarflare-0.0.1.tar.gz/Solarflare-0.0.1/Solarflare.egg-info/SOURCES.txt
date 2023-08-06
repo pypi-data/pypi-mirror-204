@@ -1,0 +1,9 @@
+README.md
+setup.py
+Solarflare/conversions.py
+Solarflare/nightcalc.py
+Solarflare/solarflare.py
+Solarflare.egg-info/PKG-INFO
+Solarflare.egg-info/SOURCES.txt
+Solarflare.egg-info/dependency_links.txt
+Solarflare.egg-info/top_level.txt
