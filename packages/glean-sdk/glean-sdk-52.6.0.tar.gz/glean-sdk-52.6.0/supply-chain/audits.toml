@@ -1,0 +1,8 @@
+
+# cargo-vet audits file
+
+[[audits.crossbeam-channel]]
+who = "Jan-Erik Rediger <jrediger@mozilla.com>"
+criteria = "safe-to-deploy"
+delta = "0.5.7 -> 0.5.8"
+notes = "Reviewed the fix, previous versions indeed had were able to trigger a race condition"
