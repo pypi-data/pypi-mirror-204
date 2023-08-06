@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jwst-mast-query
+Version: 0.0.3
+Summary: Query MAST for JWST products, and download them
+Home-page: https://github.com/spacetelescope/jwst_mast_query
+Author: STScI (Rest)
+Author-email: arest@stsci.edu
+License: UNKNOWN
+Keywords: astronomy
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: docs
+Provides-Extra: test
+License-File: LICENSE.txt
+
+Query MAST for JWST observations, select certain types of these products, provide a summary of these observations and products, and optionally download the selected products
+
