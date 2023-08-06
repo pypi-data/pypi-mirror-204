@@ -1,0 +1,12 @@
+spacy_huggingface_pipelines/__init__.py,sha256=6VkTLEKYTbB7QbWEfY2yfpINHrT5XnoJnLWDD71F3RU,147
+spacy_huggingface_pipelines/text_classification.py,sha256=cysBuMNH3MaC8N_FyZSNmp8LElRMELbG1ycAAVDBFzw,3453
+spacy_huggingface_pipelines/token_classification.py,sha256=ldOmR_xtgPMHWniB8ijp23ViK8XOs5210ZjShjrMpBM,6049
+spacy_huggingface_pipelines/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spacy_huggingface_pipelines/tests/enable_gpu.py,sha256=LDIdt1gbkbyGpGATvzndS8rjGuzzU8Z6ikRegPLABxk,45
+spacy_huggingface_pipelines/tests/test_pipeline_components.py,sha256=IYRphG89UlcezMNn9izzr9dahf0B_FMxWx1Ruspip5Y,2833
+spacy_huggingface_pipelines-0.0.1.dist-info/LICENSE,sha256=OXzXYJYcVrWn-utCmU3bJutWn-WPZS2MtQS1C0U5_fQ,1073
+spacy_huggingface_pipelines-0.0.1.dist-info/METADATA,sha256=svfC5NRVXVZ8E66RHGzHYo236edGtZqSTyF8LxKc9yU,9402
+spacy_huggingface_pipelines-0.0.1.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+spacy_huggingface_pipelines-0.0.1.dist-info/entry_points.txt,sha256=Lhyr2Kc1KoWXjHm1D3__pno08R0kbGa1JxE8p_EYRLM,183
+spacy_huggingface_pipelines-0.0.1.dist-info/top_level.txt,sha256=ZSuXITmlecvlIinv795xyH5uiCF3wdLLaMllO3k2bGw,28
+spacy_huggingface_pipelines-0.0.1.dist-info/RECORD,,
