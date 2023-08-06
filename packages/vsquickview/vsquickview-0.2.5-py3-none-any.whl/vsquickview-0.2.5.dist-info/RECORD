@@ -1,0 +1,9 @@
+vsquickview/__init__.py,sha256=2UIN4WQ4BQgsJ9Tp0kp1S7ef7FfR4LrLaexvsFvjavc,2147
+vsquickview/colourbars.py,sha256=w4sv0gXPNxCJX2ie1MYENR0T-HY871-XAitO91bruYI,10243
+vsquickview/fakevsquickview.py,sha256=BwQluCUMu4zO8XE2BENMOrh7ok4fu4ALv7SHZqO8qnc,1574
+vsquickview/vsquickview.py,sha256=OqkVS6hNBbVe-LLh1fQ8g_n0OoUx-ok4xSE13P_dzIE,14623
+vsquickview/vsquickview.qml,sha256=xs0Q-7CxDalpdOrGd50Sjk_NcI8mOywEQm4x6B2115I,14341
+vsquickview-0.2.5.dist-info/METADATA,sha256=6irMPoCDSuuK0BesmUy1wt7V1g1v8_3bQ30zYrTYIP8,6801
+vsquickview-0.2.5.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+vsquickview-0.2.5.dist-info/licenses/LICENSE,sha256=ZuIvp1K59k6CxN5oG1Xir8L4Zllh1s3XbTLEwx132R4,1069
+vsquickview-0.2.5.dist-info/RECORD,,
