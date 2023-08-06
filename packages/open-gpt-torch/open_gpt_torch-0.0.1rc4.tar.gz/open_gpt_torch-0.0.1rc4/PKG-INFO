@@ -1,0 +1,504 @@
+Metadata-Version: 2.1
+Name: open-gpt-torch
+Version: 0.0.1rc4
+Summary: An open-source implementation of large-scale language model (LLM).
+Home-page: https://open-gpt.jina.ai
+License: Apache-2.0
+Keywords: Pytorch,LLM,GPT
+Author: Felix Wang
+Author-email: felix.wang@jina.ai
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: flamingo
+Requires-Dist: accelerate (>=0.18.0,<0.19.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: einops (>=0.6.0,<0.7.0)
+Requires-Dist: loguru (>=0.5,<0.6)
+Requires-Dist: numpy (>=1.21.2,<2.0.0)
+Requires-Dist: open-flamingo (>=0.0,<0.1) ; extra == "flamingo"
+Requires-Dist: open_clip_torch (>=2.16.0,<2.17.0)
+Requires-Dist: torch (<2.0.0)
+Requires-Dist: transformers (>=4.12.5,<5.0.0)
+Project-URL: Repository, https://github.com/jina-ai/open_gpt
+Description-Content-Type: text/markdown
+
+# OpenGPT
+
+`OpenGPT` is an open-source _cloud-native_ large **multi-modal models** (LMMs) serving solution. 
+It is designed to simplify the deployment and management of large language models, on a distributed cluster of GPUs.
+
+> The content of README.md is just a placeholder to remind me of what I want to do.
+
+## Features
+
+OpenGPT provides the following features to make it easy to deploy and serve large multi-modal models (LMMs) in production:
+
+- Support for multi-modal models
+- Scalable architecture for handling high traffic loads
+- Optimized for low-latency inference
+- Automatic model partitioning and distribution across multiple GPUs
+- Centralized model management and monitoring
+- REST API for easy integration with existing applications
+
+You can learn more about OpenGPT’s [architecture in our documentation](https://opengpt.readthedocs.io/en/latest/).
+
+
+## Roadmap
+
+You can view our roadmap with features that are planned, started, and completed on the [Roadmap discussion](discussions/categories/roadmap) category.
+
+## Installation
+
+Install the package with pip:
+
+```bash
+pip install open_gpt_torch
+```
+
+## Quickstart
+
+```python
+import open_gpt
+
+model = open_gpt.create_model('facebook/llama-7b', device='cuda', precision='fp16')
+
+prompt = "The quick brown fox jumps over the lazy dog."
+
+output = model.generate(
+    prompt,
+    max_length=100,
+    temperature=0.9,
+    top_k=50,
+    top_p=0.95,
+    repetition_penalty=1.2,
+    do_sample=True,
+    num_return_sequences=1,
+)
+```
+
+We also provide some advanced features to allow you to host your models cost-effectively:
+
+- **Offloading**: you can offload parts of the model to CPU to reduce the cost of inference.
+
+- **Quantization**: you can quantize the model to reduce the cost of inference.
+
+For more details, please see the [documentation](https://opengpt.readthedocs.io/en/latest/).
+
+## Serving Models
+
+You can serve your models with OpenGPT. To do so, you can use the `serve` command:
+
+```bash
+opengpt serve facebook/llama-9b --device cuda --precision fp16 --port 5000
+```
+
+This will start a server on port 5000. You can then send requests to the server:
+
+```python
+import requests
+
+prompt = "The quick brown fox jumps over the lazy dog."
+
+response = requests.post(
+    "http://localhost:5000/generate",
+    json={
+        "prompt": prompt,
+        "max_length": 100,
+        "temperature": 0.9,
+        "top_k": 50,
+        "top_p": 0.95,
+        "repetition_penalty": 1.2,
+        "do_sample": True,
+        "num_return_sequences": 1,
+    },
+)
+
+
+# SSE support
+from aiohttp_sse_client import client as sse_client
+
+async with sse_client.EventSource(
+    'http://localhost:5000/stream/generate?prompt=The+quick+brown+fox+jumps+over+the+lazy+dog.&max_length=100&temperature=0.9&top_k=50&top_p=0.95&repetition_penalty=1.2&do_sample=True&num_return_sequences=1'
+) as event_source:
+    try:
+        async for event in event_source:
+            print(event)
+    except ConnectionError:
+        pass
+```
+
+Note that the server will only accept requests from the same machine. If you want to accept requests from other machines, you can use the `--host` flag to specify the host to bind to.
+
+## Deploying Models
+
+You can also deploy the server to a cloud provider like Jina Cloud or AWS.
+To do so, you can use `deploy` command:
+
+- Jina Cloud
+
+```bash
+opengpt deploy facebook/llama-9b --device cuda --precision fp16 --provider jina --name opengpt --replicas 2
+```
+
+- AWS
+
+To deploy to AWS, you need to install extra dependencies: 
+
+```bash
+pip install opegpt[aws]
+```
+
+And you need to specify the region:
+
+```bash
+opengpt deploy facebook/llama-9b --device cuda --precision fp16 --provider aws --region us-east-1 --name opengpt --replicas 2
+```
+
+This will deploy the model to the cloud provider. You can then send requests to the server:
+
+```python
+import requests
+
+prompt = "The quick brown fox jumps over the lazy dog."
+
+response = requests.post(
+    "https://opengpt.jina.ai/generate",
+    json={
+        "prompt": prompt,
+        "max_length": 100,
+        "temperature": 0.9,
+        "top_k": 50,
+        "top_p": 0.95,
+        "repetition_penalty": 1.2,
+        "do_sample": True,
+        "num_return_sequences": 1,
+    },
+)
+```
+
+## Kubernetes
+
+To deploy OpenGPT on your Kubernetes cluster, follow these steps:
+
+1. Install the OpenGPT operator on your Kubernetes cluster using Helm:
+
+    ```bash
+    helm install opengpt ./helm/opengpt --namespace opengpt
+    ```
+
+2. Create a custom resource for your GPT model:
+    
+    ```YAML
+    apiVersion: opengpt.io/v1alpha1
+    kind: GptModel
+    metadata:
+      name: my-gpt-model
+      namespace: opengpt
+    spec:
+      modelPath: s3://my-bucket/my-model
+      modelName: my-model
+      maxBatchSize: 16
+      inputShape:
+        - 1024
+        - 1024
+        - 3
+      outputShape:
+        - 1024
+        - 1024
+        - 3
+
+    ```
+   
+3. Apply the custom resource to your cluster:
+
+    ```bash
+   kubectl apply -f my-gpt-model.yaml
+    ```
+
+4. Monitor the status of your GPT model using the OpenGPT dashboard:
+
+    ```bash
+   kubectl port-forward -n opengpt svc/opengpt-dashboard 8080:80
+    ```
+
+## Accessing models via API
+
+You can also access the online models via API. To do so, you can use the `inference_client` package:
+
+```python
+from inference_client import Client
+
+client = Client(token='<your access token>')
+
+model = client.get_model('facebook/llama-9b')
+
+prompt = "The quick brown fox jumps over the lazy dog."
+
+output = model.generate(
+    prompt,
+    max_length=100,
+    temperature=0.9,
+    top_k=50,
+    top_p=0.95,
+    repetition_penalty=1.2,
+    do_sample=True,
+    num_return_sequences=1,
+)
+```
+
+By this way, you can access the models without deploying them to your own machine.
+
+## Advanced Usage
+
+### Model Offloading
+
+You can also apply the model offloading techniques (based on [FlexTensor](https://github.com/numb3r3/flex-tensor)) to OpenGPT. To do so, you can use the `--offload-percents` flag:
+
+```bash
+opengpt serve facebook/llama-9b --device cuda --precision fp16 --port 5000 --offload-percents 10,90,50,50,0,100
+```
+
+This will offload parts of the model to the CPU. You can also use the `--offload-strategy` flag to specify the offloading strategy:
+
+```bash
+opengpt serve facebook/llama-9b --device cuda --precision fp16 --port 5000 --offload-strategy "cpu,cpu,cpu,cpu,cpu,cpu"
+```
+
+### Model Quantization
+
+You can also apply the model quantization techniques.
+
+- 8-bit quantization
+
+```bash
+opengpt serve facebook/llama-9b --device cuda --precision fp16 --port 5000 --quantize 8bit
+```
+
+## Fine-tuning Models
+
+We currently support fine-tuning models by using the `finetune` command:
+
+```bash
+opengpt finetune facebook/llama-9b --dataset wikitext-2 --device cuda --precision fp16 --batch-size 32 --learning-rate 1e-4 --epochs 10
+```
+
+Specifically, we implement the following fine-tuning methods:
+- [LLaMA-Adapter: Efficient Fine-tuning of LLaMA](https://github.com/ZrrSkywalker/LLaMA-Adapter): Fine-tuning model to follow instructions within 1 Hour and 1.2M Parameters
+- [low-rank adaptation (LoRA)](https://arxiv.org/pdf/2106.09685.pdf): Low-Rank Adaptation for Efficient Language Model Fine-Tuning
+
+## Documentation
+
+For more information, check out the [documentation](https://opengpt.readthedocs.io/en/latest/).
+
+
+## Contributing
+
+We welcome contributions from the community! To contribute, please submit a pull request following our contributing guidelines.
+
+## License
+
+OpenGPT is licensed under the Apache License, Version 2.0. See LICENSE for the full license text.
+Copyright 2020-2022 Jina AI Limited.  All rights reserved.
+
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   Copyright 2020-2022 Jina AI Limited
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
