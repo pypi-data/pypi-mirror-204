@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: lmao-nlp
+Version: 0.1.0b1
+Summary: LMAO: Language Model Adapters and Orchestrators
+Home-page: https://github.com/johnnygreco/lmao
+Author: Johnny Greco
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: pydantic (>=1.10.7)
+Requires-Dist: requests (>=2.28.2)
+Requires-Dist: tiktoken (>=0.3.3)
+Provides-Extra: all
+Requires-Dist: pre-commit (>=3.2.1) ; extra == 'all'
+Requires-Dist: pytest (>=7.2.2) ; extra == 'all'
+Requires-Dist: responses (>=0.23.1) ; extra == 'all'
+Requires-Dist: mkdocs (>=1.4.2) ; extra == 'all'
+Requires-Dist: mkdocstrings (>=0.20.0) ; extra == 'all'
+Requires-Dist: mkdocs-material (>=9.1.4) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: pre-commit (>=3.2.1) ; extra == 'dev'
+Requires-Dist: pytest (>=7.2.2) ; extra == 'dev'
+Requires-Dist: responses (>=0.23.1) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs (>=1.4.2) ; extra == 'docs'
+Requires-Dist: mkdocstrings (>=0.20.0) ; extra == 'docs'
+Requires-Dist: mkdocs-material (>=9.1.4) ; extra == 'docs'
+
