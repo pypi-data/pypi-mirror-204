@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cnd-vault
+Version: 0.1.1
+Summary: Tools to read/write secret
+Home-page: https://gitlab.com/changendevops/cnd-vault
+Author: Denis FABIEN
+Author-email: denis.fabien@changendevops.com
+License: MIT/X11
+Project-URL: Documentation, https://changendevops.com
+Project-URL: Source, https://gitlab.com/changendevops/cnd-vault
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: mockito
+Requires-Dist: mamba
+Requires-Dist: expects
+Requires-Dist: cndprint
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: twine
+Requires-Dist: CndIO
+Requires-Dist: cnd-scaffold (>=2.2.1)
+Requires-Dist: CndIo
+Requires-Dist: hvac
+
