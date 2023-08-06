@@ -1,0 +1,14 @@
+orgee/__init__.py,sha256=I0D_FglWTKc8e_mThsbJfmz0HwGpLtZjfHodAAMdGhE,150
+orgee/link.py,sha256=rAGqitzu-5vCSCO1zIin6nIM--nzwP_ZXLO1-rU3dsE,740
+orgee/markup.py,sha256=Tyenvzbq_qmwFklv5hFsHCl8B0KskPyvYRhY-SdU7LU,730
+orgee/orgnode.py,sha256=JtxI8ZmvHfGdHNfKJ7Bj-NDfv5JqgiKgIfMCxHlabtg,8957
+orgee/parse_org.py,sha256=QnvTQ2GrVfkPvV61B_IJBke8edAJ08UuivJdBogP9c8,6631
+orgee/properties.py,sha256=5i4Cot98gg_5TEmVRS4gR2KPLQuygiElxUHZDXUU_9Y,4989
+orgee/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orgee/tag.py,sha256=Sm9Bn7q_uXEWFfat2cj1KbmT7v5B2sQs4UBCwzCKzrc,285
+orgee/util.py,sha256=9okWDpTIlcfBroa9B6QnzH8RgNqyLIK2vc-wdz_QXx0,3770
+orgee-0.0.5.dist-info/METADATA,sha256=chcZ7vo0P2jVgdK0FIl4dmsaUW6g0SACFak7NdmxYto,386
+orgee-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+orgee-0.0.5.dist-info/top_level.txt,sha256=7XUKEOm-pJZDsPmCy88Hh6MbNPrqf_d-swOmcId7KZQ,6
+orgee-0.0.5.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+orgee-0.0.5.dist-info/RECORD,,
