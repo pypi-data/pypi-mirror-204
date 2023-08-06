@@ -1,0 +1,12 @@
+LICENSE,sha256=Osw1Zq4wzQL_KGfdpeeykjAmloEQeZLK9tuKEIx6VI0,1500
+README.md,sha256=B3Xcuvv1iP4YR4AfuR7SNEjtski9myHYgvgpcML0RuE,900
+pyproject.toml,sha256=Ddxp0jKnX0v3Hz-Rxy2iHbXUlohT0aawJfdik-5oNlY,870
+trpc/__init__.py,sha256=DkJUu66XL5nbDqKEMqoiRUJBMfgdWbrJtO_5LWOUvp4,193
+trpc/procedure.py,sha256=Cf2Dc-uXGwu2g_oig7qya8i0N938mf_IivMSddXqqss,1925
+trpc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trpc/router.py,sha256=oaYMBZx2UrMM-EiOVCtY3XDloRYM1mOjpL3KMUDXoQE,23
+trpc/server.py,sha256=gP51iUP33M424cXisLE_qLOnr1V76HPkmiPlLP0JyNs,1116
+trpc_core-0.1.0.dist-info/METADATA,sha256=BF95GCoqSjhrhIamNHuMhbZTnAI32lr-pxqKWmepVSo,1703
+trpc_core-0.1.0.dist-info/WHEEL,sha256=3jNpu59JHbFdu1Yeq_fYJQsnHZ21dBRf7JjglSW4K9A,105
+trpc_core-0.1.0.dist-info/licenses/LICENSE,sha256=Osw1Zq4wzQL_KGfdpeeykjAmloEQeZLK9tuKEIx6VI0,1500
+trpc_core-0.1.0.dist-info/RECORD,,
