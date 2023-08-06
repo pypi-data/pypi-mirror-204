@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/napari_zulip/__init__.py
+src/napari_zulip/_widget.py
+src/napari_zulip/napari.yaml
+src/napari_zulip.egg-info/PKG-INFO
+src/napari_zulip.egg-info/SOURCES.txt
+src/napari_zulip.egg-info/dependency_links.txt
+src/napari_zulip.egg-info/entry_points.txt
+src/napari_zulip.egg-info/requires.txt
+src/napari_zulip.egg-info/top_level.txt
+src/napari_zulip/_tests/__init__.py
+src/napari_zulip/_tests/test_widget.py
