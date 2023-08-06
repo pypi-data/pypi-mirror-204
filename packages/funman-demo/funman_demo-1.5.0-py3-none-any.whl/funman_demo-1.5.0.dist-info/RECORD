@@ -1,0 +1,13 @@
+funman_demo/__init__.py,sha256=ZygAIkX6Nbjag1czWdQa-yP-GM1mBE_9ss21Xh__JFc,34
+funman_demo/_version.py,sha256=zT4pwlMEUh6B5Xq-YPP2kbfeIQdwVlSiT7OXABWhUaw,127
+funman_demo/box_plotter.py,sha256=Gnk_v3zazggTuIom8zYA2sBVPcbR87BJoGnEE6epitE,12199
+funman_demo/handlers.py,sha256=OPBE3USVZ9b8Bqdt_WXVe3R3r3pnwFpEWLIBRxGfK_Y,3387
+funman_demo/plot.py,sha256=uxrIqngv8bN6fXg31N6h9zpCS_9yCLLT5ls69IECqlg,2245
+funman_demo/example/__init__.py,sha256=5C4pxYAWMMxJ_r_JjP3bzVCvRI7ruPf-ENOw8rwxUdY,1770
+funman_demo/example/bilayer.py,sha256=rt22r7Qfu45kcXwSj4oOykvKS448YFVA-7vhQlUfgdM,2921
+funman_demo/example/chime.py,sha256=LkkuOqt_s4py4f4EqKk8Qedb9NhZ78o7pBg4tApxYPU,9451
+funman_demo/example/demo120822.py,sha256=t7o-lkOPspgW5s-a64Iu62Em1quzL6BqING3QDYX4w4,36937
+funman_demo-1.5.0.dist-info/METADATA,sha256=7oCM0zcjikudB_vHtAKun57alMetOt0QO4dtEaRK8bc,347
+funman_demo-1.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+funman_demo-1.5.0.dist-info/top_level.txt,sha256=SS1xAiX-F2PjnKda_nIu7zB88ypFGN_30WjLNoDWj1I,12
+funman_demo-1.5.0.dist-info/RECORD,,

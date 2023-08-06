@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: funman-demo
+Version: 1.5.0
+Summary: Functional Model Analysis Tool - Demo Package
+Home-page: 
+Author: Dan Bryce
+Author-email: dbryce@sift.net
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: funman
+Requires-Dist: matplotlib
+Requires-Dist: jupyter
+
+# FUNMAN demo
+A package for demoing FUNMAN behavior
