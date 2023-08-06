@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+PyMolDesc/PyMolDesc.egg-info/PKG-INFO
+PyMolDesc/PyMolDesc.egg-info/SOURCES.txt
+PyMolDesc/PyMolDesc.egg-info/dependency_links.txt
+PyMolDesc/PyMolDesc.egg-info/requires.txt
+PyMolDesc/PyMolDesc.egg-info/top_level.txt
+tests/test_calculate_descriptors.py
+tests/test_remove_salt.py
