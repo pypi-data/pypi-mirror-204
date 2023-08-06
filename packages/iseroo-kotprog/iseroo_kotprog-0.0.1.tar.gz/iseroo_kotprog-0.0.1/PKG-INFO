@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: iseroo_kotprog
+Version: 0.0.1
+Summary: Py kotprog
+Home-page: https://github.com/Iseroo/Python-kotprog
+Author: Tarsoly Barnabás
+Author-email: Taroly Barnabás <tarsoly.barnabas2002@gmail.com>
+Project-URL: Homepage, https://github.com/Iseroo/Python-kotprog
+Requires-Python: >=3.10

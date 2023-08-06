@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=42.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "iseroo_kotprog"
+version = "0.0.1"
+authors = [
+  { name="Taroly Barnabás", email="tarsoly.barnabas2002@gmail.com" },
+]
+description = "Py kotprog"
+requires-python = ">=3.10"
+[project.urls]
+"Homepage" = "https://github.com/Iseroo/Python-kotprog"
