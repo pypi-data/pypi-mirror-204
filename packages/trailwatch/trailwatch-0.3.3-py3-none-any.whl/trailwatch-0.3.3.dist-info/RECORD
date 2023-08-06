@@ -1,0 +1,16 @@
+trailwatch/__init__.py,sha256=Oae965nnSBWfUnrGJJSln_K7QM_06Awy_gqm9RjW9UY,3305
+trailwatch/config.py,sha256=iPisfuKGlzleRgIvAoHybn8j1f4US8TC8E6aUjIFLxE,6071
+trailwatch/connectors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trailwatch/connectors/aws/__init__.py,sha256=qvmUObjufzAJMlH6lWsTXocRMlYrWOKNHu4u0jWidAs,85
+trailwatch/connectors/aws/api.py,sha256=1k701S5ML3hL-rPX4C19DbxqbVzHwQ32w8fQ_QX3hlA,8308
+trailwatch/connectors/aws/connector.py,sha256=xQvN76aW8bL3Plq9B8NQoacHqlyAHS1rqMekRvZcD88,3912
+trailwatch/connectors/aws/handler.py,sha256=5gF_-BBHJIZBsC5IAM99a-gFSchYGf8QAMGrBgdI_pg,809
+trailwatch/connectors/base.py,sha256=yFCLAoliyo2XMUkp0cC_dr7NDhXvHhrHL_DwumafwxI,1081
+trailwatch/connectors/salesforce/__init__.py,sha256=3rE71FFlgcQ48fCSoYJac20zMKN-cqfsOZUDqONIP5s,306
+trailwatch/connectors/salesforce/connector.py,sha256=fzbvcAOF8k4rdvfqRjSVWB1HxYEMAB-KwUwl_cShVWk,6461
+trailwatch/context.py,sha256=gBCkbo4XW8-RBXO5HjX7eyqS8xlkbuNlUiw7okfAIGE,7103
+trailwatch/exceptions.py,sha256=Raaqurf7jubFv1k5FfBRPAWEW0NfRhSVBmKy7KSd9E8,414
+trailwatch-0.3.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+trailwatch-0.3.3.dist-info/METADATA,sha256=VgAcFnZSTZvs699NJZLRqZGNLl-cky7mFztbWkP9i6M,8253
+trailwatch-0.3.3.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+trailwatch-0.3.3.dist-info/RECORD,,
