@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+src/web3_auto/__init__.py
+src/web3_auto/from_key.py
+src/web3_auto/from_mnemonic.py
+src/web3_auto/to_checksum_address.py
+src/web3_auto.egg-info/PKG-INFO
+src/web3_auto.egg-info/SOURCES.txt
+src/web3_auto.egg-info/dependency_links.txt
+src/web3_auto.egg-info/requires.txt
+src/web3_auto.egg-info/top_level.txt

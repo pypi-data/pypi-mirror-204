@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: web3-auto
+Version: 1.3.0
+Home-page: https://github.com/ZarKane111/web3_auto
+Author: ZarKane
+License: MIT
+Keywords: web3 to_checksum checksum from_key private key from_mnemonic mnemonic
