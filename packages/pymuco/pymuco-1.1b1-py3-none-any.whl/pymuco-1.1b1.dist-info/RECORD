@@ -1,0 +1,23 @@
+pymuco/AudioConverter.py,sha256=y8zFO1AYzSn9K5Yxy5-ZA2X_wnRowlSTs0IY1PC1vek,17825
+pymuco/Chord.py,sha256=BF-drXFAxrxpHv08xOaXRhpJJxOchNtqGz9Xz5c2S3s,7956
+pymuco/CircleOfFifths.py,sha256=SVn9LJHPGGE_QG94a0hL7WYYfgz13BDVPH5EywlG6KM,7420
+pymuco/Enharmonic.py,sha256=f715L0ZzGMp3ojVTAApQxsm2piNN1vtW2-oTNTtFfug,5230
+pymuco/EnharmonicMapping.py,sha256=wiADhlzu9p3qQKvlanICMNBp9oLhTgSE0aJd_JN8xwA,4087
+pymuco/Interval.py,sha256=sCsWlOzrCy9iTvK4yn1fxcfsPUFnveF79e3bFhrIOS0,17548
+pymuco/KeySignature.py,sha256=LDc8getPhdwxh35IIaiphZv19ekJQ3rpE9P0UkN8WR0,8558
+pymuco/MIDIUtils.py,sha256=04JVWYGA21zcNgpm83eDC4g7wDAie6MNmr-ue4mjfEw,5690
+pymuco/MusicComputationNotation.py,sha256=Sf-8hY6gliuP5VidrGrp8vKdvL3KrG0A5LeynLAEiOQ,3752
+pymuco/MusicData.py,sha256=4GxFwbk0rzcUR6SqrIRhwOHGcWoqRZelJAb9mNafHxo,2886
+pymuco/NoteDuration.py,sha256=szgTgJz29oQL0nQtos0irrBFZ3U0k-4O-6A754Dwsmc,7514
+pymuco/NoteFrequencyConverter.py,sha256=MW0JtoO4kvEH9_SbTeS3nAa00joePEQMTz7ihFURXCM,3600
+pymuco/NoteMapping.py,sha256=0YD8ERBs0DHoYjkb60QaCvOV-HgvF9u4Bnslq0uSUV4,8081
+pymuco/Player.py,sha256=Yd4QYdMAu-7J7Ib28KvFCRdr0YvBT2fYidrzoZTBd_A,3465
+pymuco/Scale.py,sha256=_8ojZFbeWJUPj_iiiSSnVg_dmscUiXnffLI697D-pGI,12792
+pymuco/ScientificPitchNotation.py,sha256=4q3V6Sbt2up8OHitdXJVb0_BraDC9Us7FliJkpsSJyc,7438
+pymuco/Tonality.py,sha256=SCJHJczXJs7yHF5oorGTh3GZFjQApljyO6FbysglR9k,764
+pymuco/__init__ .py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymuco-1.1b1.dist-info/LICENSE,sha256=iyWNaOr6hPtLbkrXbRYdfX476L9Y3BZLBtzo_8LV3zg,1505
+pymuco-1.1b1.dist-info/METADATA,sha256=SYZRHQkAv9znqumzNaosWNlqAW7icS5d63YPzNEwsTA,876
+pymuco-1.1b1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pymuco-1.1b1.dist-info/top_level.txt,sha256=GqOKyeul77bnGTOOAu2kwygw4a-7Uxzh39AZxFT_Y5M,7
+pymuco-1.1b1.dist-info/RECORD,,
