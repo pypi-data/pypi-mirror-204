@@ -1,0 +1,15 @@
+nemreader/__init__.py,sha256=9V5YbSHTZMkhdoclTxBAiXJ_T5E4jG_8zqgxq1nnwSM,764
+nemreader/__main__.py,sha256=wcCrL4PjG51r5wVKqJhcoJPTLfHW0wNbD31DrUN0MWI,28
+nemreader/cli.py,sha256=uojeIB3S0OUJfA1zLPvS6r9tBlZJr3YVzek6ytAz8fg,3754
+nemreader/nem_objects.py,sha256=g7UcQMrXp9ioavOuBGC2NejvfdSpdeCZrfzti3Abt9c,3515
+nemreader/nem_reader.py,sha256=Y_kj_ITagGiU9MOvtbn72yuYSlWJbK5GSRufNyogy7Y,23144
+nemreader/output_db.py,sha256=84yqySrLeL9SrNlDpLWTji4K7ExU514zHQTzkE06UYY,6000
+nemreader/outputs.py,sha256=rpId4zb33i5O_CQojaHJh-gB9YLqI-OGBorpLPfgdds,5139
+nemreader/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nemreader/split_days.py,sha256=L8AJPlnKO-WX6jdPSxtNu_FRMz1FmY7DsD2zgGJnBqY,5595
+nemreader/version.py,sha256=jhHEJFZWhkQDemoZMomBYq-RNrKXknYzUaeIU9A6XsI,22
+nemreader-0.8.4.dist-info/entry_points.txt,sha256=TUD3KiyTtUIaHuetqLSG1apmgnhp3PDTq75Dy6IzLBQ,47
+nemreader-0.8.4.dist-info/LICENSE,sha256=SD2XuPz5m0_WSMavDfXKu6gtn6KehkmR3Xi_PnZFd6A,1074
+nemreader-0.8.4.dist-info/WHEEL,sha256=jPMR_Dzkc4X4icQtmz81lnNY_kAsfog7ry7qoRvYLXw,81
+nemreader-0.8.4.dist-info/METADATA,sha256=jcYVk192tXVSxJo11rjYs7-zDRtJdgR8QrJ6Ohf30fI,2158
+nemreader-0.8.4.dist-info/RECORD,,
