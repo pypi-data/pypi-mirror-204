@@ -1,0 +1,7 @@
+setup.py
+base_folder.egg-info/PKG-INFO
+base_folder.egg-info/SOURCES.txt
+base_folder.egg-info/dependency_links.txt
+base_folder.egg-info/top_level.txt
+libname/__init__.py
+libname/hello.py
