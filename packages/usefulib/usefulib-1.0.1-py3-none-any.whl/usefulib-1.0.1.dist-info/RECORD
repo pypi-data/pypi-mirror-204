@@ -1,0 +1,9 @@
+usefulib/__init__.py,sha256=SGKlxPhggZlSLEzdg26M9-inB53M7lc0sx9pLn0fBB8,208
+usefulib/_usefulibs.py,sha256=SaMX5qgaKTefKrnTsLQfA8QIe-uu4zP7X0qNc2XH0kg,3732
+usefulib/tests.py,sha256=dZueCGvney2tDvJZIyv_1cnRDM52j9b7ePSaWcv8es8,3084
+usefulib/temp_data/__init__.py,sha256=n92xWkLrpc7mM5M5_7jnr9O1r2knUCXAHB9u3Pw2n6A,236
+usefulib-1.0.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+usefulib-1.0.1.dist-info/METADATA,sha256=WlIIvIjp_Hzp85VAaotfD-IfVwDf7mTmYMfeuWGQsHs,1615
+usefulib-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+usefulib-1.0.1.dist-info/top_level.txt,sha256=UgMdKAzrBr7XTi-fpin9vIrcdnWlQ6aYl-7OwdE93VU,9
+usefulib-1.0.1.dist-info/RECORD,,
