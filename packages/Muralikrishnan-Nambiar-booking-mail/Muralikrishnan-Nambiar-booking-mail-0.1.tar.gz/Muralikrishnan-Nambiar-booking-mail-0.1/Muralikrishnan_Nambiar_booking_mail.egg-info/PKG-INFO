@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Muralikrishnan-Nambiar-booking-mail
+Version: 0.1
+Summary: Creates PDF and sends mail for tickets booked
+Home-page: https://www.example.com/
+Author: Muralikrishnan Nambiar
+Author-email: Muralikrishnan Nambiar <murali1700@gmail.com>
+License: BSD-3-Clause
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE

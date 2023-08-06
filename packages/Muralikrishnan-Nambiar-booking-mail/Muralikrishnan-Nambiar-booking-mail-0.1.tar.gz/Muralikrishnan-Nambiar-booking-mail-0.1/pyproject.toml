@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Muralikrishnan-Nambiar-booking-mail"
+version = "0.1"
+authors = [
+  { name="Muralikrishnan Nambiar", email="murali1700@gmail.com" },
+]
+description = "Creates PDF and sends mail for tickets booked"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]

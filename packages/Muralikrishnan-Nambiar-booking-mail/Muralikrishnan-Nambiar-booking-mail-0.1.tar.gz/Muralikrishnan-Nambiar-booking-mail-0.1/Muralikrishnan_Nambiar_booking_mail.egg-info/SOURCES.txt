@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+Muralikrishnan_Nambiar_booking_mail.egg-info/PKG-INFO
+Muralikrishnan_Nambiar_booking_mail.egg-info/SOURCES.txt
+Muralikrishnan_Nambiar_booking_mail.egg-info/dependency_links.txt
+Muralikrishnan_Nambiar_booking_mail.egg-info/top_level.txt
+booking_mail/__init__.py
+booking_mail/admin.py
+booking_mail/apps.py
+booking_mail/models.py
+booking_mail/tests.py
+booking_mail/urls.py
+booking_mail/views.py
+booking_mail/migrations/__init__.py
