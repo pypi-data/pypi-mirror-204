@@ -1,0 +1,7 @@
+PyQt5
+requests
+dicttoxml
+xmltodict
+psutil
+sounddevice
+soundfile
