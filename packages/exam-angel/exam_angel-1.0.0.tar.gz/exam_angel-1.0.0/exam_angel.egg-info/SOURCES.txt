@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+exam_angel/__init__.py
+exam_angel.egg-info/PKG-INFO
+exam_angel.egg-info/SOURCES.txt
+exam_angel.egg-info/dependency_links.txt
+exam_angel.egg-info/not-zip-safe
+exam_angel.egg-info/requires.txt
+exam_angel.egg-info/top_level.txt
