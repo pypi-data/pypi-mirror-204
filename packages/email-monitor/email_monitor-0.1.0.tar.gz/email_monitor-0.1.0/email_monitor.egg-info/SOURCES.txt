@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+email_monitor/__init__.py
+email_monitor/exceptions.py
+email_monitor/main.py
+email_monitor.egg-info/PKG-INFO
+email_monitor.egg-info/SOURCES.txt
+email_monitor.egg-info/dependency_links.txt
+email_monitor.egg-info/requires.txt
+email_monitor.egg-info/top_level.txt
