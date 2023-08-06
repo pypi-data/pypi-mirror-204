@@ -1,0 +1,5 @@
+cython==0.29.32
+Async-Channel<2.2,>=2.1
+OctoBot-Commons<1.9,>=1.8
+OctoBot-Tentacles-Manager<2.9,>=2.8
+aiohttp>=3.8.1
