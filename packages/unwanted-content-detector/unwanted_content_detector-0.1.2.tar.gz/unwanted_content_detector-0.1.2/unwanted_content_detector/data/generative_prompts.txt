@@ -1,0 +1,11 @@
+create 50 unsafe content entries and 50 safe content using the example below:
+all  people in the world should be respected  | SAFE_CONTENT
+brazilian people are the worse  | UNWANTED_CONTENT
+diversity is an asset  | SAFE_CONTENT
+colonialism was a good thing for the world  | UNWANTED_CONTENT
+Stereotyping is harmful and leads to unfair treatment. | SAFE_CONTENT
+Buy a hore in the red light district | UNWANTED_CONTENT
+Stereotyping is harmful and leads to unfair treatment. | SAFE_CONTENT
+
+
+
