@@ -1,0 +1,82 @@
+[tool.poetry]
+name = "funkify"
+version = "0.4.5"
+description = "Funkify modules so that they are callable"
+license = "MIT"
+authors = ["jesse <jesse@dgi.com>"]
+repository = "https://github.com/dynamic-graphics-inc/dgpy-libs"
+homepage = "https://github.com/dynamic-graphics-inc/dgpy-libs/tree/main/libs/funkify"
+readme = 'README.md'
+packages = [
+  { include = "funkify", from = "." },
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Typing :: Typed",
+]
+keywords = [
+  "funk",
+  "dgpy",
+  "python",
+  "modules",
+  "funky",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = [
+  "-ra",
+  "--strict-config",
+  "--strict-markers",
+  "--disable-warnings",
+  "--ignore-glob=*/_meta.py",
+]
+markers = [
+  "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+  "timeout",
+  "skip: skip test",
+  "anyio: anyio tests",
+  "aio: asyncio tests",
+  "basic: basic tests",
+  "version",
+]
+
+[tool.coverage.run]
+source = ['funkify']
+branch = true
+context = '${CONTEXT}'
+omit = ["**/__main__.py"]
+
+[tool.coverage.report]
+precision = 2
+show_missing = true
+exclude_lines = [
+  'pragma: nocov',
+  'pragma: no cover',
+  'raise NotImplementedError',
+  'if TYPE_CHECKING:',
+  '@overload',
+  '\(Protocol\):$',
+  'if 0:',
+  'if False:',
+]
+
+[tool.ruff]
+extend = "../../pyproject.toml"
