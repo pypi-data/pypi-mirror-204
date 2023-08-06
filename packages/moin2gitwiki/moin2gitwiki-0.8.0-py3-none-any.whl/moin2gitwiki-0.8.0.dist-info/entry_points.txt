@@ -1,0 +1,3 @@
+[console_scripts]
+moin2gitwiki=moin2gitwiki.cli:moin2gitwiki
+
