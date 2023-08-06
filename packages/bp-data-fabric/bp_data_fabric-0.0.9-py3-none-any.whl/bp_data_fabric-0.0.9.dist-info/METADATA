@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bp-data-fabric
+Version: 0.0.9
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Bluepinapple
+Author-email: viveksthul@bluepinapple.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8.10
+Description-Content-Type: text/plain
+Requires-Dist: streamlit (>=1.20.0)
+Requires-Dist: bp-query-tool (>=0.0.3)
+Requires-Dist: bp-data-grid (>=0.0.9)
+Requires-Dist: bp-data-visualization (>=0.0.9)
+
+UNKNOWN
+
+
