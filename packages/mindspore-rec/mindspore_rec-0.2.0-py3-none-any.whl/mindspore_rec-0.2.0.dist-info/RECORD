@@ -1,0 +1,10 @@
+mindspore_rec/__init__.py,sha256=gh4Zspm8BicMy_S_yE8jpWltDndUkl93BEj7EB-rk2w,844
+mindspore_rec/ops/__init__.py,sha256=guf3_S9WZ-omLHJQS5nKOsKI6zcs7_yZp3mlgcAcQWQ,803
+mindspore_rec/ops/embedding.py,sha256=X0c_mtgWBfeCyvp3ScQSB1DqYFwFWc5iQvO6yiDglxc,7252
+mindspore_rec/train/__init__.py,sha256=1JelkdFSLDzvv2JJVmPbqbd0HQ1YoYN-KfkO2ueY2DI,786
+mindspore_rec/train/rec_model.py,sha256=ekmt1Zwc24wMzsR4x3vu-lnQqgrWarDo4x3SIANYH7U,15297
+mindspore_rec-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mindspore_rec-0.2.0.dist-info/METADATA,sha256=rXUpH_KeGc9z7E3t6sSAz7AOhtPZHwppbLqeKaMKe6Q,1007
+mindspore_rec-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mindspore_rec-0.2.0.dist-info/top_level.txt,sha256=s2fKxxRuthnYDaqGwmlHK-H3_HogeUZSx0tGDiJm91E,14
+mindspore_rec-0.2.0.dist-info/RECORD,,
