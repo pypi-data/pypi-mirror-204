@@ -1,0 +1,283 @@
+Build started at 2023-04-20T08:54:59.180483
+Main binary: /private/var/folders/dc/lv24lxb93_xbbjdr3b_w6j8nnkgc8k/T/build-env-zar6rtf2/bin/python
+Build Options: -Dpython.purelibdir=. -Dpython.platlibdir=. -Dprefix=/Users/gbarter/devel/pyHAMS/meson_build -Dpython_target=/opt/local/bin/python
+Python system: Darwin
+The Meson build system
+Version: 1.1.0
+Source dir: /Users/gbarter/devel/pyHAMS
+Build dir: /Users/gbarter/devel/pyHAMS/meson_build
+Build type: native build
+Project name: pyhams
+Project version: undefined
+-----
+Detecting compiler via: cc --version
+compiler returned <Popen: returncode: 0 args: ['cc', '--version']>
+compiler stdout:
+Apple clang version 14.0.0 (clang-1400.0.29.202)
+Target: x86_64-apple-darwin21.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+compiler stderr:
+
+Running command: cc -E -dM -
+-----
+Detecting linker via: cc -Wl,--version
+linker returned <Popen: returncode: 1 args: ['cc', '-Wl,--version']>
+linker stdout:
+
+linker stderr:
+ld: unknown option: --version
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+-----
+Detecting Apple linker via: cc -Wl,-v
+linker stdout:
+
+linker stderr:
+@(#)PROGRAM:ld  PROJECT:ld64-820.1
+BUILD 20:07:01 Nov  7 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/local/lib
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /Users/gbarter/devel/pyHAMS/meson_build/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (clang 14.0.0 "Apple clang version 14.0.0 (clang-1400.0.29.202)")
+C linker for the host machine: cc ld64 820.1
+-----
+Detecting compiler via: cc --version
+compiler returned <Popen: returncode: 0 args: ['cc', '--version']>
+compiler stdout:
+Apple clang version 14.0.0 (clang-1400.0.29.202)
+Target: x86_64-apple-darwin21.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+compiler stderr:
+
+Running command: cc -E -dM -
+-----
+Detecting linker via: cc -Wl,--version
+linker returned <Popen: returncode: 1 args: ['cc', '-Wl,--version']>
+linker stdout:
+
+linker stderr:
+ld: unknown option: --version
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+-----
+Detecting Apple linker via: cc -Wl,-v
+linker stdout:
+
+linker stderr:
+@(#)PROGRAM:ld  PROJECT:ld64-820.1
+BUILD 20:07:01 Nov  7 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/local/lib
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /Users/gbarter/devel/pyHAMS/meson_build/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (clang 14.0.0 "Apple clang version 14.0.0 (clang-1400.0.29.202)")
+C linker for the build machine: cc ld64 820.1
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Running command: gfortran -E -dM -
+-----
+Detecting linker via: gfortran -Wl,--version
+linker returned <Popen: returncode: 1 args: ['gfortran', '-Wl,--version']>
+linker stdout:
+
+linker stderr:
+collect2 version 12.2.0
+/opt/local/bin/ld -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/ -dynamic -arch x86_64 -macosx_version_min 12.0.0 -o a.out -L/opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0 -L/opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0/../../.. --version -lemutls_w -lgcc -lSystem -no_compact_unwind -rpath /opt/local/lib/libgcc -rpath @loader_path -rpath /opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0 -rpath /opt/local/lib/gcc12
+ld: unknown option: --version
+collect2: error: ld returned 1 exit status
+
+-----
+Detecting Apple linker via: gfortran -Wl,-v
+linker stdout:
+
+linker stderr:
+collect2 version 12.2.0
+/opt/local/bin/ld -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/ -dynamic -arch x86_64 -macosx_version_min 12.0.0 -o a.out -L/opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0 -L/opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0/../../.. -v -lemutls_w -lgcc -lSystem -no_compact_unwind -rpath /opt/local/lib/libgcc -rpath @loader_path -rpath /opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0 -rpath /opt/local/lib/gcc12
+@(#)PROGRAM:ld  PROJECT:ld64-820.1
+BUILD 20:07:01 Nov  7 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0
+	/opt/local/lib/gcc12
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks/
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+collect2: error: ld returned 1 exit status
+
+Sanity testing Fortran compiler: gfortran
+Is cross compiler: False.
+Sanity check compiler command line: gfortran sanitycheckf.f90 -o sanitycheckf.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /Users/gbarter/devel/pyHAMS/meson_build/meson-private/sanitycheckf.exe
+Fortran compiler for the host machine: gfortran (gcc 12.2.0 "GNU Fortran (MacPorts gcc12 12.2.0_2+stdlib_flag) 12.2.0")
+Fortran linker for the host machine: gfortran ld64 820.1
+Running compile:
+Working directory:  /Users/gbarter/devel/pyHAMS/meson_build/meson-private/tmp_ef3_5ud
+Command line:  cc /Users/gbarter/devel/pyHAMS/meson_build/meson-private/tmp_ef3_5ud/testfile.c -o /Users/gbarter/devel/pyHAMS/meson_build/meson-private/tmp_ef3_5ud/output.exe -O0 -Werror=implicit-function-declaration -lm -Wl,-undefined,dynamic_lookup 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+Running compile:
+Working directory:  /Users/gbarter/devel/pyHAMS/meson_build/meson-private/tmpjrs5n_ty
+Command line:  gfortran /Users/gbarter/devel/pyHAMS/meson_build/meson-private/tmpjrs5n_ty/testfile.f90 -o /Users/gbarter/devel/pyHAMS/meson_build/meson-private/tmpjrs5n_ty/output.obj -c -O0 -fdec-math 
+
+Code:
+ stop; end program
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for Fortran supports arguments -fdec-math: YES 
+Running compile:
+Working directory:  /Users/gbarter/devel/pyHAMS/meson_build/meson-private/tmpk2j27fax
+Command line:  gfortran /Users/gbarter/devel/pyHAMS/meson_build/meson-private/tmpk2j27fax/testfile.f90 -o /Users/gbarter/devel/pyHAMS/meson_build/meson-private/tmpk2j27fax/output.obj -c -O0 -fno-align-commons 
+
+Code:
+ stop; end program
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for Fortran supports arguments -fno-align-commons: YES 
+Running compile:
+Working directory:  /Users/gbarter/devel/pyHAMS/meson_build/meson-private/tmpr_vr2xyn
+Command line:  cc /Users/gbarter/devel/pyHAMS/meson_build/meson-private/tmpr_vr2xyn/testfile.c -E -P -P -O0 -Werror=implicit-function-declaration -fopenmp 
+
+Code:
+ 
+        
+        #ifndef _OPENMP
+        # define _OPENMP
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+_OPENMP
+Compiler stdout:
+ 
+Compiler stderr:
+ clang: error: unsupported option '-fopenmp'
+
+OpenMP support not available in the compiler
+Could not get define '_OPENMP'
+Run-time dependency OpenMP found: NO (tried system)
+Program /opt/local/bin/python found: YES (/opt/local/bin/python)
+Searching for 'python-3.10' via pkgconfig lookup in LIBPC
+Pkg-config binary for 1 is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: /opt/local/bin/pkg-config (0.29.2)
+Determining dependency 'python-3.10' with pkg-config executable '/opt/local/bin/pkg-config'
+env[PKG_CONFIG_LIBDIR]: /opt/local/Library/Frameworks/Python.framework/Versions/3.10/lib/pkgconfig
+env[PKG_CONFIG_PATH]: 
+Called `/opt/local/bin/pkg-config --modversion python-3.10` -> 0
+stdout:
+3.10
+-----------
+env[PKG_CONFIG_LIBDIR]: /opt/local/Library/Frameworks/Python.framework/Versions/3.10/lib/pkgconfig
+env[PKG_CONFIG_PATH]: 
+Called `/opt/local/bin/pkg-config --cflags python-3.10` -> 0
+stdout:
+-I/opt/local/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10
+-----------
+env[PKG_CONFIG_LIBDIR]: /opt/local/Library/Frameworks/Python.framework/Versions/3.10/lib/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/opt/local/bin/pkg-config --libs python-3.10` -> 0
+env[PKG_CONFIG_LIBDIR]: /opt/local/Library/Frameworks/Python.framework/Versions/3.10/lib/pkgconfig
+env[PKG_CONFIG_PATH]: 
+Called `/opt/local/bin/pkg-config --libs python-3.10` -> 0
+meson.build:77: WARNING: Project targets '>= 0.60' but uses feature deprecated since '0.55.0': ExternalProgram.path. use ExternalProgram.full_path() instead
+Message: /opt/local/bin/python
+Message: /Users/gbarter/devel/pyHAMS/meson_build/./
+Running command: /opt/local/bin/python -c 'import os; os.chdir(".."); import numpy; print(numpy.get_include())'
+--- stdout ---
+/opt/local/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/numpy/core/include
+
+--- stderr ---
+
+
+Build targets in project: 2
+WARNING: Deprecated features used:
+ * 0.55.0: {'ExternalProgram.path'}
+
+pyhams undefined
+
+  User defined options
+    prefix           : /Users/gbarter/devel/pyHAMS/meson_build
+    python.platlibdir: .
+    python.purelibdir: .
+    python_target    : /opt/local/bin/python
+
+Found ninja-1.11.1.git.kitware.jobserver-1 at /private/var/folders/dc/lv24lxb93_xbbjdr3b_w6j8nnkgc8k/T/build-env-zar6rtf2/bin/ninja
+Running compile:
+Working directory:  /Users/gbarter/devel/pyHAMS/meson_build/meson-private/tmpwkca291o
+Command line:  gfortran /Users/gbarter/devel/pyHAMS/meson_build/meson-private/tmpwkca291o/testfile.f90 -o /Users/gbarter/devel/pyHAMS/meson_build/meson-private/tmpwkca291o/output.obj -c -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0/
+programs: =/opt/local/libexec/gcc/x86_64-apple-darwin21/12.2.0/:/opt/local/libexec/gcc/x86_64-apple-darwin21/12.2.0/:/opt/local/libexec/gcc/x86_64-apple-darwin21/:/opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0/:/opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/:/opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0/../../../../../x86_64-apple-darwin21/bin/x86_64-apple-darwin21/12.2.0/:/opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0/../../../../../x86_64-apple-darwin21/bin/
+libraries: =/opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0/:/opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0/../../../../../x86_64-apple-darwin21/lib/x86_64-apple-darwin21/12.2.0/:/opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0/../../../../../x86_64-apple-darwin21/lib/:/opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0/../../../x86_64-apple-darwin21/12.2.0/:/opt/local/lib/gcc12/gcc/x86_64-apple-darwin21/12.2.0/../../../
+
+Compiler stderr:
+ 

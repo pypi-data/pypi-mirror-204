@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pyHAMS
+Version: 1.1.0
+Summary: Python module wrapping around HAMS
+Author-email: NREL WISDEM Team <systems.engineering@nrel.gov>
+Maintainer-email: NREL WISDEM Team <systems.engineering@nrel.gov>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/WISDEM/pyHAMS
+Project-URL: Project, https://github.com/YingyiLiu/HAMS
+Keywords: wind,turbine,mdao,design,optimization
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Fortran
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE
+
+# pyHAMS
+
+This is a python wrapper for [HAMS](https://github.com/YingyiLiu/HAMS)
