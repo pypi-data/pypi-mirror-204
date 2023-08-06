@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: graphutils
+Version: 0.1
+Summary: utility codebase for graph-related projects
+Home-page: https://github.com/Oaklight/graphutils
+Author: Peng Ding
+Author-email: pding.dp@foxmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: networkx
+Requires-Dist: pgmpy
+
+# graphutils
+utility codebase for graph-related projects
