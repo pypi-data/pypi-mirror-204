@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: sw-pulumi-algolia
+Version: 0.1.1
+Summary: A Pulumi package for creating and managing algolia cloud resources.
+Home-page: https://www.pulumi.com
+License: Apache-2.0
+Project-URL: Repository, https://github.com/swarm-work/pulumi-algolia
+Description: # Algolia Resource Provider
+        
+        The Algolia Resource Provider lets you manage [Algolia](https://algolia.com) resources.
+        
+        ## Installing
+        
+        This package is available for python only.
+        
+        ### Python
+        
+        To use from Python, install using `pip`:
+        
+        ```bash
+        pip install sw_pulumi_algolia
+        ```
+        
+        ## Configuration
+        
+        The following configuration points are available for the `foo` provider:
+        
+        - `algolia:apiKey` - (Required) the admin API key from your algolia account.
+        - `algolia:applicationId` - (Required) the application ID from your algolia account.
+        
+        ## Reference
+        
+        For detailed reference documentation, please visit [Pulumi Algolia Repo](https://github.com/swarm-work/pulumi-algolia).
+        API docs in Pulumi Registry is on its way.
+        
+Keywords: pulumi algolia category/cloud
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
