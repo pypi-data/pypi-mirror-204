@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: I2C_Autotest
+Version: 1.0.0
+Summary: A set of data tools in Python
+Home-page: https://github.com/
+Author: Tairong Chen
+Author-email: s321790@gmail.com
+License: MIT
+Download-URL: https://pypi.org/
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev

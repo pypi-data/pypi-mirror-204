@@ -1,0 +1,8 @@
+setup.py
+I2C_Autotest/__init__.py
+I2C_Autotest/analytics_core.py
+I2C_Autotest.egg-info/PKG-INFO
+I2C_Autotest.egg-info/SOURCES.txt
+I2C_Autotest.egg-info/dependency_links.txt
+I2C_Autotest.egg-info/requires.txt
+I2C_Autotest.egg-info/top_level.txt
