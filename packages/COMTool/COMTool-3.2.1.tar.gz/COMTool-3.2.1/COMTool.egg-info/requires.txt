@@ -1,0 +1,10 @@
+Babel
+coloredlogs
+paramiko
+pyperclip
+pyqt5>=5
+pyqtgraph
+pyserial>=3.4
+pyte
+qtawesome>=1.1.1
+requests
