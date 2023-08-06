@@ -1,0 +1,2 @@
+[console_scripts]
+jawalang = jawalang.__main__:main
