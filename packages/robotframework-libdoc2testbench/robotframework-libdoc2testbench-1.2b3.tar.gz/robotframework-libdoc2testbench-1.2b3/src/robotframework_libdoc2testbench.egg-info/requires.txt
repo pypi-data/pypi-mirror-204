@@ -1,0 +1,7 @@
+robotframework>=4.0.0
+
+[dev]
+isort
+mypy
+pylint
+black
