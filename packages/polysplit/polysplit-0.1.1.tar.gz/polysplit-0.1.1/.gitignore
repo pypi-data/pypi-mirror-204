@@ -1,0 +1,6 @@
+venv/
+.idea/
+htmlcov/
+__pycache__/
+.gitignore
+.coverage
