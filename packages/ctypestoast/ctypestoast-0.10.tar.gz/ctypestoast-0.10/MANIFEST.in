@@ -1,0 +1,4 @@
+include ctypestoast/requirements.txt
+include ctypestoast/thirdparty.json
+include ctypestoast/README.md
+include ctypestoast/LICENSE

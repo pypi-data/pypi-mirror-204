@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ctypestoast/LICENSE
+ctypestoast/README.md
+ctypestoast/__init__.py
+ctypestoast/requirements.txt
+ctypestoast/thirdparty.json
+ctypestoast.egg-info/PKG-INFO
+ctypestoast.egg-info/SOURCES.txt
+ctypestoast.egg-info/dependency_links.txt
+ctypestoast.egg-info/top_level.txt
