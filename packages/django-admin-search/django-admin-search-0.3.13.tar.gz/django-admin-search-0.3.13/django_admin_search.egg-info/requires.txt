@@ -1,0 +1,17 @@
+django
+
+[code-quality]
+isort
+bandit
+xenon
+
+[dev]
+django
+django_mock_queries
+pylint
+pytest-pylint
+pytest
+pytest-cov
+pytest-watch
+tox
+six
