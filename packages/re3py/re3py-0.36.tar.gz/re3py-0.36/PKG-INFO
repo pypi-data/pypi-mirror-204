@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: re3py
+Version: 0.36
+Summary: Relational ranking
+Home-page: https://github.com/re3py/re3py
+Author: Matej Petković, Blaž Škrlj
+Author-email: matej.petkovic@ijs.si
+License: bsd-3-clause-clear
+Requires-Python: >3.6.0
