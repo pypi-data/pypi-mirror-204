@@ -1,0 +1,13 @@
+langforge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langforge/main.py,sha256=sCbDwiRnPGfFZ4SKwsHB780zpswPFOjCldRTOmEG4UM,1088
+langforge/bin/langforge-linux-amd64,sha256=-PsvL3xh0BI-2l9ulJXMvmgI-lBDLg4FFjyHIxjUNeU,7070106
+langforge/bin/langforge-linux-arm64,sha256=g1b920dSejwPuVFAq9n3IzaHD_boySjBJZ2627RKbt8,6868249
+langforge/bin/langforge-macos-amd64,sha256=-BkrrJJZ4A-VwkVVc_N4pNWnQi-9LkpzpkHLTBQvWE8,6955568
+langforge/bin/langforge-macos-arm64,sha256=4CBviOQ-L_miDlyf-iirCT7xtgUc83yAid-jl5PTXpU,6890018
+langforge/bin/langforge-windows-amd64.exe,sha256=s8QQAb0fL01xPRCpTLKAQGAvPT909LBWzeRmO3LMV9c,7476736
+langforge/bin/langforge-windows-arm64.exe,sha256=6dfZCTAXuhI0e74SKaUQXPbJPqgNsCqOzzXI4CGugRo,7247872
+langforge_cli-0.1.0.dist-info/METADATA,sha256=-mnBdT96SYN_USw7SqIfcCrRDHkQGu_qgzc6-682sDM,2782
+langforge_cli-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+langforge_cli-0.1.0.dist-info/entry_points.txt,sha256=4a71z_8cR7P2ttAyFO5qZ-utG4lmZY5jQ5cJKzMOVaw,50
+langforge_cli-0.1.0.dist-info/top_level.txt,sha256=24geL0DdTJVXJw3rIEE62xZyPdPGpFPSp5ZHvQKT8iI,10
+langforge_cli-0.1.0.dist-info/RECORD,,
