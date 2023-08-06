@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: goodai-ltm
+Version: 0.0.11
+Summary: A text memory meant to be used with conversational language models.
+Home-page: https://github.com/GoodAI/goodai-ltm
+Requires-Dist: torch (>=1.8.0)
+Requires-Dist: pytest (>=7.0.0)
+Requires-Dist: numpy (>=1.19.0)
+Requires-Dist: transformers (>=4.0.0)
+Requires-Dist: openai (>=0.27.0)
+Requires-Dist: faiss-cpu
+Requires-Dist: datasets
+Requires-Dist: boto3
+Requires-Dist: python-dotenv
+Requires-Dist: sentence-transformers (>=2.2.2)
+
