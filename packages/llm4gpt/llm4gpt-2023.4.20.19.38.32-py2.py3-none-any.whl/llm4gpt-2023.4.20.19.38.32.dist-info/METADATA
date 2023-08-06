@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: llm4gpt
+Version: 2023.4.20.19.38.32
+Summary: Create a Python package.
+Home-page: https://github.com/yuanjie-ai/llm4gpt
+Author: LLM4GPT
+Author-email: 313303303@qq.com
+License: MIT license
+Keywords: llm4gpt
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: meutils
+Requires-Dist: langchain
+
+![image](https://img.shields.io/pypi/v/llm4gpt.svg) ![image](https://img.shields.io/travis/yuanjie-ai/llm4gpt.svg) ![image](https://readthedocs.org/projects/llm4gpt/badge/?version=latest)
+
+
+
+<h1 align = "center">🔥LLM4GPT 为大模型而生🔥</h1>
+
+---
+
+# Install
+
+```python
+pip install -U llm4gpt
+```
+
+# [Docs](https://jie-yuan.github.io/llm4gpt/)
+
+# Usages
+
+```python
+from llm.qa import QA
+from llm.utils import llm_load
+from llm.chatllm import ChatLLM
+from llm.kb.FaissANN import FaissANN
+
+from meutils.pipe import *
+
+# 解析知识库
+texts = []
+metadatas = []
+for p in Path('data').glob('*.txt'):
+    texts.append(p.read_text())
+    metadatas.append({'source': p})
+
+# 文档向量化
+faissann = FaissANN(model_name_or_path="shibing624/text2vec-base-chinese")
+faissann.add_texts(texts, metadatas)
+
+# 构建pipeline
+model, tokenizer = llm_load(model_name_or_path="THUDM/chatglm-6b", device='cpu')
+glm = ChatLLM()
+glm.chat_func = partial(model.chat, tokenizer=tokenizer)
+
+qa = QA(glm, faiss_ann=faissann.faiss_ann)
+
+qa.get_knowledge_based_answer('周杰伦在干吗')
+qa.get_knowledge_based_answer('姚明住哪里')
+```
+
+---
+
+# TODO
+
+- [ ] 增加UI
+
+- [x] 增加本地知识库组件
+
+- [ ] 增加互联网搜索组件
+
+- [ ] 增加知识图谱组件
+
+- [ ] 增加微调模块
+
+- [ ] 增加流式输出
+
+
+
+
+
+=======
+History
+=======
+
+0.0.0 (2023-04-11)
+------------------
+
+* First release on PyPI.
