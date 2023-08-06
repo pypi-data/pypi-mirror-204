@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+gptloop/__init__.py
+gptloop/cli.py
+gptloop.egg-info/PKG-INFO
+gptloop.egg-info/SOURCES.txt
+gptloop.egg-info/dependency_links.txt
+gptloop.egg-info/entry_points.txt
+gptloop.egg-info/requires.txt
+gptloop.egg-info/top_level.txt
