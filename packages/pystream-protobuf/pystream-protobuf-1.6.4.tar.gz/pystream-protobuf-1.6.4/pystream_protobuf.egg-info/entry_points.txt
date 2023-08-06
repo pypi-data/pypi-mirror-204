@@ -1,0 +1,2 @@
+[console_scripts]
+varint = stream.varint:cli
