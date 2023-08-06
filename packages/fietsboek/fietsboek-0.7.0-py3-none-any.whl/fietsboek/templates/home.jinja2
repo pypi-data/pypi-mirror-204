@@ -1,0 +1,53 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<div class="container">
+  <h1>{{ _("page.home.title") }}</h1>
+  {% if unfinished_uploads %}
+  <div class="alert alert-warning">
+    {{ _("page.home.unfinished_uploads") }}
+    <ul class="mb-0">
+      {% for upload in unfinished_uploads %}
+      <li><a href="{{ request.route_url("finish-upload", upload_id=upload.id) }}">{{ upload.uploaded_at | local_datetime }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  {% if summary %}
+  <div class="list-group list-group-root">
+    {% for year in summary %}
+    <a class="list-group-item list-group-item-primary">
+      <i class="bi bi-chevron-down summary-toggler"></i>
+      {{ year.year }}
+      <span class="float-end">{{ ngettext("page.home.summary.track", "page.home.summary.tracks", year|length) }} &mdash; {{ (year.total_length / 1000) | round(2) | format_decimal }} km</span>
+    </a>
+    <div class="list-group collapse show">
+      {% for month in year %}
+      <a class="list-group-item list-group-item-secondary">
+        <i class="bi bi-chevron-down summary-toggler"></i>
+        {{ month_name(request, month.month) }}
+        <span class="float-end">{{ ngettext("page.home.summary.track", "page.home.summary.tracks", month|length) }} &mdash; {{ (month.total_length / 1000) | round(2) | format_decimal }} km</span>
+      </a>
+      <div class="list-group collapse show">
+        {% for track in month %}
+        <span class="list-group-item">
+          {{ track.date.day }}:
+          <a href="{{ request.route_url('details', track_id=track.id) }}" data-bs-toggle="tooltip" data-bs-container="body" data-bs-html="true" title="{{ track.html_tooltip(request.localizer) }}">
+            {{ track.title | default(track.date, true) }}
+          </a>
+          <span class="float-end">{{ (track.length / 1000) | round(2) | format_decimal }} km</span>
+        </span>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+  <p>
+    {{ _("page.home.total") }}: {{ ngettext("page.home.summary.track", "page.home.summary.tracks", summary|length) }}, {{ (summary.total_length / 1000) | round(2) | format_decimal }} km
+  </p>
+  {% elif home_content %}
+  {{ home_content | safe }}
+  {% endif %}
+</div>
+{% endblock %}
