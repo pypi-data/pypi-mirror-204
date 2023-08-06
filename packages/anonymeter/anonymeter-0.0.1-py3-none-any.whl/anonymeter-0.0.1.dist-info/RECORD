@@ -1,0 +1,17 @@
+anonymeter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anonymeter/evaluators/__init__.py,sha256=hPMwN0W4RumE7BhKMi2GRyQ3w7EZ4lpY7MWyn9gt0zg,590
+anonymeter/evaluators/inference_evaluator.py,sha256=pzs0FXln05ybN35dQxJC4wvt2pGLOXQjYsJ6du5jYbA,9092
+anonymeter/evaluators/linkability_evaluator.py,sha256=TIvU0BZGo6baaEqLJc_vWeIFnih8G0ic5rnT11tEuKs,11629
+anonymeter/evaluators/singling_out_evaluator.py,sha256=DB6vb1B-6Cvruo5J66uvswQk1qk-kYhCba41CO5rU2E,17870
+anonymeter/neighbors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anonymeter/neighbors/mixed_types_kneighbors.py,sha256=YWca0VW12oYbiuBMd4cP4ixbswAQKNCxSkAg86K0juw,8776
+anonymeter/preprocessing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anonymeter/preprocessing/transformations.py,sha256=rwWOt9fiTMATFM3IeyHDSOrvpBo7w1dauol4AgAn4os,3693
+anonymeter/preprocessing/type_detection.py,sha256=q5KScIxc8lRifSEu3GwP2cOlwzLGCLrWDsB7crtiHCs,1658
+anonymeter/stats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anonymeter/stats/confidence.py,sha256=GuUnqMG8RLFEY7vLL9ubUNt81_A95irNZgPaeLFAbEI,7803
+anonymeter-0.0.1.dist-info/LICENSE.md,sha256=TTCTWSiwyN6f2I8TzyfrP7ONPMOWqwL0HDw_XJ_L69w,1670
+anonymeter-0.0.1.dist-info/METADATA,sha256=d6AIUXXqHsAoKysj5JZ4AMytqMmMfhIkPlpMjFPU6HM,8693
+anonymeter-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+anonymeter-0.0.1.dist-info/top_level.txt,sha256=n86U99uR8ZIFVClhrGaewYfcoAMzZ9rEtB_HGSfBWxA,11
+anonymeter-0.0.1.dist-info/RECORD,,
