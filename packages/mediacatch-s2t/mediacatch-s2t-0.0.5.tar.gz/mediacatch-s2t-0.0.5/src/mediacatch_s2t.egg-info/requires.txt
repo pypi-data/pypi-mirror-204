@@ -1,0 +1,11 @@
+pymediainfo
+requests
+rich
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
+responses
