@@ -1,0 +1,3 @@
+[oarepo.models]
+common = nr_metadata.common.models:model.json
+documents = nr_metadata.documents.models:model.json
