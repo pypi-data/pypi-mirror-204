@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+src/etsy3py/__init__.py
+src/etsy3py/base_client.py
+src/etsy3py/oauth.py
+src/etsy3py/v3.py
+src/etsy3py.egg-info/PKG-INFO
+src/etsy3py.egg-info/SOURCES.txt
+src/etsy3py.egg-info/dependency_links.txt
+src/etsy3py.egg-info/requires.txt
+src/etsy3py.egg-info/top_level.txt
