@@ -1,0 +1,5 @@
+openqaoa
+openqaoa_azure
+openqaoa_braket
+openqaoa_pyquil
+openqaoa_qiskit
