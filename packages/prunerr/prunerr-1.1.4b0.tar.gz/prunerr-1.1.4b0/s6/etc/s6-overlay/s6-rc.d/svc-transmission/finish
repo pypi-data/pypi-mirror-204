@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bash
+
+# Stop the container if the service fails
+#
+# https://github.com/just-containers/s6-overlay#writing-an-optional-finish-script
+echo $1 >"/run/s6-linux-init-container-results/exitcode"
+exec /run/s6/basedir/bin/halt
