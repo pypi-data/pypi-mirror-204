@@ -1,0 +1,9 @@
+
+[memcached]
+aiomcache>=0.5.2
+
+[msgpack]
+msgpack>=0.5.5
+
+[redis]
+redis>=4.2.0
