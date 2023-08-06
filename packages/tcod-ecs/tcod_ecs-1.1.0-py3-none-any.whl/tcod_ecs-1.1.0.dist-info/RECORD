@@ -1,0 +1,6 @@
+tcod/ecs/__init__.py,sha256=qBHYwJTZVO7BUiELKoH3KN8Os3PqHhxbUPoKPzUJoRQ,31850
+tcod/ecs/test_ecs.py,sha256=BofQzkBWTHqvibE5w67MRvsxw12oLMjCnZW5LFbx08A,7530
+tcod_ecs-1.1.0.dist-info/LICENSE,sha256=4KeH92Vng6Sz_LWIuQplYi7pFs35v1w6XdGTZdaivMA,1100
+tcod_ecs-1.1.0.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+tcod_ecs-1.1.0.dist-info/METADATA,sha256=Y_3R9iMkuNG3dRwcmNnOBiLXIUMlC9FwhEgdjSpMzR4,9609
+tcod_ecs-1.1.0.dist-info/RECORD,,
