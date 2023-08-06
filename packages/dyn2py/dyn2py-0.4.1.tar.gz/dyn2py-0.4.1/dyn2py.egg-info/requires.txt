@@ -1,0 +1,9 @@
+importlib_metadata
+pathvalidate
+simplejson
+
+[build]
+pyinstaller
+
+[doc]
+pdoc
