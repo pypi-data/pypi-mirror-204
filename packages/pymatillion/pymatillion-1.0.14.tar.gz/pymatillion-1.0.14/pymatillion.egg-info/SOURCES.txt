@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+pymatillion.egg-info/PKG-INFO
+pymatillion.egg-info/SOURCES.txt
+pymatillion.egg-info/dependency_links.txt
+pymatillion.egg-info/requires.txt
+pymatillion.egg-info/top_level.txt
+tests/test_matillion_client.py
