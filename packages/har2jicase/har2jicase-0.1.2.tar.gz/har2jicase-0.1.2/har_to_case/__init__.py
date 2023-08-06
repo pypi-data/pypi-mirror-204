@@ -1,0 +1,1 @@
+__version__ = 0.1.2__title__ = har2jicase__description__ = 将浏览器录制的har文件为极星测试框架的YAML测试用例__url__ = __version__ = 0.1.2__author__ = Captain Ji__author_email__ = qing.ji@extremevision.com.cn__license__ = MIT
