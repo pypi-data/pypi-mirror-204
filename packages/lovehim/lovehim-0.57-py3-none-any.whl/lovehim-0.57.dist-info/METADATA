@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: lovehim
+Version: 0.57
+Requires-Dist: openai
+Requires-Dist: argparse
+
