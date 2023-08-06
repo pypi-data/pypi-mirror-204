@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geostat"
+version = "0.8.3"
+description = "Model spatial data with Gaussian processes"
+readme = "README.md"
+authors = [
+  {name="Michael J. Stephens", email="mjstephens@usgs.gov"},
+  {name="Will Chang", email="will@hypergradient.ai"}
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["geospatial", "spatial", "interpolation", "gaussian process", "krige", "kriging"]
+requires-python = ">=3.7"
+
+[project.urls]
+Homepage = "https://github.com/whdc/geostat"
