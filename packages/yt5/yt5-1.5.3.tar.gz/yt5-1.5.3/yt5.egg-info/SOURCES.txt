@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+yt5/__init__.py
+yt5/__main__.py
+yt5/yt5.py
+yt5.egg-info/PKG-INFO
+yt5.egg-info/SOURCES.txt
+yt5.egg-info/dependency_links.txt
+yt5.egg-info/entry_points.txt
+yt5.egg-info/requires.txt
+yt5.egg-info/top_level.txt
