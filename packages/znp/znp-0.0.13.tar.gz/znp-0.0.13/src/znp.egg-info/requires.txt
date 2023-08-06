@@ -1,0 +1,6 @@
+psutil
+loadconf
+promptx>=0.0.5
+
+[x11]
+ewmh
