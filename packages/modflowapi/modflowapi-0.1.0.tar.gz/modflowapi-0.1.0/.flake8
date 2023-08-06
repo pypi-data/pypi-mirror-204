@@ -1,0 +1,31 @@
+[flake8]
+exclude =
+    .git,
+    __pycache__,
+    build,
+    dist,
+    examples,
+    autotest
+ignore =
+    # https://flake8.pycqa.org/en/latest/user/error-codes.html
+    # 'module' imported but unused
+    F401,
+    # https://pycodestyle.readthedocs.io/en/latest/intro.html#error-codes
+    # E1: Indentation
+    E121, E122, E126, E127, E128,
+    # E2: Whitespace
+    E203, E221, E222, E226, E231, E241,
+    # E4: Import
+    E402,
+    # E5: Line length
+    E501, E502,
+    # E7: Statement
+    E722, E741,
+    # W2: Whitespace warning
+    W291, W292, W293,
+    # W3: Blank line warning
+    W391,
+    # W5: Line break warning
+    W503, W504
+
+statistics = True
