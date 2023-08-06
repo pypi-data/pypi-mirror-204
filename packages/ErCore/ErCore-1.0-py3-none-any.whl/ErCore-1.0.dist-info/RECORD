@@ -1,0 +1,11 @@
+ErCore/Core.py,sha256=UT3dwergBadEhkzho5rPOczGVEfRQKUGQWX3uicUflo,2101
+ErCore/__init__.py,sha256=_TcvVbt7YCUDEYMUw4rya3FkFBsyWhKLJpiNweuTZTk,33
+ErCore/cli.py,sha256=JvHV-Ry1ELt-JbbWB5r0UPdptWc4l2Y0HOfe4IwxV8U,3188
+ErCore/std/Base.py,sha256=kp3-0UFyU-1SVSby2g522Nlh6uzleG08ACJd9hdGDaM,375
+ErCore/std/__init__.py,sha256=lDzjFkNm6ieeUHmcTgufXws_Mlm61wY6oVwlXTbK430,33
+ErCore-1.0.dist-info/LICENSE,sha256=7ZWOIN3DxwsPJgwX8H2KSIOYj3_pv31Vf8n15MXb-mU,1086
+ErCore-1.0.dist-info/METADATA,sha256=NpRxT37Zx17zCV1se7B4HUZ1zGF8ZYppZuMEwlsg9dY,475
+ErCore-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ErCore-1.0.dist-info/entry_points.txt,sha256=MeawRCSxujs-gpJMHD1j0mUx-N1lNe6rAq1l3OorH4k,98
+ErCore-1.0.dist-info/top_level.txt,sha256=w9pOXS-zVF_0p6KjBfnNIFwvacIj7I32c5Yoy0AU18k,7
+ErCore-1.0.dist-info/RECORD,,
