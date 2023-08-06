@@ -1,0 +1,12 @@
+README.md
+setup.py
+mindsdb_text_to_sql/__about__.py
+mindsdb_text_to_sql/__init__.py
+mindsdb_text_to_sql/gpt.py
+mindsdb_text_to_sql/gpt_text_to_sql.py
+mindsdb_text_to_sql.egg-info/PKG-INFO
+mindsdb_text_to_sql.egg-info/SOURCES.txt
+mindsdb_text_to_sql.egg-info/dependency_links.txt
+mindsdb_text_to_sql.egg-info/requires.txt
+mindsdb_text_to_sql.egg-info/top_level.txt
+mindsdb_text_to_sql/config/examples.json
