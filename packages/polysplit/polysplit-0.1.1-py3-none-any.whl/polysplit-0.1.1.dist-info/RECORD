@@ -1,0 +1,9 @@
+polysplit/__init__.py,sha256=URy2gEn0wVD1zBPQslKX43BSIH3wOt19cQAzkqPs7rM,362
+polysplit/polysplit.py,sha256=i6BtUY8Lwk_OgUohE8G3Wkiu8FhcP-dLuk7tPsfp-nk,8601
+polysplit/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polysplit/tests/test_polysplit.py,sha256=dKGtwOz2sToZvt65qmtyX8z-8NsVxH5wkEBJKX0KYQQ,2497
+polysplit-0.1.1.dist-info/LICENSE,sha256=Kg29RvvQEB3VpafPuSFMqr_cjSexZsXnueScx10G5zA,1073
+polysplit-0.1.1.dist-info/METADATA,sha256=P2JSs9Vo6jgHQW5F2V9TZiu1okjGtZWQChV6oPF1qE4,5075
+polysplit-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+polysplit-0.1.1.dist-info/top_level.txt,sha256=YeOw2CFQmBhMODz-tfkNFZGhCwT4O4Dy98jcAaTDfHo,10
+polysplit-0.1.1.dist-info/RECORD,,
