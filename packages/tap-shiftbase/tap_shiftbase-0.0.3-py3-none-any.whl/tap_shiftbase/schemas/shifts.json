@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Shift",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "account_id": {
+      "type": "string"
+    },
+    "department_id": {
+      "type": "string"
+    },
+    "long_name": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "starttime": {
+      "type": "string",
+      "format": "time"
+    },
+    "endtime": {
+      "type": "string",
+      "format": "time"
+    },
+    "hide_end_time": {
+      "type": "boolean"
+    },
+    "is_task": {
+      "type": "boolean"
+    },
+    "break": {
+      "type": "integer"
+    },
+    "meals": {
+      "type": "integer"
+    },
+    "rate_card_id": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string",
+      "format": "color"
+    },
+    "order": {
+      "type": "string"
+    },
+    "custom_fields": {
+      "type": "object"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "modified_by": {
+      "type": "string"
+    }
+  }
+}
