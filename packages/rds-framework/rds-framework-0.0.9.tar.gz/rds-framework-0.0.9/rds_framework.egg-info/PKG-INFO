@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: rds-framework
+Version: 0.0.9
+Summary: Framework para serviços do Rede de Dados em Saúde do LAIS
+Home-page: UNKNOWN
+Author: Kelson da Costa Medeiros
+Author-email: kelson.medeiros@lais.huol.ufrn.br
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: rds,framework,cache,config,helper,searchengine
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
