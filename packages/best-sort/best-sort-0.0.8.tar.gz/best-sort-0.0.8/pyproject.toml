@@ -1,0 +1,29 @@
+[build-system]
+requires = ["flit_scm"]
+build-backend = "flit_scm:buildapi"
+
+[tool.flit.sdist]
+exclude = [".gitignore"]
+
+[tool.setuptools_scm]
+write_to = "src/best_sort/_version.py"
+
+[project]
+name = "best-sort"
+dynamic = ["version"]
+authors = [
+  { name="Joey Wheeler", email="joewheeler2048@gmail.com" },
+]
+description = "A package to find the best sorting algorithm for given data."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+keywords = ["sorting algorithm", "sorting", "best algorithm"]
+
+[project.urls]
+"Homepage" = "https://git.jharmison.com/JediJoey/best_sort"
+"Bug Tracker" = "https://git.jharmison.com/JediJoey/best_sort/issues"
