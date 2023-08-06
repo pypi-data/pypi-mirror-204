@@ -1,0 +1,14 @@
+numpy
+
+[docs]
+sphinx
+sphinx-rtd-theme
+
+[lint]
+flake8
+pylint
+black
+
+[test]
+pytest
+pytest-cov
