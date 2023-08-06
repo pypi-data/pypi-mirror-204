@@ -1,0 +1,2 @@
+[console_scripts]
+yaml-stripper = yaml_stripper.yaml_stripper:main
