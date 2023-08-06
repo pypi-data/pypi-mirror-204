@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "stellar-keystore"
+version = "0.1.2"
+description = "Tools for handling the encrypted keystore format used to store Stellar keypairs."
+authors = ["overcat <4catcode@gmail.com>"]
+maintainers = ["overcat <4catcode@gmail.com>"]
+homepage = "https://github.com/overcat/stellar-keystore"
+repository = "https://github.com/overcat/stellar-keystore"
+documentation = "https://github.com/overcat/stellar-keystore"
+keywords = [
+    "stellar",
+    "stellar.org",
+    "keystore",
+    "keyfile"
+]
+readme = "README.md"
+license = "Apache License 2.0"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed"
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/overcat/stellar-keystore/issues"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+PyNaCl = "^1.5.0"
+stellar-sdk = "^8.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
