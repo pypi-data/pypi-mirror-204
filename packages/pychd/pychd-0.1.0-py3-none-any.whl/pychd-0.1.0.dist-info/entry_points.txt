@@ -1,0 +1,3 @@
+[console_scripts]
+pychd=src.pychd.main:cli
+
