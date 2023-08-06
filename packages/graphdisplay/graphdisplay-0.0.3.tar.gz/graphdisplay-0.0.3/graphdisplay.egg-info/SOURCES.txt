@@ -1,0 +1,9 @@
+README.md
+setup.py
+graphdisplay/__init__.py
+graphdisplay/graphdisplay.py
+graphdisplay.egg-info/PKG-INFO
+graphdisplay.egg-info/SOURCES.txt
+graphdisplay.egg-info/dependency_links.txt
+graphdisplay.egg-info/requires.txt
+graphdisplay.egg-info/top_level.txt

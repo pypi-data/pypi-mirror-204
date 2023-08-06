@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: graphdisplay
+Version: 0.0.3
+Summary: Librería para representar visualmente grafos de tipo diccionario
+Home-page: https://github.com/seniorbeto
+Author: Alberto Penas Díaz
+Author-email: albertopenasdiaz@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# graphdisplay
+Se trata de un proyecto personal que trata de facilitar la visualización de grafos 
+implementados en python.
