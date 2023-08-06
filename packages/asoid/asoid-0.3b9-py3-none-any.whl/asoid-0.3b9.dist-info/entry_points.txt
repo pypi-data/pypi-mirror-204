@@ -1,0 +1,2 @@
+[console_scripts]
+asoid = asoid.__main__:main
