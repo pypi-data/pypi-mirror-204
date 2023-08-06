@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Stooqer/__init__.py
+Stooqer/parsing.py
+Stooqer/stooqer.py
+stooqer.egg-info/PKG-INFO
+stooqer.egg-info/SOURCES.txt
+stooqer.egg-info/dependency_links.txt
+stooqer.egg-info/requires.txt
+stooqer.egg-info/top_level.txt
