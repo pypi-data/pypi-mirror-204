@@ -1,0 +1,6 @@
+numpy
+spacy
+sentence_transformers
+scipy
+spacy-sentence-bert
+rich

@@ -1,0 +1,12 @@
+README.md
+setup.py
+fasdr/__init__.py
+fasdr/cli.py
+fasdr/fasdr.py
+fasdr.egg-info/PKG-INFO
+fasdr.egg-info/SOURCES.txt
+fasdr.egg-info/dependency_links.txt
+fasdr.egg-info/entry_points.txt
+fasdr.egg-info/requires.txt
+fasdr.egg-info/top_level.txt
+tests/test_fasdr.py
