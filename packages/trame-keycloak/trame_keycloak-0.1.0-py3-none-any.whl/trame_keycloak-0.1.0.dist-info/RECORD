@@ -1,0 +1,15 @@
+trame/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/modules/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/modules/keycloak.py,sha256=cOt7z5BR6-i1l4oKfjP-zsoBV2s6zxCdwbhYqj8Dmcg,36
+trame/widgets/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/widgets/keycloak.py,sha256=ToU8cjoVDkl7SUUMHuWYVUdmpNUZVEm-sRxkKloKjwc,144
+trame_keycloak/__init__.py,sha256=ESRGeW7OqxG9On2jpcPgjYo6MZk2vtYkIZT79gx3-N8,96
+trame_keycloak/module/__init__.py,sha256=0aHzpbzv-TcpnG_V9kIXBYP65HvXpzSG9TzG4dUVfV8,817
+trame_keycloak/module/serve/trame-keycloak.umd.js,sha256=lyQcm6SNld2zAqXo-x8mcbJqciKYokBwjJT_2VhigmQ,38370
+trame_keycloak/widgets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trame_keycloak/widgets/keycloak.py,sha256=wFGCG0fEZ92HzGc71AxsQM1HsUfao1xlqCzm0HJrjFU,5119
+trame_keycloak-0.1.0.dist-info/LICENSE,sha256=dKGMy4nByp0zLYanfWOXLWKPohy-vH-RuacUJQttVk0,583
+trame_keycloak-0.1.0.dist-info/METADATA,sha256=6dM5R8zF9qTPs_oVdog1Huii4tnWD_cXJzgbzpAC1h0,1167
+trame_keycloak-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+trame_keycloak-0.1.0.dist-info/top_level.txt,sha256=WuNKhhrBRBQe-UQX95uN-E_Z_b4H5S81G8NmH48WAeM,21
+trame_keycloak-0.1.0.dist-info/RECORD,,
