@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+agnm/__init__.py
+agnm/motion.py
+agnmo.egg-info/PKG-INFO
+agnmo.egg-info/SOURCES.txt
+agnmo.egg-info/dependency_links.txt
+agnmo.egg-info/top_level.txt
