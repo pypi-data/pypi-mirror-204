@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "fastapi-overrider"
+version = "0.2.0"
+description = "FastAPI Dependency overrides made easy."
+authors = ["Philipp Hack <philipp.hack@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/phha/fastapi-overrider"
+repository = "https://github.com/phha/fastapi-overrider"
+packages = [{include = "fastapi_overrider"}]
+keywords = ["fastapi", "pytest"]
+classifiers = [
+    "Framework :: FastAPI",
+    "Framework :: Pytest"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.95.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+pre-commit = "^2.21.0"
+isort = "^5.10.1"
+pyproject-flake8 = "^4.0.1"
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.isort]
+profile = 'black'
+src_paths = ["knower", "tests"]
+line_length = 88
+include_trailing_comma = true
+balanced_wrapping = true
+force_single_line = false
+multi_line_output = 3
+lines_between_types = 1
+
+[tool.flake8]
+count = "false"
+extend-exclude = 'docs'
+extend-ignore = "E203,S101,SIM106"
+max-line-length = 88
+show-source = "false"
+statistics = "false"
+inline-quotes = '"'
+accept-encodings = 'utf-8'
