@@ -1,0 +1,26 @@
+[defaults]
+inventory={{ app.etcdir }}/ansible/inventory/hosts_cli
+log_path={{ app.logdir }}/ansible.log
+retry_files_enabled=False
+retry_files_save_path=
+gathering=explicit
+# Squash warning about ansible auto-transforming group names with -'s in them
+force_valid_group_names=ignore
+collections_path={{ app.etcdir }}/ansible/collections
+roles_path={{ app.etcdir }}/ansible/roles
+#FIX
+allow_world_readable_tmpfiles=True
+playbook_dir={{ app.etcdir }}/ansible/playbook/
+roles_dir={{ app.etcdir }}/ansible/roles/
+force_color=True
+
+[inventory]
+enable_plugins=yaml,ini
+#cache=True
+#cache_plugin=jsonfile
+#cache_connection=/var/cache/ansible/inventory
+any_unparsed_is_failed=True
+
+[ssh_connection]
+retries=3
+pipelining = False
