@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+circleci_stubs.egg-info/PKG-INFO
+circleci_stubs.egg-info/SOURCES.txt
+circleci_stubs.egg-info/dependency_links.txt
+circleci_stubs.egg-info/requires.txt
+circleci_stubs.egg-info/top_level.txt
