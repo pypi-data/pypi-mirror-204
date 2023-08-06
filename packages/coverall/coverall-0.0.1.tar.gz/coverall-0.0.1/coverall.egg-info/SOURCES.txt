@@ -1,0 +1,11 @@
+HISTORY.md
+LICENSE.txt
+MANIFEST.in
+README.md
+__init__.py
+setup.py
+coverall.egg-info/PKG-INFO
+coverall.egg-info/SOURCES.txt
+coverall.egg-info/dependency_links.txt
+coverall.egg-info/requires.txt
+coverall.egg-info/top_level.txt
