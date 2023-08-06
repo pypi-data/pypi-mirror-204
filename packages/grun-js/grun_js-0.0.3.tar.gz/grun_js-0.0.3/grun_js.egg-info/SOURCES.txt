@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+grun_js/README.md
+grun_js/__init__.py
+grun_js/runjs.py
+grun_js.egg-info/PKG-INFO
+grun_js.egg-info/SOURCES.txt
+grun_js.egg-info/dependency_links.txt
+grun_js.egg-info/top_level.txt
