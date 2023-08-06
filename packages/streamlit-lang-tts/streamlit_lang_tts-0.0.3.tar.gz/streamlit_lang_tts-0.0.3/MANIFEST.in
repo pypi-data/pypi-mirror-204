@@ -1,0 +1,1 @@
+recursive-include streamlit_lang_tts/frontend/build *
