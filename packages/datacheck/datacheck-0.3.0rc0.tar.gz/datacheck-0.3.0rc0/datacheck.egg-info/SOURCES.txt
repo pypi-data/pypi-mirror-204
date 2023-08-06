@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+datacheck/__init__.py
+datacheck/compat.py
+datacheck/core.py
+datacheck/exceptions.py
+datacheck/path.py
+datacheck.egg-info/PKG-INFO
+datacheck.egg-info/SOURCES.txt
+datacheck.egg-info/dependency_links.txt
+datacheck.egg-info/requires.txt
+datacheck.egg-info/top_level.txt
