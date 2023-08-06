@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mindnlp
+Version: 0.1.1
+Summary: An open source natural language processing research tool box. Git version: [sha1]:d714d02, [branch]: (HEAD, origin/master, origin/HEAD, master)
+Home-page: https://github.com/mindlab-ai/mindnlp/tree/master/
+Author: MindSpore Team
+License: Apache 2.0
+Project-URL: Sources, https://github.com/mindlab-ai/mindnlp
+Project-URL: Issue Tracker, https://github.com/mindlab-ai/mindnlp/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: tqdm
+Requires-Dist: requests
+Requires-Dist: datasets
+Requires-Dist: tokenizers
+
+UNKNOWN
+
+
