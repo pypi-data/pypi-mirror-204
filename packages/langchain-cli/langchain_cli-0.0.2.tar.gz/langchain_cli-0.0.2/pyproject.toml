@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "langchain-cli"
+version = "0.0.2"
+description = "A command line interface for LangChain."
+authors = ["Rajtilak Bhattacharjee <rajtilak.blog@gmail.com>"]
+readme = "README.md"
+packages = [{include = "langchain_cli"}]
+
+[tool.poetry.scripts]
+langchain-cli = "langchain_cli.main:app"
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+typer = {extras = ["all"], version = "^0.7.0"}
+langchain = "^0.0.139"
+openai = "^0.27.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
