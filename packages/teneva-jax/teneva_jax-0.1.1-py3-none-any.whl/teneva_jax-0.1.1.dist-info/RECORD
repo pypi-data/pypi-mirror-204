@@ -1,0 +1,17 @@
+teneva_jax/__init__.py,sha256=mhX-bwv9qD86N0jch14UwZkblatEgcdDZBikVxKYsr0,1145
+teneva_jax/act_one.py,sha256=x08DSiNK7pN78WuHKAIe_FpF70riqv_d5HnmFL8A7HA,10265
+teneva_jax/act_two.py,sha256=38tQEcPCJtfYJD-KrxDWBNhjftkgU7Xe4ULEIkpXi_Q,4274
+teneva_jax/als.py,sha256=ToXe5K4zOIVgMHg7CJoHKauK3EiYKQ9BrsS1UddhLQQ,4995
+teneva_jax/cross.py,sha256=hmeM2UdvW4VXsJO9AvA5vNjWM-nDLrgH-qFmXGjxS9U,9929
+teneva_jax/data.py,sha256=U35RM12tNf4_-yAc8ACYLZNsAL0xNlElNqwN2WWmnHo,869
+teneva_jax/maxvol.py,sha256=712GngG9ckXn3gUY_Zy3fB0wfZKlpIFtS1BUIJuYEtU,5808
+teneva_jax/sample.py,sha256=QpDXPOvGn5fz0hS5RpKGm_ZS4c1-RA-PTC88rCwdMkE,2679
+teneva_jax/svd.py,sha256=EOQytVTAqK5IYUhVQgsBW8EAt7WdD0vHW6xw-oLf77I,1899
+teneva_jax/tensors.py,sha256=V73na0U0lwUa_O4j64PuKM3yYrLu4NgtBl3i_2umKBY,1665
+teneva_jax/transformation.py,sha256=ciQwLpJibHk4MJVZBe13jugoaNRhchkOsL29iX-eZOQ,3177
+teneva_jax/vis.py,sha256=waVSnmT1SZfRumSobByOS0-75ePnohijBA361DMnYuM,1402
+teneva_jax-0.1.1.dist-info/LICENSE.txt,sha256=149pivF0orUgLPetL0DKthvZjlVEfS8zK3psZGw5uto,1090
+teneva_jax-0.1.1.dist-info/METADATA,sha256=Yto7G58nvtnS47m0GCSUiHtLgmk0BofmFwbwTi-Bc84,4327
+teneva_jax-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+teneva_jax-0.1.1.dist-info/top_level.txt,sha256=nX4IE0dBtn9zU_XFZjLGs2a0e9REpEZcbt6o2Qu1-0E,11
+teneva_jax-0.1.1.dist-info/RECORD,,
