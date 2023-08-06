@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: loopgpt
+Version: 0.0.9
+Summary: Modular Auto-GPT Framework
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: bs4
+Requires-Dist: selenium
+Requires-Dist: numpy
+Requires-Dist: tiktoken
+Requires-Dist: requests
+Requires-Dist: colorama
+Requires-Dist: duckduckgo-search
+Requires-Dist: google-api-python-client
+Requires-Dist: webdriver-manager
+
