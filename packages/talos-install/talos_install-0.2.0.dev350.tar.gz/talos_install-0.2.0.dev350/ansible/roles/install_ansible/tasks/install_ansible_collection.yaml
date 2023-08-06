@@ -1,0 +1,10 @@
+---
+- name: 'Ensure collections top-level directory'
+  ansible.builtin.file:
+    path: '{{ app.etcdir }}/ansible/collections/ansible_collections'
+    state: directory
+    mode: '0755'
+
+- name: Download required ansible collections
+  ansible.builtin.command: "ansible-galaxy collection install {{ item }} -p {{ app.etcdir }}/ansible/collections --force"
+  loop: "{{ ansible.collections }}"
