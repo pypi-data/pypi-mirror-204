@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: alice-skills-manager
+Version: 0.0.7
+Summary: Alice Skills Manager
+Home-page: https://github.com/Alice-IA/alice-skills-manager
+Author: Alice-IA
+Author-email: yuiassistant@gmail.com
+License: Apache-2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: GitPython
+Requires-Dist: fasteners
+Requires-Dist: lazy
+Requires-Dist: pako (<0.4.0,>=0.3.1)
+Requires-Dist: pyxdg
+Requires-Dist: pyyaml
+Requires-Dist: requests
+

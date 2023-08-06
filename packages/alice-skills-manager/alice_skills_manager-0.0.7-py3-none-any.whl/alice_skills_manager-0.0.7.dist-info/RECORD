@@ -1,0 +1,13 @@
+asm/__init__.py,sha256=rbrFCrBYm4OqxyuGiNWommBG_TmDEIHINlqlBLG-Orw,156
+asm/__main__.py,sha256=gilXwjWs_d1gIWBnbytNBiRCs-swlI4BaGfPIBAwaH8,4073
+asm/alice_skills_manager.py,sha256=bHKZFeXRC0JT7hcfeT424Wv733n0tIe3o5iLX_gYol4,20216
+asm/exceptions.py,sha256=m4ltwXegPIBHVSLwW2dIxkMjsJ2ppgwx2knW8dvuL-Y,2202
+asm/skill_entry.py,sha256=FLggQnTETo_CcXLQ-Iktl8qonlxrq3a8K5-cwVyjF6o,19210
+asm/skill_repo.py,sha256=-ilR8Mn72egBpFS7W9KJxkjxCO48ECDMmMGVZmvlo4U,6598
+asm/skill_state.py,sha256=yR52Y4NPGwoC0X3smEn6s0YEQmGG_io_q0uUNX3ogxM,2623
+asm/util.py,sha256=-NUNoCQv3hDguU57E5kRVqPBv6Bsi-_MlfGBdlyPHJw,2993
+alice_skills_manager-0.0.7.dist-info/METADATA,sha256=x7eQQHw0Gil0dwSojJeCH4xCXqZnahJa8yz4xYvOlUM,755
+alice_skills_manager-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+alice_skills_manager-0.0.7.dist-info/entry_points.txt,sha256=Ch8AIzXYp9Jyp3R9ttm2mE1v1ipdDp0XEGOqA60UVl8,42
+alice_skills_manager-0.0.7.dist-info/top_level.txt,sha256=hGFbmf1GD0VceJ_bpuFJZAGdf_FUgEqFH0whCIIiaas,4
+alice_skills_manager-0.0.7.dist-info/RECORD,,
