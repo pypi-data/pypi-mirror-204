@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: image-to-arduino
+Version: 1.0.3
+Summary: Image converter to arduino
+Home-page: https://github.com/WiktorK02/Image_Converter_App.git
+Author: WiktorK02
+Author-email: wiktor.kidon@hotmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: customtkinter (==5.1.2)
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: opencv-python (==4.7.0.72)
+Requires-Dist: Pillow (==9.5.0)
+
+About Image converter GUI App to arduino oled display ssd1306 128x64
