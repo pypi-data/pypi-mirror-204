@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: compose-go
+Version: 1.0.4
+Summary: Docker Compose v2 (GoLang) wrapped in a Python Package
+Author: Luã Bida Vacaro
+Author-email: luabidaa@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Description-Content-Type: text/markdown
+
+``` bash
+$ pip install compose-go
+$ docker-compose version
+```
+

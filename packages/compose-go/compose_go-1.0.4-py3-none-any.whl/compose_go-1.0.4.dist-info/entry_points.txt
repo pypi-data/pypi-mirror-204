@@ -1,0 +1,3 @@
+[console_scripts]
+docker-compose=src.compose:docker_compose
+
