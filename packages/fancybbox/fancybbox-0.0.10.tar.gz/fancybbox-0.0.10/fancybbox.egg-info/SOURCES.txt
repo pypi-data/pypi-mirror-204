@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+fancybbox.egg-info/PKG-INFO
+fancybbox.egg-info/SOURCES.txt
+fancybbox.egg-info/dependency_links.txt
+fancybbox.egg-info/requires.txt
+fancybbox.egg-info/top_level.txt
