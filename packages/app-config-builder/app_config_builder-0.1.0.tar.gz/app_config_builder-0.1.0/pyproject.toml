@@ -1,0 +1,78 @@
+[tool.poetry]
+name = "app-config-builder"
+version = "0.1.0"
+description = "Python Application Configuration"
+authors = [
+    "Artur Filin <filartur@yandex.ru>"
+]
+license = "Apache License 2.0"
+
+#packages = [
+#    { include = "app_config_builder" }
+#]
+#
+#include = [
+#    { path = "tests", format = "sdist" }
+#]
+
+readme = "README.md"
+
+repository = "https://github.com/py-art/app-config-builder"
+
+keywords = ["packaging", "configuration", "app_config_builder"]
+
+classifiers = [
+    'Development Status :: 1 - Planning',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: Implementation :: PyPy',
+    'Framework :: Pydantic',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Information Technology',
+    'License :: OSI Approved :: Apache Software License',
+    'Operating System :: POSIX :: Linux',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: MacOS',
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    'Typing :: Typed'
+]
+
+# Requirements
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = {extras = ["dotenv"], version = "^1.10.7 "}
+PyYAML = "^6.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.2.0"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ['py311']
+line-length=120
+preview = true
+force-exclude = '''
+.*/setup\.py$
+'''
+
+[tool.isort]
+#py_version = 311
+profile = "black"
+force_single_line = true
+combine_as_imports = true
+#lines_between_types = 1
+lines_after_imports = 2
+src_paths = ["app_configs", "tests"]
+extend_skip = ["setup.py"]
+atomic = true

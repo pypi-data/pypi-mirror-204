@@ -1,0 +1,46 @@
+[config]
+# project name is required without file "pyproject.toml"
+PROJECT_NAME = "app_config"
+MODE = "dev"
+DEBUG = true
+
+[config.constants]
+config_file = "config/config.toml"
+
+[config.log]
+# By default it is set to project name
+ROOT_LOGGER = "app_config"
+LOGS_DIR = "logs"
+CREATE_LOG_FILES = true
+PATH_LOG_IS_ABSOLUTE = false
+
+[config.db]
+#DB_TYPE = "sqlite"
+#DB_TYPE = "postgresql"
+DB_MODE = "defaultf"
+ECHO_SQL = false
+
+[config.db.sqlite]
+SQLITE_DRIVER = "aiosqlite"
+SQLITE_DATABASE_DIR = "db/"
+SQLITE_DATABASE = "yandex_market"
+PATH_DB_IS_ABSOLUTE=false
+
+[config.db.postgresql]
+POSTGRES_DRIVER = "asyncpg"
+POSTGRES_HOST = "127.0.0.1"
+POSTGRES_PORT = 15432
+POSTGRES_USER = "root"
+POSTGRES_PASSWORD = "password"
+POSTGRES_DATABASE = "yandex_market"
+
+[config.db.mysql]
+MYSQL_DRIVER = "aiomysql"
+MYSQL_HOST = "127.0.0.1"
+MYSQL_PORT = 13306
+MYSQL_USER = "root"
+MYSQL_PASSWORD = "password"
+MYSQL_DATABASE = "yandex_market"
+
+[config.app]
+ANTICAPTCHA_API_KEY = "ANTICAPTCHA_API_KEY"

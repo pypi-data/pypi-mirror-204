@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: app-config-builder
+Version: 0.1.0
+Summary: Python Application Configuration
+Home-page: https://github.com/py-art/app-config-builder
+License: Apache-2.0
+Keywords: packaging,configuration,app_config_builder
+Author: Artur Filin
+Author-email: filartur@yandex.ru
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: Pydantic
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: pydantic[dotenv] (>=1.10.7,<2.0.0)
+Project-URL: Repository, https://github.com/py-art/app-config-builder
+Description-Content-Type: text/markdown
+
+# app_configs
+
+Fast, highly flexible and intuitive creation of application configurations with built-in data validation.
+
+The basic idea is to store multiple settings of the same type, such as database connection settings, and switch instantly when one or more arguments or environment variables are changed. Almost all settings can be overridden without any python programming experience.
+
+The project is inspired by and based on the [Pedantic](https://github.com/pydantic/pydantic) data validation library.
+
+The package is currently a work in progress and subject to significant change.
+
+
+## Roadmap
+
+The plan is to add the most flexible Dsn configuration for the many python packages that use network connectivity, such as PostgreSql, MySql, MsSql, Oracle, MongoDb, ClickHouse, Rabbit, Redis, Tarantool, Kafka, etc.
+
