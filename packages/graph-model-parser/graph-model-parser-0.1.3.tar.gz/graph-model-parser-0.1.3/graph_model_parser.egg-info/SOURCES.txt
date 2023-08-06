@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+graph_model_parser/__init__.py
+graph_model_parser/graph_model_parser.py
+graph_model_parser.egg-info/PKG-INFO
+graph_model_parser.egg-info/SOURCES.txt
+graph_model_parser.egg-info/dependency_links.txt
+graph_model_parser.egg-info/requires.txt
+graph_model_parser.egg-info/top_level.txt
+tests/__init__.py
+tests/test_graph_model_parser.py
