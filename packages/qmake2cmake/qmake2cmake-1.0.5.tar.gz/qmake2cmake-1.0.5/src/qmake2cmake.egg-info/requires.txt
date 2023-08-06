@@ -1,0 +1,14 @@
+pyparsing
+portalocker
+sympy
+packaging
+platformdirs
+
+[dev]
+mypy
+flake8
+black
+
+[test]
+pytest
+pytest-cov
