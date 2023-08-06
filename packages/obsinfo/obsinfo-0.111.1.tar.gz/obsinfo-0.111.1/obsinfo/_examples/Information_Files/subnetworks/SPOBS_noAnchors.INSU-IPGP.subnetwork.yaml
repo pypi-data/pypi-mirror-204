@@ -1,0 +1,63 @@
+---
+format_version: "0.111"
+revision:
+    authors:
+        - {$ref: "persons/Wayne_Crawford.person.yaml#person"}
+    date: "2017-10-04"
+subnetwork:
+    network:
+        code: "4G"
+        name: "Short period OBSs"
+        start_date: "2007-07-01"
+        end_date: "2025-12-31"
+        description: "Short Period OBS network"
+    operators:
+        - agency: "INSU-IPGP OBS Park"
+    reference_names:
+        operator: "INSU-IPGP"
+        campaign: "SPOBS_noAnchors"  
+    stations:
+        "LSVW":
+            site: "Lucky Strike Volcano West"
+            start_date: "2015-04-22T12:00:00Z"
+            end_date: "2016-05-28T21:01:00Z"
+            location_code: "00"
+            instrumentation:
+                base: {$ref: "instrumentation_bases/SPOBS2.instrumentation_base.yaml#instrumentation_base"}
+                channel_modifications:
+                   "*-*": {datalogger: {configuration: "125sps"}}
+            locations:
+                "00":
+                    base: {$ref: 'location_bases/INSU-IPGP.location_base.yaml#location_base'}
+                    configuration: "SEA_SURFACE"
+                    position: {lon: -32.32504, lat: 37.29744, elev: -2030}
+            processing:
+                - clock_correction_linear:
+                    base: {$ref: "timing_bases/Seascan_GNSS.timing_base.yaml#timing_base"}
+                    start_sync_reference: "2015-04-21T21:06:00Z"
+                    end_sync_reference: "2016-05-28T20:59:00.32Z"
+                    end_sync_instrument: "2016-05-28T20:59:03Z"
+        "LSVE":
+            site: "Lucky Strike Volcano East"
+            start_date: "2015-04-22T12:00:00Z"
+            end_date: "2016-05-28T21:01:00Z"
+            location_code: "00"
+            instrumentation:
+                base: {$ref: "instrumentation_bases/SPOBS2.instrumentation_base.yaml#instrumentation_base"}
+                channel_modifications:
+                   "*-*": {datalogger: {configuration: "125sps"}}
+            locations:
+                "00":
+                    base: {$ref: 'location_bases/INSU-IPGP.location_base.yaml#location_base'}
+                    configuration: "ACOUSTIC_SURVEY"
+                    position: {lon: -32.02504, lat: 37.25744, elev: -2130}
+            processing:
+                - clock_correction_linear:
+                        base: {$ref: "timing_bases/Seascan_GNSS.timing_base.yaml#timing_base"}
+                        start_sync_reference: "2015-04-21T21:06:00Z"
+                        end_sync_reference: "2016-05-28T20:59:00.32Z"
+                        end_sync_instrument: "2016-05-28T20:59:01Z"
+    
+notes: 
+    - "Same as SPOBS, without using YAML anchors"
+    - "Lucky Strike Volcano, North Mid-Atlantic Ridge"

@@ -1,0 +1,30 @@
+---
+format_version: "0.111"
+stage_base:
+    description : "SENSOR - TRILLIUM 240 SN1-399 (SINGLE-SIDED)"
+    input_units :  {name: "m/s", description: "VELOCITY"}
+    output_units : {name: "V", description: "VOLTS"}
+    gain : 
+        value: 598.45
+        frequency: 1.
+    filter:
+        $ref: "sensors/stages/filters/Trillium_T240_SN1-399_generic.filter.yaml#filter"
+    configuration_default: "SN1-399, single-sided"
+    configurations:
+        "SN1-399, single-sided":
+            filter:
+                $ref: "sensors/stages/filters/Trillium_T240_SN1-399_generic.filter.yaml#filter"
+            gain: {value: 598.45, frequency: 1.}
+        "SN400+, single-sided":
+            gain: {value: 594.5, frequency: 1.}
+            filter:
+                $ref: "sensors/stages/filters/Trillium_T240_SN400-_generic.filter.yaml#filter"
+        "SN1-399, differential":
+            filter:
+                $ref: "sensors/stages/filters/Trillium_T240_SN1-399_generic.filter.yaml#filter"
+            gain: {value: 1196.9, frequency: 1.}
+        "SN400+, differential":
+            gain: {value: 1189., frequency: 1.}
+            filter:
+                $ref: "sensors/stages/filters/Trillium_T240_SN400-_generic.filter.yaml#filter"
+    

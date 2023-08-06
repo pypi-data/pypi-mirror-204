@@ -1,0 +1,58 @@
+---
+format_version: "0.111"
+revision:
+    authors:
+        - {$ref: "persons/Wayne_Crawford.person.yaml#person"}
+    date: "2019-12-19"
+subnetwork:
+    operators:
+        -   {$ref: "operators/INSU-IPGP.operator.yaml#operator"}
+    network:
+        $ref: "networks/EMSO-AZORES.network.yaml#network"
+    stations:
+        "BB_1":
+            site: "My favorite site"
+            start_date: "2011-04-23T10:00:00"
+            end_date: "2011-05-28T15:37:00"
+            location_code: "00"
+            locations:
+                "00":
+                    base: {$ref: 'location_bases/INSU-IPGP.location_base.yaml#location_base'}
+                    configuration: "BUC_DROP"
+                    position: {lon: -32.234, lat: 37.2806, elev: -1950}
+            instrumentation:
+                base: {$ref: "instrumentation_bases/BBOBS1_pre2012.instrumentation_base.yaml#instrumentation_base"}
+                configuration: "SN03"
+                datalogger_configuration: "250sps"
+            processing:
+                - clock_correction_linear:
+                        base: {$ref: "timing_bases/Seascan_GNSS.timing_base.yaml#timing_base"}
+                        start_sync_reference: "2015-04-23T11:20:00"
+                        end_sync_reference: "2016-05-27T14:00:00.2450"
+                        end_sync_instrument: "2016-05-27T14:00:00"       
+        "BB_2":
+            notes: ["example of deploying with a different sphere"]
+            site: "My other favorite site"
+            start_date: "2015-04-23T10:00:00Z"
+            end_date: "2016-05-28T15:37:00Z"
+            location_code: "00"
+            locations:
+                "00":
+                    base: {$ref: 'location_bases/INSU-IPGP.location_base.yaml#location_base'}
+                    configuration: "ACOUSTIC_SURVEY"
+                    position: {lon: -32.29756, lat: 37.26049, elev: -1887}
+            instrumentation:
+                base: {$ref: "instrumentation_bases/BBOBS1_2012+.instrumentation_base.yaml#instrumentation_base"} 
+                configuration: "SN06"
+                datalogger_configuration: "125sps"
+                channel_modifications:
+                    "1-*": {sensor: {configuration: "Sphere08"}}
+                    "2-*": {sensor: {configuration: "Sphere08"}}
+                    "Z-*": {sensor: {configuration: "Sphere08"}}
+                    "H-*": {sensor: {configuration: "5004"}}
+            processing:
+                - clock_correction_linear:
+                        base: {$ref: "timing_bases/Seascan_GNSS.timing_base.yaml#timing_base"}
+                        start_sync_reference: "2015-04-22T12:24:00"
+                        end_sync_reference: "2016-05-28T15:35:00.3660"
+                        end_sync_instrument: "2016-05-28T15:35:02" 

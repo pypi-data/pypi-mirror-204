@@ -1,0 +1,28 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2017-11-30"
+    authors: 
+        -   $ref: "persons/Wayne_Crawford.person.yaml#person"
+stage_base:
+    description : "PREAMPLIFIER: SPOBS hydrophone or L22"
+    input_units : {name: "V", description: "VOLTS"}
+    output_units : {name: "V", description: "VOLTS"}
+    gain: {value: 64, frequency: 10}
+    filter :
+        type : "PolesZeros"
+        transfer_function_type: "LAPLACE (RADIANS/SECOND)"
+        zeros : ['0 + 0j']
+        poles : ['-6.667 + 0j']
+    delay: 0
+    configuration_default: "64x"
+    configurations:
+        "16x":
+            gain: {value: 16, frequency: 10}
+        "32x":
+            gain: {value: 32, frequency: 10}
+        "64x":
+            gain: {value: 64, frequency: 10}
+        "128x":
+            gain: {value: 128, frequency: 10}
+    

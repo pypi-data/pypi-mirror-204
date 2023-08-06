@@ -1,0 +1,84 @@
+{    
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Timing Base",
+    "description": "Information about OBSs timing",
+    "type": "object",
+    "required": ["format_version", "timing_base"],
+    "properties": {
+        "format_version" : {"$ref": "definitions.schema.json#/format_version"},
+        "revision" :       {"$ref": "definitions.schema.json#/revision"},
+        "notes":           {"$ref": "definitions.schema.json#/note_list"},
+        "timing_base":     {"$ref": "#/definitions/timing_base"}
+    },
+    "additionalProperties" : false,
+    "definitions": {
+        "base_properties": {
+            "description": "list of common properties in {element}, modifications, base, definition, and configuration_definition.  This is unused because 'allOf' for makes ugly schema validation",
+            "properties": {
+                "instrument": {"type": "string", "description" : "time base used in OBS"},
+                "reference":  {"type": "string", "description" : "time base used as reference"},
+                "start_sync_reference":  {"$ref": "definitions.schema.json#/date-time-Z" },
+                "start_sync_instrument": {"$ref": "#/definitions/start_sync_instrument" },
+                "end_sync_reference":    {"$ref": "definitions.schema.json#/date-time-Z" },
+                "end_sync_instrument":   {"$ref": "definitions.schema.json#/date-time-Z" }
+            }
+        },
+        "timing" : {
+            "type" : "object",
+            "required": [
+                "base",
+                "start_sync_reference",
+                "end_sync_reference",
+                "end_sync_instrument"
+            ],
+            "properties": {
+                "base":           {"$ref" : "#/definitions/timing_base"},
+                "configuration":  {"type": ["string", "null"]},
+                "modifications":  {"$ref" : "#/definitions/modifications"},
+
+                "instrument":            {"type": "string", "description" : "time base used in OBS"},
+                "reference":             {"type": "string", "description" : "time base used as reference"},
+                "start_sync_reference":  {"$ref": "definitions.schema.json#/date-time-Z" },
+                "start_sync_instrument": {"$ref": "#/definitions/start_sync_instrument" },
+                "end_sync_reference":    {"$ref": "definitions.schema.json#/date-time-Z" },
+                "end_sync_instrument":   {"$ref": "definitions.schema.json#/date-time-Z" }
+            },
+            "additionalProperties" : false
+        },
+        "modifications" : {
+            "type" : "object",
+            "properties": {
+                "base":           {"$ref" : "#/definitions/timing_base" },
+                "configuration":  {"type": ["string", "null"]},
+
+                "instrument": {"type": "string", "description" : "time base used in OBS"},
+                "reference":  {"type": "string", "description" : "time base used as reference"},
+                "start_sync_instrument": {"$ref": "#/definitions/start_sync_instrument" },
+            },
+            "additionalProperties" : false
+        },
+        "timing_base" : {
+            "type" : "object",
+            "required": [
+                "instrument",
+                "reference",
+                "start_sync_instrument"
+            ],
+            "properties": {
+                "instrument" : {"type": "string", "default" : "Sea floor"},
+                "reference" : {"type": "string", "default" : "Sea floor"},
+                "start_sync_instrument" : {"type": "number", "default" : 0}
+            },
+            "additionalProperties" : false
+        },
+        "start_sync_instrument": {
+            "if": {"type": "integer"},
+            "then": {
+                "minimum": 0,
+                "maximum": 0,
+                "description": "sets start_sync_instrument equal to to start_sync_reference"
+            },
+            "else": {"$ref": "definitions.schema.json#/date-time-Z"}
+        }
+    }
+}

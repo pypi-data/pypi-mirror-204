@@ -1,0 +1,190 @@
+{    
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Experiment",
+    "description": "Experiement information file schema",
+    "type": "object",
+    "required": ["format_version", "experiment"],
+    "properties": {
+        "format_version": {"$ref": "definitions.schema.json#/format_version"},
+        "revision" :      {"$ref": "definitions.schema.json#/revision"},
+        "notes":          {"$ref": "definitions.schema.json#/note_list"},
+        "experiment":       {"$ref": "#/definitions/experiment"}
+    },
+    "additionalProperties" : false,
+    "definitions": {
+        "experiment" : {
+            "description": "top-level experiment description",
+            "type": "object",
+            "required": [
+                "reference_name",
+                "reference_scientist",
+                "data_distribution",
+                "fdsn_network",
+                "campaigns",
+                "expeditions"],
+            "properties": {
+                "reference_name":      {"type": "string", "description": "experiment reference name"},
+                "reference_scientist": {"$ref": "person.schema.json#/definitions/person"},
+                "data_distribution":   {"$ref": "#/definitions/data_distribution"},
+                "fdsn_network":        {"$ref": "network.schema.json#/definitions/network"},
+                "campaigns":           {"$ref": "#/definitions/campaigns_map"},
+                "expeditions":         {"$ref": "#/definitions/expeditions_map"}
+            },
+            "additionalProperties" : false
+        },
+        "data_distribution" : {
+            "description": "StationXML Operator information",
+            "type": "object",
+            "required": ["embargo_period.a"],
+            "properties": {
+                "embargo_period.a": {
+                    "type": "integer",
+                    "description": "Years after first collection for public release"
+                }
+            },
+            "additionalProperties" : false
+        },
+        "campaigns_map" : {
+            "type": "object",
+            "description": "Data collection campaigns (coming back with data), keys are campaign names",
+            "patternProperties": {
+                "^[A-Za-z0-9_-]+$": {"$ref": "#/definitions/campaign" }
+            },
+            "additionalProperties": false
+        },
+        "expeditions_map" : {
+            "type": "object",
+            "description": "Field expeditions used for data collection, keys are expedition names",
+            "patternProperties": {
+                "^[A-Za-z0-9_-]+$": {"$ref": "#/definitions/expedition" }
+            },
+            "additionalProperties": false
+        },
+        "expedition" : {
+            "description": "Description of one sea-going expedition",
+            "type": "object",
+            "required": ["ship_name",
+                         "start_date",
+                         "end_date"],
+            "properties": {
+                "ship_name":    {"type": "string"},
+                "start_date":   {"type": "string", "format": "date"},
+                "end_date":     {"anyOf": [
+                                    {"type": "string", "format": "date"},
+                                    {"type": "null"}
+                                ]},
+                "participants": {"type": "array", "items": {"type": "string"}},
+                "notes":        {"$ref": "definitions.schema.json#/note_list"}
+            },
+            "additionalProperties" : false
+        },
+        "campaign" : {
+            "description": "Data collection campaign",
+            "type": "object",
+            "required": ["start_date",
+                         "end_date",
+                         "operators",
+                         "validation_methods",
+                         "expeditions"],
+            "properties": {
+                "start_date": {"anyOf": [
+                                    {"type": "string", "format": "date"},
+                                    {"type": "null"}
+                                ]},
+                "end_date":     {"anyOf": [
+                                    {"type": "string", "format": "date"},
+                                    {"type": "null"}
+                                ]},
+                "operators":  {"$ref": "#/definitions/operators_map"},
+                "validation_methods":  {"$ref": "#/definitions/validation_methods"},
+                "expeditions":   {"$ref": "#/definitions/expeditions_list"},
+                "notes":        {"$ref": "definitions.schema.json#/note_list"}
+            },
+            "additionalProperties" : false
+        },
+        "operators_map" : {
+            "type": "object",
+            "description": "Operators for the given campaign, keys are operator names",
+            "patternProperties": {
+                "^[A-Za-z0-9_-]+$": {"$ref": "#/definitions/operator_actions" }
+            },
+            "additionalProperties": false
+        },
+        "operator_actions" : {
+            "description": "Things an operator did (for now, just stations collected)",
+            "type": "object",
+            "required": ["stations"],
+            "properties": {
+                "notes":      {"$ref": "definitions.schema.json#/note_list"},
+                "stations":   {"$ref": "#/definitions/operator_stations"}
+            },
+            "additionalProperties" : false
+        },
+        "operator_stations" : {
+            "description": "List of stations deployed by an operator",
+            "type": "array",
+            "items": {"type": "string"}
+        },
+        "validation_methods" : {
+            "description": "List of stations deployed by an operator",
+            "type": "object",
+            "required": ["waveform_windows"],
+            "properties": {
+                "waveform_windows":   {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/waveform_window"}
+                }
+            },
+            "additionalProperties" : false
+        },
+        "waveform_window" : {
+            "description": "A waveform window to plot (usually an event)",
+            "type": "object",
+            "required": ["title",
+                         "starttime",
+                         "duration.s"],
+            "properties": {
+                "title":           {"type": "string"},
+                "starttime":       {"type": "string", "format": "date-time"},
+                "duration.s":      {"type": "number"},
+                "source_position": {"$ref": "#/definitions/source_position"},
+                "notes":           {"$ref": "definitions.schema.json#/note_list"}
+            },
+            "additionalProperties" : false
+        },
+        "source_position" : {
+            "description": "Event source position (used to organize stations by expected arrival time)",
+            "type": "object",
+            "required": ["lat",
+                         "lon",
+                         "depth.km"],
+            "properties": {
+                "lat":           {"type": "number", "minimum": -90, "maximum": 90},
+                "lon":           {"type": "number", "minimum": -180, "maximum": 360},
+                "depth.km":      {"type": "number"}
+            },
+            "additionalProperties" : false
+        },
+        "expeditions_list" : {
+            "description": "List of expeditions for a given data collection campaign",
+            "type": "array",
+            "items": {"$ref": "#/definitions/expedition_actions"}
+        },
+        "expedition_actions" : {
+            "description": "Expedition name and actions performed",
+            "type": "object",
+            "required": ["name",
+                         "actions"],
+            "properties": {
+                "name":    {"type": "string", "description": "must match an expedition in expeditions_map"},
+                "actions": {"type": "string"}
+            },
+            "additionalProperties" : false
+        },
+        "contacts": {
+            "description": "StationXML Operator:Contacts",
+            "type": "array",
+            "items": {"$ref": "person.schema.json#/definitions/person"}
+        }
+    }
+}

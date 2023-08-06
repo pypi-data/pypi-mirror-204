@@ -1,0 +1,48 @@
+---
+format_version: "<STRING>"
+revision:
+   authors: # Reference to file or fields of an authors file
+   date: # yyyy/mm/dd
+
+[yaml_anchors:]
+[notes: 
+   - "<STRING>"]
+
+datalogger:
+   equipment:
+       type: "<STRING>"
+       description: "<STRING>"
+       [manufacturer: "<STRING>"]
+       [vendor: "<STRING>"]
+       [model: "<STRING>"]
+       [serial_number: "<STRING>"]
+       [calibration_dates: 
+          - <DATE>...]  #Specify date and time as yyyy-mm-22Thh:mm:ss
+
+   stages:
+       - # Reference to file in the form {$ref: '<PATHNAME>'}
+
+   [correction: <NUM>]
+
+   [configuration_default: "<LABEL>"]
+   sample_rate: <NUM>
+
+   configurations:
+       "<LABEL>" :
+           [equipment:
+              [model: "<STRING>"]
+              [type: "<STRING>"]
+              [description: "<STRING>"]
+              [manufacturer: "<STRING>"]
+              [vendor: "<STRING>"]
+              [serial_number: "<STRING>"]
+              [calibration_dates: 
+                - <DATE>...] #Specify date and time as yyyy-mm-22Thh:mm:ss
+           
+           # This is used by obsinfo to calculate StationXML correction for each stage. 
+           # If None, correction = delay for each stage; if not None, correction for each stage 
+           # is 0 except the last one, which is the value of correction (which may be zero).
+           [correction: <NUM>]
+
+           [stages:
+              - # Reference to file in the form {$ref: '<PATHNAME>'}]

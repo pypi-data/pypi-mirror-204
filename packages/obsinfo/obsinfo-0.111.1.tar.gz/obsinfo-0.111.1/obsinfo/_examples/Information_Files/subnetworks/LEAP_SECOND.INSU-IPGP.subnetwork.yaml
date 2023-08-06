@@ -1,0 +1,50 @@
+---
+format_version: "0.111"
+revision:
+    authors:
+        - $ref: 'persons/Wayne_Crawford.person.yaml#person'
+    date: "2017-10-04"
+subnetwork:
+    operators:
+        - agency: "INSU-IPGP OBS Park"
+    reference_names:
+        campaign: "MYCAMPAIGN"
+        operator: "INSU-IPGP"
+    network:
+        code: "4G"
+        name: "LEAP-SECOND-TEST"
+        start_date: "2007-07-01"
+        end_date: "2025-12-31"
+        description: "Test leap second handling"
+    stations:
+        "LPSCD":
+            site: "Lucky Strike Volcano Center"
+            start_date: "2016-07-01T12:00:00"
+            end_date: ~
+            location_code: "00"
+            instrumentation:
+                base: {$ref: "instrumentation_bases/SPOBS2.instrumentation_base.yaml#instrumentation_base"}
+                datalogger_configuration: "250sps"
+            locations:
+                "00":
+                    base: {$ref: 'location_bases/INSU-IPGP.location_base.yaml#location_base'}
+                    configuration: "BUC_DIRECT"
+                    position: {lon: -32.280, lat: 37.290, elev: -1760}
+            processing:
+                - clock_correction_leapsecond:
+                    time: "2016-12-31T23:59:60"
+                    type: "+"
+                    description: "Positive leapsecond (a 61-second minute)"
+                    corrected_in_end_sync: Yes
+                - clock_correction_linear:
+                    base: {$ref: 'timing_bases/Seascan_GNSS.timing_base.yaml#timing_base'}
+                    start_sync_reference: "2016-07-01T16:00:00Z"
+                    end_sync_reference:   "2017-07-01T15:35:00.555Z"
+                    end_sync_instrument:  "2017-07-01T15:35:00Z"
+                    
+notes: 
+    - "Lucky Strike Volcano, North Mid-Atlantic Ridge"
+    - "Leapsecond correction example"
+    - "original station name = LSJ4"
+
+    

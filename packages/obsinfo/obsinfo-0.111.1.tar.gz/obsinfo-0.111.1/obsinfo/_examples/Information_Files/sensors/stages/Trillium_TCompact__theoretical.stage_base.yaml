@@ -1,0 +1,18 @@
+---
+format_version: "0.111"
+stage_base:
+    description : "SENSOR - TRILLIUM COMPACT OBS (SINGLE-SIDED)" # optionel
+    input_units :  {name: "m/s", description: "VELOCITY"}
+    output_units : {name: "V", description: "VOLTS"}
+    gain : 
+        value: 374.6
+        frequency: 1.
+    filter:
+        $ref: "sensors/stages/filters/Trillium_TCompact__generic.filter.yaml#filter"
+    configuration_default: "single-sided"
+    configurations:
+        "single-sided":
+            gain: {value: 374.5, frequency: 1.}
+        "differential":
+            gain: {value: 749.0, frequency: 1.}
+ 

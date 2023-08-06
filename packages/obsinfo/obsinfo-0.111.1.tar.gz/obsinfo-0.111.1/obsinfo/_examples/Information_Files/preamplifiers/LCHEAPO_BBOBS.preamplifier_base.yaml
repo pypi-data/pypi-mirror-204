@@ -1,0 +1,23 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2017-11-30"
+    authors: 
+        -   $ref: "persons/Wayne_Crawford.person.yaml#person"
+preamplifier_base:
+    equipment:
+        model: "BBOBS-GAIN"
+        type: "Analog gain card"
+        description: "INSU BBOBS gain card"
+        manufacturer: "SIO or IPGP"
+        vendor: "LCHEAPO"
+    stages:
+        - {base: {$ref: "preamplifiers/stages/INSU_BBOBS_theoretical.stage_base.yaml#stage_base"}}
+    configuration_default: "1x gain"
+    configurations:
+        "0.225x gain":
+            stage_modifications:
+                '*': {configuration: "0.225x"}
+        "1x gain":
+            stage_modifications:
+                '*': {configuration: "1.0x"}

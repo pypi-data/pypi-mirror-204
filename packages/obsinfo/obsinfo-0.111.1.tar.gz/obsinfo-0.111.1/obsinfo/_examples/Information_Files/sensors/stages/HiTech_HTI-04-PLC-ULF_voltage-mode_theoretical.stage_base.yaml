@@ -1,0 +1,11 @@
+---
+format_version: "0.111"
+stage_base:
+    description : "SENSOR - HITECH HTI-04-PLC-ULF HYDROPHONE" # optionel
+    input_units :  {name: "Pa", description: "PRESSURE"}
+    output_units : {name: "V", description: "VOLTS"}
+    gain: {value: 0.000195, frequency: 10}
+    filter:
+        $ref: "sensors/stages/filters/HiTech_HTI-04-PLC-ULF_voltage-mode_theoretical.filter.yaml#filter"
+notes:
+    - "From RHUM-RUM German stationXMLs"

@@ -1,0 +1,12 @@
+---
+format_version: "0.111"
+revision:
+    authors:
+        - {$ref: "persons/Wayne_Crawford.person.yaml#person"}
+    date: "2022-04-10"
+network:
+    code: "YV"
+    name: "RHUM-RUM"
+    start_date: "2011-01-01"
+    end_date: "2016-12-31"
+    description: "A French-German  passive seismic experiment designed to image an oceanic mantle plume – or lack of plume – from crust to core beneath La Réunion Island"
