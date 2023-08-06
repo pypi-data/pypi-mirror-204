@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: pymccool
+Version: 0.3.4
+Summary: Reusable Python Utilities by McCool
+Author-email: Brendon McCool <brendonmccool@gmail.com>
+Project-URL: Homepage, https://github.com/bmccool/pyMcCool
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorlog
+Requires-Dist: mock
+Requires-Dist: opentelemetry-exporter-otlp-proto-grpc
+Requires-Dist: opentelemetry-exporter-otlp-proto-http
+Requires-Dist: python-logging-loki
+
+# Installation
+  - `pip install pymccool`
+
+# Usage
+- For basic, no-nonsense console and file logging:
+  ```python
+  from pymccool.logging import Logger
+  logger = Logger(app_name="<your app name>")
+  ```
+
+- For more options, use LoggerKwargs
+    ```python
+    from pymccool.logging import Logger, LoggerKwargs
+    logger = Logger(
+            LoggerKwargs(
+                app_name="test_logger_loki",
+                default_level=Logger.VERBOSE,
+                stream_level=Logger.VERBOSE,
+                grafana_loki_endpoint="https://loki.end.point.com/loki/api/v1/push")
+    )
+    ```
+
+- To use the Tracer:
+  ```python
+  from uuid import uuid1
+  from pymccool.tracing import get_tracer, get_decorator
+  from pymccool.logging import Logger, LoggerKwargs
+  logger = Logger(
+          LoggerKwargs(
+              app_name="test_logger_loki",
+              default_level=Logger.VERBOSE,
+              stream_level=Logger.VERBOSE,
+              grafana_loki_endpoint="https://loki.end.point.com/loki/api/v1/push")
+  )
+  tracer = get_tracer(service_name="test_tracer",
+                      endpoint="https://otel-rec.end.point.com/v1/traces",
+                      uuid=UUID)
+  instrument_decorator = get_decorator(e2e_tracer)
+  ```
