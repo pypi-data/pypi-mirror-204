@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+usefulib/__init__.py
+usefulib/_usefulibs.py
+usefulib/tests.py
+usefulib.egg-info/PKG-INFO
+usefulib.egg-info/SOURCES.txt
+usefulib.egg-info/dependency_links.txt
+usefulib.egg-info/top_level.txt
+usefulib/temp_data/__init__.py
