@@ -1,0 +1,9 @@
+README.md
+setup.py
+base_class_autotests/__init__.py
+base_class_autotests/base_class_autotests.py
+base_class_autotests.egg-info/PKG-INFO
+base_class_autotests.egg-info/SOURCES.txt
+base_class_autotests.egg-info/dependency_links.txt
+base_class_autotests.egg-info/requires.txt
+base_class_autotests.egg-info/top_level.txt

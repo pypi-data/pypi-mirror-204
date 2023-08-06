@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: base-class-autotests
+Version: 1.0.0
+Summary: Base class with basic checks of the elements
+Home-page: https://github.com/daoxwang-team/base_class_autotests
+Author: Kostuchenko_VA, Mishin_VA
+Author-email: kostuchenko_va@magnit.ru, mishin_va@magnit.ru
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+
+# base_class_autotests
+Base class containing basic checks of the elements
