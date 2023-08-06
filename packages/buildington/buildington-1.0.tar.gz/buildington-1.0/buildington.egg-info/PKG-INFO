@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: buildington
+Version: 1.0
+Summary: Building websites like React, and hosting 'em like Flask!
+Author: RixTheTyrunt
+Author-email: rixthetyrunt@gmail.com
+Classifier: Environment :: Console
+Classifier: Framework :: Flask
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Server
