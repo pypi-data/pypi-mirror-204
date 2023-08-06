@@ -1,0 +1,6 @@
+README.md
+setup.py
+aip_hera.egg-info/PKG-INFO
+aip_hera.egg-info/SOURCES.txt
+aip_hera.egg-info/dependency_links.txt
+aip_hera.egg-info/top_level.txt
