@@ -1,0 +1,2 @@
+[console_scripts]
+dls-utilpack = dls_utilpack.__main__:main
