@@ -1,0 +1,17 @@
+numpy
+librosa
+torch
+matplotlib
+sacred
+mir_eval
+jams
+mido
+requests
+tqdm
+tensorboard
+tensorboardX
+scipy
+pandas
+mirdata
+sounddevice
+pynput
