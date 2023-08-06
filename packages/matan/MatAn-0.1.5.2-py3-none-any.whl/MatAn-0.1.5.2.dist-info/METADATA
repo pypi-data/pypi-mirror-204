@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: MatAn
+Version: 0.1.5.2
+Summary: Material analysis package to plot or extract properties like tensile modulus etc. 
+Home-page: https://codeberg.org/309631/matan
+Author: Igor Cudnik
+Author-email: igor.cudnik@student.put.poznan.pl
+License: GPLv3
+Keywords: material analysis,ISO 527,ISO 527-1,polymers analysis
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
+# matan
+
+Material analysis package from [https://pypi.org/project/MatAn/](PyPI):
+
+
+# Abstract
+
+Nowadays, Python is one of the most popular programming languages, even in non-informatics fields like mechanical engineering, due to its simplicity, and computer analysis solvers using FEM methods are part of almost all components, albeit access to material data is sometimes hard due to inadequate data in the datasheets, problems with calculations, inconsistent information, etc. To overcome this problem, the Python package was created, which allows to calculate the stress, strains, tensile modulus, and other properties from force and elongation data from a machine. For now, it includes only polymer tests according to the ISO-527-1 standard, but in the future, other standards should be included.
+
+Moreover, the package would need a graphical user interface, which could make it even simpler to use and, more importantly, allow users to upload their obtained results into OpenAccess databases and export plastic strains, tensile modulus, and other properties needed to perform FEM and other numerical analysis. That could make FEM methods even more accessible, which would lead to a decrease in the use of unnecessary materials and, due to this, less CO2 pollution.
