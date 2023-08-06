@@ -1,0 +1,9 @@
+README.md
+setup.py
+dxlib/__init__.py
+dxlib/finite_differences.py
+dxlib.egg-info/PKG-INFO
+dxlib.egg-info/SOURCES.txt
+dxlib.egg-info/dependency_links.txt
+dxlib.egg-info/requires.txt
+dxlib.egg-info/top_level.txt
