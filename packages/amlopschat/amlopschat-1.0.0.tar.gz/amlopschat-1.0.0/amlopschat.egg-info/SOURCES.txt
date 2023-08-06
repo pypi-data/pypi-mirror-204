@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+amlopschat/__init__.py
+amlopschat/_version.py
+amlopschat.egg-info/PKG-INFO
+amlopschat.egg-info/SOURCES.txt
+amlopschat.egg-info/dependency_links.txt
+amlopschat.egg-info/top_level.txt
+src/_version.py
