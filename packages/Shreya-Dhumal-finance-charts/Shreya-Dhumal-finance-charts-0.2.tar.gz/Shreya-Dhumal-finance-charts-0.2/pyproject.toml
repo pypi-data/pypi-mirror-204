@@ -1,0 +1,16 @@
+[build-system]
+requires = ['setuptools>=61.0']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "Shreya-Dhumal-finance-charts"
+version = "0.2"
+authors = [
+  { name="Shreya Dhumal", email="shreyadhumal22@gmail.com" },
+]
+description = "Creates pie charts for weekly and monthly transactions"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
