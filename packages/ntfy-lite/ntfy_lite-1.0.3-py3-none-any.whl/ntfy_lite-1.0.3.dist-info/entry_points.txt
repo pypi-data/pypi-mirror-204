@@ -1,0 +1,4 @@
+[console_scripts]
+ntfy_lite_logging_demo=ntfy_lite.demo_logging:run
+ntfy_lite_push_demo=ntfy_lite.demo_push:run
+
