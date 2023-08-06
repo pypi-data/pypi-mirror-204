@@ -1,0 +1,10 @@
+khl/__init__.py,sha256=y2Dj6e9t9EPb_wAO03ITxZRwuC-TXMq1IeuhbP-5mcU,2297
+khl/preprocess.py,sha256=hrZ2tCeU2Pn5_05dIVeVnGEE2wBI-ctIuwDCoyeFhgo,8829
+khl/stop_words.py,sha256=4PtnIVhdGqhKYlQtJ3wXYTkI5ZBLGBXXL5EpNlaqhCc,2426
+khl/teams_orgs.py,sha256=yiHPbtAZn0iZEWgh6Zd1BV8zG0HEBvwHF_opkDrCO6g,3274
+khl/utils.py,sha256=kzAQ_Owu1N0b--8hWj24KImNQZkOMtzlPlBa9tGoAwU,31173
+khl/wrong_lemmas.py,sha256=YUZCEjAjfxrRu7BPU_ieR4Djaq-E3axDgMulQML3J60,8346
+khl-1.0.7.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+khl-1.0.7.dist-info/METADATA,sha256=ngf5_2um1KJ9kJBDFV9fzUFktgW5WffthxXosCLsKkI,6248
+khl-1.0.7.dist-info/LICENSE,sha256=5XHRvcC3desDrMwAXcQ0Me6X1LVOhJse53pCIbpr9V0,1065
+khl-1.0.7.dist-info/RECORD,,
