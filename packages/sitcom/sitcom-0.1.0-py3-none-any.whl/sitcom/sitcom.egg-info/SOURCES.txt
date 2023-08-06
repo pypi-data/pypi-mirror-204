@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+src/sitcom/Sine_curve.png
+src/sitcom/black.png
+src/sitcom/config.toml
+src/sitcom/white.png
+src/sitcom/sitcom.egg-info/PKG-INFO
+src/sitcom/sitcom.egg-info/SOURCES.txt
+src/sitcom/sitcom.egg-info/dependency_links.txt
+src/sitcom/sitcom.egg-info/requires.txt
+src/sitcom/sitcom.egg-info/top_level.txt

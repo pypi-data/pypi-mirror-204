@@ -1,0 +1,3 @@
+[console_scripts]
+sitcom=sitcom.__main__:main
+
