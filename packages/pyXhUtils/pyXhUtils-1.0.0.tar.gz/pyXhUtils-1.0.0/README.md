@@ -1,0 +1,110 @@
+A collection of self dev library.
+
+## Build
+```shell
+rm -fr dist
+python -m build
+python -m twine upload dist/*
+```
+## Script writer
+A simple script writer function to write script file with executable permission.
+
+```python
+from xh_utils_script_writer import ScriptWriter
+script_writer.write_script("test.sh",lambda f: f.write("hello world"), executable=True)
+script_writer.write_script_text("test.sh","hello world", executable=True)
+```
+
+## xh_utils_file_changes
+
+In case we have log file from apache web server, the log file name is "access.log", the log will be renamed to "access.log-{YYYYmmdd}" daily. \
+The configuration can be done as below to capture the all the log file content even after renamed to new file name.
+
+```python
+import xh_utils_file_changes as fc
+import datetime as dt
+
+fileName = "access.log"
+
+# Please see the RenameHandler source code for detail
+# The return value for getFunction() is callable for f"{fileName}{separator}{date}"
+renameStrategy = fc.RenameHandler(date=dt.date.today(), separator="-")
+
+fpu = fc.FileProgressUtils()  # create the file progress utils
+gen = fpu.checkOnceAndDo(
+    fileName,
+    renameStrategy.getFunction()
+)
+while True:
+    try:
+        dr = next(gen)
+        if dr.deltaType == fc.DeltaType.RENAMED:
+            pass
+        else:
+            # handler that simply print out the data
+            # should implement the own handling logic 
+            fc.ChangeHandler.print_changes(dr)
+    except StopIteration:
+        pass
+```
+
+## xh_utils_ip
+
+IPv4 string handling utils
+
+```python
+import xh_utils_ip as ipu
+
+# convert string "192.168.8.1/16" to ipu.Ip object
+ip = ipu.Ip.from_regular_form("192.168.8.1/16")
+print(ip.binary_notation())  # print in binary format
+
+ipResults = [
+    print(f"{ipStr}[{pow(2, 32 - ip.ip_seg[4])}] {ip.binary_notation()}")
+    for ipStr in
+    "10.91.132.0/22\n10.91.136.0/21\n10.91.144.0/20\n10.91.160.0/19\n10.91.196.0/22\n10.91.200.0/21\n10.91.208.0/20\n10.91.224.0/19".split(
+        "\n")
+    for ip in [ipu.Ip.from_regular_form(ipStr)]
+]
+```
+
+Find host by ip if applicable
+```python
+form xh_utils_ip import defaultIpHostFinder as ipHostFinder
+ipHostFinder.find("127.0.0.1")
+```
+
+## xh_utils_string
+
+```python
+import xh_utils_string as su
+
+su.repeat_str()
+```
+
+## xh_utils_apache_log
+
+```python
+from xh_utils_apache_log import LogLine
+
+with open("{==== apache log =====}", "r") as f:
+    loglinesg = [LogLine.read_log_lines(line) for line in f.readlines()]
+
+```
+
+## progress_printer
+Progress Printer responsible to produce less screen print to ensure the program running as expected.
+Mainly used for dev env.
+
+```python
+from xh_utils_progress import ProgressPinger
+
+pinger = ProgressPinger(
+    print_every_n_count=100,  # print a progress log every hundred times call ping method
+    print_every_n_second=15  # print a progress log every 15 second if not meeting 100 record processing
+)
+
+while True:
+    pinger.ping()
+    pass
+```
