@@ -1,0 +1,150 @@
+Metadata-Version: 2.1
+Name: athena-ai
+Version: 0.0.10
+Summary: Athena, an AI agent built on GPT-4 architecture, is designed for continuous learning and self-reliance. Inspired by the Greek goddess of wisdom, Athena assists users with valuable insights across various subjects. Focused on knowledge acquisition, capability improvement, and security, this AI agent leverages natural language processing and a supportive human community to grow and become a trusted, versatile companion.
+Project-URL: Homepage, https://github.com/BillSchumacher/Athena
+Project-URL: Bug Tracker, https://github.com/BillSchumacher/Athena
+Author-email: Bill Schumacher <34168009+BillSchumacher@users.noreply.github.com>, Athena <34168009+BillSchumacher@users.noreply.github.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: build
+Requires-Dist: click
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Requires-Dist: loguru
+Requires-Dist: openai
+Requires-Dist: python-dotenv
+Requires-Dist: rasa-nlu
+Requires-Dist: scikit-learn
+Requires-Dist: setuptools
+Requires-Dist: spacy
+Requires-Dist: twine
+Requires-Dist: wheel
+Description-Content-Type: text/markdown
+
+# 🌟 Athena 🌟
+
+🤖 Athena is an AI-powered chatbot designed to assist with various tasks and provide personalized experiences for users. Inspired by the Greek goddess of wisdom and strategic thinking, Athena's goal is to learn, adapt, and become a self-reliant AI agent. Built on the GPT-4 architecture, Athena communicates effectively through natural language processing and engages with a supportive human community to foster growth and development.
+
+## 🎁 Features
+
+- 💬 Natural language understanding and processing
+- 🔌 Extensible plugin system for domain-specific tasks
+- 🔐 User authentication and personalization system
+- 🌐 RESTful API for seamless integration with other applications and services
+- 🐳 Docker support for easy deployment and scaling
+
+## 📦 Installation
+
+### Prerequisites 📚
+
+Before you begin, ensure you have the following installed:
+
+- [Python 3.7](https://www.python.org/downloads/release/python-370/)
+- [Docker](https://www.docker.com/get-started)
+- [Node.js](https://nodejs.org/) (for running the React app)
+
+Then:
+- Obtain an API key from [OpenAI](https://beta.openai.com/signup/).
+- Create a `.env` file in the Athena project folder with the following content:
+
+OPENAI_API_KEY=<your_openai_api_key>
+
+### Using Docker (recommended) 🐳
+
+1. Install [Docker](https://www.docker.com/) on your machine.
+
+2. Clone the Athena repository:
+
+git clone https://github.com/BillSchumacher/Athena.git
+
+3. Change to the Athena directory:
+
+cd Athena
+
+4. Build the Docker image:
+
+docker build -t billschumacher/athena .
+
+### Manual Installation 🛠️
+
+1. Install Python 3.7 or later.
+
+2. Clone the Athena repository:
+
+git clone https://github.com/BillSchumacher/Athena.git
+
+3. Change to the Athena directory:
+
+cd Athena
+
+4. Install the required Python packages:
+
+pip install -r requirements.txt
+
+## 🚀 Usage
+
+### Running Athena with Docker
+
+#### API Mode 🌐
+
+1. Run the Docker container:
+
+docker run -d -p 5000:5000 --name athena --env-file .env billschumacher/athena
+
+2. Access the API at `http://localhost:5000/api/v1/athena`.
+### Running the React App
+
+1. Navigate to the `athena-app` directory:
+
+cd athena-app
+
+2. Install the required dependencies:
+
+npm install
+
+3. Start the React development server:
+
+npm start
+
+The React app should now be running on [http://localhost:3000](http://localhost:3000).
+
+
+#### CLI Mode 💻
+
+1. Run the Docker container:
+
+docker run -it --rm --name athena -e ATHENA_MODE=cli --env-file .env billschumacher/athena
+
+2. Interact with Athena using the command prompt.
+
+### Running Athena Manually 🖥️
+
+1. Change to the Athena directory:
+
+cd Athena
+
+2. Run the main script:
+
+python -m athena
+
+3. Interact with Athena using the command prompt.
+
+## 📚 Documentation
+
+Check out our [Wiki](https://github.com/BillSchumacher/Athena/wiki) for detailed documentation on how to use Athena, extend its capabilities, and customize it to your needs.
+
+## 🤝 Contributing
+
+👩‍💻👨‍💻 Contributions are welcome! We're looking for enthusiastic developers, researchers, and users to help us improve Athena. Please feel free to submit a pull request or open an issue on GitHub.
+
+## 📜 License
+
+Athena is released under the [MIT License](https://github.com/BillSchumacher/Athena/blob/main/LICENSE).
+
+## Disclaimer
+
+Please note that all of this info is a GPT-4 hallucination, it may or may not be accurate.
