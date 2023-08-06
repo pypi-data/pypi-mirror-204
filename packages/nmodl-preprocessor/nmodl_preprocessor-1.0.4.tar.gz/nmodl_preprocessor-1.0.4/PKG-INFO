@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: nmodl_preprocessor
+Version: 1.0.4
+Summary: Optimize NMODL files for the NEURON simulator
+Author-email: David McDougall <dam1784@rit.edu>
+License: MIT
+Project-URL: Homepage, https://github.com/ctrl-z-9000-times/nmodl_preprocessor
+Keywords: nmodl,neuron
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# nmodl_preprocessor
+
+This program optimizes NMODL files for the NEURON simulator.  
+It performs the following optimizations to ".mod" files:  
+* Hardcode the parameters
+* Hardcode the temperature
+* Hardcode any assigned variables with constant values
+* Inline all functions and procedures
+* Convert assigned variables into local variables
+
+These optimizations can improve run-time performance and memory usage by as much
+as 15%.
+
+## Installation
+
+#### Prerequisites
+* [Python](https://www.python.org/) and [pip](https://pip.pypa.io/en/stable/)
+* [The NMODL Framework](https://bluebrain.github.io/nmodl/html/index.html)
+
+```
+pip install nmodl_preprocessor
+```
+
+## Usage
+```
+$ nmodl_preprocessor [-h] [--celsius CELSIUS] input_path output_path
+
+positional arguments:
+  input_path         input filename or directory of nmodl files
+  output_path        output filename or directory for nmodl files
+
+options:
+  -h, --help         show this help message and exit
+  --celsius CELSIUS  temperature of the simulation
+
+```
+
+## Tips
+
+* This program will not optimize any RANGE or GLOBAL symbols.  
+  - Remove them unless you actually need to inspect or modify
+    their value at run-time.  
+  - Add parameters to a GLOBAL statement to preserve them.  
+
+* Remove unnecessary VERBATIM statements.  
+

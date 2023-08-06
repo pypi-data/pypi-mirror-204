@@ -1,0 +1,2 @@
+[console_scripts]
+nmodl_preprocessor = nmodl_preprocessor:__main__._placeholder

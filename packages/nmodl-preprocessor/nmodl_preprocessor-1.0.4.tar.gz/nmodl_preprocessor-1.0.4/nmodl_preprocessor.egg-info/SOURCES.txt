@@ -1,0 +1,15 @@
+.gitignore
+DETAILS.pdf
+LICENSE.txt
+README.md
+pyproject.toml
+nmodl_preprocessor/__main__.py
+nmodl_preprocessor/nmodl_to_python.py
+nmodl_preprocessor/rw_patterns.py
+nmodl_preprocessor/utils.py
+nmodl_preprocessor.egg-info/PKG-INFO
+nmodl_preprocessor.egg-info/SOURCES.txt
+nmodl_preprocessor.egg-info/dependency_links.txt
+nmodl_preprocessor.egg-info/entry_points.txt
+nmodl_preprocessor.egg-info/requires.txt
+nmodl_preprocessor.egg-info/top_level.txt
