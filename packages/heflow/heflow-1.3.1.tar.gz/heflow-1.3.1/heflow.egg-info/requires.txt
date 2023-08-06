@@ -1,0 +1,5 @@
+mlflow[extras]
+tenseal
+
+[extras]
+psycopg2
