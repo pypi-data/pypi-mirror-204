@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Kivy4
+Version: 5.3.1
+Summary: This package allows you to create Kivy projects faster with a pre-made kivy template.
+Author: Eshqol Development
+Author-email: support@eshqol.com
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Kivy4
+
+This package allows you to create Kivy projects faster\
+with a pre-made kivy template.
