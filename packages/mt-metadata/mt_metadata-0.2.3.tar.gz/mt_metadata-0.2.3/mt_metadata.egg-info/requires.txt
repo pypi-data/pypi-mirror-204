@@ -1,0 +1,7 @@
+concurrent-log-handler
+numpy
+pandas<=1.5.3
+pyyaml
+obspy
+matplotlib
+xarray
