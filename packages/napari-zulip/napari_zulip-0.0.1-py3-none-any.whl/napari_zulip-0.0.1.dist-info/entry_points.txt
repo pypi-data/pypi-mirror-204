@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-zulip = napari_zulip:napari.yaml
