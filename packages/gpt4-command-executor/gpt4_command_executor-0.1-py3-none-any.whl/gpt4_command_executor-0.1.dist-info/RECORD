@@ -1,0 +1,10 @@
+gpt4_command_executor/__init__.py,sha256=sJD0EWqAlhi0MHjKVJ7nf9dOQJzpseUukairKHhg28Q,109
+gpt4_command_executor/config.py,sha256=T_Q0KhtONtrTLwmYiZ5RLNdkzbUssxxUgfKgV8IzsrI,685
+gpt4_command_executor/copilot_cli.py,sha256=BqWKiv_tzvNKKpKfVtKfXPaJUMbsSmsGQMPnYkFWIEo,589
+gpt4_command_executor/executor.py,sha256=opQAvkeRXuAESHbqdL3w2ZnVs0P2RFCUVTzm-bLZtpI,936
+gpt4_command_executor/gpt3.py,sha256=x5uZ9_dlVhnAems2aObQZO3PbGcHl0kCeo7qYB0pvAY,564
+gpt4_command_executor-0.1.dist-info/METADATA,sha256=Sqzp5f2X0Jo41cl3Wz32B0O3sgKmTWnH3gq_FwJ-2ls,225
+gpt4_command_executor-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gpt4_command_executor-0.1.dist-info/entry_points.txt,sha256=PYE3AhmlQWMxStW1qcjJoWoO8cC-ky4fpz_O_uebJdM,61
+gpt4_command_executor-0.1.dist-info/top_level.txt,sha256=bc7vZqhr7iItq2vzr4sU5xVkabwd5w_4JyVA6Wxbz8M,22
+gpt4_command_executor-0.1.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+q = gpt4_command_executor.copilot_cli:main
