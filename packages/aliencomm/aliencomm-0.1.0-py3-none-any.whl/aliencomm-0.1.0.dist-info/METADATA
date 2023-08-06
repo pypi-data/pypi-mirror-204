@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aliencomm
+Version: 0.1.0
+Summary: A library for communication with aliens
+Home-page: https://github.com/RUBRUSH/aliencomm
+Author: RUBRUSH
+Author-email: askarsalikov58@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+UNKNOWN
+
