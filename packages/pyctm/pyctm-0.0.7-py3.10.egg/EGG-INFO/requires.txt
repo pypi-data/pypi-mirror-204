@@ -1,0 +1,6 @@
+confluent-kafka
+matplotlib
+numpy
+scikit-learn
+tk
+torch
