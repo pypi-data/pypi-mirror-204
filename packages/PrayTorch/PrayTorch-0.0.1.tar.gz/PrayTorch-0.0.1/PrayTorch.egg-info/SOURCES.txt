@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+PrayTorch.egg-info/PKG-INFO
+PrayTorch.egg-info/SOURCES.txt
+PrayTorch.egg-info/dependency_links.txt
+PrayTorch.egg-info/entry_points.txt
+PrayTorch.egg-info/requires.txt
+PrayTorch.egg-info/top_level.txt

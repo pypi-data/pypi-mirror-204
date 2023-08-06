@@ -1,0 +1,3 @@
+[console_scripts]
+praytorch = praytorch.command_line:main
+
