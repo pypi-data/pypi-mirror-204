@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: alice-messagebus-client
+Version: 0.10.1
+Summary: Alice Messagebus Client
+Home-page: https://github.com/Alice-IA/alice-messagebus-client
+Author: Mycroft AI, Åke Forslund
+Author-email: devs@mycroft.ai, ake.forslund@gmail.com
+License: Apache-2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
