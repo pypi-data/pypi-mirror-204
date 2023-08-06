@@ -1,0 +1,17 @@
+query_tool/__init__.py,sha256=r5JwEct3ILOun49UaE2WkOCZUSQ3MzF-spbK0XX4ItQ,3587
+query_tool/frontend/dist/index.html,sha256=hGs-Ku5YHy13v9Iy6ofxAfsuy7deWuhgNndmKXGH7Hs,463
+query_tool/frontend/dist/vite.svg,sha256=SnSK_UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs,1497
+query_tool/frontend/dist/assets/index-9cb700e1.js,sha256=XA8A2O-cCzoU-penwTk_0bvjEZNrut4SNlRygFZ2AUo,1044762
+query_tool/frontend/dist/assets/index-d081bea5.css,sha256=0IG-pekTwg6qlUydYwMnU2-IC7VwoPGHUln3GcIsCGE,300
+query_tool/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+query_tool/services/dimension_service.py,sha256=P0iJCWc0IR8f1cP_I85bLXZxKm60UqeIGawgTMNKFKI,1438
+query_tool/services/entities_service.py,sha256=Bc7GWgAwRD_ACPcYKqLs5_fxdbNRA_vjXEV-I5bK5h4,3941
+query_tool/services/filters_service.py,sha256=jowQOqezX0IDniPq5hs0KEMH_qEf0vxef8HLtiodVgI,3653
+query_tool/services/query_tool_factory.py,sha256=a1vyu7gZh_8WRHtbDygmDtTOaq1a-pxCaRCknYcdOy8,437
+query_tool/services/query_tool_service.py,sha256=LbQS3ivs8lBidHp14uiGvho51xNlpC3cai1iGc3j1RM,1987
+query_tool/services/register.py,sha256=4t3wROg9ceF27qInuAlhNfj2orswwdnnj968qLBv94c,2153
+bp_query_tool-0.0.4.dist-info/LICENSE,sha256=9VDWIUfeWnnobvVpN2KtC5cHaNpAmxhdjyF4LivEPNw,1063
+bp_query_tool-0.0.4.dist-info/METADATA,sha256=Iq7JvNzruDaRaK3JCWDS_cjmW_lI19qnwJFdPZ2k_hI,338
+bp_query_tool-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bp_query_tool-0.0.4.dist-info/top_level.txt,sha256=Kywg5_B1-2BMVHBQVd5EQmfe4cki4a8XU78gtJtgI1c,11
+bp_query_tool-0.0.4.dist-info/RECORD,,
