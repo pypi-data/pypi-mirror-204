@@ -1,0 +1,8 @@
+click
+jcloud>=0.2.6
+jina-hubble-sdk
+jina==3.15.0
+langchain
+nest-asyncio
+requests
+textual
