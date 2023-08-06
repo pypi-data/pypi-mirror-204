@@ -1,0 +1,72 @@
+
+## Download
+
+#### Prerequisites
+
+
+On Ubuntu/Debian:
+
+
+    sudo apt install update
+    sudo apt install upgrade
+
+
+#### Usage
+
+
+To download the Youtube video's and Audio's And Download Any type of Image's.
+
+    Downloader [Option..]
+
+
+
+
+## Table of Contents
+
+
+
+
+## Installation
+
+Use pip/pip3 to install from PyPI
+
+    $ pip install <Tool NAME>
+
+You can also use Python from your command prompt
+
+    $ python -m pip install <Tool NAME>
+
+## Features
+1.  Download the youtube video with specified Resolution
+2.  Downlaod the Youtube audio with specified name with specified path name
+3.  Download the youtube video with or without specified the youtube resolution's
+4.  Downlaod Image with specified Image copy address with specified path
+5.  
+6.
+7.
+
+## Usage
+
+With Downloader, you can download any YouTube Video and Audio you want, over a few commands. The following section of the documentation is to guide you on how to use Downloders.
+
+
+### Download YouTube Videos
+
+To Download a YouTube Video from your default web browser or DIrect from Youtube Platform , use the following syntax:
+
+    Usage: Downloader Youtube video [-source="Youtube video link" -resolution="Youtube video resolution" ]
+
+
+### Download YouTube Audios
+
+To Download a YouTube Audio from your default web browser or DIrect from Youtube Platform , use the following syntax:
+
+    Usage: Downloader Youtube Audio [-source="Youtube video link" -path="which path the file to be saved" -filename="Your Audio filename"]
+
+### Download Any type of Images
+
+To Download Any type of Images from your default web browser or Any type of online  Platform , use the following syntax:
+
+    Usage: Downloader Image [-source="Image address link" -path="which path the file to be saved" -filename="Your Image filename"]
+
+
