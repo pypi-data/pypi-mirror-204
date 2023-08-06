@@ -1,0 +1,4 @@
+recursive-include package/src/NeuralBasics/training/MNIST/big *
+recursive-include package/src/NeuralBasics/training/MNIST/small *
+recursive-include package/src/NeuralBasics/training/MNIST/info.txt
+recursive-include package/src/NeuralBasics/trained_data.txt
