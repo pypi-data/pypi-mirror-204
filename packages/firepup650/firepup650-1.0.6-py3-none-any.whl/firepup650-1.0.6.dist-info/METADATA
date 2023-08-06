@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: firepup650
+Version: 1.0.6
+Summary: Package containing various shorthand things I use, and a few imports I almost always use
+Home-page: https://github.com/F1repup650/firepup650-PYPI
+Author: Firepup650
+Author-email: firepyp650@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/F1repup650/firepup650-PYPI/issues
+Project-URL: replit, https://replit.com/@Firepup650/firepup650-PYPI-Package
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: fkeycapture
+
+# Firepup650
+Package containing various shorthand things I use, and a few imports I almost always use
+#### Change log:
+###### v.1.0.6:
+Hopefully, fixes an issue where the package doesn't install it's dependencies (Again. Hopefully.)
+###### v.1.0.5:
+Hopefully, fixes an issue where the package doesn't install it's dependencies
+###### v.1.0.4:
+Subscript errors
+###### v.1.0.3:
+Dependant errors
+###### v.1.0.2:
+Random shorthand (litterally)
+###### v.1.0.1:
+Added animated typing function, sleep shorthand
+###### v.1.0.0:
+Initial Release!
+
