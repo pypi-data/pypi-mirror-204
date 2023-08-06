@@ -1,0 +1,10 @@
+airgiant/__init__.py,sha256=shpRBpAfz3GcyJNaaFTk2NX2tYp2MuesSu4Y_nL3TDU,46
+airgiant/state/__init__.py,sha256=JFNwlObMRSejluf1vJjNWLD9Xf7ZWi3qaMEGOl73-GU,24
+airgiant/state/hello.py,sha256=0jlR3FU4OMSWpmBh9GmkSVosmL6dOIRdv4Ny2c4vT9A,38
+airgiant/zed/__init__.py,sha256=kHZZsJMcRJyqLzGYZHcdqGymWQXNfSQycFdjRSETtSc,237
+airgiant/zed/skeleton.py,sha256=FfS3Vmqq8v4iA27QVbadcUX-Mtxp3iUwIu78ZNCK_xs,3754
+airgiant-0.0.8.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+airgiant-0.0.8.dist-info/METADATA,sha256=Tz94J685Ug7UJtmWTrj9ie3m1UrykJCUsgeFqgyfHCA,544
+airgiant-0.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+airgiant-0.0.8.dist-info/top_level.txt,sha256=fOl1MAonljMHIgZtE5AQ7UX7X1fR97l6lwp0ud-CzUs,9
+airgiant-0.0.8.dist-info/RECORD,,
