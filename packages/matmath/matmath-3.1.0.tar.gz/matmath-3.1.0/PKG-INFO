@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: matmath
+Version: 3.1.0
+Summary: A simple and efficient module for matrix and vector manipulation.
+License: MIT
+Author: Siddhesh Agarwal
+Author-email: siddhesh.agarwal@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Documentation, https://siddhesh-agarwal.github.io/matmath/
+Project-URL: Source, https://github.com/Siddhesh-Agarwal/matmath
