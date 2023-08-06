@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: osrs-lib
+Version: 0.1.1
+Summary: An OSRS library
+Home-page: https://github.com/shumatepf/osrs-lib
+Author: shumatepf
+Author-email: shumatepfs@gmail.com
+License: Apache 2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
