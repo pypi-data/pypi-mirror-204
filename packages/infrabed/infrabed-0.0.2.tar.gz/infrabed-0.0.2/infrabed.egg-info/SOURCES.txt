@@ -1,0 +1,5 @@
+setup.py
+infrabed.egg-info/PKG-INFO
+infrabed.egg-info/SOURCES.txt
+infrabed.egg-info/dependency_links.txt
+infrabed.egg-info/top_level.txt
