@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/nlrtk.egg-info/PKG-INFO
+src/nlrtk.egg-info/SOURCES.txt
+src/nlrtk.egg-info/dependency_links.txt
+src/nlrtk.egg-info/entry_points.txt
+src/nlrtk.egg-info/requires.txt
+src/nlrtk.egg-info/top_level.txt
+tests/test_simple.py
