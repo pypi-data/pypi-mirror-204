@@ -1,0 +1,3 @@
+[console_scripts]
+obr = omnibridge.main:main
+omnibridge = omnibridge.main:main
