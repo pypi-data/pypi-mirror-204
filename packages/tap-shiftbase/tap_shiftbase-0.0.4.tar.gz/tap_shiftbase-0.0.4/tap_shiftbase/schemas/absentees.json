@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Singer SDK Schema for Absentee and ReviewedBy data",
+  "type": "object",
+  "properties": {
+    "Absentee": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "account_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "user_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "startdate": {
+          "type": "string",
+          "format": "date"
+        },
+        "enddate": {
+          "type": "string",
+          "format": "date"
+        },
+        "exclude": {
+          "type": "boolean"
+        },
+        "roster_action": {
+          "type": "string"
+        },
+        "absentee_option_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "note": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "reviewed": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "status": {
+          "type": "string"
+        },
+        "hours": {
+          "type": "string"
+        },
+        "wait_hours": {
+          "type": "string"
+        },
+        "partial_day": {
+          "type": "boolean"
+        },
+        "start_time": {
+          "type": "string",
+          "format": "time"
+        },
+        "end_time": {
+          "type": "string",
+          "format": "time"
+        },
+        "deleted": {
+          "type": "boolean"
+        },
+        "created_by": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "modified_by": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "reviewed_by": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "hide_days_without_hours": {
+          "type": "boolean"
+        },
+        "days": {
+          "type": "integer"
+        },
+        "hours_per_day": {
+          "type": "integer"
+        },
+        "total": {
+          "type": "integer"
+        },
+        "percentage": {
+          "type": "string"
+        },
+        "surcharge_name": {
+          "type": "string"
+        },
+        "surcharge_total": {
+          "type": "integer"
+        },
+        "salary": {
+          "type": "integer"
+        }
+      }
+    },
+    "ReviewedBy": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "first_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "prefix": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "last_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}
