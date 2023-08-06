@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+springpy/__init__.py
+springpy/main.py
+springpy.egg-info/PKG-INFO
+springpy.egg-info/SOURCES.txt
+springpy.egg-info/dependency_links.txt
+springpy.egg-info/requires.txt
+springpy.egg-info/top_level.txt
