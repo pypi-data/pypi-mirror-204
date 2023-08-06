@@ -1,0 +1,10 @@
+stream/__init__.py,sha256=qhd9QhI1KMjk4l8w0UXuFhXae6sLnU2dYYR168LdIw4,502
+stream/release.py,sha256=t8noOXJns_qVF6JqADyfjE6X_N7-M504ou4K8ZfWzc8,1974
+stream/stream.py,sha256=jHDATW0kwgkZcvsQIZIC_AJOsDJ1ithTERLkVGiFB64,13797
+stream/varint.py,sha256=r-PBmvIthghtdkTSCF-lG2GyQeu_KZ-Dmjvk7nsvwLg,1366
+pystream_protobuf-1.6.4.dist-info/LICENSE,sha256=w35pK5nXzPpLZpPpFQSlMIB4bae6t91VrXeC73TzrIA,1070
+pystream_protobuf-1.6.4.dist-info/METADATA,sha256=JEnvkhURERxYyyfFvMjZkm7raoRQ9Euaxe8F7CtMG50,4417
+pystream_protobuf-1.6.4.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+pystream_protobuf-1.6.4.dist-info/entry_points.txt,sha256=142M1O3C3uKxGgagObio4lxhGLCGfedgfSjklJda_XI,45
+pystream_protobuf-1.6.4.dist-info/top_level.txt,sha256=2SBK9vJ-OFJrLllTM_iIZBrGQ_ZdfpPKTESrlZGHFwE,7
+pystream_protobuf-1.6.4.dist-info/RECORD,,
