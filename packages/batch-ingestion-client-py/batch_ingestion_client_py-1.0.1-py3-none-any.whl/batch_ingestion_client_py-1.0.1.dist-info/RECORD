@@ -1,0 +1,8 @@
+batch_ingestion_client_py/__init__.py,sha256=IqPscBOpS0vhi7jr2eMS9bicdi6oYclPo9hQNW-brx0,265
+batch_ingestion_client_py/data.py,sha256=q5FYqJ_sM7Mnj4HM1WuNoGU5NAUw1E61l371XGP3_bA,5750
+batch_ingestion_client_py/main.py,sha256=0wTJvVsqU2OnL2Qks-9qG5FwmioGBi7x20GYI10n3j0,642
+batch_ingestion_client_py/response.py,sha256=yOFXkptun2F5E0UM6XlvPO_KXElcqIcsAqo0-OuxKOw,1422
+batch_ingestion_client_py-1.0.1.dist-info/METADATA,sha256=hgzkD24GI2IPo4ICfNGu0-P4uVFDAGnJxmGG-Gmbzxk,4101
+batch_ingestion_client_py-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+batch_ingestion_client_py-1.0.1.dist-info/top_level.txt,sha256=H22JBC7BWf5jCQqDXna4JEQZuhGrItdZWm2W5lVnU0c,26
+batch_ingestion_client_py-1.0.1.dist-info/RECORD,,
