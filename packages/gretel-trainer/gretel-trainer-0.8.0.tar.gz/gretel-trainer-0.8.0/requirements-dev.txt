@@ -1,0 +1,7 @@
+-r requirements.txt
+black
+isort
+lxml
+pandas-stubs
+pyright
+pytest
