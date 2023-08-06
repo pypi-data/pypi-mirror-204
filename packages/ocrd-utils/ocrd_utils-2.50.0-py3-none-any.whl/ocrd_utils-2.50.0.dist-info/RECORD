@@ -1,0 +1,13 @@
+ocrd_utils/__init__.py,sha256=d9BtBJzP7F2XdEEugARupxdIgYZVcdezi0yZuZYxbgw,5433
+ocrd_utils/constants.py,sha256=yesrOHKkTGLQwdUoBddJpjkfF87pH5O73RKI82kcyyY,3365
+ocrd_utils/deprecate.py,sha256=tPI2Xie6nlbY-Wt6sFSpx55ItNpAIb_ArKIH9r7tdN4,911
+ocrd_utils/image.py,sha256=bZ6h42JDQdHiQaJ20Jr6wUzdBVP_CFTQUWPLdK2BBzE,24531
+ocrd_utils/introspect.py,sha256=X2zIKaFKsQLDzxQycCBnOZLKKfTQt6GxFoTeZ-k17RQ,1091
+ocrd_utils/logging.py,sha256=LMxF-1fnwAvNPb9-bUaQ4Pfjk3ZTNcKxGhedT3WeR-I,5957
+ocrd_utils/os.py,sha256=b578-69hub1u3IJdufEdgLSfwebNpzFwQkWyfcBNpMY,8386
+ocrd_utils/package_resources.py,sha256=ORNMsbIcSVDWyBNCP5SBytNONmWaCbazHwCP98yHbDo,1558
+ocrd_utils/str.py,sha256=JQwWshKHiyPyT_6AIyckPy3CwTAV1D8diP9ZpO7od90,7344
+ocrd_utils-2.50.0.dist-info/METADATA,sha256=9s4cneEd3P_u-K5j5IXkjcht7Avn9GaVMrg8FRdO9-E,2690
+ocrd_utils-2.50.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ocrd_utils-2.50.0.dist-info/top_level.txt,sha256=qu4eLMHl72fNP5n_p0sYhoUNLJumENuqszNZhD3WAvU,11
+ocrd_utils-2.50.0.dist-info/RECORD,,
