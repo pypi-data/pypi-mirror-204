@@ -1,0 +1,17 @@
+ssdb/__init__.py,sha256=hT4gjn7A7H6pix1RYGQcui4hEZJMHtz1gkSYm6OqH7A,52
+ssdb/client.cp310-win_amd64.pyd,sha256=nh-oJinIoZjDEFqLlLLNBUN8XiooDmX_PmXJt6JNnG0,120320
+ssdb/connection.cp310-win_amd64.pyd,sha256=53iLRO5yjtJ-6FaW9cy4xDBrbaSRM-L0Vyh5qG5SMfE,186880
+ssdb/asyncio/__init__.py,sha256=CNBk_8mH6Z4RflW7LtjO0_nmc0X9KgFXHbCQ28qZZ2s,60
+ssdb/asyncio/client.cp310-win_amd64.pyd,sha256=6pinM7Zfo-lgB2kixYoJLpDDth85n0Kof-5tVDJ0tXU,160256
+ssdb/asyncio/connection.cp310-win_amd64.pyd,sha256=gK_cCXG2dYDZtVWurCHqFmxgpdfcWec7wnVzTm5_-kc,234496
+ssdb/core/__init__.py,sha256=JQ-A54tyibTaFw6n_2y2TVxvaYIUZqQ2nMph_UoRkz8,77
+ssdb/core/encode.cp310-win_amd64.pyd,sha256=wNpn7U7gFOi4I5TLFyqdNwBczncVOcyPN8aqFt-t7aE,39936
+ssdb/core/interface.cp310-win_amd64.pyd,sha256=LzYxofLPa5ZYAMDayTxHEZLDPO8VnzeQTa2eT42QDp4,173056
+ssdb/core/parser.cp310-win_amd64.pyd,sha256=mX2mw49miFFQZunZ3VkEeCUiHg-1RiQy4jLHyqHktvE,142848
+ssdb/core/response.cp310-win_amd64.pyd,sha256=9JA9-QUKhz9RcAlwN7FiKBJMM6fHK5O8lK77UrgP29o,39424
+python_ssdb-1.0.5.dist-info/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+python_ssdb-1.0.5.dist-info/METADATA,sha256=xGTHVHzbVSJpUcxnEGy5Qrse0NI1XcXQeXt7B5WWKV4,1945
+python_ssdb-1.0.5.dist-info/NOTICE.md,sha256=j48LuA6oGTAS0yKUPUMeTDLXErXYtwIoP-iDc-kwZJc,12779
+python_ssdb-1.0.5.dist-info/WHEEL,sha256=jrOhEbqKwvzRFSJcbYXlJCyVkgVdHg4_7__YHrdTUfw,102
+python_ssdb-1.0.5.dist-info/top_level.txt,sha256=xEnud1pc-bK2a-VkAQhr1NnowyUwy5xk4CIssqHxXB8,5
+python_ssdb-1.0.5.dist-info/RECORD,,
