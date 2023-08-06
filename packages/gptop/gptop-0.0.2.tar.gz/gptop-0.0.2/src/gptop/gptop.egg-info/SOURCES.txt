@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/gptop/__init__.py
+src/gptop/operation.py
+src/gptop/operation_utils.py
+src/gptop/operator.py
+src/gptop/utils.py
+src/gptop/gptop.egg-info/PKG-INFO
+src/gptop/gptop.egg-info/SOURCES.txt
+src/gptop/gptop.egg-info/dependency_links.txt
+src/gptop/gptop.egg-info/requires.txt
+src/gptop/gptop.egg-info/top_level.txt
