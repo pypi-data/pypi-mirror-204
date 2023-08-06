@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: echohue
+Version: 0.1.0
+Summary: Philips Hue lamp emulation for Amazon Echo
+Home-page: https://github.com/mightytry/alexa-echo-hue
+Author: mightytry
+Author-email: 
+License: MIT
+Project-URL: Bug Tracker, https://github.com/mightytry/alexa-echo-hue/issues
+Project-URL: Docs, https://github.com/mightytry/alexa-echo-hue
+Project-URL: GitHub: repo, https://github.com/aio-libs/aiohttp
+Project-URL: GitHub: issues, https://github.com/aio-libs/aiohttp/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Alexa-Echo-Hue
+Amazon alexa echo hue emulation
+
+## Features
+- Emulate a Philips Hue Light Bulb
+- Control your devices with Alexa Echo
+- Asyncronous processing
+
+## Requirements
+
+
+## Thanks to:
+[falk0069](https://github.com/falk0069/hue-upnp) and [IcynatorHD](https://www.npmjs.com/package/node-red-contrib-local-alexa-devices)
