@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pdftotree-mercurial
+Version: 1.1
+Summary: Convert PDF into hOCR with text, tables, and figures being recognized and preserved. (Without sklearn in dependencies)
+Home-page: https://github.com/HazyResearch/pdftotree
+Author: Hazy Research
+Author-email: senwu@cs.stanford.edu
+License: MIT
+Project-URL: Tracker, https://github.com/HazyResearch/pdftotree/issues
+Project-URL: Source, https://github.com/HazyResearch/pdftotree
+Keywords: pdf,parsing,html,hocr
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+License-File: LICENSE

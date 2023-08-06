@@ -1,0 +1,9 @@
+IPython
+beautifulsoup4
+numpy
+pandas
+pdfminer.six>=20191020
+pillow
+selectivesearch
+tabula-py
+wand
