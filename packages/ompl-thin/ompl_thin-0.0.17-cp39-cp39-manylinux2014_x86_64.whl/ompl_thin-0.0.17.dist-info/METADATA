@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ompl-thin
+Version: 0.0.17
+Summary: thin ompl python wrapper
+Home-page: UNKNOWN
+Author: Hirokazu Ishida
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE.md
+Requires-Dist: numpy
+
+UNKNOWN
+
