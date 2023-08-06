@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-tracing = napari_tracing:napari.yaml
