@@ -1,0 +1,12 @@
+cleez/__init__.py,sha256=gqOTABI-ZUBEeuw2HEaWalUMBHzw62LSSD2WCTx82p0,340
+cleez/actions.py,sha256=HlWN4L6FNNFRGIBK_ovHQ267IHMqVF6JPz4-kPCUYNI,553
+cleez/cleez.py,sha256=SX8u_Ed4prGB9d8apuXky92IQCmK21Nb9bOfatPxT-I,4985
+cleez/colors.py,sha256=1qLQiOcydM7mKJVLSmQJZhpzQd8Y85GlzRrXw4KVy4Q,371
+cleez/command.py,sha256=_0VhH5TbumegCNmARffT0MvBInz_pTFefhBF55MjsK4,1752
+cleez/exceptions.py,sha256=fWXk9A7ZgnIXXV_woALfzzata5YhNe7-e33cextLmPI,268
+cleez/help.py,sha256=zBIRy1n2HNm4RUW-0GDH6csPYF4a4V84O1jv7xG5ceA,2707
+cleez/testing.py,sha256=a5VG8A2Mw1K2Uj5YPq5BIQ6tku0OdUsbs99S7VfdvIM,11768
+cleez-0.1.5.dist-info/LICENSE,sha256=12b1LYvFO0Yl2pCTqQF_aIpYYJhVJ_R5K30oMnLBDwI,583
+cleez-0.1.5.dist-info/METADATA,sha256=28LbudEoyk98-Tu8FCHTjMkOoRitWtnOsxWQWcJruj0,1758
+cleez-0.1.5.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+cleez-0.1.5.dist-info/RECORD,,
