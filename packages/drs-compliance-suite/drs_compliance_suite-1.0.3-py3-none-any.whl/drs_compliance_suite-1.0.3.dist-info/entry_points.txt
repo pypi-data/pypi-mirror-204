@@ -1,0 +1,2 @@
+[console_scripts]
+drs-compliance-suite = compliance_suite.report_runner:main
