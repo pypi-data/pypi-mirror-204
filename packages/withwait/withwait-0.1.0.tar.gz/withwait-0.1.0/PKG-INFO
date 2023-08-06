@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: withwait
+Version: 0.1.0
+Summary: A simple utility to ensure that sleep operations always complete
+Home-page: https://github.com/MiguelGuthridge/withwait
+License: MIT
+Keywords: testing,with,sleep,time,wait,delay
+Author: Miguel Guthridge
+Author-email: hdsq@outlook.com.au
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Other Environment
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Testing
+Classifier: Typing :: Typed
+Requires-Dist: typing-extensions (>=4.5.0,<5.0.0)
+Project-URL: Bug Tracker, https://github.com/MiguelGuthridge/withwait/issues
+Project-URL: Documentation, https://miguelguthridge.github.io/withwait
+Project-URL: Online Documentation, https://github.com/MiguelGuthridge/withwait
+Project-URL: Repository, https://github.com/MiguelGuthridge/withwait
