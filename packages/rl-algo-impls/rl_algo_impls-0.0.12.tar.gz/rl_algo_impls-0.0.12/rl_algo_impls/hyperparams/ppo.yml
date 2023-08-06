@@ -1,0 +1,771 @@
+CartPole-v1: &cartpole-defaults
+  n_timesteps: !!float 1e5
+  env_hyperparams:
+    n_envs: 8
+  algo_hyperparams:
+    n_steps: 32
+    batch_size: 256
+    n_epochs: 20
+    gae_lambda: 0.8
+    gamma: 0.98
+    ent_coef: 0.0
+    learning_rate: 0.001
+    learning_rate_decay: linear
+    clip_range: 0.2
+    clip_range_decay: linear
+  eval_hyperparams:
+    step_freq: !!float 2.5e4
+
+CartPole-v0:
+  <<: *cartpole-defaults
+  n_timesteps: !!float 5e4
+
+MountainCar-v0:
+  n_timesteps: !!float 1e6
+  env_hyperparams:
+    normalize: true
+    n_envs: 16
+  algo_hyperparams:
+    n_steps: 16
+    n_epochs: 4
+    gae_lambda: 0.98
+    gamma: 0.99
+    ent_coef: 0.0
+
+MountainCarContinuous-v0:
+  n_timesteps: !!float 1e5
+  env_hyperparams:
+    normalize: true
+    n_envs: 4
+  # policy_hyperparams:
+  #   init_layers_orthogonal: false
+  #   log_std_init: -3.29
+  #   use_sde: true
+  algo_hyperparams:
+    n_steps: 512
+    batch_size: 256
+    n_epochs: 10
+    learning_rate: !!float 7.77e-5
+    ent_coef: 0.01 # 0.00429
+    ent_coef_decay: linear
+    clip_range: 0.1
+    gae_lambda: 0.9
+    max_grad_norm: 5
+    vf_coef: 0.19
+  eval_hyperparams:
+    step_freq: 5000
+
+Acrobot-v1:
+  n_timesteps: !!float 1e6
+  env_hyperparams:
+    n_envs: 16
+    normalize: true
+  algo_hyperparams:
+    n_steps: 256
+    n_epochs: 4
+    gae_lambda: 0.94
+    gamma: 0.99
+    ent_coef: 0.0
+
+LunarLander-v2:
+  n_timesteps: !!float 4e6
+  env_hyperparams:
+    n_envs: 16
+  algo_hyperparams:
+    n_steps: 1024
+    batch_size: 64
+    n_epochs: 4
+    gae_lambda: 0.98
+    gamma: 0.999
+    learning_rate: !!float 5e-4
+    learning_rate_decay: linear
+    clip_range: 0.2
+    clip_range_decay: linear
+    ent_coef: 0.01
+    normalize_advantage: false
+
+BipedalWalker-v3:
+  n_timesteps: !!float 10e6
+  env_hyperparams:
+    n_envs: 16
+    normalize: true
+  algo_hyperparams:
+    n_steps: 2048
+    batch_size: 64
+    gae_lambda: 0.95
+    gamma: 0.99
+    n_epochs: 10
+    ent_coef: 0.001
+    learning_rate: !!float 2.5e-4
+    learning_rate_decay: linear
+    clip_range: 0.2
+    clip_range_decay: linear
+
+CarRacing-v0: &carracing-defaults
+  n_timesteps: !!float 4e6
+  env_hyperparams:
+    n_envs: 8
+    frame_stack: 4
+  policy_hyperparams: &carracing-policy-defaults
+    use_sde: true
+    log_std_init: -2
+    init_layers_orthogonal: false
+    activation_fn: relu
+    share_features_extractor: false
+    cnn_flatten_dim: 256
+    hidden_sizes: [256]
+  algo_hyperparams:
+    n_steps: 512
+    batch_size: 128
+    n_epochs: 10
+    learning_rate: !!float 1e-4
+    learning_rate_decay: linear
+    gamma: 0.99
+    gae_lambda: 0.95
+    ent_coef: 0.0
+    sde_sample_freq: 4
+    max_grad_norm: 0.5
+    vf_coef: 0.5
+    clip_range: 0.2
+
+impala-CarRacing-v0:
+  <<: *carracing-defaults
+  env_id: CarRacing-v0
+  policy_hyperparams:
+    <<: *carracing-policy-defaults
+    cnn_style: impala
+    init_layers_orthogonal: true
+    cnn_layers_init_orthogonal: false
+    hidden_sizes: []
+
+# BreakoutNoFrameskip-v4
+# PongNoFrameskip-v4
+# SpaceInvadersNoFrameskip-v4
+# QbertNoFrameskip-v4
+_atari: &atari-defaults
+  n_timesteps: !!float 1e7
+  env_hyperparams: &atari-env-defaults
+    n_envs: 8
+    frame_stack: 4
+    no_reward_timeout_steps: 1000
+    no_reward_fire_steps: 500
+    vec_env_class: async
+  policy_hyperparams: &atari-policy-defaults
+    activation_fn: relu
+  algo_hyperparams: &atari-algo-defaults
+    n_steps: 128
+    batch_size: 256
+    n_epochs: 4
+    learning_rate: !!float 2.5e-4
+    learning_rate_decay: linear
+    clip_range: 0.1
+    clip_range_decay: linear
+    vf_coef: 0.5
+    ent_coef: 0.01
+  eval_hyperparams:
+    deterministic: false
+
+_norm-rewards-atari: &norm-rewards-atari-default
+  <<: *atari-defaults
+  env_hyperparams:
+    <<: *atari-env-defaults
+    clip_atari_rewards: false
+    normalize: true
+    normalize_kwargs:
+      norm_obs: false
+      norm_reward: true
+
+norm-rewards-BreakoutNoFrameskip-v4:
+  <<: *norm-rewards-atari-default
+  env_id: BreakoutNoFrameskip-v4
+
+debug-PongNoFrameskip-v4:
+  <<: *atari-defaults
+  device: cpu
+  env_id: PongNoFrameskip-v4
+  env_hyperparams:
+    <<: *atari-env-defaults
+    vec_env_class: sync
+
+_impala-atari: &impala-atari-defaults
+  <<: *atari-defaults
+  policy_hyperparams:
+    <<: *atari-policy-defaults
+    cnn_style: impala
+    cnn_flatten_dim: 256
+    init_layers_orthogonal: true
+    cnn_layers_init_orthogonal: false
+
+impala-PongNoFrameskip-v4:
+  <<: *impala-atari-defaults
+  env_id: PongNoFrameskip-v4
+
+impala-BreakoutNoFrameskip-v4:
+  <<: *impala-atari-defaults
+  env_id: BreakoutNoFrameskip-v4
+
+impala-SpaceInvadersNoFrameskip-v4:
+  <<: *impala-atari-defaults
+  env_id: SpaceInvadersNoFrameskip-v4
+
+impala-QbertNoFrameskip-v4:
+  <<: *impala-atari-defaults
+  env_id: QbertNoFrameskip-v4
+
+_microrts: &microrts-defaults
+  <<: *atari-defaults
+  n_timesteps: !!float 2e6
+  env_hyperparams: &microrts-env-defaults
+    n_envs: 8
+    vec_env_class: sync
+    mask_actions: true
+  policy_hyperparams: &microrts-policy-defaults
+    <<: *atari-policy-defaults
+    cnn_style: microrts
+    cnn_flatten_dim: 128
+  algo_hyperparams: &microrts-algo-defaults
+    <<: *atari-algo-defaults
+    clip_range_decay: none
+    clip_range_vf: 0.1
+    ppo2_vf_coef_halving: true
+  eval_hyperparams: &microrts-eval-defaults
+    deterministic: false # Good idea because MultiCategorical mode isn't great
+
+_no-mask-microrts: &no-mask-microrts-defaults
+  <<: *microrts-defaults
+  env_hyperparams:
+    <<: *microrts-env-defaults
+    mask_actions: false
+
+MicrortsMining-v1-NoMask:
+  <<: *no-mask-microrts-defaults
+  env_id: MicrortsMining-v1
+
+MicrortsAttackShapedReward-v1-NoMask:
+  <<: *no-mask-microrts-defaults
+  env_id: MicrortsAttackShapedReward-v1
+
+MicrortsRandomEnemyShapedReward3-v1-NoMask:
+  <<: *no-mask-microrts-defaults
+  env_id: MicrortsRandomEnemyShapedReward3-v1
+
+_microrts_ai: &microrts-ai-defaults
+  <<: *microrts-defaults
+  n_timesteps: !!float 100e6
+  additional_keys_to_log: ["microrts_stats", "microrts_results"]
+  env_hyperparams: &microrts-ai-env-defaults
+    n_envs: 24
+    env_type: microrts
+    make_kwargs: &microrts-ai-env-make-kwargs-defaults
+      num_selfplay_envs: 0
+      max_steps: 4000
+      render_theme: 2
+      map_paths: [maps/16x16/basesWorkers16x16.xml]
+      reward_weight: [10.0, 1.0, 1.0, 0.2, 1.0, 4.0]
+  policy_hyperparams: &microrts-ai-policy-defaults
+    <<: *microrts-policy-defaults
+    cnn_flatten_dim: 256
+    actor_head_style: gridnet
+  algo_hyperparams: &microrts-ai-algo-defaults
+    <<: *microrts-algo-defaults
+    learning_rate: !!float 2.5e-4
+    learning_rate_decay: linear
+    n_steps: 512
+    batch_size: 3072
+    n_epochs: 4
+    ent_coef: 0.01
+    vf_coef: 0.5
+    max_grad_norm: 0.5
+    clip_range: 0.1
+    clip_range_vf: 0.1
+  eval_hyperparams: &microrts-ai-eval-defaults
+    <<: *microrts-eval-defaults
+    score_function: mean
+    max_video_length: 4000
+    env_overrides: &microrts-ai-eval-env-overrides
+      make_kwargs:
+        <<: *microrts-ai-env-make-kwargs-defaults
+        max_steps: 4000
+        reward_weight: [1.0, 0, 0, 0, 0, 0]
+
+MicrortsAttackPassiveEnemySparseReward-v3:
+  <<: *microrts-ai-defaults
+  n_timesteps: !!float 2e6
+  env_id: MicrortsAttackPassiveEnemySparseReward-v3 # Workaround to keep model name simple
+  env_hyperparams:
+    <<: *microrts-ai-env-defaults
+    bots:
+      passiveAI: 24
+
+MicrortsDefeatRandomEnemySparseReward-v3: &microrts-random-ai-defaults
+  <<: *microrts-ai-defaults
+  n_timesteps: !!float 2e6
+  env_id: MicrortsDefeatRandomEnemySparseReward-v3 # Workaround to keep model name simple
+  env_hyperparams:
+    <<: *microrts-ai-env-defaults
+    bots:
+      randomBiasedAI: 24
+
+enc-dec-MicrortsDefeatRandomEnemySparseReward-v3:
+  <<: *microrts-random-ai-defaults
+  policy_hyperparams:
+    <<: *microrts-ai-policy-defaults
+    cnn_style: gridnet_encoder
+    actor_head_style: gridnet_decoder
+    v_hidden_sizes: [128]
+
+unet-MicrortsDefeatRandomEnemySparseReward-v3:
+  <<: *microrts-random-ai-defaults
+  # device: cpu
+  policy_hyperparams:
+    <<: *microrts-ai-policy-defaults
+    actor_head_style: unet
+    v_hidden_sizes: [256, 128]
+  algo_hyperparams:
+    <<: *microrts-ai-algo-defaults
+    learning_rate: !!float 2.5e-4
+    learning_rate_decay: spike
+
+MicrortsDefeatCoacAIShaped-v3: &microrts-coacai-defaults
+  <<: *microrts-ai-defaults
+  env_id: MicrortsDefeatCoacAIShaped-v3 # Workaround to keep model name simple
+  n_timesteps: !!float 300e6
+  env_hyperparams: &microrts-coacai-env-defaults
+    <<: *microrts-ai-env-defaults
+    bots:
+      coacAI: 24
+  eval_hyperparams: &microrts-coacai-eval-defaults
+    <<: *microrts-ai-eval-defaults
+    step_freq: !!float 1e6
+    n_episodes: 26
+    env_overrides: &microrts-coacai-eval-env-overrides
+      <<: *microrts-ai-eval-env-overrides
+      n_envs: 26
+      bots:
+        coacAI: 2
+        randomBiasedAI: 2
+        randomAI: 2
+        passiveAI: 2
+        workerRushAI: 2
+        lightRushAI: 2
+        naiveMCTSAI: 2
+        mixedBot: 2
+        rojo: 2
+        izanagi: 2
+        tiamat: 2
+        droplet: 2
+        guidedRojoA3N: 2
+
+MicrortsDefeatCoacAIShaped-v3-diverseBots: &microrts-diverse-defaults
+  <<: *microrts-coacai-defaults
+  env_hyperparams:
+    <<: *microrts-coacai-env-defaults
+    bots:
+      coacAI: 18
+      randomBiasedAI: 2
+      lightRushAI: 2
+      workerRushAI: 2
+
+enc-dec-MicrortsDefeatCoacAIShaped-v3-diverseBots:
+  &microrts-env-dec-diverse-defaults
+  <<: *microrts-diverse-defaults
+  policy_hyperparams:
+    <<: *microrts-ai-policy-defaults
+    cnn_style: gridnet_encoder
+    actor_head_style: gridnet_decoder
+    v_hidden_sizes: [128]
+
+debug-enc-dec-MicrortsDefeatCoacAIShaped-v3-diverseBots:
+  <<: *microrts-env-dec-diverse-defaults
+  n_timesteps: !!float 1e6
+
+unet-MicrortsDefeatCoacAIShaped-v3-diverseBots: &microrts-unet-defaults
+  <<: *microrts-diverse-defaults
+  policy_hyperparams:
+    <<: *microrts-ai-policy-defaults
+    actor_head_style: unet
+    v_hidden_sizes: [256, 128]
+  algo_hyperparams: &microrts-unet-algo-defaults
+    <<: *microrts-ai-algo-defaults
+    learning_rate: !!float 2.5e-4
+    learning_rate_decay: spike
+
+Microrts-selfplay-unet: &microrts-selfplay-defaults
+  <<: *microrts-unet-defaults
+  env_hyperparams: &microrts-selfplay-env-defaults
+    <<: *microrts-ai-env-defaults
+    make_kwargs: &microrts-selfplay-env-make-kwargs-defaults
+      <<: *microrts-ai-env-make-kwargs-defaults
+      num_selfplay_envs: 36
+    self_play_kwargs:
+      num_old_policies: 12
+      save_steps: 300000
+      swap_steps: 6000
+      swap_window_size: 4
+      window: 33
+  eval_hyperparams: &microrts-selfplay-eval-defaults
+    <<: *microrts-coacai-eval-defaults
+    env_overrides: &microrts-selfplay-eval-env-overrides
+      <<: *microrts-coacai-eval-env-overrides
+      self_play_kwargs: {}
+
+Microrts-selfplay-unet-winloss: &microrts-selfplay-winloss-defaults
+  <<: *microrts-selfplay-defaults
+  env_hyperparams:
+    <<: *microrts-selfplay-env-defaults
+    make_kwargs:
+      <<: *microrts-selfplay-env-make-kwargs-defaults
+      reward_weight: [1.0, 0, 0, 0, 0, 0]
+  algo_hyperparams: &microrts-selfplay-winloss-algo-defaults
+    <<: *microrts-unet-algo-defaults
+    gamma: 0.999
+
+Microrts-selfplay-unet-decay: &microrts-selfplay-decay-defaults
+  <<: *microrts-selfplay-defaults
+  reward_decay_callback: true
+  algo_hyperparams:
+    <<: *microrts-unet-algo-defaults
+    gamma_end: 0.999
+
+Microrts-selfplay-unet-debug: &microrts-selfplay-debug-defaults
+  <<: *microrts-selfplay-decay-defaults
+  eval_hyperparams:
+    <<: *microrts-selfplay-eval-defaults
+    step_freq: !!float 1e5
+    env_overrides:
+      <<: *microrts-selfplay-eval-env-overrides
+      n_envs: 24
+      bots:
+        coacAI: 12
+        randomBiasedAI: 4
+        workerRushAI: 4
+        lightRushAI: 4
+
+Microrts-selfplay-unet-debug-mps:
+  <<: *microrts-selfplay-debug-defaults
+  device: mps
+
+HalfCheetahBulletEnv-v0: &pybullet-defaults
+  n_timesteps: !!float 2e6
+  env_hyperparams: &pybullet-env-defaults
+    n_envs: 16
+    normalize: true
+  policy_hyperparams: &pybullet-policy-defaults
+    pi_hidden_sizes: [256, 256]
+    v_hidden_sizes: [256, 256]
+    activation_fn: relu
+  algo_hyperparams: &pybullet-algo-defaults
+    n_steps: 512
+    batch_size: 128
+    n_epochs: 20
+    gamma: 0.99
+    gae_lambda: 0.9
+    ent_coef: 0.0
+    max_grad_norm: 0.5
+    vf_coef: 0.5
+    learning_rate: !!float 3e-5
+    clip_range: 0.4
+
+AntBulletEnv-v0:
+  <<: *pybullet-defaults
+  policy_hyperparams:
+    <<: *pybullet-policy-defaults
+  algo_hyperparams:
+    <<: *pybullet-algo-defaults
+
+Walker2DBulletEnv-v0:
+  <<: *pybullet-defaults
+  algo_hyperparams:
+    <<: *pybullet-algo-defaults
+    clip_range_decay: linear
+
+HopperBulletEnv-v0:
+  <<: *pybullet-defaults
+  algo_hyperparams:
+    <<: *pybullet-algo-defaults
+    clip_range_decay: linear
+
+HumanoidBulletEnv-v0:
+  <<: *pybullet-defaults
+  n_timesteps: !!float 1e7
+  env_hyperparams:
+    <<: *pybullet-env-defaults
+    n_envs: 8
+  policy_hyperparams:
+    <<: *pybullet-policy-defaults
+    # log_std_init: -1
+  algo_hyperparams:
+    <<: *pybullet-algo-defaults
+    n_steps: 2048
+    batch_size: 64
+    n_epochs: 10
+    gae_lambda: 0.95
+    learning_rate: !!float 2.5e-4
+    clip_range: 0.2
+
+_procgen: &procgen-defaults
+  env_hyperparams: &procgen-env-defaults
+    env_type: procgen
+    n_envs: 64
+    # grayscale: false
+    # frame_stack: 4
+    normalize: true # procgen only normalizes reward
+    make_kwargs: &procgen-make-kwargs-defaults
+      num_threads: 8
+  policy_hyperparams: &procgen-policy-defaults
+    activation_fn: relu
+    cnn_style: impala
+    cnn_flatten_dim: 256
+    init_layers_orthogonal: true
+    cnn_layers_init_orthogonal: false
+  algo_hyperparams: &procgen-algo-defaults
+    gamma: 0.999
+    gae_lambda: 0.95
+    n_steps: 256
+    batch_size: 2048
+    n_epochs: 3
+    ent_coef: 0.01
+    clip_range: 0.2
+    # clip_range_decay: linear
+    clip_range_vf: 0.2
+    learning_rate: !!float 5e-4
+    # learning_rate_decay: linear
+    vf_coef: 0.5
+  eval_hyperparams: &procgen-eval-defaults
+    ignore_first_episode: true
+    # deterministic: false
+    step_freq: !!float 1e5
+
+_procgen-easy: &procgen-easy-defaults
+  <<: *procgen-defaults
+  n_timesteps: !!float 25e6
+  env_hyperparams: &procgen-easy-env-defaults
+    <<: *procgen-env-defaults
+    make_kwargs:
+      <<: *procgen-make-kwargs-defaults
+      distribution_mode: easy
+
+procgen-coinrun-easy: &coinrun-easy-defaults
+  <<: *procgen-easy-defaults
+  env_id: coinrun
+
+debug-procgen-coinrun:
+  <<: *coinrun-easy-defaults
+  device: cpu
+
+procgen-starpilot-easy:
+  <<: *procgen-easy-defaults
+  env_id: starpilot
+
+procgen-bossfight-easy:
+  <<: *procgen-easy-defaults
+  env_id: bossfight
+
+procgen-bigfish-easy:
+  <<: *procgen-easy-defaults
+  env_id: bigfish
+
+_procgen-hard: &procgen-hard-defaults
+  <<: *procgen-defaults
+  n_timesteps: !!float 200e6
+  env_hyperparams: &procgen-hard-env-defaults
+    <<: *procgen-env-defaults
+    n_envs: 256
+    make_kwargs:
+      <<: *procgen-make-kwargs-defaults
+      distribution_mode: hard
+  algo_hyperparams: &procgen-hard-algo-defaults
+    <<: *procgen-algo-defaults
+    batch_size: 8192
+    clip_range_decay: linear
+    learning_rate_decay: linear
+  eval_hyperparams:
+    <<: *procgen-eval-defaults
+    step_freq: !!float 5e5
+
+procgen-starpilot-hard: &procgen-starpilot-hard-defaults
+  <<: *procgen-hard-defaults
+  env_id: starpilot
+
+procgen-starpilot-hard-2xIMPALA:
+  <<: *procgen-starpilot-hard-defaults
+  policy_hyperparams:
+    <<: *procgen-policy-defaults
+    impala_channels: [32, 64, 64]
+  algo_hyperparams:
+    <<: *procgen-hard-algo-defaults
+    learning_rate: !!float 3.3e-4
+
+procgen-starpilot-hard-2xIMPALA-fat:
+  <<: *procgen-starpilot-hard-defaults
+  policy_hyperparams:
+    <<: *procgen-policy-defaults
+    impala_channels: [32, 64, 64]
+    cnn_flatten_dim: 512
+  algo_hyperparams:
+    <<: *procgen-hard-algo-defaults
+    learning_rate: !!float 2.5e-4
+
+procgen-starpilot-hard-4xIMPALA:
+  <<: *procgen-starpilot-hard-defaults
+  policy_hyperparams:
+    <<: *procgen-policy-defaults
+    impala_channels: [64, 128, 128]
+  algo_hyperparams:
+    <<: *procgen-hard-algo-defaults
+    learning_rate: !!float 2.1e-4
+
+LuxAI_S2-v0: &lux-defaults
+  n_timesteps: !!float 20e6
+  additional_keys_to_log: ["stats", "results"]
+  env_id: LuxAI_S2-v0
+  env_hyperparams: &lux-env-defaults
+    env_type: lux
+    vec_env_class: async
+    n_envs: 24
+    self_play_kwargs:
+      num_old_policies: 12
+      save_steps: 300000
+      swap_steps: 6000
+      swap_window_size: 4
+      window: 33
+    make_kwargs: &lux-env-make-defaults
+      bid_std_dev: 5
+  eval_hyperparams: &lux-eval-defaults
+    deterministic: false
+    step_freq: !!float 1e6
+    score_function: mean
+    env_overrides: &lux-eval-env-overrides
+      n_envs: 66
+      self_play_kwargs:
+        eval_use_training_cache: true
+      make_kwargs: &lux-eval-env-override-make-kwargs
+        <<: *lux-env-make-defaults
+        reward_weight: [1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  policy_hyperparams: &lux-policy-defaults
+    activation_fn: relu
+    actor_head_style: unet
+    v_hidden_sizes: [256, 128]
+  reward_decay_callback: true
+  reward_decay_callback_kwargs:
+    increase_indexes: [0, 1, 6]
+  algo_hyperparams: &lux-algo-defaults
+    n_steps: 384
+    batch_size: 2304
+    n_epochs: 4
+    learning_rate: !!float 4e-4
+    learning_rate_decay: spike
+    ent_coef: 0.01
+    vf_coef: 0.5
+    max_grad_norm: 0.5
+    clip_range: 0.1
+    clip_range_decay: none
+    clip_range_vf: 0.1
+    ppo2_vf_coef_halving: true
+
+LuxAI_S2-v0-eval:
+  <<: *lux-defaults
+  device: cpu
+  eval_hyperparams:
+    <<: *lux-eval-defaults
+    env_overrides:
+      n_envs: 1
+      self_play_kwargs:
+        save_steps: .inf
+        swap_steps: .inf
+      make_kwargs:
+        <<: *lux-env-make-defaults
+        reward_weight: [1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+LuxAI_S2-v0-A10: &lux-a10-defaults
+  <<: *lux-defaults
+  algo_hyperparams:
+    <<: *lux-algo-defaults
+    n_steps: 192
+    batch_size: 1152
+
+LuxAI_S2-v0-medium-transfer: &lux-medium-transfer-defaults
+  <<: *lux-a10-defaults
+  policy_hyperparams:
+    <<: *lux-policy-defaults
+    load_run_path: sgoodfriend/rl-algo-impls-benchmarks/qpm5k6n1
+    load_run_path_best: false
+
+LuxAI_S2-v0-medium-transfer-debug:
+  <<: *lux-medium-transfer-defaults
+  device: cpu
+  env_hyperparams:
+    <<: *lux-env-defaults
+    vec_env_class: sync
+    make_kwargs:
+      <<: *lux-env-make-defaults
+      verbose: 2
+
+LuxAI_S2-v0-medium-transfer-A100:
+  <<: *lux-medium-transfer-defaults
+  algo_hyperparams:
+    <<: *lux-algo-defaults
+
+LuxAI_S2-v0-small: &small-lux-defaults
+  <<: *lux-defaults
+  env_hyperparams: &small-lux-env-defaults
+    <<: *lux-env-defaults
+    make_kwargs:
+      <<: *lux-env-make-defaults
+      map_size: 16
+      MIN_FACTORIES: 1
+      MAX_FACTORIES: 1
+  eval_hyperparams:
+    <<: *lux-eval-defaults
+    env_overrides:
+      <<: *lux-eval-env-overrides
+      make_kwargs:
+        <<: *lux-eval-env-override-make-kwargs
+        map_size: 16
+        MIN_FACTORIES: 1
+        MAX_FACTORIES: 1
+
+LuxAI_S2-v0-small-debug:
+  <<: *small-lux-defaults
+  device: cpu
+  env_hyperparams:
+    <<: *small-lux-env-defaults
+    vec_env_class: sync
+
+LuxAI_S2-v0-medium: &medium-lux-defaults
+  <<: *lux-defaults
+  n_timesteps: !!float 30e6
+  env_hyperparams: &medium-lux-env-defaults
+    <<: *lux-env-defaults
+    make_kwargs:
+      <<: *lux-env-make-defaults
+      map_size: 32
+      MIN_FACTORIES: 1
+      MAX_FACTORIES: 1
+  eval_hyperparams:
+    <<: *lux-eval-defaults
+    env_overrides:
+      <<: *lux-eval-env-overrides
+      make_kwargs:
+        <<: *lux-eval-env-override-make-kwargs
+        map_size: 32
+        MIN_FACTORIES: 1
+        MAX_FACTORIES: 1
+
+LuxAI_S2-v0-medium-debug:
+  <<: *medium-lux-defaults
+  device: cpu
+  env_hyperparams:
+    <<: *medium-lux-env-defaults
+    vec_env_class: sync
+
+LuxAI_S2-v0-debug:
+  <<: *lux-defaults
+  n_timesteps: !!float 1e6
+  device: cpu
+  env_hyperparams:
+    <<: *lux-env-defaults
+    vec_env_class: sync
+  eval_hyperparams:
+    <<: *lux-eval-defaults
+    step_freq: !!float 1e5
