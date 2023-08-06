@@ -1,0 +1,11 @@
+coco_types/__init__.py,sha256=QeJKHZrCjzBqYr17lidN2i_Zxwjm_fjUNZCw7vN7HGw,561
+coco_types/coco_keypoints.py,sha256=IFMApKrpVFQjrdajRpjR1IW4nT6m0xvFI_ke7RuQPRI,1822
+coco_types/coco_object_detection.py,sha256=t48gPf_ZWOUEDAVy6QhITOUwWPpUjz7FGFsMA7KxjL8,1775
+coco_types/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coco_types/dicts/__init__.py,sha256=TVHo4-6gtji5fwpWxa04aiLAqJYt0HjmOUKnExkKbcM,67
+coco_types/dicts/coco_keypoints.py,sha256=IrlE730VixZn5TJFsIUH7FcQg2tzQCQXgxXr2e0ves0,447
+coco_types/dicts/coco_object_detection.py,sha256=qxdaNMtsRAMZ5yd6l80I0w3mL2Km4oA64BDzmfoazoM,1469
+coco_types-0.0.7.dist-info/METADATA,sha256=7v8-zmoJ5JOVPWbiNqvbfwS6g-Sp1kQL_5Qc7xFmbzI,3265
+coco_types-0.0.7.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+coco_types-0.0.7.dist-info/licenses/LICENSE.md,sha256=wH71WWe4KMwDlpn2y501Fyy1nKbHzA6O-Zs3gRbvgXk,1069
+coco_types-0.0.7.dist-info/RECORD,,
