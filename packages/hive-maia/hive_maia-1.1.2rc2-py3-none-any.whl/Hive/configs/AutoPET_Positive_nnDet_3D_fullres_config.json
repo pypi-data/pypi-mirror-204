@@ -1,0 +1,15 @@
+{
+  "Seed": 12345,
+  "label_suffix": "_SEG.nii.gz",
+  "Modalities": {
+    "_downsampled_CT.nii.gz": "CT",
+    "_PET.nii.gz": "PET"
+  },
+  "label_dict": {
+    "0": "Lesion"
+  },
+  "n_folds": 5,
+  "DatasetName": "AutoPET_Positive",
+  "Experiment Name": "nnDet_3D_fullres",
+  "FileExtension": ".nii.gz"
+}
