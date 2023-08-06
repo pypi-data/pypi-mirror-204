@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: grai-source-redshift
+Version: 0.0.1
+Summary: 
+License: Elastic-2.0
+Author: Ian Eaves
+Author-email: ian@grai.io
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: grai-client (>=0.2.4,<0.3.0)
+Requires-Dist: grai-schemas (>=0.1.5,<0.2.0)
+Requires-Dist: multimethod (>=1.8,<2.0)
+Requires-Dist: pydantic (>=1.9.1,<2.0.0)
+Requires-Dist: redshift-connector (>=2.0.910,<3.0.0)
