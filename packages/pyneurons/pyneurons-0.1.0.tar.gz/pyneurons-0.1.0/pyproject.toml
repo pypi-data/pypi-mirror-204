@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pyneurons"
+version = "0.1.0"
+description = "Composable neurons in JAX"
+authors = ["Ivan Dustin Bilon <ivan22.dust@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ivandustin/pyneurons"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jax = "^0.3.25"
+jaxlib = "^0.3.25"
+multipledispatch = "^0.6.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+flake8 = "^6.0.0"
+pylint = "^2.17.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
