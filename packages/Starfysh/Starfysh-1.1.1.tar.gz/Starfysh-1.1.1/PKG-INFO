@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Starfysh
+Version: 1.1.1
+Summary: Spatial Transcriptomic Analysis using Reference-Free auxiliarY deep generative modeling and Shared Histology
+Home-page: https://starfysh.readthedocs.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
