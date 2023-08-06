@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: vnkdj5-utils
+Version: 0.1.2
+Summary: test package
+Home-page: https://github.com/vnkdj5/packages-tests
+Author: vnkdj5
+Author-email: vnkdj5@example.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Requires-Dist: redis (==4.5.4)
+
+UNKNOWN
+
