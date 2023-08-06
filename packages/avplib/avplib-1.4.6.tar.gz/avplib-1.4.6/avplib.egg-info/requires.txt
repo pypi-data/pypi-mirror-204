@@ -1,0 +1,10 @@
+click
+rich
+soundfile
+opencv-python
+pillow
+pygame
+fpstimer
+ffmpeg
+moviepy
+numpy
