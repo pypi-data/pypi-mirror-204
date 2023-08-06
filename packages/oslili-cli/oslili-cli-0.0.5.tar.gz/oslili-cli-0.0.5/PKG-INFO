@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: oslili-cli
+Version: 0.0.5
+Summary: Open Source License Identification Library
+Home-page: https://github.com/oscarvalenzuelab/oslili-cli
+Author: Oscar Valenzuela B.
+Author-email: oscar.valenzuela.b@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+License-File: LICENSE
+License-File: NOTICE

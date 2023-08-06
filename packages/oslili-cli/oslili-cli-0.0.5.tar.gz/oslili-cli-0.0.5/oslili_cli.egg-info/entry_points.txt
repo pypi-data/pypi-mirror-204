@@ -1,0 +1,2 @@
+[console_scripts]
+oslili-cli = src.cli:main
