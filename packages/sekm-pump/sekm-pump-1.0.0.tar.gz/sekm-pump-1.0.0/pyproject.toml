@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sekm-pump"
+version = "1.0.0"
+authors = [
+  { name="Radim Jaeger", email="rjaeger@sysnet.cz" },
+]
+description = "SYSNET SEKM Pump REST API client"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "Framework :: Flask",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: Czech",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/SYSNET-CZ/swagger/tree/main/clients/sekm_pump"
