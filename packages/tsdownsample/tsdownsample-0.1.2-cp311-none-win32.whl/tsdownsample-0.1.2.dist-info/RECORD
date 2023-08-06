@@ -1,0 +1,11 @@
+tsdownsample-0.1.2.dist-info/METADATA,sha256=Zi3_q1plenI6H-fPj2nfqA4MXJDbFWyt8xJoBD90GC0,7070
+tsdownsample-0.1.2.dist-info/WHEEL,sha256=1Fcie4ZmOXYOyZxOTcgNmIz6Y4in75GNZzibdgZHysA,93
+tsdownsample-0.1.2.dist-info/license_files/LICENSE,sha256=NSbA8Qo_STXZvdmASn5697OCOsYtH2XwH5TNhODIKV8,1099
+tsdownsample/downsamplers.py,sha256=KLNO_gigu0XAVoLVXQYrlL-CwLnOgscM2TVqH8FN8I8,2187
+tsdownsample/downsampling_interface.py,sha256=tuUzElVwImjEZVzGenIkGekjFjwRw5pmVX_cWUBzQ9E,13363
+tsdownsample/_python/downsamplers.py,sha256=8quzulRD5HU15RRN4EAcXWyIPaU8QOMr2QRrMMWLHQQ,6551
+tsdownsample/_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsdownsample/_rust/__init__.py,sha256=J-7Wu5IPVJQOxeypg3Ta9Mu8Sx2vtw7vehjKEFKFugQ,59
+tsdownsample/__init__.py,sha256=cPTS3XZCerQ2BsXTL_cdF959QSFaQjIQ4y6lwMp-_tI,455
+tsdownsample/_rust/_tsdownsample_rs.cp311-win32.pyd,sha256=r1I4yKqlfb9LYbqYgZMAqPXjlRERdmBf8wG4S_Ui41E,4857856
+tsdownsample-0.1.2.dist-info/RECORD,,
