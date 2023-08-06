@@ -1,0 +1,1563 @@
+from typing import List, Dict
+
+import nltk
+import numpy as np
+import torch
+from torch.utils.data import DataLoader
+from transformers import AutoTokenizer
+from transformers import DataCollatorForSeq2Seq
+
+from SciAssist import BASE_CACHE_DIR
+from SciAssist.datamodules.components.cora_label import label2id as cora_label2id
+from SciAssist.models.components.bart_summarization import BartForSummarization
+from SciAssist.models.components.flant5_summarization import FlanT5ForSummarization
+
+
+class DataUtilsForSeq2Seq():
+    """
+
+    Args:
+        tokenizer (`PretrainedTokenizer`, default to None):
+            The tokenizer for tokenization.
+        checkpoint (`str`):
+            The checkpoint from which the tokenizer is loaded.
+        model_max_length (`int`, *optional*): The max sequence length the model accepts.
+        max_source_length (`int`, *optional*): The max length of the input text.
+        max_target_length (`int`, *optional*): The max length of the generated summary.
+    """
+
+
+    def __init__(self, tokenizer = None, model_class = BartForSummarization,
+                 checkpoint = "facebook/bart-large-cnn",
+                 model_max_length = 1024,
+                 max_source_length = 1024,
+                 max_target_length = 128,
+                 ):
+
+        self.checkpoint = checkpoint
+        self.model_max_length = model_max_length
+        self.max_source_length = max_source_length
+        self.max_target_length = max_target_length
+        self.model_class = model_class
+
+        if tokenizer is None:
+            self.tokenizer = AutoTokenizer.from_pretrained(
+                self.checkpoint,
+                model_max_length = self.model_max_length,
+                cache_dir=BASE_CACHE_DIR,
+                use_fast=True
+            )
+        else:
+            self.tokenizer = tokenizer
+
+
+    def tokenize_and_align_labels(self, examples, inputs_column="text", labels_column="summary"):
+
+        """
+
+        Process the dataset for model input, for example, do tokenization and prepare label_ids.
+
+        Args:
+            examples (`Dataset`): { "text": [s1, s2, ...], "summary": [l1, l2, ...]}
+            inputs (`str`): The name of input column
+            labels (`str`): The name of target column
+
+        Returns:
+            `Dict`: {"input_ids": input_ids, "attention_mask": attention_mask, "labels": label_ids }
+
+        """
+
+        # Select input column
+        inputs = examples[inputs_column]
+
+        # Setup the tokenizer for inputs
+        model_inputs = self.tokenizer(inputs, max_length=self.max_source_length, padding="max_length", truncation=True)
+
+        # Select target column
+        if labels_column in examples.keys():
+            labels = examples[labels_column]
+            # Setup the tokenizer for targets
+            with self.tokenizer.as_target_tokenizer():
+                labels = self.tokenizer(labels, max_length=self.max_target_length, padding="max_length", truncation=True)
+                # Ignore padding in the loss
+                labels["input_ids"] = [
+                    [(l if l != self.tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
+                ]
+            model_inputs["labels"] = labels["input_ids"]
+
+        return model_inputs
+
+    def collator(self):
+
+        """
+
+        The collating function.
+
+        Returns:
+            `function`: A collating function.
+
+            For example, **DataCollatorForSeq2Seq(...)**.
+
+            You can also custom a collating function, but remember that `collator()` needs to return a **function**.
+        """
+
+
+        return DataCollatorForSeq2Seq(self.tokenizer, model=self.model_class, pad_to_multiple_of=8)
+
+    def postprocess(self, preds, labels):
+
+        """
+        Process model's outputs and get the final results rather than simple ids.
+
+        Args:
+            preds (Tensor): Prediction labels, the output of the model.
+            labels (Tensor): True labels
+
+        Returns:
+            `(LongTensor, LongTensor)`: decoded_preds, decoded_labels
+
+        """
+
+        decoded_preds = self.tokenizer.batch_decode(preds, skip_special_tokens=True)
+
+        labels = np.array(labels.to("cpu"))
+        # Replace -100 in the labels as we can't decode them.
+        labels = np.where(labels != -100, labels, self.tokenizer.pad_token_id)
+
+        decoded_labels = self.tokenizer.batch_decode(labels, skip_special_tokens=True)
+
+        decoded_preds = [pred.strip() for pred in decoded_preds]
+        decoded_labels = [label.strip() for label in decoded_labels]
+
+        # rougeLSum expects newline after each sentence
+        decoded_preds = ["\n".join(nltk.sent_tokenize(pred)) for pred in decoded_preds]
+        decoded_labels = ["\n".join(nltk.sent_tokenize(label)) for label in decoded_labels]
+
+        return decoded_preds, decoded_labels
+
+    def get_dataloader(self, dataset, inputs_column="text", labels_column="summary"):
+
+        """
+        Generate DataLoader for a dataset.
+
+        Args:
+            dataset (`Dataset`): The raw dataset.
+            inputs_column (`str`): Column name of the inputs.
+            labels_column (`str`): Column name of the labels.
+
+        Returns:
+            `DataLoader`: A dataloader for the dataset. Will be used for inference.
+        """
+
+        tokenized_example = dataset.map(
+            lambda x: self.tokenize_and_align_labels(x, inputs_column=inputs_column, labels_column=labels_column),
+            batched=True,
+            remove_columns=dataset.column_names
+        )
+
+        dataloader = DataLoader(
+            dataset=tokenized_example,
+            batch_size=8,
+            collate_fn=self.collator(),
+        )
+
+        return dataloader
+
+
+class DataUtilsForTokenClassification():
+
+    def __init__(self, tokenizer = None,
+                 checkpoint ="allenai/scibert_scivocab_uncased",
+                 model_max_length = 512,
+                 ):
+
+        self.checkpoint = checkpoint
+        self.model_max_length = model_max_length
+
+        if tokenizer == None:
+            self.tokenizer = AutoTokenizer.from_pretrained(
+                self.checkpoint,
+                model_max_length=self.model_max_length,
+                cache_dir=BASE_CACHE_DIR
+            )
+        else:
+            self.tokenizer = tokenizer
+
+    def tokenize_and_align_labels(self, examples, label2id=None):
+        '''
+
+        Prepare the dataset for input.
+        For token-level task, construct token_mapping to obtain token based BERT representation from subtoken based one.
+
+        Args:
+            examples: Dataset, {"tokens":[[s1],[s2]..],"labels":[[l1],[l2]..]}
+            label2id: Map label to label_id
+
+        Returns:
+            Dict{
+                "input_ids":,
+                "token_type_ids":,
+                "attention_mask":,
+                "token_mapping":,
+                "labels":,
+            }
+        '''
+
+        # Get input_ids, token_type_ids, attention_mask
+        tokenized_inputs = self.tokenizer(
+            examples["tokens"], truncation=True, is_split_into_words=True
+        )
+        if "labels" in examples.keys():
+            raw_labels = examples["labels"]
+            # label2id
+            labels = [[int(label2id[l]) for l in label] for label in raw_labels]
+            tokenized_inputs["labels"] = labels
+            # Map sub-token to token
+        tokenized_inputs["word_ids"] = []
+        for i in range(len(examples["tokens"])):
+            tokenized_inputs["word_ids"].append(tokenized_inputs.word_ids(i))
+
+        # Prepare token_mapping for obtaining token based BERT representeation
+        # Construct a subtoken to token mapping matrix token_mapping mapping [bsize, max_tok_len, max_subtok_len].
+        # For example, in sent i, token j include subtokens[s:t), then mapping[i, j, s:t] = 1 / (t - s)
+        # after obtaining subtoken based BERT representation `subtoken_context`[bsize, max_subtok_len, 768], use torch.matmul()
+        # to obtain token based BERT representation
+        # token_context = torch.matmul(token_mapping, subtoken_context)
+        token_mappings = []
+        for tokens, word_ids in zip(examples["tokens"], tokenized_inputs["word_ids"]):
+            current_tok = 0
+
+            # len(subtok_count) == the length of tokens for input, maybe smaller than origin ones
+            # calculate the number of subtokens of a token
+            subtok_count = [0]
+            for tok_id in word_ids:
+                if tok_id == None:
+                    continue
+                if tok_id == current_tok:
+                    subtok_count[current_tok] += 1
+                else:
+                    current_tok += 1
+                    subtok_count.append(1)
+            # construct token_mapping
+            token_mapping = []
+            for i in range(len(subtok_count)):
+                token_mapping.append([])
+                for j in range(len(word_ids)):
+                    token_mapping[i].append(0)
+
+            for subtok_id, tok_id in enumerate(word_ids):
+                if tok_id == None:
+                    continue
+                token_mapping[tok_id][subtok_id] = 1 / subtok_count[tok_id]
+
+            token_mappings.append(token_mapping)
+
+        tokenized_inputs["token_mapping"] = token_mappings
+        return tokenized_inputs
+
+    def convert_to_list(self, batch):
+        res = []
+        for i in batch:
+            input_ids = i["input_ids"]
+            token_type_ids = i["token_type_ids"]
+            attn_mask = i["attention_mask"]
+            token_mapping = i["token_mapping"]
+            if "labels" in i.keys():
+                labels = i["labels"]
+                res.append([input_ids, token_type_ids, attn_mask, token_mapping, labels])
+            else:
+                res.append([input_ids, token_type_ids, attn_mask, token_mapping])
+        return res
+
+    def pad(self, batch: List[Dict]):
+        # Pads to the longest sample
+        batch = self.convert_to_list(batch)
+        get_element = lambda x: [sample[x] for sample in batch]
+        # subtoken length
+        subtok_len = [len(tokens) for tokens in get_element(0)]
+        max_subtok_len = np.array(subtok_len).max()
+        # origin token length
+        tok_len = [len(tokens) for tokens in get_element(3)]
+        max_tok_len = np.array(tok_len).max()
+
+        do_pad = lambda x, seqlen: [sample[x] + [0] * (seqlen - len(sample[x])) for sample in batch]  # 0: <pad>
+        do_labels_pad = lambda x, seqlen: [sample[x] + [-100] * (seqlen - len(sample[x])) for sample in batch]
+
+        # pad for origin tokens
+        do_map_pad1 = lambda x, seqlen: [sample[x] + [[0]] * (seqlen - len(sample[x])) for sample in batch]
+        # pad for subtokens
+        do_map_pad2 = lambda batch, seqlen: [[subtoks + [0] * (seqlen - len(subtoks)) for subtoks in sample] for sample in batch]
+
+        input_ids = do_pad(0, max_subtok_len)
+        token_type_ids = do_pad(1, max_subtok_len)
+        attn_mask = do_pad(2, max_subtok_len)
+        token_mapping = do_map_pad1(3, max_tok_len)
+        token_mapping = do_map_pad2(token_mapping, max_subtok_len)  # [batch_size, max_tok_len, max_subtok_len]
+
+        LT = torch.LongTensor
+
+        input_ids = LT(input_ids)
+        attn_mask = LT(attn_mask)
+        token_type_ids = LT(token_type_ids)
+        token_mapping = torch.Tensor(token_mapping)
+        if len(batch[0]) == 5:
+            labels = do_labels_pad(4, max_tok_len)
+            labels = LT(labels)
+        else:
+            return {
+                "input_ids": input_ids,
+                "token_type_ids": token_type_ids,
+                "attention_mask": attn_mask,
+                "token_mapping": token_mapping
+            }
+
+        return {
+            "input_ids": input_ids,
+            "token_type_ids": token_type_ids,
+            "attention_mask": attn_mask,
+            "labels": labels,
+            "token_mapping": token_mapping
+        }
+
+    def collator(self):
+        return self.pad
+
+    def postprocess(self, preds, labels, label_names):
+        '''
+
+        Remove `-100` label and mask the padded labels with len(label_names).
+        Args:
+            preds (Tensor): Prediction labels
+            labels (Tensor): True labels
+            label_names (List): Label types
+
+        Returns:
+            (LongTensor, LongTensor):
+
+        '''
+
+        preds = preds.tolist()
+        labels = labels.tolist()
+        do_pad = lambda x, seqlen: [x + [len(label_names)] * (seqlen - len(x))]
+        true_preds, true_labels = [], []
+        for pred, label in zip(preds, labels):
+            true_len = 0
+            for l in label:
+                if l == -100:
+                    break
+                else:
+                    true_len += 1
+
+            true_preds.append(do_pad(pred[:true_len], len(label)))
+            true_labels.append(do_pad(label[:true_len], len(label)))
+        true_labels = torch.LongTensor(true_labels)
+        true_preds = torch.LongTensor(true_preds)
+        return true_preds, true_labels
+
+    def get_dataloader(self, dataset, label2id = cora_label2id):
+
+        tokenized_example = dataset.map(
+            lambda x: self.tokenize_and_align_labels(x, label2id),
+            batched=True,
+            remove_columns=dataset.column_names
+        )
+        dataloader = DataLoader(
+            dataset=tokenized_example,
+            batch_size=8,
+            collate_fn=self.collator(),
+        )
+
+        return dataloader
+
+
+
+class DataUtilsForT5():
+    """
+
+    Args:
+        tokenizer (`PretrainedTokenizer`, default to None):
+            The tokenizer for tokenization.
+        checkpoint (`str`):
+            The checkpoint from which the tokenizer is loaded.
+        model_max_length (`int`, *optional*): The max sequence length the model accepts.
+        max_source_length (`int`, *optional*): The max length of the input text.
+        max_target_length (`int`, *optional*): The max length of the generated summary.
+    """
+
+
+    def __init__(self, tokenizer = None,
+                 model_class = FlanT5ForSummarization,
+                 checkpoint = "facebook/bart-large-cnn",
+                 prompt = "Please give a summary of the following text: ",
+                 model_max_length = 1024,
+                 max_source_length = 1024,
+                 max_target_length = 128,
+                 ):
+
+        self.checkpoint = checkpoint
+        self.model_max_length = model_max_length
+        self.max_source_length = max_source_length
+        self.max_target_length = max_target_length
+        self.model_class = model_class
+        self.prompt = prompt
+
+        if tokenizer is None:
+            self.tokenizer = AutoTokenizer.from_pretrained(
+                self.checkpoint,
+                model_max_length = self.model_max_length,
+                cache_dir=BASE_CACHE_DIR,
+                use_fast=True
+            )
+        else:
+            self.tokenizer = tokenizer
+
+
+    def tokenize_and_align_labels(self, examples, inputs_column="text", labels_column="summary"):
+
+        """
+
+        Process the dataset for model input, for example, do tokenization and prepare label_ids.
+
+        Args:
+            examples (`Dataset`): { "text": [s1, s2, ...], "summary": [l1, l2, ...]}
+            inputs (`str`): The name of input column
+            labels (`str`): The name of target column
+
+        Returns:
+            `Dict`: {"input_ids": input_ids, "attention_mask": attention_mask, "labels": label_ids }
+
+        """
+
+        # Select input column
+        inputs = examples[inputs_column]
+        inputs = [self.prompt + raw_text for raw_text in inputs]
+        # Setup the tokenizer for inputs
+        model_inputs = self.tokenizer(inputs, max_length=self.max_source_length, padding="max_length", truncation=True)
+
+        # Select target column
+        if labels_column in examples.keys():
+            labels = examples[labels_column]
+            # Setup the tokenizer for targets
+            with self.tokenizer.as_target_tokenizer():
+                labels = self.tokenizer(labels, max_length=self.max_target_length, padding="max_length", truncation=True)
+                # Ignore padding in the loss
+                labels["input_ids"] = [
+                    [(l if l != self.tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
+                ]
+            model_inputs["labels"] = labels["input_ids"]
+
+        return model_inputs
+
+    def collator(self):
+
+        """
+
+        The collating function.
+
+        Returns:
+            `function`: A collating function.
+
+            For example, **DataCollatorForSeq2Seq(...)**.
+
+            You can also custom a collating function, but remember that `collator()` needs to return a **function**.
+        """
+
+
+        return DataCollatorForSeq2Seq(self.tokenizer, model=self.model_class, pad_to_multiple_of=8)
+
+    def postprocess(self, preds, labels):
+
+        """
+        Process model's outputs and get the final results rather than simple ids.
+
+        Args:
+            preds (Tensor): Prediction labels, the output of the model.
+            labels (Tensor): True labels
+
+        Returns:
+            `(LongTensor, LongTensor)`: decoded_preds, decoded_labels
+
+        """
+
+        decoded_preds = self.tokenizer.batch_decode(preds, skip_special_tokens=True)
+
+        labels = np.array(labels.to("cpu"))
+        # Replace -100 in the labels as we can't decode them.
+        labels = np.where(labels != -100, labels, self.tokenizer.pad_token_id)
+
+        decoded_labels = self.tokenizer.batch_decode(labels, skip_special_tokens=True)
+
+        decoded_preds = [pred.strip() for pred in decoded_preds]
+        decoded_labels = [label.strip() for label in decoded_labels]
+
+        # rougeLSum expects newline after each sentence
+        decoded_preds = ["\n".join(nltk.sent_tokenize(pred)) for pred in decoded_preds]
+        decoded_labels = ["\n".join(nltk.sent_tokenize(label)) for label in decoded_labels]
+
+        return decoded_preds, decoded_labels
+
+    def get_dataloader(self, dataset, inputs_column="text", labels_column="summary"):
+
+        """
+        Generate DataLoader for a dataset.
+
+        Args:
+            dataset (`Dataset`): The raw dataset.
+            inputs_column (`str`): Column name of the inputs.
+            labels_column (`str`): Column name of the labels.
+
+        Returns:
+            `DataLoader`: A dataloader for the dataset. Will be used for inference.
+        """
+
+        tokenized_example = dataset.map(
+            lambda x: self.tokenize_and_align_labels(x, inputs_column=inputs_column, labels_column=labels_column),
+            batched=True,
+            remove_columns=dataset.column_names
+        )
+
+        dataloader = DataLoader(
+            dataset=tokenized_example,
+            batch_size=8,
+            collate_fn=self.collator(),
+        )
+
+        return dataloader
+
+
+class DataUtilsForFlanT5():
+    """
+
+    Args:
+        tokenizer (`PretrainedTokenizer`, default to None):
+            The tokenizer for tokenization.
+        checkpoint (`str`):
+            The checkpoint from which the tokenizer is loaded.
+        model_max_length (`int`, *optional*): The max sequence length the model accepts.
+        max_source_length (`int`, *optional*): The max length of the input text.
+        max_target_length (`int`, *optional*): The max length of the generated summary.
+    """
+
+
+    def __init__(self, tokenizer = None,
+                 model_class = FlanT5ForSummarization,
+                 checkpoint = "google/flan-t5-base",
+                 prompt = "Please give a summary of the following text ",
+                 model_max_length = 1024,
+                 max_source_length = 1024,
+                 max_target_length = 500,
+                 ):
+
+        self.checkpoint = checkpoint
+        self.model_max_length = model_max_length
+        self.max_source_length = max_source_length
+        self.max_target_length = max_target_length
+        self.model_class = model_class
+        self.prompt = prompt
+
+
+
+        if tokenizer is None:
+            self.tokenizer = AutoTokenizer.from_pretrained(
+                self.checkpoint,
+                model_max_length = self.model_max_length,
+                cache_dir=BASE_CACHE_DIR,
+                use_fast=True
+            )
+        else:
+            self.tokenizer = tokenizer
+
+    def tokenize_and_align_labels(self, examples, inputs_column="text", labels_column="summary"):
+
+        """
+
+        Process the dataset for model input, for example, do tokenization and prepare label_ids.
+
+        Args:
+            examples (`Dataset`): { "text": [s1, s2, ...], "summary": [l1, l2, ...]}
+            inputs (`str`): The name of input column
+            labels (`str`): The name of target column
+
+        Returns:
+            `Dict`: {"input_ids": input_ids, "attention_mask": attention_mask, "labels": label_ids }
+
+        """
+
+        inputs = examples[inputs_column]
+        prompts = [ self.prompt for i in inputs ]
+
+        # kw_instructions = ["{}"]
+        def kw(prompt, keyword):
+            # i = randint(1,10)
+            if keyword is not None:
+                return "Keywords: " + str(", ".join(keyword)) + ". " + prompt + "based on these keywords " if keyword is not None else prompt
+            return prompt
+            # return prompt + "that focuses on " + str(", ".join(keyword)) + " " if keyword is not None else prompt
+        def leng(prompt, length):
+            if length is not None:
+                return prompt + ", which has less than " + str(length) + " words " if length is not None else prompt
+            return prompt
+
+        # def k_str(k_list):
+        #     if k_list is not None:
+        #         return ", ".join(k_list)
+        #     return None
+        # def sents_num(l):
+        #     if l is not None:
+        #         return 5*math.ceil(l/50)
+        #     return 10
+        if "keywords" in examples.keys():
+            keywords = examples["keywords"]
+            if keywords is not None:
+                prompts = [ kw(prompt,keyword) for (prompt,keyword) in zip(prompts,keywords) ]
+                # keywords = [k_str(k) for k in keywords]
+                # if "length" in examples.keys() and examples["length"] is not None:
+                #     inputs = [extract_related_sentences(t,k,sents_num(l)) for (t,k,l) in zip(inputs,keywords,examples["length"])]
+                # else:
+                #     inputs = [extract_related_sentences(t, k, 10) for (t, k) in zip(inputs, keywords)]
+        if "length" in examples.keys():
+            if examples["length"] is not None:
+                lengths = examples["length"]
+                prompts = [ leng(prompt,length) for (prompt,length) in zip(prompts,lengths)]
+
+        # kwords = ["" for i in inputs]
+        # if "keywords" in examples.keys():
+        #     keywords = examples["keywords"]
+        #     if keywords is not None:
+        #         keywords = [ keyword if keyword is not None else [] for keyword in keywords ]
+        #         # print(keywords)
+        #         kwords = [ " ".join(keyword) for keyword in keywords ]
+        inputs = [ prompt + ": " + raw_text for (prompt,raw_text) in zip(prompts, inputs) ]
+        print(inputs[0:3][:200])
+
+
+        # Setup the tokenizer for inputs
+
+        model_inputs = self.tokenizer(inputs, max_length=self.max_source_length, padding="max_length", truncation=True)
+
+        # Select target column
+        if labels_column in examples.keys():
+            labels = examples[labels_column]
+            # Setup the tokenizer for targets
+            with self.tokenizer.as_target_tokenizer():
+                labels = self.tokenizer(labels, max_length=self.max_target_length, padding="max_length", truncation=True)
+                # Ignore padding in the loss
+                labels["input_ids"] = [
+                    [(l if l != self.tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
+                ]
+            model_inputs["labels"] = labels["input_ids"]
+
+        #when test
+        # if "id" in examples.keys():
+        #     model_inputs["id"] = examples["id"]
+        # if "length" in examples.keys() and examples["length"] is not None:
+        #     if examples["length"][0] is not None:
+        #         model_inputs["length"] = examples["length"]
+        return model_inputs
+
+    def tokenize_and_align_labels2(self, examples, inputs_column="text", labels_column="summary"):
+
+        """
+
+        Process the dataset for model input, for example, do tokenization and prepare label_ids.
+
+        Args:
+            examples (`Dataset`): { "text": [s1, s2, ...], "summary": [l1, l2, ...]}
+            inputs (`str`): The name of input column
+            labels (`str`): The name of target column
+
+        Returns:
+            `Dict`: {"input_ids": input_ids, "attention_mask": attention_mask, "labels": label_ids }
+
+        """
+
+        inputs = examples[inputs_column]
+        def trunc(text):
+            text = text.strip().split()
+            return " ".join(text[:800])
+        inputs = [trunc(text) for text in inputs]
+
+
+        # kw_instructions = ["{}"]
+        def kw(i,text, keyword):
+
+            if keyword is None:
+                lists = [
+                    f"Write a summary for this text: {text}\n\nSummary:",
+                    f"Summarize this scientific article: {text}\n\nSummary:",
+                    f"Generate a summary this text:\n{text}\n\nSummary:",
+                    f"What is a shorter version of this:\n\n{text}\n\nSummary:",
+                    f"{text}\n\nWhat is a summary of the above text?",
+                    f"{text}\nSummarize the aforementioned text.",
+                    f"{text}\nCan you generate a summary of the above scientific text?",
+                    f"Here is a scientific article: {text}\nA summary of this is?",
+                    f"Scientific article:\n\n{text}\nWhat is a shorter version of the above article?",
+                    f"{text}\n\nWrite a summary.",
+                    f"Article:\n{text}Summary:",
+                ]
+            else:
+                keywords = ", ".join(keyword)
+                lists = [
+                    f"Keywords:{keywords}\n\nWrite a summary that includes all these keywords for this text: {text}\n\nSummary:",
+                    f"Keywords:{keywords}\n\nSummarize this scientific article based on these keywords: {text}\n\nSummary:",
+                    f"Here are some concepts: {keywords}\n\nGenerate a summary about these concepts for this text:\n{text}\n\nSummary:",
+                    f"What is a shorter version of this which mentions all :\n\n{text}\n\nSummary:",
+                    f"{text}\n\nWhat is a summary of the above text which mentions all of these concepts: {keywords}",
+                    f"{text}\nSummarize the aforementioned text about the following things: \n\n{keywords}.",
+                    f"{text}\nCan you generate a summary of the above scientific text that includes all the following words: {keywords}",
+                    f"Here is a scientific article: {text}\nA summary of this is?",
+                    f"Scientific article:\n\n{text}\nWhat is a shorter version of the above article?",
+                    f"{text}\n\nWrite a summary talking about these keywords: {keywords}",
+                    f"Keywords:{keywords}\n\nArticle:\n{text}Summary:",
+                ]
+            tot = len(lists) - 1
+            i = i%tot
+
+            return lists[i]
+            # return prompt + "that focuses on " + str(", ".join(keyword)) + " " if keyword is not None else prompt
+        def leng(i,text, length):
+
+            if length is None:
+                lists = [
+                    f"Write a summary for this text: {text}\n\nSummary:",
+                    f"Summarize this scientific article: {text}\n\nSummary:",
+                    f"Generate a summary this text:\n{text}\n\nSummary:",
+                    f"What is a shorter version of this:\n\n{text}\n\nSummary:",
+                    f"{text}\n\nWhat is a summary of the above text?",
+                    f"{text}\nSummarize the aforementioned text.",
+                    f"{text}\nCan you generate a summary of the above scientific text?",
+                    f"Here is a scientific article: {text}\nA summary of this is?",
+                    f"Scientific article:\n\n{text}\nWhat is a shorter version of the above article?",
+                    f"{text}\n\nWrite a summary.",
+                    f"Article:\n{text}Summary:",
+                ]
+            else:
+                lists = [
+                    f"Write a summary that has less than {length} words for this text: {text}\n\nSummary:",
+                    f"Summarize this scientific article within {length} words: {text}\n\nSummary:",
+                    f"Generate a summary of {length} words for this text:\n{text}\n\nSummary:",
+                    f"{text}\n\nWhat is a summary of the above text which has about {length} words?",
+                    f"{text}\nSummarize the aforementioned text within {length} words.",
+                    f"{text}\nCan you generate a summary of the above scientific text that includes {length} words?",
+                    f"Here is a scientific article: {text}\nA summary of {length} words of this is?",
+                    f"Scientific article:\n\n{text}\nWhat is a {length} words version of the above article?",
+                    f"{text}\n\nWrite a summary within {length} words.",
+                    f"Length:{length} words\n\nArticle:\n{text}Summary:",
+                ]
+            tot = len(lists) - 1
+            i = i%tot
+
+            return lists[i]
+
+
+        keywords = examples["keywords"]
+        lengths = examples["length"]
+        def convert(i,keyw, length, text):
+
+            if keyw is None and length is None:
+                 return f"Summarize this scientific article: {text}\n\nSummary:"
+
+            elif keyw is not None and length is not None:
+                return f"Keywords:{keyw}\n\nSummarize this scientific article within {length} words based on these keywords : {text}\n\nSummary:"
+
+            elif keyw is not None:
+                return kw(i,text,keyw)
+
+            elif length is not None:
+                return leng(i,text,length)
+
+        inputs = [convert(i,e[0],e[1],e[2]) for i,e in enumerate(zip(keywords,lengths,inputs))]
+
+        print(inputs[0][:150])
+
+
+        # Setup the tokenizer for inputs
+
+        model_inputs = self.tokenizer(inputs, max_length=self.max_source_length, padding="max_length", truncation=True)
+
+        # Select target column
+        if labels_column in examples.keys():
+            labels = examples[labels_column]
+            # Setup the tokenizer for targets
+            with self.tokenizer.as_target_tokenizer():
+                labels = self.tokenizer(labels, max_length=self.max_target_length, padding="max_length", truncation=True)
+                # Ignore padding in the loss
+                labels["input_ids"] = [
+                    [(l if l != self.tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
+                ]
+            model_inputs["labels"] = labels["input_ids"]
+
+        #when test
+        # if "id" in examples.keys():
+        #     model_inputs["id"] = examples["id"]
+        # if "length" in examples.keys() and examples["length"] is not None:
+        #     if examples["length"][0] is not None:
+        #         model_inputs["length"] = examples["length"]
+        return model_inputs
+
+    def collator(self):
+
+        """
+
+        The collating function.
+
+        Returns:
+            `function`: A collating function.
+
+            For example, **DataCollatorForSeq2Seq(...)**.
+
+            You can also custom a collating function, but remember that `collator()` needs to return a **function**.
+        """
+
+
+        return DataCollatorForSeq2Seq(self.tokenizer, model=self.model_class, pad_to_multiple_of=8)
+
+    def postprocess(self, preds, labels):
+
+        """
+        Process model's outputs and get the final results rather than simple ids.
+
+        Args:
+            preds (Tensor): Prediction labels, the output of the model.
+            labels (Tensor): True labels
+
+        Returns:
+            `(LongTensor, LongTensor)`: decoded_preds, decoded_labels
+
+        """
+
+        decoded_preds = self.tokenizer.batch_decode(preds, skip_special_tokens=True)
+
+        labels = np.array(labels.to("cpu"))
+        # Replace -100 in the labels as we can't decode them.
+        labels = np.where(labels != -100, labels, self.tokenizer.pad_token_id)
+
+        decoded_labels = self.tokenizer.batch_decode(labels, skip_special_tokens=True)
+
+        decoded_preds = [pred.strip() for pred in decoded_preds]
+        decoded_labels = [label.strip() for label in decoded_labels]
+
+        # rougeLSum expects newline after each sentence
+        decoded_preds = ["\n".join(nltk.sent_tokenize(pred)) for pred in decoded_preds]
+        decoded_labels = ["\n".join(nltk.sent_tokenize(label)) for label in decoded_labels]
+
+        return decoded_preds, decoded_labels
+
+    def get_dataloader(self, dataset, inputs_column="text", labels_column="summary"):
+
+        """
+        Generate DataLoader for a dataset.
+
+        Args:
+            dataset (`Dataset`): The raw dataset.
+            inputs_column (`str`): Column name of the inputs.
+            labels_column (`str`): Column name of the labels.
+
+        Returns:
+            `DataLoader`: A dataloader for the dataset. Will be used for inference.
+        """
+
+        tokenized_example = dataset.map(
+            lambda x: self.tokenize_and_align_labels(x, inputs_column=inputs_column, labels_column=labels_column),
+            batched=True,
+            remove_columns=dataset.column_names
+        )
+
+        dataloader = DataLoader(
+            dataset=tokenized_example,
+            batch_size=8,
+            collate_fn=self.collator(),
+        )
+
+        return dataloader
+
+
+# class DataUtilsForFiD():
+#     """
+#
+#     Args:
+#         tokenizer (`PretrainedTokenizer`, default to None):
+#             The tokenizer for tokenization.
+#         checkpoint (`str`):
+#             The checkpoint from which the tokenizer is loaded.
+#         model_max_length (`int`, *optional*): The max sequence length the model accepts.
+#         max_source_length (`int`, *optional*): The max length of the input text.
+#         max_target_length (`int`, *optional*): The max length of the generated summary.
+#     """
+#
+#     def __init__(self, tokenizer = None, model_class = FiDT5,
+#                  checkpoint = "google/flan-t5-large",
+#                  model_max_length = 64,
+#                  max_source_length = 64,
+#                  max_target_length = 128,
+#                  ):
+#
+#         self.checkpoint = checkpoint
+#         self.model_max_length = model_max_length
+#         self.max_source_length = max_source_length
+#         self.max_target_length = max_target_length
+#         self.model_class = model_class
+#
+#         if tokenizer is None:
+#             self.tokenizer = AutoTokenizer.from_pretrained(
+#                 self.checkpoint,
+#                 model_max_length = self.model_max_length,
+#                 cache_dir=BASE_CACHE_DIR,
+#             )
+#         else:
+#             self.tokenizer = tokenizer
+#
+#
+#     def tokenize_and_align_labels(self, examples, inputs_column="text", labels_column="summary", token_per_paragraph=50):
+#
+#         """
+#
+#         Process the dataset for model input, for example, do tokenization and prepare label_ids.
+#
+#         Args:
+#             examples (`Dataset`): { "text": [s1, s2, ...], "summary": [l1, l2, ...]}
+#             inputs (`str`): The name of input column
+#             labels (`str`): The name of target column
+#
+#         Returns:
+#             `Dict`: {"input_ids": input_ids, "attention_mask": attention_mask, "labels": label_ids }
+#
+#         """
+#
+#         # Select input column
+#         inputs = examples[inputs_column]
+#         dataset = {"paragraphs": []}
+#
+#         for input in inputs:
+#             texts = ["Please give a summary of the following text: "]
+#             tokens = input.split(" ")
+#             index = 0
+#             while index+token_per_paragraph < min(len(tokens),120*token_per_paragraph):
+#                 p = " ".join(tokens[index:index+token_per_paragraph])
+#                 texts.append(p)
+#                 index += token_per_paragraph
+#             texts.append(" ".join(tokens[index:index+token_per_paragraph]))
+#             dataset["paragraphs"].append(texts)
+#
+#
+#         # Select target column
+#         if labels_column in examples.keys():
+#             labels = examples[labels_column]
+#             dataset["labels"] = labels
+#
+#         return dataset
+#
+#     def collator(self):
+#
+#         """
+#
+#         The collating function.
+#
+#         Returns:
+#             `function`: A collating function.
+#
+#             For example, **DataCollatorForSeq2Seq(...)**.
+#
+#             You can also custom a collating function, but remember that `collator()` needs to return a **function**.
+#         """
+#
+#         from SciAssist.utils.collators.CollatorForFid import DataCollatorForFid
+#
+#         return DataCollatorForFid(self.max_source_length, self.tokenizer, self.max_target_length)
+#
+#     def postprocess(self, preds, labels):
+#
+#         """
+#         Process model's outputs and get the final results rather than simple ids.
+#
+#         Args:
+#             preds (Tensor): Prediction labels, the output of the model.
+#             labels (Tensor): True labels
+#
+#         Returns:
+#             `(LongTensor, LongTensor)`: decoded_preds, decoded_labels
+#
+#         """
+#
+#         decoded_preds = self.tokenizer.batch_decode(preds, skip_special_tokens=True)
+#
+#         labels = np.array(labels.to("cpu"))
+#         # Replace -100 in the labels as we can't decode them.
+#         labels = np.where(labels != -100, labels, self.tokenizer.pad_token_id)
+#
+#         decoded_labels = self.tokenizer.batch_decode(labels, skip_special_tokens=True)
+#
+#         decoded_preds = [pred.strip() for pred in decoded_preds]
+#         decoded_labels = [label.strip() for label in decoded_labels]
+#
+#         # rougeLSum expects newline after each sentence
+#         decoded_preds = ["\n".join(nltk.sent_tokenize(pred)) for pred in decoded_preds]
+#         decoded_labels = ["\n".join(nltk.sent_tokenize(label)) for label in decoded_labels]
+#
+#         return decoded_preds, decoded_labels
+#
+#     def get_dataloader(self, dataset, inputs_column="text", labels_column="summary"):
+#
+#         """
+#         Generate DataLoader for a dataset.
+#
+#         Args:
+#             dataset (`Dataset`): The raw dataset.
+#             inputs_column (`str`): Column name of the inputs.
+#             labels_column (`str`): Column name of the labels.
+#
+#         Returns:
+#             `DataLoader`: A dataloader for the dataset. Will be used for inference.
+#         """
+#
+#         tokenized_example = dataset.map(
+#             lambda x: self.tokenize_and_align_labels(x, inputs_column=inputs_column, labels_column=labels_column),
+#             batched=True,
+#             remove_columns=dataset.column_names
+#         )
+#         dataloader = DataLoader(
+#             dataset=tokenized_example,
+#             batch_size=8,
+#             collate_fn=self.collator(),
+#         )
+#
+#         return dataloader
+#
+#
+#
+# class DataUtilsForFrost():
+#     """
+#
+#     Args:
+#         tokenizer (`PretrainedTokenizer`, default to None):
+#             The tokenizer for tokenization.
+#         checkpoint (`str`):
+#             The checkpoint from which the tokenizer is loaded.
+#         model_max_length (`int`, *optional*): The max sequence length the model accepts.
+#         max_source_length (`int`, *optional*): The max length of the input text.
+#         max_target_length (`int`, *optional*): The max length of the generated summary.
+#     """
+#
+#
+#     def __init__(self, tokenizer = None, model_class = FrostForSummarization,
+#                  checkpoint = "pegasus/frost",
+#                  model_max_length = 1024,
+#                  max_source_length = 1024,
+#                  max_target_length = 128,
+#                  ):
+#
+#         self.checkpoint = checkpoint
+#         self.model_max_length = model_max_length
+#         self.max_source_length = max_source_length
+#         self.max_target_length = max_target_length
+#         self.model_class = model_class
+#
+#         if tokenizer is None:
+#             self.tokenizer = PegasusTokenizer.from_pretrained(
+#                 self.checkpoint,
+#                 cache_dir=BASE_CACHE_DIR,
+#                 model_max_length=self.model_max_length,
+#             )
+#         else:
+#             self.tokenizer = tokenizer
+#
+#         # FROST Constants
+#         self.ENTITYCHAIN_START_TOKEN = "[CONTENT]"
+#         self.SUMMARY_START_TOKEN = "[SUMMARY]"
+#         self.ENTITY_SEPARATOR = " | "
+#         self.ENTITY_SENTENCE_SEPARATOR = " ||| "
+#
+#         # Prepare Spacy processor
+#         self.SPACY_MODEL_OR_PATH = "en_core_web_sm"
+#         self.SPACY_PROCESSOR = spacy.load(self.SPACY_MODEL_OR_PATH)
+#
+#     def get_frost_labels(self, text):
+#         """Gets Spacy Frost processor."""
+#         entity_plans = []
+#         for text_sent in self.SPACY_PROCESSOR(text.replace("\n", " ")).sents:
+#             entity_plans.append(
+#                 self.ENTITY_SEPARATOR.join(
+#                     [entity.text for entity in self.SPACY_PROCESSOR(text_sent.text).ents]))
+#         text_with_entityplans = (
+#                 self.ENTITYCHAIN_START_TOKEN + " " +
+#                 self.ENTITY_SENTENCE_SEPARATOR.join(entity_plans) + " " +
+#                 self.SUMMARY_START_TOKEN + " " + text)
+#         return text_with_entityplans
+#
+#
+#     def tokenize_and_align_labels(self, examples, inputs_column="text", labels_column="summary"):
+#
+#         """
+#
+#         Process the dataset for model input, for example, do tokenization and prepare label_ids.
+#
+#         Args:
+#             examples (`Dataset`): { "text": [s1, s2, ...], "summary": [l1, l2, ...]}
+#             inputs (`str`): The name of input column
+#             labels (`str`): The name of target column
+#
+#         Returns:
+#             `Dict`: {"input_ids": input_ids, "attention_mask": attention_mask, "labels": label_ids }
+#
+#         """
+#
+#         # Select input column
+#         inputs = examples[inputs_column]
+#
+#         # Setup the tokenizer for inputs
+#         model_inputs = self.tokenizer(inputs, max_length=self.max_target_length, padding="max_length", truncation=True)
+#
+#         # Select target column
+#         if labels_column in examples.keys():
+#             labels = examples[labels_column]
+#             labels = [self.get_frost_labels(label) for label in labels]
+#
+#             # Setup the tokenizer for targets
+#             with self.tokenizer.as_target_tokenizer():
+#                 labels = self.tokenizer(labels, max_length=self.max_target_length, padding="max_length", truncation=True)
+#                 # Ignore padding in the loss
+#                 labels["input_ids"] = [
+#                     [(l if l != self.tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
+#                 ]
+#
+#             model_inputs["labels"] = labels["input_ids"]
+#
+#         return model_inputs
+#
+#     def collator(self):
+#
+#         """
+#
+#         The collating function.
+#
+#         Returns:
+#             `function`: A collating function.
+#
+#             For example, **DataCollatorForSeq2Seq(...)**.
+#
+#             You can also custom a collating function, but remember that `collator()` needs to return a **function**.
+#         """
+#
+#
+#         return DataCollatorForSeq2Seq(self.tokenizer, model=self.model_class, pad_to_multiple_of=8)
+#
+#     def postprocess(self, preds, labels):
+#
+#         """
+#         Process model's outputs and get the final results rather than simple ids.
+#
+#         Args:
+#             preds (Tensor): Prediction labels, the output of the model.
+#             labels (Tensor): True labels
+#
+#         Returns:
+#             `(LongTensor, LongTensor)`: decoded_preds, decoded_labels
+#
+#         """
+#
+#         decoded_preds = self.tokenizer.batch_decode(preds, skip_special_tokens=True)
+#
+#         labels = np.array(labels.to("cpu"))
+#         # Replace -100 in the labels as we can't decode them.
+#         labels = np.where(labels != -100, labels, self.tokenizer.pad_token_id)
+#
+#         decoded_labels = self.tokenizer.batch_decode(labels, skip_special_tokens=False)
+#
+#         decoded_preds = [pred.strip() for pred in decoded_preds]
+#         decoded_labels = [label.strip() for label in decoded_labels]
+#
+#         # rougeLSum expects newline after each sentence
+#         decoded_preds = ["\n".join(nltk.sent_tokenize(pred)) for pred in decoded_preds]
+#         decoded_labels = ["\n".join(nltk.sent_tokenize(label)) for label in decoded_labels]
+#
+#         return decoded_preds, decoded_labels
+#
+#     def get_dataloader(self, dataset, inputs_column="text", labels_column="summary"):
+#
+#         """
+#         Generate DataLoader for a dataset.
+#
+#         Args:
+#             dataset (`Dataset`): The raw dataset.
+#             inputs_column (`str`): Column name of the inputs.
+#             labels_column (`str`): Column name of the labels.
+#
+#         Returns:
+#             `DataLoader`: A dataloader for the dataset. Will be used for inference.
+#         """
+#
+#         tokenized_example = dataset.map(
+#             lambda x: self.tokenize_and_align_labels(x, inputs_column=inputs_column, labels_column=labels_column),
+#             batched=True,
+#             remove_columns=dataset.column_names
+#         )
+#         dataloader = DataLoader(
+#             dataset=tokenized_example,
+#             batch_size=8,
+#             collate_fn=self.collator(),
+#         )
+#
+#         return dataloader
+
+class DataUtilsForT5():
+    """
+
+    Args:
+        tokenizer (`PretrainedTokenizer`, default to None):
+            The tokenizer for tokenization.
+        checkpoint (`str`):
+            The checkpoint from which the tokenizer is loaded.
+        model_max_length (`int`, *optional*): The max sequence length the model accepts.
+        max_source_length (`int`, *optional*): The max length of the input text.
+        max_target_length (`int`, *optional*): The max length of the generated summary.
+    """
+
+
+    def __init__(self, tokenizer = None,
+                 model_class = BartForSummarization,
+                 checkpoint = "facebook/bart-large-cnn",
+                 prompt = "Please give a summary of the following text: ",
+                 model_max_length = 1024,
+                 max_source_length = 1024,
+                 max_target_length = 128,
+                 ):
+
+        self.checkpoint = checkpoint
+        self.model_max_length = model_max_length
+        self.max_source_length = max_source_length
+        self.max_target_length = max_target_length
+        self.model_class = model_class
+        self.prompt = prompt
+
+        if tokenizer is None:
+            self.tokenizer = AutoTokenizer.from_pretrained(
+                self.checkpoint,
+                model_max_length = self.model_max_length,
+                cache_dir=BASE_CACHE_DIR,
+                use_fast=True
+            )
+        else:
+            self.tokenizer = tokenizer
+
+
+    def tokenize_and_align_labels(self, examples, inputs_column="text", labels_column="summary"):
+
+        """
+
+        Process the dataset for model input, for example, do tokenization and prepare label_ids.
+
+        Args:
+            examples (`Dataset`): { "text": [s1, s2, ...], "summary": [l1, l2, ...]}
+            inputs (`str`): The name of input column
+            labels (`str`): The name of target column
+
+        Returns:
+            `Dict`: {"input_ids": input_ids, "attention_mask": attention_mask, "labels": label_ids }
+
+        """
+
+        # Select input column
+        inputs = examples[inputs_column]
+        inputs = [self.prompt + raw_text for raw_text in inputs]
+        # Setup the tokenizer for inputs
+        model_inputs = self.tokenizer(inputs, max_length=self.max_source_length, padding="max_length", truncation=True)
+
+        # Select target column
+        if labels_column in examples.keys():
+            labels = examples[labels_column]
+            # Setup the tokenizer for targets
+            with self.tokenizer.as_target_tokenizer():
+                labels = self.tokenizer(labels, max_length=self.max_target_length, padding="max_length", truncation=True)
+                # Ignore padding in the loss
+                labels["input_ids"] = [
+                    [(l if l != self.tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
+                ]
+            model_inputs["labels"] = labels["input_ids"]
+
+        return model_inputs
+
+    def collator(self):
+
+        """
+
+        The collating function.
+
+        Returns:
+            `function`: A collating function.
+
+            For example, **DataCollatorForSeq2Seq(...)**.
+
+            You can also custom a collating function, but remember that `collator()` needs to return a **function**.
+        """
+
+
+        return DataCollatorForSeq2Seq(self.tokenizer, model=self.model_class, pad_to_multiple_of=8)
+
+    def postprocess(self, preds, labels):
+
+        """
+        Process model's outputs and get the final results rather than simple ids.
+
+        Args:
+            preds (Tensor): Prediction labels, the output of the model.
+            labels (Tensor): True labels
+
+        Returns:
+            `(LongTensor, LongTensor)`: decoded_preds, decoded_labels
+
+        """
+
+        decoded_preds = self.tokenizer.batch_decode(preds, skip_special_tokens=True)
+
+        labels = np.array(labels.to("cpu"))
+        # Replace -100 in the labels as we can't decode them.
+        labels = np.where(labels != -100, labels, self.tokenizer.pad_token_id)
+
+        decoded_labels = self.tokenizer.batch_decode(labels, skip_special_tokens=True)
+
+        decoded_preds = [pred.strip() for pred in decoded_preds]
+        decoded_labels = [label.strip() for label in decoded_labels]
+
+        # rougeLSum expects newline after each sentence
+        decoded_preds = ["\n".join(nltk.sent_tokenize(pred)) for pred in decoded_preds]
+        decoded_labels = ["\n".join(nltk.sent_tokenize(label)) for label in decoded_labels]
+
+        return decoded_preds, decoded_labels
+
+    def get_dataloader(self, dataset, inputs_column="text", labels_column="summary"):
+
+        """
+        Generate DataLoader for a dataset.
+
+        Args:
+            dataset (`Dataset`): The raw dataset.
+            inputs_column (`str`): Column name of the inputs.
+            labels_column (`str`): Column name of the labels.
+
+        Returns:
+            `DataLoader`: A dataloader for the dataset. Will be used for inference.
+        """
+
+        tokenized_example = dataset.map(
+            lambda x: self.tokenize_and_align_labels(x, inputs_column=inputs_column, labels_column=labels_column),
+            batched=True,
+            remove_columns=dataset.column_names
+        )
+
+        dataloader = DataLoader(
+            dataset=tokenized_example,
+            batch_size=8,
+            collate_fn=self.collator(),
+        )
+
+        return dataloader
+
+
+
+class DataUtilsForCTRLSum():
+    """
+
+    Args:
+        tokenizer (`PretrainedTokenizer`, default to None):
+            The tokenizer for tokenization.
+        checkpoint (`str`):
+            The checkpoint from which the tokenizer is loaded.
+        model_max_length (`int`, *optional*): The max sequence length the model accepts.
+        max_source_length (`int`, *optional*): The max length of the input text.
+        max_target_length (`int`, *optional*): The max length of the generated summary.
+    """
+
+
+    def __init__(self, tokenizer = None,
+                 model_class = FlanT5ForSummarization,
+                 checkpoint = "google/flan-t5-base",
+                 prompt = "Please give a summary of the following text ",
+                 model_max_length = 1024,
+                 max_source_length = 1024,
+                 max_target_length = 500,
+                 ):
+
+        self.checkpoint = checkpoint
+        self.model_max_length = model_max_length
+        self.max_source_length = max_source_length
+        self.max_target_length = max_target_length
+        self.model_class = model_class
+        self.prompt = prompt
+
+        if tokenizer is None:
+            self.tokenizer = AutoTokenizer.from_pretrained(
+                self.checkpoint,
+                model_max_length = self.model_max_length,
+                cache_dir=BASE_CACHE_DIR,
+                use_fast=True
+            )
+        else:
+            self.tokenizer = tokenizer
+
+
+    def tokenize_and_align_labels(self, examples, inputs_column="text", labels_column="summary"):
+
+        """
+
+        Process the dataset for model input, for example, do tokenization and prepare label_ids.
+
+        Args:
+            examples (`Dataset`): { "text": [s1, s2, ...], "summary": [l1, l2, ...]}
+            inputs (`str`): The name of input column
+            labels (`str`): The name of target column
+
+        Returns:
+            `Dict`: {"input_ids": input_ids, "attention_mask": attention_mask, "labels": label_ids }
+
+        """
+
+        inputs = examples[inputs_column]
+        prompts = [ self.prompt for i in inputs ]
+
+        # kw_instructions = ["{}"]
+        def kw(prompt, keyword):
+            # i = randint(1,10)
+            return "Keywords: " + str(", ".join(keyword)) + ". " + prompt + "talking about these keywords " if keyword is not None else prompt
+
+            # return prompt + "that focuses on " + str(", ".join(keyword)) + " " if keyword is not None else prompt
+        def leng(prompt, length):
+            return prompt + ", which has less than " + str(length) + " words " if length is not None else prompt
+
+        # if "keywords" in examples.keys():
+        #     keywords = examples["keywords"]
+        #     if keywords is not None:
+        #         prompts = [ kw(prompt,keyword) for (prompt,keyword) in zip(prompts,keywords) ]
+        if "length" in examples.keys():
+            if examples["length"] is not None:
+                lengths = examples["length"]
+                prompts = [ leng(prompt,length) for (prompt,length) in zip(prompts,lengths)]
+        # kwords = ["" for i in inputs]
+        # if "keywords" in examples.keys():
+        #     keywords = examples["keywords"]
+        #     if keywords is not None:
+        #         keywords = [ keyword if keyword is not None else [] for keyword in keywords ]
+        #         # print(keywords)
+        #         kwords = [ " ".join(keyword) for keyword in keywords ]
+        inputs = [ prompt + ": " + raw_text for (prompt,raw_text) in zip(prompts, inputs) ]
+        # inputs = [ f"Which entity is this text about? {text} Entity:".format(text) for text in inputs]
+        print(inputs[0][:200])
+
+
+
+        # if "keywords" in examples.keys():
+        #     keywords = examples["keywords"]
+        #     if keywords is not None and keywords[0] is not None:
+        #         prompts = [ prompt + "that focuses on " + str(", ".join(keyword)) + " " for (prompt,keyword) in zip(prompts,keywords) ]
+        # if "length" in examples.keys():
+        #     if examples["length"] is not None and examples["length"][0] is not None:
+        #         lengths = [l for l in examples["length"]]
+        #         prompts = [ prompt + ", which has less than " + str(length) + " words " for (prompt,length) in zip(prompts,lengths)]
+        # inputs = [ prompt + ": " + raw_text for (prompt,raw_text) in zip(prompts,inputs) ]
+        # print(inputs[0][:200])
+        #
+
+
+        # if labels_column in examples.keys():
+        #     lengths = [len(s.split(" ")) for s in examples[labels_column]]
+        #     lengths = [ 10*math.ceil(s/10) for s in lengths]
+
+        # Select input column
+        # inputs = examples[inputs_column]
+        # inputs = [ self.prompt + "which has less than " + str(length) + " words: " + raw_text for (raw_text,length) in zip(inputs,lengths) ]
+        # inputs = [ "| " + str(length) + " words | " + "summarize: " + raw_text for (raw_text, length) in
+        #           zip(inputs, lengths)]
+
+        # Setup the tokenizer for inputs
+
+        model_inputs = self.tokenizer(inputs, max_length=self.max_source_length, padding="max_length", truncation=True)
+
+        # Select target column
+        if labels_column in examples.keys():
+            labels = examples[labels_column]
+            # Setup the tokenizer for targets
+            with self.tokenizer.as_target_tokenizer():
+                labels = self.tokenizer(labels, max_length=self.max_target_length, padding="max_length", truncation=True)
+                # Ignore padding in the loss
+                labels["input_ids"] = [
+                    [(l if l != self.tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
+                ]
+            model_inputs["labels"] = labels["input_ids"]
+
+
+        return model_inputs
+
+    def collator(self):
+
+        """
+
+        The collating function.
+
+        Returns:
+            `function`: A collating function.
+
+            For example, **DataCollatorForSeq2Seq(...)**.
+
+            You can also custom a collating function, but remember that `collator()` needs to return a **function**.
+        """
+
+
+        return DataCollatorForSeq2Seq(self.tokenizer, model=self.model_class, pad_to_multiple_of=8)
+
+    def postprocess(self, preds, labels):
+
+        """
+        Process model's outputs and get the final results rather than simple ids.
+
+        Args:
+            preds (Tensor): Prediction labels, the output of the model.
+            labels (Tensor): True labels
+
+        Returns:
+            `(LongTensor, LongTensor)`: decoded_preds, decoded_labels
+
+        """
+
+        decoded_preds = self.tokenizer.batch_decode(preds, skip_special_tokens=True)
+
+        labels = np.array(labels.to("cpu"))
+        # Replace -100 in the labels as we can't decode them.
+        labels = np.where(labels != -100, labels, self.tokenizer.pad_token_id)
+
+        decoded_labels = self.tokenizer.batch_decode(labels, skip_special_tokens=True)
+
+        decoded_preds = [pred.strip() for pred in decoded_preds]
+        decoded_labels = [label.strip() for label in decoded_labels]
+
+        # rougeLSum expects newline after each sentence
+        decoded_preds = ["\n".join(nltk.sent_tokenize(pred)) for pred in decoded_preds]
+        decoded_labels = ["\n".join(nltk.sent_tokenize(label)) for label in decoded_labels]
+
+        return decoded_preds, decoded_labels
+
+    def get_dataloader(self, dataset, inputs_column="text", labels_column="summary"):
+
+        """
+        Generate DataLoader for a dataset.
+
+        Args:
+            dataset (`Dataset`): The raw dataset.
+            inputs_column (`str`): Column name of the inputs.
+            labels_column (`str`): Column name of the labels.
+
+        Returns:
+            `DataLoader`: A dataloader for the dataset. Will be used for inference.
+        """
+
+        tokenized_example = dataset.map(
+            lambda x: self.tokenize_and_align_labels(x, inputs_column=inputs_column, labels_column=labels_column),
+            batched=True,
+            remove_columns=dataset.column_names
+        )
+
+        dataloader = DataLoader(
+            dataset=tokenized_example,
+            batch_size=8,
+            collate_fn=self.collator(),
+        )
+
+        return dataloader
