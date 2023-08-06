@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jupyspace"
+description = ''
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["jupyter", "conda"]
+authors = [
+  { name = "David Brochart", email = "david.brochart@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "jupyspace_api",
+  "fps-localspace",
+  "fps-spacex",
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/davidbrochart/jupyspace#readme"
+Issues = "https://github.com/davidbrochart/jupyspace/issues"
+Source = "https://github.com/davidbrochart/jupyspace"
+
+[project.optional-dependencies]
+test = [
+  "pytest",
+  "pytest-asyncio",
+  "httpx",
+]
+
+[tool.hatch.version]
+path = "jupyspace/__init__.py"
+
+[tool.jupyter-releaser]
+skip = [ "check-links", "check-manifest",]
+
+[tool.jupyter-releaser.options]
+python_packages = [
+    "jupyspace_api:jupyspace_api",
+    "plugins/localspace:fps-localspace",
+    "plugins/spacex:fps-spacex",
+    ".:jupyspace:jupyspace_api,fps-localspace,fps-spacex"
+]
