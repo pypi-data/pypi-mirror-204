@@ -1,0 +1,3 @@
+[console_scripts]
+oidc=oidc_client.cli:main
+
