@@ -1,0 +1,9 @@
+lib310_lite/__init__.py,sha256=lT4dYH8DK9_XahXjJgGKPn0SdcBkws8uyA3ipYs4Cr0,249
+lib310_lite/bigquery/_functions.py,sha256=D6wt96dP0N60ys-GZAyvm7B764MPshW0rh9gnz7qH1w,141
+lib310_lite/bigquery/client.py,sha256=XhrjBxu1Wr-AbwB8ogk8HGywyL3UNnGkPn7CBUirVcg,7467
+lib310_lite/bigquery/constants.py,sha256=Pw-uj8x_Vcl9_Nqeh5_IDFDkNEMPynsekip3VsO2qNM,872
+lib310_lite/fucntion.py,sha256=Nv9F3QDdGCERcor0ez8RC2jga87wDr-q5uaxHDkFvD4,35
+lib310_lite/mldl/mldl.py,sha256=UiQdlkqoV4kchQm1Q-5R8ebcg88WNxCmuQVH_9m38wU,9326
+lib310_lite-0.0.3.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+lib310_lite-0.0.3.dist-info/METADATA,sha256=77joGYC4iLgBIWOcbvzD-uoCLam9zYFIqZW76rsTPh4,848
+lib310_lite-0.0.3.dist-info/RECORD,,
