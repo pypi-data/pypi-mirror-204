@@ -1,0 +1,4 @@
+drb~=2.1.3
+drb-driver-http~=1.2.1
+drb-driver-netcdf~=1.2.0
+cdsapi==0.5.1
