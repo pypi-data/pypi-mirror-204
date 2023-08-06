@@ -1,0 +1,13 @@
+pinstall/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pinstall/__main__.py,sha256=BO254E6n2Xxzh5jOorDE_opBonxaACehvqmcCM_wmvE,70
+pinstall/pinstall.py,sha256=q3yPiFvmdNMZ5sVmHrbakOLwcfDUHfMyIRmbI_QA4hA,1385
+pinstall/run.py,sha256=PAK6Jq-sPrJqWeplNzOsP3JTjl8ybFlBzIuRC4_ibOE,775
+pinstall/commands/service.py,sha256=Mil5jd0p36fMPgRhMBc0L4KubZxKMwYD6CxutpCYuaE,6047
+pinstall/commands/status.py,sha256=qPdTx3YretqlyZrgDAAmlkZ-F075ZEVmIjS_xLELzb4,1257
+pinstall/commands/venv.py,sha256=65AvAigeNev5eDneHs-IEifqQA53URbeUL7_unkf4NI,3549
+pinstall-1.0.data/data/share/pinstall/README.md,sha256=G6Avm6a-tEam-VSwqQWs4GtfWiGVqU2grZRNac9Wr_U,6603
+pinstall-1.0.dist-info/METADATA,sha256=bblrOcUdUSSY_yPUL8UXtZ3706PHI4zX43j8DM6u1rE,7013
+pinstall-1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pinstall-1.0.dist-info/entry_points.txt,sha256=noujw3jvhDw0CDW0YMUGljQhmLFBfVcPivl0QuaxQJ8,52
+pinstall-1.0.dist-info/top_level.txt,sha256=g-Ii7SHFri6Rqm1M54zu9hLGDl2JtGtwty7gt9iLqlQ,27
+pinstall-1.0.dist-info/RECORD,,
