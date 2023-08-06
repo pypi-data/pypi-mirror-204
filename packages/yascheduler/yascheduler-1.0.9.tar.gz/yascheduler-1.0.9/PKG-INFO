@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: yascheduler
+Version: 1.0.9
+Summary: Yet another computing scheduler and cloud orchestration engine
+Home-page: https://github.com/tilde-lab/yascheduler
+Author: Sergey Korolev, Evgeny Blokhin, Andrey Sobolev
+Author-email: eb@tilde.pro
+License: MIT
+Description: *Yascheduler* is a job scheduler designed for submitting scientific simulations to the VM clouds and copying back their results.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: AiiDA
+Requires-Python: >=3.7
