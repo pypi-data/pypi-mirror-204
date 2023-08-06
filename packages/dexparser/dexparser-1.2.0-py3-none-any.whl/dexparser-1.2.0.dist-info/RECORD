@@ -1,0 +1,16 @@
+dexparser/__init__.py,sha256=L7085BDjmSbamqRqB0LzDROvDRmvT-A6bOv5boxSm-0,19773
+dexparser/disassembler.py,sha256=ygnt7zBMttd8FYQb2Jk789TB2A4NMkn0tHsMjnR96MQ,9472
+dexparser/errors.py,sha256=HUT68Mk64ukxTgVVzHtD1p8Z1yDlZS2skgeYqqN_u3Q,107
+dexparser/utils.py,sha256=iI0bbd60xuutPAcz1NZwWbCSbw_ItIVF_FBCOe4ki1E,1668
+tests/__init__.py,sha256=aqBZt-CD_CvyFUTqzdXMzUMdQhivclltVFy8UtgpTrw,326
+tests/test_load_dex.py,sha256=zqTc7WpHk9jGroRRMIXtNC2igA1nN-O3EVJumamgqTM,526
+tests/test_multi_dex_aab.py,sha256=O5qONUxh2TbyeTuPEALRB9Cg6tcIW8HqD4TYnToGo2Y,363
+tests/test_multi_dex_apk.py,sha256=wOKSlceuZInY9iYwpQSycdkdcfpeTp20JXc4dHskTlc,363
+tests/test_parse_single_dex.py,sha256=4YjJf3FEPJimdzGXqQetJ8PCbAMw7f27-zzRStiwf4g,2520
+tests/test_single_dex_aab.py,sha256=dvuqeEdFaLswIWSKMsprFNbFLWu_J5OKTEnpMT6tQps,368
+tests/test_single_dex_apk.py,sha256=1jdFBj2tTHdcXKehGMYGLoq9qUDd54DaLvECdwyOKY4,368
+dexparser-1.2.0.dist-info/LICENSE,sha256=wTgYf9vUqvIzK4XQG-QD3ygUt1zdTEF8TFfpWODi_D8,1067
+dexparser-1.2.0.dist-info/METADATA,sha256=6CuXT6Q1k3u_usytzjlA5hnUpHyTwvMq5wRDWvGDZDw,2777
+dexparser-1.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dexparser-1.2.0.dist-info/top_level.txt,sha256=k6T3ueMAprKPsHBe4b1gf6gt3PKnucB74IJodr-e0dM,16
+dexparser-1.2.0.dist-info/RECORD,,
