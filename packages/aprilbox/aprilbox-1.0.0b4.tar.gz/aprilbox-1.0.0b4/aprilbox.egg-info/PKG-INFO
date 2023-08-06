@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: aprilbox
+Version: 1.0.0b4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Fang Linwanghao
+Author-email: fanglwh@outlook.com
+License: BSD-3-Clause
+Description: AprilBox, is a personal development toolkit primarily used for developing and researching 
+        artificial intelligence-related content. It also includes various other tools, 
+        including but not limited to meteorological indicators calculation, verification and evaluation calculation,
+        and common quantitative visualization.
+        
+        # Content
+           * [Install]()
+           * [Document]()
+           * [Usage]()
+           * [License]()
+           * [Support]()
+           * [Developers]()
+        
+        
+        ## [Document]()
+        
+        
+        ## [Install]()
+        
+        
+        ## [Usage]()
+        
+        ## [LICENSE]()
+        
+        This project is licensed under the BSD 3-Clause License - see the [LICENSE](/LICENSE.txt) file for details.
+        
+        ## [Support]()
+        
+        Give a ⭐️ if this project helped you!
+        
+        
+        ## [Developer]()
+        * [Linwanghao, Fang]()
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
