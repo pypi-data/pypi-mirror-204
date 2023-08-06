@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "aliendev-api"
+version = "0.1.9"
+description = ""
+authors = ["Nasri Adzlani <nasri@jkt1.ebdesk.com>"]
+readme = "README.md"
+packages = [{include = "aliendev_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pymongo = "^4.3.3"
+configparser = "^5.3.0"
+pydantic = "^1.10.7"
+
+[tool.poetry.scripts]
+aliendev_api = 'aliendev_api:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
