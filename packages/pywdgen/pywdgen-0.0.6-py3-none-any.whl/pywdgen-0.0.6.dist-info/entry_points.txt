@@ -1,0 +1,2 @@
+[console_scripts]
+pywdgen = pywdgen:run
