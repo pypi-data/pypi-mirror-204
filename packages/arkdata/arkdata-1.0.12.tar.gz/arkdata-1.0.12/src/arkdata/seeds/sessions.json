@@ -1,0 +1,23 @@
+[
+  {
+    "xuid": "TEST_XUID",
+    "session_token": "TEST_SESSION_TOKEN",
+    "security_token": "TEST_SECURITY_TOKEN",
+    "api_token": "TEST_API_TOKEN",
+    "authenticated": true
+  },
+  {
+    "xuid": "02670680",
+    "session_token": "7774215212",
+    "security_token": "8884215212",
+    "api_token": "8884215212",
+    "authenticated": true
+  },
+  {
+    "xuid": "32469606",
+    "session_token": "9995212",
+    "security_token": "4215212",
+    "api_token": "144215212",
+    "authenticated": false
+  }
+]

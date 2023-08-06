@@ -1,0 +1,17 @@
+[
+  {
+    "xuid": "TEST_XUID",
+    "gamertag": "TEST_GAMERTAG",
+    "password_digest": "TEST_PASSWORD"
+  },
+  {
+    "xuid": "02670680",
+    "gamertag": "Reba",
+    "password_digest": "amqAZmrd"
+  },
+  {
+    "xuid": "32469606",
+    "gamertag": "Benji",
+    "password_digest": "LyDei5bwO"
+  }
+]
