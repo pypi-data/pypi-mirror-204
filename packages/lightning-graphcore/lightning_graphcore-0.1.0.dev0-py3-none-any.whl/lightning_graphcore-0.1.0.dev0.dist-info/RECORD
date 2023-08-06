@@ -1,0 +1,10 @@
+lightning_graphcore/__about__.py,sha256=mDPhEatLNorPcgDHqpUZ8Yi9b-i5U0F1K5uk3-laik4,463
+lightning_graphcore/__init__.py,sha256=vsMwg0XaqyAGU-QpXZkiyLqZR0YTUymvg1MbsIU9enY,435
+lightning_graphcore/accelerator.py,sha256=rrVKS-jhA82z0cDyuvz0KwtK2MR9MRrmVWus-nzgFuI,2647
+lightning_graphcore/precision.py,sha256=MP2bAqSOuVUxWF4fb3wtIwVS1htSR01Luq4dLL4c44g,4614
+lightning_graphcore/strategy.py,sha256=S6TM5B6_eHQ_WiehlvS_Y6_KPQvGd7Lsk7sBoIugvwQ,18235
+lightning_graphcore-0.1.0.dev0.dist-info/LICENSE,sha256=egEaW31il0xXi3pa43tywG1TRF_haci5JUUAujkexLc,11352
+lightning_graphcore-0.1.0.dev0.dist-info/METADATA,sha256=lpuwtM7RK2yEGZE-pOM_HrP-4bUi0yTd6GXyeaRIi_U,5822
+lightning_graphcore-0.1.0.dev0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lightning_graphcore-0.1.0.dev0.dist-info/top_level.txt,sha256=zJLNEZH8j_FAEMWni6Urd8wV5jKAvIwzqUn65GLlfyc,20
+lightning_graphcore-0.1.0.dev0.dist-info/RECORD,,
