@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: SocketSwap
+Version: 0.1.2
+Summary: SocketSwap is a python package that allows to proxy any third-party libraries traffic through a local TCP Proxy
+Home-page: https://github.com/fyx99/SocketSwap
+Author: fxy99
+Author-email: 
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SocketSwap
+
+SocketSwap is a tool that allows to proxy any third-party libraries traffic through a TCP SOCKS5 Proxy.
+
+Some Python libaries support proxing out of the box like requests.
+For all other libaries especially ones not natively written in python, you can use SocketSwap to redirect traffic via a proxy.
+
+### Usage:
+
+There are two ways to use SwapSock. 
+
+    - Via a Context Manager that starts the proxy in a daemon process
+    - Directly as a blocking script
+
+#### Context Manager
+
+```python 
+import socket
+from socketswap import ProxySwapContext
+
+
+def conn_factory():
+    target_host = "localhost"
+    target_port = 5432
+    remote_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    remote_socket.connect((target_host, target_port))
+    return remote_socket
+
+def main():
+    
+    with ProxySwapContext(conn_factory, "127.0.0.1", 2222):
+        # do something you want to proxy
+
+```
+The ProxySwapContext takes essentially 3 mandatory arguments.  
+
+## Credits:
+
+The TCP Proxy part is a slim modified version of https://github.com/ickerwx/tcpproxy.
