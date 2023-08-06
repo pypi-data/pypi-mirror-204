@@ -1,0 +1,2 @@
+[console_scripts]
+mrdoxmrgt = mrdoxmrgt.commands:main
