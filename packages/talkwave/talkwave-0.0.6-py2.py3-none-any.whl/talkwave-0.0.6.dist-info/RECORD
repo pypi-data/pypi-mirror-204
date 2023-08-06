@@ -1,0 +1,14 @@
+talkwave/__init__.py,sha256=8bdJNJS-U3wqWKA9qcytrNvQkYAs_stXCB9g32FdUg8,2929
+talkwave/__main__.py,sha256=VxubD4ta8Cx0fz7NaSohhttAXnab9iq7xbLiaa2aNkk,1880
+talkwave/__version__.py,sha256=-NRe2r5fIlNUaSDc400SuPImtMTEnenqBQUYFcbz6v4,1059
+talkwave/core.py,sha256=TTqGYM95nAlp83TfhnpStwAXaGzuSSVrcLYJQK5Jr4I,9207
+talkwave/curl.py,sha256=0nTIPivenVKKMA8b_9uBWTseNF4UamDiysi2QZ3rD-w,3391
+talkwave/dir.py,sha256=Ool81Qwsv7wV4cz-jGf9LunZquqwto9AsyE_HQ8zQfs,309
+talkwave/frontend.py,sha256=Ck0JI2nYcy8sUOZtmUCguoEgI4RhDksXK7LBQqzLmg8,2588
+talkwave/parse.py,sha256=G6kVjj8w3tt7nihb9A-KsQvSZjErbknug2m2-f9aWFo,2370
+talkwave-0.0.6.dist-info/LICENSE-APACHE,sha256=Kc_sxrlbtLp1fOB5zpkRXlyeP8QqXq4AXdS_8mE_oXQ,10870
+talkwave-0.0.6.dist-info/LICENSE-MIT,sha256=JYjqbSch7QXtvoXH19HaZe4lWWAfAVY6ozcQlZRYhsQ,1080
+talkwave-0.0.6.dist-info/METADATA,sha256=f4byZRK6VLCa5mfl4nHj_okhIneoWRfuAp_bZczrA48,4881
+talkwave-0.0.6.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+talkwave-0.0.6.dist-info/top_level.txt,sha256=WFrFbnSUGSm9PENKsLqXmif8EMOJ5JWGBHkgOOSz2lg,9
+talkwave-0.0.6.dist-info/RECORD,,
