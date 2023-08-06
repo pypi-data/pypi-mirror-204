@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+yzhanurlparser/__init__.py
+yzhanurlparser.egg-info/PKG-INFO
+yzhanurlparser.egg-info/SOURCES.txt
+yzhanurlparser.egg-info/dependency_links.txt
+yzhanurlparser.egg-info/requires.txt
+yzhanurlparser.egg-info/top_level.txt
+yzhanurlparser/data/IP2LOCATION-LITE-DB1.BIN
+yzhanurlparser/lib/__init__.py
+yzhanurlparser/lib/ip.py
+yzhanurlparser/lib/url.py
