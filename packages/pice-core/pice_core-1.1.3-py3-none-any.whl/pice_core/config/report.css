@@ -1,0 +1,61 @@
+"""
+This file is used to customize the html report style.
+
+@Author: Yanjiao.Li
+@Date: 2022.12.15
+"""
+
+
+
+body {
+    font-size: 16px;
+}
+h1 {
+     text-align: center;
+     color: #2084D9;
+     font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+    color: #2084D9;
+}
+p{
+    font-size: 16px;
+    color: #000000;
+}
+a {
+    color: #466AFF;
+}
+span {
+    font-size: 20px;
+}
+#environment td {
+    padding: 10px;
+    font-size: 16px;
+}
+#results-table {
+   font-size: 16px;
+   word-break:break-all;
+   word-wrap:break-word;
+   width: 1800px;
+}
+#results-table th{
+    font-weight:normal;
+    color: #000000;
+}
+#results-table-head th{
+    font-size: 20px;
+    background-color: #2084D9;
+    color: #FFFFFF;
+    text-align: center;
+}
+td {
+    color: #000000;
+    width: fit-content;
+}
+#environment tbody tr td:nth-child(1){
+    background-color: #2084D9;
+    color: #FFFFFF;
+    font-weight:bold;
+    font-size: 16px
+}

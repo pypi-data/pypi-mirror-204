@@ -1,0 +1,319 @@
+Metadata-Version: 2.1
+Name: pice-core
+Version: 1.1.3
+Summary: this is a program for pice_core
+Author: siwei.lu
+Author-email: siwei.lu@keboda.com
+Description-Content-Type: text/markdown
+Requires-Dist: cantools (==38.0.2)
+Requires-Dist: nidaqmx (==0.7.0)
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: odxtools (==3.0.2)
+Requires-Dist: openpyxl (==3.1.2)
+Requires-Dist: pyserial (==3.5)
+Requires-Dist: python-can (==3.3.4)
+Requires-Dist: pyvisa (==1.13.0)
+Requires-Dist: pywin32 (==306)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: requests (==2.28.2)
+
+# 快速开始
+
+## 使用简介
+
+### 1. 测试环境相关
+
+#### 1.1 环境配置
+
+- 操作系统: Windows
+- Python版本: Python3.8+ (建议使用 3.10，不要安装多个python版本)
+- CANoe版本: 11.0
+
+#### 1.2 硬件设备
+可选
+- 可编程电源
+- 电流电压采集盒
+- Vector硬件
+- 24路-电流-电压输出模块 + 电压跟随器
+- 故障注入模块
+
+### 2. 安装
+
+```sh
+pip install pice-core
+```
+
+### 3. 连接测试工具
+
+#### 3.1 连接canoe工程
+**请确认是否打开需要用到的canoe工程**
+
+```python
+from pice_core.can_related import canoe_connect
+
+canoe_app = canoe_connect.CanoeSync() # 实例化
+
+# 环境变量
+canoe_app.set_EnvVar("SideMarker_Actv_Rq_1", 0x01)   #设置环境变量值
+SideMarker = canoe_app.get_EnvVar("SideMarker_Actv_Rq_1")   #读取环境变量值
+print(SideMarker)
+
+# 诊断命令
+canoe_app.cdd_name = "cdd_name"  # 配置CDD名字：一定要配置，不然发不了诊断报文
+did_result1 = canoe_app.send_diag_req("FD08_DID")  # 读写DID：DID无参数
+print(did_result1)
+
+did_result2 = canoe_app.send_diag_req("Method_2_Data_Type_1_Write",["PWM1_Function_Assign_cfg", "PWM2_Function_Assign_cfg"], [1,1])  # 读写DID：DID有参数
+print(did_result2)
+
+```
+
+#### 3.2 连接电源
+**请确认是否连接电源，以及相关的串口信息**
+
+可选电源包括：
+- Itech
+- GMC(黑电源)
+- NGI
+- Korad
+- Chroma
+
+##### 3.2.1 方法1：依赖config.yaml
+
+```python
+from pice_core.parse_config_file import parse_config
+from pice_core.instrument_control import set_battery_itech_by_visa, set_battery_ngi_by_serial,\
+    set_battery_korad_by_serial, set_battery_chroma_by_visa, set_battery_gmc_by_serial
+# 选择用到的电源
+
+# 如果config.yaml文件的路径为./Project/xxx(项目名)/test_fixture/test_configuration/config.yaml
+battery = set_battery_itech_by_visa()  # 实例化
+battery.set_default_status()  # 设置为默认状态，默认状态在config.yaml文件里定义
+
+
+# 如果config.yaml文件的路径不在固定路径下
+path_yaml = ""  # config.yaml路径
+config = parse_config.ConfigHandler(path_yaml)
+
+battery = set_battery_itech_by_visa(config)  # 实例化
+battery.set_default_status()  # 设置为默认状态，默认状态在config.yaml文件里定义
+
+# 也可以不用默认状态
+battery.set_input_voltage(13)  # 设置输入电压
+battery.set_input_current(20)  # 设置输入电流
+battery.set_output("on")  # 设置输出模式 on/off
+
+```
+
+##### 3.2.2 方法2：不依赖config.yaml
+
+```python
+from pice_core.instrument_control import battery_itech_control, battery_gmc_control, battery_korad_control, \
+    battery_chroma_control, battery_ngi
+
+# 选择用到的电源
+
+# 如果电源是使用串口控制，请修改以下参数
+baud = 115200  # 电源波特率
+com = "com3"  # 电源com口
+
+# 如果电源是使用visa控制，请修改以下参数 (在NI MAX中查看)
+visa_resource = "USB0::0xFFFF::0x6500::800264020737720001::INSTR"
+
+battert_chroma = battery_chroma_control.BatChromaControlByVisa(resource=visa_resource)  # 实例化
+battert_chroma.set_input_voltage(13)  # 设置输入电压
+battert_chroma.set_input_current(20)  # 设置输入电流
+battert_chroma.set_output("on")  # 设置输出模式 on/off
+
+battery_gmc = battery_gmc_control.BatGMCControlBySerial(baud=baud, com=com)  # 实例化
+battery_gmc.set_input_voltage(13)  # 设置输入电压
+battery_gmc.set_input_current(20)  # 设置输入电流
+battery_gmc.set_output("on")  # 设置输出模式 on/off
+
+```
+
+#### 3.3 连接电流电压采集盒
+**请确认是否连接电流电压采集盒，以及相关的串口信息**
+
+##### 3.3.1 方法1：依赖config.yaml
+```python
+from pice_core.parse_config_file import parse_config
+from pice_core.instrument_control import set_curr_vol_module
+
+# 如果config.yaml文件的路径为./Project/xxx(项目名)/test_fixture/test_configuration/config.yaml
+read_curr_vol = set_curr_vol_module() # 实例化
+read_curr_vol.read_voltage(1) # 读地址1 电压
+read_curr_vol.read_current(13)  # 读地址13 电流
+
+# 如果config.yaml文件的路径不在固定路径下
+path_yaml = "" # config.yaml路径
+config = parse_config.ConfigHandler(path_yaml)
+
+read_curr_vol = set_curr_vol_module(config) # 实例化
+read_curr_vol.read_voltage(1) # 读地址1 电压
+read_curr_vol.read_current(13)  # 读地址13 电流
+```
+##### 3.3.2 方法2：不依赖config.yaml
+```python
+from pice_core.instrument_control import read_curr_vol_module_control
+
+baud = 9600 # 波特率
+com = "com3"  # com口
+
+read_curr_vol = read_curr_vol_module_control.ReadCurrVolModuleControl(baud=baud, com=com) # 实例化
+read_curr_vol.read_voltage(1) # 读地址1 电压
+read_curr_vol.read_current(13)  # 读地址13 电流
+
+```
+
+#### 3.4 连接24路-电流-电压输出模块
+**请确认是否连接24路-电流-电压输出模块，以及相关的串口信息**
+
+##### 3.4.1 方法1：依赖config.yaml
+```python
+from pice_core.parse_config_file import parse_config
+from pice_core.instrument_control import set_bin_module
+
+# 如果config.yaml文件的路径为./Project/xxx(项目名)/test_fixture/test_configuration/config.yaml
+bin_set = set_bin_module() # 实例化
+bin_set.set_vol_base_on_resistor(addr=1, resistor=5)  # 地址1 设置电阻为5KΩ
+bin_set.set_vol_base_on_TI_matrix_ad(addr=1, ad=123)  # 地址1 设置AD为123
+
+# 如果config.yaml文件的路径不在固定路径下
+path_yaml = "" # config.yaml路径
+config = parse_config.ConfigHandler(path_yaml)
+
+bin_set = set_bin_module(config) # 实例化
+bin_set.set_vol_base_on_resistor(addr=1, resistor=5)  # 地址1 设置电阻为5KΩ
+bin_set.set_vol_base_on_TI_matrix_ad(addr=1, ad=123)  # 地址1 设置AD为123
+
+```
+##### 3.4.2 方法2：不依赖config.yaml
+```python
+from pice_core.instrument_control import bin_set_module_control
+
+baud = 9600 # 波特率
+com = "com3"  # com口
+
+bin_set = bin_set_module_control.BinSetModuleControl(baud=baud, com=com) # 实例化
+bin_set.set_vol_base_on_resistor(addr=1, resistor=5)  # 地址1 设置电阻为5KΩ
+bin_set.set_vol_base_on_TI_matrix_ad(addr=1, ad=123)  # 地址1 设置AD为123
+
+```
+
+### 4.生成相关文件
+**请确认 Project/xxx（项目名）/test_fixture/test_configuration/config.yaml 已配置相关路径**
+
+**请确认 Project/xxx（项目名）各个文件夹已创建**
+
+#### 4.1 生成环境变量/信号/报文枚举类文件
+1. 打开命令行窗口（win+R,输入cmd,回车）
+2. cd ./Project/xxx（项目名）
+3. 输入gen_dbc, 回车
+4. msg_sig_env_def.py将生成在./Project/xxx（项目名）/test_files路径下
+
+EXAMPLE:
+
+<img alt="img.png" src="img.png"/>
+
+#### 4.2 生成CDD枚举类文件
+1. 打开命令行窗口（win+R,输入cmd,回车）
+2. cd ./Project/xxx（项目名）
+3. 输入gen_cdd, 回车
+4. cdd_qualifier_def.py将生成在./Project/xxx（项目名）/test_files路径下
+
+#### 4.3 生成NI_map枚举类文件
+1. 打开命令行窗口（win+R,输入cmd,回车）
+2. cd ./Project/xxx（项目名）
+3. 输入gen_ni_map, 回车
+4. ni_mapping_def.py将生成在./Project/xxx（项目名）/test_files路径下
+
+#### 4.4 生成PDX枚举类文件
+1. 打开命令行窗口（win+R,输入cmd,回车）
+2. cd ./Project/xxx（项目名）
+3. 输入gen_pdx, 回车
+4. pdx_qualifier_def.py将生成在./Project/xxx（项目名）/test_files路径下
+
+#### 4.5 生成系统变量枚举类文件
+1. 打开命令行窗口（win+R,输入cmd,回车）
+2. cd ./Project/xxx（项目名）
+3. 输入gen_sys, 回车
+4. sys_namespace_variable_def.py将生成在./Project/xxx（项目名）/test_files路径下
+
+#### 4.6 生成testcase.py文件
+**需要开通CB REST API相关权限**
+1. 打开命令行窗口（win+R,输入cmd,回车）
+2. cd ./Project/xxx（项目名）
+3. 输入gen_testcase, 回车
+4. 输入账号和密码
+5. xxx(功能)_testcase.py将生成在./Project/xxx（项目名）/test_profile/test_case路径下
+
+
+### 5. 调用logger
+
+```python
+from pice_core import logger
+
+logger.debug("This is a debug log")  # 详细的信息
+logger.info("This is a info log")  # 确认是否按照预期执行
+logger.warning("This is a warning log")  # 发生了非预期的事情，但是软件可以继续运行
+logger.error("This is an error log")  # 出现了一个导致软件无法执行某些功能的错误
+logger.critical("This is a critical log") # 一个严重的错误导致程序本身可能无法继续运行
+```
+
+### 6. 通过vector硬件控制CAN通信
+
+##### 6.1 方法1：依赖config.yaml
+```python
+from pice_core.parse_config_file import parse_config
+from pice_core.can_related import connect_can_control_by_vector_hardware
+
+# 如果config.yaml文件的路径为./Project/xxx(项目名)/test_fixture/test_configuration/config.yaml
+can_msg = connect_can_control_by_vector_hardware(can_fd=False)  # “can_fd”默认为True, 如果使用CAN： can_fd=False， 如果使用CAN-FD： 不需要修改该参数，connect_can_control_by_vector_hardware() 
+
+# 如果config.yaml文件的路径不在固定路径下
+path_yaml = "" # config.yaml路径
+config = parse_config.ConfigHandler(path_yaml)
+can_msg = connect_can_control_by_vector_hardware(config) # 实例化
+
+# 发送报文
+msg_send_id = 0x6f6 
+msg_recv_id = 0x6fe
+can_msg.send_msg(msg_send_id, [0x02, 0x10, 0x03])  # 用ID 0x6f6发送报文[0x02, 0x10, 0x03]
+
+# 获取DID的response
+can_msg.diag_send_msg_id = 0x74E  # 设置诊断报文ID
+can_msg.diag_rec_msg_id = 0x7CE  # 设置诊断报文ID
+did_list = [0x22, 0xFD, 0X11] # 读DID FD11
+did_resp = can_msg.get_did_resp(did_list)
+print(did_resp)
+```
+##### 6.2 方法2：不依赖config.yaml
+```python
+from pice_core.can_related import Msg
+
+serial = 11035  # vector hardware serial number
+channel = 1  # channel 
+
+can_msg = Msg(serial=serial, channel=channel)  # 如果使用CAN： can_fd=False
+```
+
+### 7. 中文报告
+
+如果测试脚本中包含中文，请修改html_report.py(该文件在pytest_html包下)：
+
+原语句：
+```python
+head = html.head(html.meta(charset="UTF-8"), html.title(self.title), html_css)
+```
+
+修改为：
+```python
+head = html.head(html.meta(charset="GB2312"), html.title(self.title), html_css)
+```
+
+
+# Author Email:
+- siwei.lu@keboda.com
+- yanjiao.li@keboda.com
+

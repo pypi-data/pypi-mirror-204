@@ -1,0 +1,7 @@
+[console_scripts]
+gen_cdd = pice_core.utils:gen_cdd_name_def
+gen_dbc = pice_core.utils:gen_dbc_name_def
+gen_ni_map = pice_core.utils:gen_ni_map_def
+gen_pdx = pice_core.utils:gen_pdx_name_def
+gen_sys = pice_core.utils:gen_sys_name_def
+gen_testcase = pice_core.utils:gen_testcase_from_cb
