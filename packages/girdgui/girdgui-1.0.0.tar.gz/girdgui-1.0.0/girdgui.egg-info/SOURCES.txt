@@ -1,0 +1,5 @@
+setup.py
+girdgui.egg-info/PKG-INFO
+girdgui.egg-info/SOURCES.txt
+girdgui.egg-info/dependency_links.txt
+girdgui.egg-info/top_level.txt
