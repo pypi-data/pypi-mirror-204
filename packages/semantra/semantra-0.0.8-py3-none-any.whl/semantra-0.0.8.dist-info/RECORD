@@ -1,0 +1,11 @@
+semantra/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+semantra/models.py,sha256=VjfPJbBbYGtU-w_hsNGEZgQEW6HsWpVoWEUf8UXBQdE,11172
+semantra/pdf.py,sha256=QHphgS2YrC8-kYeOAsiNz0iNmH54j4w5xEK0UrTrtrM,3118
+semantra/semantra.py,sha256=akFCSXLG65QY7VOKFNDK2Y34mtkxdvt4hLS-iDfnjqA,28787
+semantra/util.py,sha256=JwFQt-T-U9Wwy8HS53ljDoHIv0UCpiNP8qjbWYIpqPo,4524
+semantra-0.0.8.dist-info/LICENSE,sha256=e5pu3H-pJKJYa1mvv995k94pUNXqP8wsmXNS6KFqLh8,1071
+semantra-0.0.8.dist-info/METADATA,sha256=j1lk9lKz70rBjmesP4JLazhh1fJYg49MWJV0Ku1Bp_Y,3824
+semantra-0.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+semantra-0.0.8.dist-info/entry_points.txt,sha256=J5hNqML0-PEO6EhEfXwPhQNTkNYQBS7tYlLEZTVWk5A,52
+semantra-0.0.8.dist-info/top_level.txt,sha256=rn7zh4nwcIRwTrEOB16mgD4DSX2PzZOmcZbMSS5x7D4,9
+semantra-0.0.8.dist-info/RECORD,,
