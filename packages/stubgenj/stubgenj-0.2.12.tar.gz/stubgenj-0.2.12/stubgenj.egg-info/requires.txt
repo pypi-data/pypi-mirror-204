@@ -1,0 +1,35 @@
+JPype1<2.0.dev0,>=1.2.1
+
+[:python_version < "3.7"]
+dataclasses
+
+[all]
+JPype1<2.0.dev0,>=1.2.1
+pytest
+mypy<0.971,>=0.931
+
+[all:python_version < "3.7"]
+dataclasses
+
+[all:python_version < "3.8"]
+typing_extensions
+
+[core]
+JPype1<2.0.dev0,>=1.2.1
+
+[core:python_version < "3.7"]
+dataclasses
+
+[dev]
+pytest
+mypy<0.971,>=0.931
+
+[dev:python_version < "3.8"]
+typing_extensions
+
+[test]
+pytest
+mypy<0.971,>=0.931
+
+[test:python_version < "3.8"]
+typing_extensions
