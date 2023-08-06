@@ -1,0 +1,8 @@
+[jupyter_ai.model_providers]
+ai21 = jupyter_ai_magics:AI21Provider
+anthropic = jupyter_ai_magics:AnthropicProvider
+cohere = jupyter_ai_magics:CohereProvider
+huggingface_hub = jupyter_ai_magics:HfHubProvider
+openai = jupyter_ai_magics:OpenAIProvider
+openai-chat = jupyter_ai_magics:ChatOpenAIProvider
+sagemaker-endpoint = jupyter_ai_magics:SmEndpointProvider
