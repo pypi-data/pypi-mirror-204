@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+dillo/__init__.py
+dillo/auth.py
+dillo/lib.py
+dillo/magic.py
+dillo/routes.py
+dillo/service.py
+dillo/validation.py
+dillo/version.py
+pydillo.egg-info/PKG-INFO
+pydillo.egg-info/SOURCES.txt
+pydillo.egg-info/dependency_links.txt
+pydillo.egg-info/top_level.txt
