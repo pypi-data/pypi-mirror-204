@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pcl-pangu
+Version: 1.2.6.2
+Summary: pcl_pangu
+Home-page: https://openi.pcl.ac.cn/PCL-Platform.Intelligence/pcl_pangu
+Author: 2022 PCL
+Author-email: pcl.openi@pcl.ac.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.2,<4.0.0
+License-File: LICENSE
+
+# pcl_pangu 
+
