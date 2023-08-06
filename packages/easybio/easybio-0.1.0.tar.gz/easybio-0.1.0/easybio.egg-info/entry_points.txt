@@ -1,0 +1,4 @@
+[console_scripts]
+easyBio = easyBio.easyBio:main
+easydownloadSRA = easyBio.downloadSRA:main
+easysplitSRA = easyBio.splitSRA:main
