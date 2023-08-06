@@ -1,0 +1,1 @@
+This is a very simple bodymassindex calculator with two parameters 'height' and 'weight'. This function returns the calculation of weight in 'kg' divided by the square of the height in 'meters', which is the formula of the Body Mass Index(BMI). The round() function is used in order to round the result to 2 decimal points. 

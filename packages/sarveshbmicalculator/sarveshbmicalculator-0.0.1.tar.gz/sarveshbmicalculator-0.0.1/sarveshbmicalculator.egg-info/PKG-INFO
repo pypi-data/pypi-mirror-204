@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: sarveshbmicalculator
+Version: 0.0.1
+Summary: A very basic BMI calculator
+Home-page: 
+Author: Sarvesh Shekhar
+Author-email: x22129880@student.ncirl.ie
+License: MIT
+Keywords: bmi calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENCE.txt
+
+This is a very simple bodymassindex calculator with two parameters 'height' and 'weight'. This function returns the calculation of weight in 'kg' divided by the square of the height in 'meters', which is the formula of the Body Mass Index(BMI). The round() function is used in order to round the result to 2 decimal points. 
+
+Change Log
+===========
+
+0.0.1 (22/04/2023)
+------------------
+- First Release
