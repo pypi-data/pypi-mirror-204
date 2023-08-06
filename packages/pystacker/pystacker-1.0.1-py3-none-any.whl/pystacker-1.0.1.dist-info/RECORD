@@ -1,0 +1,12 @@
+stacker/__init__.py,sha256=R4OWAxkIzgSuh2z5_zkd3lgh__93DCcC4bIQsD5dfz4,202
+stacker/stacker.py,sha256=MOYHN9u1yPczVH-hJQGD1TXjggmYjsmbeC-8kFzdULk,19049
+stacker/test.py,sha256=GFBcn-Ca-Ejy-nYxrbFqdtkNq5YMXLAHuZT8OhJvdyU,3675
+stacker/data/about.txt,sha256=22Wj0HxlPuleetNl9QfgOGTc4We_T9tSd28XwHXdlSc,652
+stacker/data/help.txt,sha256=snC2es0t3KUky5H19E-1WeXko1zag3roxTOJOtUpFfo,968
+stacker/data/top.txt,sha256=ux4NiYvMrya84zBtBZPLnTwzPRNkBgoq1fcC1GdBCKI,232
+pystacker-1.0.1.dist-info/LICENSE,sha256=Xuk9ZyBnvn3IEc2C5bCqWH8ra4Q8w4HFCGHXujD4stw,1065
+pystacker-1.0.1.dist-info/METADATA,sha256=Spxlpgq6UAfGGA-9U6bY2eXCSUc3nFqKv7Duheva_cc,76
+pystacker-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pystacker-1.0.1.dist-info/entry_points.txt,sha256=y2HM24FECZDudxWyClCmklBdVN-tyUJopPeMSOoCOrU,49
+pystacker-1.0.1.dist-info/top_level.txt,sha256=EBgeVWSB-blef07B-QTifU8QR-CBfI3Dc1U9_zm8myY,8
+pystacker-1.0.1.dist-info/RECORD,,
