@@ -1,0 +1,206 @@
+Metadata-Version: 2.1
+Name: analphipy
+Version: 0.1.0
+Summary: Utilities to perform stat mech analysis of pair potentials
+Home-page: https://github.com/usnistgov/analphipy
+Author-email: "William P. Krekelberg" <wpk@nist.gov>
+License: NIST license
+Project-URL: homepage, https://github.com/usnistgov/analphipy
+Project-URL: documentation, https://pages.nist.gov/analphipy/
+Keywords: analphipy
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: attrs
+Requires-Dist: typing-extensions
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: custom-inherit
+Provides-Extra: test
+Requires-Dist: pandas ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+<!-- markdownlint-disable MD041 -->
+
+[![Repo][repo-badge]][repo-link] [![Docs][docs-badge]][docs-link]
+[![PyPI license][license-badge]][license-link]
+[![PyPI version][pypi-badge]][pypi-link]
+[![Conda (channel only)][conda-badge]][conda-link]
+[![Code style: black][black-badge]][black-link]
+
+<!-- For more badges, see
+  https://shields.io/category/other
+  https://naereen.github.io/badges/
+  [pypi-badge]: https://badge.fury.io/py/analphipy
+-->
+
+[black-badge]: https://img.shields.io/badge/code%20style-black-000000.svg
+[black-link]: https://github.com/psf/black
+[pypi-badge]: https://img.shields.io/pypi/v/analphipy
+[pypi-link]: https://pypi.org/project/analphipy
+[docs-badge]: https://img.shields.io/badge/docs-sphinx-informational
+[docs-link]: https://pages.nist.gov/analphipy/
+[repo-badge]: https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff
+[repo-link]: https://github.com/usnistgov/analphipy
+[conda-badge]: https://img.shields.io/conda/v/wpk-nist/analphipy
+[conda-link]: https://anaconda.org/wpk-nist/analphipy
+[license-badge]: https://img.shields.io/pypi/l/cmomy?color=informational
+[license-link]: https://github.com/usnistgov/analphipy/blob/main/LICENSE
+
+<!-- other links -->
+
+[jensen-shannon]:
+  https://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence
+[noro-frenkel]:
+  https://en.wikipedia.org/wiki/Noro%E2%80%93Frenkel_law_of_corresponding_states
+
+# `analphipy`
+
+Utilities to perform metric analysis on fluid pair potentials. The main features
+of `analphipy` as follows:
+
+## Overview
+
+`analphipy` is a python package to calculate metrics for classical models for
+pair potentials. It provides a simple and extendable api for pair potentials
+creation. Several routines to calculate metrics are included in the package.
+
+## Features
+
+- Pre-defined spherically symmetric potentials
+- Simple interface to extended to user defined pair potentials
+- Routines to calculate [Noro-Frenkel] effective parameters.
+- Routines to calculate [Jensen-Shannon] divergence
+
+## Status
+
+This package is actively used by the author. Please feel free to create a pull
+request for wanted features and suggestions!
+
+## Quick start
+
+Use one of the following to install `analphipy`
+
+```bash
+pip install analphipy
+```
+
+or
+
+```bash
+conda install -c wpk-nist analphipy
+```
+
+## Example usage
+
+```python
+import analphipy
+
+```
+
+<!-- end-docs -->
+
+## Documentation
+
+See the [documentation][docs-link] for a look at `analphipy` in action.
+
+## License
+
+This is free software. See [LICENSE][license-link].
+
+## Contact
+
+The author can be reached at wpk@nist.gov.
+
+## Credits
+
+This package was created with [Cookiecutter] and the
+[wpk-nist-gov/cookiecutter-pypackage] Project template forked from
+[audreyr/cookiecutter-pypackage].
+
+[audreyr/cookiecutter-pypackage]:
+  https://github.com/audreyr/cookiecutter-pypackage
+[cookiecutter]: https://github.com/audreyr/cookiecutter
+[wpk-nist-gov/cookiecutter-pypackage]:
+  https://github.com/wpk-nist-gov/cookiecutter-pypackage
+
+# Changelog
+
+Changelog for `analphipy`
+
+## Unreleased
+
+See the fragment files in [changelog.d](https://github.com/usnistgov/analphipy)
+
+<!-- scriv-insert-here -->
+
+## v0.1.0 — 2023-04-24
+
+### Changed
+
+- Update package layout
+- New linters via pre-commit
+- Development env now handled by tox
+
+## v0.0.6 - 2023-03-22
+
+Full set of changes:
+[`v0.0.5...v0.0.6`](https://github.com/usnistgov/analphipy/compare/v0.0.5...v0.0.6)
+
+## v0.0.5 - 2023-03-22
+
+Full set of changes:
+[`v0.0.4...v0.0.5`](https://github.com/usnistgov/analphipy/compare/v0.0.4...v0.0.5)
+
+## v0.0.4 - 2022-09-27
+
+Full set of changes:
+[`v0.0.3...v0.0.4`](https://github.com/usnistgov/analphipy/compare/v0.0.3...v0.0.4)
+
+## v0.0.3 - 2022-09-26
+
+Full set of changes:
+[`v0.0.2...v0.0.3`](https://github.com/usnistgov/analphipy/compare/v0.0.2...v0.0.3)
+
+## v0.0.2 - 2022-09-26
+
+Full set of changes:
+[`v0.0.1...v0.0.2`](https://github.com/usnistgov/analphipy/compare/v0.0.1...v0.0.2)
+
+## v0.0.1 - 2022-09-26
+
+This software was developed by employees of the National Institute of Standards
+and Technology (NIST), an agency of the Federal Government. Pursuant to title 17
+United States Code Section 105, works of NIST employees are not subject to
+copyright protection in the United States and are considered to be in the public
+domain. Permission to freely use, copy, modify, and distribute this software and
+its documentation without fee is hereby granted, provided that this notice and
+disclaimer of warranty appears in all copies.
+
+THE SOFTWARE IS PROVIDED 'AS IS' WITHOUT ANY WARRANTY OF ANY KIND, EITHER
+EXPRESSED, IMPLIED, OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTY
+THAT THE SOFTWARE WILL CONFORM TO SPECIFICATIONS, ANY IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND FREEDOM FROM
+INFRINGEMENT, AND ANY WARRANTY THAT THE DOCUMENTATION WILL CONFORM TO THE
+SOFTWARE, OR ANY WARRANTY THAT THE SOFTWARE WILL BE ERROR FREE. IN NO EVENT
+SHALL NIST BE LIABLE FOR ANY DAMAGES, INCLUDING, BUT NOT LIMITED TO, DIRECT,
+INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES, ARISING OUT OF, RESULTING FROM, OR
+IN ANY WAY CONNECTED WITH THIS SOFTWARE, WHETHER OR NOT BASED UPON WARRANTY,
+CONTRACT, TORT, OR OTHERWISE, WHETHER OR NOT INJURY WAS SUSTAINED BY PERSONS OR
+PROPERTY OR OTHERWISE, AND WHETHER OR NOT LOSS WAS SUSTAINED FROM, OR AROSE OUT
+OF THE RESULTS OF, OR USE OF, THE SOFTWARE OR SERVICES PROVIDED HEREUNDER.
+
+Distributions of NIST software should also include copyright and licensing
+statements of any third-party software that are legally bundled with the code in
+compliance with the conditions of those licenses.
