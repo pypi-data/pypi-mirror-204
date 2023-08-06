@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+modnpay_pgsdk.egg-info/PKG-INFO
+modnpay_pgsdk.egg-info/SOURCES.txt
+modnpay_pgsdk.egg-info/dependency_links.txt
+modnpay_pgsdk.egg-info/top_level.txt
+mpsdk/MPSDK.py
+mpsdk/__init__.py
+mpsdk/__version__.py
