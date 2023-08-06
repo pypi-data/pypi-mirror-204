@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: markit-processing
+Version: 0.0.1
+Summary: Code for post processing data
+Author: davidliyutong
+Author-email: davidliyutong@sjtu.edu.cn
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: imutils
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: scipy
+Requires-Dist: streamlit
+Requires-Dist: rich
+Requires-Dist: pupil-apriltags
+Requires-Dist: open3d
+Requires-Dist: requests
+Requires-Dist: python-multipart
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: transforms3d
+Requires-Dist: py-cli-interaction
+
+# markit-processing
+
+Code for post processing data from [mvig-robotflow/rfmarkit-gateway](https://github.com/mvig-robotflow/rfmarkit-gateway) and [mvig-robotflow/rfmarkit-rs-recorder](https://github.com/mvig-robotflow/rfmarkit-rs-recorder)
