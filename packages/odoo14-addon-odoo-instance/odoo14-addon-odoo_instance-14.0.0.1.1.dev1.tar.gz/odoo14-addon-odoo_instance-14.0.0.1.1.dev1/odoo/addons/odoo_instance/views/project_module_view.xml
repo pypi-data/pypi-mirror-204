@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="project_instance_module_tree" model="ir.ui.view">
+        <field name="name">project.instance.module.tree</field>
+        <field name="model">project.instance.module</field>
+        <field name="arch" type="xml">
+            <tree string="Modules">
+                <field name="name" />
+                <field name="technical_name" />
+                <!-- <field name="version"/> -->
+                <field name="is_odoo_module" />
+                <field name="pypi_url" />
+                <field name="odoo_version_id" />
+                <field name="version_ids" widget="many2many_tags" />
+                <field name="module_type" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="project_instance_module_action" model="ir.actions.act_window">
+        <field name="name">Modules</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">project.instance.module</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="project_instance_module_tree" />
+    </record>
+
+    <record id="view_project_instance_module_search" model="ir.ui.view">
+        <field name="name">project.instance.module.search</field>
+        <field name="model">project.instance.module</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="technical_name" />
+            </search>
+        </field>
+    </record>
+
+    <menuitem id="menu_project_instance_module" name="Modules" parent="project_instance_menu" sequence="30"
+        action="project_instance_module_action" />
+</odoo>
