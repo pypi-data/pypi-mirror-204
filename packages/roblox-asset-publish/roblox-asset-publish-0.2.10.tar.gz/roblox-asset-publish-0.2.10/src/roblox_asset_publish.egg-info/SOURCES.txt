@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/roblox_asset_publish.egg-info/PKG-INFO
+src/roblox_asset_publish.egg-info/SOURCES.txt
+src/roblox_asset_publish.egg-info/dependency_links.txt
+src/roblox_asset_publish.egg-info/requires.txt
+src/roblox_asset_publish.egg-info/top_level.txt
+src/ropublisher/__init__.py
