@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+snarlpy/__init__.py
+snarlpy/cycleToolsLinking.py
+snarlpy/cycle_sampling.py
+snarlpy/edgePriority.py
+snarlpy/edge_algebra.py
+snarlpy/sampling.py
+snarlpy/signature.py
+snarlpy/simpleCycles.py
+snarlpy/tangledGenerators.py
+snarlpy.egg-info/PKG-INFO
+snarlpy.egg-info/SOURCES.txt
+snarlpy.egg-info/dependency_links.txt
+snarlpy.egg-info/top_level.txt
