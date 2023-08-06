@@ -1,0 +1,9 @@
+PySide6
+
+[dev]
+black
+pre-commit
+pytest
+pytest-cov
+pytest-pep8
+pytest-qt
