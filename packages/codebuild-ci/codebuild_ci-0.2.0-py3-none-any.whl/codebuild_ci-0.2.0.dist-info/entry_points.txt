@@ -1,0 +1,3 @@
+[console_scripts]
+codebuild=codebuild_ci.__main__:run
+
