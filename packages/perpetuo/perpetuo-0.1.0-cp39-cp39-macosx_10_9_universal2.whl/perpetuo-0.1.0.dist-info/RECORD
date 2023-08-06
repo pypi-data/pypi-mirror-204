@@ -1,0 +1,13 @@
+perpetuo-0.1.0.data/scripts/perpetuo,sha256=5h5u48tz2OauSCI2uDz9128ef418cvA9ibqlVoBJMrw,5699304
+perpetuo-0.1.0.dist-info/LICENSE.APACHE2,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+perpetuo-0.1.0.dist-info/LICENSE.MIT,sha256=-qMB1y3MAjtDK9d9wIp3PKNEnlwnRAudZutG-4UAtDA,1091
+perpetuo-0.1.0.dist-info/RECORD,,
+perpetuo-0.1.0.dist-info/LICENSE,sha256=GKX5louGqFcOv8ea_sRf4AHVOM9TlaOh5dRrAiSwUJM,194
+perpetuo-0.1.0.dist-info/WHEEL,sha256=1a9Ko9a-gG650SIesHUh7EtH5_pEhiq-7Cid2T8u5h0,113
+perpetuo-0.1.0.dist-info/top_level.txt,sha256=uiv_yCp6l6Yfa6Y_-BzrCEC5OM8Ilyc-J-Gi9KyFDjk,9
+perpetuo-0.1.0.dist-info/METADATA,sha256=sxj8Ce1vuh5H-61_gTiEaawaLQw01Rq-JEsHepiMvqs,2896
+perpetuo/__init__.py,sha256=Y1Nf9LqHZ3VzXBy71qaB6hJKPjAQc7zekxKlUlt6XH8,250
+perpetuo/_perpetuo.pyi,sha256=0e-UvunyBtb2cBnu8uTIKltKF4KRAYrd5yHfNVw-tKc,276
+perpetuo/_perpetuo.abi3.so,sha256=Bh_X8AmIg25Wu6kAPT-5Vw1uQkcA9Cyloiqz-5of3yo,1375374
+perpetuo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+perpetuo/_setup.py,sha256=1706PYz58kcsZVjTP9UTslAVq6TCsYGssG0y2vN_1sI,2469
