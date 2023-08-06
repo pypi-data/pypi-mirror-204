@@ -1,0 +1,23 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "apinator-databricks"
+readme = "README.md"
+authors = [{name = "Rearc Data", email = "data@rearc.io"}]
+dynamic = ["version", "description"]
+dependencies = [
+    "apinator~=0.0.2",
+]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+tests = [
+    "pytest",
+    "pytest-cov",
+    "responses",
+]
+
+[project.urls]
+Home = "https://github.com/rearc-data/apinator-databricks"
