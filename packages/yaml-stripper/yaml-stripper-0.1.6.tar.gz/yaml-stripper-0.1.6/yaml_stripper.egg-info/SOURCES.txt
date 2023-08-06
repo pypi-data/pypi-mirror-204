@@ -1,0 +1,12 @@
+README.md
+setup.py
+test/test_yaml_stripper.py
+yaml_stripper/__init__.py
+yaml_stripper/cli.py
+yaml_stripper/yaml_stripper.py
+yaml_stripper.egg-info/PKG-INFO
+yaml_stripper.egg-info/SOURCES.txt
+yaml_stripper.egg-info/dependency_links.txt
+yaml_stripper.egg-info/entry_points.txt
+yaml_stripper.egg-info/requires.txt
+yaml_stripper.egg-info/top_level.txt
