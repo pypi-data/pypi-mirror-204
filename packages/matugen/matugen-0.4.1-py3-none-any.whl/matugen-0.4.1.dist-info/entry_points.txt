@@ -1,0 +1,3 @@
+[console_scripts]
+matugen=matugen.__main__:main
+
