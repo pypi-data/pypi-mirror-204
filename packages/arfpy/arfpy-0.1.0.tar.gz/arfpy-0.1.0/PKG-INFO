@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: arfpy
+Version: 0.1.0
+Summary: Adversarial random forests for density estimation and generative modeling
+Home-page: https://github.com/bips-hb/arfpy
+Author: Kristin Blesch, Marvin N. Wright
+Author-email: blesch@leibniz-bips.de
+License: GPLv3
+Description: Adversarial random forests (ARFs) recursively partition data into fully factorized leaves, where features are jointly independent. The procedure is iterative, with alternating rounds of generation and discrimination. Data become increasingly realistic at each round, until original and synthetic samples can no longer be reliably distinguished. This is useful for several unsupervised learning tasks, such as density estimation and generative modeling. Methods for both are implemented in this package.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
