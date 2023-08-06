@@ -1,0 +1,12 @@
+README.rst
+pyproject.toml
+setup.py
+rio_vrt/__init__.py
+rio_vrt/enums.py
+rio_vrt/vrt.py
+rio_vrt.egg-info/PKG-INFO
+rio_vrt.egg-info/SOURCES.txt
+rio_vrt.egg-info/dependency_links.txt
+rio_vrt.egg-info/requires.txt
+rio_vrt.egg-info/top_level.txt
+tests/test_rio_vrt.py
