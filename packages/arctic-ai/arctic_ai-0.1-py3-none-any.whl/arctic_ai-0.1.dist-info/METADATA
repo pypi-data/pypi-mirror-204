@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: arctic-ai
+Version: 0.1
+Summary: Python package for Arctic Workflow. Mirrors jupyter developments.
+Home-page: https://github.com/jlevy44/ArcticAI_Prototype
+Author: Joshua Levy
+Author-email: joshualevy44@berkeley.edu
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: alphashape (==1.3.1)
+Requires-Dist: bracex (==2.3.post1)
+Requires-Dist: charset-normalizer (==3.0.1)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: click-log (==0.4.0)
+Requires-Dist: cloudpickle (==2.2.1)
+Requires-Dist: contourpy (==1.0.7)
+Requires-Dist: cycler (==0.11.0)
+Requires-Dist: dask (==2023.2.1)
+Requires-Dist: distributed (==2023.2.1)
+Requires-Dist: fire (==0.5.0)
+Requires-Dist: fonttools (==4.38.0)
+Requires-Dist: fsspec (==2023.1.0)
+Requires-Dist: ghp-import (==2.1.0)
+Requires-Dist: HeapDict (==1.0.1)
+Requires-Dist: idna (==3.4)
+Requires-Dist: imageio (==2.25.1)
+Requires-Dist: importlib-metadata (==6.0.0)
+Requires-Dist: importlib-resources (==5.12.0)
+Requires-Dist: Jinja2 (==3.1.2)
+Requires-Dist: joblib (==1.2.0)
+Requires-Dist: kiwisolver (==1.4.4)
+Requires-Dist: kornia (==0.6.10)
+Requires-Dist: lazydocs (==0.4.8)
+Requires-Dist: locket (==1.0.0)
+Requires-Dist: Markdown (==3.3.7)
+Requires-Dist: MarkupSafe (==2.1.2)
+Requires-Dist: matplotlib (==3.7.0)
+Requires-Dist: mergedeep (==1.3.4)
+Requires-Dist: mkdocs (==1.4.2)
+Requires-Dist: mkdocs-autorefs (==0.4.1)
+Requires-Dist: mkdocs-awesome-pages-plugin (==2.8.0)
+Requires-Dist: mkdocstrings (==0.20.0)
+Requires-Dist: msgpack (==1.0.4)
+Requires-Dist: natsort (==8.2.0)
+Requires-Dist: networkx (==3.0)
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: opencv-python (==4.7.0.72)
+Requires-Dist: packaging (==23.0)
+Requires-Dist: pandas (==1.5.3)
+Requires-Dist: partd (==1.3.0)
+Requires-Dist: Pillow (==9.4.0)
+Requires-Dist: psutil (==5.9.4)
+Requires-Dist: pymdown-extensions (==9.9.2)
+Requires-Dist: pyparsing (==3.0.9)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2022.7.1)
+Requires-Dist: PyWavelets (==1.4.1)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: pyyaml-env-tag (==0.1)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: Rtree (==1.0.1)
+Requires-Dist: sauth (==1.1.0)
+Requires-Dist: scikit-image (==0.18.3)
+Requires-Dist: scikit-learn (==1.2.1)
+Requires-Dist: scipy (==1.10.1)
+Requires-Dist: seaborn (==0.12.2)
+Requires-Dist: shapely (==2.0.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: sortedcontainers (==2.4.0)
+Requires-Dist: tblib (==1.7.0)
+Requires-Dist: termcolor (==2.2.0)
+Requires-Dist: threadpoolctl (==3.1.0)
+Requires-Dist: tifffile (==2021.11.2)
+Requires-Dist: pyamg (==5.0.0)
+Requires-Dist: opencv-contrib-python (==4.5.5.62)
+Requires-Dist: toolz (==0.12.0)
+Requires-Dist: torch (==1.13.1)
+Requires-Dist: torchaudio (==0.13.1)
+Requires-Dist: torchvision (==0.14.1)
+Requires-Dist: tornado (==6.2)
+Requires-Dist: tqdm (==4.64.1)
+Requires-Dist: trimesh (==3.20.1)
+Requires-Dist: typer (==0.7.0)
+Requires-Dist: typing-extensions (==4.5.0)
+Requires-Dist: urllib3 (==1.26.14)
+Requires-Dist: watchdog (==2.3.0)
+Requires-Dist: wcmatch (==8.4.1)
+Requires-Dist: zict (==2.2.0)
+Requires-Dist: zipp (==3.15.0)
+Requires-Dist: toil (==5.9.2)
+
+# ArcticAI
+
+Welcome to the ArcticAI wiki! 🎉
+
+ArcticAI is a computational workflow designed to expedite tissue preparation, histological inspection, and tumor mapping to improve solid tumor removal. The package includes a command line interface and a web application demonstrating 3D specimen grossing recommendations, histological examination, and mapping of histological results back to the surgical site for select cases.
+
+## Introduction
+
+Successful treatment of solid cancers relies on complete surgical excision of the tumor either for definitive treatment or before adjuvant therapy. Intraoperative and postoperative radial sectioning, the most common form of margin assessment, can lead to incomplete excision and increase the risk of recurrence and repeat procedures. Mohs Micrographic Surgery (MMS) is associated with complete removal of basal cell and squamous cell carcinoma through real-time margin assessment of 100% of the peripheral and deep margins. Real-time assessment in many tumor types is constrained by tissue size, complexity, and specimen processing / assessment time during general anesthesia.
+
+## Features
+
+This computational workflow places the surgeon, histotechnician, and pathologist in the same virtual space to:
+
+- Reduce the amount of time a histotechnician takes to process tissue and generate pathology reports through 3D modeling techniques and smart grossing recommendations (e.g., reporting of tissue size and where to ink).
+- Improve the efficiency of pathologic analysis through a collection of sophisticated graph neural networks to map tumor and artifacts on whole slide images (WSI) acquired from serial tissue sections.
+- Automatically generate a descriptive and visual pathology report easily interpreted by the surgeon either in real-time or post-operatively.
+
+## Usage
+
+The package includes a command line interface that can be used to run the ArcticAI workflow. Additional documentation for the command line interface can be accessed via the --help flag. API usage can be found at the following URL (readthedocs): https://jlevy44.github.io/ArcticAI/
+
+For more information on how to use the command line interface, please see our wiki: https://github.com/jlevy44/ArcticAI/wiki   
+
+## Web application demo
+
+A web application demonstrating 3D specimen grossing recommendations, histological examination, and mapping of histological results back to the surgical site for select cases can be accessed at the following URL: https://arcticai.demo.levylab.host.dartmouth.edu/.
+
+## Additional information
+
+We are still updating tutorials for running 3D gross tissue recommendations and mapping the tumor back to the surgical site (for now, see the web application). We will also soon provide tutorials on the nuclei and follicle detection workflows.
+
+Patent pending, original submission from 2020: https://patentimages.storage.googleapis.com/45/11/5a/717cb5cc2eb269/US20220375604A1.pdf
+
+Thank you for using ArcticAI! 💻🔬🧬
