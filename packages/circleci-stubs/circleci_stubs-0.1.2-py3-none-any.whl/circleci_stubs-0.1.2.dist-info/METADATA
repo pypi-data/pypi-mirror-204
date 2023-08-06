@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: circleci-stubs
+Version: 0.1.2
+Summary: Type stubs for circleci
+License-File: LICENSE
+Requires-Dist: circleci (>=1.2.2)
+
