@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/bcdb/__init__.py
+src/bcdb/py.typed
+src/bcdb.egg-info/PKG-INFO
+src/bcdb.egg-info/SOURCES.txt
+src/bcdb.egg-info/dependency_links.txt
+src/bcdb.egg-info/not-zip-safe
+src/bcdb.egg-info/requires.txt
+src/bcdb.egg-info/top_level.txt
+tests/test_bcdb.py
