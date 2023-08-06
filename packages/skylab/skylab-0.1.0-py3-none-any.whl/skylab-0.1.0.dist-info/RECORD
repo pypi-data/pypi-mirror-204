@@ -1,0 +1,9 @@
+skylab/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skylab/__main__.py,sha256=JbH_CfIJrprM4P7TYixCm3B4wXDooM6V1rOFsAwmknU,236
+skylab/api.py,sha256=zahCBSwU_qTo_w4vz0naV9sGmaEgkPst7ZrSoadddsg,1135
+skylab/css/styles.css,sha256=M7eDGt-mx9FRtKE8T_LrKgF-SX0aBE2bLqJB0Fx3J34,356
+skylab/skylab.py,sha256=EeV-1UOy7VcQ1cTMQ-MgQxPAnADVRSB8W2fyhXJ6abE,4751
+skylab-0.1.0.dist-info/entry_points.txt,sha256=QQbQzq1b8VQJsauJc1vJIdtqM4A6DlpAIEOlu0ap_7I,47
+skylab-0.1.0.dist-info/METADATA,sha256=zzwDQwjt2vCxoGcB1MECwf3qpSH7KTGlFwu7dvi8Cy0,708
+skylab-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+skylab-0.1.0.dist-info/RECORD,,
