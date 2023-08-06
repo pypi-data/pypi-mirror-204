@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: aiotubes
+Version: 3.2
+Summary: Asynchronous Youtube API
+Home-page: https://github.com/sheldygg/aiotube
+Author: sheldy
+License: MIT
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AIOTUBE
+
+**aiotube** Asynchronous YouTube API
+
+
+### Example
+
+```python
+import asyncio
+
+from aiotube import Video
+
+async def main():
+    client = Video("https://www.youtube.com/watch?v=MZ-cvXEvYI8")
+    stream = (await client.streams()).get_audio_only()
+    await stream.download_filepath(filename="yeat.mp3")
+    
+asyncio.run(main())
+
+```
