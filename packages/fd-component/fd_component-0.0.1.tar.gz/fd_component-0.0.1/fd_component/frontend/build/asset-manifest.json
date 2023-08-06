@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "./static/js/main.ca9b5d10.chunk.js",
+    "main.js.map": "./static/js/main.ca9b5d10.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.44d30fc2.js",
+    "runtime-main.js.map": "./static/js/runtime-main.44d30fc2.js.map",
+    "static/css/2.2bdbc9a0.chunk.css": "./static/css/2.2bdbc9a0.chunk.css",
+    "static/js/2.becb3afd.chunk.js": "./static/js/2.becb3afd.chunk.js",
+    "static/js/2.becb3afd.chunk.js.map": "./static/js/2.becb3afd.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.9d79e382e67b0ea743cf5e41e98e4fed.js": "./precache-manifest.9d79e382e67b0ea743cf5e41e98e4fed.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.2bdbc9a0.chunk.css.map": "./static/css/2.2bdbc9a0.chunk.css.map",
+    "static/js/2.becb3afd.chunk.js.LICENSE.txt": "./static/js/2.becb3afd.chunk.js.LICENSE.txt",
+    "static/media/index.css": "./static/media/alfa-slab-one-vietnamese-400-normal.f559bdf3.woff2",
+    "static/media/background.png": "./static/media/background.da6590e4.png",
+    "static/media/fd_symbol.png": "./static/media/fd_symbol.090d39dc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.44d30fc2.js",
+    "static/css/2.2bdbc9a0.chunk.css",
+    "static/js/2.becb3afd.chunk.js",
+    "static/js/main.ca9b5d10.chunk.js"
+  ]
+}
