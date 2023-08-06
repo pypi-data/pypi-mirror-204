@@ -1,0 +1,9 @@
+unscrewed/__init__.py,sha256=qjKE5vUr2_71GsgeiziLyhOwjwL4iYppeEbQOE_8v48,233
+unscrewed/fetcher.py,sha256=Phzk1PLt2wkE217RgxVBMmdfm4mYCSPLunfGLZmImoU,2782
+unscrewed/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unscrewed/tests/nipraxis_registry.yaml,sha256=OO1OIGTtiUgnp9UJKESN4aTxFFsL7jTCiKRMASl45-I,1371
+unscrewed/tests/test_local_cache.py,sha256=52il4GvmYtGwl3nSqw626tBnpoM30H95liDC0-pGfc4,1080
+unscrewed-0.1a1.dist-info/LICENSE,sha256=o6mTc42Ma8IT6d1MNf3rubPYvSO1xgsObcM0PGXvI18,1607
+unscrewed-0.1a1.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+unscrewed-0.1a1.dist-info/METADATA,sha256=YLA7PwHvX-BCx1wWxJy_T_eICJd1vaMOx17OF6vu80k,1271
+unscrewed-0.1a1.dist-info/RECORD,,
