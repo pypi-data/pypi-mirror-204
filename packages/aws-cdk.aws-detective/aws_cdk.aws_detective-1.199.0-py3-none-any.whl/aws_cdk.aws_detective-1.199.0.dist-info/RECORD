@@ -1,0 +1,10 @@
+aws_cdk/aws_detective/__init__.py,sha256=2u2XgHU_SWdWLPkQLHwaBC7VeppQyuRfySc4n3BzCCE,28615
+aws_cdk/aws_detective/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_detective/_jsii/__init__.py,sha256=CCmCAoN4yP_hQTCJJqtI1x9DsNo6C1dUsvh3zLUcFRw,400
+aws_cdk/aws_detective/_jsii/aws-detective@1.199.0.jsii.tgz,sha256=E_RYnm92s9RnyEkz0JxB-90N7WjJRzdNL1mJ5QfihFc,25510
+aws_cdk.aws_detective-1.199.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_detective-1.199.0.dist-info/METADATA,sha256=vIpXmurEYkO4TBn8FwnUeFVcDhlEGC5ktYOL8_TkPQU,3142
+aws_cdk.aws_detective-1.199.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_detective-1.199.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_cdk.aws_detective-1.199.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_detective-1.199.0.dist-info/RECORD,,
