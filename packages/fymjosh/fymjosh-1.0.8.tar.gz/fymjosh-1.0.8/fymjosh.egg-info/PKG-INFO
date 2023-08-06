@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fymjosh
+Version: 1.0.8
+Summary: A library that focuses on customization of console and discord
+Home-page: UNKNOWN
+Author: fymjosh
+Author-email: lone.cord12@gmail.com
+License: MIT
+Keywords: discord,console
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+fymjosh is a library that allows for your discord account to change statuses to like streaming, watching, listening, playing and helps to customize your discord account. Also has custom printing with rich features
+
