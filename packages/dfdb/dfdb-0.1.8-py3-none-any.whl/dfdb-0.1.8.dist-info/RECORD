@@ -1,0 +1,15 @@
+dfdb/__init__.py,sha256=D747h4s2yDzcrTXDeHz_ZgZStAMZ7LLOEmE3ngT34Zc,243
+dfdb/abc.py,sha256=rxe7wFYJQSs9EHrgkALLhOFU2cMqhBlKQfLkcktK4yQ,2533
+dfdb/alter.py,sha256=OuO6VGZ4KqCFo93haRXYez2V4J4mDsdLFJsEpMYmMwY,2337
+dfdb/config.toml,sha256=TQV7l8YjeskzIupHKWjkp6vvXJp2HNPsij_p13Ra_V0,272
+dfdb/database.py,sha256=9Ngi2NGB14fnSEQjKhkDoxocsig06uR8Atq8doeznFA,8504
+dfdb/dataframe.py,sha256=wfh12Z00caj2r9CYMn78TSJi_Lu7p3sgHDVUx00IHIo,57214
+dfdb/defs.py,sha256=AeQuhfL5IpbB0CUNUkmbMqtUCtnS3pd7jb1hSopIryc,1430
+dfdb/parsing.py,sha256=k4Y6QTGzPsBLxhd68mUY-dYp3hVwVr5y4JMGqaBR708,3300
+dfdb/triggers.py,sha256=gS1aTd20iYh8QCU5fJ4-GZGgqab19v0hIX_EmF5Spv0,6093
+dfdb/types.py,sha256=Aw4a_YFzv5NSPIJRg8Wy2eiJAfPDp3naXNtIhjiC0JA,7621
+dfdb-0.1.8.dist-info/LICENSE,sha256=6sbDVZa4NG4Ehen4rgM-KLhfd20u430SxhNLPDlDeoY,1065
+dfdb-0.1.8.dist-info/METADATA,sha256=cJ79qRg3dQhAhdyvxA5_tbDsZZwKqGEFszr2_osxGyI,1940
+dfdb-0.1.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dfdb-0.1.8.dist-info/top_level.txt,sha256=qSnrht_yygGcpHnp7TBrOHhWdbgWAGM3bpCfF2jQfyw,5
+dfdb-0.1.8.dist-info/RECORD,,
