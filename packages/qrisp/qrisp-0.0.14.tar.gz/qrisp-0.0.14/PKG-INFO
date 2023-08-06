@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: qrisp
+Version: 0.0.14
+Summary: Qrisp - A high level language for gate-based quantum computing
+Home-page: https://github.com/pypa/sampleproject
+Author: Raphael Seidel
+Author-email: raphael.seidel@fokus.fraunhofer.de
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Qrisp
+
+High-Level quantum programming language
