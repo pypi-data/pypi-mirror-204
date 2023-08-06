@@ -1,0 +1,8 @@
+aio_spamwatch/__init__.py,sha256=oHqZ-RUrHvanggvdZYaSz80caAG3tlQZ07G7xJPYn6w,450
+aio_spamwatch/client.py,sha256=zIB-U-1nb3KVqaeSPXuIbutbfP6eoCNAgA5KFoci0jY,5930
+aio_spamwatch/errors.py,sha256=vLhOkQ2XQWp7hte5q8esvNAwoz0PFE_fD7DEBdrhWvY,1299
+aio_spamwatch/types.py,sha256=xe4qcZbmsh9PygjgUG52cUyFkVqM4IHPzWonPT3enGg,526
+aio_spamwatch-0.0.7.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+aio_spamwatch-0.0.7.dist-info/METADATA,sha256=skB0BO4DlfWWX-HwOsOz2um4EJQPFYM3zqVg8mX9cjc,1725
+aio_spamwatch-0.0.7.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+aio_spamwatch-0.0.7.dist-info/RECORD,,
