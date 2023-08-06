@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/XMLCit/__init__.py
+src/XMLCit/functions.py
+src/XMLCit.egg-info/PKG-INFO
+src/XMLCit.egg-info/SOURCES.txt
+src/XMLCit.egg-info/dependency_links.txt
+src/XMLCit.egg-info/top_level.txt
