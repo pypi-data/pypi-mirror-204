@@ -1,0 +1,17 @@
+sitcom/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sitcom/__main__.py,sha256=DC1OO165uJZgDvG2w8fq3p4nbi81ISO3BO96hVn7ROI,47375
+sitcom/sfit.py,sha256=bHWjabu8UpdIdv08aBYgddz4ZNd0i8xIcwnZBUQY6DA,1611
+sitcom/sirgraf.py,sha256=MvTiozwTHPZiOWEEhcahfgiGpeRYkw8t7ozEyUXJ98U,6413
+sitcom/st1.py,sha256=vWk-HJ6LVubIt1MK8KmhwstBlNrAy_ZLbu0djbrTyrY,37366
+sitcom/st2.py,sha256=IWSmyhnq7wD6BVAkbe8Mh4hHPAkDKGVsDcc8lyYZ3Mw,4571
+sitcom/data/Sine_curve.png,sha256=8wS6r97m3v0xCuemslUaiGZ6LmF3V85im9b6LNqdXB0,84116
+sitcom/data/black.png,sha256=AgKrWK1EidwKuJzeM5PKeUf8W_StldmEDANGOBSC1rs,539595
+sitcom/data/white.png,sha256=WxaaDAPUqyvu5YJPfbVeD9wcoIVI5KQAtqKvqeerrQw,599404
+sitcom/icon/cme.ico,sha256=gDTWpKA-2sZMbWwulT58Re8VZc1rrIAkVgo7lTrsAQU,4022
+sitcom/icon/cme.png,sha256=vp9NVudVmt7ylArmjT7Q-9LslnxkobaJubt4rkp2lrM,29744
+sitcom/load/sitcom.gif,sha256=0jfiRezvHTR-LWijDK8ihZw5tIJjZMkIa8SosFPY364,9159608
+sitcom-1.0.2.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+sitcom-1.0.2.dist-info/METADATA,sha256=kQSRqxohQoJryyVLV2sQj4f3G3kMn96thryxFU-CXBc,449
+sitcom-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sitcom-1.0.2.dist-info/top_level.txt,sha256=jk0_3q_VDKewR9n-NFnfyALZYHg4WnZRwVyNLmXVDuA,7
+sitcom-1.0.2.dist-info/RECORD,,
