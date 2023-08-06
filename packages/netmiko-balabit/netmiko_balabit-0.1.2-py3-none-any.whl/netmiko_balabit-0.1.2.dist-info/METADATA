@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: netmiko-balabit
+Version: 0.1.2
+Summary: Out of tree netmiko driver for balabit scb
+Home-page: https://github.com/jinjamator/netmiko_balabit
+Author: Wilhelm Putz
+Author-email: wp@aci.guru
+License: ASL V2
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: netmiko (>=4.1.2)
+
+Introduction
+==================
+
+
+netmiko_balabit is an out of tree netmiko driver for the balabit shell control box.
+
+
+Installation
+------------
+
+Install the netmiko balabit driver by running:
+
+    pip3 install netmiko-balabit
+
+Usage
+-----
+
+.. code-block:: python
+
+    from netmiko import ConnectHandler
+    import  netmiko_balabit
+
+    target = {
+        'device_type': 'balabit_scb',
+        'target_device_type': 'linux',
+        'ip': ssh_host, # ip of balabit gateway
+        'username': ssh_username, # gu=<balabit_username>@<target_username>@<target_ip>
+        'password': [ssh_gw_password,ssh_password], # password list [<balabit_password>,<target_password>]
+        'port': 22,
+    }
+
+    ssh = ConnectHandler(**target)
+    print(ssh.send_command("ls /"))
+
+
+Contribute
+----------
+
+- Issue Tracker: https://github.com/jinjamator/netmiko_balabit/issues
+- Source Code: https://github.com/jinjamator/netmiko_balabit
+
+License
+-----------------
+
+This project is licensed under the Apache License Version 2.0
+
