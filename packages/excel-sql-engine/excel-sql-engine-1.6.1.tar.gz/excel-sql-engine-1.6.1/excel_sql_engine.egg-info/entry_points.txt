@@ -1,0 +1,2 @@
+[console_scripts]
+pyxl_sql = PyxlSql.pyxlSql:run_pyxl_sql
