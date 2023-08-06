@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dun
+Version: 0.0.2
+Summary: End in one line: forget all the annyoing things
+Home-page: https://github.com/thyeem/__
+Author: Francis Lim
+Author-email: thyeem@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Security :: Cryptography
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: base58 (==2.1.1)
+Requires-Dist: pycryptodome (==3.17)
+
