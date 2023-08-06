@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: modnpay-pgsdk
+Version: 0.0.1
+Summary: modnpay-pgsdk
+Home-page: https://gitlab.seeroo.info/juyeol.jang/modnpay-pgsdk-python
+Author: seeroo
+Author-email: developers@seeroo.co.kr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
