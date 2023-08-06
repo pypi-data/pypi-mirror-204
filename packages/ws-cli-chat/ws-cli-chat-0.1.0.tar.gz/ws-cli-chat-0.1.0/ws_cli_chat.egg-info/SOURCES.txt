@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+chat/__init__.py
+chat/__main__.py
+chat/cli_chat.py
+chat/console.py
+ws_cli_chat.egg-info/PKG-INFO
+ws_cli_chat.egg-info/SOURCES.txt
+ws_cli_chat.egg-info/dependency_links.txt
+ws_cli_chat.egg-info/requires.txt
+ws_cli_chat.egg-info/top_level.txt
