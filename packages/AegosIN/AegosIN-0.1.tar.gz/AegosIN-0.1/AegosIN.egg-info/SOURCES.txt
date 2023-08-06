@@ -1,0 +1,8 @@
+setup.py
+AegosIN/__init__.py
+AegosIN/in_tik.py
+AegosIN.egg-info/PKG-INFO
+AegosIN.egg-info/SOURCES.txt
+AegosIN.egg-info/dependency_links.txt
+AegosIN.egg-info/not-zip-safe
+AegosIN.egg-info/top_level.txt
