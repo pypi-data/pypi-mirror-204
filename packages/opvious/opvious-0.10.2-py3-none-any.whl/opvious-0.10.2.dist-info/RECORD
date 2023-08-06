@@ -1,0 +1,14 @@
+opvious/__init__.py,sha256=Eh9PCf5NvVZ22PQty0hPb1jyPCBEGQxIBh8SdM4kR-U,2203
+opvious/client.py,sha256=eySOlJ75ASZ1XIiIOWsXHK53zwM6RC4zm6ECPLzjYQY,22116
+opvious/common.py,sha256=UrQsUQe_ldOUS7FmwsyAHioYNRMHc5OZnDEem7RAsYc,1062
+opvious/data.py,sha256=SCsSy0AYsDy74TrBDXZnaFUXPJarmXzm1s1eKwU_UPo,17255
+opvious/executors/__init__.py,sha256=W2VDFy2KnjmscwRhgzufI7yB1VoT2Fz5nFNMsmrqGfA,2354
+opvious/executors/aiohttp.py,sha256=LeYyLcLDHatxXRPYnKhH66GxByUorycoBIaZmGGJ6Nc,4182
+opvious/executors/common.py,sha256=ViJz19u93VPs6Fp3NU5Qt6GZnq1OrD7Ln0hol4gUt9I,9054
+opvious/executors/pyodide.py,sha256=_5V1kNMX4_4xjncLZ1X9xMr-ei_mLI5mlfLFoPGgNdM,2415
+opvious/executors/urllib.py,sha256=iNzc10iCuDxzRp4oNKEe3I9qXBplWCgtD75BIftH-Rs,2538
+opvious/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opvious-0.10.2.dist-info/LICENSE,sha256=5xmX2CNxAdx37pWoaigSa8jlCaVd_b_A3ixTnenwSeY,10756
+opvious-0.10.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+opvious-0.10.2.dist-info/METADATA,sha256=pqo4kJTMkIbso7qZDDGfml55T3LSPTRDJ1A_QgroiwA,3892
+opvious-0.10.2.dist-info/RECORD,,
