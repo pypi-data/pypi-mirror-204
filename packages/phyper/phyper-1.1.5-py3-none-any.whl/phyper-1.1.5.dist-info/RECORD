@@ -1,0 +1,15 @@
+phyper/__init__.py,sha256=4hYB58cealu01B6FLn3lhRnI0JAPY6Va107e65WXTcs,685
+phyper/chemometrics/__init__.py,sha256=5y7WaXHDvt1RbplvdekletkldO9cMdvYHRFzJkE1ziE,292
+phyper/chemometrics/_gui.py,sha256=3h4jW2pVt-14QTx3g-wFnMzaQTq8SZC2BBabRBZ9bpA,9505
+phyper/chemometrics/analysis.py,sha256=903ZGNPjkmJL_z0CeeorcQkoiCMZLeOYK3_q18CmBnc,13252
+phyper/chemometrics/dataset.py,sha256=2-dvm-Zjb7jvaTShY4pj_5-a-8ZP01gwlYcu7ZNREo8,50587
+phyper/chemometrics/preprocessing.py,sha256=lKoB64-a4IdM82pC1OAh9cCy-LXKLOcFbygVYnQCBcM,2713
+phyper/chemometrics/sampling.py,sha256=H-xl0PrAwRoaxwah8DqVSlRJ1gPl9Qm806Zh7MPuu2U,2298
+phyper/lab/__init__.py,sha256=p1f53MLglxawnDhRGT4O1NI5CpL2Rvski2XEyg9ErM8,121
+phyper/lab/_misc.py,sha256=irgAaObHkaIBESTdw-o0e0Eb-z2pUm9Kdc9ujZq8pg8,802
+phyper/lab/measurement.py,sha256=YCQX5YkgWDmwesoELt14JgdWcVYc2vq8cqnjIbxHfSM,15275
+phyper-1.1.5.dist-info/LICENSE,sha256=i-l_fDhG098wzA_kHlskLIwp3UKEjHzNP1PVuIu2wuQ,1075
+phyper-1.1.5.dist-info/METADATA,sha256=LkENEtzZjVIdGv3S6JpP27uBuluzfYD1deVSR9M-NL4,2268
+phyper-1.1.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+phyper-1.1.5.dist-info/top_level.txt,sha256=1CRpBqxQW0H4uxZ6GzjiIKUq4FJksW5pai8komowTII,7
+phyper-1.1.5.dist-info/RECORD,,
