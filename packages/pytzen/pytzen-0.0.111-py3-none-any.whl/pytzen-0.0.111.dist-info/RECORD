@@ -1,0 +1,9 @@
+pytzen/__init__.py,sha256=Z_zdUQEg9sUNijfZyrfC1xH92VbFiiFXvAEEfRS7ITs,148
+pytzen/ai_joke_generator.py,sha256=_W7n2_PHPBrCVbj-1iW5hymv25cbzt6Ecto19j4NBA8,1561
+pytzen/system_info/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytzen/system_info/get_info.py,sha256=4EYow-GAUW-poqB2bCvJJjlvl2sUz1L8KEWcUG4objc,2977
+pytzen-0.0.111.dist-info/LICENSE,sha256=4_dwkYxHnnqPYqC7zadg9fEFJqm3VTN-8-1lAoWJjL0,1063
+pytzen-0.0.111.dist-info/METADATA,sha256=r6W8SKocnJiGNMzcFr1jEjspyHKlTHpNGFA_X3NfJ1k,1703
+pytzen-0.0.111.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pytzen-0.0.111.dist-info/top_level.txt,sha256=xVB03zrtSzkmU5O2rbIVPYWs_WCmHj27gJy9m5nq-cY,7
+pytzen-0.0.111.dist-info/RECORD,,
