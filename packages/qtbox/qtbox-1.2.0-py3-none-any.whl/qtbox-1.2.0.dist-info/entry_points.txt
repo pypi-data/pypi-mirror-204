@@ -1,0 +1,3 @@
+[console_scripts]
+qtbox = qtbox.main:main
+qtbox-qss = qtbox.gui.editor:main
