@@ -1,0 +1,319 @@
+################################## Test Init ###################################
+INFO: Checking for error on the system
+INFO: Checking for tainted kernel
+INFO: [2023-04-19 05:57:52] Running: 'cat /proc/sys/kernel/tainted'...
+2048
+WARN: Kernel is tainted!
+INFO: [2023-04-19 05:57:52] Running: 'cat /tmp/previous-tainted'...
+2048
+INFO: Kernel tainted has already been handled
+INFO: Checking abrt for error
+WARN: abrt tool does not seem to be installed
+WARN: skipping abrt check
+INFO: [2023-04-19 05:57:53] Running: 'cat /tmp/previous-dump-check'...
+101000000
+INFO: Checking for stack dump messages after: 101000000
+PASS: No recent dump messages has been found.
+INFO: Checking for errors on dmesg.
+INFO: [2023-04-19 05:57:53] Running: 'dmesg | grep -i ' segfault ''...
+
+INFO: [2023-04-19 05:57:53] Running: 'dmesg | grep -i 'Call Trace:''...
+
+PASS: No errors on dmesg have been found.
+INFO: [2023-04-19 05:57:53] Running: 'wget -q http://lab-01.rhts.eng.pek2.redhat.com:8000/recipes/13638179/logs/console.log -O /root/console.log.new'...
+/bin/sh: line 1: wget: command not found
+INFO: Could not get console log
+INFO: No kdump log found for this server
+### Kernel Info ###
+INFO: [2023-04-19 05:57:53] Running: 'uname -a'...
+Linux rdma06.rhts.eng.pek2.redhat.com 5.14.0-284.5.1.el9_2.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Mar 23 21:09:06 EDT 2023 x86_64 x86_64 x86_64 GNU/Linux
+### kernel Parameters ###
+INFO: [2023-04-19 05:57:53] Running: 'cat /proc/cmdline'...
+BOOT_IMAGE=(hd0,msdos1)/vmlinuz-5.14.0-284.5.1.el9_2.x86_64 root=/dev/mapper/rhel_rdma06-root ro crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M resume=/dev/mapper/rhel_rdma06-swap rd.lvm.lv=rhel_rdma06/root rd.lvm.lv=rhel_rdma06/swap console=ttyS1,115200n81
+### Key Packages Info ###
+INFO: [2023-04-19 05:57:53] Running: 'rpm -q rdma-core linux-firmware'...
+rdma-core-44.0-2.el9.x86_64
+linux-firmware-20230210-132.el9.noarch
+### Firmware Info ###
+INFO: [2023-04-19 05:57:53] Running: 'tail /sys/class/infiniband/*/fw_ver'...
+==> /sys/class/infiniband/hfi1_0/fw_ver <==
+1.27.0
+
+==> /sys/class/infiniband/mlx5_0/fw_ver <==
+10.12.1100
+### CPU Info ###
+INFO: [2023-04-19 05:57:53] Running: 'lscpu'...
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Address sizes:                   46 bits physical, 48 bits virtual
+Byte Order:                      Little Endian
+CPU(s):                          20
+On-line CPU(s) list:             0-19
+Vendor ID:                       GenuineIntel
+BIOS Vendor ID:                  Intel
+Model name:                      Intel(R) Xeon(R) CPU E5-2670 v2 @ 2.50GHz
+BIOS Model name:                  Intel(R) Xeon(R) CPU E5-2670 v2 @ 2.50GHz      
+CPU family:                      6
+Model:                           62
+Thread(s) per core:              1
+Core(s) per socket:              10
+Socket(s):                       2
+Stepping:                        4
+CPU max MHz:                     3300.0000
+CPU min MHz:                     1200.0000
+BogoMIPS:                        4987.54
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm cpuid_fault epb pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+Virtualization:                  VT-x
+L1d cache:                       640 KiB (20 instances)
+L1i cache:                       640 KiB (20 instances)
+L2 cache:                        5 MiB (20 instances)
+L3 cache:                        50 MiB (2 instances)
+NUMA node(s):                    2
+NUMA node0 CPU(s):               0-9
+NUMA node1 CPU(s):               10-19
+Vulnerability Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerability L1tf:              Mitigation; PTE Inversion; VMX conditional cache flushes, SMT disabled
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT disabled
+Vulnerability Meltdown:          Mitigation; PTI
+Vulnerability Mmio stale data:   Unknown: No mitigations
+Vulnerability Retbleed:          Not affected
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Retpolines, IBPB conditional, IBRS_FW, RSB filling, PBRSB-eIBRS Not affected
+Vulnerability Srbds:             Not affected
+Vulnerability Tsx async abort:   Not affected
+### List PCI Devices Of RDMA ###
+INFO: [2023-04-19 05:57:53] Running: 'lspci | grep -i -e ethernet -e infiniband -e omni -e ConnectX'...
+03:00.0 Ethernet controller: Broadcom Inc. and subsidiaries NetXtreme BCM5719 Gigabit Ethernet PCIe (rev 01)
+03:00.1 Ethernet controller: Broadcom Inc. and subsidiaries NetXtreme BCM5719 Gigabit Ethernet PCIe (rev 01)
+03:00.2 Ethernet controller: Broadcom Inc. and subsidiaries NetXtreme BCM5719 Gigabit Ethernet PCIe (rev 01)
+03:00.3 Ethernet controller: Broadcom Inc. and subsidiaries NetXtreme BCM5719 Gigabit Ethernet PCIe (rev 01)
+04:00.0 Infiniband controller: Mellanox Technologies MT27600 [Connect-IB]
+21:00.0 Fabric controller: Intel Corporation Omni-Path HFI Silicon 100 Series [discrete] (rev 11)
+### File system disk space usage: ###
+INFO: [2023-04-19 05:57:53] Running: 'df -h'...
+Filesystem                    Size  Used Avail Use% Mounted on
+devtmpfs                      4.0M     0  4.0M   0% /dev
+tmpfs                          24G     0   24G   0% /dev/shm
+tmpfs                         9.4G  999M  8.4G  11% /run
+/dev/mapper/rhel_rdma06-root   70G  2.9G   68G   5% /
+/dev/sda1                    1006M  223M  784M  23% /boot
+/dev/mapper/rhel_rdma06-home  185G  1.4G  184G   1% /home
+tmpfs                         4.7G     0  4.7G   0% /run/user/0
+### IP Settings
+INFO: [2023-04-19 05:57:53] Running: 'ip addr show'...
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 2c:44:fd:93:b4:14 brd ff:ff:ff:ff:ff:ff
+    altname enp3s0f0
+    inet 10.73.131.45/23 brd 10.73.131.255 scope global dynamic noprefixroute eno1
+       valid_lft 37360sec preferred_lft 37360sec
+    inet6 2620:52:0:4982:2e44:fdff:fe93:b414/64 scope global dynamic noprefixroute 
+       valid_lft 2591977sec preferred_lft 604777sec
+    inet6 fe80::2e44:fdff:fe93:b414/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: eno2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 2c:44:fd:93:b4:15 brd ff:ff:ff:ff:ff:ff
+    altname enp3s0f1
+4: eno3: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+    link/ether 2c:44:fd:93:b4:16 brd ff:ff:ff:ff:ff:ff
+    altname enp3s0f2
+5: eno4: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+    link/ether 2c:44:fd:93:b4:17 brd ff:ff:ff:ff:ff:ff
+    altname enp3s0f3
+6: ibs1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 4092 qdisc fq_codel state DOWN group default qlen 256
+    link/infiniband 80:00:00:29:fe:80:00:00:00:00:00:00:f4:52:14:03:00:0e:4a:d0 brd 00:ff:ff:ff:ff:12:40:1b:ff:ff:00:00:00:00:00:00:ff:ff:ff:ff
+    altname ibp4s0
+7: ibs1d1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 4092 qdisc fq_codel state DOWN group default qlen 256
+    link/infiniband 80:00:00:2b:fe:80:00:00:00:00:00:00:f4:52:14:03:00:0e:4a:d8 brd 00:ff:ff:ff:ff:12:40:1b:ff:ff:00:00:00:00:00:00:ff:ff:ff:ff
+    altname ibp4s0d1
+8: ibs4: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 2044 qdisc mq state DOWN group default qlen 256
+    link/infiniband 80:81:00:02:fe:80:00:00:00:00:00:00:00:11:75:01:01:74:47:9a brd 00:ff:ff:ff:ff:12:40:1b:80:00:00:00:00:00:00:00:ff:ff:ff:ff
+    altname ibp33s0
+################################################################################
+
+#######################################
+
+INFO: Testing opa-fm.
+INFO: It's all set already.
+INFO: [2023-04-19 05:57:53] Running: 'opasaquery | grep 'Type: FI' | tail -1 | awk '{print $2}''...
+opasaquery: Failed to open port hfi 0:0: Not Done
+ret: 0
+INFO: [2023-04-19 05:57:54] Running: 'opapmaquery -l opasaquery: Failed to open port hfi 0:0: Not Done -m 0'...
+opapmaquery: Invalid DLID: opasaquery:
+Usage: opapmaquery -o otype [standard options] [otype options]
+              or
+       opapmaquery --help
+       --help - produce full help text
+
+Standard Options: [-v] [-s sl] [-l lid] [-h hfi] [-p port]
+    -o otype Output type. See below for list.
+    -v       Verbose output. Can be specified more than once for
+             additional openib debugging and libibumad debugging.
+    -s       Specify different Service Level (default is SM SL)
+    -l lid   Destination lid, default is local port
+    -h hfi   hfi, numbered 1..n, 0= -p port will be a
+             system wide port num (default is 0)
+    -p port  port, numbered 1..n, 0=1st active (default
+             is 1st active)
+
+The -h and -p options permit a variety of selections:
+    -h 0       - 1st active port in system (this is the default)
+    -h 0 -p 0  - 1st active port in system
+    -h x       - 1st active port on HFI x
+    -h x -p 0  - 1st active port on HFI x
+    -h 0 -p y  - port y within system (irrespective of which ports are active)
+    -h x -p y  - HFI x, port y
+
+otype options vary by report: [-m port] [-n mask] [-e mask] [-w mask]
+    -m port  Port in destination device to query.
+    -n mask  Port Mask, in hex, bits represent ports 63-0
+             (e.g. 0x2 for port 1, 0x6 for ports 1,2)
+    -e mask  Counter/error Select Mask, select bit positions as shown below
+             0 is least significant (rightmost)
+             default is all bits set (e.g. 0xffffffe0)
+                         (for Counters):           (for Error Info):
+             mask	  bit location  
+             0x80000000  31    Xmit Data           Rcv Error Info
+             0x40000000  30    Rcv Data            Excessive Buffer Overrun
+             0x20000000  29    Xmit Pkts           Xmit Const Error Info
+             0x10000000  28    Rcv Pkts            Rcv Const Error Info
+             0x08000000  27    Multicast Xmit Pkts Rcv Switch Relay Error Info
+             0x04000000  26    Multicast Rcv Pkts  Uncorrectable Error Info
+             0x02000000  25    Xmit Wait           FM Config Error Info
+             0x01000000  24    Congestion Discards
+             0x00800000  23    Rcv FECN
+             0x00400000  22    Rcv BECN
+             0x00200000  21    Xmit Time Cong.
+             0x00100000  20    Xmit Time Wasted BW
+             0x00080000  19    Xmit Time Wait Data
+             0x00040000  18    Rcv Bubble
+             0x00020000  17    Mark FECN
+             0x00010000  16    Rcv Constraint Errors
+             0x00008000  15    Rcv Switch Relay
+             0x00004000  14    Xmit Discards
+             0x00002000  13    Xmit Constraint Errors
+             0x00001000  12    Rcv Rmt Phys. Errors
+             0x00000800  11    Local Link Integrity
+             0x00000400  10    Rcv Errors
+             0x00000200   9    Exc. Buffer Overrun
+             0x00000100   8    FM Config Errors
+             0x00000080   7    Link Error Recovery
+             0x00000040   6    Link Error Downed
+             0x00000020   5    Uncorrectable Errors
+    -w mask  Virtual Lane Select Mask, in hex, bits represent VL number 31-0
+             (e.g. 0x1 for VL 0, 0x3 for VL 0,1) default is none
+
+Possible output types (default is getportstatus):
+         Output Type      : Description                                  
+                          : Supported Options                            
+         ---------------- : -----------------------------------------    
+         classportinfo    : class of port info                           
+
+         getportstatus    : list of port counters                        
+                          : [-m port] [-w vl mask]
+
+         clearportstatus  : clears the port counters                     
+                          : [-n port mask] [-e counter mask] [-w vl mask]
+
+         getdatacounters  : list of data counters                        
+                          : [-n port mask] [-w vl mask]
+
+         geterrorcounters : list of error counters                       
+                          : [-n port mask] [-w vl mask]
+
+         geterrorinfo     : list of error info                           
+                          : [-n port mask]
+
+         clearerrorinfo   : clears the error info                        
+                          : [-n port mask] [-e counter mask]
+
+
+Basic Examples:
+---------------
+opapmaquery -o classportinfo
+opapmaquery -o getportstatus           # get data and error counts, local port
+opapmaquery -o getdatacounters -n 0x2  # get data counts, local port 1
+opapmaquery -o geterrorcounters -n 0x2 # get error counts, local port 1
+opapmaquery -o clearportstatus -n 0x2  # clear all counters local port 1
+opapmaquery -o geterrorinfo -n 0x2     # get error info for local port 1
+opapmaquery -o clearerrorinfo -n 0x2   # clear all error info, local port 1
+Additional examples:
+--------------------
+For device at lid 6, get data counters on ports 1-6, inclusive of VL 0 data
+   opapmaquery -o getdatacounters -l 6 -n 0x7e -w 0x1
+For device at lid 6, on port 1, clear only error counters:
+   opapmaquery -o clearportstatus -l 6 -n 0x2 -e 0x1ffff
+For device at lid 6, on ports 1, clear Uncorrectable Error Info
+   opapmaquery -o clearerrorinfo -l 6 -n 0x2 -e 0x04000000
+FAIL: opapmaquery -l opasaquery: Failed to open port hfi 0:0: Not Done -m 0
+INFO: [2023-04-19 05:57:54] Running: 'opasaquery'...
+opasaquery: Failed to open port hfi 0:0: Not Done
+FAIL: opasaquery
+INFO: [2023-04-19 05:57:54] Running: 'timeout 5m /usr/sbin/opafabricinfo'...
+Fabric 0:0 Information:
+ERROR: opasaquery failed
+ERROR: opasaquery failed
+opasaquery: Failed to open port hfi 0:0: Not Done
+opasaquery: Failed to open port hfi 0:0: Not Done
+FAIL: timeout 5m /usr/sbin/opafabricinfo
+INFO: [2023-04-19 05:57:54] Running: 'timeout 5m /usr/sbin/opagetvf'...
+opasaquery: Failed to open port hfi 0:0: Not Done
+opagetvf: SA query failed
+FAIL: timeout 5m /usr/sbin/opagetvf
+INFO: [2023-04-19 05:57:54] Running: 'timeout 5m /usr/sbin/opagetvf_env'...
+
+PASS: timeout 5m /usr/sbin/opagetvf_env
+INFO: [2023-04-19 05:57:54] Running: 'timeout 5m /usr/sbin/oparesolvehfiport'...
+oparesolvehfiport: No Active ports found in System
+FAIL: timeout 5m /usr/sbin/oparesolvehfiport
+INFO: [2023-04-19 05:57:54] Running: 'timeout 5m /usr/sbin/opasaquery'...
+opasaquery: Failed to open port hfi 0:0: Not Done
+FAIL: timeout 5m /usr/sbin/opasaquery
+Test return code: None
+INFO: Checking for error on the system
+INFO: Checking for tainted kernel
+INFO: [2023-04-19 05:57:54] Running: 'cat /proc/sys/kernel/tainted'...
+2048
+WARN: Kernel is tainted!
+INFO: [2023-04-19 05:57:54] Running: 'cat /tmp/previous-tainted'...
+2048
+INFO: Kernel tainted has already been handled
+INFO: Checking abrt for error
+WARN: abrt tool does not seem to be installed
+WARN: skipping abrt check
+INFO: [2023-04-19 05:57:55] Running: 'cat /tmp/previous-dump-check'...
+101000000
+INFO: Checking for stack dump messages after: 101000000
+PASS: No recent dump messages has been found.
+INFO: Checking for errors on dmesg.
+INFO: [2023-04-19 05:57:55] Running: 'dmesg | grep -i ' segfault ''...
+
+INFO: [2023-04-19 05:57:55] Running: 'dmesg | grep -i 'Call Trace:''...
+
+PASS: No errors on dmesg have been found.
+INFO: [2023-04-19 05:57:55] Running: 'wget -q http://lab-01.rhts.eng.pek2.redhat.com:8000/recipes/13638179/logs/console.log -O /root/console.log.new'...
+/bin/sh: line 1: wget: command not found
+INFO: Could not get console log
+INFO: No kdump log found for this server
+PASS: Search for error on the server
+################################ Test Summary ##################################
+FAIL: opapmaquery -l opasaquery: Failed to open port hfi 0:0: Not Done -m 0
+FAIL: opasaquery
+FAIL: timeout 5m /usr/sbin/opafabricinfo
+FAIL: timeout 5m /usr/sbin/opagetvf
+PASS: timeout 5m /usr/sbin/opagetvf_env
+FAIL: timeout 5m /usr/sbin/oparesolvehfiport
+FAIL: timeout 5m /usr/sbin/opasaquery
+PASS: Search for error on the server
+#############################
+Total tests that passed: 2
+Total tests that failed: 6
+Total tests that skipped: 0
+################################################################################
+FAIL: test failed

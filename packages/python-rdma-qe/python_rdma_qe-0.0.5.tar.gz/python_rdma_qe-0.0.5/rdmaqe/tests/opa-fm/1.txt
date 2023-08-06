@@ -1,0 +1,25 @@
+FAIL: timeout 1m /usr/sbin/opacheckload
+FAIL: timeout 1m /usr/sbin/opacmdall 'uname -a'
+FAIL: timeout 1m /usr/sbin/opaextractbadlinks
+FAIL: timeout 1m /usr/sbin/opaextractlids
+FAIL: timeout 1m /usr/sbin/opaextractlink
+FAIL: timeout 1m /usr/sbin/opaextractperf
+FAIL: timeout 1m /usr/sbin/opaextractsellinks
+FAIL: timeout 1m /usr/sbin/opafabricanalysis
+FAIL: timeout 1m /usr/sbin/opafabricanalysis -b
+FAIL: timeout 1m /usr/sbin/opareport
+FAIL: timeout 1m /usr/sbin/opareports
+FAIL: timeout 1m /usr/sbin/opascpall /tmp/hello /tmp/hello
+FAIL: timeout 1m /usr/sbin/opashowallports
+FAIL: timeout 1m /usr/sbin/opaswitchadmin -a run info
+FAIL: /usr/sbin/opaallanalysis -b
+PASS: Search for error on the server
+PASS: timeout 1m /usr/sbin/opacabletest
+PASS: timeout 1m /usr/sbin/opaexpandfile allhosts
+PASS: timeout 1m /usr/sbin/opaextractstat /etc/opa/opaff.xml
+PASS: timeout 1m /usr/sbin/opafindgood
+PASS: timeout 1m /usr/sbin/opapingall
+PASS: timeout 1m /usr/sbin/opapingall
+PASS: timeout 1m /usr/sbin/opashowmc
+PASS: timeout 1m /usr/sbin/opaswdisableall
+PASS: timeout 1m /usr/sbin/opaswenableall
