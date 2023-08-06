@@ -1,0 +1,5 @@
+[org.molssi.seamm]
+Thermal Conductivity = thermal_conductivity_step:ThermalConductivityStep
+
+[org.molssi.seamm.tk]
+Thermal Conductivity = thermal_conductivity_step:ThermalConductivityStep
