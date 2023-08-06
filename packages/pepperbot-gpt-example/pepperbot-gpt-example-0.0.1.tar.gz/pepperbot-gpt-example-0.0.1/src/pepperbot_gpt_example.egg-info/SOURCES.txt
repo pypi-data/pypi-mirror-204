@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/config.py
+src/main.py
+src/models.py
+src/utils.py
+src/pepperbot_gpt_example.egg-info/PKG-INFO
+src/pepperbot_gpt_example.egg-info/SOURCES.txt
+src/pepperbot_gpt_example.egg-info/dependency_links.txt
+src/pepperbot_gpt_example.egg-info/requires.txt
+src/pepperbot_gpt_example.egg-info/top_level.txt
