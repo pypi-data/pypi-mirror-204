@@ -1,0 +1,16 @@
+vmigration_helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vmigration_helper/apps.py,sha256=uPTthsv_FSqZgUJ-5lQBH4cQsSXI74cuOEK9HrnirPs,171
+vmigration_helper/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vmigration_helper/helpers/command.py,sha256=HchZKmLK_n61WMmSr3-sC1tw3Z-w9fuEj42OMGWkZj0,2002
+vmigration_helper/helpers/migration_records.py,sha256=_-VUt0iHMv7FxaPP2mJif3x8NjPK3D9v_M0FYRCQlIA,3517
+vmigration_helper/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vmigration_helper/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vmigration_helper/management/commands/migration_current_id.py,sha256=JuFOXFxhMd8X1xxUl3F_Y6t2b-Bbtu2uo2vI3zbEVuM,898
+vmigration_helper/management/commands/migration_delete.py,sha256=k9JNztbi7Se3vQM7xgDZqYPvnk7cQRPmXhuNb9853ns,1942
+vmigration_helper/management/commands/migration_records.py,sha256=VIBpWs2_AJx0Yl8apbcDN1IlEVI3GkUqaURlKGjcPOg,2895
+vmigration_helper/management/commands/migration_rollback.py,sha256=WYx8pfQP_t2cex2y0v_912nA6U1S4lApamN2ZbE8vSw,3434
+vmigration_helper/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vmigration_helper-0.2.1.dist-info/LICENSE,sha256=2hEhH29jRmZHbNP_HsTmLXbTHqaaNAujYFFZuZvnC08,1084
+vmigration_helper-0.2.1.dist-info/METADATA,sha256=pnJm3qUYbI4YXIia2X6Zd5WC0hSc0chWacFKzG3SIKU,6902
+vmigration_helper-0.2.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+vmigration_helper-0.2.1.dist-info/RECORD,,
