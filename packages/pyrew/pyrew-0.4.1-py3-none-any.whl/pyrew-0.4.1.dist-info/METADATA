@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pyrew
+Version: 0.4.1
+Summary: A Python library for writing shorter and more efficient Python code.
+Home-page: https://github.com/AquaQuokka/pyrew
+Author: AquaQuokka
+License: BSD-3-Clause
+
+Welcome to Pyrew, a simple Python library for writing shorter and more efficient Python code. Simply install and import the module.
