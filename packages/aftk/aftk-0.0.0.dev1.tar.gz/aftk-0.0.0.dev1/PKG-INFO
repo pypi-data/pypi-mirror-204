@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aftk
+Version: 0.0.0.dev1
+Summary: Antenna Fields Tool Kit
+Author-email: "Rafael R. L. Benevides" <rafael.rl.benevides@gmail.com>
+Keywords: antenna,electromagnetism,electric field,wave,propagation
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Telecommunications Industry
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# aftk
+Antenna Fields Tool Kit

@@ -1,0 +1,10 @@
+numpy
+scipy
+pandas
+h5py
+matplotlib
+PyQt5
+PyQt5-stubs
+pyvista
+pyvistaqt
+imageio-ffmpeg

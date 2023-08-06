@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+aftk/__init__.py
+aftk.egg-info/PKG-INFO
+aftk.egg-info/SOURCES.txt
+aftk.egg-info/dependency_links.txt
+aftk.egg-info/requires.txt
+aftk.egg-info/top_level.txt
