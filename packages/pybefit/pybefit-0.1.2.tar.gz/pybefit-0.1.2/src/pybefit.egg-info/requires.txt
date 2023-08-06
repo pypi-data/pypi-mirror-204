@@ -1,0 +1,13 @@
+jax
+numpy
+numpyro
+optax
+torch
+pyro-ppl
+pandas
+pycm
+seaborn
+matplotlib
+arviz
+jupyterthemes
+jupyter-black

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pybefit
+Version: 0.1.2
+Summary: Probabilistic inference for models of behaviour
+Home-page: https://github.com/dimarkov/pybefit
+Author: Dimitrije Marković
+Author-email: dimitrije.markovic@tu-dresden.de
+Requires-Python: >=3.10
+License-File: LICENSE.md
+
+PyBefit is a Python library for Bayesian analysis of behavioral data. It is based on Pyro/Numpyro a probabilistic programing language, PyTorch, and Jax machine learning libraries.
