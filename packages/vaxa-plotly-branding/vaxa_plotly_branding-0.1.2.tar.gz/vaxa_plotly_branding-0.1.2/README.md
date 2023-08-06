@@ -1,0 +1,1 @@
+Automatically brands Plotly charts with Vaxa Analytics branding.
