@@ -1,0 +1,11 @@
+name = "napari-cilia-beating-frequency"
+display_name = "Cilia beating frequency detection"
+
+[[contributions.commands]]
+id = "napari-cilia-beating-frequency.widget"
+title = "Open cilia beating frequency widget"
+python_name = "napari_cilia_beating_frequency:widget"
+
+[[contributions.widgets]]
+command = "napari-cilia-beating-frequency.widget"
+display_name = "Cilia beating frequency"

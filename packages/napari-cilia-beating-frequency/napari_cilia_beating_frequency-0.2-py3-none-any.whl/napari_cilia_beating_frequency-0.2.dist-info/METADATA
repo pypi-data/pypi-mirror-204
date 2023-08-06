@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: napari-cilia-beating-frequency
+Version: 0.2
+Summary: Cilia beating frequency detection
+Author-email: Emil Melnikov <emilmelnikov@gmail.com>
+License: MIT
+Project-URL: homepage, https://github.com/emilmelnikov/napari-cilia-beating-frequency
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: magicgui
+Requires-Dist: napari[all]
+Requires-Dist: numpy (>=1.20)
+Requires-Dist: qtpy
+Requires-Dist: scipy
+
+# Cilia beating frequency
+
+> Cilia beating frequency detection.

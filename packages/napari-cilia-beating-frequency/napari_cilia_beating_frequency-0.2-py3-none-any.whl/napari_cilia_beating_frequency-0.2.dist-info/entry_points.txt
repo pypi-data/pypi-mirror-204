@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-cilia-beating-frequency = napari_cilia_beating_frequency:napari.toml
