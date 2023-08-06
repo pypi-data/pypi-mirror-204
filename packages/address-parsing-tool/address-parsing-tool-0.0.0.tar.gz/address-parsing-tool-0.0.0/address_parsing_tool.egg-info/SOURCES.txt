@@ -1,0 +1,6 @@
+README.md
+setup.py
+address_parsing_tool.egg-info/PKG-INFO
+address_parsing_tool.egg-info/SOURCES.txt
+address_parsing_tool.egg-info/dependency_links.txt
+address_parsing_tool.egg-info/top_level.txt
