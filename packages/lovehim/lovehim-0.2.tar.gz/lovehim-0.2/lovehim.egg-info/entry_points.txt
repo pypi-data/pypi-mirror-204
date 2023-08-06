@@ -1,0 +1,2 @@
+[console_scripts]
+lovehim = lovehim.get_verse:main
