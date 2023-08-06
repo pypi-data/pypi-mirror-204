@@ -1,0 +1,3 @@
+[console_scripts]
+didigoy = didigo.cli:main
+
