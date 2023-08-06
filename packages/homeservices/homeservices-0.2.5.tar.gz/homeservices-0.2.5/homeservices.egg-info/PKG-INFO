@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: homeservices
+Version: 0.2.5
+Summary: Home webservices for Alexa
+Home-page: https://github.com/Phornee/homeservices
+Author: Ismael Raya
+Author-email: phornee@gmail.com
+License: UNKNOWN
+Description: # Home Services
+        Tiny webservice to answer Alexa intents
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Home Automation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
