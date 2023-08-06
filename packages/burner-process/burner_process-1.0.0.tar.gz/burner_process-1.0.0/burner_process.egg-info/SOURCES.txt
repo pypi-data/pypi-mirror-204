@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+burner_process/__init__.py
+burner_process/_burner_process.py
+burner_process/_worker.py
+burner_process.egg-info/PKG-INFO
+burner_process.egg-info/SOURCES.txt
+burner_process.egg-info/dependency_links.txt
+burner_process.egg-info/top_level.txt
