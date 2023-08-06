@@ -1,0 +1,11 @@
+zq_config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zq_config/zq_configs.py,sha256=LkgbkvpSS9CQTEZqtyPtsCyc2oXSRD_dnP27pUdAdW0,1305
+zq_config/backends/__init__.py,sha256=lQfHuyrZctOYZB8n6Xa3oY2ctgtQxCLFPMW3N3XVJ3g,398
+zq_config/backends/backend_registry.py,sha256=gknMbF39J3j_diailb7v5Ns8tgEDJaQAFL2PKO6YGFE,200
+zq_config/backends/nacos.py,sha256=kOlqmDCKHng4DrLu3mU3zNjwy_JYFPV5EXubEAk3MMY,334
+zq_config-0.1.0.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+zq_config-0.1.0.dist-info/METADATA,sha256=nyq7wkukG81N2Jw8nChYrMews-JVF039nBkxLv1munE,3107
+zq_config-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+zq_config-0.1.0.dist-info/entry_points.txt,sha256=xPp6vFitqG85D-kOcIEWjIZmvD2l53YiMbrwjZFpjZw,39
+zq_config-0.1.0.dist-info/top_level.txt,sha256=tpxTONq72YO4jOGJs6ntB3FlV0rOJ9gTwMZH3F9QEEI,10
+zq_config-0.1.0.dist-info/RECORD,,
