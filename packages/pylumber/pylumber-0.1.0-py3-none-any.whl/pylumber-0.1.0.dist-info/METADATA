@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pylumber
+Version: 0.1.0
+Summary: Lumberjack for your Code, Logs, Prints, Errors and more.
+Author: Tim Yang (TimMUP)
+Author-email: thryang@outlook.com
+Keywords: python,logging,debugging,lumberjack
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
+pyLumber is a Python library for logging and debugging. It is designed to be simple and easy to use.
