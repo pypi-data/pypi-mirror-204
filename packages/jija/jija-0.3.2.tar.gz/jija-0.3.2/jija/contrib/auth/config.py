@@ -1,0 +1,19 @@
+from jija.config import base
+from jija.serializers import fields
+
+from aiohttp_session.cookie_storage import EncryptedCookieStorage
+import aiohttp_session
+
+
+class AuthConfig(base.Config):
+    SECRET_KEY: str = fields.CharField()
+
+    def __init__(self, *, secret_key):
+        super().__init__(secret_key=secret_key)
+
+    @classmethod
+    def base_app_update(cls, aiohttp_app):
+        aiohttp_session.setup(aiohttp_app, EncryptedCookieStorage(cls.SECRET_KEY))
+        # TODO fix this shit
+        aiohttp_app.middlewares.insert(0, aiohttp_app.middlewares.pop(-1))
+        return aiohttp_app
