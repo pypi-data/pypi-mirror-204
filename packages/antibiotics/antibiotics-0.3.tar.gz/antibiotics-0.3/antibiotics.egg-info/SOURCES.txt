@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+antibiotics/__init__.py
+antibiotics/py.typed
+antibiotics.egg-info/PKG-INFO
+antibiotics.egg-info/SOURCES.txt
+antibiotics.egg-info/dependency_links.txt
+antibiotics.egg-info/not-zip-safe
+antibiotics.egg-info/top_level.txt
