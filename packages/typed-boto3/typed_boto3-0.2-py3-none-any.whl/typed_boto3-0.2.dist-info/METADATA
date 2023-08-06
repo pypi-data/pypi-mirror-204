@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: typed-boto3
+Version: 0.2
+Summary: This is the typed boto3
+Author: Seungkyun Park
+Author-email: liam@asleep.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENCE.txt
+
