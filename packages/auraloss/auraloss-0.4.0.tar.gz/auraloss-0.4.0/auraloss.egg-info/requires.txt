@@ -1,0 +1,10 @@
+torch
+numpy
+
+[all]
+matplotlib
+librosa
+scipy
+
+[test]
+resampy
