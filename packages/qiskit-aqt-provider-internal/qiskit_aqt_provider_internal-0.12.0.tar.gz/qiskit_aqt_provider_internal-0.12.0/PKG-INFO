@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: qiskit-aqt-provider-internal
+Version: 0.12.0
+Summary: Qiskit provider for AQT backends
+Home-page: https://github.com/alpine-quantum-technologies/qiskit-aqt-provider-internal/
+License: Apache-2.0
+Keywords: qiskit,sdk,quantum
+Author: Qiskit Development Team
+Requires-Python: >=3.8,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Provides-Extra: examples
+Requires-Dist: httpx (>=0.24.0)
+Requires-Dist: python-dotenv (>=1)
+Requires-Dist: qiskit-aer (>=0.11)
+Requires-Dist: qiskit-terra (>=0.23.3)
+Requires-Dist: tabulate (>=0.9.0)
+Requires-Dist: tweedledum (>=1) ; extra == "examples"
+Requires-Dist: typing-extensions (>=4.0.0)
+Project-URL: Repository, https://github.com/alpine-quantum-technologies/qiskit-aqt-provider-internal/
+Description-Content-Type: text/markdown
+
+# Qiskit AQT Provider
+
+![Build Status](https://github.com/alpine-quantum-technologies/qiskit-aqt-provider-internal/actions/workflows/poetry.yml/badge.svg?branch=master)
+
+[Qiskit](https://qiskit.org/) is an open-source SDK for working with quantum computers at the level of circuits, algorithms, and application modules.
+
+This project contains a provider that allows access to [AQT](https://www.aqt.eu/) ion-trap quantum computing
+systems.
+
+## Usage
+
+See the [user guide](https://github.com/alpine-quantum-technologies/qiskit-aqt-provider-internal/blob/master/docs/guide.rst) and the [examples](https://github.com/alpine-quantum-technologies/qiskit-aqt-provider-internal/tree/master/examples).
+
+## License
+
+[Apache License 2.0](https://github.com/alpine-quantum-technologies/qiskit-aqt-provider-internal/blob/master/LICENSE.txt)
+
