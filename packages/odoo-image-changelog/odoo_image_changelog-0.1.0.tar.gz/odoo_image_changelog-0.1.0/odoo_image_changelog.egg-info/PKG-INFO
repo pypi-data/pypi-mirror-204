@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: odoo-image-changelog
+Version: 0.1.0
+Summary: a odoo changelog generator
+Home-page: https://github.com/camptocamp/odoo-image-changelog
+Author: Camptocamp (Vincent Renaville)
+Author-email: vincent.renaville@camptocamp.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10

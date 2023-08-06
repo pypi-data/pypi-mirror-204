@@ -1,0 +1,3 @@
+[console_scripts]
+generate_changelog = odoo_image_changelog.main:main
+
