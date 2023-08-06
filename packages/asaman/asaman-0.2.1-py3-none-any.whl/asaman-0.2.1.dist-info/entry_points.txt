@@ -1,0 +1,4 @@
+[console_scripts]
+asaman=asaman:cli
+asaman-generate=asaman:generate
+
