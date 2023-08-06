@@ -1,0 +1,12 @@
+{
+    "op": "in",
+    "content": {
+        "field": "case_id",
+        "value": [
+            "e693e0d6-0ee2-4321-8fdc-7f8f50d21e35",
+            "78373073-069f-4237-b6c3-8b2fa7622fd6",
+            "166e2b42-07e1-4d9f-87a9-2c2cdb723347",
+            "f7ca5d1b-ab79-44ef-acdd-6cf8bd062c43"
+        ]
+    }
+}
