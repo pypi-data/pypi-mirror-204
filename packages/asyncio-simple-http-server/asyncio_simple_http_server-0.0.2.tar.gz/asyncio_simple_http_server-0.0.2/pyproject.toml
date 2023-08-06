@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "asyncio_simple_http_server"
+version = "0.0.2"
+authors = [
+  { name="Matteo Bertozzi", email="mbertozzi@apache.org" },
+]
+description = "A Simple Http API Server using asyncio"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/matteobertozzi/asyncio-simple-http-server"
+"Bug Tracker" = "https://github.com/matteobertozzi/asyncio-simple-http-server/issues"
