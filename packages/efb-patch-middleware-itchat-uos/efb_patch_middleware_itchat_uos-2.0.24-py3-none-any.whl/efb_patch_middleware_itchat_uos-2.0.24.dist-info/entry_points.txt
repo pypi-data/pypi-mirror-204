@@ -1,0 +1,2 @@
+[ehforwarderbot.middleware]
+patch.PatchMiddleware = efb_patch_middleware:PatchMiddleware
