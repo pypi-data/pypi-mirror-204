@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mlas
+Version: 0.0.1.dev1
+Summary: MLAS - Microsoft Linear Algebra Subprograms
+Author: juncongmoo
+Keywords: mlas
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+
