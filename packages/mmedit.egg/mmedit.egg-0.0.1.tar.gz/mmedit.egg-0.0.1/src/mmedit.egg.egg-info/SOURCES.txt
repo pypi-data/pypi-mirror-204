@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/mmedit.egg.egg-info/PKG-INFO
+src/mmedit.egg.egg-info/SOURCES.txt
+src/mmedit.egg.egg-info/dependency_links.txt
+src/mmedit.egg.egg-info/entry_points.txt
+src/mmedit.egg.egg-info/requires.txt
+src/mmedit.egg.egg-info/top_level.txt
+tests/test_simple.py
