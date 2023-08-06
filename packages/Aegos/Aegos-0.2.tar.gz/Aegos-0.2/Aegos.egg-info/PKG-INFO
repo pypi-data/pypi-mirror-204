@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: Aegos
+Version: 0.2
+Summary: Checking emails for any domain , for example : gmail,yahoo,aol,hotmail,outlook,mail_ru
+Author: Aegos
+Author-email: syakkml@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
