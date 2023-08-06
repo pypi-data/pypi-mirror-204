@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+shellextools/LICENSE
+shellextools/README.md
+shellextools/__init__.py
+shellextools/requirements.txt
+shellextools/thirdparty.json
+shellextools.egg-info/PKG-INFO
+shellextools.egg-info/SOURCES.txt
+shellextools.egg-info/dependency_links.txt
+shellextools.egg-info/requires.txt
+shellextools.egg-info/top_level.txt

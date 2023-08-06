@@ -1,0 +1,4 @@
+include shellextools/requirements.txt
+include shellextools/thirdparty.json
+include shellextools/README.md
+include shellextools/LICENSE
