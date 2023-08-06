@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "Nudeny"
+version = "0.0.6"
+description = "Image nudity classification and detection package."
+authors = ["Nudeny <thesis.nudeny69@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/Nudeny/Nudeny-python-module"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Pillow = "9.4.0"
+requests = "2.28.2"
+urllib3 = "1.26.15"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+pytest-cov = "^2.12.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
