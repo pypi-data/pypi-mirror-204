@@ -1,0 +1,34 @@
+# Databricks notebook source
+import pandas as pd
+from typing import Tuple
+from sklearn.model_selection import train_test_split
+from random import randint
+
+
+# COMMAND ----------
+def load_model():
+    model = None
+    # TODO: Load model from source of choice...
+    return model
+
+
+# COMMAND ----------
+def load_test_data() -> pd.DataFrame:
+    df = None
+    # TODO: Load data from source of choice...
+    return df
+
+
+# COMMAND ----------
+def evaluate(model, test_df: pd.DataFrame) -> dict:
+    metrics = {}
+    # TODO: Evaluate model and report metrics...
+    return metrics
+
+
+# COMMAND ----------
+if __name__ == "__main__":
+    model = load_model()
+    test_df = load_test_data()
+    metrics = evaluate(model, test_df)
+    print(metrics)
