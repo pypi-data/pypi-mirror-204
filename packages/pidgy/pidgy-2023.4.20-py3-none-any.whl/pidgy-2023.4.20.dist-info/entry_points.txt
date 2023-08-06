@@ -1,0 +1,5 @@
+[console_scripts]
+pidgy = pidgy.__main__:main
+
+[mkdocs.plugins]
+pidgy = pidgy.ext.mkdocs:Notebooks
