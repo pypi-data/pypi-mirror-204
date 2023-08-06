@@ -1,0 +1,2 @@
+[console_scripts]
+pycp2cp = shv.cp2cp.__main__:main
