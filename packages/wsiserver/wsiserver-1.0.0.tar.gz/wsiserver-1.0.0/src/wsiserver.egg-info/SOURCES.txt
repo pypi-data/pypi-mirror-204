@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/wsiserver/__init__.py
+src/wsiserver/app.py
+src/wsiserver.egg-info/PKG-INFO
+src/wsiserver.egg-info/SOURCES.txt
+src/wsiserver.egg-info/dependency_links.txt
+src/wsiserver.egg-info/entry_points.txt
+src/wsiserver.egg-info/requires.txt
+src/wsiserver.egg-info/top_level.txt
