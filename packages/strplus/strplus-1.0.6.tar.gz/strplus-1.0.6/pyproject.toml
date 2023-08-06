@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "strplus"
+version = "1.0.6"
+authors = ["Silvio Liborio <silvio.liborio@wiseupdata.com>"]
+readme = "README.md"
+
+description = "Python extra functions for strings"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/wiseupdata/strplus"
+"Bug Tracker" = "https://github.com/wiseupdata/strplus/issues"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.0"
+ipykernel = "^6.22.0"
+pytest-cov = "^4.0.0"
+coverage = "^7.2.3"
+black = "^23.3.0"
+isort = "^5.12.0"
+mkdocs = "^1.4.2"
+mkdocstrings = {extras = ["python"], version = "^0.21.2"}
+mkdocs-gen-files = "^0.4.0"
+mkdocs-literate-nav = "^0.6.0"
+mkdocs-section-index = "^0.3.5"
+mkdocs-material = "^9.1.6"
+pypeln = "^0.4.9"
+mkdocs-material-extensions = "^1.1.1"
+mkdocs-jupyter = "^0.24.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
