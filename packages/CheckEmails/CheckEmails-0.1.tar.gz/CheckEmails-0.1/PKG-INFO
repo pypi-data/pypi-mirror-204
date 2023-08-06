@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: CheckEmails
+Version: 0.1
+Summary: Checking emails for any domain , for example : gmail,yahoo,aol,hotmail,outlook,mail_ru
+Author: Aegos
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt

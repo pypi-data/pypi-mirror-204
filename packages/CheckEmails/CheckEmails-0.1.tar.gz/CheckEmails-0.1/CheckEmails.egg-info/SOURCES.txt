@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+CheckEmails.egg-info/PKG-INFO
+CheckEmails.egg-info/SOURCES.txt
+CheckEmails.egg-info/dependency_links.txt
+CheckEmails.egg-info/top_level.txt
+code/__init__.py
