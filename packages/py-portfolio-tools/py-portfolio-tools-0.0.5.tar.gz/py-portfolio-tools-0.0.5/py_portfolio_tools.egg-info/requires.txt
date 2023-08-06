@@ -1,0 +1,8 @@
+numpy
+pandas
+matplotlib
+yfinance
+PyOpenGL
+glfw
+imgui[glfw]
+Pillow

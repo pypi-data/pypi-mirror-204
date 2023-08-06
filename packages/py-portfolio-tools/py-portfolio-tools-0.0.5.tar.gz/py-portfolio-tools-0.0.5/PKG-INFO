@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: py-portfolio-tools
+Version: 0.0.5
+Summary: A Python Library and set of GUI tools for Portfolio Management
+Home-page: https://gitlab.com/Jaysmito101/py-portfolio-tools
+Author: Jaysmito Mukherjee
+Author-email: jaysmito101@gmail.com
+License: MIT
+Project-URL: Documentation, https://gitlab.com/Jaysmito101/py-portfolio-tools/-/wikis/Home
+Project-URL: Issue tracker, https://gitlab.com/Jaysmito101/py-portfolio-tools/-/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+Coming Soon ...
