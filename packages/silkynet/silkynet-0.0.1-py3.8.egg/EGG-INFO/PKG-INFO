@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: silkynet
+Version: 0.0.1
+Summary: machine learning kit for algorithm train platform
+Home-page: https://code.amh-group.com/model-platform/kflearn
+Author: hornlee
+Author-email: hongen26@163.com
+License: MIT Licence
+Project-URL: Documentation, https://packaging.python.org/tutorials/distributing-packages/
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Source, https://github.com/pypa/sampleproject/
+Project-URL: Tracker, https://github.com/pypa/sampleproject/issues
+Keywords: kflearn ymm
+Platform: any
+Requires-Python: >=3
+
+UNKNOWN
+

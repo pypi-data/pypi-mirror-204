@@ -1,0 +1,7 @@
+README.md
+setup.py
+silkynet.egg-info/PKG-INFO
+silkynet.egg-info/SOURCES.txt
+silkynet.egg-info/dependency_links.txt
+silkynet.egg-info/requires.txt
+silkynet.egg-info/top_level.txt
