@@ -1,0 +1,5 @@
+edalize>=0.4.1
+pyparsing
+pyyaml
+simplesat>=0.8.0
+fastjsonschema
