@@ -1,0 +1,15 @@
+setup.py
+Conanmail.egg-info/PKG-INFO
+Conanmail.egg-info/SOURCES.txt
+Conanmail.egg-info/dependency_links.txt
+Conanmail.egg-info/entry_points.txt
+Conanmail.egg-info/requires.txt
+Conanmail.egg-info/top_level.txt
+conan/IMAP.json
+conan/__init__.py
+conan/config.py
+conan/main.py
+conan/utils.py
+conan/web/index.html
+conan/web/render.svg
+conan/web/style.css

@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: Conanmail
+Version: 1.0.17
+Summary: Helping you delete your old accounts
+Home-page: https://github.com/Nenaff/Conan
+Author: Nenaff
+Author-email: frightful.steam416@4wrd.cc
+Requires-Python: >=3.6
