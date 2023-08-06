@@ -1,0 +1,14 @@
+README.md
+setup.py
+tomltable/__init__.py
+tomltable/errors.py
+tomltable/parser.py
+tomltable/template.py
+tomltable/test_tomltable.py
+tomltable/types.py
+tomltable.egg-info/PKG-INFO
+tomltable.egg-info/SOURCES.txt
+tomltable.egg-info/dependency_links.txt
+tomltable.egg-info/entry_points.txt
+tomltable.egg-info/requires.txt
+tomltable.egg-info/top_level.txt
