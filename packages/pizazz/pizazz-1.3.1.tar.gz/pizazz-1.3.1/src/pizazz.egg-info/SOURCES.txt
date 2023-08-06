@@ -1,0 +1,15 @@
+AUTHORS.md
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pizazz/__init__.py
+src/pizazz/pizazz.py
+src/pizazz.egg-info/PKG-INFO
+src/pizazz.egg-info/SOURCES.txt
+src/pizazz.egg-info/dependency_links.txt
+src/pizazz.egg-info/entry_points.txt
+src/pizazz.egg-info/top_level.txt
