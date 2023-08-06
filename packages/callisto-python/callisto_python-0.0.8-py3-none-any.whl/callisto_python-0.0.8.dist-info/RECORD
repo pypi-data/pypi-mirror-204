@@ -1,0 +1,13 @@
+callisto/__init__.py,sha256=16Apwqn5X-9jBxNLhe2pf-j-rOSpt1FVSecnlJKcpk4,423
+callisto/command.py,sha256=5i5x-gHnKEdXmcmuPjzNW6tWzssmM-PEBz2frL9gANU,130
+callisto/download.py,sha256=YwUitUCUsCBLNWuf-9stx7GaC20QwwKWhyfm0md-BjU,1770
+callisto/notification.py,sha256=l7J95lrUq6b8HaM7tx9EJ35cxlwPZvbaV4ne1pfmT-c,518
+callisto/pandas_statistics.py,sha256=gZd3vZatSO_cyRs2An_WcD2Z1VnD5glVqlzEQfsYcX0,2135
+callisto/stats_utils.py,sha256=riiTyd31bHM2JmVusQ5geKaECLfdOGfWKoqAVJH5h68,2541
+callisto/var_utils.py,sha256=0QVldWf8bua_vvzrkFwAVilqyy7z8yqZ5m3S7tgCLIE,29402
+callisto/version.py,sha256=yCRCOd5LnyIUe-HjbL8gxend3HSOoAFSHrOUSAvNfh0,88
+callisto_python-0.0.8.dist-info/LICENSE,sha256=qUhcexNsqbi33kx-4NWGO9SJ0zmKPn1d9HAjRuTX4nQ,1056
+callisto_python-0.0.8.dist-info/METADATA,sha256=IjZPyWuP8S9M8WbOf-RtQ1c15BBQn7_rJsdJj2_xddQ,621
+callisto_python-0.0.8.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+callisto_python-0.0.8.dist-info/top_level.txt,sha256=0pLnFsnSbq1mxWtd_Rv_795uQWhKpoLMwoyIGecx5_s,9
+callisto_python-0.0.8.dist-info/RECORD,,
