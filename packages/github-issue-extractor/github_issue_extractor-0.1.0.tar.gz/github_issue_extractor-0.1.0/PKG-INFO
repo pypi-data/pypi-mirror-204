@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: github_issue_extractor
+Version: 0.1.0
+Summary: GitHubIssueExtractor
+Home-page: https://github.com/ssinha2103/github-issues_to_excel
+Author: Sudarshan Sinha
+Author-email: s.sinha2103@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+GitHubIssueExtractor
