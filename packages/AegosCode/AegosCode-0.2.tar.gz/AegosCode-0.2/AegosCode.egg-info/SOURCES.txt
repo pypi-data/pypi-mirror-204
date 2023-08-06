@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+AegosCode.egg-info/PKG-INFO
+AegosCode.egg-info/SOURCES.txt
+AegosCode.egg-info/dependency_links.txt
+AegosCode.egg-info/top_level.txt
+code/__init__.py
