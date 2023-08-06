@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+python_common_package.egg-info/PKG-INFO
+python_common_package.egg-info/SOURCES.txt
+python_common_package.egg-info/dependency_links.txt
+python_common_package.egg-info/requires.txt
+python_common_package.egg-info/top_level.txt
