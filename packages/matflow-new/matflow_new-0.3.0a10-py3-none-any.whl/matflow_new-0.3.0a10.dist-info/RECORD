@@ -1,0 +1,15 @@
+matflow/__init__.py,sha256=XU9rkfrbPP-6bWo_oelS1pDrMPDmr-kXkR913_6a-iU,1320
+matflow/__pyinstaller/__init__.py,sha256=YOzBlPSck6slucv6lJM9K80JtsJWxXRL00cv6tRj3oc,98
+matflow/__pyinstaller/hook-matflow.py,sha256=RMeaN3i4npM4Yi_vRfySCoO9WlOD3ePbKaOMgu_haQ8,211
+matflow/_version.py,sha256=Z6hJTbC-D59Q3BQSgT9gQi-3S_kYySj7MhQNHQobU9U,25
+matflow/api.py,sha256=3AWintSzk6SZvX8WF4jfETfE6CTXUWp6H7N0XdjcLaA,228
+matflow/cli.py,sha256=PSRPzE-PwLJGPajHdqBBDiNQJkCeR6sTpZ2dTmD5G2w,354
+matflow/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matflow/data/environments.yaml,sha256=w4u66AUHQ_IlPr-HO--AlUCH2u6KoBZhZUyvdPqVje0,358
+matflow/data/task_schemas.yaml,sha256=gBQ0Gyx5_QIlcqk3bpXdsmFLMypAW74njwQiNDIqeP4,1291
+matflow/parameters.py,sha256=wf-APAG2Hg_ua5BSFvqoFxAZOpUli_aCKl5RVfiHCc0,1247
+matflow/tests/test_cli.py,sha256=N_1LNF1ckELIK-5HSRXLZ-5A9vmvvT1jnQm6I_l5_rw,560
+matflow_new-0.3.0a10.dist-info/METADATA,sha256=CWC9h4j4PihHBbclZogEmhdNMPEZuiAw-jnmrF3kd94,1244
+matflow_new-0.3.0a10.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+matflow_new-0.3.0a10.dist-info/entry_points.txt,sha256=5ohfuGeHPamtmJd6dRgNveIjzojsfTqZAed6BsFTqFg,114
+matflow_new-0.3.0a10.dist-info/RECORD,,
