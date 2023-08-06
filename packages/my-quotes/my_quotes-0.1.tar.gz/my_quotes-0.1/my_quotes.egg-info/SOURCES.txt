@@ -1,0 +1,7 @@
+setup.py
+my_quotes/__init__.py
+my_quotes/generator.py
+my_quotes.egg-info/PKG-INFO
+my_quotes.egg-info/SOURCES.txt
+my_quotes.egg-info/dependency_links.txt
+my_quotes.egg-info/top_level.txt
