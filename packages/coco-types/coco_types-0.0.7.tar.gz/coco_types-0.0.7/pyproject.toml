@@ -1,0 +1,110 @@
+[build-system]
+requires = ["hatchling>=1.10.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "coco_types"
+authors = [{name="Bagard Hoel"}]
+description = "Package for handling COCO datasets types."
+keywords = ["COCO", "COCO dataset"]
+readme = "README.md"
+classifiers = [
+            "License :: OSI Approved :: MIT License",
+            "Programming Language :: Python :: 3",
+            "Programming Language :: Python :: 3.9",
+            "Programming Language :: Python :: 3.10",
+            "Operating System :: OS Independent",
+            "Intended Audience :: Developers",
+]
+license = {text = "MIT"}
+dynamic = ["version"]
+dependencies = ["pydantic"]
+requires-python = ">=3.9"
+packages = [
+    { "include" = "coco_types"}
+]
+
+[project.urls]
+"Homepage" = "https://github.com/hoel-bagard/coco_types"
+"Bug Tracker" = "https://github.com/hoel-bagard/coco_types/issues"
+
+[project.optional-dependencies]
+test = ["pytest"]
+dev = ["pre-commit", "pip-tools", "ruff", "pyright"]
+build = ["hatch"]
+
+[tool.hatch.version]
+path = "src/coco_types/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.github",
+  "/.pytest_cache",
+  "/build",
+  "/dist",
+  "/docs",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/coco_types"]
+
+[tool.hatch.envs.pypi.scripts]
+# hatch run pypi:publish_test
+publish_test = "hatch build --clean && hatch publish -r test"
+publish = "hatch build --clean && hatch publish"
+
+[tool.pytest.ini_options]
+# https://docs.pytest.org/en/7.1.x/explanation/goodpractices.html
+addopts = [
+    "--import-mode=importlib",
+]
+
+[tool.ruff]
+select = ["A", "B", "C4", "E", "I", "Q", "UP", "ANN", "S", "BLE", "COM", "DTZ", "PIE", "PT", "RSE", "SIM","PTH", "NPY", "RUF"]
+ignore = ["ANN101", "D1", "D401", "D204", "D203", "D213", "S101", "PLR2004", "A002", "A003"]
+line-length = 120
+
+[tool.ruff.isort]
+order-by-type = false
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+
+[tool.pyright]
+include = ["src/coco_types"]
+ignore = ["src/coco_types/__init__.pyi"]
+
+strictListInference = true
+strictDictionaryInference = true
+strictSetInference = true
+
+reportMissingModuleSource = false
+reportMissingImports = true
+reportMissingTypeStubs = false
+reportUnusedImport = true
+reportUnusedClass = "warning"
+reportUnusedFunction = "warning"
+reportUnusedVariable = "warning"
+reportDuplicateImport = "warning"
+reportUntypedNamedTuple = "warning"
+reportUntypedFunctionDecorator = "warning"
+reportUntypedClassDecorator = "warning"
+reportMissingSuperCall = false
+reportUnknownArgumentType = "warning"
+reportUnknownLambdaType = "warning"
+reportUnknownVariableType = "warning"
+reportUnknownMemberType = false
+reportMissingParameterType = "warning"
+reportMissingTypeArgument = "warning"
+reportCallInDefaultInitializer = false
+reportUnnecessaryIsInstance = "warning"
+reportUnnecessaryCast = "warning"
+reportUnnecessaryComparison = "warning"
+reportImplicitStringConcatenation = false
+reportUnusedCallResult = false
+reportUnusedExpression = "warning"
+reportUnnecessaryTypeIgnoreComment = "warning"
+reportMatchNotExhaustive = "warning"
+
+pythonVersion = "3.10"
+pythonPlatform = "Linux"
