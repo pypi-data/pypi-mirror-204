@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nano-local
+Version: 0.1.5
+Summary: A simple way to locally create a network of nano_nodes
+Author: gr0vity
+Requires-Dist: tomli
+Requires-Dist: tomli-w
+Requires-Dist: requests
+Requires-Dist: oyaml
+Requires-Dist: ed25519-blake2b
+Requires-Dist: gmpy2
+Requires-Dist: aiohttp
+Requires-Dist: pytest
+Requires-Dist: pytest-html
+Requires-Dist: nanolib
+Requires-Dist: extradict
+
