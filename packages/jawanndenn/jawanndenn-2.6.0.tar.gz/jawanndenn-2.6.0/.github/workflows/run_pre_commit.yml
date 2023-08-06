@@ -1,0 +1,34 @@
+name: Run pre-commit on all files
+
+on:
+- pull_request
+- push
+
+jobs:
+  run_pre_commit:
+    name: Run pre-commit on all files
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab  # v3.5.2
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@d27e3f3d7c64b4bbf8e4abfb9b63b83e846e0435  # v4.5.0
+        with:
+          python-version: '3.10'
+
+      - name: Install pre-commit
+        run: |-
+          pip install \
+            --disable-pip-version-check \
+            --user \
+            --no-warn-script-location \
+            pre-commit
+          echo "PATH=${HOME}/.local/bin:${PATH}" >> "${GITHUB_ENV}"
+
+      - name: Install pre-commit hooks
+        run: |-
+          pre-commit install --install-hooks
+
+      - name: Run pre-commit on all files
+        run: |-
+          pre-commit run --all-files --show-diff-on-failure
