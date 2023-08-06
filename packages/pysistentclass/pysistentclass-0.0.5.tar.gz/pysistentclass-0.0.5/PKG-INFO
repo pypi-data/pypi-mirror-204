@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pysistentclass
+Version: 0.0.5
+Summary: A small settings module for python
+Project-URL: Homepage, https://github.com/manjaroman2/pysistentclass
+Project-URL: Bug Tracker, https://github.com/manjaroman2/pysistentclass/issues
+Author-email: manjaroman2 <manjaroman2@protonmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: colorlog
+Requires-Dist: pyyaml
+Requires-Dist: toml
+Description-Content-Type: text/markdown
+
+# pysistentclass 
+
+## A small settings module for python
+
+Found on [pypi](https://pypi.org/project/pysistentclass/)
+
+`
+pip install pysistentclass
+`
