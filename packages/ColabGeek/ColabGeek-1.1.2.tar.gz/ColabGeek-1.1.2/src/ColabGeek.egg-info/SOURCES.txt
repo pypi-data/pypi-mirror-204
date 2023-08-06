@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/ColabGeek/ColabGeek.py
+src/ColabGeek/__init__.py
+src/ColabGeek.egg-info/PKG-INFO
+src/ColabGeek.egg-info/SOURCES.txt
+src/ColabGeek.egg-info/dependency_links.txt
+src/ColabGeek.egg-info/top_level.txt
+src/ColabGeek/shell_scripts/Run_Rstudio_server.sh
+src/ColabGeek/shell_scripts/Run_code_server.exp
