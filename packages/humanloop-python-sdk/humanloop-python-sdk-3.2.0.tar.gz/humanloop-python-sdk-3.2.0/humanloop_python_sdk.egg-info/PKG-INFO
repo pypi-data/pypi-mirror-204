@@ -1,0 +1,319 @@
+Metadata-Version: 2.1
+Name: humanloop-python-sdk
+Version: 3.2.0
+Summary: Humanloop API
+Home-page: https://github.com/konfig-dev/humanloop-sdks/tree/main/python
+Author: Konfig
+Author-email: engineering@konfigthis.com
+License: MIT
+Keywords: Konfig,Humanloop API
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# humanloop-python-sdk
+The Humanloop API allows you to interact with Humanloop from your product or service.
+
+You can do this through HTTP requests from any language or via our official Python SDK.
+
+To install the official Python SDK, run the following command:
+
+```bash
+pip install humanloop
+```
+
+---
+
+Guides and further details about key concepts can be found in [our docs](https://humanloop.gitbook.io/humanloop-docs/).
+
+- API version: 3.0.0
+- Package version: 3.2.0
+
+## Requirements.
+
+Python >=3.7
+
+## Installation & Usage
+### pip install
+
+If the python package is hosted on a repository, you can install directly using:
+
+```sh
+pip install humanloop-python-sdk==3.2.0
+```
+(you may need to run `pip` with root permission: `sudo pip install humanloop-python-sdk==3.2.0`)
+
+Then import the package:
+```python
+import humanloop
+```
+## Getting Started
+
+Please follow the [installation procedure](#installation--usage) and then run the following:
+
+```python
+from pprint import pprint
+from humanloop import Humanloop
+
+humanloop = Humanloop(
+    # Defining the host is optional and defaults to https://api.humanloop.com/v3
+    # See configuration.py for a list of all supported configuration parameters.
+    host = "https://api.humanloop.com/v3",
+
+    # Configure API key authorization: APIKeyHeader
+    api_key = 'YOUR_API_KEY',
+    # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+    # api_key_prefix = {'APIKeyHeader': 'Bearer'},
+)
+
+body = [
+        {
+            "type": "string_example",
+        }
+    ]
+try:
+    # Feedback
+    submit_response = humanloop.feedback(
+        body=body
+    )
+    pprint(submit_response.body)
+    pprint(submit_response.headers)
+    pprint(submit_response.status)
+    pprint(submit_response.round_trip_time)
+except ApiException as e:
+    print("Exception when calling .submit: %s\n" % e)
+    pprint(e.body)
+    if e.status == 422:
+        pprint(e.body["detail"])
+    pprint(e.headers)
+    pprint(e.status)
+    pprint(e.reason)
+    pprint(e.round_trip_time)
+
+body = {
+        "project": "project_example",
+        "messages": [
+            {
+                "role": "user",
+                "content": "content_example",
+            }
+        ],
+        "provider_api_keys": {
+        },
+        "num_samples": 1,
+        "stream": False,
+        "model_config": {
+            "model": "model_example",
+            "temperature": 1,
+            "max_tokens": 16,
+            "top_p": 1,
+            "presence_penalty": 0,
+            "frequency_penalty": 0,
+        },
+    }
+try:
+    # Chat
+    chat_response = humanloop.chat(
+        body=body
+    )
+    pprint(chat_response.body)
+    pprint(chat_response.body["project_id"])
+    pprint(chat_response.body["data"])
+    pprint(chat_response.body["provider_responses"])
+    pprint(chat_response.body["num_samples"])
+    pprint(chat_response.body["logprobs"])
+    pprint(chat_response.body["suffix"])
+    pprint(chat_response.body["user"])
+    pprint(chat_response.body["usage"])
+    pprint(chat_response.body["metadata"])
+    pprint(chat_response.headers)
+    pprint(chat_response.status)
+    pprint(chat_response.round_trip_time)
+except ApiException as e:
+    print("Exception when calling .chat: %s\n" % e)
+    pprint(e.body)
+    if e.status == 422:
+        pprint(e.body["detail"])
+    pprint(e.headers)
+    pprint(e.status)
+    pprint(e.reason)
+    pprint(e.round_trip_time)
+
+body = {
+        "project": "project_example",
+        "inputs": {},
+        "num_samples": 1,
+        "stream": False,
+        "model_config": {
+            "model": "model_example",
+            "temperature": 1,
+            "max_tokens": 16,
+            "top_p": 1,
+            "presence_penalty": 0,
+            "frequency_penalty": 0,
+        },
+    }
+try:
+    # Generate
+    generate_response = humanloop.generate(
+        body=body
+    )
+    pprint(generate_response.body)
+    pprint(generate_response.body["project_id"])
+    pprint(generate_response.body["data"])
+    pprint(generate_response.body["provider_responses"])
+    pprint(generate_response.body["num_samples"])
+    pprint(generate_response.body["logprobs"])
+    pprint(generate_response.body["suffix"])
+    pprint(generate_response.body["user"])
+    pprint(generate_response.body["usage"])
+    pprint(generate_response.body["metadata"])
+    pprint(generate_response.headers)
+    pprint(generate_response.status)
+    pprint(generate_response.round_trip_time)
+except ApiException as e:
+    print("Exception when calling .generate: %s\n" % e)
+    pprint(e.body)
+    if e.status == 422:
+        pprint(e.body["detail"])
+    pprint(e.headers)
+    pprint(e.status)
+    pprint(e.reason)
+    pprint(e.round_trip_time)
+
+body = [
+        {
+            "project": "project_example",
+            "output": "output_example",
+        }
+    ]
+try:
+    # Log
+    log_response = humanloop.log(
+        body=body
+    )
+    pprint(log_response.body)
+    pprint(log_response.headers)
+    pprint(log_response.status)
+    pprint(log_response.round_trip_time)
+except ApiException as e:
+    print("Exception when calling .log: %s\n" % e)
+    pprint(e.body)
+    if e.status == 422:
+        pprint(e.body["detail"])
+    pprint(e.headers)
+    pprint(e.status)
+    pprint(e.reason)
+    pprint(e.round_trip_time)
+```
+
+## Documentation for API Endpoints
+
+All URIs are relative to *https://api.humanloop.com/v3*
+
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+*ExperimentsApi* | [**create**](docs/apis/tags/ExperimentsApi.md#create) | **post** /projects/{project_id}/experiments | Create Project Experiment
+*ExperimentsApi* | [**delete**](docs/apis/tags/ExperimentsApi.md#delete) | **delete** /experiments/{experiment_id} | Delete Experiment
+*ExperimentsApi* | [**get_model_config**](docs/apis/tags/ExperimentsApi.md#get_model_config) | **get** /experiments/{experiment_id}/model-config | Get Model Config From Experiment
+*ExperimentsApi* | [**list**](docs/apis/tags/ExperimentsApi.md#list) | **get** /projects/{project_id}/experiments | Get Project Experiments
+*ExperimentsApi* | [**update**](docs/apis/tags/ExperimentsApi.md#update) | **patch** /experiments/{experiment_id} | Update Experiment
+*FeedbackApi* | [**submit**](docs/apis/tags/FeedbackApi.md#submit) | **post** /feedback | Feedback
+*GenerateApi* | [**chat**](docs/apis/tags/GenerateApi.md#chat) | **post** /chat | Chat
+*GenerateApi* | [**generate**](docs/apis/tags/GenerateApi.md#generate) | **post** /generate | Generate
+*LogsApi* | [**log**](docs/apis/tags/LogsApi.md#log) | **post** /logs | Log
+*ModelConfigsApi* | [**get**](docs/apis/tags/ModelConfigsApi.md#get) | **get** /model-configs/{id} | Get Model Config
+*ModelConfigsApi* | [**register**](docs/apis/tags/ModelConfigsApi.md#register) | **post** /model-configs | Register Project Model Config
+*ProjectsApi* | [**create**](docs/apis/tags/ProjectsApi.md#create) | **post** /projects | Create Project
+*ProjectsApi* | [**delete_active_experiment**](docs/apis/tags/ProjectsApi.md#delete_active_experiment) | **delete** /projects/{id}/active-experiment | Delete Active Experiment
+*ProjectsApi* | [**delete_active_model_config**](docs/apis/tags/ProjectsApi.md#delete_active_model_config) | **delete** /projects/{id}/active-model-config | Delete Active Model Config
+*ProjectsApi* | [**export_datapoints**](docs/apis/tags/ProjectsApi.md#export_datapoints) | **post** /projects/{id}/export | Export Datapoints
+*ProjectsApi* | [**get**](docs/apis/tags/ProjectsApi.md#get) | **get** /projects/{id} | Get Project
+*ProjectsApi* | [**get_model_config**](docs/apis/tags/ProjectsApi.md#get_model_config) | **get** /projects/{id}/model-config | Get Model Config From Project
+*ProjectsApi* | [**get_model_configs**](docs/apis/tags/ProjectsApi.md#get_model_configs) | **get** /projects/{id}/model-configs | Get Project Model Configs
+*ProjectsApi* | [**list**](docs/apis/tags/ProjectsApi.md#list) | **get** /projects | Get Projects
+*ProjectsApi* | [**update**](docs/apis/tags/ProjectsApi.md#update) | **patch** /projects/{id} | Update Project
+*ProjectsApi* | [**update_feedback_types**](docs/apis/tags/ProjectsApi.md#update_feedback_types) | **patch** /projects/{id}/feedback-types | Update Feedback Types
+
+## Documentation For Models
+
+ - [BaseMetricResponse](docs/models/BaseMetricResponse.md)
+ - [CategoricalFeedbackLabel](docs/models/CategoricalFeedbackLabel.md)
+ - [ChatDataResponse](docs/models/ChatDataResponse.md)
+ - [ChatMessage](docs/models/ChatMessage.md)
+ - [ChatModelConfigRequest](docs/models/ChatModelConfigRequest.md)
+ - [ChatRequest](docs/models/ChatRequest.md)
+ - [ChatResponse](docs/models/ChatResponse.md)
+ - [ChatRole](docs/models/ChatRole.md)
+ - [CreateExperimentRequest](docs/models/CreateExperimentRequest.md)
+ - [CreateLogResponse](docs/models/CreateLogResponse.md)
+ - [CreateProjectRequest](docs/models/CreateProjectRequest.md)
+ - [DataResponse](docs/models/DataResponse.md)
+ - [ExperimentChat](docs/models/ExperimentChat.md)
+ - [ExperimentGenerate](docs/models/ExperimentGenerate.md)
+ - [ExperimentModelConfigResponse](docs/models/ExperimentModelConfigResponse.md)
+ - [ExperimentResponse](docs/models/ExperimentResponse.md)
+ - [ExperimentStatus](docs/models/ExperimentStatus.md)
+ - [Feedback](docs/models/Feedback.md)
+ - [FeedbackClass](docs/models/FeedbackClass.md)
+ - [FeedbackLabelRequest](docs/models/FeedbackLabelRequest.md)
+ - [FeedbackRequest](docs/models/FeedbackRequest.md)
+ - [FeedbackResponse](docs/models/FeedbackResponse.md)
+ - [FeedbackType](docs/models/FeedbackType.md)
+ - [FeedbackTypeModel](docs/models/FeedbackTypeModel.md)
+ - [FeedbackTypeRequest](docs/models/FeedbackTypeRequest.md)
+ - [FeedbackTypes](docs/models/FeedbackTypes.md)
+ - [GenerateRequest](docs/models/GenerateRequest.md)
+ - [GenerateResponse](docs/models/GenerateResponse.md)
+ - [GenerateUsage](docs/models/GenerateUsage.md)
+ - [GetModelConfigResponse](docs/models/GetModelConfigResponse.md)
+ - [GetModelConfigsResponse](docs/models/GetModelConfigsResponse.md)
+ - [HTTPValidationError](docs/models/HTTPValidationError.md)
+ - [LabelSentiment](docs/models/LabelSentiment.md)
+ - [ListResponse](docs/models/ListResponse.md)
+ - [Log200Response](docs/models/Log200Response.md)
+ - [LogRequest](docs/models/LogRequest.md)
+ - [LogRequestBody](docs/models/LogRequestBody.md)
+ - [LogResponse](docs/models/LogResponse.md)
+ - [ModelConfigChat](docs/models/ModelConfigChat.md)
+ - [ModelConfigGenerate](docs/models/ModelConfigGenerate.md)
+ - [ModelConfigRequest](docs/models/ModelConfigRequest.md)
+ - [ModelConfigResponse](docs/models/ModelConfigResponse.md)
+ - [ModelEndpoints](docs/models/ModelEndpoints.md)
+ - [ModelProviders](docs/models/ModelProviders.md)
+ - [PaginatedDataLogResponse](docs/models/PaginatedDataLogResponse.md)
+ - [PaginatedDataProjectResponse](docs/models/PaginatedDataProjectResponse.md)
+ - [PositiveLabel](docs/models/PositiveLabel.md)
+ - [ProjectChat](docs/models/ProjectChat.md)
+ - [ProjectGenerate](docs/models/ProjectGenerate.md)
+ - [ProjectModelConfigFeedbackStatsResponse](docs/models/ProjectModelConfigFeedbackStatsResponse.md)
+ - [ProjectModelConfigRequest](docs/models/ProjectModelConfigRequest.md)
+ - [ProjectModelConfigResponse](docs/models/ProjectModelConfigResponse.md)
+ - [ProjectResponse](docs/models/ProjectResponse.md)
+ - [ProjectSortBy](docs/models/ProjectSortBy.md)
+ - [ProjectUserResponse](docs/models/ProjectUserResponse.md)
+ - [ProviderApiKeys](docs/models/ProviderApiKeys.md)
+ - [RawChat](docs/models/RawChat.md)
+ - [RawGenerate](docs/models/RawGenerate.md)
+ - [SortOrder](docs/models/SortOrder.md)
+ - [SubmitRequest](docs/models/SubmitRequest.md)
+ - [SubmitResponse](docs/models/SubmitResponse.md)
+ - [ToolResultResponse](docs/models/ToolResultResponse.md)
+ - [UpdateExperimentRequest](docs/models/UpdateExperimentRequest.md)
+ - [UpdateFeedbackTypesRequest](docs/models/UpdateFeedbackTypesRequest.md)
+ - [UpdateProjectRequest](docs/models/UpdateProjectRequest.md)
+ - [ValidationError](docs/models/ValidationError.md)
+
+## Documentation For Authorization
+
+ Authentication schemes defined for the API:
+## APIKeyHeader
+
+- **Type**: API key
+- **API key parameter name**: X-API-KEY
+- **Location**: HTTP header
+
+
+
+## Author
+This Python package is automatically generated by [Konfig](https://konfigthis.com)
