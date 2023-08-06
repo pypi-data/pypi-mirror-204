@@ -1,0 +1,49 @@
+---
+- name: Create docker directory
+  ansible.builtin.file:
+    state: directory
+    path: /etc/docker
+    mode: '0755'
+
+- name: Install docker-ce from upstream
+  ansible.builtin.include_tasks: upstream.yaml
+
+- name: Add the user master to group 'docker'
+  ansible.builtin.user:
+    name: "{{ master.user }}"
+    groups: docker
+    append: true
+
+- name: Reset ssh connection to pick up docker group
+  ansible.builtin.meta: reset_connection
+
+- name: Add docker daemon config file
+  ansible.builtin.template:
+    dest: /etc/docker/daemon.json
+    group: root
+    mode: '0644'
+    owner: root
+    src: daemon.json.j2
+
+- name: Restart Docker
+  ansible.builtin.service:
+    name: docker
+    enabled: true
+    state: restarted
+
+- name: Ugrade Pip
+  ansible.builtin.pip:
+    name: pip
+    state: present
+    extra_args: --user --upgrade
+  become_user: "{{ master.user }}"
+
+- name: Install docker-compose
+  ansible.builtin.pip:
+    name: docker-compose
+    state: present
+    extra_args: --user
+  become_user: "{{ master.user }}"
+
+- name: Flush handlers
+  ansible.builtin.meta: flush_handlers
