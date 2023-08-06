@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/gptop/gptop.egg-info/PKG-INFO
+src/gptop/gptop.egg-info/SOURCES.txt
+src/gptop/gptop.egg-info/dependency_links.txt
+src/gptop/gptop.egg-info/requires.txt
+src/gptop/gptop.egg-info/top_level.txt
