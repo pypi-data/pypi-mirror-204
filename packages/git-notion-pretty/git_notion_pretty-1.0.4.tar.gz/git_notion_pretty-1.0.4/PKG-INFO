@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: git_notion_pretty
+Version: 1.0.4
+Summary: Syncs GitHub Markdown files to Notion
+Home-page: https://github.com/Harbor-Systems/git-notion
+Author: NarekA
+License: MIT license
+Keywords: git_notion_pretty
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Git Notion
+==========
+
+Syncs Github markdown files in your repository to Notion.
+
+This utility is described in the following [blog post](https://www.swiftlane.com/blog/syncing-docs-from-code-repositories-to-notion/).
+
+See example [Notion page](https://www.notion.so/git_notion-195c08d3d14140eb9a35ac00f9a0f078).
+
+## Installation
+```bash
+pip install git-notion
+pip install notion-cobertos-fork # IMPORTANT due to a md2notion notion-py dependency. Order also matters
+```
+
+or for local installation:
+
+```bash
+git clone https://github.com/Harbor-Systems/git-notion.git
+cd git-notion
+pip install -e .
+```
+
+## Configuring
+
+`NOTION_TOKEN_V2` - Can be found in your [browser cookies](https://www.redgregory.com/notion/2020/6/15/9zuzav95gwzwewdu1dspweqbv481s5) for Notion's website.<br>
+`NOTION_ROOT_PAGE` - URL for notion page. Repo docs will be a new page under this page.<br>
+`NOTION_EXCLUDE_REGEX` - Regex for paths to ignore.<br>
+`NOTION_INCLUDE_REGEX` - Regex for paths to include.<br>
+`NOTION_CONFIG_PATH` - Path to the setup.cfg file.<br>
+
+These environment variables can be set.
+```bash
+export NOTION_TOKEN_V2=<YOUR_TOKEN>
+export NOTION_ROOT_PAGE="https://www.notion.so/..."  # Can be in setup.cfg as well
+export NOTION_IGNORE_REGEX="(?i)(vendor\/.*\.md|deleteme\.md)" # Can be in setup.cfg as well
+export NOTION_INCLUDE_REGEX="(?i)(docs\/.*\.md|readme\.md)" # Can be in setup.cfg as well
+export NOTION_CONFIG_PATH="docs/"
+```
+
+These parameters can be set in the `setup.cfg` for the repo.
+```
+[git-notion]
+ignore_regex = models/.*
+include_regex = docs/.*
+notion_root_page = https://www.notion.so/...
+```
+
+## Running Locally
+
+1. Set up a virtual environment
+```shell
+python3 -m pip install virtualenv # only do this the first time
+```
+2. Create a virtual environment
+```shell
+python3 -m virtualenv venv
+```
+3. Activate the virtual environment
+```shell
+source venv/bin/activate
+```
+4. Install the dependencies
+```shell
+python3 -m pip install -r requirements.in
+```
+5. Set any environment variables and run the command
+```shell
+export NOTION_TOKEN_V2=<...>
+export NOTION_ROOT_PAGE="https://www.notion.so/..."
+python3 git-notion-pretty/cli.py [options]
+```
+
+## Usage
+
+```bash
+# To upload your current directory
+git-notion-pretty
+
+# To upload to a different directory name
+git-notion-pretty --dir-name="Application Docs"
+
+# To use a flat structure instead of the nested structure
+git-notion-pretty --page-structure=flat
+
+# To use the file name instead searching for and using the H1 header on the first line
+git-notion-pretty --use-file-name
+```
+
+## Pushing to PYPI
+
+```bash
+python3 -m bumpversion patch   # Look-up bumpversion
+rm -rf dist/
+python3 setup.py sdist bdist_wheel
+python3 -m twine upload dist/*
+```
