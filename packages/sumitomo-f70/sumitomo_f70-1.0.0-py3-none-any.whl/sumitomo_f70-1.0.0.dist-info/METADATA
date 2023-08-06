@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sumitomo-f70
+Version: 1.0.0
+Summary: 'Unofficial Sumitomo F70 Helium Compressor python driver',
+Author: Jamie Eckstein
+License: MIT
+Project-URL: Homepage, https://github.com/xkstein/Sumitomo-F70-Python
+Project-URL: Docs, https://xkstein.github.io/Sumitomo-F70-Python/
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: requests
+Requires-Dist: packaging
+Requires-Dist: pyserial (>=3.5)
+
+# *Unofficial* Sumitomo (SHI) Cryogenics F-70 Helium Compressor Python Driver
+
+Unofficial python driver for monitoring and controlling Sumitomo Cryogenics F-70 Helium Compressors through their serial (RS232) port. 
+
+**NOTE:** this requires firmware version 1.6 or higher.
