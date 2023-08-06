@@ -1,0 +1,15 @@
+mindmate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mindmate/cli.py,sha256=SbiLTG7EOBwOHxhPrPpYp0RBore247tuFGtjO6YxWFE,450
+mindmate/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mindmate/commands/configure.py,sha256=AFTnIJflu_yuaYJsNJbO0jPPOSX2qz04jt5EeTxksOc,1190
+mindmate/commands/dropdb.py,sha256=1ftxJaSgua6P71cwCwS3DOGV8Klx-yyZUyOIf-lZfgU,381
+mindmate/commands/initdb.py,sha256=Z7gFBEmiVEGJriS94SNm-EroKrRQjzrHWbnaANIh11Q,301
+mindmate/commands/nested_group.py,sha256=dLUviSrjONK5P5KKa9qxJ4FfzcD9-6bkciDWvCy6n5g,845
+mindmate/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mindmate/utils/helper.py,sha256=nqb-xahjnz72a_zl0GRzWD9-Cc-IxWOfTSnL06inhlo,154
+mindmate-0.0.1.dist-info/LICENSE,sha256=gUzxp-edxqPto9GX-n3tNsO3M5F-1doejME16yTzrAk,26525
+mindmate-0.0.1.dist-info/METADATA,sha256=JzGYGdQUWkh3LYAbj6FdNmSkE665zaezDSvhnp7MHMs,1450
+mindmate-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mindmate-0.0.1.dist-info/entry_points.txt,sha256=MgWoQItT_FsgO_wpQJgkG0sz1AsJVLCiYywRrJIuIlg,47
+mindmate-0.0.1.dist-info/top_level.txt,sha256=2840VUpZ8usYFBAGt_-0H1BDDiyUuTEwnWJ-o6rzWk4,9
+mindmate-0.0.1.dist-info/RECORD,,
