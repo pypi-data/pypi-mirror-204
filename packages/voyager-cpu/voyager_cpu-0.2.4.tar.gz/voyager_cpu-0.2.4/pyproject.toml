@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "voyager-cpu"
+version = "0.2.4"
+authors = [
+  { name="Carlton Shepherd", email="carlton@linux.com" },
+]
+description = "A simple 32-bit RISC-V CPU emulator"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: System :: Emulators",
+    "Programming Language :: Assembly"
+]
+
+dependencies = [
+    "elftools >= 0.29"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/cgshep/voyager-cpu"
+"Bug Tracker" = "https://github.com/cgshep/voyager-cpu/issues"
+
+[project.optional-dependencies]
+tests = [
+  'pytest>=7.0',
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
