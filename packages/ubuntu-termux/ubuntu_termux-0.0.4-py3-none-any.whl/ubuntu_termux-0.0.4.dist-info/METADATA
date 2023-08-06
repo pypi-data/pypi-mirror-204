@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ubuntu-termux
+Version: 0.0.4
+Summary: install and use the Ubuntu on the Termux
+Home-page: https://github.com/perseu912/ubuntu-termux
+Author: Reinan Br
+Author-email: slimchatuba@gmail.com
+License: GPLv3
+Keywords: ubuntu termux linux
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: kitano
+
+# ubuntu-termux
+Install run a mini distro Ubuntu on Termux
