@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "printopia"
+version = "0.1.0"
+description = ""
+authors = ["akshat <akshat1997tamrakar@gmail.com>"]
+readme = "README.md"
+packages = [{include = "printopia", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+colorama = "^0.4.6"
+pytest = "^7.3.1"
+pytest-cov = "^4.0.0"
+pytest-sugar = "^0.9.7"
+tox = "^4.4.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
