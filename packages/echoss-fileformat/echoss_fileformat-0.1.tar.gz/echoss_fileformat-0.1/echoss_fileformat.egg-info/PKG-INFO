@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: echoss-fileformat
+Version: 0.1
+Summary: echoss AI Bigdata Solution - File Format Handlers
+Home-page: https://github.com/12cmlab/echoss_fileformat.git
+Author: ckkim
+Author-email: ckkim@12cm.co.kr
+License: LGPL
+License-File: LICENSE
