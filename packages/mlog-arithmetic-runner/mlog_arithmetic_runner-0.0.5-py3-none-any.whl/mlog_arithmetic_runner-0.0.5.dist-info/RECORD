@@ -1,0 +1,10 @@
+mlog_arithmetic_runner/__init__.py,sha256=8GXTrD3uhf2pevytj5YDROawNU54Nk2oaiuwqneEugc,72
+mlog_arithmetic_runner/__main__.py,sha256=KRV2KrCw7w8hc2r5ddED3J_smxlE5x4jjqlugrNkpCc,2474
+mlog_arithmetic_runner/arithmetic_operators.py,sha256=LDhyhgCaATAOXrdnCFA0N6-hs33iIrZdXF6RmrrNKFc,3096
+mlog_arithmetic_runner/memory.py,sha256=AyvS8jfKbmTi6rspwBPRInxkF2uHMPmmj1EhqPWtJDg,575
+mlog_arithmetic_runner/mlog_processor.py,sha256=sMLlNNPg0G4TZ5uISU-e6MsTLoKl0j7E7URfWI5Z1rc,6302
+mlog_arithmetic_runner-0.0.5.dist-info/LICENSE,sha256=q0jTskpkyOwKFf24sfdxjz_n3a9bJyzzdo2vJhZmihE,1067
+mlog_arithmetic_runner-0.0.5.dist-info/METADATA,sha256=-z4Waq1ONjik71x8hWvevWRRV7cn5tYaqgEimGAL7sk,3287
+mlog_arithmetic_runner-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mlog_arithmetic_runner-0.0.5.dist-info/top_level.txt,sha256=zh2Grst6J1FwPruH14pCLsAQLlhWBQ0qd7xfufPbYvI,23
+mlog_arithmetic_runner-0.0.5.dist-info/RECORD,,
