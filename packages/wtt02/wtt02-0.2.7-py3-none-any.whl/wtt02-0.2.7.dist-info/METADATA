@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: wtt02
+Version: 0.2.7
+Author-email: Trent Hauck <thauck@wheretrue.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Requires-Dist: duckdb==0.7.1
+Description-Content-Type: text/markdown
+
+# WTT 02
+
+**Table of Contents**
+
+- [Installation](#installation)
+
+## Installation
+
+```console
+pip install wtt02
+```
