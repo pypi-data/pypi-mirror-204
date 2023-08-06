@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: graph-model-parser
+Version: 0.1.0
+Summary: A package for parsing and evaluating dynamical graph models
+Home-page: https://github.com/albertbuchard/GraphModelParser
+Author: Albert Buchard
