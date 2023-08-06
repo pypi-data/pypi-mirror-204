@@ -1,0 +1,14 @@
+semantra.py,sha256=XPlR8IkJ5EDEkfgGmIPY60rKr9auE_rEGeBgRp5Y9aY,28707
+client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client/public/favicon.png,sha256=CJWAf0lXToJv1suroVl7OCRMEgAK5QHvmvmf7ZEflX4,3300
+client/public/global.css,sha256=c1nuzGmx3u8Iv926ThMzpJqSPbYcxwlHG40SHKevMFE,890
+client/public/index.html,sha256=vr8dvYwRgcV7maOwWChEp_mOf4T_P4ZoQwg8HHCwspA,434
+client/public/build/bundle.css,sha256=wKUmWB6II5A9HoXytym6RBcbUQ3I0vylX2jk1Sb1Fv0,14441
+client/public/build/bundle.js,sha256=N-YECpEl0-zM8xtoZJJk9frdxF-R9UXCKZU-jIU0uM8,449074
+client/public/build/bundle.js.map,sha256=ZwW8dnokw1DMRsFUTjrLcBY-dBqQXGT92vvQyIAArhY,1495716
+semantra-0.0.4.dist-info/LICENSE,sha256=e5pu3H-pJKJYa1mvv995k94pUNXqP8wsmXNS6KFqLh8,1071
+semantra-0.0.4.dist-info/METADATA,sha256=00cFvyTI_32OhV47QVonSNooXikpU67_xsOuuoY4uLI,3824
+semantra-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+semantra-0.0.4.dist-info/entry_points.txt,sha256=ZVXwwZC8rf7oK24nAF31FY8SWE0nFd7AMZjjIjnHZ2I,43
+semantra-0.0.4.dist-info/top_level.txt,sha256=1geF-7NIoJsHRGHrAYsdFSh_uekewJ5KM5eJRQ8JYgU,16
+semantra-0.0.4.dist-info/RECORD,,
