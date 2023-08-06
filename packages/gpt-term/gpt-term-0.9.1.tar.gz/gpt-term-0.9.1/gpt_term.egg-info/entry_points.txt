@@ -1,0 +1,2 @@
+[console_scripts]
+gpt-term = chat:main
