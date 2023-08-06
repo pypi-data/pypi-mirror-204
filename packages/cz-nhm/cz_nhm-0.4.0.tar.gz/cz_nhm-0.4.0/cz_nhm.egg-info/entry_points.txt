@@ -1,0 +1,2 @@
+[commitizen.plugin]
+plugin = cz_nhm:NHMCz
