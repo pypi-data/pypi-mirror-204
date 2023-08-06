@@ -1,0 +1,7 @@
+iblutil>=1.6.0
+joblib
+mtscomp
+numpy
+one-api
+pandas
+scipy
