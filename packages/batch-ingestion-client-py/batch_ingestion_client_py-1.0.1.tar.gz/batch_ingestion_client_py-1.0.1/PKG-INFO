@@ -1,0 +1,145 @@
+Metadata-Version: 2.1
+Name: batch_ingestion_client_py
+Version: 1.0.1
+Summary: A client for the BatchIngestion mediawiki API
+Home-page: UNKNOWN
+Author: QuentinJanuel
+Author-email: <quentinjanuelkij@gmail.com>
+License: UNKNOWN
+Keywords: python,mediawiki,batchingestion,wikidata,wikibase,api,client
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# BatchIngestion Python Client
+
+This is a Python client library for the [BatchIngestion](https://gitlab.the-qa-company.com/FrozenMink/batchingestionextension) MediaWiki extension, which provides an API to ingest many entities at once. This library allows you to easily ingest entities in bulk, either by parsing them from JSON or by creating them using Python objects.
+
+## Installation
+
+You can install this library using pip:
+
+```bash
+pip install batch-ingestion-client
+```
+
+## Usage
+
+You first need to instantiate a `BatchIngestor` object, passing in the URL of the MediaWiki instance you want to use:
+
+```python
+ingestor = BatchIngestor("http://default.mediawiki.mwdd.localhost:8080")
+```
+
+You can then use the `ingest()` method to ingest entities:
+
+```python
+response = ingestor.ingest(entities)
+print(response)
+```
+
+## How to define data to ingest
+
+### Example with parsing
+
+You can use the `Data.parse()` method to parse entities from a JSON string:
+
+```python
+data = Data.parse({
+    "key": "<your-api-key>",
+    "entities": [
+        {
+            "id": "Q22",
+            "mode": "add",
+            "type": "item",
+            "labels": {
+                "en": {
+                    "language": "en",
+                    "value": "some new name",
+                },
+            },
+            "claims": {
+                "P1": [
+                    {
+                        "mainsnak": {
+                            "snaktype": "value",
+                            "property": "P1",
+                            "datatype": "external-id",
+                            "datavalue": {
+                                "value": "some claim value",
+                                "type": "string",
+                            },
+                        },
+                        "type": "statement",
+                        "rank": "normal",
+                    },
+                ],
+            },
+            "descriptions": {
+                "en": {
+                    "language": "en",
+                    "value": "some description",
+                },
+            },
+        },
+    ],
+})
+```
+
+### Example using Python objects
+
+Alternatively, you can create entities using Python objects:
+
+```python
+data = Data(
+    key="<your-api-key>",
+    entities=[
+        Entity(
+            id="Q22",
+            mode="add",
+            type="item",
+            labels={
+                "en": ValueInLanguage(
+                    language="en",
+                    value="some new name",
+                ),
+            },
+            claims={
+                "P1": [
+                    Claim(
+                        mainsnak=MainSnak(
+                            snaktype="value",
+                            property="P1",
+                            datatype="external-id",
+                            datavalue=DataValue(
+                                value="some claim value",
+                                type="string",
+                            ),
+                        ),
+                        type="statement",
+                        rank="normal",
+                    ),
+                ],
+            },
+            descriptions={
+                "en": ValueInLanguage(
+                    language="en",
+                    value="some description",
+                ),
+            },
+        ),
+    ],
+)
+```
+
+## Contributing
+
+If you'd like to contribute to this library, please feel free to submit a pull request.
+
+
