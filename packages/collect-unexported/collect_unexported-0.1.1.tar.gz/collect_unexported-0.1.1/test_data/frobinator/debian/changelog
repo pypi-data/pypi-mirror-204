@@ -1,0 +1,5 @@
+frobinator (0.1.0-1) UNRELEASED; urgency=low
+
+  * Initial release. (Closes: #1111111)
+
+ -- Peter Pentchev <roam@debian.org>  Fri, 21 Apr 2023 20:28:37 +0300

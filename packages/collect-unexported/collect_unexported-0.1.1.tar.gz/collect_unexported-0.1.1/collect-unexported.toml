@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+# SPDX-License-Identifier: BSD-2-Clause
+
+[format.version]
+major = 0
+minor = 1
+
+[files]
+include = [
+  "t"
+]

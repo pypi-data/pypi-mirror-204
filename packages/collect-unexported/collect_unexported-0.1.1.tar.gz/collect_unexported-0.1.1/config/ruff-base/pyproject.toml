@@ -1,0 +1,36 @@
+# SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+# SPDX-License-Identifier: BSD-2-Clause
+
+[tool.ruff]
+line-length = 100
+select = []
+ignore = [
+  # We know what "self" is... we hope.
+  "ANN101",
+
+  # We know what "cls" is, too... we hope.
+  "ANN102",
+
+  # We leave most of the formatting to the `black` tool.
+  "COM812",
+
+  # No blank lines before the class docstring, TYVM
+  "D203",
+
+  # The multi-line docstring summary starts on the same line
+  "D213",
+
+  # We promise we will be careful with our program invocations.
+  "S603",
+  "S607",
+]
+
+[tool.ruff.isort]
+force-single-line = true
+known-first-party = ["collect_unexported"]
+lines-after-imports = 2
+single-line-exclusions = ["typing"]
+
+[tool.ruff.per-file-ignores]
+# This is a suite of unit tests.
+"unit_tests/**.py" = ["S101"]
