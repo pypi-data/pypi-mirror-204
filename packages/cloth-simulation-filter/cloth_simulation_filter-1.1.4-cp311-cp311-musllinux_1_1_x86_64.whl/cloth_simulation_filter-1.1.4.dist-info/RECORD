@@ -1,0 +1,10 @@
+CSF.py,sha256=FFDyiPFu-oJpCqk-ymUa_oEXHs5DAHsZmSke--FmMAk,16358
+_CSF.cpython-311-x86_64-linux-musl.so,sha256=AWSk9IiyGbch3IGDs9dp6qbTwFzVgJSU85PMlMGKyWU,5453273
+cloth_simulation_filter.libs/libgomp-cd951527.so.1.0.0,sha256=U2zda7o5P6DwCQHNyzt7Hw13pk9wKHfh-c4ZgCzbfsU,187009
+cloth_simulation_filter.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+cloth_simulation_filter.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+cloth_simulation_filter-1.1.4.dist-info/WHEEL,sha256=IHZpKxZL6fMI4XHd4EqcDRvBScMH-OFdPdcrSh0OKDk,113
+cloth_simulation_filter-1.1.4.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cloth_simulation_filter-1.1.4.dist-info/RECORD,,
+cloth_simulation_filter-1.1.4.dist-info/METADATA,sha256=Eo43dMjKyK8JfAD7CVZLsSJ-fADatQP5E6yqpWY-Kow,4590
+cloth_simulation_filter-1.1.4.dist-info/top_level.txt,sha256=SxCBY2LkGoBBTEVXrp_dzgcZ3JbWiURbIXB71JCHd2I,9
