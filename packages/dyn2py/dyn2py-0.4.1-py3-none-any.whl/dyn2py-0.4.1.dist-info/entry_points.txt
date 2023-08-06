@@ -1,0 +1,2 @@
+[console_scripts]
+dyn2py = dyn2py:__command_line
