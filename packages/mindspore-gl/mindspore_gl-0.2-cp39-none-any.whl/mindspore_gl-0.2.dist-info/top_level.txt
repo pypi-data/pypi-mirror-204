@@ -1,0 +1,4 @@
+mindspore_gl
+mindspore_gl/dataloader/shared_numpy/_posixshmem
+tests
+tools
