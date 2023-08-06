@@ -1,0 +1,10 @@
+odoo_models_connect/__init__.py,sha256=QUsAVSz1VA643oGmVJqR4bwy9w1W8snQdqpXEN0wqCw,74
+odoo_models_connect/connect_odoo.py,sha256=8aTG39EOIK7IFaMPd4soQGUElT0SDa1--lhiuz8nS7w,5905
+odoo_models_connect/decorators.py,sha256=yDNzL1mz0EwkfDPYOXx2BsNMdJsRBrLR7H7Eh_NJduE,548
+odoo_models_connect/exceptions.py,sha256=iTRyRMqDt2UNcSAznmphCECEUanV_BRBaxFqsrt-Lz4,576
+odoo_models_connect/fields.py,sha256=oDZwjkeVfyG7RPDGVRAjImK9pzr8lzTcJE843ZyEv-w,664
+odoo_models_connect/models.py,sha256=vVKz0jxhAjs3_UMgIkUEXqQKmRzNSwzrpjYHWQLVTf0,4687
+odoo_models_connect-0.1.13.dist-info/METADATA,sha256=PpI6l0XCYtbnJL60ZCDX1rbEuTntYgyFir0lBNHe90M,5091
+odoo_models_connect-0.1.13.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+odoo_models_connect-0.1.13.dist-info/top_level.txt,sha256=Ug83sShyIQ6Odn4klrhRxtsaF-JPWQkVq_-WlOf2fM8,20
+odoo_models_connect-0.1.13.dist-info/RECORD,,
