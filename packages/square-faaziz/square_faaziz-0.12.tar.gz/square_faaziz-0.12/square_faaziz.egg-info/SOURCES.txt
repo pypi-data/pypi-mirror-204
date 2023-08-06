@@ -1,0 +1,8 @@
+README.md
+setup.py
+square_faaziz/__init__.py
+square_faaziz/square_formula.py
+square_faaziz.egg-info/PKG-INFO
+square_faaziz.egg-info/SOURCES.txt
+square_faaziz.egg-info/dependency_links.txt
+square_faaziz.egg-info/top_level.txt

@@ -1,0 +1,1 @@
+from square_faaziz.square_formula import SquareFunction
