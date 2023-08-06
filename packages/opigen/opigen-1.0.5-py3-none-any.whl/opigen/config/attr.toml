@@ -1,0 +1,69 @@
+#
+# Attribute map between CS-Studio and Phoebus
+# DEFAULT section is shared by all widgets
+#
+[DEFAULT]
+name = "name"
+x = "x"
+y = "y"
+width = "width"
+height = "height"
+background_color = "background_color"
+foreground_color = "foreground_color"
+show_grid = "grid_visible"
+horizontal_alignment = "horizontal_alignment"
+vertical_alignment = "vertical_alignment"
+pv_name = "pv_name"
+format_type = "format"
+enabled = "enabled"
+visible = "visible"
+
+[Line]
+line_width = "line_width"
+line_style = "line_style"
+background_color = "line_color"
+
+[Label]
+text = "text"
+transparent = "transparent"
+
+[TextUpdate]
+transparent = "transparent"
+show_units = "show_units"
+precision = "precision"
+
+[TextEntry]
+show_units = "show_units"
+precision = "precision"
+
+[GroupingContainer]
+transparent = "transparent"
+
+[ActionButton]
+text = "text"
+
+[ToggleButton]
+on_label = "on_label"
+off_label = "off_label"
+
+[Byte]
+numBits = "numBits"
+startBit = "startBit"
+on_color = "on_color"
+off_color = "off_color"
+bitReverse = "bitReverse"
+
+[Led]
+on_color = "on_color"
+off_color = "off_color"
+on_label = "on_label"
+off_label = "off_label"
+
+[EmbeddedContainer]
+opi_file = "file"
+resize_behaviour = "resize"
+
+[TabbedContainer]
+active_tab = "active_tab"
+minimum_tab_height = "tab_height"
+horizontal_tabs = "direction"

@@ -1,0 +1,23 @@
+#
+# lines starts with # or // will be skipped
+# CS-Studio (.opi) supports both font size in pt and px
+# Phoebus (.bob) only support px
+#
+# Name           Family             Style     size (boy), size (phoebus)
+Title          = Liberation Serif - bold    - 24 pt, 28
+Huge           = Liberation Sans  - bold    - 24 pt, 28
+Header 1       = Liberation Sans  - bold    - 22 pt, 25
+Header 2       = Liberation Sans  - bold    - 20 pt, 23
+Header 3       = Liberation Sans  - bold    - 18 pt, 22
+Header 4       = Liberation Sans  - bold    - 16 pt, 21
+Header 5       = Liberation Sans  - bold    - 14 pt, 20
+Default        = Liberation Sans  - regular - 13 pt, 18
+Default Bold   = Liberation Sans  - bold    - 13 pt, 18
+Label Small    = Liberation Sans  - regular - 13 pt, 12
+Fine Print     = Liberation Sans  - regular - 12 pt, 11
+Monospace      = Liberation Mono  - regular - 13 pt, 18
+Monospace Bold = Liberation Mono  - bold    - 13 pt, 18
+Groupbox Name  = Liberation Mono  - regular - 11 pt, 13
+Small          = Liberation Sans  - regular - 10 pt, 13
+Tiny           = Liberation Sans  - regular - 8  pt, 9
+Tiny Monospace = Liberation Mono  - regular - 8  pt, 9
