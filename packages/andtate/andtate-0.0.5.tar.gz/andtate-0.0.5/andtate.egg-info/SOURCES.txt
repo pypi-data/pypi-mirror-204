@@ -1,0 +1,33 @@
+LICENSE
+setup.py
+andtate/AMDL Batch Gradient Descent with early stopping for Softmax Regression.py
+andtate/AMDL Linear Regression (Diabetes Dataset).py
+andtate/AMDL Logistic Regression (Iris Dataset).py
+andtate/AMDL MLP for classification of handwritten digits (MNIST Dataset).py
+andtate/AMDL Multinomial Logistic Regression (Iris Dataset).py
+andtate/AMDL SVM classifier (Iris Dataset).py
+andtate/AMDL Train an SVM regressor on the California Housing Dataset.py
+andtate/AMDL Train and fine-tune a Decision Tree for the Moons Dataset.py
+andtate/AMDL.py
+andtate/NLP Dependency parsing of a given text.py
+andtate/NLP Implement a tri-gram model.py
+andtate/NLP Lemmatization.py
+andtate/NLP Named Entity Recognition (NER) using NLTK Library.py
+andtate/NLP Named Entity Recognition (NER) using spaCy Library.py
+andtate/NLP POS tagging using HMM.py
+andtate/NLP Stemming.py
+andtate/NLP Syntactic parsing of a given text.py
+andtate/NLP Text summarization using NLTK Library.py
+andtate/NLP Text summarization using gensim Library.py
+andtate/NLP Text summarization using spaCy Library.py
+andtate/NLP Tokenization using Gensim.py
+andtate/NLP Tokenization using NLTK.py
+andtate/NLP Tokenization using Python’s split function.py
+andtate/NLP Tokenization using Regular Expressions (RegEx).py
+andtate/NLP Tokenization using the spaCy library.py
+andtate/NLP.py
+andtate/__init__.py
+andtate.egg-info/PKG-INFO
+andtate.egg-info/SOURCES.txt
+andtate.egg-info/dependency_links.txt
+andtate.egg-info/top_level.txt
