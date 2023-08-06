@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: py-mlm
+Version: 0.0.7
+Summary: mlm - Manga Library Manager. Local, and simple method for reading and tracking manga.
+License: GNU General Public License v3 (GPLv3)
+Project-URL: repository, https://codeberg.org/johndovern/mlm
+Keywords: zathura
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mlm 
+mlm - manga library manager. Read, track, and download latest chapters of your
+manga library with mlm. Depends on zathura, gallery-dl, and tar
