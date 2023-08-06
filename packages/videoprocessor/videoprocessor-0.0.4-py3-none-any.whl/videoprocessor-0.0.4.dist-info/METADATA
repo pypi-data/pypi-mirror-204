@@ -1,0 +1,198 @@
+Metadata-Version: 2.1
+Name: videoprocessor
+Version: 0.0.4
+Summary: A package base on ffmpeg and ffmpeg-python to process video.
+Author-email: FogSalary <Kairong_Wu@163.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+
+# 基于 ffmpeg-python 的音视频处理工具
+
+
+
+依赖：
+
+- ffmpeg
+- ffmpeg-python (python module)
+
+
+
+项目初衷：
+
+该项目主要是针对日常对实验视频处理存在如下情况而提出：
+
+- 制作对比实验
+- 制作实验连环图
+
+为了提高实验视频的处理效率，进行了该项目的开发
+
+
+
+目前进度：
+
+目前该项目已封装成了
+
+
+
+## Func API
+
+video_info(in_filename: str)
+
+函数功能：获取输入视频的参数信息，在终端打印输出如下信息
+
+- 文件名称
+- 视频宽度
+- 视频高度
+- 视频总帧数
+
+输入参数：
+
+- in_filename 输入视频文件路径
+
+
+
+addText(in_filename: str, out_filename:str, text: str)
+
+函数功能：在输入视频文件中添加文字水印用于视频说明
+
+输入参数：
+
+- in_filename 输入视频文件路径
+- out_filename 输出视频文件路径
+- text 添加的文字内容
+
+
+
+getVideoPng(in_filename: str, out_picname):
+
+函数功能：处理输入视频文件，获取所有帧的图片数据
+
+输入参数：
+
+- in_filename 输入视频文件路径
+- out_picname
+
+
+
+videoCrop(in_filename: str, out_filename: str,whxy: list)
+
+函数功能：对输入视频文件进行裁剪，并将裁剪结果输出保存
+
+输入参数：
+
+- in_filename 输入视频文件路径
+- out_filename 输出视频文件路径
+- whxy 列表，[w,h,x,y]
+  - w 裁剪目标视频宽度
+  - h 裁剪目标视频高度
+  - x 裁剪起始点 x 坐标
+  - y 裁剪起始点 y 坐标
+
+
+
+getOneFrame(in_filename: str, out_picname: str)
+
+函数功能：获取输入视频文件的单帧图片
+
+输入参数：
+
+- in_filename 输入视频文件路径
+- out_picname 输出图片路径
+
+
+
+drawBoxInPic(in_picname: str, out_picname: str, whxy: list)
+
+函数功能：在输入图片中绘制目标矩形框
+
+输入参数：
+
+- in_picname 输入图片路径
+- out_picname 输出图片路径
+- whxy 
+  - w
+  - h
+  - x
+  - y
+
+
+
+videoMerge2by2(in_filenames:list,out_filename)
+
+函数功能：输入 4 个视频将其合并为一个视频，布局为 2*2
+
+输入参数：
+
+- in_filenames
+- out_filename
+
+
+
+videoMerge2by3(in_filenames: list, out_filename)
+
+函数功能：输入 6 个视频将其合并为一个视频，布局为 2*3
+
+输入参数：
+
+- in_filenames
+- out_filename
+
+
+
+videoMerge(in_filenames: list, out_filename, mergesize: list)
+
+函数功能：输入 n*m 个视频合并输出为一个视频，合并布局为 n\*m 的形式
+
+输入参数：
+
+- in_filenames 输入视频文件路径列表
+- out_filename 输出视频文件路径
+- mergesize 布局列表 [n, m]
+  - n 行数
+  - m 列数
+
+
+
+picScale(in_picname: str, out_picname: str, scale: int)
+
+函数功能：输入图片将其按 scale 比例进行缩放并输出为新的图片
+
+输入参数：
+
+- in_picname 输入图片路径
+- out_picname 输出图片路径
+- scale 缩放系数
+
+
+
+addTimeLabel(in_filename: str,out_filename,text: str)
+
+函数功能：输入图片，在图片中添加时间戳信息，用于连环图出图
+
+输入参数：
+
+- in_filename 输入图片路径
+- out_filename 输出图片路径
+- text 时间戳文本内容
+
+
+
+addLabLogo(in_filename: str, out_filename: str, in_image: str, scale: int)
+
+函数功能：输入视频文件，在视频指定位置添加图片水印（实验室 logo）
+
+输入参数：
+
+- in_filename 输入视频文件路径
+- out_filename 输出视频文件路径
+- in_image 水印图片文件路径
+- scale 水印图片缩放系数
+
+
+
