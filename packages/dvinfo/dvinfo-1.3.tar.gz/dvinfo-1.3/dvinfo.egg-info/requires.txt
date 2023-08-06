@@ -1,0 +1,10 @@
+psutil
+netifaces
+wmi
+py-cpuinfo
+requests
+pytemperature
+pythonping
+paramiko
+speedtest-cli
+pywebview[qt]
