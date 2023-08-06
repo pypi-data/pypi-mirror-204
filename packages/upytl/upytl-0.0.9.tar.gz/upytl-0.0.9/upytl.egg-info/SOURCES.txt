@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_install.py
+upytl/__init__.py
+upytl/bulma.py
+upytl/core.py
+upytl/helpers.py
+upytl/html.py
+upytl/xtemplate.py
+upytl.egg-info/PKG-INFO
+upytl.egg-info/SOURCES.txt
+upytl.egg-info/dependency_links.txt
+upytl.egg-info/not-zip-safe
+upytl.egg-info/top_level.txt
