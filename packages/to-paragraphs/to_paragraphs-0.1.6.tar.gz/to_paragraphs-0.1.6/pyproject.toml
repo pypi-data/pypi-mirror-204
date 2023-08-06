@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "to-paragraphs"
+version = "0.1.6"
+description = ""
+authors = ["Félix Dorn <github@felixdorn.fr>"]
+license = "GPL-3.0"
+readme = "README.md"
+packages = [{include = "to_paragraphs"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+nltk = "^3.8.1"
+numpy = "^1.24.3"
+scipy = "^1.10.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
