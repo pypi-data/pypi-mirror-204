@@ -1,0 +1,8 @@
+click
+jcloud
+jina-hubble-sdk
+jina==3.15.1.dev14
+langchain
+openai>=0.26.0
+psutil
+streamlit==1.9.0
