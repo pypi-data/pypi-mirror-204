@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+gmail_scanner/__init__.py
+gmail_scanner/gmail_scanner.py
+gmail_scanner.egg-info/PKG-INFO
+gmail_scanner.egg-info/SOURCES.txt
+gmail_scanner.egg-info/dependency_links.txt
+gmail_scanner.egg-info/not-zip-safe
+gmail_scanner.egg-info/requires.txt
+gmail_scanner.egg-info/top_level.txt
