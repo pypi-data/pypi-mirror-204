@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: SAPsim
+Version: 0.0.2
+Summary: Simulation of SAP (Simple As Possible) computer programs from COMP311 (Computer Organization) @ UNC
+Home-page: https://github.com/jesse-wei/sapsim
+Download-URL: https://github.com/jesse-wei/SAPsim/releases
+Author: Jesse Wei
+Author-email: Jesse Wei <jesse@cs.unc.edu>
+License: MIT
+Project-URL: Homepage, https://github.com/jesse-wei/SAPsim
+Project-URL: Bug Tracker, https://github.com/jesse-wei/SAPsim/issues
+Keywords: SAP,SAPsim,UNC,COMP311
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools
+Requires-Dist: tabulate
+Provides-Extra: testing
+Requires-Dist: pytest (>=6.0) ; extra == 'testing'
+Requires-Dist: pytest-cov (>=2.0) ; extra == 'testing'
+Requires-Dist: mypy (>=0.910) ; extra == 'testing'
+Requires-Dist: flake8 (>=3.9) ; extra == 'testing'
+Requires-Dist: tox (>=3.24) ; extra == 'testing'
+
+![Tests](https://github.com/jesse-wei/SAPsim/actions/workflows/tests.yml/badge.svg)
+
+# SAPsim
+
+> Simulation of SAP (Simple As Possible) computer programs from COMP311 (Computer Organization) @ [UNC](https://unc.edu)
+
+Please see the rest of the README on [GitHub](https://github.com/jesse-wei/SAPsim).
