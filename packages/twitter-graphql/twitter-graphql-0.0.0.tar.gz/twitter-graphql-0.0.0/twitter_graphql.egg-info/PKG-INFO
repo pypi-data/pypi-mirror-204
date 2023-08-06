@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: twitter-graphql
+Version: 0.0.0
+Summary: Unofficial Twitter GraphQL API
+Home-page: https://github.com/trevorhobenshield/twitter-graphql
+Author: Trevor Hobenshield
+Author-email: trevorhobenshield@gmail.com
+Keywords: twitter api graphql client
+Requires-Python: >=3.11.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+
+Unofficial Twitter GraphQL API
+
