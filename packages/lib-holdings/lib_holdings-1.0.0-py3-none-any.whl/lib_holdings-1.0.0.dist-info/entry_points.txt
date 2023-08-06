@@ -1,0 +1,3 @@
+[console_scripts]
+holdings=lib_holdings.__main__:main
+
