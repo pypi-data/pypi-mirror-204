@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+NeuroRuler.egg-info/PKG-INFO
+NeuroRuler.egg-info/SOURCES.txt
+NeuroRuler.egg-info/dependency_links.txt
+NeuroRuler.egg-info/requires.txt
+NeuroRuler.egg-info/top_level.txt
+NeuroRuler/GUI/__init__.py
+NeuroRuler/GUI/helpers.py
+NeuroRuler/GUI/main.py
+tests/test_img_helpers.py
+tests/test_imgproc.py
+tests/test_unittest.py
