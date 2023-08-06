@@ -1,0 +1,17 @@
+ditchcarbon_python/__init__.py,sha256=MF64bwUCd4sm3dvcxZnkb4ujHtxT_KeuXdD0nVieEt4,27
+ditchcarbon_python/auth.py,sha256=mN5A_Kbarw13mQY5zhOk_HPfomdyW_Qy82VzQMDENNI,235
+ditchcarbon_python/client.py,sha256=NNs0s2346UVirx8tVxPeJweBqQKbTZcDZ5KE3x-CjsE,1213
+ditchcarbon_python/constants.py,sha256=aJPOZ40gg-ZefqZvsEixnrb-DiFu91CSklsnRUds9R4,46
+ditchcarbon_python/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ditchcarbon_python/resources/activities.py,sha256=AdW5wI5YQQk4TGVyEJXCHXzkQyO6MAYpWwL6McM3n_Q,542
+ditchcarbon_python/resources/base.py,sha256=F6UO_04RUIo884gGVpC4WSYjyAvHIHabtZ8ZuYihjzw,73
+ditchcarbon_python/resources/categories.py,sha256=UZlqy8fNkrL28_DJrjRF-GGCS7YooDAfP8Q7hLALSCs,186
+ditchcarbon_python/resources/expenses.py,sha256=y0ReQZLZdke1hpQhc97ob5r3D7DUTTcOanQSJTY2Qrs,196
+ditchcarbon_python/resources/products.py,sha256=vawVn86eDpyUOI6e269CXmnYv90LFhcdkcJkYXt4kxg,194
+ditchcarbon_python/resources/servers.py,sha256=zhjArW9_NxJxJhYy9fIluGtnv3ZN_ZaO9WTP2hToHdI,399
+ditchcarbon_python/resources/suppliers.py,sha256=cARkH-463YHaXKG3OCWYgHF1GWf6Ojt_XrWC1KDnw6I,196
+ditchcarbon_python-0.1.0.dist-info/LICENSE,sha256=JMbxIO1UShhi2Pw7IKU9d8OqACpZ7VI3IbVKct2HdiE,1059
+ditchcarbon_python-0.1.0.dist-info/METADATA,sha256=BtP86pv3fcszOBj6WljcrDTnXE0TrKgpNqMUwpl_CrQ,2137
+ditchcarbon_python-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ditchcarbon_python-0.1.0.dist-info/top_level.txt,sha256=YCGVkNVMh26RNapj03JjD4G69S55dUgnWlFcB3UFcZc,19
+ditchcarbon_python-0.1.0.dist-info/RECORD,,
