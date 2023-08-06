@@ -1,0 +1,167 @@
+Metadata-Version: 2.1
+Name: jupyter-analysis-tools
+Version: 0.1.5
+Summary: Yet another Python library with helpers and utilities for data analysis and processing.
+Author-email: Ingo Breßler <dev@ingobressler.net>
+License: MIT license
+Project-URL: homepage, https://BAMresearch.github.io/jupyter-analysis-tools
+Project-URL: documentation, https://BAMresearch.github.io/jupyter-analysis-tools
+Project-URL: repository, https://github.com/BAMresearch/jupyter-analysis-tools
+Project-URL: changelog, https://BAMresearch.github.io/jupyter-analysis-tools/changelog.html
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Topic :: Utilities
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+========
+Overview
+========
+
+Yet another Python library with helpers and utilities for data analysis and processing.
+
+.. start-badges
+
+| |version| |commits-since| |license|
+| |supported-versions| |wheel| |downloads|
+| |cicd| |coverage|
+
+.. |version| image:: https://img.shields.io/pypi/v/jupyter-analysis-tools.svg
+    :target: https://test.pypi.org/project/jupyter-analysis-tools
+    :alt: PyPI Package latest release
+
+.. |commits-since| image:: https://img.shields.io/github/commits-since/BAMresearch/jupyter-analysis-tools/v0.1.5.svg
+    :target: https://github.com/BAMresearch/jupyter-analysis-tools/compare/v0.1.5...main
+    :alt: Commits since latest release
+
+.. |license| image:: https://img.shields.io/pypi/l/jupyter-analysis-tools.svg
+    :target: https://en.wikipedia.org/wiki/MIT_license
+    :alt: License
+
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/jupyter-analysis-tools.svg
+    :target: https://test.pypi.org/project/jupyter-analysis-tools
+    :alt: Supported versions
+
+.. |wheel| image:: https://img.shields.io/pypi/wheel/jupyter-analysis-tools.svg
+    :target: https://test.pypi.org/project/jupyter-analysis-tools#files
+    :alt: PyPI Wheel
+
+.. |downloads| image:: https://img.shields.io/pypi/dw/jupyter-analysis-tools.svg
+    :target: https://test.pypi.org/project/jupyter-analysis-tools/
+    :alt: Weekly PyPI downloads
+
+.. |cicd| image:: https://github.com/BAMresearch/jupyter-analysis-tools/actions/workflows/ci-cd.yml/badge.svg
+    :target: https://github.com/BAMresearch/jupyter-analysis-tools/actions/workflows/ci-cd.yml
+    :alt: Continuous Integration and Deployment Status
+
+.. |coverage| image:: https://img.shields.io/endpoint?url=https://BAMresearch.github.io/jupyter-analysis-tools/coverage-report/cov.json
+    :target: https://BAMresearch.github.io/jupyter-analysis-tools/coverage-report/
+    :alt: Coverage report
+
+.. end-badges
+
+
+Installation
+============
+
+::
+
+    pip install jupyter-analysis-tools
+
+You can also install the in-development version with::
+
+    pip install git+https://github.com/BAMresearch/jupyter-analysis-tools.git@main
+
+
+Documentation
+=============
+
+https://BAMresearch.github.io/jupyter-analysis-tools
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+
+% <!--next-version-placeholder-->
+
+## v0.1.5 (2023-03-27)
+### Fix
+* **reBin:** Module renamed to binning, fixes name clashes with docs gen ([`ec959fb`](https://github.com/BAMresearch/jupyter-analysis-tools/commit/ec959fb9e1b51d69cdceaf7784b27df22aa6f4d4))
+
+### Documentation
+* **cleanup:** Removed obsolete module doc, replaced by autosummary generated files ([`c0d4256`](https://github.com/BAMresearch/jupyter-analysis-tools/commit/c0d4256a5bcbb83a9a9c0ca0dd3001b9d111cb4b))
+* **format:** Fix formatting with black ([`5de80d4`](https://github.com/BAMresearch/jupyter-analysis-tools/commit/5de80d4d528bfb2bf106fa38d2cd8f30f6421f19))
+* **General:** Config updated by cookiecutter ([`6c9ddfb`](https://github.com/BAMresearch/jupyter-analysis-tools/commit/6c9ddfb9777cb344378f5a0d86e204dc016a2068))
+
+## v0.1.4 (2023-03-03)
+### Fix
+* **readme:** License link ([`f98f736`](https://github.com/BAMresearch/jupyter-analysis-tools/commit/f98f7362dd0278210894f138dd7646c8bc92cc9f))
+
+## v0.1.3 (2023-03-03)
+### Fix
+* **tox:** Clean env ([`0135426`](https://github.com/BAMresearch/jupyter-analysis-tools/commit/013542651eb2bd9a7e2d3b2e8ef837c38501b578))
+* **Package:** Cookiecutterrc updated ([`7b29a17`](https://github.com/BAMresearch/jupyter-analysis-tools/commit/7b29a1764f972379086abb51194604423c9714f2))
+* **tox:** Cleanup env removed pckg build files ([`ecd8648`](https://github.com/BAMresearch/jupyter-analysis-tools/commit/ecd86485ec0fe67f646d06ca134fe97310f7a3f5))
+* **GitHubAction:** Migrate to pathlib.Path in template rendering ([`d3ae5db`](https://github.com/BAMresearch/jupyter-analysis-tools/commit/d3ae5db8f657e929f4139bb17bb746f7b03961d3))
+
+### Documentation
+* **readme:** Adjust version numbers in readme as well ([`5700694`](https://github.com/BAMresearch/jupyter-analysis-tools/commit/57006942e6625faf9f36dca1bac0719706b4d000))
+* **readme:** Using test.pypi.org links ([`240e58c`](https://github.com/BAMresearch/jupyter-analysis-tools/commit/240e58c87ef0cf0dc3d195f237a09c8e8a717e75))
+* **Package:** Update project description ([`704a0b5`](https://github.com/BAMresearch/jupyter-analysis-tools/commit/704a0b50a727ef36f685d27ce068103ffa60ca99))
+* **comments:** Add some, remove obsolete ([`efe2689`](https://github.com/BAMresearch/jupyter-analysis-tools/commit/efe2689707f410a18cce331f9cd3732fa2190640))
+
+## v0.1.2 (2023-02-24)
+### Fix
+* **Documentation:** Doctest format in *distrib* ([`5942972`](https://github.com/BAMresearch/jupyter_analysis_tools/commit/59429724fd41e62c7717fa185e7f5c5c1e5b50d9))
+
+### Documentation
+* **distrib:** Generate entries of submodule *distrib* ([`c8055c6`](https://github.com/BAMresearch/jupyter_analysis_tools/commit/c8055c65ac1d49a757ee30f9cd34fc18e8445944))
+* **utils:** Generate entries of submodule *utils* ([`762a548`](https://github.com/BAMresearch/jupyter_analysis_tools/commit/762a548a967cf54aed7a58f9d84e4cf6e98e25f7))
+
+## v0.1.1 (2023-02-24)
+### Fix
+* **docs:** Allow markdown format in changelog ([`593356b`](https://github.com/BAMresearch/jupyter_analysis_tools/commit/593356bb0fb6ea7a6c028b99032ed9742708cb6b))
+
+## v0.1.0 (2022-10-25)
+* First release
