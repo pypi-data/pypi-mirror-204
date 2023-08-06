@@ -1,0 +1,8 @@
+
+[all]
+lxml
+unittest-xml-reporting
+
+[test]
+lxml
+unittest-xml-reporting
