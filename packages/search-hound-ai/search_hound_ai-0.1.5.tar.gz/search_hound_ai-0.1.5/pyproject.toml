@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "search-hound-ai"
+version = "0.1.5"
+description = ""
+authors = ["Martin Patino <martin@sibipro.com>"]
+readme = "README.md"
+packages = [{include = "search_hound_ai"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.7.0"}
+openai = "^0.27.4"
+langchain = "^0.0.146"
+load-dotenv = "^0.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+hound = "search_hound_ai.app:main"
