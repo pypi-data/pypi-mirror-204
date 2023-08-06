@@ -1,0 +1,9 @@
+[console_scripts]
+jupyspace = jupyspace_api.cli:main
+
+[asphalt.components]
+app = jupyspace_api.main:AppComponent
+jupyspace = jupyspace_api.main:JupyspaceComponent
+
+[jupyspace.components]
+app = jupyspace_api.main:AppComponent
