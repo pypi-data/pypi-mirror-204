@@ -1,0 +1,6 @@
+carto
+python-dotenv
+
+[dev]
+pytest
+python-dotenvautopep8

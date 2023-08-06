@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+movemapp_client/__init__.py
+movemapp_client/client.py
+movemapp_client.egg-info/PKG-INFO
+movemapp_client.egg-info/SOURCES.txt
+movemapp_client.egg-info/dependency_links.txt
+movemapp_client.egg-info/requires.txt
+movemapp_client.egg-info/top_level.txt
