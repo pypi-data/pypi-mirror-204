@@ -1,0 +1,11 @@
+__pycache__
+
+.idea
+.vscode
+
+# Runtime-generated files
+frames/
+data.json
+
+dist/
+build/

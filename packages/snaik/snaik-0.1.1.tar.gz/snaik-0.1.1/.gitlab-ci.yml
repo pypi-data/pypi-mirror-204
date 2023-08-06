@@ -1,0 +1,64 @@
+stages:
+    - build
+
+.on_tagged_commit: &on_tagged_commit
+    rules:
+        - if: "$CI_COMMIT_TAG"
+#        - when: always
+
+.default_variables: &default_variables
+    IMAGE_NAME: snaik
+    IMAGE_TAG: latest
+    DOCKERFILE: Dockerfile
+
+.docker-build-template: &docker-build-template
+    stage: build
+    image: docker:20.10.16
+    services:
+        - docker:20.10.16-dind
+    variables: *default_variables
+
+    before_script:
+        - apk add zip
+    script:
+        - docker build -t $IMAGE_NAME:$IMAGE_TAG -f $DOCKERFILE .
+        - docker run $IMAGE_NAME:$IMAGE_TAG
+        - container_hash=$(docker ps -lq)
+        - docker cp $container_hash:/dist ./dist
+        - zip -rmT ./snaik-$IMAGE_TAG.zip ./dist
+        - docker container rm $container_hash
+
+    artifacts:
+        paths:
+            - ./snaik-$IMAGE_TAG.zip
+        expire_in: never
+    <<: *on_tagged_commit
+
+
+dist-ubuntu:
+    << : *docker-build-template
+    variables:
+        << : *default_variables
+        IMAGE_TAG: "debian"
+dist-windows:
+    << : *docker-build-template
+    variables:
+        << : *default_variables
+        IMAGE_TAG: "windows"
+        DOCKERFILE: "windist.Dockerfile"
+
+# Disable for now
+.release_artifacts:
+    << : *on_tagged_commit
+    stage: release
+    image: python:3.10
+    script:
+        - echo "Releasing $CI_COMMIT_TAG"
+    release:
+        name: Release $CI_COMMIT_TAG
+        tag_name: $CI_COMMIT_TAG
+        description: Release $CI_COMMIT_TAG
+        assets:
+            links:
+                - name: snaik-$CI_COMMIT_TAG-x86_64
+                  url: https://gitlab.com/snaik/snaik/-/jobs/artifacts/$CI_COMMIT_TAG/download?job=dist-ubuntu

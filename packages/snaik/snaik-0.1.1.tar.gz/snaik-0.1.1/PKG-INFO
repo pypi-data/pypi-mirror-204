@@ -1,0 +1,296 @@
+Metadata-Version: 2.1
+Name: snaik
+Version: 0.1.1
+Project-URL: Source, https://gitlab.com/ntjess/snaik
+Author-email: Nathan Jessurun <ntjessu@gmail.com>
+License-Expression: MIT
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: pyqtdarktheme>=2.0
+Requires-Dist: pyqtgraph>=0.13.1
+Requires-Dist: qtextras>=0.6.6
+Requires-Dist: qtpy>=1.11.0
+Provides-Extra: dev
+Requires-Dist: qtconsole<0.5.4.2,>=5.4.0; extra == 'dev'
+Provides-Extra: full
+Requires-Dist: imageio>=2.9.0; extra == 'full'
+Requires-Dist: pillow>=8.3.1; extra == 'full'
+Requires-Dist: pyside6~=6.4.0; extra == 'full'
+Description-Content-Type: text/markdown
+
+# snAIk
+## A snake-against-snake battleground
+_Inspired by [BattleSnake](https://play.battlesnake.com)_
+<div style="text-align:center"><img src="https://gitlab.com/ntjess/snaik/-/wikis/media/homepage.gif" width="50%"></div>
+
+---
+
+`snAIk` allows you to create your own snake AI and pit it against other snakes (or yourself) in a battle arena. The goal
+is to be the last snake standing.
+
+---
+
+## Features
+- Customizable board size, number of snakes, snake "brain" (AI)
+- Easily export both graphical and JSON game history
+- Works with any language that can communicate over stdin/stdout
+
+
+## Installation
+Requires Python 3.8+. On linux, also requires Qt graphics libs (See Dockerfile for apt packages). Simply install using
+pip (preferably in a virtual environment):
+
+```bash
+# Via pypi
+pip install snaik
+# Or via git:
+pip install git+https://gitlab.com/ntjess/snaik.git
+```
+
+Note that `snaik` uses Qt for its gui system, so one of `PySide2`, `PySide6`, `PyQt5` or `PyQt6` must be installed.
+`snaik` will install `PySide6` for you if you specify the `full` extra:
+
+```bash
+pip install snaik[full]
+```
+
+Also note that `imageio` is required for saving gifs (a functionality mentioned in [`Exporting game
+history`](#exporting-game-history)). This is installed with the `full` extra.
+
+## Usage
+```bash
+# See available options
+python -m snaik --help
+# usage: __main__.py [-h] [--grid_size GRID_SIZE] [--snake_brains SNAKE_BRAINS] [--n_food_points N_FOOD_POINTS]
+#                    [--json_path JSON_PATH] [--frames_path FRAMES_PATH] [--gif_path GIF_PATH] [--headless HEADLESS]
+
+# Run a game of Snaik.
+
+# optional arguments:
+# ...
+```
+
+## Examples
+Play a game by yourself using the up, down, left, right keys:
+
+```bash
+# It's the default mode :)
+python -m snaik
+```
+---
+
+Play a game with two humans, one using the arrow keys and the other using the WASD keys:
+
+```bash
+# nsew = "north, south, east, west"
+python -m snaik --snake_brains 'keyboard; keyboard nsew_keys="wsda"'
+```
+---
+
+Play a game against a greedy algorithm snake. It will always pursue the closest food at any cost
+
+```bash
+python -m snaik --snake_brains 'keyboard; greedy'
+```
+---
+
+Watch two greedy snakes fight it out with a randomly moving snake:
+    
+```bash
+python -m snaik --snake_brains 'greedy; greedy; random'
+```
+---
+
+Run several external programs against each other (more details in the "External snake brains" section below):
+
+```bash
+python -m snaik --snake_brains 'python my_brain.py; my-compiled-brain.exe; java -jar my-brain.jar'
+```
+
+More details are provided in the [Creating your own brain](#creating-your-own-brain) section.
+
+## Scoring
+Each tick, every snake loses one point. They gain 20 points (currently hard-coded but can change in the future) for each
+food point they eat. Snakes can die by hitting walls, themselves or other snakes, or starvation (running out of points).
+The leaderboard shown in the top-right corner of the game window is sorted by score, with the highest score at the top.
+Note that dead snakes are always ranked below living ones, even if their score is higher.
+
+## In-game controls
+*(While keyboard shortcuts are used in the docs below, you can also press the corresponding menu options in the top bar to
+achieve the same results.)*
+
+<div style="text-align:center"><img src="https://gitlab.com/ntjess/snaik/-/wikis/media/interface.png" width="75%"></div>
+
+### Run/Pause/Restart: the most basic options
+Press `Ctrl+R` to run the game. The game will run until a snake dies or the game is manually paused using `Ctrl+P`.
+
+Note that the game speed can be changed by adjusting the tick rate (in ms) found in the right-side control panel.
+
+To restart a game, simply press `Ctrl+Shift+R`. Note this is only undoable if you specified a save path for the game
+history (more details below).
+
+### Step-by-step ticking
+Press `Ctrl+T` to tick the game once. This is useful for debugging or watching the game play out slowly.
+
+### Exporting game history
+Provide a `Json Path` in the right-hand control panel to save the game history as a JSON file. This file is updated each
+tick and stores enough data about each board state to recreate any given game at any point in time. Also, gifs or
+individual frames can be saved by providing a `Frames Path` or `Gif Path` respectively. Be aware that these files are
+updated each tick and can quickly become very large. Additionally, they are reset each time the game is restart, so be
+careful to either copy them before restarting or change the save paths if this is not desired.
+
+### Viewing playback history
+At any point during a game, you can press `Ctrl+H` to view the game history. This will open a new window that allows you
+to step backward in time and view the game state at any point in the past. This view is read-only, since rewinding and
+moving forward is not supported. Instead, you can use the dev console and run the command
+`game.set_board_state(game.recorder.json_states[<index>])` to set the board state to any point in the past. Be aware
+that this will mangle the game history, so you should only do this if you are sure you want to.
+
+### Changing snake brains
+You can change the snake brains at any point during a game by pressing `Ctrl+B`. This will open a new window that allows
+you to specify newline-separated brains in the same format as the `--snake_brains` argument. Note that newlines are
+used instead of `;` to separate brains in this case. Also, nothing will happen until you press the `Run` button above
+the text box.
+
+### Changing board size
+The easiest way is to set the board size on startup using the `--grid_size` argument:
+```bash
+python -m snaik --grid_size (15, 15)
+```
+
+However, you can change it at runtime using the dev console and running `board.update_grid_size((<width>, <height>))`.
+Be aware this will reset the game.
+
+### Changing number of snakes
+Simply adjust which brains are present using `Ctrl+B` as described above. The number of snakes will always match the
+number of brains.
+
+## Creating your own brain
+Every brain must accept a `board_state` and `snake_id` (in that order) and return an action (currently only a "TURN"
+command is supported). The  board state includes the following information:
+
+```yaml
+snake_data:
+    # One entry per snake
+    0:
+        id: int
+        score: int
+        status: Status ("ALIVE", "DEAD", "WINNER")
+        direction: Direction ("NORTH", "SOUTH", "EAST", "WEST")
+        food_indexes: list[int] # Which 0-based indexes in the array of points are currently digesting food
+        points: Nx2 int array
+    1:
+        # ...
+food: Nx2 int array # food locations
+grid_size: (int, int) # (width, height) of the board
+```
+
+`snake_id` is the id of the snake that the brain is controlling, i.e. a brain can find its own status information by
+looking up `snake_data[snake_id]`.
+
+See `snaik.game.Game.get_board_state` for the full implementation.
+
+### In python
+The easiest kind of brain is a standalone Python function that takes a single argument (the game state) and returns a
+snake Action (i.e., a direction and "move" command). For example, here is a brain that always moves north:
+
+```python
+from snaik.brain import Action, Direction, Command
+
+def move_north(board_state: dict, snake_id: int):
+    return Action(Command.TURN, direction=Direction.NORTH)
+```
+
+See `snaik.brain.random_brain` for a slightly more complex example that always moves in a random direction while
+attempting to avoid walls and other snakes.
+
+Brains that are slightly more complex or need to preserve state can be implemented as a class. The class must define a
+`__call__` method that takes `board_state` and `snake_id` as arguments and returns an Action, just like the standalone
+function above. This is how `snaik.brain.GreedyBrain` is implemented.
+
+If the class defines a `restart` method, it will be called when the game is restarted and passed the new
+`board_state` (see `snaik.brain.KeyboardBrain` for an example).
+
+Brains made this way are not yet visible to the game (a PR will gladly be accepted that makes `snaik` search for
+setuptools-based entry points). Currently, you can expose your brains to the game in three ways:
+
+**NOT RECOMMENDED: Modify the source code**
+
+Simply add/import your brains directly in `snaik/brain.py` and add them to the `brain_name_factory_map` dictionary.
+
+**RECOMMENDED: Create a new cli entry point:**
+```python
+# new_entry_point.py
+from snaik.__main__ import main_cli
+from snaik.brain import brain_name_factory_map
+from my_brain import MyClassBrain, my_function_brain
+
+# If your brain is a class (like GreedyBrain), register the class directly.
+brain_name_factory_map['my_class_brain'] = MyClassBrain
+# Since a factory is required (a callable that *produces* the brain function), you can use a lambda to wrap functional brains:
+brain_name_factory_map['my_function_brain'] = lambda: my_function_brain
+
+if __name__ == '__main__':
+    main_cli()
+```
+Then, you can run `snaik` using this new entry point:
+```bash
+# Also accepts any other arguments used in `python -m snaik`
+python new_entry_point.py --snake_brains 'my_class_brain; my_function_brain'
+```
+
+**ALTERNATIVE: Use the dev console after starting the game:**
+```python
+# In the open dev console:
+from snaik.brain import brain_name_factory_map
+from my_brain import MyClassBrain, my_function_brain
+brain_name_factory_map['my_class_brain'] = MyClassBrain
+brain_name_factory_map['my_function_brain'] = lambda: my_function_brain
+```
+After you close the dev console, you can use these names under the `Update Brains (Ctrl+B)` menu option.
+
+
+### In any other language
+External programs can be passed in as snake brains. `snaik` spawns a new subprocess for each "external" brain and
+communicates with it over stdin/stdout. Note that `snake_id` is added as an additional `int` key in the `board_state`
+passed to external programs. The subprocess must accept this JSON-serialized board state on stdin and return a
+JSON-serialized action on stdout. For example, here is a C++ implementation that
+always moves north:
+
+```cpp
+#include <iostream>
+#include <string>
+#include <nlohmann/json.hpp>
+
+using json = nlohmann::json;
+
+int main() {
+    std::string line;
+    while (std::getline(std::cin, line)) {
+        auto board_state = json::parse(line);
+        // Best to do something with the board state, but if always
+        // moving north is your thing...
+        json action = {
+            {"command", "TURN"},
+            {"direction", "NORTH"}
+        };
+        std::cout << action.dump() << std::endl;
+    }
+    return 0;
+}
+```
+
+Compile this with `g++ -std=c++11 -o north main.cpp` and then run `snaik` with the `--snake_brains` argument:
+```bash
+python -m snaik --snake_brains 'north'
+```
+
+Note that for this to work, `north` must be accessible by `Popen` (on the path, in your cwd, etc.) or you can specify
+the full path to the executable. Keep in mind that a long full path might completely clobber the leaderboard
+representation, so this is unadvised.
+
+## Contributing
+Contributions are welcome! Please open an issue or PR if you have any suggestions or find any bugs.
+
+## License
+Do whatever you want with this code. I'd appreciate a shoutout if you use it for anything cool.
