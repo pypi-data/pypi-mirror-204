@@ -1,0 +1,14 @@
+README.md
+setup.py
+flaskapiRequest/__init__.py
+flaskapiRequest.egg-info/PKG-INFO
+flaskapiRequest.egg-info/SOURCES.txt
+flaskapiRequest.egg-info/dependency_links.txt
+flaskapiRequest.egg-info/requires.txt
+flaskapiRequest.egg-info/top_level.txt
+flaskapiRequest/api_request/__init__.py
+flaskapiRequest/api_request/requests_module.py
+flaskapiRequest/configurations/__init__.py
+flaskapiRequest/configurations/context.py
+flaskapiRequest/configurations/fileReader.py
+flaskapiRequest/configurations/helpers.py

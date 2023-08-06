@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: flaskapiRequest
+Version: 0.0.1
+Summary: FlaskApi Python package
+Home-page: UNKNOWN
+Author: Ajang Elvis Ngwesse
+Author-email: <ngwesseaws@gmail.com>
+License: UNKNOWN
+Keywords: python,flaskapi package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Python package for my flask API
+
