@@ -1,0 +1,6 @@
+realsense_recorder
+realsense_recorder/cmd
+realsense_recorder/common
+realsense_recorder/filters
+realsense_recorder/io
+realsense_recorder/scripts
