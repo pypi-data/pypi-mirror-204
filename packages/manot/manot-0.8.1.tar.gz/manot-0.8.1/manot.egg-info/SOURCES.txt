@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+manot.egg-info/PKG-INFO
+manot.egg-info/SOURCES.txt
+manot.egg-info/dependency_links.txt
+manot.egg-info/requires.txt
+manot.egg-info/top_level.txt
+src/manot/__init__.py
+src/manot/logger.py
+src/manot/manot.py
+src/manot/upload_manager.py
