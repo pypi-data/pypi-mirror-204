@@ -1,0 +1,16 @@
+tnsu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tnsu/examples.py,sha256=yptjquQqpBIJsNf62x5FcNE2uCKBHMkdlN47KMmCUa0,6067
+tnsu/ncon.py,sha256=h9OEKo_xeQF90uvB81jLW1yhkD45oCwpRZAjEjnvuag,11620
+tnsu/simple_update.py,sha256=rgxxe-nFWBdFGYKRistZg6Yy7H2cQdm1WiGTlZgmyB8,30039
+tnsu/structure_matrix_constructor.py,sha256=NhO0gOIiNgKle1C-4JcBQr_HLY7NM9tv_rPOq_7JALc,5831
+tnsu/tensor_network.py,sha256=rLKUSQS0AeQcQxkT6iH5P6zukeSVsYFywKdKhoCVV-k,9244
+tnsu/utils.py,sha256=bFId_9Io78LhwZnSivH29gJJEDWVY5QbJFzYLcbn098,2611
+tnsu/networks/AFH_10x10_obc_D_4.pkl,sha256=RLx1PGHUv-s__Z2GGdzhznA-DmGalQcW6XNHIvLwE_w,778332
+tnsu/networks/AFH_20x20_obc_D_4.pkl,sha256=9Gp6G6XjgrrLrO1oGnAb6NUFMvVVkDlPVBzH6whVHNU,5378915
+tnsu/networks/AFH_20x20_pbc_D_4.pkl,sha256=ieyLGQpX_m6cLNp2s3hiI6LuRgaJOt8MhXlhytqVc78,5984087
+tnsu-1.0.3.dist-info/LICENSE.txt,sha256=uIMg-xNJG6anILLHokHMcHg9TsegyTbSqd02VpvSooQ,1072
+tnsu-1.0.3.dist-info/METADATA,sha256=VbmZB8iYABFm6Fmb-tGLnPr3QSsukdVPj_VnNmh4hUc,16286
+tnsu-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tnsu-1.0.3.dist-info/top_level.txt,sha256=KqUxoK48K40O9ocAGz8rucrfxsFrSpbUu8SV39iMHYU,5
+tnsu-1.0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tnsu-1.0.3.dist-info/RECORD,,
