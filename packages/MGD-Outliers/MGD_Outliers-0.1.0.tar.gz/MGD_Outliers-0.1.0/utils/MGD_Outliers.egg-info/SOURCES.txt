@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+utils/MGD_Outliers.py
+utils/MGD_Outliers.egg-info/PKG-INFO
+utils/MGD_Outliers.egg-info/SOURCES.txt
+utils/MGD_Outliers.egg-info/dependency_links.txt
+utils/MGD_Outliers.egg-info/requires.txt
+utils/MGD_Outliers.egg-info/top_level.txt
