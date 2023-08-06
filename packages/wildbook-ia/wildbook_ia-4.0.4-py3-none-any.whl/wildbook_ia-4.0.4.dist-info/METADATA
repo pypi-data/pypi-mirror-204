@@ -1,0 +1,638 @@
+Metadata-Version: 2.1
+Name: wildbook-ia
+Version: 4.0.4
+Summary: Wildbook IA (WBIA) - Machine learning service for the WildBook project
+Home-page: https://github.com/WildMeOrg/wildbook-ia
+Author: Jason Parham, Dr. Jon Crall, Dr. Charles Stewart, Drew Blount, Ben Scheiner, Wild Me Developers, Karen Chan, Michael Mulich, Hendrik Weideman, A. Batbouta, A. Beard, Z. Jablons, D. Lowe, Z. Rutfield, K. Southerland, A. Weinstock, J. Wrona
+Author-email: dev@wildme.org
+License: Apache License 2.0
+Project-URL: Bug Reports, https://github.com/WildMeOrg/wildbook-ia/issues
+Project-URL: Funding, https://www.wildme.org/donate/
+Project-URL: Say Thanks!, https://community.wildbook.org
+Project-URL: Source, https://github.com/WildMeOrg/wildbook-ia
+Keywords: wildbook,wildme,ibeis,ecological,wildlife,conservation,machine learning,ai,hotspotter,detection,classification,animal ID,re-id,re-identification,flukebook
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Environment :: GPU
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.0
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: ansi2html (==1.8.0)
+Requires-Dist: autopep8 (==1.7.0)
+Requires-Dist: blinker (==1.5)
+Requires-Dist: boto (==2.49.0)
+Requires-Dist: cachetools (==5.2.0)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: colorama (==0.4.5)
+Requires-Dist: Cython (==0.29.32)
+Requires-Dist: dateutils (==0.6.12)
+Requires-Dist: delorean (==1.0.0)
+Requires-Dist: deprecated (==1.2.13)
+Requires-Dist: descartes (==1.1.0)
+Requires-Dist: docker (==6.0.0)
+Requires-Dist: Flask-Caching (==2.0.1)
+Requires-Dist: Flask-CAS (==1.0.2)
+Requires-Dist: Flask-Cors (==3.0.10)
+Requires-Dist: Flask-Login (==0.5.0)
+Requires-Dist: Flask-Minify (==0.39)
+Requires-Dist: Flask-OAuthlib (==0.9.6)
+Requires-Dist: Flask-Paranoid (==0.3.0)
+Requires-Dist: flask-restx (==1.1.0)
+Requires-Dist: flask-swagger (==0.2.14)
+Requires-Dist: gdm (==0.2.1)
+Requires-Dist: geopandas (==0.10.2)
+Requires-Dist: gitpython (==3.1.27)
+Requires-Dist: imgaug (==0.4.0)
+Requires-Dist: ipython (==7.34.0)
+Requires-Dist: jupyter (==1.0.0)
+Requires-Dist: keras (==2.2.5)
+Requires-Dist: line-profiler (==3.5.1)
+Requires-Dist: lockfile (==0.12.2)
+Requires-Dist: mako (==1.2.2)
+Requires-Dist: itsdangerous (<2.0,>=0.24)
+Requires-Dist: markupsafe (<2.0.0)
+Requires-Dist: matplotlib (==3.5.3)
+Requires-Dist: networkx (==2.6.3)
+Requires-Dist: numpy (==1.21.6)
+Requires-Dist: opencv-contrib-python-headless (==4.7.0.72)
+Requires-Dist: pandas (==1.3.5)
+Requires-Dist: parse (==1.8.4)
+Requires-Dist: passlib (==1.7.4)
+Requires-Dist: permission (==0.4.1)
+Requires-Dist: Pillow (==9.2.0)
+Requires-Dist: prometheus-client (==0.14.1)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: pydot (==1.4.2)
+Requires-Dist: pydot-ng (==2.0.0)
+Requires-Dist: pyfiglet (==0.8.post1)
+Requires-Dist: pygments (==2.13.0)
+Requires-Dist: pynmea2 (==1.19.0)
+Requires-Dist: pyparsing (==3.0.9)
+Requires-Dist: pyshp (==2.3.1)
+Requires-Dist: pytesseract (==0.3.10)
+Requires-Dist: pyzmq (==23.2.1)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: requests-oauthlib (==1.1.0)
+Requires-Dist: scikit-image (==0.19.3)
+Requires-Dist: scikit-learn (==1.0.2)
+Requires-Dist: scipy (==1.7.3)
+Requires-Dist: sentry-sdk (==1.9.6)
+Requires-Dist: sentry-sdk[flask] (==1.9.6)
+Requires-Dist: setproctitle (==1.3.2)
+Requires-Dist: shapely (==1.8.4)
+Requires-Dist: simplejson (==3.17.6)
+Requires-Dist: sip (==6.6.2)
+Requires-Dist: six (==1.14.0)
+Requires-Dist: sphinx (==5.1.1)
+Requires-Dist: sqlalchemy (==1.4.14)
+Requires-Dist: SQLAlchemy-Utils (==0.38.3)
+Requires-Dist: tensorboard-logger (==0.1.0)
+Requires-Dist: Theano (==1.0.5)
+Requires-Dist: timm (==0.6.12)
+Requires-Dist: albumentations (==1.3.0)
+Requires-Dist: torch (==1.13.1)
+Requires-Dist: torchvision (==0.14.1)
+Requires-Dist: torchaudio (==0.13.1)
+Requires-Dist: tornado (==6.2)
+Requires-Dist: tqdm (==4.64.0)
+Requires-Dist: ubelt (==1.2.1)
+Requires-Dist: visdom (==0.1.8.9)
+Requires-Dist: PyQt5 (==5.15.9)
+Requires-Dist: wbia-lightnet
+Requires-Dist: wbia-pydarknet
+Requires-Dist: wbia-pyflann
+Requires-Dist: wbia-utool
+Requires-Dist: wbia-vtool
+Requires-Dist: wbia-pyhesaff
+Requires-Dist: apispec (<0.39,>=0.20.0)
+Requires-Dist: Flask (<2,>=1.1)
+Requires-Dist: flask-marshmallow (<0.8,>=0.7)
+Requires-Dist: Flask-SQLAlchemy (<2.5.1,>=2.4)
+Requires-Dist: marshmallow (<3,>=2.13.5)
+Requires-Dist: marshmallow-sqlalchemy (<0.13,>=0.12)
+Requires-Dist: pyastar2d (==1.0.4)
+Requires-Dist: webargs (==5.5.3)
+Requires-Dist: werkzeug (<0.16,>=0.15)
+Provides-Extra: all
+Requires-Dist: cmake (==3.25.2) ; extra == 'all'
+Requires-Dist: ninja (==1.11.1) ; extra == 'all'
+Requires-Dist: fairseq (==0.12.2) ; extra == 'all'
+Requires-Dist: setuptools (==59.5.0) ; extra == 'all'
+Requires-Dist: setuptools-scm[toml] (==6.3.2) ; extra == 'all'
+Requires-Dist: wheel (==0.38.4) ; extra == 'all'
+Requires-Dist: pyhesaff (==2.1.1) ; extra == 'all'
+Requires-Dist: ansi2html (==1.8.0) ; extra == 'all'
+Requires-Dist: autopep8 (==1.7.0) ; extra == 'all'
+Requires-Dist: blinker (==1.5) ; extra == 'all'
+Requires-Dist: boto (==2.49.0) ; extra == 'all'
+Requires-Dist: cachetools (==5.2.0) ; extra == 'all'
+Requires-Dist: click (==7.1.2) ; extra == 'all'
+Requires-Dist: colorama (==0.4.5) ; extra == 'all'
+Requires-Dist: Cython (==0.29.32) ; extra == 'all'
+Requires-Dist: dateutils (==0.6.12) ; extra == 'all'
+Requires-Dist: delorean (==1.0.0) ; extra == 'all'
+Requires-Dist: deprecated (==1.2.13) ; extra == 'all'
+Requires-Dist: descartes (==1.1.0) ; extra == 'all'
+Requires-Dist: docker (==6.0.0) ; extra == 'all'
+Requires-Dist: Flask-Caching (==2.0.1) ; extra == 'all'
+Requires-Dist: Flask-CAS (==1.0.2) ; extra == 'all'
+Requires-Dist: Flask-Cors (==3.0.10) ; extra == 'all'
+Requires-Dist: Flask-Login (==0.5.0) ; extra == 'all'
+Requires-Dist: Flask-Minify (==0.39) ; extra == 'all'
+Requires-Dist: Flask-OAuthlib (==0.9.6) ; extra == 'all'
+Requires-Dist: Flask-Paranoid (==0.3.0) ; extra == 'all'
+Requires-Dist: flask-restx (==1.1.0) ; extra == 'all'
+Requires-Dist: flask-swagger (==0.2.14) ; extra == 'all'
+Requires-Dist: gdm (==0.2.1) ; extra == 'all'
+Requires-Dist: geopandas (==0.10.2) ; extra == 'all'
+Requires-Dist: gitpython (==3.1.27) ; extra == 'all'
+Requires-Dist: imgaug (==0.4.0) ; extra == 'all'
+Requires-Dist: ipython (==7.34.0) ; extra == 'all'
+Requires-Dist: jupyter (==1.0.0) ; extra == 'all'
+Requires-Dist: keras (==2.2.5) ; extra == 'all'
+Requires-Dist: line-profiler (==3.5.1) ; extra == 'all'
+Requires-Dist: lockfile (==0.12.2) ; extra == 'all'
+Requires-Dist: mako (==1.2.2) ; extra == 'all'
+Requires-Dist: itsdangerous (<2.0,>=0.24) ; extra == 'all'
+Requires-Dist: markupsafe (<2.0.0) ; extra == 'all'
+Requires-Dist: matplotlib (==3.5.3) ; extra == 'all'
+Requires-Dist: networkx (==2.6.3) ; extra == 'all'
+Requires-Dist: numpy (==1.21.6) ; extra == 'all'
+Requires-Dist: opencv-contrib-python-headless (==4.7.0.72) ; extra == 'all'
+Requires-Dist: pandas (==1.3.5) ; extra == 'all'
+Requires-Dist: parse (==1.8.4) ; extra == 'all'
+Requires-Dist: passlib (==1.7.4) ; extra == 'all'
+Requires-Dist: permission (==0.4.1) ; extra == 'all'
+Requires-Dist: Pillow (==9.2.0) ; extra == 'all'
+Requires-Dist: prometheus-client (==0.14.1) ; extra == 'all'
+Requires-Dist: pyasn1 (==0.4.8) ; extra == 'all'
+Requires-Dist: pydot (==1.4.2) ; extra == 'all'
+Requires-Dist: pydot-ng (==2.0.0) ; extra == 'all'
+Requires-Dist: pyfiglet (==0.8.post1) ; extra == 'all'
+Requires-Dist: pygments (==2.13.0) ; extra == 'all'
+Requires-Dist: pynmea2 (==1.19.0) ; extra == 'all'
+Requires-Dist: pyparsing (==3.0.9) ; extra == 'all'
+Requires-Dist: pyshp (==2.3.1) ; extra == 'all'
+Requires-Dist: pytesseract (==0.3.10) ; extra == 'all'
+Requires-Dist: pyzmq (==23.2.1) ; extra == 'all'
+Requires-Dist: requests (==2.28.1) ; extra == 'all'
+Requires-Dist: requests-oauthlib (==1.1.0) ; extra == 'all'
+Requires-Dist: scikit-image (==0.19.3) ; extra == 'all'
+Requires-Dist: scikit-learn (==1.0.2) ; extra == 'all'
+Requires-Dist: scipy (==1.7.3) ; extra == 'all'
+Requires-Dist: sentry-sdk (==1.9.6) ; extra == 'all'
+Requires-Dist: sentry-sdk[flask] (==1.9.6) ; extra == 'all'
+Requires-Dist: setproctitle (==1.3.2) ; extra == 'all'
+Requires-Dist: shapely (==1.8.4) ; extra == 'all'
+Requires-Dist: simplejson (==3.17.6) ; extra == 'all'
+Requires-Dist: sip (==6.6.2) ; extra == 'all'
+Requires-Dist: six (==1.14.0) ; extra == 'all'
+Requires-Dist: sphinx (==5.1.1) ; extra == 'all'
+Requires-Dist: sqlalchemy (==1.4.14) ; extra == 'all'
+Requires-Dist: SQLAlchemy-Utils (==0.38.3) ; extra == 'all'
+Requires-Dist: tensorboard-logger (==0.1.0) ; extra == 'all'
+Requires-Dist: Theano (==1.0.5) ; extra == 'all'
+Requires-Dist: timm (==0.6.12) ; extra == 'all'
+Requires-Dist: albumentations (==1.3.0) ; extra == 'all'
+Requires-Dist: torch (==1.13.1) ; extra == 'all'
+Requires-Dist: torchvision (==0.14.1) ; extra == 'all'
+Requires-Dist: torchaudio (==0.13.1) ; extra == 'all'
+Requires-Dist: tornado (==6.2) ; extra == 'all'
+Requires-Dist: tqdm (==4.64.0) ; extra == 'all'
+Requires-Dist: ubelt (==1.2.1) ; extra == 'all'
+Requires-Dist: visdom (==0.1.8.9) ; extra == 'all'
+Requires-Dist: PyQt5 (==5.15.9) ; extra == 'all'
+Requires-Dist: wbia-lightnet ; extra == 'all'
+Requires-Dist: wbia-pydarknet ; extra == 'all'
+Requires-Dist: wbia-pyflann ; extra == 'all'
+Requires-Dist: wbia-utool ; extra == 'all'
+Requires-Dist: wbia-vtool ; extra == 'all'
+Requires-Dist: wbia-pyhesaff ; extra == 'all'
+Requires-Dist: apispec (<0.39,>=0.20.0) ; extra == 'all'
+Requires-Dist: Flask (<2,>=1.1) ; extra == 'all'
+Requires-Dist: flask-marshmallow (<0.8,>=0.7) ; extra == 'all'
+Requires-Dist: Flask-SQLAlchemy (<2.5.1,>=2.4) ; extra == 'all'
+Requires-Dist: marshmallow (<3,>=2.13.5) ; extra == 'all'
+Requires-Dist: marshmallow-sqlalchemy (<0.13,>=0.12) ; extra == 'all'
+Requires-Dist: pyastar2d (==1.0.4) ; extra == 'all'
+Requires-Dist: webargs (==5.5.3) ; extra == 'all'
+Requires-Dist: werkzeug (<0.16,>=0.15) ; extra == 'all'
+Requires-Dist: brunette (==0.2.8) ; extra == 'all'
+Requires-Dist: coverage (==7.2.2) ; extra == 'all'
+Requires-Dist: pytest (==7.2.2) ; extra == 'all'
+Requires-Dist: pytest-cov (==4.0.0) ; extra == 'all'
+Requires-Dist: pytest-random-order (==1.1.0) ; extra == 'all'
+Requires-Dist: xdoctest (==1.0.2) ; extra == 'all'
+Provides-Extra: build
+Requires-Dist: cmake (==3.25.2) ; extra == 'build'
+Requires-Dist: ninja (==1.11.1) ; extra == 'build'
+Requires-Dist: fairseq (==0.12.2) ; extra == 'build'
+Requires-Dist: setuptools (==59.5.0) ; extra == 'build'
+Requires-Dist: setuptools-scm[toml] (==6.3.2) ; extra == 'build'
+Requires-Dist: wheel (==0.38.4) ; extra == 'build'
+Requires-Dist: pyhesaff (==2.1.1) ; extra == 'build'
+Provides-Extra: pinned
+Requires-Dist: apispec (<0.39,>=0.20.0) ; extra == 'pinned'
+Requires-Dist: Flask (<2,>=1.1) ; extra == 'pinned'
+Requires-Dist: flask-marshmallow (<0.8,>=0.7) ; extra == 'pinned'
+Requires-Dist: Flask-SQLAlchemy (<2.5.1,>=2.4) ; extra == 'pinned'
+Requires-Dist: marshmallow (<3,>=2.13.5) ; extra == 'pinned'
+Requires-Dist: marshmallow-sqlalchemy (<0.13,>=0.12) ; extra == 'pinned'
+Requires-Dist: pyastar2d (==1.0.4) ; extra == 'pinned'
+Requires-Dist: webargs (==5.5.3) ; extra == 'pinned'
+Requires-Dist: werkzeug (<0.16,>=0.15) ; extra == 'pinned'
+Provides-Extra: postgres
+Requires-Dist: psycopg2-binary (==2.9.5) ; extra == 'postgres'
+Provides-Extra: problematic
+Requires-Dist: pygraphviz (==1.7) ; extra == 'problematic'
+Requires-Dist: statsmodels (==0.13.5) ; extra == 'problematic'
+Provides-Extra: runtime
+Requires-Dist: ansi2html (==1.8.0) ; extra == 'runtime'
+Requires-Dist: autopep8 (==1.7.0) ; extra == 'runtime'
+Requires-Dist: blinker (==1.5) ; extra == 'runtime'
+Requires-Dist: boto (==2.49.0) ; extra == 'runtime'
+Requires-Dist: cachetools (==5.2.0) ; extra == 'runtime'
+Requires-Dist: click (==7.1.2) ; extra == 'runtime'
+Requires-Dist: colorama (==0.4.5) ; extra == 'runtime'
+Requires-Dist: Cython (==0.29.32) ; extra == 'runtime'
+Requires-Dist: dateutils (==0.6.12) ; extra == 'runtime'
+Requires-Dist: delorean (==1.0.0) ; extra == 'runtime'
+Requires-Dist: deprecated (==1.2.13) ; extra == 'runtime'
+Requires-Dist: descartes (==1.1.0) ; extra == 'runtime'
+Requires-Dist: docker (==6.0.0) ; extra == 'runtime'
+Requires-Dist: Flask-Caching (==2.0.1) ; extra == 'runtime'
+Requires-Dist: Flask-CAS (==1.0.2) ; extra == 'runtime'
+Requires-Dist: Flask-Cors (==3.0.10) ; extra == 'runtime'
+Requires-Dist: Flask-Login (==0.5.0) ; extra == 'runtime'
+Requires-Dist: Flask-Minify (==0.39) ; extra == 'runtime'
+Requires-Dist: Flask-OAuthlib (==0.9.6) ; extra == 'runtime'
+Requires-Dist: Flask-Paranoid (==0.3.0) ; extra == 'runtime'
+Requires-Dist: flask-restx (==1.1.0) ; extra == 'runtime'
+Requires-Dist: flask-swagger (==0.2.14) ; extra == 'runtime'
+Requires-Dist: gdm (==0.2.1) ; extra == 'runtime'
+Requires-Dist: geopandas (==0.10.2) ; extra == 'runtime'
+Requires-Dist: gitpython (==3.1.27) ; extra == 'runtime'
+Requires-Dist: imgaug (==0.4.0) ; extra == 'runtime'
+Requires-Dist: ipython (==7.34.0) ; extra == 'runtime'
+Requires-Dist: jupyter (==1.0.0) ; extra == 'runtime'
+Requires-Dist: keras (==2.2.5) ; extra == 'runtime'
+Requires-Dist: line-profiler (==3.5.1) ; extra == 'runtime'
+Requires-Dist: lockfile (==0.12.2) ; extra == 'runtime'
+Requires-Dist: mako (==1.2.2) ; extra == 'runtime'
+Requires-Dist: itsdangerous (<2.0,>=0.24) ; extra == 'runtime'
+Requires-Dist: markupsafe (<2.0.0) ; extra == 'runtime'
+Requires-Dist: matplotlib (==3.5.3) ; extra == 'runtime'
+Requires-Dist: networkx (==2.6.3) ; extra == 'runtime'
+Requires-Dist: numpy (==1.21.6) ; extra == 'runtime'
+Requires-Dist: opencv-contrib-python-headless (==4.7.0.72) ; extra == 'runtime'
+Requires-Dist: pandas (==1.3.5) ; extra == 'runtime'
+Requires-Dist: parse (==1.8.4) ; extra == 'runtime'
+Requires-Dist: passlib (==1.7.4) ; extra == 'runtime'
+Requires-Dist: permission (==0.4.1) ; extra == 'runtime'
+Requires-Dist: Pillow (==9.2.0) ; extra == 'runtime'
+Requires-Dist: prometheus-client (==0.14.1) ; extra == 'runtime'
+Requires-Dist: pyasn1 (==0.4.8) ; extra == 'runtime'
+Requires-Dist: pydot (==1.4.2) ; extra == 'runtime'
+Requires-Dist: pydot-ng (==2.0.0) ; extra == 'runtime'
+Requires-Dist: pyfiglet (==0.8.post1) ; extra == 'runtime'
+Requires-Dist: pygments (==2.13.0) ; extra == 'runtime'
+Requires-Dist: pynmea2 (==1.19.0) ; extra == 'runtime'
+Requires-Dist: pyparsing (==3.0.9) ; extra == 'runtime'
+Requires-Dist: pyshp (==2.3.1) ; extra == 'runtime'
+Requires-Dist: pytesseract (==0.3.10) ; extra == 'runtime'
+Requires-Dist: pyzmq (==23.2.1) ; extra == 'runtime'
+Requires-Dist: requests (==2.28.1) ; extra == 'runtime'
+Requires-Dist: requests-oauthlib (==1.1.0) ; extra == 'runtime'
+Requires-Dist: scikit-image (==0.19.3) ; extra == 'runtime'
+Requires-Dist: scikit-learn (==1.0.2) ; extra == 'runtime'
+Requires-Dist: scipy (==1.7.3) ; extra == 'runtime'
+Requires-Dist: sentry-sdk (==1.9.6) ; extra == 'runtime'
+Requires-Dist: sentry-sdk[flask] (==1.9.6) ; extra == 'runtime'
+Requires-Dist: setproctitle (==1.3.2) ; extra == 'runtime'
+Requires-Dist: shapely (==1.8.4) ; extra == 'runtime'
+Requires-Dist: simplejson (==3.17.6) ; extra == 'runtime'
+Requires-Dist: sip (==6.6.2) ; extra == 'runtime'
+Requires-Dist: six (==1.14.0) ; extra == 'runtime'
+Requires-Dist: sphinx (==5.1.1) ; extra == 'runtime'
+Requires-Dist: sqlalchemy (==1.4.14) ; extra == 'runtime'
+Requires-Dist: SQLAlchemy-Utils (==0.38.3) ; extra == 'runtime'
+Requires-Dist: tensorboard-logger (==0.1.0) ; extra == 'runtime'
+Requires-Dist: Theano (==1.0.5) ; extra == 'runtime'
+Requires-Dist: timm (==0.6.12) ; extra == 'runtime'
+Requires-Dist: albumentations (==1.3.0) ; extra == 'runtime'
+Requires-Dist: torch (==1.13.1) ; extra == 'runtime'
+Requires-Dist: torchvision (==0.14.1) ; extra == 'runtime'
+Requires-Dist: torchaudio (==0.13.1) ; extra == 'runtime'
+Requires-Dist: tornado (==6.2) ; extra == 'runtime'
+Requires-Dist: tqdm (==4.64.0) ; extra == 'runtime'
+Requires-Dist: ubelt (==1.2.1) ; extra == 'runtime'
+Requires-Dist: visdom (==0.1.8.9) ; extra == 'runtime'
+Requires-Dist: PyQt5 (==5.15.9) ; extra == 'runtime'
+Requires-Dist: wbia-lightnet ; extra == 'runtime'
+Requires-Dist: wbia-pydarknet ; extra == 'runtime'
+Requires-Dist: wbia-pyflann ; extra == 'runtime'
+Requires-Dist: wbia-utool ; extra == 'runtime'
+Requires-Dist: wbia-vtool ; extra == 'runtime'
+Requires-Dist: wbia-pyhesaff ; extra == 'runtime'
+Provides-Extra: tests
+Requires-Dist: brunette (==0.2.8) ; extra == 'tests'
+Requires-Dist: coverage (==7.2.2) ; extra == 'tests'
+Requires-Dist: pytest (==7.2.2) ; extra == 'tests'
+Requires-Dist: pytest-cov (==4.0.0) ; extra == 'tests'
+Requires-Dist: pytest-random-order (==1.1.0) ; extra == 'tests'
+Requires-Dist: xdoctest (==1.0.2) ; extra == 'tests'
+
+==================
+WBIA - WildBook IA
+==================
+
+|Build| |Pypi| |Documentation| |Downloads|
+
+.. image:: http://i.imgur.com/TNCiEBe.png
+    :alt: "(Note: the rhino and wildebeest matches may be dubious. Other species do work well though")
+
+WBIA program for the storage and management of images and derived data for
+use in computer vision algorithms. It aims to compute who an animal is, what
+species an animal is, and where an animal is with the ultimate goal being to
+ask important why biological questions.
+
+This project is the Machine Learning (ML) / computer vision component of the WildBook project: See https://github.com/WildMeOrg/.  This project is an actively maintained fork of the popular IBEIS (Image Based Ecological Information System) software suite for wildlife conservation.  The original IBEIS project is maintained by Jon Crall (@Erotemic) at https://github.com/Erotemic/ibeis.  The IBEIS toolkit originally was a wrapper around HotSpotter, which original binaries can be downloaded from: http://cs.rpi.edu/hotspotter/
+
+Currently the system is build around and SQLite database, a web GUI,
+and matplotlib visualizations. Algorithms employed are: convolutional neural network
+detection and localization and classification, hessian-affine keypoint detection, SIFT keypoint
+description, LNBNN identification using approximate nearest neighbors.
+
+Requirements
+------------
+
+* Python 3.7+
+* OpenCV 3.4.10
+* Python dependencies listed in requirements.txt
+
+Installation Instructions
+-------------------------
+
+PyPI
+~~~~
+
+The WBIA software is now available on `pypi
+<https://pypi.org/project/wbia/>`_ for Linux systems. This means if you have
+`Python installed
+<https://xdoctest.readthedocs.io/en/latest/installing_python.html>`_. You can
+simply run:
+
+.. code:: bash
+
+    pip install wildbook-ia
+
+to install the software. Then the command to run the web server is:
+
+.. code:: bash
+
+    python -m wbia.dev --dbdir wbia-data/ --web
+
+We highly recommend using a Python virtual environment: https://docs.python-guide.org/dev/virtualenvs/#lower-level-virtualenv
+
+Documentation
+~~~~~~~~~~~~~
+
+The documentation is built and available online at `wildmeorg.github.io/wildbook-ia/ <http://wildmeorg.github.io/wildbook-ia/>`_. However, if you need to build a local copy of the source, the following instructions can be used.
+
+.. code:: bash
+
+   # checkout the source code
+   # install the project in development mode
+   pip install -e .
+   # build the docs
+   scripts/build-docs.sh
+
+Then open the html file at ``docs/build/html/index.html``.
+
+Docker
+~~~~~~
+
+The WBIA software is built and deployed as a Docker image `wildme/wbia`.  You can download and run the pre-configured instance from the command line using:
+
+.. code:: bash
+
+    # Install Docker - https://docs.docker.com/engine/install/
+    docker pull wildme/wbia:latest
+    docker container run -p <external port>:5000 --name wildbook-ia -v /path/to/local/database/:/data/docker/ wildme/wbia:latest
+
+This image is built using the multi-stage Dockerfiles in `devops/`.
+
+Source
+~~~~~~
+
+To be updated soon.
+
+This project depends on an array of other repositories for functionality.
+
+First Party Toolkits (Required)
+
+* https://github.com/WildMeOrg/wbia-utool
+
+* https://github.com/WildMeOrg/wbia-vtool
+
+First Party Dependencies for Third Party Libraries (Required)
+
+* https://github.com/WildMeOrg/wbia-tpl-pyhesaff
+
+* https://github.com/WildMeOrg/wbia-tpl-pyflann
+
+* https://github.com/WildMeOrg/wbia-tpl-pydarknet
+
+* https://github.com/WildMeOrg/wbia-tpl-pyrf
+
+First Party Plug-ins (Optional)
+
+* https://github.com/WildMeOrg/wbia-plugin-cnn
+
+* https://github.com/WildMeOrg/wbia-plugin-flukematch
+
+* https://github.com/WildMeOrg/wbia-plugin-deepsense
+
+* https://github.com/WildMeOrg/wbia-plugin-finfindr
+
+* https://github.com/WildMeOrg/wbia-plugin-curvrank
+
+    + https://github.com/WildMeOrg/wbia-tpl-curvrank
+
+* https://github.com/WildMeOrg/wbia-plugin-kaggle7
+
+    + https://github.com/WildMeOrg/wbia-tpl-kaggle7
+
+* https://github.com/WildMeOrg/wbia-plugin-2d-orientation
+
+    + https://github.com/WildMeOrg/wbia-tpl-2d-orientation
+
+* https://github.com/WildMeOrg/wbia-plugin-lca
+
+    + https://github.com/WildMeOrg/wbia-tpl-lca
+
+Deprecated Toolkits (Deprecated)
+* https://github.com/WildMeOrg/wbia-deprecate-ubelt
+
+* https://github.com/WildMeOrg/wbia-deprecate-dtool
+
+* https://github.com/WildMeOrg/wbia-deprecate-guitool
+
+* https://github.com/WildMeOrg/wbia-deprecate-plottool
+
+* https://github.com/WildMeOrg/wbia-deprecate-detecttools
+
+* https://github.com/WildMeOrg/wbia-deprecate-plugin-humpbacktl
+
+* https://github.com/WildMeOrg/wbia-deprecate-tpl-lightnet
+
+* https://github.com/WildMeOrg/wbia-deprecate-tpl-brambox
+
+Plug-in Templates (Reference)
+
+* https://github.com/WildMeOrg/wbia-plugin-template
+
+* https://github.com/WildMeOrg/wbia-plugin-id-example
+
+Miscellaneous (Reference)
+
+* https://github.com/WildMeOrg/wbia-pypkg-build
+
+* https://github.com/WildMeOrg/wbia-project-website
+
+* https://github.com/WildMeOrg/wbia-aws-codedeploy
+
+Citation
+--------
+
+If you use this code or its models in your research, please cite:
+
+.. code:: text
+
+    @inproceedings{crall2013hotspotter,
+        title={Hotspotter — patterned species instance recognition},
+        author={Crall, Jonathan P and Stewart, Charles V and Berger-Wolf, Tanya Y and Rubenstein, Daniel I and Sundaresan, Siva R},
+        booktitle={2013 IEEE workshop on applications of computer vision (WACV)},
+        pages={230--237},
+        year={2013},
+        organization={IEEE}
+    }
+
+    @inproceedings{parham2018animal,
+        title={An animal detection pipeline for identification},
+        author={Parham, Jason and Stewart, Charles and Crall, Jonathan and Rubenstein, Daniel and Holmberg, Jason and Berger-Wolf, Tanya},
+        booktitle={2018 IEEE Winter Conference on Applications of Computer Vision (WACV)},
+        pages={1075--1083},
+        year={2018},
+        organization={IEEE}
+    }
+
+    @inproceedings{berger2015ibeis,
+        title={IBEIS: Image-based ecological information system: From pixels to science and conservation},
+        author={Berger-Wolf, TY and Rubenstein, DI and Stewart, CV and Holmberg, J and Parham, J and Crall, J},
+        booktitle={Bloomberg Data for Good Exchange Conference, New York, NY, USA},
+        volume={2},
+        year={2015}
+    }
+
+    @article{berger2017wildbook,
+        title={Wildbook: Crowdsourcing, computer vision, and data science for conservation},
+        author={Berger-Wolf, Tanya Y and Rubenstein, Daniel I and Stewart, Charles V and Holmberg, Jason A and Parham, Jason and Menon, Sreejith and Crall, Jonathan and Van Oast, Jon and Kiciman, Emre and Joppa, Lucas},
+        journal={arXiv preprint arXiv:1710.08880},
+        year={2017}
+    }
+
+Documentation
+-------------------------
+
+The WBIA API Documentation can be found here: https://wildmeorg.github.io/wildbook-ia/
+
+Code Style and Development Guidelines
+-------------------------------------
+
+Contributing
+~~~~~~~~~~~~
+
+It's recommended that you use ``pre-commit`` to ensure linting procedures are run
+on any commit you make. (See also `pre-commit.com <https://pre-commit.com/>`_)
+
+Reference `pre-commit's installation instructions <https://pre-commit.com/#install>`_ for software installation on your OS/platform. After you have the software installed, run ``pre-commit install`` on the command line. Now every time you commit to this project's code base the linter procedures will automatically run over the changed files.  To run pre-commit on files preemtively from the command line use:
+
+.. code:: bash
+
+    git add .
+    pre-commit run
+
+    # or
+
+    pre-commit run --all-files
+
+Brunette
+~~~~~~~~
+
+Our code base has been formatted by Brunette, which is a fork and more configurable version of Black (https://black.readthedocs.io/en/stable/).
+
+Flake8
+~~~~~~
+
+Try to conform to PEP8.  You should set up your preferred editor to use flake8 as its Python linter, but pre-commit will ensure compliance before a git commit is completed.
+
+To run flake8 from the command line use:
+
+.. code:: bash
+
+    flake8
+
+
+This will use the flake8 configuration within ``setup.cfg``,
+which ignores several errors and stylistic considerations.
+See the ``setup.cfg`` file for a full and accurate listing of stylistic codes to ignore.
+
+PyTest
+~~~~~~
+
+Our code uses Google-style documentation tests (doctests) that uses pytest and xdoctest to enable full support.  To run the tests from the command line use:
+
+.. code:: bash
+
+    pytest
+
+To run doctests with `+REQUIRES(--web-tests)` do:
+
+.. code:: bash
+
+    pytest --web-tests
+
+.. |Build| image:: https://img.shields.io/github/workflow/status/WildMeOrg/wildbook-ia/Build%20and%20upload%20to%20PyPI/main
+    :target: https://github.com/WildMeOrg/wildbook-ia/actions?query=branch%3Amain+workflow%3A%22Build+and+upload+to+PyPI%22
+    :alt: Build and upload to PyPI
+
+.. |Pypi| image:: https://img.shields.io/pypi/v/wildbook-ia.svg
+   :target: https://pypi.python.org/pypi/wildbook-ia
+   :alt: Latest PyPI version
+
+.. |Documentation| image:: https://img.shields.io/github/workflow/status/WildMeOrg/wildbook-ia/Build%20documentation?label=documentation
+    :target: https://wildmeorg.github.io/wildbook-ia/
+    :alt: Documentation on GitHub Pages
+
+.. |Downloads| image:: https://img.shields.io/pypi/dm/wildbook-ia.svg
+   :target: https://pypistats.org/packages/wildbook-ia
+
+
