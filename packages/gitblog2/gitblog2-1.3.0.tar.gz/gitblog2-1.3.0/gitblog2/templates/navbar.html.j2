@@ -1,0 +1,6 @@
+<nav>
+        <a href="/"><strong>Home</strong></a>
+        {%- for section in sections %}
+        <a href="/{{ section|lower }}"><strong>{{ section|title }}</strong></a>
+        {%- endfor %}
+</nav>
