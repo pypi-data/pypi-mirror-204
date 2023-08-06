@@ -1,0 +1,2 @@
+[console_scripts]
+semantra = semantra:main
