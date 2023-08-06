@@ -1,0 +1,10 @@
+[console_scripts]
+center_out_reach=tasks.run_center_out_reach:run
+decoder=decoder.run_decoder:run
+encoder=nds.scripts.run_encoder:run
+ephys_generator=nds.scripts.run_ephys_generator:run
+nds_post_install_config=nds.scripts.post_install_config:run
+recorder=recorder.run_recorder:run
+run_closed_loop=tasks.run_closed_loop:run
+streamer=nds.scripts.run_streamer:run
+

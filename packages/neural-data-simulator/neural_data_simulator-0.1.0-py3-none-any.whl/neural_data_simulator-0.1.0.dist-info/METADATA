@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: neural-data-simulator
+Version: 0.1.0
+Summary: Electrophysiology simulator data for developing Brain-Computer Interfaces
+Author: AE Studio, Chadwick Boulay
+Requires-Python: >=3.9,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: extras
+Requires-Dist: colorednoise (>=2.1.0,<3.0.0)
+Requires-Dist: joblib (>=1.2.0,<2.0.0) ; extra == "extras"
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0) ; extra == "extras"
+Requires-Dist: neo (>=0.12.0,<0.13.0)
+Requires-Dist: numpy (>=1.22.4,<2.0.0)
+Requires-Dist: pooch (>=1.7.0,<2.0.0)
+Requires-Dist: pyaml (>=21.10.1,<22.0.0)
+Requires-Dist: pydantic (>=1.9.1,<2.0.0)
+Requires-Dist: pydantic-yaml (>=0.9.0,<0.10.0)
+Requires-Dist: pygame (==2.2.0.dev2) ; extra == "extras"
+Requires-Dist: pylsl (>=1.16.1,<2.0.0)
+Requires-Dist: pyobjc-framework-Quartz ; (sys_platform == "darwin") and (extra == "extras")
+Requires-Dist: scikit-learn (==1.2.1) ; extra == "extras"
+Requires-Dist: scipy (>=1.10.0,<2.0.0)
+Requires-Dist: screeninfo (==0.8.1) ; extra == "extras"
