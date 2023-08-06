@@ -1,0 +1,13 @@
+znp/__init__.py,sha256=1oLL20yLB1GL9IbFiZD8OReDqiCpFr-yetIR6x1cNkI,23
+znp/__main__.py,sha256=BhvaWppxLrdewB_D897ds-D_wMI-Jpmivze1Du5uYKA,5624
+znp/options.py,sha256=1F4y-_32jL4axLVbRNLEv2tzaXgYwMqb4dHdqcq-JpU,3120
+znp/prompts.py,sha256=IO4eSZbCKy2C2zals33cX3Jsc2MJBVOkKtMcKtP2HFg,1916
+znp/utils.py,sha256=JdsoCdnNuPdgSavTqMRMg46eVVTe0wA2AfLES-w5s2k,3775
+znp/zathura.py,sha256=J19DUaKPvMnLspbmXO31J3WoTiXpgQXh-BdMXOzieA8,8274
+znp/zsocket.py,sha256=1e-PgYW1Bf9pBNsmDXlf71_W5XNDN7av_tzeOyx4OWQ,4025
+znp-0.0.13.dist-info/LICENSE,sha256=EmqszgbL_VtN-V0rdkEy9OQOYFvcTm4SXQcOY0DyzOo,34846
+znp-0.0.13.dist-info/METADATA,sha256=OjL9KbTw8Dfy_eHkHW19n_-ztoo6pZ2CBC2QYvQz-o8,5208
+znp-0.0.13.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+znp-0.0.13.dist-info/entry_points.txt,sha256=UiZ2bsK8synbGiTFNnfC76cVmmHb9JBkO-sF1t2OKJw,42
+znp-0.0.13.dist-info/top_level.txt,sha256=154ne-TEMz4f66PLp0mtWGMaXrcqOvCwdPVGSBgHJqM,4
+znp-0.0.13.dist-info/RECORD,,
