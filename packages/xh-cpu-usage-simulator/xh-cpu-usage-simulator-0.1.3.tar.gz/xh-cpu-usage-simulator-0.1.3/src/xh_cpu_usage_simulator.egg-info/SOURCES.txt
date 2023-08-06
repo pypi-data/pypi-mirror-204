@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/xh_cpu_usage_simulator/LinearRegressionPrediction.py
+src/xh_cpu_usage_simulator/MovingAvg.py
+src/xh_cpu_usage_simulator/PsMonitor.py
+src/xh_cpu_usage_simulator/TaskWorker.py
+src/xh_cpu_usage_simulator/TestMovingAvg.py
+src/xh_cpu_usage_simulator/__main__.py
+src/xh_cpu_usage_simulator.egg-info/PKG-INFO
+src/xh_cpu_usage_simulator.egg-info/SOURCES.txt
+src/xh_cpu_usage_simulator.egg-info/dependency_links.txt
+src/xh_cpu_usage_simulator.egg-info/requires.txt
+src/xh_cpu_usage_simulator.egg-info/top_level.txt
