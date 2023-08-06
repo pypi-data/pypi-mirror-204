@@ -1,0 +1,2 @@
+[console_scripts]
+dejankify = dejankify.dependency_cleanup:parse_and_start

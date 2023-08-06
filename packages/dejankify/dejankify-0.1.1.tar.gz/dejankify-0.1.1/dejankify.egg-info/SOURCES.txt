@@ -1,0 +1,15 @@
+LICENSE
+setup.py
+dejankify/__init__.py
+dejankify/dependency_cleanup.py
+dejankify/stdlib_check.py
+dejankify.egg-info/PKG-INFO
+dejankify.egg-info/SOURCES.txt
+dejankify.egg-info/dependency_links.txt
+dejankify.egg-info/entry_points.txt
+dejankify.egg-info/requires.txt
+dejankify.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/test_deps.py
+tests/test_file.py
