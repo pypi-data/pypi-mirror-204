@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+logging_basic_config/__init__.py
+logging_basic_config/config.py
+logging_basic_config.egg-info/PKG-INFO
+logging_basic_config.egg-info/SOURCES.txt
+logging_basic_config.egg-info/dependency_links.txt
+logging_basic_config.egg-info/not-zip-safe
+logging_basic_config.egg-info/top_level.txt
