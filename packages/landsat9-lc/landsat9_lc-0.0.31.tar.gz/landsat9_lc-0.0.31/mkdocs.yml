@@ -1,0 +1,16 @@
+site_name: Landsat 9 Land Cover Classification
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: blue
+
+plugins:
+  - mkdocstrings
+
+nav:
+  - Index: index.md
+  - Installation: installation.md
+  - How to use: how_to_use.md
+  - API: api.md
