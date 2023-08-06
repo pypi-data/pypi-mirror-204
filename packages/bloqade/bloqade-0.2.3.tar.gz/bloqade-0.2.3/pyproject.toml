@@ -1,0 +1,56 @@
+[project]
+name = "bloqade"
+version = "0.2.3"
+description = "neutral atom software development kit"
+authors = [
+    { name = "QuEra Computing Inc.", email = "info@quera.com" },
+]
+dependencies = [
+    "juliacall>=0.9.12",
+    "matplotlib>=3.7.1",
+    "numpy>=1.24.2",
+    "pydantic>=1.10.7",
+    "setuptools>=67.7.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[tool.pdm.build]
+package-dir = "src"
+includes = [
+    "src/bloqade/juliapkg.json",
+]
+custom-hook = "build.py"
+
+[tool.pdm.scripts]
+upload = "python -m twine upload -r bloqade dist/*"
+
+[tool.pdm.scripts._]
+env_file = "./.env"
+
+[tool.pdm.scripts.build]
+cmd = "pdm build"
+
+[tool.pdm.scripts.publish]
+composite = [
+    "build",
+    "upload",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.3.0",
+    "pytest>=7.3.1",
+    "mypy>=1.2.0",
+    "ipython>=8.12.0",
+    "twine>=4.0.2",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
