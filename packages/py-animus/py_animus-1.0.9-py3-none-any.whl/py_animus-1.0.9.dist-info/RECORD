@@ -1,0 +1,10 @@
+py_animus/__init__.py,sha256=QFau3pOZSRYNCnTfU4lqvubpGddFfvRed_Ke2Ke1jgc,2598
+py_animus/manifest_management.py,sha256=FBWs043d_eDBQW3vHxnHXkKbneLiIiSstBdxqnqjZOE,67023
+py_animus/py_animus.py,sha256=ZRgbF6Wa8JFP9kFogxHRz-zAOfcGAvEC68n0MmOtdFg,6252
+py_animus/utils.py,sha256=3w7xTzlabix6oHqCi6YvwzTRdYvxMihO6tWLjLTEJ_Q,1076
+py_animus-1.0.9.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+py_animus-1.0.9.dist-info/METADATA,sha256=7lgJLjL_E6uzyqlXZpgnBXLsffswjAfkESMJISf32oQ,8416
+py_animus-1.0.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+py_animus-1.0.9.dist-info/entry_points.txt,sha256=cEY-yVrl2IF8T5PdaP2gZEkJjhWncGhECDvAT9OJ4Lw,56
+py_animus-1.0.9.dist-info/top_level.txt,sha256=lJk0fNNIehO4l2Y6oiZoC-eANceFyX1sB8ei1Jvtcj0,10
+py_animus-1.0.9.dist-info/RECORD,,
