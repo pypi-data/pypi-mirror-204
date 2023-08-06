@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+img2speech/src/img2speech.egg-info/PKG-INFO
+img2speech/src/img2speech.egg-info/SOURCES.txt
+img2speech/src/img2speech.egg-info/dependency_links.txt
+img2speech/src/img2speech.egg-info/requires.txt
+img2speech/src/img2speech.egg-info/top_level.txt
+img2speech/src/img2speech.py
+img2speech/src/img2speech.egg-info/SOURCES.txt
