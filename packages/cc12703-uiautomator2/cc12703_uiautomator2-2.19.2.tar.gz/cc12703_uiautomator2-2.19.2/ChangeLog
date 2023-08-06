@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+2.19.2
+------
+
+* add isRunning
+* improve install
+* fix  workflow cant  run
+* add  install by adb wifi
+* fix bug
+* fix bug of type annotation
+* fix   bug of  pair by wifi
+* add pair\_by\_wifi
+* add disconnect\_adb\_wifi
+* add params to settings
