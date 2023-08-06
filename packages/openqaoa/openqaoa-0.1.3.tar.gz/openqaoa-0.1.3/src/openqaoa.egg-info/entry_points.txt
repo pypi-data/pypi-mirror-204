@@ -1,0 +1,5 @@
+[openqaoa.plugins]
+azure = openqaoa_azure.backend_config
+braket = openqaoa_braket.backend_config
+pyquil = openqaoa_pyquil.backend_config
+qiskit = openqaoa_qiskit.backend_config
