@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e970cb05-7d56-441a-b2e6-7549de815664" name="Changes" comment="trying some suggestions from jeffrey to make the module install proerply..">
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OZQewtSMVMqAR3KnAsv3cYG0Po" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/stevenwilson/PycharmProjects/opx_plus"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e970cb05-7d56-441a-b2e6-7549de815664" name="Changes" comment="" />
+      <created>1681765722599</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681765722599</updated>
+    </task>
+    <task id="LOCAL-00001" summary="git commit">
+      <created>1681765746626</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681765746626</updated>
+    </task>
+    <task id="LOCAL-00002" summary="git commit test 2">
+      <created>1681765853478</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681765853478</updated>
+    </task>
+    <task id="LOCAL-00003" summary="git commit test 2">
+      <created>1681768211381</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681768211381</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Write README">
+      <created>1681827394798</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681827394798</updated>
+    </task>
+    <task id="LOCAL-00005" summary="I accidentally pasted over a function (copy_over_and_down_formulas -&gt; paste_csv_vals_to_sheet) definition... Fixed!">
+      <created>1681827717302</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681827717302</updated>
+    </task>
+    <task id="LOCAL-00006" summary="List dependencies in README">
+      <created>1681827924064</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681827924064</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Missed a function in the README.">
+      <created>1681828151662</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681828151662</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update version fix, replace _ with - in the .toml name">
+      <created>1681836997393</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681836997393</updated>
+    </task>
+    <task id="LOCAL-00009" summary="trying some suggestions from jeffrey to make the module install proerply..">
+      <created>1682289337736</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682289337737</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="git commit" />
+    <MESSAGE value="git commit test 2" />
+    <MESSAGE value="Write README" />
+    <MESSAGE value="I accidentally pasted over a function (copy_over_and_down_formulas -&gt; paste_csv_vals_to_sheet) definition... Fixed!" />
+    <MESSAGE value="List dependencies in README" />
+    <MESSAGE value="Missed a function in the README." />
+    <MESSAGE value="update version fix, replace _ with - in the .toml name" />
+    <MESSAGE value="trying some suggestions from jeffrey to make the module install proerply.." />
+    <option name="LAST_COMMIT_MESSAGE" value="trying some suggestions from jeffrey to make the module install proerply.." />
+  </component>
+</project>
