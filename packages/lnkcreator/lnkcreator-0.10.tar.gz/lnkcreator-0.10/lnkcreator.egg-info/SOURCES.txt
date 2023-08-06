@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+lnkcreator/LICENSE
+lnkcreator/README.md
+lnkcreator/__init__.py
+lnkcreator/requirements.txt
+lnkcreator/thirdparty.json
+lnkcreator.egg-info/PKG-INFO
+lnkcreator.egg-info/SOURCES.txt
+lnkcreator.egg-info/dependency_links.txt
+lnkcreator.egg-info/requires.txt
+lnkcreator.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+include lnkcreator/requirements.txt
+include lnkcreator/thirdparty.json
+include lnkcreator/README.md
+include lnkcreator/LICENSE
