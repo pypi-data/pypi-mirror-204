@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+geostack/__init__.py
+geostack/geostack.py
+geostack.egg-info/PKG-INFO
+geostack.egg-info/SOURCES.txt
+geostack.egg-info/dependency_links.txt
+geostack.egg-info/not-zip-safe
+geostack.egg-info/top_level.txt
