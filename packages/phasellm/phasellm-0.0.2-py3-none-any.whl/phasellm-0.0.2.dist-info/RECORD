@@ -1,0 +1,10 @@
+phasellm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phasellm/eval/__init__.py,sha256=HTRGk6eIIlvJbxQuYlzHoGaL9oSYgTpyF-mQvzjD_jw,19
+phasellm/eval/eval.py,sha256=gR_OyTtPnCtX0HZd2hW792DlqYyQhDnLbpz-eLYxkK8,3500
+phasellm/llms/__init__.py,sha256=E8_TiywnrCiDuZtAvnModnZIhTfkS6PT_gKpDsxQ5m0,21
+phasellm/llms/llms.py,sha256=sf3qJ30K-N9tT4GsA0OM0z-jgIgqMJ13KnhjNOQ1arI,13783
+phasellm-0.0.2.dist-info/LICENSE,sha256=WrnJAClObLLYkZJUurZWD6Ud_O7NXpEqsDOt_e4YLbU,1083
+phasellm-0.0.2.dist-info/METADATA,sha256=_y-h3iNfHuqRDy5f6IxfQm2ovA8EY-mTKJRTfl5sS8s,977
+phasellm-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+phasellm-0.0.2.dist-info/top_level.txt,sha256=QVFMXMk2CMWNXhURRjSln7EEP8gMWfqaK8rbPZeb3C0,9
+phasellm-0.0.2.dist-info/RECORD,,
