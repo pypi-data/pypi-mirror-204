@@ -1,0 +1,11 @@
+dragonnfruit/__init__.py,sha256=eJSS2YQvlrjQ1A-DPx3d4UcPoG8R2QvtUpglz6ibUdo,88
+dragonnfruit/attributions.py,sha256=IdU34goawRDHvXZ9BJxpXY2hnMXhgSa_GhTWTy9UD5w,1917
+dragonnfruit/io.py,sha256=oj-RWQRgEtYOX7QkpaZ-Xl_O3mpD61WgQ6_G_-dt-Jg,9287
+dragonnfruit/models.py,sha256=IydG8lXcHcZ8NPIfmsMWB0Grk3_LV21uO6UK10BUjFQ,18463
+dragonnfruit/preprocessing.py,sha256=Pb8CWUz-XJAkRXvDdCOX28z7G_2GRKpCU9pWxjQQfd4,10431
+dragonnfruit-0.3.0.data/scripts/dragonnfruit,sha256=7z84Qfo2PrVXCp7sxdykM8vYdZP9ZFyQGE8tXLB2_xE,3436
+dragonnfruit-0.3.0.dist-info/LICENSE,sha256=RcqH_7vR5XGqsjX_E1_NoE3ZfquGkvLC2kVRUL7IyQM,1072
+dragonnfruit-0.3.0.dist-info/METADATA,sha256=1cm5XyL90rA3ONr899HtfMAZgTYyfdE21WEx9Nl3_Ww,447
+dragonnfruit-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dragonnfruit-0.3.0.dist-info/top_level.txt,sha256=Xgqbq76d144gKRUGQonLAUh8FlTACLXhC5iymVE7lII,13
+dragonnfruit-0.3.0.dist-info/RECORD,,
