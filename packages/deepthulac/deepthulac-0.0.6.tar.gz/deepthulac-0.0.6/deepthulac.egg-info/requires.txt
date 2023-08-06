@@ -1,0 +1,8 @@
+transformers
+torch>=1.6.0
+pytorch-crf
+munch
+cyac
+colorama
+accelerate
+typeguard
