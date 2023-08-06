@@ -1,0 +1,2 @@
+[console_scripts]
+config_mgmt_server = config_mgmt_server:main

@@ -1,0 +1,17 @@
+include *.sh
+include *.txt
+include mypy.ini
+include tox.ini
+recursive-include tests *.txt
+include CHANGELOG.md
+
+exclude .devcontainer/*
+exclude .vscode/*
+exclude .github/*
+exclude .gitignore
+exclude .gitattributes
+exclude .gitmodules
+exclude .editorconfig
+exclude .env
+exclude .pylintrc
+exclude .vscodeignore

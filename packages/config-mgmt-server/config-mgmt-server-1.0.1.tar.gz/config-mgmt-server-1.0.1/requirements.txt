@@ -1,0 +1,45 @@
+# ./vscode/settings.json use binaries that must be installed with this requirements : `pip install -r requirements.txt`
+# A formatter for Python code
+pep8==1.4.4
+autopep8==1.4.4
+# Python code static checker
+pylint==2.3.1
+# simple powerful testing with Python
+pytest==4.5.0
+# plugin for pytest to produces coverage reports
+pytest-cov==2.7.1
+# Type safety
+flake8==3.7.7
+mypy==0.701
+flake8-mypy==17.8.0
+mypy-extensions==0.4.1
+mccabe==0.6.1
+pyflakes==2.1.1
+pycodestyle==2.5.0
+# Add your packages
+# ...
+
+
+# An abstract syntax tree for Python with inference support
+astroid==2.2.5
+# Atomic file writes
+atomicwrites==1.3.0
+# Classes Without Boilerplate
+attrs==19.1.0
+# Discover and load entry points from installed packages
+entrypoints==0.3
+# A Python utility / library to sort Python imports
+isort==4.3.20
+# A fast and thorough lazy object proxy
+lazy-object-proxy==1.3.1
+# More routines for operating on iterables, beyond itertools
+more-itertools==7.0.0
+# plugin and hook calling mechanisms for python
+pluggy==0.12.0
+py==1.11.0
+# Python 2 and 3 compatibility utilities
+six==1.12.0
+# a fork of Python 2 and 3 ast modules with type comment support
+typed-ast==1.3.5
+# Module for decorators, wrappers and monkey patching
+wrapt==1.11.1
