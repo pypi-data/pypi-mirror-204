@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: swedish-market-insights
+Version: 0.1.2
+Summary: Package to scrape the Finansinspektion's registers
+Home-page: https://github.com/fritjof-b/swedish-market-insights
+License: MIT
+Author: Fritjof Bengtsson
+Author-email: fritjof.folkeson@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Project-URL: Repository, https://github.com/fritjof-b/swedish-market-insights
+Description-Content-Type: text/markdown
+
+# Swedish Market Insights
+
+SMI is a small package for fetching inside trades made in Sweden.
+The data is collected with `requests` and parsed with `BeautifulSoup4`.
+All data is publicly available on Finansinspektionen's [website](https://fi.se/).
+
+## Installation
+
+<!-- `pip install insyn` -->
+
+## Usage
+
+```python3
+from swedish_market_insights import ficlient
+
+api = ficlient.FiClient()
+recent_inside_trades = api.get_trades_by_transaction_date()
+```
+
+## Features
+
+- Fetch inside trades by transaction date
+- Fetch inside trades by publication date
+
+## Examples
+
+### Fetch inside trades by transaction date
+
+```python3
+from swedish_market_insights import ficlient
+from datetime import date
+
+api = ficlient.FiClient()
+trades = api.get_trades_by_transaction_date(
+    from_date=date(2020, 1, 1),
+    to_date=date(2020, 1, 31))
+```
+
+### Fetch inside trades by publication date
+
+```python3
+from datetime import date
+from swedish_market_insights import ficlient
+
+api = ficlient.FiClient()
+trades = api.get_trades_by_publish_date(
+    from_date=date(2022, 10, 8),
+    to_date=date(2022, 10, 10))
+```
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request on GitHub if you have any suggestions or
+improvements.
+
+## License
+
+This project is licensed under the MIT License.
