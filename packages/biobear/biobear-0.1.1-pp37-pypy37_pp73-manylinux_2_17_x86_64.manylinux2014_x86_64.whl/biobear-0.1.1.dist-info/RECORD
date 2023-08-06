@@ -1,0 +1,9 @@
+biobear-0.1.1.dist-info/METADATA,sha256=ZZITONEztVd5pdhyEp9ZXweL-ZoTmZJ-lM_cXdXz4nM,286
+biobear-0.1.1.dist-info/WHEEL,sha256=y1SOEeUhVxmIy0wmK2lHLCbM40Y3u8yvJGlHsU3V3gI,136
+biobear/fasta_reader.py,sha256=Vsp1AoGiPJv_Z1fSCCrgJar9T8wuS4s4ccIydtpiCEU,383
+biobear/__init__.py,sha256=Eysz_GReu0UmYTrsJJkGIFi5jgehJh5rUOybFDZ3N8k,155
+biobear/vcf_reader.py,sha256=y4B8hx-TKcvSw4PdMRLDElP3HmlljAMEMry0lTh9LuE,857
+biobear/bam_reader.py,sha256=jCVA8VZYucM68aJ4CxDEdLwwkmgH4QlRZT_1eFgbOts,889
+biobear/fastq_reader.py,sha256=qgY8FQOizM8dwYa05cC24zEtq3G3-k5_ADNiHAEZOjs,383
+biobear/biobear.pypy37-pp73-x86_64-linux-gnu.so,sha256=8wPDdlhgY7BbCuxN_CdRX7OEQm_1UVnnEDyMzbv_tqw,7066880
+biobear-0.1.1.dist-info/RECORD,,
