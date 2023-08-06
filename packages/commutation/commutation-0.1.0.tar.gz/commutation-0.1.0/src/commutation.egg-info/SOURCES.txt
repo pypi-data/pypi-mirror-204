@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+Examples/Demonstrations.ipynb
+Examples/KKJ.ipynb
+Examples/Ringflip.ipynb
+Examples/Spin Algebra.ipynb
+Examples/Triangles.ipynb
+Examples/hexamer.ipynb
+Examples/test.ipynb
+src/commutation/__init__.py
+src/commutation/main.py
+src/commutation.egg-info/PKG-INFO
+src/commutation.egg-info/SOURCES.txt
+src/commutation.egg-info/dependency_links.txt
+src/commutation.egg-info/top_level.txt
