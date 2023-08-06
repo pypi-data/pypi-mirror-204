@@ -1,0 +1,5 @@
+setup.py
+extrinsic.egg-info/PKG-INFO
+extrinsic.egg-info/SOURCES.txt
+extrinsic.egg-info/dependency_links.txt
+extrinsic.egg-info/top_level.txt
