@@ -1,0 +1,4 @@
+typing_extensions==4.5.0
+
+[colors]
+colorama<1.0,>=0.4
