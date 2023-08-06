@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+dech/__init__.py
+dech/test_all.py
+dech/version.py
+dech.egg-info/PKG-INFO
+dech.egg-info/SOURCES.txt
+dech.egg-info/dependency_links.txt
+dech.egg-info/top_level.txt
