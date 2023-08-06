@@ -1,0 +1,3 @@
+[console_scripts]
+aliendev-cdk=aliendev_cdk.main:app
+
