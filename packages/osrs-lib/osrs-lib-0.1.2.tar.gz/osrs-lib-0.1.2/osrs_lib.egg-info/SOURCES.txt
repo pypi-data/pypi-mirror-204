@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+osrs_lib/__init__.py
+osrs_lib/errors.py
+osrs_lib/hiscores.py
+osrs_lib/utils.py
+osrs_lib.egg-info/PKG-INFO
+osrs_lib.egg-info/SOURCES.txt
+osrs_lib.egg-info/dependency_links.txt
+osrs_lib.egg-info/requires.txt
+osrs_lib.egg-info/top_level.txt
