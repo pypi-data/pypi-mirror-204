@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: markit-gateway
+Version: 2.0.1
+Summary: IMU message broker
+Author: davidliyutong
+Author-email: davidliyutong@sjtu.edu.cn
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: flask (>=2.0.0)
+Requires-Dist: gevent (>=21.7.0)
+Requires-Dist: pyyaml
+Requires-Dist: ipy
+Requires-Dist: fastapi (>=0.87.0)
+Requires-Dist: uvicorn (>=0.20.0)
+Requires-Dist: pyreadline (>2.0)
+Requires-Dist: open3d (>=0.14.1)
+Requires-Dist: scipy (>=1.8.0)
+Requires-Dist: tqdm
+Requires-Dist: vtk
+Requires-Dist: rich
+Requires-Dist: streamlit (>=1.16.0)
+Requires-Dist: pandas
+Requires-Dist: numpy (<1.24.0)
+Requires-Dist: setuptools
+Requires-Dist: py-cli-interaction
+Requires-Dist: numpy-quaternion
+Requires-Dist: quaternionic
+
+# MARKIT Gateway
+
+This repo contains code to interact with [rfmarkit-esp-node](https://github.com/mvig-robotflow/rfmarkit-esp-node).
+
+## Get Started
+
+```shell
+git clone https://github.com/mvig-robotflow/rfmarkit-gateway.git
+python setup.py install
+```
+
+Or from PYPI:
+
+```shell
+python -m pip install markit-gateway
+```
+
+## Documentation
+
+For documentation, please refer to [rfmarkit-gateway/docs](https://github.com/mvig-robotflow/rfmarkit-gateway/docs).
