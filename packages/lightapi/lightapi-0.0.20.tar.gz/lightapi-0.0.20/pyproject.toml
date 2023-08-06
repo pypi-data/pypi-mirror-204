@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "lightapi"
+version = "0.0.20"
+description = "Light API turns LLM's into Autonomous, MultiModal, MultiTasking Agents."
+authors = ["Jordan Plows  <jordan@lightapi.com>"]
+readme = "README.md"
+packages = [{include = "lightapi", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.8.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
