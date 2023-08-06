@@ -1,0 +1,2 @@
+[console_scripts]
+mongeasy = mongeasy.cli:main
