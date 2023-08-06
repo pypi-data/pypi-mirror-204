@@ -1,0 +1,10 @@
+kodekloud_downloader/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+kodekloud_downloader/cli.py,sha256=1199GpmoUypTfFEjZ8uCPsaek1esheDIpq-Qnqf8ynE,1748
+kodekloud_downloader/enums.py,sha256=R6YF_PkwoZAO59q4BvngXpehoVY7NSQbDmIgg-nnUKI,134
+kodekloud_downloader/helpers.py,sha256=C9HslBroCeIeWJG_GNt6lSRjxdgNTv7GEtLMfKDzOfQ,2186
+kodekloud_downloader/main.py,sha256=sePjTfPgdRWVsB-tgY6FxLIP00zWymyX50M8foVMiJA,2275
+kodekloud_downloader/models.py,sha256=YL12R5oMf5PpfkTO41ayeESns7ZFNtGqq5X1sVO-C2k,1976
+kodekloud_downloader-0.0.5.dist-info/entry_points.txt,sha256=A8Spvh3Xwpjd87A-183hRCw_FMqeH0-iB1aDMJo4Crk,64
+kodekloud_downloader-0.0.5.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+kodekloud_downloader-0.0.5.dist-info/METADATA,sha256=_wvfU2nZdEe0OZl4kGTyWci-854b54rQBNb1vMewzf8,14897
+kodekloud_downloader-0.0.5.dist-info/RECORD,,
