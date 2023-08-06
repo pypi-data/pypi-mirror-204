@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dbt-odps
+Version: 1.4.1
+Summary: The ODPS adapter plugin for dbt
+Home-page: https://github.com/ai-excelsior/F2AI
+Author: eavea
+Author-email: lijingyu68@gmail.com
+License: UNKNOWN
+Description: The ODPS adapter plugin for dbt
+Platform: UNKNOWN
