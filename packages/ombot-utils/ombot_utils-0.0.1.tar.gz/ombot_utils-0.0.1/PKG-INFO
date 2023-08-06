@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: ombot_utils
+Version: 0.0.1
+Summary: A small example package
+Author-email: panregedit <panregedit@gmail.com>
+Project-URL: Homepage, https://git.linker.cc/research/misc/ombot_utils.git
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ombot_utils
+
+OMBot项目的通用工具包，提供项目通用的处理模块，包括
+- 数据结构（`schemas`）
+- 日志处理（`log_handler`）
+- 回调处理（`callback_handler`）
+- 错误处理（`error_handler`）
+- 数据处理（`data_handler`）
+
+## 1. 数据结构（`schemas`）  
+数据结构模块定义了程序运行中所有使用的数据交互结构，保证各模块之间的接入接口规范。  
+
+### 1.1. 介绍   
+常用的数据结构包括：
+- ChatRecords：聊天记录，包括一次聊天交互过程中的所有上下文记录。包含 `get_recent` 方法，返回最近的聊天记录。
+- Message：聊天信息。
+- DetObject：识别目标，图片类信息经过处理后，有可能返回的识别结果。
+- Reply：回复消息的结构。
+### 1.2. 可选参数（`OPT`）  
+可选参数用于定义数据结构中的字段可选参数值，保证字段的有效性。  
+OPT 类可以用于参数取值，避免对可选值的记忆。
+```
+from ombot_utils import schemas
+
+reply = schemas.Reply(
+    code=200,
+    took=10,
+    bot_id=records.bot_id,
+    session_id=records.session_id,
+    dialog_id='111',
+    status=schemas.OPT.CHAT_STATUS.END_ANSWER,
+    message=message,
+)
+```
+
+## 2 日志处理（`log_handler`）  
+日志处理模块用于替换Python的默认日志处理。logging 模块 import 后需要进行一次**初始化**，之后可以直接使用，方法与Python的logging模块相同。
+```
+from ombot_utils import logging
+logging.init_logger('ombot', 'ombot')
+
+logging.info('Logging something')
+```
+
+## 3 回调处理（`callback_handler`）
+回调模块包含两个方法，**call** 方法用来回调正确识别的结果， **error** 方法用来回调处理失败的信息。
+```
+from ombot_utils import Callback
+from ombot_utils.schemas import OPT
+
+callback = Callback(chat_records)
+callback.call(reply, OPT.CHAT_STATUS.END_ANSWER)
+callback.error('Error information')
+```
+
+## 4 错误处理（`error_handler`）
+使用错误处理类 `VQLError` 进行错误处理。
+最简单的用法是使用错误代码抛出错误：
+```
+from ombot_utils import VQLError
+raise VQLError(500)
+```
+可以使用自定义的错误信息代替内置的错误信息  
+**注意：错误信息可能会被显示在用户界面上，因此请使用简单明了的描述语言**
+```
+from ombot_utils import VQLError
+raise VQLError(500, msg='自定义错误信息')
+```
+同时，可以使用'detail'字段回传报错的详细错误信息。这部分信息会出现在系统日志中，用于错误排查。
+```
+from ombot_utils import VQLError
+import traceback
+
+raise VQLError(500, detail=traceback.format_exc())
+```
+
+## 调试模式（Debug mode）
+设置环境变量 ```IS_DEBUG=True``` 可以开启debug模式，在该模式下有几点和正常模式不同：
+- 回调将不进行接口调用，仅日志显示回调数据。
+- 日志将不保存文件，仅作显示。

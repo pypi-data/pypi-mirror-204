@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "sqlmodel>=0.0.8", "pymysql>=1.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ombot_utils"
+version = "0.0.1"
+authors = [
+  { name="panregedit", email="panregedit@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://git.linker.cc/research/misc/ombot_utils.git"
