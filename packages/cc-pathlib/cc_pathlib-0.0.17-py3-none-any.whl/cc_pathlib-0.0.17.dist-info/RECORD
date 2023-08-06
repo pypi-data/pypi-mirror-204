@@ -1,0 +1,17 @@
+cc_pathlib/__init__.py,sha256=kLkFMvMlZvcU0_4nvtMC82m1eKpg91o3vATgkT4V-Go,152
+cc_pathlib/case.py,sha256=LHKjlGAJ7AjvbvxRRmIxfXeVixiOpR-N2THAg072VkE,1659
+cc_pathlib/path.py,sha256=PpWuq1AT020QfD06HLpfyzmxVw6tVscgKozqH0GjKXQ,9342
+cc_pathlib/uniw.py,sha256=7tsROldZP5CrZQmwgUgXaRgFZVvhplFj3Lf6nf_AOGk,1218
+cc_pathlib/filter/__init__.py,sha256=1oLL20yLB1GL9IbFiZD8OReDqiCpFr-yetIR6x1cNkI,23
+cc_pathlib/filter/cc_array.py,sha256=uePT49qsngP-P0tGCUZXSS2Oubk6st52G91bkQfHVbo,371
+cc_pathlib/filter/cc_json.py,sha256=NdW5UTdiYFnViL7S9-GX_I3G1C8PzSjGEcaOTwE8x4I,1097
+cc_pathlib/filter/cc_numpy.py,sha256=u1xg8CItgHsBg1fr1WB20G5GwCKi_SMc_iVQuERM9J4,287
+cc_pathlib/filter/cc_pickle.py,sha256=y5WMD_xTs4oKJ3vFCjzODF1_eb_sqN__A8tIv6Ag3Aw,189
+cc_pathlib/filter/tsv.py,sha256=9k2wPPpXyki3HJ3VVqh1rWi7SJNKGcyNanFdTuFXnBE,606
+cc_pathlib/tool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cc_pathlib/tool/dedup.py,sha256=la9sdhRczhzFJPy1fQjYhuflraundst42ify8lpfCYA,1800
+cc_pathlib-0.0.17.dist-info/LICENSE,sha256=ntszyzyyOL_suFGAPJFZvWj85bhHKfSyyjaDCybodd4,780
+cc_pathlib-0.0.17.dist-info/METADATA,sha256=6cI7qPK7xzQOyCp-76SlJ37NA3zmwrTmQn7ohzc6XZs,2686
+cc_pathlib-0.0.17.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+cc_pathlib-0.0.17.dist-info/top_level.txt,sha256=s-v2Q32FWQVbdorqgPfd7rCNVXpQPa2Df2cmAqtDROA,11
+cc_pathlib-0.0.17.dist-info/RECORD,,
