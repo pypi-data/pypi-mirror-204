@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+chataimaker/__init__.py
+chataimaker.egg-info/PKG-INFO
+chataimaker.egg-info/SOURCES.txt
+chataimaker.egg-info/dependency_links.txt
+chataimaker.egg-info/requires.txt
+chataimaker.egg-info/top_level.txt
