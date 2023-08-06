@@ -1,0 +1,12 @@
+spiderYdb/__init__.py,sha256=_Wer4r1q6VKRx1UwAx1r94VSJLPLy6FHrBOP6zKYRns,96
+spiderYdb/config.py,sha256=mcWIzUlgE3a_soMov-F8ZlYZL2H4vuvBXhrBvwcNUnQ,349
+spiderYdb/core.py,sha256=FUkUX41XIKT8oF4-vYoP1T9icjCoxFgkbdP4tOPs7j4,3071
+spiderYdb/entity.py,sha256=mp3DCEVJCSBhxt7LmOO-LEe3FlfkCnOYKNq_RTySqKA,2076
+spiderYdb/entityMeta.py,sha256=NuUzyyXmWFcu_2NuMXDkeIobf_GOZS6lsEkCahoxo8g,3845
+spiderYdb/fields.py,sha256=6vEH1zOYhYBfy5EHk0vUJFCg1NV3nVTXLJGK3zsBGc8,4047
+spiderYdb/query.py,sha256=K4jnpFYNNw4eZIwy0jwdBng3YIdAw141K5ikWbX-SSg,5248
+spiderYdb-0.1.16.dist-info/LICENSE,sha256=s6A7KiSEZISWC-xFDot8mFiaExKEaDAzp5JBY-fEdwg,1090
+spiderYdb-0.1.16.dist-info/METADATA,sha256=olxneXx2ITAY6D3MQw4L8yILuDKkVuM0DJElIaQcuMA,287
+spiderYdb-0.1.16.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+spiderYdb-0.1.16.dist-info/top_level.txt,sha256=fGf3eJV4AUx4yNfF06V5ekvNXak-mN5tD6Slu-ys3rs,10
+spiderYdb-0.1.16.dist-info/RECORD,,
