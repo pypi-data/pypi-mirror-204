@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+aliencomm.egg-info/PKG-INFO
+aliencomm.egg-info/SOURCES.txt
+aliencomm.egg-info/dependency_links.txt
+aliencomm.egg-info/top_level.txt
