@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+just_update_arch/__init__.py
+just_update_arch/cli.py
+just_update_arch.egg-info/PKG-INFO
+just_update_arch.egg-info/SOURCES.txt
+just_update_arch.egg-info/dependency_links.txt
+just_update_arch.egg-info/entry_points.txt
+just_update_arch.egg-info/requires.txt
+just_update_arch.egg-info/top_level.txt
