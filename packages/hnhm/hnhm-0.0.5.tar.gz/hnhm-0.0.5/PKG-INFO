@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hnhm
+Version: 0.0.5
+Summary: hNhM – highly Normalized hybrid Model.
+Author: Arseny Egorov
+Author-email: egoroff-ars@yandex.ru
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Jinja2 (==3.1.2)
+Requires-Dist: SQLAlchemy (==2.0.9)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: psycopg2-binary (==2.9.6)
+Requires-Dist: pydantic (==1.10.7)
