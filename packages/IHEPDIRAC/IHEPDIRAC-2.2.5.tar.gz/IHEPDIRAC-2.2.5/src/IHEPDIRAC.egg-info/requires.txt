@@ -1,0 +1,12 @@
+DIRAC
+
+[server]
+DIRAC[server]~=8.0.0
+psutil
+stomp.py
+suds-jurko
+
+[testing]
+mock
+Pillow
+pytest
