@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+cvisp/__init__.py
+cvisp/utils.py
+example_pkg_cvisp_demo.egg-info/PKG-INFO
+example_pkg_cvisp_demo.egg-info/SOURCES.txt
+example_pkg_cvisp_demo.egg-info/dependency_links.txt
+example_pkg_cvisp_demo.egg-info/requires.txt
+example_pkg_cvisp_demo.egg-info/top_level.txt
