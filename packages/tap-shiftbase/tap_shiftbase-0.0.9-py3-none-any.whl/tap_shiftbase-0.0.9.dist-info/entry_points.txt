@@ -1,0 +1,3 @@
+[console_scripts]
+tap-shiftbase=tap_shiftbase.tap:Tapshiftbase.cli
+
