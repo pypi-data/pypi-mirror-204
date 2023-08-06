@@ -1,0 +1,11 @@
+gamepadx/__init__.py,sha256=Sp6yh8U3CE1_gPzexOfBFVZCEY3x_qv2jUbPA0uQwZg,53
+gamepadx/commons.py,sha256=saRmnmzfOzCWNjKGybfehUHjrvVIxfPDdPIECDYgkI8,2291
+gamepadx/gamepad.py,sha256=CGwU1Fbc3S_P74MmlW2KT13dmHuKiYtFoKthnCdVj34,3520
+gamepadx/vigem/ViGEmClient.dll,sha256=7dK1YJ2bhOExRX-uaGkYVIC0Lp6iTzacLKohsSX4J6c,140800
+gamepadx/vigem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gamepadx/vigem/lib.py,sha256=454a_jnNT9F2DPSfvPUXwDftGqBTtg4-HYQvxa7sfjQ,1866
+gamepadx-1.0.0.dist-info/LICENSE,sha256=fdrgwcfCj29qeCztAji04FmLljXXob0eB62kugNEsDI,1064
+gamepadx-1.0.0.dist-info/METADATA,sha256=dHpHXwz_17YQnYfN2cY9zwNcgBPzdN98pxQ3XwZPHnw,2261
+gamepadx-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gamepadx-1.0.0.dist-info/top_level.txt,sha256=lmvPKrexupSefYNOM6qk2zhO4ks5QlTkV29C3O0s2eU,9
+gamepadx-1.0.0.dist-info/RECORD,,
