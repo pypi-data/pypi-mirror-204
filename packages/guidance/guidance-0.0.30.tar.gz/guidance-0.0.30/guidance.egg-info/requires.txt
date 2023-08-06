@@ -1,0 +1,7 @@
+diskcache
+openai
+pybars3
+parsimonious
+pygtrie
+platformdirs
+tiktoken
