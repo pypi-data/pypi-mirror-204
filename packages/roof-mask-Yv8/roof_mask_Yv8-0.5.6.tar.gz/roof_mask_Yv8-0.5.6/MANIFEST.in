@@ -1,0 +1,1 @@
+include ultralytics/yolo/cfg/default.yaml
