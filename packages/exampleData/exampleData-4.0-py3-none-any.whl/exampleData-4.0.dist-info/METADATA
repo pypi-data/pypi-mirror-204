@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: exampleData
+Version: 4.0
+Summary: Package for example data for numerical study
+Home-page: https://github.com/NCQH/exampleData
+Author: NCQH
+Author-email: ncquochuy21@gmail.com
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: requests
+
