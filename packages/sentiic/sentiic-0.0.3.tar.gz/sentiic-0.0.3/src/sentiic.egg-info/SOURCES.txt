@@ -1,0 +1,5 @@
+setup.py
+src/sentiic.egg-info/PKG-INFO
+src/sentiic.egg-info/SOURCES.txt
+src/sentiic.egg-info/dependency_links.txt
+src/sentiic.egg-info/top_level.txt
