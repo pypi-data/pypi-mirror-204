@@ -1,0 +1,20 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pinpal"
+authors = [{name = "Glyph", email = "glyph@glyph.im"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = [
+    "keyring",
+    "horsephrase",
+]
+
+[project.urls]
+Home = "https://github.com/glyph/pinpal/"
+
+[project.scripts]
+pinpal = "pinpal:main"

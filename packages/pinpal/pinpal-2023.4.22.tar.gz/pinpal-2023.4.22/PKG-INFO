@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pinpal
+Version: 2023.4.22
+Summary: PINPal: a tool for helping you memorize PINs
+Author-email: Glyph <glyph@glyph.im>
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: keyring
+Requires-Dist: horsephrase
+Project-URL: Home, https://github.com/glyph/pinpal/
