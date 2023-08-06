@@ -1,0 +1,5 @@
+[console_scripts]
+DNBC4atac = dnbc4tools.atac.dnbc4atac:main
+DNBC4rna = dnbc4tools.rna.dnbc4rna:main
+DNBC4tools = dnbc4tools.dnbc4tools:main
+
