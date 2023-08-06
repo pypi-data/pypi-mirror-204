@@ -1,0 +1,6 @@
+[metadata]
+name = "dedomenon"
+description = "A Python Library for Datasets"
+authors = ["Young Joon Lee <entelecheia@hotmail.com>"]
+license = "MIT"
+homepage = "https://dedomenom.entelecheia.ai"
