@@ -1,0 +1,17 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+*.swp
+*.swo
+*~
+**/gosling-screenshot
+/script/output/
+/overview-specs.json
+
+__pycache__/
+*.egg-info/
+.eggs/*
+.ipynb_checkpoints/
+.coverage
