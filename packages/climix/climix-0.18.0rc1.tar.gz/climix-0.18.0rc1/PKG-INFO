@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: climix
+Version: 0.18.0rc1
+Summary: A climate index package
+Author-email: Lars Bärring <lars.barring@smhi.se>, Klaus Zimmermann <klaus.zimmermann@smhi.se>
+License: Apache-2.0
+Project-URL: Homepage, https://git.smhi.se/climix/climix
+Project-URL: Bug Reports, https://git.smhi.se/climix/climix/issues
+Project-URL: Source, https://git.smhi.se/climix/climix
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Climix
+
+A climate index thing.
+
+## Reference Data
+
+We use [git-lfs](https://git-lfs.github.com/) to manage reference datasets. For
+this to work, you need to have git-lfs installed and setup.
+
+### Installing git-lfs
+
+You can install git-lfs with conda via
+```
+conda install git-lfs
+```
+or with yum via
+```
+sudo yum install git-lfs
+```
+
+### Setting up git-lfs
+
+For git-lfs to work, you also need to execute
+```
+git lfs install
+```
+This needs to be done only once after the installation.
