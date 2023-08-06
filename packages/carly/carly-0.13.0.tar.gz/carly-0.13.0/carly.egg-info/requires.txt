@@ -1,0 +1,11 @@
+Twisted>=21.7
+attrs
+
+[build]
+twine
+wheel
+
+[test]
+autobahn
+coverage
+testfixtures>6.3
