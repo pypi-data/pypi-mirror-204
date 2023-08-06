@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: nn-module
+Version: 0.0.6
+Home-page: https://github.com/khanh101/nn-module
+Author: Nguyen Ngoc Khanh
+Author-email: khanh.nguyen.contact@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NN-MODULE
+
+collection of neural networks model
+
+# INSTALLATION
+
+```commandline
+pip install --upgrade nn-module
+```
+
+# UPLOAD
+
+```commandline
+rm -rf dist nn_module.egg-info
+python setup.py sdist
+twine upload dist/*
+```
