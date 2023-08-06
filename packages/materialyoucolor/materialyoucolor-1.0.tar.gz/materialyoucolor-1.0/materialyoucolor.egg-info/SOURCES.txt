@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+materialyoucolor.egg-info/PKG-INFO
+materialyoucolor.egg-info/SOURCES.txt
+materialyoucolor.egg-info/dependency_links.txt
+materialyoucolor.egg-info/requires.txt
+materialyoucolor.egg-info/top_level.txt
