@@ -1,0 +1,2 @@
+[console_scripts]
+polyreaddit = polyreaddit.polyreaddit:run
