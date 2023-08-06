@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: ethereal
+Version: 0.1.6
+Summary: Ergonomic python tooling for web3
+License: MIT
+Author: Alex Euler
+Author-email: 0xalexeuler@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: dependency-injector (>=4.41.0,<5.0.0)
+Requires-Dist: hdwallet (>=2.2.1,<3.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: web3 (>=6.1.0,<7.0.0)
+Description-Content-Type: text/markdown
+
+![Ethereal logo](./docs/images/ethereal_cat.png)
+
+## Ethereal
+
+[![docs](https://readthedocs.org/projects/ethereal/badge/?version=latest)](https://ethereal.readthedocs.io/en/latest/?badge=latest)
+
+Ethereal is a lightweight wrapper around the [Web3](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3) class that simplifies
+working with Ethereum smart contracts.
+
+To use it, simply create a regular [Web3](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3) instance and write `w3 = Ethereal(w3)`.
+Then, you can use w3 as usual, but with additional methods
+accessible under the `e` property.
+
+For example, you can call `w3.e.get_abi("0x...")` or
+`w3.e.list_events("0x...", "Mint", "2023-01-01", "2023-02-14")`.
+
+For more available methods, please refer to the [EtherealFacade](https://ethereal.readthedocs.io/en/latest/?badge=latest#ethereal.facade.EtherealFacade) class.
+
+### Demo
+
+![Ethereal demo](./docs/images/demo.gif)
+
+### Example
+
+```python
+from web3.auto import w3
+from ethereal import Ethereal
+from ethereal import load_provider_from_uri
+
+# If WEB3_PROVIDER_URI env is not set, uncomment the lines below
+# w3 = Web3(load_provider_from_uri("https://alchemy.com/..."))
+
+w3 = Ethereal(w3)
+
+ADDRESS = "0xB0B195aEFA3650A6908f15CdaC7D92F8a5791B0B"
+print(w3.e.list_events(ADDRESS))
+# Lists event signatures for the contract at ADDRESS
+
+events = w3.e.get_events(ADDRESS, "Transfer", "2023-01-01", "2023-02-14")
+# Gets all Transfer events for the contract at ADDRESS between 2023-01-01 and 2023-02-14
+print(events[:10])
+```
+
+### Install
+
+```
+pip install ethereal
+```
+
+### Supported networks
+
+- Ethereum
+- Polygon
+- Avalanche
+- Fantom
+- Arbitrum
+- Optimism
+
+### Contributing
+
+Feel free to create feature requests or pull requests :D
+
