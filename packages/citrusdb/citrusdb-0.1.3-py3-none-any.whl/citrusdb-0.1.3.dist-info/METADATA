@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: citrusdb
+Version: 0.1.3
+Summary: citrus.
+Home-page: https://github.com/0xDebabrata/citrus
+Author: Debabrata Mondal
+Author-email: Debabrata Mondal <debabrata.js@protonmail.com>
+Project-URL: Homepage, https://github.com/0xDebabrata/citrus
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: hnswlib (>=0.7)
+Requires-Dist: numpy (>=1.21.6)
+Requires-Dist: openai (>=0.27)
+
+# citrus.
+### open-source (distributed) vector database
+
+
+## Installation
+
+```
+pip install citrusdb
+```
+
+## Example
+[pokedex search](https://replit.com/@debabratajr/pokedex-search)
