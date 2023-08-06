@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "evidence-ext"
+version = "0.5.2"
+description = "`evidence-ext` is a Meltano utility extension."
+authors = ["Meltano <hello@meltano.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [{ include = "evidence_ext" }]
+
+[tool.poetry.dependencies]
+python = "<3.12,>=3.7"
+PyYAML = "^6.0.0"
+click = "^8.1.3"
+typer = "^0.6.1"
+"meltano.edk" = "^0.3.0"
+nodejs-bin = { extras = ["cmd"], version = "^18.4.0a4" }
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+isort = "^5.10.1"
+flake8 = "^3.9.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.8", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry.scripts]
+evidence_extension = 'evidence_ext.main:app'
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "semver"
+
+[tool.ruff]
+ignore = [
+    "ANN101", # missing-type-self
+    "DJ",     # flake8-django
+    "PD",     # pandas-vet
+    "UP006",  # Use list/dict/etc. instead of t.List/t.Dist/etc. for type annotations (PEP 585)
+]
+line-length = 88
+select = ["ALL"]
+src = ["src", "tests", "docs"]
+target-version = "py37"
+
+[tool.ruff.flake8-bugbear]
+extend-immutable-calls = ["typer.Option"]
+
+[tool.ruff.isort]
+known-first-party = ["evidence_ext"]
+
+[tool.ruff.pydocstyle]
+convention = "google"
