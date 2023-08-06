@@ -1,0 +1,82 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "annotation-tool"
+version = "0.8.2"
+description = "Tool for annotating time series data from sources such as IMUs, MoCap, Videos and more."
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/TUD-Patrec/annotation-tool"
+authors = [
+    "Fernando Moya Rueda <fernando.moya@cs.tu-dortmund.de>",
+    "Erik Altermann <erik.altermann@tu-dortmund.de>",
+    "Nilah Ravi Nair <nilah.nair@tu-dortmund.de>",
+    "Philipp Oberdiek <git@oberdiek.net>",
+    "Raphael Spiekermann <raphael.spiekermann@tu-dortmund.de>",
+]
+maintainers = []
+packages = [
+    { include = "annotation_tool" },
+    { include = "main.py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8,<3.11"
+distinctipy = "^1.2.2"
+filetype = "^1.2.0"
+numpy = "~1.23.5"
+opencv-python = "~4.5.3.56"
+PyOpenGL = "^3.1.6"
+PyOpenGL-accelerate = "^3.1.6"
+PyQt6 = "^6.4.0"
+pyqtgraph = "^0.12.4"
+scipy = "^1.10.0"
+torch = "^2.0.0"
+sortedcontainers = "^2.4.0"
+fcache = "^0.4.7"
+appdirs = "^1.4.4"
+decord = { version = "^0.6.0", platform = "win32"}
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+flake8 = "^5.0.4"
+isort = "^5.11.4"
+pyinstaller = "~5.4"
+toml = "^0.10.2"
+commitizen = "^2.37.0"
+pylint = "^2.15.5"
+
+[tool.poetry.group.build]
+optional = true
+
+[tool.poetry.group.build.dependencies]
+pyinstaller = "~5.4"
+
+[tool.poetry.scripts]
+annotation-tool = 'main:start'
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+force_sort_within_sections = true
+line_length = 88
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.8.2"
+tag_format = "v$version"
+major_version_zero = true
+version_files = [
+    "annotation_tool/__init__.py:^__version__",
+    "pyproject.toml:^version"
+]
+update_changelog_on_bump = false
+changelog_incremental = false
+annotated_tag = true
+use_shortcuts = true
+bump_message = "bump: Version $current_version → $new_version"

@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: annotation-tool
+Version: 0.8.2
+Summary: Tool for annotating time series data from sources such as IMUs, MoCap, Videos and more.
+Home-page: https://github.com/TUD-Patrec/annotation-tool
+License: MIT
+Author: Fernando Moya Rueda
+Author-email: fernando.moya@cs.tu-dortmund.de
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyOpenGL (>=3.1.6,<4.0.0)
+Requires-Dist: PyOpenGL-accelerate (>=3.1.6,<4.0.0)
+Requires-Dist: PyQt6 (>=6.4.0,<7.0.0)
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: decord (>=0.6.0,<0.7.0) ; sys_platform == "win32"
+Requires-Dist: distinctipy (>=1.2.2,<2.0.0)
+Requires-Dist: fcache (>=0.4.7,<0.5.0)
+Requires-Dist: filetype (>=1.2.0,<2.0.0)
+Requires-Dist: numpy (>=1.23.5,<1.24.0)
+Requires-Dist: opencv-python (>=4.5.3.56,<4.6.0.0)
+Requires-Dist: pyqtgraph (>=0.12.4,<0.13.0)
+Requires-Dist: scipy (>=1.10.0,<2.0.0)
+Requires-Dist: sortedcontainers (>=2.4.0,<3.0.0)
+Requires-Dist: torch (>=2.0.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+<div align="center">
+
+![PyPI - Version](https://img.shields.io/pypi/v/annotation-tool)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/annotation-tool)
+![PyPI - License](https://img.shields.io/pypi/l/annotation-tool?color=brightgreen)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/annotation-tool)
+
+</div>
+
+# Installation
+
+All stable versions can be installed from [PyPI] by using [pip] or your favorite package manager
+
+    pip install annotation-tool
+
+You can get pre-published versions from [TestPyPI] or this repository
+
+**Test PyPI:**
+
+    pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ annotation-tool
+
+**From Source:**
+
+    pip install git+https://github.com/TUD-Patrec/annotation-tool@master
+
+After installation the annotation tool can be run as simple as
+
+    annotation-tool
+
+# Development
+
+**Requirements:**
+- Python 3.8 or higher
+- [poetry] 1.2 or higher
+- [make]
+- [docker] (if you want to build the binaries)
+
+For installing the development environment run
+
+```bash
+make setup
+```
+
+[docker]: https://www.docker.com/
+[make]: https://www.gnu.org/software/make/
+[pip]: https://pypi.org/project/pip/
+[poetry]: https://python-poetry.org/
+[pypi]: https://pypi.org/
+[testpypi]: https://test.pypi.org/project/annotation-tool/
+
