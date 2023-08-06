@@ -1,0 +1,13 @@
+{
+    "get_devices": "rule:admin_only",
+    "get_device": "rule:admin_only",
+    "create_device": "rule:admin_only",
+    "delete_device": "rule:admin_only",
+    "update_device": "rule:admin_only",
+    "get_loadbalanceragentbindings": "rule:admin_only",
+    "get_device_members": "rule:admin_only",
+    "get_device_member": "rule:admin_only",
+    "create_device_member": "rule:admin_only",
+    "update_device_member": "rule:admin_only",
+    "delete_device_member": "rule:admin_only"
+}
