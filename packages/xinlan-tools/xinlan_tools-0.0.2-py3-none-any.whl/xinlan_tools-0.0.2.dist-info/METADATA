@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: xinlan-tools
+Version: 0.0.2
+Summary: python开发的实用小工具
+Author-email: xinlan <117220100@qq.com>
+License: MIT License
+        
+        Copyright (c) 2023 wcfdehao
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pillow
+
+# xinlan-tools
+python开发的小工具集。
+
+## 文件加密
+命令格式：
+```shell
+tools encrypt <file_or_dir> [--number n]
+```
+参数：
+- `file_or_dir`
+必带参数，需要加密的文件或所在路径
+- `--number`
+可选参数，加密中使用的字节数，默认为10
+
+文件加密和解密命令一致，运行第一次是加密，运行第二次是解密
+
+## 图片格式转换
+支持 png和jpg之间相互转换
+命令格式：
+```shell
+tools convert source target
+```
+参数：
+- `source`
+必带参数，需要转换的图片文件名
+- `target`
+必带参数，需转换成的图片文件名
