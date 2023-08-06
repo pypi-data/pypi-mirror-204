@@ -1,0 +1,3 @@
+[console_scripts]
+crf_learn = crfpy.learn:main
+crf_test = crfpy.test:main
