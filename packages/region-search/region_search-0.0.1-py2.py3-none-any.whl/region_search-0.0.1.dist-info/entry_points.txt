@@ -1,0 +1,3 @@
+[console_scripts]
+dat_maker = region_search.cli:dat_maker
+

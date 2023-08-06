@@ -1,0 +1,14 @@
+region_search/__init__.py,sha256=IyoA7Bqu9VEefVRtwhr2fj2SdjtwJIQ_qY3ejEZiVA0,82
+region_search/_version.py,sha256=IyoA7Bqu9VEefVRtwhr2fj2SdjtwJIQ_qY3ejEZiVA0,82
+region_search/cli.py,sha256=heebHCA3BlJqWk30lxdwrZzlAGXBKdmU7VMg6_2qY4U,1758
+region_search/lookup.py,sha256=cldUZ8lxPOHa-0xtYaegyVyXiyyJydz1SQmvSWXlQwM,430
+region_search/ip/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+region_search/ip/lookup.py,sha256=yUXhVCFWa-TRrp-GJrZTcHO_TaYLL9LWlvfJULpHifg,4665
+region_search/phone/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+region_search/phone/lookup.py,sha256=DniXC4Jr9DOTQfQfyucxJTCa4yLoAgK9MCgSbM9ETAc,3915
+region_search-0.0.1.dist-info/LICENSE,sha256=9z3IuWNQiq3dWiAi8RAP3wNtCa7LYFf0-TxB7ft5rP8,1089
+region_search-0.0.1.dist-info/METADATA,sha256=kdNT8eUEXtLxQWJ0FKE5PGNh-VlwOccZxOQqMWiAUq4,766
+region_search-0.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+region_search-0.0.1.dist-info/entry_points.txt,sha256=LbiE2A0InzoIGtRH9HEXkwPvzsdARYZ2Ysv4CZr0mgM,59
+region_search-0.0.1.dist-info/top_level.txt,sha256=Zegufl8FnUlBv4b-8pWAeyTgrZX74iHGnq0Qp_08yeI,14
+region_search-0.0.1.dist-info/RECORD,,
