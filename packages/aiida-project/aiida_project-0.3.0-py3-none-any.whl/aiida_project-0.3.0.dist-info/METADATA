@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: aiida-project
+Version: 0.3.0
+Summary: An AiiDA environment manager
+Keywords: aiida,workflows
+Author-email: The AiiDA team <developers@aiida.net>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: AiiDA
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: click~=8.1.2
+Requires-Dist: py~=1.11.0
+Requires-Dist: pydantic~=1.10.7
+Requires-Dist: python-dotenv~=1.0.0
+Requires-Dist: pre-commit~=3.2.2 ; extra == "dev"
+Project-URL: Source, https://github.com/aiidateam/aiida-project
+Provides-Extra: dev
+
+# AiiDA-Project
+
+This python package provides cli commands to manage separate AiiDA environments (called "projects").
+
+The main intention is to collect all the pieces that make this possible together, to eventually get this functionality built into AiiDA
+
