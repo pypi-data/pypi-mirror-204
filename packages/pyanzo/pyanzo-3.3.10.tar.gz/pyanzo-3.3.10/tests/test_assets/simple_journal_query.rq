@@ -1,0 +1,10 @@
+
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+SELECT ?title
+WHERE {
+    ?s a <http://cambridgesemantics.com/ontologies/Graphmarts#Graphmart> ;
+        dc:title ?title .
+    FILTER(?s = <http://cambridgesemantics.com/Graphmart/9da211618a15476daa10cead2292d8e7>)
+}
+

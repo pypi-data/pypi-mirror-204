@@ -1,0 +1,9 @@
+
+SELECT ?title
+WHERE {
+    GRAPH <http://cambridgesemantics.com/Graphmart/9da211618a15476daa10cead2292d8e7> {
+        ?s a <http://cambridgesemantics.com/ontologies/Graphmarts#Graphmart ;
+            dc:title ?title .
+    }
+}
+

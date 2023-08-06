@@ -1,0 +1,6 @@
+
+SELECT ?city WHERE {
+	?s a <http://cambridgesemantics.com/ont/autogen/a69a/PyAnzo_Dictionary/PyAnzo_Datasource#Person> ;
+		<http://cambridgesemantics.com/ont/autogen/a69a/PyAnzo_Dictionary/PyAnzo_Datasource#Person_City ?city .
+} ORDER BY ?city LIMIT 5
+

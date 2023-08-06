@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TriX
+  xmlns:xml="http://www.w3.org/XML/1998/namespace"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:ns1="http://csi.test.com/"
+  xmlns="http://www.w3.org/2004/03/trix/trix-1/"
+>
+  <graph>
+    <uri>file:///Users/alexledger/git/pyanzo/tests/test_assets/sample.trix</uri>
+  </graph>
+  <graph>
+    <uri>file:///Users/alexledger/git/pyanzo/tests/test_assets/sample.ttl</uri>
+    <triple>
+      <uri>http://csi.test.com/subject1</uri>
+      <uri>http://csi.test.com/predicate1</uri>
+      <uri>http://csi.test.com/object1</uri>
+    </triple>
+    <triple>
+      <uri>http://csi.test.com/subject2</uri>
+      <uri>http://csi.test.com/predicate3</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#integer">7</typedLiteral>
+    </triple>
+    <triple>
+      <uri>http://csi.test.com/subject2</uri>
+      <uri>http://csi.test.com/predicate2</uri>
+      <uri>http://csi.test.com/object2</uri>
+    </triple>
+  </graph>
+</TriX>
