@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: codebuild-ci
+Version: 0.2.0
+Summary: Command line utility to trigger and wait for Code build Pipeline to complete
+Home-page: https://github.com/satyamsoni2211/codebuild_ci
+License: MIT
+Keywords: python,aws,codebuild,ci,devops,cli
+Author: satyam soni
+Requires-Python: >=3.9
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AWS CDK
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation
+Requires-Dist: boto3 (>=1.26.116,<2.0.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Project-URL: Repository, https://github.com/satyamsoni2211/codebuild_ci
+Description-Content-Type: text/markdown
+
+# CODEBUILD CI
+
+Code Build Pipelines run Asynchronously and there is no provision to wait for them in bitbucket pipelines/ github actions to complete.
+This project will wait for Codebuild pipeline to complete and log all the log events as well. This handles any abrupt pipeline stops.
+
+## How to use
+
+---
+
+```bash
+pip install codebuild-ci
+```
+
+```bash
+python -m codebuild --project project --log-group <aws log group>
+```
+
+Checking for other options:
+
+```bash
+python -m codebuild --help
+```
+
+### Integrate with Bitbucket Pipeline
+
+```yml
+- script:
+    - python -m pip install codebuild-ci
+    - python -m codebuild-ci --project project --log-group <aws log group>
+```
+
+## contributing to code
+
+---
+
+You can Fork the repo and raise a PR for the active development.
+
+## Tips for testing
+
+---
+
+### Stubbing Code
+
+```python
+from botocore.stub import Stubber
+# stub code
+stubber = Stubber(client)
+stubber.add_response('start_build', {
+    'build': {
+        'id': 'foo-project:foo-id'
+    }
+})
+stubber.add_response('batch_get_builds', {
+    'builds': [{
+        'id': 'foo-project:foo-id',
+        'buildStatus': 'SUCCEEDED'
+    }]
+})
+stubber.activate()
+```
+
