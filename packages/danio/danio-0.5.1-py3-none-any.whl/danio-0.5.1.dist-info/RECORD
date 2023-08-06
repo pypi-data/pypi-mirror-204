@@ -1,0 +1,15 @@
+danio/__init__.py,sha256=GAF-hez8KMzF72iF9ZVOFtEjapD4JWvdAC-aQhhEmL4,828
+danio/aiopg.py,sha256=hdipEEG5hZsMUIbule105G0YiE39oC-2Rs7DYb3kFu4,1087
+danio/asyncpg.py,sha256=eSV56OPow5Ntl0c_l8Pjdc3YVTEhEUoZXf6I0KKDpSo,1202
+danio/database.py,sha256=41KRfYfqSXKBRAV-q-8ShxUEvFaxW6KGrgLZIKn4m3k,851
+danio/exception.py,sha256=si9zyUouDQXq1wSw-o1ugVVddUMx6x_bQGcgowT5flk,182
+danio/manage.py,sha256=Ea1FnAma3T5btJpuM0P8H4NtMDIQvaW-bWkLDGXIlAY,3902
+danio/model.py,sha256=j4mUCMYkdts3SIno-MDZLAXFwcsPBFOC34KczDj5pAY,21160
+danio/mysql.py,sha256=rpJLfPTTivFaaKt7DdjPHLOBZ2fVA_erAyYw4Q5V6PU,925
+danio/schema.py,sha256=_DCPPgLF44eJWx8Uj3dKwxn81h9yGcRr0U5XqZ0AmPQ,41031
+danio/sqlite.py,sha256=E9o38G4lAar6w-urbFYYh0wkgU38tQ6iM6XEdQMwmHM,873
+danio/utils.py,sha256=QGoLiPPpUNjxGIck6AeTUI-YlD8QQvPoNUvyw9BEFxE,1651
+danio-0.5.1.dist-info/LICENSE,sha256=0y77jUE0uRNF_Izg6MIDYpqBj1qVN57qGrhpjLrkv0Q,1520
+danio-0.5.1.dist-info/METADATA,sha256=5VXg7QOLgGtGnkCgPrW8Zb95JIEBizXfVIFivLVyO-8,5792
+danio-0.5.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+danio-0.5.1.dist-info/RECORD,,
