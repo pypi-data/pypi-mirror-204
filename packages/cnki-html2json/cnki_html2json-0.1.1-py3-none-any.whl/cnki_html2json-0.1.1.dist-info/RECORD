@@ -1,0 +1,12 @@
+cnki_html2json/__init__.py,sha256=8oAxKUG747GUokmxjkrWejyJa5yPNEsoJDlXxoedxTw,21
+cnki_html2json/cli.py,sha256=ZVvRcRtQ6fznEB_bM4SYuPD2Egb4p6xI84AcBMYl-Sw,1518
+cnki_html2json/crawl.py,sha256=yMlZopxdQyjUvRvkEj_CIDbl4gBkG7EoHxIoQCChOag,10044
+cnki_html2json/html2json.py,sha256=mFiXiepu9mvL18xWrpyifTn9Uat-SCv7MZxg-hlmby4,11567
+cnki_html2json/parse_metadata.py,sha256=fbTke0lYvgxTMW6NWt91tZ9hXWavtqOGFiQ8ogA4x98,1928
+cnki_html2json/recognize_slider_coordinate.py,sha256=09irWFmI878PA0y5oDIQlflAxptcesfrDhnY6UMHdPI,837
+cnki_html2json-0.1.1.dist-info/LICENSE,sha256=ckrCglW00Do6DGhIcOCaetBgAuN6tkhOQTRC3e3minM,1064
+cnki_html2json-0.1.1.dist-info/METADATA,sha256=mV2tAkjXinFiGwy766sEVlo1t9cJhCl4OpXZZlnKsl4,6267
+cnki_html2json-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cnki_html2json-0.1.1.dist-info/entry_points.txt,sha256=a08TjEcoCYp6cBof7cGFrVFhCYy6dxHNuXK9fm9kf8c,57
+cnki_html2json-0.1.1.dist-info/top_level.txt,sha256=0EzraincrC39Z3OU0JKMATSWE89FKDPMYg-h8UJx9mM,15
+cnki_html2json-0.1.1.dist-info/RECORD,,
