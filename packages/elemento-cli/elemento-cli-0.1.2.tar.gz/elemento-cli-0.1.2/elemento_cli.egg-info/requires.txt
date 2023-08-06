@@ -1,0 +1,7 @@
+argparse
+argcomplete
+tabulate
+si_prefix
+jsonpickle
+requests
+pwinput
