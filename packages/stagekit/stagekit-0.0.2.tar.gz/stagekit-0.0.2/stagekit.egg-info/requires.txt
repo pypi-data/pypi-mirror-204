@@ -1,0 +1,12 @@
+toml
+
+[docs]
+sphinx
+furo
+myst-parser
+
+[mpi]
+mpi4py
+
+[test]
+numpy

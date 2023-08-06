@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: stagekit
+Version: 0.0.2
+Summary: A workflow manager.
+Home-page: https://github.com/icui/stagekit
+Author: Congyue Cui
+Author-email: ccui@princeton.edu
+Maintainer-email: ccui@princeton.edu
+License: UNKNOWN
+Keywords: Workflow,Cluster,MPI
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: mpi
+Provides-Extra: test
+Provides-Extra: docs
+
+UNKNOWN
+
