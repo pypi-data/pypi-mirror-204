@@ -1,0 +1,3 @@
+[console_scripts]
+oikonomika=oikonomika.__cli__:main
+
