@@ -1,0 +1,3 @@
+[console_scripts]
+get-certificate-chain=get_certificate_chain.download:main
+
