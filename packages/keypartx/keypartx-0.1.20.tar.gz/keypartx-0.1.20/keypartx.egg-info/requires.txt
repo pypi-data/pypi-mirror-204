@@ -1,0 +1,16 @@
+networkx
+leidenalg
+autocorrect
+xlsxwriter
+igraph
+matplotlib
+numpy
+emoji
+
+[coreferee_spacy]
+coreferee
+spacy<3.4.1,>=3.0.0
+
+[crosslingual-coreference_spacy]
+crosslingual-coreference
+spacy
