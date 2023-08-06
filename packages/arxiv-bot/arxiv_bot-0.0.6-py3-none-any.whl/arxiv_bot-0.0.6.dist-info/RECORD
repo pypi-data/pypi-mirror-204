@@ -1,0 +1,10 @@
+arxiv_bot/__init__.py,sha256=5aeuX7e01OgSf9ZXgvOOFPY8k0cA0VEWkJ8T7ZbOdwo,142
+arxiv_bot/knowledge_base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arxiv_bot/knowledge_base/constructors.py,sha256=QKobKvPinZuem096WHddmzp30hqU23HvGrAKQZOBBn0,16326
+arxiv_bot/knowledge_base/database.py,sha256=-M533pc8iG_i6gsiN5w_EtimPLXZziZPigoC6INa5_4,6955
+arxiv_bot/manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arxiv_bot/manager/bots.py,sha256=vT25KMgzVXTahReSaMekBiLC11RF1VqWTnOsxt1KFyY,10627
+arxiv_bot/templates.py,sha256=ONMQVEDb9-G5i-Koa-eWDZWXlhn8AeWG2HN4Qll2Q6g,1643
+arxiv_bot-0.0.6.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+arxiv_bot-0.0.6.dist-info/METADATA,sha256=c-jFVQ3hQPM7xTJkbm0dGuhRVxqQadomAzak9aTvGXM,811
+arxiv_bot-0.0.6.dist-info/RECORD,,
