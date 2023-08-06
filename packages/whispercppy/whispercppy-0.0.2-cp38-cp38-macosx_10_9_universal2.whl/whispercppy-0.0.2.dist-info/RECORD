@@ -1,0 +1,9 @@
+whispercppy-0.0.2.dist-info/RECORD,,
+whispercppy-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+whispercppy-0.0.2.dist-info/WHEEL,sha256=SdS6if6-uCozRXZ5GMXYH2j8iojAu9bSvihUMOitgnA,113
+whispercppy-0.0.2.dist-info/top_level.txt,sha256=kyFKm8th9F0Sh7c4XlpUq-27Iq6OHVzuRoocoUVimSM,12
+whispercppy-0.0.2.dist-info/METADATA,sha256=SDElJyG5ICQSMiNI565yiNNG-bqXYIq3ak20Q2kBu48,493
+whispercppy/__init__.py,sha256=HD-I88qnpa5VLiGpR9MdS8VtBB_W4Wbb2Karl6s9fdo,7504
+whispercppy/api_cpp2py_export.cpython-38-darwin.so,sha256=bfY0wRR_pfCLgDvVql35YGsFF8cTWflKq7CF5p3iXXE,2223408
+whispercppy/utils.py,sha256=zi8N2bMpInLMGETZ7ae1tWU0NSEPBEqDCu-QHS488Ng,5050
+whispercppy/libwhisper.dylib,sha256=0A-uzYRq_Xxj9gL9f0Lgu04DRcGtZYPcfIwihBkGnZw,1012989
