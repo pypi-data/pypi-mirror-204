@@ -1,0 +1,10 @@
+pyproject.toml
+falcon_ml_xgboost/__init__.py
+falcon_ml_xgboost/model.py
+falcon_ml_xgboost/task_configs.py
+falcon_ml_xgboost.egg-info/PKG-INFO
+falcon_ml_xgboost.egg-info/SOURCES.txt
+falcon_ml_xgboost.egg-info/dependency_links.txt
+falcon_ml_xgboost.egg-info/requires.txt
+falcon_ml_xgboost.egg-info/top_level.txt
+tests/test_xgb.py

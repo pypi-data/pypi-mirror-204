@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: falcon-ml-xgboost
+Version: 0.2.0
+Summary: XGBoost extension for falcon-ml library.
+Author-email: Oleg Kostromin <kostromin97@gmail.com>, Iryna Kondrashchenko <iryna230520@gmail.com>, Marco Pasini <marco.pasini.98@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
