@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: podloot
+Version: 0.1
+Summary: A podcast downloader and manager using RSS feeds
+Home-page: https://github.com/gusanmaz/podloot
+Author: Guvenc Usanmaz
+Author-email: gusanmaz@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: brotli (==1.0.9)
+Requires-Dist: brotlicffi (==1.0.9.2)
+Requires-Dist: ConfigParser (==5.3.0)
+Requires-Dist: cryptography (==40.0.1)
+Requires-Dist: Cython (==0.29.34)
+Requires-Dist: dl (==0.1.0)
+Requires-Dist: docutils (==0.19)
+Requires-Dist: HTMLParser (==0.0.2)
+Requires-Dist: importlib-metadata (==6.2.0)
+Requires-Dist: keyring (==23.13.1)
+Requires-Dist: lockfile (==0.12.2)
+Requires-Dist: lxml (==4.9.2)
+Requires-Dist: mock (==5.0.1)
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: ordereddict (==1.1)
+Requires-Dist: podcastparser (==0.6.9)
+Requires-Dist: protobuf (==4.22.1)
+Requires-Dist: pyOpenSSL (==23.1.1)
+Requires-Dist: simplejson (==3.19.1)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: tornado (==6.2)
+Requires-Dist: tqdm (==4.65.0)
+Requires-Dist: urllib3-secure-extra (==0.1.0)
+Requires-Dist: zipp (==3.15.0)
+Requires-Dist: requests
+
+# Podloot
+
+Podloot is a podcast downloader and manager using RSS feeds. It provides a command-line interface for downloading and managing podcast episodes from RSS feeds.
+
+## Features
+
+- Download episodes from a single RSS feed or a file containing multiple feeds.
+- Get information about a specific podcast episode.
+- Get the artwork URL for a podcast.
+- Check for duplicate episodes in a podcast.
+
+## Installation
+
+You can install Podloot using pip:
+
+```bash
+pip install git+https://github.com/gusanmaz/podloot.git
+```
+
+Usage
+
+### Download episodes from a file with multiple RSS feeds
+
+`podloot download <feed_file> <destination>`
+
+### Download episodes from a single RSS feed
+
+`podloot download_single <feed_url> <destination>`
+
+### Get information about a specific podcast episode
+
+`podloot info <podcast_dir> <audio_file>`
+
+### Get the artwork URL for a podcast
+
+`podloot artwork <podcast_dir>`
+
+### Check for duplicate episodes in a podcast
+
+`podloot duplicates <podcast_dir>`
+
+## Contributing
+
+Pull requests and bug reports are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT License](https://choosealicense.com/licenses/mit/)
+
+``As for improvements to features and code, here are a few suggestions: 1. Add functionality to download only the latest episode or a specific number of latest episodes. 2. Allow users to limit the download of episodes based on a date range or the age of the episodes. 3. Implement automatic episode cleanup based on user-defined criteria, such as age or total storage space used. 4. Add support for downloading episodes in parallel to speed up the download process. 5. Implement a more interactive CLI using a library like `click` to provide a more user-friendly experience. Remember to thoroughly test any new features or code changes before committing them to the repository.``
