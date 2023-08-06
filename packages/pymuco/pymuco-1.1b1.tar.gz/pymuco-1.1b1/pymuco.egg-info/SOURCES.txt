@@ -1,0 +1,24 @@
+LICENSE
+setup.py
+pymuco/AudioConverter.py
+pymuco/Chord.py
+pymuco/CircleOfFifths.py
+pymuco/Enharmonic.py
+pymuco/EnharmonicMapping.py
+pymuco/Interval.py
+pymuco/KeySignature.py
+pymuco/MIDIUtils.py
+pymuco/MusicComputationNotation.py
+pymuco/MusicData.py
+pymuco/NoteDuration.py
+pymuco/NoteFrequencyConverter.py
+pymuco/NoteMapping.py
+pymuco/Player.py
+pymuco/Scale.py
+pymuco/ScientificPitchNotation.py
+pymuco/Tonality.py
+pymuco/__init__ .py
+pymuco.egg-info/PKG-INFO
+pymuco.egg-info/SOURCES.txt
+pymuco.egg-info/dependency_links.txt
+pymuco.egg-info/top_level.txt

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pymuco
+Version: 1.1b1
+Summary: A Python Music Computation Library
+Home-page: https://www.pymuco.org/
+Author: German Margon
+Author-email: gmargon@pymuco.org
+License: BSD-3-Clause
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
