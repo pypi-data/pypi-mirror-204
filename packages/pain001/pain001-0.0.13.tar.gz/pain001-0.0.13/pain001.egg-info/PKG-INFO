@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pain001
+Version: 0.0.13
+Summary: pain001 is a Python library that makes it easy to automate the creation
+Home-page: https://github.com/sebastienrousseau/pain001
+Author: Sebastien Rousseau
+Author-email: sebastian.rousseau@gmail.com
+License: Apache Software License
+Keywords: iso 20022 pain.001 credit transfer financial banking         payments csv sepa
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+License-File: LICENSE-APACHE
+License-File: LICENSE-MIT
+
+The pain001 library is a Python package that generates a Customer-to-
+Bank Credit Transfer payload in the pain.001.001.03 format from a CSV
+file.
+
+The package is named after the standard file format for SEPA and non-
+SEPA Credit Transfer, which is the Pain (payment initiation) format
+001.001.03.
+
+The pain001 library provides a convenient way for developers to create
+payment files in this format.
