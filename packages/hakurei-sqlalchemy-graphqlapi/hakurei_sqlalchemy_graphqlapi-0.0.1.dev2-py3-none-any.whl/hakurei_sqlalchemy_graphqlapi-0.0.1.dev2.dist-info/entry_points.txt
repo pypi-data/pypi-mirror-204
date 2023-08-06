@@ -1,0 +1,6 @@
+[shillelagh.adapter]
+my_graphql = graphqldb.adapter:SystemAPIAdapter
+
+[sqlalchemy.dialects]
+my_graphql = graphqldb.dialect:APSWGraphQLDialect
+
