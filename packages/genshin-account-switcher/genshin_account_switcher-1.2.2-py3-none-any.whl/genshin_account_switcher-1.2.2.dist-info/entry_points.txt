@@ -1,0 +1,2 @@
+[console_scripts]
+genshin-account-switcher = src.main:main

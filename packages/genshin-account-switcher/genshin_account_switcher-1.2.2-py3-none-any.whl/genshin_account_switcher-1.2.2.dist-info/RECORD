@@ -1,0 +1,13 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/config.py,sha256=pI9w8DYO_bgLQuufcL0dxLxya-hv7eLshdc_n8KWPgU,3237
+src/gui.py,sha256=kB2Aabc2evwVgEbAryre28BXC31fOwuPodWZgNQO7mE,4133
+src/main.py,sha256=9-wSZEsL9hL0hCt8hboBPELdkLepnUZBbQ17UmEXquY,5311
+src/utils.py,sha256=rnM-XvbABxEotJG6tD2zkmMsHZUy3WHkV7rS_Z3Ifh0,855
+src/genshin/__init__.py,sha256=7fN7nBjSSrLZyOH8ZJCEmtdxwCUmOJsDZOomyQ10MvM,1350
+src/genshin/linux.py,sha256=vO271ptXgHrNOdXr384XGQQPJqoNeb06-0c34rJmdhE,2283
+genshin_account_switcher-1.2.2.dist-info/LICENSE,sha256=mYluISwUlRhyOocFBuQndyF5ZKqTzDtalcVTCKd34gE,34227
+genshin_account_switcher-1.2.2.dist-info/METADATA,sha256=0pDwR7yhZVqcduyg6Im6waUPRUEBjBjL1bbmmlw0Goo,2360
+genshin_account_switcher-1.2.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+genshin_account_switcher-1.2.2.dist-info/entry_points.txt,sha256=iuwGgE_yEg3wr_SHe-cFzvBwxTSbWhEwNy4OY8RgUUk,59
+genshin_account_switcher-1.2.2.dist-info/top_level.txt,sha256=YcVwFNe982fxcRix5gdyyDT02HWGy1VVPKQRfmf7B1I,16
+genshin_account_switcher-1.2.2.dist-info/RECORD,,
