@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mahiro
+Version: 1.5.0
+Summary: Python bridge for Mahiro
+Home-page: https://github.com/opq-osc/mahiro
+Author: fz6m
+Author-email: i@fz6m.com
+License: MIT
+Keywords: OPQ,OPQBot,mahiro
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mahiro
+
+Python bridge for Mahiro.
+
+See more information at [mahiro](https://github.com/opq-osc/mahiro)
