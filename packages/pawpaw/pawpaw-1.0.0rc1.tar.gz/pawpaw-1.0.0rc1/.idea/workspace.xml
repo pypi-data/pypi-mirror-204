@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="60f56f5e-2b22-4441-9568-072b306fbfd2" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HYqL0C1amxRmfYJALzRD6Il7pD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rlaye/Documents/PycharmProjects/pawpaw/pawpaw/arborform/itorator&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;TEXT&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rlaye\Documents\PycharmProjects\pawpaw\pawpaw\arborform\itorator" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rlaye\Documents\PycharmProjects\pawpaw\tests\arborform" />
+      <recent name="C:\Users\rlaye\Documents\PycharmProjects\pawpaw\tests\visualization" />
+      <recent name="C:\Users\rlaye\Documents\PycharmProjects\pawpaw\pawpaw\arborform\itorator" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests. All Unittests">
+    <configuration name="solution (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pawpaw" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/docs/demos/class_grades" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docs/demos/class_grades/solution.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="solution" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pawpaw" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/docs/demos/Q&amp;A" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docs/demos/Q&amp;A/solution.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tinker" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="pawpaw" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\rlaye\anaconda3\envs\pawpaw\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tinker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="us_constitution" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pawpaw" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/docs/demos/us_constitution" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docs/demos/us_constitution/us_constitution.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name=" All Unittests" type="tests" factoryName="Unittests">
+      <module name="pawpaw" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\rlaye\anaconda3\envs\pawpaw\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_child_itos.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pawpaw" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_child_itos.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_nlp.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pawpaw" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_nlp.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_type_magic.TestTypeMagic.test_is_callable_exact" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <module name="pawpaw" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\rlaye\anaconda3\envs\pawpaw\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_type_magic.TestTypeMagic.test_is_callable_exact&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.tinker" />
+      <item itemvalue="Python.solution" />
+      <item itemvalue="Python.solution (1)" />
+      <item itemvalue="Python.us_constitution" />
+      <item itemvalue="Python tests.Unittests for test_type_magic.TestTypeMagic.test_is_callable_exact" />
+      <item itemvalue="Python tests. All Unittests" />
+      <item itemvalue="Python tests.Python tests in test_nlp.py" />
+      <item itemvalue="Python tests.Python tests in test_child_itos.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests in test_nlp.py" />
+        <item itemvalue="Python.us_constitution" />
+        <item itemvalue="Python.solution" />
+        <item itemvalue="Python.solution (1)" />
+        <item itemvalue="Python tests.Python tests in test_child_itos.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="60f56f5e-2b22-4441-9568-072b306fbfd2" name="Changes" comment="" />
+      <created>1668472305766</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668472305766</updated>
+    </task>
+    <task id="LOCAL-00033" summary="__version__ = '1.0.0.a7'">
+      <created>1671850838352</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1671850838352</updated>
+    </task>
+    <task id="LOCAL-00034" summary="__version__ = '1.0.0.a7'">
+      <created>1671850917519</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1671850917519</updated>
+    </task>
+    <task id="LOCAL-00035" summary="ascii_box updates">
+      <created>1673232354514</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1673232354514</updated>
+    </task>
+    <task id="LOCAL-00036" summary="peduncle -&gt; pepo">
+      <created>1673395183314</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1673395183314</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Documentation arborform stub">
+      <created>1673396989303</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1673396989303</updated>
+    </task>
+    <task id="LOCAL-00038" summary="arborform module structuring">
+      <created>1673575438880</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1673575438880</updated>
+    </task>
+    <task id="LOCAL-00039" summary="itorator import cleanup">
+      <created>1673575487447</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1673575487447</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Pep whitespace cleanups">
+      <created>1673576886768</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1673576886768</updated>
+    </task>
+    <task id="LOCAL-00041" summary="regex expansion">
+      <created>1673577233691</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1673577233691</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Documentation spelling and typo fixes">
+      <created>1673592455687</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1673592455687</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Ascii box from_corners redo">
+      <created>1673835287358</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1673835287358</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Ascii box rotation approach complete">
+      <created>1673858835672</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1673858835672</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Ascii box exception on un-mappable corner">
+      <created>1673882682219</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1673882682219</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Large refactoring to address circular TypeDef issue">
+      <created>1674183589350</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1674183589350</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Typehting pawpaw.Ito -&gt; Ito as appropriate; added .tag to itorator">
+      <created>1674334680238</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1674334680238</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Added .tag to postorator">
+      <created>1674334773940</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1674334773940</updated>
+    </task>
+    <task id="LOCAL-00049" summary="type_magic cleanup &amp; tests">
+      <created>1674791229525</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1674791229525</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Exceeded 4k unit tests">
+      <created>1674791278380</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1674791278380</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Whitespace">
+      <created>1675442258866</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1675442258866</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Arborform .itor_next &amp; .itor_children now are monads (i.e., class Furcation)">
+      <created>1675449044917</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1675449044917</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Unit test fix">
+      <created>1675990493576</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1675990493576</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Format string typo">
+      <created>1676083314760</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1676083314760</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Concrete Itorators all return new or clones">
+      <created>1676086137438</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1676086137438</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Cleanup + tags">
+      <created>1676086170647</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1676086170647</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Itorator refactor; postorator roll-back">
+      <created>1676259147809</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1676259147809</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Itorator function decorations">
+      <created>1676339237212</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1676339237212</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Grammer, whitespace, and table-formatting">
+      <created>1676339920067</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1676339920067</updated>
+    </task>
+    <task id="LOCAL-00060" summary="import directive cleanups">
+      <created>1676340047065</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1676340047065</updated>
+    </task>
+    <task id="LOCAL-00061" summary="import directive cleanups">
+      <created>1676340124266</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1676340124266</updated>
+    </task>
+    <task id="LOCAL-00062" summary="import directive cleanups">
+      <created>1676340145707</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1676340145707</updated>
+    </task>
+    <task id="LOCAL-00063" summary="typehint corrections">
+      <created>1676340216892</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1676340216892</updated>
+    </task>
+    <task id="LOCAL-00064" summary="import cleanups">
+      <created>1676340280650</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1676340280650</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Unit test count update">
+      <created>1676340314361</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1676340314361</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Refactor typos &amp; bugfixes">
+      <created>1676602196976</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1676602196976</updated>
+    </task>
+    <task id="LOCAL-00067" summary="test_limit subtests expansion">
+      <created>1676602496661</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1676602496661</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Typehint and PEP cleanups">
+      <created>1676602967110</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1676602967110</updated>
+    </task>
+    <task id="LOCAL-00069" summary=".from_gaps ctor refactoring &amp; rewrite">
+      <created>1676934862942</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1676934862942</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Tests added to expose add_hierarchical bug">
+      <created>1676945255456</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1676945255456</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Arborform refactoring complete">
+      <created>1677216850640</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1677216850640</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Comment updates">
+      <created>1678422910329</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1678422910329</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Comment updates">
+      <created>1678422955370</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1678422955370</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Minor arborform refactoring">
+      <created>1678643018348</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1678643018348</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Doc whitespace updates">
+      <created>1678671064208</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1678671064208</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Doc whitespace updates">
+      <created>1678753093761</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1678753093761</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Doc whitespace updates">
+      <created>1678754106682</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1678754106682</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Example cleanups">
+      <created>1678839189977</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1678839189977</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Whitespace and comment spelling fixes">
+      <created>1681877711766</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1681877711766</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Minor PEP cleanups">
+      <created>1681878340410</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1681878340410</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Unit test count update">
+      <created>1682384148587</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1682384148587</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Whitespace" />
+    <MESSAGE value="Arborform .itor_next &amp; .itor_children now are monads (i.e., class Furcation)" />
+    <MESSAGE value="Unit test fix" />
+    <MESSAGE value="Format string typo" />
+    <MESSAGE value="Concrete Itorators all return new or clones" />
+    <MESSAGE value="Cleanup + tags" />
+    <MESSAGE value="Itorator refactor; postorator roll-back" />
+    <MESSAGE value="Itorator function decorations" />
+    <MESSAGE value="Grammer, whitespace, and table-formatting" />
+    <MESSAGE value="import directive cleanups" />
+    <MESSAGE value="typehint corrections" />
+    <MESSAGE value="import cleanups" />
+    <MESSAGE value="Refactor typos &amp; bugfixes" />
+    <MESSAGE value="test_limit subtests expansion" />
+    <MESSAGE value="Typehint and PEP cleanups" />
+    <MESSAGE value=".from_gaps ctor refactoring &amp; rewrite" />
+    <MESSAGE value="Tests added to expose add_hierarchical bug" />
+    <MESSAGE value="Arborform refactoring complete" />
+    <MESSAGE value="Comment updates" />
+    <MESSAGE value="Minor arborform refactoring" />
+    <MESSAGE value="Doc whitespace updates" />
+    <MESSAGE value="Example cleanups" />
+    <MESSAGE value="Whitespace and comment spelling fixes" />
+    <MESSAGE value="Minor PEP cleanups" />
+    <MESSAGE value="Unit test count update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unit test count update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_xml_parser.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_query_and_traversal.py</url>
+          <line>695</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_query_and_traversal.py</url>
+          <line>782</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_xml_parser.py</url>
+          <line>116</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_xml_parser.py</url>
+          <line>107</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_xml_parser.py</url>
+          <line>130</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_ito.py</url>
+          <line>402</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_ito.py</url>
+          <line>375</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pawpaw/visualization/ascii_box.py</url>
+          <line>1262</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pawpaw/visualization/ascii_box.py</url>
+          <line>1301</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_ito_ctor.py</url>
+          <line>109</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_ito_ctor.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_type_magic.py</url>
+          <line>144</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/x_test_itorator.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pawpaw/ito.py</url>
+          <line>1418</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/docs/demos/us_constitution/us_constitution.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/docs/demos/us_constitution/us_constitution.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/x_test_itorator.py</url>
+          <line>135</line>
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/x_test_itorator.py</url>
+          <line>217</line>
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/x_test_itorator.py</url>
+          <line>287</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/x_test_itorator.py</url>
+          <line>294</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/x_test_itorator.py</url>
+          <line>307</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/x_test_itorator.py</url>
+          <line>305</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pawpaw/arborform/itorator/itorator_old.py</url>
+          <line>127</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/arborform/test_itorator_extract.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/arborform/test_itorator_extract.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pawpaw/arborform/itorator/extract.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_ito_ctor.py</url>
+          <line>181</line>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_ito_ctor.py</url>
+          <line>196</line>
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_ito_ctor.py</url>
+          <line>177</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pawpaw/ito.py</url>
+          <line>696</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_child_itos.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pawpaw/arborform/itorator/filter.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
