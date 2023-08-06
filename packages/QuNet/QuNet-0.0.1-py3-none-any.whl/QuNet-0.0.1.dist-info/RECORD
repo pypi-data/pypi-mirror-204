@@ -1,0 +1,11 @@
+qunet/__init__.py,sha256=8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U,3
+qunet/data.py,sha256=bDtDaNEOgX1krqJxGDVq5RdNaFstoIa40VI6TmLReHw,4089
+qunet/models.py,sha256=iWn9WbaR6ZB5T36jtmOinmNO_Y8eGIg16g64tDC5j5w,21896
+qunet/optim.py,sha256=Q_OMgrRJKvB7kRUZni1gbjwskVclFrI5L7Hn-LiR0Ac,5344
+qunet/plotter.py,sha256=M6M94dkmeIIyk4AFq69ZeeOg2iQ2_keBM1WExqOGrsI,7781
+qunet/trainer.py,sha256=eyHpxJUx0XKb0_JbsAFUXRsyBQ0dORjOXyqgnT8qA-Y,21632
+QuNet-0.0.1.dist-info/LICENSE,sha256=x3PjoTukGVa8zbtGhLogDcamZ27C895jJMSz6dVG_Mc,1066
+QuNet-0.0.1.dist-info/METADATA,sha256=oiVbZgjPLtOW8ughfzLCZ5Me8_igxzgnZ5u8YWUEqS4,454
+QuNet-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+QuNet-0.0.1.dist-info/top_level.txt,sha256=fZTlCNIA7T6KO6-qMX35d8uK01uhYTGRKO117oubma8,6
+QuNet-0.0.1.dist-info/RECORD,,
