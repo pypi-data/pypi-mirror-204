@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: az-basics
+Version: 0.1.0
+Summary: A python library to perform azure blob operations such as list, delete, upload and download
+Author: Prithivee
+Author-email: getprithivee@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+This is the README.md for the version 0.0.1
+

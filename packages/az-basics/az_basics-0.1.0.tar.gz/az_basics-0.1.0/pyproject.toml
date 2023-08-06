@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "az-basics"
+version = "0.1.0"
+description = "A python library to perform azure blob operations such as list, delete, upload and download"
+authors = ["Prithivee <getprithivee@gmail.com>"]
+readme = "README.md"
+packages = [{include = "az_basics"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+azure-core = "^1.26.4"
+azure-storage-blob = "^12.16.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
