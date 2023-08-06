@@ -1,0 +1,7 @@
+__title__ = 'har2jicase'
+__description__ = '将浏览器录制的har文件转换为极星测试框架的YAML测试用例'
+__url__ = ''
+__version__ = '0.1.7'
+__author__ = 'Captain Ji'
+__author_email__ = 'qing.ji@extremevision.com.cn'
+__license__ = 'MIT'
