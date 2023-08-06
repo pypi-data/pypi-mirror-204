@@ -1,0 +1,16 @@
+quiltz/__init__.py,sha256=QDJyS5jtJnGFsSuOx43ZvLBCOrHImm8NrZk5f9URWdk,75
+quiltz/domain/__init__.py,sha256=_AsZhAOfsPENb5r77C7mZ75sZGPstZSX0Taw6Z8itLI,194
+quiltz/domain/anonymizer.py,sha256=UNyXueZQkd4vNfW5XXYz7OzslqrU3FS45CAcuF-vaqA,191
+quiltz/domain/email.py,sha256=C85PI-UnJ3MbLZKu5PR0onMw2Kchu8f0iUUeObtQHs0,279
+quiltz/domain/parsers.py,sha256=3S9pfvLCasJl3Zf27SP7WoAJI_InnSlFUgvI9IdZNv4,914
+quiltz/domain/results.py,sha256=f70Zuqd9X6yQzHL641vgAQ6g10tdjtLg5kQAbbFUimU,1377
+quiltz/domain/validator.py,sha256=kyokCkhbjfeL6jAdbjBvcXyaXKsdYGPGJClBCN-f5HA,5320
+quiltz/domain/version.py,sha256=DqSVyW34IBsjDX542kuQJAPybpBrZqMJ3_Kim8S4hgg,15
+quiltz/domain/id/__init__.py,sha256=9-0lqmleKqhESiIXBvlBHdu3zl4Az16IWgTwOf_lTqA,18
+quiltz/domain/id/id.py,sha256=HVJjOCHs_2RE0llipC4l4R0s2hrqkLZ3z301F6x_IHw,1521
+quiltz/domain/id/testbuilders.py,sha256=i2MvBV85MWwWvKpf9JDO9eD0uudVEJBGT99Rg741T-Q,221
+quiltz_domain-0.8.1.dist-info/LICENSE,sha256=w8mMUgkRegzciIsn4FSU242quO9lSH2GBDQg3oNF3zk,1063
+quiltz_domain-0.8.1.dist-info/METADATA,sha256=hEO-0FydWtCBeQlsa_O8unsUy1sChgyS_iNnlp8eWpc,1264
+quiltz_domain-0.8.1.dist-info/WHEEL,sha256=00yskusixUoUt5ob_CiUp6LsnN5lqzTJpoqOFg_FVIc,92
+quiltz_domain-0.8.1.dist-info/top_level.txt,sha256=am3nF1kUYyEwYMyeSjcHiwNTRrHGtiU1NlMPu1QPQfw,7
+quiltz_domain-0.8.1.dist-info/RECORD,,
