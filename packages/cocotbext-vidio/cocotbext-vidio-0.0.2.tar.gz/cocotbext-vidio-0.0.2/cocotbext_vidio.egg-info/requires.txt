@@ -1,0 +1,8 @@
+cocotb>=1.6.0
+cocotb-bus
+cocotbext-axi
+numpy
+
+[test]
+pytest
+cocotb-test
