@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: niko-home-control
+Version: 0.3.0
+Summary: SDK for Niko Home Control
+Home-page: https://github.com/NoUseFreak/niko-home-control
+Author: Dries De Peuter
+Author-email: dries@nousefreak.be
+Maintainer: Dries De Peuter
+Maintainer-email: dries@nousefreak.be
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+Niko Home Control Client Library
