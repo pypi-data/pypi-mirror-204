@@ -1,0 +1,4 @@
+websockets==11.0.1
+Django>=3.0.0
+grpcio>=1.53.0
+protobuf>=4.22.1
