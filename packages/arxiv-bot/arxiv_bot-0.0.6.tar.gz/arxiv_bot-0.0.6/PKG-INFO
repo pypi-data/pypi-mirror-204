@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: arxiv-bot
+Version: 0.0.6
+Summary: ArXiv component of AI assistant
+Author: James Briggs
+Author-email: james@aurelio.ai
+Requires-Python: >=3.8.1,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: arxiv (>=1.4.3,<2.0.0)
+Requires-Dist: langchain (>=0.0.141,<0.0.142)
+Requires-Dist: openai (>=0.27.4,<0.28.0)
+Requires-Dist: pinecone-client (>=2.2.1,<3.0)
+Requires-Dist: pinecone-text (>=0.4.2,<0.5.0)
+Requires-Dist: pypdf2 (>=3.0.1,<4.0.0)
+Requires-Dist: tiktoken (>=0.2.0,<0.3.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Requires-Dist: transformers (>=4.26.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Arxiv Bot
+
