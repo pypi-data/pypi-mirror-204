@@ -1,0 +1,9 @@
+numpy
+matplotlib
+scipy
+pytest
+setuptools
+scikit-learn
+tensorflow
+keras
+tabulate
