@@ -1,0 +1,4 @@
+tshirt>=0.2
+jwst
+splintegrate
+scikit-learn
