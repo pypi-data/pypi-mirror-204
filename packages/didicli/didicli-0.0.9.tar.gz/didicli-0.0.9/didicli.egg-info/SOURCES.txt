@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+didicli.egg-info/PKG-INFO
+didicli.egg-info/SOURCES.txt
+didicli.egg-info/dependency_links.txt
+didicli.egg-info/entry_points.txt
+didicli.egg-info/top_level.txt
+didigo/__init__.py
+didigo/cli.py
+didigo/command_type.py
+didigo/constant/__init__.py
+didigo/constant/version.py
+didigo/utils/__init__.py
+didigo/utils/file.py
+didigo/version/__init__.py
