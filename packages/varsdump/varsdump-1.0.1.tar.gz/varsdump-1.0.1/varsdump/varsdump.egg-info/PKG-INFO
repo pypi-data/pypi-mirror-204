@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: varsdump
+Version: 1.0.1
+Summary: A simple library for easy handling of .env files and environment variables configurations
+Home-page: https://github.com/frontdevops/vardump
+Download-URL: https://github.com/frontdevops/vardump/archive/refs/tags/1.0.1.tar.gz
+Author: Alexander Majorov
+Author-email: Alexander Majorov <alexander.majorov@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/frontdevops/vardump
+Project-URL: Documentation, https://github.com/frontdevops/vardump/blob/main/README.md
+Project-URL: Bug Tracker, https://github.com/frontdevops/vardump/issues
+Keywords: pypi,config,library,varsdump,var,dump,vardump,vardump
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# vardump
+Colored Python vardump for CLI
+
+a small wrapper function to output the colored variable prints to the terminal. The peculiarity of the library is that, like in PHP, the var_dump function is in the global scope. You just need to write import vardump in one startup file and then the var_dump function will be available in all modules that you connect to this script.
+
+## Installation
+```python
+pip install vardump
+```
+
+##Enable
+```python
+# app.py
+import vardump
+import some_controller
+
+...
+var_dump(...)
+...
+```
+
+##Usage
+```python
+# some_controller.py
+
+some_obj = {
+  'int': 123,
+  'str': 'abc',
+  'dict': {
+    'list': [1,2,3]
+  }
+}
+
+var_dump(some_obj)
+```
+
+## For update use:
+```
+pip install vardump --upgrade
+```

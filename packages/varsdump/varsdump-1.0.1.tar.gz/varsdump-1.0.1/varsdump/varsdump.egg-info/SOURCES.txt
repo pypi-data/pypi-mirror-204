@@ -1,0 +1,16 @@
+.readthedocs.yml
+LICENSE
+MANIFEST.in
+README.md
+build.sh
+dev_requirements.txt
+pyproject.toml
+requirements.txt
+setup.py
+varsdump/varsdump/__init__.py
+varsdump/varsdump/lib.py
+varsdump/varsdump.egg-info/PKG-INFO
+varsdump/varsdump.egg-info/SOURCES.txt
+varsdump/varsdump.egg-info/dependency_links.txt
+varsdump/varsdump.egg-info/requires.txt
+varsdump/varsdump.egg-info/top_level.txt
