@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bp_data_fabric.egg-info/PKG-INFO
+bp_data_fabric.egg-info/SOURCES.txt
+bp_data_fabric.egg-info/dependency_links.txt
+bp_data_fabric.egg-info/requires.txt
+bp_data_fabric.egg-info/top_level.txt
+data_fabric/__init__.py
+data_fabric/components.py
