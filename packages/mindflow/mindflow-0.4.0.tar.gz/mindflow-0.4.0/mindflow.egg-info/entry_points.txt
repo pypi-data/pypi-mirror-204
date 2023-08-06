@@ -1,0 +1,3 @@
+[console_scripts]
+mf = mindflow.cli.cli_main:mindflow_cli
+mindflow = mindflow.cli.cli_main:mindflow_cli
