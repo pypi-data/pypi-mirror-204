@@ -1,0 +1,1 @@
+from sale.onsale import calculate_discounted_price
