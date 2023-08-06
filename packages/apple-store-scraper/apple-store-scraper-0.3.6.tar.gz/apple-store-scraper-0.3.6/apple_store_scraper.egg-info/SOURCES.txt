@@ -1,0 +1,13 @@
+LICENCE
+README.md
+setup.py
+apple_store_scraper/__init__.py
+apple_store_scraper/__version__.py
+apple_store_scraper/app_store.py
+apple_store_scraper/base.py
+apple_store_scraper/podcast.py
+apple_store_scraper.egg-info/PKG-INFO
+apple_store_scraper.egg-info/SOURCES.txt
+apple_store_scraper.egg-info/dependency_links.txt
+apple_store_scraper.egg-info/requires.txt
+apple_store_scraper.egg-info/top_level.txt
