@@ -1,0 +1,4 @@
+streamlit>=1.20.0
+bp-query-tool>=0.0.3
+bp-data-grid>=0.0.9
+bp-data-visualization>=0.0.9
