@@ -1,0 +1,12 @@
+ossfs/__init__.py,sha256=tanJdnIzrQxOI6ebOiJ5wPH-o5QgC8_fZYxnMzUzhbg,303
+ossfs/async_oss.py,sha256=S_C5mENFmtC6nzZrFZpirUUhgGcmYTjLjEe7105ocKc,23852
+ossfs/base.py,sha256=zsYO8Rl50B0J_k7j3EQsgHP3lZNC9EwtIUaA8Wby6MM,9608
+ossfs/core.py,sha256=Uay2G4fCAvfRO6oQmVY8TAoYLiI5WbeBMdxIR97_4fA,19735
+ossfs/exceptions.py,sha256=VU1oRifcBw0buxKkta95xSpZOlU4x8C_tyf5B7fHkv4,1908
+ossfs/file.py,sha256=iuBbxPwzm-wivQQVAkCIwusOoJ83sBJUyauIR8uVI5c,1738
+ossfs/utils.py,sha256=b3uUvC5V9tOPMiIHctubmqRsWlYxfxp64vnrwavCIPg,3573
+ossfs-2023.4.0.dist-info/LICENSE,sha256=ruywyh73zH_NPXmU-H0t6Q5BqkhffwaveOg5eBrEnqs,11345
+ossfs-2023.4.0.dist-info/METADATA,sha256=NeXaCQPmgC50jQqJOw9EUAN-rRP7BxfnpHfIPeyohwQ,7335
+ossfs-2023.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ossfs-2023.4.0.dist-info/top_level.txt,sha256=wmoKwbliCHkN7hJqatFnUevbRAtGA3ykhZWkyNyEpN8,6
+ossfs-2023.4.0.dist-info/RECORD,,
