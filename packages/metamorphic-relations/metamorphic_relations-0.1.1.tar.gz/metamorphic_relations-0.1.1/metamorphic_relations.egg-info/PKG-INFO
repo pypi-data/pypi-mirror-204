@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: metamorphic-relations
+Version: 0.1.1
+Summary: Metamorphic relations library
+Home-page: https://3200-metamorphic-relations-lib.readthedocs.io
+Author: Daniel Costantini
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## Installation
+    pip install metamorphic_relations
+
+## Get Started
+
+

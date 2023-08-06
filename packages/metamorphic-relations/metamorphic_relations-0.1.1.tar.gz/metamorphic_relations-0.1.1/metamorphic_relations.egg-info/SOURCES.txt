@@ -1,0 +1,15 @@
+README.md
+setup.py
+metamorphic_relations/Data.py
+metamorphic_relations/ImageMR.py
+metamorphic_relations/Info.py
+metamorphic_relations/MR.py
+metamorphic_relations/MRModel.py
+metamorphic_relations/Results.py
+metamorphic_relations/Transform.py
+metamorphic_relations/__init__.py
+metamorphic_relations.egg-info/PKG-INFO
+metamorphic_relations.egg-info/SOURCES.txt
+metamorphic_relations.egg-info/dependency_links.txt
+metamorphic_relations.egg-info/requires.txt
+metamorphic_relations.egg-info/top_level.txt
