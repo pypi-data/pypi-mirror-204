@@ -1,0 +1,4 @@
+include ./dg_itest/servers/dg_servers/*
+include ./dg_itest/servers/file_handler/*
+include ./dg_itest/servers/test_handler/*
+include ./dg_itest/utils/*
