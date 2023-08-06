@@ -1,0 +1,5 @@
+pydantic
+
+[dev]
+pytest>=4
+pytest-cov>=2
