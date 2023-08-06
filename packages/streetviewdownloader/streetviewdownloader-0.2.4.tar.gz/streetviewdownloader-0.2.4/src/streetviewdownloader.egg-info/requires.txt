@@ -1,0 +1,8 @@
+ConfigArgParse
+numpy
+pygeos
+pyproj
+pyrosm
+pyxdg
+requests
+shapely
