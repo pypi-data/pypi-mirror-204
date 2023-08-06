@@ -1,0 +1,2 @@
+[console_scripts]
+ymmsl = ymmsl_dot.main:main
