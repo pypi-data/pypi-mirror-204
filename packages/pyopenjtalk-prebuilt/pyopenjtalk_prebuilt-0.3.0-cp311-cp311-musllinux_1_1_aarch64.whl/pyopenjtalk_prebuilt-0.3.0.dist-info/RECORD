@@ -1,0 +1,15 @@
+pyopenjtalk/openjtalk.cpython-311-aarch64-linux-musl.so,sha256=XdkBrQ7vM3F999Ikb7uycYLXjO5Ehr1-zYta9r_qfH8,24227665
+pyopenjtalk/version.py,sha256=3wVEs2QD_7OcTlD97cZdCeizd2hUbJJ0GeIO8wQIjrk,22
+pyopenjtalk/htsengine.cpython-311-aarch64-linux-musl.so,sha256=_iUS08FAXVqTX3kn1PXL-xyC6CVJ_2eQ9cOZSHz8-7c,859673
+pyopenjtalk/__init__.py,sha256=xz4LGKNPS1UVIDfR7jpFHJVXoHrk4qTBrFpr47avq6w,6830
+pyopenjtalk/utils.py,sha256=7s9Q2_w9Mpzl80gQ1V7jWVG35Gfb0U_yjmGKRmLtXPo,835
+pyopenjtalk/htsvoice/README.md,sha256=-yfJC1ZNcmpujB4DyBJ1MQLGkrCObIbkpO25cFDpdt0,100
+pyopenjtalk/htsvoice/mei_normal.htsvoice,sha256=875JpoOJBKbCGHkLZOB8PoPBiG6ZXcooS0E8qrGRhN4,862503
+pyopenjtalk/htsvoice/LICENSE_mei_normal.htsvoice,sha256=r4oFts4o5RNlj98EgPNtv0nL6HjSVx2X3QF-gFLHE5E,2870
+pyopenjtalk_prebuilt.libs/libgcc_s-4e37474d.so.1,sha256=Slji658OikHg8crvAv4qrQOmCj7zqL5w890rL-a5jBM,134393
+pyopenjtalk_prebuilt.libs/libstdc++-fd9f4683.so.6.0.28,sha256=ABZJqq2QQ-As0idNvT9YzXNRmTj9R-S0pG8KMb0Odtk,2599041
+pyopenjtalk_prebuilt-0.3.0.dist-info/RECORD,,
+pyopenjtalk_prebuilt-0.3.0.dist-info/LICENSE.md,sha256=w4CDpNUcHqhuCLMwOphNDCNxjFrCFAWK9wWBTTD0u1s,1177
+pyopenjtalk_prebuilt-0.3.0.dist-info/top_level.txt,sha256=S7eQayVhEioHtm7lS-oG8mteALqSBd5DR9HJjfJnHO0,12
+pyopenjtalk_prebuilt-0.3.0.dist-info/METADATA,sha256=iU0t5mEmyjcI6xvN2ydeXkh-yBfn29xaA5exLeymFSA,7762
+pyopenjtalk_prebuilt-0.3.0.dist-info/WHEEL,sha256=O5lrh7QawKDwb8TULS68xCjxBsfCpHnTU-GYHEdi3_k,114
