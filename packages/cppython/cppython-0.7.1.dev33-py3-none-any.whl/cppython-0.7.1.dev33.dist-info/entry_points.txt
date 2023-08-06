@@ -1,0 +1,6 @@
+[console_scripts]
+cppython=cppython.console.interface:cli
+
+[cppython.scm]
+cmake=cppython.plugins.git:GitSCM
+
