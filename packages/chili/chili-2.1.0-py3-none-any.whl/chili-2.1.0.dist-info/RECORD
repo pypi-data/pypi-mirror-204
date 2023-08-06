@@ -1,0 +1,16 @@
+chili/__init__.py,sha256=_XnmCmzzQKihOyxDZtksg08iIbNoEfaSG4POYdJD0XI,639
+chili/__version__.py,sha256=Xybt2skBZamGMNlLuOX1IG-h4uIxqUDGAO8MIGWrJac,22
+chili/decoder.py,sha256=z0SmlfmwCyNG0lX4ARHH2hTuWsi9vBQSqx5O8HJIr_8,16863
+chili/encoder.py,sha256=9L-zmqjG4ZaWtCTNdnPpTDJTaR7sEjY2iqRyT6dgad8,14914
+chili/error.py,sha256=-pTis1ckKkGxIL3GN5gS2FnMz4G7K_ZTeEnjqK_jq7I,411
+chili/iso_datetime.py,sha256=ggP3wooC6U6vLSniTKfIBRFFYLqoLe5O63rrSAJuXb0,5741
+chili/json_support.py,sha256=_ZmI_-j_EsFyrgcA3BOFkaHpb7Q0_jCtZ2yvXJBEBAk,1093
+chili/mapper.py,sha256=10nkTwtpt2Y7VGPwfci-3nhYSGaUn7kEYchUF1t4egs,3202
+chili/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chili/serializer.py,sha256=fPmFEsRFP7k-HEjzXqUtOct4xuSTlstA0vUNxpxHiHc,1542
+chili/state.py,sha256=G4VcbsWN2qVJL7NYv3uG_0sPonAw33MiSOJYRaI_nhc,260
+chili/typing.py,sha256=Fg0h5ZHReJFMqzspRdnQB4s1Fk9iu67Uji2QNxJl3ms,6603
+chili-2.1.0.dist-info/LICENSE,sha256=KXnSETu4_2xwR60dIkYPc5MGXx0CCsEjKRRx9Vju3qY,1085
+chili-2.1.0.dist-info/METADATA,sha256=TtLZIjp3Trgrp7yFxaPy0vuwaqMvzP6HyzoJ1bz_QLU,19884
+chili-2.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+chili-2.1.0.dist-info/RECORD,,
