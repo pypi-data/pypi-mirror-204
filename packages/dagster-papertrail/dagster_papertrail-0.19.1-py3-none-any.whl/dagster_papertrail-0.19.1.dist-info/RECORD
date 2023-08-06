@@ -1,0 +1,8 @@
+dagster_papertrail/__init__.py,sha256=uD-jItjsUNX3yzwi3EwJT1QHRmWXnyRytsoVTSUT-Io,233
+dagster_papertrail/loggers.py,sha256=N2UL5_r-cxm9ms-hIFQGBJzxuS-XPo9xu14IzHrVEAQ,2383
+dagster_papertrail/version.py,sha256=ACwqBctK6p_9Oj2rXWiSmVOPJURrCCh7l_Ak1Mk2h-o,23
+dagster_papertrail-0.19.1.dist-info/LICENSE,sha256=-gtoVIAZYUHYmNHISZg982FI4Oh19mV1nxgTVW8eCB8,11344
+dagster_papertrail-0.19.1.dist-info/METADATA,sha256=Ao7Imk19-8WYH5Tj9wEGXyrhGNoR9CV1hJzY8rNL_HU,718
+dagster_papertrail-0.19.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dagster_papertrail-0.19.1.dist-info/top_level.txt,sha256=rEKoelbPS7CmgDbE8RuTDYSwD5wgjzYHt1oq4FgYd2Q,19
+dagster_papertrail-0.19.1.dist-info/RECORD,,
