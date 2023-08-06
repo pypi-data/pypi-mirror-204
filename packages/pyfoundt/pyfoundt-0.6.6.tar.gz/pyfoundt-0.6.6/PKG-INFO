@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyfoundt
+Version: 0.6.6
+Summary: 一个普通的模块
+Author: ZuoYihan
+Platform: Windows
+Platform: Linux
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Requires-Python: >=3
+License-File: LICENSE.txt
+
+一个简洁且易于上手的一种包含了Python语言一些常用操作的模块.
