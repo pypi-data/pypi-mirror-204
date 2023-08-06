@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ShynaTelegramBotNotification/BotNotify.py
+ShynaTelegramBotNotification/Notify_Boss.py
+ShynaTelegramBotNotification/__init__.py
+ShynaTelegramBotNotification.egg-info/PKG-INFO
+ShynaTelegramBotNotification.egg-info/SOURCES.txt
+ShynaTelegramBotNotification.egg-info/dependency_links.txt
+ShynaTelegramBotNotification.egg-info/requires.txt
+ShynaTelegramBotNotification.egg-info/top_level.txt

@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ShynaTelegramBotNotification
+Version: 0.0.4
+Summary: Shyna Telegram Bot Notification.Notifications will be taken care by this package.
+Author: Shivam Sharma
+Author-email: shivamsharma1913@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# shyna/ShynaTelegramBotNotification
+
+
+
+## Getting Started
+
+Download links:
+
+SSH clone URL: ssh://git@git.jetbrains.space/shyna623/shyna/ShynaTelegramBotNotification.git
+
+HTTPS clone URL: https://git.jetbrains.space/shyna623/shyna/ShynaTelegramBotNotification.git
+
+
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+## Prerequisites
+
+What things you need to install the software and how to install them.
+
+```
+Examples
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a production system.
+
+## Resources
+
+Add links to external resources for this project, such as CI server, bug tracker, etc.
