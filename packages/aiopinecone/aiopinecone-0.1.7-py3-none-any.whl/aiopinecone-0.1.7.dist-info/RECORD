@@ -1,0 +1,10 @@
+aiopinecone/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiopinecone/client.py,sha256=HdLxHQOJOjbHHkEf2FLIlHla1DzfmXPhfyRsxHCYKxY,5576
+aiopinecone/retry.py,sha256=B5j5F-mp0WLomb3zRdJlGJOkM-Yt0ogXlR_6dquT3a4,2020
+aiopinecone/schemas/__init__.py,sha256=WdJyoMeSZCoFfBNtWNqDOXzHwJWVPWoOdgtMueXaQcY,392
+aiopinecone/schemas/custom.py,sha256=w9Uty0ifHkgScnTvT54svo2B2pabaYB5UWgfAWR2pjA,177
+aiopinecone/schemas/generated.py,sha256=4evsR644v8MZJbpi5Wyp_0OBvJc3pV-8WarzrG-xhTw,13709
+aiopinecone-0.1.7.dist-info/LICENSE,sha256=2VASjztnUMiMI8e-j2utH3Mx288xv_puTj3Guz3uMIg,1068
+aiopinecone-0.1.7.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+aiopinecone-0.1.7.dist-info/METADATA,sha256=m1yP6WKdIlh08GRCUJLno2Hj-uAw04Lv6-Lo3EJTG5A,741
+aiopinecone-0.1.7.dist-info/RECORD,,
