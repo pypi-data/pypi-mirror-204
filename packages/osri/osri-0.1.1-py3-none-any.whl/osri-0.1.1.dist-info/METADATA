@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: osri
+Version: 0.1.1
+Summary: Displays os info based on /etc/os-release
+License: MIT
+Author: odra
+Author-email: me@lrossetti.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: prettytable (>=3.7.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+# OSRI: OS Release Info
+
+A CLI that shows parsed data from an linux os release file, usually located at /etc/os-release.
+
+## Installation
+
+Install from a git branch:
+
+```sh
+pip install git+https://github.com/odra/osri.git@master
+```
+
+## Usage
+
+Showing the CLI version:
+
+```sh
+osri version
+```
+
+Displaying an os release info (path defaults to `/etc/os-release`):
+
+```sh
+osri display
+osri display --path /etc/another-os-release
+```
+
+## License
+
+[MIT](./LICENSE)
+
