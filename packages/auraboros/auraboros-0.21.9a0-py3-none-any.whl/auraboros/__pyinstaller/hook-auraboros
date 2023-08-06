@@ -1,0 +1,15 @@
+"""
+binaries hook for pygame seems to be required for pygame 2.0 Windows.
+Otherwise some essential DLLs will not be transferred to the exe.
+
+And also put hooks for datas, resources that pygame uses, to work
+correctly with pyinstaller
+"""
+from PyInstaller.utils.hooks import collect_data_files
+
+# from auraboros import __file__ as auraboros_main_file
+
+# auraboros_folder = os.path.dirname(os.path.abspath(auraboros_main_file))
+
+# datas is the variable that pyinstaller looks for while processing hooks
+datas = collect_data_files('auraboros', excludes=['__pyinstaller', 'debugs'])
