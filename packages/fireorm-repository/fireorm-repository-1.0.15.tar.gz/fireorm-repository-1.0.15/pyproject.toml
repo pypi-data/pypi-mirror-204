@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "fireorm-repository"
+version = "1.0.15"
+description = "Базовый репозиторий для выполнения запросов к Firestore"
+authors = ["sergey <alekseyserzh88@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/Sergey199408081/fireorm-repository"
+repository = "https://github.com/Sergey199408081/fireorm-repository"
+keywords = ["firebase", "firestore", "fireorm", "repository"]
+classifiers = [
+    "Environment :: Console",
+    "Framework :: Buildout",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+packages = [
+    { include = "fireorm_repository" },
+    { include = "README.md" },
+    { include = "LICENSE" },
+]
+
+[tool.poetry.dependencies]
+python = "3.10"
+fireorm = "0.0.14"
+python-interface = "1.6.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
