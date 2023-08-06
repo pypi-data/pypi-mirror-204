@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: abckeys
+Version: 0.1.0
+Summary: Askbisi.com keys for accessing shared resources
+Author: Temiloluwa Philip Ojo
+Author-email: codekagei@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# ABC Keys
+
+## Description
+
+This project contains keys used by the askbisi backend infrastructure and its APIs. It is maintained by the askbisi engineering team.
+
