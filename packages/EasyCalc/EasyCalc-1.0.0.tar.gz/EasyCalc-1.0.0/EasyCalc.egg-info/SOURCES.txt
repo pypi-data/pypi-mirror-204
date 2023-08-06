@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+EasyCalc.egg-info/PKG-INFO
+EasyCalc.egg-info/SOURCES.txt
+EasyCalc.egg-info/dependency_links.txt
+EasyCalc.egg-info/requires.txt
+EasyCalc.egg-info/top_level.txt
