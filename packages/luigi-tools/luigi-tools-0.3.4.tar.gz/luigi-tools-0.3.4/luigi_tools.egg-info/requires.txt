@@ -1,0 +1,17 @@
+luigi>=3.1
+jsonschema>=4.2
+typing-extensions>=4
+
+[docs]
+m2r2
+sphinx
+sphinx-bluebrain-theme
+
+[graphviz]
+graphviz
+
+[test]
+mock>=3
+pytest>=7
+pytest-cov>=3
+pytest-html>=3
