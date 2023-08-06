@@ -1,0 +1,22 @@
+{
+    "providers": [
+
+    ],
+    "aliases": {
+        
+    },
+    "bootstrappers": [
+        "bootstrap.RegisterAlias",
+        "bootstrap.RegisterProviders",
+        "bootstrap.BootProviders"
+    ],
+    "db": {
+        "connector": "",
+        "host": "",
+        "port": "",
+        "database": "",
+        "username": "",
+        "password": "",
+        "format": ""
+    }
+}
