@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: discoger
+Version: 1.0.1
+Summary: Get notification from Discogs
+Home-page: https://github.com/beudbeud/discoger
+Author: Beudbeud
+Author-email: beudbeud@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Download-URL: https://github.com/beudbeud/discoger/archive/1.0.1.tar.gz
+Keywords: discogs,telegram,bot
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: python3-discogs-client
+Requires-Dist: yamldb
+Requires-Dist: schedule
+Requires-Dist: pyTelegramBotAPI
+Requires-Dist: feedparser
+
+# Discoger
+
+Telegram bot for checking if there are new sell in one specific list on Discogs
+
+## How to use it
+
+### Installation
+
+Installation is in three steps, the first is getting credentials from Discogs and Telegram. 
+You need to create a [Token](https://www.discogs.com/fr/settings/developers).
+
+For Telegram you need contact []@BotFather](https://t.me/botfather) and follow a few simple steps for get your authorization token.
+
+### Configuration
+
+After that you need create config.ini file
+
+```
+[DEFAULT]
+schedule_time = 30
+
+[discogs]
+secret = dbPVkGbCVVffggfgkdfgmlkknzezsbhmscskncno
+
+[telegram]
+token = 1766763279:AAFwufBsdfdsfgdfsgfgsfsgdfgsdf
+```
+
+### Docker
+
+```
+docker container run -v ./:/root/.config/discoger beudbeud/discoger
+```
+
+
