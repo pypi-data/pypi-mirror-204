@@ -1,0 +1,11 @@
+whispercppy/api_cpp2py_export.cpython-39-x86_64-linux-gnu.so,sha256=3lMhcxK5QfDY4JjNkDywNG8t9LC1-TgJhQp90GyYsLk,1257801
+whispercppy/utils.py,sha256=zi8N2bMpInLMGETZ7ae1tWU0NSEPBEqDCu-QHS488Ng,5050
+whispercppy/__init__.py,sha256=HD-I88qnpa5VLiGpR9MdS8VtBB_W4Wbb2Karl6s9fdo,7504
+whispercppy/libwhisper.so,sha256=-5bA0KbEQgHhA1aLpEK0UGTjb0rhj60pA1eNxUf_0F8,682473
+whispercppy-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+whispercppy-0.0.2.dist-info/WHEEL,sha256=MOCN6WRtgGYsXk8Vhl-PHEPwwpBD2D99q0JVufRtsH8,111
+whispercppy-0.0.2.dist-info/top_level.txt,sha256=kyFKm8th9F0Sh7c4XlpUq-27Iq6OHVzuRoocoUVimSM,12
+whispercppy-0.0.2.dist-info/RECORD,,
+whispercppy-0.0.2.dist-info/METADATA,sha256=SDElJyG5ICQSMiNI565yiNNG-bqXYIq3ak20Q2kBu48,493
+whispercppy.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+whispercppy.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
