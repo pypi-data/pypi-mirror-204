@@ -1,0 +1,13 @@
+AUTHORS.rst
+LICENSE.md
+README.md
+setup.py
+hpc/__init__.py
+hpc/indexing.py
+hpc_utils.egg-info/PKG-INFO
+hpc_utils.egg-info/SOURCES.txt
+hpc_utils.egg-info/dependency_links.txt
+hpc_utils.egg-info/not-zip-safe
+hpc_utils.egg-info/requires.txt
+hpc_utils.egg-info/top_level.txt
+tests/test_array.py
