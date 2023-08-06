@@ -1,0 +1,31 @@
+[tool.black] 
+line-length = 79
+
+[tool.poetry]
+name = "reputationsystemstest"
+version = "0.0.1"
+description = "Dynamic Structural Modeling and Approximate Bayesian Inference of Online Reputation System"
+authors = ["Shrabastee Banerjee", "Narendra Mukherjee", "M. Amin Rahimian"]
+packages = [{ include = "reputationsystemstest" }]
+
+[tool.poetry.dependencies]
+python = "^3.9.16"
+sbi = "^0.20.0"
+hyperopt = "^0.2.7"
+mlflow = "^2.0.1"
+tqdm = "^4.64.0"
+arviz = "^0.13.0"
+black = "^22.8.0"
+pyreadr = "^0.4.6"
+mypy = "^1.0.0"
+torch = "1.12.0"
+torchvision = "0.13.0"
+torchaudio =  "0.12.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+
+[build-system] 
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
