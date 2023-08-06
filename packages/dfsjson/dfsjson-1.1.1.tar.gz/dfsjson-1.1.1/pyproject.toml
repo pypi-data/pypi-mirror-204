@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dfsjson"
+version = "1.1.1"
+description = "A robust JSON encoder that fixes errors by utilizing DFS algorithm."
+authors = ["Unsal Gokdag <unsal.gokdag@gmail.com>"]
+readme = "README.md"
+packages = [{include = "dfsjson"}]
+keywords = ["JSON","JSON Serialize", "DFS", "Error correcting JSON"]
+homepage = "https://github.com/AutomaticHourglass/dfsjson"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
