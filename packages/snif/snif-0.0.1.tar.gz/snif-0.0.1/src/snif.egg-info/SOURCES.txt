@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/snif.egg-info/PKG-INFO
+src/snif.egg-info/SOURCES.txt
+src/snif.egg-info/dependency_links.txt
+src/snif.egg-info/top_level.txt
+src/sniff/__init__.py
+src/sniff/datatuple.py

@@ -1,0 +1,21 @@
+[project]
+name = "snif"
+version = "0.0.1"
+authors = [
+    { name="OpenLX"}
+]
+description = "Sensor Networking Interchange Framework"
+readme = "README.md"
+requires-python= ">=3.5"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/inventthings/snif"
+"Bug Tracker" = "https://github.com/inventthings/snif/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
