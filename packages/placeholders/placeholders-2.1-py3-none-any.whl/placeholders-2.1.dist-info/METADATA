@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: placeholders
+Version: 2.1
+Summary: Create placeholder images by embedding keywords into regular jpg images.
+Home-page: https://github.com/austinbrown34/placeholders
+Author: Austin Brown
+Author-email: austinbrown34@gmail.com
+Keywords: image,exif,jpg
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: awscli (==1.27.41)
+Requires-Dist: boto3 (==1.26.118)
+Requires-Dist: botocore (==1.29.118)
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: docutils (==0.16)
+Requires-Dist: fdfgen (==0.16.1)
+Requires-Dist: idna (==3.4)
+Requires-Dist: jmespath (==1.0.1)
+Requires-Dist: lxml (==4.9.2)
+Requires-Dist: pdfminer (==20191125)
+Requires-Dist: piexif (==1.1.3)
+Requires-Dist: Pillow (==9.5.0)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: pycryptodome (==3.17)
+Requires-Dist: pydantic (==1.10.7)
+Requires-Dist: PyPDF2 (==3.0.1)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: python-magic (==0.4.27)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: reportlab (==3.6.12)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: rsa (==4.7.2)
+Requires-Dist: s3transfer (==0.6.0)
+Requires-Dist: services (==0.1.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: typing-extensions (==4.5.0)
+Requires-Dist: urllib3 (==1.26.15)
+
+# Placeholders
+
+A command-line tool to set and get variables embedded in image metadata
+
+## Getting Started
+
+To get started clone this repo, and if you don't want to install all the dependencies globally (and you shouldn't want to), make sure you have something like Virtualenv installed on your machine.
+
+### Prerequisites
+
+To avoid potential conflicts, create a virtual environment and activate it before following installation instructions.
+
+```
+virtualenv -p python3 env
+. env/bin/activate
+```
+
+### Installing
+
+Follow these steps to setup Placeholders.
+
+```
+pip install placeholders
+```
+
+### Basic Controls
+
+Get variable embedded in image
+
+```
+placeholders image.py
+```
+
+Get variables for each image in a directory
+
+```
+placeholders ./example_directory
+```
+
+Set variable in image
+
+```
+placeholders test.jpg --tag variable_name
+```
+
+Set image variables according to yaml
+
+```
+placeholders tags.yaml
+```
+
+### Example yaml
+
+```
+/absolute/path/image.png test
+/absolute/test.jpg test2
+```
+
+## Authors
+
+- Austin Brown
