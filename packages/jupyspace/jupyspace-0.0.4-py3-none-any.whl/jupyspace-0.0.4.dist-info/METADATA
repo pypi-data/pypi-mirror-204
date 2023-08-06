@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: jupyspace
+Version: 0.0.4
+Project-URL: Documentation, https://github.com/davidbrochart/jupyspace#readme
+Project-URL: Issues, https://github.com/davidbrochart/jupyspace/issues
+Project-URL: Source, https://github.com/davidbrochart/jupyspace
+Author-email: David Brochart <david.brochart@gmail.com>
+License: MIT
+License-File: LICENSE.txt
+Keywords: conda,jupyter
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: fps-localspace
+Requires-Dist: fps-spacex
+Requires-Dist: jupyspace-api
+Provides-Extra: test
+Requires-Dist: httpx; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-asyncio; extra == 'test'
+Description-Content-Type: text/markdown
+
+# jupyspace
+
+[![PyPI - Version](https://img.shields.io/pypi/v/jupyspace.svg)](https://pypi.org/project/jupyspace)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/jupyspace.svg)](https://pypi.org/project/jupyspace)
+[![Build Status](https://github.com/davidbrochart/jupyspace/workflows/CI/badge.svg)](https://github.com/davidbrochart/jupyspace/actions)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+Install [micromamba](https://mamba.readthedocs.io/en/latest/installation.html#micromamba) for your platform, then:
+```console
+pip install jupyspace
+```
+
+## Development installation
+
+Install [micromamba](https://mamba.readthedocs.io/en/latest/installation.html#micromamba) for your platform, then:
+```console
+micromamba create -n jupyspace
+micromamba activate jupyspace
+micromamba install -c conda-forge python
+
+pip install -e jupyspace_api
+pip install -e plugins/localspace
+pip install -e plugins/spacex
+pip install -e .[test]
+
+asphalt run config.yaml
+```
+
+## Usage
+
+```console
+jupyspace --open-browser
+```
+
+## License
+
+`jupyspace` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
