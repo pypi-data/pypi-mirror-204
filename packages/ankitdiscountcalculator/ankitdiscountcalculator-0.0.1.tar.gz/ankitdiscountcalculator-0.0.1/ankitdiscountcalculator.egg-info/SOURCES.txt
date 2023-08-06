@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+ankitdiscountcalculator.egg-info/PKG-INFO
+ankitdiscountcalculator.egg-info/SOURCES.txt
+ankitdiscountcalculator.egg-info/dependency_links.txt
+ankitdiscountcalculator.egg-info/top_level.txt

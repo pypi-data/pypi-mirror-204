@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ankitdiscountcalculator
+Version: 0.0.1
+Summary: A very basic discount calculator
+Home-page: 
+Author: Ankit Kumar
+Author-email: x22113886@student.ncirl.ie
+License: MIT
+Keywords: discount calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENCE.txt
+
+This is a very simple discount calculator that takes two parameters that is originalRate and discountedPercentage to calculated the discounted rate.
+
+originalRate: This takes the original rate of any product/services.
+discountedPercentage: This takes the percent of discount being offered. 
+
+Change Log
+===========
+
+0.0.1 (22/04/2023)
+------------------
+- First Release
