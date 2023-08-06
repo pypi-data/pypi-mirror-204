@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ztfin2p3
+Version: 0.3.4
+Summary:  ZTFIN2P3 
+Home-page: https://github.com/MickaelRigault/ztfin2p3
+Download-URL: https://github.com/MickaelRigault/ztfin2p3
+Author: Mickael Rigault
+Author-email: m.rigault@ipnl.in2p3.fr
+Maintainer: Mickael Rigault
+Maintainer-email: m.rigault@ipnl.in2p3.fr
+License: Apache 2.0
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+License-File: LICENSE
+
+ ztfin2p3 
