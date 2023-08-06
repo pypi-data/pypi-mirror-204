@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hydro-tune
+Version: 0.0.1
+Summary: Surrogate-Based Model Hyperparameter Optimization.
+Home-page: https://github.com/S-Lab-System-Group/Hydro
+Author: Qinghao Hu
+Author-email: qinghao.hu@ntu.edu.sg
+License: Apache-2.0
+Keywords: AutoML,HPO
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+License-File: LICENSE.txt
