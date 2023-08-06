@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: vnkdj5-utils
+Version: 0.1.6
+Summary: test package
+Home-page: https://github.com/vnkdj5/packages-tests
+Author: vnkdj5
+Author-email: vnkdj5@example.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: redis (==4.5.4)
+
+# redis-singleton
+
+
+
+## Installation
+
+Start a redis via docker:
+
+``` bash
+docker run -p 6379:6379 -it redis/redis-stack:latest
+```
+
+
+To install vnkdj5-utils, simply:
+
+``` bash
+$ pip install vnkdj5-utils
+```
+
+## Example redis library
+
+```
+cache=Cache()
+
+
+cache.set("key", "val")
+
+
+```
+
