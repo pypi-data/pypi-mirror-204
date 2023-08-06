@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/colorfultxt/__init__.py
+src/colorfultxt.egg-info/PKG-INFO
+src/colorfultxt.egg-info/SOURCES.txt
+src/colorfultxt.egg-info/dependency_links.txt
+src/colorfultxt.egg-info/top_level.txt
