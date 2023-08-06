@@ -1,0 +1,9 @@
+colorama
+gcovr
+grip
+jinja2
+lxml
+psutil
+pyscss
+six
+pyyaml
