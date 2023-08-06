@@ -1,0 +1,3 @@
+[intentbox.intent]
+ovos-intent-plugin-adapt=ovos_intent_plugin_adapt:AdaptExtractor
+
