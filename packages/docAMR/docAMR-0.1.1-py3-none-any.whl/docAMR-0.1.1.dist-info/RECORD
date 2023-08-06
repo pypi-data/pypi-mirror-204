@@ -1,0 +1,16 @@
+amr_io.py,sha256=DzfqgcAUZ4nMvMgO3DGpT9pY1SWODc95Yz4f74GmPHE,53786
+doc_amr.py,sha256=kXFWK4sRD-vWocBgnRC-BgJ4KaYFmsyshW9VJ2y6_g8,5295
+docSmatch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docSmatch/amr.py,sha256=nU4uUbBHZQDo9T2Wr2reAwMOnfQvABNToC4JG0QVKX4,26553
+docSmatch/smatch.py,sha256=47a_FpcUULy8VEsdEyRwXiig5XsfNSQaAkBdNee8rDc,51325
+doc_amr_baseline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doc_amr_baseline/amr_constituents.py,sha256=7Po9simHva3dDGnwNGm3OV-WlrJfJ3RUEYghxng1JPY,6320
+doc_amr_baseline/baseline_io.py,sha256=VVY7zZXDv9AAbtIhdhER1-jwkxTNNGUOXMF0kYhRyYo,11885
+doc_amr_baseline/get_allen_coref.py,sha256=eGjAFExhZFzuHJdDhlMIGKTLukI4gOwo56_TSDU_i08,2690
+doc_amr_baseline/make_doc_amr.py,sha256=3CX6aEersKGw4jik3hwfXR8eQft0Di771DQfdI0POyI,12426
+docAMR-0.1.1.dist-info/LICENSE,sha256=ML4F6ai0mdUS4c0w_onF4fQ-VxVTBuEekwVj-zMSlOM,11361
+docAMR-0.1.1.dist-info/METADATA,sha256=R6XIL8_RS5Zt52_xmlf6o4T-NBJcivEQwqh1dsyw3kg,2992
+docAMR-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+docAMR-0.1.1.dist-info/entry_points.txt,sha256=UQGV1Lcbr56GyDTQWhjgOv6S_xu9Bcz5cYnvqrW1IC4,126
+docAMR-0.1.1.dist-info/top_level.txt,sha256=qfp72TwsO5w7jx2WV7gPwR5OZzO7hcwyPu5a2Ajyf54,42
+docAMR-0.1.1.dist-info/RECORD,,
