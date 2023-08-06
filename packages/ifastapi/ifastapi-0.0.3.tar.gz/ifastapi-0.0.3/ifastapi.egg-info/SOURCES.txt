@@ -1,0 +1,14 @@
+README.md
+setup.py
+iFastApi/__init__.py
+iFastApi/api/__init__.py
+iFastApi/db/BaseQuery.py
+iFastApi/db/__init__.py
+iFastApi/utils/__init__.py
+iFastApi/utils/singleton.py
+ifastapi.egg-info/PKG-INFO
+ifastapi.egg-info/SOURCES.txt
+ifastapi.egg-info/dependency_links.txt
+ifastapi.egg-info/not-zip-safe
+ifastapi.egg-info/requires.txt
+ifastapi.egg-info/top_level.txt
