@@ -1,0 +1,10 @@
+name: napari-napari
+display_name: Napari Napari
+contributions:
+  commands:
+    - id: napari-napari.napari
+      python_name: napari_napari._widget:Napari
+      title: napari
+  widgets:
+    - command: napari-napari.napari
+      display_name: napari
