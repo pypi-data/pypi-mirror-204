@@ -1,0 +1,6 @@
+[pysasl.mechanism]
+CRAM-MD5 = pysasl.mechanism.crammd5:CramMD5Mechanism
+EXTERNAL = pysasl.mechanism.external:ExternalMechanism
+LOGIN = pysasl.mechanism.login:LoginMechanism
+PLAIN = pysasl.mechanism.plain:PlainMechanism
+XOAUTH2 = pysasl.mechanism.oauth:OAuth2Mechanism
