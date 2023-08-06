@@ -1,0 +1,5 @@
+colorama>=0.4.6
+ffmpeg>=1.4
+imageio-ffmpeg>=0.4.8
+mutagen>=1.46.0
+py-file-type>=0.1.0
