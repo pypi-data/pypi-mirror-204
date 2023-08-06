@@ -1,0 +1,103 @@
+{
+  "version": "1.0",
+  "status": "OK",
+  "ts": "2022-08-30T21:46:51.733Z",
+  "statement": [
+    {
+      "pos": "0-111",
+      "ds": [
+        {
+          "pos": "0-111",
+          "out": {
+            "exprs": [
+              {
+                "pos": "7-67",
+                "exprs": [
+                  {
+                    "pos": "17-27",
+                    "refatt": "o_orderkey",
+                    "refds": "orders",
+                    "fullref": "orders.o_orderkey",
+                    "eltype": "attr"
+                  }
+                ],
+                "name": "ARRAY_AGG",
+                "withinGroup": {
+                  "exprs": [
+                    {
+                      "pos": "52-62",
+                      "direction": "asc",
+                      "refatt": "o_orderkey",
+                      "refds": "orders",
+                      "fullref": "orders.o_orderkey",
+                      "eltype": "attr"
+                    }
+                  ],
+                  "eltype": "sort"
+                },
+                "eltype": "func"
+              }
+            ],
+            "derived": false,
+            "eltype": "out"
+          },
+          "in": {
+            "exprs": [
+              {
+                "pos": "75-81",
+                "type": "table",
+                "refds": "orders",
+                "fullref": "orders",
+                "out": {
+                  "exprs": [
+                    {
+                      "refatt": "o_orderkey",
+                      "refds": "orders",
+                      "fullref": "orders.o_orderkey",
+                      "eltype": "attr"
+                    },
+                    {
+                      "refatt": "o_totalprice",
+                      "refds": "orders",
+                      "fullref": "orders.o_totalprice",
+                      "eltype": "attr"
+                    }
+                  ],
+                  "derived": true,
+                  "eltype": "out"
+                },
+                "eltype": "ds"
+              }
+            ],
+            "eltype": "in"
+          },
+          "filter": {
+            "op": {
+              "pos": "90-111",
+              "exprs": [
+                {
+                  "pos": "90-102",
+                  "refatt": "o_totalprice",
+                  "refds": "orders",
+                  "fullref": "orders.o_totalprice",
+                  "eltype": "attr"
+                },
+                {
+                  "value": 450000,
+                  "eltype": "const"
+                }
+              ],
+              "type": "GT",
+              "eltype": "op"
+            },
+            "eltype": "filter"
+          },
+          "eltype": "ds"
+        }
+      ],
+      "rawInput": "select array_agg(o_orderkey) within group (order by o_orderkey asc)\n  from orders\n  where o_totalprice > 450000",
+      "eltype": "statement"
+    }
+  ],
+  "eltype": "parSeQL"
+}
