@@ -1,0 +1,12 @@
+xia_scw_instance/__init__.py,sha256=hvJ-V6hddQOpaA5D8-F3ZKJ01tu3dEUuoZYn3FFJy1E,133
+xia_scw_instance/instance.cpython-310-x86_64-linux-gnu.so,sha256=yKF126zV457Ncd7DyBMy2AZiWlrD4wYW9czDXlSsIrg,768520
+xia_scw_instance/templates/ScwInstance/backend.tf,sha256=E6fgAX-nMcTt9oErRKvK67uJPdB-O77YJpzAvf06zgs,69
+xia_scw_instance/templates/ScwInstance/main.tf,sha256=4AT2qTq0fYZBzJBJXvWxktIvoqWY6Qlgs-6Wf1PXeQE,3026
+xia_scw_instance/templates/ScwInstance/output.tf,sha256=Z-bfCjy9nrVOd98T2JSHiDAv5cP7kI_Qs5h49elb6H0,766
+xia_scw_instance/templates/ScwInstance/provider.tf,sha256=h_zFGas7QtYJPGvufLGuPHtgDhoZa28Qa5t--1dpheI,343
+xia_scw_instance/templates/ScwInstance/variables.tf,sha256=qkzRe_c7wVjYF89AqoJQcYPu0kyxRgo1Q0QrlUuxgsQ,4173
+xia_scw_instance-0.0.9.dist-info/LICENSE.txt,sha256=CgeJ1rTURAK7GLPD_GW3lyXH8ZFFrBDM0ekl9JHZR2s,152
+xia_scw_instance-0.0.9.dist-info/METADATA,sha256=RvK5xYibWBtT8t5XRiSGamYJw-T4ozLCpkpgLOwDj0A,662
+xia_scw_instance-0.0.9.dist-info/WHEEL,sha256=Kn0XEVEprF3m5Ls7p1vDRSgmlko_ccaWbbQdh4VEEUE,108
+xia_scw_instance-0.0.9.dist-info/top_level.txt,sha256=ffd5mxc0r47bbdzdm8uAtew5JL-56N5Dvcrqvp9tri0,17
+xia_scw_instance-0.0.9.dist-info/RECORD,,
