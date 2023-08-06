@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: compose-go
+Version: 0.1.0
+Summary: Docker Compose v2 (GoLang) wrapped in a Python Package
+Author: Luã Bida Vacaro
+Author-email: luabidaa@gmail.com
+License: BSD
+License-File: LICENSE
+Requires-Dist: click
+
