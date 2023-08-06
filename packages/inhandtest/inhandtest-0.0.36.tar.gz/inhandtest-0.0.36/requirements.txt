@@ -1,0 +1,12 @@
+pytz
+requests
+playwright
+serial
+modbus-tk
+paho-mqtt
+urllib3
+paramiko
+emails
+Jinja2==3.1.2
+pymongo
+psutil
