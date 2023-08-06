@@ -1,0 +1,11 @@
+python-dateutil
+SQLAlchemy<2.0,>=1.4
+transaction
+zope.sqlalchemy
+
+[testing]
+psycopg[binary]
+psycopg2-binary
+pytest
+pytest-cov
+pytest-postgresql
