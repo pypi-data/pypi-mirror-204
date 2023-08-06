@@ -1,0 +1,11 @@
+prettypy/__init__.py,sha256=EBph0vXNzuDZr_FyKJ4-4U5avAwMve_3-awjQWDWfY0,154
+prettypy/composer.py,sha256=VfgGyk3xN61bLN2C5kx2pDoCQAatir31LlGy7C4wfsc,5783
+prettypy/layout.py,sha256=YHm_4b8SgA8BSkPG2dy-V_p7EzZs6abQ7VGz3oISr64,3657
+prettypy/pretty.py,sha256=r6ia10JeZFlQ7K-LABl78CjK9p76qAtfZCp_aYGRJDs,2443
+prettypy/pretty_template.py,sha256=OyrqzBRSQ62Azfn9pOfdtdI4t4iyH1_ffKC1GtuCQVY,650
+prettypy/style.py,sha256=xjrrqaa7yUxKzDTXWGZ40UseAxdRT5ZRaTNHFihM58c,2537
+prettypy-0.2.1.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+prettypy-0.2.1.dist-info/METADATA,sha256=t2m1HYPkCMWroMN7nnqBPM7r_d3xbwYpoagEOwlhMpI,5012
+prettypy-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+prettypy-0.2.1.dist-info/top_level.txt,sha256=YfkQcMM2xuSrMGc1lF0RrBtRi5kok_Vef98TP6Tuyvw,9
+prettypy-0.2.1.dist-info/RECORD,,
