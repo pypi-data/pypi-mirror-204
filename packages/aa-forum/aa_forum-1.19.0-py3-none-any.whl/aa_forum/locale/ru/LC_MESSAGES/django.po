@@ -1,0 +1,1226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# "H. Peter Pfeufer" <info@ppfeufer.de>, 2023.
+# Nikolay <nick.postnikov@gmail.com>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-16 15:05+0200\n"
+"PO-Revision-Date: 2023-04-20 18:50+0000\n"
+"Last-Translator: Nikolay <nick.postnikov@gmail.com>\n"
+"Language-Team: Russian <https://weblate.ppfeufer.de/projects/"
+"alliance-auth-apps/aa-forum/ru/>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : (n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 4.16.4\n"
+
+#: forms.py:39
+msgid "This field is mandatory"
+msgstr "Обязательное поле"
+
+#: forms.py:90 forms.py:92 forms.py:122 forms.py:124 forms.py:491
+#: templates/aa_forum/partials/personal-messages/inbox/messages.html:26
+#: templates/aa_forum/partials/personal-messages/sent-messages/messages.html:26
+msgid "Subject"
+msgstr "Тема"
+
+#: forms.py:101 forms.py:318 forms.py:501 forms.py:545
+msgid "Message"
+msgstr "Сообщение"
+
+#: forms.py:143 forms.py:181 forms.py:202
+msgid "Name"
+msgstr "Название"
+
+#: forms.py:145 forms.py:183
+msgid "Category Name"
+msgstr "Название категории"
+
+#: forms.py:149 forms.py:160
+msgid "Boards"
+msgstr "Доски"
+
+#: forms.py:151
+msgid ""
+"Boards to be created with this category (One board per line). These boards "
+"will have no group restrictions, so you have to add them later where needed."
+msgstr ""
+"Доски, создаваемые в этой категории (Одна доска в строке). Для досок не "
+"будут установлены ограничения по группам, их нужно добавить отдельно."
+
+#: forms.py:204
+msgid "Board Name"
+msgstr "Название доски"
+
+#: forms.py:208
+msgid "Description"
+msgstr "Описание"
+
+#: forms.py:214
+msgid "Board Description (Optional)"
+msgstr "Описание доски (не обязательно)"
+
+#: forms.py:220
+msgid "Group Restrictions"
+msgstr "Ограничения групп"
+
+#: forms.py:222
+msgid ""
+"This will restrict access to this board to the selected groups. If no groups "
+"are selected, everyone who can access the forum can also access this board. "
+"(This setting is optional)"
+msgstr ""
+"Только перечисленные группы будут иметь доступ к доске. Если группы не "
+"выбраны, все пользователи форума будут иметь доступ к доске. (Настройка не "
+"обязательна)"
+
+#: forms.py:230
+msgid "Discord Webhook (Optional)"
+msgstr "Discord вебхук (не обязательно)"
+
+#: forms.py:232
+msgid ""
+"Discord Webhook URL for the channel to post about new topics in this board. "
+"(This setting is optional)"
+msgstr ""
+"Discord вебхук URL канала для сообщений о новых темах на доске. (Настройка "
+"не обязательна)"
+
+#: forms.py:245
+msgid "Use this Discord Webhook for replies as well?"
+msgstr "Использовать этот же Discord вебхук для ответов?"
+
+#: forms.py:247
+msgid ""
+"When activated every reply to any topic in this board will be posted to the "
+"defined Discord channel. (Child boards are excluded) Chose wisely! (Default: "
+"NO)"
+msgstr ""
+"При включении каждый ответ в любой теме доски будет отправлен в канал "
+"Discord. (Дочерние доски не учитываются) Использовать с умом! (По умолчанию: "
+"ВЫКЛ)"
+
+#: forms.py:255
+msgid "Mark Board as 'Announcement Board'"
+msgstr "Пометить доску как 'Доска оповещений'"
+
+#: forms.py:257
+msgid ""
+"Mark this board as an 'Announcement Board', meaning that only certain "
+"selected groups can start new topics. All others who have access to this "
+"board will still be able to discuss in the topics though. This setting will "
+"not be inherited to child boards. (Default: NO)"
+msgstr ""
+"Пометка 'Доска оповещений' обозначает, что только определенные группы могут "
+"начинать новые темы. Все остальные, кто имеет доступ, могут участвовать в "
+"обсуждениях. Эта настройка не распространяется на дочерние доски. (По "
+"умолчанию: НЕТ)"
+
+#: forms.py:265
+msgid "Start Topic Restrictions for 'Announcement Boards'"
+msgstr "Ограничения создания новых тем для 'Доски оповещений'"
+
+#: forms.py:267
+msgid ""
+"User in at least one of the selected groups will be able to start topics in "
+"'Announcement Boards'. If no group is selected, only forum admins can do so. "
+"This setting will not be inherited to child boards. (Hint: These "
+"restrictions only take effect when a board is marked as 'Announcement "
+"Board', see checkbox above.)"
+msgstr ""
+"Пользователи из перечисленных групп смогут создавать новые темы на 'Досках "
+"оповещений'. Если группы не указаны, только админы форума смогут это делать. "
+"Эта настройка не распространяется на дочерние доски. (Подсказка: Это "
+"ограничение работает только для 'Досок оповещений', см. настройку выше.)"
+
+#: forms.py:351
+msgid "Signature"
+msgstr "Подпись"
+
+#: forms.py:352
+msgid "Your signature will appear below your posts."
+msgstr "Ваша подпись будет отображаться под Вашими сообщениями."
+
+#: forms.py:356
+msgid "Website Title"
+msgstr "Заголовок вебсайта"
+
+#: forms.py:358
+msgid "e.g.: My Homepage"
+msgstr "например: Моя Веб Страница"
+
+#: forms.py:359
+msgid "Your website's title."
+msgstr "Заголовок Вашего вебсайта."
+
+#: forms.py:363
+msgid "Website URL"
+msgstr "URL вебсайта"
+
+#: forms.py:365
+msgid "https://example.com"
+msgstr "https://example.ru"
+
+#: forms.py:367
+msgid ""
+"Your website's URL. (Don't forget to also set a title for your website, "
+"otherwise this field will be ignored.)"
+msgstr ""
+"URL Вашего вебсайта. (Не забудьте также указать название, иначе это поле "
+"будет проигнорировано.)"
+
+#: forms.py:373
+msgid "PM me on Discord when I get a new personal message"
+msgstr "Отправлять ЛС в Discord при получении личного сообщения"
+
+#: forms.py:375
+msgid ""
+"Information: There is currently no module installed that can handle Discord "
+"direct messages. Have a chat with your IT guys to remedy this."
+msgstr ""
+"Информация: в настоящее время не установлены модуля для передачи ЛС в "
+"Discord. Обратитесь в IT поддержку."
+
+#: forms.py:415
+msgid ""
+"Ensure your signature has at most {max_signature_length} characters. "
+"(Currently: {len(signature)})"
+msgstr ""
+"Убедитесь, что ваша подпись не более {max_signature_length} символов. "
+"(Сейчас: {len(signature)})"
+
+#: forms.py:435
+msgid "This is not a valid URL"
+msgstr "Некорректный URL"
+
+#: forms.py:449
+msgid ""
+"How many messages per page should be displayed in a forum topic? (Default: "
+"15)"
+msgstr "Сколько сообщений отображать на странице? (По умолчанию: 15)"
+
+#: forms.py:457
+msgid ""
+"How many topics per page should be displayed in a forum category? (Default: "
+"10)"
+msgstr "Сколько тем отображать на странице в категории? (По умолчанию: 10)"
+
+#: forms.py:465
+msgid ""
+"How long (Number of characters) is a user's signature allowed to be? "
+"(Default: 750)"
+msgstr ""
+"Какой длины (количество символов) может быть подпись пользователя? (По "
+"умолчанию: 750)"
+
+#: forms.py:487
+#: templates/aa_forum/partials/personal-messages/sent-messages/messages.html:22
+msgid "Recipient"
+msgstr "Получатель"
+
+#: forms.py:493
+msgid "Hello there …"
+msgstr "Привет…"
+
+#: models.py:119
+msgid "Can access the AA-Forum module"
+msgstr "Имеет доступ к модулю АА-форум"
+
+#: models.py:122
+msgid "Can manage the AA-Forum module (Category, topics and messages)"
+msgstr "Может управлять модулем АА-форум (категории, темы и сообщения)"
+
+#: models.py:164
+msgid "category"
+msgstr "категория"
+
+#: models.py:165
+msgid "categories"
+msgstr "категории"
+
+#: models.py:279
+msgid "board"
+msgstr "доска"
+
+#: models.py:280
+msgid "boards"
+msgstr "доски"
+
+#: models.py:397
+msgid "topic"
+msgstr "тема"
+
+#: models.py:398
+msgid "topics"
+msgstr "темы"
+
+#: models.py:551
+msgid "message"
+msgstr "сообщение"
+
+#: models.py:552
+msgid "messages"
+msgstr "сообщения"
+
+#: models.py:686
+msgid "personal message"
+msgstr "личное сообщение"
+
+#: models.py:687
+msgid "personal messages"
+msgstr "личные сообщения"
+
+#: models.py:723
+msgid "Messages per page"
+msgstr "Сообщений на странице"
+
+#: models.py:724
+msgid "Topics per page"
+msgstr "Тем на странице"
+
+#: models.py:725
+msgid "User signature length"
+msgstr "Длина подписи пользователя"
+
+#: models.py:730
+msgid "Maximum number of messages per page in the topic view"
+msgstr "Максимальное количество сообщений на странице при просмотре темы"
+
+#: models.py:735
+msgid "Maximum number of topics per page in the board view"
+msgstr "Максимальное количество тем на странице при просмотре доски"
+
+#: models.py:740
+msgid "Maximum length of a users signature"
+msgstr "Максимальная длина подписи пользователя"
+
+#: models.py:751
+msgid "setting"
+msgstr "настройка"
+
+#: models.py:752
+msgid "settings"
+msgstr "настройки"
+
+#: models.py:781
+msgid "user profile"
+msgstr "профиль пользователя"
+
+#: models.py:782
+msgid "user profiles"
+msgstr "профили пользователей"
+
+#: templates/aa_forum/ajax-render/personal-messages/message.html:21
+#: templates/aa_forum/partials/forum/topic/message.html:30
+#: templates/aa_forum/partials/personal-messages/reply-message/message.html:21
+msgid "on:"
+msgstr "дата:"
+
+#: templates/aa_forum/ajax-render/personal-messages/message.html:30
+#: templates/aa_forum/partials/forum/board/topic.html:57
+#: templates/aa_forum/partials/forum/topic/reply.html:7
+#: templates/aa_forum/partials/forum/topic/reply.html:37
+msgid "Reply"
+msgstr "Ответить"
+
+#: templates/aa_forum/ajax-render/personal-messages/message.html:38
+#: templates/aa_forum/modals/forum/topic/message-delete.html:3
+#: templates/aa_forum/modals/forum/topic/message-delete.html:12
+#: templates/aa_forum/modals/personal-messages/message-delete.html:3
+#: templates/aa_forum/modals/personal-messages/message-delete.html:12
+#: templates/aa_forum/partials/forum/topic/message.html:56
+#: templates/aa_forum/partials/personal-messages/inbox/messages.html:73
+#: templates/aa_forum/partials/personal-messages/sent-messages/messages.html:67
+msgid "Delete Message"
+msgstr "Удалить сообщение"
+
+#: templates/aa_forum/base.html:5 templates/aa_forum/partials/menu.html:14
+#: templates/aa_forum/view/forum/board.html:5
+#: templates/aa_forum/view/forum/index.html:6
+#: templates/aa_forum/view/forum/topic.html:5
+msgid "Forum"
+msgstr "Форум"
+
+#: templates/aa_forum/modals/administration/delete-board.html:3
+#: templates/aa_forum/modals/administration/delete-board.html:12
+#: templates/aa_forum/partials/administration/board-loop.html:13
+msgid "Delete Board"
+msgstr "Удалить доску"
+
+#: templates/aa_forum/modals/administration/delete-board.html:18
+msgid "Are you sure you want to delete this board?"
+msgstr "Вы уверены, что хотите удалить эту доску?"
+
+#: templates/aa_forum/modals/administration/delete-board.html:19
+msgid "This will also remove all topics and messages in this board."
+msgstr "Это также удалит все темы и сообщения на доске."
+
+#: templates/aa_forum/modals/administration/delete-board.html:21
+#: templates/aa_forum/modals/administration/delete-category.html:21
+#: templates/aa_forum/modals/forum/board/topic-delete.html:21
+#: templates/aa_forum/modals/forum/topic/message-delete.html:21
+#: templates/aa_forum/modals/personal-messages/message-delete.html:21
+msgid "This action cannot be undone!"
+msgstr "Это действие нельзя будет отменить!"
+
+#: templates/aa_forum/modals/administration/delete-board.html:28
+#: templates/aa_forum/modals/administration/delete-category.html:28
+#: templates/aa_forum/modals/forum/board/topic-change-lock-state.html:33
+#: templates/aa_forum/modals/forum/board/topic-change-sticky-state.html:33
+#: templates/aa_forum/modals/forum/board/topic-delete.html:28
+#: templates/aa_forum/modals/forum/topic/message-delete.html:28
+#: templates/aa_forum/modals/personal-messages/message-delete.html:28
+#: templates/aa_forum/view/forum/new-topic.html:31
+msgid "Cancel"
+msgstr "Отмена"
+
+#: templates/aa_forum/modals/administration/delete-board.html:33
+#: templates/aa_forum/modals/administration/delete-category.html:33
+#: templates/aa_forum/modals/forum/board/topic-delete.html:33
+#: templates/aa_forum/modals/forum/topic/message-delete.html:33
+#: templates/aa_forum/modals/personal-messages/message-delete.html:33
+msgid "Delete"
+msgstr "Удалить"
+
+#: templates/aa_forum/modals/administration/delete-category.html:3
+#: templates/aa_forum/modals/administration/delete-category.html:12
+#: templates/aa_forum/partials/administration/category-loop.html:15
+msgid "Delete Category"
+msgstr "Удалить категорию"
+
+#: templates/aa_forum/modals/administration/delete-category.html:18
+msgid "Are you sure you want to delete this category?"
+msgstr "Вы уверены, что хотите удалить эту категорию?"
+
+#: templates/aa_forum/modals/administration/delete-category.html:19
+msgid "This will also remove all boards, topics and messages in this category."
+msgstr "Это также удалит все доски, темы и сообщения в категории."
+
+#: templates/aa_forum/modals/forum/board/topic-change-lock-state.html:3
+msgid "Change lock state of topic"
+msgstr "Изменить блокировку темы"
+
+#: templates/aa_forum/modals/forum/board/topic-change-lock-state.html:13
+#: templates/aa_forum/modals/forum/board/topic-change-lock-state.html:39
+#: templates/aa_forum/partials/forum/board/topic.html:84
+msgid "Unlock/Re-Open Topic"
+msgstr "Разблокировать/открыть тему"
+
+#: templates/aa_forum/modals/forum/board/topic-change-lock-state.html:16
+#: templates/aa_forum/modals/forum/board/topic-change-lock-state.html:42
+#: templates/aa_forum/partials/forum/board/topic.html:88
+msgid "Lock/Close Topic"
+msgstr "Заблокировать/закрыть тему"
+
+#: templates/aa_forum/modals/forum/board/topic-change-lock-state.html:24
+msgid "Are you sure you want to unlock/re-open this topic?"
+msgstr "Вы уверены что хотите разблокировать эту тему?"
+
+#: templates/aa_forum/modals/forum/board/topic-change-lock-state.html:26
+msgid "Are you sure you want to lock/close this topic?"
+msgstr "Вы уверены что хотите заблокировать эту тему?"
+
+#: templates/aa_forum/modals/forum/board/topic-change-sticky-state.html:3
+msgid "Change sticky state of topic"
+msgstr "Изменить свойство 'Sticky' для темы"
+
+#: templates/aa_forum/modals/forum/board/topic-change-sticky-state.html:13
+msgid "Remove \"Sticky\" State from Topic"
+msgstr "Удалить свойство 'Sticky' для темы"
+
+#: templates/aa_forum/modals/forum/board/topic-change-sticky-state.html:16
+msgid "Set \"Sticky\" State for Topic"
+msgstr "Установить свойство 'sticky' для темы"
+
+#: templates/aa_forum/modals/forum/board/topic-change-sticky-state.html:24
+msgid "Are you sure you want to remove the sticky state from this topic?"
+msgstr "Вы уверены что хотите удалить свойство 'sticky' для темы?"
+
+#: templates/aa_forum/modals/forum/board/topic-change-sticky-state.html:26
+msgid ""
+"Are you sure you want to make this topic sticky, so it always shows up on "
+"top of the topic list?"
+msgstr ""
+"Вы уверены что хотите установить свойство 'sticky' для темы, чтобы она "
+"всегда отображалась в начале списка тем?"
+
+#: templates/aa_forum/modals/forum/board/topic-change-sticky-state.html:39
+msgid "Unset Sticky"
+msgstr "Удалить свойство 'sticky'"
+
+#: templates/aa_forum/modals/forum/board/topic-change-sticky-state.html:42
+msgid "Make Sticky"
+msgstr "Установить свойство 'sticky'"
+
+#: templates/aa_forum/modals/forum/board/topic-delete.html:3
+#: templates/aa_forum/modals/forum/board/topic-delete.html:12
+#: templates/aa_forum/partials/forum/board/topic.html:97
+msgid "Delete Topic"
+msgstr "Удалить тему"
+
+#: templates/aa_forum/modals/forum/board/topic-delete.html:18
+msgid "Are you sure you want to delete this topic?"
+msgstr "Вы уверены, что хотите удалить эту тему?"
+
+#: templates/aa_forum/modals/forum/board/topic-delete.html:19
+msgid "This will also remove all messages in this topic."
+msgstr "Это также удалит все сообщения в этой теме."
+
+#: templates/aa_forum/modals/forum/topic/message-delete.html:17
+#: templates/aa_forum/modals/personal-messages/message-delete.html:17
+msgid "Are you sure you want to delete this message?"
+msgstr "Вы уверены, что хотите удалить это сообщение?"
+
+#: templates/aa_forum/modals/forum/topic/message-delete.html:18
+msgid ""
+"If this message is the original post, then the entire topic will be removed "
+"as well."
+msgstr ""
+"Если данное сообщение является началом темы, вся тема также будет удалена."
+
+#: templates/aa_forum/modals/personal-messages/message-delete.html:18
+msgid ""
+"If this message is the beginning of a conversation, all related messages "
+"will be removed as well."
+msgstr ""
+"Если данное сообщение является началом разговора, все сообщения разговора "
+"будут удалены."
+
+#: templates/aa_forum/partials/administration/board-loop.html:9
+msgid "Edit Board"
+msgstr "Редактировать доску"
+
+#: templates/aa_forum/partials/administration/board-loop.html:22
+msgid ""
+"Changing the name of this board does not change its URL part. This will "
+"remain the same to not break any possible links into this board."
+msgstr ""
+"Изменение названия доски не поменяет URL. Это позволит сохранить "
+"работоспособность всех ранее созданных ссылок на эту доску."
+
+#: templates/aa_forum/partials/administration/board-loop.html:44
+msgid "Change Board"
+msgstr "Сменить доску"
+
+#: templates/aa_forum/partials/administration/board-loop.html:56
+msgid "New Child Board"
+msgstr "Новая дочерняя доска"
+
+#: templates/aa_forum/partials/administration/board-loop.html:63
+#: templates/aa_forum/partials/administration/category-loop.html:62
+msgid ""
+"New boards will be added at the bottom of the board list for this category. "
+"You can move them via drag and drop to a position of your liking."
+msgstr ""
+"Новые доски будут добавлены в конец списка данной категории. В дальнейшем Вы "
+"сможете перетащить их на желаемую позицию."
+
+#: templates/aa_forum/partials/administration/board-loop.html:79
+#: templates/aa_forum/partials/administration/category-loop.html:75
+msgid "Create Board"
+msgstr "Создать доску"
+
+#: templates/aa_forum/partials/administration/categories.html:6
+msgid ""
+"Here you can create, modify and delete categories and boards. You also can "
+"change their order via drag and drop."
+msgstr ""
+"Здесь вы можете создавать, изменять и удалять категории и доски. Также можно "
+"менять порядок следования с помощью перетаскивания."
+
+#: templates/aa_forum/partials/administration/category-loop.html:11
+msgid "Edit Category"
+msgstr "Редактировать категорию"
+
+#: templates/aa_forum/partials/administration/category-loop.html:19
+msgid "Expand/Collapse Category"
+msgstr "Развернуть/свернуть категорию"
+
+#: templates/aa_forum/partials/administration/category-loop.html:31
+msgid ""
+"Changing the name of this category does not change its URL part. This will "
+"remain the same to not break any possible links into this category."
+msgstr ""
+"Изменение названия категории не поменяет URL. Это позволит сохранить "
+"работоспособность всех ранее созданных ссылок на эту категорию."
+
+#: templates/aa_forum/partials/administration/category-loop.html:44
+msgid "Change Category"
+msgstr "Сменить категорию"
+
+#: templates/aa_forum/partials/administration/category-loop.html:55
+msgid "New Board"
+msgstr "Новая доска"
+
+#: templates/aa_forum/partials/administration/new-category.html:7
+msgid "Create New Category"
+msgstr "Создать новую категорию"
+
+#: templates/aa_forum/partials/administration/new-category.html:16
+msgid "New Category"
+msgstr "Новая категория"
+
+#: templates/aa_forum/partials/administration/new-category.html:22
+msgid ""
+"New categories will be added at the bottom of the category list. You can "
+"move them via drag and drop to a position of your liking."
+msgstr ""
+"Новые категории будут добавлены в конец списка категорий. В дальнейшем Вы "
+"сможете перетащить их на желаемую позицию."
+
+#: templates/aa_forum/partials/administration/new-category.html:35
+msgid "Create Category"
+msgstr "Создать категорию"
+
+#: templates/aa_forum/partials/administration/settings-form.html:7
+#: templates/aa_forum/partials/menu/menu-admin.html:16
+msgid "Forum Settings"
+msgstr "Настройки форума"
+
+#: templates/aa_forum/partials/administration/settings-form.html:21
+#: templates/aa_forum/partials/profile/form.html:21
+msgid "Submit"
+msgstr "Отправить"
+
+#: templates/aa_forum/partials/breadcrumb.html:6
+msgid "Forum Index"
+msgstr "Индекс форума"
+
+#: templates/aa_forum/partials/breadcrumb.html:27
+#: templates/aa_forum/partials/forum/topic/message.html:49
+#: templates/aa_forum/partials/forum/topic/modify-message.html:7
+msgid "Modify Message"
+msgstr "Изменить сообщение"
+
+#: templates/aa_forum/partials/breadcrumb.html:34
+msgid "Start new topic"
+msgstr "Начать новую тему"
+
+#: templates/aa_forum/partials/breadcrumb.html:40
+msgid "Search"
+msgstr "Поиск"
+
+#: templates/aa_forum/partials/breadcrumb.html:43
+msgid "Search for:"
+msgstr "Искать:"
+
+#: templates/aa_forum/partials/form/required-field-hint.html:9
+msgid "Fields marked with an asterisk (*) are mandatory"
+msgstr "Поля, отмеченные (*) обязательны"
+
+#: templates/aa_forum/partials/forum/board/board-index.html:27
+msgid "No topics have been started in this board …"
+msgstr "Эта доска не содержит тем…"
+
+#: templates/aa_forum/partials/forum/board/board.html:34
+msgid "This board is restricted to the following group(s):"
+msgstr "К доске имеют доступ следующие группы:"
+
+#: templates/aa_forum/partials/forum/board/board.html:41
+msgid "Child Boards:"
+msgstr "Дочерние доски:"
+
+#: templates/aa_forum/partials/forum/board/board.html:50
+#: templates/aa_forum/partials/forum/board/topic.html:31
+msgid "New"
+msgstr "Новый"
+
+#: templates/aa_forum/partials/forum/board/board.html:60
+msgid "Posts"
+msgstr "Сообщения"
+
+#: templates/aa_forum/partials/forum/board/board.html:61
+msgid "Topics"
+msgstr "Темы"
+
+#: templates/aa_forum/partials/forum/board/board.html:65
+msgid "Unread"
+msgstr "Непрочитанные"
+
+#: templates/aa_forum/partials/forum/board/board.html:81
+msgid "Last post:"
+msgstr "Последнее сообщение:"
+
+#: templates/aa_forum/partials/forum/board/board.html:85
+#: templates/aa_forum/partials/forum/topic/message.html:25
+msgid "Re:"
+msgstr "Ответ на:"
+
+#: templates/aa_forum/partials/forum/board/board.html:92
+msgid "posted by:"
+msgstr "отправитель:"
+
+#: templates/aa_forum/partials/forum/board/board.html:93
+msgid "posted at:"
+msgstr "отправлено:"
+
+#: templates/aa_forum/partials/forum/board/new-topic-button.html:7
+msgid "New Topic"
+msgstr "Новая тема"
+
+#: templates/aa_forum/partials/forum/board/no-access.html:6
+msgid ""
+"You either don't have access to this board, or this board doesn't exist."
+msgstr "У Вас нет прав доступа к доске или доска не существует."
+
+#: templates/aa_forum/partials/forum/board/pagination.html:8
+#: templates/aa_forum/partials/forum/topic/pagination.html:10
+#: templates/aa_forum/partials/personal-messages/inbox/pagination.html:5
+#: templates/aa_forum/partials/personal-messages/sent-messages/pagination.html:5
+#: templates/aa_forum/partials/search/pagination.html:4
+msgid "Message Pagination"
+msgstr "Разбивка сообщения"
+
+#: templates/aa_forum/partials/forum/board/pagination.html:13
+#: templates/aa_forum/partials/forum/board/pagination.html:42
+#: templates/aa_forum/partials/forum/topic/pagination.html:15
+#: templates/aa_forum/partials/forum/topic/pagination.html:44
+#: templates/aa_forum/partials/personal-messages/inbox/pagination.html:10
+#: templates/aa_forum/partials/personal-messages/inbox/pagination.html:39
+#: templates/aa_forum/partials/personal-messages/sent-messages/pagination.html:10
+#: templates/aa_forum/partials/personal-messages/sent-messages/pagination.html:39
+#: templates/aa_forum/partials/search/pagination.html:9
+#: templates/aa_forum/partials/search/pagination.html:38
+msgid "First"
+msgstr "Первый"
+
+#: templates/aa_forum/partials/forum/board/pagination.html:20
+#: templates/aa_forum/partials/forum/board/pagination.html:24
+#: templates/aa_forum/partials/forum/board/pagination.html:46
+#: templates/aa_forum/partials/forum/topic/pagination.html:22
+#: templates/aa_forum/partials/forum/topic/pagination.html:26
+#: templates/aa_forum/partials/forum/topic/pagination.html:48
+#: templates/aa_forum/partials/personal-messages/inbox/pagination.html:17
+#: templates/aa_forum/partials/personal-messages/inbox/pagination.html:21
+#: templates/aa_forum/partials/personal-messages/inbox/pagination.html:43
+#: templates/aa_forum/partials/personal-messages/sent-messages/pagination.html:17
+#: templates/aa_forum/partials/personal-messages/sent-messages/pagination.html:21
+#: templates/aa_forum/partials/personal-messages/sent-messages/pagination.html:43
+#: templates/aa_forum/partials/search/pagination.html:16
+#: templates/aa_forum/partials/search/pagination.html:20
+#: templates/aa_forum/partials/search/pagination.html:42
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: templates/aa_forum/partials/forum/board/pagination.html:63
+#: templates/aa_forum/partials/forum/board/pagination.html:74
+#: templates/aa_forum/partials/forum/topic/pagination.html:65
+#: templates/aa_forum/partials/forum/topic/pagination.html:76
+#: templates/aa_forum/partials/personal-messages/inbox/pagination.html:60
+#: templates/aa_forum/partials/personal-messages/inbox/pagination.html:71
+#: templates/aa_forum/partials/personal-messages/sent-messages/pagination.html:60
+#: templates/aa_forum/partials/personal-messages/sent-messages/pagination.html:71
+#: templates/aa_forum/partials/search/pagination.html:59
+#: templates/aa_forum/partials/search/pagination.html:70
+msgid "Next"
+msgstr "Следующий"
+
+#: templates/aa_forum/partials/forum/board/pagination.html:69
+#: templates/aa_forum/partials/forum/board/pagination.html:78
+#: templates/aa_forum/partials/forum/topic/pagination.html:71
+#: templates/aa_forum/partials/forum/topic/pagination.html:80
+#: templates/aa_forum/partials/personal-messages/inbox/pagination.html:66
+#: templates/aa_forum/partials/personal-messages/inbox/pagination.html:75
+#: templates/aa_forum/partials/personal-messages/sent-messages/pagination.html:66
+#: templates/aa_forum/partials/personal-messages/sent-messages/pagination.html:75
+#: templates/aa_forum/partials/search/pagination.html:65
+#: templates/aa_forum/partials/search/pagination.html:74
+msgid "Last"
+msgstr "Последний"
+
+#: templates/aa_forum/partials/forum/board/topic.html:38
+msgid "Topic Is Always on Top"
+msgstr "Тема всегда в начале"
+
+#: templates/aa_forum/partials/forum/board/topic.html:44
+msgid "Topic Is Locked"
+msgstr "Тема закрыта"
+
+#: templates/aa_forum/partials/forum/board/topic.html:48
+msgid "Started by"
+msgstr "Запущена"
+
+#: templates/aa_forum/partials/forum/board/topic.html:59
+#: templates/aa_forum/partials/forum/board/topic.html:62
+msgid "Replies"
+msgstr "Ответы"
+
+#: templates/aa_forum/partials/forum/board/topic.html:69
+msgid "Last post"
+msgstr "Последнее сообщение"
+
+#: templates/aa_forum/partials/forum/board/topic.html:71
+msgid "Go to Last Message"
+msgstr "Перейти к последнему сообщению"
+
+#: templates/aa_forum/partials/forum/board/topic.html:93
+msgid "Change Topics Sticky State"
+msgstr "Изменить свойство Sticky для темы"
+
+#: templates/aa_forum/partials/forum/mark-unread-button.html:7
+#: templates/aa_forum/partials/forum/unread-topic-buttons.html:12
+msgid "Mark all topics as read"
+msgstr "Отметить все темы как прочитанные"
+
+#: templates/aa_forum/partials/forum/topic/message.html:38
+msgid "Copy Message Link to Clipboard"
+msgstr "Скопировать ссылку на сообщение в буфер обмена"
+
+#: templates/aa_forum/partials/forum/topic/message.html:81
+msgid "Last Modified:"
+msgstr "Изменено:"
+
+#: templates/aa_forum/partials/forum/topic/modify-message.html:14
+#: templates/aa_forum/partials/forum/topic/reply.html:14
+msgid ""
+"Note: You are not on the last page of this topic and may miss the most "
+"recent replies."
+msgstr ""
+"Примечание: Вы не на последней странице темы и могли пропустить свежие "
+"ответы."
+
+#: templates/aa_forum/partials/forum/topic/modify-message.html:27
+#: templates/aa_forum/partials/forum/topic/modify-topic.html:21
+msgid "Modify"
+msgstr "Изменить"
+
+#: templates/aa_forum/partials/forum/topic/modify-topic.html:7
+msgid "Modify Topic"
+msgstr "Изменить тему"
+
+#: templates/aa_forum/partials/forum/topic/reply.html:20
+msgid "Warning: this topic is locked! Only admins can reply."
+msgstr "Внимание: эта тема закрыта! Отвечать могут только админы."
+
+#: templates/aa_forum/partials/forum/topic/reply.html:33
+#: templates/aa_forum/view/forum/new-topic.html:32
+msgid "Clear Form"
+msgstr "Очистить форму"
+
+#: templates/aa_forum/partials/forum/unread-topic-buttons.html:7
+msgid "Show all unread topics"
+msgstr "Показать все непрочитанные темы"
+
+#: templates/aa_forum/partials/menu.html:8
+msgid "Toggle navigation"
+msgstr "Переключить навигацию"
+
+#: templates/aa_forum/partials/menu/menu-admin.html:8
+msgid "Administration"
+msgstr "Администрирование"
+
+#: templates/aa_forum/partials/menu/menu-admin.html:12
+msgid "Categories and Boards"
+msgstr "Категории и доски"
+
+#: templates/aa_forum/partials/menu/menu-user.html:6
+msgid "Profile"
+msgstr "Профиль"
+
+#: templates/aa_forum/partials/menu/menu-user.html:11
+#: templates/aa_forum/partials/personal-messages/sidebar.html:9
+msgid "Messages"
+msgstr "Сообщения"
+
+#: templates/aa_forum/partials/personal-messages/inbox/messages.html:10
+#: templates/aa_forum/partials/personal-messages/sidebar.html:23
+msgid "Inbox"
+msgstr "Входящие"
+
+#: templates/aa_forum/partials/personal-messages/inbox/messages.html:18
+#: templates/aa_forum/partials/personal-messages/sent-messages/messages.html:18
+msgid "Date"
+msgstr "Дата"
+
+#: templates/aa_forum/partials/personal-messages/inbox/messages.html:22
+msgid "Sender"
+msgstr "Отправитель"
+
+#: templates/aa_forum/partials/personal-messages/inbox/messages.html:62
+#: templates/aa_forum/partials/personal-messages/sent-messages/messages.html:56
+msgid "Read Message"
+msgstr "Прочитать сообщение"
+
+#: templates/aa_forum/partials/personal-messages/inbox/messages.html:87
+msgid "No personal messages"
+msgstr "Нет личных сообщений"
+
+#: templates/aa_forum/partials/personal-messages/new-message/form.html:8
+msgid "New Personal Message"
+msgstr "Новое личное сообщение"
+
+#: templates/aa_forum/partials/personal-messages/new-message/form.html:23
+msgid "Send Message"
+msgstr "Отправить сообщение"
+
+#: templates/aa_forum/partials/personal-messages/reply-message/form.html:8
+msgid "Reply to:"
+msgstr "Кому:"
+
+#: templates/aa_forum/partials/personal-messages/reply-message/form.html:24
+msgid "Send Reply"
+msgstr "Ответить"
+
+#: templates/aa_forum/partials/personal-messages/sent-messages/messages.html:10
+#: templates/aa_forum/partials/personal-messages/sidebar.html:30
+msgid "Sent Messages"
+msgstr "Отправить сообщения"
+
+#: templates/aa_forum/partials/personal-messages/sent-messages/messages.html:81
+msgid "No personal messages sent"
+msgstr "Нет отправленных личных сообщений"
+
+#: templates/aa_forum/partials/personal-messages/sidebar.html:17
+msgid "New Message"
+msgstr "Новое сообщение"
+
+#: templates/aa_forum/partials/profile/form.html:7
+msgid "User Profile"
+msgstr "Профиль пользователя"
+
+#: templates/aa_forum/partials/search/search-form.html:7
+msgid "Search …"
+msgstr "Поиск…"
+
+#: templates/aa_forum/view/administration/categories-and-boards.html:5
+msgid "Forum (Administration » Categories and Boards)"
+msgstr "Форум (Администрирование » Категории и доски)"
+
+#: templates/aa_forum/view/administration/forum-settings.html:5
+msgid "Forum (Administration » Forum Settings)"
+msgstr "Форум (Администрирование » Настройки)"
+
+#: templates/aa_forum/view/forum/index.html:26
+msgid "New posts"
+msgstr "Новые сообщения"
+
+#: templates/aa_forum/view/forum/index.html:35
+msgid "No new posts"
+msgstr "Нет новых сообщений"
+
+#: templates/aa_forum/view/forum/modify-message.html:5
+msgid "Modify Message » Forum"
+msgstr "Изменить сообщение » Форум"
+
+#: templates/aa_forum/view/forum/modify-topic.html:5
+msgid "Modify Topic » Forum"
+msgstr "Изменить тему » Форум"
+
+#: templates/aa_forum/view/forum/new-topic.html:6
+msgid "New Topic » Forum"
+msgstr "Новая тема » Форум"
+
+#: templates/aa_forum/view/forum/new-topic.html:17
+msgid "Start new topic in"
+msgstr "Начать новую тему в"
+
+#: templates/aa_forum/view/forum/new-topic.html:33
+msgid "Start Topic"
+msgstr "Начать тему"
+
+#: templates/aa_forum/view/forum/topic.html:23
+msgid "Modify Topic Subject"
+msgstr "Изменить заголовок темы"
+
+#: templates/aa_forum/view/forum/unread-topics.html:5
+msgid "Unread Topics » Forum"
+msgstr "Непрочитанные темы » Форум"
+
+#: templates/aa_forum/view/forum/unread-topics.html:11
+msgid "Unread Topics"
+msgstr "Непрочитанные темы"
+
+#: templates/aa_forum/view/forum/unread-topics.html:26
+msgid "You have no unread topics …"
+msgstr "У Вас нет непрочитанных тем…"
+
+#: templates/aa_forum/view/personal-messages/inbox.html:7
+msgid "Forum (Personal Messages » Inbox)"
+msgstr "Форум (Персональные сообщения » Входящие)"
+
+#: templates/aa_forum/view/personal-messages/new-message.html:7
+msgid "Forum (Personal Messages » New)"
+msgstr "Форум (Персональные Сообщения » Новые)"
+
+#: templates/aa_forum/view/personal-messages/new-message.html:34
+msgid "Enter the recipients name"
+msgstr "Введите имя получателя"
+
+#: templates/aa_forum/view/personal-messages/reply-message.html:7
+msgid "Forum (Personal Messages » Reply)"
+msgstr "Форум (Персональные Сообщения » Ответы)"
+
+#: templates/aa_forum/view/personal-messages/sent-messages.html:7
+msgid "Forum (Personal Messages » Sent Messages)"
+msgstr "Форум (Персональные Сообщения » Отправленные сообщения)"
+
+#: templates/aa_forum/view/profile/index.html:7
+msgid "Forum (Profile)"
+msgstr "Форум (Профиль)"
+
+#: templates/aa_forum/view/search/results.html:5
+msgid "Search Results » Forum"
+msgstr "Результаты поиска » Форум"
+
+#: templates/aa_forum/view/search/results.html:17
+msgid "Result(s)"
+msgstr "Результаты"
+
+#: templates/aa_forum/view/search/results.html:27
+msgid "Nothing found …"
+msgstr "Ничего не найдено…"
+
+#: templatetags/aa_forum_datetime.py:56
+msgid "Timezone Conversion"
+msgstr "Преобразование временной зоны"
+
+#: views/admin.py:160
+msgid "<h4>Success!</h4><p>Category created.</p>"
+msgstr "<h4>Успех!</h4><p>Категория создана.</p>"
+
+#: views/admin.py:198
+#, python-brace-format
+msgid ""
+"<h4>Success!</h4><p>Category name changed from \"{category_name_old}\" to "
+"\"{category.name}\".</p>"
+msgstr ""
+"<h4>Успех!</h4><p>Имя категории изменено с \"{category_name_old}\" на \""
+"{category.name}\".</p>"
+
+#: views/admin.py:234
+#, python-brace-format
+msgid "<h4>Success!</h4><p>Category \"{category_name}\" removed.</p>"
+msgstr "<h4>Успех!</h4><p>Категория \"{category_name}\" удалена.</p>"
+
+#: views/admin.py:285 views/admin.py:336
+#, python-brace-format
+msgid "<h4>Success!</h4><p>Board \"{new_board.name}\" created.</p>"
+msgstr "<h4>Успех!</h4><p>Доска \"{new_board.name}\" создана.</p>"
+
+#: views/admin.py:387
+#, python-brace-format
+msgid "<h4>Success!</h4><p>Board \"{board.name}\" changed.</p>"
+msgstr "<h4>Успех!</h4><p>Доска \"{board.name}\" изменена.</p>"
+
+#: views/admin.py:422
+#, python-brace-format
+msgid "<h4>Success!</h4><p>Board \"{board_name}\" removed.</p>"
+msgstr "<h4>Успех!</h4><p>Доска \"{board_name}\" удалена.</p>"
+
+#: views/admin.py:519
+msgid "<h4>Success!</h4><p>Settings updated.</p>"
+msgstr "<h4>Успех!</h4><p>Настройки обновлены.</p>"
+
+#: views/admin.py:528 views/personal_messages.py:106
+#: views/personal_messages.py:219 views/profile.py:65
+msgid "<h4>Error!</h4><p>Something went wrong, please check your input.</p>"
+msgstr "<h4>Ошибка!</h4><p>Что-то сломалось, проверьте введенные данные.</p>"
+
+#: views/forum.py:210
+msgid ""
+"<h4>Error!</h4><p>The board you were trying to visit does either not exist, "
+"or you don't have access to it.</p>"
+msgstr ""
+"<h4>Ошибка!</h4><p>Доска, на которую вы пытаетесь попасть, не существует или "
+"Вам не доступна.</p>"
+
+#: views/forum.py:262
+msgid ""
+"<h4>Error!</h4><p>The category you were trying to post in does not exist.</p>"
+msgstr ""
+"<h4>Ошибка!</h4><p>Категория, в которую в попытались написать, не "
+"существует.</p>"
+
+#: views/forum.py:287
+msgid ""
+"<h4>Error!</h4><p>The board you were trying to post in does either not "
+"exist, or you don't have access to it.</p>"
+msgstr ""
+"<h4>Ошибка!</h4><p>Доска, на которую вы пытаетесь написать, не существует "
+"или Вам не доступна.</p>"
+
+#: views/forum.py:305
+msgid ""
+"<h4>Error!</h4><p>The board you were trying to post in is an Announcement "
+"Board and you don't have the permissions to start a topic there.</p>"
+msgstr ""
+"<h4>Ошибка!</h4><p>Доска, на которую вы пытаетесь написать, - это доска "
+"объявлений и у вас нет прав начинать тему там.</p>"
+
+#: views/forum.py:352
+#, python-brace-format
+msgid ""
+"<h4>Warning!</h4><p>There is already a topic with the exact same subject in "
+"this board.</p><p>See here: <a href=\"{existing_topic_url}\">{existing_topic."
+"subject}</a></p>"
+msgstr ""
+"<h4>Предупреждение!</h4><p>На доске уже есть тема с таким же "
+"названием.</p><p>См.: <a href=\"{existing_topic_url}\">{existing_topic."
+"subject}</a></p>"
+
+#: views/forum.py:399
+msgid ""
+"<h4>Error!</h4><p>Either subject or message is missing. Please make sure you "
+"enter both fields, as both fields are mandatory.</p>"
+msgstr ""
+"<h4>Ошибка!</h4><p>Отсутствует название или текст сообщения. Заполните оба "
+"поля.</p>"
+
+#: views/forum.py:448 views/forum.py:659
+msgid ""
+"<h4>Error!</h4><p>The topic you were trying to view does not exist or you do "
+"not have access to it.</p>"
+msgstr ""
+"<h4>Ошибка!</h4><p>Тема, которую вы пытаетесь посмотреть, не существует или "
+"Вам не доступна.</p>"
+
+#: views/forum.py:539
+msgid ""
+"<h4>Error!</h4><p>The topic you were trying to modify does not exist or you "
+"do not have access to it.</p>"
+msgstr ""
+"<h4>Ошибка!</h4><p>Тема, которую вы пытаетесь изменить, не существует или "
+"Вам не доступна.</p>"
+
+#: views/forum.py:559
+msgid "<h4>Error!</h4><p>You are not allowed to modify this topic!</p>"
+msgstr "<h4>Ошибка!</h4><p>Вам не разрешается изменять эту тему!</p>"
+
+#: views/forum.py:588
+msgid "<h4>Success!</h4><p>The topic subject has been updated.</p>"
+msgstr "<h4>Успех!</h4><p>Название темы изменено.</p>"
+
+#: views/forum.py:772
+msgid ""
+"<h4>Error!</h4><p>The topic you were trying to reply does not exist or you "
+"do not have access to it.</p>"
+msgstr ""
+"<h4>Ошибка!</h4><p>Тема, в которой вы пытаетесь ответить, не существует или "
+"Вам не доступна.</p>"
+
+#: views/forum.py:823
+msgid "<h4>Error!</h4><p>Message field is mandatory and cannot be empty.</p>"
+msgstr ""
+"<h4>Ошибка!</h4><p>Текст сообщения должен присутствовать и не может быть "
+"пустым.</p>"
+
+#: views/forum.py:832
+msgid "<h4>Error!</h4><p>Something went wrong, please try again.</p>"
+msgstr "<h4>Ошибка!</h4><p>Что-то пошло не так, попробуйте еще раз.</p>"
+
+#: views/forum.py:863
+#, python-brace-format
+msgid "<h4>Success!</h4><p>Topic \"{topic}\" has been unlocked/re-opened.</p>"
+msgstr "<h4>Успех!</h4><p>Тема \"{topic}\" была открыта.</p>"
+
+#: views/forum.py:875
+#, python-brace-format
+msgid "<h4>Success!</h4><p>Topic \"{topic}\" has been locked/closed.</p>"
+msgstr "<h4>Успех!</h4><p>Тема \"{topic}\" была закрыта.</p>"
+
+#: views/forum.py:909
+#, python-brace-format
+msgid "<h4>Success!</h4><p>Topic \"{topic}\" is no longer \"Sticky\".</p>"
+msgstr "<h4>Успех!</h4><p>Тема \"{topic}\" больше не \"Sticky\".</p>"
+
+#: views/forum.py:919
+#, python-brace-format
+msgid "<h4>Success!</h4><p>Topic \"{topic}\" is now \"Sticky\".</p>"
+msgstr "<h4>Успех!</h4><p>Тема \"{topic}\" теперь \"Sticky\".</p>"
+
+#: views/forum.py:951
+#, python-brace-format
+msgid "<h4>Success!</h4><p>Topic \"{topic_subject}\" removed.</p>"
+msgstr "<h4>Успех!</h4><p>Тема \"{topic_subject}\" удалена.</p>"
+
+#: views/forum.py:985
+msgid "<h4>Error!</h4><p>The message doesn't exist.</p>"
+msgstr "<h4>Ошибка!</h4><p>Сообщение не существует.</p>"
+
+#: views/forum.py:1028
+msgid ""
+"<h4>Error!</h4><p>The message you were trying to modify does either not "
+"exist, or you don't have access to it.</p>"
+msgstr ""
+"<h4>Ошибка!</h4><p>Сообщение, которое Вы пытаетесь изменить, не существует "
+"или Вам не доступно.</p>"
+
+#: views/forum.py:1049
+msgid "<h4>Error!</h4><p>You are not allowed to modify this message!</p>"
+msgstr "<h4>Ошибка!</h4><p>Вам не разрешается изменять это сообщение!</p>"
+
+#: views/forum.py:1073
+msgid "<h4>Success!</h4><p>The message has been updated.</p>"
+msgstr "<h4>Успех!</h4><p>Сообщение изменено.</p>"
+
+#: views/forum.py:1092
+msgid "<h4>Error!</h4><p>Mandatory form field is empty.</p>"
+msgstr "<h4>Ошибка!</h4><p>Необходимые поля формы не заполнены.</p>"
+
+#: views/forum.py:1172
+msgid "<h4>Error!</h4><p>You are not allowed to delete this message!</p>"
+msgstr "<h4>Ошибка!</h4><p>Вам не разрешается удалять это сообщение!</p>"
+
+#: views/forum.py:1196
+msgid "<h4>Success!</h4><p>The message has been deleted.</p>"
+msgstr "<h4>Успех!</h4><p>Сообщение удалено.</p>"
+
+#: views/forum.py:1218
+msgid ""
+"<h4>Success!</h4><p>The message has been deleted.</p><p>This was the topics "
+"opening post, so the topic has been deleted as well.</p>"
+msgstr ""
+"<h4>Успех!</h4><p>Сообщение удалено.</p><p>Это было стартовое сообщение "
+"темы, так что вся тема также удалена.</p>"
+
+#: views/personal_messages.py:96
+#, python-brace-format
+msgid "<h4>Success!</h4><p>Message to {recipient_main_char} sent.</p>"
+msgstr ""
+"<h4>Успех!</h4><p>Сообщение пользователю \"{recipient_main_char}\" "
+"отправлено.</p>"
+
+#: views/personal_messages.py:171
+msgid ""
+"<h4>Error!</h4><p>The message you were trying to reply to does either not "
+"exist or you are not the recipient.</p>"
+msgstr ""
+"<h4>Ошибка!</h4><p>Сообщение, на которое Вы пытаетесь ответить, не "
+"существует или Вы не являетесь получателем.</p>"
+
+#: views/personal_messages.py:208
+#, python-brace-format
+msgid "<h4>Success!</h4><p>Reply to {recipient_main_char} sent.</p>"
+msgstr ""
+"<h4>Успех!</h4><p>Ответ пользователю \"{recipient_main_char}\" отправлен.</p>"
+
+#: views/personal_messages.py:259 views/personal_messages.py:294
+msgid ""
+"<h4>Error!</h4><p>The message you tried to remove does either not exist or "
+"is not yours to remove.</p>"
+msgstr ""
+"<h4>Ошибка!</h4><p>Сообщение, которое Вы пытаетесь удалить, не существует "
+"или оно не Ваше.</p>"
+
+#: views/personal_messages.py:275
+msgid "<h4>Success!</h4><p>Message removed from your inbox.</p>"
+msgstr "<h4>Успех!</h4><p>Сообщение удалено из входящих.</p>"
+
+#: views/personal_messages.py:311
+msgid ""
+"<h4>Success!</h4><p>Message has been removed from your sent messages.</p>"
+msgstr "<h4>Успех!</h4><p>Сообщение удалено из отправленных.</p>"
+
+#: views/personal_messages.py:326
+msgid "<h4>Error!</h4><p>Something went wrong.</p>"
+msgstr "<h4>Упс!</h4><p>Что-то пошло не так!</p>"
+
+#: views/profile.py:56
+msgid "<h4>Success!</h4><p>Profile saved.</p>"
+msgstr "<h4>Успех!</h4><p>Профиль сохранен.</p>"
