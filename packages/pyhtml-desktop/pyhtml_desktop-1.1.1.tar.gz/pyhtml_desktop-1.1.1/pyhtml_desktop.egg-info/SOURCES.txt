@@ -1,0 +1,5 @@
+setup.py
+pyhtml_desktop.egg-info/PKG-INFO
+pyhtml_desktop.egg-info/SOURCES.txt
+pyhtml_desktop.egg-info/dependency_links.txt
+pyhtml_desktop.egg-info/top_level.txt
