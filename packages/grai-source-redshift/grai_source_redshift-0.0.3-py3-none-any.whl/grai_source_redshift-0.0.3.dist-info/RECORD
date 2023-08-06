@@ -1,0 +1,9 @@
+grai_source_redshift/__init__.py,sha256=g6zmc9S_gCBn0z-bsctq9PjpcrRQrCWloBGqO6Tqdc8,145
+grai_source_redshift/adapters.py,sha256=-yMJK7qR46TXgLPNRN25RQlcLQhsxHkDw9PestTb0Sg,6562
+grai_source_redshift/base.py,sha256=xtelTpeZ0RPdj6ptHgiThNie0GGt67zgFKNN-T6TG0Q,1185
+grai_source_redshift/loader.py,sha256=hiY9n1ckXJ4E366v3xxbtjwO4Q7l-7AkmCDd0lkOlQo,7181
+grai_source_redshift/models.py,sha256=0-5LQeCFA1m1nNnh9RJii4nOIPHE7O15EWIvFCWpiEo,4369
+grai_source_redshift/package_definitions.py,sha256=-sbHAajUY-udaLK1DHmVfQrw-22eUb44YGf-BadUUs8,186
+grai_source_redshift-0.0.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+grai_source_redshift-0.0.3.dist-info/METADATA,sha256=U_kw6CSQzbdILUh8qDDw7XxkZtFozPTE0K3ntuJFVx0,698
+grai_source_redshift-0.0.3.dist-info/RECORD,,
