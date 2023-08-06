@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_cme_api_clients.egg-info/PKG-INFO
+yandex_cme_api_clients.egg-info/SOURCES.txt
+yandex_cme_api_clients.egg-info/dependency_links.txt
+yandex_cme_api_clients.egg-info/top_level.txt
