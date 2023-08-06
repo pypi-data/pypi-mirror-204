@@ -1,0 +1,4 @@
+requests==2.28.2
+
+[docs]
+sphinx==5.3.0
