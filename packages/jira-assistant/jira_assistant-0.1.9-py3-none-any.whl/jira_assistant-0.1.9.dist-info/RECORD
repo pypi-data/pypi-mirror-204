@@ -1,0 +1,17 @@
+jira_assistant/__init__.py,sha256=cYMsRpHJuSwSxr_idoy8MqcdWK4xgokOD1AjTwJCWpo,1076
+jira_assistant/console_script.py,sha256=a4avcHeA2o6GFEUy-i8iV9l09kUnsiv9nLn-jLkUpiQ,10334
+jira_assistant/excel_definition.py,sha256=vtTkaBoi_xQVikeUldzWXTWcf5ok_n36H3z9zbFs1nU,24102
+jira_assistant/excel_operation.py,sha256=jKBjrjsATX25mCTFsdc-wbx2MpBj3zbUU-8b8vylsLs,15971
+jira_assistant/jira_client.py,sha256=LmJtBLrGgjw7GOrrpjBM5tiC9fihosgtyTBabcxc_3Q,3835
+jira_assistant/milestone.py,sha256=ow3uCghqItlI7U_pP078rGthAVKwebvs3aiwNcnkAr8,1792
+jira_assistant/priority.py,sha256=jVze3PvYf95kJn5AVNLYhgFtUxAsc7-V-kV7A3M3yV4,2919
+jira_assistant/sprint_schedule.py,sha256=dwAss9AOO_6ILZNO8XgNyWiIADtPuWZG-sGE8ojlDdg,2449
+jira_assistant/story.py,sha256=SPXqogRqVgPf0VJ5PmcoK7ooxewPQ1A8cZa4VjSuaeg,16656
+jira_assistant/assets/excel_definition.json,sha256=9F8RssTe73sLrIIr7bCygoSMl_hIgWufdOD9IEUesJA,11855
+jira_assistant/assets/sprint_schedule.json,sha256=swZMz6G60F1XKihUNq83gvEFKA-eg_BH1RFVPEhWvd0,2795
+jira_assistant-0.1.9.dist-info/LICENSE,sha256=nXbAt-GvTI5apu0HPxP9-DUn5lC5htgrsJmambMQnBM,1066
+jira_assistant-0.1.9.dist-info/METADATA,sha256=PZeoJHuj9SD64p19QX41UPkEiGLVTE5GrLeJFTd8JAc,12116
+jira_assistant-0.1.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+jira_assistant-0.1.9.dist-info/entry_points.txt,sha256=NU_5-jOhXWnifWAtgNUnI5KhzuDZYL8rKpES2JUV3wk,177
+jira_assistant-0.1.9.dist-info/top_level.txt,sha256=H8xGp2QnHmuz89bPdY92S6nSc-1B6vHtzISezHOiR9Q,15
+jira_assistant-0.1.9.dist-info/RECORD,,
