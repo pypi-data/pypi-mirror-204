@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: funman-dreal
+Version: 1.5.0
+Summary: Functional Model Analysis Tool - DReal Package
+Home-page: 
+Author: Dan Bryce
+Author-email: dbryce@sift.net
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: funman
+Requires-Dist: docker
+Requires-Dist: tenacity
+Requires-Dist: pyparsing
+Provides-Extra: dreal
+Requires-Dist: dreal ; extra == 'dreal'
+
+# FUNMAN dreal
+A package for FUNMAN-dreal interaction 
