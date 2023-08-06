@@ -1,0 +1,134 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0/win-x86",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {},
+    ".NETCoreApp,Version=v7.0/win-x86": {
+      "RoboSAPiens/1.1.1": {
+        "dependencies": {
+          "CsvHelper": "27.2.1",
+          "Horizon.XmlRpc.Server": "2.5.0",
+          "SAP.GUI.Scripting.net": "1.0.1",
+          "System.Drawing.Common": "6.0.0"
+        },
+        "runtime": {
+          "RoboSAPiens.dll": {}
+        }
+      },
+      "CsvHelper/27.2.1": {
+        "runtime": {
+          "lib/net6.0/CsvHelper.dll": {
+            "assemblyVersion": "27.0.0.0",
+            "fileVersion": "27.2.1.0"
+          }
+        }
+      },
+      "Horizon.XmlRpc.Core/2.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/Horizon.XmlRpc.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard2.0/System.ComponentModel.Composition.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26419.2"
+          }
+        }
+      },
+      "Horizon.XmlRpc.Server/2.5.0": {
+        "dependencies": {
+          "Horizon.XmlRpc.Core": "2.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Horizon.XmlRpc.Server.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/6.0.0": {
+        "runtime": {
+          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "SAP.GUI.Scripting.net/1.0.1": {
+        "runtime": {
+          "lib/net/sapfewse.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/net/saprotwr.net.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "System.Drawing.Common/6.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "6.0.0"
+        },
+        "runtime": {
+          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RoboSAPiens/1.1.1": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CsvHelper/27.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uS5ix5hL9gL5taiAG//CScyJa8Fn1ZOh3FDhDvf4laboESFs84mCNropfp7PIt8xCkyQofljFpqu1B5UnSXjyA==",
+      "path": "csvhelper/27.2.1",
+      "hashPath": "csvhelper.27.2.1.nupkg.sha512"
+    },
+    "Horizon.XmlRpc.Core/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V2+g1zQxI75mISo9Da5rFcSI4xNpJgHMPiKtuznFfR8nCE70OKL+tbYZPzMkXcWLcTYiAAluzrwYcOuGcoucWg==",
+      "path": "horizon.xmlrpc.core/2.5.0",
+      "hashPath": "horizon.xmlrpc.core.2.5.0.nupkg.sha512"
+    },
+    "Horizon.XmlRpc.Server/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A2aGS6CmOngl4w2S2FEH7Eel0mSUPBx1HVw4AjZJdhuOIhNKW7LTq+0Jyg0mgycjccIOp1raI2HPoVV0I0CXJQ==",
+      "path": "horizon.xmlrpc.server/2.5.0",
+      "hashPath": "horizon.xmlrpc.server.2.5.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
+      "path": "microsoft.win32.systemevents/6.0.0",
+      "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
+    },
+    "SAP.GUI.Scripting.net/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5QZgJH9RRlvEkVzEiLEBV32Fw3u37pmfLINVvW1u7KkjjdYwvkktWRz0DmwyselokiYK7nz5brCctukjUOIpPQ==",
+      "path": "sap.gui.scripting.net/1.0.1",
+      "hashPath": "sap.gui.scripting.net.1.0.1.nupkg.sha512"
+    },
+    "System.Drawing.Common/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
+      "path": "system.drawing.common/6.0.0",
+      "hashPath": "system.drawing.common.6.0.0.nupkg.sha512"
+    }
+  }
+}
