@@ -1,0 +1,10 @@
+aws_cdk/aws_cognito/__init__.py,sha256=Jk552fzICRomwdREVmaOgVNGHBZ5X7wi8RdS9ALAD-A,1180183
+aws_cdk/aws_cognito/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_cognito/_jsii/__init__.py,sha256=CHgZ5nbFQNYy43-L2knA1NLabZ4ti7seIqFJiHsb1Tw,579
+aws_cdk/aws_cognito/_jsii/aws-cognito@1.199.0.jsii.tgz,sha256=Mtvg6LK89U7dvTUH8iA1AH8yYqE9yJhLgJwH4nt-5Do,438322
+aws_cdk.aws_cognito-1.199.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_cognito-1.199.0.dist-info/METADATA,sha256=L7C9qzOv0S8RmQp5mcksZ-4tOo9NsSUBYnKssxFNjTo,37141
+aws_cdk.aws_cognito-1.199.0.dist-info/NOTICE,sha256=aT5eQA5i82ji6qbxhzUrrtjTIubpJ0hJVp3kWhwRHVg,1410
+aws_cdk.aws_cognito-1.199.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_cdk.aws_cognito-1.199.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_cognito-1.199.0.dist-info/RECORD,,
