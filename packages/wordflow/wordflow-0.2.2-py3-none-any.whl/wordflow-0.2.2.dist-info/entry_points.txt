@@ -1,0 +1,12 @@
+[console_scripts]
+count=wordflow.cli.count:main
+equal=wordflow.cli.equal:main
+frequency=wordflow.cli.frequency:main
+length=wordflow.cli.length:main
+lessthan=wordflow.cli.lessthan:main
+match=wordflow.cli.match:main
+order=wordflow.cli.order:main
+pluck=wordflow.cli.pluck:main
+put=wordflow.cli.put:main
+unique=wordflow.cli.unique:main
+
