@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: stdlibby-py
+Version: 0.5.10
+Summary: 
+Author: 00il
+Author-email: git@00il.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aioconsole (>=0.6.1,<0.7.0)
+Requires-Dist: inquirer (>=3.1.3,<4.0.0)
+Requires-Dist: orjson (>=3.8.9,<4.0.0)
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Intent
+A collection of my frequently rewritten or ignored functionality.
+Generally tries to just use the standard library, so any 3rd-party libraries need to prove their worth
+
+# Assumptions
+## >= 3.10 Python
+## Type Everything
+
+# Submodules
+## Ndjson
+Basic functions for working with ndjson, a newline-delimited list of json objects
+Useful for appending data to
+## Utils
+## Api
+## Cly
+Library for Extremely Easy CLI apps
+## Datetime
+Some date and time based helper functions
+## Errors
+All errors for the submodules
+## Sqlite
+
