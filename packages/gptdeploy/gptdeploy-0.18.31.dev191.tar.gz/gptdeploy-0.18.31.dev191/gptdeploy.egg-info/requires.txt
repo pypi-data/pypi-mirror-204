@@ -1,0 +1,8 @@
+click
+jcloud
+jina
+jina-hubble-sdk
+langchain
+openai
+psutil
+streamlit
