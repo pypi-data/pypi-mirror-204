@@ -1,0 +1,10 @@
+README.md
+setup.py
+cpppackageAnuja.egg-info/PKG-INFO
+cpppackageAnuja.egg-info/SOURCES.txt
+cpppackageAnuja.egg-info/dependency_links.txt
+cpppackageAnuja.egg-info/requires.txt
+cpppackageAnuja.egg-info/top_level.txt
+django_pdf_generator/__init__.py
+django_pdf_generator/pdf_generator.py
+django_pdf_generator/string_conversion.py
