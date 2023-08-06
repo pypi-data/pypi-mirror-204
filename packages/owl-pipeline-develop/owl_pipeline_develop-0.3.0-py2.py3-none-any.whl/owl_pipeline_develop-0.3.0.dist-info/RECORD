@@ -1,0 +1,8 @@
+owl_dev/__init__.py,sha256=wKng8Z1O7JSmA67mvg_rCaT88elUzw2NOCiTFJ48ciQ,2641
+owl_dev/logging.py,sha256=8ejr5jq2TwoFIXMamAlrH1gypXykx5Ip3U-920WtYLA,60
+owl_dev/database/__init__.py,sha256=ZNBA2Q-dWEKBHJWryrFSjx2uzTw1WMbe3bbM-kX0Dus,827
+owl_dev/database/model.py,sha256=uc1VODj0S8Toi2YpHI9zLdnRDRZKmhcmlKeaiJhucyU,371
+owl_pipeline_develop-0.3.0.dist-info/METADATA,sha256=8uj4LQFhAeQWxMWzZ88sRhChKr52l-ufdm5abPR7egA,1008
+owl_pipeline_develop-0.3.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+owl_pipeline_develop-0.3.0.dist-info/top_level.txt,sha256=esxXU0yZ9l69Jf-LddnOS66c5WlJS5kTm2cv_AuYOM8,8
+owl_pipeline_develop-0.3.0.dist-info/RECORD,,
