@@ -1,0 +1,12 @@
+lecture_automator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lecture_automator/cli.py,sha256=AVxjCevrrnF8fWzrmSpDAqXHEtJc87DOiDIjvdqRV-A,1273
+lecture_automator/command_handler.py,sha256=lhYtUgRhH_IfTxPbo_0XrhxjRxzfQBuKnW93YMpQPIA,1393
+lecture_automator/gen_speech.py,sha256=3P0eoWvjAqXXywKkee5aG2YG7HfQ4C_7peDVqy9ywGE,1934
+lecture_automator/gen_video.py,sha256=GpTOwRiYO64WZPfQCxABd-gV3pUgl7CgqRpr1IxdayU,1995
+lecture_automator/marp_api.py,sha256=j1bcuX4hgr0tsvbyF6NzrwP88LwajybktYNBRabKJwU,1089
+lecture_automator/parser.py,sha256=0bCnMMZd52rPFgFCNdHFCvvzPOFzz-YkKpYwnkvU1FY,4492
+lecture_automator/settings.py,sha256=xbervFxiz-0Ac7Owz5_Of6wQONhs3IzlKHniAxO3vF0,192
+lecture_automator-0.2.0.dist-info/entry_points.txt,sha256=3dgo-tX4-NCNLLBdIJxlzobdt1qdip5zj3cCbauieLE,77
+lecture_automator-0.2.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+lecture_automator-0.2.0.dist-info/METADATA,sha256=hBlfsu-UtlABNLxNOmiJrVQyE5HruX60vn0hPEgYtOI,2846
+lecture_automator-0.2.0.dist-info/RECORD,,
