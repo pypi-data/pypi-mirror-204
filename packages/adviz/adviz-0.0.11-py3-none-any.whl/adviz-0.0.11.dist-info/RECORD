@@ -1,0 +1,13 @@
+adviz/__init__.py,sha256=ihR_Su1kikIe---pn6_a3KUPu0RQIUQ0ugZIzecH4XY,192
+adviz/_modidx.py,sha256=NtBjI7kDdow7ltaC62q1nG-a37NK1B7B3p-OnAVX_pA,1008
+adviz/core.py,sha256=cWUcICMH3xT_x0ZljrBdj0nrbxCno9ND4o_2PCToglY,142
+adviz/racing_chart.py,sha256=0hu_KmEhm87hjk4FYetpxBIykSmrt58ZPOyMxzFHc1w,2164
+adviz/status_codes.py,sha256=pbbBSzp9kX47qJoDfYJMeaik08Zl2b3Qq3LixOltJ3U,2478
+adviz/url_structure.py,sha256=auuXHiU6tiBUpAD_b0tgm8UcKjXjGAmzJmhLBU9UJbE,3156
+adviz/value_counts_plus.py,sha256=7QNXZ9PUHuddywLSsTnkVG7OkHuQYpG4H4RCKFxp_AY,3916
+adviz-0.0.11.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+adviz-0.0.11.dist-info/METADATA,sha256=D3A3lUoMiq4-6FBzVT4Gw7FA60nZilFmq6g8LctLb2o,1146
+adviz-0.0.11.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+adviz-0.0.11.dist-info/entry_points.txt,sha256=VWchZvEMTzcbu6vJwMdK7fhADznOYY0-hqcaGpIfNqM,32
+adviz-0.0.11.dist-info/top_level.txt,sha256=55C9eYPqUJW-HJyxrOVGvTGV8aTW7V1Wk5JFpmOIH9o,6
+adviz-0.0.11.dist-info/RECORD,,
