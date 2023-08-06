@@ -1,0 +1,16 @@
+pandas
+numpy
+pymongo
+requests
+cloudstorageio
+simplejson
+pillow
+pymupdf==1.21.1
+urllib3
+lxml
+beautifulsoup4
+PyYAML
+click
+
+[:python_version <= "3.6"]
+dataclasses
