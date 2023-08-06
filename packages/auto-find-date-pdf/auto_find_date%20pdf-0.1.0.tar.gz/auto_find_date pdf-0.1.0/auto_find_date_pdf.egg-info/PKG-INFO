@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: auto-find-date-pdf
+Version: 0.1.0
+Summary: A simple lib to find dates from any txt/ pdf/ rtf source
+Author: Your Name
+Author-email: opensource@marvsai.com
+License-File: LICENSE
