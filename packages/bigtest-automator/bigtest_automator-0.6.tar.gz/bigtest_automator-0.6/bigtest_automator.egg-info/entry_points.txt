@@ -1,0 +1,2 @@
+[console_scripts]
+reportscraper = entrypoint.main_class:main
