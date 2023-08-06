@@ -1,0 +1,2 @@
+[console_scripts]
+openduck = scripts.openduck:main

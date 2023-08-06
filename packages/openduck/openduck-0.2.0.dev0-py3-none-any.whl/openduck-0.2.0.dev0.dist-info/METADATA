@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: openduck
+Version: 0.2.0.dev0
+Summary: Application for running Dynamic Undocking
+Home-page: https://github.com/CBDD/openduck.git
+Author: Alvaro Serrano, Mihaela Sminova, Simon Bray, Anthony Bradley
+Author-email: alvaro.serrano.morras@gmail.com
+License: Apache 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
