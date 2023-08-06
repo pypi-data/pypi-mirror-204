@@ -1,0 +1,2 @@
+[console_scripts]
+mindocr = mindocr.deploy.mx_infer.infer_pipeline:main
