@@ -1,0 +1,5 @@
+setup.py
+timestamp_utils.egg-info/PKG-INFO
+timestamp_utils.egg-info/SOURCES.txt
+timestamp_utils.egg-info/dependency_links.txt
+timestamp_utils.egg-info/top_level.txt
