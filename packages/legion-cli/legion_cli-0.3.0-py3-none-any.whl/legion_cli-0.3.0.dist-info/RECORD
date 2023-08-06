@@ -1,0 +1,14 @@
+legion_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+legion_cli/alerts_manager.py,sha256=EV6xsvO2vX6nVfh0QXxSFFpX6CpUzv9nKj8Z0ELjp28,4459
+legion_cli/cli.py,sha256=Q7VD91oMOkcOPbAVwtOeYjr60N549_KIxcHqVowbnjA,7046
+legion_cli/config.py,sha256=XBGv-SyWCt-e5tEULjPhBqVlaLgY1fDCBTfVUKAaxec,214
+legion_cli/log.py,sha256=VADaHJAUtd4u5PhvjgOHSIPUv-6pk-9PZ-YiUf9HW7Y,301
+legion_cli/tui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+legion_cli/tui/alerts_monitor.py,sha256=fDmqEkOiqEL57t4mjzDE_vdFyyIvM4IFw4EfWkXWXTQ,8529
+legion_cli/tui/detail_list.py,sha256=JeUadqJRETBMYIx7dc4kz7lgdrR6LQBR9dwy2EnBGAM,8791
+legion_cli/tui/keyboard.py,sha256=m8u6U8ypqQS5i0Q3sM2KeVJiHXfXr_oBcMcIf7qw4JM,897
+legion_cli-0.3.0.dist-info/entry_points.txt,sha256=lrYNBt8nPK0V1kGUssGGSb0D2Rc886gwkEf5d8OYMlU,45
+legion_cli-0.3.0.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+legion_cli-0.3.0.dist-info/METADATA,sha256=WOF8LDRPKX9vU0znqq-rf0-HWPmG2QAHwitNCl3eokI,3182
+legion_cli-0.3.0.dist-info/licenses/LICENSE,sha256=fFDNm4Xit-666itWGLQChisB1aZr7_-OQUAe8_FORxo,34500
+legion_cli-0.3.0.dist-info/RECORD,,
