@@ -1,0 +1,12 @@
+graphqldb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+graphqldb/adapter.py,sha256=pUpEL-z-XKUkb9COl_Ei5GVFOXTTSvxBjaijdiDjHo4,10998
+graphqldb/db_engine_specs.py,sha256=bfgfPXfXK46p8HmNCelW3zrW04L3WkaYceZ3AfjlbvQ,590
+graphqldb/dialect.py,sha256=--2PxBi0EWI9Uhe5IeQUncEsSHsR8NupKLLm64f7oYA,2404
+graphqldb/lib.py,sha256=e4ouXP_e8BWwxlryv51DYKxWc7MC9_kxqBc3Rza1zd4,1758
+graphqldb/types.py,sha256=w7LgZfA2ItPSoO9kk5YOlKILMIpFwuAgiQjU3K65Vhc,166
+hakurei_sqlalchemy_graphqlapi-0.0.1.dev15.dist-info/LICENSE,sha256=AYbQIyFCO65kTuu2C4Wsrp4BM2KbK6PV56U3w2-eOWI,1091
+hakurei_sqlalchemy_graphqlapi-0.0.1.dev15.dist-info/METADATA,sha256=89xcHvr8grGlwTAzo5_j8pdAHp58nAWw66Y836tof7M,3171
+hakurei_sqlalchemy_graphqlapi-0.0.1.dev15.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hakurei_sqlalchemy_graphqlapi-0.0.1.dev15.dist-info/entry_points.txt,sha256=9j71P0DneR1yKkeXNUVUzzMQViRR0bA0uj2r8gfvH3k,135
+hakurei_sqlalchemy_graphqlapi-0.0.1.dev15.dist-info/top_level.txt,sha256=Y_G6Xzhnjcj8Gnzr5B_80K3D4_c79QO0av4YJZ67898,10
+hakurei_sqlalchemy_graphqlapi-0.0.1.dev15.dist-info/RECORD,,
