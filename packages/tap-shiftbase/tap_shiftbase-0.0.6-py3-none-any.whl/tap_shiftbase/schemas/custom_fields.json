@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "customfield": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "applies_to": {
+          "type": "string"
+        },
+        "applies_to_user": {
+          "type": "boolean"
+        },
+        "applies_to_timesheet": {
+          "type": "boolean"
+        },
+        "applies_to_shift": {
+          "type": "boolean"
+        },
+        "applies_to_schedule": {
+          "type": "boolean"
+        },
+        "select_options": {
+          "type": "string"
+        },
+        "order": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
