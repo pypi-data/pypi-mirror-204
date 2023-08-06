@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+sumologiccse/__init__.py
+sumologiccse/sumologiccse.py
+sumologiccse.egg-info/PKG-INFO
+sumologiccse.egg-info/SOURCES.txt
+sumologiccse.egg-info/dependency_links.txt
+sumologiccse.egg-info/top_level.txt
+tests/test_sumologiccse.py
