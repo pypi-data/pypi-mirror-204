@@ -1,0 +1,12 @@
+xia_scw_forward/__init__.py,sha256=C7vLuSciY7sCajiTNG-3pOPPJYBcnigfy6BElk68p7I,103
+xia_scw_forward/forward.cp39-win_amd64.pyd,sha256=r2pafLJ3ooKzsWWQKaf2d1mWEHlL5k8wYbjYhSV5VC4,259072
+xia_scw_forward/templates/ScwForward/backend.tf,sha256=E6fgAX-nMcTt9oErRKvK67uJPdB-O77YJpzAvf06zgs,69
+xia_scw_forward/templates/ScwForward/main.tf,sha256=R8SaL521GrPhdJGcCpODjfwrPfWT6YbL0DcHsJ8Bh20,2631
+xia_scw_forward/templates/ScwForward/output.tf,sha256=nREGFAc1hXpAdRGd04io4QsRo28FX-EwgjFNg1PI4aU,708
+xia_scw_forward/templates/ScwForward/provider.tf,sha256=h_zFGas7QtYJPGvufLGuPHtgDhoZa28Qa5t--1dpheI,343
+xia_scw_forward/templates/ScwForward/variables.tf,sha256=gXB-8PH9d91xwJNg6dRt_KEPPQizfoZOLxO6E1exba4,2451
+xia_scw_forward-0.0.2.dist-info/LICENSE.txt,sha256=CgeJ1rTURAK7GLPD_GW3lyXH8ZFFrBDM0ekl9JHZR2s,152
+xia_scw_forward-0.0.2.dist-info/METADATA,sha256=Yzpm_eRgGKAk7w14ABSUdq1izF68Ar1fxhkCbU4e1rk,727
+xia_scw_forward-0.0.2.dist-info/WHEEL,sha256=T8VPDjot1YI5-NaRzS6kIMlJNVl0SSGa_dm-8Fprszg,99
+xia_scw_forward-0.0.2.dist-info/top_level.txt,sha256=zSdl1uiLifiOddj8F4TdDzODhdXe_Ny7s_A4Dfprpw0,16
+xia_scw_forward-0.0.2.dist-info/RECORD,,
