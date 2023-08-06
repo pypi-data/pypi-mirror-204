@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pb-graphene
+Version: 0.0.2
+Summary: Additional utils to work with graphene, such as file uploads
+Home-page: https://github.com/gpabois/pb-graphene
+Author: Gaël Pabois
+License: MIT
+Project-URL: Homepage, https://github.com/gpabois/pb-graphene
+Project-URL: Bug Tracker, https://github.com/pypa/pb-graphene/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django (>=4.2)
+Requires-Dist: graphene-django (>=3.0.0)
+Requires-Dist: graphql-relay (>=3.2.0)
+Requires-Dist: django-filter (>=23.1)
+Requires-Dist: graphene-file-upload (>=1.3.0)
+
