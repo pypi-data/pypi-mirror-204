@@ -1,0 +1,8 @@
+sql_test_kit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sql_test_kit/column.py,sha256=yK04oO5M4LgOpo9SjB-J5iWAqCGeM1TW8FLN-JLYufo,115
+sql_test_kit/query_interpolation.py,sha256=Y8_DRH64tgViPGhIxD_Rjp3EQiAg7vwX924a9WetiZw,1154
+sql_test_kit/schema.py,sha256=tcPi0x-mP8c8d9Xo2fJn33tmvlhLZ2k6MbM6iL2mXc8,151
+sql_test_kit/table.py,sha256=nuBj4iYnqqZc_70x3seU-d3dFO1yZ0VgbuiFUqNJ-Hg,396
+sql_test_kit-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sql_test_kit-0.1.0.dist-info/METADATA,sha256=-60B8Ptf4YTd3ASBwDo5B3i8PY24oj-tu82zF9E3RoM,473
+sql_test_kit-0.1.0.dist-info/RECORD,,
