@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: fireorm-repository
+Version: 1.0.16
+Summary: Базовый репозиторий для выполнения запросов к Firestore
+Home-page: https://github.com/Sergey199408081/fireorm-repository
+License: MIT
+Keywords: firebase,firestore,fireorm,repository
+Author: sergey
+Author-email: alekseyserzh88@gmail.com
+Requires-Python: >=3.10,<3.11
+Classifier: Environment :: Console
+Classifier: Framework :: Buildout
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Dist: fireorm (==0.0.14)
+Requires-Dist: python-interface (==1.6.1)
+Project-URL: Repository, https://github.com/Sergey199408081/fireorm-repository
+Description-Content-Type: text/markdown
+
+# fireorm-repository
+
+# Описание
+    Базовый репозиторий для выполнения запросов к Firestore.
+
+# Установка
+    pip install fireorm-repository
