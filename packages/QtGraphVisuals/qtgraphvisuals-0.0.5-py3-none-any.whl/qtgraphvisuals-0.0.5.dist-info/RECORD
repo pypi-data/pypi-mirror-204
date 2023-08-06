@@ -1,0 +1,9 @@
+QtGraphVisuals/.gitignore,sha256=5b4GdD9BK3Z8gFfBAeUde_egRboN3G0XI-u1Sq9gOb4,20
+QtGraphVisuals/README.md,sha256=paZHTaK43in3j-zNwFjDxtutrMTELQNjBmPmOCpFHk4,82
+QtGraphVisuals/__init__.py,sha256=OVi4DVr6b_5MUUu_TLx-ZjaLRE3wfQ6Xwk9wroOvlLE,678
+QtGraphVisuals/__main__.py,sha256=daSEdSe5zujCnRS69CThjrMtmk0VUNT4tXfRdagGBs4,727
+QtGraphVisuals/widgets.py,sha256=c9JdU7KOinv8lxyq3GynrAux0UrrWXdLKYAPCaR2Sz4,31235
+qtgraphvisuals-0.0.5.dist-info/METADATA,sha256=BQBtKQsd4HCAN8Z0Pb0hjB6msWAAqKyo_cLQIwhYnLc,654
+qtgraphvisuals-0.0.5.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+qtgraphvisuals-0.0.5.dist-info/licenses/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+qtgraphvisuals-0.0.5.dist-info/RECORD,,
