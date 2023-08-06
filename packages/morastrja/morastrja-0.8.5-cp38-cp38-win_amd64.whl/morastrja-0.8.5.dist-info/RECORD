@@ -1,0 +1,13 @@
+morastrja/__init__.py,sha256=crK4MlUSYskXPVSSxYWO5lZCoBxbX7-DzqEwn-52hio,851
+morastrja/__init__.pyi,sha256=--VwIGjCUN_AjD3XxvwGG2EF222rQ_o0heraZbvD_cg,6685
+morastrja/__main__.py,sha256=JX5dNYEtfMPxaLr825_6XCNjjA0JK9Jiec6YWFID840,1297
+morastrja/_morastr.cp38-win_amd64.pyd,sha256=dMGLudN4QDQo7Pb3y3qVDAHeOnaRTnqXRhdsxX26W8c,89088
+morastrja/utils.py,sha256=roSei0qtNCuIWBXdbS4NyE4g7MBDz2oIfrVWUEezDB0,54
+morastrja/utils.pyi,sha256=dhixe7QYHZTXBIo5Pr4jjqiLj0W1-yTZ57TjZ8pnArg,1058
+morastrja/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morastrja/data/table.bak,sha256=lR0uG3a5XxXMF9IKPLqGjFq2TIAuROAcKjgiM7upbRg,1407
+morastrja/data/table.py,sha256=lR0uG3a5XxXMF9IKPLqGjFq2TIAuROAcKjgiM7upbRg,1407
+morastrja-0.8.5.dist-info/METADATA,sha256=V1rjd8Q4LeU_dfzxvhl533uPDj0vuKcKe1W4YEhP_S0,886
+morastrja-0.8.5.dist-info/WHEEL,sha256=F2aDWtWrilNM3-px1vBtJOEd7aRVTetQfFuDYmYbAUQ,100
+morastrja-0.8.5.dist-info/top_level.txt,sha256=rqq4kV2BVvll6EhqGoaTRsCr3THDhmvow_SSjfsOb3g,10
+morastrja-0.8.5.dist-info/RECORD,,
