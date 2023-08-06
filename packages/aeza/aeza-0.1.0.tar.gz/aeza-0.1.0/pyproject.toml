@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "aeza"
+version = "0.1.0"
+description = "Aeza.net official API (name occupy package)"
+authors = ["Egor Ternovoy <cofob@riseup.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
