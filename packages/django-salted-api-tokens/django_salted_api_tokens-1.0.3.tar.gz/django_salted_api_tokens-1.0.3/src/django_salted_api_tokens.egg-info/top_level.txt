@@ -1,0 +1,3 @@
+django_salted_api_tokens
+example_django_project
+tests
