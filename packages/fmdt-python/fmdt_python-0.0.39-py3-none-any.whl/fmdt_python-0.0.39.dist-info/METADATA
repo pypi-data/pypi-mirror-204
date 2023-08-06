@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: fmdt-python
+Version: 0.0.39
+Summary: utlity functions for fast meteor detection toolbox
+Project-URL: fmdt, https://github.com/alsoc/fmdt
+Project-URL: Homepage, https://github.com/ejovo13/fmdt_scripts
+Author-email: Evan Voyles <ejovo13@yahoo.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: appdirs
+Requires-Dist: deprecated
+Requires-Dist: ffmpeg-python
+Requires-Dist: jsonpickle
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: termcolor
+Description-Content-Type: text/markdown
+
+A series of Python scripts to facilitate the processing of [fmdt's](https://github.com/alsoc/fmdt) output
+
+Scripts for video editing rely on [ffmpeg-python's](https://github.com/kkroening/ffmpeg-python) simple Python bindings to ffmpeg. Make sure you install `ffmpeg-python` before trying any of the video editing functionality.
+
+### Installation
+
+```
+pip install fmdt-python
+```
+
+`fmdt/core.py` should contain the functions that are called directly in scripts.
+`fmdt/utils.py` contains utility functions that `fmdt.core` makes use of.
+
+Example to split a video using tracking information already provided by `fmdt-detect`:
+
+```
+import fmdt
+
+fmdt.split_video_at_meteors("demo.mp4", "ex1_detect_tracks.txt")
+```
+
+#### TODO
+
+- [x] Upload fmdt to pip so that we can download fmdt and call scripts from anywhere
+- [x] Add API to call fmdt executables like `fmdt-detect` and `fmdt-visu`
