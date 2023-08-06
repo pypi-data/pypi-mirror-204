@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zhy_tools"
+version = "0.0.2"
+authors = [
+  { name="赵宏宇", email="zhaohongyu2401@yeah.net"},
+]
+description = "zhy_tools is a common tool package which i used on word. It will collect all kinds of tools which will be useful for my job."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+
+    ]
+
+[project.urls]
+"Homepage" = "https://github.com/openKG-field/kgbook-2020"
