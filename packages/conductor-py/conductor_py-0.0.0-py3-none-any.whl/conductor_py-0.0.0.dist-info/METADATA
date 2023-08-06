@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: conductor-py
+Version: 0.0.0
+Summary: Python bindings for the Conductor API
+Author-email: Danny Nemer <hi@dannynemer.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Conductor Python Library
+
+## Installation
+
+```sh
+pip install --upgrade conductor-py
+```
+
+## Usage
+
+```py
+import conductor
+conductor.api_key = "sk_test_..."
+```
