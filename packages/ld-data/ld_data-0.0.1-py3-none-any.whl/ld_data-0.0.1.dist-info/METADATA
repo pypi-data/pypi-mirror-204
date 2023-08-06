@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: ld-data
+Version: 0.0.1
+Summary: LD Data
+Author-email: GuoPeng <guopeng@liangdao.fund>
+Requires-Python: >=3.9
