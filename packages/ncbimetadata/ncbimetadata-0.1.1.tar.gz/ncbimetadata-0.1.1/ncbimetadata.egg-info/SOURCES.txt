@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ncbimetadata/__init__.py
+ncbimetadata/core.py
+ncbimetadata.egg-info/PKG-INFO
+ncbimetadata.egg-info/SOURCES.txt
+ncbimetadata.egg-info/dependency_links.txt
+ncbimetadata.egg-info/entry_points.txt
+ncbimetadata.egg-info/requires.txt
+ncbimetadata.egg-info/top_level.txt
