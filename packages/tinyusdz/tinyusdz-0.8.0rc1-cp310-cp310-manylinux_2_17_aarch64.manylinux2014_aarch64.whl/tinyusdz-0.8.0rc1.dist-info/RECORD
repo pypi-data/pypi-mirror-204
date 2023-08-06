@@ -1,0 +1,10 @@
+external/pybind11/tools/make_changelog.py,sha256=nvL4LRhLsDMe7y2U9tvN0s8qCidXVoliW6yd5zAzDB8,1282
+external/pybind11/tools/libsize.py,sha256=3MBZDCi0-kdKei_6RcTbmVJgtmT4udB-WIF-mOPLBD4,1031
+external/nanobind/src/nanobind/__init__.py,sha256=PQ1_EkV8vFMPdrC4HFS1XlDoMv0Vfl4nfkEF9Qtfm48,536
+tinyusdz-0.8.0rc1.dist-info/RECORD,,
+tinyusdz-0.8.0rc1.dist-info/top_level.txt,sha256=yONGtbffyS-aQ30gIaoYRCBaBJZuWVrzu2YOXhEXNU4,44
+tinyusdz-0.8.0rc1.dist-info/METADATA,sha256=TP4w1xFl6Djpb2iMJwVtMZAaQO1jv0vIS_pm2fTGKl8,2236
+tinyusdz-0.8.0rc1.dist-info/WHEEL,sha256=hV7MOWH7ToQYhg94WlZsXIYSgOT-pXyvBU_359_P36M,148
+tinyusdz-0.8.0rc1.dist-info/LICENSE,sha256=DpwDoE3-yEvAaCD9iUkFtL-dXfkEs9wcWukMo1bJ4rE,1077
+blender/sandbox/meshbuild.py,sha256=gBLxVyMeBs84chkFyI4e22Hc_5EBBKbM6IuFwMIKzSc,2417
+tinyusdz-0.8.0rc1.data/data/tinyusdz/ctinyusdz.cpython-310-aarch64-linux-gnu.so,sha256=MSZ8jRxuuCfToE3iK2qlYQmloIs93oTzpSQbxC84s5Y,4427296
