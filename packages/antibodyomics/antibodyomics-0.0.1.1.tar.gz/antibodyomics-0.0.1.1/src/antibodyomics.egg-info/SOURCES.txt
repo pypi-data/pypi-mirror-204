@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/antibodyomics/__init__.py
+src/antibodyomics/example.py
+src/antibodyomics.egg-info/PKG-INFO
+src/antibodyomics.egg-info/SOURCES.txt
+src/antibodyomics.egg-info/dependency_links.txt
+src/antibodyomics.egg-info/top_level.txt
+src/antibodyomics_test/__init__.py
+src/antibodyomics_test/example.py

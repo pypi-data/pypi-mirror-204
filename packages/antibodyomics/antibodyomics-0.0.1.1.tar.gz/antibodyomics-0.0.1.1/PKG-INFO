@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: antibodyomics
+Version: 0.0.1.1
+Summary: An antibodyomics library
+Author-email: Andrew Schaub <andrew.schaub@protonmail.com>
+Project-URL: Homepage, https://github.com/drewschaub/antibodyomics
+Project-URL: Bug Tracker, https://github.com/drewschaub/antibodyomics/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## About
+
+---
+
+**Source Code**: <a href="https://https://github.com/drewschaub/antibodyomics" target="_blank">https://https://github.com/drewschaub/antibodyomics</a>
+
+---
+
+Antibodyomics is a python library for performing structural and genetic  bioinformatic analysis in python. 
+
+## Installation
+
+---
+
+Installation is handled using the python package installer `pip`
+
+```console
+$ pip install antibodyomics
+```
+
+## License
+
+[![License](https://img.shields.io/github/license/drewschaub/antibodyomics)](https://opensource.org/licenses/MIT)
+
+- Copyright © Andrew J. Schaub
