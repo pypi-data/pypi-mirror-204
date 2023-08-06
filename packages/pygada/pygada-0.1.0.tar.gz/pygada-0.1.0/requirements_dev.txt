@@ -1,0 +1,19 @@
+-r requirements.txt
+pip
+bumpversion
+wheel
+watchdog
+flake8
+tox
+coverage
+cryptography
+PyYAML
+pytest
+pytest-runner
+pytest-cov
+Sphinx>3
+sphinx-rtd-theme>1
+sphinx_design
+nbsphinx
+numpydoc
+flask

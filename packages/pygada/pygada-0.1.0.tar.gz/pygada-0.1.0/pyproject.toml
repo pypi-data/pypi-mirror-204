@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "setuptools_scm[toml]>=5"]
+build-backend = "setuptools.build_meta"
+
+[tool]
+[tool.setuptools_scm]
+version_scheme = "no-guess-dev"
+
+[project]
+name = "pygada"
+version = "0.1.0"
+authors = [
+  { name="Guillaume Vandekerckhove", email="guillaume.vandekerckhove@outlook.com" },
+]
+description = "First release"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Source-code" = "https://github.com/DOV-Vlaanderen/pygada.git"
+"Documentation" = "https://pygada.readthedocs.io/en/latest/?badge=latest"
