@@ -1,0 +1,10 @@
+README.md
+setup.py
+OMGITSLACKO/__init__.py
+OMGITSLACKO/functions.py
+OMGITSLACKO.egg-info/PKG-INFO
+OMGITSLACKO.egg-info/SOURCES.txt
+OMGITSLACKO.egg-info/dependency_links.txt
+OMGITSLACKO.egg-info/not-zip-safe
+OMGITSLACKO.egg-info/requires.txt
+OMGITSLACKO.egg-info/top_level.txt
