@@ -1,0 +1,8 @@
+setup.py
+JTPackageTest.egg-info/PKG-INFO
+JTPackageTest.egg-info/SOURCES.txt
+JTPackageTest.egg-info/dependency_links.txt
+JTPackageTest.egg-info/requires.txt
+JTPackageTest.egg-info/top_level.txt
+TestPackage/__init__.py
+TestPackage/test.py
