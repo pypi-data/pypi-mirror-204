@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+version
+filewiz/__init__.py
+filewiz/__main__.py
+filewiz/handler.py
+filewiz/readline_util.py
+filewiz.egg-info/PKG-INFO
+filewiz.egg-info/SOURCES.txt
+filewiz.egg-info/dependency_links.txt
+filewiz.egg-info/entry_points.txt
+filewiz.egg-info/requires.txt
+filewiz.egg-info/top_level.txt
