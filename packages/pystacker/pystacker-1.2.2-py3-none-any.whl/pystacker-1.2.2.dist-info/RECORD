@@ -1,0 +1,16 @@
+stacker/__init__.py,sha256=6ljPKsW-rnsmwMehYWpFFzo-y2sk6WHoHrvBKdiirl8,299
+stacker/__main__.py,sha256=g4aT9kZT_6S6_wkrG_WZEVKxaS6pjqNV3Ql6GdRmF7s,72
+stacker/stacker.py,sha256=rCpwcnUMQLTBbhCrwnsR9frao6tw0wTRDPKU-uAdbKk,23035
+stacker/test.py,sha256=GFBcn-Ca-Ejy-nYxrbFqdtkNq5YMXLAHuZT8OhJvdyU,3675
+stacker/data/about.txt,sha256=22Wj0HxlPuleetNl9QfgOGTc4We_T9tSd28XwHXdlSc,652
+stacker/data/help-jp.txt,sha256=6bcsDBCfgwv-PzXLM3AtwiFfbq_qPL9HIEdI4BxKKis,2835
+stacker/data/help.txt,sha256=S0eXCfB-c3LASNCAMLMXSm5vCRGVfV_INv2ojpSU6xo,2589
+stacker/data/top.txt,sha256=ux4NiYvMrya84zBtBZPLnTwzPRNkBgoq1fcC1GdBCKI,232
+stacker/plugins/color.py,sha256=Cvro0XEIKffzEnIU-MJNfg3E4QqsWo3-Bjk_TdXL-UY,1034
+stacker/plugins/set_color.py,sha256=Cvro0XEIKffzEnIU-MJNfg3E4QqsWo3-Bjk_TdXL-UY,1034
+pystacker-1.2.2.dist-info/LICENSE,sha256=Xuk9ZyBnvn3IEc2C5bCqWH8ra4Q8w4HFCGHXujD4stw,1065
+pystacker-1.2.2.dist-info/METADATA,sha256=3075AJeLCOygzjTtqIXtXtqH1YW9uGNM9dEmJlTU_DA,26765
+pystacker-1.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pystacker-1.2.2.dist-info/entry_points.txt,sha256=y2HM24FECZDudxWyClCmklBdVN-tyUJopPeMSOoCOrU,49
+pystacker-1.2.2.dist-info/top_level.txt,sha256=EBgeVWSB-blef07B-QTifU8QR-CBfI3Dc1U9_zm8myY,8
+pystacker-1.2.2.dist-info/RECORD,,
