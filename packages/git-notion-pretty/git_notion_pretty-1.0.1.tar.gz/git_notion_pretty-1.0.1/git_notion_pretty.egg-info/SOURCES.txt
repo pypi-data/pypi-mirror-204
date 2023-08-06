@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+git_notion_pretty/__init__.py
+git_notion_pretty/cli.py
+git_notion_pretty/git_notion.py
+git_notion_pretty.egg-info/PKG-INFO
+git_notion_pretty.egg-info/SOURCES.txt
+git_notion_pretty.egg-info/dependency_links.txt
+git_notion_pretty.egg-info/entry_points.txt
+git_notion_pretty.egg-info/not-zip-safe
+git_notion_pretty.egg-info/requires.txt
+git_notion_pretty.egg-info/top_level.txt
+tests/test_git_notion.py
