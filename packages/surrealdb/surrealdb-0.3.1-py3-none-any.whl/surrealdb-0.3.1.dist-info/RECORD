@@ -1,0 +1,8 @@
+surrealdb/__init__.py,sha256=0_PeBywF_8PqXDn43S8cY6CKn9xvZ3e4X1toAuymy5Y,653
+surrealdb/http.py,sha256=ortXS-Ik2aTsXtppENB7eJ9ucvbVnjY317gl1JU0VNA,11322
+surrealdb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+surrealdb/ws.py,sha256=rZM6nlXX6ntwY1PDN-_a6IcmK3iXkoACmeUpCIq3XVE,23338
+surrealdb-0.3.1.dist-info/LICENSE,sha256=IWVEGpsOYkamcNnmIZs_R6zWRDr-VaWTEoh5Xs_rRik,11341
+surrealdb-0.3.1.dist-info/METADATA,sha256=OpZab9gWfPkNwvxqijH-GvSgaj0dh76_DNSCyuKSC1U,6846
+surrealdb-0.3.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+surrealdb-0.3.1.dist-info/RECORD,,
