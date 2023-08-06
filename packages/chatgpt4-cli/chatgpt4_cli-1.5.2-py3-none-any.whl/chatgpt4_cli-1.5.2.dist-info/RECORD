@@ -1,0 +1,14 @@
+GPTCLI/__init__.py,sha256=ubkWDiWbRuIi3h-u3AgV99-0YelkMHZSVx_zqmbeqNM,816
+GPTCLI/__main__.py,sha256=de52iyYa8KdGm6jr9_Y3ZKi5NOtygVaD9Dot-R1YsIM,33
+GPTCLI/addons.py,sha256=X4mSDoiNS5Zp7AkxdwIUEaqZdxEEhPp7_wcJ1QyA62c,3415
+GPTCLI/bard.py,sha256=F5pinnxnTt38eVX6BymQtSgAn2spX4IoWAI-_b-o13w,1895
+GPTCLI/emage.py,sha256=sLre3z3IwPcvCVppSCZizufLy8ESoxHIPBVjhZGCmeg,7280
+GPTCLI/gptcli.py,sha256=K7Dz178gTdKBkGkCMT2tmi-up2yvn_38g74_vNbWOuY,31397
+GPTCLI/helper.py,sha256=Zpna20wv2WndmWNoZiDvaSTeIO-0xFFea8OR9Qagm8A,6111
+GPTCLI/image.py,sha256=z95eHY94qFXNzVR69bEyPmtvnIg4aWv2Rpw1hJ9PiaE,5638
+chatgpt4_cli-1.5.2.dist-info/LICENSE,sha256=wHya1MWtezBgi8T3VsDrChvOSfRrzrG0Qln_32B3oKY,1064
+chatgpt4_cli-1.5.2.dist-info/METADATA,sha256=hZHsAd4fqLYQxhMHvixeFMrWxI3WiWu_20CDjtIBW8E,15443
+chatgpt4_cli-1.5.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+chatgpt4_cli-1.5.2.dist-info/entry_points.txt,sha256=xM6vEtdqgF8RQx1vj7NmRQ9CmpMFTF-x5fJTIMD13n8,115
+chatgpt4_cli-1.5.2.dist-info/top_level.txt,sha256=1xBLpocRZ1_v3cWOKDNPGL7SaLndhCBcwAaEHXRFe-Q,7
+chatgpt4_cli-1.5.2.dist-info/RECORD,,
