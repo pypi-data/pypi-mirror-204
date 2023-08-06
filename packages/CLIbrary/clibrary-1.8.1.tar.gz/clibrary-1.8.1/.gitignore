@@ -1,0 +1,9 @@
+# Others
+
+**/.vscode
+**/.DS_Store
+**/__pycache__
+
+# Build
+
+dist
