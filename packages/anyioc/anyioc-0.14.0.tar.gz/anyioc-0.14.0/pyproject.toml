@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "anyioc"
+version = "0.14.0"
+description = "Another simple ioc framework for python"
+authors = [ "Cologler <skyoflw@gmail.com>" ]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+pytest-cov = "^4.0.0"
+ruff = "^0.0.262"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[build-system]
+requires = [ "poetry-core>=1.0.0", "poetry-dynamic-versioning" ]
+build-backend = "poetry_dynamic_versioning.backend"
