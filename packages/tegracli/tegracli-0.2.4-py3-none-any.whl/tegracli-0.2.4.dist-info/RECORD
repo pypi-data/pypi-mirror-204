@@ -1,0 +1,11 @@
+tegracli/__init__.py,sha256=4pv7hkKXvm0hAC9uxRWG0hSKZnClyadgkVD5hMJPDGY,65
+tegracli/dispatch.py,sha256=lRReBNJQFZ5mi0CLiZvJz1QOjB0b8bIO3qojXns4y7o,5419
+tegracli/group.py,sha256=1QURvPxLeRoobn8nc54QS0Pi-fj54mo7t0Lsf6N54g4,4578
+tegracli/main.py,sha256=JAbeTWoh5RuKyL0Ywsp-RrzA2sZxwf-iepbF7Zg8llQ,12773
+tegracli/types.py,sha256=_Ht5QCwrfmkHIWcsYTzxntdZjVlNDGVriMuPaYuWzOY,246
+tegracli/utilities.py,sha256=gyRvJn-wsweL5tp8hWPni6HiCYp_7NhZ1gWXgv7cT2Y,1578
+tegracli-0.2.4.dist-info/entry_points.txt,sha256=cyE86mPfvYnBdFsT9-dqMQ1Oa6Erm921a1k7zeX8Hug,46
+tegracli-0.2.4.dist-info/LICENSE,sha256=AGJqzbMWG6my-kfOcFzNdI-6iYcAqmombJPSRTCqvoQ,1100
+tegracli-0.2.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+tegracli-0.2.4.dist-info/METADATA,sha256=GOQv5uXKxOJS6soMCwqoIHVHXYpqCqU-VTuG6-11e1c,9430
+tegracli-0.2.4.dist-info/RECORD,,
