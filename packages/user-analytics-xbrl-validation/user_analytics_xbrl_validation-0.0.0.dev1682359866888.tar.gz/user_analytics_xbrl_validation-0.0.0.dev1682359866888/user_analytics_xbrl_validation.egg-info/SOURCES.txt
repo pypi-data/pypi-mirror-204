@@ -1,0 +1,6 @@
+module.py
+setup.py
+user_analytics_xbrl_validation.egg-info/PKG-INFO
+user_analytics_xbrl_validation.egg-info/SOURCES.txt
+user_analytics_xbrl_validation.egg-info/dependency_links.txt
+user_analytics_xbrl_validation.egg-info/top_level.txt
