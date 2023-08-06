@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: beatlesalbuns
+Version: 0.0.1
+Summary: Add 1 to a number
+Author-email: Carla Godinho <carlasoniagodinho44@gmail.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# Beatles-albums
+This package is a demo for my Python students and so I decided to give a tribute to The Beatles band, providing a list of their published Albums.
+Enjoy this packge and listen to their masterpieces!
+
+Change log
+==========
+
+0.0.1 (20/4/2023)
+-----------------
+First Release
+Requires pandas module installation
