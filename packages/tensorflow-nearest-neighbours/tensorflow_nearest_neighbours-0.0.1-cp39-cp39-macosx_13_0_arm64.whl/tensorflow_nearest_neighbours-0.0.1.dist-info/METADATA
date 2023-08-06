@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tensorflow-nearest-neighbours
+Version: 0.0.1
+Summary: Nearest neighbours word embedding computation.
+Author: Artem Sereda
+Author-email: artem.sereda@campus.tu-berlin.de
+Keywords: tensorflow custom op machine learning
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: tensorflow ; sys_platform != "darwin"
+Requires-Dist: tensorflow-macos ; sys_platform == "darwin"
+
