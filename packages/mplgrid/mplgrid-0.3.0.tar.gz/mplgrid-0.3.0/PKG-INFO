@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mplgrid
+Version: 0.3.0
+Summary: mplgrid is a Python library for creating a grid of axes in Matplotlib.
+Project-URL: Documentation, https://github.com/andrewRowlinson/mplgrid#readme
+Project-URL: Issues, https://github.com/andrewRowlinson/mplgrid/issues
+Project-URL: Source, https://github.com/andrewRowlinson/mplgrid/
+Author-email: Andrew Rowlinson <rowlinsonandy@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: matplotlib
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Matplotlib
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: matplotlib
+Description-Content-Type: text/markdown
+
+# mplgrid
+
+mplgrid is a Python library for creating a grid of axes in Matplotlib

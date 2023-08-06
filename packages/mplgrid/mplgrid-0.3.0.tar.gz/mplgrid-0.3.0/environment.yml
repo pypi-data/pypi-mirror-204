@@ -1,0 +1,8 @@
+name: mplgrid
+channels:
+  - conda-forge
+dependencies:
+  - matplotlib
+  - pip
+  - pip:
+      - -e .
