@@ -1,0 +1,12 @@
+LICENSE.txt
+README.rst
+setup.py
+MetaMatching/__init__.py
+MetaMatching/model.py
+MetaMatching/utils.py
+MetaMatching.egg-info/PKG-INFO
+MetaMatching.egg-info/SOURCES.txt
+MetaMatching.egg-info/dependency_links.txt
+MetaMatching.egg-info/not-zip-safe
+MetaMatching.egg-info/requires.txt
+MetaMatching.egg-info/top_level.txt
