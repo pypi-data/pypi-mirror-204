@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: kibana_ql
+Version: 0.1
+Summary: Package to parse Kibana Query Language (KQL) strings. 
+Author-email: Dobatymo <Dobatymo@users.noreply.github.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: parsimonious
+Project-URL: Source, https://github.com/Dobatymo/kibana-ql-python
+
+# kibana-ql
+
+## Install
+
+```shell
+pip install kibana-ql
+```
+
+## Use
+
+```python
+from kibana_ql import KqlParser
+
+p = KqlParser()
+p.parse("field: value")
+```
+
+## Tests
+
+```shell
+py -m unittest discover -v -s tests -p "*_test.py"
+```
+
