@@ -1,0 +1,10 @@
+YamlStripper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+YamlStripper/cli.py,sha256=OylL1lYcgaHJxeHR-ge9OS-MPTSUkRA3kTyGBcNCSYQ,467
+YamlStripper/yaml_stripper.py,sha256=PgikdvhPzK7exMpfMkIpXYV0ohrR00iulrCI0SKer3A,1703
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_yaml_stripper.py,sha256=zZDOE5EtD52dLTlnFwPhGCrw6N_jzItxMPac9WdY4wc,1223
+yaml_stripper-2.1.2.dist-info/METADATA,sha256=v7NkAaIjJBC2CcKZTr1f27D0gEfn6sY9VUW3LTf5ln0,3577
+yaml_stripper-2.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+yaml_stripper-2.1.2.dist-info/entry_points.txt,sha256=t5uJJpUrHwyrwlWdWSIjcPUNh1afF4uT5s3P_FbOMx4,56
+yaml_stripper-2.1.2.dist-info/top_level.txt,sha256=w--hUqNOmmMfzHPQ6TiWO9WELVkOrQTAr0LAaSBemDQ,18
+yaml_stripper-2.1.2.dist-info/RECORD,,
