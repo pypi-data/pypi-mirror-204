@@ -1,0 +1,8 @@
+README.md
+setup.py
+JsonDatabaseZ/__init__.py
+JsonDatabaseZ/database.py
+JsonDatabaseZ.egg-info/PKG-INFO
+JsonDatabaseZ.egg-info/SOURCES.txt
+JsonDatabaseZ.egg-info/dependency_links.txt
+JsonDatabaseZ.egg-info/top_level.txt
