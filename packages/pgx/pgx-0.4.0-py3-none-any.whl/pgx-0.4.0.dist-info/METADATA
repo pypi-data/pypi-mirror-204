@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pgx
+Version: 0.4.0
+Home-page: 
+Author: Sotetsu KOYAMADA
+Author-email: sotetsu.koyamada@gmail.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jax (>=0.3.25)
+Requires-Dist: chex (>=0.1.6)
+Requires-Dist: svgwrite
+Requires-Dist: msgpack
+Requires-Dist: typing-extensions
+
