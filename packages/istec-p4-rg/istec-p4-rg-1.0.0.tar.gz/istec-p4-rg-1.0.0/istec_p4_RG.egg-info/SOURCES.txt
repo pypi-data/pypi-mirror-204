@@ -1,0 +1,12 @@
+setup.py
+istec_p4_RG.egg-info/PKG-INFO
+istec_p4_RG.egg-info/SOURCES.txt
+istec_p4_RG.egg-info/dependency_links.txt
+istec_p4_RG.egg-info/top_level.txt
+istec_p4_rg.egg-info/PKG-INFO
+istec_p4_rg.egg-info/SOURCES.txt
+istec_p4_rg.egg-info/dependency_links.txt
+istec_p4_rg.egg-info/top_level.txt
+p4/__init__.py
+p4/exercises/__init__.py
+p4/exercises/greetings.py
