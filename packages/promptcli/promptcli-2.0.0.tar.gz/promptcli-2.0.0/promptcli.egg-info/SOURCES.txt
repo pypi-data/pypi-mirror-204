@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+prompt/__init__.py
+prompt/cli.py
+promptcli.egg-info/PKG-INFO
+promptcli.egg-info/SOURCES.txt
+promptcli.egg-info/dependency_links.txt
+promptcli.egg-info/entry_points.txt
+promptcli.egg-info/requires.txt
+promptcli.egg-info/top_level.txt
