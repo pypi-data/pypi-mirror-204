@@ -1,0 +1,7 @@
+requests>2.11
+six>=1.9
+python-dateutil>=2.4
+pyjwkest>=1.0
+
+[docs]
+sphinx

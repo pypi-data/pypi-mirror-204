@@ -1,0 +1,132 @@
+Metadata-Version: 2.1
+Name: python-taiga
+Version: 1.1.0
+Summary: Taiga python API
+Home-page: https://github.com/nephila/python-taiga
+Author: Nephila
+Author-email: team@team.nephila.digital
+License: MIT
+Keywords: taiga kanban wrapper api
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Provides-Extra: docs
+License-File: LICENSE
+
+==============
+python-taiga
+==============
+
+|Gitter| |PyPiVersion| |PyVersion| |Status| |TestCoverage| |CodeClimate| |License|
+
+A python wrapper for the `Taiga REST API <http://taigaio.github.io/taiga-doc/dist/api.html>`_.
+
+Documentation: https://python-taiga.readthedocs.io/
+
+Usage: : https://python-taiga.readthedocs.io/usage.html
+
+
+.. warning:: Version 1.1 change the signature of HistoryItem methods.
+             Check the `documentation <https://python-taiga.readthedocs.io/>`_ and update your code if it uses kwargs for
+             ``HistoryEntity.delete_comment`` / ``HistoryEntity.undelete_comment``.
+
+.. |Gitter| image:: https://img.shields.io/badge/GITTER-join%20chat-brightgreen.svg?style=flat-square
+    :target: https://gitter.im/nephila/applications
+    :alt: Join the Gitter chat
+
+.. |PyPiVersion| image:: https://img.shields.io/pypi/v/python-taiga.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/python-taiga
+    :alt: Latest PyPI version
+
+.. |PyVersion| image:: https://img.shields.io/pypi/pyversions/python-taiga.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/python-taiga
+    :alt: Python versions
+
+.. |Status| image:: https://img.shields.io/travis/nephila/python-taiga.svg?style=flat-square
+    :target: https://travis-ci.org/nephila/python-taiga
+    :alt: Latest Travis CI build status
+
+.. |TestCoverage| image:: https://img.shields.io/coveralls/nephila/python-taiga/master.svg?style=flat-square
+    :target: https://coveralls.io/r/nephila/python-taiga?branch=master
+    :alt: Test coverage
+
+.. |License| image:: https://img.shields.io/github/license/nephila/python-taiga.svg?style=flat-square
+   :target: https://pypi.python.org/pypi/python-taiga/
+    :alt: License
+
+.. |CodeClimate| image:: https://codeclimate.com/github/nephila/python-taiga/badges/gpa.svg?style=flat-square
+   :target: https://codeclimate.com/github/nephila/python-taiga
+   :alt: Code Climate
+
+.. :changelog:
+
+*********
+History
+*********
+
+.. towncrier release notes start
+
+1.1.0 (2023-04-23)
+==================
+
+Features
+--------
+
+- Update tooling, drop Python 2 (#59)
+- Implement list_epic_attributes() (#103)
+- Update packaging - python versions (#124)
+
+
+Bugfixes
+--------
+
+- Update HistoryItem methods signatures (#97)
+- Improve models documentation (#105)
+- Add refresh token support to tests/resources/auth_users_success.json (#114)
+- Fix pagination (#116)
+- Update linting tools and fix code style (#117)
+
+
+Improved Documentation
+----------------------
+
+- Improve documentation (#58)
+
+
+1.0.0 (2019-08-08)
+==================
+
+* Add support for python 3.7
+* Add support for epics
+* Add support for additional attributes from Taiga 3.2/3.3
+* Improve models
+* Improve pagination support
+* Fix and enforce code style
+
+0.9.0 (2018-01-31)
+==================
+
+* Add support for multiple authentication backends
+* Add support for self-signed and not verified SSL certificates
+* Add support for webhooks
+* Add pagination support for lists
+* Add debian packaging
+* Avoid installing tests as a separate module
+* Move documentation to readthedocs
+* Add support for Python 3.5/3.6
+
+0.8.6 (2016-08-26)
+==================
+
+* Fix header values to be strings instead of boolean
+* Fix requests compatibility issues
