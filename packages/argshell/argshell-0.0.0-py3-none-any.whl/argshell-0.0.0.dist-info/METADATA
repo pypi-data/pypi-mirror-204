@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: argshell
+Version: 0.0.0
+Summary: Integrates the argparse and cmd modules.
+Project-URL: Homepage, https://github.com/matt-manes/argshell
+Project-URL: Documentation, https://github.com/matt-manes/argshell/tree/main/docs
+Project-URL: Source code, https://github.com/matt-manes/argshell/tree/main/src/argshell
+Author-email: Matt Manes <mattmanes@pm.me>
+License-File: LICENSE.txt
+Keywords: argparse,cmd,commandline,shell,terminal
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: pytest
+Description-Content-Type: text/markdown
+
+# argshell
+
+# **W.I.P.**
+Integrates the argparse and cmd modules.
+
+## ~~Installation~~
+
+~~Install with:~~
+
+~~<pre>
+pip install argshell
+</pre>~~
+
+
+
+## ~~Usage~~
+
+<pre>
+
+</pre>
