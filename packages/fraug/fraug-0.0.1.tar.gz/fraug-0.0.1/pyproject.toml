@@ -1,0 +1,24 @@
+[build-system]
+requires = ["maturin>=0.14,<0.15"]
+build-backend = "maturin"
+
+[project]
+name = "fraug"
+authors = [
+    { name = "Loïck Bourdois", email = "loick.bourdois@outlook.com" },
+    { name = "Thomas Chaigneau", email = "t.chaigneau.tc@gmail.com"}
+]
+version = "0.0.1"
+description = "FRAUG (For Realistic AUGmentations) 🐸 library"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+
+[tool.maturin]
+python-source = "python"
+features = ["pyo3/extension-module"]
