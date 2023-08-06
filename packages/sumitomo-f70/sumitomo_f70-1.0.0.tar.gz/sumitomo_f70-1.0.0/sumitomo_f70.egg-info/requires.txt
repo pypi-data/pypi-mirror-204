@@ -1,0 +1,3 @@
+requests
+packaging
+pyserial>=3.5
