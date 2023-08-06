@@ -1,0 +1,9 @@
+binooculars-0.0.2.dist-info/METADATA,sha256=J9oVDHbi_wxS2EH_1RkYY15C7-VULFS3MTNbw3EMQJE,1208
+binooculars-0.0.2.dist-info/WHEEL,sha256=8hoTVLxyLdG351Jq1HozDQCHHiKu32mfNA2_wpcO9P4,106
+binooculars/cluster/__init__.py,sha256=93kjXTIlFrS0wLLO2ll1T1ZSEHwcLGENSqXyhxN5Oz4,49
+binooculars/cluster/cluster.py,sha256=bHLV7_95sLn-jbaUQ1AOlQApq9vxLL_X2ukRDShGXV4,3404
+binooculars/linear/linear.py,sha256=PiMW2VUqS7qoPDfIBnuXDPMgAQP_kW6VbnNa1euFUls,4017
+binooculars/linear/__init__.py,sha256=Fvyi5kCP4VZl0No6txBmv9rCz8obiGGgbswPtHupVe4,110
+binooculars/__init__.py,sha256=KiR2v8gHNFY_7VAFCbhalH-heldQ6fwo4vgZJ08Zv5Q,235
+binooculars/binooculars.cpython-311-darwin.so,sha256=WdGo6TTL-LzqDNBA7TGTwHndaInCWm-gs-oGSTSoLTk,590286
+binooculars-0.0.2.dist-info/RECORD,,
