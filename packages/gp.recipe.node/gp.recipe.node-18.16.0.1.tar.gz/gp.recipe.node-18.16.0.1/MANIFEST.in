@@ -1,0 +1,7 @@
+recursive-include gp *.rst
+include CONTRIBUTORS.txt
+include CHANGES.rst
+include *.py
+include .coveragerc
+include buildout.cfg
+include tox.ini
