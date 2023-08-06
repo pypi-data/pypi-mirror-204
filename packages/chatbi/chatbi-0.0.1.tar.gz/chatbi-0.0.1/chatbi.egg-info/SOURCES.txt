@@ -1,0 +1,7 @@
+setup.py
+chatbi/__init__.py
+chatbi.egg-info/PKG-INFO
+chatbi.egg-info/SOURCES.txt
+chatbi.egg-info/dependency_links.txt
+chatbi.egg-info/not-zip-safe
+chatbi.egg-info/top_level.txt
