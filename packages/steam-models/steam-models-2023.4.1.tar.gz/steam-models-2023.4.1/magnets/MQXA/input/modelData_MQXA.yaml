@@ -1,0 +1,535 @@
+Sources:
+  coil_fromROXIE: MQXA.data
+  conductor_fromROXIE: ../../roxie.cadata
+  iron_fromROXIE: MQXA_2D_modified.iron
+  BH_fromROXIE: ../../roxie.bhdata
+  magnetic_field_fromROXIE: MQXA.map2d
+  sm_inductance: null
+GeneralParameters:
+  magnet_name: MQXA
+  circuit_name: null
+  model:
+    name: MQXA_reference
+    version: v1.0
+    case: null
+    state: validated
+  magnet_type: multipole
+  T_initial: 1.9
+  magnetic_length: 6.37
+CoilWindings:
+  conductor_to_group: [1, 1, 2, 1, 2, 2, 1, 1, 2, 1, 2, 2, 1, 1, 2, 1, 2, 2, 1, 1, 2, 1, 2, 2, 1, 1, 2, 1, 2, 2, 1, 1, 2, 1, 2, 2, 1, 1, 2, 1, 2, 2, 1, 1, 2, 1, 2, 2]
+  group_to_coil_section: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  polarities_in_group: [1, 1, 1, 1, 1, 1, -1, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, -1, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1]
+  n_half_turn_in_group: []
+  half_turn_length: [6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37]
+  electrical_pairs:
+    group_together: [[1, 25], [2, 26], [4, 28], [3, 27], [5, 29], [6, 30], [48, 24], [47, 23], [45, 21], [46, 22], [44, 20], [43, 19], [37, 13], [38, 14], [40, 16], [39, 15], [41, 17], [42, 18], [36, 12], [35, 11], [33, 9], [34, 10], [32, 8], [31, 7]]
+    reversed: [1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0]
+    overwrite_electrical_order: []
+  multipole:
+    tbc: null
+  pancake:
+    tbc: null
+  solenoid:
+    coils: [{name: null, a1: null, a2: null, b1: null, b2: null, conductor_name: null, ntpl: null, nl: null, pre_preg: null, section: null}]
+  CCT_straight:
+    winding_order: null
+    winding_numberTurnsFormers: null
+    winding_numRowStrands: null
+    winding_numColumnStrands: null
+    winding_chws: null
+    winding_chhs: null
+    former_inner_radiuses: []
+    former_outer_radiuses: []
+    former_RRRs: []
+    cylinder_inner_radiuses: []
+    cylinder_outer_radiuses: []
+    cylinder_RRRs: []
+  CCT_curved:
+    tbc: null
+Conductors:
+- name: KEKI3RD2
+  version: null
+  case: null
+  state: null
+  cable:
+    type: Rutherford
+    n_strands: 27
+    n_strand_layers: 1
+    n_strands_per_layers: 27
+    bare_cable_width: 0.011
+    bare_cable_height_low: 0.001264
+    bare_cable_height_high: 0.001697
+    bare_cable_height_mean: 0.001487
+    th_insulation_along_width: 0.0001
+    th_insulation_along_height: 8.4e-05
+    width_core: null
+    height_core: null
+    strand_twist_pitch: 0.09
+    strand_twist_pitch_angle: null
+    Rc: 0.0001
+    Ra: null
+    f_superconductor: null
+    f_stabilizer: null
+    f_insulation: null
+    f_inner_voids: 0.03
+    f_outer_voids: 0.094414900743883
+    f_core: null
+    material_insulation: kapton
+    material_inner_voids: helium
+    material_outer_voids: kapton
+    material_core: null
+  strand:
+    type: Round
+    diameter: 0.000814
+    Cu_noCu_in_strand: 1.17
+    RRR: 179.8259386
+    T_ref_RRR_high: 273.0
+    T_ref_RRR_low: null
+    fil_twist_pitch: 0.02
+    f_Rho_effective: 1.0
+    material_superconductor: Nb-Ti
+    material_stabilizer: Cu
+    filament_diameter: 1e-05
+  Jc_fit:
+    type: CUDI1
+    Tc0_CUDI1: 9.2
+    Bc20_CUDI1: 14.5
+    C1_CUDI1: 84230.0
+    C2_CUDI1: -6547.6
+- name: KEKO3RD2
+  version: null
+  case: null
+  state: null
+  cable:
+    type: Rutherford
+    n_strands: 30
+    n_strand_layers: 2
+    n_strands_per_layers: 15
+    bare_cable_width: 0.011
+    bare_cable_height_low: 0.00121
+    bare_cable_height_high: 0.001469
+    bare_cable_height_mean: 0.00134
+    th_insulation_along_width: 0.0001
+    th_insulation_along_height: 8.4e-05
+    width_core: null
+    height_core: null
+    strand_twist_pitch: 0.09
+    strand_twist_pitch_angle: null
+    Rc: 0.0001
+    Ra: null
+    f_superconductor: null
+    f_stabilizer: null
+    f_insulation: null
+    f_inner_voids: 0.03
+    f_outer_voids: 0.0952217006247496
+    f_core: null
+    material_insulation: kapton
+    material_inner_voids: helium
+    material_outer_voids: kapton
+    material_core: null
+  strand:
+    type: Round
+    diameter: 0.000732
+    Cu_noCu_in_strand: 1.87
+    RRR: 179.8259386
+    T_ref_RRR_high: 273.0
+    T_ref_RRR_low: null
+    fil_twist_pitch: 0.02
+    f_Rho_effective: 1.0
+    material_superconductor: Nb-Ti
+    material_stabilizer: Cu
+    filament_diameter: 1e-05
+  Jc_fit:
+    type: CUDI1
+    Tc0_CUDI1: 9.2
+    Bc20_CUDI1: 14.5
+    C1_CUDI1: 54059.5
+    C2_CUDI1: -4146.0
+Circuit:
+  R_circuit: 0.0
+  L_circuit: null
+  R_parallel: null
+Power_Supply:
+  I_initial: 7180.0
+  t_off: 0.0
+  t_control_LUT: [-0.02, 0.0, 0.01]
+  I_control_LUT: [7180.0, 7180.0, 0.0]
+  R_crowbar: 0.0
+  Ud_crowbar: 0.0
+Quench_Protection:
+  Energy_Extraction:
+    t_trigger: 99999.0
+    R_EE: 0.066
+    power_R_EE: null
+    L: null
+    C: null
+  Quench_Heaters:
+    N_strips: 8
+    t_trigger: [99999.0, 99999.0, 99999.0, 99999.0, 99999.0, 99999.0, 99999.0, 99999.0]
+    U0: [225.0, 225.0, 225.0, 225.0, 225.0, 225.0, 225.0, 225.0]
+    C: [0.0282, 0.0282, 0.0282, 0.0282, 0.0282, 0.0282, 0.0282, 0.0282]
+    R_warm: [0.02123, 0.02123, 0.02123, 0.02123, 0.02123, 0.02123, 0.02123, 0.02123]
+    w: [0.015, 0.015, 0.015, 0.015, 0.015, 0.015, 0.015, 0.015]
+    h: [2.5e-05, 2.5e-05, 2.5e-05, 2.5e-05, 2.5e-05, 2.5e-05, 2.5e-05, 2.5e-05]
+    s_ins: [7.5e-05, 7.5e-05, 7.5e-05, 7.5e-05, 7.5e-05, 7.5e-05, 7.5e-05, 7.5e-05]
+    type_ins: [2, 2, 2, 2, 2, 2, 2, 2]
+    s_ins_He: [0.00015, 0.00015, 0.00015, 0.00015, 0.00015, 0.00015, 0.00015, 0.00015]
+    type_ins_He: [2, 2, 2, 2, 2, 2, 2, 2]
+    l: [6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37, 6.37]
+    l_copper: [0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12]
+    l_stainless_steel: [0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12]
+    f_cover: [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    iQH_toHalfTurn_From: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+    iQH_toHalfTurn_To: [49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487]
+  CLIQ:
+    t_trigger: 99999.0
+    current_direction: [1]
+    sym_factor: null
+    N_units: 1
+    U0: 1000.0
+    C: 0.04
+    R: 0.05
+    L: null
+    I0: null
+  FQPLs:
+    enabled: null
+    names: null
+    fndpls: null
+    fwws: null
+    fwhs: null
+    r_ins: null
+    r_bs: null
+    n_sbs: null
+    thetas: null
+    z_starts: null
+    z_ends: null
+    currents: null
+    sigmas: null
+    mu_rs: null
+    th_conns_def: null
+Options_FiQuS:
+  run:
+    type: start_from_yaml
+    geometry: null
+    mesh: null
+    solution: null
+    launch_gui: false
+    overwrite: false
+  cct:
+    geometry:
+      windings:
+        names: null
+        r_wms: null
+        ndpts: null
+        ndpt_ins: null
+        ndpt_outs: null
+        lps: null
+        alphas: null
+        wwws: null
+        wwhs: null
+      formers:
+        names: null
+        z_mins: null
+        z_maxs: null
+      air:
+        name: null
+        sh_type: null
+        ar: null
+        z_min: null
+        z_max: null
+    mesh:
+      MaxAspectWindings: null
+      ThresholdSizeMin: null
+      ThresholdSizeMax: null
+      ThresholdDistMin: null
+      ThresholdDistMax: null
+    solve:
+      windings:
+        currents: null
+        sigmas: null
+        mu_rs: null
+      formers:
+        sigmas: null
+        mu_rs: null
+      air:
+        sigma: null
+        mu_r: null
+      pro_template: null
+      variables: null
+      volumes: null
+      file_exts: null
+    postproc:
+      additional_outputs: null
+      fqpl_export_trim_tol: null
+      variables: null
+      volumes: null
+      file_exts: null
+  multipole:
+    geometry:
+      with_iron_yoke: true
+      with_wedges: true
+    mesh:
+      default_mesh: true
+      mesh_iron:
+        SizeMin: 0.005
+        SizeMax: 0.1
+        DistMin: 0.02
+        DistMax: 0.5
+      mesh_coil:
+        SizeMin: 0.001
+        SizeMax: 0.05
+        DistMin: 0.01
+        DistMax: 0.3
+      MeshSizeMin: 0.0001
+      MeshSizeMax: 0.05
+      MeshSizeFromCurvature: 20.0
+      Algorithm: 6
+      AngleToleranceFacetOverlap: 0.1
+      ElementOrder: 2
+      Optimize: 1
+    solve:
+      electromagnetics:
+        solved: stationary
+        boundary_conditions:
+          currents: []
+        transient:
+          time_pars:
+            initial_time: null
+            final_time: null
+            time_step: null
+          initial_current: null
+      thermal:
+        solved: ''
+        boundary_conditions:
+          temperature: {}
+          heat_flux: {}
+          cooling: {}
+        transient:
+          time_pars:
+            initial_time: null
+            final_time: null
+            time_step: null
+          initial_temperature: null
+          quench_initiation:
+            turns: []
+            temperatures: []
+      thin_shells: true
+      pro_template: Multipole_template.pro
+    postproc:
+      compare_to_ROXIE: null
+      plot_all: 'False'
+      variables: [b]
+      volumes: [powered]
+      file_exts: [pos]
+      additional_outputs: []
+Options_LEDET:
+  time_vector:
+    time_vector_params: [-0.04, 5e-05, -0.001, -0.00095, 5e-05, 0.175, 0.1755, 0.0005, 1.0]
+  magnet_inductance:
+    flag_calculate_inductance: true
+    overwrite_inductance_coil_sections: [[]]
+    overwrite_HalfTurnToInductanceBlock: []
+    LUT_DifferentialInductance_current: [0.0, 48.6132, 475.608672, 902.604144, 1329.59962, 1756.59509, 2183.59056, 2610.58603, 3037.5815, 3464.57698, 3891.57245, 4318.56792, 4745.56339, 5172.55886, 5599.55434, 7734.5317, 8161.52717, 8588.52264, 9015.51811, 9442.51358, 9869.50906, 10296.5045, 10723.5]
+    LUT_DifferentialInductance_inductance: [1.30567338991739, 1.30567338991739, 1.30567338991739, 1.30549125586901, 1.30496704805863, 1.30453847796975, 1.3036134971955, 1.29919854184369, 1.28123018535852, 1.2466544213629, 1.2084962367506, 1.16528534140653, 1.12054040903043, 1.07978480208118, 1.06014514020285, 1.03289665499258, 1.03019118379969, 1.02756762956332, 1.02508026822989, 1.02242356559671, 1.0197594908711, 1.01783717006709, 1.01648530177563]
+  heat_exchange:
+    heat_exchange_max_distance: 0.0016
+    iContactAlongWidth_pairs_to_add: []
+    iContactAlongWidth_pairs_to_remove: []
+    iContactAlongHeight_pairs_to_add: []
+    iContactAlongHeight_pairs_to_remove: []
+    th_insulationBetweenLayers: null
+  conductor_geometry_used_for_ISCL:
+    alphaDEG_ht: [0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 24.5, 26.8238, 29.1476, 31.4714, 0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 18.5904, 20.9142, 23.238, 25.5618, 23.49, 24.838, 26.186, 27.534, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 20.22, 21.568, 22.916, 0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 24.5, 26.8238, 29.1476, 31.4714, 0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 18.5904, 20.9142, 23.238, 25.5618, 23.49, 24.838, 26.186, 27.534, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 20.22, 21.568, 22.916, 0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 24.5, 26.8238, 29.1476, 31.4714, 0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 18.5904, 20.9142, 23.238, 25.5618, 23.49, 24.838, 26.186, 27.534, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 20.22, 21.568, 22.916, 0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 24.5, 26.8238, 29.1476, 31.4714, 0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 18.5904, 20.9142, 23.238, 25.5618, 23.49, 24.838, 26.186, 27.534, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 20.22, 21.568, 22.916, 0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 24.5, 26.8238, 29.1476, 31.4714, 0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 18.5904, 20.9142, 23.238, 25.5618, 23.49, 24.838, 26.186, 27.534, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 20.22, 21.568, 22.916, 0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 24.5, 26.8238, 29.1476, 31.4714, 0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 18.5904, 20.9142, 23.238, 25.5618, 23.49, 24.838, 26.186, 27.534, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 20.22, 21.568, 22.916, 0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 24.5, 26.8238, 29.1476, 31.4714, 0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 18.5904, 20.9142, 23.238, 25.5618, 23.49, 24.838, 26.186, 27.534, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 20.22, 21.568, 22.916, 0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 24.5, 26.8238, 29.1476, 31.4714, 0.0, 2.3238, 4.6476, 6.9714, 9.2952, 11.619, 13.9428, 16.2666, 18.5904, 20.9142, 23.238, 25.5618, 23.49, 24.838, 26.186, 27.534, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 0.0, 1.348, 2.696, 4.044, 5.392, 6.74, 8.088, 9.436, 10.784, 12.132, 13.48, 14.828, 16.176, 17.524, 18.872, 20.22, 21.568, 22.916]
+    rotation_ht: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 180.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0, 270.0]
+    mirror_ht: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    mirrorY_ht: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  field_map_files:
+    Iref: 7149.0
+    flagIron: 1
+    flagSelfField: 1
+    headerLines: 1
+    columnsXY: [4, 5]
+    columnsBxBy: [6, 7]
+    flagPlotMTF: 0
+    fieldMapNumber: null
+    flag_modify_map2d_ribbon_cable: 0
+    flag_calculateMagneticField: null
+  input_generation_options:
+    flag_calculateInductanceMatrix: 0
+    flag_useExternalInitialization: 0
+    flag_initializeVar: 0
+    selfMutualInductanceFileNumber: null
+  simulation:
+    flag_fastMode: 1
+    flag_controlCurrent: 0
+    flag_automaticRefinedTimeStepping: 1
+  physics:
+    flag_IronSaturation: 1
+    flag_InvertCurrentsAndFields: 0
+    flag_ScaleDownSuperposedMagneticField: 1
+    flag_HeCooling: 2
+    fScaling_Pex: 1.0
+    fScaling_Pex_AlongHeight: 0.2857142857142858
+    fScaling_MR: 1.0
+    flag_scaleCoilResistance_StrandTwistPitch: 2
+    flag_separateInsulationHeatCapacity: 0
+    flag_persistentCurrents: 0
+    flag_ISCL: 1
+    fScaling_Mif: 1.0
+    fScaling_Mis: 1.0
+    flag_StopIFCCsAfterQuench: 0
+    flag_StopISCCsAfterQuench: 0
+    tau_increaseRif: 0.005
+    tau_increaseRis: 0.01
+    fScaling_RhoSS: 1.09
+    maxVoltagePC: 10.0
+    minCurrentDiode: 10.0
+    flag_symmetricGroundingEE: 0
+    flag_removeUc: 0
+    BtX_background: 0.0
+    BtY_background: 0.0
+  quench_initiation:
+    iStartQuench: [1]
+    tStartQuench: [99999.0]
+    lengthHotSpot_iStartQuench: [0.01]
+    fScaling_vQ_iStartQuench: [1.0]
+  post_processing:
+    flag_showFigures: 0
+    flag_saveFigures: 0
+    flag_saveMatFile: 1
+    flag_saveTxtFiles: 0
+    flag_generateReport: 1
+    flag_saveResultsToMesh: 0
+    tQuench: [-0.015]
+    initialQuenchTemp: [10.0]
+    flag_hotSpotTemperatureInEachGroup: 0
+  simulation_3D:
+    flag_3D: 0
+    flag_adaptiveTimeStepping: 0
+    sim3D_flag_Import3DGeometry: 0
+    sim3D_import3DGeometry_modelNumber: 0
+    sim3D_uThreshold: 1000000.0
+    sim3D_f_cooling_down: 0.0
+    sim3D_f_cooling_up: 0.0
+    sim3D_f_cooling_left: 0.0
+    sim3D_f_cooling_right: 0.0
+    sim3D_f_cooling_LeadEnds: [1, 1]
+    sim3D_fExToIns: 1.0
+    sim3D_fExUD: 1.0
+    sim3D_fExLR: 1.0
+    sim3D_min_ds_coarse: 0.1
+    sim3D_min_ds_fine: 0.001
+    sim3D_min_nodesPerStraightPart: 4
+    sim3D_min_nodesPerEndsPart: 4
+    sim3D_idxFinerMeshHalfTurn: [1]
+    sim3D_flag_checkNodeProximity: 0
+    sim3D_nodeProximityThreshold: 0.01
+    sim3D_Tpulse_sPosition: 0.0
+    sim3D_Tpulse_peakT: 20.0
+    sim3D_Tpulse_width: 0.01
+    sim3D_tShortCircuit: 1000000000.0
+    sim3D_coilSectionsShortCircuit: [0]
+    sim3D_R_shortCircuit: 1000000000.0
+    sim3D_shortCircuitPosition: 0.0
+    sim3D_durationGIF: 20.0
+    sim3D_flag_saveFigures: 1
+    sim3D_flag_saveGIF: 1
+    sim3D_flag_VisualizeGeometry3D: 1
+    sim3D_flag_SaveGeometry3D: 1
+  plots:
+    suffixPlot: []
+    typePlot: []
+    outputPlotSubfolderPlot: []
+    variableToPlotPlot: []
+    selectedStrandsPlot: []
+    selectedTimesPlot: []
+    labelColorBarPlot: []
+    minColorBarPlot: []
+    maxColorBarPlot: []
+    MinMaxXYPlot: []
+    flagSavePlot: []
+    flagColorPlot: []
+    flagInvisiblePlot: []
+  variables_to_save:
+    variableToSaveTxt: [time_vector, Ia, Ib, T_ht, dT_dt_ht, flagQ_ht, IifX, IifY, Iis, dIifXDt, dIifYDt, dIisDt, Uc, U_QH, T_QH, time_vector, R_CoilSections, U_inductive_dynamic_CoilSections]
+    typeVariableToSaveTxt: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1]
+    variableToInitialize: [Ia, Ib, T_ht, dT_dt_ht, flagQ_ht, IifX, IifY, Iis, dIifXDt, dIifYDt, dIisDt, Uc, U_QH, T_QH]
+    writeToMesh_fileNameMeshPositions: []
+    writeToMesh_suffixFileNameOutput: []
+    writeToMesh_selectedVariables: []
+    writeToMesh_selectedTimeSteps: []
+    writeToMesh_selectedMethod: []
+Options_ProteCCT:
+  time_vector:
+    tMaxStopCondition: null
+    minTimeStep: null
+  geometry_generation_options:
+    totalConductorLength: null
+    thFormerInsul: null
+    IcFactor: null
+    polyimideToEpoxyRatio: null
+  simulation:
+    tempMaxStopCondition: null
+    IOpFractionStopCondition: null
+    fracCurrentChangeMax: null
+    resultsAtTimeStep: null
+    deltaTMaxAllowed: null
+    turnLengthElements: null
+    externalWaveform: null
+    saveStateAtEnd: null
+    restoreStateAtStart: null
+    silentRun: null
+  physics:
+    M: [[]]
+    BMaxAtNominal: null
+    BMinAtNominal: null
+    INominal: null
+    fieldPeriodicity: null
+    coolingToHeliumBath: null
+    fLoopLength: null
+    addedHeCpFrac: null
+    addedHeCoolingFrac: null
+  post_processing:
+    withVoltageEvaluation: null
+    voltageToGroundOutputSelection: null
+  plots:
+    withPlots: null
+    plotPauseTime: null
+Options_SIGMA:
+  time_vector_solution:
+    time_step: [[0.0, 0.001, 0.05], [0.05, 0.01, 0.25]]
+  simulation:
+    generate_study: true
+    study_type: Transient
+    make_batch_mode_executable: true
+    nbr_elements_mesh_width: 4
+    nbr_elements_mesh_height: 1
+  physics:
+    FLAG_M_pers: null
+    FLAG_ifcc: null
+    FLAG_iscc_crossover: null
+    FLAG_iscc_adjw: null
+    FLAG_iscc_adjn: null
+    tauCC_PE: null
+  quench_initialization:
+    PARAM_time_quench: null
+    FLAG_quench_all: null
+    FLAG_quench_off: null
+    num_qh_div: [10, 10, 10, 10, 10, 10, 10, 10]
+    quench_init_heat: null
+    quench_init_HT: [CO_P0_W0_B0_HT0]
+    quench_stop_temp: null
+  postprocessing:
+    out_2D_at_points:
+      coordinate_source: null
+      variables: [mf.normB, mf.Bx, mf.By]
+      time: [[0.0, 0.01, 0.02], [0.0, 0.15, 0.2], [0.0, 0.15, 0.2]]
+    out_1D_vs_times:
+      variables: [I, QHComp.ht2.QH_1_Coil_Temperature.Tave, QHComp.ht2.QH_2_Coil_Temperature.Tave, QHComp.ht2.QH_3_Coil_Temperature.Tave, QHComp.ht2.QH_4_Coil_Temperature.Tave, QHComp.ht2.QH_5_Coil_Temperature.Tave, QHComp.ht2.QH_6_Coil_Temperature.Tave, QHComp.ht2.QH_7_Coil_Temperature.Tave, QHComp.ht2.QH_8_Coil_Temperature.Tave]
+      time: [[0.0, 0.01, 0.02], [0.0, 0.15, 0.2], [0.0, 0.15, 0.2]]
+    out_1D_vs_all_times:
+      variables: [I, QHComp.ht2.QH_1_Coil_Temperature.Tave, QHComp.ht2.QH_2_Coil_Temperature.Tave, QHComp.ht2.QH_3_Coil_Temperature.Tave, QHComp.ht2.QH_4_Coil_Temperature.Tave, QHComp.ht2.QH_5_Coil_Temperature.Tave, QHComp.ht2.QH_6_Coil_Temperature.Tave, QHComp.ht2.QH_7_Coil_Temperature.Tave, QHComp.ht2.QH_8_Coil_Temperature.Tave]
+  quench_heaters:
+    quench_heater_positions: [[4878, 4880, 4882, 4884, 4886, 4888, 4890, 4892, 4894, 4896, 4898, 4900, 4902, 4904, 4906, 4908, 4910, 4912, 4914, 4916, 4918, 4920, 4922, 4924], [1255, 1267, 1283, 1303, 1329, 1355, 1379, 1412, 1444, 1486, 1517, 1552, 1591, 1624, 1666, 1701, 1736, 1770, 1804, 1849, 1887, 1927, 1976, 2024], [41, 45, 49, 53, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97, 101, 105, 109, 113, 117, 121, 125, 129, 133], [2919, 2967, 3015, 3065, 3102, 3138, 3183, 3256, 3256, 3290, 3328, 3374, 3408, 3452, 3484, 3517, 3561, 3591, 3619, 3639, 3659, 3675, 3687, 3697], [2920, 2968, 3016, 3066, 3103, 3139, 3184, 3219, 3257, 3291, 3329, 3375, 3409, 3453, 3485, 3518, 3562, 3592, 3620, 3640, 3660, 3676, 3688, 3698], [43, 47, 51, 55, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99, 103, 107, 111, 115, 119, 123, 127, 131, 135], [1253, 1265, 1281, 1301, 1327, 1353, 1377, 1410, 1442, 1484, 1515, 1550, 1589, 1622, 1664, 1699, 1734, 1768, 1802, 1847, 1885, 1925, 1974, 2022], [4877, 4879, 4881, 4883, 4885, 4887, 4889, 4891, 4893, 4895, 4897, 4899, 4901, 4903, 4905, 4907, 4909, 4911, 4913, 4915, 4917, 4919, 4921, 4923]]
+    th_coils: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
