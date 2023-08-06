@@ -1,0 +1,9 @@
+alog
+build
+click
+pyee
+requests
+semver
+setuptools
+websocket-client>=1
+wheel
