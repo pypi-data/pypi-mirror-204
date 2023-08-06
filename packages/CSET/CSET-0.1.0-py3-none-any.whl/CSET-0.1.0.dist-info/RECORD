@@ -1,0 +1,17 @@
+CSET/__init__.py,sha256=XLNsjSMPIqEqlc_7lt6v0mvv3b34KkK9yhYPmtToeRI,2085
+CSET/__main__.py,sha256=2aMZAUu-NqfVvIdcErhrwurDJdgV3l93oIJYptZuFDM,706
+CSET/operators/__init__.py,sha256=p6TkLC0SxZEhMs5L8t3htyCaox2ra9ZHWVgIHeY060c,873
+CSET/operators/_internal.py,sha256=aJ_F35f8IaIL5qGOOf-YvKsQQs2C3JFtRvbl1umnt8k,3600
+CSET/operators/constraints.py,sha256=vOxTZgee7F9n57f_UeTYLc8g5k_t4tzBGo5rxySBYgQ,4397
+CSET/operators/filters.py,sha256=C4Z2Fc7ta5SrlKxKOyU_4xchP0SEj11nz3lowZRN_gE,1511
+CSET/operators/misc.py,sha256=4p7eYLmhcc08_cCSudYe8N7CcftYwiQxvdvVD-Pk8wE,914
+CSET/operators/plot.py,sha256=qCqWYZWb-1ktk4owGRma-Ntcz_OTOnrSEzgO5hr5cbI,1389
+CSET/operators/read.py,sha256=R0XgosUVTUbwDoUk8rUYWW6zp5_FpqH4JpDPHOWpxqM,1386
+CSET/operators/write.py,sha256=VFHkTLeXRW_v6zc_9gSmxTznbxwScthMTf1KqXQJ4yc,1478
+CSET/operators/RECIPES/__init__.py,sha256=hbATZrvwMhcqEpX9WwY5Gr25iABGMooBdJXmUwAydzs,970
+CSET-0.1.0.dist-info/LICENCE,sha256=IO92bVWJFYtEqzFiGlOrFfIX6UCTGFoTB_FsmMA38LM,10996
+CSET-0.1.0.dist-info/METADATA,sha256=GKB-VpIr0Ezq2pdCWFp-Y5y5uhkUxADxPJX9847L58A,2193
+CSET-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+CSET-0.1.0.dist-info/entry_points.txt,sha256=q_FkJVV0yibhVsfvUJCqZ10TX1T4D1rObsjuUiiEXIk,35
+CSET-0.1.0.dist-info/top_level.txt,sha256=v7cPH10heGhYtskIt4nuhWohbLALaJcMACm04oAETDA,5
+CSET-0.1.0.dist-info/RECORD,,
