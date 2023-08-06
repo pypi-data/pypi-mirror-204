@@ -1,0 +1,17 @@
+README.md,sha256=BKZwYVe9xe1MOYK23EWSa8rUb_TAVGCcNik8NIK_CZI,13
+mlops_core/bootstrap.py,sha256=s4BcGp7LNqoumnZghCGEETxs3wSLcavifl25oQTSUdY,449
+mlops_core/connectivity/networking.py,sha256=xicYWVtyXqMyALSN6IBMZifRocDN6Ehzjs_QLM9D-kI,5483
+mlops_core/connector/kaggle.py,sha256=7nif-_vTRwos9l8No11E0AL-pnN5rfWdyMdel9PucqA,878
+mlops_core/detection/project_arguments.py,sha256=6NxtUls-9ADlLTeODxfWUDpVH4H1ACxNzk1DWT0MAyk,973
+mlops_core/detection/project_configurations.py,sha256=YVZaxyW13rYX13dh-lzZbhVd8gsP-zmdJdWpl0jFKkM,3654
+mlops_core/detection/project_structure.py,sha256=pjrsDRBXD8tC8UuuwnF08RBEw4m5TnX6NK0BT9tnJdI,4251
+mlops_core/generator/project_generator.py,sha256=4knbtLOFKeigOiqDPTAGV0Z_jkM3pfZ6jVQWvU7oJOA,6616
+mlops_core/runtime.py,sha256=lNs63fPzhjV_hvFHFrMY_1zZuNQ66EuyUh2tk1J6aRA,165
+mlops_core/utils/strings.py,sha256=Lu818_Vw-f99LJ9Bg67_RhcN9rV5BRRwZARWx2h2s-Y,366
+templates/ISSUE_TEMPLATE.md.jinja,sha256=rVVL19UfM8dfi1vIkma7C2y8pzh3N2yrglFgcfeGk5M,143
+templates/PULL_REQUEST_TEMPLATE.md.jinja,sha256=SYPzapeb3wUitgRISGS_Z1cU5sXvN4DXgYRPhJmpils,46
+templates/README.md.jinja,sha256=c0ItYug77hmvGs4yHYacQN-TkRo2RUusqnZSJNbXlkw,20
+templates/devcontainer.json,sha256=ITHjXWu43KELIyP6XslOAk7G452e6F91Ak2YuQl-8OM,266
+mlops_core-0.2.3.dist-info/METADATA,sha256=lCmGwMCiApPAQvmmoyAd9FYw2o5VJy-3weHijLV1F20,444
+mlops_core-0.2.3.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+mlops_core-0.2.3.dist-info/RECORD,,
