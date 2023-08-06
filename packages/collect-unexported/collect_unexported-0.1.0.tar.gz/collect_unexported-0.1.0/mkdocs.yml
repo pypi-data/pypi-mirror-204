@@ -1,0 +1,51 @@
+# SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+# SPDX-License-Identifier: BSD-2-Clause
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - toc.integrate
+    - toc.follow
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+site_name: collect-unexported
+repo_url: https://gitlab.com/ppentchev/collect-unexported
+repo_name: collect-unexported
+site_author: ppentchev
+site_url: https://devel.ringlet.net/misc/collect-unexported/
+site_dir: site/docs
+nav:
+  - 'index.md'
+  - 'Changelog': 'changes.md'
+  - 'Reference':
+    - 'The command-line tool': 'reference/cmdline.md'
+    - 'The Python library': 'reference/python-api.md'
+markdown_extensions:
+  - toc:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite:
+  - pymdownx.superfences:
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            heading_level: 4
+            show_root_heading: true
+  - search
+watch:
+  - 'src/collect_unexported'

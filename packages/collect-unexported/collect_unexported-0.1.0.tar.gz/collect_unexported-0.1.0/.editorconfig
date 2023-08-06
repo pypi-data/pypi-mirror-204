@@ -1,0 +1,47 @@
+# https://editorconfig.org/
+#
+# SPDX-FileCopyrightText: 2022 - 2023  StorPool <support@storpool.com>
+# SPDX-License-Identifier: BSD-2-Clause
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+[*.md]
+indent_style = space
+indent_size = 2
+
+[*.nix]
+indent_style = space
+indent_size = 2
+
+[*.py]
+indent_style = space
+indent_size = 4
+
+[*.sh]
+indent_style = tab
+tab_size = 8
+
+[*.toml]
+indent_style = space
+indent_size = 2
+
+[*.yml]
+indent_style = space
+indent_size = 2
+
+[.reuse/dep5]
+indent_style = space
+indent_size = 2
+
+[test_data/frobinator/debian/changelog]
+indent_style = space
+indent_size = 2
+
+[tox.ini]
+indent_style = space
+indent_size = 2

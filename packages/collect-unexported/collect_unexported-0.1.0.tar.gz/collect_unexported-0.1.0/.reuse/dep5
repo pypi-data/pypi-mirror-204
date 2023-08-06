@@ -1,0 +1,9 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: collect-unexported
+Upstream-Contact: Peter Pentchev <roam@ringlet.net>
+Source: https://gitlab.com/ppentchev/collect-unexported
+
+Files:
+  test_data/frobinator/debian/changelog
+Copyright: Peter Pentchev <roam@ringlet.net>
+License: BSD-2-Clause
