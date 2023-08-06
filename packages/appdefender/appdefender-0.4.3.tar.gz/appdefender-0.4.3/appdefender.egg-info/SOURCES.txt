@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+appdefender/__init__.py
+appdefender.egg-info/PKG-INFO
+appdefender.egg-info/SOURCES.txt
+appdefender.egg-info/dependency_links.txt
+appdefender.egg-info/top_level.txt
+appdefender.egg-info/zip-safe
+appdefender/lib/libcore.aarch64.gnu.so
+appdefender/lib/libcore.aarch64.musl.so
+appdefender/lib/libcore.x86_64.gnu.so
+appdefender/lib/libcore.x86_64.musl.so
