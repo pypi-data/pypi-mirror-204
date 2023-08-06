@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+LICENSES/Apache-2.0.txt
+src/xtest_sapnwrfc/__init__.py
+src/xtest_sapnwrfc/_cyrfc.cpp
+src/xtest_sapnwrfc/_cyrfc.pyx
+src/xtest_sapnwrfc/_exception.py
+src/xtest_sapnwrfc/_utils.py
+src/xtest_sapnwrfc/csapnwrfc.pxd
+src/xtest_sapnwrfc.egg-info/PKG-INFO
+src/xtest_sapnwrfc.egg-info/SOURCES.txt
+src/xtest_sapnwrfc.egg-info/dependency_links.txt
+src/xtest_sapnwrfc.egg-info/top_level.txt
