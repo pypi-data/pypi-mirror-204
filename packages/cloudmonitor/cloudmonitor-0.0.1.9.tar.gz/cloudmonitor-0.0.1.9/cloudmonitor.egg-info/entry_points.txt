@@ -1,0 +1,4 @@
+[console_scripts]
+cloud-monitor = cloudmonitor:main
+cloudmonitor = cloudmonitor:main
+
