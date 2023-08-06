@@ -1,0 +1,31 @@
+# Copyright (c) 2017-2021, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# we need to have that defined and accessible before any other DALI import
+__version__ = '1.25.0'
+__cuda_version__ = int('12.1.66'.replace('.', ''))
+__git_sha__ = '8a17f3caa31ab99c1a13f36eb8208beb410eba52'
+
+from . import ops
+from . import pipeline
+from . import tensors
+from . import fn
+from . import data_node
+from . import math
+from . import tfrecord
+from . import types
+from . import plugin_manager
+from . import sysconfig
+from .pipeline import Pipeline, pipeline_def
+from .data_node import newaxis
