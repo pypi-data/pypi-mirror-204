@@ -1,0 +1,11 @@
+tomli
+tomli-w
+requests
+oyaml
+ed25519-blake2b
+gmpy2
+aiohttp
+pytest
+pytest-html
+nanolib
+extradict

@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: nano_local
+Version: 0.1.5
+Summary: A simple way to locally create a network of nano_nodes
+Author: gr0vity
