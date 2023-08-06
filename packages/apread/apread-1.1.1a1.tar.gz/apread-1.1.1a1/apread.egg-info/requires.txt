@@ -1,0 +1,5 @@
+matplotlib
+typing
+tqdm
+pandas
+multiprocessing
