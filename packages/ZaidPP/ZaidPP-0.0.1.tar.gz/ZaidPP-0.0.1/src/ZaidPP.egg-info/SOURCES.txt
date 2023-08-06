@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/ZaidPP/ZaidPP.py
+src/ZaidPP/__init__.py
+src/ZaidPP.egg-info/PKG-INFO
+src/ZaidPP.egg-info/SOURCES.txt
+src/ZaidPP.egg-info/dependency_links.txt
+src/ZaidPP.egg-info/top_level.txt
