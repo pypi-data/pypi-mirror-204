@@ -1,0 +1,4 @@
+requests
+ruff
+argparse
+huggingface_hub
