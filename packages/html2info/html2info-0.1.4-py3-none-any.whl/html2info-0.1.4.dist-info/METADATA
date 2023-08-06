@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: html2info
+Version: 0.1.4
+Summary: A package to parse raw HTML and return structured information.
+Author: Vladimir Iglovikov
+Author-email: iglovikov@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4 (>=4.12.2)
+
+# html2info
+
+`html2info` is a Python package that allows you to parse LinkedIn profiles from raw HTML and return structured information in JSON format.
+
+## Features
+
+- Extracts profile information such as name, title, location, profile photo, about, experience, and education.
+- Returns a JSON object containing the parsed data.
+
+## Installation
+
+Install `html2info` using pip:
+
+```bash
+pip install html2info
+```
+
+## Usage
+
+Here's an example of how to use html2info:
+
+```python
+from html2info.linkedin import Person
+
+url = "https://www.linkedin.com/in/iglovikov/"
+raw_data = "..."  # Raw HTML content of the LinkedIn page
+
+person = Person(url, raw_data)
+person.parse()
+print(person.to_dict())
+```
+
+```json
+{
+    "linkedin_url": "https://www.linkedin.com/in/iglovikov/",
+    "name": "Vladimir Iglovikov",
+    "title": "Kaggle Grandmaster. Co-creator of Albumentations.AI",
+    "location": "San Francisco, California, United States",
+    "profile_photo_link": "https://media.licdn.com/dms/image/C4D03AQFDvheHDkAQlw/profile-displayphoto-shrink_400_400/0/1654539436934?e=1687392000&v=beta&t=OX7WrIprduo-xWEvrRKNzYdqcqG6bdzDtlm6LWuHbIE",
+    "about": "• Advisor and Angel investor.\n• Co-creator, Albumentations.AI: Open-source library with 30k daily downloads, adopted by top Computer Vision companies & Kaggle competition winners\n• Former Staff ML Engineer, Lyft Level5 (Autonomous Vehicles): Led Deep Learning model development & integration for Self-Driving & Ride Sharing\n• Kaggle Grandmaster: Multiple ML competition wins\n• Author: 20+ publications in Deep Learning for Medical, Satellite, Street View, and Natural Images",
+    "experience": [
+      {
+        "title": "Chief Executive Officer",
+        "company": "Ternaus Inc · Full-time",
+        "image_link": null,
+        "company_link": "https://www.linkedin.com/search/results/all/?keywords=Ternaus+Inc",
+        "dates": "Aug 2022 - Present · 9 mos",
+        "description": null
+      },
+      {
+        "title": "Evangelist",
+        "company": "OpenDataScience",
+        "image_link": "https://media.licdn.com/dms/image/C510BAQFU1fTt5tE6Ug/company-logo_100_100/0/1554042536921?e=1689811200&v=beta&t=-sIbC_T8hZjxf5TNgO_H0ClRcYb7Y_oow6dAdW8xMHg",
+        "company_link": "https://www.linkedin.com/company/11241268/",
+        "dates": "Aug 2016 - Mar 2022 · 5 yrs 8 mos",
+        "description": "OpenDataScience, or ODS, is a Russian-speaking community of over 50,000 data scientists, researchers, and engineers. ODS freely disseminates knowledge, and promotes professional development and exchange of ideas and opportunities in all areas of Data Science through live events, online classes and discussions, and other resources. Join us at http://ods.ai."
+      },
+      {
+        "title": "Staff ML Engineer",
+        "company": "Lyft · Full-time",
+        "image_link": "https://media.licdn.com/dms/image/C560BAQFoMDej0VdZVA/company-logo_100_100/0/1545416046198?e=1689811200&v=beta&t=JV79uOIdgcbYcAeg0YAklLLZ6c5VkldGSG-Zu3G42xI",
+        "company_link": "https://www.linkedin.com/company/2620735/",
+        "dates": "Oct 2017 - Aug 2021 · 3 yrs 11 mos",
+        "description": null
+      },
+      {
+        "title": "Advisor",
+        "company": "Iterative.ai · Part-time",
+        "image_link": "https://media.licdn.com/dms/image/C4E0BAQGnnEVzx81kBg/company-logo_100_100/0/1653056165184?e=1689811200&v=beta&t=dNl2Q2CDgmX2r3KiymYIqjPtXJQXIYeTzgdNduZLLTs",
+        "company_link": "https://www.linkedin.com/company/18657719/",
+        "dates": "Nov 2018 - Nov 2020 · 2 yrs 1 mo",
+        "description": null
+      },
+      {
+        "title": "Senior Data Scientist (Machine Learning)",
+        "company": "TrueAccord",
+        "image_link": "https://media.licdn.com/dms/image/C560BAQEo_A523IxkGQ/company-logo_100_100/0/1656418732741?e=1689811200&v=beta&t=YRjhRCxnfijmSz40qvRCeKxkfoMHYGU1oiPGIJht-aw",
+        "company_link": "https://www.linkedin.com/company/3249455/",
+        "dates": "Jun 2016 - Sep 2017 · 1 yr 4 mos",
+        "description": "Developed a supervised machine learning algorithm that predicts what personalized emails should be sent to each user to drive him to the target website. ROC AUC score 0.88. Prototyped, implemented, deployed and tested machine learning algorithm that helped to prioritize outbound phone traffic, improving conversion through phone calls by 80%."
+      }
+    ],
+    "education_list": [
+      {
+        "university_name": "University of California, Davis",
+        "degree_and_major": "Doctor of Philosophy (Ph.D.), Physics",
+        "dates": "2010 - 2015",
+        "university_link": "https://www.linkedin.com/company/2842/",
+        "image_link": "https://media.licdn.com/dms/image/C4E0BAQEBG25KNBwuCQ/company-logo_100_100/0/1616103040374?e=1689811200&v=beta&t=sUF5ars4S8ek3vZs01usUvGwSJsU01KYtANnMkkZFdQ"
+      },
+      {
+        "university_name": "Saint Petersburg State University",
+        "degree_and_major": "Master's degree, Physics",
+        "dates": "2001 - 2010",
+        "university_link": "https://www.linkedin.com/company/15099991/",
+        "image_link": "https://media.licdn.com/dms/image/C560BAQHWUjwogE235A/company-logo_100_100/0/1519863922741?e=1689811200&v=beta&t=DSpsTKY_AcMrmzWY1592EvCClph4M_TVOLdNSDpOg2I"
+      }
+    ]
+  }
+```
