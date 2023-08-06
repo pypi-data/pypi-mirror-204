@@ -1,0 +1,9 @@
+edwh/__about__.py,sha256=JSFfbcVJOetEeTmSYAaF3V1kMyP8TeOtb2ebcv1JKY0,139
+edwh/__init__.py,sha256=eSd5Rk8nEtE5zevrjtWa6AlvaOSnRx8dDHJGZQURf5k,117
+edwh/cli.py,sha256=QeuEvEEGxYIJPct2nDqwVwYRdBIslPFnH5EVv7223pM,1310
+edwh/tasks.py,sha256=CTF36CHPm7qNlYE_YgILISnNFNdxlo_KoooICDE_wsY,25452
+edwh-0.7.0.dist-info/METADATA,sha256=JBcNlfm5ynyroyQnsvr1WTktn0ebS75_0n2kcggoNS8,4547
+edwh-0.7.0.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+edwh-0.7.0.dist-info/entry_points.txt,sha256=44khznA_xSeBYTFidbM6Xlc7iLxxlVmokEIVOzArQ7A,72
+edwh-0.7.0.dist-info/licenses/LICENSE.txt,sha256=aEieA0fM2XTF7ZDTpgoyq1dgyRTHjLRSobAY2u5LQ4A,1094
+edwh-0.7.0.dist-info/RECORD,,
