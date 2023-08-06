@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: aiofauna
+Version: 0.0.32
+Summary: FaunaDB + Aiohttp fullstack framework
+Home-page: https://github.com/obahamonde/aiofauna
+License: MIT
+Author: Oscar Bahamonde
+Author-email: oscar.bahamonde.dev@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: aiohttp (>=3.8.4,<4.0.0)
+Requires-Dist: aiohttp-sse (>=2.1.0,<3.0.0)
+Requires-Dist: aiohttp_cors (>=0.7.0,<0.8.0)
+Requires-Dist: iso8601 (>=1.1.0,<2.0.0)
+Requires-Dist: pydantic[dotenv,email] (>=1.10.7,<2.0.0)
+Project-URL: Documentation, https://aiofauna.netlify.app/
+Project-URL: Repository, https://github.com/obahamonde/aiofauna
+Description-Content-Type: text/markdown
+
+---
+title: AioFauna
+---
+
+# AioFauna
+
+🚀 Introducing aiofauna: A powerful library to supercharge your FaunaDB experience with modern async Python frameworks! 🔥
+
+🌟 Features:
+
+✅ Async/await coroutines: Leverage the power of async programming for enhanced
+performance and responsiveness.
+
+✅ SSE (Server-Sent Events) support: Stream data in real-time to your clients.
+
+✅ Pydantic-based Document Object Mapper (DOM): Define and validate your data models with ease.
+
+✅ Auto-provisioning: Automatic management of indexes, unique indexes, and collections.
+
+✅ Standardized CRUD operations: Simplify your interactions with FaunaDB using find, find_unique, find_many, find_all, create, upsert, delete, and query methods.
+
+✅ Full JSON communication: Custom encoders to ensure seamless data exchange between your application and FaunaDB backend.
+
+✅ ASGI compliant: `aiofauna.asgi` module provides a middleware to convert `aiohttp.web.Application` into an ASGI application.
+
+💡 With aiofauna, you can build fast, scalable, and reliable applications using the power of FaunaDB and modern asynchronous Python with its out of the box `aiohttp` based web framework. Say goodbye to the hassle of manually managing indexes and collections and hello to a seamless data driven development experience with Pydantic.
+
+🌐 aiofauna is independent and allows native interaction with external services like Docker API, GCP API, AWS API among others, implementing a lightweight stack with aiohttp server capabilities and fauna backend (to be enhanced soon).
+
+📚 Check out the aiofauna library, and start building your next-gen applications today! 🚀
+#Python #FaunaDB #Async #Pydantic #aiofauna
+
+⚙️ If you are using a synchronous framework check out [Faudantic](https://github.com/obahamonde/faudantic) for a similar experience with FaunaDB and Pydantic.
+
+📚 [Documentation](https://aiofauna.smartpro.solutions)
+
+📦 [PyPi](https://pypi.org/project/aiofauna/)
+
+📦 [GitHub](https://github.com/obahamonde/aiofauna)
+
+📦 [Demo](https://aiofaunastreams-fwuw7gz7oq-uc.a.run.app/) (Stream data in real-time to your clients)
+
