@@ -1,0 +1,149 @@
+Metadata-Version: 2.1
+Name: icpd_core
+Version: 0.0.22
+Summary: IBM CPD Core Python Client
+Project-URL: Homepage, https://www.ibm.com/docs/en/cloud-paks/cp-data/4.6.x?topic=2-managing-secrets-vaults
+Author-email: IBM <rahul.shinge@us.ibm.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# IBM CPD Core Python Client
+
+This client provides methods for working with Python runtimes such as Jupyter and Jupyterlab in IBM Cloud Pak For Data.
+
+> **Table of contents**
+
+- [1. Installation](#1-installation)
+- [2. Credentials and secrets methods](#2-credentials-and-secrets-methods) 
+   - [2.1 Set API host when a notebook is running in a different namespace](#21-set-api-host-when-a-notebook-is-running-in-a-different-namespace)
+   - [2.2 Retrieve a list of secrets stored in a vault](#22-retrieve-a-list-of-secrets-stored-in-a-vault)
+   - [2.3 Retrieve the details of a secret](#23-retrieve-the-details-of-a-secret)
+- [3. License](#3-license)  
+
+
+## [1] Installation
+
+To install this client, use `pip`.
+
+```
+pip install --upgrade icpd-core
+```
+
+## [2] Credentials and secrets methods
+
+This client abstracts Python programs that use external vaults configured by a Cloud Pak for Data Administrator.
+
+You can use Python methods within Jupyter runtime environments to retrieve secrets that are stored a vault. To train and test models from an external data source, users might need to connect the external data source with a Jupyter Notebook. To connect to a data source, users might have to enter their authentication details in plain text. This authentication method poses a security risk, especially if a user wants to collaborate with other users in the same Notebook.
+
+With the Python methods that are included in the Credentials and Secrets management service, you can store your credentials in the vault and then securely retrieve these credentials during run time of your Notebook without the need to enter your credentials in clear text.
+
+You can invoke Python methods in Jupyter runtime environments to retrieve secrets:
+
+### [2.1] Set API host when a notebook is running in a different namespace
+
+When a notebook is running in a different namespace than the control plane namespace, the API server host must be set by using the `set_zencoreapi_host(api-host)` method before you invoke other methods such as `get_my_secret_details_v2`.
+
+#### 2.1.1 Method - set_zencoreapi_host(api-host)
+
+##### Example
+
+```python
+import icpd_core, json
+from icpd_core import icpd_util
+# set zen-core-api host in control plane namespace https://zen-core-api-svc.<control-plane-ns>.svc:4444
+icpd_util.set_zencoreapi_host('https://zen-core-api-svc.zen.svc:4444')
+```
+
+### [2.2] Retrieve a list of secrets stored in a vault
+
+Returns a list of available secrets that are created in a internal vault and a list of available secret references configured on the platform for an external vault such as CyberArk and Hashicorp. The list does not contain any sensitive information. It contains identifiers of the secrets and metadata only.
+
+#### 2.2.1 Method - get_my_secrets_v2()
+
+##### Example
+
+```python
+my_secrets = icpd_util.get_my_secrets_v2()
+my_secrets_json = json.dumps(my_secrets, indent=4)
+print(my_secrets_json)
+```
+
+##### Sample response
+
+```json
+[
+  {
+    "created_at": "2021-12-02T20:05:25.212698Z",
+    "created_by": "admin",
+    "description": "csdc",
+    "owner_uid": "1000330999",
+    "secret_name": "secret03",
+    "secret_urn": "1000330999:secret03",
+    "type": "credentials",
+    "updated_at": "2021-12-02T20:05:25.212698Z",
+    "vault_name": "internal",
+    "vault_urn": "0000000000:internal"
+  },
+  {
+    "created_at": "2021-12-02T20:08:01.882514Z",
+    "created_by": "admin",
+    "description": "dcsdcv",
+    "owner_uid": "1000330999",
+    "secret_name": "secret04",
+    "secret_urn": "1000330999:secret04",
+    "type": "credentials",
+    "updated_at": "2021-12-02T20:08:01.882514Z",
+    "vault_name": "internal",
+    "vault_urn": "0000000000:internal"
+  },
+  {
+    "created_at": "2021-12-02T18:14:07.516686Z",
+    "created_by": "admin",
+    "owner_uid": "1000330999",
+    "secret_name": "test-secret",
+    "secret_urn": "1000330999:test-secret",
+    "type": "credentials",
+    "updated_at": "2021-12-02T18:14:07.516686Z",
+    "vault_name": "internal",
+    "vault_urn": "0000000000:internal"
+  },
+  {
+    "created_at": "2021-12-02T20:04:52.419517Z",
+    "created_by": "admin",
+    "owner_uid": "1000330999",
+    "secret_name": "test-secret2",
+    "secret_urn": "1000330999:test-secret2",
+    "type": "credentials",
+    "updated_at": "2021-12-02T20:04:52.419517Z",
+    "vault_name": "internal",
+    "vault_urn": "0000000000:internal"
+  }
+]
+```
+
+### [2.3] Retrieve the details of a secret
+
+Returns secret data that is stored in the vault for a specified reference.
+
+#### 2.3.1 Method - get_my_secret_details_v2(secret_urn)
+
+##### Parameters
+Parameter | Type | Description
+----------|------|------------
+secret_urn | String | This parameter identifies and associates the secret with the user. This parameter follows a specific notation - <vault_name>:<secret_name>.
+
+##### Example
+
+```python
+my_test_secret = icpd_util.get_my_secret_details_v2(secret_urn)
+my_test_secret_creds=my_test_secret['data']['secret']['credentials']
+my_db_username = my_test_secret_creds['username']
+my_db_password = my_test_secret_creds['password']
+```
+
+## [3] License
+This library is licensed under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0).
