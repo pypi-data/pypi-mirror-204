@@ -1,0 +1,1784 @@
+{
+  "complexity-10-1-barman-p-1-2-1-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "barman",
+    "evaluate_time_single": 7804452.0,
+    "generate_memory_complexity_10": 359020,
+    "generate_memory_complexity_5": 23416,
+    "generate_time_complexity_10": 117.256,
+    "generate_time_complexity_5": 11.9212,
+    "id": [
+      "complexity-10-1",
+      "barman",
+      "p-1-2-1-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 2809,
+    "num_dynamic_atoms": 26,
+    "num_iterations": 1000,
+    "num_numericals": 12921,
+    "num_states": 406,
+    "num_static_atoms": 37,
+    "problem": "p-1-2-1-0.pddl",
+    "run_dir": "runs-00001-00100/00001",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-blocksworld_3-p-3-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "blocksworld_3",
+    "evaluate_time_multi_cache": 148.0,
+    "evaluate_time_single": 144207.0,
+    "evaluate_time_single_cache": 39726.0,
+    "generate_memory_complexity_10": 49172,
+    "generate_memory_complexity_5": 19748,
+    "generate_time_complexity_10": 1.44541,
+    "generate_time_complexity_5": 0.708235,
+    "id": [
+      "complexity-10-1",
+      "blocksworld_3",
+      "p-3-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 1741,
+    "num_dynamic_atoms": 15,
+    "num_iterations": 1000,
+    "num_numericals": 5590,
+    "num_states": 26,
+    "num_static_atoms": 8,
+    "problem": "p-3-0.pddl",
+    "run_dir": "runs-00001-00100/00002",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-blocksworld_3-p-4-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "blocksworld_3",
+    "evaluate_time_multi_cache": 444.0,
+    "evaluate_time_single": 1287301.0,
+    "evaluate_time_single_cache": 1181975.0,
+    "generate_memory_complexity_10": 90220,
+    "generate_memory_complexity_5": 20144,
+    "generate_time_complexity_10": 8.36227,
+    "generate_time_complexity_5": 6.33401,
+    "id": [
+      "complexity-10-1",
+      "blocksworld_3",
+      "p-4-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 2408,
+    "num_dynamic_atoms": 24,
+    "num_iterations": 1000,
+    "num_numericals": 7356,
+    "num_states": 148,
+    "num_static_atoms": 11,
+    "problem": "p-4-0.pddl",
+    "run_dir": "runs-00001-00100/00003",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-blocksworld_3-p-5-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "blocksworld_3",
+    "evaluate_time_single": 10341595.0,
+    "generate_memory_complexity_10": 320664,
+    "generate_memory_complexity_5": 23004,
+    "generate_time_complexity_10": 11.4283,
+    "generate_time_complexity_5": 0.533309,
+    "id": [
+      "complexity-10-1",
+      "blocksworld_3",
+      "p-5-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 2618,
+    "num_dynamic_atoms": 35,
+    "num_iterations": 1000,
+    "num_numericals": 7467,
+    "num_states": 1032,
+    "num_static_atoms": 13,
+    "problem": "p-5-0.pddl",
+    "run_dir": "runs-00001-00100/00004",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-blocksworld_4-p-3-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "blocksworld_4",
+    "evaluate_time_multi_cache": 196.0,
+    "evaluate_time_single": 155937.0,
+    "evaluate_time_single_cache": 40957.0,
+    "generate_memory_complexity_10": 59080,
+    "generate_memory_complexity_5": 19884,
+    "generate_time_complexity_10": 1.81164,
+    "generate_time_complexity_5": 0.517875,
+    "id": [
+      "complexity-10-1",
+      "blocksworld_4",
+      "p-3-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 2127,
+    "num_dynamic_atoms": 16,
+    "num_iterations": 1000,
+    "num_numericals": 7590,
+    "num_states": 22,
+    "num_static_atoms": 5,
+    "problem": "p-3-0.pddl",
+    "run_dir": "runs-00001-00100/00005",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-blocksworld_4-p-4-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "blocksworld_4",
+    "evaluate_time_multi_cache": 705.0,
+    "evaluate_time_single": 1845562.0,
+    "evaluate_time_single_cache": 2573116.0,
+    "generate_memory_complexity_10": 125900,
+    "generate_memory_complexity_5": 20276,
+    "generate_time_complexity_10": 4.62762,
+    "generate_time_complexity_5": 1.15248,
+    "id": [
+      "complexity-10-1",
+      "blocksworld_4",
+      "p-4-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 4157,
+    "num_dynamic_atoms": 25,
+    "num_iterations": 1000,
+    "num_numericals": 12218,
+    "num_states": 125,
+    "num_static_atoms": 7,
+    "problem": "p-4-0.pddl",
+    "run_dir": "runs-00001-00100/00006",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-blocksworld_4-p-5-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "blocksworld_4",
+    "generate_memory_complexity_10": 458056,
+    "generate_memory_complexity_5": 23072,
+    "generate_time_complexity_10": 28.2362,
+    "generate_time_complexity_5": 10.1691,
+    "id": [
+      "complexity-10-1",
+      "blocksworld_4",
+      "p-5-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 4393,
+    "num_dynamic_atoms": 36,
+    "num_iterations": 1000,
+    "num_numericals": 12699,
+    "num_states": 866,
+    "num_static_atoms": 9,
+    "problem": "p-5-0.pddl",
+    "run_dir": "runs-00001-00100/00007",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-childsnack-p-2-1.0-0.0-1-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "childsnack",
+    "evaluate_time_multi_cache": 20.0,
+    "evaluate_time_single": 89973.0,
+    "evaluate_time_single_cache": 5567.0,
+    "generate_memory_complexity_10": 26848,
+    "generate_memory_complexity_5": 20280,
+    "generate_time_complexity_10": 8.04899,
+    "generate_time_complexity_5": 6.74839,
+    "id": [
+      "complexity-10-1",
+      "childsnack",
+      "p-2-1.0-0.0-1-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 50,
+    "num_dynamic_atoms": 16,
+    "num_iterations": 1000,
+    "num_numericals": 438,
+    "num_states": 192,
+    "num_static_atoms": 32,
+    "problem": "p-2-1.0-0.0-1-0.pddl",
+    "run_dir": "runs-00001-00100/00008",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-childsnack-p-2-1.0-0.0-2-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "childsnack",
+    "evaluate_time_multi_cache": 102.0,
+    "evaluate_time_single": 639464.0,
+    "evaluate_time_single_cache": 45070.0,
+    "generate_memory_complexity_10": 42804,
+    "generate_memory_complexity_5": 22836,
+    "generate_time_complexity_10": 16.9301,
+    "generate_time_complexity_5": 10.9132,
+    "id": [
+      "complexity-10-1",
+      "childsnack",
+      "p-2-1.0-0.0-2-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 55,
+    "num_dynamic_atoms": 22,
+    "num_iterations": 1000,
+    "num_numericals": 490,
+    "num_states": 1040,
+    "num_static_atoms": 34,
+    "problem": "p-2-1.0-0.0-2-0.pddl",
+    "run_dir": "runs-00001-00100/00009",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-childsnack-p-2-1.0-0.5-1-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "childsnack",
+    "evaluate_time_multi_cache": 59.0,
+    "evaluate_time_single": 266613.0,
+    "evaluate_time_single_cache": 38288.0,
+    "generate_memory_complexity_10": 44872,
+    "generate_memory_complexity_5": 20928,
+    "generate_time_complexity_10": 13.8251,
+    "generate_time_complexity_5": 7.67806,
+    "id": [
+      "complexity-10-1",
+      "childsnack",
+      "p-2-1.0-0.5-1-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 164,
+    "num_dynamic_atoms": 18,
+    "num_iterations": 1000,
+    "num_numericals": 1015,
+    "num_states": 264,
+    "num_static_atoms": 34,
+    "problem": "p-2-1.0-0.5-1-0.pddl",
+    "run_dir": "runs-00001-00100/00010",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-childsnack-p-2-1.0-0.5-2-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "childsnack",
+    "evaluate_time_multi_cache": 445.0,
+    "evaluate_time_single": 2156346.0,
+    "evaluate_time_single_cache": 398569.0,
+    "generate_memory_complexity_10": 116612,
+    "generate_memory_complexity_5": 26140,
+    "generate_time_complexity_10": 42.1273,
+    "generate_time_complexity_5": 9.38172,
+    "id": [
+      "complexity-10-1",
+      "childsnack",
+      "p-2-1.0-0.5-2-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 179,
+    "num_dynamic_atoms": 24,
+    "num_iterations": 1000,
+    "num_numericals": 1191,
+    "num_states": 1584,
+    "num_static_atoms": 36,
+    "problem": "p-2-1.0-0.5-2-0.pddl",
+    "run_dir": "runs-00001-00100/00011",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-childsnack-p-2-1.0-1.0-1-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "childsnack",
+    "evaluate_time_multi_cache": 49.0,
+    "evaluate_time_single": 260140.0,
+    "evaluate_time_single_cache": 25233.0,
+    "generate_memory_complexity_10": 33524,
+    "generate_memory_complexity_5": 20804,
+    "generate_time_complexity_10": 4.18552,
+    "generate_time_complexity_5": 1.20472,
+    "id": [
+      "complexity-10-1",
+      "childsnack",
+      "p-2-1.0-1.0-1-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 101,
+    "num_dynamic_atoms": 18,
+    "num_iterations": 1000,
+    "num_numericals": 724,
+    "num_states": 336,
+    "num_static_atoms": 36,
+    "problem": "p-2-1.0-1.0-1-0.pddl",
+    "run_dir": "runs-00001-00100/00012",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-childsnack-p-2-1.0-1.0-2-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "childsnack",
+    "evaluate_time_multi_cache": 350.0,
+    "evaluate_time_single": 2037978.0,
+    "evaluate_time_single_cache": 234476.0,
+    "generate_memory_complexity_10": 79740,
+    "generate_memory_complexity_5": 26640,
+    "generate_time_complexity_10": 28.1606,
+    "generate_time_complexity_5": 11.3658,
+    "id": [
+      "complexity-10-1",
+      "childsnack",
+      "p-2-1.0-1.0-2-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 108,
+    "num_dynamic_atoms": 24,
+    "num_iterations": 1000,
+    "num_numericals": 794,
+    "num_states": 2048,
+    "num_static_atoms": 38,
+    "problem": "p-2-1.0-1.0-2-0.pddl",
+    "run_dir": "runs-00001-00100/00013",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-delivery-instance_2_1_0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "delivery",
+    "evaluate_time_multi_cache": 8.0,
+    "evaluate_time_single": 11638.0,
+    "evaluate_time_single_cache": 736.0,
+    "generate_memory_complexity_10": 22752,
+    "generate_memory_complexity_5": 19756,
+    "generate_time_complexity_10": 10.2707,
+    "generate_time_complexity_5": 10.0327,
+    "id": [
+      "complexity-10-1",
+      "delivery",
+      "instance_2_1_0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 75,
+    "num_dynamic_atoms": 10,
+    "num_iterations": 1000,
+    "num_numericals": 561,
+    "num_states": 20,
+    "num_static_atoms": 23,
+    "problem": "instance_2_1_0.pddl",
+    "run_dir": "runs-00001-00100/00014",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-delivery-instance_2_2_0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "delivery",
+    "evaluate_time_multi_cache": 26.0,
+    "evaluate_time_single": 101615.0,
+    "evaluate_time_single_cache": 10983.0,
+    "generate_memory_complexity_10": 25380,
+    "generate_memory_complexity_5": 19880,
+    "generate_time_complexity_10": 9.16626,
+    "generate_time_complexity_5": 8.68038,
+    "id": [
+      "complexity-10-1",
+      "delivery",
+      "instance_2_2_0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 121,
+    "num_dynamic_atoms": 15,
+    "num_iterations": 1000,
+    "num_numericals": 963,
+    "num_states": 96,
+    "num_static_atoms": 27,
+    "problem": "instance_2_2_0.pddl",
+    "run_dir": "runs-00001-00100/00015",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-delivery-instance_3_2_0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "delivery",
+    "evaluate_time_multi_cache": 271.0,
+    "evaluate_time_single": 1886602.0,
+    "evaluate_time_single_cache": 162385.0,
+    "generate_memory_complexity_10": 44308,
+    "generate_memory_complexity_5": 21776,
+    "generate_time_complexity_10": 10.9603,
+    "generate_time_complexity_5": 6.15171,
+    "id": [
+      "complexity-10-1",
+      "delivery",
+      "instance_3_2_0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 121,
+    "num_dynamic_atoms": 30,
+    "num_iterations": 1000,
+    "num_numericals": 1038,
+    "num_states": 891,
+    "num_static_atoms": 53,
+    "problem": "instance_3_2_0.pddl",
+    "run_dir": "runs-00001-00100/00016",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-delivery-instance_3_3_0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "delivery",
+    "generate_memory_complexity_10": 242076,
+    "generate_memory_complexity_5": 39392,
+    "generate_time_complexity_10": 60.4134,
+    "generate_time_complexity_5": 10.7667,
+    "id": [
+      "complexity-10-1",
+      "delivery",
+      "instance_3_3_0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 143,
+    "num_dynamic_atoms": 40,
+    "num_iterations": 1000,
+    "num_numericals": 1127,
+    "num_states": 8748,
+    "num_static_atoms": 57,
+    "problem": "instance_3_3_0.pddl",
+    "run_dir": "runs-00001-00100/00017",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-delivery-instance_4_2_0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "delivery",
+    "generate_memory_complexity_10": 133112,
+    "generate_memory_complexity_5": 30944,
+    "generate_time_complexity_10": 50.922,
+    "generate_time_complexity_5": 8.18036,
+    "id": [
+      "complexity-10-1",
+      "delivery",
+      "instance_4_2_0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 117,
+    "num_dynamic_atoms": 51,
+    "num_iterations": 1000,
+    "num_numericals": 1033,
+    "num_states": 4608,
+    "num_static_atoms": 91,
+    "problem": "instance_4_2_0.pddl",
+    "run_dir": "runs-00001-00100/00018",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-delivery-instance_4_3_0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "delivery",
+    "generate_memory_complexity_10": 1962748,
+    "generate_memory_complexity_5": 209200,
+    "generate_time_complexity_10": 837.848,
+    "generate_time_complexity_5": 50.8955,
+    "id": [
+      "complexity-10-1",
+      "delivery",
+      "instance_4_3_0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 135,
+    "num_dynamic_atoms": 68,
+    "num_iterations": 1000,
+    "num_numericals": 1115,
+    "num_states": 77824,
+    "num_static_atoms": 95,
+    "problem": "instance_4_3_0.pddl",
+    "run_dir": "runs-00001-00100/00019",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-gripper-p-1-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "gripper",
+    "evaluate_time_multi_cache": 3.0,
+    "evaluate_time_single": 1197.0,
+    "evaluate_time_single_cache": 63.0,
+    "generate_memory_complexity_10": 21404,
+    "generate_memory_complexity_5": 19752,
+    "generate_time_complexity_10": 10.2544,
+    "generate_time_complexity_5": 10.1227,
+    "id": [
+      "complexity-10-1",
+      "gripper",
+      "p-1-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 45,
+    "num_dynamic_atoms": 8,
+    "num_iterations": 1000,
+    "num_numericals": 232,
+    "num_states": 8,
+    "num_static_atoms": 11,
+    "problem": "p-1-0.pddl",
+    "run_dir": "runs-00001-00100/00020",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-gripper-p-2-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "gripper",
+    "evaluate_time_multi_cache": 8.0,
+    "evaluate_time_single": 12394.0,
+    "evaluate_time_single_cache": 1006.0,
+    "generate_memory_complexity_10": 22464,
+    "generate_memory_complexity_5": 19752,
+    "generate_time_complexity_10": 10.0732,
+    "generate_time_complexity_5": 9.87436,
+    "id": [
+      "complexity-10-1",
+      "gripper",
+      "p-2-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 89,
+    "num_dynamic_atoms": 12,
+    "num_iterations": 1000,
+    "num_numericals": 538,
+    "num_states": 28,
+    "num_static_atoms": 14,
+    "problem": "p-2-0.pddl",
+    "run_dir": "runs-00001-00100/00021",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-gripper-p-3-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "gripper",
+    "evaluate_time_multi_cache": 13.0,
+    "evaluate_time_single": 42943.0,
+    "evaluate_time_single_cache": 3441.0,
+    "generate_memory_complexity_10": 23064,
+    "generate_memory_complexity_5": 19880,
+    "generate_time_complexity_10": 1.18545,
+    "generate_time_complexity_5": 0.850789,
+    "id": [
+      "complexity-10-1",
+      "gripper",
+      "p-3-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 82,
+    "num_dynamic_atoms": 16,
+    "num_iterations": 1000,
+    "num_numericals": 536,
+    "num_states": 88,
+    "num_static_atoms": 17,
+    "problem": "p-3-0.pddl",
+    "run_dir": "runs-00001-00100/00022",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-gripper-p-4-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "gripper",
+    "evaluate_time_multi_cache": 28.0,
+    "evaluate_time_single": 142536.0,
+    "evaluate_time_single_cache": 11019.0,
+    "generate_memory_complexity_10": 25376,
+    "generate_memory_complexity_5": 20268,
+    "generate_time_complexity_10": 1.49365,
+    "generate_time_complexity_5": 0.715248,
+    "id": [
+      "complexity-10-1",
+      "gripper",
+      "p-4-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 83,
+    "num_dynamic_atoms": 20,
+    "num_iterations": 1000,
+    "num_numericals": 541,
+    "num_states": 256,
+    "num_static_atoms": 20,
+    "problem": "p-4-0.pddl",
+    "run_dir": "runs-00001-00100/00023",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-gripper-p-5-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "gripper",
+    "evaluate_time_multi_cache": 84.0,
+    "evaluate_time_single": 443380.0,
+    "evaluate_time_single_cache": 34095.0,
+    "generate_memory_complexity_10": 31380,
+    "generate_memory_complexity_5": 21332,
+    "generate_time_complexity_10": 10.4231,
+    "generate_time_complexity_5": 8.39077,
+    "id": [
+      "complexity-10-1",
+      "gripper",
+      "p-5-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 83,
+    "num_dynamic_atoms": 24,
+    "num_iterations": 1000,
+    "num_numericals": 545,
+    "num_states": 704,
+    "num_static_atoms": 23,
+    "problem": "p-5-0.pddl",
+    "run_dir": "runs-00001-00100/00024",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-miconic-p-2-2-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "miconic",
+    "evaluate_time_multi_cache": 7.0,
+    "evaluate_time_single": 10814.0,
+    "evaluate_time_single_cache": 865.0,
+    "generate_memory_complexity_10": 23156,
+    "generate_memory_complexity_5": 19748,
+    "generate_time_complexity_10": 1.17353,
+    "generate_time_complexity_5": 0.931452,
+    "id": [
+      "complexity-10-1",
+      "miconic",
+      "p-2-2-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 134,
+    "num_dynamic_atoms": 6,
+    "num_iterations": 1000,
+    "num_numericals": 426,
+    "num_states": 32,
+    "num_static_atoms": 15,
+    "problem": "p-2-2-0.pddl",
+    "run_dir": "runs-00001-00100/00025",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-miconic-p-2-3-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "miconic",
+    "evaluate_time_multi_cache": 17.0,
+    "evaluate_time_single": 57216.0,
+    "evaluate_time_single_cache": 5879.0,
+    "generate_memory_complexity_10": 23696,
+    "generate_memory_complexity_5": 20012,
+    "generate_time_complexity_10": 11.3877,
+    "generate_time_complexity_5": 10.9906,
+    "id": [
+      "complexity-10-1",
+      "miconic",
+      "p-2-3-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 99,
+    "num_dynamic_atoms": 8,
+    "num_iterations": 1000,
+    "num_numericals": 570,
+    "num_states": 128,
+    "num_static_atoms": 20,
+    "problem": "p-2-3-0.pddl",
+    "run_dir": "runs-00001-00100/00026",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-miconic-p-2-4-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "miconic",
+    "evaluate_time_multi_cache": 99.0,
+    "evaluate_time_single": 506887.0,
+    "evaluate_time_single_cache": 86994.0,
+    "generate_memory_complexity_10": 37336,
+    "generate_memory_complexity_5": 20840,
+    "generate_time_complexity_10": 3.31682,
+    "generate_time_complexity_5": 1.37066,
+    "id": [
+      "complexity-10-1",
+      "miconic",
+      "p-2-4-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 207,
+    "num_dynamic_atoms": 10,
+    "num_iterations": 1000,
+    "num_numericals": 1052,
+    "num_states": 512,
+    "num_static_atoms": 25,
+    "problem": "p-2-4-0.pddl",
+    "run_dir": "runs-00001-00100/00027",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-miconic-p-3-2-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "miconic",
+    "evaluate_time_multi_cache": 15.0,
+    "evaluate_time_single": 30921.0,
+    "evaluate_time_single_cache": 4008.0,
+    "generate_memory_complexity_10": 24700,
+    "generate_memory_complexity_5": 19876,
+    "generate_time_complexity_10": 0.741909,
+    "generate_time_complexity_5": 0.365672,
+    "id": [
+      "complexity-10-1",
+      "miconic",
+      "p-3-2-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 162,
+    "num_dynamic_atoms": 7,
+    "num_iterations": 1000,
+    "num_numericals": 830,
+    "num_states": 48,
+    "num_static_atoms": 19,
+    "problem": "p-3-2-0.pddl",
+    "run_dir": "runs-00001-00100/00028",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-miconic-p-3-3-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "miconic",
+    "evaluate_time_multi_cache": 55.0,
+    "evaluate_time_single": 243513.0,
+    "evaluate_time_single_cache": 48498.0,
+    "generate_memory_complexity_10": 31496,
+    "generate_memory_complexity_5": 20144,
+    "generate_time_complexity_10": 2.18489,
+    "generate_time_complexity_5": 1.12652,
+    "id": [
+      "complexity-10-1",
+      "miconic",
+      "p-3-3-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 246,
+    "num_dynamic_atoms": 9,
+    "num_iterations": 1000,
+    "num_numericals": 1403,
+    "num_states": 192,
+    "num_static_atoms": 24,
+    "problem": "p-3-3-0.pddl",
+    "run_dir": "runs-00001-00100/00029",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-miconic-p-3-4-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "miconic",
+    "evaluate_time_multi_cache": 289.0,
+    "evaluate_time_single": 1338612.0,
+    "evaluate_time_single_cache": 372183.0,
+    "generate_memory_complexity_10": 60720,
+    "generate_memory_complexity_5": 21508,
+    "generate_time_complexity_10": 12.6964,
+    "generate_time_complexity_5": 8.18149,
+    "id": [
+      "complexity-10-1",
+      "miconic",
+      "p-3-4-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 298,
+    "num_dynamic_atoms": 11,
+    "num_iterations": 1000,
+    "num_numericals": 1685,
+    "num_states": 768,
+    "num_static_atoms": 29,
+    "problem": "p-3-4-0.pddl",
+    "run_dir": "runs-00001-00100/00030",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-miconic-p-4-2-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "miconic",
+    "evaluate_time_multi_cache": 26.0,
+    "evaluate_time_single": 72002.0,
+    "evaluate_time_single_cache": 11243.0,
+    "generate_memory_complexity_10": 28916,
+    "generate_memory_complexity_5": 19880,
+    "generate_time_complexity_10": 1.63217,
+    "generate_time_complexity_5": 0.973829,
+    "id": [
+      "complexity-10-1",
+      "miconic",
+      "p-4-2-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 262,
+    "num_dynamic_atoms": 8,
+    "num_iterations": 1000,
+    "num_numericals": 1176,
+    "num_states": 64,
+    "num_static_atoms": 24,
+    "problem": "p-4-2-0.pddl",
+    "run_dir": "runs-00001-00100/00031",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-miconic-p-4-3-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "miconic",
+    "evaluate_time_multi_cache": 103.0,
+    "evaluate_time_single": 430861.0,
+    "evaluate_time_single_cache": 91612.0,
+    "generate_memory_complexity_10": 38936,
+    "generate_memory_complexity_5": 20396,
+    "generate_time_complexity_10": 3.03073,
+    "generate_time_complexity_5": 1.08138,
+    "id": [
+      "complexity-10-1",
+      "miconic",
+      "p-4-3-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 319,
+    "num_dynamic_atoms": 10,
+    "num_iterations": 1000,
+    "num_numericals": 1589,
+    "num_states": 256,
+    "num_static_atoms": 29,
+    "problem": "p-4-3-0.pddl",
+    "run_dir": "runs-00001-00100/00032",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-miconic-p-4-4-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "miconic",
+    "evaluate_time_multi_cache": 452.0,
+    "evaluate_time_single": 2617481.0,
+    "evaluate_time_single_cache": 947264.0,
+    "generate_memory_complexity_10": 89188,
+    "generate_memory_complexity_5": 22276,
+    "generate_time_complexity_10": 18.6427,
+    "generate_time_complexity_5": 11.1484,
+    "id": [
+      "complexity-10-1",
+      "miconic",
+      "p-4-4-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 370,
+    "num_dynamic_atoms": 12,
+    "num_iterations": 1000,
+    "num_numericals": 2176,
+    "num_states": 1024,
+    "num_static_atoms": 34,
+    "problem": "p-4-4-0.pddl",
+    "run_dir": "runs-00001-00100/00033",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-reward-instance_2x2_0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "reward",
+    "evaluate_time_multi_cache": 5.0,
+    "evaluate_time_single": 6702.0,
+    "evaluate_time_single_cache": 372.0,
+    "generate_memory_complexity_10": 21368,
+    "generate_memory_complexity_5": 19748,
+    "generate_time_complexity_10": 1.17859,
+    "generate_time_complexity_5": 1.07461,
+    "id": [
+      "complexity-10-1",
+      "reward",
+      "instance_2x2_0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 59,
+    "num_dynamic_atoms": 8,
+    "num_iterations": 1000,
+    "num_numericals": 449,
+    "num_states": 16,
+    "num_static_atoms": 22,
+    "problem": "instance_2x2_0.pddl",
+    "run_dir": "runs-00001-00100/00034",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-reward-instance_3x3_0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "reward",
+    "evaluate_time_multi_cache": 35.0,
+    "evaluate_time_single": 122531.0,
+    "evaluate_time_single_cache": 11644.0,
+    "generate_memory_complexity_10": 27784,
+    "generate_memory_complexity_5": 19876,
+    "generate_time_complexity_10": 1.51833,
+    "generate_time_complexity_5": 1.10961,
+    "id": [
+      "complexity-10-1",
+      "reward",
+      "instance_3x3_0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 238,
+    "num_dynamic_atoms": 12,
+    "num_iterations": 1000,
+    "num_numericals": 1968,
+    "num_states": 32,
+    "num_static_atoms": 52,
+    "problem": "instance_3x3_0.pddl",
+    "run_dir": "runs-00001-00100/00035",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-reward-instance_4x4_0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "reward",
+    "evaluate_time_multi_cache": 52.0,
+    "evaluate_time_single": 465651.0,
+    "evaluate_time_single_cache": 16323.0,
+    "generate_memory_complexity_10": 27172,
+    "generate_memory_complexity_5": 19884,
+    "generate_time_complexity_10": 8.7965,
+    "generate_time_complexity_5": 8.11342,
+    "id": [
+      "complexity-10-1",
+      "reward",
+      "instance_4x4_0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 182,
+    "num_dynamic_atoms": 19,
+    "num_iterations": 1000,
+    "num_numericals": 1632,
+    "num_states": 60,
+    "num_static_atoms": 97,
+    "problem": "instance_4x4_0.pddl",
+    "run_dir": "runs-00001-00100/00036",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-3-3-3-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 34.0,
+    "evaluate_time_single": 175167.0,
+    "evaluate_time_single_cache": 13480.0,
+    "generate_memory_complexity_10": 29128,
+    "generate_memory_complexity_5": 20004,
+    "generate_time_complexity_10": 11.8825,
+    "generate_time_complexity_5": 10.8626,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-3-3-3-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 100,
+    "num_dynamic_atoms": 20,
+    "num_iterations": 1000,
+    "num_numericals": 1231,
+    "num_states": 78,
+    "num_static_atoms": 41,
+    "problem": "p-3-3-3-0.pddl",
+    "run_dir": "runs-00001-00100/00037",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-3-3-4-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 81.0,
+    "evaluate_time_single": 586012.0,
+    "evaluate_time_single_cache": 51132.0,
+    "generate_memory_complexity_10": 34840,
+    "generate_memory_complexity_5": 20404,
+    "generate_time_complexity_10": 12.4839,
+    "generate_time_complexity_5": 10.1367,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-3-3-4-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 106,
+    "num_dynamic_atoms": 23,
+    "num_iterations": 1000,
+    "num_numericals": 1352,
+    "num_states": 215,
+    "num_static_atoms": 44,
+    "problem": "p-3-3-4-0.pddl",
+    "run_dir": "runs-00001-00100/00038",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-3-3-5-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 205.0,
+    "evaluate_time_single": 1617212.0,
+    "evaluate_time_single_cache": 158688.0,
+    "generate_memory_complexity_10": 48296,
+    "generate_memory_complexity_5": 21608,
+    "generate_time_complexity_10": 13.1695,
+    "generate_time_complexity_5": 6.67534,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-3-3-5-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 86,
+    "num_dynamic_atoms": 26,
+    "num_iterations": 1000,
+    "num_numericals": 1260,
+    "num_states": 618,
+    "num_static_atoms": 47,
+    "problem": "p-3-3-5-0.pddl",
+    "run_dir": "runs-00001-00100/00039",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-3-4-4-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 129.0,
+    "evaluate_time_single": 1016561.0,
+    "evaluate_time_single_cache": 83250.0,
+    "generate_memory_complexity_10": 39624,
+    "generate_memory_complexity_5": 20796,
+    "generate_time_complexity_10": 13.5114,
+    "generate_time_complexity_5": 9.66273,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-3-4-4-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 103,
+    "num_dynamic_atoms": 25,
+    "num_iterations": 1000,
+    "num_numericals": 1279,
+    "num_states": 344,
+    "num_static_atoms": 49,
+    "problem": "p-3-4-4-0.pddl",
+    "run_dir": "runs-00001-00100/00040",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-3-4-5-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 445.0,
+    "evaluate_time_single": 3556022.0,
+    "evaluate_time_single_cache": 335314.0,
+    "generate_memory_complexity_10": 67536,
+    "generate_memory_complexity_5": 23008,
+    "generate_time_complexity_10": 15.9166,
+    "generate_time_complexity_5": 4.72238,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-3-4-5-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 98,
+    "num_dynamic_atoms": 28,
+    "num_iterations": 1000,
+    "num_numericals": 1377,
+    "num_states": 1051,
+    "num_static_atoms": 52,
+    "problem": "p-3-4-5-0.pddl",
+    "run_dir": "runs-00001-00100/00041",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-3-5-5-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 601.0,
+    "evaluate_time_single": 6356834.0,
+    "evaluate_time_single_cache": 490905.0,
+    "generate_memory_complexity_10": 94232,
+    "generate_memory_complexity_5": 25156,
+    "generate_time_complexity_10": 21.4237,
+    "generate_time_complexity_5": 1.58685,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-3-5-5-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 103,
+    "num_dynamic_atoms": 30,
+    "num_iterations": 1000,
+    "num_numericals": 1287,
+    "num_states": 1728,
+    "num_static_atoms": 57,
+    "problem": "p-3-5-5-0.pddl",
+    "run_dir": "runs-00001-00100/00042",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-4-3-3-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 40.0,
+    "evaluate_time_single": 242223.0,
+    "evaluate_time_single_cache": 18779.0,
+    "generate_memory_complexity_10": 29672,
+    "generate_memory_complexity_5": 20012,
+    "generate_time_complexity_10": 11.1035,
+    "generate_time_complexity_5": 9.87074,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-4-3-3-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 97,
+    "num_dynamic_atoms": 21,
+    "num_iterations": 1000,
+    "num_numericals": 1292,
+    "num_states": 92,
+    "num_static_atoms": 44,
+    "problem": "p-4-3-3-0.pddl",
+    "run_dir": "runs-00001-00100/00043",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-4-3-4-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 87.0,
+    "evaluate_time_single": 634086.0,
+    "evaluate_time_single_cache": 52816.0,
+    "generate_memory_complexity_10": 34848,
+    "generate_memory_complexity_5": 20404,
+    "generate_time_complexity_10": 3.68804,
+    "generate_time_complexity_5": 1.08957,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-4-3-4-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 96,
+    "num_dynamic_atoms": 24,
+    "num_iterations": 1000,
+    "num_numericals": 1348,
+    "num_states": 219,
+    "num_static_atoms": 47,
+    "problem": "p-4-3-4-0.pddl",
+    "run_dir": "runs-00001-00100/00044",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-4-3-5-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 255.0,
+    "evaluate_time_single": 2190755.0,
+    "evaluate_time_single_cache": 199785.0,
+    "generate_memory_complexity_10": 52072,
+    "generate_memory_complexity_5": 21736,
+    "generate_time_complexity_10": 16.1448,
+    "generate_time_complexity_5": 8.9492,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-4-3-5-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 105,
+    "num_dynamic_atoms": 27,
+    "num_iterations": 1000,
+    "num_numericals": 1405,
+    "num_states": 629,
+    "num_static_atoms": 50,
+    "problem": "p-4-3-5-0.pddl",
+    "run_dir": "runs-00001-00100/00045",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-4-4-4-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 149.0,
+    "evaluate_time_single": 1219951.0,
+    "evaluate_time_single_cache": 93231.0,
+    "generate_memory_complexity_10": 41368,
+    "generate_memory_complexity_5": 20932,
+    "generate_time_complexity_10": 5.12645,
+    "generate_time_complexity_5": 0.980425,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-4-4-4-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 107,
+    "num_dynamic_atoms": 26,
+    "num_iterations": 1000,
+    "num_numericals": 1352,
+    "num_states": 356,
+    "num_static_atoms": 52,
+    "problem": "p-4-4-4-0.pddl",
+    "run_dir": "runs-00001-00100/00046",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-4-4-5-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 492.0,
+    "evaluate_time_single": 4119252.0,
+    "evaluate_time_single_cache": 358206.0,
+    "generate_memory_complexity_10": 69844,
+    "generate_memory_complexity_5": 23012,
+    "generate_time_complexity_10": 13.7636,
+    "generate_time_complexity_5": 1.74752,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-4-4-5-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 108,
+    "num_dynamic_atoms": 29,
+    "num_iterations": 1000,
+    "num_numericals": 1419,
+    "num_states": 1043,
+    "num_static_atoms": 55,
+    "problem": "p-4-4-5-0.pddl",
+    "run_dir": "runs-00001-00100/00047",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-4-5-5-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 731.0,
+    "evaluate_time_single": 7723647.0,
+    "evaluate_time_single_cache": 564207.0,
+    "generate_memory_complexity_10": 97504,
+    "generate_memory_complexity_5": 25228,
+    "generate_time_complexity_10": 29.6518,
+    "generate_time_complexity_5": 6.73527,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-4-5-5-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 107,
+    "num_dynamic_atoms": 31,
+    "num_iterations": 1000,
+    "num_numericals": 1304,
+    "num_states": 1744,
+    "num_static_atoms": 60,
+    "problem": "p-4-5-5-0.pddl",
+    "run_dir": "runs-00001-00100/00048",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-5-3-3-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 42.0,
+    "evaluate_time_single": 256263.0,
+    "evaluate_time_single_cache": 17079.0,
+    "generate_memory_complexity_10": 29780,
+    "generate_memory_complexity_5": 20016,
+    "generate_time_complexity_10": 8.14715,
+    "generate_time_complexity_5": 6.98278,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-5-3-3-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 104,
+    "num_dynamic_atoms": 22,
+    "num_iterations": 1000,
+    "num_numericals": 1293,
+    "num_states": 81,
+    "num_static_atoms": 47,
+    "problem": "p-5-3-3-0.pddl",
+    "run_dir": "runs-00001-00100/00049",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-5-3-4-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 105.0,
+    "evaluate_time_single": 830869.0,
+    "evaluate_time_single_cache": 59392.0,
+    "generate_memory_complexity_10": 36516,
+    "generate_memory_complexity_5": 20544,
+    "generate_time_complexity_10": 11.8984,
+    "generate_time_complexity_5": 9.07545,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-5-3-4-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 115,
+    "num_dynamic_atoms": 25,
+    "num_iterations": 1000,
+    "num_numericals": 1429,
+    "num_states": 227,
+    "num_static_atoms": 50,
+    "problem": "p-5-3-4-0.pddl",
+    "run_dir": "runs-00001-00100/00050",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-5-3-5-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 279.0,
+    "evaluate_time_single": 2469458.0,
+    "evaluate_time_single_cache": 214416.0,
+    "generate_memory_complexity_10": 52316,
+    "generate_memory_complexity_5": 21600,
+    "generate_time_complexity_10": 10.2625,
+    "generate_time_complexity_5": 2.9045,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-5-3-5-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 102,
+    "num_dynamic_atoms": 28,
+    "num_iterations": 1000,
+    "num_numericals": 1476,
+    "num_states": 609,
+    "num_static_atoms": 53,
+    "problem": "p-5-3-5-0.pddl",
+    "run_dir": "runs-00001-00100/00051",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-5-4-4-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 157.0,
+    "evaluate_time_single": 1349435.0,
+    "evaluate_time_single_cache": 88916.0,
+    "generate_memory_complexity_10": 41880,
+    "generate_memory_complexity_5": 20928,
+    "generate_time_complexity_10": 15.4063,
+    "generate_time_complexity_5": 10.8331,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-5-4-4-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 105,
+    "num_dynamic_atoms": 27,
+    "num_iterations": 1000,
+    "num_numericals": 1287,
+    "num_states": 368,
+    "num_static_atoms": 55,
+    "problem": "p-5-4-4-0.pddl",
+    "run_dir": "runs-00001-00100/00052",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-5-4-5-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 529.0,
+    "evaluate_time_single": 4583753.0,
+    "evaluate_time_single_cache": 365747.0,
+    "generate_memory_complexity_10": 71140,
+    "generate_memory_complexity_5": 23040,
+    "generate_time_complexity_10": 22.941,
+    "generate_time_complexity_5": 9.62867,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-5-4-5-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 105,
+    "num_dynamic_atoms": 30,
+    "num_iterations": 1000,
+    "num_numericals": 1411,
+    "num_states": 1072,
+    "num_static_atoms": 58,
+    "problem": "p-5-4-5-0.pddl",
+    "run_dir": "runs-00001-00100/00053",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-spanner-p-5-5-5-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "spanner",
+    "evaluate_time_multi_cache": 751.0,
+    "evaluate_time_single": 8999540.0,
+    "evaluate_time_single_cache": 582421.0,
+    "generate_memory_complexity_10": 101380,
+    "generate_memory_complexity_5": 25384,
+    "generate_time_complexity_10": 30.9202,
+    "generate_time_complexity_5": 7.96127,
+    "id": [
+      "complexity-10-1",
+      "spanner",
+      "p-5-5-5-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 113,
+    "num_dynamic_atoms": 32,
+    "num_iterations": 1000,
+    "num_numericals": 1365,
+    "num_states": 1752,
+    "num_static_atoms": 63,
+    "problem": "p-5-5-5-0.pddl",
+    "run_dir": "runs-00001-00100/00054",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-visitall-p-1-0.5-2-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "visitall",
+    "evaluate_time_multi_cache": 0.0,
+    "evaluate_time_single": 3.0,
+    "evaluate_time_single_cache": 0.0,
+    "generate_memory_complexity_10": 19620,
+    "generate_memory_complexity_5": 19620,
+    "generate_time_complexity_10": 0.274627,
+    "generate_time_complexity_5": 0.273124,
+    "id": [
+      "complexity-10-1",
+      "visitall",
+      "p-1-0.5-2-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 2,
+    "num_dynamic_atoms": 0,
+    "num_iterations": 1000,
+    "num_numericals": 7,
+    "num_states": 1,
+    "num_static_atoms": 11,
+    "problem": "p-1-0.5-2-0.pddl",
+    "run_dir": "runs-00001-00100/00055",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-visitall-p-1-0.5-3-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "visitall",
+    "evaluate_time_multi_cache": 13.0,
+    "evaluate_time_single": 46846.0,
+    "evaluate_time_single_cache": 2653.0,
+    "generate_memory_complexity_10": 22472,
+    "generate_memory_complexity_5": 19748,
+    "generate_time_complexity_10": 1.11157,
+    "generate_time_complexity_5": 0.973419,
+    "id": [
+      "complexity-10-1",
+      "visitall",
+      "p-1-0.5-3-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 89,
+    "num_dynamic_atoms": 11,
+    "num_iterations": 1000,
+    "num_numericals": 678,
+    "num_states": 44,
+    "num_static_atoms": 37,
+    "problem": "p-1-0.5-3-0.pddl",
+    "run_dir": "runs-00001-00100/00056",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-visitall-p-1-1.0-2-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "visitall",
+    "evaluate_time_multi_cache": 2.0,
+    "evaluate_time_single": 1118.0,
+    "evaluate_time_single_cache": 58.0,
+    "generate_memory_complexity_10": 20128,
+    "generate_memory_complexity_5": 19620,
+    "generate_time_complexity_10": 8.10313,
+    "generate_time_complexity_5": 8.05292,
+    "id": [
+      "complexity-10-1",
+      "visitall",
+      "p-1-1.0-2-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 22,
+    "num_dynamic_atoms": 5,
+    "num_iterations": 1000,
+    "num_numericals": 183,
+    "num_states": 8,
+    "num_static_atoms": 14,
+    "problem": "p-1-1.0-2-0.pddl",
+    "run_dir": "runs-00001-00100/00057",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-visitall-p-1-1.0-3-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "visitall",
+    "evaluate_time_multi_cache": 16.0,
+    "evaluate_time_single": 104155.0,
+    "evaluate_time_single_cache": 2986.0,
+    "generate_memory_complexity_10": 21724,
+    "generate_memory_complexity_5": 19880,
+    "generate_time_complexity_10": 3.14579,
+    "generate_time_complexity_5": 3.01205,
+    "id": [
+      "complexity-10-1",
+      "visitall",
+      "p-1-1.0-3-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 57,
+    "num_dynamic_atoms": 15,
+    "num_iterations": 1000,
+    "num_numericals": 358,
+    "num_states": 148,
+    "num_static_atoms": 41,
+    "problem": "p-1-1.0-3-0.pddl",
+    "run_dir": "runs-00001-00100/00058",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-visitall-p-2-0.5-2-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "visitall",
+    "evaluate_time_multi_cache": 0.0,
+    "evaluate_time_single": 17.0,
+    "evaluate_time_single_cache": 1.0,
+    "generate_memory_complexity_10": 19624,
+    "generate_memory_complexity_5": 19624,
+    "generate_time_complexity_10": 6.07976,
+    "generate_time_complexity_5": 6.07189,
+    "id": [
+      "complexity-10-1",
+      "visitall",
+      "p-2-0.5-2-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 4,
+    "num_dynamic_atoms": 3,
+    "num_iterations": 1000,
+    "num_numericals": 13,
+    "num_states": 3,
+    "num_static_atoms": 9,
+    "problem": "p-2-0.5-2-0.pddl",
+    "run_dir": "runs-00001-00100/00059",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-visitall-p-2-0.5-3-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "visitall",
+    "evaluate_time_multi_cache": 28.0,
+    "evaluate_time_single": 101665.0,
+    "evaluate_time_single_cache": 9099.0,
+    "generate_memory_complexity_10": 24644,
+    "generate_memory_complexity_5": 19756,
+    "generate_time_complexity_10": 10.2001,
+    "generate_time_complexity_5": 9.98873,
+    "id": [
+      "complexity-10-1",
+      "visitall",
+      "p-2-0.5-3-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 205,
+    "num_dynamic_atoms": 12,
+    "num_iterations": 1000,
+    "num_numericals": 1263,
+    "num_states": 51,
+    "num_static_atoms": 33,
+    "problem": "p-2-0.5-3-0.pddl",
+    "run_dir": "runs-00001-00100/00060",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-visitall-p-2-1.0-2-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "visitall",
+    "evaluate_time_multi_cache": 0.0,
+    "evaluate_time_single": 17.0,
+    "evaluate_time_single_cache": 1.0,
+    "generate_memory_complexity_10": 19624,
+    "generate_memory_complexity_5": 19624,
+    "generate_time_complexity_10": 0.70331,
+    "generate_time_complexity_5": 0.695316,
+    "id": [
+      "complexity-10-1",
+      "visitall",
+      "p-2-1.0-2-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 4,
+    "num_dynamic_atoms": 3,
+    "num_iterations": 1000,
+    "num_numericals": 13,
+    "num_states": 3,
+    "num_static_atoms": 9,
+    "problem": "p-2-1.0-2-0.pddl",
+    "run_dir": "runs-00001-00100/00061",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  },
+  "complexity-10-1-visitall-p-2-1.0-3-0.pddl": {
+    "algorithm": "complexity-10-1",
+    "domain": "visitall",
+    "evaluate_time_multi_cache": 11.0,
+    "evaluate_time_single": 49413.0,
+    "evaluate_time_single_cache": 2016.0,
+    "generate_memory_complexity_10": 21592,
+    "generate_memory_complexity_5": 19756,
+    "generate_time_complexity_10": 10.1296,
+    "generate_time_complexity_5": 10.0392,
+    "id": [
+      "complexity-10-1",
+      "visitall",
+      "p-2-1.0-3-0.pddl"
+    ],
+    "memory_limit": 47040.0,
+    "num_booleans": 96,
+    "num_dynamic_atoms": 13,
+    "num_iterations": 1000,
+    "num_numericals": 473,
+    "num_states": 60,
+    "num_static_atoms": 34,
+    "problem": "p-2-1.0-3-0.pddl",
+    "run_dir": "runs-00001-00100/00062",
+    "time_limit": 10800,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
+  }
+}

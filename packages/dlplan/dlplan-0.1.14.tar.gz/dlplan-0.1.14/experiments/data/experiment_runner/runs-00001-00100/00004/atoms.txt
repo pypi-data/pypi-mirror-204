@@ -1,0 +1,8 @@
+at-robby(rooma)
+at-robby(roomb)
+free(left)
+free(right)
+at(ball1,rooma)
+at(ball1,roomb)
+carry(ball1,left)
+carry(ball1,right)

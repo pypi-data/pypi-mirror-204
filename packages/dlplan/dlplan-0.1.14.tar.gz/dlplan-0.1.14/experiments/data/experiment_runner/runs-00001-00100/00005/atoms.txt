@@ -1,0 +1,6 @@
+lift-at(f0)
+lift-at(f1)
+boarded(p1)
+served(p1)
+boarded(p0)
+served(p0)

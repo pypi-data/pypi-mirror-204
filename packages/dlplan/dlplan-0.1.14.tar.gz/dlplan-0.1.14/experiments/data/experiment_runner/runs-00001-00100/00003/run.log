@@ -1,0 +1,253 @@
+11
+./experiment_generator
+domain.pddl
+instance_2_1_0.pddl
+10
+10
+10
+10
+7200
+1000000
+1
+1
+Number of iterations: 1
+Started generating features
+Number of states: 20
+Number of dynamic atoms: 10
+Number of static atoms: 23
+[t=0.248848s, 22432 KB] Started generating base features of complexity 1.
+[t=0.249087s, 22432 KB] Complexity 1:
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 5
+    c_and: 0
+    c_not: 0
+    c_projection: 0
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_inverse: 0
+    r_transitive_closure: 0
+    b_empty: 0
+    n_count: 0
+    n_concept_distance: 0
+[t=0.249139s, 22432 KB] Finished generating base features.
+[t=0.249154s, 22432 KB] Started generating composite features. 
+[t=0.24948s, 22432 KB] Complexity 2:
+Total concept elements: 15
+Total role elements: 9
+Total numerical elements: 9
+Total boolean elements: 4
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 5
+    c_and: 0
+    c_not: 3
+    c_projection: 5
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 4
+    n_count: 9
+    n_concept_distance: 0
+[t=0.250661s, 22432 KB] Complexity 3:
+Total concept elements: 22
+Total role elements: 9
+Total numerical elements: 13
+Total boolean elements: 4
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 5
+    c_and: 0
+    c_not: 8
+    c_projection: 5
+    c_equal: 2
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 4
+    n_count: 13
+    n_concept_distance: 0
+[t=0.254768s, 22432 KB] Complexity 4:
+Total concept elements: 38
+Total role elements: 9
+Total numerical elements: 21
+Total boolean elements: 4
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 5
+    c_and: 2
+    c_not: 9
+    c_projection: 5
+    c_equal: 2
+    c_some: 7
+    c_all: 6
+    r_restrict: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 4
+    n_count: 18
+    n_concept_distance: 3
+[t=0.259172s, 22564 KB] Complexity 5:
+Total concept elements: 61
+Total role elements: 9
+Total numerical elements: 32
+Total boolean elements: 5
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 5
+    c_and: 9
+    c_not: 19
+    c_projection: 5
+    c_equal: 2
+    c_some: 10
+    c_all: 9
+    r_restrict: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 5
+    n_count: 26
+    n_concept_distance: 6
+[t=0.264167s, 22564 KB] Complexity 6:
+Total concept elements: 134
+Total role elements: 9
+Total numerical elements: 46
+Total boolean elements: 8
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 5
+    c_and: 30
+    c_not: 26
+    c_projection: 5
+    c_equal: 2
+    c_some: 32
+    c_all: 32
+    r_restrict: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 8
+    n_count: 36
+    n_concept_distance: 10
+[t=0.274236s, 22836 KB] Complexity 7:
+Total concept elements: 265
+Total role elements: 9
+Total numerical elements: 102
+Total boolean elements: 22
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 5
+    c_and: 88
+    c_not: 72
+    c_projection: 5
+    c_equal: 2
+    c_some: 45
+    c_all: 46
+    r_restrict: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 22
+    n_count: 79
+    n_concept_distance: 23
+[t=0.299123s, 23240 KB] Complexity 8:
+Total concept elements: 488
+Total role elements: 9
+Total numerical elements: 188
+Total boolean elements: 35
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 5
+    c_and: 200
+    c_not: 134
+    c_projection: 5
+    c_equal: 2
+    c_some: 68
+    c_all: 72
+    r_restrict: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 35
+    n_count: 147
+    n_concept_distance: 41
+[t=0.358713s, 23976 KB] Complexity 9:
+Total concept elements: 926
+Total role elements: 9
+Total numerical elements: 314
+Total boolean elements: 53
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 5
+    c_and: 397
+    c_not: 259
+    c_projection: 5
+    c_equal: 2
+    c_some: 127
+    c_all: 129
+    r_restrict: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 53
+    n_count: 258
+    n_concept_distance: 56
+[t=0.47109s, 25412 KB] Complexity 10:
+Total concept elements: 1601
+Total role elements: 9
+Total numerical elements: 561
+Total boolean elements: 75
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 5
+    c_and: 747
+    c_not: 485
+    c_projection: 5
+    c_equal: 2
+    c_some: 185
+    c_all: 170
+    r_restrict: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 75
+    n_count: 476
+    n_concept_distance: 85
+[t=0.47134s, 25412 KB] Finished generating composite features.
+Started element evaluation
+Number of booleans: 75
+Number of numericals: 561
+Time evaluate features for single state without cache: 10ms
+Time evaluate features for single state with cache: 6ms
+Time evaluate features for all states with cache: 2ms

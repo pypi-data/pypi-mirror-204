@@ -1,0 +1,15 @@
+{
+  "evaluate_time_multi_cache": 14.0,
+  "evaluate_time_single": 78.0,
+  "evaluate_time_single_cache": 70.0,
+  "generate_memory_complexity_10": 29396,
+  "generate_memory_complexity_5": 23092,
+  "generate_time_complexity_10": 1.53762,
+  "generate_time_complexity_5": 0.203526,
+  "num_booleans": 50,
+  "num_dynamic_atoms": 16,
+  "num_iterations": 1,
+  "num_numericals": 438,
+  "num_states": 192,
+  "num_static_atoms": 32
+}

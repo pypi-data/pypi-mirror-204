@@ -1,0 +1,2470 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>report</title>
+<meta name="generator" content="https://txt2tags.org">
+<style type="text/css">
+blockquote{margin: 1em 2em; border-left: 2px solid #999;
+  font-style: oblique; padding-left: 1em;}
+blockquote:first-letter{margin: .2em .1em .1em 0; font-size: 160%; font-weight: bold;}
+blockquote:first-line{font-weight: bold;}
+body{font-family: sans-serif;}
+hr{background-color:#000;border:0;color:#000;}
+hr.heavy{height:2px;}
+hr.light{height:1px;}
+img{border:0;display:block;}
+img.right{margin:0 0 0 auto;}
+img.center{border:0;margin:0 auto;}
+table{border-collapse: collapse;}
+table th,table td{padding: 3px 7px 2px 7px;}
+table th{background-color: lightgrey;}
+table.center{margin-left:auto; margin-right:auto;}
+.center{text-align:center;}
+.right{text-align:right;}
+.left{text-align:left;}
+.tableborder,.tableborder td,.tableborder th{border:1px solid #000;}
+.underline{text-decoration:underline;}
+</style>
+<style type="text/css">
+    body {
+        font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    table th {
+        text-align: left;
+        padding-top: 5px;
+        padding-bottom: 4px;
+        background-color: #aaa;
+        color: #ffffff;
+    }
+</style>
+<script type="text/javascript">
+function toggle_element(element) {
+    if (element.style.display == "none") {
+        element.style.display = "";
+    } else {
+        element.style.display = "none";
+    }
+}
+
+function find_next(element, classname) {
+    element = element.nextSibling;
+    while(element.nodeName != classname)
+        element = element.nextSibling;
+    return element;
+}
+
+function toggle_table(toggle_button) {
+    var table = find_next(toggle_button, "TABLE");
+    toggle_element(table);
+    if (toggle_button.innerHTML == "Show table") {
+        toggle_button.innerHTML = "Hide table";
+    } else {
+        toggle_button.innerHTML = "Show table";
+    }
+}
+
+function show_table(section) {
+    heading = section.children[0];
+    var toggle_button = find_next(heading, "BUTTON");
+    var table = find_next(toggle_button, "TABLE");
+    table.style.display = "";
+    toggle_button.innerHTML = "Hide table";
+}
+
+function show_main_tables() {
+    var names = ["unexplained-errors", "info", "summary"];
+    for (var i = 0; i < names.length; i++) {
+        var section = document.getElementById(names[i]);
+        try {
+            show_table(section);
+        } catch (e) {
+            console.log("No table found for " + names[i]);
+        }
+    }
+
+    // If there is only one table, show it and hide the button.
+    var buttons = document.getElementsByTagName('button');
+    var tables = document.getElementsByTagName('table');
+    if (buttons.length == 1 && tables.length == 1) {
+        tables[0].style.display = "";
+        buttons[0].style.display = "none";
+    }
+}
+
+document.addEventListener("DOMContentLoaded", show_main_tables);
+</script>
+</head>
+<body>
+<header>
+<hgroup>
+<h1>report</h1>
+<h3>2022-09-24</h3>
+</hgroup>
+</header>
+<article>
+
+<div class="body" id="body">
+
+<ul>
+<li><strong><a href="#info" onclick="show_table(document.getElementById('info'));">Info</a></strong>
+</li>
+<li><strong><a href="#summary" onclick="show_table(document.getElementById('summary'));">Summary</a></strong>
+</li>
+<li><strong><a href="#evaluate_time_multi_cache" onclick="show_table(document.getElementById('evaluate_time_multi_cache'));">evaluate_time_multi_cache</a></strong>
+  <ul>
+  <li><a href="#evaluate_time_multi_cache-blocksworld_3" onclick="show_table(document.getElementById('evaluate_time_multi_cache-blocksworld_3'));">blocksworld_3</a> <a href="#evaluate_time_multi_cache-childsnack" onclick="show_table(document.getElementById('evaluate_time_multi_cache-childsnack'));">childsnack</a> <a href="#evaluate_time_multi_cache-delivery" onclick="show_table(document.getElementById('evaluate_time_multi_cache-delivery'));">delivery</a> <a href="#evaluate_time_multi_cache-gripper" onclick="show_table(document.getElementById('evaluate_time_multi_cache-gripper'));">gripper</a> <a href="#evaluate_time_multi_cache-miconic" onclick="show_table(document.getElementById('evaluate_time_multi_cache-miconic'));">miconic</a> <a href="#evaluate_time_multi_cache-reward" onclick="show_table(document.getElementById('evaluate_time_multi_cache-reward'));">reward</a> <a href="#evaluate_time_multi_cache-visitall" onclick="show_table(document.getElementById('evaluate_time_multi_cache-visitall'));">visitall</a>
+  </li>
+  </ul>
+</li>
+<li><strong><a href="#evaluate_time_single" onclick="show_table(document.getElementById('evaluate_time_single'));">evaluate_time_single</a></strong>
+  <ul>
+  <li><a href="#evaluate_time_single-blocksworld_3" onclick="show_table(document.getElementById('evaluate_time_single-blocksworld_3'));">blocksworld_3</a> <a href="#evaluate_time_single-childsnack" onclick="show_table(document.getElementById('evaluate_time_single-childsnack'));">childsnack</a> <a href="#evaluate_time_single-delivery" onclick="show_table(document.getElementById('evaluate_time_single-delivery'));">delivery</a> <a href="#evaluate_time_single-gripper" onclick="show_table(document.getElementById('evaluate_time_single-gripper'));">gripper</a> <a href="#evaluate_time_single-miconic" onclick="show_table(document.getElementById('evaluate_time_single-miconic'));">miconic</a> <a href="#evaluate_time_single-reward" onclick="show_table(document.getElementById('evaluate_time_single-reward'));">reward</a> <a href="#evaluate_time_single-visitall" onclick="show_table(document.getElementById('evaluate_time_single-visitall'));">visitall</a>
+  </li>
+  </ul>
+</li>
+<li><strong><a href="#evaluate_time_single_cache" onclick="show_table(document.getElementById('evaluate_time_single_cache'));">evaluate_time_single_cache</a></strong>
+  <ul>
+  <li><a href="#evaluate_time_single_cache-blocksworld_3" onclick="show_table(document.getElementById('evaluate_time_single_cache-blocksworld_3'));">blocksworld_3</a> <a href="#evaluate_time_single_cache-childsnack" onclick="show_table(document.getElementById('evaluate_time_single_cache-childsnack'));">childsnack</a> <a href="#evaluate_time_single_cache-delivery" onclick="show_table(document.getElementById('evaluate_time_single_cache-delivery'));">delivery</a> <a href="#evaluate_time_single_cache-gripper" onclick="show_table(document.getElementById('evaluate_time_single_cache-gripper'));">gripper</a> <a href="#evaluate_time_single_cache-miconic" onclick="show_table(document.getElementById('evaluate_time_single_cache-miconic'));">miconic</a> <a href="#evaluate_time_single_cache-reward" onclick="show_table(document.getElementById('evaluate_time_single_cache-reward'));">reward</a> <a href="#evaluate_time_single_cache-visitall" onclick="show_table(document.getElementById('evaluate_time_single_cache-visitall'));">visitall</a>
+  </li>
+  </ul>
+</li>
+<li><strong><a href="#generate_memory_complexity_10" onclick="show_table(document.getElementById('generate_memory_complexity_10'));">generate_memory_complexity_10</a></strong>
+  <ul>
+  <li><a href="#generate_memory_complexity_10-blocksworld_3" onclick="show_table(document.getElementById('generate_memory_complexity_10-blocksworld_3'));">blocksworld_3</a> <a href="#generate_memory_complexity_10-childsnack" onclick="show_table(document.getElementById('generate_memory_complexity_10-childsnack'));">childsnack</a> <a href="#generate_memory_complexity_10-delivery" onclick="show_table(document.getElementById('generate_memory_complexity_10-delivery'));">delivery</a> <a href="#generate_memory_complexity_10-gripper" onclick="show_table(document.getElementById('generate_memory_complexity_10-gripper'));">gripper</a> <a href="#generate_memory_complexity_10-miconic" onclick="show_table(document.getElementById('generate_memory_complexity_10-miconic'));">miconic</a> <a href="#generate_memory_complexity_10-reward" onclick="show_table(document.getElementById('generate_memory_complexity_10-reward'));">reward</a> <a href="#generate_memory_complexity_10-visitall" onclick="show_table(document.getElementById('generate_memory_complexity_10-visitall'));">visitall</a>
+  </li>
+  </ul>
+</li>
+<li><strong><a href="#generate_memory_complexity_5" onclick="show_table(document.getElementById('generate_memory_complexity_5'));">generate_memory_complexity_5</a></strong>
+  <ul>
+  <li><a href="#generate_memory_complexity_5-blocksworld_3" onclick="show_table(document.getElementById('generate_memory_complexity_5-blocksworld_3'));">blocksworld_3</a> <a href="#generate_memory_complexity_5-childsnack" onclick="show_table(document.getElementById('generate_memory_complexity_5-childsnack'));">childsnack</a> <a href="#generate_memory_complexity_5-delivery" onclick="show_table(document.getElementById('generate_memory_complexity_5-delivery'));">delivery</a> <a href="#generate_memory_complexity_5-gripper" onclick="show_table(document.getElementById('generate_memory_complexity_5-gripper'));">gripper</a> <a href="#generate_memory_complexity_5-miconic" onclick="show_table(document.getElementById('generate_memory_complexity_5-miconic'));">miconic</a> <a href="#generate_memory_complexity_5-reward" onclick="show_table(document.getElementById('generate_memory_complexity_5-reward'));">reward</a> <a href="#generate_memory_complexity_5-visitall" onclick="show_table(document.getElementById('generate_memory_complexity_5-visitall'));">visitall</a>
+  </li>
+  </ul>
+</li>
+<li><strong><a href="#generate_time_complexity_10" onclick="show_table(document.getElementById('generate_time_complexity_10'));">generate_time_complexity_10</a></strong>
+  <ul>
+  <li><a href="#generate_time_complexity_10-blocksworld_3" onclick="show_table(document.getElementById('generate_time_complexity_10-blocksworld_3'));">blocksworld_3</a> <a href="#generate_time_complexity_10-childsnack" onclick="show_table(document.getElementById('generate_time_complexity_10-childsnack'));">childsnack</a> <a href="#generate_time_complexity_10-delivery" onclick="show_table(document.getElementById('generate_time_complexity_10-delivery'));">delivery</a> <a href="#generate_time_complexity_10-gripper" onclick="show_table(document.getElementById('generate_time_complexity_10-gripper'));">gripper</a> <a href="#generate_time_complexity_10-miconic" onclick="show_table(document.getElementById('generate_time_complexity_10-miconic'));">miconic</a> <a href="#generate_time_complexity_10-reward" onclick="show_table(document.getElementById('generate_time_complexity_10-reward'));">reward</a> <a href="#generate_time_complexity_10-visitall" onclick="show_table(document.getElementById('generate_time_complexity_10-visitall'));">visitall</a>
+  </li>
+  </ul>
+</li>
+<li><strong><a href="#generate_time_complexity_5" onclick="show_table(document.getElementById('generate_time_complexity_5'));">generate_time_complexity_5</a></strong>
+  <ul>
+  <li><a href="#generate_time_complexity_5-blocksworld_3" onclick="show_table(document.getElementById('generate_time_complexity_5-blocksworld_3'));">blocksworld_3</a> <a href="#generate_time_complexity_5-childsnack" onclick="show_table(document.getElementById('generate_time_complexity_5-childsnack'));">childsnack</a> <a href="#generate_time_complexity_5-delivery" onclick="show_table(document.getElementById('generate_time_complexity_5-delivery'));">delivery</a> <a href="#generate_time_complexity_5-gripper" onclick="show_table(document.getElementById('generate_time_complexity_5-gripper'));">gripper</a> <a href="#generate_time_complexity_5-miconic" onclick="show_table(document.getElementById('generate_time_complexity_5-miconic'));">miconic</a> <a href="#generate_time_complexity_5-reward" onclick="show_table(document.getElementById('generate_time_complexity_5-reward'));">reward</a> <a href="#generate_time_complexity_5-visitall" onclick="show_table(document.getElementById('generate_time_complexity_5-visitall'));">visitall</a>
+  </li>
+  </ul>
+</li>
+<li><strong><a href="#num_booleans" onclick="show_table(document.getElementById('num_booleans'));">num_booleans</a></strong>
+  <ul>
+  <li><a href="#num_booleans-blocksworld_3" onclick="show_table(document.getElementById('num_booleans-blocksworld_3'));">blocksworld_3</a> <a href="#num_booleans-childsnack" onclick="show_table(document.getElementById('num_booleans-childsnack'));">childsnack</a> <a href="#num_booleans-delivery" onclick="show_table(document.getElementById('num_booleans-delivery'));">delivery</a> <a href="#num_booleans-gripper" onclick="show_table(document.getElementById('num_booleans-gripper'));">gripper</a> <a href="#num_booleans-miconic" onclick="show_table(document.getElementById('num_booleans-miconic'));">miconic</a> <a href="#num_booleans-reward" onclick="show_table(document.getElementById('num_booleans-reward'));">reward</a> <a href="#num_booleans-visitall" onclick="show_table(document.getElementById('num_booleans-visitall'));">visitall</a>
+  </li>
+  </ul>
+</li>
+<li><strong><a href="#num_dynamic_atoms" onclick="show_table(document.getElementById('num_dynamic_atoms'));">num_dynamic_atoms</a></strong>
+  <ul>
+  <li><a href="#num_dynamic_atoms-blocksworld_3" onclick="show_table(document.getElementById('num_dynamic_atoms-blocksworld_3'));">blocksworld_3</a> <a href="#num_dynamic_atoms-childsnack" onclick="show_table(document.getElementById('num_dynamic_atoms-childsnack'));">childsnack</a> <a href="#num_dynamic_atoms-delivery" onclick="show_table(document.getElementById('num_dynamic_atoms-delivery'));">delivery</a> <a href="#num_dynamic_atoms-gripper" onclick="show_table(document.getElementById('num_dynamic_atoms-gripper'));">gripper</a> <a href="#num_dynamic_atoms-miconic" onclick="show_table(document.getElementById('num_dynamic_atoms-miconic'));">miconic</a> <a href="#num_dynamic_atoms-reward" onclick="show_table(document.getElementById('num_dynamic_atoms-reward'));">reward</a> <a href="#num_dynamic_atoms-visitall" onclick="show_table(document.getElementById('num_dynamic_atoms-visitall'));">visitall</a>
+  </li>
+  </ul>
+</li>
+<li><strong><a href="#num_iterations" onclick="show_table(document.getElementById('num_iterations'));">num_iterations</a></strong>
+  <ul>
+  <li><a href="#num_iterations-blocksworld_3" onclick="show_table(document.getElementById('num_iterations-blocksworld_3'));">blocksworld_3</a> <a href="#num_iterations-childsnack" onclick="show_table(document.getElementById('num_iterations-childsnack'));">childsnack</a> <a href="#num_iterations-delivery" onclick="show_table(document.getElementById('num_iterations-delivery'));">delivery</a> <a href="#num_iterations-gripper" onclick="show_table(document.getElementById('num_iterations-gripper'));">gripper</a> <a href="#num_iterations-miconic" onclick="show_table(document.getElementById('num_iterations-miconic'));">miconic</a> <a href="#num_iterations-reward" onclick="show_table(document.getElementById('num_iterations-reward'));">reward</a> <a href="#num_iterations-visitall" onclick="show_table(document.getElementById('num_iterations-visitall'));">visitall</a>
+  </li>
+  </ul>
+</li>
+<li><strong><a href="#num_numericals" onclick="show_table(document.getElementById('num_numericals'));">num_numericals</a></strong>
+  <ul>
+  <li><a href="#num_numericals-blocksworld_3" onclick="show_table(document.getElementById('num_numericals-blocksworld_3'));">blocksworld_3</a> <a href="#num_numericals-childsnack" onclick="show_table(document.getElementById('num_numericals-childsnack'));">childsnack</a> <a href="#num_numericals-delivery" onclick="show_table(document.getElementById('num_numericals-delivery'));">delivery</a> <a href="#num_numericals-gripper" onclick="show_table(document.getElementById('num_numericals-gripper'));">gripper</a> <a href="#num_numericals-miconic" onclick="show_table(document.getElementById('num_numericals-miconic'));">miconic</a> <a href="#num_numericals-reward" onclick="show_table(document.getElementById('num_numericals-reward'));">reward</a> <a href="#num_numericals-visitall" onclick="show_table(document.getElementById('num_numericals-visitall'));">visitall</a>
+  </li>
+  </ul>
+</li>
+<li><strong><a href="#num_states" onclick="show_table(document.getElementById('num_states'));">num_states</a></strong>
+  <ul>
+  <li><a href="#num_states-blocksworld_3" onclick="show_table(document.getElementById('num_states-blocksworld_3'));">blocksworld_3</a> <a href="#num_states-childsnack" onclick="show_table(document.getElementById('num_states-childsnack'));">childsnack</a> <a href="#num_states-delivery" onclick="show_table(document.getElementById('num_states-delivery'));">delivery</a> <a href="#num_states-gripper" onclick="show_table(document.getElementById('num_states-gripper'));">gripper</a> <a href="#num_states-miconic" onclick="show_table(document.getElementById('num_states-miconic'));">miconic</a> <a href="#num_states-reward" onclick="show_table(document.getElementById('num_states-reward'));">reward</a> <a href="#num_states-visitall" onclick="show_table(document.getElementById('num_states-visitall'));">visitall</a>
+  </li>
+  </ul>
+</li>
+<li><strong><a href="#num_static_atoms" onclick="show_table(document.getElementById('num_static_atoms'));">num_static_atoms</a></strong>
+  <ul>
+  <li><a href="#num_static_atoms-blocksworld_3" onclick="show_table(document.getElementById('num_static_atoms-blocksworld_3'));">blocksworld_3</a> <a href="#num_static_atoms-childsnack" onclick="show_table(document.getElementById('num_static_atoms-childsnack'));">childsnack</a> <a href="#num_static_atoms-delivery" onclick="show_table(document.getElementById('num_static_atoms-delivery'));">delivery</a> <a href="#num_static_atoms-gripper" onclick="show_table(document.getElementById('num_static_atoms-gripper'));">gripper</a> <a href="#num_static_atoms-miconic" onclick="show_table(document.getElementById('num_static_atoms-miconic'));">miconic</a> <a href="#num_static_atoms-reward" onclick="show_table(document.getElementById('num_static_atoms-reward'));">reward</a> <a href="#num_static_atoms-visitall" onclick="show_table(document.getElementById('num_static_atoms-visitall'));">visitall</a>
+  </li>
+  </ul>
+</li>
+</ul>
+
+<section id="info">
+<h1>info</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>algorithm</th>
+<th>time_<wbr>limit</th>
+<th>memory_<wbr>limit</th>
+</tr>
+<tr>
+<td>complexity-10-1</td>
+<td class="right">180</td>
+<td class="right">47040.00</td>
+</tr>
+</table>
+
+<p>
+Used nodes: {&lt;attribute 'node' missing&gt;}
+</p>
+
+</section>
+<section id="summary">
+<h1>summary</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>Summary</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td><a href="#evaluate_time_multi_cache" onclick="show_table(document.getElementById('evaluate_time_multi_cache'));">evaluate_time_multi_cache - Sum</a></td>
+<td class="right"><span style="color:rgb(127,127,127)">46.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single" onclick="show_table(document.getElementById('evaluate_time_single'));">evaluate_time_single - Sum</a></td>
+<td class="right"><span style="color:rgb(127,127,127)">254.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single_cache" onclick="show_table(document.getElementById('evaluate_time_single_cache'));">evaluate_time_single_cache - Sum</a></td>
+<td class="right"><span style="color:rgb(127,127,127)">431.00</span></td>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_5" onclick="show_table(document.getElementById('generate_memory_complexity_5'));">generate_memory_complexity_5 - Sum</a></td>
+<td class="right"><span style="color:rgb(127,127,127)">158068</span></td>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_10" onclick="show_table(document.getElementById('generate_memory_complexity_10'));">generate_memory_complexity_10 - Sum</a></td>
+<td class="right"><span style="color:rgb(127,127,127)">202196</span></td>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_5" onclick="show_table(document.getElementById('generate_time_complexity_5'));">generate_time_complexity_5 - Sum</a></td>
+<td class="right"><span style="color:rgb(127,127,127)">1.27</span></td>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_10" onclick="show_table(document.getElementById('generate_time_complexity_10'));">generate_time_complexity_10 - Sum</a></td>
+<td class="right"><span style="color:rgb(127,127,127)">4.32</span></td>
+</tr>
+<tr>
+<td><a href="#num_booleans" onclick="show_table(document.getElementById('num_booleans'));">num_booleans - Sum</a></td>
+<td class="right"><span style="color:rgb(127,127,127)">2106</span></td>
+</tr>
+<tr>
+<td><a href="#num_dynamic_atoms" onclick="show_table(document.getElementById('num_dynamic_atoms'));">num_dynamic_atoms - Sum</a></td>
+<td class="right"><span style="color:rgb(127,127,127)">63</span></td>
+</tr>
+<tr>
+<td><a href="#num_iterations" onclick="show_table(document.getElementById('num_iterations'));">num_iterations - Sum</a></td>
+<td class="right"><span style="color:rgb(127,127,127)">7</span></td>
+</tr>
+<tr>
+<td><a href="#num_numericals" onclick="show_table(document.getElementById('num_numericals'));">num_numericals - Sum</a></td>
+<td class="right"><span style="color:rgb(127,127,127)">7703</span></td>
+</tr>
+<tr>
+<td><a href="#num_states" onclick="show_table(document.getElementById('num_states'));">num_states - Sum</a></td>
+<td class="right"><span style="color:rgb(127,127,127)">295</span></td>
+</tr>
+<tr>
+<td><a href="#num_static_atoms" onclick="show_table(document.getElementById('num_static_atoms'));">num_static_atoms - Sum</a></td>
+<td class="right"><span style="color:rgb(127,127,127)">122</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_multi_cache">
+<h1>evaluate_time_multi_cache</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>multi_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td><a href="#evaluate_time_multi_cache-blocksworld_3" onclick="show_table(document.getElementById('evaluate_time_multi_cache-blocksworld_3'));">blocksworld_3</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">25.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_multi_cache-childsnack" onclick="show_table(document.getElementById('evaluate_time_multi_cache-childsnack'));">childsnack</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">14.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_multi_cache-delivery" onclick="show_table(document.getElementById('evaluate_time_multi_cache-delivery'));">delivery</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">2.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_multi_cache-gripper" onclick="show_table(document.getElementById('evaluate_time_multi_cache-gripper'));">gripper</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_multi_cache-miconic" onclick="show_table(document.getElementById('evaluate_time_multi_cache-miconic'));">miconic</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">4.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_multi_cache-reward" onclick="show_table(document.getElementById('evaluate_time_multi_cache-reward'));">reward</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">1.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_multi_cache-visitall" onclick="show_table(document.getElementById('evaluate_time_multi_cache-visitall'));">visitall</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.00</span></td>
+</tr>
+<tr>
+<td><strong>Sum (7)</strong></td>
+<td class="right"><span style="color:rgb(127,127,127)">46.00</span></td>
+</tr>
+</table>
+
+<p>
+The bottom row reports the sum across all domains.
+</p>
+
+<section id="evaluate_time_multi_cache-blocksworld_3">
+<h2>blocksworld_3</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>multi_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-3-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">25.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_multi_cache-childsnack">
+<h2>childsnack</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>multi_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-1.0-0.0-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">14.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_multi_cache-delivery">
+<h2>delivery</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>multi_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2_1_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">2.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_multi_cache-gripper">
+<h2>gripper</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>multi_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_multi_cache-miconic">
+<h2>miconic</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>multi_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">4.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_multi_cache-reward">
+<h2>reward</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>multi_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2x2_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">1.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_multi_cache-visitall">
+<h2>visitall</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>multi_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.5-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.00</span></td>
+</tr>
+</table>
+
+</section>
+</section>
+<section id="evaluate_time_single">
+<h1>evaluate_time_single</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single-blocksworld_3" onclick="show_table(document.getElementById('evaluate_time_single-blocksworld_3'));">blocksworld_3</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">150.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single-childsnack" onclick="show_table(document.getElementById('evaluate_time_single-childsnack'));">childsnack</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">78.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single-delivery" onclick="show_table(document.getElementById('evaluate_time_single-delivery'));">delivery</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">10.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single-gripper" onclick="show_table(document.getElementById('evaluate_time_single-gripper'));">gripper</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">1.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single-miconic" onclick="show_table(document.getElementById('evaluate_time_single-miconic'));">miconic</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">9.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single-reward" onclick="show_table(document.getElementById('evaluate_time_single-reward'));">reward</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">6.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single-visitall" onclick="show_table(document.getElementById('evaluate_time_single-visitall'));">visitall</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.00</span></td>
+</tr>
+<tr>
+<td><strong>Sum (7)</strong></td>
+<td class="right"><span style="color:rgb(127,127,127)">254.00</span></td>
+</tr>
+</table>
+
+<p>
+The bottom row reports the sum across all domains.
+</p>
+
+<section id="evaluate_time_single-blocksworld_3">
+<h2>blocksworld_3</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-3-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">150.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_single-childsnack">
+<h2>childsnack</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-1.0-0.0-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">78.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_single-delivery">
+<h2>delivery</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2_1_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">10.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_single-gripper">
+<h2>gripper</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">1.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_single-miconic">
+<h2>miconic</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">9.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_single-reward">
+<h2>reward</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2x2_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">6.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_single-visitall">
+<h2>visitall</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.5-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.00</span></td>
+</tr>
+</table>
+
+</section>
+</section>
+<section id="evaluate_time_single_cache">
+<h1>evaluate_time_single_cache</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single_cache-blocksworld_3" onclick="show_table(document.getElementById('evaluate_time_single_cache-blocksworld_3'));">blocksworld_3</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">344.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single_cache-childsnack" onclick="show_table(document.getElementById('evaluate_time_single_cache-childsnack'));">childsnack</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">70.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single_cache-delivery" onclick="show_table(document.getElementById('evaluate_time_single_cache-delivery'));">delivery</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">6.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single_cache-gripper" onclick="show_table(document.getElementById('evaluate_time_single_cache-gripper'));">gripper</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single_cache-miconic" onclick="show_table(document.getElementById('evaluate_time_single_cache-miconic'));">miconic</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">8.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single_cache-reward" onclick="show_table(document.getElementById('evaluate_time_single_cache-reward'));">reward</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">3.00</span></td>
+</tr>
+<tr>
+<td><a href="#evaluate_time_single_cache-visitall" onclick="show_table(document.getElementById('evaluate_time_single_cache-visitall'));">visitall</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.00</span></td>
+</tr>
+<tr>
+<td><strong>Sum (7)</strong></td>
+<td class="right"><span style="color:rgb(127,127,127)">431.00</span></td>
+</tr>
+</table>
+
+<p>
+The bottom row reports the sum across all domains.
+</p>
+
+<section id="evaluate_time_single_cache-blocksworld_3">
+<h2>blocksworld_3</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-3-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">344.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_single_cache-childsnack">
+<h2>childsnack</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-1.0-0.0-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">70.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_single_cache-delivery">
+<h2>delivery</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2_1_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">6.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_single_cache-gripper">
+<h2>gripper</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_single_cache-miconic">
+<h2>miconic</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">8.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_single_cache-reward">
+<h2>reward</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2x2_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">3.00</span></td>
+</tr>
+</table>
+
+</section>
+<section id="evaluate_time_single_cache-visitall">
+<h2>visitall</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>evaluate_<wbr>time_<wbr>single_<wbr>cache</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.5-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.00</span></td>
+</tr>
+</table>
+
+</section>
+</section>
+<section id="generate_memory_complexity_10">
+<h1>generate_memory_complexity_10</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_10-blocksworld_3" onclick="show_table(document.getElementById('generate_memory_complexity_10-blocksworld_3'));">blocksworld_3</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">51188</span></td>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_10-childsnack" onclick="show_table(document.getElementById('generate_memory_complexity_10-childsnack'));">childsnack</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">29396</span></td>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_10-delivery" onclick="show_table(document.getElementById('generate_memory_complexity_10-delivery'));">delivery</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">25412</span></td>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_10-gripper" onclick="show_table(document.getElementById('generate_memory_complexity_10-gripper'));">gripper</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">24172</span></td>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_10-miconic" onclick="show_table(document.getElementById('generate_memory_complexity_10-miconic'));">miconic</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">25712</span></td>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_10-reward" onclick="show_table(document.getElementById('generate_memory_complexity_10-reward'));">reward</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">24016</span></td>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_10-visitall" onclick="show_table(document.getElementById('generate_memory_complexity_10-visitall'));">visitall</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">22300</span></td>
+</tr>
+<tr>
+<td><strong>Sum (7)</strong></td>
+<td class="right"><span style="color:rgb(127,127,127)">202196</span></td>
+</tr>
+</table>
+
+<p>
+The bottom row reports the sum across all domains.
+</p>
+
+<section id="generate_memory_complexity_10-blocksworld_3">
+<h2>blocksworld_3</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-3-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">51188</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_memory_complexity_10-childsnack">
+<h2>childsnack</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-1.0-0.0-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">29396</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_memory_complexity_10-delivery">
+<h2>delivery</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2_1_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">25412</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_memory_complexity_10-gripper">
+<h2>gripper</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">24172</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_memory_complexity_10-miconic">
+<h2>miconic</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">25712</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_memory_complexity_10-reward">
+<h2>reward</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2x2_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">24016</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_memory_complexity_10-visitall">
+<h2>visitall</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.5-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">22300</span></td>
+</tr>
+</table>
+
+</section>
+</section>
+<section id="generate_memory_complexity_5">
+<h1>generate_memory_complexity_5</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_5-blocksworld_3" onclick="show_table(document.getElementById('generate_memory_complexity_5-blocksworld_3'));">blocksworld_3</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">22568</span></td>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_5-childsnack" onclick="show_table(document.getElementById('generate_memory_complexity_5-childsnack'));">childsnack</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">23092</span></td>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_5-delivery" onclick="show_table(document.getElementById('generate_memory_complexity_5-delivery'));">delivery</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">22564</span></td>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_5-gripper" onclick="show_table(document.getElementById('generate_memory_complexity_5-gripper'));">gripper</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">22428</span></td>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_5-miconic" onclick="show_table(document.getElementById('generate_memory_complexity_5-miconic'));">miconic</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">22564</span></td>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_5-reward" onclick="show_table(document.getElementById('generate_memory_complexity_5-reward'));">reward</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">22552</span></td>
+</tr>
+<tr>
+<td><a href="#generate_memory_complexity_5-visitall" onclick="show_table(document.getElementById('generate_memory_complexity_5-visitall'));">visitall</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">22300</span></td>
+</tr>
+<tr>
+<td><strong>Sum (7)</strong></td>
+<td class="right"><span style="color:rgb(127,127,127)">158068</span></td>
+</tr>
+</table>
+
+<p>
+The bottom row reports the sum across all domains.
+</p>
+
+<section id="generate_memory_complexity_5-blocksworld_3">
+<h2>blocksworld_3</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-3-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">22568</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_memory_complexity_5-childsnack">
+<h2>childsnack</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-1.0-0.0-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">23092</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_memory_complexity_5-delivery">
+<h2>delivery</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2_1_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">22564</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_memory_complexity_5-gripper">
+<h2>gripper</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">22428</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_memory_complexity_5-miconic">
+<h2>miconic</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">22564</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_memory_complexity_5-reward">
+<h2>reward</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2x2_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">22552</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_memory_complexity_5-visitall">
+<h2>visitall</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>memory_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.5-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">22300</span></td>
+</tr>
+</table>
+
+</section>
+</section>
+<section id="generate_time_complexity_10">
+<h1>generate_time_complexity_10</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_10-blocksworld_3" onclick="show_table(document.getElementById('generate_time_complexity_10-blocksworld_3'));">blocksworld_3</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">1.08</span></td>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_10-childsnack" onclick="show_table(document.getElementById('generate_time_complexity_10-childsnack'));">childsnack</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">1.54</span></td>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_10-delivery" onclick="show_table(document.getElementById('generate_time_complexity_10-delivery'));">delivery</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.47</span></td>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_10-gripper" onclick="show_table(document.getElementById('generate_time_complexity_10-gripper'));">gripper</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.28</span></td>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_10-miconic" onclick="show_table(document.getElementById('generate_time_complexity_10-miconic'));">miconic</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.47</span></td>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_10-reward" onclick="show_table(document.getElementById('generate_time_complexity_10-reward'));">reward</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.33</span></td>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_10-visitall" onclick="show_table(document.getElementById('generate_time_complexity_10-visitall'));">visitall</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.15</span></td>
+</tr>
+<tr>
+<td><strong>Sum (7)</strong></td>
+<td class="right"><span style="color:rgb(127,127,127)">4.32</span></td>
+</tr>
+</table>
+
+<p>
+The bottom row reports the sum across all domains.
+</p>
+
+<section id="generate_time_complexity_10-blocksworld_3">
+<h2>blocksworld_3</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-3-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">1.08</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_time_complexity_10-childsnack">
+<h2>childsnack</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-1.0-0.0-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">1.54</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_time_complexity_10-delivery">
+<h2>delivery</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2_1_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.47</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_time_complexity_10-gripper">
+<h2>gripper</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.28</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_time_complexity_10-miconic">
+<h2>miconic</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.47</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_time_complexity_10-reward">
+<h2>reward</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2x2_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.33</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_time_complexity_10-visitall">
+<h2>visitall</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>10</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.5-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.15</span></td>
+</tr>
+</table>
+
+</section>
+</section>
+<section id="generate_time_complexity_5">
+<h1>generate_time_complexity_5</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_5-blocksworld_3" onclick="show_table(document.getElementById('generate_time_complexity_5-blocksworld_3'));">blocksworld_3</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.11</span></td>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_5-childsnack" onclick="show_table(document.getElementById('generate_time_complexity_5-childsnack'));">childsnack</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.20</span></td>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_5-delivery" onclick="show_table(document.getElementById('generate_time_complexity_5-delivery'));">delivery</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.26</span></td>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_5-gripper" onclick="show_table(document.getElementById('generate_time_complexity_5-gripper'));">gripper</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.12</span></td>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_5-miconic" onclick="show_table(document.getElementById('generate_time_complexity_5-miconic'));">miconic</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.22</span></td>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_5-reward" onclick="show_table(document.getElementById('generate_time_complexity_5-reward'));">reward</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.21</span></td>
+</tr>
+<tr>
+<td><a href="#generate_time_complexity_5-visitall" onclick="show_table(document.getElementById('generate_time_complexity_5-visitall'));">visitall</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.15</span></td>
+</tr>
+<tr>
+<td><strong>Sum (7)</strong></td>
+<td class="right"><span style="color:rgb(127,127,127)">1.27</span></td>
+</tr>
+</table>
+
+<p>
+The bottom row reports the sum across all domains.
+</p>
+
+<section id="generate_time_complexity_5-blocksworld_3">
+<h2>blocksworld_3</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-3-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.11</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_time_complexity_5-childsnack">
+<h2>childsnack</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-1.0-0.0-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.20</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_time_complexity_5-delivery">
+<h2>delivery</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2_1_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.26</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_time_complexity_5-gripper">
+<h2>gripper</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.12</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_time_complexity_5-miconic">
+<h2>miconic</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.22</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_time_complexity_5-reward">
+<h2>reward</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2x2_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.21</span></td>
+</tr>
+</table>
+
+</section>
+<section id="generate_time_complexity_5-visitall">
+<h2>visitall</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>generate_<wbr>time_<wbr>complexity_<wbr>5</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.5-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0.15</span></td>
+</tr>
+</table>
+
+</section>
+</section>
+<section id="num_booleans">
+<h1>num_booleans</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>booleans</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td><a href="#num_booleans-blocksworld_3" onclick="show_table(document.getElementById('num_booleans-blocksworld_3'));">blocksworld_3</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">1741</span></td>
+</tr>
+<tr>
+<td><a href="#num_booleans-childsnack" onclick="show_table(document.getElementById('num_booleans-childsnack'));">childsnack</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">50</span></td>
+</tr>
+<tr>
+<td><a href="#num_booleans-delivery" onclick="show_table(document.getElementById('num_booleans-delivery'));">delivery</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">75</span></td>
+</tr>
+<tr>
+<td><a href="#num_booleans-gripper" onclick="show_table(document.getElementById('num_booleans-gripper'));">gripper</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">45</span></td>
+</tr>
+<tr>
+<td><a href="#num_booleans-miconic" onclick="show_table(document.getElementById('num_booleans-miconic'));">miconic</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">134</span></td>
+</tr>
+<tr>
+<td><a href="#num_booleans-reward" onclick="show_table(document.getElementById('num_booleans-reward'));">reward</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">59</span></td>
+</tr>
+<tr>
+<td><a href="#num_booleans-visitall" onclick="show_table(document.getElementById('num_booleans-visitall'));">visitall</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">2</span></td>
+</tr>
+<tr>
+<td><strong>Sum (7)</strong></td>
+<td class="right"><span style="color:rgb(127,127,127)">2106</span></td>
+</tr>
+</table>
+
+<p>
+The bottom row reports the sum across all domains.
+</p>
+
+<section id="num_booleans-blocksworld_3">
+<h2>blocksworld_3</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>booleans</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-3-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">1741</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_booleans-childsnack">
+<h2>childsnack</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>booleans</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-1.0-0.0-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">50</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_booleans-delivery">
+<h2>delivery</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>booleans</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2_1_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">75</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_booleans-gripper">
+<h2>gripper</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>booleans</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">45</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_booleans-miconic">
+<h2>miconic</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>booleans</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">134</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_booleans-reward">
+<h2>reward</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>booleans</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2x2_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">59</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_booleans-visitall">
+<h2>visitall</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>booleans</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.5-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">2</span></td>
+</tr>
+</table>
+
+</section>
+</section>
+<section id="num_dynamic_atoms">
+<h1>num_dynamic_atoms</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>dynamic_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td><a href="#num_dynamic_atoms-blocksworld_3" onclick="show_table(document.getElementById('num_dynamic_atoms-blocksworld_3'));">blocksworld_3</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">15</span></td>
+</tr>
+<tr>
+<td><a href="#num_dynamic_atoms-childsnack" onclick="show_table(document.getElementById('num_dynamic_atoms-childsnack'));">childsnack</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">16</span></td>
+</tr>
+<tr>
+<td><a href="#num_dynamic_atoms-delivery" onclick="show_table(document.getElementById('num_dynamic_atoms-delivery'));">delivery</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">10</span></td>
+</tr>
+<tr>
+<td><a href="#num_dynamic_atoms-gripper" onclick="show_table(document.getElementById('num_dynamic_atoms-gripper'));">gripper</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">8</span></td>
+</tr>
+<tr>
+<td><a href="#num_dynamic_atoms-miconic" onclick="show_table(document.getElementById('num_dynamic_atoms-miconic'));">miconic</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">6</span></td>
+</tr>
+<tr>
+<td><a href="#num_dynamic_atoms-reward" onclick="show_table(document.getElementById('num_dynamic_atoms-reward'));">reward</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">8</span></td>
+</tr>
+<tr>
+<td><a href="#num_dynamic_atoms-visitall" onclick="show_table(document.getElementById('num_dynamic_atoms-visitall'));">visitall</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td><strong>Sum (7)</strong></td>
+<td class="right"><span style="color:rgb(127,127,127)">63</span></td>
+</tr>
+</table>
+
+<p>
+The bottom row reports the sum across all domains.
+</p>
+
+<section id="num_dynamic_atoms-blocksworld_3">
+<h2>blocksworld_3</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>dynamic_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-3-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">15</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_dynamic_atoms-childsnack">
+<h2>childsnack</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>dynamic_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-1.0-0.0-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">16</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_dynamic_atoms-delivery">
+<h2>delivery</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>dynamic_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2_1_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">10</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_dynamic_atoms-gripper">
+<h2>gripper</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>dynamic_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">8</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_dynamic_atoms-miconic">
+<h2>miconic</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>dynamic_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">6</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_dynamic_atoms-reward">
+<h2>reward</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>dynamic_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2x2_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">8</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_dynamic_atoms-visitall">
+<h2>visitall</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>dynamic_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.5-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+</table>
+
+</section>
+</section>
+<section id="num_iterations">
+<h1>num_iterations</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>iterations</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td><a href="#num_iterations-blocksworld_3" onclick="show_table(document.getElementById('num_iterations-blocksworld_3'));">blocksworld_3</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td><a href="#num_iterations-childsnack" onclick="show_table(document.getElementById('num_iterations-childsnack'));">childsnack</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td><a href="#num_iterations-delivery" onclick="show_table(document.getElementById('num_iterations-delivery'));">delivery</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td><a href="#num_iterations-gripper" onclick="show_table(document.getElementById('num_iterations-gripper'));">gripper</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td><a href="#num_iterations-miconic" onclick="show_table(document.getElementById('num_iterations-miconic'));">miconic</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td><a href="#num_iterations-reward" onclick="show_table(document.getElementById('num_iterations-reward'));">reward</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td><a href="#num_iterations-visitall" onclick="show_table(document.getElementById('num_iterations-visitall'));">visitall</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td><strong>Sum (7)</strong></td>
+<td class="right"><span style="color:rgb(127,127,127)">7</span></td>
+</tr>
+</table>
+
+<p>
+The bottom row reports the sum across all domains.
+</p>
+
+<section id="num_iterations-blocksworld_3">
+<h2>blocksworld_3</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>iterations</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-3-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_iterations-childsnack">
+<h2>childsnack</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>iterations</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-1.0-0.0-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_iterations-delivery">
+<h2>delivery</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>iterations</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2_1_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_iterations-gripper">
+<h2>gripper</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>iterations</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_iterations-miconic">
+<h2>miconic</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>iterations</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_iterations-reward">
+<h2>reward</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>iterations</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2x2_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_iterations-visitall">
+<h2>visitall</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>iterations</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.5-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+</table>
+
+</section>
+</section>
+<section id="num_numericals">
+<h1>num_numericals</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>numericals</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td><a href="#num_numericals-blocksworld_3" onclick="show_table(document.getElementById('num_numericals-blocksworld_3'));">blocksworld_3</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">5590</span></td>
+</tr>
+<tr>
+<td><a href="#num_numericals-childsnack" onclick="show_table(document.getElementById('num_numericals-childsnack'));">childsnack</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">438</span></td>
+</tr>
+<tr>
+<td><a href="#num_numericals-delivery" onclick="show_table(document.getElementById('num_numericals-delivery'));">delivery</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">561</span></td>
+</tr>
+<tr>
+<td><a href="#num_numericals-gripper" onclick="show_table(document.getElementById('num_numericals-gripper'));">gripper</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">232</span></td>
+</tr>
+<tr>
+<td><a href="#num_numericals-miconic" onclick="show_table(document.getElementById('num_numericals-miconic'));">miconic</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">426</span></td>
+</tr>
+<tr>
+<td><a href="#num_numericals-reward" onclick="show_table(document.getElementById('num_numericals-reward'));">reward</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">449</span></td>
+</tr>
+<tr>
+<td><a href="#num_numericals-visitall" onclick="show_table(document.getElementById('num_numericals-visitall'));">visitall</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">7</span></td>
+</tr>
+<tr>
+<td><strong>Sum (7)</strong></td>
+<td class="right"><span style="color:rgb(127,127,127)">7703</span></td>
+</tr>
+</table>
+
+<p>
+The bottom row reports the sum across all domains.
+</p>
+
+<section id="num_numericals-blocksworld_3">
+<h2>blocksworld_3</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>numericals</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-3-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">5590</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_numericals-childsnack">
+<h2>childsnack</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>numericals</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-1.0-0.0-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">438</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_numericals-delivery">
+<h2>delivery</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>numericals</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2_1_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">561</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_numericals-gripper">
+<h2>gripper</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>numericals</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">232</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_numericals-miconic">
+<h2>miconic</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>numericals</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">426</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_numericals-reward">
+<h2>reward</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>numericals</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2x2_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">449</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_numericals-visitall">
+<h2>visitall</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>numericals</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.5-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">7</span></td>
+</tr>
+</table>
+
+</section>
+</section>
+<section id="num_states">
+<h1>num_states</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>states</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td><a href="#num_states-blocksworld_3" onclick="show_table(document.getElementById('num_states-blocksworld_3'));">blocksworld_3</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">26</span></td>
+</tr>
+<tr>
+<td><a href="#num_states-childsnack" onclick="show_table(document.getElementById('num_states-childsnack'));">childsnack</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">192</span></td>
+</tr>
+<tr>
+<td><a href="#num_states-delivery" onclick="show_table(document.getElementById('num_states-delivery'));">delivery</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">20</span></td>
+</tr>
+<tr>
+<td><a href="#num_states-gripper" onclick="show_table(document.getElementById('num_states-gripper'));">gripper</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">8</span></td>
+</tr>
+<tr>
+<td><a href="#num_states-miconic" onclick="show_table(document.getElementById('num_states-miconic'));">miconic</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">32</span></td>
+</tr>
+<tr>
+<td><a href="#num_states-reward" onclick="show_table(document.getElementById('num_states-reward'));">reward</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">16</span></td>
+</tr>
+<tr>
+<td><a href="#num_states-visitall" onclick="show_table(document.getElementById('num_states-visitall'));">visitall</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td><strong>Sum (7)</strong></td>
+<td class="right"><span style="color:rgb(127,127,127)">295</span></td>
+</tr>
+</table>
+
+<p>
+The bottom row reports the sum across all domains.
+</p>
+
+<section id="num_states-blocksworld_3">
+<h2>blocksworld_3</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>states</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-3-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">26</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_states-childsnack">
+<h2>childsnack</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>states</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-1.0-0.0-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">192</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_states-delivery">
+<h2>delivery</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>states</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2_1_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">20</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_states-gripper">
+<h2>gripper</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>states</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">8</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_states-miconic">
+<h2>miconic</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>states</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">32</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_states-reward">
+<h2>reward</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>states</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2x2_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">16</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_states-visitall">
+<h2>visitall</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>states</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.5-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+</table>
+
+</section>
+</section>
+<section id="num_static_atoms">
+<h1>num_static_atoms</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>static_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td><a href="#num_static_atoms-blocksworld_3" onclick="show_table(document.getElementById('num_static_atoms-blocksworld_3'));">blocksworld_3</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">8</span></td>
+</tr>
+<tr>
+<td><a href="#num_static_atoms-childsnack" onclick="show_table(document.getElementById('num_static_atoms-childsnack'));">childsnack</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">32</span></td>
+</tr>
+<tr>
+<td><a href="#num_static_atoms-delivery" onclick="show_table(document.getElementById('num_static_atoms-delivery'));">delivery</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">23</span></td>
+</tr>
+<tr>
+<td><a href="#num_static_atoms-gripper" onclick="show_table(document.getElementById('num_static_atoms-gripper'));">gripper</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">11</span></td>
+</tr>
+<tr>
+<td><a href="#num_static_atoms-miconic" onclick="show_table(document.getElementById('num_static_atoms-miconic'));">miconic</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">15</span></td>
+</tr>
+<tr>
+<td><a href="#num_static_atoms-reward" onclick="show_table(document.getElementById('num_static_atoms-reward'));">reward</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">22</span></td>
+</tr>
+<tr>
+<td><a href="#num_static_atoms-visitall" onclick="show_table(document.getElementById('num_static_atoms-visitall'));">visitall</a> (1)</td>
+<td class="right"><span style="color:rgb(127,127,127)">11</span></td>
+</tr>
+<tr>
+<td><strong>Sum (7)</strong></td>
+<td class="right"><span style="color:rgb(127,127,127)">122</span></td>
+</tr>
+</table>
+
+<p>
+The bottom row reports the sum across all domains.
+</p>
+
+<section id="num_static_atoms-blocksworld_3">
+<h2>blocksworld_3</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>static_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-3-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">8</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_static_atoms-childsnack">
+<h2>childsnack</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>static_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-1.0-0.0-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">32</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_static_atoms-delivery">
+<h2>delivery</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>static_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2_1_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">23</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_static_atoms-gripper">
+<h2>gripper</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>static_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">11</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_static_atoms-miconic">
+<h2>miconic</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>static_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-2-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">15</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_static_atoms-reward">
+<h2>reward</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>static_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>instance_2x2_0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">22</span></td>
+</tr>
+</table>
+
+</section>
+<section id="num_static_atoms-visitall">
+<h2>visitall</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table class="tableborder" style="display:none">
+<tr>
+<th>num_<wbr>static_<wbr>atoms</th>
+<th>complexity-10-1</th>
+</tr>
+<tr>
+<td>p-1-0.5-2-0.pddl</td>
+<td class="right"><span style="color:rgb(127,127,127)">11</span></td>
+</tr>
+</table>
+
+</section>
+</section>
+</div>
+</article></body></html>
