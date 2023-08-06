@@ -1,0 +1,3 @@
+[console_scripts]
+notpy=notpy:notpy.main
+
