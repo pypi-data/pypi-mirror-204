@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pip-package-template-docker
+Version: 2023.4.23
+Summary: Project template for Dockerized pip package development.
+Home-page: https://github.com/MichaelKim0407/pip-package-template-docker
+Author: Zheng Jin
+Author-email: mkim0407@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: ci
+Requires-Dist: flake8 ; extra == 'ci'
+Requires-Dist: flake8-commas ; extra == 'ci'
+Requires-Dist: flake8-quotes ; extra == 'ci'
+Requires-Dist: flake8-multiline-containers ; extra == 'ci'
+Requires-Dist: pytest ; extra == 'ci'
+Requires-Dist: pytest-cov ; extra == 'ci'
+Requires-Dist: coveralls ; extra == 'ci'
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-commas ; extra == 'dev'
+Requires-Dist: flake8-quotes ; extra == 'dev'
+Requires-Dist: flake8-multiline-containers ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
