@@ -1,0 +1,13 @@
+CHANGELOG
+==========================
+v1.0:
+- chataimaker.chat(query) function (gives answer to any query)
+
+v1.1:
+- Bug fix with pickle module.
+
+v1.2:
+- chataimaker.pchat(query) function (prints answer to the query)
+
+v1.3:
+- Fixed Bug With Module

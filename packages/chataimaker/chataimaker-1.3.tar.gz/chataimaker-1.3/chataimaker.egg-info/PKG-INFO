@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: chataimaker
+Version: 1.3
+Summary: Package, that can help make you AI chat bot
+Home-page: 
+Author: Boynfriend
+Author-email: justbnf@gmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+ChatAIMaker - Python Module that can help you make the simple chat bot!
+
+
+CHANGELOG
+==========================
+v1.0:
+- chataimaker.chat(query) function (gives answer to any query)
+
+v1.1:
+- Bug fix with pickle module.
+
+v1.2:
+- chataimaker.pchat(query) function (prints answer to the query)
+
+v1.3:
+- Fixed Bug With Module
