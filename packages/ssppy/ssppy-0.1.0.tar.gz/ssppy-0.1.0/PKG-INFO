@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: ssppy
+Version: 0.1.0
+Summary: Compute energy potential of space solar power 
+License: MIT
+Author: Jack Mcnish
+Requires-Python: >=3.9,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: myst-nb (>=0.17.1,<0.18.0)
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: pandas (>=2.0.0,<3.0.0)
+Requires-Dist: scipy (>=1.10.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# ssppy
+
+Compute energy potential of space solar power 
+
+## Installation
+
+```bash
+$ pip install ssppy
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`ssppy` was created by Jack Mcnish. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`ssppy` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
