@@ -1,0 +1,9 @@
+nameko>=2.6
+
+[dev]
+pytest<=4.3.0
+flake8
+coverage
+restructuredtext-lint
+Pygments
+pytest-eventlet

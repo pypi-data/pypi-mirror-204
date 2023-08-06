@@ -1,0 +1,14 @@
+CHANGELOG.rst
+CONTRIBUTORS.txt
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+nameko_eventlog_dispatcher/__init__.py
+nameko_eventlog_dispatcher/eventlog_dispatcher.py
+nameko_eventlog_dispatcher.egg-info/PKG-INFO
+nameko_eventlog_dispatcher.egg-info/SOURCES.txt
+nameko_eventlog_dispatcher.egg-info/dependency_links.txt
+nameko_eventlog_dispatcher.egg-info/requires.txt
+nameko_eventlog_dispatcher.egg-info/top_level.txt
+nameko_eventlog_dispatcher.egg-info/zip-safe
