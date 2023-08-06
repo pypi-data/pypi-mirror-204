@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pyfores/__init__.py
+pyfores/color.py
+pyfores.egg-info/PKG-INFO
+pyfores.egg-info/SOURCES.txt
+pyfores.egg-info/dependency_links.txt
+pyfores.egg-info/top_level.txt
