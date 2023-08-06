@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: auraboros
+Version: 0.20.0a0
+License-File: LICENSE
+Requires-Python: >=3.10.8
+Requires-Dist: moderngl
+Requires-Dist: pygame
