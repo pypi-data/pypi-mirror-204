@@ -1,0 +1,9 @@
+speechtotext/__init__.py,sha256=l3JBTdDRfqZG3kKTFLpnYy0wKUtWE7YrlleAz03Q2KA,24
+speechtotext/__version__.py,sha256=y9Mp_8x0BCZSHsdLT_q5tX9wZwd5QgqrSIENLrb6vXA,62
+speechtotext/datasets.py,sha256=cRhLAZJUew3ZgTvDTs23r9Jw2zYiWB2l89QnGm6DA6M,3603
+speechtotext/functions.py,sha256=7LO00WMQuXhhhDZWSwaeC9kRUx3BSGnzrQ-HVtZYJWM,6803
+speechtotext_python-0.3.6.dist-info/LICENSE,sha256=p_MS_mbxTyqV3oL7_5gxhpwsUBVHOVVkDcDcgsJBhIM,1071
+speechtotext_python-0.3.6.dist-info/METADATA,sha256=tqQ7ZF9I65f2wvtE5XpA-wXC6aHYzqbefeh2WPy7imw,2018
+speechtotext_python-0.3.6.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+speechtotext_python-0.3.6.dist-info/top_level.txt,sha256=lOt-7VrFJcbFzknEH6VPEPPcZyd048IL9KpUacYkveI,13
+speechtotext_python-0.3.6.dist-info/RECORD,,
