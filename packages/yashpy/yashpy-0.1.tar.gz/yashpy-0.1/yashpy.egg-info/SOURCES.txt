@@ -1,0 +1,7 @@
+licence.txt
+setup.py
+yashpy/__init__.py
+yashpy.egg-info/PKG-INFO
+yashpy.egg-info/SOURCES.txt
+yashpy.egg-info/dependency_links.txt
+yashpy.egg-info/top_level.txt
