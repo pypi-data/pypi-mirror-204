@@ -1,0 +1,11 @@
+visokio_omniprint/DriverBase.py,sha256=OZPRULJfAXaSmDPs9pz3-hEwlDgjTbJX3XhWcOk2n64,4192
+visokio_omniprint/Image.py,sha256=MD0ydc_sHGYLnbVgxgB_DXeiVg1X9NqqHQ_oLPrsD7Q,628
+visokio_omniprint/ImagesPdf.py,sha256=3nBenVWF5Vjg2tpiEa0IMBcM-3jO9XyPBNMGnPpSRaY,1177
+visokio_omniprint/Pdf.py,sha256=oHY0I4wuUz7KHgx2gNX9k4PbxFAZ_rvGES4eo-Q8eLQ,944
+visokio_omniprint/Tools.py,sha256=seWHJ1ZWnK1M06-Z3uW32H15nwr1n5casjYg2g1VaQ0,3174
+visokio_omniprint/__about__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+visokio_omniprint/__init__.py,sha256=XkCURKYPzi5Cq8BXcv5X5_SIr5gs72lUo19EhQ_aS2Y,104
+visokio_omniprint-1.0.1.dist-info/METADATA,sha256=93r7rro6bwfFyjCt9ol8OBP8sjFupiUHjPQ1h2wVvWY,1311
+visokio_omniprint-1.0.1.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+visokio_omniprint-1.0.1.dist-info/licenses/LICENSE,sha256=uQR1KgS0bihluOoJDXQVRQm61PLITd4zJtyRbvwsWK0,11
+visokio_omniprint-1.0.1.dist-info/RECORD,,
