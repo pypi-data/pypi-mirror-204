@@ -1,0 +1,9 @@
+README.md
+setup.py
+tzconv/__init__.py
+tzconv.egg-info/PKG-INFO
+tzconv.egg-info/SOURCES.txt
+tzconv.egg-info/dependency_links.txt
+tzconv.egg-info/entry_points.txt
+tzconv.egg-info/requires.txt
+tzconv.egg-info/top_level.txt
