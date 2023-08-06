@@ -1,0 +1,12 @@
+setup.py
+ZiTokenizer/He2Zi.py
+ZiTokenizer/UnicodeTokenizer.py
+ZiTokenizer/ZiCutter.py
+ZiTokenizer/ZiSegmenter.py
+ZiTokenizer/ZiTokenizer.py
+ZiTokenizer/__init__.py
+ZiTokenizer.egg-info/PKG-INFO
+ZiTokenizer.egg-info/SOURCES.txt
+ZiTokenizer.egg-info/dependency_links.txt
+ZiTokenizer.egg-info/requires.txt
+ZiTokenizer.egg-info/top_level.txt
