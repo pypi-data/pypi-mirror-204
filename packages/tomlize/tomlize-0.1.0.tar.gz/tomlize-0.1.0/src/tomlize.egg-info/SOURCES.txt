@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/tomlize/__init__.py
+src/tomlize/__main__.py
+src/tomlize/cli.py
+src/tomlize/exceptions.py
+src/tomlize/main.py
+src/tomlize.egg-info/PKG-INFO
+src/tomlize.egg-info/SOURCES.txt
+src/tomlize.egg-info/dependency_links.txt
+src/tomlize.egg-info/requires.txt
+src/tomlize.egg-info/top_level.txt
+src/tomlize/loaders/__init__.py
+src/tomlize/loaders/setup_py.py
