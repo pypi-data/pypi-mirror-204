@@ -1,0 +1,14 @@
+betterletter/__init__.py,sha256=vTZGUIiZ9GcdJMM4i-kScNQvK6rB5S6uCRh37sXTR6c,3093
+betterletter/__main__.py,sha256=I3a0GbuR7cZw8P1Vb1ZHn62r_ezaEkHsKJj3Z87-7tM,6435
+betterletter/io.py,sha256=vRx19iWUn-t9kSzE1VSTd6HlNnPmn4K6w0CrPAjEeFA,1721
+betterletter/iteration.py,sha256=jq2_n4xq0fx2eoM3HPYsOB2nIWlavTOcqj1q1Py3EHQ,3111
+betterletter/resources/dicts/README.md,sha256=HCahSltlHVx5cYcmk5GUuYJfcPHX9xmDOuBb8MXeBRM,839
+betterletter/resources/dicts/de.txt,sha256=U6S91hNeFTf9Xu3xFu0AQC7-VwKtCFd31zq8D6XsxSY,34187973
+betterletter/resources/languages.json,sha256=zcZjFLjpSLem8JE1HSD03d-exgl1377V-CRJ_woZLX0,101
+betterletter/strings.py,sha256=gDYIosiEPm5CUwn4jnYejhz8acD_cw5nNg5DUDNjurw,469
+betterletter/substituters.py,sha256=Am20bMWJlTCsrf13e8ayFbCCGTY5ADROPymsE5WN6Ng,9828
+betterletter-1.2.1.dist-info/LICENSE,sha256=ZwnanD3WzfGgvIw8ePXPvWxpybYiPxKf3wzKQbTnAM4,1067
+betterletter-1.2.1.dist-info/METADATA,sha256=vYzytDxAl6x-nQ-17GhMbQzfDiaK_KpMaw7durzZ4XQ,10738
+betterletter-1.2.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+betterletter-1.2.1.dist-info/entry_points.txt,sha256=wgts8rJjU1c-B8n-pLbWV-lj1hjgCsTL2MhCO_rAtg0,59
+betterletter-1.2.1.dist-info/RECORD,,
