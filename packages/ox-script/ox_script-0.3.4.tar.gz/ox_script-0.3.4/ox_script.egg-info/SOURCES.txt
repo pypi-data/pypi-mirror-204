@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+ox_script/__init__.py
+ox_script/general_purpose_apis.py
+ox_script/printer_specific_apis.py
+ox_script.egg-info/PKG-INFO
+ox_script.egg-info/SOURCES.txt
+ox_script.egg-info/dependency_links.txt
+ox_script.egg-info/requires.txt
+ox_script.egg-info/top_level.txt
