@@ -1,0 +1,11 @@
+numpy
+exdir>=0.4.2
+cclib>=1.7.0
+scipy
+qcelemental>=0.25.1
+pyyaml
+ase
+zarr
+pytest
+pytest-order
+pytest-dependency
