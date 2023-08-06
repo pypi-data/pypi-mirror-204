@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+dragonfile/__init__.py
+dragonfile.egg-info/PKG-INFO
+dragonfile.egg-info/SOURCES.txt
+dragonfile.egg-info/dependency_links.txt
+dragonfile.egg-info/top_level.txt
+tests/__init__.py
