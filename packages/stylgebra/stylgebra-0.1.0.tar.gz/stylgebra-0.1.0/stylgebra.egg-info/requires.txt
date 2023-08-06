@@ -1,0 +1,7 @@
+sympy
+
+[dev]
+pytest
+build
+twine
+invoke
