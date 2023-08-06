@@ -1,0 +1,77 @@
+[tool.poetry]
+name = "yaml-update-last-modified-date"
+version = "1.1.1"
+description = "Set the last modified date in YAML front matter of edited markdown files."
+authors = ["Francis T. O'Donovan <proinsias@users.noreply.github.com>"]
+license = "Unlicense"
+readme = "README.md"
+packages = [{include = "yaml_update_last_modified_date"}]
+
+[tool.poetry.scripts]
+# Note the use of underscores instead of hyphens in the module name!
+yaml-update-last-modified-date = "yaml_update_last_modified_date.main:app"
+
+[tool.poetry.dependencies]
+# Add packages to this section via:
+# $ poetry add package>=1.2.3
+python = "^3.8"
+GitPython = "^3.1.31"
+typer = "^0.7.0"
+rich = "^13.3.4"
+
+[tool.poetry.group.dev.dependencies]
+# Add packages to this section via:
+# $ poetry add package>=1.2.3 --group dev
+black = "^23.3.0"
+darglint = "^1.8.1"
+pytest = "^7.3.1"
+pylint = "^2.17.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.darglint]
+docstring_style = 'google'  # Default. Alternatives are 'sphinx' and 'numpy'.
+strictness = 'full'  # Default. Alternatives are 'short' and 'long'.
+
+[tool.isort]
+# Make sure isort and black work together.
+profile = "black"
+# line_length = 120  # Use black profile instead.
+# Vertical Hanging Indent multi-line format.
+# multi_line_output = 3  # Use black profile instead.
+# Don't forces all `from imports` to appear on their own line.
+force_single_line = false
+# Use parentheses for line continuation on length limit instead of slashes.
+# use_parentheses = true  # Use black profile instead.
+# Ensures that if a star import is present, nothing else is imported from that namespace.
+combine_star = true
+# Includes a trailing comma on multi line imports that include parentheses.
+# include_trailing_comma = true  # Use black profile instead.
+# Force all imports to be sorted alphabetically within a section.
+force_alphabetical_sort_within_sections = true
+# Causes all non-indented imports to float to the top of the file having its imports sorted
+# (immediately below the top of file comment).
+float_to_top = true
+color_output = true
+
+[tool.pytest.ini_options]
+# Add command line options to pytest.
+# doctest-modules: run doctests from docstrings in all python modules.
+# durations: print duration of slowest tests
+# verbose: increase verbosity.
+addopts = "--doctest-modules --durations=0 --durations-min=1.0 --verbose"
+# Enable log display during test run.
+log_cli = true
+testpaths = [
+    "block_release_policy",
+    "ed_patient_visit_forecast",
+    "long_term_census_forecast",
+    "patient_visit_forecast",
+    "procedure_classifier",
+    "shared",
+    "surgical_forecast",
+    "util",
+    "tests",
+]
