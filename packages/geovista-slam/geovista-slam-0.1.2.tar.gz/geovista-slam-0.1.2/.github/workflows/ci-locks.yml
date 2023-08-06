@@ -1,0 +1,124 @@
+# Reference:
+#   - https://github.com/actions/cache
+#   - https://github.com/actions/checkout
+#   - https://github.com/actions/download-artifact
+#   - https://github.com/actions/upload-artifact
+#   - https://github.com/conda-incubator/setup-miniconda
+
+name: ci-locks
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "3 0 * * 1"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-locks:
+    name: "lock (python ${{ matrix.python-version }})"
+
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    env:
+      ENV_NAME: "ci-locks"
+      ENV_FNAME: "${{ github.workspace }}/requirements/slam.yml"
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ["ubuntu-latest"]
+        python-version: ["3.9", "3.10", "3.11"]
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: "mambaforge setup (python ${{ matrix.python-version }})"
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+        miniforge-variant: Mambaforge
+        miniforge-version: latest
+        channels: conda-forge,defaults
+        channel-priority: true
+        auto-update-conda: true
+        python-version: ${{ matrix.python-version }}
+
+    - name: "lock generate (python ${{ matrix.python-version }})"
+      working-directory: ${{ github.workspace }}/requirements/locks
+      run: |
+        LOCK_FNAME="py$(echo '${{ matrix.python-version }}' | tr -d '.')-lock-linux-64.txt"
+        mamba env create --name ${{ env.ENV_NAME }} --file ${{ env.ENV_FNAME }}
+        mamba list --name ${{ env.ENV_NAME }} --explicit > ${LOCK_FNAME}
+        echo "LOCK_FNAME=${LOCK_FNAME}" >> ${GITHUB_ENV}
+
+    - name: "lock summary (python ${{ matrix.python-version }})"
+      working-directory: ${{ github.workspace }}/requirements/locks
+      run: |
+        # lock summary
+        echo '::group::Show "${{ env.LOCK_FNAME }}" ...'
+        cat ${{ env.LOCK_FNAME }}
+        echo "::endgroup::"
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: lock-artifacts
+        path: ${{ github.workspace }}/requirements/locks/${{ env.LOCK_FNAME }}
+
+
+  create-pr:
+    needs: build-locks
+    name: "create pull-request"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - uses: actions/download-artifact@v3
+      with:
+        name: lock-artifacts
+        path: ${{ github.workspace }}/requirements/locks
+
+    - name: "generate token"
+      uses: tibdex/github-app-token@v1
+      id: generate-token
+      with:
+        app_id: ${{ secrets.AUTH_APP_ID }}
+        private_key: ${{ secrets.AUTH_APP_PRIVATE_KEY }}
+
+    - name: "generate pull-request"
+      id: cpr
+      uses: peter-evans/create-pull-request@5b4a9f6a9e2af26e5f02351490b90d01eb8ec1e5
+      with:
+        token: ${{ steps.generate-token.outputs.token }}
+        add-paths: ${{ github.workspace }}/requirements/locks/*.txt
+        commit-message: "updated conda lock files"
+        branch: conda-lock-auto-update
+        delete-branch: true
+        title: "[geovista.ci] conda lock auto-update"
+        body: |
+          🤖 Bleep! Bloop!
+
+          Conda lock files for `linux-64` auto-updated to latest resolved environment of `geovista-slam` dependencies.
+        labels: |
+          new: pull request
+          bot
+
+    - name: "show pull-request"
+      if: steps.cpr.outputs.pull-request-number != ''
+      run: |
+        echo "### :rocket: Pull-Request Summary" >> ${GITHUB_STEP_SUMMARY}
+        echo "" >> ${GITHUB_STEP_SUMMARY}
+        echo "The following locks pull-request has been auto-generated:"
+        echo "- **PR** #${{ steps.cpr.outputs.pull-request-number }}" >> ${GITHUB_STEP_SUMMARY}
+        echo "- **URL** ${{ steps.cpr.outputs.pull-request-url }}" >> ${GITHUB_STEP_SUMMARY}
+        echo "- **Operation** [${{ steps.cpr.outputs.pull-request-operation }}]" >> ${GITHUB_STEP_SUMMARY}
+        echo "- **SHA** ${{ steps.cpr.outputs.pull-request-head-sha }}" >> ${GITHUB_STEP_SUMMARY}

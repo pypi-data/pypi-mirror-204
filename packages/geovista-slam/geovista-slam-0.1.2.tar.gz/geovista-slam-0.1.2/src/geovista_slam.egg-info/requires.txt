@@ -1,0 +1,11 @@
+appdirs
+geovista
+scitools-iris
+
+[dev]
+pre-commit
+
+[test]
+codecov
+pytest>=6.0
+pytest-cov
