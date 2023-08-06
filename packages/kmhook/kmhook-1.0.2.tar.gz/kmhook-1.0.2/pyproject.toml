@@ -1,0 +1,21 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kmhook"
+version = "1.0.2"
+description = "Fiddle with mouse and french keyboard under Windows"
+readme = "README.md"
+authors = [{ name = "Frédéric Leleu", email = "ugli@mailo.com" }]
+license = { text =  "MIT License" }
+classifiers = ["Programming Language :: Python :: 3"]
+keywords = ["keyboard", "mouse", "detect", "event", "synthesize", "press", "release", "move"]
+dependencies = []
+requires-python = ">=3.10"
+
+
+[project.urls]
+Homepage = "https://github.com/UGL1/kmhook"

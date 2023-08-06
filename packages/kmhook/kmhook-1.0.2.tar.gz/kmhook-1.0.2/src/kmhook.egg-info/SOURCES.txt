@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+pyproject.toml
+src/kmhook/__init__.py
+src/kmhook/_kmhook_other.py
+src/kmhook/_kmhook_win.py
+src/kmhook.egg-info/PKG-INFO
+src/kmhook.egg-info/SOURCES.txt
+src/kmhook.egg-info/dependency_links.txt
+src/kmhook.egg-info/top_level.txt
