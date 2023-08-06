@@ -1,0 +1,3 @@
+biopython
+easyterm>=1.0.0
+ncbi_db>=0.1.1

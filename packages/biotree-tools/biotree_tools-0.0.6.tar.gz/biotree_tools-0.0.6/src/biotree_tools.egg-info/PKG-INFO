@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: biotree-tools
+Version: 0.0.6
+Summary: Collection of bioinformatics tools related to alignments and phylogenetic trees
+Home-page: https://github.com/pypa/biotree_tools
+Author: Marco Mariotti
+Author-email: marco.mariotti@ub.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# biotree_tools
+Collection of bioinformatics tools related to alignments and phylogenetic trees
+
+## Installation
+
+conda install -c mmariotti -c bioconda -c etetoolkit  biotree_tools
+
+## Tools
+- **alignment_tools**  utility to manipulate (reformat, subset, trim...) multiple sequence alignments
+- **tree_tools**       utility to manipulate (rename, prune, set output...) trees in newick format
+- **phylo_context**    given protein sequences, build and draw a tree to identify phylogenetic (sub)families
+- **show_tree**        flexible tool to visualize an input protein tree in newick format
+
+Run any tool with option -h to display its usage.
