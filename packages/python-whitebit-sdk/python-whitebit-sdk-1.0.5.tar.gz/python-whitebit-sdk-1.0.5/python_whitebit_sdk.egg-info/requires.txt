@@ -1,0 +1,9 @@
+websockets>=10.4.0
+asyncio>=3.4
+requests>=2.28.1
+responses>=0.23.1
+urllib3==1.26.15
+
+[testing]
+pytest
+tqdm
