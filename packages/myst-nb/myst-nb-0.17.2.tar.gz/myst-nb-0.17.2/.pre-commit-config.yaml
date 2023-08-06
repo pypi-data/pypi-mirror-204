@@ -1,0 +1,58 @@
+# Install pre-commit hooks via
+# pre-commit install
+
+exclude: >
+    (?x)^(
+      \.vscode/settings\.json|
+      tests/commonmark/commonmark\.json|
+      .*\.xml|
+      tests/.*\.txt
+    )$
+
+repos:
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    - id: check-json
+    - id: check-yaml
+    - id: end-of-file-fixer
+    - id: trailing-whitespace
+
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.3.1
+    hooks:
+    - id: pyupgrade
+      args: [--py37-plus]
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.12.0
+    hooks:
+    - id: isort
+
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+    - id: black
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.0.0
+    hooks:
+    - id: flake8
+      additional_dependencies: [flake8-bugbear]
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.2.0
+    hooks:
+    - id: mypy
+      args: [--config-file=pyproject.toml]
+      additional_dependencies:
+      - importlib_metadata
+      - myst-parser~=0.18.0
+      - "sphinx~=5.0"
+      - nbclient
+      - types-PyYAML
+      files: >
+        (?x)^(
+            myst_nb/.+\.py|
+        )$
