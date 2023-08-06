@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pythesyncer
+Version: 23.4.22.13
+Summary: PythonTheSyncer
+Home-page: https://github.com/private_repo/
+Author: john
+Author-email: john@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+
+To make debugging, system minitoring and administation easier and smarter.

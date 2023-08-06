@@ -1,0 +1,10 @@
+README.md
+setup.py
+pythesyncer/__init__.py
+pythesyncer/auth.py
+pythesyncer.egg-info/PKG-INFO
+pythesyncer.egg-info/SOURCES.txt
+pythesyncer.egg-info/dependency_links.txt
+pythesyncer.egg-info/entry_points.txt
+pythesyncer.egg-info/requires.txt
+pythesyncer.egg-info/top_level.txt

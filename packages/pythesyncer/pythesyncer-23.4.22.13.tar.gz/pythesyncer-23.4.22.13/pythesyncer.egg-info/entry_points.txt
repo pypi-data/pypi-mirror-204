@@ -1,0 +1,2 @@
+[console_scripts]
+pysyncer = pythesyncer.__init__:main
