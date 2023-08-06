@@ -1,0 +1,2 @@
+[console_scripts]
+stretch-teleop = stretch.scripts.teleop:main
