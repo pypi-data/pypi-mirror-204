@@ -1,0 +1,2 @@
+[console_scripts]
+arb_launcher = arb_launcher.cli:main
