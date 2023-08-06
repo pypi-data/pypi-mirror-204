@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: odoo12-addon-product-contract-date-end-unrequired
+Version: 12.0.0.1.0
+Summary: Avoid date_end to be required on SO line creation from a contract product
+Home-page: 
+Author: Coopdevs Treball SCCL
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 12.0
+Requires-Python: >=3.5
+Requires-Dist: odoo12-addon-product-contract
+Requires-Dist: odoo (<12.1dev,>=12.0a)
+
