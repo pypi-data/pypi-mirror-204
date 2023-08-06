@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <data>
+    <record id="view_crm_sale_order_line_crm_lead_form" model="ir.ui.view">
+      <field name="name">crm.sale.order.line.crm.lead.form</field>
+      <field name="model">crm.lead</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+      <field name="arch" type="xml">
+        <xpath
+          expr="//header"
+          position="inside"
+        >
+          <field name="has_order_lines" invisible="True" />
+          <button 
+            name="create_quotation_from_order_line_action"
+            type="object"
+            string="Create quotation from order lines"
+            attrs="{
+            'invisible': [
+              '|','|',
+              ('active','=',False),('has_order_lines', '=', False),
+              '|',
+              ('sale_number','>',0),
+              ('partner_id','=',False)
+            ]}"
+          />
+        </xpath>
+        <xpath
+          expr="//notebook"
+          position="inside"
+        >
+        <page name="crm_order_line_ids" string="Order lines">
+            <group>
+              <field name="crm_order_line_ids" widget="one2many_list">
+                <tree string="Sales Order Lines" create="true" edit="true" delete="true" open="false" editable="bottom">
+                  <field name="product_id" readonly="False" required="True"/>
+                  <field name="price_unit" readonly="False" required="False"/>
+                </tree>
+              </field>
+            </group>
+          </page>
+        </xpath>
+      </field>
+     </record>
+  </data>
+</odoo>
