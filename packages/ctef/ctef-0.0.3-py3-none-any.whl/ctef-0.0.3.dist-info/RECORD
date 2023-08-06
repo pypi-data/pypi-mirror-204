@@ -1,0 +1,16 @@
+ctef/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ctef/ctef.py,sha256=mZtuUrnt86sZ02h-th-CsRA-dMXS-Dg2xSY4GY3423Y,6658
+ctef/ctef_clustering.py,sha256=0KUAPRs1y7hM2qcBzjueYDoypVkPfq4VopekGfpbqvE,1497
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/cell_cycle.py,sha256=iMlFEaLwra8VOegE9Z8eT3TwmmMOuYECzhVB7DGq30I,3695
+examples/clustering.py,sha256=YasiuH-vpNLf-XSiMTjMI7kKJg5PVMC9FFuWDNmG9EE,7938
+examples/ellipsoid_gaussian.py,sha256=HABJTWLm1XNgcaY4P8QBIa4fVIpW3Nu3yqxefs8BSsE,2096
+examples/helpers.py,sha256=Zrb5EOQi_wxDKCuw6CCtsU9G8u0m32Eqmp1o36iZxo8,6495
+examples/rosenbrock.py,sha256=GaqeaU236gvm0JamG07x1E-aDNks2PT_i3TyOXdOVDM,1520
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/fit2d.py,sha256=1E7-3nzSns7inr6wlfiWZmdbPWDaPuVFFQQ1JVL-wgk,961
+ctef-0.0.3.dist-info/LICENSE.md,sha256=dW8bfbsmndZgs99LMcnWyeEboxXn-ik2k_NCy7sgclE,1071
+ctef-0.0.3.dist-info/METADATA,sha256=TPahf5PhuislFBxPhLS1QDeavSVLUt5e4V7D8N-ODI8,2200
+ctef-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ctef-0.0.3.dist-info/top_level.txt,sha256=WYWuiRr6bm5cF8UdmZjpYoNQXEbWvc_v-VxzvXK4gRo,20
+ctef-0.0.3.dist-info/RECORD,,
