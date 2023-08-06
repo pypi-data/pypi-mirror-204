@@ -1,0 +1,9 @@
+bayes_toolbox/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bayes_toolbox/glm.py,sha256=hdLQzrmlOGkwdMwYKaKulZo8t6eGZK5cC-ID1AlKdS4,35593
+bayes_toolbox/meta.py,sha256=G-PPNk9VyeJZX8KDk5GT3hovKi0nlaK2tSBbBk9bnYA,3141
+bayes_toolbox/tests/test_standardize.py,sha256=0G5wU9KhpdrjFOm7CITb3emR64pFxMtbw7ZAD-1kYM4,441
+bayes_toolbox-0.1.0.dist-info/LICENSE,sha256=pGJnMbtDHiDq16wooQ_BOkXLjEFkD9WANX9VR41WD8A,3216
+bayes_toolbox-0.1.0.dist-info/METADATA,sha256=qiWlv1MRRb3NxI84fYO_fsy5-C0e5Ywb85aSIymOQgw,2980
+bayes_toolbox-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bayes_toolbox-0.1.0.dist-info/top_level.txt,sha256=lYPxaX_GK0KEGvE7yg5nji1ug8SCdu_k1e-1Ci3l6aM,14
+bayes_toolbox-0.1.0.dist-info/RECORD,,
