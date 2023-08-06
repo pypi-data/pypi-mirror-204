@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dataligo"
+version = "0.7.0"
+description = "A library to accelerate ML and ETL pipeline by connecting all data sources"
+readme = "README.md"
+authors = [{ name = "Vinish M", email = "vinishuchiha@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["connectors", "datalake reader","datawarehouse reader", "dataconnector", "nosql connector"]
+dependencies = [
+    "boto3 >= 1.26.93",
+    "google-cloud-storage >= 2.7.0",
+    "azure-storage-blob >= 12.15.0",
+    "pandas >= 1.0.0",
+    "PyYAML",
+    "connectorx",
+    "snowflake-connector-python[pandas]==3.0.2",
+    "mysql-connector-python-rf",
+    "elasticsearch > 8.0.0",
+    "sqlalchemy==1.4.46",
+    "pymongo",
+    "dynamo_pandas",
+    "fastparquet",
+    "openpyxl",
+    "xlrd",
+    "xlwt",
+    'tomli; python_version < "3.11"',
+]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+polars = ["polars"]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/VinishUchiha/dataligo"
+
+[tool.setuptools]
+py-modules = ["dataligo"]
+
+[tool.bumpver]
+current_version = "0.7.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"','version = "{version}"',
+]
+"dataligo/__init__.py" = ["{version}"]
+# "README.md" = [
+#     "{version}",
+#     "{pep440_version}",
+# ]
+

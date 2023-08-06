@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+dataligo.egg-info/PKG-INFO
+dataligo.egg-info/SOURCES.txt
+dataligo.egg-info/dependency_links.txt
+dataligo.egg-info/requires.txt
+dataligo.egg-info/top_level.txt
