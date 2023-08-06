@@ -1,0 +1,13 @@
+typing-inspect
+typing_extensions
+
+[:python_version < "3.7"]
+dataclasses
+aenum
+
+[docs]
+Sphinx>=6.1.3
+sphinx-autodoc-typehints
+sphinx-opengraph
+sphinx-copybutton
+furo
