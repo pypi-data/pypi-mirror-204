@@ -1,0 +1,3 @@
+[console_scripts]
+search-hound=search_hound_ai.app:main
+
