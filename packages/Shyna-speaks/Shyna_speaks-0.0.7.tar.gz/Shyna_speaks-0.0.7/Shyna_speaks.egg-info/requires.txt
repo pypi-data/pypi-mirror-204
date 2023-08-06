@@ -1,0 +1,6 @@
+ShynaDatabase
+nltk
+sox
+setuptools
+wheel
+google_speech

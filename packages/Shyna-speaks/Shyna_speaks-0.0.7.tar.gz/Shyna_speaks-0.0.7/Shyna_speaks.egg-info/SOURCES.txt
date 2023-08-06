@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Shyna_speaks/Shyna_speaks.py
+Shyna_speaks/__init__.py
+Shyna_speaks/speak_automation.py
+Shyna_speaks.egg-info/PKG-INFO
+Shyna_speaks.egg-info/SOURCES.txt
+Shyna_speaks.egg-info/dependency_links.txt
+Shyna_speaks.egg-info/requires.txt
+Shyna_speaks.egg-info/top_level.txt
