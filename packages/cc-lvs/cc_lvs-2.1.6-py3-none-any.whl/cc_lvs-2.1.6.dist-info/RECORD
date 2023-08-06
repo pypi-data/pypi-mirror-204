@@ -1,0 +1,8 @@
+lvs/__init__.py,sha256=Mo-EfbXgPA3gVa9P8KLAEw7VS1x57v8Qygm84JL6hys,96
+lvs/client.py,sha256=zTseEGGpunoK07lYx4lnvqiiMiNptqiY6kMKyM5Jy1c,2560
+lvs/exceptions.py,sha256=wYV0udD74RO9Cs0ULdqpSjkUxhepRZJOjgbOgvRBRec,148
+lvs/settings.py,sha256=Fegx8xny9wLMAv6urP57fYyrC3n-0qaj-0TB4ICBHeg,482
+cc_lvs-2.1.6.dist-info/METADATA,sha256=4Z7_S7sVsflzgzf9H-j9mcRqpVtzcH2NFNP1cpNlLiU,258
+cc_lvs-2.1.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cc_lvs-2.1.6.dist-info/top_level.txt,sha256=K_kQa17eb9jRWXKIqY2S_8TPrD9ubHp1gDq7OFvIhiY,4
+cc_lvs-2.1.6.dist-info/RECORD,,

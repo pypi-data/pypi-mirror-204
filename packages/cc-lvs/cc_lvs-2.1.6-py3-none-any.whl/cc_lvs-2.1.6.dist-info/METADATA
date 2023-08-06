@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cc-lvs
+Version: 2.1.6
+Author: 
+Author-email: 
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# cc-lvs
+
+
+
+## Requirement
+
+Python >=3.7
+
+## Installation
+
+```bash
+pip install cc-lvs
+```
+
+## License
+
+MIT
