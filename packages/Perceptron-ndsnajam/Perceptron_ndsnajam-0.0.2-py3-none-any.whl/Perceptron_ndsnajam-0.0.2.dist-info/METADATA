@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: Perceptron-ndsnajam
+Version: 0.0.2
+Summary: Perceptron or/and/xor gates package
+Home-page: https://github.com/nds-najam/Perceptron-ndsnajam
+Author: nds-najam
+Author-email: najam.iitm@gmail.com
+Project-URL: Bug Tracker, https://github.com/nds-najam/Perceptron-ndsnajam/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (==1.21.6)
+Requires-Dist: pandas (==1.3.5)
+Requires-Dist: joblib (==1.2.0)
+Requires-Dist: matplotlib (==3.5.3)
+
+# Implementation of Perceptron and Packaging
+
+## References
+
+* [Official python docs for PYPI] (https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+
