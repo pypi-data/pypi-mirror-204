@@ -1,0 +1,2 @@
+[console_scripts]
+collect-unexported = collect_unexported.__main__:main

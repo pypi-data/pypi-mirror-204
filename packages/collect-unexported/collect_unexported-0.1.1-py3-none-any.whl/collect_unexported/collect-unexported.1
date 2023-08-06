@@ -1,0 +1,152 @@
+.\" SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+.\" SPDX-License-Identifier: BSD-2-Clause
+.Dd April 23, 2023
+.Dt COLLECT-UNEXPORTED 1
+.Os
+.Sh NAME
+.Nm collect-unexported
+.Nd selectively collect files omitted from release archives
+.Sh SYNOPSIS
+.Nm
+.Op Fl N | Fl -noop
+.Op Fl v | Fl -verbose
+.Op Fl c Ar configfile | Fl -config-file Ar configfile
+.Nm
+.Fl --help
+.Sh DESCRIPTION
+The
+.Nm
+utility examines the control files within a Debian source package,
+clones its upstream repository, and then creates an additional
+source file archive containing some of the files that have
+explicitly been omitted from the upstream archive.
+This allows a Debian package to e.g. run some source tests that use
+scripts and data files that the upstream authors exclude from
+the distributed source archive.
+The
+.Nm
+tool creates an additional (component) original tarball
+.Pq Pa .orig-unexported.tar.gz
+and places it in the directory where the Debian packaging tools
+expect to find the original source tarball
+.Po
+the
+.Pa .orig.tar.gz
+one
+.Pc .
+.Pp
+Please note that the
+.Nm
+tool is limited in its functionality; it is meant to handle several
+specific cases, and it may fail in others.
+.Pp
+The
+.Nm
+utility accepts the following command-line options:
+.Bl -tag -width indent
+.It Fl c Ar configfile | Fl -config-file Ar configfile
+Specify the path to a configuration file
+.Pq Pa collect-unexported.toml by default
+that defines the list of files and directories to package up.
+.It Fl -help
+Display program usage information and exit.
+.It Fl N | Fl -noop
+No-operation mode - do most of the work, but after creating
+the new component archive, do not copy it out of the temporary
+directory into the actual distribution directory.
+.It Fl v | Fl -verbose
+Verbose mode - display information about the actions performed.
+.El
+.Sh ENVIRONMENT
+The operation of the
+.Nm
+utility is not directly influenced by any environment variables.
+.Sh THE CONFIGURATION FILE
+The
+.Nm
+utility expects to find a single file in TOML format with
+the following structure:
+.Bl -tag -width indent
+.It Va format.version
+A table describing the structure of the configuration file itself in
+the form of a version string.
+The versioning of the configuration file is loosely based on
+the Semantic Versioning specification: the minor version number is
+increased when new fields or sections are added, while the major
+version number is increased when fields or sections are removed or
+their types or allowed values are changed.
+.Bl -tag -width indent
+.It Va major
+The major number of the version format string.
+The
+.Nm
+tool will refuse to process files for which this value is
+different from 0.
+.It Va minor
+The minor number of the version format string.
+.El
+.It Va files
+A table describing the files to fetch from the upstream repository.
+.Bl -tag -width indent
+.It Va include
+A list of strings, each specifying the relative path from the top of
+the source repository to a single file or directory to be included in
+the component archive.
+.El
+.El
+.Sh DEBIAN SOURCE PACKAGE FILES
+The
+.Nm
+utility expects to be run from within an unpacked Debian source package.
+Thus, it expects that either the current working directory or one of
+its parent directories will contain a subdirectory named
+.Pa debian ;
+it will then examine the following files within that subdirectory:
+.Bl -tag -width indent
+.It Pa changelog
+The
+.Nm
+tool will extract the source package name and the upstream version from
+the latest Debian changelog entry.
+That information is used to check out the correct Git tag from
+the upstream source repository, and then to create the additional
+source tarball with the correct name and upstream version.
+.It Pa upstream/metadata
+The
+.Nm
+tool will use the contents of the
+.Va Repository
+field to locate the upstream Git repository.
+.El
+.Sh EXAMPLES
+Use the
+.Pa collect-unexported.toml
+file in the current directory, create an additional source tarball,
+display some diagnostic information in the process:
+.Pp
+.Dl collect-unexported -v
+.Pp
+Use a file with a different name, do not overwrite the source tarball:
+.Pp
+.Dl collect-unexported -c unexported.toml -N
+.Sh DIAGNOSTICS
+.Ex -std
+.Sh SEE ALSO
+.Xr dpkg-source 1 ,
+.Xr git 1 ,
+.Xr deb-changelog 5
+.Sh STANDARDS
+No standards were harmed during the production of the
+.Nm
+utility.
+.Sh HISTORY
+The
+.Nm
+utility was written by Peter Pentchev in 2023.
+.Sh AUTHORS
+.An Peter Pentchev
+.Aq roam@ringlet.net
+.Sh BUGS
+No, thank you :)
+But if you should actually find any, please report them
+to the author.
