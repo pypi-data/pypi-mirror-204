@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mpserializer
+Version: 1.0.1
+Summary: my serializer
+Home-page: UNKNOWN
+Author: Carcajo
+Author-email: t375445391507@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: PyYAML (==5.4.1)
+
+UNKNOWN
+
