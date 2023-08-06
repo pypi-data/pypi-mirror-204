@@ -1,0 +1,17 @@
+ssdb/__init__.py,sha256=hT4gjn7A7H6pix1RYGQcui4hEZJMHtz1gkSYm6OqH7A,52
+ssdb/client.cp310-win32.pyd,sha256=64bxIyVC9GopmrMFzQcurSEAMV--M5wi0s34SxXv8IM,97792
+ssdb/connection.cp310-win32.pyd,sha256=g7V5NAnVzJqGAWFosY9zIkgrjao4XP3sMJOvn8eT_LI,155648
+ssdb/asyncio/__init__.py,sha256=CNBk_8mH6Z4RflW7LtjO0_nmc0X9KgFXHbCQ28qZZ2s,60
+ssdb/asyncio/client.cp310-win32.pyd,sha256=ZEHxxfQ4DDgjOYVT-uTcIR4c9sYWCa_PxqrHk5jep4w,128512
+ssdb/asyncio/connection.cp310-win32.pyd,sha256=clM4yllAg2egmlNWVYU4q0V3JcERvi6oYRyMIf_LkgE,192000
+ssdb/core/__init__.py,sha256=JQ-A54tyibTaFw6n_2y2TVxvaYIUZqQ2nMph_UoRkz8,77
+ssdb/core/encode.cp310-win32.pyd,sha256=6UEva-RxMkiP-ZxF0UihYBXuJC8_7vZ2QFBTmR7Wzp0,32256
+ssdb/core/interface.cp310-win32.pyd,sha256=XRKP1X9u4UaAq7s2tAl9ikyEE6EZqB40V_j569bf6Ts,151040
+ssdb/core/parser.cp310-win32.pyd,sha256=DyiBZfEKQi86evCUEBOafuijeoeL-QNz_6F-9BIU2Gc,116224
+ssdb/core/response.cp310-win32.pyd,sha256=iKe6_5mAx8IdIf8PMEoACiwbQrL2MPrL59jTKM3BDiY,32256
+python_ssdb-1.0.5.dist-info/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+python_ssdb-1.0.5.dist-info/METADATA,sha256=xGTHVHzbVSJpUcxnEGy5Qrse0NI1XcXQeXt7B5WWKV4,1945
+python_ssdb-1.0.5.dist-info/NOTICE.md,sha256=j48LuA6oGTAS0yKUPUMeTDLXErXYtwIoP-iDc-kwZJc,12779
+python_ssdb-1.0.5.dist-info/WHEEL,sha256=yXMlTXjHPYBFmMOeF4b9ZM_ASRm_Q54GxZmxQGPAzx4,98
+python_ssdb-1.0.5.dist-info/top_level.txt,sha256=xEnud1pc-bK2a-VkAQhr1NnowyUwy5xk4CIssqHxXB8,5
+python_ssdb-1.0.5.dist-info/RECORD,,
