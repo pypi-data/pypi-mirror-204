@@ -1,0 +1,10 @@
+typedparser/__init__.py,sha256=-485SLE9JtlJLuG2uPYDHyHQW1XsRsUBTwusxsOhTxU,246
+typedparser/_typedparser.py,sha256=S6SUSLUcv8-NFWK8AXD2I5c8XQ10P0kfkdVWns0bIg4,3521
+typedparser/custom_format.py,sha256=GEZG3B9KUzta8X3_jJPLTjG7XYtV-iAlpoZmlQ_LE4E,2321
+typedparser/funcs.py,sha256=pQO41qBnz_oYXzYAnz4hFWwSXmalEYZs7pClS6CzV4A,5406
+typedparser-0.1.15.dist-info/LICENSE,sha256=LYghLc_68nnra4mdQKJWTd0oum3TyGMXM8RkDTPOVUo,11336
+typedparser-0.1.15.dist-info/METADATA,sha256=r19UCIa7cHVMgmX8d400e7wugHtdd3NdQjx7QWBJkCw,3603
+typedparser-0.1.15.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+typedparser-0.1.15.dist-info/top_level.txt,sha256=EHk4vdx3Mnts9xnmFCLZ7q6TYBBcLixZJ2vTfssFtJk,12
+typedparser-0.1.15.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+typedparser-0.1.15.dist-info/RECORD,,
