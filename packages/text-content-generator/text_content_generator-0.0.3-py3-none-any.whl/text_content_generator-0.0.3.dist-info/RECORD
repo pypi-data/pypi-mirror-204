@@ -1,0 +1,12 @@
+text_content_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+text_content_generator/audio.py,sha256=FLF3wPmzVK7icFbiqZcnlEOlwqGfxaZinLVVc6q8mvQ,620
+text_content_generator/generate.py,sha256=8wn2bJ3Akxb0uaw0zkit1NnTCQ54waA1r50Co5p8fQg,2729
+text_content_generator/pdf.py,sha256=1D2zq-gkpGS4LvDIwng_Cp0pByJxQsriEV7l1PU0_0Q,513
+text_content_generator/summarize.py,sha256=zhLEkZ7HF-E2qiSLg62krKfr9-QaQdcxiUncwVEgvIY,1950
+text_content_generator/webpage.py,sha256=8pHPAf9WFvMg94bFZznqqPNIhNz3LZ0CAJYOeGGFhnY,489
+text_content_generator/youtube.py,sha256=_AuRgmFF9dhlx8t6PCWh2SWUzVUqbQxY8C115m1drAI,1456
+text_content_generator-0.0.3.dist-info/LICENSE,sha256=aZCHey1rT_RrVltrhSYxd54htAKcjQEXx52nvsgidbs,1073
+text_content_generator-0.0.3.dist-info/METADATA,sha256=ZO74D20r5mvxVrWPvlsRYig6Ga-mMqJBBvhHB0lv7Hg,1337
+text_content_generator-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+text_content_generator-0.0.3.dist-info/top_level.txt,sha256=8aOG2tflj0i5uknN9DN0PQPQvXbDXQ7Ajaac0RZf4kM,23
+text_content_generator-0.0.3.dist-info/RECORD,,
