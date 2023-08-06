@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: matematicassimple
+Version: 1.0.1
+Summary: Un paquete para usar algo matematico de forma sencilla
+Home-page: https://github.com/Aldogamer01/matematicassimple
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Bienvenido a matematicassimple 
+
+## Que es matematicassimple?
+
+matematicassimple es una libreria de python especializado para programadores principiantes en el cual tiene funciones utiles para tu programa
+
+## Por que usar matematicassimple?
+
+matematicassimple ofrece la posibilidad de ayudarte con tu proyecto con sus funcionalidades, como por ejemplo: ordenar, raiz, elevado, factorial y muchas mas utilidades
+
+## Como se instala?
+Puedes ejecutar
+```shell
+pip install matematicassimple
+```
+o 
+```
+pip install git+https://github.com/aldogamer01/matematicassimple.git#egg=matematicassimple
+```
+## Como se usa?
+Puedes ver los comandos disponibles y sus ejemplos en [la documentacion](./docs/index.md)
+## Como contribuir con el proyecto
+Puedes ver los pasos en [CONTRIBUTING.md](./docs/CONTRIBUTING)
+## Licencia
+Este proyecto estÃ¡ bajo la licencia MIT. Consulta el archivo [LICENSE](./LICENSE) para mÃ¡s detalles.
+## Colaboradores
+[Aldogamer01](https://github.com/aldogamer01)
