@@ -1,0 +1,9 @@
+guilded_webhook/__init__.py,sha256=AFjnEYjj6kjsYRjszbdZnhZx8TSV_3SZfEvX11fSZsE,5802
+guilded_webhook/embed.py,sha256=IIBDvtSoozXptpC1r4LhcmOhKnILUqVZZzaV5zPx2qs,2967
+guilded_webhook/exceptions.py,sha256=EGnHvmjuTHyI7GX00_eO1KnmWbYnvSq1h_xPuaCTnUM,84
+guilded_webhook/file.py,sha256=89HhygD2kQ0UrDqIxsG0H_J3p0UR3ey7tHpmxJ4N448,1102
+guilded_webhook-0.3.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+guilded_webhook-0.3.1.dist-info/METADATA,sha256=szWtNeuXPY8TZwo3HTCpk06ZpvMPQgMNiFx6dmV2M14,3996
+guilded_webhook-0.3.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+guilded_webhook-0.3.1.dist-info/top_level.txt,sha256=DaQ4X3mUmILy9NJv_U2_QN8GwvK6XFqiSRccZcHxi4Q,16
+guilded_webhook-0.3.1.dist-info/RECORD,,
