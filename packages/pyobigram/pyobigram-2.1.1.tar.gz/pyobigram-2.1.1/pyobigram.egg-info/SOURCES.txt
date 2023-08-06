@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+pyobigram/client.py
+pyobigram/inline.py
+pyobigram/paralleltransfer.py
+pyobigram/readers.py
+pyobigram/threads.py
+pyobigram/ttui.py
+pyobigram/utils.py
+pyobigram/version.py
+pyobigram.egg-info/PKG-INFO
+pyobigram.egg-info/SOURCES.txt
+pyobigram.egg-info/dependency_links.txt
+pyobigram.egg-info/requires.txt
+pyobigram.egg-info/top_level.txt
+pyobigram.egg-info/zip-safe
