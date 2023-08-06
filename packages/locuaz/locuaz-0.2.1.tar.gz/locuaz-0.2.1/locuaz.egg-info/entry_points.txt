@@ -1,0 +1,2 @@
+[console_scripts]
+executable-name = locuaz.protocol:main
