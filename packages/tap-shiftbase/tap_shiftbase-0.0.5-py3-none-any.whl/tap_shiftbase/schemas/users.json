@@ -1,0 +1,177 @@
+{
+  "properties": {
+    "User": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "account_id": {
+          "type": "string"
+        },
+        "employee_nr": {
+          "type": ["string","null"]
+        },
+        "email": {
+          "type": "string"
+        },
+        "birthdate": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "prefix": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "street_address": {
+          "type": ["string","null"]
+        },
+        "post_code": {
+          "type": ["string","null"]
+        },
+        "city": {
+          "type": ["string","null"]
+        },
+        "hire_date": {
+          "type": ["string","null"],
+          "format": "date"
+        },
+        "startdate": {
+          "type": "string",
+          "format": "date"
+        },
+        "enddate": {
+          "type": ["string","null"],
+          "format": "date"
+        },
+        "birthplace": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "nationality": {
+          "type": ["string","null"]
+        },
+        "ssn": {
+          "type": ["string","null"]
+        },
+        "passport_number": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "banknr": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "phone_nr": {
+          "type": ["string","null"]
+        },
+        "mobile_nr": {
+          "type": ["string","null"]
+        },
+        "emergency_nr": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "avatar_file_name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "nr_of_logins": {
+          "type": "string"
+        },
+        "roster_note": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "locale": {
+          "type": "string"
+        },
+        "last_login": {
+          "type": ["string","null"],
+          "format": "date-time"
+        },
+        "order": {
+          "type": "string"
+        },
+        "plus_min_hours": {
+          "type": "string"
+        },
+        "anonymized": {
+          "type": "boolean"
+        },
+        "invited": {
+          "type": "boolean"
+        },
+        "custom_fields": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "boolean"
+        },
+        "birthday": {
+          "type": ["string","null"],
+          "format": "date"
+        },
+        "birthday_age": {
+          "type": ["string","null"]
+        },
+        "age": {
+          "type": ["string","null"]
+        },
+        "has_login": {
+          "type": "boolean"
+        },
+        "mfa_enabled": {
+          "type": "boolean"
+        },
+        "name": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "avatar_15x15": {
+          "type": "string",
+          "format": "uri"
+        },
+        "avatar_24x24": {
+          "type": "string",
+          "format": "uri"
+        },
+        "avatar_30x30": {
+          "type": "string",
+          "format": "uri"
+        },
+        "avatar_45x45": {
+          "type": "string",
+          "format": "uri"
+        },
+        "avatar_60x60": {
+          "type": "string",
+          "format": "uri"
+        },
+        "avatar_150x200": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    }
+  }
+}
