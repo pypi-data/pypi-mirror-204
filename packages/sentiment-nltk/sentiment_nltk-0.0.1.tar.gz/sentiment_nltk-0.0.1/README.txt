@@ -1,0 +1,1 @@
+This a library that tokenizes and performs nltk vader analysis on texts.
