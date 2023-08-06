@@ -1,0 +1,6 @@
+lakestream-0.0.2.dist-info/METADATA,sha256=BxVWOBOUtX36Hx-LdogO2Vi7MhD82yTFHdxV7d9aovw,4105
+lakestream-0.0.2.dist-info/WHEEL,sha256=3d0ICTAcjOJ-yC5Cw1oH-SvzVZUWTa70sGfnhC7UNjc,107
+lakestream/__init__.py,sha256=037g62BZJHItU5UiAmsXuTnyZfEKIAbPCIAj9ceDheA,1794
+lakestream/__main__.py,sha256=pSdh79MAql8ujdjg-zh5BA17nx2b-mJWkPFzCt_852A,165
+lakestream/lakestream.cpython-311-darwin.so,sha256=LQ7sggHvIJaiV_2ATiKi293L16DyBhPYZYy4qIoNVLk,3050480
+lakestream-0.0.2.dist-info/RECORD,,
