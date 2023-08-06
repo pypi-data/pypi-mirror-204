@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Shreya-Dhumal-finance-charts
+Version: 0.2
+Summary: Creates pie charts for weekly and monthly transactions
+Home-page: https://www.example.com/
+Author: Shreya Dhumal
+Author-email: Shreya Dhumal <shreyadhumal22@gmail.com>
+License: BSD-3-Clause  # Example license
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
