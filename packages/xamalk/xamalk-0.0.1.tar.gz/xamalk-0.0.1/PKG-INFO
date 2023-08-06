@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: xamalk
+Version: 0.0.1
+Summary: Cross-platform terminal user interface library.
+Home-page: https://github.com/xamalk
+License: BSD-2-Clause
+Keywords: console,curses,hotkeys,terminal,ui
+Author: Xamalk Developers
+Author-email: dank.txt@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Terminals
+Description-Content-Type: text/markdown
+
+Cross-platform terminal user interface library
+Just cool with no shit you don't need
+

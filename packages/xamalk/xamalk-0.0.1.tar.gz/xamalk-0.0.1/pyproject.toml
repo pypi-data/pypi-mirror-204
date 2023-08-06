@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "xamalk"
+version = "0.0.1"
+description = "Cross-platform terminal user interface library."
+authors = ["Xamalk Developers <dank.txt@gmail.com>"]
+readme = "README.md"
+license = "BSD-2-Clause"
+homepage = "https://github.com/xamalk"
+keywords = ["console", "curses", "hotkeys", "terminal", "ui"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Environment :: Console",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: BSD",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: C",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: Terminals"
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
