@@ -1,0 +1,1 @@
+a simple library to make your account have a streaming, playing, watching, listening statuses (ONLY WORKS WITH USER ACCOUNTS NO BOTS) !!
