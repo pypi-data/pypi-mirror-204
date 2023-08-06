@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: agpt_plugins
+Version: 0.0.2
+Summary: The plugins for Auto-GPT.
+Project-URL: Homepage, https://github.com/Significant-Gravitas/Auto-GPT-Plugins
+Project-URL: Bug Tracker, https://github.com/Significant-Gravitas/Auto-GPT-Plugins
+Author-email: Torantulino <support@agpt.co>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: abstract-singleton
+Description-Content-Type: text/markdown
+
+# Auto-GPT-Plugins
+
+Plugins for Auto-GPT
+
+Clone this repo into the plugins direcory of [Auto-GPT](https://github.dev/Significant-Gravitas/Auto-GPT)
+
+For interactionless use, set `ALLOWLISTED_PLUGINS=example-plugin1,example-plugin2,example-plugin3` in your `.env`
+
+| Plugin       | Description     |
+|--------------|-----------|
+| Twitter      | It does twitter things|
+
