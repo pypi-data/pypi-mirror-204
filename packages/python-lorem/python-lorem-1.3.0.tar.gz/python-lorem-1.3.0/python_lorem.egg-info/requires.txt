@@ -1,0 +1,10 @@
+
+[:python_version < "3.8"]
+typing-extensions
+
+[docs]
+Sphinx>=6.1.3
+sphinx-autodoc-typehints
+sphinx-opengraph
+sphinx-copybutton
+furo
