@@ -1,0 +1,5 @@
+[console_scripts]
+git-annex-remote-dataverse = datalad_dataverse.remote:main
+
+[datalad.extensions]
+dataverse = datalad_dataverse:command_suite

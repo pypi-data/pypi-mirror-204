@@ -1,0 +1,7 @@
+datalad>=0.18.0
+datalad_next>=1.0.0b2
+pydataverse
+
+[devel]
+coverage
+pytest
