@@ -1,0 +1,11 @@
+data/__init__.py,sha256=qmBWXfph8BSC8qWMEK8sJE1RiFBq4xcYhgI-ENA3yyM,42
+data/data.py,sha256=E3ffvcWK98Sg-hmKA6UfC2_jyiLxUvfUb8W9WMYQNjY,70469
+datalibs/__init__.py,sha256=qmBWXfph8BSC8qWMEK8sJE1RiFBq4xcYhgI-ENA3yyM,42
+datalibs/data.py,sha256=E3ffvcWK98Sg-hmKA6UfC2_jyiLxUvfUb8W9WMYQNjY,70469
+datalibs-1.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+datalibs-1.1.1.dist-info/LICENSE-APACHE,sha256=XtjBwbbvQNxtjBTT-ANMtILyn4rm5hll2wGMC1pttzg,9755
+datalibs-1.1.1.dist-info/LICENSE-MIT,sha256=f4Y4UbEkLBXTI96pyXMMZH1fzXXyHXcs4FmgsnvGtNM,1072
+datalibs-1.1.1.dist-info/METADATA,sha256=HWQPKepdPeOO6A1LN6F34SOq11BUj5WA6fG-Ms_nHXc,1784
+datalibs-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+datalibs-1.1.1.dist-info/top_level.txt,sha256=AbLkyShn1TKXg7h3OnvlIKalo8vGYLZf7OvdUb0mDF8,9
+datalibs-1.1.1.dist-info/RECORD,,
