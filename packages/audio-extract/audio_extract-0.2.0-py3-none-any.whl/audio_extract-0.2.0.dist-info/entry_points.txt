@@ -1,0 +1,2 @@
+[console_scripts]
+extract-audio = audio_extract.execute:main
