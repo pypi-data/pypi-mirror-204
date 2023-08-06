@@ -1,0 +1,13 @@
+paper2cmap/__init__.py,sha256=9d0if9Lbpdba8xCUqNQtBX2QBwHwGuqYm79tR7jIR9k,179
+paper2cmap/cmapgpt.py,sha256=4P10ReLlK6F0Cg7KicRuRAVnxqP5oEtI6eqJC4MGIpQ,4278
+paper2cmap/llm.py,sha256=qooosg2WNt3XR8oQMTJK344U6Y_9RVxFBEPAPgdYkLU,2368
+paper2cmap/logger.py,sha256=PMgJt-87wKgYcfPMYGmRqo_PDxLcVrRVSPVdpFHbqpE,409
+paper2cmap/paper2cmap.py,sha256=RTmyNDX4xmolU19Kiq-hr2LkcsEq2rueu2Ez0CJNsxA,3597
+paper2cmap/paper_reader.py,sha256=2RJQoVSk2FF3CgR8i5zCHER8kD5swk_b9j-zQYXoC4c,3652
+paper2cmap/metas/examples.json,sha256=y_SYAaYCJg9Mz3c1bKSfYl5jroOe03FQ1eimqIG6mZo,1176
+paper2cmap/metas/prompts.yaml,sha256=o9V8s945rq4ZyriR057-TMDyjMA6b6s8XySIs2AG7_A,1741
+paper2cmap-0.1.0.dist-info/LICENSE,sha256=9vhbP70yNVO-h6PI275IhjEBVH0RC1mepsNVzB38Nrw,1065
+paper2cmap-0.1.0.dist-info/METADATA,sha256=OSi_XttgD4U2SG45lJ3hPLKNGFZx_d1q6qY8pqw0_Pc,5548
+paper2cmap-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+paper2cmap-0.1.0.dist-info/top_level.txt,sha256=cfBZK_Ni8cBe-PnW8mSw-BRes2vg8epQkLDK4SQwDTY,11
+paper2cmap-0.1.0.dist-info/RECORD,,
