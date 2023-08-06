@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: rs-chardet
+Version: 0.1.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE.txt
+Author: Evan Mattiza
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: documentation, https://github.com/emattiza/rs_chardet/README.md
+Project-URL: repository, https://github.com/emattiza/rs_chardet
+Project-URL: homepage, https://github.com/emattiza/rs_chardet
+
+# rs-chardet
+![CI](https://github.com/adriangb/graphlib2/actions/workflows/release.yaml/badge.svg)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/emattiza/rs_chardet/blob/master/LICENSE.txt)
+
+This is a thin wrapper utilizing [chardet-ng] for character encoding detection.
+
+[chardet-ng]: https://github.com/hsivonen/chardetng
+
