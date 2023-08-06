@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+pystacker.egg-info/PKG-INFO
+pystacker.egg-info/SOURCES.txt
+pystacker.egg-info/dependency_links.txt
+pystacker.egg-info/entry_points.txt
+pystacker.egg-info/requires.txt
+pystacker.egg-info/top_level.txt
+stacker/__init__.py
+stacker/stacker.py
+stacker/test.py
+stacker/data/about.txt
+stacker/data/help-jp.txt
+stacker/data/help.txt
+stacker/data/top.txt
+stacker/plugins/color.py
