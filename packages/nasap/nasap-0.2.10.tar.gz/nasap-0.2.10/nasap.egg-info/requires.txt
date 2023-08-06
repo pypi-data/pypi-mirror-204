@@ -1,0 +1,14 @@
+fire
+psutil
+loguru
+numpy
+scipy
+pyBigWig
+matplotlib
+seaborn
+hvplot
+networkx
+python-louvain
+
+[genomeBrowser]
+pyGenomeTrack
