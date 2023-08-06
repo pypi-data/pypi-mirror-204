@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "db-exports"
+version = "0.1.0"
+description = ""
+authors = ["Dan Kelleher <kelleherjdan@gmail.com>"]
+readme = "README.md"
+packages = [{include = "db_exports"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
