@@ -1,0 +1,10 @@
+redis
+pynetbox
+wheel
+netbox
+
+[dev]
+check-manifest
+
+[test]
+coverage
