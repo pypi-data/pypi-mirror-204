@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: dfm-tools
+Version: 0.11.0
+Summary: dfm_tools are pre- and post-processing tools for Delft3D FM
+Home-page: https://github.com/Deltares/dfm_tools
+Author: Jelmer Veenstra
+Author-email: Jelmer.Veenstra@Deltares.nl
+License: GNU General Public License v3 (GPLv3)
+Keywords: dfm_tools,D-FlowFM,D-HYDRO,post-processing,pre-processing,mapfiles,hisfiles
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: scipy (<1.10.0)
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: shapely (>=1.7.0)
+Requires-Dist: pyepsg
+Requires-Dist: geopandas
+Requires-Dist: contextily
+Requires-Dist: xarray (<2023.3.0)
+Requires-Dist: dask
+Requires-Dist: netcdf4 (>=1.5.3)
+Requires-Dist: bottleneck
+Requires-Dist: xugrid (>=0.2.1)
+Requires-Dist: cdsapi
+Requires-Dist: pydap
+Requires-Dist: hydrolib-core (>=0.5.1)
+Requires-Dist: meshkernel (>=2.0.2)
+Provides-Extra: complete
+Requires-Dist: bump2version (>=0.5.11) ; extra == 'complete'
+Requires-Dist: pdoc3 ; extra == 'complete'
+Requires-Dist: flake8 ; extra == 'complete'
+Requires-Dist: pytest ; extra == 'complete'
+Requires-Dist: pytest-cov ; extra == 'complete'
+Requires-Dist: twine ; extra == 'complete'
+Requires-Dist: jupyter ; extra == 'complete'
+Requires-Dist: notebook ; extra == 'complete'
+Provides-Extra: test
+Requires-Dist: bump2version (>=0.5.11) ; extra == 'test'
+Requires-Dist: pdoc3 ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: twine ; extra == 'test'
+Requires-Dist: jupyter ; extra == 'test'
+Requires-Dist: notebook ; extra == 'test'
+
+[![pytest-py38](https://github.com/Deltares/dfm_tools/actions/workflows/pytest-py38.yml/badge.svg?branch=main)](https://github.com/Deltares/dfm_tools/actions/workflows/pytest-py38.yml)
+[![pytest-py39](https://github.com/Deltares/dfm_tools/actions/workflows/pytest-py39.yml/badge.svg?branch=main)](https://github.com/Deltares/dfm_tools/actions/workflows/pytest-py39.yml)
+[![pytest-py310](https://github.com/Deltares/dfm_tools/actions/workflows/pytest-py310.yml/badge.svg?branch=main)](https://github.com/Deltares/dfm_tools/actions/workflows/pytest-py310.yml)
+[![codecov](https://img.shields.io/codecov/c/github/deltares/dfm_tools.svg?style=flat-square)](https://app.codecov.io/gh/deltares/dfm_tools?displayType=list)
+[![generate-documentation](https://github.com/Deltares/dfm_tools/actions/workflows/generate-documentation.yml/badge.svg)](https://github.com/Deltares/dfm_tools/actions/workflows/generate-documentation.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Deltares_dfm_tools&metric=alert_status)](https://sonarcloud.io/summary/overall?id=Deltares_dfm_tools)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Deltares/dfm_tools/HEAD)
+
+dfm_tools
+=========
+
+A Python package for pre- and postprocessing D-FlowFM model input and output files. Contains convenience functions built on top of other packages like [xarray](https://github.com/pydata/xarray), [xugrid](https://github.com/Deltares/xugrid), [hydrolib-core](https://github.com/Deltares/HYDROLIB-core) and many more.
+
+Information and examples
+--------
+- [pdf](https://nbviewer.org/github/Deltares/dfm_tools/raw/pptx/docs/dfm_tools.pdf?flush_cache=true) with dfm_tools information, features and examples
+- [online documentation](https://htmlpreview.github.io/?https://github.com/Deltares/dfm_tools/blob/main/docs/dfm_tools/index.html) generated from docstrings
+- [jupyter notebooks](https://github.com/Deltares/dfm_tools/blob/main/notebooks) with example code
+- [use binder](https://mybinder.org/v2/gh/Deltares/dfm_tools/HEAD) to run these notebooks interactively (loading takes a while)
+- [github folder](https://github.com/Deltares/dfm_tools/tree/main/tests/examples) with more example scripts
+
+Installation basics
+--------
+- latest release: ``pip install dfm_tools`` (excludes ``cartopy`` since it is only installable via conda)
+
+Installation recommendation
+--------
+- download and install Anaconda 64 bit (with Python 3.8 or later) from https://www.anaconda.com/distribution/#download-section
+- open Anaconda prompt
+- ``conda create --name dfm_tools_env -c conda-forge python=3.8 spyder -y`` (you can also install a newer python version)
+- ``conda activate dfm_tools_env``
+- ``conda install -c conda-forge git shapely cartopy pyepsg geopandas contextily xarray dask netcdf4 bottleneck xugrid cdsapi pydap -y`` (installs conda-forge requirements)
+- ``python -m pip install git+https://github.com/Deltares/dfm_tools`` (this command installs dfm_tools and all required non-conda packages, also use to update)
+- long paths error? Check [this Github issue](https://github.com/Deltares/HYDROLIB-core/issues/327#issuecomment-1266534032)
+- OpenSSL error? Fix your conda base env by doing [this](https://github.com/conda/conda/issues/11795#issuecomment-1335666474) or maybe [this](https://github.com/conda/conda/issues/11795#issuecomment-1382661765). Let us know if you encounter this issue.
+- to remove environment when necessary: ``conda remove -n dfm_tools_env --all``
