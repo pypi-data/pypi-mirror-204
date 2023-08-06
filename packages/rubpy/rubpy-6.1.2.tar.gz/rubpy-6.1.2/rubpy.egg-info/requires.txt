@@ -1,0 +1,5 @@
+aiohttp
+pycryptodome
+
+[opencv-python]
+opencv-python
