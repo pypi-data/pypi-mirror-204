@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+tests/test_simple.py
+zq_config/__init__.py
+zq_config/zq_configs.py
+zq_config.egg-info/PKG-INFO
+zq_config.egg-info/SOURCES.txt
+zq_config.egg-info/dependency_links.txt
+zq_config.egg-info/entry_points.txt
+zq_config.egg-info/requires.txt
+zq_config.egg-info/top_level.txt
+zq_config/backends/__init__.py
+zq_config/backends/backend_registry.py
+zq_config/backends/nacos.py
