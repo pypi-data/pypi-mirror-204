@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: nua-autobuild
+Version: 0.5.13
+Summary: Nua self builder
+License: AGPL
+Author: Stefane Fermigier
+Author-email: sf@abilian.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: docker (>=6.0,<7.0)
+Requires-Dist: nua-agent (==0.5.13)
+Requires-Dist: nua-lib (==0.5.13)
+Requires-Dist: paramiko
+Requires-Dist: setuptools
+Requires-Dist: tomli (>=2.0.1,<3.0.0)
+Requires-Dist: tomli-w (>=1.0.0,<2.0.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# Nua autobuild
+
+[Nua](https://nua.rocks/) is an open source, self-hosted cloud platform project (a PaaS - platform as a service).
+
+This packaged is mostly used internally. The main entry point is the `nua` command line tool (see: [Nua on PyPI](https://pypi.org/project/nua/) or [nua-cli on GitHub](https://github.com/abilian/nua/tree/main/nua-cli)).
+
+This package, `nua-build`, uses base images to speed up and standardize the build of Nua packages.
+
+If these images are not available (locally or on a remote repository), `nua-autobuild` builds them locally.
+
+## Content
+
+`nua-autobuild` provides:
+
+-   `nua_image_builder`: tool to build locally the Nua standard base images
+-   `nua_wheel_builder`: tool to build 'wheels' from the Nua packages
+-   `docker_build_utils`: utilities to build Docker images
+
