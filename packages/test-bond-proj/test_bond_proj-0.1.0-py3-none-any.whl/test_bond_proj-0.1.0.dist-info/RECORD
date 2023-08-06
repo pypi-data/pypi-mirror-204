@@ -1,0 +1,5 @@
+poetry_demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_demo/hello.py,sha256=g-28WgrDDt_5QHCt8iA8IkIJFYS25QdjDaSQOFFnhaE,56
+test_bond_proj-0.1.0.dist-info/METADATA,sha256=_bShjWFPUui30dB6Gyz7RbNN67TaDJQmiBLbvedahIE,498
+test_bond_proj-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+test_bond_proj-0.1.0.dist-info/RECORD,,
