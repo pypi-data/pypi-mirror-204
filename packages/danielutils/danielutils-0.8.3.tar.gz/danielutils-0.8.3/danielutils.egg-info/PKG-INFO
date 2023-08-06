@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: danielutils
+Version: 0.8.3
+Summary: A python utils library for things I find useful
+Home-page: https://github.com/danielnachumdev/danielutils
+Author: danielnachumdev
+Author-email: danielnachumdev <danielnachumdev@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/danielnachumdev/danielutils
+Project-URL: Bug Tracker, https://github.com/danielnachumdev/danielutils/issues
+Keywords: functions,decorators,methods
+Platform: All
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.10.5
+Description-Content-Type: text/markdown
+
+# danielutils v=0.8.3
+A utils library for things that I find useful for my coding workflow.\
+Feel free to use and / or contribute / improve my code :)
+
+THIS PACKAGE IS IN DEVELOPMENT AND SUBJECT TO CHANGE, USE AT YOUR OWN RISK!
