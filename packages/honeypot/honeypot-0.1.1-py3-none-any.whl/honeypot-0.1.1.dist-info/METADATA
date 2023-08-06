@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: honeypot
+Version: 0.1.1
+Summary: bee approved utilities
+License: AGPLv3
+Platform: any
+License-File: LICENSE.txt
+Requires-Dist: flask
+Requires-Dist: prompt-toolkit
+Requires-Dist: rich
+
+UNKNOWN
+
