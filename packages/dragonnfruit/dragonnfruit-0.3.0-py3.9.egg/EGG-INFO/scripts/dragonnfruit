@@ -1,0 +1,7 @@
+#!/users/jmschr/anaconda3/bin/python
+# EASY-INSTALL-DEV-SCRIPT: 'dragonnfruit==0.2.0','dragonnfruit'
+__requires__ = 'dragonnfruit==0.2.0'
+__import__('pkg_resources').require('dragonnfruit==0.2.0')
+__file__ = '/users/jmschr/github/dragonnfruit/cmd/dragonnfruit'
+with open(__file__) as f:
+    exec(compile(f.read(), __file__, 'exec'))
