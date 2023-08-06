@@ -1,0 +1,10 @@
+stralgo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stralgo/base.py,sha256=TmaSgGadovNn-XX_RG_VoNFARMOwnMg3YCfx3Q0H8f0,972
+stralgo/color.py,sha256=lJqPUt8J_NC-0ua5zC-IozVRs4OxdeSgH8v2XvAY7OI,3292
+stralgo/hash/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stralgo/hash/sha.py,sha256=NXVPE9coza_PqcdvNRz0KVDnzwKhJFvFu33WqEaP7mw,460
+stralgo-1.1.0b1.dist-info/LICENSE,sha256=kG_6qUnDa_JpdVPQCJhpccpIACtnNCA9SFkBxv2_I88,1069
+stralgo-1.1.0b1.dist-info/METADATA,sha256=qqkjjPPJ324Tp4xRFwoEf9KpZUZfLAk_LRwnTtBN4ng,727
+stralgo-1.1.0b1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+stralgo-1.1.0b1.dist-info/top_level.txt,sha256=UAr8FsuTMSRUG7BxdLJoYtMorRWc63vApWp7dwg5U5o,8
+stralgo-1.1.0b1.dist-info/RECORD,,
