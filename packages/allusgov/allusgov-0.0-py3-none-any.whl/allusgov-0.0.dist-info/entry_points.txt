@@ -1,0 +1,3 @@
+[console_scripts]
+allusgov=allusgov.cli:main
+
