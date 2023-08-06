@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: cy-widgets
+Version: 0.4.36
+Summary: Widgets of quant app
+Home-page: https://github.com/cragod/CYWidgets
+Author: CY Gatro
+Author-email: cragodn@gmail.com
+License: MIT license
+Keywords: cy_widgets
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+License-File: LICENSE
+
+==========
+CY Widgets
+==========
+
+.. image:: https://img.shields.io/pypi/v/cy_widgets.svg
+        :target: https://pypi.python.org/pypi/cy_widgets
+
