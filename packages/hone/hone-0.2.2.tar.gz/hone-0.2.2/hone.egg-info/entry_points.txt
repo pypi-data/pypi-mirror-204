@@ -1,0 +1,2 @@
+[console_scripts]
+hone = hone.__main__:main
