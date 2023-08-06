@@ -1,0 +1,4 @@
+requests!=2.9.0
+lxml>=4.2.3
+monotonic>=1.5
+numpy
