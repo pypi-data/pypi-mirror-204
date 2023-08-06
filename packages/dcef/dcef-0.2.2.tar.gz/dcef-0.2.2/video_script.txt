@@ -1,0 +1,34 @@
+
+
+
+## video script 
+
+Hi I'm Paddy Mullen and I want to show you Data Cleaning Framework or DCF.  
+DCF is the tool that I wanted for years to streamline data cleaning workflows, no one had made it so idecided to build it myself.  DCF augments your existing Pandas skills, and lets you iterate more quickly through ideas with a GUI.
+
+DCF is the tool to quickly explore and clean pandas dataframes via a GUI, complimenting your existing pandas skills.
+
+
+Here we are working with NYC citibike data.
+
+At the top you see the original dataframe, in the middle the operation UI, and at the bottom the transformed dataframe
+
+Let's make some quick edits.
+First we'll drop the Start Station ID column, and the End Station ID Column,
+notice that they disappear in the bottom dataframe
+
+When we click the python tab, we will see the python code that will perfrom the exact same transformation... This python code is what you want with DCF.  DCF is a UI for quickly combining operations and verifying that you're happy with the resulting dataframe.  At the end you take the generated python code and use it however you want... The rest of your app doesn't need to depend on DCF
+
+Now lets group by start station name to find the mean trip duration per station, and the count of trips (count on any column)
+
+and here is the python code for our whole transformation.
+
+There are lots of exciting things coming to DCF including summary statistics, suggested cleanings, polars and SQL codegen, DataFrame joining and combining.
+
+You can try dcf by running `pip install dcf`.  There are docs on github.com/paddymul/dcf .  File bug reports via github issues or send me an email paddy@paddymullen.com
+
+Thank you
+
+
+
+
