@@ -1,0 +1,9 @@
+ubuntu_termux/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ubuntu_termux/install.py,sha256=teuVq3vP4OAYrHDxQi3r5LtVt1BzKHU6gtU_TKrR2BI,1099
+ubuntu_termux/start.py,sha256=rXGvSDhbHjHzLXCChkmUCpcThyhZ9QpV6UiIbW_ED8g,324
+ubuntu_termux-0.0.4.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ubuntu_termux-0.0.4.1.dist-info/METADATA,sha256=MOwizr8w0VcTFMyWNtwT3ELrkF2taL8ycGSLRVm6vTU,1279
+ubuntu_termux-0.0.4.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ubuntu_termux-0.0.4.1.dist-info/entry_points.txt,sha256=QXX1Ji4FoI5La0GyHxweGCvR8Zz3UDdmF1gz0sMG_qA,65
+ubuntu_termux-0.0.4.1.dist-info/top_level.txt,sha256=QfzseQYrbV8VQtm2GSbrPl9VrO1-yPR8WxtyzxGN0iI,14
+ubuntu_termux-0.0.4.1.dist-info/RECORD,,
