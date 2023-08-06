@@ -1,0 +1,7 @@
+cubicweb
+yams>=0.45.5
+rdflib
+Jinja2
+black
+requests
+redbaron
