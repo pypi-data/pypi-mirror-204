@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+alice_skills_manager/__init__.py
+alice_skills_manager/__main__.py
+alice_skills_manager/alice_skills_manager.py
+alice_skills_manager/exceptions.py
+alice_skills_manager/skill_entry.py
+alice_skills_manager/skill_repo.py
+alice_skills_manager/skill_state.py
+alice_skills_manager/util.py
+alice_skills_maneger.egg-info/PKG-INFO
+alice_skills_maneger.egg-info/SOURCES.txt
+alice_skills_maneger.egg-info/dependency_links.txt
+alice_skills_maneger.egg-info/entry_points.txt
+alice_skills_maneger.egg-info/requires.txt
+alice_skills_maneger.egg-info/top_level.txt
