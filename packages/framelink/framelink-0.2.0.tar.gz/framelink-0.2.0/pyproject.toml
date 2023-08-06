@@ -1,0 +1,72 @@
+[project]
+authors = [
+    { name = "Toby Devlin", email = "toby@tobydevlin.com" },
+]
+requires-python = ">=3.8,<4.0"
+name = "framelink"
+description = ""
+readme = "README.md"
+dynamic = ["version"]
+
+dependencies = [
+    "networkx>=3.0"
+]
+
+[project.optional-dependencies]
+viz = [
+    "matplotlib>=3.7.1",
+    "graphviz>=0.20.1",
+    "pydot>=1.4.2"
+]
+
+dev = [
+    "framelink",
+    "framelink[viz]",
+    "openlineage-python>=0.21.1",
+    "setuptools-scm>=7.1.0",
+    "pytest>=7.2.2",
+    "pytest-cov>=4.0.0",
+    "mypy>=1.1.1",
+    "ruff>=0.0.258",
+    "black>=23.1.0",
+    "build>=0.10.0",
+    # more for testing and the like
+    "pandas<2.0.0,>=1.5.3",
+    "polars<1.0.0,>=0.16.7",
+    "pre-commit>=3.2.0",
+    "pyment>=0.3.3",
+    "pyarrow>=11.0.0",
+    "jupyter>=1.0.0",
+]
+
+[project.urls]
+github = "https://github.com/GitToby/framelink"
+
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+
+[tool.setuptools_scm]
+write_to = "src/framelink/__version__.py"
+
+[tool.ruff]
+select = ["E", "F"]
+fixable = ["E", "F"]
+line-length = 120
+
+[tool.ruff.mccabe]
+max-complexity = 10
+
+[tool.black]
+line-length = 120
+target_versions = ['py38', 'py39', 'py310', 'py311']
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = [
+    "tests",
+]
+
+[tool.pdm]
