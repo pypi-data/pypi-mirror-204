@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: buildington
+Version: 1.4.2
+Summary: Building websites like React, and hosting 'em like Flask!
+Author: RixTheTyrunt
+Author-email: rixthetyrunt@gmail.com
+Classifier: Environment :: Console
+Classifier: Framework :: Flask
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Server
+Description-Content-Type: text/plain
+
+Coding crap:
+You can use the [buildington.page] decorator and/or the [buildington.addFile] method to add a route to your website. Here's an example of both:
++------------------------------------------------------------------------------+
+| Python                                                                       |
++------------------------------------------------------------------------------+
+| import buildington                                                           |
+|                                                                              |
+| buildington.addFile("README.txt")                                            |
+| @buildington.page("/")                                                       |
+| def index():                                                                 |
+|     return (                                                                 |
+|         buildington.Para("Hippity hoppity your website is now my property"), |
+|     )                                                                        |
+|                                                                              |
+| buildington.start("0.0.0.0", 8080)                                           |
++------------------------------------------------------------------------------+
