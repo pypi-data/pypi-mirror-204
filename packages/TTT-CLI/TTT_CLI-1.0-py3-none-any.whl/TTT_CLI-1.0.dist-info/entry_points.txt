@@ -1,0 +1,2 @@
+[console_scripts]
+tic_tac_toe_cli = src.main:main
