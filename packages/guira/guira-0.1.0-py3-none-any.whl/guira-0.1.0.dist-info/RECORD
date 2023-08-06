@@ -1,0 +1,16 @@
+guira/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guira/controllers.py,sha256=nClAxoPtIBq3IDcwBWKYDwqXFtUwASlPKO00H0-Z7PE,1348
+guira/curves.py,sha256=o9jm5v1MaikRSSKyC8IHg5i3KS7GhnE8erguxaOzOBU,10981
+guira/guira_exceptions.py,sha256=duvB0EAPMJ9Fw5TOMBkLASWuOff51eq2zzmcRsc_Fko,186
+guira/remoteApi.dll,sha256=TqRmQmtNIT9hh4-VVHh7lUkvwQbnI_W44GnG881MWJ0,77824
+guira/remoteApi.so,sha256=TLGMqrMMp_7z2cvGpEHyUfwVRmtZuHnm93jAopj4GIQ,122672
+guira/robot.py,sha256=hHwL5BJzrvtRpt1Lcq73PP4oKEEQUc0WFgOtnP7NFeQ,2176
+guira/scene.py,sha256=xRTjJwVjI-_pQ6QU9spw7edMe8WIInarcXnFAWDkwLA,17488
+guira/sensors.py,sha256=Ial9b8-7xzxdptjGcKyJMpcWjp7-NjSzjT3re9dZIr0,979
+guira/sim.py,sha256=oa6_PDUmyFlIePh-6Zd9L5JYw_rnlzZzPwqNqw6XB5w,73607
+guira/simConst.py,sha256=L9viETQXPmqX5QbaI8Q6Y5YLdgdemqgJdRUgqhnA8U4,42997
+guira/utils.py,sha256=4O82B5_0rBYkq0Of58E_EHYiSuZ7fjhfnCAZUEFv78U,5193
+guira-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+guira-0.1.0.dist-info/METADATA,sha256=a8zUNJWlVU8YbnIj-UNCJSicfNV7oqXs7jaEnskPivA,509
+guira-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+guira-0.1.0.dist-info/RECORD,,
