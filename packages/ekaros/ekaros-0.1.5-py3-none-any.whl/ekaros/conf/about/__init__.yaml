@@ -1,0 +1,6 @@
+name: "Ekaros"
+authors: "Young Joon Lee <entelecheia@hotmail.com>"
+description: "A Python Library for Generative AI Art"
+homepage: "https://ekaros.entelecheia.ai"
+license: "MIT"
+version: "0.0.0"
