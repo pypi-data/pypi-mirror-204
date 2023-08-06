@@ -1,0 +1,2 @@
+[console_scripts]
+symdexer = symdexer.main:main
