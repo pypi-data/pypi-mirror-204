@@ -1,0 +1,16 @@
+/build
+/dist
+/docs/api
+__pycache__
+.idea
+.pytest_cache
+.tox
+.venv
+.vscode
+
+*.pyc
+*.egg-info
+*.so
+.mesonpy*
+/subprojects/packagecache/
+/subprojects/pybind11-*

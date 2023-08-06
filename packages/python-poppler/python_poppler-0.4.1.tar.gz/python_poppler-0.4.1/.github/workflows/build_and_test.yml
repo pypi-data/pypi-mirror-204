@@ -1,0 +1,119 @@
+# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Python build and tests
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build_poppler:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        poppler-version: [poppler-0.26.0, poppler-22.04.0, poppler-23.04.0]  #, master]
+    steps:
+      - name: Install dependencies
+        run: sudo apt-get install libopenjp2-7-dev libboost-dev
+      - name: clone poppler
+        run: |
+          git clone https://gitlab.freedesktop.org/poppler/poppler.git
+          cd poppler
+          git fetch
+          git checkout ${{ matrix.poppler-version }}
+      - name: compile poppler
+        run: |
+          mkdir local
+          cd poppler
+          mkdir build
+          cd build
+          cmake \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_INSTALL_PREFIX=${{ github.workspace }}/local \
+            -DENABLE_UNSTABLE_API_ABI_HEADERS=ON \
+            -DBUILD_GTK_TESTS=OFF \
+            -DBUILD_QT5_TESTS=OFF \
+            -DBUILD_CPP_TESTS=OFF \
+            -DENABLE_CPP=ON \
+            -DENABLE_GLIB=OFF \
+            -DENABLE_GOBJECT_INTROSPECTION=OFF \
+            -DENABLE_GTK_DOC=OFF \
+            -DENABLE_QT5=OFF \
+            -DBUILD_SHARED_LIBS=ON \
+            ..
+          make
+          make install
+      - name: upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ matrix.poppler-version }}
+          path: ${{ github.workspace }}/local/
+
+
+  build:
+    needs: build_poppler
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-22.04]
+        python-version: ['3.7', '3.8', '3.9', '3.10', '3.11']
+        poppler-version: [poppler-0.26.0, poppler-22.04.0, poppler-23.04.0]  #, master]
+        include:
+          - python-version: '3.8'
+            poppler-version: system
+            os: ubuntu-20.04
+          - python-version: '3.10'
+            poppler-version: system
+            os: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        sudo apt-get install libopenjp2-7-dev libboost-dev
+        python -m pip install --upgrade pip
+        pip install tox
+    - name: Install libpoppler-cpp-dev
+      if: matrix.poppler-version == 'system'
+      run: |
+        sudo apt-get install libpoppler-cpp-dev
+    - name: download artifacts
+      if: matrix.poppler-version != 'system'
+      uses: actions/download-artifact@v3
+      with:
+        name: ${{ matrix.poppler-version }}
+        path: ${{ github.workspace }}/local/
+    - name: set env
+      if: matrix.poppler-version != 'system'
+      run: |
+        echo 'PKG_CONFIG_PATH=${{ github.workspace }}/local/lib/pkgconfig' >> $GITHUB_ENV
+        echo 'LD_LIBRARY_PATH=${{ github.workspace }}/local/lib' >> $GITHUB_ENV
+    - name: Lint with flake8
+      run: |
+        tox -e lint
+    - name: Print version
+      run: |
+        tox -vvv -e printver
+    - name: Debug LDD
+      run: ldd .tox/printver/lib/python${{matrix.python-version}}/site-packages/poppler/cpp/*.so
+      if: failure()
+    - name: Test with tox
+      run: |
+        tox -e py
+    - name: Archive logs
+      run: zip -r logs.zip .tox/log .tox/*/log
+      if: failure()
+    - name: Upload logs
+      uses: actions/upload-artifact@v3
+      with:
+        name: tox-logs-${{ matrix.python-version }}
+        path: logs.zip
+      if: failure()
