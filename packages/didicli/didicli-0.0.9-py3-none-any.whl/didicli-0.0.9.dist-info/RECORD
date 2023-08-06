@@ -1,0 +1,13 @@
+didigo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+didigo/cli.py,sha256=kwBSqyq-ubWnw9oYclGfuh4qNvlLESnNAYX_d-_AQd4,3129
+didigo/command_type.py,sha256=pCFanKBCdBBYWlPLGrXCsrxMdP3V3YpIlPWBkaCC0vs,936
+didigo/constant/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+didigo/constant/version.py,sha256=yv_qF85Qq6O8eBxmi1ZRNQAypMEYNbs4WNZkiPYz1vM,63
+didigo/utils/__init__.py,sha256=dwz2FpQkIKOrBqmcEbAhRrrEUnHvfrN67Tdsp5l-Epw,20
+didigo/utils/file.py,sha256=2lazsy8YjZfwJky4b8AUPsRjonTmLTBfkb-iNMxTiXw,3118
+didigo/version/__init__.py,sha256=vFWlyj0p3_PQMFmpeEozmkbxgi5kQ5EgczcjmBOBZnk,383
+didicli-0.0.9.dist-info/METADATA,sha256=LtRomrJLB9Wsowg0HmceSaMOvb94o7fR-AXzNwuXlx4,335
+didicli-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+didicli-0.0.9.dist-info/entry_points.txt,sha256=S10OrQ_JqQr3K0zFy8qqBfo4tzkST6uNfkS8Yph9EmA,45
+didicli-0.0.9.dist-info/top_level.txt,sha256=d0MbTNyDTUCBIgN2FjDQpL8QCnxD_U5x4OGAXOJu3JM,7
+didicli-0.0.9.dist-info/RECORD,,
