@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: deepthulac
+Version: 0.0.7
+Summary: A High-Performance Lexical Analyzer for Chinese
+Home-page: https://github.com/thunlp/DeepTHULAC
+Download-URL: https://github.com/thunlp/DeepTHULAC/archive/master.zip
+Author: THUNLP
+Author-email: chengzl22@mails.tsinghua.edu.cn
+Keywords: segmentation,Chinese,lexical
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6.0
+License-File: LICENSE
