@@ -1,0 +1,8 @@
+numpy
+scitools-iris
+
+[:python_version < "3.11"]
+tomli>=1.1.0
+
+[:python_version < "3.9"]
+importlib_resources>=3.0.0
