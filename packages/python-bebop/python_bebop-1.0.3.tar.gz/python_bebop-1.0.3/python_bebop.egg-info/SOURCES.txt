@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+python-bebop/__init__.py
+python-bebop/bebop.py
+python_bebop.egg-info/PKG-INFO
+python_bebop.egg-info/SOURCES.txt
+python_bebop.egg-info/dependency_links.txt
+python_bebop.egg-info/top_level.txt
