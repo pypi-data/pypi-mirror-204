@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_asyncpg_debug.egg-info/PKG-INFO
+yandex_asyncpg_debug.egg-info/SOURCES.txt
+yandex_asyncpg_debug.egg-info/dependency_links.txt
+yandex_asyncpg_debug.egg-info/top_level.txt
