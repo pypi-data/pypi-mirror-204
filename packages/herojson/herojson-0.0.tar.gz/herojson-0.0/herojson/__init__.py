@@ -1,0 +1,1 @@
+from .JsonHero import HeroJson

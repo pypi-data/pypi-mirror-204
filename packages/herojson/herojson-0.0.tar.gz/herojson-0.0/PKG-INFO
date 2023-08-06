@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: herojson
+Version: 0.0
+Summary: um modúlo python criado para facilitar a manipulação de arquivos json
+Home-page: https://github.com/EliseuGaspar/herojson
+Author: Eliseu Gaspar
+Author-email: Eliseu Gaspar <eliseugaspar4@gmail.com>
+Project-URL: Código fonte, https://github.com/EliseuGaspar/herojson
+Project-URL: Download, https://github.com/EliseuGaspar/herojson.git
+Keywords: modúlo,json,hero
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# HeroJson
+
+É um modúlo python criado para facilitar a manipulação de arquivos json.
+Este modúlo tem como dependência o modúlo json(padrão do python).
+
+## Funções
+
+- **key(key : str)** -> *Traz o valor de uma determinada chave do arquivo json se esta existir e um None valor se não*.
+- **update(key : str, value : any)** -> *Atualiza o valor de uma chave se esta existir e um None valor se não*.
+- **drop(key : str)** -> *Deleta uma chave se esta existir*.
+- **add(key : str, value : str)** -> *Adiciona um novo par chave e valor ao arquivo json*.
+- **Allkeys()** -> *Retorna uma lista com todas as chaves existentes no arquivo json*.
+- **AllValue()** -> *Retorna uma lista com todas os valores existentes no arquivo json*.
+- **Content()** -> *Retorna o conteúdo do arquivo em formato de string*
+
+## Página Oficial
+
+- https://herojson.onrender.com
+
+**Copyright Eliseu Gaspar**

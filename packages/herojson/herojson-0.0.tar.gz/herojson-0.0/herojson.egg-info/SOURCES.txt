@@ -1,0 +1,12 @@
+LICENCE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+herojson/JsonHero.py
+herojson/__init__.py
+herojson/info.py
+herojson.egg-info/PKG-INFO
+herojson.egg-info/SOURCES.txt
+herojson.egg-info/dependency_links.txt
+herojson.egg-info/top_level.txt

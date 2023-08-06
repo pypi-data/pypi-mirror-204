@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "herojson"
+version = "0.0"
+description = "um modúlo python criado para facilitar a manipulação de arquivos json"
+readme = "README.md"
+authors = [
+    { name = "Eliseu Gaspar", email = "eliseugaspar4@gmail.com" }
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Portuguese",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Utilities",
+]
+keywords =['modúlo','json','hero']
+requires-python = ">=3.8"
