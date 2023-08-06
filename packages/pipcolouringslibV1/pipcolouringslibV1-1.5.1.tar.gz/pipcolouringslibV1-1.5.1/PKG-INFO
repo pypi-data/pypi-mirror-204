@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pipcolouringslibV1
+Version: 1.5.1
+Summary: Package for coloring strings in the terminal
+Home-page: UNKNOWN
+Author: NHJonas
+Author-email: nick.faltermeier@gmx.de
+License: UNKNOWN
+Description: Package for coloring strings in the terminal
+Keywords: python
+Platform: UNKNOWN
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
