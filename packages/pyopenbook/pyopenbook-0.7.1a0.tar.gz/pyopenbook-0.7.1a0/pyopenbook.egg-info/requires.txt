@@ -1,0 +1,3 @@
+construct<3.0.0,>=2.10.56
+construct-typing<1.0.0,>=0.5.1
+solana<1.0.0,>=0.11.3
