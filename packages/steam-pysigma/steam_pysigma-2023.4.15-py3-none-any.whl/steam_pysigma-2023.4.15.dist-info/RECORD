@@ -1,0 +1,8 @@
+steam_pysigma/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+steam_pysigma/helpers.py,sha256=oatoE8QSimUIk0y4_OHWITzZDaY3LZurIgmr3oWZhko,12500
+steam_pysigma/pysigma.py,sha256=FDI6C4ID1VTocaFe29qJw4tHN5ixSpohUcEfUR9GZS4,8514
+steam_pysigma/steam-sigma-2023.4.10.jar,sha256=vhVAm6Ew_BMLyOVzqKNMo1lKnLSj5OiFXOgzqys6u-s,80300974
+steam_pysigma-2023.4.15.dist-info/METADATA,sha256=bfdewFdScGA1YOmOIDcjqTNowdC2JQU-e_7GWal4_cI,1443
+steam_pysigma-2023.4.15.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+steam_pysigma-2023.4.15.dist-info/top_level.txt,sha256=DyjebUdNYS2k4I1upnjvllP13hkZ5HYRWgRhZ9gAdNA,14
+steam_pysigma-2023.4.15.dist-info/RECORD,,
