@@ -1,0 +1,3 @@
+[console_scripts]
+unwanted_detector=cli:main
+
