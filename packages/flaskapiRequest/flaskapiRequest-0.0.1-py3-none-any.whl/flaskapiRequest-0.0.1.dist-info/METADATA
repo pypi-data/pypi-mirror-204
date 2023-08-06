@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: flaskapiRequest
+Version: 0.0.1
+Summary: FlaskApi Python package
+Home-page: UNKNOWN
+Author: Ajang Elvis Ngwesse
+Author-email: <ngwesseaws@gmail.com>
+License: UNKNOWN
+Keywords: python,flaskapi package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: future (==0.18.3)
+Requires-Dist: idna (==3.4)
+Requires-Dist: names (==0.3.0)
+Requires-Dist: packaging (==23.1)
+Requires-Dist: Pillow (==9.4.0)
+Requires-Dist: platformdirs (==2.6.2)
+Requires-Dist: random-address (==1.1.1)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: urllib3 (==1.26.15)
+
+Python package for my flask API
+

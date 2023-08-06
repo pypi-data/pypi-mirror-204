@@ -1,0 +1,11 @@
+flaskapiRequest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flaskapiRequest/api_request/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flaskapiRequest/api_request/requests_module.py,sha256=M_IgLMZfFthVC5wegG3koBhe3ROl60cbg0XRHqkYcYs,2285
+flaskapiRequest/configurations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flaskapiRequest/configurations/context.py,sha256=xPXguVBeU32lN8-SXanAl1J4nAA1gYSpyJyln9Cn624,314
+flaskapiRequest/configurations/fileReader.py,sha256=VHzX59C4jL3xbse0d72InWDgf8cciImq5lIn-IObJIk,1797
+flaskapiRequest/configurations/helpers.py,sha256=HWGlBmKuiMp2Xf6iI4oq4--sL0FSPcZqdNutS6hYJBw,2793
+flaskapiRequest-0.0.1.dist-info/METADATA,sha256=KGPzyzZFiPP8NQpOBrSXEVjPgIgDtyK5i883okaTZWE,951
+flaskapiRequest-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+flaskapiRequest-0.0.1.dist-info/top_level.txt,sha256=0cdqRhEZ9srmeCGVMVpeMhwfZbDFnfrfRJoJInEaT_E,16
+flaskapiRequest-0.0.1.dist-info/RECORD,,
