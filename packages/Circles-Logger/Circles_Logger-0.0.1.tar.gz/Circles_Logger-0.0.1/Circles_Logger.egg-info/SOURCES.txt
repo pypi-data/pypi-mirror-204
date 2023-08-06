@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+setup.py
+Circles_Logger.egg-info/PKG-INFO
+Circles_Logger.egg-info/SOURCES.txt
+Circles_Logger.egg-info/dependency_links.txt
+Circles_Logger.egg-info/top_level.txt
+circles_local_database_python/__init__.py
+circles_local_database_python/database.py
