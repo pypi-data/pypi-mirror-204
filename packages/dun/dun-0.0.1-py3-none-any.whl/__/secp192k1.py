@@ -1,0 +1,16 @@
+from __.curve import curve, ecdef
+from __.utils import f_
+
+secp192k1 = f_(
+    curve,
+    "secp192k1",
+    ecdef(
+        p=0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFEE37,
+        a=0x0,
+        b=0x3,
+        gx=0xDB4FF10EC057E9AE26B07D0280B7F4341DA5D1B1EAE06C7D,
+        gy=0x9B2F2F6D9C5628A7844163D015BE86344082AA88D95E2F9D,
+        n=0xFFFFFFFFFFFFFFFFFFFFFFFE26F2FC170F69466A74DEFD8D,
+        h=0x1,
+    ),
+)
