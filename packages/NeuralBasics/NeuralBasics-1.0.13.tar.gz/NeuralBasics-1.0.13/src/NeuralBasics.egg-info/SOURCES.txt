@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/NeuralBasics/__init__.py
+src/NeuralBasics/network.py
+src/NeuralBasics/test.py
+src/NeuralBasics/utils.py
+src/NeuralBasics.egg-info/PKG-INFO
+src/NeuralBasics.egg-info/SOURCES.txt
+src/NeuralBasics.egg-info/dependency_links.txt
+src/NeuralBasics.egg-info/requires.txt
+src/NeuralBasics.egg-info/top_level.txt

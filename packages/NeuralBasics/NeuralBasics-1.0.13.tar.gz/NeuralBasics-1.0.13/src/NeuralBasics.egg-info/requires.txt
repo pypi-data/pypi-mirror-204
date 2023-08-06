@@ -1,0 +1,5 @@
+numpy
+alive_progress
+Pillow
+matplotlib
+idx2numpy
