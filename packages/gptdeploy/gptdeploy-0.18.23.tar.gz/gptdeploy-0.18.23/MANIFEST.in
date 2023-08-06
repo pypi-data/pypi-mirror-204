@@ -1,0 +1,3 @@
+include requirements.txt
+include gptdeploy.cmd
+recursive-include src/options/generate/static_files/gateway *
