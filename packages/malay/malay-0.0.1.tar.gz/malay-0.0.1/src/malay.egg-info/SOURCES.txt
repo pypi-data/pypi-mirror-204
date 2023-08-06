@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/malay/__init__.py
+src/malay.egg-info/PKG-INFO
+src/malay.egg-info/SOURCES.txt
+src/malay.egg-info/dependency_links.txt
+src/malay.egg-info/top_level.txt
