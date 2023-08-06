@@ -1,0 +1,13 @@
+dejankify/__init__.py,sha256=aRJr9rsj3vT85LiiOd_XLlMvGLVa7b7iEhQFJ3ZSMGM,101
+dejankify/dependency_cleanup.py,sha256=1muk9wObjnlYebR0R0XtXYQcbjPEg7ttAGauCL1LNkA,42240
+dejankify/stdlib_check.py,sha256=wcapolQZk9Mq7PJfH33xlvs6kk8gC1DaOxzp7Xx7IFw,6904
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=_BH4NizKWIlUfrnKJvILGc3ZmhCtL96cE0CDGtD61sU,2034
+tests/test_deps.py,sha256=ar1NT1epAGkmFhL7bLmFzHdcWLiygPJEStBNCdhUKAA,8578
+tests/test_file.py,sha256=YHXAUcxfI93YkmM4vkQ88rKO4kIvQdAgOs0AXI0f5jU,21
+dejankify-0.1.1.dist-info/LICENSE,sha256=MOoNzgfdlsogSAXtvvlTH0OE1j_3-WpFZsChJ6k_aMU,1056
+dejankify-0.1.1.dist-info/METADATA,sha256=mrvQ-sBDRdyShKiUNtGe87YX0J95E00L2N0xsYSdBu4,3674
+dejankify-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dejankify-0.1.1.dist-info/entry_points.txt,sha256=O5C9AiyoSXFc4LasYKu-VFVNsHM59iJtRK7iiseRot8,75
+dejankify-0.1.1.dist-info/top_level.txt,sha256=3lxCEvWhdhdgsI3nEi1yr-R6YOt0Bj-KGp2akRT3VpE,16
+dejankify-0.1.1.dist-info/RECORD,,
