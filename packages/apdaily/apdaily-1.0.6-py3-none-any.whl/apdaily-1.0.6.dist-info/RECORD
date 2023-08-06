@@ -1,0 +1,11 @@
+apdaily/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apdaily/main.py,sha256=59Vdyc2FyblNNy2bteQCcdcsbfOIZJWTcvEVgGh-CGI,143
+apdaily_methods/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apdaily_methods/apdaily_m1.py,sha256=QgmleiXqR3ST9iLZpDyz9IatP8gbgCDAKNA7Zq1CrR8,3487
+apdaily_methods/mouse_util.py,sha256=xc7R2riYLLdDW-4Csw-AqBtNB1-SkD65D7w9cfRAtGg,334
+apdaily_startup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apdaily_startup/apdaily_startup_main.py,sha256=RxK0pVW8bClvxTwavICV0Fy5Wm4wJCmzN7NOy-RqhDE,4567
+apdaily-1.0.6.dist-info/METADATA,sha256=FfuZwlyXY18SaODT3ddlWHWzSR_SENe2E_Ui7XFF6Xk,1197
+apdaily-1.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+apdaily-1.0.6.dist-info/top_level.txt,sha256=GUx1zMgfUBiWXgWALqcTiVQzl7ThDwVXvJ_3m_Yxpao,40
+apdaily-1.0.6.dist-info/RECORD,,
