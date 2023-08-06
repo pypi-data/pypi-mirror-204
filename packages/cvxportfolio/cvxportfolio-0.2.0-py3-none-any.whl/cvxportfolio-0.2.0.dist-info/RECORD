@@ -1,0 +1,16 @@
+cvxportfolio/__init__.py,sha256=CYEq39Lu4t8aGNaVJnjw2nKWL7RohXesOneIdlu--aw,1015
+cvxportfolio/constraints.py,sha256=bL8KRxLNhSYqsS3azV_9ijoKE5d-Tk3dtqEies5tmzE,7051
+cvxportfolio/costs.py,sha256=Ge_iJXsUMfZRZ89aXgbEwqqAwHHer_UnN9meCA0bLBE,14977
+cvxportfolio/data.py,sha256=8jQz1tyAOb0SxKw-7qkdDR0Vy-eTtFe7KHB2bMzoXXw,16552
+cvxportfolio/errors.py,sha256=fQBFj0dKbnBKJ76ytvCpgSuiihyl8JX25bz-3_9U7_Y,893
+cvxportfolio/estimator.py,sha256=ZLb_v-_Y8iys0sPWYD907zWvVyYxGgWZK4JtS6ZM_FA,12075
+cvxportfolio/legacy.py,sha256=oPxgVK7klpXUpIZfGGglFnaZsS9Tq3c3GVOYya4X9nQ,6018
+cvxportfolio/policies.py,sha256=v6nskDWhp2smThCfOlwfyLhp80EQqxio63-d7bP0xFE,27168
+cvxportfolio/result.py,sha256=Bv8YeUNaWiiFvGSgP_nJy9OYkoaE9QiDkadM-J8JR4A,10377
+cvxportfolio/returns.py,sha256=MM4zqt88reM4VXJLL03q7t5CJ_Co6glIZB6QmxAUE2w,8679
+cvxportfolio/risks.py,sha256=Avcf1i97FROH0lot2j-kfw00II6MMubWOz4ROAD5hI4,22577
+cvxportfolio/simulator.py,sha256=GvoVadh5FVteYY3uwlXrUxoedVWgMy7va6PgUzVTmrY,27831
+cvxportfolio-0.2.0.dist-info/LICENSE,sha256=GUtvzpTGxuyEKozvDQTEbVtuLc_tyoweoA7YRZ7kkno,599
+cvxportfolio-0.2.0.dist-info/METADATA,sha256=6_giEL1SzFNIQkkUl9E1ah-GFXc0UHPF9miA4NaCyPU,4711
+cvxportfolio-0.2.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+cvxportfolio-0.2.0.dist-info/RECORD,,
