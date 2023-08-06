@@ -1,0 +1,11 @@
+tinysearch-0.4.1.dist-info/METADATA,sha256=rC4Wi_W0AzTn9aXwGOgpaIifWzAi0KNQh6kp7KlX1rY,3690
+tinysearch-0.4.1.dist-info/WHEEL,sha256=7dGFtUmOf30dPBLpGD2z643cxg89joO7p3JHBAwDv6E,90
+tinysearch-0.4.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tinysearch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tinysearch/analyzer.py,sha256=iYm0WyinMkIQIxtipUVsrPMjTRd54oTwyqhCqrv_4WU,1392
+tinysearch/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tinysearch/base/analyzer.py,sha256=3mt1iTd-UtlfLt_byqP0_i6DWjLrRbHGeJLM1LQXiJs,775
+tinysearch/document.py,sha256=p0WTReWWa7enK6nNDMmdPnkvlqCrfS5Do-pbBhP3rtQ,1464
+tinysearch/index.py,sha256=WGHova8x1Z5w9OE7Do-KVBbAH9yHw9J3Dm1S-thoWfY,1178
+tinysearch/search.py,sha256=5JZD-9CZFg2RctjeGuRMWi-fkw59WzkRSlArcYetRxE,3479
+tinysearch-0.4.1.dist-info/RECORD,,
