@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: analyzequicker
+Version: 0.0.1
+Summary: A package to analyze data quicker
+Project-URL: Homepage, https://github.com/analyzequicker/analyzequicker
+Project-URL: Bug Tracker, https://github.com/analyzequicker/analyzequicker/issues
+Author-email: Jason Law <support@analyzequicker.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Analyze Quicker
+
+This package was created to analyze data quicker.
