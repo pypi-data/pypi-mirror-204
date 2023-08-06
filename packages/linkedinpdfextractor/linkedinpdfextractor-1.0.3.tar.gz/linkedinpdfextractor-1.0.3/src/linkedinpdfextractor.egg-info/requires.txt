@@ -1,0 +1,7 @@
+sortedcontainers==2.2.2
+pdfminer.six==20200517
+
+[testing]
+setuptools
+pytest
+pytest-cov
