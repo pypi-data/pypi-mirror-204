@@ -1,0 +1,3 @@
+[console_scripts]
+pdfathom=pdfathom.__main__:main
+
