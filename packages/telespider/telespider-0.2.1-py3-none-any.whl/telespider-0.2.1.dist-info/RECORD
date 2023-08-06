@@ -1,0 +1,14 @@
+telespider/__init__.py,sha256=V2kVQj_xz5NIG-fNWkVGkNnw5BjdgvRSjysdQ20JyF8,47
+telespider/__main__.py,sha256=boRfCgk1msF6iqcDXQw68sDAqtKxCp3MMoJKACyPLAo,2558
+telespider/app.py,sha256=IP2XWJp8FfwEU0O7mqmzeGxaQ_XqJleY3M-wAfysTwg,1653
+telespider/config.py,sha256=fp5obGwqEwq6l1kLTljgXoRW_g8OYY46sXkPq8IwJ7k,538
+telespider/console.py,sha256=E1O4eZpYEpSLcFvK8kbp1sXsL4SwjxEAnr80Y1Gkdmc,152
+telespider/scrapper/__init__.py,sha256=oQka-CGipd9d5-HrQAGatPIOeToxMOdM-RPXaEC_Y0A,69
+telespider/scrapper/channel.py,sha256=B3AhDEdG60VlcIRciSVimSacNe33lZQ6HASWn0bSI8Y,2095
+telespider/scrapper/scrapper.py,sha256=jMJRF04TlAcrbhD_rhGcTWmqIJJmmCY2oSST5VNdzKs,5417
+telespider/scrapper/types.py,sha256=61O_k9jc9vl1iNdELlQ2BmNIay9hA7MDgpEv8oLSURY,361
+telespider-0.2.1.dist-info/LICENSE,sha256=dkinBgy0RSwfwJozVkUMVN-axEJwfUvFiiAjcd4w5aU,1066
+telespider-0.2.1.dist-info/METADATA,sha256=pkSsrbklfRgx1qYCpUtTgC3ZUq7MuO6QwPrBW7DcPlk,1585
+telespider-0.2.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+telespider-0.2.1.dist-info/entry_points.txt,sha256=zz6HQxg_abQBlxAMRF0f7oOj7uB63P_BNgrgJD-xhvg,42
+telespider-0.2.1.dist-info/RECORD,,
