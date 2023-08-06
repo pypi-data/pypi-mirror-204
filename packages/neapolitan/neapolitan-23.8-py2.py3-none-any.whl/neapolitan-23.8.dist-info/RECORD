@@ -1,0 +1,14 @@
+neapolitan/__init__.py,sha256=XcIWv_ZmG0UPS4Yz2-YdSzvXrFDab1UpaB6nnOk4u7c,978
+neapolitan/views.py,sha256=RbYPNrvBQ77G971JhNvnzBRfwqFeUXJDuyhKaxnjh6A,17002
+neapolitan/templates/neapolitan/object_confirm_delete.html,sha256=Brwv_UsNW8Xq2rmNp4QW_cJ2QHNpl9VCcy0kum5r2oI,273
+neapolitan/templates/neapolitan/object_detail.html,sha256=Lo3jPneIdPMgMGFg4g6yXapDKEQ3Im6SqkFOK8LKSro,149
+neapolitan/templates/neapolitan/object_form.html,sha256=bAyV-QQoM6t9LSkhJTko_IOOnbpIOQRDzvN800fos3A,427
+neapolitan/templates/neapolitan/object_list.html,sha256=QWvpD-Y5Cs3ebuvg6QcJMJGdf4grqhPcXBQroJ3Y6iM,381
+neapolitan/templates/neapolitan/partial/detail.html,sha256=5KX4thQpmXvs347cmHNzvr5lXnYma5MKajuSLSgAJsM,131
+neapolitan/templates/neapolitan/partial/list.html,sha256=cB1aNmx0gDvBH6DbymPd4GKW3SOprQgM9dXlwAXL0hw,313
+neapolitan/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neapolitan/templatetags/neapolitan.py,sha256=q_p8dcQP0HIDULIwhsSMCLYhwRM43qCIlpi7mkg0e7w,1899
+neapolitan-23.8.dist-info/LICENSE,sha256=CDiZfc_O_EYR9D_6PWlP3AYZEuf3c6C4Js7ZejOjKsQ,1081
+neapolitan-23.8.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+neapolitan-23.8.dist-info/METADATA,sha256=M4i06vSvC4lcxMB6w-bio6AsZph2cBpXyRlxbfg0m18,2538
+neapolitan-23.8.dist-info/RECORD,,
