@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+compose_go.egg-info/PKG-INFO
+compose_go.egg-info/SOURCES.txt
+compose_go.egg-info/dependency_links.txt
+compose_go.egg-info/entry_points.txt
+compose_go.egg-info/requires.txt
+compose_go.egg-info/top_level.txt
+src/__init__.py
+src/compose/__init__.py
