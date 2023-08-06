@@ -1,0 +1,11 @@
+extr_ds/__init__.py,sha256=bewCKThOJi8g2JyE1Fo4OUXYU58jhwTVYQc9rBmB1Gk,27
+extr_ds/models.py,sha256=5_ntKDt08-WXFCXRp-iIPKYtAekCkUXv5woXJHHo0v8,461
+extr_ds/validators.py,sha256=K4sYWOwr0ynz47blSUXqBDi3mUv52EEsXij8PzFPPTI,1718
+extr_ds/labelers/__init__.py,sha256=L39sYGU3TbsfOF6N0FGoJLLyQQt85dbC2hc1nouKEug,68
+extr_ds/labelers/iob.py,sha256=eOVeeQAohSuCP7vcukgX5r5oq0vg-OVDy2g1ykyDrEk,1634
+extr_ds/labelers/relation.py,sha256=r1JxYDh8-U61agPQONPLwCJzIgYO2i1Y6t_nWTrSMIg,3608
+extr_ds-0.0.9.dist-info/LICENSE,sha256=M0xHH4Tw7PYxnrNhA5yK6ZzlB0hwO2K7uK0sgWBGqPA,1084
+extr_ds-0.0.9.dist-info/METADATA,sha256=zchWpH3wF8OOKC4dCis3NjXEIKRfBSSlb21U0sc9Qv4,3211
+extr_ds-0.0.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+extr_ds-0.0.9.dist-info/top_level.txt,sha256=SQCqyR2Zal0u433twbko698QwhDTaVmNi05R8MNrkBs,8
+extr_ds-0.0.9.dist-info/RECORD,,
