@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "asyncpgdb"
+version = "0.0.7"
+description = ""
+authors = ["wayfaring-stranger <zw6p226m@duck.com>"]
+packages = [
+    { include = "asyncpgdb" }
+]
+
+
+license = "mit"
+readme = "README.md"
+[tool.poetry.dependencies]
+python = "^3.8"
+sqlalchemy = "1.4.41"
+asyncpg = "0.27.0"
+pydantic = "1.10.7"
+sqlalchemy2-stubs = "0.0.2a34"
+sqlmodel = "0.0.8"
+typing-extensions = "4.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
