@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: jsonclass
+Version: 0.0.9
+Summary: Convert json to object and back in Python.
+Project-URL: Homepage, https://github.com/soundagain2/jsonclass
+Project-URL: Bug Tracker, https://github.com/soundagain2/jsonclass/issues
+Author-email: soundagain2 <soundagain2@proton.me>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# JSONClass
+
+Convert json to object and back in Python. 
+
+## Example
+
+    from jsonclass import JSONClass
+  
+  
+    class Test(JSONClass):
+        field: str
+  
+  
+    obj = Test()
+    obj.field = "value"
+    assert obj.to_json()["field"] == "value"
+  
+    obj = JSONClass({"__json_class__": "Test", "field": "value2"})
+    assert isinstance(obj, Test)
+    assert obj.field = "value2"
