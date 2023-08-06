@@ -1,0 +1,6 @@
+[console_scripts]
+neon = cmapps.neon.neon:main
+
+[gui_scripts]
+neon-gui = cmapps.neon.neon:main
+
