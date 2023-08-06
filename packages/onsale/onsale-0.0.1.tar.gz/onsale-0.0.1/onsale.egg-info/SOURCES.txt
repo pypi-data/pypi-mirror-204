@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+onsale/__init__.py
+onsale/sale.py
+onsale.egg-info/PKG-INFO
+onsale.egg-info/SOURCES.txt
+onsale.egg-info/dependency_links.txt
+onsale.egg-info/top_level.txt
