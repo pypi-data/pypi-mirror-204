@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: sentry-redis-tools
+Version: 0.1.4
+Summary: Common utilities related to how Sentry uses Redis
+Home-page: https://github.com/getsentry/sentry-redis-tools
+Author: Sentry
+Author-email: oss@sentry.io
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
