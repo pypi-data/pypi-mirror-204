@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: gregory-online
+Version: 0.2.3
+Summary: Online watching HTTP server of ROOT on port 9009
+Author: me
+Author-email: jaromrax@gmail.com
+License: GPL2
+Description-Content-Type: text/markdown
+
+# Project gregory_online
+
+this MD file will be overwritten after ./distcheck !!
+
+Use .org file
+
+** generated automatically **
+
+## Module unitname.py
+** generated automatically
+

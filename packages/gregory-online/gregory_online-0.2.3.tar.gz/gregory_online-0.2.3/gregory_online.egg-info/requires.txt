@@ -1,0 +1,6 @@
+fire
+scipy
+pyfromroot
+pytermgui
+readchar
+fastnumbers
