@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: robocorp-tasks
+Version: 0.1.4
+Summary: The automation framework for Python
+Author: Fabio Zadrozny
+Author-email: fabio@robocorp.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: robocorp-log (==0.0.11)
+Description-Content-Type: text/markdown
+
+# Robocorp Tasks
+
+Robocorp Tasks is a python framework to ease RPA development in Python.
+
+
+Concepts:
+
+`Robocorp Tasks` expects tasks to be run to be marked as decorators in Python.
+
+
+```
+from robocorp.tasks import task
+
+@task
+def my_task():
+    ...
+    
+```
+
+## Command line API:
+
+### Run tasks using the command line:
+
+```
+python -m robocorp.tasks run <directory> -t <task_name>
+```
+
+
+### List available tasks
+
+```
+python -m robocorp.tasks list <directory>
+```
+
