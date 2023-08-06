@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mindarmour
+Version: 2.0.0
+Summary: A smart AI security and trustworthy tool box. Git version: [sha1]:777a00d, [branch]: (HEAD, origin/r2.0, r2.0)
+Home-page: https://www.mindspore.cn/
+Download-URL: https://gitee.com/mindspore/mindarmour/tags
+Author: The MindSpore Authors
+Author-email: contact@mindspore.cn
+License: Apache 2.0
+Project-URL: Sources, https://gitee.com/mindspore/mindarmour
+Project-URL: Issue Tracker, https://gitee.com/mindspore/mindarmour/issues
+Classifier: License :: OSI Approved :: Apache Software License
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: scipy (>=1.5.2)
+Requires-Dist: numpy (>=1.17.0)
+Requires-Dist: matplotlib (>=3.2.1)
+Requires-Dist: pillow (>=7.2.0)
+Requires-Dist: scikit-learn (>=0.23.1)
+Requires-Dist: easydict (>=1.9)
+Requires-Dist: opencv-python (>=4.1.2.30)
+
