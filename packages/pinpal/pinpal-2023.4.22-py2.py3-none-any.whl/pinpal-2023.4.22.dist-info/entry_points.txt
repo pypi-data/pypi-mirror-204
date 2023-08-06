@@ -1,0 +1,3 @@
+[console_scripts]
+pinpal=pinpal:main
+
