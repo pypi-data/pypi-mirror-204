@@ -1,0 +1,4 @@
+[console_scripts]
+doc-amr = doc_amr:main
+doc-baseline = doc_amr_baseline.make_doc_amr:main
+doc-smatch = docSmatch.smatch:main
