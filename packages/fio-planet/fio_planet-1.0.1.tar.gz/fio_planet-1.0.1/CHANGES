@@ -1,0 +1,51 @@
+Changes
+=======
+
+1.0.1 (2023-04-21)
+------------------
+
+- Documentation has been updated to remove the --pre flag from pip usage, to
+  note that fio-filter shadows fiona's original filter command, and note the
+  existence of truth, not, and is functions.
+- The project now runs tests with warnings turned into errors, but ignores
+  pkg_resources related deprecation warnings. Those warnings are caused by
+  munch, a transitive dependency via fiona, and will be eliminated by fiona
+  1.9.4, coming in June 2023.
+
+1.0.0 (2023-04-20)
+------------------
+
+This is the 1.0.0 release. There have been no changes since 1.0rc1.
+
+1.0rc1 (2023-04-18)
+------------------
+
+- The truth, is, and not functions from operators have been added to
+  the mapping of functions available in expressions.
+
+1.0b1 (2023-04-13)
+------------------
+
+- Require pyparsing >= 3.0 (#29).
+- Added a documentation site hosted on Read the Docs (#26, #28, #32).
+
+1.0a3 (2023-03-24)
+------------------
+
+- Add shapely.ops functions (#23).
+- Add builtin buffer, distance, length, simplify, and set_precision functions
+  which allow projected computation of these values (#27).
+
+1.0a2 (2023-03-01)
+------------------
+
+- Added a new builtin area function which allows projected area computation
+  (#21).
+- Add short options -r for raw mode and -n for no input (#18).
+- The expression parser has been fixed so that functions with underscores and
+  numbers in their names such as shapely.force_2d can be used (#20).
+
+1.0a1 (2023-02-22)
+------------------
+
+This is the first pre-release and is almost feature complete.
