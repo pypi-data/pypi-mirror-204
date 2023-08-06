@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+osgood/__init__.py
+osgood/base.py
+osgood.egg-info/PKG-INFO
+osgood.egg-info/SOURCES.txt
+osgood.egg-info/dependency_links.txt
+osgood.egg-info/top_level.txt
+tests/test_base.py
