@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+llt_mypackage.egg-info/PKG-INFO
+llt_mypackage.egg-info/SOURCES.txt
+llt_mypackage.egg-info/dependency_links.txt
+llt_mypackage.egg-info/entry_points.txt
+llt_mypackage.egg-info/top_level.txt
