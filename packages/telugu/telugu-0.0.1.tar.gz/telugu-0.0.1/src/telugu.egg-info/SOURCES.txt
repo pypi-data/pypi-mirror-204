@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/telugu/__init__.py
+src/telugu/telugu.py
+src/telugu.egg-info/PKG-INFO
+src/telugu.egg-info/SOURCES.txt
+src/telugu.egg-info/dependency_links.txt
+src/telugu.egg-info/top_level.txt
