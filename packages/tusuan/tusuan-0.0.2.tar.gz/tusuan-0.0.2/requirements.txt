@@ -1,0 +1,6 @@
+astunparse
+fastcore
+matplotlib
+numpy
+read
+setuptools
