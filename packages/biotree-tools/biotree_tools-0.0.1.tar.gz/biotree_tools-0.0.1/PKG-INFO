@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: biotree_tools
+Version: 0.0.1
+Summary: Collection of bioinformatics tools related to alignments and phylogenetic trees
+Home-page: https://github.com/pypa/biotree_tools
+Author: Marco Mariotti
+Author-email: marco.mariotti@ub.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# biotree_tools
+Collection of bioinformatics tools related to alignments and phylogenetic trees
