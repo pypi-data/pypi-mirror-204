@@ -1,0 +1,12 @@
+ontu_parser/__init__.py,sha256=H2RZwAn6gVgvU4lm95RkeEqJxzA2vbFg82iafsdVoNk,90
+ontu_parser/example.py,sha256=ih8lmhQxFmSvARdXEQ4OE6U9wXcwFit_Fzz28kgat1U,1018
+ontu_parser/classes/__init__.py,sha256=Lhy0oryCJ1yb6_iNaNUyA7OyK9x1sfNIcc6af1NjnYA,154
+ontu_parser/classes/base.py,sha256=jz6_H7O1rjX6v4ZYgkr0GddF6Kdpmny2ousdlRvmxBA,2743
+ontu_parser/classes/dataclasses.py,sha256=MkXc5ZEBSATmwdnLSJoVUP26Mti94S9YhYkZbwmeqKU,13351
+ontu_parser/classes/enums.py,sha256=N9MuWEQPhwtrwxc-wWJKIkWJFHZMpVmVzumyD5wzIBw,850
+ontu_parser/classes/parser.py,sha256=RJ9cnbgdReFYaA4yqMfq98k8ZqDK-6S5KC_NmszuHgU,4910
+ontu_parser/classes/sender.py,sha256=xgwNtApmgepChroytMwI5QzOLd0Zb1rGD2HwLYM5naw,6897
+rozklad_ontu_parser_makisukurisu-0.0.4.dist-info/METADATA,sha256=Kba3Ley6wrdsNltV_4OAnfCCi2PbWx_0KFTRvJMqYd8,3048
+rozklad_ontu_parser_makisukurisu-0.0.4.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+rozklad_ontu_parser_makisukurisu-0.0.4.dist-info/licenses/LICENSE,sha256=aBFf3N1bnJPXS_UmJ1vsyUKm18GEkbFB6MPpEPMrLjs,1505
+rozklad_ontu_parser_makisukurisu-0.0.4.dist-info/RECORD,,
