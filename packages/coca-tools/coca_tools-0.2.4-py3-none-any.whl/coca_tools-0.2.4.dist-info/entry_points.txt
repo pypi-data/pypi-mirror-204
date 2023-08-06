@@ -1,0 +1,5 @@
+[console_scripts]
+create-django-app=cocatools:create_django_app
+create-fastapi-app=cocatools:create_fastapi_app
+welcome=cocatools:welcome
+
