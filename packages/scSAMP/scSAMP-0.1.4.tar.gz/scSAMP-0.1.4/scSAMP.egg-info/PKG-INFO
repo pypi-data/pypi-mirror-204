@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: scSAMP
+Version: 0.1.4
+Summary: scRNA-seq data sampling toolkit.
+Home-page: https://github.com/Tptrix29/scSAMP
+Author: Pei Tian
+Author-email: 1953776@tongji.edu.cn
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+scRNA-seq data sampling toolkit.
