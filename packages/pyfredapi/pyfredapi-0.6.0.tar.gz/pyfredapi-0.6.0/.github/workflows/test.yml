@@ -1,0 +1,59 @@
+name: test
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Linter
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install '.[lint]'
+
+      - name: black
+        run: |
+          black . --check
+
+      - name: ruff
+        run: |
+          ruff check .
+
+      - name: mypy
+        run: |
+          mypy pyfredapi
+
+  test:
+    name: Run pytest
+    runs-on: ubuntu-latest
+    env:
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11"]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          pip install '.[test]'
+      - name: Test with pytest
+        run: |
+          pytest tests/ --vcr-record=none --no-header -vv
