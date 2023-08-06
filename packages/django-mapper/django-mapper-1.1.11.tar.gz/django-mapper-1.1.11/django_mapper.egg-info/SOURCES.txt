@@ -1,0 +1,9 @@
+README.md
+setup.py
+django_mapper/__init__.py
+django_mapper/mapper.py
+django_mapper.egg-info/PKG-INFO
+django_mapper.egg-info/SOURCES.txt
+django_mapper.egg-info/dependency_links.txt
+django_mapper.egg-info/requires.txt
+django_mapper.egg-info/top_level.txt
