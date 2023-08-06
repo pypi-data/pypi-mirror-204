@@ -1,0 +1,55 @@
+name: docs
+
+on:
+  pull_request:
+    branches:
+    - 20**
+    types: [opened, reopened, synchronize]
+    paths:
+    - 'src/**'
+    - 'requirements/docs.txt'
+    - 'docs/source/**'
+    - '.github/workflows/docs.yml'
+    - 'pyproject.toml'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sphinx:
+    if: >
+      github.base_ref == '2023' ||
+      contains(github.event.pull_request.labels.*.name, 'conflicts') ||
+      contains(github.event.pull_request.labels.*.name, 'docs-test')
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        language: ['en']
+        builder: ['html']
+    steps:
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    - uses: actions/checkout@v3
+    - uses: actions/cache@v3.3.1
+      with:
+        path: docs/build/${{ matrix.language }}/${{ matrix.builder }}
+        key: ${{ runner.os }}-docs-${{ matrix.language }}-${{ github.ref }}
+    - name: Installing the library
+      shell: bash -l {0}
+      run: |
+        pip install .
+        pip install -r requirements/docs.txt
+    - name: Build the documentation
+      shell: bash -l {0}
+      run: |
+        sphinx-build ${{ env.SPHINXOPTS }} ${{ env.SOURCEDIR }} ${{ env.BUILDDIR }}
+      env:
+        SOURCEDIR: docs/source
+        BUILDDIR: docs/build/${{ matrix.language }}/${{ matrix.builder }}/pr-${{ github.event.number }}
+        SPHINXOPTS: -M ${{ matrix.builder }} -D language=${{ matrix.language }} -j auto -W
+    - uses: actions/cache@v3.3.1
+      with:
+        path: docs/build/${{ matrix.language }}/${{ matrix.builder }}
+        key: ${{ runner.os }}-docs-${{ matrix.language }}-${{ github.ref }}
