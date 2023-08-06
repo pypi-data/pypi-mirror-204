@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: chejoLib
+Version: 0.1
+Summary: Libreria de Chejo
+Home-page: https://github.com/sergioguzman27
+Download-URL: https://github.com/sergioguzman27/mi-lib
+Author: Sergio Guzman
+Author-email: sergiohumberto27@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt

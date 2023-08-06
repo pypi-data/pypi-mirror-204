@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+chejoLib.egg-info/PKG-INFO
+chejoLib.egg-info/SOURCES.txt
+chejoLib.egg-info/dependency_links.txt
+chejoLib.egg-info/requires.txt
+chejoLib.egg-info/top_level.txt
+libs/__init__.py
+libs/fechas.py
