@@ -1,0 +1,46 @@
+ &IN1
+ ITEK = 0
+ ITRACE = 1
+ NXITER = -101
+ ERROR = 1e-08
+ MXITER = 1
+ IERCHK = 0
+ ICURRT = 2
+ NEXTRA = 0
+ SCRAPE = 0.01
+ RCENTR = 1.6955
+ BTOR = -1.7419
+ BETAP0 = 0.5
+ EMP = 1.0
+ QENP = 1.0
+ ENP = 1.0
+ ICONVR = 3
+ CFCOIL = -10.0
+ FCZERO = 18*1.0
+ FCSUM = 18*1.0
+ IFREF = 2
+ PSIBRY = 0.168585
+ FWTBDRY = 10.0 15*1.0 10.0 29*1.0 10.0 25*1.0 10.0 18*1.0 19*0.0
+ QVFIT = 2.2591
+ PCURBD = 0.0
+ FCURBD = 0.0
+ IECURR = 0
+ ECURRT = 6*0.0
+ PLASMA = 1525630.76
+ RELAX = 0.5
+ ISHOT = 0
+ ITIME = 0
+ /
+ &PROFILE_EXT
+ GEQDSK_EXT =
+ SCALEPP_EXT = 'disabled'
+ SCALEFFP_EXT = 'disabled'
+ RC_EXT = 'disabled'
+ EUP_EXT = 'disabled'
+ DUP_EXT = 'disabled'
+ A_EXT = 'disabled'
+ ZC_EXT = 'disabled'
+ ELOW_EXT = 'disabled'
+ DLOW_EXT = 'disabled'
+ SHAPE_EXT = .true.
+ /

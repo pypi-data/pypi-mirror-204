@@ -1,0 +1,64 @@
+
+The data in this directory is copied from OMFIT-source/modules/EFITtime/TEMPLATES
+
+To create the create_machinefile.py, the information from magneticConstraint.py
+and constraintsGUI.py from OMFIT was used.  The key information is as follow:
+
+
+For determining which dprobe.dat file to use, this is useful::
+
+        if is_device(device, 'DIII-D'):
+            if root['INPUTS']['kEQDSK'].values()[0]['IN1']['ISHOT'] < 112000:
+                dprobe = root['TEMPLATES']['D3D_dprobe']
+            elif 112000 < root['INPUTS']['kEQDSK'].values()[0]['IN1']['ISHOT'] < 156000:
+                dprobe = root['TEMPLATES']['D3D_dprobe_112000']
+            else:
+                dprobe = root['TEMPLATES']['D3D_dprobe_156000']
+        elif is_device(device, 'NSTX'):
+            dprobe = root['TEMPLATES']['NSTX_dprobe']
+        elif is_device(device, 'KSTAR'):
+            dprobe = root['TEMPLATES']['KSTAR_dprobe']
+        else:
+            raise RuntimeError(f"Missing dprobe.dat for device {device}")
+
+
+
+For understanding what the variables names in `dprobe.dat` mean, this is
+useful::
+
+    MAGNETIC PROBES
+
+    the magnetic probes are characterized by:
+     - XMP2 and
+     - YMP2, cartesian coordinates of the center of the probe,
+     - SMP2, size/length of the probe in meters (read below!),
+     - AMP2, angle/orientation of the probe in degrees.
+
+    the usual magnetic probe in EFIT is a partial rogowski coil,
+    yet beware! the EFIT D3D probe file also models saddle loops,
+    which extend in the toroidal direction and provide integrated
+    signals. such loops are characterized by a negative length.
+
+    in order to plot non-rogowski coils correctly, a forced 90 deg
+    counter-clockwise rotation has to be applied on the probe's angle.
+
+    FURTHER REFERENCE as explained by T. Strait on 19-jul-2016
+
+    - The angle AMP2 always indicates the direction of the magnetic field
+      component that is being measured.
+
+    - The length SMP2 indicates the length (in the R-Z plane) over which
+      the magnetic field is averaged by the sensor.
+
+    - SMP2 > 0 indicates that the averaging length is in the direction of AMP2.
+      SMP2 < 0 indicates that the averaging length is perpendicular to AMP2.
+
+    - In predicting the measurement of the sensor for purposes of fitting,
+      only the length SMP2 is considered.  The width of the sensor in the
+      direction perpendicular to SMP2 (in the R-Z plane) is small and is
+      therefore neglected.
+      Since the EFIT equilibrium is assumed to be axisymmetric, the width
+      of the sensor in the toroidal direction is not relevant.
+
+
+
