@@ -1,0 +1,8 @@
+flask
+myst-parser
+pytest>=6.0
+pytest-cov
+sphinx>=3.0
+sphinx-autobuild
+sphinx-tabs
+witchhazel
