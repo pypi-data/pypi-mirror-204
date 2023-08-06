@@ -1,0 +1,5 @@
+matplotlib
+mycolorpy
+resource
+rich
+psutil
