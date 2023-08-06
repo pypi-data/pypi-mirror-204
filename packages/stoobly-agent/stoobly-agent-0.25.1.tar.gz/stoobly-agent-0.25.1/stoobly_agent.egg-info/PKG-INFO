@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: stoobly-agent
+Version: 0.25.1
+Summary: Client agent for Stoobly
+Home-page: https://github.com/Stoobly/stoobly-agent
+Author: Michael Yen
+Author-email: michael@stoobly.com
+License: MIT
+License-File: LICENSE
