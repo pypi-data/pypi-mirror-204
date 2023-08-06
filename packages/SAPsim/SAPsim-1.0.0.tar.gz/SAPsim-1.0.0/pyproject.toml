@@ -1,0 +1,32 @@
+[project]
+name = "SAPsim"
+authors = [
+    { name="Jesse Wei", email="jesse@cs.unc.edu" },
+]
+description = "Simulation of SAP (Simple As Possible) computer programs from COMP311 (Computer Organization) @ UNC"
+readme = "README_PyPI.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+# dependencies set in setup.py
+# keywords set in setup.py
+dynamic = ["dependencies", "version", "keywords"]
+
+[project.urls]
+"Homepage" = "https://github.com/jesse-wei/SAPsim"
+"Bug Tracker" = "https://github.com/jesse-wei/SAPsim/issues"
+
+[build-system]
+requires = ["setuptools>=67.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
