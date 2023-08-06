@@ -1,0 +1,17 @@
+ucto.cpython-36m-darwin.so,sha256=lYpbLH3QCCkuimBtIDJa53vDSPJ39p4lG5SR986IDHA,193232
+python_ucto-0.6.5.data/data/sources/ucto_wrapper.pyx,sha256=YwQSb05pjNEsMyX-pgQEwYoF_5iY_DDvBhQWTbMWxO8,6393
+python_ucto-0.6.5.dist-info/RECORD,,
+python_ucto-0.6.5.dist-info/WHEEL,sha256=ye8A2lA8pjGNe7-ueOpggarJAhczq3EZGqnLZzzfQYQ,110
+python_ucto-0.6.5.dist-info/top_level.txt,sha256=7zjSe25cKXiD3nFVCqHOi-tWjWL3N2nPFaVCsq3V6mw,5
+python_ucto-0.6.5.dist-info/METADATA,sha256=KOe9yJfhP2Jdwvs21s97Gty6RRMh7L9s831IkOJAIxI,1163
+python_ucto.dylibs/libreadline.8.2.dylib,sha256=XmixbDObaKebtwvZI-G-vF3oUhPtrNDpNWcz7fYOj-Q,296128
+python_ucto.dylibs/libicui18n.72.1.dylib,sha256=IzpJ36s6IpkxrqUanRDCX5M-atJJv63-Jhr-Kkwkiw8,2792240
+python_ucto.dylibs/libxml2.2.dylib,sha256=jswmbDYreC-oOC8gqo2OsuWQhDlKKLA7nO5h9-DQeCc,1142368
+python_ucto.dylibs/libtextcat.0.0.0.dylib,sha256=XnaSDef28-GrhGWNqGyw6E2q1_ZEt47SYzmSrncxQyE,71472
+python_ucto.dylibs/libz.1.2.13.dylib,sha256=72soW9sOn0G7FcjTh-kDIVaujG3CByQip4iuDBcSGNw,141280
+python_ucto.dylibs/libticcutils.9.dylib,sha256=bMqjqr0n9JSHj-EuBomo9C-_eDQSh0Gs5qlTKNXkB-A,488400
+python_ucto.dylibs/libicuio.72.1.dylib,sha256=hbpL0486_oFzDSinaiFjjiWxVCj4WAK4FXqeA5ktbgc,117120
+python_ucto.dylibs/libucto.6.dylib,sha256=alY6rWNMb429R_Y6oaIqh6MYzo9qptnQeLj66jVsYFQ,531680
+python_ucto.dylibs/libfolia.18.dylib,sha256=NVTxpFQ1MSI5uhzt2JO9v7_ObRwZYnG368u0oknK22I,5202912
+python_ucto.dylibs/libicuuc.72.1.dylib,sha256=GHG3BJ9-1wosX5AbG4vRtpVQc1oCX0zctOSvHKWeaoE,1751904
+python_ucto.dylibs/libicudata.72.1.dylib,sha256=4qod8YRRNB9kUUcBLpNcZNt3AcEDK_NifnAZgXM8xKU,31523248
