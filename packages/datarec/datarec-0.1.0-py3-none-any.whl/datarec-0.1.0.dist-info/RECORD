@@ -1,0 +1,17 @@
+datarec/__init__.py,sha256=yy_o17YypGXxtC_ok5nR1C31vdq2emG8Fd-mjYN9Rq0,100
+datarec/data.py,sha256=MD2qJCd-0TUmBbTCAh-d0Qf6WSh9xBsv6kTz2MnEFcA,3702
+datarec/tables/__init__.py,sha256=EqECfEhlXP3MOsvQiGl_HIAH00Z-INI6hnOMo4PF48M,202
+datarec/tables/_is_close_numeric.py,sha256=WljStwiXQ83D5MgnplTy861YyRWiLxO7fKoID1lL1-c,3354
+datarec/tables/_is_equal.py,sha256=9zhDdY5U9A4A3-vznpatgP8EMQpFvzcwpAAE-l5qTZ8,2369
+datarec/tables/_method_base.py,sha256=n3wScT2Cnl46kPIYYInhhbG8mmfmf2qKpu-XkLXjFNc,2391
+datarec/tables/_reconciler.py,sha256=FQ4nglwx0_FtnxEpaL6yjkHMiR6SEQb1rJwjmwsC9n8,3792
+datarec/tables/_summarizer.py,sha256=M76Xj5ON_RQpJ3hQMzmu33kmQeM6GT_IuzXHCUPVLmk,4331
+datarec/utils/__init__.py,sha256=r44b9mWrjGjbTu2Vpbm2XtTXk36eHFajoh3WymcmWXs,145
+datarec/utils/_get_suffixed.py,sha256=yNrh4ZnApBijm2IYYLI9FwjMVCnz8s0uHyzAreEWKKw,321
+datarec/utils/_set_case.py,sha256=b_vs6pPEWV8SztRZFRPNhzGETYZMJfgb9UEXcHVpHlk,309
+datarec/utils/functions.py,sha256=kEQKmTfJDPRR-4-xkx2-ij9QnzQ25e8BAi0CL9uf9Z8,5627
+datarec-0.1.0.dist-info/METADATA,sha256=CnYRfyWWHdJqIX5gqVu1cxVIuG79QCulujPeg4nDzO8,755
+datarec-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+datarec-0.1.0.dist-info/license,sha256=z04xct_gVFYf8KRVnKSQiRHuVmRRSq9t6NC4eV-hoOg,1083
+datarec-0.1.0.dist-info/top_level.txt,sha256=ck8yj6vLBlUIKG82DQ1q8tpNcHvSuHM-rHOm0zBP83A,8
+datarec-0.1.0.dist-info/RECORD,,

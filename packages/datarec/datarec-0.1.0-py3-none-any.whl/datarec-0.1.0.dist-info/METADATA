@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: datarec
+Version: 0.1.0
+Summary: utilities for reconciling data
+Author-email: Chris Mamon <chrisam1993@live.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: license
+Requires-Dist: polars
+
+# Data Reconciler
+
+- [Data Reconciler](#data-reconciler)
+
+A set of utilities which can used to validate data (tables only at the
+moment) using polars LazyFrames.
