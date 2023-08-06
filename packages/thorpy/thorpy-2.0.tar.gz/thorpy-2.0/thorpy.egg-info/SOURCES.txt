@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+thorpy.egg-info/PKG-INFO
+thorpy.egg-info/SOURCES.txt
+thorpy.egg-info/dependency_links.txt
+thorpy.egg-info/top_level.txt
