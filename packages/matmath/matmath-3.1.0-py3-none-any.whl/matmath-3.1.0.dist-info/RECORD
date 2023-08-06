@@ -1,0 +1,9 @@
+matmath/__init__.py,sha256=FICFpUF1PTb4wJ9r8xD8qRR1jin2yEiedyCWJm8_NrU,110
+matmath/matrices.py,sha256=bItcJKg1FghVpPlCroI1J_oudZ6VYFYx9sE72yeUlg8,20038
+matmath/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matmath/vectors.py,sha256=DjKHPDK9LkAMC9ueYQTaq3VggmcfVtVl3fxbXJvpFjU,10217
+matmath-3.1.0.dist-info/entry_points.txt,sha256=mZlZDOWPvD03H1weEoXe7nVPypU0NhNpJUZIWtydCQY,40
+matmath-3.1.0.dist-info/LICENSE,sha256=cB_l-e5GVA2h-O0CW2Y_jb-fEA8C0svXLC6QS57tgJc,1072
+matmath-3.1.0.dist-info/METADATA,sha256=ZbtS2JsLVXidL_IktBWgnnbhCy2nvfOiLPpWln3IhOI,771
+matmath-3.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+matmath-3.1.0.dist-info/RECORD,,
