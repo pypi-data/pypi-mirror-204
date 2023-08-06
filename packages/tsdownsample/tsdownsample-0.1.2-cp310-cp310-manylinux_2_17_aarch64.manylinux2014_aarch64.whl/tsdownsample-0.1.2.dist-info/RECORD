@@ -1,0 +1,11 @@
+tsdownsample-0.1.2.dist-info/METADATA,sha256=9fJA4zR9Y50e_TftV7V7lr54C8CtGdiOxFphUlr2G5s,6950
+tsdownsample-0.1.2.dist-info/WHEEL,sha256=qAnRBE_xRr_J1n_pHNmRLbHxdeQ89MtmwRTQfjSTk4M,133
+tsdownsample-0.1.2.dist-info/license_files/LICENSE,sha256=I_AmVQOrML7KNWhYEdPm2MZChf-_8hxuRX9j899jz3I,1078
+tsdownsample/_python/downsamplers.py,sha256=uXIljUgdYd-8ndBqah0lZe-NTaUL2N4zajTGfkSbc9k,6358
+tsdownsample/_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsdownsample/downsamplers.py,sha256=JopTZr0ce-SaM15Jvq13Xrv8GvnZQSMC81OKSQCkJuY,2117
+tsdownsample/__init__.py,sha256=Xvu7hKY4jvQFQ4H92YQ19lVnV8fqEmFBSSK7MOxPQE8,435
+tsdownsample/_rust/__init__.py,sha256=L2sIq9cl4Ix4oRmZoNcM8o7xw2XuC-ld60Z4ledN_50,58
+tsdownsample/downsampling_interface.py,sha256=HIiFhnb0DzvmnPBGk31iQ5N68akmW2CdOePtYrWjZZg,12998
+tsdownsample/_rust/_tsdownsample_rs.cpython-310-aarch64-linux-gnu.so,sha256=LXUh_4eYgSa7StThdaSpUrL37ctx3XcTTKGs1aB9VYo,13023512
+tsdownsample-0.1.2.dist-info/RECORD,,
