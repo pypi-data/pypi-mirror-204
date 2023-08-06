@@ -1,0 +1,4 @@
+tqdm>=4.42.0
+PyInquirer
+colorama
+numpy
