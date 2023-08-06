@@ -1,0 +1,11 @@
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[conversion]
+
+[conversion:python_version < "3.9"]
+astunparse
+
+[wcwidth]
+wcwidth
