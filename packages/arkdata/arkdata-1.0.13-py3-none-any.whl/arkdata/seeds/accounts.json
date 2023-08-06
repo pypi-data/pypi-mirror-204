@@ -1,0 +1,20 @@
+[
+  {
+    "xuid": "TEST_XUID",
+    "player_name": "TEST_PLAYER_NAME",
+    "ark_player_id": "123456789",
+    "berry_bush_seeds": 10000
+  },
+  {
+    "xuid": "02670680",
+    "player_name": "rlettuce0",
+    "ark_player_id": "221067",
+    "berry_bush_seeds": 10659
+  },
+  {
+    "xuid": "32469606",
+    "player_name": "aherculson1",
+    "ark_player_id": "655047",
+    "berry_bush_seeds": 10447
+  }
+]
