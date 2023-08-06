@@ -1,0 +1,10 @@
+aws_cdk/aws_s3_notifications/__init__.py,sha256=JEAe4RLNBb0BNo4RoOdz7GZTfgR7fAM0GTh0ZvNco1E,9303
+aws_cdk/aws_s3_notifications/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_s3_notifications/_jsii/__init__.py,sha256=9PBF2yS3vNFYWudD98010CyoMRX6qEjgAp2b6RggmTg,614
+aws_cdk/aws_s3_notifications/_jsii/aws-s3-notifications@1.199.0.jsii.tgz,sha256=21-lcCOeiU11eqvZ9QSso9BYiQ2zdvBElQbOHik1E3s,19412
+aws_cdk.aws_s3_notifications-1.199.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_s3_notifications-1.199.0.dist-info/METADATA,sha256=Vf8mDV0hnuR4zs5ggXgtlZN5cQ6yiBVOgMFltpkNfFg,2901
+aws_cdk.aws_s3_notifications-1.199.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_s3_notifications-1.199.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_cdk.aws_s3_notifications-1.199.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_s3_notifications-1.199.0.dist-info/RECORD,,
