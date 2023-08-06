@@ -1,0 +1,9 @@
+aug_tool/Augmentation.py,sha256=InDoRCHxXeenp-wfjJ3yigOXhW-hDMHehvdORl8ry7Q,6540
+aug_tool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aug_tool/aug_tool.py,sha256=S0z2_8Hq4_JucqOhc7FzYQeAKy0PDVoZHx9Ffr5eDpE,3832
+aug_tool/example.py,sha256=97kM9efsR0MjxmhZ_YaAwAGnbGc6amNSrlx6kkkfQdY,617
+aug_tool-0.0.3.dist-info/LICENCE,sha256=aXQw54OvE6Bpf0i9bJ5dUeotin2bVtbzOe9qWOOMP7M,1089
+aug_tool-0.0.3.dist-info/METADATA,sha256=GObweCGhtA9XLRqNerXg2-q2AavFAJP4ZBv5ErYRCdY,2725
+aug_tool-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aug_tool-0.0.3.dist-info/top_level.txt,sha256=E7EYLSnBMUzihbRd2ZlJ6aEMi_G-Qsdt2kWCaOY_e10,9
+aug_tool-0.0.3.dist-info/RECORD,,
