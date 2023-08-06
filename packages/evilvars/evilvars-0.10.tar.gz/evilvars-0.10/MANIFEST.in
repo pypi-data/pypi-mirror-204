@@ -1,0 +1,4 @@
+include evilvars/requirements.txt
+include evilvars/thirdparty.json
+include evilvars/README.md
+include evilvars/LICENSE

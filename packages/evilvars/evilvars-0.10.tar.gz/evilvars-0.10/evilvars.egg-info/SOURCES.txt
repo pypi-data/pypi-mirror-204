@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+evilvars/LICENSE
+evilvars/README.md
+evilvars/__init__.py
+evilvars/requirements.txt
+evilvars/thirdparty.json
+evilvars.egg-info/PKG-INFO
+evilvars.egg-info/SOURCES.txt
+evilvars.egg-info/dependency_links.txt
+evilvars.egg-info/requires.txt
+evilvars.egg-info/top_level.txt
