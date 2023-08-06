@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+tinyOpenAI/__init__.py
+tinyOpenAI/tinyOpenAI.py
+tinyOpenAI.egg-info/PKG-INFO
+tinyOpenAI.egg-info/SOURCES.txt
+tinyOpenAI.egg-info/dependency_links.txt
+tinyOpenAI.egg-info/entry_points.txt
+tinyOpenAI.egg-info/requires.txt
+tinyOpenAI.egg-info/top_level.txt
