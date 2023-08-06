@@ -1,0 +1,9 @@
+invenio-rdm-records<2.0.0,>=1.1.0
+invenio-cache<1.2.0,>=1.1.1
+flask-babel<3,>=2
+
+[tests]
+pytest-black>=0.3.0
+Sphinx>=4.5.0
+pytest-invenio<3.0.0,>=2.1.0
+invenio-search[opensearch2]<3.0.0,>=2.1.0
