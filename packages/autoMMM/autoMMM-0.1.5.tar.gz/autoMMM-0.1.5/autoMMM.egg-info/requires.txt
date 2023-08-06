@@ -1,0 +1,9 @@
+numpy
+pandas
+scikit-learn
+statsmodels
+matplotlib
+openai
+holidays
+seaborn
+pymc
