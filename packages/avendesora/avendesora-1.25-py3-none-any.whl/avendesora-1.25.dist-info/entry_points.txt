@@ -1,0 +1,2 @@
+[console_scripts]
+avendesora = avendesora.main:main
