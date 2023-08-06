@@ -1,0 +1,3 @@
+[console_scripts]
+charsi=charsi.__main__:cli
+
