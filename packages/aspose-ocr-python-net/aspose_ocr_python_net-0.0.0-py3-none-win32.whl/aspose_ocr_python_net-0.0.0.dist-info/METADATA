@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: aspose-ocr-python-net
+Version: 0.0.0
+Summary: Aspose.OCR for Python is a powerful yet easy-to-use and cost-effective API for extracting text from scanned images, photos, screenshots, PDF documents, and other files.
+Home-page: https://products.aspose.com/ocr/
+Author: Aspose
+License: https://company.aspose.com/legal/eula
+Keywords: OCR, Recognize text, diacritic, Python, Aspose
+Platform: win32
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.5,<3.12
+
