@@ -1,0 +1,13 @@
+apimapper/__init__.py,sha256=ddNAhEr1_Pxkh_rZole6E1HLPoM1PM4TlvDG9-VSWp8,131
+apimapper/apimapper.py,sha256=23SctM6r2_syjMFTxNoGyjSH9jNWIPKWNvSwXt4gGFM,3668
+apimapper/responsemapper.py,sha256=crNzBYxwY33KwFRVROiE4qZ66Ux4iLwiuOT4qfI_3lU,3830
+apimapper/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apimapper/config/config.py,sha256=cWL48dr2VBdj-KwUyc4FhEoRSGZtZPkHSOvhBal8ioY,296
+apimapper/config/demo.py,sha256=g69hREIigpv4QYU0_5C8b6j99FNu3DowiUfe5kOwCPM,4516
+apimapper/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apimapper/tests/test_apimapper.py,sha256=Ktx8KVX89VhRTVUfD_VBT3CCQvp4VRiqxXpbWia4ZJ4,790
+apimapper-0.7.9.dist-info/LICENSE,sha256=bk8IFKFpArqf-LgchkI9dz2BeCfhoTC4f3IN0kOMFqM,1066
+apimapper-0.7.9.dist-info/METADATA,sha256=Kety3fpbgXOJjIUh-Yy9Y9Q8ZC6xpw9IJjw4HLWuAzc,3395
+apimapper-0.7.9.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+apimapper-0.7.9.dist-info/top_level.txt,sha256=aU0yFI-6Zf1kYC9K8jmGSnXgKKHxIk5y1gC_mKJyM9c,10
+apimapper-0.7.9.dist-info/RECORD,,
