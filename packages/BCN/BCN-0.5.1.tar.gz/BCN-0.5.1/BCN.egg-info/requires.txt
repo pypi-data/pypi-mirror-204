@@ -1,0 +1,14 @@
+backports.zoneinfo
+cffi
+Jinja2
+joblib
+MarkupSafe
+numpy
+pycparser
+pytz
+pytz-deprecation-shim
+rpy2
+scikit-learn
+threadpoolctl
+tzdata
+tzlocal
