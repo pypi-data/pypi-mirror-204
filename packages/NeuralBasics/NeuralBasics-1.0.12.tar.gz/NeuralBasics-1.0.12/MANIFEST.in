@@ -1,0 +1,2 @@
+recursive-include package/src/NeuralBasics/training *
+include package/src/NeuralBasics/trained_data.txt
