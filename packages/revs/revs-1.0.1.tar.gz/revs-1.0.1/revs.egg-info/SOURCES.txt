@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+revs/client.py
+revs/version.py
+revs.egg-info/PKG-INFO
+revs.egg-info/SOURCES.txt
+revs.egg-info/dependency_links.txt
+revs.egg-info/requires.txt
+revs.egg-info/top_level.txt
+revs.egg-info/zip-safe
