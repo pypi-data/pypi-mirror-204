@@ -1,0 +1,2 @@
+[console_scripts]
+alice_skills_maneger = asm.__main__:main
