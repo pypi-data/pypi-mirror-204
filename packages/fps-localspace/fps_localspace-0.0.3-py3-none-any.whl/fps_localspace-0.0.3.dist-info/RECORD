@@ -1,0 +1,11 @@
+fps_localspace/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+fps_localspace/main.py,sha256=W5EHOavEGYrOl5fA-6XwZdYTBZuzSNkMbfZYwv8uIcY,2596
+fps_localspace/micromamba.py,sha256=CwssEnAiJ_BLeQjkzH0tXo3mPjVNDbw5YNQo_NJCphI,2051
+fps_localspace/routes.py,sha256=T2mu9KyC_ro8v8A5POuZtQwMWtZb93bdFkGoc1c9lNg,6372
+fps_localspace/subprocess.py,sha256=NRBWRqF0StAd0tte7g59R5heWbsaFpKiY7jP25zWUcA,602
+fps_localspace/utils.py,sha256=5_TkqEiFO-_E5NAs2rNBoF3ktq_y6thx8Yo4P4gpmRs,203
+fps_localspace-0.0.3.dist-info/METADATA,sha256=11_OwqXAi4tW7kFbITKC-dix3bJUZBU3dcQq9cFQqZo,1572
+fps_localspace-0.0.3.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+fps_localspace-0.0.3.dist-info/entry_points.txt,sha256=qHXYRUyiW77yv3PoBTTtcPtDpUw8eK4dAf2tfRYwurk,141
+fps_localspace-0.0.3.dist-info/licenses/LICENSE.txt,sha256=su0IgzSHZ9tMFeCQ_IaCji5Q4VrZSOqDsEFi7lPduc8,1106
+fps_localspace-0.0.3.dist-info/RECORD,,
