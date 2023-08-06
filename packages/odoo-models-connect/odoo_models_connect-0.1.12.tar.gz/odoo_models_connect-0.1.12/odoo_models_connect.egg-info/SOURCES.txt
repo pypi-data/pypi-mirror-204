@@ -1,0 +1,13 @@
+README.md
+setup.py
+odoo_models_connect/__init__.py
+odoo_models_connect/connect_odoo.py
+odoo_models_connect/decorators.py
+odoo_models_connect/exceptions.py
+odoo_models_connect/fields.py
+odoo_models_connect/models.py
+odoo_models_connect.egg-info/PKG-INFO
+odoo_models_connect.egg-info/SOURCES.txt
+odoo_models_connect.egg-info/dependency_links.txt
+odoo_models_connect.egg-info/requires.txt
+odoo_models_connect.egg-info/top_level.txt
