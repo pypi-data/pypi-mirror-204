@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: image-file-validator
+Version: 0.0.1
+Summary: A simple pluggable image file validator for all type od python applications
+Home-page: 
+Author: Isaac Yakubu
+Author-email: engrisaac1234@gmail.com
+License: MIT
+Keywords: image-validate,image,image file validation
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This is a simple pluggable python library that validate image file and size useful for all 
+type of python applications.
+
+Change Log
+
+====================
+
+0.0.1   (22/04/2023)
+
+--------------------
+
+
+- First Release 
