@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: AAEEGGOOSS
+Version: 0.3
+Summary: Gamaa
+Author: AegosCOOOD
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+License-File: LICENSE.txt
