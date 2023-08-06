@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: opencv-stubs
+Version: 0.0.4
+Summary: Unofficial stubs for the opencv-python package.
+Project-URL: Homepage, https://github.com/hoel-bagard/opencv-stubs
+Project-URL: Bug Tracker, https://github.com/hoel-bagard/opencv-stubs/issues
+Author: Bagard Hoel
+License: MIT
+License-File: LICENSE
+Keywords: OpenCV,stubs
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Requires-Dist: numpy>=1.21
+Provides-Extra: build
+Requires-Dist: hatch; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: pip-tools; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pyright; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Provides-Extra: opencv
+Requires-Dist: opencv-python>=4.7.0; extra == 'opencv'
+Provides-Extra: opencv-headless
+Requires-Dist: opencv-python-headless>=4.7.0; extra == 'opencv-headless'
+Description-Content-Type: text/markdown
+
+# OpenCV stubs
+
+[![PyPI](https://img.shields.io/pypi/v/opencv-stubs?color=green&style=flat)](https://pypi.org/project/opencv-stubs)
+[![PyPI - Implementation](https://img.shields.io/pypi/implementation/opencv-stubs?style=flat)](https://pypi.org/project/opencv-stubs)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/opencv-stubs?style=flat)](https://pypi.org/project/opencv-stubs)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/opencv-stubs?style=flat-square)](https://pypistats.org/packages/opencv-stubs)
+[![License](https://img.shields.io/pypi/l/opencv-stubs?style=flat)](https://opensource.org/licenses/MIT)
+![Linting](https://github.com/hoel-bagard/opencv-stubs/actions/workflows/pre-commit.yaml/badge.svg)
+
+
+Unofficial python stubs for the opencv-python package.
+
+A stub file with all the cv2 function can be found on the [Microsoft stubs repo](https://github.com/microsoft/python-type-stubs/tree/main/cv2).\
+The stubs from this package are different in the sense that they include better (although wrong) typing. OpenCV handles more types than defined in this package (and has much more functions than defined in this package). If you would like a function / type to be added, feel free to open a PR.
+
+The stubs include the docstrings as they are otherwise not available in the IDE (as far as I know).
+
+These stubs are a temporary help until official ones are made (see [this issue](https://github.com/opencv/opencv/issues/14590#issuecomment-1493255962)).
+
+
+## Installation
+
+The package is available on pypi [here](https://pypi.org/project/opencv-stubs/), you can install it with:
+
+```
+pip install opencv-stubs
+```
+
+The dependency on opencv is optional, and be accessed with `pip install opencv-stubs[opencv]` or `pip install opencv-stubs[opencv-headless]`.

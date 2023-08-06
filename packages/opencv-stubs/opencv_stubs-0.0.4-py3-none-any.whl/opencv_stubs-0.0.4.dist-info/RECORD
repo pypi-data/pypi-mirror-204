@@ -1,0 +1,7 @@
+cv2-stubs/__init__.pyi,sha256=5lX4QhjmeywESBZXeaWQwpU4HbG0kVUP6S0uTdpnnCg,49905
+cv2-stubs/constants.pyi,sha256=2b3v6RwkseKrM64GevplfWWaJ3Qpls_nmEH64q9KJb8,18359
+cv2-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opencv_stubs-0.0.4.dist-info/METADATA,sha256=rsdVV4i72-ixzCtHDqIC1rH1RQS81K1Wra4RgN8hqpA,3091
+opencv_stubs-0.0.4.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+opencv_stubs-0.0.4.dist-info/licenses/LICENSE,sha256=hZ9iRWHEV-QNDO8ih6y9Rt7luuBynsRWG5EPaH3Z9is,1069
+opencv_stubs-0.0.4.dist-info/RECORD,,
