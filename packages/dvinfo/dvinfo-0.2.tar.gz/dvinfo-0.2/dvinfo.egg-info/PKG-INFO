@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dvinfo
+Version: 0.2
+Summary: A package for getting system information on Windows and Linux
+Home-page: https://github.com/0mgRod/deviceinfo
+Author: OmgRod
+Keywords: system info
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
