@@ -1,0 +1,3 @@
+[console_scripts]
+keypact = keypact.keypact:main
+
