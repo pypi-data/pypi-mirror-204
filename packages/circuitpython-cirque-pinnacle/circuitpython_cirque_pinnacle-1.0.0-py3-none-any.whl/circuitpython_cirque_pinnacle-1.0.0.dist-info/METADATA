@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: circuitpython-cirque-pinnacle
+Version: 1.0.0
+Summary: A CircuitPython driver for Cirque Pinnacle (1CA027) touch controller used in Cirque Trackpads
+Author-email: Brendan Doherty <2bndy5@gmail.com>
+License: MIT
+Project-URL: Documentation, https://circuitpython-cirque-pinnacle.readthedocs.io
+Project-URL: Source, https://github.com/2bndy5/CircuitPython_Cirque_Pinnacle
+Project-URL: Tracker, https://github.com/2bndy5/CircuitPython_Cirque_Pinnacle/issues
+Keywords: blinka,circuitpython,raspberrypi,driver,Cirque,Pinnacle,touch,sensor,trackpad
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Hardware
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: Adafruit-Blinka
+Requires-Dist: adafruit-circuitpython-busdevice
+
+
+.. image:: https://readthedocs.org/projects/circuitpython-cirque-pinnacle/badge/?version=latest
+    :target: https://circuitpython-cirque-pinnacle.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+.. image:: https://github.com/2bndy5/CircuitPython_Cirque_Pinnacle/workflows/Build%20CI/badge.svg
+    :target: https://github.com/2bndy5/CircuitPython_Cirque_Pinnacle/actions/
+    :alt: Build Status
+
+.. image:: https://img.shields.io/pypi/v/circuitpython-cirque-pinnacle.svg
+    :alt: latest version on PyPI
+    :target: https://pypi.python.org/pypi/circuitpython-cirque-pinnacle
+
+.. image:: https://static.pepy.tech/personalized-badge/circuitpython-cirque-pinnacle?period=total&units=international_system&left_color=grey&right_color=blue&left_text=Pypi%20Downloads
+    :alt: Total PyPI downloads
+    :target: https://pepy.tech/project/circuitpython-cirque-pinnacle
+
+A circuitpython library for using the Cirque Glidepoint circle trackpads (as seen in the Steam Controller and Valve\HTC Vive VR controllers).
+
+Read the `Documentation at ReadTheDocs.org <http://circuitpython-cirque-pinnacle.rtfd.io/>`_
