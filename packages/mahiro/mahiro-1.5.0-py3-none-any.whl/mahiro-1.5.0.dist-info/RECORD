@@ -1,0 +1,10 @@
+mahiro/__init__.py,sha256=CybiAi5d3s8XoKzrsyqFramV4Kb8Dz77r6MDrPaJ3qY,112
+mahiro/main.py,sha256=sICYAZLllwPRnbLh9-VVM8DlDn9N2CadJImF_GJbru8,1388
+mahiro/models.py,sha256=YC8XjTtdIbDwovzmbkPUfiJcadDerKoXKrk4u5DqQvQ,4449
+mahiro/send.py,sha256=woxKBVLgfC2tR2TB7H6obei9X70PyuNgfFS1cpDftdc,2316
+mahiro/version.py,sha256=qES-IZ6zqJOP7rIsdL8ARFeVec9WeO-kd278gxhW7Ks,22
+mahiro-1.5.0.dist-info/LICENSE,sha256=gAZ50sgE_V12mn4DH4_qMvbhIKXSxfV824wujs2XDbI,1064
+mahiro-1.5.0.dist-info/METADATA,sha256=CjvJBt8d9w8MmoN3EmG2qlQX3IiEGjvj3X_EmNdZ4oo,561
+mahiro-1.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mahiro-1.5.0.dist-info/top_level.txt,sha256=J808OMSZ6MXYk1_l0wKCLnGO5ec65ZJPGjkmM6E_PsM,7
+mahiro-1.5.0.dist-info/RECORD,,

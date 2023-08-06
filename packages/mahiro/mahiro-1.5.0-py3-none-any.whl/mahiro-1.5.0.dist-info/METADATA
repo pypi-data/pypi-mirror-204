@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mahiro
+Version: 1.5.0
+Summary: Python bridge for Mahiro
+Home-page: https://github.com/opq-osc/mahiro
+Author: fz6m
+Author-email: i@fz6m.com
+License: MIT
+Keywords: OPQ,OPQBot,mahiro
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi (>=0.95.0)
+Requires-Dist: pydantic (>=1.10.7)
+Requires-Dist: requests (>=2.28.2)
+Requires-Dist: uvicorn[standard]
+Requires-Dist: termcolor
+
+# mahiro
+
+Python bridge for Mahiro.
+
+See more information at [mahiro](https://github.com/opq-osc/mahiro)
