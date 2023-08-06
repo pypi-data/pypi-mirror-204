@@ -1,0 +1,1 @@
+from data_watch.pipeline.execution.synchronously import run_pipeline
