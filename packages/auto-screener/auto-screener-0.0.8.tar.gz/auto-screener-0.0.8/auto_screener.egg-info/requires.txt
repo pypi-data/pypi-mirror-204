@@ -1,0 +1,7 @@
+pyrepresent
+numpy
+pandas
+tqdm
+ccxt
+
+[dev]
