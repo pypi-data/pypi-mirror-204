@@ -1,0 +1,3 @@
+[console_scripts]
+activate-ppp=pppps2pc:main
+

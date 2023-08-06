@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pppps2pc
+Version: 0.0.1
+Summary: Enable the ParaParaParadise controller with HIDAPI.
+Home-page: https://github.com/Tatsh/pppps2p
+License: MIT
+Keywords: command line,utilities,paraparaparadise,peripherals
+Author: Andrew Udvare
+Author-email: audvare@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Requires-Dist: hidapi (>=0.13.1,<0.14.0)
+Project-URL: Documentation, https://github.com/Tatsh/pppps2pc
+Description-Content-Type: text/markdown
+
+# About
+
+Extremely basic utility to enable the [_ParaParaParadise_](https://en.wikipedia.org/wiki/Para_Para_Paradise) controller for PlayStation 2 on PC. Just plug it in and run `activate-ppp`. See [99-ppp.rules](./99-ppp.rules) for a udev rule.
+
