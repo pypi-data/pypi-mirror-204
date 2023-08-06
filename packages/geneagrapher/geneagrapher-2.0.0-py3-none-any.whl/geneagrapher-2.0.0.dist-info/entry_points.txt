@@ -1,0 +1,3 @@
+[console_scripts]
+ggrapher=geneagrapher.geneagrapher:run
+

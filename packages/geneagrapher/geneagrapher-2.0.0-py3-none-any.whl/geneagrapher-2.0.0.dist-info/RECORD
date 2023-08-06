@@ -1,0 +1,10 @@
+geneagrapher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geneagrapher/geneagrapher.py,sha256=6zwbBEQhp3ziZS6NYr5KxfOK11dt4CqwbnGGM96bRGU,7631
+geneagrapher/output/dot.py,sha256=XhGOoUg-lAuvq2PWPP3QHKwGg_b1h4vX7AI4BN518sI,2103
+geneagrapher/output/identity.py,sha256=6JiOtraBGKKD_3mXjIOs_MV-JSjo-0YGewQgsnklBJc,402
+geneagrapher/types.py,sha256=dua403JuR4eG2dvzsUsWov190OwLQoUZHM8Hgr__MDY,530
+geneagrapher-2.0.0.dist-info/LICENSE.md,sha256=jiZqNEyA7GvJ7fwl_PEIEbKPdG6o0XjjmyXR8kyHRWY,1075
+geneagrapher-2.0.0.dist-info/METADATA,sha256=dNJZm1xG_XXaphbdERUrKVs9bOXm5HaTzDiLpDsA3Z0,7079
+geneagrapher-2.0.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+geneagrapher-2.0.0.dist-info/entry_points.txt,sha256=faqVQUAv-7NTkrWF6D63l7fw6bfb-YfAVLKmt_-O4bk,58
+geneagrapher-2.0.0.dist-info/RECORD,,
