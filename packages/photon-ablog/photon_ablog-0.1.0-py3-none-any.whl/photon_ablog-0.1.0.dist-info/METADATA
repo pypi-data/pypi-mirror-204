@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: photon-ablog
+Version: 0.1.0
+Summary: A Sphinx extension that converts any documentation or personal website project into a full-fledged blog.
+Home-page: https://photon-platform.github.io/photon-ablog/
+Author: phi ARCHITECT
+Author-email: phi@phiarchitect.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: docutils
+Requires-Dist: feedgen (>=0.9.0)
+Requires-Dist: invoke (>=1.6.0)
+Requires-Dist: python-dateutil (>=2.8.0)
+Requires-Dist: sphinx (>=4.0.0)
+Requires-Dist: watchdog (>=2.0.0)
+Provides-Extra: all
+Requires-Dist: ipython ; extra == 'all'
+Requires-Dist: myst-parser (>=0.17.0) ; extra == 'all'
+Requires-Dist: nbsphinx ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: alabaster ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: myst-parser (>=0.17.0) ; extra == 'dev'
+Requires-Dist: nbsphinx ; extra == 'dev'
+Requires-Dist: pytest (>=6.0.0) ; extra == 'dev'
+Requires-Dist: sphinx-automodapi ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: alabaster ; extra == 'docs'
+Requires-Dist: sphinx-automodapi ; extra == 'docs'
+Provides-Extra: markdown
+Requires-Dist: myst-parser (>=0.17.0) ; extra == 'markdown'
+Provides-Extra: notebook
+Requires-Dist: ipython ; extra == 'notebook'
+Requires-Dist: nbsphinx ; extra == 'notebook'
+Provides-Extra: tests
+Requires-Dist: pytest (>=6.0.0) ; extra == 'tests'
+
+The **PHOTON platform - ablog** is forked from https://github.com/sunpy/ablog
+at v0.10.25
+
+ABlog is a Sphinx extension for generating a log oriented static site. It
+can be easily integrated with documentation for Python modules.
+
+I am planning a major refactoring of this project, mostly to integrate it into a larger set of requirements. This will probably result in breaking changes to any further updates from SunPy.
+
+
+
+
