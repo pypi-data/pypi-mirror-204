@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: dspawpy
+Version: 0.8.8
+Summary: Tools for dspaw
+Home-page: http://www.hzwtech.com/
+Author: Hzwtech
+License: MIT
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: pymatgen (>=2021.2.8.1)
+Requires-Dist: statsmodels (>=0.12.0)
+Requires-Dist: h5py (>=3.7)
+Requires-Dist: joblib
+
+# 安装提示
+
+如果普通pip可以安装dspawpy，但是conda环境中的pip无法安装，报错
+
+ERROR: Could not find a version that satisfies the requirement dspawpy
+
+那么，尝试升级conda和pip
+
+```sh
+conda update conda
+conda update pip
+```
+
+再重新用pip安装。
+
+详见 https://stackoverflow.com/questions/75542688/conda-installed-pip-failed-to-find-packages/75542962#75542962
+
+版本更新简述：
+
+## 0.8.8
+
+- 新增功能： 支持读取正在进行中的NEB信息，生成movie轨迹文件（可用DS打开观察）
+- 新增功能： 支持NEB转XYZ轨迹文件（可用OVITO打开观察）
+- 新增功能： plot_aimd 支持读取多个h5文件画在同一张图中
+- BUG修复： 电荷差分处理json文件报错
+- BUG修复： 极化曲线标记的数值错误
+- BUG修复： neb_movie_*.json 中反应坐标重复累加错误
+
+## 0.8.7
+
+- 代码重构，大幅修改数据结构，加速处理过程
+- 支持读取h5格式的输出文件
+- 新增AIMD, NEB等部分常用功能
+
+## 0.3.0
+
+- 对应2021A版本DS-PAW，辅助处理一些常见数据文件
