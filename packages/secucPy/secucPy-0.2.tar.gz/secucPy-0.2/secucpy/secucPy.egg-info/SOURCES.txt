@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+secucpy/secucPy.egg-info/PKG-INFO
+secucpy/secucPy.egg-info/SOURCES.txt
+secucpy/secucPy.egg-info/dependency_links.txt
+secucpy/secucPy.egg-info/requires.txt
+secucpy/secucPy.egg-info/top_level.txt
