@@ -1,0 +1,5 @@
+[asphalt.components]
+spacex = fps_spacex.main:SpacexComponent
+
+[jupyspace.components]
+spacex = fps_spacex.main:SpacexComponent

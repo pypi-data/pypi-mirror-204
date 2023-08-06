@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: fps-spacex
+Version: 0.0.3
+Summary: JupySpace's user interface
+Project-URL: Source, https://github.com/davidbrochart/jupyspace/plugins/fps-spacex
+Author-email: David Brochart <david.brochart@gmail.com>
+License: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: jinja2
+Requires-Dist: jupyspace-api
+Description-Content-Type: text/markdown
+
+# fps-spacex
+
+JupySpace's user interface based on htmx
