@@ -1,0 +1,6 @@
+langchain
+tiktoken
+unstructured
+fastapi
+faiss-cpu
+pdfminer.six
