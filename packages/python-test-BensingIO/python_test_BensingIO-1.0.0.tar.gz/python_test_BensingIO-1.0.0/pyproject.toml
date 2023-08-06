@@ -1,0 +1,17 @@
+[project]
+name = "python_test_BensingIO"
+version = "1.0.0"
+authors = [
+  { name="Bill Bensing", email="bill@bensing.io" },
+]
+description = "The test package for structuring PyPi distributions"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/bensing-io/pypi-test-bensing-io"
