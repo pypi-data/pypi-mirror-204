@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: data-watch-sdk
+Version: 0.0.1b1
+Summary: Data Watch Python SDK
+Home-page: https://alpha.dev
+Author: Algora Labs
+Author-email: hello@algoralabs.com
+License: UNKNOWN
+Description: # Data Watch
+        
+        
+        ## SDK
+        
+        The [data-watch](https://pypi.org/project/data-watch/) allows users to programmatically access our APIs and data.
+        
+        ### Installation
+        
+        Set the following environment variables for your username and password for [Algora Labs](https://app.algoralabs.com/).
+        
+        ```text
+        ALGORA_USER=<username>
+        ALGORA_PWD=<password>
+        ```
+        
+        ## Help
+        
+        If you need any help or have feedback, please email us at [support@algoralabs.com](mailto:support@algoralabs.com).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
