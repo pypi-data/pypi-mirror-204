@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cumulus-kern
+Version: 0.0.1
+Summary: Kernel functions for Cumulus
+Home-page: https://github.com/nino-baywa/cumulus_kern
+Author: BayWa Data Services GmbH
+Author-email: no-reply@baywa-re.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
