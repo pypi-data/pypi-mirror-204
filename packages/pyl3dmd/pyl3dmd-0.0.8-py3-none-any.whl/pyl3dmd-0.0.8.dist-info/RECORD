@@ -1,0 +1,17 @@
+pyl3dmd/PyL3dMD.py,sha256=A1ZrjBaGS7mKquFHky0-4P7RAk574_6fUysyMRD0pLc,7978
+pyl3dmd/__init__.py,sha256=iClObwtRPqmei0wv8Qt3oKExTsBY45aOpqPa8KGOEOA,908
+pyl3dmd/descriptors1set.py,sha256=achrXd0CGybZjR-7-P-oMo3My5wUcdJnrAE9vFFAQrQ,15385
+pyl3dmd/descriptors2set.py,sha256=qacFpSXXgCilEfyuLeEDDDx60Ach5zVyyq3yDOO-hAo,24929
+pyl3dmd/descriptors3set.py,sha256=8qFPboDOYThlR8ssrOimN2fiZcXXYoL6CvJcJQgFuFg,11137
+pyl3dmd/descriptors4set.py,sha256=d0agtPrrmR6MMitR6grW66Gpf1s7i7RDQ080fioPu4I,7700
+pyl3dmd/descriptors5set.py,sha256=u_Z2JMKWxe8DjTmg2wOfyDf1JaBJ9txEtBReyG6dl68,3086
+pyl3dmd/descriptors6set.py,sha256=5xzwPO2HXh2-k4z_ogmf-tQU1Nyspx3ZBjh-u4ib69A,4278
+pyl3dmd/getadjacencyanddistancematrices.py,sha256=3lLeUB14QcIHywdgUZbV7U0PM-k6Gj2gX2RFg8yONK4,3895
+pyl3dmd/getatomicproperties.py,sha256=UjJaKgEvVEQURa5MXHlwiUBMz26U-z-GpdGR-mBmM_U,8741
+pyl3dmd/getinfofromlammpsdatafile.py,sha256=7jhdVZ8W8FdMECHMlFliELMyQhHUVhE0oMlbaH1Cu7A,10918
+pyl3dmd/getinfofromlammpstrajfile.py,sha256=ThWrbu2VyKjJaA6NYwpELlmi4yDuR6Ah05Xkzk8IidY,11194
+pyl3dmd/removehydrogenfrommolecule.py,sha256=JSXduytzOUtS6n-IrRoMg3hGnfaa64dKwC_7ENeCYPw,3271
+pyl3dmd-0.0.8.dist-info/METADATA,sha256=qUjFi0r3Vf-Gg7FxYooV_ty6HgZBa9MJD9JomLVB6w8,753
+pyl3dmd-0.0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyl3dmd-0.0.8.dist-info/top_level.txt,sha256=J5MSkc9uwMLIvhfqlu6ngmAHff0rczQsoRHsn_x5_IQ,8
+pyl3dmd-0.0.8.dist-info/RECORD,,
