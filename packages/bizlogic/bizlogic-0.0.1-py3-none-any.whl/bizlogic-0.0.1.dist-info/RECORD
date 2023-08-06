@@ -1,0 +1,8 @@
+bizlogic/__init__.py,sha256=F-8FrN5JPg-VmrjsfRwdwtSIPe5Dj65HK7XVUix7ef0,58
+bizlogic/application.py,sha256=ZnIjGinFrBQU8T_-790z060W8Iw4tRD599Bl7MTGrBg,2204
+bizlogic/loan.py,sha256=lPm-9m2hDAh8XJevyhmfpN4w8vuzgsnYgEXtACq2TOE,6704
+bizlogic/vouch.py,sha256=r2kjwg2wUUR1t_ZUYcpWYxHc_agkswc77KCa817sOHM,1781
+bizlogic-0.0.1.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+bizlogic-0.0.1.dist-info/METADATA,sha256=dBQev77wwqKtD8vDGB5Eb71O3FVDFHYl3elg3udkfiQ,2531
+bizlogic-0.0.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+bizlogic-0.0.1.dist-info/RECORD,,
