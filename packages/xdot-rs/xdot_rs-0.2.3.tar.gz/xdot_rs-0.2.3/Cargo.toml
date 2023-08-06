@@ -1,0 +1,39 @@
+[package]
+name = 'xdot'
+version = "0.2.3"
+authors = ['Philipp A. <flying-sheep@web.de>']
+edition = '2021'
+description = 'Parse graphviz’ xdot draw instructions'
+documentation = 'https://docs.rs/xdot'
+readme = 'README.md'
+repository = 'https://github.com/flying-sheep/xdot-rust'
+license = 'GPL-3.0'
+keywords = ['graphviz', 'graph']
+categories = ['parser-implementations', 'rendering::data-formats']
+
+[package.metadata.docs.rs]
+all-features = true
+
+[features]
+## The `layout` feature allows to parse `xdot` attributes from
+## [graphviz_rust]’s [Graph](graphviz_rust::dot_structures::Graph)s
+## using [draw_graph].
+layout = ['graphviz-rust', 'thiserror']
+## The `extension-module` feature enables using the crate from Python.
+extension-module = ['pyo3', 'pyo3/extension-module']
+## The `pyo3` module is for testing Python features.
+pyo3 = ['dep:pyo3']
+
+[dependencies]
+bitflags = '1.3.2'
+document-features = { version = '0.2.7', optional = true }
+graphviz-rust = { version = '0.6.1', optional = true }
+nom = '7.1.3'
+pest = '2.5.4'
+pest_derive = '2.5.4'
+thiserror = { version = '1.0.38', optional = true }
+pyo3 = { version = '0.18.2', optional = true, features = ['multiple-pymethods']}
+paste = "1.0.12"
+
+[build-dependencies]
+rustc_version = '0.4.0'

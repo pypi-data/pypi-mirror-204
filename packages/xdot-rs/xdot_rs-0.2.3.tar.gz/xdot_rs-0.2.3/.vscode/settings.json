@@ -1,0 +1,15 @@
+{
+    "rust-analyzer.cargo.features": ["layout", "pyo3"], //not extension-module
+    "rust-analyzer.check.command": "clippy",
+    "explorer.sortOrder": "mixed",
+    "[rust]": {
+        "editor.formatOnSave": true,
+    },
+    "[python]": {
+        "editor.formatOnSave": true,
+    },
+    "python.formatting.provider": "black",
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [],
+}
