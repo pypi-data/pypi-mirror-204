@@ -1,0 +1,53 @@
+import typing_extensions
+
+from taurus_datajob_api.paths import PathValues
+from taurus_datajob_api.apis.paths.data_jobs_for_team_team_name_info import DataJobsForTeamTeamNameInfo
+from taurus_datajob_api.apis.paths.data_jobs_for_team_team_name_jobs import DataJobsForTeamTeamNameJobs
+from taurus_datajob_api.apis.paths.data_jobs_for_team_team_name_jobs_job_name import DataJobsForTeamTeamNameJobsJobName
+from taurus_datajob_api.apis.paths.data_jobs_for_team_team_name_jobs_job_name_keytab import DataJobsForTeamTeamNameJobsJobNameKeytab
+from taurus_datajob_api.apis.paths.data_jobs_for_team_team_name_jobs_job_name_team_new_team import DataJobsForTeamTeamNameJobsJobNameTeamNewTeam
+from taurus_datajob_api.apis.paths.data_jobs_for_team_team_name_jobs_job_name_deployments import DataJobsForTeamTeamNameJobsJobNameDeployments
+from taurus_datajob_api.apis.paths.data_jobs_for_team_team_name_jobs_job_name_deployments_deployment_id import DataJobsForTeamTeamNameJobsJobNameDeploymentsDeploymentId
+from taurus_datajob_api.apis.paths.data_jobs_for_team_team_name_jobs_job_name_executions import DataJobsForTeamTeamNameJobsJobNameExecutions
+from taurus_datajob_api.apis.paths.data_jobs_for_team_team_name_jobs_job_name_deployments_deployment_id_executions import DataJobsForTeamTeamNameJobsJobNameDeploymentsDeploymentIdExecutions
+from taurus_datajob_api.apis.paths.data_jobs_for_team_team_name_jobs_job_name_executions_execution_id import DataJobsForTeamTeamNameJobsJobNameExecutionsExecutionId
+from taurus_datajob_api.apis.paths.data_jobs_for_team_team_name_jobs_job_name_executions_execution_id_logs import DataJobsForTeamTeamNameJobsJobNameExecutionsExecutionIdLogs
+from taurus_datajob_api.apis.paths.data_jobs_for_team_team_name_jobs_job_name_deployments_deployment_id_properties import DataJobsForTeamTeamNameJobsJobNameDeploymentsDeploymentIdProperties
+from taurus_datajob_api.apis.paths.data_jobs_for_team_team_name_jobs_job_name_sources import DataJobsForTeamTeamNameJobsJobNameSources
+
+PathToApi = typing_extensions.TypedDict(
+    'PathToApi',
+    {
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_INFO: DataJobsForTeamTeamNameInfo,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS: DataJobsForTeamTeamNameJobs,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME: DataJobsForTeamTeamNameJobsJobName,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_KEYTAB: DataJobsForTeamTeamNameJobsJobNameKeytab,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_TEAM_NEW_TEAM: DataJobsForTeamTeamNameJobsJobNameTeamNewTeam,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_DEPLOYMENTS: DataJobsForTeamTeamNameJobsJobNameDeployments,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_DEPLOYMENTS_DEPLOYMENT_ID: DataJobsForTeamTeamNameJobsJobNameDeploymentsDeploymentId,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_EXECUTIONS: DataJobsForTeamTeamNameJobsJobNameExecutions,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_DEPLOYMENTS_DEPLOYMENT_ID_EXECUTIONS: DataJobsForTeamTeamNameJobsJobNameDeploymentsDeploymentIdExecutions,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_EXECUTIONS_EXECUTION_ID: DataJobsForTeamTeamNameJobsJobNameExecutionsExecutionId,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_EXECUTIONS_EXECUTION_ID_LOGS: DataJobsForTeamTeamNameJobsJobNameExecutionsExecutionIdLogs,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_DEPLOYMENTS_DEPLOYMENT_ID_PROPERTIES: DataJobsForTeamTeamNameJobsJobNameDeploymentsDeploymentIdProperties,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_SOURCES: DataJobsForTeamTeamNameJobsJobNameSources,
+    }
+)
+
+path_to_api = PathToApi(
+    {
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_INFO: DataJobsForTeamTeamNameInfo,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS: DataJobsForTeamTeamNameJobs,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME: DataJobsForTeamTeamNameJobsJobName,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_KEYTAB: DataJobsForTeamTeamNameJobsJobNameKeytab,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_TEAM_NEW_TEAM: DataJobsForTeamTeamNameJobsJobNameTeamNewTeam,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_DEPLOYMENTS: DataJobsForTeamTeamNameJobsJobNameDeployments,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_DEPLOYMENTS_DEPLOYMENT_ID: DataJobsForTeamTeamNameJobsJobNameDeploymentsDeploymentId,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_EXECUTIONS: DataJobsForTeamTeamNameJobsJobNameExecutions,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_DEPLOYMENTS_DEPLOYMENT_ID_EXECUTIONS: DataJobsForTeamTeamNameJobsJobNameDeploymentsDeploymentIdExecutions,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_EXECUTIONS_EXECUTION_ID: DataJobsForTeamTeamNameJobsJobNameExecutionsExecutionId,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_EXECUTIONS_EXECUTION_ID_LOGS: DataJobsForTeamTeamNameJobsJobNameExecutionsExecutionIdLogs,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_DEPLOYMENTS_DEPLOYMENT_ID_PROPERTIES: DataJobsForTeamTeamNameJobsJobNameDeploymentsDeploymentIdProperties,
+        PathValues.DATAJOBS_FORTEAM_TEAM_NAME_JOBS_JOB_NAME_SOURCES: DataJobsForTeamTeamNameJobsJobNameSources,
+    }
+)
