@@ -1,0 +1,15 @@
+README.md
+setup.py
+elevenlabs/__init__.py
+elevenlabs/utils.py
+elevenlabs.egg-info/PKG-INFO
+elevenlabs.egg-info/SOURCES.txt
+elevenlabs.egg-info/dependency_links.txt
+elevenlabs.egg-info/requires.txt
+elevenlabs.egg-info/top_level.txt
+elevenlabs/api/__init__.py
+elevenlabs/api/base.py
+elevenlabs/api/history.py
+elevenlabs/api/tts.py
+elevenlabs/api/user.py
+elevenlabs/api/voice.py
