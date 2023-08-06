@@ -1,0 +1,11 @@
+IPython
+beautifulsoup4
+keras>=2.4.0
+numpy
+pandas
+pdfminer.six>=20191020
+pillow
+selectivesearch
+tabula-py
+tensorflow>=2.2
+wand
