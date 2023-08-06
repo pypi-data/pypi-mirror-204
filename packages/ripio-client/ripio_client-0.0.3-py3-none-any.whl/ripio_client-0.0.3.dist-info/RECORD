@@ -1,0 +1,11 @@
+ripio/__init__.py,sha256=12TC5yKVumzaVuzDu75aLCrnAH_zP_3gundP7jBukU8,216
+ripio/core.py,sha256=EdDDKSNmyjOJa7k_awT0g8V6K3dfp69X6Nh3VSyeFII,3747
+ripio/exceptions/auth.py,sha256=rUH_Grx0M7cQIjZsL-Sw31Yus6rT6rjFhwx_sfZfU_g,45
+ripio/exceptions/request.py,sha256=6PJIv-UzU1OgWCilygwI__dev4Uc9hL12Mbe8-pb8XE,45
+ripio/exceptions/response.py,sha256=ky0c8sjJKMRjkOuPc2hVIUF79B3sdwaMbVsu2eBy6E4,49
+ripio/trade/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ripio/trade/client.py,sha256=vtSQvU_bhUe_23llkaVz4XcLm_BgVHTZQquE9YOZpdo,9878
+ripio_client-0.0.3.dist-info/METADATA,sha256=DQmKELzV6j5PPjDQnsfU70mmZSrQrRCMEfIVGL6GOX8,1517
+ripio_client-0.0.3.dist-info/WHEEL,sha256=9MIigYJ7D5sOqAPqr0-o6tSMY_nQ7c6kvtvyeUB99YQ,87
+ripio_client-0.0.3.dist-info/licenses/LICENSE,sha256=RitSYFj9izZfFb0FsarPqT8vy1Q9wU-a8tA1GF0o2fc,11348
+ripio_client-0.0.3.dist-info/RECORD,,
