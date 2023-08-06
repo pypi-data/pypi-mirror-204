@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: shapelets-rec-server
+Version: 0.1.dev1
+Summary: Python native bindings
+Home-page: https://shapelets.io
+Author: Shapelets.io
+Author-email: dev@shapelets.io
+Maintainer: Shapelets Dev Team
+Maintainer-email: info@shapelets.io
+Project-URL: Homepage, https://shapelets.io/
+Project-URL: Documentation, https://shapelets.io/doc/contents.html
+Platform: Any
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: Other/Proprietary License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: blacksheep (~=1.2)
+Requires-Dist: tqdm (~=4.64)
+Requires-Dist: pyzmq (~=24.0)
+Requires-Dist: py-cpuinfo (~=9.0)
+Requires-Dist: pydantic (~=1.10)
+Requires-Dist: python-dotenv (~=0.21)
+Requires-Dist: orjson (~=3.8)
+Provides-Extra: influx
+Requires-Dist: line-protocol-parser (~=1.1.1) ; extra == 'influx'
+
+Event recorder and indexer
