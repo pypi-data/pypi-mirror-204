@@ -1,0 +1,18 @@
+{
+ "additionalProperties": true,
+ "anyOf": [
+  {
+   "required": [
+    "EventPattern"
+   ]
+  },
+  {
+   "required": [
+    "ScheduleExpression"
+   ]
+  }
+ ],
+ "description": "Specify at least one of 'EventPattern' and 'ScheduleExpression'",
+ "properties": {},
+ "type": "object"
+}

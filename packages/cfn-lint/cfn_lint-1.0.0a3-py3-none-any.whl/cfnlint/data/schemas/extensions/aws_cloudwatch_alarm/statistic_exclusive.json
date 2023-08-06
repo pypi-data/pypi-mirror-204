@@ -1,0 +1,20 @@
+{
+ "additionalProperties": true,
+ "description": "When you specify 'Statistic' do not specify 'ExtendedStatistic''",
+ "not": {
+  "allOf": [
+   {
+    "required": [
+     "Statistic"
+    ]
+   },
+   {
+    "required": [
+     "ExtendedStatistic"
+    ]
+   }
+  ]
+ },
+ "properties": {},
+ "type": "object"
+}

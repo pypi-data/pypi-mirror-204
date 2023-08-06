@@ -1,0 +1,25 @@
+{
+ "additionalProperties": true,
+ "description": "When creating a serverless 'EngineMode' don't specify 'ScalingConfiguration'",
+ "else": {},
+ "if": {
+  "properties": {
+   "EngineMode": {
+    "pattern": "^((?!serverless).)*$"
+   }
+  }
+ },
+ "then": {
+  "not": {
+   "properties": {
+    "ScalingConfiguration": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "ScalingConfiguration"
+   ]
+  }
+ },
+ "type": "object"
+}

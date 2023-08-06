@@ -1,0 +1,24 @@
+{
+ "additionalProperties": true,
+ "description": "When you specify 'IamCertificateId' you must specify 'SslSupportMethod'",
+ "else": {},
+ "if": {
+  "properties": {
+   "IamCertificateId": {
+    "type": "string"
+   }
+  }
+ },
+ "properties": {},
+ "then": {
+  "properties": {
+   "SslSupportMethod": {
+    "type": "string"
+   }
+  },
+  "required": [
+   "SslSupportMethod"
+  ]
+ },
+ "type": "object"
+}

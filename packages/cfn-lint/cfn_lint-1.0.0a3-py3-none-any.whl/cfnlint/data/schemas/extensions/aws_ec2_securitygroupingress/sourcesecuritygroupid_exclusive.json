@@ -1,0 +1,20 @@
+{
+ "additionalProperties": true,
+ "description": "When you specify 'SourceSecurityGroupId' do not specify 'SourceSecurityGroupName''",
+ "not": {
+  "allOf": [
+   {
+    "required": [
+     "SourceSecurityGroupId"
+    ]
+   },
+   {
+    "required": [
+     "SourceSecurityGroupName"
+    ]
+   }
+  ]
+ },
+ "properties": {},
+ "type": "object"
+}

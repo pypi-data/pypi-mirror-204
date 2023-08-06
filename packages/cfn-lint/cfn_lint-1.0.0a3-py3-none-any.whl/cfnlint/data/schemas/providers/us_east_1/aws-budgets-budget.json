@@ -1,0 +1,231 @@
+{
+ "additionalProperties": false,
+ "createOnlyProperties": [
+  "/properties/NotificationsWithSubscribers"
+ ],
+ "definitions": {
+  "AutoAdjustData": {
+   "additionalProperties": false,
+   "properties": {
+    "AutoAdjustType": {
+     "type": "string"
+    },
+    "HistoricalOptions": {
+     "$ref": "#/definitions/HistoricalOptions"
+    }
+   },
+   "required": [
+    "AutoAdjustType"
+   ],
+   "type": "object"
+  },
+  "BudgetData": {
+   "additionalProperties": false,
+   "properties": {
+    "AutoAdjustData": {
+     "$ref": "#/definitions/AutoAdjustData"
+    },
+    "BudgetLimit": {
+     "$ref": "#/definitions/Spend"
+    },
+    "BudgetName": {
+     "type": "string"
+    },
+    "BudgetType": {
+     "cfnSchema": "aws_budgets_budget/boto_budgettype_enum",
+     "type": "string"
+    },
+    "CostFilters": {
+     "type": "object"
+    },
+    "CostTypes": {
+     "$ref": "#/definitions/CostTypes"
+    },
+    "PlannedBudgetLimits": {
+     "type": "object"
+    },
+    "TimePeriod": {
+     "$ref": "#/definitions/TimePeriod"
+    },
+    "TimeUnit": {
+     "cfnSchema": "aws_budgets_budget/boto_timeunit_enum",
+     "type": "string"
+    }
+   },
+   "required": [
+    "TimeUnit",
+    "BudgetType"
+   ],
+   "type": "object"
+  },
+  "CostTypes": {
+   "additionalProperties": false,
+   "properties": {
+    "IncludeCredit": {
+     "type": "boolean"
+    },
+    "IncludeDiscount": {
+     "type": "boolean"
+    },
+    "IncludeOtherSubscription": {
+     "type": "boolean"
+    },
+    "IncludeRecurring": {
+     "type": "boolean"
+    },
+    "IncludeRefund": {
+     "type": "boolean"
+    },
+    "IncludeSubscription": {
+     "type": "boolean"
+    },
+    "IncludeSupport": {
+     "type": "boolean"
+    },
+    "IncludeTax": {
+     "type": "boolean"
+    },
+    "IncludeUpfront": {
+     "type": "boolean"
+    },
+    "UseAmortized": {
+     "type": "boolean"
+    },
+    "UseBlended": {
+     "type": "boolean"
+    }
+   },
+   "type": "object"
+  },
+  "HistoricalOptions": {
+   "additionalProperties": false,
+   "properties": {
+    "BudgetAdjustmentPeriod": {
+     "type": "integer"
+    }
+   },
+   "required": [
+    "BudgetAdjustmentPeriod"
+   ],
+   "type": "object"
+  },
+  "Notification": {
+   "additionalProperties": false,
+   "properties": {
+    "ComparisonOperator": {
+     "cfnSchema": "aws_budgets_budget/boto_comparisonoperator_enum",
+     "type": "string"
+    },
+    "NotificationType": {
+     "cfnSchema": "aws_budgets_budget/boto_notificationtype_enum",
+     "type": "string"
+    },
+    "Threshold": {
+     "cfnSchema": "aws_budgets_budget/threshold_number",
+     "type": "number"
+    },
+    "ThresholdType": {
+     "cfnSchema": "aws_budgets_budget/boto_thresholdtype_enum",
+     "type": "string"
+    }
+   },
+   "required": [
+    "ComparisonOperator",
+    "NotificationType",
+    "Threshold"
+   ],
+   "type": "object"
+  },
+  "NotificationWithSubscribers": {
+   "additionalProperties": false,
+   "properties": {
+    "Notification": {
+     "$ref": "#/definitions/Notification"
+    },
+    "Subscribers": {
+     "items": {
+      "$ref": "#/definitions/Subscriber"
+     },
+     "type": "array",
+     "uniqueItems": false
+    }
+   },
+   "required": [
+    "Subscribers",
+    "Notification"
+   ],
+   "type": "object"
+  },
+  "Spend": {
+   "additionalProperties": false,
+   "properties": {
+    "Amount": {
+     "type": "number"
+    },
+    "Unit": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "Amount",
+    "Unit"
+   ],
+   "type": "object"
+  },
+  "Subscriber": {
+   "additionalProperties": false,
+   "properties": {
+    "Address": {
+     "type": "string"
+    },
+    "SubscriptionType": {
+     "cfnSchema": "aws_budgets_budget/boto_subscriptiontype_enum",
+     "type": "string"
+    }
+   },
+   "required": [
+    "SubscriptionType",
+    "Address"
+   ],
+   "type": "object"
+  },
+  "TimePeriod": {
+   "additionalProperties": false,
+   "properties": {
+    "End": {
+     "type": "string"
+    },
+    "Start": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  }
+ },
+ "description": "Resource Type definition for AWS::Budgets::Budget",
+ "primaryIdentifier": [
+  "/properties/Id"
+ ],
+ "properties": {
+  "Budget": {
+   "$ref": "#/definitions/BudgetData"
+  },
+  "Id": {
+   "type": "string"
+  },
+  "NotificationsWithSubscribers": {
+   "items": {
+    "$ref": "#/definitions/NotificationWithSubscribers"
+   },
+   "type": "array",
+   "uniqueItems": false
+  }
+ },
+ "readOnlyProperties": [
+  "/properties/Id"
+ ],
+ "required": [
+  "Budget"
+ ],
+ "typeName": "AWS::Budgets::Budget"
+}

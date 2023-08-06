@@ -1,0 +1,20 @@
+{
+ "additionalProperties": true,
+ "description": "When you specify 'GroupId' do not specify 'GroupName''",
+ "not": {
+  "allOf": [
+   {
+    "required": [
+     "GroupId"
+    ]
+   },
+   {
+    "required": [
+     "GroupName"
+    ]
+   }
+  ]
+ },
+ "properties": {},
+ "type": "object"
+}

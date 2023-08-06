@@ -1,0 +1,20 @@
+{
+ "additionalProperties": true,
+ "description": "When you specify 'VirtualName' do not specify 'Ebs'",
+ "not": {
+  "allOf": [
+   {
+    "required": [
+     "VirtualName"
+    ]
+   },
+   {
+    "required": [
+     "Ebs"
+    ]
+   }
+  ]
+ },
+ "properties": {},
+ "type": "object"
+}

@@ -1,0 +1,27 @@
+{
+ "additionalProperties": true,
+ "description": "Specify only 'MetricName' or 'Metrics'",
+ "oneOf": [
+  {
+   "properties": {
+    "MetricName": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "MetricName"
+   ]
+  },
+  {
+   "properties": {
+    "Metrics": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "Metrics"
+   ]
+  }
+ ],
+ "type": "object"
+}

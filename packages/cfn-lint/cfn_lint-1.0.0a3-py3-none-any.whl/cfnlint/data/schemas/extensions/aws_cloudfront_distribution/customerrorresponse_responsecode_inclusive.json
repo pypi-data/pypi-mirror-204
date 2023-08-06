@@ -1,0 +1,24 @@
+{
+ "additionalProperties": true,
+ "description": "When you specify 'ResponseCode' you must specify 'ResponsePagePath'",
+ "else": {},
+ "if": {
+  "properties": {
+   "ResponseCode": {
+    "type": "string"
+   }
+  }
+ },
+ "properties": {},
+ "then": {
+  "properties": {
+   "ResponsePagePath": {
+    "type": "string"
+   }
+  },
+  "required": [
+   "ResponsePagePath"
+  ]
+ },
+ "type": "object"
+}
