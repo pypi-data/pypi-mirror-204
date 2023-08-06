@@ -1,0 +1,4 @@
+bleach
+mt-940
+requests
+sepaxml~=2.1
