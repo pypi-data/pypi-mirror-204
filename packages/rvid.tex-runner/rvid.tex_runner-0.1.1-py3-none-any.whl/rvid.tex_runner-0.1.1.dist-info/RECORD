@@ -1,0 +1,9 @@
+rvid/tex_runner/__init__.py,sha256=Cd9-8jco2nSQ9yC4hx6x3q5oxFY87AAxNvCuWA7C3WM,1042
+rvid/tex_runner/__version__.py,sha256=aDfNBQh0vsVL7CSgYEMdMUbrxVw92raLxMivH20w2A4,160
+rvid/tex_runner/external_resources.py,sha256=inaR2rsJQYiC86outNhSWaw9liYP2MU11IkwrVImSqU,3169
+rvid/tex_runner/latex.py,sha256=0BzvusP723-Ay_Hb3dKTiCmZ2FpfKKMNVMshMCnV6M8,1422
+rvid/tex_runner/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rvid.tex_runner-0.1.1.dist-info/METADATA,sha256=H7PnJzP_6nWh7WcPugKC5IXLZibt5ZL88fRHUKE4kLA,1992
+rvid.tex_runner-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+rvid.tex_runner-0.1.1.dist-info/top_level.txt,sha256=rz8fjnC-_Qq_l6M7a7S4ZWH_OOTXXmYAhfn995K-Y7E,5
+rvid.tex_runner-0.1.1.dist-info/RECORD,,
