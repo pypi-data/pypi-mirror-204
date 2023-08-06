@@ -1,0 +1,28 @@
+---
+% if title is not UNDEFINED:
+title: ${title}
+% endif
+---
+% if group_by:
+<%
+  crit = lambda x: x.to_dict[group_by] if group_by in x.to_dict else None
+  grouped = collection.group_by(crit)
+%>
+
+% for key in sorted(grouped.keys()):
+
+# ${key}
+
+% for entry in sorted(grouped[key]):
+- [${entry}](${entry.path})
+% endfor
+
+% endfor
+
+% else:
+
+% for e in sorted(collection.entries):
+- [${e}](${e.path})
+% endfor
+
+% endif
