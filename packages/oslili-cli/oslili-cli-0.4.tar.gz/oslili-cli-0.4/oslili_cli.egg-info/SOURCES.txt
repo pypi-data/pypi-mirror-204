@@ -1,0 +1,13 @@
+LICENSE
+NOTICE
+README.md
+setup.cfg
+setup.py
+oslili_cli.egg-info/PKG-INFO
+oslili_cli.egg-info/SOURCES.txt
+oslili_cli.egg-info/dependency_links.txt
+oslili_cli.egg-info/entry_points.txt
+oslili_cli.egg-info/requires.txt
+oslili_cli.egg-info/top_level.txt
+src/__init__.py
+src/cli.py
