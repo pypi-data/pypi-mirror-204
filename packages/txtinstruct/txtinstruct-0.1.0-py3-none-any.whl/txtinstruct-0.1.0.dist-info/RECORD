@@ -1,0 +1,12 @@
+txtinstruct/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+txtinstruct/data.py,sha256=JmJOeythT0XxLX3wpKBIlbwsxmlb6V63sUKdnY6mjqQ,6395
+txtinstruct/models/__init__.py,sha256=T5qKPG209XvT_qDzB-Ytuf0jk0kz5basf45BpoafWvs,157
+txtinstruct/models/bashsql.py,sha256=9i9j10_Ol7s-CVuDqnNVnCHlXD4qpfYA2sJK0fV4fKs,5582
+txtinstruct/models/instructor.py,sha256=QkonwC5ZDtSPw-dX8SjdEbkVVIa6AC3A8hV30QNhYlc,2397
+txtinstruct/models/statement.py,sha256=rNCNkcem_9ftn6z3eTiJXXOshdnjl4HgXtiUBBdnNGs,2154
+txtinstruct/models/txtsql.py,sha256=8ih4DL8dw5Zu7qY7yM3-IfAuQWbHiVtKyn6ENMhi_og,6220
+txtinstruct-0.1.0.dist-info/LICENSE,sha256=0q5RnPqQBYlWJ54JoGndwccmW-F8wQKxd9CN748CDD8,10754
+txtinstruct-0.1.0.dist-info/METADATA,sha256=SME9jPIaXv_gYwtXwNA7s0Q6ffDFTe1seDibtlBVbdk,2917
+txtinstruct-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+txtinstruct-0.1.0.dist-info/top_level.txt,sha256=GP2HN9NPCT5QlwCPsoPBmNcwM-UqnMpZv03EAS3s6v0,12
+txtinstruct-0.1.0.dist-info/RECORD,,
