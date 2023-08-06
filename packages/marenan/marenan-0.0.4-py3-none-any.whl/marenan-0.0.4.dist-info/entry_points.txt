@@ -1,0 +1,3 @@
+[console_scripts]
+marenan = marenan.cli:main
+

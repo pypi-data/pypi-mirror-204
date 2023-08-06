@@ -1,0 +1,9 @@
+marenan-0.0.4.dist-info/METADATA,sha256=m-zu2cgvjAi5w-WoOwwmyo37hcDnks_S7xgdpG7tc10,1172
+marenan-0.0.4.dist-info/WHEEL,sha256=7dGFtUmOf30dPBLpGD2z643cxg89joO7p3JHBAwDv6E,90
+marenan-0.0.4.dist-info/entry_points.txt,sha256=j-zzaONH6kl0btijsj-B0oBGd-lDRPg1M5j5Ur-BnSQ,46
+marenan/__init__.py,sha256=cQp12txiEEnNibYgP581QWjjv5mRhxqjn2Uh6PUFFdw,52
+marenan/__main__.py,sha256=MSmt_5Xg84uHqzTN38JwgseJK8rsJn_11A8WD99VtEo,61
+marenan/cli/__init__.py,sha256=scqi0e0B_o1oxB_OLKaaN7NfAWgWjrCgI2Db_e9Hwv8,40
+marenan/cli/main.py,sha256=JUJ2EZVC2nh9X6aLn0aXnygdnIKLPFtoTO496l0AtWU,176
+marenan/marenanDay.py,sha256=o74hbsuMvhAfc7F-Ji-k1cb0Sno3IoS8wCmxcFvDZN0,174
+marenan-0.0.4.dist-info/RECORD,,
