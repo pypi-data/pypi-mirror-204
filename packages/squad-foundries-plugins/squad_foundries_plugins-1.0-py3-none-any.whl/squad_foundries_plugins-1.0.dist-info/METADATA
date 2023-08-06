@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: squad-foundries-plugins
+Version: 1.0
+Summary: SQUAD Foundries plugins
+Home-page: https://github.com/foundries/squadplugins
+Author: Milosz Wasilewski
+Author-email: milosz.wasilewski@foundries.io
+License: LGPLv3+
+Platform: any
+License-File: LICENSE
+Requires-Dist: squad[postgres] (>=1.32)
+Requires-Dist: requests
+
+
+    SQUAD plugins that are compatible with Linaro's test-definitions.
+    The package contains plugin for parsing MCU testing logs.
+    
