@@ -1,0 +1,25 @@
+.custom-widget {
+  background-color: lightseagreen;
+  padding: 0px 2px;
+}
+.properties-panel {
+    flex: 0 0 200px;
+    overflow: auto;
+   
+}     
+.pixano-host {
+    display: flex;
+    flex-direction: row;
+
+ }
+ .my-container {
+   display: flex;
+    width: 100%;
+   flex-direction: row;
+    --mdc-theme-secondary: #79005D;
+    flex : 1;
+  }
+  .editor{
+  	background : #FF0000;
+       width: 80%;
+  }
