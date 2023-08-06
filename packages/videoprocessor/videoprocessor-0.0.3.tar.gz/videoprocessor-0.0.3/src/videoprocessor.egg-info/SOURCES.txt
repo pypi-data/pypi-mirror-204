@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/videoprocessor/__init__.py
+src/videoprocessor/videoprocessor.py
+src/videoprocessor.egg-info/PKG-INFO
+src/videoprocessor.egg-info/SOURCES.txt
+src/videoprocessor.egg-info/dependency_links.txt
+src/videoprocessor.egg-info/top_level.txt
