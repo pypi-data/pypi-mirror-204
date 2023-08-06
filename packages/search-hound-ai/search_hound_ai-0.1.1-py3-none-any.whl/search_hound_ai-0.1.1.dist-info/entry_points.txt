@@ -1,0 +1,3 @@
+[console_scripts]
+search-hound-ai-cli=app:main
+
