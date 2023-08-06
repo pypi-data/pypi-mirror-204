@@ -1,0 +1,14 @@
+*.pyc
+.DS_Store
+.cache
+.coverage
+.coverage.*
+.direnv
+.envrc
+.mypy_cache
+.nox
+.pytest_cache
+.vscode
+dist
+docs/_build
+htmlcov
