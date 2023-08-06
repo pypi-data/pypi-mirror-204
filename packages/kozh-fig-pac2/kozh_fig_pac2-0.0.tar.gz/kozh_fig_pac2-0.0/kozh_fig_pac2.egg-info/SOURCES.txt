@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+kozh_fig_pac2/__init__.py
+kozh_fig_pac2.egg-info/PKG-INFO
+kozh_fig_pac2.egg-info/SOURCES.txt
+kozh_fig_pac2.egg-info/dependency_links.txt
+kozh_fig_pac2.egg-info/not-zip-safe
+kozh_fig_pac2.egg-info/top_level.txt
