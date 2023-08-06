@@ -1,0 +1,16 @@
+notegridy/cli.py,sha256=GTt3NRHZUdrZSSWIZlUQ2_j-QV4qH23Rc6DaxjGco1Y,3270
+notegridy/decrypt.py,sha256=HoUvqramERkt6vAMubkpZPulXdiPKIREdKqX7sfZZ8A,505
+notegridy/generate.php,sha256=sBbXeoQgUz_YVVgHeuqR3CwjAAVqArBXD9ClY6ecDC4,541
+notegridy/generate.py,sha256=78XBSz31YOM8pF1pmhQqSSCMe4-e58q8nXFAwfF3j1k,384
+notegridy/injector.py,sha256=iAxkbFe2H3jmeqMOdyw4pwIzflvEdlPlNPwVNFmR_Pk,4133
+notegridy/injected-code/init.php,sha256=DpmnKWRijPvnYE0wGo1p9XYDz7VItoKYgt6nb7GRWCs,65
+notegridy/injected-code/logging.php,sha256=Xv364rkrtTqBT_WS7qy6RiPV92lMuhbmWbbfhewoNXU,699
+notegridy/injected-code/override.php,sha256=jQEVpQRmXHsvW1AY1kmtdMKmZCmS8U8dpltDnkB4_eI,904
+notegridy/injected-code/rest_api.php,sha256=aZWQLirgic7Y9CWsc3sN5DPDIki2XRROzpqtlZwCOn8,486
+notegridy/injected-code/utils.php,sha256=aqRVTqo9o_W9Meawo_gGqEb1b2us0-ACCb0zlot_Gac,270
+no_tegridy-0.0.1.dist-info/LICENSE,sha256=ha8fulvcQqdk4vXES1kNp4qqZgtygZqmV62oXUDbwMU,1086
+no_tegridy-0.0.1.dist-info/METADATA,sha256=oC6A5mq9OsTl7hUGRdqXH19VWsPZKzOUO7RLVQfPrG0,1175
+no_tegridy-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+no_tegridy-0.0.1.dist-info/entry_points.txt,sha256=fg68aqb5X4FhyQHOBuCYtmLc0cC7xpWMp1GLFV2XYSg,49
+no_tegridy-0.0.1.dist-info/top_level.txt,sha256=A3-_OiPE6uAXTaPRyjXsyvHQuXo7Ga2UW4ABuB8KyIA,10
+no_tegridy-0.0.1.dist-info/RECORD,,
