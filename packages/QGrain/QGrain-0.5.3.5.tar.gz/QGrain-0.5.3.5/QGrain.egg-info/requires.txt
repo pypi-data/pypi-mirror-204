@@ -1,0 +1,15 @@
+psutil
+numpy
+scipy<=1.8.1
+scikit-learn
+grpcio
+protobuf
+xlrd
+openpyxl
+PySide6>=6.2.0
+matplotlib>=3.5.0
+SciencePlots<=1.0.8
+qt-material
+
+[server]
+torch
