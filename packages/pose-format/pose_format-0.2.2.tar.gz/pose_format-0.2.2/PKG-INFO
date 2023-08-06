@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pose_format
+Version: 0.2.2
+Summary: Library for viewing, augmenting, and handling .pose files
+Author-email: Amit Moryossef <amitmoryossef@gmail.com>
+Keywords: Pose Files,Pose Interpolation,Pose Augmentation
+Provides-Extra: dev
