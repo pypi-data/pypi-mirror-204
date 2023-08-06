@@ -1,0 +1,12 @@
+numpy
+omegaconf
+psutil
+pyserial
+pyyaml
+
+[dev]
+black
+darglint
+mypy
+pytest
+ruff

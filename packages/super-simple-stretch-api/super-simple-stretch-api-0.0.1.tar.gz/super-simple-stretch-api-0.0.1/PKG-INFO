@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: super-simple-stretch-api
+Version: 0.0.1
+Summary: Super simple Python API for controlling the Stretch RE1 robot
+Home-page: https://github.com/codekansas/super-simple-stretch-api
+Author: Benjamin Bolte
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# Super Simple Stretch API
+
+This is a super simple Python API for interacting with the Stretch robot.
+
+## Getting Started
+
+Install the API on the robot using the following command:
+
+```bash
+pip install super-simple-stretch-api
+```
