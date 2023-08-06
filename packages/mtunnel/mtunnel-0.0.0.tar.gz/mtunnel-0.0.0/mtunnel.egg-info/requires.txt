@@ -1,0 +1,6 @@
+bgtunnel
+botocore
+click
+python-dotenv
+pyyaml
+requests
