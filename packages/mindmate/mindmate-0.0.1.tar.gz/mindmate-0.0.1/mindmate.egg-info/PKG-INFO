@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: mindmate
+Version: 0.0.1
+Summary: MindMate is a command-line tool that leverages the power of AI platforms to offer different use-cases to developers
+Home-page: https://github.com/yalattas/mindmate
+Author: Yasser Alattas
+Author-email: y.alattas@gmail.com
+License: GNU LESSER GENERAL PUBLIC LICENSE V3
+Download-URL: https://github.com/yalattas/mindmate
+Description: MindMate is a powerful command-line tool that harnesses the capabilities of state-of-the-art artificial intelligence platforms to offer a wide range of use-cases to developers. With MindMate, developers can easily leverage advanced natural language processing (NLP) and machine learning (ML) functionalities to enable various applications
+Keywords: cli,ai,nlp,ml,developers,productivity,openai
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Other Environment
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: System Shells
+Classifier: Topic :: Utilities

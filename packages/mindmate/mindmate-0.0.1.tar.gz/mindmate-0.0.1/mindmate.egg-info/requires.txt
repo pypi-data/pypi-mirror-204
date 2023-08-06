@@ -1,0 +1,4 @@
+PyYAML==6
+click>=8.1
+openai>=0.27
+wheel

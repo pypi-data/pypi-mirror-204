@@ -1,0 +1,17 @@
+README.md
+setup.py
+mindmate/__init__.py
+mindmate/cli.py
+mindmate.egg-info/PKG-INFO
+mindmate.egg-info/SOURCES.txt
+mindmate.egg-info/dependency_links.txt
+mindmate.egg-info/entry_points.txt
+mindmate.egg-info/requires.txt
+mindmate.egg-info/top_level.txt
+mindmate/commands/__init__.py
+mindmate/commands/configure.py
+mindmate/commands/dropdb.py
+mindmate/commands/initdb.py
+mindmate/commands/nested_group.py
+mindmate/utils/__init__.py
+mindmate/utils/helper.py
