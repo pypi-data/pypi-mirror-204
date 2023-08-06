@@ -1,0 +1,2 @@
+[console_scripts]
+oxdork = oxdork.main:main
