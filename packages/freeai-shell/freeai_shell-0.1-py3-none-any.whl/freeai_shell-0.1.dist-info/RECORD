@@ -1,0 +1,17 @@
+aishell/__init__.py,sha256=YfzWHt548wXN29RCo0QKy7tfQDBPCJ_rMAgFxCSUgfI,78
+aishell/__main__.py,sha256=tG9HZpKLi-ixN_KrI9QbNHglAFJ5kgQKiYB8cedWqc4,134
+aishell/backend.py,sha256=eYUh6AAoHaHUFTCc-bz8oMpgUvFytFayk-M6DPp2Rdc,744
+aishell/backend_factory.py,sha256=o9sTvZBDfw-GMGJwCYVl0yWIcuifWzZ8CgQvL4mom_E,227
+aishell/config.py,sha256=sMLnRrs7oTaVAL0siNWZYHqiqEtkupzjAT7WFNu0Mzs,912
+aishell/construct_prompt.py,sha256=eVIVfLqp8putbPzWeMgAEOEDa9XhOMyNa1-2P_CJetY,267
+aishell/shell.py,sha256=vrxFeKFLJn03yE0V2dS6r5cBNRzWEv3LDpsqUFx5eNE,1243
+aishell/ora/__init__.py,sha256=EOqCXnRKAoNYDc6s11eOLomGdxwRKQ_VgA7sUmzSHLk,1897
+aishell/ora/model.py,sha256=MCI7jj530e95SssqOo2fSeiOwIwqnkeI260blNBXnEI,2020
+aishell/ora/typing.py,sha256=rIe1HbhENAzYMw4Njc18eSVFWrfsBaEd6jUdaNkKpb0,1890
+freeai_shell-0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+freeai_shell-0.1.dist-info/METADATA,sha256=1weP1aaAssQgtA9CTZ4nVByOcKF4i0w34ID9U0Yetec,427
+freeai_shell-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+freeai_shell-0.1.dist-info/dependency_links.txt,sha256=KoODQwhhBOGCdGuTCiFJYKe8d9KCkIQIzzAJQxXYKws,53
+freeai_shell-0.1.dist-info/entry_points.txt,sha256=lDXlTgFpJtKhKYAOslpKrVbKkZ_fqteSC2P79GSkDfI,49
+freeai_shell-0.1.dist-info/top_level.txt,sha256=d5QsSFfOrXpD7JVQMpih-b4ldhex1fSirj7dRvu5lsk,8
+freeai_shell-0.1.dist-info/RECORD,,

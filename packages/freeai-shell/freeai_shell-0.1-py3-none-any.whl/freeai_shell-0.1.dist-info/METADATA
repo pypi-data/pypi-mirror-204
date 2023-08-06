@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: freeai-shell
+Version: 0.1
+Summary: No token limit, no waitlist, Free AI shell
+Author: piDack
+Author-email: 
+License-File: LICENSE
+Requires-Dist: websocket-client
+Requires-Dist: requests
+Requires-Dist: tls-client
+Requires-Dist: pypasser
+Requires-Dist: names
+Requires-Dist: colorama
+Requires-Dist: curl-cffi
+Requires-Dist: rich
+Requires-Dist: pydantic
+Requires-Dist: pyyaml
+Requires-Dist: typer[all]
+

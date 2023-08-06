@@ -1,0 +1,2 @@
+[console_scripts]
+ais = aishell.__main__:cli_app
