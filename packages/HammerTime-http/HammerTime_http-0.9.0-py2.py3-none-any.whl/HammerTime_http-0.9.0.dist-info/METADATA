@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: HammerTime-http
+Version: 0.9.0
+Summary: HammerTime is an HTTP client library aiming to perform a large number of requests on a server as fast as it can take them, but without distrupting operations significantly.
+Home-page: https://github.com/delvelabs/hammertime
+Author: Delve Labs inc.
+Author-email: info@delvelabs.ca
+License: GPLv2
+Platform: UNKNOWN
+Requires-Python: >=3.8.0,<3.12.0
+License-File: LICENSE.md
+Requires-Dist: aiodns (<3.0.0,>=1.1.1)
+Requires-Dist: aiohttp (<4.0.0,>=3.7.3)
+Requires-Dist: coverage (==4.2)
+Requires-Dist: easyinject (==0.3)
+Requires-Dist: flake8 (==3.8.4)
+Requires-Dist: marshmallow-autoschema (==0.3.3)
+Requires-Dist: marshmallow-har (==1.1.0)
+
+UNKNOWN
+
