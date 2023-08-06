@@ -1,0 +1,15 @@
+pyproject.toml
+readme.md
+np_stream/__init__.py
+np_stream/benchmark.py
+np_stream/npy.py
+np_stream/npy_utils.py
+np_stream/npz.py
+np_stream/test.py
+np_stream/utils.py
+np_stream/zip.py
+np_stream.egg-info/PKG-INFO
+np_stream.egg-info/SOURCES.txt
+np_stream.egg-info/dependency_links.txt
+np_stream.egg-info/requires.txt
+np_stream.egg-info/top_level.txt
