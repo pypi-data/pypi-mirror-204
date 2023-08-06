@@ -1,0 +1,17 @@
+cython
+numpy
+scipy
+nibabel>=3.0.0
+h5py
+cvxpy
+pandas
+tables
+matplotlib
+fury
+scikit-learn
+scikit-image
+statsmodels
+numpydoc
+sphinx!=4.4
+sphinx-gallery>=0.10.0
+tomli>=2.0.1
