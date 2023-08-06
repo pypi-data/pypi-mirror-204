@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mindelec-ascend
+Version: 0.2.0rc1
+Summary: A mindelec framework for electromagnetic simulation
+Home-page: https://www.mindspore.cn/
+Author: The MindSpore Authors
+Author-email: contact@mindspore.cn
+License: Apache 2.0
+Download-URL: https://gitee.com/mindspore/mindscience/tags
+Project-URL: Sources, https://gitee.com/mindspore/mindscience
+Project-URL: Issue Tracker, https://gitee.com/mindspore/mindscience/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: numpy (>=1.17.0)
+Requires-Dist: scipy (>=1.7.0)
+Requires-Dist: matplotlib (>=3.1.3)
+Requires-Dist: pyevtk (>=1.4.1)
+
+UNKNOWN
+
+
