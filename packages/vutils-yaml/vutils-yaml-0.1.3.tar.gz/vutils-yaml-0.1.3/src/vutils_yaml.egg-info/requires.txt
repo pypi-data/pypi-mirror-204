@@ -1,0 +1,9 @@
+PyYAML
+vutils-python
+vutils-validator
+
+[dev]
+check-manifest
+
+[test]
+coverage
