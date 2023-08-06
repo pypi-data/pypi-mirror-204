@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: bigtest-automator
+Version: 0.7
+Summary: A small tool that helps to run and collect performance related metrics such as VMSTAT and AWR. Highly specific to my ORG, might not be useful for general public. SORRY! - Noob.
+Author: Shantharam Puranik M
+Author-email: shantharam.puranik@ellucian.com
