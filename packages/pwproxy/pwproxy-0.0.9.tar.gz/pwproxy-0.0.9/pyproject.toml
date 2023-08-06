@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pwproxy"
+version = "0.0.9"
+authors = [
+    { name = "gc", email = "895091550@qq.com" },
+]
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+    "playwright",
+]
+keywords = ["playwright", "mitmproxy", "intercept request", "modify response"]
+
+[options]
+python_requires = ">=3.10"
+dependency_links = ["https://pypi.tuna.tsinghua.edu.cn/simple/"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[distutils]
+index-servers = "pypi"
+
+[pypi]
+username = "gcil125"
+password = "qweASD123..."
+
+
+[project.urls]
+"Homepage" = "https://github.com/gcil125/pwproxy"
