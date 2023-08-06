@@ -1,0 +1,12 @@
+# If a requirements can be satisfied by a wheel in this directory, use
+# it instead of downloading it from PyPI.
+
+--find-links=requirements
+
+
+# Minimal dependencies for tox
+
+pybrownies
+pytest
+
+-r prod.txt

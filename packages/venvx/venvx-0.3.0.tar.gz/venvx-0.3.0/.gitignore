@@ -1,0 +1,23 @@
+# Project files and folders created by Python and other development tools:
+__pycache__/
+.coverage*
+.*_cache/
+.tox/
+.venv*
+.vscode/
+
+# Folders created by the build manager:
+dist/
+*.egg-info/
+
+# Temp. data created during unit testing:
+tests/tmp/
+
+# OS-specific files
+.DS_Store
+Desktop.ini
+Thumbs.db
+
+# Currently opened MS Office documents (if you are using Office for
+# e.g. technical documentation):
+~$*.*

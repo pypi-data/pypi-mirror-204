@@ -1,0 +1,22 @@
+# If a requirements can be satisfied by a wheel in this directory, use
+# it instead of downloading it from PyPI.
+
+--find-links=requirements
+
+# Build and test
+flake8
+flit
+pybrownies
+pytest
+pytest-cov
+tox
+
+# De-Lint
+flake8
+# mypy
+pylint
+
+# venvx's runtime dependencies.
+-r prod.txt
+
+-e .

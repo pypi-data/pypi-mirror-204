@@ -1,0 +1,159 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+
+# PROJECT METADATA
+# ======================================================================
+
+[project]
+name = "venvx"
+authors = [
+    { name = "Ralf Luetkemeier", email = "foss@rlue.de" },
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development",
+    "Topic :: Utilities",
+]
+keywords = ["venv", "virtual environments"]
+requires-python = ">=3.10,<4"
+dynamic = ["version", "description"]
+dependencies = [
+    "cozyconsole >= 0.3.0a2",
+    "rich >=13.0.0",
+    "rich_argparse_plus >= 0.3.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pybrownies >= 0.4.0",
+    "pytest >= 7.2.1",
+]
+# doc = ["sphinx"]
+
+[project.scripts]
+venvx = "venvx.__main__:main"
+
+[project.urls]
+#changelog = "https://github.com/me/<repo>/CHANGELOG.md"
+#Documentation = "https://..."
+#Source = "https://github.com/<account>/<repo>"
+
+
+# TOOLING CONFIGS
+# ======================================================================
+
+[tool.chlog]
+use-brackets = false
+
+## Coverage ------------------------------------------------------------
+
+[tool.coverage.html]
+directory = ".coverage_report"
+
+[tool.coverage.report]
+# Define lines of code to safely ignore:
+# (This means code which can not be reached by design.)
+exclude_lines = [
+    'pragma: no cover',
+    'if 0:',
+    'if False:',
+    'if __name__ == .__main__.:',
+]
+#ignore_errors = true
+
+[tool.coverage.run]
+# parallel = true
+# concurrency = ["multiprocessing"]
+# branch = true
+source = [
+    "venvx",
+    "tests",
+]
+omit = []
+
+## Flit ----------------------------------------------------------------
+
+[tool.flit.sdist]
+include = ["docs/", ]
+exclude = ["imgs/", "NOTES.md", "TODO.md", ]
+
+## Pylint --------------------------------------------------------------
+# Enter pylint --generate-toml-config for more info.
+
+[tool.pylint.main]
+# ignore = ["demo"]
+
+[tool.pylint.basic]
+good-names = ["i", "j", "k", "ex", "Run", "_", "m", "n"]
+
+[tool.pylint.design]
+max-args = 7
+max-line-length = 80
+single-line-if-stmt = true
+
+[tool.pylint.format]
+# Maximum number of characters on a single line.
+# max-line-length = 88   # Yes, but leave it to flake 8.
+
+[tool.pylint.messages_control]
+disable = [
+    # Disable too many and too few checks.
+    # Many functions (e.g. callbacks) will naturally have unused arguments.
+    "unused-argument",
+    # Disable checking that method could be a function in classes (often used for organisation).
+    # "no-self-use",
+    # Disable failure for TODO items in the codebase (code will always have TODOs).
+    "fixme",
+    # Disable docstrings checks as we don't require excessive documentation.
+    "missing-docstring"
+]
+
+
+#[tool.mypy]
+#exclude = [
+#    'venvx/console/'
+#]
+
+
+## Pytest --------------------------------------------------------------
+
+[tool.pytest.ini_options]
+#addopts = "-ra -q"
+#addopts = "-s"
+markers = [
+    "notox: marks tests as incompatible with tox (deselect with '-m \"not notox\"')"
+]
+minversion = 7.0
+testpaths = [
+    "tests"
+]
+
+
+## Tox -----------------------------------------------------------------
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py{310,311}
+isolated_build = True
+
+[testenv]
+deps = -rrequirements/tox.txt
+commands = pytest --slow
+"""
+# It appears '-m "not notox"' is no longer needed.
+# platform = linux2|darwin
