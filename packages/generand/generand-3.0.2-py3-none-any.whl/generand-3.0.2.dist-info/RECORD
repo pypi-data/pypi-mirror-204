@@ -1,0 +1,15 @@
+generand/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generand/bernoulli.py,sha256=sOmIpnEOn_-YZrCvciMeKRiPSHSmtP8AmuU49BIWX6U,382
+generand/binomial.py,sha256=5mjD_M-7F2s68E_4uypPV1V4ZN8-bHYcCDfflMbhbjk,1259
+generand/erlang.py,sha256=rTe-geLP7A_XEWZa6_SkZeGiKXHW2CNSyPFA6qteU3U,402
+generand/exponential.py,sha256=hh9PaNoLF0KcS-LA0rNAOxIlIXotbJ5_6ruc3rUU9FA,309
+generand/geometric.py,sha256=ImlGuX8SjEBsb4JTgkH1lZUimyd8FzngwgdJ49jvXcM,380
+generand/normal.py,sha256=drNVKXNssfThR7tUQ5qVVbwlm5RMvV0Y4_ciuYRxbpc,476
+generand/poisson.py,sha256=HjGIzyp25_Ipqnk2FI1lc6KXON9_-pqpZ3OMRHSkSCE,597
+generand/triangular.py,sha256=CdU24NR7I_CaAdCExIAuIafzPvj9idP9gfAxw947z7g,625
+generand/uniform.py,sha256=cNaGHs6_Z6q65MP9SBkvRo0vD6Zsxg8FbI3KY8KtLDM,669
+generand/weibull.py,sha256=U-AY6H1d50rQEdj9A0pyX9ON1PzgtKXB7PN36pkjegY,408
+generand-3.0.2.dist-info/METADATA,sha256=atsSppjddS3YFPJsEuOjWcUUuxk64JKOFKfvV9ACQ2s,616
+generand-3.0.2.dist-info/WHEEL,sha256=9MIigYJ7D5sOqAPqr0-o6tSMY_nQ7c6kvtvyeUB99YQ,87
+generand-3.0.2.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+generand-3.0.2.dist-info/RECORD,,
