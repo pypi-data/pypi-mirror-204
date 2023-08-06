@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: common_as
+Version: 1.3.2
+Summary: common modules used in Arthasangraha suite of projects
+Author: Arthasangraha
+Author-email: roopesh@arthasangraha.com
+License-File: LICENSE.txt
