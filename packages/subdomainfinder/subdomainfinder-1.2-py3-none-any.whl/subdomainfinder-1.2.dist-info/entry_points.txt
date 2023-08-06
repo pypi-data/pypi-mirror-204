@@ -1,0 +1,3 @@
+[console_scripts]
+subdomainfinder = subdomainfinder.__main__:main
+
