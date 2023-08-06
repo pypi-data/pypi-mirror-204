@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: almavik
+Version: 0.1.0
+Summary: Determination of the drop trajectory
+Home-page: https://github.com/markusLons/almavik
+Author: Markus.Alinas.Viktorias
+Author-email: v.tikhonova@g.nsu.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: PyQt5
+Requires-Dist: matplotlib
+
+# Almavik
+
+- Программа принимает на вход папку с картинками
+- Производит поиск примерного положение центра (центра масс) капли
+- Определяет и отрисовывает контур капли
+- Пользователь переключает фотографии при помощи конопок и ползунка
+- Интерактивно отображает картинку во время подбора параметров
+- Отображает график и таблицу, с рассчетами центров масс 
+- Сохранение данных в виде таблиц csv
+
+# Используемые библиотеки
+
+- PyQt5 + Matplotlib 
+- OpenCV
+- Numpy
+- csv
+
+
