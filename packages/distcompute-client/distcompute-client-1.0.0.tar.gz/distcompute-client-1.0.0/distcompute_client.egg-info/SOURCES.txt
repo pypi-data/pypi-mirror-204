@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+distcompute_client/__init__.py
+distcompute_client/client.py
+distcompute_client/errors.py
+distcompute_client.egg-info/PKG-INFO
+distcompute_client.egg-info/SOURCES.txt
+distcompute_client.egg-info/dependency_links.txt
+distcompute_client.egg-info/requires.txt
+distcompute_client.egg-info/top_level.txt
