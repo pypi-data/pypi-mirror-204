@@ -1,0 +1,11 @@
+chensoul_hello/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chensoul_hello/cli.py,sha256=N1dfHdZ6wk7krofGuXPbp1LEsmbxqizAYTI-cClAQSU,39
+hello_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hello_package/cli.py,sha256=N1dfHdZ6wk7krofGuXPbp1LEsmbxqizAYTI-cClAQSU,39
+my_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_package/cli.py,sha256=N1dfHdZ6wk7krofGuXPbp1LEsmbxqizAYTI-cClAQSU,39
+chensoul_hello-1.0.0.dist-info/METADATA,sha256=u0Bt0WnLKWZO9jfP_r4tTk82aI1XJLt7mi9q_qD_t2c,209
+chensoul_hello-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+chensoul_hello-1.0.0.dist-info/entry_points.txt,sha256=r0uI0N3lZiqSVHxDIFlJ3_LcNlTq9oROPu4UwC_yGFA,58
+chensoul_hello-1.0.0.dist-info/top_level.txt,sha256=qGQ0eh6CP4MerS5trTelCxlvtZ0Lzd4jsdrIwK_4y4k,15
+chensoul_hello-1.0.0.dist-info/RECORD,,
