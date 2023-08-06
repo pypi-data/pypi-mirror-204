@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: analysisbykwok
+Version: 0.0.20
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: PyExecJS
+Requires-Dist: tushare
+
