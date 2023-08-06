@@ -1,0 +1,11 @@
+dbm_database_service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbm_database_service/connectors.py,sha256=hxDOiUSWODF3Bp74f5nS1sdsxQJXnJEC96Hhczae1S0,6676
+dbm_database_service/managers.py,sha256=rLmdnL-i-YoQB9muiUFusJ0lSJgq2cyulHfFxlfSJ14,3208
+dbm_database_service/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbm_database_service/models/column.py,sha256=26jaUPUNLuD38asoDJ7JioZ0S4W-ggICooMthcVlljY,1616
+dbm_database_service/models/config.py,sha256=75gRJUUi4keatFoSzKnGLNhGCw26p4OmHh0gClqeGME,849
+dbm_database_service/models/datatype.py,sha256=q4dcS-dsXYSRM4e5yK_cNWZ6HTzXLP_4h2Q6_MiUdSo,1232
+dbm_database_service/models/table.py,sha256=UCCYqhYlnMG33R963Ysrocpdg2M2Grf1eTY2Bq6TARY,930
+dbm_database_service-0.2.4.dist-info/METADATA,sha256=0Pu8IwE_ATsREpgn5LT_NNOIM3_KreEQ-EgLYXXb5VM,13586
+dbm_database_service-0.2.4.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+dbm_database_service-0.2.4.dist-info/RECORD,,
