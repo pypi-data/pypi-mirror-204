@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+lockexclusive/LICENSE
+lockexclusive/README.md
+lockexclusive/__init__.py
+lockexclusive/requirements.txt
+lockexclusive/thirdparty.json
+lockexclusive.egg-info/PKG-INFO
+lockexclusive.egg-info/SOURCES.txt
+lockexclusive.egg-info/dependency_links.txt
+lockexclusive.egg-info/top_level.txt

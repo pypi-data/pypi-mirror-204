@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: lockexclusive
+Version: 0.10
+Summary: Limits the number of running instances of a Python script
+Home-page: https://github.com/hansalemaos/lockexclusive
+Author: Johannes Fischer
+Author-email: aulasparticularesdealemaosp@gmail.com
+License: MIT
+Keywords: limit,instances
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+
+# Limits the number of running instances of a Python script
+
+## pip install lockexclusive 
+
+## How to use it
+
+```python
+import sys
+from time import sleep
+
+from lockexclusive import configure_lock
+
+# it can be used like this:
+# configure_lock(maxinstances=1, message="More than one instance running",file=sys.argv[0])
+
+# or without the file argument:
+configure_lock(maxinstances=1, message="More than one instance running")
+
+sleep(100)
+
+
+```
+

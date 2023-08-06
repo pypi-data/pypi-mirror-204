@@ -1,0 +1,4 @@
+include lockexclusive/requirements.txt
+include lockexclusive/thirdparty.json
+include lockexclusive/README.md
+include lockexclusive/LICENSE
