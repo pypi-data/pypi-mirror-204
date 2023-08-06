@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: telespider
+Version: 0.2.4
+Summary: recursively parsing tg channels
+License: MIT
+Author: andrewsap
+Author-email: andrewsapw@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Requires-Dist: pyrogram (>=2.0.103,<3.0.0)
+Requires-Dist: rich (>=13.3.4,<14.0.0)
+Requires-Dist: tgcrypto (>=1.2.5,<2.0.0)
+Requires-Dist: uvloop (>=0.17.0,<0.18.0)
+Description-Content-Type: text/markdown
+
+# 🕸️ Telegram scrapper
+
+Simple package (+ CLI) for scrapping Telegram channel
+
+# Features
+
+✔️ auto explore new channels  
+✔️ search text  
+✔️ search mentions  
+
+# Usage
+
+```console
+$ pip install telespider
+$ tspider search -w "stonks" -n 100 # search word `stonks`
+$ tspider search -u "andrewsap" -n 100 # search mentions of user `andrewsap`
+```
+
+# Configuration
+
+App uses this environment variables:
+- `API_HASH` and `API_ID` - required by `Pyrogram` (more about that [here](https://docs.pyrogram.org/start/auth))
+- `ENTRYPOINT_CHANNELS` - comma separated list of channels to begin search in
+- `MAX_PER_CHANNEL` - max number of messages to parse from one channel (can be set with `-n` option from CLI)
+- `AUTO_EXPLORE_CHANNELS` - automatically explore new channels and add them to queue for parsing (can be set with `--explore\--no-explore` options in CLI)
+- `SILENT` - suppress all output
+
