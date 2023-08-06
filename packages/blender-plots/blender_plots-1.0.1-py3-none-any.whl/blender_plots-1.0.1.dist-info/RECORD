@@ -1,0 +1,10 @@
+blender_plots/__init__.py,sha256=ikNhgX5Qc3Ytskl_aaEXRbfzeKp7d8GzQ-qhKzuRKdg,78
+blender_plots/blender_utils.py,sha256=_w5ZG3_YGiu5tiKliamBFJ_qK-zhW2ef1c-wQzEdt2g,6142
+blender_plots/plots_base.py,sha256=p4kUCxxChNWrGBLxagq77ZsqCKOxKbM8W2fv5aFmHtQ,3354
+blender_plots/scatter.py,sha256=s1jGQItjAHfDx4iu0oWW3lBPuiZNwPKTPO5KzUWH4N0,11103
+blender_plots/surface.py,sha256=-4906S46IBSBinUxdQ_jkEhGqmsirgZEIf1r3Ty4OaM,1507
+blender_plots-1.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+blender_plots-1.0.1.dist-info/METADATA,sha256=O87953_1StsXE8AAqCqQk4zQUDRYkYsMA3ZRZlklcLI,224
+blender_plots-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+blender_plots-1.0.1.dist-info/top_level.txt,sha256=oowZPkZ4AWwTOxmOvDkA6f6em7A3oc50eUX-4_vOgWo,14
+blender_plots-1.0.1.dist-info/RECORD,,
