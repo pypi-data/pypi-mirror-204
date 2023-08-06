@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pylambdic/__init__.py
+pylambdic.egg-info/PKG-INFO
+pylambdic.egg-info/SOURCES.txt
+pylambdic.egg-info/dependency_links.txt
+pylambdic.egg-info/requires.txt
+pylambdic.egg-info/top_level.txt
+tests/test_pylambdic.py
