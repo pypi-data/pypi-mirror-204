@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: neosekai-api
+Version: 1.2.0
+Summary: An Unoffical Python API for neosekaitranslations.com
+Home-page: https://github.com/john-erinjery/neosekai-api/
+Author: John Erinjery
+Author-email: jancyvinod415@gmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Customer Service
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lxml (==4.9.2)
+Requires-Dist: beautifulsoup4 (>=4.11.2)
+Requires-Dist: requests (==2.28.2)
+
+<p align="center">
+<h1 style='font-size:38px;' align="center">neosekai-api</h1>
+</p>
+
+An Unoffical Python API for [neosekaitranslations.com](https://www.neosekaitranslations.com/)
+
+<h2>Installation</h2>
+
+from a terminal, run : 
+
+```
+pip install neosekai-api
+```
+in case of an error, go [here](https://github.com/john-erinjery/neosekai-api/wiki/Installation) in the Github Wiki.
+
+<h2>Usage</h2>
+
+- Go to the [Github wiki](https://github.com/john-erinjery/neosekai-api/wiki) for this project to read full usage tutorial.
+- Below is a short and sweet version
+
+```python
+from neosekai_api import Novel, NovelChapter
+
+novel = Novel('https://www.neosekaitranslations.com/novel/oresuki/')
+
+chapter = NovelChapter('https://www.neosekaitranslations.com/novel/oresuki/volume-1/chapter-3-part-3/')
+```
+
+- `Novel` and `NovelChapter` are the two main objects in this API
+- through these two objects, neosekai-api offers a list of functions that are specified in the [Github wiki](https://github.com/john-erinjery/neosekai-api/wiki).
+  
+<h2>neosekai-dl</h2>
+
+neosekai-dl is a project that uses neosekai-api to download novels from [neosekaitranslations.com](https://www.neosekaitranslations.com/) as PDF. The project is also in it's starting stages, so please bear with me. It's not a far fetch to say I made this API for the sole purpose of making neosekai-dl
+
+<h2>For Future Releases</h2>
+
+If you are using this project and wish to see more features in it, do open an issue on [github.](https://github.com/john-erinjery/neosekai-api) As I mentioned, I built this API for making neosekai-dl. This project, as it is, is all that is required for me to make neosekai-dl. However, if you wish to see more features in this API, I would be glad to implement your needs.
+
+<h2>On creating support for authentification</h2>
+
+neosekai-api, at the moment, does NOT support the registraton of new users or the ability to log in to neosekaitranslations.com. <br/>
+This is mostly because, In neosekaitranslations.com, the only thing a registered user can do is leave comments. Since I feel like commenting is better done on the website itself, I didn't implement this functionality in the program.
