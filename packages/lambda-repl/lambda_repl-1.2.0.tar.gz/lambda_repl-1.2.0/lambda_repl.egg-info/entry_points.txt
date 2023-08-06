@@ -1,0 +1,2 @@
+[console_scripts]
+lambda-repl = lambda_repl.main:main_cli
