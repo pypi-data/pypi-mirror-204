@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pywdgen
+Version: 0.0.5
+Summary: A package that allows you to generate passwords and check their security
+Author-email: Hugo Camerola <hugo.camerola@example.com>
+Project-URL: Homepage, https://github.com/Zey120/pywdgen
+Project-URL: Bug Tracker, https://github.com/Zey120/pywdgen/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# passwordgenerator
+ 

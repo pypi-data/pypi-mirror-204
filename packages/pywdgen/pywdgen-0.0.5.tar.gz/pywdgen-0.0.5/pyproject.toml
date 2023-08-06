@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "pycryptodome>=3.17"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pywdgen"
+version = "0.0.5"
+authors = [
+  { name="Hugo Camerola", email="hugo.camerola@example.com" },
+]
+description = "A package that allows you to generate passwords and check their security"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Zey120/pywdgen"
+"Bug Tracker" = "https://github.com/Zey120/pywdgen/issues"
+
+[project.scripts]
+pywdgen = "pywdgen:main"
