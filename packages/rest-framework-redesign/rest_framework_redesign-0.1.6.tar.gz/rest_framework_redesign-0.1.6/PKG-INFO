@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: rest-framework-redesign
+Version: 0.1.6
+Summary: Redesign of the browsable api of Django REST Framework
+Home-page: https://github.com/youzarsiph/rest-framework-redesign/
+License: MIT
+Author: Yousef Abu Shanab
+Author-email: josephyousef249@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/youzarsiph/rest-framework-redesign/
+Description-Content-Type: text/markdown
+
+# rest-framework-redesign
+
+Redesign of the browsable api of Django REST Framework
+
+## Get started
+
+To get started with rest-framework-redesign:
+
+Install the package:
+
+```bash
+pip install rest-framework-redesign
+```
+
+Add `rest_framework_redesign` to `INSTALLED_APPS` setting, make sure that it's before `rest_framework`
+
+```python
+# settings.py
+
+INSTALLED_APPS = [
+    ...
+    'rest_framework_redesign',
+    'rest_framework',
+    ...
+]
+```
+
+Include `rest_framework.urls` in your project URLConf
+
+```python
+# urls.py
+
+...
+from django.urls import path, include
+
+urlpatterns = [
+    ...
+    path('auth/', include('rest_framework.urls')),
+    ...
+]
+```
+
+Run the server
+
+```bash
+python manage.py runserver
+```
+
+I hope you that you find this useful.
+
