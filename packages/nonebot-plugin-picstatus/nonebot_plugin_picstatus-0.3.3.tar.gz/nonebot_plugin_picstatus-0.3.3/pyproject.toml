@@ -1,0 +1,35 @@
+[project]
+name = "nonebot-plugin-picstatus"
+version = "0.3.3"
+description = "A NoneBot2 plugin generates a picture which shows the status of current device"
+authors = [
+    { name = "student_2333", email = "lgc2333@126.com" },
+]
+dependencies = [
+    "Pillow<10.0.0,>=9.2.0",
+    "psutil<6.0.0,>=5.9.2",
+    "aiofiles<23.0.0,>=22.1.0",
+    "nonebot2>=2.0.0b4",
+    "aiohttp<4.0.0,>=3.8.3",
+    "nonebot-adapter-onebot>=2.1.0",
+]
+requires-python = ">=3.8,<4.0"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus"
+
+[tool.pdm.dev-dependencies]
+dev = []
+
+[tool.pdm.build]
+includes = []
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
