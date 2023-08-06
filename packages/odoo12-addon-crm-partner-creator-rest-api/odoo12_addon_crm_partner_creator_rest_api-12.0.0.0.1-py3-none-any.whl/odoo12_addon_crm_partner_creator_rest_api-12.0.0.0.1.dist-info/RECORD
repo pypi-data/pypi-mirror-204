@@ -1,0 +1,9 @@
+odoo/addons/crm_partner_creator_rest_api/__init__.py,sha256=8hvjIKC_N5LAHJOBsvQncVgcsrNOzqlsHYyRG9VbdZQ,48
+odoo/addons/crm_partner_creator_rest_api/__manifest__.py,sha256=LEpKcb7_kTPgNQQWEy0DplN3Jy-sJpb96OdWJJnlZQI,608
+odoo/addons/crm_partner_creator_rest_api/services/__init__.py,sha256=rkQqWoaUXbnEYyQ5rzg5Xu8n5KcAdragKfVvr_unPoM,33
+odoo/addons/crm_partner_creator_rest_api/services/crm_lead_services.py,sha256=tGc69_TjJnQefIMrdI1LCsggLSINAhWR-8nl3DhYi3g,358
+odoo/addons/crm_partner_creator_rest_api/services/schemas.py,sha256=cGCxnkzTHWP151XESYawAX8FWRp-Zi8AAiG3VssHjto,118
+odoo12_addon_crm_partner_creator_rest_api-12.0.0.0.1.dist-info/METADATA,sha256=Z14gw7T6Zr4WyfR8tE0aDR7dwaCdYymUc-8de1Y5qSk,575
+odoo12_addon_crm_partner_creator_rest_api-12.0.0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo12_addon_crm_partner_creator_rest_api-12.0.0.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_crm_partner_creator_rest_api-12.0.0.0.1.dist-info/RECORD,,
