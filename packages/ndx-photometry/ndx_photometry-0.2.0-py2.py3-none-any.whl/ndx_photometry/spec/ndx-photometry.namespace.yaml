@@ -1,0 +1,25 @@
+namespaces:
+- author:
+  - Akshay Jaggi
+  contact:
+  - akshay.x.jaggi@gmail.com
+  doc: extension for fiber photometry data
+  name: ndx-photometry
+  schema:
+  - namespace: core
+    neurodata_types:
+    - TimeSeries
+    - NWBDataInterface
+    - NWBContainer
+    - RoiResponseSeries
+    - LabMetaData
+  - namespace: hdmf-common
+    neurodata_types:
+    - DynamicTable
+    - DynamicTableRegion
+    - VectorData
+    - VectorIndex
+    - Data
+    - ElementIdentifiers
+  - source: ndx-photometry.extensions.yaml
+  version: 0.1.0

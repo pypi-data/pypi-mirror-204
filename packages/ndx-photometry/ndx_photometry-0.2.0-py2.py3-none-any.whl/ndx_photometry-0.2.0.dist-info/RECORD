@@ -1,0 +1,14 @@
+ndx_photometry/__init__.py,sha256=tww5MUZobzrCuY6SVipcTWkwyrPSj5H2LJt-_RlhP1s,1325
+ndx_photometry/fibers_table.py,sha256=BUGT5uCe7rASV243rIqNC6pN5SQUdjc4E_ySwsoOMcA,1933
+ndx_photometry/spec/ndx-photometry.extensions.yaml,sha256=MDU85XgErTbP6K9ycxtjCU0Jzn74zOUgzVZ4OyX3nig,5935
+ndx_photometry/spec/ndx-photometry.namespace.yaml,sha256=ApKUVZPj_s9SPSr-A_DLl_r7tHumPF7h7MDRW6a6Ydc,520
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/integration/test_photometry.py,sha256=fXWHNL5-4zwe7NkTaqoa_G8BilyNc8qgkccDNo5evTw,4669
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/test_photometry.py,sha256=I77r0k5RinwFsGwLbhpGbYCGU65J2TQKaH_ETYAfJf4,8048
+ndx_photometry-0.2.0.dist-info/LICENSE.txt,sha256=_bv0L0w8RBz45DQtmm5oyFl9PKSIBomwaOvL65NGtFI,1457
+ndx_photometry-0.2.0.dist-info/METADATA,sha256=dM6b2gVJuCwr3GOO4SXndpvNk5PW0ulkpQjcEhNbRKA,6684
+ndx_photometry-0.2.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+ndx_photometry-0.2.0.dist-info/top_level.txt,sha256=KuXOiRTwCp5kuIqlrRHakgf5eV67F56GEyX6c4hZTjo,21
+ndx_photometry-0.2.0.dist-info/RECORD,,

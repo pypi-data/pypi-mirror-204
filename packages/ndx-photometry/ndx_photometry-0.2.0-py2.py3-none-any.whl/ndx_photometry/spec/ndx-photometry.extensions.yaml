@@ -1,0 +1,235 @@
+groups:
+- neurodata_type_def: FibersTable
+  neurodata_type_inc: DynamicTable
+  name: fibers
+  doc: Extends DynamicTable to hold various Fibers
+  datasets:
+  - name: location
+    neurodata_type_inc: VectorData
+    dtype: text
+    shape:
+    - null
+    doc: location of fiber
+  - name: excitation_source
+    neurodata_type_inc: DynamicTableRegion
+    dtype: int
+    shape:
+    - null
+    doc: references rows of ExcitationSourcesTable
+  - name: photodetector
+    neurodata_type_inc: DynamicTableRegion
+    dtype: int
+    shape:
+    - null
+    doc: references rows of PhotodetectorsTable
+  - name: fluorophores
+    neurodata_type_inc: DynamicTableRegion
+    shape:
+    - null
+    doc: references rows of FluorophoresTable
+  - name: notes
+    neurodata_type_inc: VectorData
+    dtype: text
+    shape:
+    - null
+    doc: description of fiber
+  - name: fiber_model_number
+    neurodata_type_inc: VectorData
+    dtype: text
+    shape:
+    - null
+    doc: fiber model number
+    quantity: '?'
+  - name: dichroic_model_number
+    neurodata_type_inc: VectorData
+    dtype: text
+    shape:
+    - null
+    doc: dichroic model number
+    quantity: '?'
+- neurodata_type_def: PhotodetectorsTable
+  neurodata_type_inc: DynamicTable
+  name: photodetectors
+  doc: Extends DynamicTable to hold various Photodetectors
+  datasets:
+  - name: peak_wavelength
+    neurodata_type_inc: VectorData
+    dtype: float
+    shape:
+    - null
+    doc: peak wavelength of photodetector
+    quantity: '?'
+    attributes:
+    - name: unit
+      dtype: text
+      value: nanometers
+      doc: wavelength unit
+  - name: type
+    neurodata_type_inc: VectorData
+    dtype: text
+    shape:
+    - null
+    doc: '"PMT" or "photodiode"'
+  - name: gain
+    neurodata_type_inc: VectorData
+    dtype: float
+    shape:
+    - null
+    doc: gain on the photodetector
+    quantity: '?'
+  - name: model_number
+    neurodata_type_inc: VectorData
+    dtype: text
+    shape:
+    - null
+    doc: model number of the photodetector
+    quantity: '?'
+- neurodata_type_def: ExcitationSourcesTable
+  neurodata_type_inc: DynamicTable
+  name: excitation_sources
+  doc: Extends DynamicTable to hold various Excitation Sources
+  datasets:
+  - name: peak_wavelength
+    neurodata_type_inc: VectorData
+    dtype: float
+    shape:
+    - null
+    doc: peak wavelength of the excitation source
+    attributes:
+    - name: unit
+      dtype: text
+      value: nanometers
+      doc: wavelength unit
+  - name: source_type
+    neurodata_type_inc: VectorData
+    dtype: text
+    shape:
+    - null
+    doc: '"LED" or "laser"'
+  - name: commanded_voltage
+    neurodata_type_inc: VectorData
+    dtype:
+      target_type: CommandedVoltageSeries
+      reftype: object
+    shape:
+    - null
+    doc: references CommandedVoltageSeries
+    quantity: '?'
+  - name: output
+    neurodata_type_inc: VectorData
+    dtype: float
+    shape:
+    - null
+    doc: excitation output, references TimeSeries
+    quantity: '?'
+  - name: model_number
+    neurodata_type_inc: VectorData
+    dtype: text
+    shape:
+    - null
+    doc: model number of the excitation source
+    quantity: '?'
+- neurodata_type_def: CommandedVoltageSeries
+  neurodata_type_inc: TimeSeries
+  doc: Extends TimeSeries to hold a Commanded Voltage
+  datasets:
+  - name: data
+    dtype: float
+    shape:
+    - null
+    doc: voltages (length number timesteps) in unit volts
+    attributes:
+    - name: unit
+      dtype: text
+      value: volts
+      doc: data unit
+  - name: frequency
+    dtype: float
+    doc: voltage frequency in unit hertz
+    quantity: '?'
+    attributes:
+    - name: unit
+      dtype: text
+      value: hertz
+      doc: frequency unit
+  - name: power
+    dtype: float
+    doc: voltage power in unit volts
+    attributes:
+    - name: unit
+      dtype: text
+      value: volts
+      doc: power unit
+- neurodata_type_def: DeconvolvedRoiResponseSeries
+  neurodata_type_inc: RoiResponseSeries
+  doc: Extends RoiResponseSeries to hold deconvolved data
+  datasets:
+  - name: deconvolution_filter
+    neurodata_type_inc: VectorData
+    dtype: text
+    doc: description of deconvolution filter used
+    quantity: '?'
+  - name: downsampling_filter
+    neurodata_type_inc: VectorData
+    dtype: text
+    doc: description of downsampling filter used
+    quantity: '?'
+  links:
+  - name: raw
+    target_type: RoiResponseSeries
+    doc: ref to roi response series
+- neurodata_type_def: MultiCommandedVoltage
+  neurodata_type_inc: NWBDataInterface
+  name: commanded_voltages
+  doc: holds CommandedVoltageSeries objects
+  groups:
+  - neurodata_type_inc: CommandedVoltageSeries
+    doc: commanded voltage series
+    quantity: '*'
+- neurodata_type_def: FiberPhotometry
+  neurodata_type_inc: LabMetaData
+  name: fiber_photometry
+  doc: all Fiber Photometry metadata
+  groups:
+  - name: fibers
+    neurodata_type_inc: FibersTable
+    doc: table of fibers used
+  - name: excitation_sources
+    neurodata_type_inc: ExcitationSourcesTable
+    doc: table of excitation sources used
+  - name: photodetectors
+    neurodata_type_inc: PhotodetectorsTable
+    doc: table of photodetectors used
+  - name: fluorophores
+    neurodata_type_inc: FluorophoresTable
+    doc: table of fluorophores used
+  - name: commanded_voltages
+    neurodata_type_inc: MultiCommandedVoltage
+    doc: multiple commanded voltage container
+    quantity: '?'
+- neurodata_type_def: FluorophoresTable
+  neurodata_type_inc: DynamicTable
+  name: fluorophores
+  doc: Extends DynamicTable to hold various Fluorophores
+  datasets:
+  - name: label
+    neurodata_type_inc: VectorData
+    dtype: text
+    shape:
+    - null
+    doc: name of fluorophore
+  - name: location
+    neurodata_type_inc: VectorData
+    dtype: text
+    shape:
+    - null
+    doc: injection brain region name
+    quantity: '?'
+  - name: coordinates
+    neurodata_type_inc: VectorData
+    dtype: float
+    shape:
+    - null
+    - 3
+    doc: injection taxonomical coordinates in (AP, ML, Z) in mm relative to Bregma
+    quantity: '?'
