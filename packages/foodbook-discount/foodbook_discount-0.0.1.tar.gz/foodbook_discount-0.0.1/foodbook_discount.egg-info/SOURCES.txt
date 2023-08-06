@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+foodbook_discount.egg-info/PKG-INFO
+foodbook_discount.egg-info/SOURCES.txt
+foodbook_discount.egg-info/dependency_links.txt
+foodbook_discount.egg-info/top_level.txt
