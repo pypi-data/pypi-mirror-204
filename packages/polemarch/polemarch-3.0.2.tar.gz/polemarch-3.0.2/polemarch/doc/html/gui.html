@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GUI workflow &mdash; &#39;Polemarch&#39; 3.0.2 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Plugins" href="plugins.html" />
+    <link rel="prev" title="Configuration manual" href="config.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+<a href="/#">
+<img src="_static/html_logo.png" class="logo" alt="Logo"/>
+</a>
+  <div class="version">
+    3.0.2
+  </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Home</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Configuration manual</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">GUI workflow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#welcome-to-polemarch-gui">Welcome to Polemarch GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#before-you-start">Before you start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#projects">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#project-variables">Project variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ansible-module-execution">Ansible Module execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#execution-templates">Execution templates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#periodic-tasks">Periodic tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inventory">Inventory</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#polemarch-db-inventory">POLEMARCH_DB inventory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#group">Group</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hosts">Hosts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#variables-for-inventory-group-hosts">Variables for inventory, group, hosts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ansible-string-inventory">ANSIBLE_STRING inventory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ansible-file-inventory">ANSIBLE_FILE inventory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#import-inventory">Import inventory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polemarch-yaml">.polemarch.yaml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#community-project-samples">Community project samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hooks">Hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#users">Users</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">How to participate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cla.html">VST Consulting contributor agreement</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">'Polemarch'</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">GUI workflow</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/gui.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="gui-workflow">
+<h1>GUI workflow<a class="headerlink" href="#gui-workflow" title="Permalink to this heading"></a></h1>
+<section id="welcome-to-polemarch-gui">
+<h2>Welcome to Polemarch GUI<a class="headerlink" href="#welcome-to-polemarch-gui" title="Permalink to this heading"></a></h2>
+<p>In this section of our documentation we will tell you about Polemarch GUI’s opportunities.</p>
+<p>Let’s begin with Dashboard page:</p>
+<img alt="_images/dashboard.png" src="_images/dashboard.png" />
+<p>As you can see, Polemarch GUI provides user with 2 menus:</p>
+<ul class="simple">
+<li><p>the first one is located in the left sidebar and it is aimed
+to provide user with navigation between main system objects, like projects, inventories, history records and etc.</p></li>
+<li><p>the second one is located at the top of browser window and it is aimed
+to navigate user to API section, to user’s page and to logout page.</p></li>
+</ul>
+<p>Also there are some widgets on content block of Dashboard page.
+For example, there you can check the statistics of your tasks for different periods of time.</p>
+</section>
+<section id="before-you-start">
+<h2>Before you start<a class="headerlink" href="#before-you-start" title="Permalink to this heading"></a></h2>
+<p>Before you can do any job with Polemarch you should create at least one project, because all
+Polemarch’s functions are linked to the project.</p>
+</section>
+<section id="projects">
+<h2>Projects<a class="headerlink" href="#projects" title="Permalink to this heading"></a></h2>
+<p>So, to start your work with Polemarch you should create project. To do this, you need to select ‘Projects’ in the left side menu
+and click the <span class="guilabel">Create</span> button.</p>
+<p>There are 3 project types in Polemarch:</p>
+<ul class="simple">
+<li><p>GIT - Polemarch can sync with your git project.</p></li>
+<li><p>TAR - If you don’t have git repository, you can upload tar archive with project files
+from any http url.</p></li>
+<li><p>MANUAL - Empty project. This kind of project will be appropriate for you,
+if you want run only modules without any playbooks or something. Polemarch will
+create folder for your project files in <cite>projects_dir</cite> (you can specify it
+in settings) named as project id (you can see at URL), where you
+place manually your project files (like playbooks or something).</p></li>
+</ul>
+<p>Let’s look at the example of GIT project’s creation:</p>
+<img alt="_images/create_project.png" src="_images/create_project.png" />
+<p>As you can see, the form of new project creation consists of 7 fields:</p>
+<p>General:</p>
+<ul class="simple">
+<li><p><strong>Name</strong> - name of your project;</p></li>
+<li><p><strong>Repo type</strong> - type of project repository (GIT, TAR, MANUAL);</p></li>
+<li><p><strong>Directory with playbooks</strong> - you can specify the path to the directory with playbooks.</p></li>
+</ul>
+<p>Repository:</p>
+<ul class="simple">
+<li><p><strong>Repo URL</strong> - URL to your repository;</p></li>
+<li><p><strong>Branch for GIT (branch/tag/SHA) or TAR (subdir)</strong> - you can specify the branch you want or leave this field blank
+to get the default branch;</p></li>
+<li><p><strong>Repo auth type</strong> - type of authentication (NONE, KEY, PASSWORD);</p></li>
+<li><p><strong>Repo auth data</strong> - key or password value (if you choose KEY or PASSWORD authentication type);</p></li>
+</ul>
+<p>Before we continue talking about the structure of our project, we used
+<a class="reference external" href="https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html#directory-layout">ansible best practice</a>
+and run playbooks from project:</p>
+<blockquote>
+<div><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">ansible.cfg</span></code> - used to setup settings. For detailed information about configuration file read <a class="reference external" href="https://docs.ansible.com/ansible/latest/reference_appendices/config.html#ansible-configuration-settings-locations">settings reference</a>.</p>
+<p>If you setup modules directory, we import all modules from this directory and set name <code class="docutils literal notranslate"><span class="pre">polemarch.project.[module_name]</span></code>.</p>
+</li>
+<li><p>Playbook - import all files with <code class="docutils literal notranslate"><span class="pre">.yml</span></code> extension from root directory of the <strong>Project</strong>.</p></li>
+<li><p>If you need to set variables globally, not only for run, you can use <code class="docutils literal notranslate"><span class="pre">group_vars</span></code> and <code class="docutils literal notranslate"><span class="pre">host_vars</span></code> in root directory of project.</p></li>
+</ul>
+</div></blockquote>
+<p>After project creation you’ll see the next page:</p>
+<img alt="_images/test_project_1.png" src="_images/test_project_1.png" />
+<p>As you can see there are some new fields on this page:</p>
+<ul class="simple">
+<li><p><strong>Id</strong>: the unique key of object in database.</p></li>
+<li><p><strong>Status</strong>: Polemarch project status.
+Possible values are:</p>
+<ul>
+<li><p>NEW - newly created project,</p></li>
+<li><p>WAIT_SYNC - repository synchronization has been scheduled, but has not started to perform yet,</p></li>
+<li><p>SYNC - synchronization is in progress,</p></li>
+<li><p>ERROR - synchronization failed,</p></li>
+<li><p>OK - project is synchronized.</p></li>
+</ul>
+</li>
+<li><p><strong>Revision</strong> - GIT project revision.</p></li>
+<li><p><strong>Branch</strong> - branch of your GIT project, to what your Polemarch project was synced.</p></li>
+<li><p><strong>Owner</strong> - user, who owns this project.</p></li>
+</ul>
+<p>Also there are some new buttons:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Edit</span> - this button turns on edit mod for this page;</p></li>
+<li><p><span class="guilabel">Remove</span> - this button deletes project.</p></li>
+</ul>
+<p>Sublinks buttons:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Ansible modules</span> - this button opens project’s module list;</p></li>
+<li><p><span class="guilabel">Ansible playbooks</span> - this button opens project’s playbook list;</p></li>
+<li><p><span class="guilabel">Execution templates</span> - this button opens project’s template list;</p></li>
+<li><p><span class="guilabel">History</span> - this button opens project executions’ history list;</p></li>
+<li><p><span class="guilabel">Inventory</span> - this button opens project’s inventory list;</p></li>
+<li><p><span class="guilabel">Variables</span> - this button opens project’s variables list.</p></li>
+</ul>
+<p>Action buttons:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Copy</span> - this button opens “copy” action page;</p></li>
+<li><p><span class="guilabel">Execute ansible module</span> - this button opens “execute module” action page;</p></li>
+<li><p><span class="guilabel">Execute ansible playbook</span> - this button opens “execute playbook” action page;</p></li>
+<li><p><span class="guilabel">Set owner</span> - this button opens “set owner” action page;</p></li>
+<li><p><span class="guilabel">Sync</span> - this button syncs your Polemarch project with repository.</p></li>
+</ul>
+<p>If you want to edit values of some fields on any page in Polemarch, you should click the
+<span class="guilabel">Edit</span> button to activate edit mode.</p>
+<img alt="_images/test_project_1_edit.png" src="_images/test_project_1_edit.png" />
+<p>In this mode, you can change the project’s name, update the repository URL, and make notes about your project.</p>
+<ul class="simple">
+<li><p><span class="guilabel">Save</span> - this button saves all changes you have made on this page.</p></li>
+<li><p><span class="guilabel">Reload</span> - this button resets all changes that you have done on this page.</p></li>
+</ul>
+<p>Now, let’s back to read only mode of our project page.</p>
+<img alt="_images/test_project_1.png" src="_images/test_project_1.png" />
+<p>As you can see, now project’s status is “NEW”, so we need to click the <span class="guilabel">Sync</span> button
+to get all needed data from your GIT project.</p>
+<img alt="_images/test_project_2.png" src="_images/test_project_2.png" />
+<p>Once your project status changes to “OK”, you can start working with Polemarch.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you update something in your GIT repository, don’t forget to run sync in
+Polemarch for pulling your changes.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you have trouble when cloning from <em>local</em> git repository, this may be caused by
+<code class="docutils literal notranslate"><span class="pre">protocol.file.allow</span></code> setting that is set to <code class="docutils literal notranslate"><span class="pre">user</span></code> in your git config.
+For more information please see
+<a class="reference external" href="https://github.blog/2022-10-18-git-security-vulnerabilities-announced/#cve-2022-39253">this topic</a>.
+One of the solutions might be:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>protocol.file.allow<span class="w"> </span>always
+</pre></div>
+</div>
+<p>Keep in mind that this command allows file clone <strong>globally at git level for all your projects</strong>.</p>
+</div>
+</section>
+<section id="project-variables">
+<h2>Project variables<a class="headerlink" href="#project-variables" title="Permalink to this heading"></a></h2>
+<p>If you need to change some properties of your project (for example, branch, key or password of project),
+you can do it on the “variables” page of your project:</p>
+<img alt="_images/test_project_variables_1.png" src="_images/test_project_variables_1.png" />
+<p>As you can see, now current project has only 2 variables:</p>
+<ul class="simple">
+<li><p><strong>repo_branch</strong> - branch of GIT repository;</p></li>
+<li><p><strong>repo_type</strong> - type of Polemarch project.</p></li>
+</ul>
+<p>Other available project variables, that you can add with clicking the <span class="guilabel">Create</span> button:</p>
+<ul>
+<li><p><strong>repo_sync_on_run</strong> - boolean, if true, on every execution will be used project files obtained directly
+from the remote repository with revision specified in <strong>repo_branch</strong>, instead of current project stored in Polemarch.</p></li>
+<li><p><strong>repo_sync_on_run_timeout</strong> - time value after which attempt to clone project on execution will be stopped. Works
+only in conjunction with <strong>repo_sync_on_run</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In case of GIT projects <strong>repo_sync_on_run_timeout</strong> limits time to whole cloning process. For example, if it set
+to 3 seconds and after 3 seconds project was cloned only on 70%, execution will be aborted.</p>
+<p>This behavior is somewhat different with TAR projects. Timeout specifies how long Polemarch must wait until
+successfully establish connection with the server. After that download process will start and continue until it
+completes, regardless of <strong>repo_sync_on_run_timeout</strong>.</p>
+<p>When working with MANUAL projects both <strong>repo_sync_on_run</strong> and <strong>repo_sync_on_run_timeout</strong> options do not applies.</p>
+</div>
+</li>
+<li><p><strong>repo_password</strong> - GIT repository password;</p></li>
+<li><p><strong>repo_key</strong> - GIT repository key;</p></li>
+<li><p><strong>playbook_path</strong> - path to playbook;</p></li>
+<li><p><strong>ci_template</strong> - runs the selected template during project synchronization;</p></li>
+<li><p>Environment variables, with key starting from <strong>env_</strong>. For example <strong>env_test_var</strong> would create environment variable <code class="docutils literal notranslate"><span class="pre">test_var</span></code> on run tasks from this project.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can add <code class="docutils literal notranslate"><span class="pre">ANSIBLE_CONFIG</span></code> environment variable by creating <code class="docutils literal notranslate"><span class="pre">env_ANSIBLE_CONFIG</span></code> variable in your project.
+This will make your project to use specified config at every execution. Make sure that path is relative to project directory.</p>
+</div>
+<p>Let’s edit <strong>repo_branch</strong> variable. To do it you to need click the <strong>repo_branch</strong> item in list.
+Then you will see the following page:</p>
+<img alt="_images/test_project_variables_2.png" src="_images/test_project_variables_2.png" />
+<p>After clicking the <span class="guilabel">Edit</span> button you need to change branch name of ‘value’ field. Then click the <span class="guilabel">Save</span> button.</p>
+<img alt="_images/test_project_variables_3.png" src="_images/test_project_variables_3.png" />
+<p>After changing of <strong>repo_branch</strong> variable you need to sync your Polemarch project
+to get files from selected branch.
+Until you synchronize the project, you’ll see in the “Branch” field your old branch and the new one.</p>
+<img alt="_images/test_project_variables_3_1.png" src="_images/test_project_variables_3_1.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If your need to choose branch with tag name
+you should use following format of branch name <code class="docutils literal notranslate"><span class="pre">tags/[tag_name]</span></code>.</p>
+</div>
+<p>After successful project synchronization you will see selected branch name in ‘branch’ field:</p>
+<img alt="_images/test_project_variables_4.png" src="_images/test_project_variables_4.png" />
+</section>
+<section id="ansible-module-execution">
+<h2>Ansible Module execution<a class="headerlink" href="#ansible-module-execution" title="Permalink to this heading"></a></h2>
+<p>The simplest way to start using Polemarch is to execute ansible module.
+To make this action click the <span class="guilabel">Execute ansible module</span> button on project page.</p>
+<img alt="_images/execute_module_1.png" src="_images/execute_module_1.png" />
+<p>As you can see, there are two fields on this page:</p>
+<ul class="simple">
+<li><p><strong>Module</strong> - autocomplete field with the list of project’s modules.</p></li>
+<li><p><strong>Add field</strong> - add additional argument.</p></li>
+</ul>
+<p>Also there is only one button on this page:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Execute ansible module</span> - this button starts action execution.</p></li>
+</ul>
+<p>For example, let’s execute module <code class="docutils literal notranslate"><span class="pre">shell</span></code> on <code class="docutils literal notranslate"><span class="pre">localhost</span></code> with argument <code class="docutils literal notranslate"><span class="pre">uptime</span></code>.
+To do it we need to add next fields:</p>
+<ul class="simple">
+<li><p><strong>Inventory</strong> - it can be inventory from Polemarch system, list of hosts, that are separated by <code class="docutils literal notranslate"><span class="pre">,</span></code>, or path to your inventory in project folder.</p></li>
+<li><p><strong>Group</strong> - to which hosts from inventory execute this module.</p></li>
+<li><p><strong>Connection</strong> - type of connection.</p></li>
+<li><p><strong>Args</strong> - list of arguments for current module.</p></li>
+</ul>
+<p>After all fields have been filled, our page started look like:</p>
+<img alt="_images/execute_module_2.png" src="_images/execute_module_2.png" />
+<p>So, let’s execute our first task on Polemarch! To do it click the <span class="guilabel">Execute module</span> button.</p>
+<p>When status of your module execution changes to “OK” you will see the next page:</p>
+<img alt="_images/execute_module_3.png" src="_images/execute_module_3.png" />
+<img alt="_images/execute_module_4.png" src="_images/execute_module_4.png" />
+</section>
+<section id="execution-templates">
+<h2>Execution templates<a class="headerlink" href="#execution-templates" title="Permalink to this heading"></a></h2>
+<p>In previous abstract to execute module we needed to fill several fields.
+To do it before every module/playbook execution is rather inconvenient.
+In this case Polemarch templates save our time and nerves.
+Polemarch template is an object, that saves all options that user used during task execution.</p>
+<p>For example, let’s create template which executes ansible playbook.
+To do it click the <span class="guilabel">Execution templates</span> button on project page.
+As you can see, there are no templates in the project’s template list now.</p>
+<img alt="_images/create_template.png" src="_images/create_template.png" />
+<p>There is only one button here:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Create</span> - this button opens the page for creation of new template.</p></li>
+</ul>
+<p>To create template click the <span class="guilabel">Create</span> button on this page.</p>
+<img alt="_images/create_template_2.png" src="_images/create_template_2.png" />
+<p>As you can see, there are several fields on this page:</p>
+<ul>
+<li><p><strong>Name</strong> - name of template at your choice.</p></li>
+<li><p><strong>Plugin</strong> - plugin which executes our task. There are two built in plugins: <em>ANSIBLE_PLAYBOOK</em>
+and <em>ANSIBLE_MODULE</em> allows you work with Ansible.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can create your own execution plugin allows you to run any shell command. If you’re
+interested in, checkout <a class="reference external" href="plugins.html">Execution plugins documentation</a>.</p>
+</div>
+</li>
+<li><p><strong>Playbook</strong> - name of playbook which will be used during execution.</p></li>
+<li><p><strong>Add fields</strong> - here you can add additional arguments for this template. In our case we’re
+going to use <code class="docutils literal notranslate"><span class="pre">inventory</span></code> and  <code class="docutils literal notranslate"><span class="pre">connection</span></code> arguments.</p></li>
+</ul>
+<p>After all fields have been filled, our page started look like:</p>
+<img alt="_images/create_template_3.png" src="_images/create_template_3.png" />
+<p>After template creation you will see the next page:</p>
+<img alt="_images/create_template_4.png" src="_images/create_template_4.png" />
+<p>Thought all our arguments are gone? Don’t worry. When you create a template, Polemarch also creates
+a default <em>option</em> that holds all arguments. Let’s check this out by going to
+<span class="guilabel">Sublinks</span> &gt; <span class="guilabel">Options</span>:</p>
+<img alt="_images/template_option_list.png" src="_images/template_option_list.png" />
+<p>Here is the list of all options which our template can use. You can always create a new option.
+Let’s click on <em>default</em>:</p>
+<img alt="_images/template_option_detail_default.png" src="_images/template_option_detail_default.png" />
+<p>Now we are ready to execute our template. To do it you have two ways:</p>
+<ul class="simple">
+<li><p>Being on the option page, click <span class="guilabel">Actions</span> &gt; <span class="guilabel">Execute</span></p></li>
+<li><p>Being on the template page, click <span class="guilabel">Actions</span> &gt; <span class="guilabel">Execute</span>,
+select an appropriate option and click <span class="guilabel">Execute</span> again.</p></li>
+</ul>
+<p>These scenarios are identical. Use the one that suites you best.</p>
+<p>As we are already on the option page, let’s use the first approach. So, clicking the
+<span class="guilabel">Execute</span> gives us the execution history page:</p>
+<img alt="_images/execute_template_1.png" src="_images/execute_template_1.png" />
+<img alt="_images/execute_template_2.png" src="_images/execute_template_2.png" />
+</section>
+<section id="periodic-tasks">
+<h2>Periodic tasks<a class="headerlink" href="#periodic-tasks" title="Permalink to this heading"></a></h2>
+<p>Now let’s imagine, that you need to execute task with some interval or
+on the first day of month, for example, and you do not want
+to execute it every time by yourself.</p>
+<p>For this case Polemarch has periodic tasks.</p>
+<p>Polemarch executes periodic tasks regularly after specified period of time
+or by crontab schedule.</p>
+<p>Remember our <em>test-task-template</em> from previous example? Let’s create a periodic task for it’s
+<em>default</em> option.</p>
+<img alt="_images/template_option_detail_default.png" src="_images/template_option_detail_default.png" />
+<p>Click on the <span class="guilabel">Sublinks</span> &gt; <span class="guilabel">Periodic tasks</span>.</p>
+<img alt="_images/periodic_task_empty_list.png" src="_images/periodic_task_empty_list.png" />
+<p>As you can see, there are no periodic tasks for now.</p>
+<p>There is only one button here:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Create</span> - this button opens the page for creation of new periodic task.</p></li>
+</ul>
+<p>To create a periodic task click the <span class="guilabel">Create</span> button on this page.</p>
+<img alt="_images/create_periodic_task_1.png" src="_images/create_periodic_task_1.png" />
+<p>As you can see, the form of new periodic task creation consists of following fields:</p>
+<ul class="simple">
+<li><p><strong>Name</strong> - name of periodic task at your choice.</p></li>
+<li><p><strong>Type</strong> - type of schedule (INTERVAL or CRONTAB).</p></li>
+<li><p><strong>Schedule</strong> - value of execution interval.</p>
+<ul>
+<li><p>If “type” is INTERVAL, task runs every time after specified interval has elapsed.</p></li>
+<li><p>If “type” is CRONTAB, task runs according specified schedule.</p></li>
+</ul>
+</li>
+<li><p><strong>Enabled</strong> - if active, the task will run, otherwise it won’t.</p></li>
+<li><p><strong>Save result</strong> - if active than each execution will generate a history page,
+otherwise it won’t.</p></li>
+<li><p><strong>Notes</strong> - not required field for some user’s notes, for example,
+for what purpose this periodic task was created or something like this.</p></li>
+</ul>
+<p>After all fields have been filled, our page started look like:</p>
+<img alt="_images/create_periodic_task_2.png" src="_images/create_periodic_task_2.png" />
+<p>Let’s save the task.</p>
+<p>Now you can check history list page. Every 10 seconds an execution history will be generated
+here. Periodic tasks differ from other tasks by “system” executor:</p>
+<img alt="_images/periodic_task_execution_history.png" src="_images/periodic_task_execution_history.png" />
+</section>
+<section id="inventory">
+<h2>Inventory<a class="headerlink" href="#inventory" title="Permalink to this heading"></a></h2>
+<p>If you don’t want to use ‘inventory’ as just list of hosts separated by <code class="docutils literal notranslate"><span class="pre">,</span></code>
+or do not have inventory file in you GIT project (“./inventory”, for example),
+you need to create it in Polemarch.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not forget to add you inventory to project after it’s creation.
+To do it click the <span class="guilabel">Inventory</span> button on project page.</p>
+</div>
+<p>Since v3.0.0 inventories can be state managed or not depending on plugin which is manages inventory. We will check
+them both with an example of built-in <cite>ANSIBLE_STRING</cite> and <cite>ANSIBLE_FILE</cite> inventories which are uses state, and
+<cite>POLEMARCH_DB</cite> inventory which is not.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can create your own inventory plugin which will manage its state as you define. If you’re
+interested in, checkout <a class="reference external" href="plugins.html">Inventory plugins documentation</a>.</p>
+</div>
+<section id="polemarch-db-inventory">
+<h3>POLEMARCH_DB inventory<a class="headerlink" href="#polemarch-db-inventory" title="Permalink to this heading"></a></h3>
+<p>POLEMARCH_DB inventory stores all data in separate entities - groups, hosts and variables and not uses state.</p>
+<p>By inventory’s creation in this case, we mean creation of inventory
+that includes at least one group, which, in turn, includes at least one host.
+In other words, in addition to the inventory, the user must create a host and a group.</p>
+<p>To better understand this, let’s look at next images, which will explain you how to create
+inventory.</p>
+<p>To create inventory you should choose ‘Inventories’ in left side menu and click the <span class="guilabel">Create</span> button.
+Here you can see the inventory creation form.</p>
+<img alt="_images/create_inventory.png" src="_images/create_inventory.png" />
+<p>As you can see, there are only 3 fields on this page:</p>
+<ul class="simple">
+<li><p><strong>Name</strong> - name of inventory.</p></li>
+<li><p><strong>Plugin</strong> - plugin which will manage our inventory. We will select <cite>POLEMARCH_DB</cite> plugin here.</p></li>
+<li><p><strong>Notes</strong> - not required field for some user’s notes, for example,
+for what purpose this inventory was created or something like this.</p></li>
+</ul>
+<p>And there is only one button here:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Save</span> - this button saves new inventory.</p></li>
+</ul>
+<p>After inventory creation you will see the next page:</p>
+<img alt="_images/test_inventory.png" src="_images/test_inventory.png" />
+<p>As you can see there are two new fields on this page:</p>
+<ul class="simple">
+<li><p><strong>Id</strong> - the unique key of object in database.</p></li>
+<li><p><strong>Owner</strong> - user, who owns this inventory.</p></li>
+</ul>
+<p>Also there are some new buttons here:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Edit</span> - this button turns on edit mod for this page.</p></li>
+<li><p><span class="guilabel">Remove</span> - this button deletes inventory.</p></li>
+</ul>
+<p>Sublinks buttons:</p>
+<ul class="simple">
+<li><p><span class="guilabel">All groups</span> - this button opens inventory’s all groups list
+(list of groups, which includes also groups that are nested into inventory groups).</p></li>
+<li><p><span class="guilabel">All hosts</span> - this button opens inventory’s all hosts list.
+(list of hosts, which includes also hosts that are nested into inventory groups).</p></li>
+<li><p><span class="guilabel">Group</span> - this button opens inventory’s group list.</p></li>
+<li><p><span class="guilabel">Host</span> - this button opens inventory’s host list.</p></li>
+<li><p><span class="guilabel">Variables</span> - this button opens inventory’s variables list.</p></li>
+</ul>
+<p>Action buttons:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Copy</span> - this button opens “copy” action page.</p></li>
+<li><p><span class="guilabel">Set owner</span> - this button opens “set owner” action page.</p></li>
+</ul>
+<p>Let’s look how you can create a group for this inventory.
+To do it click the <span class="guilabel">Group</span> button.</p>
+<section id="group">
+<h4>Group<a class="headerlink" href="#group" title="Permalink to this heading"></a></h4>
+<img alt="_images/test_inventory_group.png" src="_images/test_inventory_group.png" />
+<p>As you can see, there are no groups in the inventory’s group list now.</p>
+<p>There are two buttons here:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Create</span> - this button opens the page for creation of new group.</p></li>
+<li><p><span class="guilabel">Add</span> - this button opens the all group list from database,
+from which you can choose group for this inventory.</p></li>
+</ul>
+<p>We need to create a group. To do it click the <span class="guilabel">Create</span> button.</p>
+<img alt="_images/create_group.png" src="_images/create_group.png" />
+<p>As you can see, the form of new group creation consists of following fields:</p>
+<ul class="simple">
+<li><p><strong>Name</strong> - name of your group.</p></li>
+<li><p><strong>Contains groups</strong> - boolean field, it means ability of group to contain child groups.</p></li>
+<li><p><strong>Notes</strong> - not required field for some user’s notes, for example,
+for what purpose this group was created or something like this.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>By default SQLite’s maximum expression tree depth is 1000. This could create
+problems with very nested groups. If you encounter so, please refer to
+<a class="reference external" href="https://www.sqlite.org/limits.html#max_expr_depth">documentation</a>.</p>
+</div>
+<p>After group creation you will see the next page:</p>
+<img alt="_images/test_group.png" src="_images/test_group.png" />
+<p>As you can see there are two new fields on this page:</p>
+<ul class="simple">
+<li><p><strong>Id</strong> - the unique key of object in database.</p></li>
+<li><p><strong>Owner</strong> - user, who owns this group.</p></li>
+</ul>
+<p>Also there are some buttons here:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Edit</span> - this button turns on edit mod for this page.</p></li>
+<li><p><span class="guilabel">Remove</span> - this button deletes group.</p></li>
+</ul>
+<p>Sublinks buttons:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Hosts</span> - this button opens group’s host list.</p></li>
+<li><p><span class="guilabel">Variables</span> - this button opens group’s variables list.</p></li>
+</ul>
+<p>Action buttons:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Copy</span> - this button opens “copy” action page.</p></li>
+<li><p><span class="guilabel">Set owner</span> - this button opens “set owner” action page.</p></li>
+</ul>
+</section>
+<section id="hosts">
+<h4>Hosts<a class="headerlink" href="#hosts" title="Permalink to this heading"></a></h4>
+<p>Let’s look how you can create a host for this group.
+To do it click the <span class="guilabel">Create</span> button.</p>
+<img alt="_images/test_inventory_group_host.png" src="_images/test_inventory_group_host.png" />
+<p>As you can see, there are no hosts in the group’s host list now.</p>
+<p>There are two buttons here:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Create</span> - this button opens the page for creation of new host.</p></li>
+<li><p><span class="guilabel">Add</span> - this button opens the all host list from database,
+from which you can choose host for this group.</p></li>
+</ul>
+<p>We need to create host. To do it click the <span class="guilabel">Create</span> button.</p>
+<img alt="_images/create_host.png" src="_images/create_host.png" />
+<p>As you can see, the form of new host creation consists of following fields:</p>
+<ul class="simple">
+<li><p><strong>Name</strong> - name of your host.</p></li>
+<li><p><strong>Notes</strong> - not required field for some user’s notes, for example,
+for what purpose this host was created or something like this.</p></li>
+<li><p><strong>Type</strong> - type of host (RANGE, HOST).</p>
+<ul>
+<li><p>RANGE -  range of IPs or hosts.</p></li>
+<li><p>HOST - single host.</p></li>
+</ul>
+</li>
+</ul>
+<p>After host creation you will see the next page:</p>
+<img alt="_images/test_host.png" src="_images/test_host.png" />
+<p>As you can see there are two new fields on this page:</p>
+<ul class="simple">
+<li><p><strong>Id</strong> - the unique key of object in database</p></li>
+<li><p><strong>Owner</strong> - user, who owns this host.</p></li>
+</ul>
+<p>Also there are some buttons here:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Edit</span> - this button turns on edit mod for this page.</p></li>
+<li><p><span class="guilabel">Remove</span> - this button deletes host.</p></li>
+</ul>
+<p>Sublinks buttons:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Variables</span> - this button opens host’s variables list.</p></li>
+</ul>
+<p>Action buttons:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Copy</span> - this button opens “copy” action page.</p></li>
+<li><p><span class="guilabel">Set owner</span> - this button opens “set owner” action page.</p></li>
+</ul>
+<p>Let’s look how you can create a variables for host, group and inventory.</p>
+</section>
+<section id="variables-for-inventory-group-hosts">
+<h4>Variables for inventory, group, hosts<a class="headerlink" href="#variables-for-inventory-group-hosts" title="Permalink to this heading"></a></h4>
+<p>The process of variable creation for inventory is the same as for group or host.
+So, let’s look it at the example of variable creation for host.</p>
+<img alt="_images/test_host.png" src="_images/test_host.png" />
+<p>To do it click the <span class="guilabel">Variables</span> button on the host page:</p>
+<img alt="_images/test_host_variables.png" src="_images/test_host_variables.png" />
+<p>As you can see, there are no variables in the host’s variables list now.</p>
+<p>There is only one button here:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Create</span> - this button opens the page for creation of new variable.</p></li>
+</ul>
+<p>To create variable click the <span class="guilabel">Create</span> button:</p>
+<img alt="_images/test_host_variables_1.png" src="_images/test_host_variables_1.png" />
+<p>As you can see, the form of new host variable creation consists of following fields:</p>
+<ul class="simple">
+<li><p><strong>Key</strong> - key of variable.</p></li>
+<li><p><strong>Value</strong> - value of variable.</p></li>
+</ul>
+<p>After variable creation you will see the next page:</p>
+<img alt="_images/test_host_variables_2.png" src="_images/test_host_variables_2.png" />
+<p>As you can see there is only 1 new field on this page:</p>
+<ul class="simple">
+<li><p><strong>Id</strong> - the unique key of object in database.</p></li>
+</ul>
+</section>
+</section>
+<section id="ansible-string-inventory">
+<h3>ANSIBLE_STRING inventory<a class="headerlink" href="#ansible-string-inventory" title="Permalink to this heading"></a></h3>
+<p>Let’s return to inventory list page and create a new inventory:</p>
+<img alt="_images/create_inventory_ansible_string.png" src="_images/create_inventory_ansible_string.png" />
+<p>Our created inventory looks like this:</p>
+<img alt="_images/inventory_detail_ansible_string.png" src="_images/inventory_detail_ansible_string.png" />
+<p>As you can see, compared to <cite>POLEMARCH_DB</cite> inventory, this one is state managed. Its sublinks will have the only
+<cite>state</cite> link. Let’s click it and check the <cite>state</cite> page:</p>
+<img alt="_images/inventory_state_ansible_string.png" src="_images/inventory_state_ansible_string.png" />
+<p>These types of inventory stores an extension of file, its body, filename and specifies either file should be executable or not.
+Let’s edit the state. Click <span class="guilabel">Edit</span> button:</p>
+<img alt="_images/inventory_state_edit_ansible_string.png" src="_images/inventory_state_edit_ansible_string.png" />
+<p>After saving:</p>
+<img alt="_images/inventory_state_ansible_string_2.png" src="_images/inventory_state_ansible_string_2.png" />
+<p>Now inventory is ready for using.</p>
+<p>This type of inventory is used to store the completed file in the project directory at the time the task is run.
+It is helpful when you need to use one of the dynamic ansible inventory plugins.</p>
+</section>
+<section id="ansible-file-inventory">
+<h3>ANSIBLE_FILE inventory<a class="headerlink" href="#ansible-file-inventory" title="Permalink to this heading"></a></h3>
+<p>Again, returning to inventory list page, let’s create and inventory with <cite>ANSIBLE_FILE</cite> plugin:</p>
+<img alt="_images/create_inventory_ansible_file.png" src="_images/create_inventory_ansible_file.png" />
+<p>These inventories are also stores data in state as <cite>State managed</cite> hints us:</p>
+<img alt="_images/inventory_detail_ansible_file.png" src="_images/inventory_detail_ansible_file.png" />
+<p>Let’s edit the state (click <span class="guilabel">Sublinks</span>, then <span class="guilabel">State</span> and then <span class="guilabel">Edit</span>):</p>
+<img alt="_images/inventory_state_edit_ansible_file.png" src="_images/inventory_state_edit_ansible_file.png" />
+<p>Here we specify the relative path of inventory file which should be inside the directory with project that will be
+executed.</p>
+<img alt="_images/inventory_state_ansible_file_saved.png" src="_images/inventory_state_ansible_file_saved.png" />
+<p>Done. Inventory is ready for use.</p>
+<p>This type of inventory is used to use file from the project directory at the time the task is run.
+It is helpful when you have GitOps infrastructure where project files is single store of truth.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The use of strings when specifying an inventory path to describe a launch will be deprecated in future releases
+and removed from the interface.
+This inventory type is a direct string replacement.</p>
+</div>
+</section>
+</section>
+<section id="import-inventory">
+<h2>Import inventory<a class="headerlink" href="#import-inventory" title="Permalink to this heading"></a></h2>
+<p>If you have an inventory file and you want to add items from it to Polemarch,
+you can do it quickly using “Import Inventory”.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Import action may be available or not depending on which plugin inventory uses. For example, built-in
+<cite>POLEMARCH_DB</cite>, <cite>ANSIBLE_STRING</cite> supports import but <cite>ANSIBLE_FILE</cite> is not.</p>
+<p>Here we will look at import with an example of <cite>POLEMARCH_DB</cite> inventory. Import with <cite>ANSIBLE_STRING</cite> inventories
+works similar except that imported data saves to inventory state.</p>
+</div>
+<p>For example, let’s use next inventory file:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[imported-test-group]</span>
+<span class="na">imported-test-host ansible_host</span><span class="o">=</span><span class="s">10.10.10.17</span>
+
+<span class="k">[imported-test-group:vars]</span>
+<span class="na">ansible_user</span><span class="o">=</span><span class="s">ubuntu</span>
+<span class="na">ansible_ssh_private_key_file</span><span class="o">=</span><span class="s">example_key</span>
+</pre></div>
+</div>
+<p>To import inventory you should open inventory list page:</p>
+<img alt="_images/import_inventory.png" src="_images/import_inventory.png" />
+<p>And click the <span class="guilabel">Import inventory</span> button. Then you will see the next page:</p>
+<img alt="_images/import_inventory_2.png" src="_images/import_inventory_2.png" />
+<p>As you can see, the form of “Import inventory” action consists of two fields:</p>
+<ul class="simple">
+<li><p><strong>Name</strong> - name of your inventory.</p></li>
+<li><p><strong>Row data</strong> - content of your inventory file.</p></li>
+</ul>
+<p>After filling of all fields you should click the <span class="guilabel">Import inventory</span> button and then you will see
+page of your imported inventory:</p>
+<img alt="_images/import_inventory_3.png" src="_images/import_inventory_3.png" />
+<p>This inventory includes “imported-test-group” from imported inventory file:</p>
+<img alt="_images/import_inventory_4.png" src="_images/import_inventory_4.png" />
+<p>And “imported-test-group” includes “imported-test-host” from imported inventory file:</p>
+<img alt="_images/import_inventory_5.png" src="_images/import_inventory_5.png" />
+<p>Also “imported-test-group” includes variables “ansible_user” and “ansible_ssh_private_key_file” from imported inventory file:</p>
+<img alt="_images/import_inventory_7.png" src="_images/import_inventory_7.png" />
+<p>“imported-test-host” includes variable “ansible-host” from imported inventory file:</p>
+<img alt="_images/import_inventory_6.png" src="_images/import_inventory_6.png" />
+</section>
+<section id="polemarch-yaml">
+<h2>.polemarch.yaml<a class="headerlink" href="#polemarch-yaml" title="Permalink to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code> is a file for a quick deployment of Polemarch project.
+By quick deployment of Polemarch project we mean automatic creation of some templates
+for this project (during project sync) and using of additional interface for quick task execution.</p>
+<p><code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code> is not required file for Polemarch work,
+but if you want to use features of <code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code>, you have to store it in
+the base directory of (GIT, MANUAL, TAR) project.</p>
+<p>Structure of <code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code> consists of next fields:</p>
+<ul class="simple">
+<li><p><strong>sync_on_run</strong> - boolean, it means to get or not to get settings from <code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code>
+during each project sync.</p></li>
+<li><p><strong>templates</strong> - dictionary, consists of template objects
+(their structure is similar to template’s API structure except the ‘name’ field).</p></li>
+<li><p><strong>templates_rewrite</strong> - boolean, it means to rewrite or not to rewrite templates in project
+with names equal to templates’ names from <code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code>.</p></li>
+<li><p><strong>view</strong> - dictionary, it is a description of web-form, that will be generated from <code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code>.
+It consists of:</p>
+<ul>
+<li><p><strong>fields</strong> - dictionary, it consists of objects, that describe fields properties:</p>
+<ul>
+<li><p><strong>title</strong>: title of field, that Polemarch will show in web-form.</p></li>
+<li><p><strong>default</strong>: default value of field. Default: <code class="docutils literal notranslate"><span class="pre">''</span></code> - for strings, <code class="docutils literal notranslate"><span class="pre">0</span></code> - for numbers.</p></li>
+<li><p><strong>format</strong>: format of field. For today next field formats are available: string, integer, float, boolean. Default: string.</p></li>
+<li><p><strong>help</strong>: some help text for this field.</p></li>
+</ul>
+</li>
+<li><p><strong>playbooks</strong> - dictionary, it consists of objects, that describes playbook properties:</p>
+<ul>
+<li><p><strong>title</strong>: title of playbook, that Polemarch will use during playbook execution.</p></li>
+<li><p><strong>help</strong>: some help text for this playbook.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Example of <code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code>:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nn">---</span>
+<span class="nt">sync_on_run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="nt">test-module</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">plugin</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ANSIBLE_MODULE</span>
+<span class="w">    </span><span class="nt">options</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">default</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">module</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ping</span>
+<span class="w">            </span><span class="nt">group</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">all</span>
+<span class="w">            </span><span class="nt">inventory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">localhost,</span>
+<span class="w">        </span><span class="nt">uptime</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">module</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ping</span>
+<span class="w">            </span><span class="nt">args</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uptime</span>
+<span class="w">            </span><span class="nt">inventory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">127.0.0.1,</span>
+<span class="nt">test-playbook</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">plugin</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ANSIBLE_PLAYBOOK</span>
+<span class="w">    </span><span class="nt">options</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">update</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">playbook</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main.yml</span>
+<span class="w">            </span><span class="nt">become</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="nt">templates_rewrite</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="nt">view</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fields</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">string</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Field string</span>
+<span class="w">            </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">            </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">            </span><span class="nt">help</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Some help text</span>
+<span class="w">        </span><span class="nt">integer</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Field integer</span>
+<span class="w">            </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">            </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">integer</span>
+<span class="w">            </span><span class="nt">help</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Some help text</span>
+<span class="w">        </span><span class="nt">float</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Field float</span>
+<span class="w">            </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">            </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">float</span>
+<span class="w">            </span><span class="nt">help</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Some help text</span>
+<span class="w">        </span><span class="nt">boolean</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Field boolean</span>
+<span class="w">            </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">            </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">boolean</span>
+<span class="w">            </span><span class="nt">help</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Some help text</span>
+<span class="w">        </span><span class="nt">enum_string</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Field enum_string</span>
+<span class="w">            </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">            </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">            </span><span class="nt">help</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Some help text</span>
+<span class="w">            </span><span class="nt">enum</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&#39;Choice1&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&#39;Choice2&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&#39;Choice3&#39;</span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="nt">unknown</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Field unknown</span>
+<span class="w">            </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">            </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">invalid_or_unknown</span>
+<span class="w">            </span><span class="nt">help</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Some help text</span>
+<span class="w">    </span><span class="nt">playbooks</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">main.yml</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Execute title</span>
+<span class="w">            </span><span class="nt">help</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Some help text</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since Polemarch v3.0.0 execution templates system has been changed a lot. Along with it,
+the format for describing templates has also changed. We still support old format
+like in the next example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nn">...</span>
+<span class="nt">templates</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">test-module</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Module test template</span>
+<span class="w">        </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Module</span>
+<span class="w">        </span><span class="nt">data</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">group</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">all</span>
+<span class="w">            </span><span class="nt">vars</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span>
+<span class="w">            </span><span class="nt">args</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&#39;</span>
+<span class="w">            </span><span class="nt">module</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ping</span>
+<span class="w">            </span><span class="nt">inventory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">localhost,</span>
+<span class="w">        </span><span class="nt">options</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">uptime</span><span class="p">:</span>
+<span class="w">                </span><span class="nt">args</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uptime</span>
+<span class="w">                </span><span class="nt">module</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">shell</span>
+<span class="w">    </span><span class="nt">test playbook</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Playbook test template</span>
+<span class="w">        </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Task</span>
+<span class="w">        </span><span class="nt">data</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">vars</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="s">&quot;become&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="nv">true</span><span class="p p-Indicator">}</span>
+<span class="w">            </span><span class="nt">playbook</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main.yml</span>
+<span class="w">            </span><span class="nt">inventory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">localhost,</span>
+<span class="w">        </span><span class="nt">options</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">update</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="s">&quot;playbook&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&quot;other.yml&quot;</span><span class="p p-Indicator">}</span>
+<span class="w w-Error">  </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+
+<span class="l l-Scalar l-Scalar-Plain">Here *kind* (Task, Module) is converted to *plugin* (ANSIBLE_PLAYBOOK, ANSIBLE_MODULE)</span>
+
+<span class="l l-Scalar l-Scalar-Plain">But keep in mind that this format has been deprecated and it&#39;s</span>
+<span class="l l-Scalar l-Scalar-Plain">desirable to rewrite templates to match the new format.</span>
+</pre></div>
+</div>
+</div>
+<p>In GUI process of working with <code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code> will be the following:</p>
+<p>Firstly, you need to create a project with <code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code>
+(or to add <code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code> to existing project).
+For example, let’s create new GIT project, that has in its base directory <code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code> file
+from the example above:</p>
+<img alt="_images/create_project_with_polemarch_yaml.png" src="_images/create_project_with_polemarch_yaml.png" />
+<p>In the field ‘Repo url’ you should insert URL of project that has in its base directory
+<code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code> file.</p>
+<p>After project creation you will see the ordinary project page:</p>
+<img alt="_images/create_project_with_polemarch_yaml_2.png" src="_images/create_project_with_polemarch_yaml_2.png" />
+<p>Then you need to click the <span class="guilabel">Sync</span> button. After project synchronization you will see the next page:</p>
+<img alt="_images/create_project_with_polemarch_yaml_3.png" src="_images/create_project_with_polemarch_yaml_3.png" />
+<img alt="_images/create_project_with_polemarch_yaml_3_1.png" src="_images/create_project_with_polemarch_yaml_3_1.png" />
+<p>As you can see, all fields that we mentioned in the example <code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code> were added
+to this web-form. Values of all these fields will be used as ansible <code class="docutils literal notranslate"><span class="pre">extra_vars</span></code> parameter during task execution.</p>
+<p>The remaining fields mean following:</p>
+<ul class="simple">
+<li><p><strong>Inventory</strong> - it can be inventory from Polemarch system, list of hosts, that are separated by <code class="docutils literal notranslate"><span class="pre">,</span></code>, or path to your inventory in project folder.</p></li>
+<li><p><strong>User</strong> - set it if your don’t have <code class="docutils literal notranslate"><span class="pre">ansible_user</span></code> variable in your inventory.</p></li>
+<li><p><strong>Key file</strong> - set it if your don’t have <code class="docutils literal notranslate"><span class="pre">ansible_ssh_private_key_file</span></code> variable in your inventory.</p></li>
+</ul>
+<p>Button <span class="guilabel">Execute title</span> will execute playbook “main.yml”, as we mentioned in <code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code> file.</p>
+<p>Also templates from <code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code> were added to just created Polemarch project.</p>
+<img alt="_images/create_project_with_polemarch_yaml_4.png" src="_images/create_project_with_polemarch_yaml_4.png" />
+</section>
+<section id="community-project-samples">
+<h2>Community project samples<a class="headerlink" href="#community-project-samples" title="Permalink to this heading"></a></h2>
+<p>Polemarch has his own list of community repositories, which provide you with stuff,
+that is able to deploy different services in extremely quick and convenient way.
+Community project sample is an entity, that clones repository from community list into your Polemarch.
+Some community project samples have only list of playbooks, but most have <code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code> file,
+that helps you to deploy tasks even faster.</p>
+<p>Let’s look how it works on examples.</p>
+<p>Firstly, open page with community project samples list.</p>
+<img alt="_images/community_template.png" src="_images/community_template.png" />
+<p>As you can see, there is a table with list of community repositories,
+that consists of following columns:</p>
+<ul class="simple">
+<li><p><strong>Name</strong> - name of community repository.</p></li>
+<li><p><strong>Type</strong> - type of community repository.</p></li>
+</ul>
+<p>Let’s open “WordPress” community repository page.</p>
+<img alt="_images/community_template_1.png" src="_images/community_template_1.png" />
+<p>As you can see, the community repository page consists of following fields:</p>
+<ul class="simple">
+<li><p><strong>Id</strong> - id of community repository;</p></li>
+<li><p><strong>Name</strong> - name of community repository;</p></li>
+<li><p><strong>Description</strong> - description of community repository;</p></li>
+<li><p><strong>Type</strong> - type of community repository;</p></li>
+<li><p><strong>Repository</strong> - URL of community repository.</p></li>
+</ul>
+<p>Also there is only one action button on this page:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Use it</span> - this buttons opens page where you can set project’s name.</p></li>
+</ul>
+<p>Let’s click the <span class="guilabel">Use it</span> button.</p>
+<img alt="_images/community_template_2.png" src="_images/community_template_2.png" />
+<p>As you can see, this action page has only one field:</p>
+<ul class="simple">
+<li><p><strong>Name</strong> - name of project, that will be clone of current community repository in your Polemarch.
+By default it will be name of community repository with UUID.</p></li>
+</ul>
+<p>After that you need to click <span class="guilabel">Use it</span> button once more time and you will be redirected to the page of just created project:</p>
+<img alt="_images/community_template_3.png" src="_images/community_template_3.png" />
+<p>As you can see value of field “Repository” is the same as in “WordPress” community repository.</p>
+<p>Then you need to click the <span class="guilabel">Sync</span> button. After project synchronization you will see the next page:</p>
+<img alt="_images/community_template_4.png" src="_images/community_template_4.png" />
+<img alt="_images/community_template_5.png" src="_images/community_template_5.png" />
+<p>This page has <span class="guilabel">Deploy wordpress</span> button (because project has <code class="docutils literal notranslate"><span class="pre">.polemarch.yaml</span></code> file)
+and all that you need to do for WordPress deployment on your hosts is filling following fields:</p>
+<ul class="simple">
+<li><p><strong>Inventory</strong> - it can be inventory from Polemarch system, list of hosts, that are separated by <code class="docutils literal notranslate"><span class="pre">,</span></code>, or path to your inventory in project folder.</p></li>
+<li><p><strong>User</strong> - set it if your do not have <code class="docutils literal notranslate"><span class="pre">ansible_user</span></code> variable in your inventory.</p></li>
+<li><p><strong>Key file</strong> - set it if your do not have <code class="docutils literal notranslate"><span class="pre">ansible_ssh_private_key_file</span></code> variable in your inventory.</p></li>
+<li><p><strong>Mysql user</strong> - name of MySQL user of your wordpress site’s database.</p></li>
+<li><p><strong>Mysql password</strong> - password of MySQL user of your wordpress site’s database.</p></li>
+</ul>
+<p>After all required fields have been filled, you need to click the <span class="guilabel">Deploy wordpress</span> button
+to start wordpress deployment on your hosts.</p>
+</section>
+<section id="hooks">
+<h2>Hooks<a class="headerlink" href="#hooks" title="Permalink to this heading"></a></h2>
+<p>Polemarch has his own system of hooks.
+Polemarch hooks are synchronous and you can appoint them on different events
+like “on_execution”, “after_execution” and so on.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You should be accurate with hooks appointment,
+because the more hooks you have, the more time they need for execution and,
+finally, the more time Ansible needs for task execution.</p>
+</div>
+<img alt="_images/hooks_empty_list.png" src="_images/hooks_empty_list.png" />
+<p>As you can see, there are no hooks in the system now.</p>
+<p>There is only one button here:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Create</span> - this button opens the page for creation of new hook.</p></li>
+</ul>
+<p>To create hook click the <span class="guilabel">Create</span> button.</p>
+<img alt="_images/create_hook.png" src="_images/create_hook.png" />
+<p>As you can see, the form of new hook creation consists of following fields:</p>
+<ul class="simple">
+<li><p><strong>Name</strong> - name of your hook.</p></li>
+<li><p><strong>Type</strong> - type of hook (HTTP, SCRIPT).
+* If type is “HTTP”, Polemarch will send “POST” request with JSON to all recipients.
+* If type is “SCRIPT”, Polemarch will execute script.</p></li>
+<li><p><strong>When</strong> - event on each Polemarch have to execute hook.</p></li>
+<li><p><strong>Enable</strong> - boolean field, it means to activate or to deactivate hook.</p></li>
+<li><p><strong>Recipients</strong> - if type of hook is HTTP, then this field represents list of recipients, separated by ” | “.
+For example, “ex1.com | ex2.com | ex3.com”.
+If type of hook is SCRIPT, then recipients are actually list of files containing scripts, similarly separated by ” | “.
+For example: “notify.sh | counter.sh”. Files must be in HOOKS_DIR directory.</p></li>
+</ul>
+<img alt="_images/create_hook_1.png" src="_images/create_hook_1.png" />
+</section>
+<section id="users">
+<h2>Users<a class="headerlink" href="#users" title="Permalink to this heading"></a></h2>
+<p>Polemarch provides you with several types of user:</p>
+<ul class="simple">
+<li><p>superuser;</p></li>
+<li><p>staff.</p></li>
+</ul>
+<p>If you need to create a superuser, you need to do it with terminal command.
+Look for more information here “<a class="reference internal" href="quickstart.html#create-superuser"><span class="std std-ref">Create superuser</span></a>”.</p>
+<p>If you need to create user with “staff” rights you can do it with Polemarch GUI:</p>
+<img alt="_images/user_list.png" src="_images/user_list.png" />
+<p>To create new user click the <span class="guilabel">Create</span> button.</p>
+<img alt="_images/create_user.png" src="_images/create_user.png" />
+<p>As you can see, the form of new user creation consists of following fields:</p>
+<ul class="simple">
+<li><p><strong>Username</strong> - name of new user.</p></li>
+<li><p><strong>Is active</strong> - boolean field, it means to activate or to deactivate user.</p></li>
+<li><p><strong>First name</strong> - first name of user.</p></li>
+<li><p><strong>Last name</strong> - last name of user.</p></li>
+<li><p><strong>Email</strong> - email of user.</p></li>
+<li><p><strong>Password</strong> - password of user.</p></li>
+<li><p><strong>Repeat password</strong> - password of user.</p></li>
+</ul>
+<p>Also you can use action <span class="guilabel">Generate password</span>.</p>
+<ul class="simple">
+<li><p><span class="guilabel">Generate password</span> - generates random password from 12 to 20 characters long. Password will contain capital and lower letters, numbers and special symbols.</p></li>
+</ul>
+<p>After user creation you will see next page:</p>
+<img alt="_images/test_user.png" src="_images/test_user.png" />
+<p>As you can see there is only one new fields on this page:</p>
+<ul class="simple">
+<li><p><strong>Id</strong> - the unique key of object in database.</p></li>
+</ul>
+<p>Also there are several buttons here:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Edit</span> - this button turns on edit mod for this page.</p></li>
+<li><p><span class="guilabel">Two factor authentication</span> - you can use TFA if you want to protect your account.</p></li>
+<li><p><span class="guilabel">Remove</span> - this button deletes periodic task.</p></li>
+</ul>
+<p>Action buttons:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Change password</span> - this button opens “change password” action page.</p></li>
+<li><p><span class="guilabel">Copy</span> - this button opens “copy” action page.</p></li>
+</ul>
+<p>Let’s look on “change password” action page.</p>
+<img alt="_images/change_password.png" src="_images/change_password.png" />
+<p>As you can see, the form of “change password” action consists of following fields:</p>
+<ul class="simple">
+<li><p><strong>Old password</strong> - current password of user.</p></li>
+<li><p><strong>New password</strong> - new password of user.</p></li>
+<li><p><strong>Confirm new password</strong> - new password of user.</p></li>
+</ul>
+<p>There are two buttons here:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Change password</span> - this button saves your new password.</p></li>
+<li><p><span class="guilabel">Generate password</span> - generates random password from 12 to 20 characters long. Password will contain capital and lower letters, numbers and special symbols.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="config.html" class="btn btn-neutral float-left" title="Configuration manual" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="plugins.html" class="btn btn-neutral float-right" title="Plugins" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright VST Consulting, 2019-2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

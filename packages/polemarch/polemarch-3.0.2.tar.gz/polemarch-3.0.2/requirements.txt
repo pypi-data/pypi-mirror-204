@@ -1,0 +1,14 @@
+# Main
+vstutils[rpc,prod]~=5.4.2
+markdown2~=2.4.8
+
+# Repo types
+gitpython~=3.1.30
+gitdb2~=4.0.2
+
+# Hooks
+requests~=2.27.1
+
+# Ansible required packages
+polemarch-ansible~=2.2.0
+netaddr

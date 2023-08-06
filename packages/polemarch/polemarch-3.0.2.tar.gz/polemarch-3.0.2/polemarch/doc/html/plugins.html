@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plugins &mdash; &#39;Polemarch&#39; 3.0.2 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API" href="api.html" />
+    <link rel="prev" title="GUI workflow" href="gui.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+<a href="/#">
+<img src="_static/html_logo.png" class="logo" alt="Logo"/>
+</a>
+  <div class="version">
+    3.0.2
+  </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Home</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Configuration manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gui.html">GUI workflow</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Plugins</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#execution-plugins">Execution plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#execution-plugins-quick-start">Execution plugins: quick start</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#inventory-plugins">Inventory plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#inventory-plugins-quick-start">Inventory plugins: quick start</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#api-reference">API reference</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin"><code class="docutils literal notranslate"><span class="pre">BasePlugin</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin._get_serializer_fields"><code class="docutils literal notranslate"><span class="pre">BasePlugin._get_serializer_fields()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin._get_serializer_metaclass"><code class="docutils literal notranslate"><span class="pre">BasePlugin._get_serializer_metaclass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin._process_arg"><code class="docutils literal notranslate"><span class="pre">BasePlugin._process_arg()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.arg_shown_on_history_as_inventory"><code class="docutils literal notranslate"><span class="pre">BasePlugin.arg_shown_on_history_as_inventory</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.arg_shown_on_history_as_mode"><code class="docutils literal notranslate"><span class="pre">BasePlugin.arg_shown_on_history_as_mode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.base_command"><code class="docutils literal notranslate"><span class="pre">BasePlugin.base_command</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.error_codes"><code class="docutils literal notranslate"><span class="pre">BasePlugin.error_codes</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.get_args"><code class="docutils literal notranslate"><span class="pre">BasePlugin.get_args()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.get_env_vars"><code class="docutils literal notranslate"><span class="pre">BasePlugin.get_env_vars()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.get_execution_data"><code class="docutils literal notranslate"><span class="pre">BasePlugin.get_execution_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.get_pre_commands"><code class="docutils literal notranslate"><span class="pre">BasePlugin.get_pre_commands()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.get_raw_inventory"><code class="docutils literal notranslate"><span class="pre">BasePlugin.get_raw_inventory()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.get_serializer_class"><code class="docutils literal notranslate"><span class="pre">BasePlugin.get_serializer_class()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.get_verbose_level"><code class="docutils literal notranslate"><span class="pre">BasePlugin.get_verbose_level()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.name"><code class="docutils literal notranslate"><span class="pre">BasePlugin.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.post_execute_hook"><code class="docutils literal notranslate"><span class="pre">BasePlugin.post_execute_hook()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.prepare_execution_dir"><code class="docutils literal notranslate"><span class="pre">BasePlugin.prepare_execution_dir()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.serializer_fields"><code class="docutils literal notranslate"><span class="pre">BasePlugin.serializer_fields</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.execution.base.BasePlugin.verbose_output"><code class="docutils literal notranslate"><span class="pre">BasePlugin.verbose_output()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#polemarch.plugins.inventory.base.BasePlugin"><code class="docutils literal notranslate"><span class="pre">BasePlugin</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.inventory.base.BasePlugin._get_serializer_fields"><code class="docutils literal notranslate"><span class="pre">BasePlugin._get_serializer_fields()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.inventory.base.BasePlugin._get_serializer_import_fields"><code class="docutils literal notranslate"><span class="pre">BasePlugin._get_serializer_import_fields()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.inventory.base.BasePlugin._get_serializer_import_metaclass"><code class="docutils literal notranslate"><span class="pre">BasePlugin._get_serializer_import_metaclass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.inventory.base.BasePlugin._get_serializer_metaclass"><code class="docutils literal notranslate"><span class="pre">BasePlugin._get_serializer_metaclass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.inventory.base.BasePlugin.defaults"><code class="docutils literal notranslate"><span class="pre">BasePlugin.defaults</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.inventory.base.BasePlugin.get_raw_inventory"><code class="docutils literal notranslate"><span class="pre">BasePlugin.get_raw_inventory()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.inventory.base.BasePlugin.get_serializer_class"><code class="docutils literal notranslate"><span class="pre">BasePlugin.get_serializer_class()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.inventory.base.BasePlugin.get_serializer_import_class"><code class="docutils literal notranslate"><span class="pre">BasePlugin.get_serializer_import_class()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.inventory.base.BasePlugin.import_inventory"><code class="docutils literal notranslate"><span class="pre">BasePlugin.import_inventory()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.inventory.base.BasePlugin.render_inventory"><code class="docutils literal notranslate"><span class="pre">BasePlugin.render_inventory()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.inventory.base.BasePlugin.serializer_fields"><code class="docutils literal notranslate"><span class="pre">BasePlugin.serializer_fields</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.inventory.base.BasePlugin.serializer_import_fields"><code class="docutils literal notranslate"><span class="pre">BasePlugin.serializer_import_fields</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.inventory.base.BasePlugin.state_managed"><code class="docutils literal notranslate"><span class="pre">BasePlugin.state_managed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polemarch.plugins.inventory.base.BasePlugin.supports_import"><code class="docutils literal notranslate"><span class="pre">BasePlugin.supports_import</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">How to participate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cla.html">VST Consulting contributor agreement</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">'Polemarch'</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Plugins</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/plugins.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="plugins">
+<h1>Plugins<a class="headerlink" href="#plugins" title="Permalink to this heading"></a></h1>
+<p>Polemarch can be extended with different type of plugins. This manual describes how to create, setup and start using
+your first Execution or Inventory plugin and provides full API reference to learn more about them.</p>
+<section id="execution-plugins">
+<h2>Execution plugins<a class="headerlink" href="#execution-plugins" title="Permalink to this heading"></a></h2>
+<p>Execution plugins system allows you to execute any external command from Polemarch. To create an execution plugin you
+need to</p>
+<ul class="simple">
+<li><p>create a python class describing the argument processing and API talking logic;</p></li>
+<li><p>configure this plugin in your <code class="docutils literal notranslate"><span class="pre">settings.ini</span></code>.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Since v3.0.0 path to execution plugins has been changed from <code class="docutils literal notranslate"><span class="pre">polemarch.plugins</span></code> to
+<code class="docutils literal notranslate"><span class="pre">polemarch.plugins.execution</span></code>.</p>
+</div>
+<section id="execution-plugins-quick-start">
+<h3>Execution plugins: quick start<a class="headerlink" href="#execution-plugins-quick-start" title="Permalink to this heading"></a></h3>
+<p>All built-in execution backends, such as ansible playbook or module execution, use plugins (starting from 2.2.0).</p>
+<p>To get started let’s create a simple plugin allows you to run <code class="docutils literal notranslate"><span class="pre">echo</span></code> command.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">rest_framework.fields</span> <span class="kn">import</span> <span class="n">BooleanField</span><span class="p">,</span> <span class="n">empty</span>
+<span class="kn">from</span> <span class="nn">vstutils.api.fields</span> <span class="kn">import</span> <span class="n">VSTCharField</span>
+<span class="kn">from</span> <span class="nn">polemarch.plugins.execution.base</span> <span class="kn">import</span> <span class="n">BasePlugin</span>
+
+
+<span class="c1"># Any plugin must be inherited from BasePlugin</span>
+<span class="k">class</span> <span class="nc">TestEcho</span><span class="p">(</span><span class="n">BasePlugin</span><span class="p">):</span>
+    <span class="c1"># Define fields which will be used to execute this plugin and create template with</span>
+    <span class="n">serializer_fields</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="c1"># You can use fields either from rest_framework or vstutils</span>
+        <span class="s1">&#39;string&#39;</span><span class="p">:</span> <span class="n">VSTCharField</span><span class="p">(),</span>
+        <span class="s1">&#39;n&#39;</span><span class="p">:</span> <span class="n">BooleanField</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="n">empty</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;No trailing newlines&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;e&#39;</span><span class="p">:</span> <span class="n">BooleanField</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="n">empty</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Interpret backslash escapes&#39;</span><span class="p">),</span>
+    <span class="p">}</span>
+    <span class="c1"># Value of this field will be shown on history detail page as Mode</span>
+    <span class="n">arg_shown_on_history_as_mode</span> <span class="o">=</span> <span class="s1">&#39;string&#39;</span>
+
+    <span class="c1"># This is our binary from which any command starts</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">base_command</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;echo&#39;</span><span class="p">]</span>
+
+    <span class="c1"># This method is called by get_args method of BasePlugin for each argument received from API. As we defined</span>
+    <span class="c1"># &#39;string&#39;, &#39;n&#39;, and &#39;e&#39; arguments in serializer_fields, we can get their keys and values here.</span>
+    <span class="k">def</span> <span class="nf">_process_arg</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="c1"># As &#39;string&#39; argument in this case is a positional argument, let&#39;s return just it&#39;s value, so the final</span>
+        <span class="c1"># command will be something like [&#39;echo&#39;, &#39;string to output&#39;, ...]</span>
+        <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;string&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">value</span>
+        <span class="c1"># As this guys are just boolean flags, let&#39;s return them as &#39;-n&#39; or &#39;-e&#39; accordingly</span>
+        <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">value</span><span class="p">:</span>
+            <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;-</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s1">&#39;</span>
+        <span class="c1"># Note, that if we received for example `n` argument with False value, we are returning None,</span>
+        <span class="c1"># means that it won&#39;t be included to execution command. But of course, you may override this behavior</span>
+        <span class="c1"># in get_args method.</span>
+</pre></div>
+</div>
+<p>Supposing that described plugin is located at <code class="docutils literal notranslate"><span class="pre">polemarch.plugins.execution.custom.Echo</span></code>, let’s connect it to
+Polemarch. In your <code class="docutils literal notranslate"><span class="pre">/etc/polemarch/settings.ini</span></code> add following section:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[execution.plugin.echo]</span>
+<span class="na">backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">polemarch.plugins.execution.custom.Echo</span>
+</pre></div>
+</div>
+<p>Also you may want to provide additional options directly to plugin:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[execution.plugin.echo.options]</span>
+<span class="na">some_option</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;some_option&#39;</span>
+</pre></div>
+</div>
+<p>In this example <cite>some_option</cite> will be available in any plugin’s instance method as <code class="docutils literal notranslate"><span class="pre">self.config['some_option']</span></code>, as
+all options are initialized in the <code class="docutils literal notranslate"><span class="pre">__init__</span></code> method.</p>
+<p>So it’s all done! After restarting your polemarch server and resetting schema, you can check
+<code class="docutils literal notranslate"><span class="pre">#/project/&lt;your_project_id&gt;/execute_echo/</span></code>. Here you should be able to execute echo plugin as any built-in one.
+Also you should be able to create a <a class="reference internal" href="gui.html#execution-templates"><span class="std std-ref">template</span></a> with it at <code class="docutils literal notranslate"><span class="pre">#/project/&lt;your_project_id&gt;/execution_templates/new/</span></code>.</p>
+<p>If you tried executing echo plugin with flags, you may see that this flags are being outputted too. This is because
+they goes after <code class="docutils literal notranslate"><span class="pre">string</span></code> argument. To fix this issue, we may do something like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
+
+<span class="k">class</span> <span class="nc">TestEcho</span><span class="p">(</span><span class="n">BasePlugin</span><span class="p">):</span>
+    <span class="o">...</span>
+
+    <span class="k">def</span> <span class="nf">get_args</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">raw_args</span><span class="p">):</span>
+        <span class="c1"># We know that &#39;string&#39; is required so no default for .pop() is needed</span>
+        <span class="n">string_value</span> <span class="o">=</span> <span class="n">raw_args</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">)</span>
+        <span class="n">args</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_args</span><span class="p">(</span><span class="n">raw_args</span><span class="p">)</span>
+        <span class="c1"># Push our string to the end of command</span>
+        <span class="n">args</span> <span class="o">+=</span> <span class="p">[</span><span class="n">string_value</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">args</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">base_command</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;echo&#39;</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">_process_arg</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">value</span><span class="p">:</span>
+            <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;-</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s1">&#39;</span>
+</pre></div>
+</div>
+<p>Now if you are passing flags to execution, they should work the same except not being outputted.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If your execution plugin may work with inventories, you should specify which inventory plugins are compatible
+with your execution plugin. By default it’s assumed that execution plugin can’t work with inventories. For more
+information about inventory plugins please see <a class="reference internal" href="#inventory-plugins"><span class="std std-ref">Inventory plugins</span></a>.</p>
+</div>
+<p>To learn more about what plugins are provide, please check API reference.</p>
+</section>
+</section>
+<section id="inventory-plugins">
+<h2>Inventory plugins<a class="headerlink" href="#inventory-plugins" title="Permalink to this heading"></a></h2>
+<p>Inventory plugins system allows you to define how inventory stores, manages and displays its state. To create an
+inventory plugin you need to</p>
+<ul class="simple">
+<li><p>create a python class which manages inventory state and API talking logic;</p></li>
+<li><p>configure this plugin in your <code class="docutils literal notranslate"><span class="pre">settings.ini</span></code>.</p></li>
+</ul>
+<section id="inventory-plugins-quick-start">
+<h3>Inventory plugins: quick start<a class="headerlink" href="#inventory-plugins-quick-start" title="Permalink to this heading"></a></h3>
+<p>To get started let’s create a simple plugin which works like a simplified version of built-in <code class="docutils literal notranslate"><span class="pre">AnsibleString</span></code> with
+some additional changes.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">vstutils.api</span> <span class="kn">import</span> <span class="n">fields</span> <span class="k">as</span> <span class="n">vstfields</span>
+<span class="kn">from</span> <span class="nn">polemarch.plugins.inventory.base</span> <span class="kn">import</span> <span class="n">BasePlugin</span>
+
+<span class="k">class</span> <span class="nc">CustomAnsibleString</span><span class="p">(</span><span class="n">BasePlugin</span><span class="p">):</span>
+    <span class="c1"># Our plugin will support import and we will implement corresponding method</span>
+    <span class="n">supports_import</span> <span class="o">=</span> <span class="kc">True</span>
+
+    <span class="c1"># These fields will be used for working with inventory state in API</span>
+    <span class="n">serializer_fields</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="c1"># You can use fields either from rest_framework or vstutils</span>
+        <span class="s1">&#39;body&#39;</span><span class="p">:</span> <span class="n">vstfields</span><span class="o">.</span><span class="n">TextareaField</span><span class="p">(</span><span class="n">allow_blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">),</span>
+    <span class="p">}</span>
+    <span class="c1"># Default values for our fields which will be used to initialize inventory state</span>
+    <span class="n">defaults</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;body&#39;</span><span class="p">:</span> <span class="s1">&#39;localhost ansible_connection=local&#39;</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="c1"># These fields will be used for import action in API</span>
+    <span class="n">serializer_import_fields</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;body&#39;</span><span class="p">:</span> <span class="n">vstfields</span><span class="o">.</span><span class="n">FileInStringField</span><span class="p">(),</span>
+    <span class="p">}</span>
+
+    <span class="k">def</span> <span class="nf">render_inventory</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">execution_dir</span><span class="p">):</span>
+        <span class="c1"># Getting inventory state. This is possible because by default state_managed attribute of plugin class</span>
+        <span class="c1"># is True</span>
+        <span class="n">state_data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">instance</span><span class="o">.</span><span class="n">inventory_state</span><span class="o">.</span><span class="n">data</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid1</span><span class="p">())</span>
+        <span class="c1"># Any created files must be in execution_dir</span>
+        <span class="n">filepath</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">execution_dir</span><span class="p">)</span> <span class="o">/</span> <span class="n">filename</span>
+        <span class="n">filepath</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span><span class="n">state_data</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">])</span>
+        <span class="c1"># We doesn&#39;t need any additional files so the second argument is empty list</span>
+        <span class="k">return</span> <span class="n">filepath</span><span class="p">,</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="nf">get_raw_inventory</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inventory_string</span><span class="p">):</span>
+        <span class="c1"># This string will be shown on history page</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;File contents:</span><span class="se">\n</span><span class="si">{</span><span class="n">inventory_string</span><span class="si">}</span><span class="s1">&#39;</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">import_inventory</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">instance</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="c1"># Here we got data which structure corresponds to serializer_import_fields</span>
+        <span class="c1"># and created inventory instance. It&#39;s recommended to always use update_inventory_state method</span>
+        <span class="c1"># rather than accessing inventory state directly.</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">update_inventory_state</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">instance</span>
+</pre></div>
+</div>
+<p>Supposing that described plugin is located at <code class="docutils literal notranslate"><span class="pre">polemarch.plugins.inventory.custom.CustomInventoryString</span></code>, let’s
+connect it to Polemarch. In your <code class="docutils literal notranslate"><span class="pre">/etc/polemarch/settings.ini</span></code> add following section:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[inventory.plugin.custom_inventory_string]</span>
+<span class="na">backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">polemarch.plugins.inventory.custom.CustomInventoryString</span>
+</pre></div>
+</div>
+<p>Also you may want to provide additional options directly to plugin:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[inventory.plugin.custom_inventory_string.options]</span>
+<span class="na">some_option</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;some_option&#39;</span>
+</pre></div>
+</div>
+<p>In this example <cite>some_option</cite> will be available in any plugin’s instance method as <code class="docutils literal notranslate"><span class="pre">self.options['some_option']</span></code>, as all options are initialized in the <code class="docutils literal notranslate"><span class="pre">__init__</span></code> method.</p>
+<p>To start working with the created plugin we also need to allow some execution plugin work with this one. Let’s
+say that <cite>ANSIBLE_MODULE</cite> plugin can play with our new <cite>CUSTOM_ANSIBLE_STRING</cite>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[execution.plugin.ansible_module.options]</span>
+<span class="c1">; Make sure you not disabled other built-in inventory plugins</span>
+<span class="na">compatible_inventory_plugins</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">polemarch_db,ansible_file,ansible_string,custom_inventory_string</span>
+</pre></div>
+</div>
+<p>Done! Now you can create inventory with your plugin at <code class="docutils literal notranslate"><span class="pre">#/project/&lt;your_project_id&gt;/inventory/new/</span></code>,
+execute <cite>ANSIBLE_MODULE</cite> plugin at <code class="docutils literal notranslate"><span class="pre">#/project/&lt;your_project_id&gt;/execute_ansible_module/</span></code> selecting created inventory.</p>
+</section>
+</section>
+<section id="api-reference">
+<h2>API reference<a class="headerlink" href="#api-reference" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">polemarch.plugins.execution.base.</span></span><span class="sig-name descname"><span class="pre">BasePlugin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_handler</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin" title="Permalink to this definition"></a></dt>
+<dd><p>Base execution plugin class from which any other plugin should inherit. The plugin itself is an entity which, on
+the one hand provides appropriate fields for the API, and on the other hand, processes arguments received from
+it to build execution command.</p>
+<p>For each configured plugin an endpoint will be generated allows you to choose arguments and execute it.
+Also, this plugin will be available to create template with.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>options</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">typing.Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>]) – <code class="docutils literal notranslate"><span class="pre">settings.ini</span></code> options mapping for this plugin.</p></li>
+<li><p><strong>output_handler</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">typing.Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Callable" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">typing.Callable</span></code></a>]) – executor’s function which handles logging and outputting to history. Used by
+<code class="docutils literal notranslate"><span class="pre">verbose_output</span></code> method.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin._get_serializer_fields">
+<span class="sig-name descname"><span class="pre">_get_serializer_fields</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exclude_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin._get_serializer_fields" title="Permalink to this definition"></a></dt>
+<dd><p>Returns field name and field instance mapping used to generate fields for serializer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>exclude_fields</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#tuple" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a>) – field names that should not be presented in serializer.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Mapping" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Mapping</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.fields.Field</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin._get_serializer_metaclass">
+<span class="sig-name descname"><span class="pre">_get_serializer_metaclass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exclude_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin._get_serializer_metaclass" title="Permalink to this definition"></a></dt>
+<dd><p>Returns serializer metaclass used to generate fields in serializer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>exclude_fields</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#tuple" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a>) – field names that should not be presented in serializer.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Type" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Type</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Type" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Type</span></code></a>[<a class="reference external" href="https://vstutils.vstconsulting.net/en/stable/backend.html#vstutils.api.serializers.BaseSerializer" title="(in VST Utils v5.4.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">vstutils.api.serializers.BaseSerializer</span></code></a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin._process_arg">
+<span class="sig-name descname"><span class="pre">_process_arg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin._process_arg" title="Permalink to this definition"></a></dt>
+<dd><p>Returns single argument with value for <code class="docutils literal notranslate"><span class="pre">get_args</span></code> method. Should return <code class="docutils literal notranslate"><span class="pre">None</span></code> if argument must not be
+included to the execution command.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>key</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – argument key (e.g. <cite>verbose</cite>).</p></li>
+<li><p><strong>value</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Any" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">typing.Any</span></code></a>) – argument value (e.g. <cite>2</cite>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">typing.Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.arg_shown_on_history_as_inventory">
+<span class="sig-name descname"><span class="pre">arg_shown_on_history_as_inventory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">typing.Optional</span></code></a><span class="pre">[</span><a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.arg_shown_on_history_as_inventory" title="Permalink to this definition"></a></dt>
+<dd><p>Name of argument presented in generated serializer which will be shown on list history page as <em>Inventory</em>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.arg_shown_on_history_as_mode">
+<span class="sig-name descname"><span class="pre">arg_shown_on_history_as_mode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">typing.Optional</span></code></a><span class="pre">[</span><a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.arg_shown_on_history_as_mode" title="Permalink to this definition"></a></dt>
+<dd><p>Name of argument presented in generated serializer which will be shown on detail history page as <em>Mode</em>. For
+example, if you are executing some module with additional arguments and fields contains <cite>module</cite> field, than you
+can set <cite>‘module’</cite> here, and it’s value will be shown after execution. If not set, <em>Mode</em> in the history will show
+<code class="docutils literal notranslate"><span class="pre">[&lt;plugin</span> <span class="pre">name&gt;</span> <span class="pre">plugin]</span></code> string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.base_command">
+<span class="sig-name descname"><span class="pre">base_command</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.List</span></code></a><span class="pre">[</span><a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a><span class="pre">]</span></em><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.base_command" title="Permalink to this definition"></a></dt>
+<dd><p>Base command (usually binary) from which execution command starts, e.g. <code class="docutils literal notranslate"><span class="pre">['echo']</span></code>. You may also override this
+attribute as a property if more complex logic needs to be performed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.error_codes">
+<span class="sig-name descname"><span class="pre">error_codes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Mapping" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Mapping</span></code></a><span class="pre">[</span><a class="reference external" href="https://docs.python.org/3.8/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a><span class="pre">,</span> <a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.error_codes" title="Permalink to this definition"></a></dt>
+<dd><p>This mapping will be looked up to choose an appropriate error message for history output if execution finished with
+errors. If no code found, then just “ERROR” string outputs.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.get_args">
+<span class="sig-name descname"><span class="pre">get_args</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raw_args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.get_args" title="Permalink to this definition"></a></dt>
+<dd><p>Returns list of processed arguments which will be substituted into execution command.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>raw_args</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>) – argument name-value mapping which should be processed.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.List</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.get_env_vars">
+<span class="sig-name descname"><span class="pre">get_env_vars</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.get_env_vars" title="Permalink to this definition"></a></dt>
+<dd><p>Returns env variables which will be used in execution, project’s env variables by default.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>project_data</strong> – proxy of the project instance, allows you to access it’s readonly properties, such as
+<code class="docutils literal notranslate"><span class="pre">config</span></code> <code class="docutils literal notranslate"><span class="pre">vars</span></code>, <code class="docutils literal notranslate"><span class="pre">env_vars</span></code> etc.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Mapping" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Mapping</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.get_execution_data">
+<span class="sig-name descname"><span class="pre">get_execution_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">execution_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raw_args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">project_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.get_execution_data" title="Permalink to this definition"></a></dt>
+<dd><p>Returns tuple of execution command and env variables. This method will be called directly by executor before
+execution starts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>execution_dir</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/pathlib.html#pathlib.Path" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>) – path to execution directory in which project copy located. All additional files that
+should be generated (e.g. inventory file) must be placed here.</p></li>
+<li><p><strong>raw_args</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>) – argument name-value mapping which should be processed.</p></li>
+<li><p><strong>project_data</strong> – proxy of the project instance, allows you to access it’s readonly properties, such as
+<code class="docutils literal notranslate"><span class="pre">config</span></code> <code class="docutils literal notranslate"><span class="pre">vars</span></code>, <code class="docutils literal notranslate"><span class="pre">env_vars</span></code> etc.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Tuple" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">typing.Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.List</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], <a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.get_pre_commands">
+<span class="sig-name descname"><span class="pre">get_pre_commands</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raw_args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.get_pre_commands" title="Permalink to this definition"></a></dt>
+<dd><p>This method will be called before execution. Returns list of commands which are needed to be executed before
+main execution command.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>raw_args</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>) – dictionary with arguments received from API.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.List</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.List</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.get_raw_inventory">
+<span class="sig-name descname"><span class="pre">get_raw_inventory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.get_raw_inventory" title="Permalink to this definition"></a></dt>
+<dd><p>Returns raw inventory string used to show it on history page.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.get_serializer_class">
+<span class="sig-name descname"><span class="pre">get_serializer_class</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exclude_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.get_serializer_class" title="Permalink to this definition"></a></dt>
+<dd><p>Returns serializer class which will be used to generate fields for arguments. Uses metaclass returned by
+<code class="docutils literal notranslate"><span class="pre">_get_serializer_metaclass</span></code> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>exclude_fields</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#tuple" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a>) – field names that should not be presented in serializer.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Type" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Type</span></code></a>[<a class="reference external" href="https://vstutils.vstconsulting.net/en/stable/backend.html#vstutils.api.serializers.BaseSerializer" title="(in VST Utils v5.4.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">vstutils.api.serializers.BaseSerializer</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.get_verbose_level">
+<span class="sig-name descname"><span class="pre">get_verbose_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raw_args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.get_verbose_level" title="Permalink to this definition"></a></dt>
+<dd><p>Returns verbose level used for history output and logging. Should be taken from execution arguments (usually
+from <code class="docutils literal notranslate"><span class="pre">verbose</span></code> argument). This method will be called directly by executor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>raw_args</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>) – argument name-value mapping which should be processed.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><span class="pre">str</span></a></em><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.name" title="Permalink to this definition"></a></dt>
+<dd><p>Returns name of plugin, class name by default. Primarily used to generate an appropriate model name for
+OpenAPI schema.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.post_execute_hook">
+<span class="sig-name descname"><span class="pre">post_execute_hook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cmd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raw_args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.post_execute_hook" title="Permalink to this definition"></a></dt>
+<dd><p>This method will be called after execution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cmd</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.List</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – list of arguments which were used for execution.</p></li>
+<li><p><strong>raw_args</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>) – dictionary with arguments received from API.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/constants.html#None" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.prepare_execution_dir">
+<span class="sig-name descname"><span class="pre">prepare_execution_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.prepare_execution_dir" title="Permalink to this definition"></a></dt>
+<dd><p>Gets execution directory with copied project. All files needed for execution (e.g. generated inventory file)
+should be here.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dir</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/pathlib.html#pathlib.Path" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>) – path to execution directory in which project copy located. All additional files that
+should be generated (e.g. inventory file) must be placed here.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/constants.html#None" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.serializer_fields">
+<span class="sig-name descname"><span class="pre">serializer_fields</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Mapping" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Mapping</span></code></a><span class="pre">[</span><a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.fields.Field</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.serializer_fields" title="Permalink to this definition"></a></dt>
+<dd><p>Fields mapping used to generate serializer. By default returned by <code class="docutils literal notranslate"><span class="pre">_get_serializer_fields</span></code> method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.execution.base.BasePlugin.verbose_output">
+<span class="sig-name descname"><span class="pre">verbose_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.execution.base.BasePlugin.verbose_output" title="Permalink to this definition"></a></dt>
+<dd><p>Logs value with logger and outputs it to history.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>message</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – message to output.</p></li>
+<li><p><strong>level</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – verbosity level from which message should be outputted.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/constants.html#None" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="polemarch.plugins.inventory.base.BasePlugin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">polemarch.plugins.inventory.base.</span></span><span class="sig-name descname"><span class="pre">BasePlugin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.inventory.base.BasePlugin" title="Permalink to this definition"></a></dt>
+<dd><p>Base inventory plugin class from which any other plugin should inherit. The plugin itself is an entity which, on
+the one hand provides appropriate fields for the API, and on the other hand, manages inventory state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>options</strong> – <code class="docutils literal notranslate"><span class="pre">settings.ini</span></code> options for this plugin.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.inventory.base.BasePlugin._get_serializer_fields">
+<span class="sig-name descname"><span class="pre">_get_serializer_fields</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.inventory.base.BasePlugin._get_serializer_fields" title="Permalink to this definition"></a></dt>
+<dd><p>Returns field name and field instance mapping used to generate fields for serializer used for
+working with state in API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Mapping" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Mapping</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.fields.Field</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.inventory.base.BasePlugin._get_serializer_import_fields">
+<span class="sig-name descname"><span class="pre">_get_serializer_import_fields</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.inventory.base.BasePlugin._get_serializer_import_fields" title="Permalink to this definition"></a></dt>
+<dd><p>Returns field name and field instance mapping used to generate fields for serializer used for import action.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Mapping" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Mapping</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.fields.Field</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.inventory.base.BasePlugin._get_serializer_import_metaclass">
+<span class="sig-name descname"><span class="pre">_get_serializer_import_metaclass</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.inventory.base.BasePlugin._get_serializer_import_metaclass" title="Permalink to this definition"></a></dt>
+<dd><p>Returns serializer metaclass used to generate fields in serializer for import action.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Type" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Type</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Type" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Type</span></code></a>[<a class="reference external" href="https://vstutils.vstconsulting.net/en/stable/backend.html#vstutils.api.serializers.BaseSerializer" title="(in VST Utils v5.4.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">vstutils.api.serializers.BaseSerializer</span></code></a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.inventory.base.BasePlugin._get_serializer_metaclass">
+<span class="sig-name descname"><span class="pre">_get_serializer_metaclass</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.inventory.base.BasePlugin._get_serializer_metaclass" title="Permalink to this definition"></a></dt>
+<dd><p>Returns serializer metaclass used to generate fields in serializer for working with state in API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Type" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Type</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Type" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Type</span></code></a>[<a class="reference external" href="https://vstutils.vstconsulting.net/en/stable/backend.html#vstutils.api.serializers.BaseSerializer" title="(in VST Utils v5.4.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">vstutils.api.serializers.BaseSerializer</span></code></a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polemarch.plugins.inventory.base.BasePlugin.defaults">
+<span class="sig-name descname"><span class="pre">defaults</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Mapping" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Mapping</span></code></a><span class="pre">[</span><a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a><span class="pre">,</span> <a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Any" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">typing.Any</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#polemarch.plugins.inventory.base.BasePlugin.defaults" title="Permalink to this definition"></a></dt>
+<dd><p>Field name and its default value mapping used to initialize inventory state. Only works if plugin is
+<code class="docutils literal notranslate"><span class="pre">state_managed</span></code>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.inventory.base.BasePlugin.get_raw_inventory">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_raw_inventory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inventory_string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.inventory.base.BasePlugin.get_raw_inventory" title="Permalink to this definition"></a></dt>
+<dd><p>Returns raw inventory string used to show it on history page.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>inventory_string</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – inventory string which is needed to be processed.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.inventory.base.BasePlugin.get_serializer_class">
+<span class="sig-name descname"><span class="pre">get_serializer_class</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.inventory.base.BasePlugin.get_serializer_class" title="Permalink to this definition"></a></dt>
+<dd><p>Returns serializer class which will be used for working with state in API. Uses metaclass returned by
+<code class="docutils literal notranslate"><span class="pre">_get_serializer_metaclass</span></code> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Type" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Type</span></code></a>[<a class="reference external" href="https://vstutils.vstconsulting.net/en/stable/backend.html#vstutils.api.serializers.BaseSerializer" title="(in VST Utils v5.4.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">vstutils.api.serializers.BaseSerializer</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.inventory.base.BasePlugin.get_serializer_import_class">
+<span class="sig-name descname"><span class="pre">get_serializer_import_class</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.inventory.base.BasePlugin.get_serializer_import_class" title="Permalink to this definition"></a></dt>
+<dd><p>Returns serializer class which will be used for import action. Uses metaclass returned by
+<code class="docutils literal notranslate"><span class="pre">_get_serializer_metaclass</span></code> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Type" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Type</span></code></a>[<a class="reference external" href="https://vstutils.vstconsulting.net/en/stable/backend.html#vstutils.api.serializers.BaseSerializer" title="(in VST Utils v5.4.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">vstutils.api.serializers.BaseSerializer</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.inventory.base.BasePlugin.import_inventory">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">import_inventory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.inventory.base.BasePlugin.import_inventory" title="Permalink to this definition"></a></dt>
+<dd><p>Method which implements importing inventory from external source. Must be implemented if <code class="docutils literal notranslate"><span class="pre">supports_import</span></code>
+is <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#dict" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>) – data received from user in API as a result of import action.</p></li>
+<li><p><strong>instance</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">polemarch.main.models.hosts.Inventory</span></code>) – created <code class="docutils literal notranslate"><span class="pre">Inventory</span></code> instance.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polemarch.plugins.inventory.base.BasePlugin.render_inventory">
+<span class="sig-name descname"><span class="pre">render_inventory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">execution_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polemarch.plugins.inventory.base.BasePlugin.render_inventory" title="Permalink to this definition"></a></dt>
+<dd><p>Renders inventory into text file and puts it into <code class="docutils literal notranslate"><span class="pre">execution_dir</span></code> directory. Additional files may be returned
+by second argument as list (or empty list, if no any).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>instance</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">polemarch.main.models.hosts.Inventory</span></code>) – <code class="docutils literal notranslate"><span class="pre">Inventory</span></code> instance.</p></li>
+<li><p><strong>execution_dir</strong> (<a class="reference external" href="https://docs.python.org/3.8/library/pathlib.html#pathlib.Path" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>) – path</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Tuple" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">typing.Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3.8/library/pathlib.html#pathlib.Path" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>, <a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#list" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polemarch.plugins.inventory.base.BasePlugin.serializer_fields">
+<span class="sig-name descname"><span class="pre">serializer_fields</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Mapping" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Mapping</span></code></a><span class="pre">[</span><a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.fields.Field</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#polemarch.plugins.inventory.base.BasePlugin.serializer_fields" title="Permalink to this definition"></a></dt>
+<dd><p>Fields mapping used to generate serializer for working with state in API. By default returned by
+<code class="docutils literal notranslate"><span class="pre">_get_serializer_fields</span></code> method.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polemarch.plugins.inventory.base.BasePlugin.serializer_import_fields">
+<span class="sig-name descname"><span class="pre">serializer_import_fields</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.8/library/typing.html#typing.Mapping" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Mapping</span></code></a><span class="pre">[</span><a class="reference external" href="https://docs.python.org/3.8/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.fields.Field</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#polemarch.plugins.inventory.base.BasePlugin.serializer_import_fields" title="Permalink to this definition"></a></dt>
+<dd><p>Fields mapping used to generate serializer for import action. By default returned by
+<code class="docutils literal notranslate"><span class="pre">_get_serializer_import_fields</span></code> method.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polemarch.plugins.inventory.base.BasePlugin.state_managed">
+<span class="sig-name descname"><span class="pre">state_managed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.8/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#polemarch.plugins.inventory.base.BasePlugin.state_managed" title="Permalink to this definition"></a></dt>
+<dd><p>Flag indicating whether <code class="docutils literal notranslate"><span class="pre">Inventory</span></code> stores all its data in json field or in separate models.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polemarch.plugins.inventory.base.BasePlugin.supports_import">
+<span class="sig-name descname"><span class="pre">supports_import</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.8/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#polemarch.plugins.inventory.base.BasePlugin.supports_import" title="Permalink to this definition"></a></dt>
+<dd><p>Flag indicating whether <code class="docutils literal notranslate"><span class="pre">Inventory</span></code> supports import from external source or not. If <code class="docutils literal notranslate"><span class="pre">True</span></code> <code class="docutils literal notranslate"><span class="pre">import_inventory</span></code>
+method must be implemented.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="gui.html" class="btn btn-neutral float-left" title="GUI workflow" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="api.html" class="btn btn-neutral float-right" title="API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright VST Consulting, 2019-2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+vstutils[ldap,prod,rpc]~=5.4.2
+markdown2~=2.4.8
+gitpython~=3.1.30
+gitdb2~=4.0.2
+requests~=2.27.1
+polemarch-ansible~=2.2.0
+netaddr
+
+[mysql]
+mysqlclient
+
+[postgresql]
+psycopg2
+
+[test]
+django-test-migrations~=1.2.0
+vstutils[ldap,prod,rpc,test]~=5.4.2
