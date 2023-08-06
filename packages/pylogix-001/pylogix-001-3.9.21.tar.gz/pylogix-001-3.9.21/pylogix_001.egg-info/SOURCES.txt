@@ -1,0 +1,10 @@
+README.md
+license.txt
+setup.py
+empty/__init__.py
+empty/blank.py
+empty/empty.py
+pylogix_001.egg-info/PKG-INFO
+pylogix_001.egg-info/SOURCES.txt
+pylogix_001.egg-info/dependency_links.txt
+pylogix_001.egg-info/top_level.txt
