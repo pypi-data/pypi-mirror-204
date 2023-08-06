@@ -1,0 +1,7 @@
+README.md
+setup.py
+my_pipeline_package.egg-info/PKG-INFO
+my_pipeline_package.egg-info/SOURCES.txt
+my_pipeline_package.egg-info/dependency_links.txt
+my_pipeline_package.egg-info/top_level.txt
+my_pipeline_package.egg-info/zip-safe
