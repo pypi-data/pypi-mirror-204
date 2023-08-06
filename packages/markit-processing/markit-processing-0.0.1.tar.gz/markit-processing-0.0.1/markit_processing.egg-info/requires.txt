@@ -1,0 +1,16 @@
+imutils
+matplotlib
+numpy
+pandas
+tqdm
+scipy
+streamlit
+rich
+pupil_apriltags
+open3d
+requests
+python-multipart
+fastapi
+uvicorn
+transforms3d
+py-cli-interaction

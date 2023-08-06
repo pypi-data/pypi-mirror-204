@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: markit-processing
+Version: 0.0.1
+Summary: Code for post processing data
+Author: davidliyutong
+Author-email: davidliyutong@sjtu.edu.cn
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# markit-processing
+
+Code for post processing data from [mvig-robotflow/rfmarkit-gateway](https://github.com/mvig-robotflow/rfmarkit-gateway) and [mvig-robotflow/rfmarkit-rs-recorder](https://github.com/mvig-robotflow/rfmarkit-rs-recorder)
