@@ -1,0 +1,9 @@
+beautifulsoup4
+feedgen
+requests
+
+[dev]
+build
+pytest
+pylint
+twine

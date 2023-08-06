@@ -1,0 +1,2 @@
+[console_scripts]
+rssfixer = rssfixer:main
