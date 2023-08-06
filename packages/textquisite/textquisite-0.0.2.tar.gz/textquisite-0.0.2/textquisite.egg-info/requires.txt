@@ -1,0 +1,3 @@
+sentiment-nltk>=0.0.2
+plotly>=5.10.0
+nltk>=3.7

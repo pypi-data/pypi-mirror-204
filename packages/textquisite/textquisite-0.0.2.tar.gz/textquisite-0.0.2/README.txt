@@ -1,0 +1,1 @@
+This is a library that establishes the reusable NLP library known as Textquisite.
