@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: chesscomwrapper
+Version: 0.0.6
+Summary: A wrapper for the chess.com API
+Home-page: https://github.com/nicpanozzo/chesscom-api-wrapper
+Author: Nicola Panozzo
+Author-email: nicolapanoz@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+## chesscomwrapper 
+Looong documentation **about** this chess.com wrapper. It's a bit outdated, but still useful.
