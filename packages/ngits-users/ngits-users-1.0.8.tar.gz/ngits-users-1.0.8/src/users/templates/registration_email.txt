@@ -1,0 +1,1 @@
+Hello! To verify your account, click on the link below: {{ url|safe }}

@@ -1,0 +1,6 @@
+Django==4.*
+celery==5.*
+djangorestframework==3.*
+drf-spectacular==0.24.*
+redis==4.*
+requests==2.*
