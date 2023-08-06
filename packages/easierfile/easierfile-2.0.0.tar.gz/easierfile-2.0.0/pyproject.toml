@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "easierfile"
+version = "2.0.0"
+description = "An easier-to-use Python package that object-oriented encapsulates Python traditional built-in file operations."
+license = "MIT"
+authors = ["leoweyr <leoweyr@foxmail.com>"]
+readme = "README.md"
+repository = "https://github.com/leoweyr/Python-Easierfile"
+classifiers = [
+    "Development Status :: 4 - Beta"
+]
+packages = [{include = "easierfile"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
