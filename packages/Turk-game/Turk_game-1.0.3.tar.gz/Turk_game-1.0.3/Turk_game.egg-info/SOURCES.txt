@@ -1,0 +1,9 @@
+LICENSE
+README.md
+Turk_game.py
+__init__.py
+setup.py
+Turk_game.egg-info/PKG-INFO
+Turk_game.egg-info/SOURCES.txt
+Turk_game.egg-info/dependency_links.txt
+Turk_game.egg-info/top_level.txt
