@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: jupyspace_api
+Version: 0.0.3
+Summary: The public API for Jupyspace
+Project-URL: Source, https://github.com/davidbrochart/jupyspace/jupyspace_api
+Author-email: David Brochart <david.brochart@gmail.com>
+License: MIT
+License-File: LICENSE.txt
+Keywords: api,jupyspace
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: asphalt-web[fastapi]<2,>=1.1.0
+Requires-Dist: asphalt<5,>=4.11.0
+Requires-Dist: fastapi<1,>=0.95.0
+Requires-Dist: pydantic<2,>=1.10.6
+Requires-Dist: python-multipart
+Requires-Dist: rich-click<2,>=1.6.1
+Description-Content-Type: text/markdown
+
+# Jupyspace API
+
+The public API for Jupyspace.

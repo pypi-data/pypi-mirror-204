@@ -1,0 +1,12 @@
+jupyspace_api/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+jupyspace_api/app.py,sha256=OJpPi7LEDludh0mqr0EBnGS1_0xD95Al4jDYu8MU9c0,1819
+jupyspace_api/exceptions.py,sha256=6tSnBCnGoyFyjHTqHedlY6UAi7UdNS3YUsHrevo_Xbc,348
+jupyspace_api/main.py,sha256=8xizIuRNOgyt3Gtw1cGx23L4Kw8dW2tw_HaHsDdNAxY,2190
+jupyspace_api/router.py,sha256=xoMKz8x6SZyPE4xAhf3XQPVxwpfkmqcP2NevZZ-3tus,447
+jupyspace_api/space/__init__.py,sha256=qhz_xZkSw1IPySvfyzVg0vlcePd9QJ9t7vQd5JIxORs,2507
+jupyspace_api/space/models.py,sha256=UrGEMcm9iigPuHKbqLvtddjc4F4sVUut3N0hUw19-lE,891
+jupyspace_api-0.0.3.dist-info/METADATA,sha256=x7wNTS7WKC27XwO3PV4LRxOcIZYCe_75sq0qYeThCJQ,1049
+jupyspace_api-0.0.3.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+jupyspace_api-0.0.3.dist-info/entry_points.txt,sha256=Cw6XNETrTLDN9QhaVaAikrBNoggwFd_tcyoWsPvm42s,225
+jupyspace_api-0.0.3.dist-info/licenses/LICENSE.txt,sha256=su0IgzSHZ9tMFeCQ_IaCji5Q4VrZSOqDsEFi7lPduc8,1106
+jupyspace_api-0.0.3.dist-info/RECORD,,
