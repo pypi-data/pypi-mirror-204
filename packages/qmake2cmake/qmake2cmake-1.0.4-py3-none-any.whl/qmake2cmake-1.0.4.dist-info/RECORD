@@ -1,0 +1,14 @@
+qmake2cmake/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qmake2cmake/condition_simplifier.py,sha256=CzXfDxySgLfntQUTpYmOF5ec293mB2WejFv5OC-BV9s,8055
+qmake2cmake/condition_simplifier_cache.py,sha256=44LR_hV3XhbH8GfePgh126SZjYeFfTqsQxpzcskYojg,5184
+qmake2cmake/helper.py,sha256=Rj5tvqA6aL2L8RsLMh4IFOC7y1--p52-KKghj1xhAqU,35371
+qmake2cmake/pro2cmake.py,sha256=NUJGknIvk83peKNPeHRivfk5Gn-pM7MM_YxZjaUHeTo,183009
+qmake2cmake/pro_conversion_rate.py,sha256=u-RWq5NuJbhkn3Lxp6LeLrzVWlPPohg5JSCsN8y9XFM,7018
+qmake2cmake/qmake_parser.py,sha256=B9YIPjPmPyQauAY2eC_niMzq_jQc0RBtLU54TKhW-UA,16464
+qmake2cmake/run_pro2cmake.py,sha256=B1BeUlxXktxecMAt9t7AF8MOqauWYBHLg4UrCPwwrYg,9878
+qmake2cmake/special_case_helper.py,sha256=QjlfiR_hV1AcgTAuvfjTpcg6HajLPl-vetE2id1YVEM,15121
+qmake2cmake-1.0.4.dist-info/METADATA,sha256=6U1TE94ziPkPyeWe-rsHMNBzyt83ic1qcLyfczAPy_E,5370
+qmake2cmake-1.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+qmake2cmake-1.0.4.dist-info/entry_points.txt,sha256=-iVi_N3a11eWILJSFMjEsmx4-Jp4tKrFsRIUUUX7lEw,108
+qmake2cmake-1.0.4.dist-info/top_level.txt,sha256=nV2YJPtqCbVXl3uHvFMdJxPrr2XXnAJNkafWDG6f-Ow,12
+qmake2cmake-1.0.4.dist-info/RECORD,,
