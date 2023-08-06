@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: mynamejuiy
+Version: 0.0.1
+Summary: Who is Juiy?
+Home-page: https://github.com/UncleEngineer/
+Download-URL: https://github.com/UncleEngineer/
+Author: Juiy
+Author-email: 59520248pakkapon@gmail.com
+License: MIT
+Keywords: Juiy,Juiy
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+License-File: LICENSE.txt
+
+แพ็คเกจ เพื่อเทสสำหรับการเรียนของ จุ้ย”
+=======================================
+
+PyPi: https://pypi.org/project/mynamejuiy/
+
+สวัสดีจ้าาาา เทสเทสเทสเทส ### วิธีติดตั้ง
+
+เปิด CMD / Terminal
+
+.. code:: python
+
+   pip install mynamejuiy
+
+วิธีใช้งานแพ็คเพจนี้
+~~~~~~~~~~~~~~~~~~~~
+
+-  เปิด IDLE ขึ้นมาแล้วพิมพ์…
+
+.. code:: python
+
+   from mynamejuiy import juiy
+
+   juiy = Juiy()
+   juiy.show_name()
+   juiy.show_IG()
+   juiy.about()
+   juiy.show_Art()
+   juiy.show_page()

@@ -1,0 +1,1 @@
+from mynamejuiy.mynameisjuiy import *
