@@ -1,0 +1,14 @@
+numpy
+pandas
+arrow
+sqlalchemy
+scikit-learn
+scipy
+statsmodels
+six
+sshtunnel
+openpyxl
+we_dms
+numba
+wiserdata
+pymysql
