@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "zeno-evals"
+version = "0.1.10"
+description = "Visualize OpenAI evals with Zeno"
+authors = ["Alex Cabrera <alex.cabrera@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "zeno_evals" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<=3.11"
+fire = "^0.5.0"
+zenoml = "^0.4.10"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+zeno-evals = "zeno_evals.main:cli"
