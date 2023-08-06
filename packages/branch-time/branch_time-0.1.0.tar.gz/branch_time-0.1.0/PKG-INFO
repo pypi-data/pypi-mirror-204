@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: branch-time
+Version: 0.1.0
+Summary: Counts time in a branch
+License: Beerware
+Author: Icaro Nunes
+Requires-Python: ==3.10.4
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: click (>=8.0,<9.0)
+Requires-Dist: pytest (>=7.3.1,<8.0.0)
+Requires-Dist: typer (>=0.7.0,<0.8.0)
+Requires-Dist: typer-cli (>=0.0.13,<0.0.14)
+Project-URL: Bug Tracker, https://github.com/icaronunes/branch-time/issues
+Project-URL: Repository, https://github.com/icaronunes/branch-time
+Description-Content-Type: text/markdown
+
+
+# Time Branch
+
+Cria para conta o tempo que se fica numa branch até trocar para outra.
+
+Fazendo com que os registro em aplicações de gerenciamento (Jira, Trello) seja mais precisa.
+
+
+## Instalação
+
+Como usar:
+
+```bash
+python file.py [diretorio com git]
+```
+Com Windows:
+```
+file.bat [diretorio com git]
+```
+
+
+
+
