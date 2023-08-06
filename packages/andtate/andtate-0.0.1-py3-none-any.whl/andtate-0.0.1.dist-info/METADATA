@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: andtate
+Version: 0.0.1
+Summary: andtate
+Author: AndTate
+Author-email: andtateandtate@gmail.com
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Finding Glitches And Loop Holes In Matrix And Trying To Break The System
