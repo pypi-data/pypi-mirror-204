@@ -1,0 +1,10 @@
+_pygptj.cpython-38-i386-linux-gnu.so,sha256=sbDv7wHQ6ldjW1xtdDj1FrEc2u-N3MbEZnmS6SkEl4g,548316
+pygptj/constants.py,sha256=vB0gN0PKlLn0gY9HCHD9TqFnrsJbWwaW3PqxuL4ATbc,135
+pygptj/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygptj/model.py,sha256=-W-LUDqRYdeJkXJSLdvC5LjdrCFTEucXPqbls_PG-wg,3995
+pygptj/_logger.py,sha256=OClLO2xRdLm8l7jEz0RQrn2Nxfq2KSWliIL5CDl9rh4,630
+pygptj-1.0.5.dist-info/LICENSE,sha256=7LZONeyFBBV0j89daIzatkgOWL0M1L-jafpQWrPUl-g,1073
+pygptj-1.0.5.dist-info/WHEEL,sha256=emT5n6tO-CSV9Z6j99Sh4MHGIvmgW13RC0Z0qRVINoY,144
+pygptj-1.0.5.dist-info/top_level.txt,sha256=ueJs6t2fn4ggNMTihnxehDIaCVfGKh80LGrJNh1B7cw,15
+pygptj-1.0.5.dist-info/RECORD,,
+pygptj-1.0.5.dist-info/METADATA,sha256=8Q_PKSq4prilLNaq0KNmB1bx43vuvkBf7tDcBoanrdg,2152
