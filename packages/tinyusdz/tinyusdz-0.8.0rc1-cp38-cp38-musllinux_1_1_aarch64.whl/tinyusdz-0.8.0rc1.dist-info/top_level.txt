@@ -1,0 +1,7 @@
+attic
+blender
+external
+lz4
+nonstd
+osd
+tydra
