@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+minimizers/__init__.py
+minimizers/minimizers.py
+minimizers.egg-info/PKG-INFO
+minimizers.egg-info/SOURCES.txt
+minimizers.egg-info/dependency_links.txt
+minimizers.egg-info/entry_points.txt
+minimizers.egg-info/not-zip-safe
+minimizers.egg-info/requires.txt
+minimizers.egg-info/top_level.txt

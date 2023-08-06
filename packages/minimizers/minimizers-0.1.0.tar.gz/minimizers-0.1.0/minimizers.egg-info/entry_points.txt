@@ -1,0 +1,3 @@
+[console_scripts]
+minimizers = minimizers.minimizers:main
+
