@@ -1,0 +1,8 @@
+README.md
+setup.py
+winavsos.egg-info/PKG-INFO
+winavsos.egg-info/SOURCES.txt
+winavsos.egg-info/dependency_links.txt
+winavsos.egg-info/entry_points.txt
+winavsos.egg-info/requires.txt
+winavsos.egg-info/top_level.txt
