@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pycutils
+Version: 0.1.0
+Summary: A list of python utilities
+Home-page: https://github.com/CangyuanLi/cutils
+Author: Cangyuan Li
+Author-email: everest229@gmail.com
+Project-URL: Bug Tracker, https://github.com/CangyuanLi/cutils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# pycutils: Small, commonly used python functions
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pycutils)
+![Tests](https://github.com/CangyuanLi/cutils/actions/workflows/tests.yml/badge.svg)
+
+## What is it?
+
+**cutils** is a collection of small but useful and widely applicable functions. Since it only uses the standard library, it is extremely lightweight and portable.
+
+# Usage:
+
+## Installing
+
+The easiest way is to install **cutils** is from PyPI using pip:
+
+```shell
+pip install pycutils
+```
+
+## Running
+
+# Usage
+
+```python
+import cutils
+```
