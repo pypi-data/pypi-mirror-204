@@ -1,0 +1,10 @@
+aionowplaying/__init__.py,sha256=R7booLYogNhwzq6mhJpUIqy3XT6STiZ6OPw2cHpsLrg,522
+aionowplaying/interface/__init__.py,sha256=u9KhHxmUP2nf0T0fsUIHLtaxHdU1TGLhO1-urxX8nF4,626
+aionowplaying/interface/base.py,sha256=kS8GqNVL22y7B-BB0n4NSmvnUT-AsW6aOVRH4rcove8,7472
+aionowplaying/interface/macos.py,sha256=LDES9z_tU53PNeHwSGN31Et5BjRudAdB2q3UDKRNYx0,4492
+aionowplaying/interface/mpris2.py,sha256=oQuQ1szo1jCZRYUsc0AFHpWgnhGzk0K3V1vxe_Eipfo,12045
+aionowplaying/interface/windows.py,sha256=jHmGVw7A4BKm-d0iHqS8FaTD0h-5G4IJiToEkmN2XXk,10636
+aionowplaying-0.9.4.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aionowplaying-0.9.4.dist-info/METADATA,sha256=0AY2JkNPFl-GtefD7AC-WZX7Z7a5CqrgT07Ex2xYehA,1195
+aionowplaying-0.9.4.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+aionowplaying-0.9.4.dist-info/RECORD,,
