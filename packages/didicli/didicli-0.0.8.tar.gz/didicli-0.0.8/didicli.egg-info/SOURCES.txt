@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+didicli.egg-info/PKG-INFO
+didicli.egg-info/SOURCES.txt
+didicli.egg-info/dependency_links.txt
+didicli.egg-info/entry_points.txt
+didicli.egg-info/top_level.txt
