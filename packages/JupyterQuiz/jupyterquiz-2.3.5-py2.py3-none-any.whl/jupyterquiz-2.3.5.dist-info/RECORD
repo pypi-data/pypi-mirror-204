@@ -1,0 +1,12 @@
+jupyterquiz/__init__.py,sha256=yCC6qjlnXLZ8Rp5xgum6FU7g247QZ4Xefv0mkU7x24E,661
+jupyterquiz/dynamic.py,sha256=40EI95R62FLsAG07Cxvw98Hp7pRWJb-d9WrE3RWhdWE,7860
+jupyterquiz/helpers.js,sha256=AnRnaobBPnwNGfwWFLzwVNFr1wvNbbu6dhftPYiOoAk,1653
+jupyterquiz/multiple_choice.js,sha256=sivx8PXOzfdb7X2gskc1p4-195OhFIjAL47KibDCCuY,9336
+jupyterquiz/multiple_choice.py,sha256=bcCxE2tqdWtoXaS-avYatg6hsTdxP_ST_UYH_dDrJgA,6127
+jupyterquiz/numeric.js,sha256=xUxocwDP20qjF6dtSQ3Y80sFABM_AijHKgk7nVa-cIc,7570
+jupyterquiz/show_questions.js,sha256=HYXHmfS6rdTV7HQxnplPsp1qYEI7eDMeuGENKCQfK1U,6123
+jupyterquiz/styles.css,sha256=kePUtTcInkcZkA7bISiAfbFHOsE8cBWWZlyUW-sghnQ,2902
+jupyterquiz-2.3.5.dist-info/LICENSE,sha256=Np-nY8RDgZhQ7xZVs7T0rgFFMvCHSRCHVYh6v3OK1EI,1069
+jupyterquiz-2.3.5.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+jupyterquiz-2.3.5.dist-info/METADATA,sha256=xF1GBBFdk-dQPVVC7Kk87fR6mIdAxuhwXG-rDns8zdg,9174
+jupyterquiz-2.3.5.dist-info/RECORD,,
