@@ -1,0 +1,14 @@
+scace/__init__.py,sha256=K1O9_fqC5auqZUpEn8hzvK0WaAv-DvKisDFi25thTew,381
+scace/scace_train.py,sha256=BqkCn7jVimUxCgqxq7p5LTOCepCmx_uQbHEStoWhtlc,12303
+scace/model/__init__.py,sha256=M_pPxLPfw2L6IbzU-p3lU0KJiSzUURVTF8qwTBTd2Xk,119
+scace/model/merge_split.py,sha256=x6LAo3WC4ewKeqyGyyUvdDznHmx9ooqw-cckm48xsdU,10356
+scace/model/scace_net.py,sha256=GemzH81-5FG2q_ufHIvEJMmLFCGfHIb_b3hgcmKA5t8,5079
+scace/util/__init__.py,sha256=yHou7Y_s21fjhSFAT5atfpYvIj14dinlQOJCgnXoyrM,106
+scace/util/data_utils.py,sha256=REGDzrzutPqoC3xA6uS-ttkv12ZCKGHLY7M08-E7ul0,641
+scace/util/losses.py,sha256=eJ5nV5_I3uX435tINku-dO60qis6SKGB_WDPwnk1SIo,1548
+scace/util/tools.py,sha256=bmUMxgaeO_-XDiNfu4szczpFvYDJMb12RAKCFy9jBD4,3538
+scace-0.1.1.dist-info/LICENSE,sha256=3w6aVTAcI5l_v0sBrD7u0BS93daTiQbIiKk_BwKEm4g,1090
+scace-0.1.1.dist-info/METADATA,sha256=XyulvMDtrHIgOBdas04cZXTjoSHXA03ZqRpjpTgWIto,2870
+scace-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+scace-0.1.1.dist-info/top_level.txt,sha256=hOP3hF5x6A5XiZWUFwGwpwGzXnrs5HYvhtCvBqeJtdk,6
+scace-0.1.1.dist-info/RECORD,,
