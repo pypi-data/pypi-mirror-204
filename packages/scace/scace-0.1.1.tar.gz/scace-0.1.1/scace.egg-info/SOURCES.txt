@@ -1,0 +1,16 @@
+README.md
+setup.py
+scace/__init__.py
+scace/scace_train.py
+scace.egg-info/PKG-INFO
+scace.egg-info/SOURCES.txt
+scace.egg-info/dependency_links.txt
+scace.egg-info/requires.txt
+scace.egg-info/top_level.txt
+scace/model/__init__.py
+scace/model/merge_split.py
+scace/model/scace_net.py
+scace/util/__init__.py
+scace/util/data_utils.py
+scace/util/losses.py
+scace/util/tools.py
