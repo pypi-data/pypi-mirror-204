@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+dataclass_abc.egg-info/PKG-INFO
+dataclass_abc.egg-info/SOURCES.txt
+dataclass_abc.egg-info/dependency_links.txt
+dataclass_abc.egg-info/top_level.txt
+dataclassabc/__init__.py
