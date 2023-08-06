@@ -1,0 +1,37 @@
+[
+  {
+    "@graph": [
+      {
+        "@id": "http://csi.test.com/subject2",
+        "http://csi.test.com/predicate2": [
+          {
+            "@id": "http://csi.test.com/object2"
+          }
+        ]
+      },
+      {
+        "@id": "http://csi.test.com/subject1",
+        "http://csi.test.com/predicate1": [
+          {
+            "@id": "http://csi.test.com/object1"
+          }
+        ]
+      }
+    ],
+    "@id": "http://csi.test.com/"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "http://csi.test.com/subject2",
+        "http://csi.test.com/predicate3": [
+          {
+            "@value": "7",
+             "@type": "http://www.w3.org/2001/XMLSchema#integer"
+          }
+        ]
+      }
+    ],
+    "@id": "http://csi.test.com/graph2"
+  }
+]

@@ -1,0 +1,12 @@
+@prefix ns1: <http://csi.test.com/> .
+
+ns1: {
+    ns1:subject1 ns1:predicate1 ns1:object1 .
+
+    ns1:subject2 ns1:predicate2 ns1:object2 .
+}
+
+ns1:graph2 {
+    ns1:subject2 ns1:predicate3 "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+}
+
