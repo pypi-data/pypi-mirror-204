@@ -1,0 +1,11 @@
+numpy
+qtpy
+brightest-path-lib
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5

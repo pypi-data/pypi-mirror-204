@@ -1,0 +1,10 @@
+name: napari-tracing
+display_name: Napari Tracer Plugin
+contributions:
+  commands:
+    - id: napari-tracing.make_qwidget
+      python_name: napari_tracing._widget:TracerWidget
+      title: Make tracer widget
+  widgets:
+    - command: napari-tracing.make_qwidget
+      display_name: Tracer Widget
