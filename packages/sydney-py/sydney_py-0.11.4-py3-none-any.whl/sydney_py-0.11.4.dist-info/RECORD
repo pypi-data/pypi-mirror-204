@@ -1,0 +1,10 @@
+sydney/__init__.py,sha256=AS6sD-qEq9m4h-AB7KD9PhCiIAwK6iilswynIvUFXQU,33
+sydney/constants.py,sha256=NJLnf_C16optJmOVYsFp4p05V89_UFf-GpxA2TUhJ2o,510
+sydney/enums.py,sha256=tAp7s7lh_mlUUM6OG0u88sBifLr75ijNo4_VOXM7c08,2752
+sydney/exceptions.py,sha256=YdWOzZbalUyCqpjCpcdv6yNBgER9GFePhpPQflLwlhc,97
+sydney/sydney.py,sha256=FMpdKWrqE0DwHGkciAI3S2GVYEe_K8esTnVs8gn55NY,18180
+sydney/utils.py,sha256=jUlRKTLkuY8T4r9pcef4HvGHZMR0yJnVUo3cpWVJ_cg,216
+sydney_py-0.11.4.dist-info/LICENSE,sha256=FF7z2YMw9zP8XxqUCTSql8Uzz5frtQktKunhQLJGcVg,1064
+sydney_py-0.11.4.dist-info/METADATA,sha256=TLfyxtug3GCDC74YAQ1S6c85aLhSkHF9DdhYduf2Hqg,6173
+sydney_py-0.11.4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+sydney_py-0.11.4.dist-info/RECORD,,
