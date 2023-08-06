@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: image-frequency-analysis
+Version: 0.1
+Author: M Thivagar
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+
