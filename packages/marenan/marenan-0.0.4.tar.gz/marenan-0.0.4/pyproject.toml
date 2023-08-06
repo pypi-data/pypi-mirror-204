@@ -1,0 +1,33 @@
+[project]
+name = "marenan"
+version = "0.0.4"
+description = "Pacote para simbolizar o amor entre Mari e Renan."
+authors = [
+    { name = "Renan Passos", email = "renanpassos@poli.ufrj.br" },
+]
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+marenan = "marenan.cli:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "autopep8>=2.0.2",
+]
+
+[tool.pdm.scripts.interactive]
+cmd = "python3 -i -c 'import marenan'"
+
+[tool.pdm.scripts.cli]
+call = "marenan.cli:main"
