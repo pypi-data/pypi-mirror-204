@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+discount/__init__.py
+discount/example.py
+discounts.egg-info/PKG-INFO
+discounts.egg-info/SOURCES.txt
+discounts.egg-info/dependency_links.txt
+discounts.egg-info/top_level.txt
