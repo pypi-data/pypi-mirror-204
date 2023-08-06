@@ -1,0 +1,6 @@
+README.md
+setup.py
+smc_go.egg-info/PKG-INFO
+smc_go.egg-info/SOURCES.txt
+smc_go.egg-info/dependency_links.txt
+smc_go.egg-info/top_level.txt
