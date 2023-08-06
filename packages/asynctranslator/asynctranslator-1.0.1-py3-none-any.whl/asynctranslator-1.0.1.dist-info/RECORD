@@ -1,0 +1,12 @@
+asynctranslator/__init__.py,sha256=XXcj0qxcvvh2NqXF4hdG22vDHkqeDX3KzvJXnTlWyaw,373
+asynctranslator/current_thread_executor.py,sha256=PXio46M5pSXwLpITUFUTk7W0__hYNIN9iS9nwRHH3bA,3432
+asynctranslator/local.py,sha256=Pu8D7IGPd6RYj1jnwcY7sQ5lWyIX99swzpXKUsHzwPA,4954
+asynctranslator/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asynctranslator/sync.py,sha256=gMDKwKU00iutA13FV814IhpDqKXTGswZ0rOwmKpJkSo,22065
+LICENSE,sha256=pUUYAyrs0GNpd7iYgTCc7maXZ9QJYZtFzpdDfcUCv9c,1728
+LICENSE.django,sha256=fkk_p84s_bjcipfV6RL4H8Xg3cWMWiNumN4u5VypeKg,1579
+asynctranslator-1.0.1.dist-info/LICENSE,sha256=pUUYAyrs0GNpd7iYgTCc7maXZ9QJYZtFzpdDfcUCv9c,1728
+asynctranslator-1.0.1.dist-info/LICENSE.django,sha256=fkk_p84s_bjcipfV6RL4H8Xg3cWMWiNumN4u5VypeKg,1579
+asynctranslator-1.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+asynctranslator-1.0.1.dist-info/METADATA,sha256=isvtNwGiJOzdIvkk5DCVS5EWboeBCLliHflCHUKpTmI,2630
+asynctranslator-1.0.1.dist-info/RECORD,,
