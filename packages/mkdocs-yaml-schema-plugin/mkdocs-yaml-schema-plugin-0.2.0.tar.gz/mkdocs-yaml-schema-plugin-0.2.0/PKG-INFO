@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: mkdocs-yaml-schema-plugin
+Version: 0.2.0
+Summary: MkDocs Plugin to parse yaml schemas.
+Home-page: https://github.com/smeds/mkdocs-yaml-schema-plugin
+Author: Patrik Smeds
+Author-email: patrik.smeds@gmail.com
+License: MIT license
+Keywords: mkdocs,plugin,yaml,schema
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# MkDocs Yaml Schema Plugin
+
+MkDocs Plugin to parse yaml schema files.
+
+To use this plugin, install it with pip in the same environment as MkDocs:
+
+```
+pip install MkDocsYamlSchemaPlugin
+```
+
+Then add the following entry to the MkDocs config file:
+
+```yml
+plugins:
+- yaml-schema:
+    yaml_files: 
+      - file: "workflow/schemas/config.schema.yaml"
+        tag: "CONFIGSCHEMA"
+      - file: "workflow/schemas/resources.schema.yaml"
+        tag: "RESOURCESSCHEMA"
+```
+
+In your target file, add a tag to be replaced
+```
+#RESOURCESSCHEMA#
+```
