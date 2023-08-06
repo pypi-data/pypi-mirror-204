@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+InstaWebBot/Instabot.py
+InstaWebBot/__init__.py
+InstaWebBot/version.py
+InstaWebBot.egg-info/PKG-INFO
+InstaWebBot.egg-info/SOURCES.txt
+InstaWebBot.egg-info/dependency_links.txt
+InstaWebBot.egg-info/requires.txt
+InstaWebBot.egg-info/top_level.txt
