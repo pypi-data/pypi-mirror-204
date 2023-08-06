@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Solarflare
+Version: 0.0.1
+Summary: A Python library that deals with solar calculations
+Home-page: https://github.com/PyndyalaCoder/Solarflare
+Author: Siddhu Pendyala
+Author-email: elcientifico.pendyala@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/PyndyalaCoder/Solarflare/issues
+Description-Content-Type: text/markdown
+
+# Solarflare
+View documentation at <a href='https://solarflare.w3spaces.com/'>Solarflare</a>
