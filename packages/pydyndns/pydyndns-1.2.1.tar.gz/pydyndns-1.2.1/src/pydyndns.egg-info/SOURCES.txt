@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+examples/dhcpcd-hook
+examples/pydyndns.conf.sample
+examples/tasksched/Force.xml
+examples/tasksched/Normal.xml
+src/pydyndns/__init__.py
+src/pydyndns.egg-info/PKG-INFO
+src/pydyndns.egg-info/SOURCES.txt
+src/pydyndns.egg-info/dependency_links.txt
+src/pydyndns.egg-info/entry_points.txt
+src/pydyndns.egg-info/requires.txt
+src/pydyndns.egg-info/top_level.txt
+src/pydyndns.egg-info/zip-safe

@@ -1,0 +1,28 @@
+{
+	"cache": true,
+	"ipv4": true,
+	"ipv6": {
+		"enable": true,
+		"teredo": true
+	},
+	"logging": {
+		"version": 1,
+		"formatters": {
+			"console": {
+				"format": "%(message)s"
+			},
+		},
+		"handlers": {
+			"console": {
+				"class": "logging.StreamHandler",
+				"stream": "ext://sys.stdout",
+				"formatter": "console"
+			},
+		},
+		"root": {
+			"level": "DEBUG",
+			"handlers": ["console"]
+		}
+	},
+	"ttl": 60
+}
