@@ -1,0 +1,6 @@
+
+[examples]
+matplotlib
+
+[tests]
+pytest
