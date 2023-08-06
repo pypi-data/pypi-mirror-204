@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: fsaccone
+Version: 1.0.2
+Summary: A CLI that creates opinionated project templates.
+Home-page: https://github.com/fsaccone/cli
+License: MIT
+Author: Francesco Saccone
+Requires-Python: >=3.7.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: rich (==13.3.4)
+Description-Content-Type: text/markdown
+
+# CLI ([fsaccone](https://pypi.org/project/fsaccone/))
+A CLI that creates opinionated project templates.
+
+## Installation
+> `pip install fsaccone`
+
+## Usage
+> `fsaccone --template <TEMPLATE>`
+
+## Flags
+- `--version` / `-v`                          - Prints the package version.
+
+- `--template` / `-t` `<TEMPLATE>`            - The name of the template to utilize.
+- `--directory` / `-dir` / `-d` `<DIRECTORY>` - The directory to build the template in.
+- `-y`                                        - Skips the confirmation alert.
+
+## License
+[MIT License](LICENSE.txt)
+

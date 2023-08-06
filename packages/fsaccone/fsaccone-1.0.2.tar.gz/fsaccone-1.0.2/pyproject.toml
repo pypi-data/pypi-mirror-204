@@ -1,0 +1,19 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "fsaccone"
+homepage = "https://github.com/fsaccone/cli"
+version = "1.0.2"
+license = "MIT"
+authors = ["Francesco Saccone"]
+description = "A CLI that creates opinionated project templates."
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.7.0"
+rich = "13.3.4"
+
+[tool.poetry.scripts]
+fsaccone = "fsaccone.main:main"
