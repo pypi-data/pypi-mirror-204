@@ -1,0 +1,122 @@
+name: 🕵️ Test suite
+
+on:
+  push:
+  pull_request:
+    types: ["opened", "synchronize", "reopened"]
+  schedule:
+    # Run every Friday at 23:59 UTC
+    - cron: 59 23 * * 5
+
+jobs:
+
+  tests:
+    # Run unit tests on different version of python and browser
+    name: 🐍 Python-${{ matrix.python-version }}-${{ matrix.browser }}
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        browser: [chrome, firefox]
+        python-version: ["3.8", "3.9", "3.10"]
+
+    steps:
+      - name: Pull selenium-standalone:latest
+        run: podman pull quay.io/redhatqe/selenium-standalone:latest
+
+      - name: Pull docker.io/library/nginx:alpine
+        run: podman pull docker.io/library/nginx:alpine
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Python-${{ matrix.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: UnitTest - Python-${{ matrix.python-version }}-${{ matrix.browser }}
+        env:
+          BROWSER: ${{ matrix.browser }}
+          XDG_RUNTIME_DIR: ${{ github.workspace }}
+        run: |
+          pip install -e .[test]
+          mkdir -p ${XDG_RUNTIME_DIR}/podman
+          podman system service --time=0 unix://${XDG_RUNTIME_DIR}/podman/podman.sock &
+          pytest -n 3
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1.0.13
+        with:
+          file: coverage.xml
+          flags: unittests
+          name: ${{ github.run_id }}-py-${{ matrix.python-version }}-${{ matrix.browser }}
+
+  docs:
+    name: Docs Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.8"
+
+      - name: Install Deps
+        run: |
+          pip install -U pip wheel
+          pip install .[docs]
+
+      - name: Build Docs
+        run: sphinx-build -b html -d build/sphinx-doctrees docs build/htmldocs
+
+      - name: Archive Docs
+        uses: actions/upload-artifact@v2
+        with:
+          name: sphinx-htmldocs
+          path: build/htmldocs
+
+  platform:
+    # Check package properly install on different platform (dev setup)
+    name: 💻 Platform-${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.8"
+          architecture: "x64"
+
+      - name: Development setup on ${{ matrix.os }}
+        run: |
+          pip install -e .[dev]
+          python -c "from widgetastic.widget import Widget, Browser"
+
+  package:
+    name: ⚙️ Build & Verify Package
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.8"
+          architecture: "x64"
+
+      - name: Build and verify with twine
+        run: |
+          pip install wheel twine
+          pip wheel --no-deps -w dist .
+          ls -l dist
+          twine check dist/*
