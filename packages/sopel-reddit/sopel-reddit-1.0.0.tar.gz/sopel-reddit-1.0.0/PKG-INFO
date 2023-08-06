@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: sopel-reddit
+Version: 1.0.0
+Summary: A reddit plugin for Sopel IRC bots.
+Home-page: https://github.com/sopel-irc/sopel-reddit
+Author: dgw
+Author-email: dgw@technobabbl.es
+License: Eiffel Forum License, version 2
+Description: # sopel-reddit
+        
+        A reddit plugin for Sopel IRC bots.
+        
+        
+        ## Installation
+        
+        **Stable version:**
+        
+        ```sh
+        pip install sopel-reddit
+        ```
+        
+        ### From source
+        
+        ```sh
+        pip install -e path/to/sopel-reddit
+        
+        # optional: for development
+        pip install -r dev-requirements.txt
+        ```
+        
+        _Note: Running the test suite with `pytest -v tests/` requires both
+        `sopel-reddit` **and `sopel` itself** to be installed in the same venv._
+        
+        
+        ## Configuration
+        
+        ```ini
+        [reddit]
+        slash_info = True
+        # Allow expansion of inline references like `u/RandomRedditor` or `r/eyebleach`
+        # (links are always expanded)
+        
+        app_id = abcdef0123456789
+        # Optional custom app ID for the reddit API
+        ```
+        
+        The `app_id` setting is provided mostly for future-proofing after [API policy
+        changes announced by Reddit Inc. in April
+        2023](https://old.reddit.com/r/reddit/comments/12qwagm/an_update_regarding_reddits_api/).
+        It exists so possible future API limitations can be worked around by users
+        without requiring a package update. **As of the time this package version was
+        published, the `app_id` setting _does not_ need to have a value.**
+        
+        
+        ## Special thanks
+        
+        All contributors to [the original `reddit` plugin for
+        Sopel](https://github.com/sopel-irc/sopel/commits/master/sopel/modules/reddit.py).
+        
+        
+        Initial release - 1.0.0
+        =======================
+        
+        Based on `reddit.py` from Sopel's built-ins as of upstream
+        commit [7ad23ec](https://github.com/sopel-irc/sopel/commit/7ad23ec5c58612dbbe8d93b63793bbdad80fea80).
+        
+        Added:
+        * Optional `app_id` setting (#1)
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Eiffel Forum License (EFL)
+Classifier: License :: OSI Approved :: Eiffel Forum License
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Description-Content-Type: text/markdown

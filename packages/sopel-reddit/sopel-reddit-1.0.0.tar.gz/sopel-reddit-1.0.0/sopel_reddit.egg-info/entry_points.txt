@@ -1,0 +1,3 @@
+[sopel.plugins]
+reddit = sopel_reddit
+

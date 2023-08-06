@@ -1,0 +1,14 @@
+COPYING
+MANIFEST.in
+NEWS
+README.md
+setup.cfg
+setup.py
+sopel_reddit/__init__.py
+sopel_reddit.egg-info/PKG-INFO
+sopel_reddit.egg-info/SOURCES.txt
+sopel_reddit.egg-info/dependency_links.txt
+sopel_reddit.egg-info/entry_points.txt
+sopel_reddit.egg-info/not-zip-safe
+sopel_reddit.egg-info/requires.txt
+sopel_reddit.egg-info/top_level.txt
