@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+BaiduImageSpider/__init__.py
+BaiduImageSpider/spider.py
+baiduspiderCreatedByHanXu.egg-info/PKG-INFO
+baiduspiderCreatedByHanXu.egg-info/SOURCES.txt
+baiduspiderCreatedByHanXu.egg-info/dependency_links.txt
+baiduspiderCreatedByHanXu.egg-info/requires.txt
+baiduspiderCreatedByHanXu.egg-info/top_level.txt
