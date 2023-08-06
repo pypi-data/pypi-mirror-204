@@ -1,0 +1,2 @@
+[console_scripts]
+ascii-cli = src.__main__:main
