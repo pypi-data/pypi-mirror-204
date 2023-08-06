@@ -1,0 +1,11 @@
+hurdat2parser/__init__.py,sha256=y-quV2bVPfDwGJ5bmxvwiealn2vd6Cyv7SnmPcshRKY,57368
+hurdat2parser/_aliases.py,sha256=0n6vs2i-fjkWBKTrBly8VB0weF9YTMFS6RoY94NMxnY,7088
+hurdat2parser/_calculations.py,sha256=YOjgKQl8OERk6vvh0u33oROntqEMgN_B8-BCMmddxM4,79986
+hurdat2parser/_future.py,sha256=5vR8Kh2mx9gh4JjBuDvtwD47ZKVbOgqD_7rz0S_ZZaI,14830
+hurdat2parser/_maps.py,sha256=Dj5-yVfoFxmfVIJlGuRdBonO4Czxh-tW0oEOiwgrJ8c,163453
+hurdat2parser/_reports.py,sha256=5VZRdBbWRBX9rTbbk11Y3fcSdBxcpGQpI_Ei3XPS3CM,37465
+hurdat2parser-2.2.2.dist-info/LICENSE.txt,sha256=VCWpsDxdUXV3LavMH3WcYRUb3XkXWqvu1awlG6wF27Q,1117
+hurdat2parser-2.2.2.dist-info/METADATA,sha256=kvZUaQ9kKtkCnNEGOxH8p5b7ApCcra5bh7fT1vZfC94,28008
+hurdat2parser-2.2.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hurdat2parser-2.2.2.dist-info/top_level.txt,sha256=Q9EgDjlHdoZszZwCULzT0eDDbqrIrSbuyBxsb4ZvDHk,14
+hurdat2parser-2.2.2.dist-info/RECORD,,
