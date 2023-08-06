@@ -1,0 +1,6 @@
+django
+django-admin-list-filter-dropdown
+django-crum
+django-import-export
+django-object-actions>=4.0.0
+djangorestframework
