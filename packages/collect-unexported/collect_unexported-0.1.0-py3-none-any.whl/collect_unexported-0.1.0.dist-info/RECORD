@@ -1,0 +1,12 @@
+collect_unexported/__init__.py,sha256=koaNgVyyMkbtDfBt9Oa2sO5q7Kqcs4qQOu_16OJ7OrQ,167
+collect_unexported/__main__.py,sha256=I4T5Q-hxP7b1QSXkvPnzAqdd1yIBmftSCSD9LJ9qazM,2125
+collect_unexported/collect-unexported.1,sha256=btkYiRWRqgvKmhrZoDfU25fXv-i7EMUTCyc9_F2B4_k,4499
+collect_unexported/defs.py,sha256=UesBaPrS5iIcYBsh4rUfJpySeU8tib-8Rk6prXfJY3U,1350
+collect_unexported/examine.py,sha256=yi2jpbiS25YxjYWRGd34FYaY602WlfYm2-DOFEWkAak,6477
+collect_unexported/gitrepo.py,sha256=UEKMqkj1qSUJl2CfLqbLntQolC4GlER7u88BB0yZR7g,4309
+collect_unexported/parse.py,sha256=AL0Psa7JrJZCuU5Nq1lgaJTh47kWxJqV-7jy-nGen_Q,5698
+collect_unexported/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+collect_unexported-0.1.0.dist-info/METADATA,sha256=JIti6ZMkB4IUASEBNBhsJ_QtYPAs0wZYQn1bRME9SY8,1422
+collect_unexported-0.1.0.dist-info/WHEEL,sha256=9MIigYJ7D5sOqAPqr0-o6tSMY_nQ7c6kvtvyeUB99YQ,87
+collect_unexported-0.1.0.dist-info/entry_points.txt,sha256=y2Qr71AMsu26KGyAGlsOTHG5Ayz79srp63XFbJgMhzA,72
+collect_unexported-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: collect-unexported
+Version: 0.1.0
+Summary: Collect some files excluded from the release tarball
+Author-email: Peter Pentchev <roam@ringlet.net>
+License-Expression: GPL-2.0-or-later
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Requires-Dist: cfg-diag<0.5,>=0.4
+Requires-Dist: click<9,>=8
+Requires-Dist: python-debian<0.2,>=0.1.35
+Requires-Dist: pyyaml<7,>=5
+Description-Content-Type: text/markdown
+
+<!--
+SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+SPDX-License-Identifier: BSD-2-Clause
+-->
+
+# Collect files omitted from the release tarballs
+
+Some projects explicitly exclude some development files from
+their release tarballs. Sometimes, when packaging those projects,
+it may be useful to have these files around, e.g. for running tests.
