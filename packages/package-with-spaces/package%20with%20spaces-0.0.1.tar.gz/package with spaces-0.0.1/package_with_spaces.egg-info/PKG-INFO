@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: package-with-spaces
+Version: 0.0.1
+Summary: Description
+Author: me
+Author-email: email@email.it
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6, <4

@@ -1,0 +1,5 @@
+setup.py
+package_with_spaces.egg-info/PKG-INFO
+package_with_spaces.egg-info/SOURCES.txt
+package_with_spaces.egg-info/dependency_links.txt
+package_with_spaces.egg-info/top_level.txt
