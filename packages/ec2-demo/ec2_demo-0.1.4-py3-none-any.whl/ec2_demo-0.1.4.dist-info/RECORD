@@ -1,0 +1,11 @@
+ec2_demo/__init__.py,sha256=r4JiAExMNe6dFEzilxqWId5R9dA0dJeWyp8WJ8BfKhI,18
+ec2_demo/cli.py,sha256=R1vB9Q_XCWxc_2aVSZbHhJDpRtmolDSfTck-dxNdIPY,1958
+ec2_demo/instances.py,sha256=esgE0DyBEyh7euJjc9PyBEtHaotG0m0d966Lx18QHzw,3199
+ec2_demo/task.py,sha256=O08Ck3tnn7oomSVNMMTwT4ZitsYwzmVGz6xSjN63ZWA,1046
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_instances.py,sha256=MkOXwsIeU_MhbqRTG3zpIgVnE2r6Hvhtn1E7162fl0w,767
+ec2_demo-0.1.4.dist-info/METADATA,sha256=RustoTtTAybynS2mAQZ0ueWRDOt_x76Mk6FYdo59x9c,1116
+ec2_demo-0.1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ec2_demo-0.1.4.dist-info/entry_points.txt,sha256=GLdizhp5KDIhPxKWgXLz0kw1o0FXoCT4hsmo5z4gLrg,47
+ec2_demo-0.1.4.dist-info/top_level.txt,sha256=pMNZET2l7cpuxORCvlBM9FMPZ_zYa859_xklSpDaaPc,15
+ec2_demo-0.1.4.dist-info/RECORD,,
