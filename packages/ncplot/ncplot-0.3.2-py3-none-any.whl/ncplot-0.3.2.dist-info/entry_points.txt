@@ -1,0 +1,2 @@
+[console_scripts]
+ncplot = ncplot.command_line:main
