@@ -1,0 +1,13 @@
+{
+    "Áreas Artificiales": 9,
+    "Área abierta con vegetación": 7,
+    "Área abierta poca vegetación": 8,
+    "Agua": 0,
+    "Ruido": 4,
+    "Bosques y Areas Seminaturales": 1,
+    "Áreas Húmedas": 10,
+    "Hielo": 2,
+    "Territorios Agrícolas": 6,
+    "Sombra": 5,
+    "Nubes": 3
+}
