@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/pseudo_ecg/__init__.py
+src/pseudo_ecg/ecg.py
+src/pseudo_ecg.egg-info/PKG-INFO
+src/pseudo_ecg.egg-info/SOURCES.txt
+src/pseudo_ecg.egg-info/dependency_links.txt
+src/pseudo_ecg.egg-info/requires.txt
+src/pseudo_ecg.egg-info/top_level.txt
+tests/test_ecg.py
