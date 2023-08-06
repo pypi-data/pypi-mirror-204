@@ -1,0 +1,4 @@
+numpy>=1.15
+scipy
+pandas>=0.24.2
+gemmi==0.6.1
