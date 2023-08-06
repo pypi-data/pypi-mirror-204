@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/Poly_REaDDIT.egg-info/PKG-INFO
+src/Poly_REaDDIT.egg-info/SOURCES.txt
+src/Poly_REaDDIT.egg-info/dependency_links.txt
+src/Poly_REaDDIT.egg-info/entry_points.txt
+src/Poly_REaDDIT.egg-info/not-zip-safe
+src/Poly_REaDDIT.egg-info/requires.txt
+src/Poly_REaDDIT.egg-info/top_level.txt
+src/polyreaddit/__init__.py
+src/polyreaddit/polyreaddit.py
