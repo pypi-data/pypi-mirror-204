@@ -1,0 +1,22 @@
+{
+    "project_name": "Name of the project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "project_short_description": "A short description of the project",
+    "author_name": "NhanDD3",
+    "email": "hp.duongducnhan@gmail.com",
+
+    "host": "0.0.0.0",
+    "port": 5000,
+    "domain": "",
+
+
+    "use_postgres_database":  ["yes", "no"],
+    "use_redis":  ["yes", "no"],
+
+    "use_django_redis_cache": ["yes", "no"],
+
+
+    "use_proxy": ["yes", "no"],
+    "proxy_address": "http://proxy.hcm.fpt.vn:80",
+    "no_proxy": "localhost, 127.0.0.1"
+}
