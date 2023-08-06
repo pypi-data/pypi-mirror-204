@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+nagerapi/__init__.py
+nagerapi.egg-info/PKG-INFO
+nagerapi.egg-info/SOURCES.txt
+nagerapi.egg-info/dependency_links.txt
+nagerapi.egg-info/requires.txt
+nagerapi.egg-info/top_level.txt
