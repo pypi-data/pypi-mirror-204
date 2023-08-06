@@ -1,0 +1,7 @@
+setup.py
+niubi.egg-info/PKG-INFO
+niubi.egg-info/SOURCES.txt
+niubi.egg-info/dependency_links.txt
+niubi.egg-info/top_level.txt
+pack/__init__.py
+pack/myMath.py
