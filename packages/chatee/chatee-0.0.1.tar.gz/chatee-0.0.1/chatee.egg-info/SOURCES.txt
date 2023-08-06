@@ -1,0 +1,7 @@
+setup.py
+chatee/__init__.py
+chatee.egg-info/PKG-INFO
+chatee.egg-info/SOURCES.txt
+chatee.egg-info/dependency_links.txt
+chatee.egg-info/not-zip-safe
+chatee.egg-info/top_level.txt
