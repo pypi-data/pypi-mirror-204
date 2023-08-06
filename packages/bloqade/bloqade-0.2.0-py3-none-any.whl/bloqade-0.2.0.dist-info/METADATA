@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bloqade
+Version: 0.2.0
+Summary: neutral atom software development kit
+Author-email: "QuEra Computing Inc." <info@quera.com>
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: juliacall (>=0.9.12)
+Requires-Dist: matplotlib (>=3.7.1)
+Requires-Dist: numpy (>=1.24.2)
+Requires-Dist: pydantic (>=1.10.7)
+Requires-Dist: setuptools (>=67.7.0)
+
+# bloqade
+
+neutral atom software development kit
