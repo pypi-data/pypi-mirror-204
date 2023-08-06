@@ -1,0 +1,3 @@
+m-singleton
+redis
+pymongo
