@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: yopass-api
+Version: 0.0.8
+Summary: This module will allow you to use Python and Yopass in automation projects
+Home-page: https://github.com/silyashevich/yopass_api
+License: MIT
+Keywords: api,cryptography,yopass
+Author: Sergey Ilyashevich
+Author-email: silyashevich@gmail.com
+Maintainer: Sergey Ilyashevich
+Maintainer-email: silyashevich@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Security :: Cryptography
+Requires-Dist: pgpy (>=0.6.0,<0.7.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Project-URL: Repository, https://github.com/silyashevich/yopass_api
+Description-Content-Type: text/markdown
+
+# yopass_api
+
+[![codecov](https://codecov.io/github/silyashevich/yopass_api/branch/main/graph/badge.svg?token=YDY235VL6Q)](https://codecov.io/github/silyashevich/yopass_api)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/yopass_api)
+
+This is a module to work with a (the) [Yopass](https://github.com/jhaals/yopass) backend created by [Johan Haals](https://github.com/jhaals).
+This module will allow you to use Python and self-hosted Yopass in automation projects.
+
+## Installing
+
+```py
+pip install yopass_api
+```
+
+## Basic Example
+
+This is a basic example of store secret, get link and fetch secret:
+
+```py
+from yopass_api import Yopass
+
+yopass = Yopass(api="https://api.yopass.se")
+secret_password = yopass.generate_passphrase(length=5)
+secret_id = yopass.store(
+    message="test",
+    password=secret_password,
+    expiration="1w",
+    one_time=False,
+)
+secret_url = yopass.secret_url(secret_id=secret_id, password=secret_password)
+print(secret_url)
+message = yopass.fetch(secret_id=secret_id, password=secret_password)
+print(message)
+
+```
+
