@@ -1,0 +1,2 @@
+[console_scripts]
+pylt = py_localtunnel.cli:main
