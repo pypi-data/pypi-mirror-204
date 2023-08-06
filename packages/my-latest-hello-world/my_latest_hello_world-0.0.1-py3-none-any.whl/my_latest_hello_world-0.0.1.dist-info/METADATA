@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: my-latest-hello-world
+Version: 0.0.1
+Summary: A simple library to print hello world
+Author: Pragyat Singh Rana
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pymongo (<5.0.0,>=4.3.0)
+
+My Latest Hello World: Print Hello World Easily
+========================================================
+
+*Hello* helps you to print hello world program.
+
+It also makes it easy for you to:
+
+#. print hello world;
+
+Usage
+=====
+
+Install:
+
+.. code-block:: console
+
+    pip install my-latest-hello-world
+
+Import and Use:
+
+.. code-block:: python
+
+    from hello import hello_world
+    hello_world()
