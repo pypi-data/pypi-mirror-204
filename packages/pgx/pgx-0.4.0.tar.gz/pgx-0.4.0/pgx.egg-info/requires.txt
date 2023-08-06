@@ -1,0 +1,5 @@
+jax>=0.3.25
+chex>=0.1.6
+svgwrite
+msgpack
+typing_extensions
