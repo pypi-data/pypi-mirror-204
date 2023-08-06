@@ -1,0 +1,3 @@
+[console_scripts]
+hallon = hallon:cmd
+hallon-tools = hallon:cmd_tool
