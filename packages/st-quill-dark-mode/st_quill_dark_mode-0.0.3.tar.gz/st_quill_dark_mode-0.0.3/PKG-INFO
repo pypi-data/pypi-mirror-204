@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: st_quill_dark_mode
+Version: 0.0.3
+Summary: Dark Streamlit Quill Editor.
+Home-page: 
+Author: Bryan Saggese
+Author-email: 
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
