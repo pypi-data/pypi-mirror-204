@@ -1,0 +1,12 @@
+flask
+flask_restful
+flask_cors
+efficientnet-pytorch
+scikit-build
+opencv-python
+pandas
+requests
+pyyaml
+tqdm
+seaborn
+IutyLib
