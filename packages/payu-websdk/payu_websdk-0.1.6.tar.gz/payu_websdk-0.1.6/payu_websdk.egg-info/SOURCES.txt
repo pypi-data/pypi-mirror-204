@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+payu/__init__.py
+payu/payuClient.py
+payu_websdk.egg-info/PKG-INFO
+payu_websdk.egg-info/SOURCES.txt
+payu_websdk.egg-info/dependency_links.txt
+payu_websdk.egg-info/requires.txt
+payu_websdk.egg-info/top_level.txt
