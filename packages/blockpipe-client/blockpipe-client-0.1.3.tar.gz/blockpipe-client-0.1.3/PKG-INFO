@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: blockpipe-client
+Version: 0.1.3
+Summary: A Python library for interacting with Blockpipe Endpoint API
+Home-page: https://github.com/blockpipe/python
+Author: blockpipe.io
+Author-email: support@blockpipe.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Blockpipe Client for Python
+
+Blockpipe Client is a Python library for interacting with Blockpipe Endpoint API. It provides a simple interface for fetching data from the API and supports both single endpoint and multiple endpoints.
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install blockpipe-client
+```
+
+## Usage
+
+1.  Import `BlockpipeClient` and create a new instance:
+
+```python
+
+from blockpipe_client import BlockpipeClient
+
+client = BlockpipeClient("<PROJECT_SLUG>", {
+    "environment": "production",  # optional
+    "baseUrl": "https://app.blockpipe.io/endpoint"  # optional
+})
+```
+
+2.  Fetch data from the Blockpipe Endpoint API:
+
+```python
+results = client.get(["/path1", "/path2"])
+```
+
+# or with a single endpoint
+
+```python
+result = client.get("/path1")
+```
+
+3.  Use the fetched data in your application:
+
+```python
+for result in results:
+    print(result)
+
+# If you only requested one endpoint, you can access the data directly:
+print(result)
+```
+
+## API
+
+### `BlockpipeClient`
+
+A Python class representing a Blockpipe Client instance.
+
+Constructor:
+
+- `project`: The project slug.
+- `options` (optional): A dictionary with optional configurations:
+  - `environment`: The deployment environment. Default is `"production"`.
+  - `baseUrl`: The base URL for the API. Default is `"https://app.blockpipe.io/endpoint"`.
+
+### `get`
+
+A method to fetch data from one or multiple Blockpipe Endpoint API paths.
+
+Arguments:
+
+- `endpoints`: A list of endpoint paths or a single endpoint path as a string.
+
+Returns:
+
+A list of data fetched from the specified endpoints, or a single data object if a single endpoint path was provided.
+
+## License
+
+[Apache 2.0](LICENSE)
+
+
