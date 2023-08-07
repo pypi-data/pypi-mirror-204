@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: astrojs-aws.construct
+Version: 0.0.10
+Summary: The CDK Construct Library of Astro
+Home-page: https://astro-aws.org/
+Author: helbing
+License: MIT
+Project-URL: Source, https://github.com/helbing/astrojs-aws.git
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Astro Construct Library
+
+<!--BEGIN STABILITY BANNER-->---
+
+
+![cdk-constructs: Experimental](https://img.shields.io/badge/cdk--constructs-experimental-important.svg?style=for-the-badge)
+
+> The APIs of higher level constructs in this module are experimental and under active development.
+> They are subject to non-backward compatible changes or removal in any future version. These are
+> not subject to the [Semantic Versioning](https://semver.org/) model and breaking changes will be
+> announced in the release notes. This means that while you may use them, you may need to update
+> your source code when upgrading to a newer version of this package.
+
+---
+<!--END STABILITY BANNER-->
+
+## Introduction
+
+[Astro](https://astro.build/) is the all-in-one web framework designed for speed. This library is supported modes, `static`, `lambda` and `edge`, to deploy astro website to AWS. You can further know it in [https://helbing.github.io/astrojs-aws/](https://helbing.github.io/astrojs-aws/).
+
+## Usage
+
+```python
+new astrojsaws.StaticAstroSite(this, "StaticAstroSite", {
+  siteDir: "/path/to/dist",
+})
+
+new astrojsaws.LambdaAstroSite(this, "LambdaAstroSite", {
+  serverEntry: "/path/to/dist/server/entry.mjs",
+  staticDir: "/path/to/dist/client",
+})
+
+new astrojsaws.EdgeAstroSite(this, "EdgeAstroSite", {
+  serverEntry: "/path/to/dist/server/entry.mjs",
+  staticDir: "/path/to/dist/client",
+})
+```

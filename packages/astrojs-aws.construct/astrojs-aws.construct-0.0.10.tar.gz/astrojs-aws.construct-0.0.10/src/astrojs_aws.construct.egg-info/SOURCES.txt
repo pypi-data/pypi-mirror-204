@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/astrojs_aws.construct.egg-info/PKG-INFO
+src/astrojs_aws.construct.egg-info/SOURCES.txt
+src/astrojs_aws.construct.egg-info/dependency_links.txt
+src/astrojs_aws.construct.egg-info/requires.txt
+src/astrojs_aws.construct.egg-info/top_level.txt
+src/astrojs_aws/construct/__init__.py
+src/astrojs_aws/construct/py.typed
+src/astrojs_aws/construct/_jsii/__init__.py
+src/astrojs_aws/construct/_jsii/construct@0.0.10.jsii.tgz
