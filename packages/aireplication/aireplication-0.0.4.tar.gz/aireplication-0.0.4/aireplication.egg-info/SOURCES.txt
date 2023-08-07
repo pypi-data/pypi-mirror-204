@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aireplication/__init__.py
+aireplication.egg-info/PKG-INFO
+aireplication.egg-info/SOURCES.txt
+aireplication.egg-info/dependency_links.txt
+aireplication.egg-info/requires.txt
+aireplication.egg-info/top_level.txt
+aireplication/ultils/__init__.py
+aireplication/ultils/data.py
+aireplication/ultils/datasets.py
