@@ -1,0 +1,12 @@
+st_dropfill_textarea/__init__.py,sha256=tZMAwOJez6Gf68E_hQUxYJsm1fqBwmptPXDz6Nsb4Xo,3111
+st_dropfill_textarea/frontend/dist/index.html,sha256=zCF3fyXHcwOSLY4K6nExPmvR0cqA8BGGCDqzYpengL8,725
+st_dropfill_textarea/frontend/dist/css/app.58e9fcbb.css,sha256=VzP1NDmC4Bj_54nQuNzeP1IuHquRAAQokwW5HY3QcNw,1297
+st_dropfill_textarea/frontend/dist/js/app.7306c276.js,sha256=Cl-Y3gZ_QzvEdjkIAOaMaaVlD4tuQDvWXOVSoJ7FCek,8229
+st_dropfill_textarea/frontend/dist/js/app.7306c276.js.map,sha256=IlJk0yyokBHkZYzZr8hzdudYiE-xBVJoGtIdnqjy4zA,31200
+st_dropfill_textarea/frontend/dist/js/chunk-vendors.e7772cca.js,sha256=kh7XXOtobAuBlAeYGclBEbCj8PUTE3i4XMjTubkrQwo,865876
+st_dropfill_textarea/frontend/dist/js/chunk-vendors.e7772cca.js.map,sha256=gQBhB0ktvGYahGUwkkGBOa09_2fDj6DXq4u6_Rhx6F4,3348860
+streamlit_component_dropfilltextarea-0.2.3.dist-info/LICENSE,sha256=sppB3ITw6fSvSt8TdTVJWSX78ZQyUyKP9mqYLY252TQ,1069
+streamlit_component_dropfilltextarea-0.2.3.dist-info/METADATA,sha256=cYpw60e3Pq3oDt7AKmXgH2yIg3WlHt58JftRuaey2HE,2625
+streamlit_component_dropfilltextarea-0.2.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+streamlit_component_dropfilltextarea-0.2.3.dist-info/top_level.txt,sha256=911X-bJ_T5RrAyLPzUsyrWi51DiSqUJFZQHlw7BSrDY,21
+streamlit_component_dropfilltextarea-0.2.3.dist-info/RECORD,,
