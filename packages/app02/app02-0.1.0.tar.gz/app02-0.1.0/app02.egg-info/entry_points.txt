@@ -1,0 +1,2 @@
+[console_scripts]
+app02 = app02.__main__:main
