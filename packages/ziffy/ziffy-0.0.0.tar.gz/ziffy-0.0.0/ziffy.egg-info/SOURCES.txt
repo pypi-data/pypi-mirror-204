@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+ziffy/__init__.py
+ziffy/main.py
+ziffy.egg-info/PKG-INFO
+ziffy.egg-info/SOURCES.txt
+ziffy.egg-info/dependency_links.txt
+ziffy.egg-info/top_level.txt
