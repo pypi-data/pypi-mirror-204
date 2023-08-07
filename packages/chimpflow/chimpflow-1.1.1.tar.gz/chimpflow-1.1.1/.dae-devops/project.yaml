@@ -1,0 +1,24 @@
+# Primary information needed for devops.
+primary:
+    repository_name: chimpflow
+    package_name: chimpflow_lib
+    one_line_description: "XChem Business Knowledge Unit. Service, Client, API, persistent store."
+    author:
+        name: David Erb
+        email: david.erb@diamond.ac.uk
+    project_urls:
+        GitLab: https://github.com/diamondlightsource/chimpflow
+    project_scripts:
+        chimpflow: "chimpflow_lib.__main__:main"
+        chimpflow.cli: "chimpflow_cli.main:main"
+    dependencies:
+        - type: pypi
+          list:
+              # TODO: Dependency should be on xchembku_api, not xchembku complete.
+              - xchem-chimp
+              - xchembku
+              - dls_servbase
+              - dls_mainiac
+              - dls_multiconf
+              - dls_utilpack
+              - requests
