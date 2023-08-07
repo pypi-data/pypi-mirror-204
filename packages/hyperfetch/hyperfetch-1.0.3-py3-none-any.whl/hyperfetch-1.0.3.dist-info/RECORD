@@ -1,0 +1,13 @@
+hyperfetch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hyperfetch/alg_samplers.py,sha256=LwmGKGhhT7gJ_UZGeFA0hT23Wa-sQ_UtJ0XLmQ-_rV4,10569
+hyperfetch/auth_connection.py,sha256=CikOlAp3qj9sb43b_z9065FDOmXImaQuFFo7ewjnsmI,654
+hyperfetch/callbacks.py,sha256=-CkA2EqhT9HyFgkah6mf4pffmL58OQR19SXj6RfLge4,2118
+hyperfetch/manager.py,sha256=R-eFHTeJ6J33-c61pkOql2UEoQ2Fhq3WxSAmV6CMsNw,33318
+hyperfetch/tuning.py,sha256=inH3uJJ3fQYUQU6ilFdHTfUcuSKBU4nbEeuFLd7d7nU,4899
+hyperfetch/util.py,sha256=YSitIHtfnTq-FhJVcz4h9qBP9TOYFqItc4QPSesUqC0,825
+hyperfetch-1.0.3.dist-info/LICENSE,sha256=X6UWSpqXTJSsutv5lA4UvddvjYSRP_dbrn9kT2tWHfM,1317
+hyperfetch-1.0.3.dist-info/METADATA,sha256=oVgmDu0r7UEG_8nVjsCxsaguGg28h2akH9A_jsvmLs8,15003
+hyperfetch-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hyperfetch-1.0.3.dist-info/entry_points.txt,sha256=b8fYlZtpmJ2f5rteFmSDny10VvfQEmH9kMK0J2cKL1o,86
+hyperfetch-1.0.3.dist-info/top_level.txt,sha256=n0qDUmaRmbt_2L1N07k-UEy7a6gt50YawZB2cDGNvfM,11
+hyperfetch-1.0.3.dist-info/RECORD,,
