@@ -1,0 +1,9 @@
+python/__init__.py,sha256=gsgfONyxM5k2iL8-OKYe3Ug9280e7EsuKY32pxq5CvI,91
+python/version.py,sha256=pYAefxK9EsJlkIh61Xz6Q3Pf8XaJkIP92azxnYBMfBQ,96
+python/pytorch/__init__.py,sha256=gsgfONyxM5k2iL8-OKYe3Ug9280e7EsuKY32pxq5CvI,91
+python/tensorflow/__init__.py,sha256=gsgfONyxM5k2iL8-OKYe3Ug9280e7EsuKY32pxq5CvI,91
+python/tensorflow/input/__init__.py,sha256=gsgfONyxM5k2iL8-OKYe3Ug9280e7EsuKY32pxq5CvI,91
+silkynet-0.0.1.dist-info/METADATA,sha256=Si4XDwTK94n48LQRflNACqCE8GTbQgs1dB5j2JFp8GE,2298
+silkynet-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+silkynet-0.0.1.dist-info/top_level.txt,sha256=J-z0poNcsv31IHB413--iOY8LoHBKiTHeybHX3abokI,7
+silkynet-0.0.1.dist-info/RECORD,,
