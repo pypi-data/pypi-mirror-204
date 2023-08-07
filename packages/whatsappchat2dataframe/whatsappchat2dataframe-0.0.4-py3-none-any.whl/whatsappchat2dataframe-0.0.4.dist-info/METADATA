@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: whatsappchat2dataframe
+Version: 0.0.4
+Summary: Converts a Whatsapp chat (.txt file) into a pandas DataFrame
+Author: Kiran Busch
+Author-email: <kiranbusch@t-online.de>
+Keywords: python,whatsapp
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: tqdm
+Requires-Dist: regex
+Requires-Dist: pandas
+
+
+# whatsappChat2dataFrame
+
+
+
+
+
+Currently experimenting and planning!
+
+
+
+Developed by Kiran Busch 2023
+
+
+
+## Examples of How To Use (Buggy Alpha Version)
+
+
+
+Creating a Converter and calling chat2dataframe function
+
+
+
+```python
+
+#load package with converter
+
+from whatsappchat2dataframe import Converter
+
+#create converter
+
+conv = Converter()
+
+#create dataframe from whatsapp .txt file
+
+file_path = 'data/_chat.txt'
+
+df = conv.chat2dataframe(path_to_filename = file_path)
+
+```
