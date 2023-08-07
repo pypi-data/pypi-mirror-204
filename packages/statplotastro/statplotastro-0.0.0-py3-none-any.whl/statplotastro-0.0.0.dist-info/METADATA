@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: statplotastro
+Version: 0.0.0
+Summary: A Python ToolKit for statistic plot in astronomy
+Project-URL: Homepage, https://github.com/dingyizhao/statplot
+Project-URL: Bug Tracker, https://github.com/dingyizhao/statplot/issues
+Author-email: Dingyi Zhao <1901110228@pku.edu.cn>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# myplot
+Common plot code used in astrophysics
