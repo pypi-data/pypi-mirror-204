@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+rich_format/__init__.py
+rich_format/test.py
+rich_format.egg-info/PKG-INFO
+rich_format.egg-info/SOURCES.txt
+rich_format.egg-info/dependency_links.txt
+rich_format.egg-info/entry_points.txt
+rich_format.egg-info/requires.txt
+rich_format.egg-info/top_level.txt
+rich_format.egg-info/zip-safe
