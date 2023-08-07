@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_xapi.py
+xapi/__init__.py
+xapi/connection.py
+xapi/enums.py
+xapi/exceptions.py
+xapi/socket.py
+xapi/stream.py
+xapi/xapi.py
+xapi_python.egg-info/PKG-INFO
+xapi_python.egg-info/SOURCES.txt
+xapi_python.egg-info/dependency_links.txt
+xapi_python.egg-info/top_level.txt
