@@ -1,0 +1,7 @@
+setup.py
+cutepy/__init__.py
+cutepy/cutepy.py
+cutepy.egg-info/PKG-INFO
+cutepy.egg-info/SOURCES.txt
+cutepy.egg-info/dependency_links.txt
+cutepy.egg-info/top_level.txt
