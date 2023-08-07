@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: gWeaver
+Version: 1.0.6
+Summary: dgraph operation module for Django REST Framework
+Home-page: https://github.com/iamr2k/gWeaver
+Author: Rahul Babu K
+Author-email: rahulbabu101@gmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.7
+Provides-Extra: test
+Provides-Extra: lint
+Provides-Extra: doc
+Provides-Extra: dev
+Provides-Extra: python-jose
+Provides-Extra: crypto
+License-File: LICENSE.txt
+
+Dgraph ORM for DRF
+
+Abstract
+--------
+
+Dgraph Object relational mapping plugin for the `Django REST
+Framework <http://www.django-rest-framework.org/>`__.
+
