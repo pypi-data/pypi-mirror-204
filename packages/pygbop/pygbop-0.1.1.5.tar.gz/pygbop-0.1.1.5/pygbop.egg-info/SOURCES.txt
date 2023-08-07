@@ -1,0 +1,16 @@
+.gitignore
+MANIFEST.in
+README.rst
+README.txt
+a.txt
+main.py
+requirements.txt
+setup.cfg
+setup.py
+pygbop/__init__.py
+pygbop/gbop.py
+pygbop.egg-info/PKG-INFO
+pygbop.egg-info/SOURCES.txt
+pygbop.egg-info/dependency_links.txt
+pygbop.egg-info/requires.txt
+pygbop.egg-info/top_level.txt

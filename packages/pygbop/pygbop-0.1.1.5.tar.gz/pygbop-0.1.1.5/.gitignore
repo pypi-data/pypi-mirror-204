@@ -1,0 +1,4 @@
+.idea/
+venv/
+pygbop.egg-info/
+dist/
