@@ -1,0 +1,67 @@
+#!python
+# This file is placed in the Public Domain.
+# pylint: disable=C0115,C0116,C0413,W0212,E0611
+
+
+'operbot'
+
+
+import os
+import sys
+import time
+import traceback
+
+
+from operbot.handler import Error
+from operbot.handler import scan
+from operbot.modules import cmd, err, irc, rss, log, sts, tdo, thr
+from operbot.persist import Persist
+
+
+Persist.workdir = "/var/lib/operbot/"
+
+
+scan(cmd)
+scan(err)
+scan(irc)
+scan(log)
+scan(rss)
+scan(sts)
+scan(tdo)
+scan(thr)
+
+
+def daemon():
+    pid = os.fork()
+    if pid != 0:
+        os._exit(0)
+    os.setsid()
+    os.umask(0)
+    sis = open('/dev/null', 'r')
+    os.dup2(sis.fileno(), sys.stdin.fileno())
+    sos = open('/dev/null', 'a+')
+    ses = open('/dev/null', 'a+')
+    os.dup2(sos.fileno(), sys.stdout.fileno())
+    os.dup2(ses.fileno(), sys.stderr.fileno())
+
+
+def waiter():
+    got = []
+    for ex in Error.errors:
+        traceback.print_exception(type(ex), ex, ex.__traceback__)
+        got.append(ex)
+    for exc in got:
+        Error.errors.remove(exc)
+
+
+def main():
+    daemon()
+    irc.start()
+    rss.start()
+    while 1:
+        time.sleep(1.0)
+        waiter()
+
+
+main()
+waiter()
