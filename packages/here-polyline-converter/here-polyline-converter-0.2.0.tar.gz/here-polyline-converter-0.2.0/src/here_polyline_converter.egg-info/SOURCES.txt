@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+src/here_polyline_converter.egg-info/PKG-INFO
+src/here_polyline_converter.egg-info/SOURCES.txt
+src/here_polyline_converter.egg-info/dependency_links.txt
+src/here_polyline_converter.egg-info/not-zip-safe
+src/here_polyline_converter.egg-info/requires.txt
+src/here_polyline_converter.egg-info/top_level.txt
+src/here_search/polyline_converter/__init__.py
+src/here_search/polyline_converter/decoding.py
+src/here_search/polyline_converter/encoding.py
