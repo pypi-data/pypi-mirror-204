@@ -1,0 +1,9 @@
+highrise/__init__.py,sha256=W3PMD-6FQXVSnAb9AfKte6vrcBJOrFymj2Kvx1ddHa4,8524
+highrise/__main__.py,sha256=5ZNwBgNjoph82arGi6doNbA4CF9M5m5xqShyTyRQ-AY,7907
+highrise/_unions.py,sha256=a3Z2_MtR3syEl4p2jincT1nphWnZYFuRd0e5DB8BNg4,3064
+highrise/models.py,sha256=3TmaDTtqlIh9pDju4CbXfgx7-eb8Ia8iJbkC_rxEkME,8531
+highrise/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+highrise_bot_sdk-23.1.0b8.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+highrise_bot_sdk-23.1.0b8.dist-info/entry_points.txt,sha256=_cxeMH0-Om7kAMfZq8pXjjggq1ElVlz0rqhd05ZoA4Q,50
+highrise_bot_sdk-23.1.0b8.dist-info/METADATA,sha256=kEJ5MoTHT5vci1KQJgf0TnxIPXFBoJbxF_x5csKbG-k,3305
+highrise_bot_sdk-23.1.0b8.dist-info/RECORD,,
