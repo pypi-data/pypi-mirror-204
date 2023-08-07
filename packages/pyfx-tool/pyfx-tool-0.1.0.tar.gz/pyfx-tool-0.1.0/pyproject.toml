@@ -1,0 +1,29 @@
+[project]
+name = "pyfx-tool"
+version = "0.1.0"
+description = "Fx (Function eXecution) in Python, inspired by https://www.npmjs.com/package/fx."
+authors = [
+    { name = "Wu Runfan", email = "alr_public@hotmail.com" },
+]
+
+readme = "README.md"
+requires-python = ">=3.2"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = ['json-stream-parser>=0.0.1']
+
+[project.urls]
+"Homepage" = "https://github.com/archeraldrich/pyfx"
+"Bug Tracker" = "https://github.com/archeraldrich/pyfx/issues"
+
+[build-system]
+requires = ["setuptools>=58", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+pyfx = "pyfx.pyfx:main"
+
