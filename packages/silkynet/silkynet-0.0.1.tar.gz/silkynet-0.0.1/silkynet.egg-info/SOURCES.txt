@@ -1,0 +1,12 @@
+README.md
+setup.py
+python/__init__.py
+python/version.py
+python/pytorch/__init__.py
+python/tensorflow/__init__.py
+python/tensorflow/input/__init__.py
+silkynet.egg-info/PKG-INFO
+silkynet.egg-info/SOURCES.txt
+silkynet.egg-info/dependency_links.txt
+silkynet.egg-info/requires.txt
+silkynet.egg-info/top_level.txt
