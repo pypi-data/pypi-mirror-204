@@ -1,0 +1,3 @@
+[console_scripts]
+openxlab = openxlab.cli:main
+
