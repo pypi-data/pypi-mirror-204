@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: speechtotext-python
+Version: 0.3.7
+Summary: Python package to benchmark speech2text models.
+Home-page: https://github.com/jarneamerlinck/speechtotext
+Author: Jarne Amerlinck
+Author-email: jarneamerlinck@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9.2,<3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jiwer
+Requires-Dist: pandas (<2.0.0)
+Requires-Dist: numpy
+Requires-Dist: torch (>=2.0.0)
+Requires-Dist: openai-whisper
+Requires-Dist: openai
+Requires-Dist: python-dotenv
+Requires-Dist: matplotlib
+Requires-Dist: ipywidgets
+Requires-Dist: seaborn
+Requires-Dist: dtale
+Requires-Dist: boto3
+Requires-Dist: google-cloud-speech
+Requires-Dist: deepgram-sdk
+Requires-Dist: azure-cognitiveservices-speech
+Requires-Dist: speechmatics-python (==1.6.4)
+Requires-Dist: pydub
+Requires-Dist: docstring-parser
+Provides-Extra: docs
+Requires-Dist: Sphinx (>=6.1.3) ; extra == 'docs'
+Requires-Dist: sphinx-markdown-builder (>=0.5.5) ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints (>=1.22) ; extra == 'docs'
+Requires-Dist: sphinx-press-theme (>=0.8.0) ; extra == 'docs'
+Requires-Dist: sphinx-favicon ; extra == 'docs'
+Requires-Dist: twine ; extra == 'docs'
+
+
+# Speechtotext
+
+Python package to benchmark speech2text models. 
+
+## [Documentation](https://jarneamerlinck.github.io/speechtotext/)
+
+## Install package
+### Python
+
+```bash
+pip install speechtotext-python
+```
+
+### Conda 
+
+```yaml
+name: sample_env
+channels:
+dependencies:
+  - python<3.11,>=3.9.2
+  - pip
+  - speechtotext-python
+```
