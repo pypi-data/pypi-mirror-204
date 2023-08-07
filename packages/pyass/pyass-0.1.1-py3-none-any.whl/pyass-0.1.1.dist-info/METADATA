@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyass
+Version: 0.1.1
+Summary: A library to read, manipulate, and write Advanced SubStation Alpha (.ass) files
+Home-page: https://github.com/xIceArcher/pyass
+License: MIT
+Author: xIceArcher
+Author-email: xicearcher@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/xIceArcher/pyass
+Description-Content-Type: text/markdown
+
+# pyass
+
+A library to read, manipulate, and write Advanced SubStation Alpha (.ass) files
+
