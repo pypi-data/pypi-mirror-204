@@ -1,0 +1,3 @@
+[console_scripts]
+skylab=skylab.__main__:main
+
