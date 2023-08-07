@@ -1,0 +1,4 @@
+fgspectra>=1.1.0
+syslibrary>=0.1.0
+cobaya>=3.1.0
+sacc>=0.4.2
