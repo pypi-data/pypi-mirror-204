@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+kidronekit/__init__.py
+kidronekit/lib.py
+kidronekit/mavlink.py
+kidronekit/util.py
+kidronekit.egg-info/PKG-INFO
+kidronekit.egg-info/SOURCES.txt
+kidronekit.egg-info/dependency_links.txt
+kidronekit.egg-info/requires.txt
+kidronekit.egg-info/top_level.txt
+kidronekit.egg-info/zip-safe
