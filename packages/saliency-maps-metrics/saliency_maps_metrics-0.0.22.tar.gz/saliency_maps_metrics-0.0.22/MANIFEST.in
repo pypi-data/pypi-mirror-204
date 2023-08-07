@@ -1,0 +1,11 @@
+prune */data
+prune */__pycache__ 
+exclude demo.ipynb
+exclude jupyter_acc.py
+exclude model_cub_oldformat.pth
+exclude model_cub.pth
+prune */pics
+exclude reformat_weights.py
+exclude *test* 
+exclude */*.ipynb*
+prune tests
