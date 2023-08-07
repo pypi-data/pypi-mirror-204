@@ -1,0 +1,16 @@
+autoscale_agent/__init__.py,sha256=MnXm0_lJWwvJpvX-6n8VKOeLxFoAs1oZt-R_lK5CEs0,382
+autoscale_agent/agent.py,sha256=sAKczeqijuVEWH-HdZHvjeH9ArauevvaLoqIZ2NhQUc,38
+autoscale_agent/configuration.py,sha256=binAkEsNzFYuCzrRjvJjkEL7K9tlIV4AHQaCfds1-yw,1233
+autoscale_agent/middleware/__init__.py,sha256=dN1LXW8-qq-WbILjaAYlsWQOTcp7imPVELYravS8knM,1886
+autoscale_agent/middleware/django.py,sha256=6PYJVW5q8nqDTEF-uAYWYXIAFv-CckDjr9jlgrYaurY,983
+autoscale_agent/middleware/flask.py,sha256=tTqiEbiLYz7YXf-_kT6uCXb8nsh4T2V-ANUtiGO_Bmw,1215
+autoscale_agent/util.py,sha256=abByuc0mBPwiX3jOkMxoj58evs1aNl8XDjyrjS_P4Ok,814
+autoscale_agent/web_dispatcher.py,sha256=YSUwLgRbQx4M61akqG5heFscsBNcaJI4l8keSMD_aGw,2172
+autoscale_agent/worker_dispatcher.py,sha256=SgugblnaJ2CvK0XdkGKDSpNm77Fi8AKNrSVwYg2ixb0,748
+autoscale_agent/worker_dispatchers.py,sha256=mGrlk6ZW2Mif0gYBWtqq2Z4YZD0D3Pz47x7R566abBM,639
+autoscale_agent/worker_server.py,sha256=wxO2o4aITn1tyZtV_fcyPRXuxIqRzMqKvWVS_CMk3qw,307
+autoscale_agent/worker_servers.py,sha256=HplvNFhqZURX88RKbZEURDV7E0zleODRhachca9FfYU,296
+autoscale_agent-0.2.0.dist-info/LICENSE,sha256=C03QfFR4N9QhO0Vd40MmagtfY2o_iaThRRkY_7szAkI,1081
+autoscale_agent-0.2.0.dist-info/METADATA,sha256=Hg9b7UV4br9LG4MG0CeYstmgRQi60bUtgsPPNZ4OfgM,2731
+autoscale_agent-0.2.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+autoscale_agent-0.2.0.dist-info/RECORD,,
