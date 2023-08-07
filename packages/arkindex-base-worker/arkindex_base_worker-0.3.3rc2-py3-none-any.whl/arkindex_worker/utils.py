@@ -1,0 +1,152 @@
+# -*- coding: utf-8 -*-
+import hashlib
+import logging
+import os
+import tarfile
+import tempfile
+from pathlib import Path
+from typing import Tuple
+
+import zstandard
+import zstandard as zstd
+
+logger = logging.getLogger(__name__)
+
+CHUNK_SIZE = 1024
+"""Chunk Size used for ZSTD compression"""
+
+
+def decompress_zst_archive(compressed_archive: Path) -> Tuple[int, Path]:
+    """
+    Decompress a ZST-compressed tar archive in data dir. The tar archive is not extracted.
+    This returns the path to the archive and the file descriptor.
+
+    Beware of closing the file descriptor explicitly or the main
+    process will keep the memory held even if the file is deleted.
+
+    :param compressed_archive: Path to the target ZST-compressed archive
+    :return: File descriptor and path to the uncompressed tar archive
+    """
+    dctx = zstandard.ZstdDecompressor()
+    archive_fd, archive_path = tempfile.mkstemp(suffix=".tar")
+
+    logger.debug(f"Uncompressing file to {archive_path}")
+    try:
+        with open(compressed_archive, "rb") as compressed, open(
+            archive_path, "wb"
+        ) as decompressed:
+            dctx.copy_stream(compressed, decompressed)
+        logger.debug(f"Successfully uncompressed archive {compressed_archive}")
+    except zstandard.ZstdError as e:
+        raise Exception(f"Couldn't uncompressed archive: {e}")
+
+    return archive_fd, Path(archive_path)
+
+
+def extract_tar_archive(archive_path: Path, destination: Path):
+    """
+    Extract the tar archive's content to a specific destination
+
+    :param archive_path: Path to the archive
+    :param destination: Path where the archive's data will be extracted
+    """
+    try:
+        with tarfile.open(archive_path) as tar_archive:
+            tar_archive.extractall(destination)
+    except tarfile.ReadError as e:
+        raise Exception(f"Couldn't handle the decompressed Tar archive: {e}")
+
+
+def extract_tar_zst_archive(
+    compressed_archive: Path, destination: Path
+) -> Tuple[int, Path]:
+    """
+    Extract a ZST-compressed tar archive's content to a specific destination
+
+    :param compressed_archive: Path to the target ZST-compressed archive
+    :param destination: Path where the archive's data will be extracted
+    :return: File descriptor and path to the uncompressed tar archive
+    """
+
+    archive_fd, archive_path = decompress_zst_archive(compressed_archive)
+    extract_tar_archive(archive_path, destination)
+
+    return archive_fd, archive_path
+
+
+def close_delete_file(file_descriptor: int, file_path: Path):
+    """
+    Close the file descriptor of the file and delete the file
+
+    :param file_descriptor: File descriptor of the archive
+    :param file_path: Path to the archive
+    """
+    try:
+        os.close(file_descriptor)
+        file_path.unlink()
+    except OSError as e:
+        logger.warning(f"Unable to delete file {file_path}: {e}")
+
+
+def zstd_compress(source: Path) -> Tuple[int, Path, str]:
+    """Compress a file using the Zstandard compression algorithm.
+
+    :param source: Path to the file to compress.
+    :return: The file descriptor and path to the compressed file, hash of its content.
+    """
+    compressor = zstd.ZstdCompressor(level=3)
+    archive_hasher = hashlib.md5()
+    file_d, path_to_zst_archive = tempfile.mkstemp(prefix="teklia-", suffix=".tar.zst")
+    logger.debug(f"Compressing file to {path_to_zst_archive}")
+    path_to_zst_archive = Path(path_to_zst_archive)
+    try:
+        with path_to_zst_archive.open("wb") as archive_file, source.open(
+            "rb"
+        ) as model_data:
+            for model_chunk in iter(lambda: model_data.read(CHUNK_SIZE), b""):
+                compressed_chunk = compressor.compress(model_chunk)
+                archive_hasher.update(compressed_chunk)
+                archive_file.write(compressed_chunk)
+        logger.debug(f"Successfully compressed {source}")
+    except zstandard.ZstdError as e:
+        raise Exception(f"Couldn't compress archive: {e}")
+    return file_d, path_to_zst_archive, archive_hasher.hexdigest()
+
+
+def create_tar_archive(path: Path) -> Tuple[Path, str]:
+    """Create a tar archive using the content at specified location.
+
+    :param path: Path to the file to archive
+    :return: The file descriptor and path to the TAR archive, hash of its content.
+    """
+    # Remove extension from the model filename
+    tar_descriptor, path_to_tar_archive = tempfile.mkstemp(
+        prefix="teklia-", suffix=".tar"
+    )
+
+    # Create an uncompressed tar archive with all the needed files
+    # Files hierarchy ifs kept in the archive.
+    files = []
+    try:
+        logger.debug(f"Compressing files to {path_to_tar_archive}")
+        with tarfile.open(path_to_tar_archive, "w") as tar:
+            for p in path.rglob("*"):
+                x = p.relative_to(path)
+                tar.add(p, arcname=x, recursive=False)
+                # Only keep files when computing the hash
+                if p.is_file():
+                    files.append(p)
+        logger.debug(f"Successfully created Tar archive from files @ {path}")
+    except tarfile.TarError as e:
+        raise Exception(f"Couldn't create Tar archive: {e}")
+
+    # Sort by path
+    files.sort()
+
+    content_hasher = hashlib.md5()
+    # Compute hash of the files
+    for file_path in files:
+        with file_path.open("rb") as file_data:
+            for chunk in iter(lambda: file_data.read(CHUNK_SIZE), b""):
+                content_hasher.update(chunk)
+    return tar_descriptor, Path(path_to_tar_archive), content_hasher.hexdigest()
