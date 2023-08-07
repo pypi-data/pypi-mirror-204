@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nope-py
+Version: 1.7.1rc1
+Summary: NOPE-Lib represents the No Programming Environment Library for python.
+Home-page: https://github.com/ZeMA-gGmbH/NoPE-PY.git
+Author: Martin Karkowski
+Author-email: m.karkowski@zema.de
+Maintainer: Martin Karkowski
+Maintainer-email: m.karkowski@zema.de
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+NOPE-Python Backend. A Generic Backend for Python
