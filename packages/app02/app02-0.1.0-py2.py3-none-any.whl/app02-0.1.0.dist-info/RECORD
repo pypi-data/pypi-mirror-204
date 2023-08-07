@@ -1,0 +1,14 @@
+app02/__init__.py,sha256=UCkYPEn-hGNhBAvs7zNn-elj-BDbAfIIuPdJFYhU5g8,117
+app02/__main__.py,sha256=OlhNM10pWBseOJqhWd78s5l5me0vd4_eBuzB12PGEQU,555
+app02/internal/__build_channel__.py,sha256=Ygp8MYJVLCwTrQXNcYXsnjDZFsynC3ccjiRuwS2sX20,22
+app02/internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app02/matt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app02/matt/math_add.py,sha256=2Y4RfO1SLwpPllCjPyeJn6O5JnClBKAELSyZVzTOPKo,137
+app02/matt/show_num.py,sha256=x40kqcT8HudjMaBYQ528rAyc-N6FuxyImeR-5ZALwJ0,61
+app02-0.1.0.dist-info/AUTHORS.rst,sha256=4ZPou1iAgZHeeJRtoW7gGpFdgSvRPKquvP5ZfU6421g,150
+app02-0.1.0.dist-info/LICENSE,sha256=UJn1tMFfIvJleXbaOPkvdG7H-gGhA49A9rHxGae1-xA,1503
+app02-0.1.0.dist-info/METADATA,sha256=LoBbtTrgBGlBc6pfoyytOlVdUs6dFe45l_NarHrR7ZM,2098
+app02-0.1.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+app02-0.1.0.dist-info/entry_points.txt,sha256=pBpsDG99bxqNKzDxzij61yqXnR_OSaOR-HXtyZpk0kY,46
+app02-0.1.0.dist-info/top_level.txt,sha256=edh7kyGbi8Xsr3eCE416ukfajWFUI_7FpiEzj8Jolcg,6
+app02-0.1.0.dist-info/RECORD,,
