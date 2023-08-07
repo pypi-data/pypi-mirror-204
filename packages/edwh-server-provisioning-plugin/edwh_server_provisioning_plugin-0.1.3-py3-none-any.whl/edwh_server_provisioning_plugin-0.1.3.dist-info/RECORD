@@ -1,0 +1,8 @@
+edwh_server_provisioning_plugin/__about__.py,sha256=QmiWioVkUHL9B912ld4c3O23Db2VUV0Bh8zkC422hrw,139
+edwh_server_provisioning_plugin/__init__.py,sha256=eSd5Rk8nEtE5zevrjtWa6AlvaOSnRx8dDHJGZQURf5k,117
+edwh_server_provisioning_plugin/server_provisioning_plugin.py,sha256=iwGTdZXi04VYJQyZSt9bqiCcUGnz2dGZyU-tBnRyx5I,44894
+edwh_server_provisioning_plugin-0.1.3.dist-info/METADATA,sha256=oQOJ1GdUHO1ZGpa3JaiBMsRLPJA2kPQ0I9rMLNHxKMM,2201
+edwh_server_provisioning_plugin-0.1.3.dist-info/WHEEL,sha256=9MIigYJ7D5sOqAPqr0-o6tSMY_nQ7c6kvtvyeUB99YQ,87
+edwh_server_provisioning_plugin-0.1.3.dist-info/entry_points.txt,sha256=jGW7lNRBoIi0tbiSuP9DtQmidAjP9pwLFRn3LA3axRs,81
+edwh_server_provisioning_plugin-0.1.3.dist-info/licenses/LICENSE.txt,sha256=WPXhk3g8238APd_24VBa4QJY0d9QdgKbI0KZrCajYSk,1109
+edwh_server_provisioning_plugin-0.1.3.dist-info/RECORD,,
