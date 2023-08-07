@@ -1,0 +1,11 @@
+k8s_audit_filter/__about__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+k8s_audit_filter/__init__.py,sha256=Ygyj50ubIBSq7rPmZA5toFWotAC4D3Mc6DzCq_07s2k,81
+k8s_audit_filter/abstract_classes.py,sha256=-sZIS-NuNElW5IGcMpCeh0nUDm5KxhTdYIr1GYktewE,1117
+k8s_audit_filter/audit_filter.py,sha256=OS88j6Vqv0rHVp1FiAmlnBCdadRMI6Mj0hbNFjH1pP4,2241
+k8s_audit_filter/fields.py,sha256=9ZK-wXtuOeT3qs-a74x562YT5WbIkGMEdkX6DzRizYg,2369
+k8s_audit_filter/resourses_field.py,sha256=3zuS8sLf5X84TvJad2zWaenyNj9Va8J8xudhLmZTWUE,2180
+k8s_audit_filter/rules.py,sha256=vuXE1etcQpnkhHUwcAIEw0Xf4GnSHecZWaZ8QPB-prY,1153
+k8s_audit_filter-0.2.0.dist-info/METADATA,sha256=NrBlTpT0dkCYCLcGfP0HDQcf6QohYgxh6L_dAqcF8aQ,5880
+k8s_audit_filter-0.2.0.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+k8s_audit_filter-0.2.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+k8s_audit_filter-0.2.0.dist-info/RECORD,,
