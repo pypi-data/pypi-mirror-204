@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: gWeaver
+Version: 1.0.6
+Summary: dgraph operation module for Django REST Framework
+Home-page: https://github.com/iamr2k/gWeaver
+Author: Rahul Babu K
+Author-email: rahulbabu101@gmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Requires-Dist: django
+Requires-Dist: djangorestframework
+Requires-Dist: pydgraph
+Requires-Dist: asyncio
+Provides-Extra: crypto
+Requires-Dist: cryptography (>=3.3.1) ; extra == 'crypto'
+Provides-Extra: dev
+Requires-Dist: pytest-watch ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: cryptography ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-django ; extra == 'dev'
+Requires-Dist: pytest-xdist ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pep8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: Sphinx (<2,>=1.6.5) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (>=0.1.9) ; extra == 'dev'
+Requires-Dist: python-jose (==3.3.0) ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: Sphinx (<2,>=1.6.5) ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme (>=0.1.9) ; extra == 'doc'
+Provides-Extra: lint
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: pep8 ; extra == 'lint'
+Requires-Dist: isort ; extra == 'lint'
+Provides-Extra: python-jose
+Requires-Dist: python-jose (==3.3.0) ; extra == 'python-jose'
+Provides-Extra: test
+Requires-Dist: cryptography ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-django ; extra == 'test'
+Requires-Dist: pytest-xdist ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: tox ; extra == 'test'
+
+Dgraph ORM for DRF
+
+Abstract
+--------
+
+Dgraph Object relational mapping plugin for the `Django REST
+Framework <http://www.django-rest-framework.org/>`__.
+
