@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: drb-topic-geojson
+Version: 1.0.0
+Summary: DRB Python GeoJSON Topic
+Home-page: https://gitlab.com/drb-python/topics/geojson
+Author: GAEL Systems
+Author-email: drb-python@gael.fr
+License: LGPLv3
+Project-URL: Source, https://gitlab.com/drb-python/topics/geojson
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# GeoJSON DRB topic
+
+The `drb-topic-geojson` is a DRB plugin declaring a topic about
+[GeoJSON](https://geojson.org/) data.
+
+## Installation
+```shell
+pip install drb-topic-geojson
+```
+
+## GeoJSON topic
+This section references the topic defined in this DRB plugin.
+
+```mermaid
+graph BT
+    subgraph drb-driver-json 
+        A([JSON<br/>c6f7d210-4df0-11ec-81d3-0242ac130003])
+    end
+    B([GeoJSON<br>d8c867e8-7185-4a82-adbe-a5f2a5ef63b6]) --> A
+```

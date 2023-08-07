@@ -1,0 +1,28 @@
+id: d8c867e8-7185-4a82-adbe-a5f2a5ef63b6
+subClassOf: c6f7d210-4df0-11ec-81d3-0242ac130003
+label: GeoJSON
+category: FORMATTING
+factory: json
+signatures:
+  - python: |
+      COORDINATES = 'coordinates'
+      GEOMETRY = 'geometry'
+      GEOMETRIES = 'geometries'
+      FEATURES = 'features'
+      EXPECTED_KEY_FOR_VALUE_TYPE = {
+        'Point': COORDINATES,
+        'MultiPoint': COORDINATES,
+        'LineString': COORDINATES,
+        'MultiLineString': COORDINATES,
+        'Polygon': COORDINATES,
+        'MultiPolygon': COORDINATES,
+        'GeometryCollection': GEOMETRIES,
+        'Feature': GEOMETRY,
+        'FeatureCollection': FEATURES,
+      }
+      n = node[0]
+      if 'type' in n:
+        type_value = n['type'].value
+        if type_value in EXPECTED_KEY_FOR_VALUE_TYPE.keys():
+          return EXPECTED_KEY_FOR_VALUE_TYPE[type_value] in n
+      return False
