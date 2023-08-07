@@ -1,0 +1,10 @@
+fitransit/__init__.py,sha256=RBBU62b3pOVMddbKPEBgUuyqsD54vhAL9d3ur-FqrWs,153
+fitransit/base.py,sha256=0Emv0QsfYqMasCrn03cPwNgFVw4YZF3ruqR4DQRNVxA,11274
+fitransit/constant.py,sha256=ADuaxvXq_9NmE7p4hvF51V81TqK3FsSQQSU5bclhVgA,106
+fitransit/singlefit.py,sha256=MMN0XovtPQu3Wn56DEUsi2hp3l0GMQAUtC1q8_CaDTo,3553
+fitransit/ttv_sim.py,sha256=5MnRf1GbGaV9zeHvZIANelpO-6_feDoiFW4zrenjbKk,9106
+fitransit-0.0.2.dist-info/LICENSE,sha256=ONPTEHTZhSye4B3OijvkHcprPV5JxDkz7ckh3-THoz8,1072
+fitransit-0.0.2.dist-info/METADATA,sha256=tLKoHFqj8nHRk9KV_CV9pVFN3A2Yd-KCHyDZC9QCUIE,516
+fitransit-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fitransit-0.0.2.dist-info/top_level.txt,sha256=fC--N_GU7JvRbGbqLKlvkcCosukzPhnZprgHU1QdXsQ,10
+fitransit-0.0.2.dist-info/RECORD,,
