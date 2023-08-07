@@ -1,0 +1,8 @@
+PyWavelets
+torch
+scipy>=1.10
+pooch
+matplotlib
+numpy
+pytest
+nox
