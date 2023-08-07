@@ -1,0 +1,8 @@
+deltatorch/__init__.py,sha256=wL0sk76btHCv43fZOH70WpS3b3kSdjizysBYIvC2W4Y,122
+deltatorch/deltadataset.py,sha256=7JZd00WEPM5ekMMQHfsEQf3F7Q9GTq2mtlINkNKBflo,4555
+deltatorch/id_based_deltadataset.py,sha256=q9ZLwx9fXOY45hID0ljgaM7kQGEbsn33qW_7MFPbJVo,6933
+deltatorch/pytorch.py,sha256=ttz9dNGtonX7wmrMO_c2WFtIU3X5ykSLDdJCIYA9rZs,1111
+deltatorch/skip_batch_deltadataset.py,sha256=tKDtSBtr2jLmojTYJlCf6gm7otn1F6NTPyNWpnyBuj0,5666
+deltatorch-0.0.1.dist-info/METADATA,sha256=MwoUsl4TTCB7aEiCFrWiuE-Rh0EfyvH5njNIOdhgSpE,3256
+deltatorch-0.0.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+deltatorch-0.0.1.dist-info/RECORD,,
