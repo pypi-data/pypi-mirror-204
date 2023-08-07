@@ -1,0 +1,5 @@
+scikit-learn
+pandas
+tensorflow
+tensorflow_addons
+pyyaml
