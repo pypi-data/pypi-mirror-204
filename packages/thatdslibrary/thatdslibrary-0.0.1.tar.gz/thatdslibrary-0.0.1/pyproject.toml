@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "thatdslibrary"
+version = "0.0.1"
+authors = [
+  { name="Quan Tran", email="quan.tran1@outlook.com" },
+]
+description = "A useful package for EDA and quick ML model finetuning"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["machine learning", "sklearn", "automation", "auto finetuning", "finetune"]
+dependencies = [
+        "numpy>=1.23.0",
+        "scikit-learn>=1.2.0",
+        "matplotlib>=3.7.0",
+        "pandas>=1.5.0",
+        "plotly>=5.14.0",
+        "dtreeviz>=2.2",
+        "graphviz>=0.20",
+        "seaborn>=0.12.0",
+        "statsmodels>=0.13.0",
+        "pingouin>=0.5.3",
+    ]
+
+[project.urls]
+"Homepage" = "https://github.com/anhquan0412/that_ds_library"
+"Bug Tracker" = "https://github.com/anhquan0412/that_ds_library/issues"
+
