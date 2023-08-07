@@ -1,0 +1,17 @@
+alicebot/__init__.py,sha256=aICmEAi9PVlcfiGcPU4BI7iCtPqtessIBnO4i7TOM0o,656
+alicebot/adapter/__init__.py,sha256=C9o2mUXznRRQNApFvjWJows3X7FMKBrrDgoL4bVv40o,4498
+alicebot/adapter/utils.py,sha256=NoY1UI98DHWQ-7g0HFWgAKOMaxO8plxnzzRhCqk8CRU,8043
+alicebot/bot.py,sha256=BfsP4GPpozL0sQKN41EBAq60iFdUccdR81RTMC4j318,34806
+alicebot/config.py,sha256=ucTTrpVtYYJ6AteVMhghrFLBeE1hlmrB_z1dXyh-Me8,1877
+alicebot/event.py,sha256=cGZxKP0dU_50_WKnMlDEkuYBwI1fjIVlGe-0l-bYOYs,1851
+alicebot/exceptions.py,sha256=MYBUQ860eGQKUDjiUp3c7bNnSbVO-htxrPQd5kAzHCM,1116
+alicebot/log.py,sha256=a71msKVIcold86WIhPAunSXLHIqWpDRxkv3wOFlTXpc,432
+alicebot/message.py,sha256=aWK6guZTzzXopU3wucpDEVwkSGgW99Zw74oSDXCDNWE,14120
+alicebot/plugin.py,sha256=gm9lAL4WFnzEUZ0AmRjX3WppChBCdDsM2QXasH54U6A,3568
+alicebot/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alicebot/typing.py,sha256=TV_VtAYFjeGUx9hot1XYsD-uWHhrCZpvhiZSuBHmJck,1034
+alicebot/utils.py,sha256=zTZKCOuuAMQ0c80_zNm0sC7k-v5MMGU6S7gh7dnLlaI,5457
+alicebot-0.6.2.dist-info/LICENSE,sha256=uHuSMB17JUhb7jsJfcOUZwPLeAfNFX2O30cAJ2PFS-o,1072
+alicebot-0.6.2.dist-info/METADATA,sha256=RQ0xJt4YTwPGYXpd61WFgD2n9osMF__ExbkREl3-pCQ,7545
+alicebot-0.6.2.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+alicebot-0.6.2.dist-info/RECORD,,
