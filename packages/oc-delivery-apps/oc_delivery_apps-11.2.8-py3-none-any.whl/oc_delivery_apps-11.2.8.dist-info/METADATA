@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: oc-delivery-apps
+Version: 11.2.8
+Summary: Models and controllers for dlcontents application
+License: LGPLv2
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: fs
+Requires-Dist: oc-sql-helpers (>=1.0.0)
+Requires-Dist: oc-cdtapi
+Requires-Dist: python-magic
+Requires-Dist: oc-orm-initializator
+Requires-Dist: sqlparse
+Requires-Dist: configobj
+Requires-Dist: pytz
+
