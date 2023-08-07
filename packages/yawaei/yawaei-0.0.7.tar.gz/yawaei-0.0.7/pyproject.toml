@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0", "requests==2.28.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yawaei"
+version = "0.0.7"
+authors = [
+  { name="Aldon Julien", email="julien.aldon@epitech.eu" },
+]
+description = "Yet Another Wrapper Around Epitech Intranet"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/JulienAldon/YAWAEI"
+"Bug Tracker" = "https://github.com/JulienAldon/YAWAEI/issues"
