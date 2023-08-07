@@ -1,0 +1,3 @@
+include VERSION.txt
+include auterioncli/commands/app_sdk/app-yml-spec/app-yml-spec.json
+include auterioncli/commands/app_sdk/app-yml-spec/compose-spec.json
