@@ -1,0 +1,14 @@
+zope.keyreference-6.0-py3.11-nspkg.pth,sha256=SWEVH-jEWsKYrL0qoC6GBJaStx_iKxGoAY9PQycFVC4,529
+zope/keyreference/__init__.py,sha256=fRoW4ZLOgR7gwxL6EgkossQLRKrbDCzY3TdvT1Euuhs,664
+zope/keyreference/configure.zcml,sha256=bWTTTeVikALk0I_btkfekCPEAgQ9Rt86DgcjKNvKjXY,841
+zope/keyreference/interfaces.py,sha256=7ZyXxAGltIlkQshVEtyEkneAC1ydwXzzi7q9In6D-Ak,2006
+zope/keyreference/persistent.py,sha256=HSR_6CjvFxPr9_IOOu9HyP9Y81iCN_7EGwUQwxvv6zw,5858
+zope/keyreference/persistent.txt,sha256=Gey1dPDuI03RMKPHXZVyN5X-fTwVV3pUi6SlCn_2weA,8992
+zope/keyreference/testing.py,sha256=w1OSllGoOjMrKHrlQyghv_4yDS0qLJn8eQw4VVUJSGM,1960
+zope/keyreference/tests.py,sha256=T0ZZ_jv41SASnW6FdCVD6rekIUUk9tQJpVvstykDJfA,3484
+zope.keyreference-6.0.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+zope.keyreference-6.0.dist-info/METADATA,sha256=NySzdp2F5D3Nj9O3IN3YPec7bNmK024pzUZhmhQqrxU,4945
+zope.keyreference-6.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+zope.keyreference-6.0.dist-info/namespace_packages.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.keyreference-6.0.dist-info/top_level.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.keyreference-6.0.dist-info/RECORD,,
