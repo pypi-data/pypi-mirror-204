@@ -1,0 +1,10 @@
+kidronekit/__init__.py,sha256=saE1J_oShb2w1rYSXAqJOVL5ExC98DSUIxY_STyWNvY,126698
+kidronekit/lib.py,sha256=f2VWhAY24z_Wh_4i8MiDGlst6gTmOEvw_xKzQPcgBvk,51
+kidronekit/mavlink.py,sha256=KSTPR5v8ZVq20gvZkaT-JR1XGmF75lvzYheArFG_-eQ,11976
+kidronekit/util.py,sha256=7FyH5MfVMMmHBYOp_hyNWvAls1ILMeFQD8yKpp0Td80,522
+kidronekit-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+kidronekit-1.0.0.dist-info/METADATA,sha256=9G2Pfra6SL8TPfkkWkzHoWn8zDHFCMyTKlvxOgcHtqM,2874
+kidronekit-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+kidronekit-1.0.0.dist-info/top_level.txt,sha256=ZJTO-Gy9rGydYVcAX36-prnyaEHLFYaT6c84TqxnnHs,11
+kidronekit-1.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+kidronekit-1.0.0.dist-info/RECORD,,
