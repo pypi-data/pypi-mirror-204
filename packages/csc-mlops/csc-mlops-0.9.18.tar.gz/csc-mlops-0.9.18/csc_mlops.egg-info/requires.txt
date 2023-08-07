@@ -1,0 +1,13 @@
+mlflow==2.0.1
+boto3
+docker
+minio
+colorlog
+monai
+itk
+pandas
+matplotlib
+xnat
+GitPython
+PyYAML
+click
