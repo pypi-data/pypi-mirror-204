@@ -1,0 +1,8 @@
+setup.py
+extras/__init__.py
+extras/divide.py
+extras/multiply.py
+vijaikfirstpackage.egg-info/PKG-INFO
+vijaikfirstpackage.egg-info/SOURCES.txt
+vijaikfirstpackage.egg-info/dependency_links.txt
+vijaikfirstpackage.egg-info/top_level.txt
