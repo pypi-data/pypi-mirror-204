@@ -1,0 +1,9 @@
+dplus_ceres.cp310-win_amd64.pyd,sha256=C_lO3rETj9BvQruL-PKzBdNhXL8Dck-kONAOQRpuslY,1893376
+dplus_ceres/call_cost_function.pyx,sha256=xGDSF6LPyvrECXo0dsUeaLxIpOOlX0bCyVY5urPXF0M,887
+dplus_ceres/dplus_ceres.pyx,sha256=NiYVD-T-xDfN2I5sCkkK-QBNP0LUfSJUoAA_UTcjtwE,21040
+dplus_ceres/iteration_callback_func.pyx,sha256=d0gWjYDo13g0OnS77tMgfB-vcsD3nRemOa_eqLBj5NQ,987
+dplus_ceres-0.5.0.dist-info/LICENSE,sha256=lqvigvW_kqeeqe1v6yjLxh2B8kKdl8KJiM5wD8Lt6BA,4080
+dplus_ceres-0.5.0.dist-info/METADATA,sha256=qEh3NCD7JI732TJIVhGFwmwk7L7MQc83jHo6VKNd0z4,5389
+dplus_ceres-0.5.0.dist-info/WHEEL,sha256=jrOhEbqKwvzRFSJcbYXlJCyVkgVdHg4_7__YHrdTUfw,102
+dplus_ceres-0.5.0.dist-info/top_level.txt,sha256=PPnp3zs0kWR2ZcjougG5bLqlLqlkswRVbOZ4Ho8tXaQ,12
+dplus_ceres-0.5.0.dist-info/RECORD,,
