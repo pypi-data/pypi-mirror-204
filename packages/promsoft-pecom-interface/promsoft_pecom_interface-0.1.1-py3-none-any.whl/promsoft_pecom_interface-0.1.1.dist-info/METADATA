@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: promsoft-pecom-interface
+Version: 0.1.1
+Summary: Интерфейс HTTP API для транспортной компании PECOM 
+Author: Promsoft
+Author-email: info@promsoft.ru
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Description-Content-Type: text/markdown
+
+Interfaces for HTTP API <a href="https://kabinet.pecom.ru/api/v1">PECOM</a> transport company.
+Usage:
+
+from promsoft_pecom_interface import IdentityCard
+
+
+ic = IdentityCard(series='1234', numbers='567890')
+print(f"As dict: {ic.dict()}")
