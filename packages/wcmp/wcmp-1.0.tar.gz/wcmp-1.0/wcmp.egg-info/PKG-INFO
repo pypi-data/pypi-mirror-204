@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: wcmp
+Version: 1.0
+Summary: A simple message plus package for notification via wechat.
+Home-page: https://github.com/moshangsang24/wcmp
+Author: moshangsang24
+Author-email: liuyifan731@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Wechat Message Push Package
+
+A simple message plus package for notification via wechat.
+
+## Installation
+
+```bash
+# Install via pip
+pip install wcmp
+```
+
+
+## Usage
+
+Here is a simple example for pushing a message to your wechat.
+
+```python
+import wcmp
+# replace the 'X' with your token
+s=wcmp('XXXXXXX')
+s.send('messgaedf')
+```
+

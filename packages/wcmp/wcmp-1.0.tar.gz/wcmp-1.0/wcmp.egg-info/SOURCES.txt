@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+wcmp/__init__.py
+wcmp.egg-info/PKG-INFO
+wcmp.egg-info/SOURCES.txt
+wcmp.egg-info/dependency_links.txt
+wcmp.egg-info/top_level.txt
