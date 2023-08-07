@@ -1,0 +1,6 @@
+tqdm
+opencv_python
+numpy
+pycocotools
+prettytable
+shapely
