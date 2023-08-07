@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Age_detection.egg-info/PKG-INFO
+Age_detection.egg-info/SOURCES.txt
+Age_detection.egg-info/dependency_links.txt
+Age_detection.egg-info/top_level.txt
+src/DetectAge.py
+src/__init__.py
