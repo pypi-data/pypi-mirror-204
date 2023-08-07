@@ -1,0 +1,14 @@
+requests
+pandas
+pyyaml
+haggis
+
+[dev]
+bumpver
+build
+twine
+pylama
+isort
+pytest
+pytest-cov
+responses
