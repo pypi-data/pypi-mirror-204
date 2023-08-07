@@ -1,0 +1,13 @@
+<style>
+     .stDownloadButton>button {
+         background-color: #0099ff;
+        color: #ffffff;
+    }
+
+    .stDownloadButton>button:hover {
+       background-color: #00ff00;
+        color: #ff0000;
+       }
+
+
+</style>
