@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: speechtotext-python
+Version: 0.3.7
+Summary: Python package to benchmark speech2text models.
+Home-page: https://github.com/jarneamerlinck/speechtotext
+Author: Jarne Amerlinck
+Author-email: jarneamerlinck@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9.2,<3.11
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+License-File: LICENSE
+
+
+# Speechtotext
+
+Python package to benchmark speech2text models. 
+
+## [Documentation](https://jarneamerlinck.github.io/speechtotext/)
+
+## Install package
+### Python
+
+```bash
+pip install speechtotext-python
+```
+
+### Conda 
+
+```yaml
+name: sample_env
+channels:
+dependencies:
+  - python<3.11,>=3.9.2
+  - pip
+  - speechtotext-python
+```

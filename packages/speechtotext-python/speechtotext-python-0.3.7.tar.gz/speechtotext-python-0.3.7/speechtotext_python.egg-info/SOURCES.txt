@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+speechtotext/__init__.py
+speechtotext/__version__.py
+speechtotext/datasets.py
+speechtotext/functions.py
+speechtotext_python.egg-info/PKG-INFO
+speechtotext_python.egg-info/SOURCES.txt
+speechtotext_python.egg-info/dependency_links.txt
+speechtotext_python.egg-info/requires.txt
+speechtotext_python.egg-info/top_level.txt
+tests/test_datasets.py
+tests/test_functions.py
+tests/test_imports.py
+tests/test_metrics.py
