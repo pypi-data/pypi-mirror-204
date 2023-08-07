@@ -1,0 +1,9 @@
+xtest_sapnwrfc/__init__.py,sha256=95vgWelYIrumqWhRNPaCxIswd8dAAx-2Pbgu-F_Riew,1339
+xtest_sapnwrfc/_cyrfc.cpython-311-darwin.so,sha256=l2nm0TCXelojuyh_VxnMdaA2HOLwYHEYoeuX02BaoHU,720713
+xtest_sapnwrfc/_exception.py,sha256=UAB4S30j1AfJL7edrgcdrMkZ-Ue-MQyvrQMpbszWAac,5594
+xtest_sapnwrfc/_utils.py,sha256=JJg9cvUCLNuoUcLrzGO-ARTx2lxgXFRiFUPQORuvF9o,292
+xtest_sapnwrfc-0.0.17.dist-info/Apache-2.0.txt,sha256=05EN7m_p_hNIVtdiaP6CrbGt4ez1GzVot9prlIlLiPM,10283
+xtest_sapnwrfc-0.0.17.dist-info/METADATA,sha256=fgEKG1dUHm_P0M5gfqItCLphFgwB-WVHYF4W7RH_MQ8,23397
+xtest_sapnwrfc-0.0.17.dist-info/WHEEL,sha256=9u5azgharjYBfdIrZMb7YtYWGPqS21BRmRBngkXCmzk,110
+xtest_sapnwrfc-0.0.17.dist-info/top_level.txt,sha256=zsuSGvmmij11rBCriSni0jcCRe9WVGC8LgNUQnSBrLU,15
+xtest_sapnwrfc-0.0.17.dist-info/RECORD,,
