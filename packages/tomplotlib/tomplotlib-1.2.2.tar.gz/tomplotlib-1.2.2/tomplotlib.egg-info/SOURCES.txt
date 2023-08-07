@@ -1,0 +1,9 @@
+README.md
+setup.py
+tomplotlib/__init__.py
+tomplotlib/tpl.py
+tomplotlib.egg-info/PKG-INFO
+tomplotlib.egg-info/SOURCES.txt
+tomplotlib.egg-info/dependency_links.txt
+tomplotlib.egg-info/requires.txt
+tomplotlib.egg-info/top_level.txt
