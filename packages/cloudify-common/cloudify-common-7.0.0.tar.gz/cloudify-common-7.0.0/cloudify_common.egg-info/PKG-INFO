@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cloudify-common
+Version: 7.0.0
+Summary: Cloudify Common
+Author: Cloudify
+Author-email: cosmo-admin@cloudify.co
+License: LICENSE
+Provides-Extra: dispatcher
+Provides-Extra: snmp
+License-File: LICENSE
