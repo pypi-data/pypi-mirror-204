@@ -1,0 +1,11 @@
+pyrfc/__init__.py,sha256=6iixNC_FZPnSXJgqHeFuck6rCyiyznGIueF0RkC6f5c,1330
+pyrfc/_cyrfc.cp310-win_amd64.pdb,sha256=FGV1andvbgQDupE1-DIZpVYSpwxRLmFFgH2bOEgjTX0,2035712
+pyrfc/_cyrfc.cp310-win_amd64.pyd,sha256=kI0rcw0afRx-7DYUN95yq9x4lF45FSFcoIO9ohJMECE,392704
+pyrfc/_exception.py,sha256=Ta_BaqpTv6CVixWosxxwJXCaPx6QQnTeWANJUPEduZI,5596
+pyrfc/_utils.py,sha256=mXR1WK0V2YuW8MyVOe3UUYaI0CZHtIiPljmPQOhW2FM,310
+pyrfc/version.py,sha256=2Sq8ZI9aSLac673VeNEMrWfAZPPGlSqHAdcm4PjGpd0,88
+pyrfc-2.8.3.dist-info/Apache-2.0.txt,sha256=QG50ChyIMgooEs09rpCKvcvhBEsdY5OpDoxu8im9TPI,10491
+pyrfc-2.8.3.dist-info/METADATA,sha256=J4njlBSurv1sgSWFfQCh8tcoj6SOtzF4MIsEw700XI0,24100
+pyrfc-2.8.3.dist-info/WHEEL,sha256=jrOhEbqKwvzRFSJcbYXlJCyVkgVdHg4_7__YHrdTUfw,102
+pyrfc-2.8.3.dist-info/top_level.txt,sha256=BjOmNyKOMFQimaneNANnWEWivnjiFFp5kf_3BvrvU7E,6
+pyrfc-2.8.3.dist-info/RECORD,,
