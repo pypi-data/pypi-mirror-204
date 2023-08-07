@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "saliency_maps_metrics"
+version = "0.0.21"
+authors = [
+  { name="Tristan Gomez", email="tristan.gomez@univ-nantes.fr" },
+]
+description = "This repository implements the faithfulness metrics mentionned in the paper --Computing and evaluating saliency maps for image classification: a tutorial-- in Pytorch."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/TristanGomez44/metrics-saliency-maps"
+"Bug Tracker" = "https://github.com/TristanGomez44/metrics-saliency-maps/issues"
