@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+2.0.11
+------
+
+* fix pandas version (#51)
