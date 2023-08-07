@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/clevertable/__init__.py
+src/clevertable/__main__.py
+src/clevertable/numerical_converter.py
+src/clevertable.egg-info/PKG-INFO
+src/clevertable.egg-info/SOURCES.txt
+src/clevertable.egg-info/dependency_links.txt
+src/clevertable.egg-info/entry_points.txt
+src/clevertable.egg-info/requires.txt
+src/clevertable.egg-info/top_level.txt
