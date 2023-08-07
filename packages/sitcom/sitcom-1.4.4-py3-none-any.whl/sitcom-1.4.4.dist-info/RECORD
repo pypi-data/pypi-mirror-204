@@ -1,0 +1,23 @@
+sitcom/README.md,sha256=2esHVv6rndyTkhPY10x6MZw6_HtMeV4nSX792DAsFyk,2103
+sitcom/__init__.py,sha256=QiQkPz4-KV0VPgxkbaOsD2ysqCTiEj567CSxUW4mX5k,124
+sitcom/__main__.py,sha256=603W9VoaRzL2Ak9qkh6dMvGcEcTr87TK7QXran3XQxE,48902
+sitcom/sfit.py,sha256=HL03tKm0sP5loK6FrqsNuxoqDwW_2hW75cVPQUceqPI,1586
+sitcom/sirgraf.py,sha256=MvTiozwTHPZiOWEEhcahfgiGpeRYkw8t7ozEyUXJ98U,6413
+sitcom/st1.py,sha256=zH1l0kKga0UHqA-ajdyZB-KbiAO9zrMqHO8AlBr0UWc,37645
+sitcom/st2.py,sha256=Tf2B-LDBarwcoV33iTADz8wQKuNxtVm1XYI-pxyScwA,4699
+sitcom/data/Sine_curve.png,sha256=8wS6r97m3v0xCuemslUaiGZ6LmF3V85im9b6LNqdXB0,84116
+sitcom/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sitcom/data/black.png,sha256=AgKrWK1EidwKuJzeM5PKeUf8W_StldmEDANGOBSC1rs,539595
+sitcom/data/white.png,sha256=WxaaDAPUqyvu5YJPfbVeD9wcoIVI5KQAtqKvqeerrQw,599404
+sitcom/font/lato/Lato-Semibold.ttf,sha256=LcXTHizx4p80MOst-hupkR4I7kAbYd0S9A4KywR6F6M,669228
+sitcom/font/lato/SIL Open Font License.txt,sha256=VRCXR8od6Ew9F_PM3Igyo4PyCVS3UZ2F5hZFKC7lepo,4574
+sitcom/icon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sitcom/icon/cme.ico,sha256=gDTWpKA-2sZMbWwulT58Re8VZc1rrIAkVgo7lTrsAQU,4022
+sitcom/icon/cme.png,sha256=vp9NVudVmt7ylArmjT7Q-9LslnxkobaJubt4rkp2lrM,29744
+sitcom/load/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sitcom/load/sitcom.gif,sha256=0jfiRezvHTR-LWijDK8ihZw5tIJjZMkIa8SosFPY364,9159608
+sitcom-1.4.4.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+sitcom-1.4.4.dist-info/METADATA,sha256=-lJYsl_0Y_056NZN_8a7QsZoepFYEaGgk2_-ehblPKE,2636
+sitcom-1.4.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sitcom-1.4.4.dist-info/top_level.txt,sha256=jk0_3q_VDKewR9n-NFnfyALZYHg4WnZRwVyNLmXVDuA,7
+sitcom-1.4.4.dist-info/RECORD,,
