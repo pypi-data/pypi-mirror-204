@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "serialdatalog"
+version = "0.1.0"
+description = "Logs data coming from a serial port"
+authors = ["Alex <adrysdale@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "serialdatalog"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyserial = "^3.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
