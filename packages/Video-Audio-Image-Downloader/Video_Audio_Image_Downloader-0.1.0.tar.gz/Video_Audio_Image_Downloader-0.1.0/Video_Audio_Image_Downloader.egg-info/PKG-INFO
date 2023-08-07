@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: Video-Audio-Image-Downloader
+Version: 0.1.0
+Summary: In this tool is help to Download the Youtube Video,Audio and Any type of Google and other site's Images
+Home-page: https://git.selfmade.ninja/SRIDHARDSCV/audio_video_image_downloder-1
+Author: Sridhar
+Author-email: dcsvsridhar@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Downloder - To download Video and Audio and Any type of Images
+
+`Downloader` is a Downloading tool,is used to `download the Youtube Video's`With specified path with specified Resolution.
+It is used to `download the Audio's` with specified path with specified name of the Audio file and `Download the images` with any type of image's with their image source address or image address
+
+## Prerequisites
+
+
+On Ubuntu/Debian:
+
+
+    sudo apt install update
+    sudo apt install upgrade
+
+
+## Installation
+
+Use pip/pip3 to install from PyPI
+
+    $ pip install Video-Audio-Image-Downloader
+
+You can also use Python from your command prompt
+
+    $ python -m pip install Video-Audio-Image-Downloader
+
+## Usage of `Downloader`
+
+
+To download the Youtube video's and Audio's And Download Any type of Image's.
+
+    Downloader [Option..]
+
+
+With `Downloader`, you can download any YouTube Video and Audio you want, over a few commands. The following section of the documentation is to guide you on how to use `Downloder` tool.
+
+
+### Download YouTube Videos
+
+To Download a YouTube Video from your default web browser or Direct from Youtube Platform , use the following syntax:
+
+    Usage: Downloader Youtube Video [-source="Youtube video link" -resolution="Youtube video resolution" -path="file path"]
+
+    Positional arguments:
+
+            -source
+                        Source or Link of the Video file
+
+    optional arguments:
+
+            -resolution
+                            The Resolution of the Video's to Download.
+                            For now, the default value 730p.
+
+            -path           
+                            The Path of the Video's to download.
+                            For now,The default path is your Current Working Directory
+
+            -h,--help
+                            List information about the Command
+
+
+##### Get the Resolution of the Video file
+To get a YouTube Video Resolution of the Video file, use the following syntax:
+
+    Usage: Downloader Youtube Video  -get_resolution [-get_url="Source of the Video file"]
+        
+        
+    Positional arguments:
+
+            -get_url
+                    We provide the source of the Video file's
+
+    optional arguments:
+            -h,--help
+                    List information about the Command
+            
+
+
+### Download YouTube Audios
+
+To Download a YouTube Audio from your default web browser or DIrect from Youtube Platform , use the following syntax:
+
+    Usage: Downloader Youtube Audio [-source="Youtube Audio link" -path="which path the file to be saved" -filename="Your Audio filename"]
+    
+    Positional arguments:
+
+            -source
+                        Source or Link of the Audio file
+
+    optional arguments:
+    
+            -resolution
+                            The Resolution of the Audio's to Download.
+                            For now, the default value 730p.
+
+            -path           
+                            The Path of the Audio's to download.
+                            For now,The default path is your Current Working Directory
+
+
+
+##### Download Any type of Images
+
+To Download Any type of Images from your default web browser or Any type of online  Platform , use the following syntax:
+
+    Usage: Downloader Image [-source="Image address link" -path="which path the file to be saved" -filename="Your Image filename"]
+
+
+
+
