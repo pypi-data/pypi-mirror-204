@@ -1,0 +1,57 @@
+#!python
+# This file is placed in the Public Domain.
+# pylint: disable=C0115,C0116,C0413,W0212,E0611,E0401,R0201
+
+
+'operator bot'
+
+
+import os
+import sys
+import traceback
+
+
+sys.path.insert(0, os.getcwd())
+
+
+import operbot.modules
+
+
+from operbot.handler import Client, Error
+from operbot.handler import command, parse
+from operbot.persist import Persist
+from operbot.scanner import scanpkg, importer
+
+
+Persist.workdir = "/var/lib/operbot/"
+
+
+class CLI(Client):
+
+    def announce(self, txt):
+        pass
+
+    @staticmethod
+    def raw(txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+def waiter():
+    got = []
+    for ex in Error.errors:
+        traceback.print_exception(type(ex), ex, ex.__traceback__)
+        got.append(ex)
+    for exc in got:
+        Error.errors.remove(exc)
+
+
+def main():
+    cfg = parse(' '.join(sys.argv[1:]))
+    scanpkg(operbot.modules, importer, doall=True)
+    cli = CLI()
+    command(cli, cfg.otxt)
+    waiter()
+
+
+main()

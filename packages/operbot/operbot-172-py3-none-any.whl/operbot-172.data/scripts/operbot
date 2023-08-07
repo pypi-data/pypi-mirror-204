@@ -1,0 +1,142 @@
+#!python
+# This file is placed in the Public Domain.
+# pylint: disable=C0115,C0116,C0413,W0212,E0611,E0401,I1101
+
+
+'object programming bot'
+
+
+import os
+import readline
+import sys
+import termios
+import time
+import traceback
+
+
+sys.path.insert(0, os.getcwd())
+
+
+import operbot.modules
+
+
+from operbot.handler import Client, Error, command, parse
+from operbot.loggers import Logging
+from operbot.objects import update
+from operbot.persist import Persist
+from operbot.runtime import Cfg
+from operbot.scanner import importer, scandir, scanpkg, starter
+from operbot.threads import launch
+
+
+readline.redisplay()
+
+
+MOD = ",cmd,err,irc,log,rss,sts,tdo,thr"
+
+
+Persist.workdir = os.path.expanduser("~/.%s" % Cfg.name)
+
+
+date = time.ctime(time.time()).replace('  ', ' ')
+
+
+def cprint(txt):
+    if "v" in Cfg.opts:
+        print(txt)
+        sys.stdout.flush()
+
+
+Logging.raw = cprint
+
+
+class CLI(Client):
+
+    def announce(self, txt):
+        pass
+
+    def raw(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+class Console(CLI):
+
+    def handle(self, evt):
+        CLI.handle(self, evt)
+        evt.wait()
+
+    def poll(self):
+        return self.event(input("> "))
+
+
+def daemon():
+    pid = os.fork()
+    if pid != 0:
+        os._exit(0)
+    os.setsid()
+    os.umask(0)
+    sis = open('/dev/null', 'r')
+    os.dup2(sis.fileno(), sys.stdin.fileno())
+    sos = open('/dev/null', 'a+')
+    ses = open('/dev/null', 'a+')
+    os.dup2(sos.fileno(), sys.stdout.fileno())
+    os.dup2(ses.fileno(), sys.stderr.fileno())
+
+
+def waiter():
+    got = []
+    for ex in Error.errors:
+        traceback.print_exception(type(ex), ex, ex.__traceback__)
+        got.append(ex)
+    for exc in got:
+        Error.errors.remove(exc)
+
+
+def wrap(func):
+    fds = sys.stdin.fileno()
+    gotterm = True
+    try:
+        old = termios.tcgetattr(fds)
+    except termios.error:
+        gotterm = False
+    try:
+        func()
+    except (EOFError, KeyboardInterrupt):
+        print('')
+    finally:
+        if gotterm:
+            termios.tcsetattr(fds, termios.TCSADRAIN, old)
+        waiter()
+
+
+def main():
+    dowait = False
+    cfg = parse(' '.join(sys.argv[1:]))
+    update(Cfg, cfg)
+    mod = Cfg.sets.mod
+    if os.path.exists("modules"):
+        scandir("modules", importer, mod + MOD)
+    scanpkg(operbot.modules, importer, mod + MOD)
+    if cfg.txt:
+        cli = CLI()
+        command(cli, cfg.otxt)
+    elif 'd' in cfg.opts:
+        daemon()
+        dowait = True
+    elif 'c' in cfg.opts:
+        print(f'{Cfg.name.upper()} started {date}')
+        dowait = True
+    if dowait:
+        scanpkg(operbot.modules, starter, mod + MOD)
+        scandir("modules", starter, mod + MOD)
+        if "c" in cfg.opts:
+            csl = Console()
+            launch(csl.loop)
+        while 1:
+            time.sleep(1.0)
+            waiter()
+
+
+wrap(main)
+waiter()
