@@ -1,0 +1,238 @@
+# Biblioteca customizada para testes automatizados com robotframework
+
+A finalidade deste documento é a de passar informações das funções e keywords que estão sendo entregues.
+
+## 🔧 Instalação
+	$ pip install via-hub-logistic
+
+## 🚀 Keywords:
+**Microsoft Azure**
+
+  ```robotframework
+    *** Settings ***
+    $  Library    via_hub_logistc.keywords.kws_microsoft.ViaAzure
+  ```
+  - Azure Connect Blob Server
+    > Gets and prints the spreadsheet's header columns
+    >
+    >Parameters
+    >----------
+    >host : str<br>
+    >   A url used for connect blob server<br>
+    >account_name : bool, optional<br>
+    >    A username for connect account server<br>
+    >account_key : <br>
+    >   A access token the account<br>
+
+    >Returns
+    >-------
+    >connect<br>
+    >    a connection with server blob<br>
+ 
+  - Azure List All Directories In Container
+	  > Return the json with all directories in a container<br>
+    > Params:<br>
+    > - **connection**: Object with connection :: *Connection*<br> 
+    > - **container_name**: name container :: *str*<br>
+    > - **folder**: name the folder :: *str*<br>
+    > - **format**: Default false for return o path name the folder, true for return o full path name with folder :: *boolean*
+
+  - Azure Is Exist Directory In Container
+	  > Return  True if the folder exists in the container or False if the folder not exist in container<br>
+    > Params:<br>
+    > - **connection**: Object with connection :: *Connection*<br>
+    > - **container_name**:  name container :: *str*<br>
+    > - **folder**:  name the folder :: *str*<br>
+    > - **directory**:  diectory search :: *srt*
+
+
+**Ibm Db2**
+
+  ```robotframework
+    *** Settings***
+    $  Library    via_hub_logistc.keywords.kws_db2.ViaDb2
+  ```
+  - Db2 Connect To Dataase
+	  > Return the one object connction with database bd2 server<br>
+    > Params:<br>
+    > - **host**:  server name :: *str*<br>
+    > - **db_name**:  database name :: *str*<br>
+    > - **user_id**:  user name :: *str*<br>
+    > - **password**:  password id :: *str*
+
+  - Db2 Execute Qury
+	  > Return json with result the of query <br>
+    > Params:<br>
+    > - **connection**: Object with connection the of database :: *Connection*<br>
+    > - **query**:  Query which will be used in the search :: *str*
+
+
+**Mongodb**
+
+  ```robotframework
+    *** Settings***
+    $  Library    via_hub_logistc.keywords.kws_mongodb.ViaMongo
+  ```
+  - Mongo Connect To Database
+	  > Return conncection with mongoDB<br>
+    > Params:<br>
+    > - **strConnction**:  string connection :: *str*<br>
+
+  - Mongo Disconnect To Database
+	  > Execute a disconnection with the server <br>
+    > Params:<br>
+    > - **client**: connection :: *Connection*<br>
+
+  - Mongo Find All
+	  > Returns one json or list the json result <br>
+    > Params:<br>
+    > - **client**: connection :: *Connection*<br>
+    > - **baseName**: name the database :: *str*<br>
+    > - **collectionName**: name the collection:: *str*<br>
+
+  - Mongo Find By Parameter
+	  > Returns one json or list the json result by parameter <br>
+    > Params:<br>
+    > - **client**: connection :: *Connection*<br>
+    > - **baseName**: name the database :: *str*<br>
+    > - **collectionName**: name the collection:: *str*<br>
+    > - **query**: Query which will be used in the search:: *dict*<br>
+
+**Mongodb**
+
+  ```robotframework
+    *** Settings***
+    $  Library    via_hub_logistc.keywords.kws_text.ViaText
+  ```
+  - Split Text
+	  > Return text divide<br>
+    > Params:<br>
+    > - **text**:  text :: *str*<br>
+    > - **lengh**:  size limit caracteres :: *int*<br>
+
+## 🚀 Funcoes:
+**Arquivos**
+
+  ```Pytho
+    *** Settings***
+    $ Library    via_hub_logistc.core.via_file.FileYaml
+  ```
+  - read_yaml_file
+	  > Return json with data file yaml<br>
+    > Params:<br>
+    > - **filename**:  path the file :: *str*<br>
+
+**Number**
+
+  ```Pytho
+    *** Settings***
+    $ Library    via_hub_logistc.core.via_number.ViaNumber
+  ```
+  - choose_number
+	  > Return Choose number in range<br>
+    > Params:<br>
+    > - **stopNumber**:  number final the range :: *int*<br>
+  
+**Text**
+
+  ```Pytho
+    *** Settings***
+    $ Library    via_hub_logistc.core.via_text.ViaNumber
+  ```
+  - split_text
+	  > Return split text informations $text and $length cut<br>
+    > Params:<br>
+    > - **text**:  text :: *int*<br>
+    > - **length**:  size the cut the text :: *int*<br>
+
+  - cut_text
+	  > Return cut text informations $separator and $length cut<br>
+    > Params:<br>
+    > - **text**:  text :: *int*<br>
+    > - **separator**:  caracterer separator :: *int*<br>
+    > - **maxsplit**:  size the cut the text :: *int*<br>
+
+**Timer**
+
+  ```Pytho
+    *** Settings***
+    $ Library    via_hub_logistc.core.via_timer.ViaTimer
+  ```
+  - interval
+	  > Return calculate date in two date<br>
+    > Params:<br>
+    > - **start**:  date start :: *int*<br>
+    > - **end**:  date end :: *int*<br>
+
+  - str_to_date
+	  > Return on a date in format string<br>
+    > Params:<br>
+    > - **value**:  date  :: *int*<br>
+    > - **format**:  date format :: *int*<br>
+
+**Scenarios**
+
+  ```Pytho
+    *** Settings***
+    $ Library    via_hub_logistc.core.via_scenarios.ViaTimer
+  ```
+  - get_id_scenario
+	  > Return id the scenarios<br>
+    > Params:<br>
+    > - **lst_tags**:  date start :: *list*<br>
+    > - **tag_id**: tag id for load in list :: *int*<br>
+
+
+**Conector Zephry**
+
+  ```Pytho
+    *** Settings***
+    $ Library    via_hub_logistc.core.via_report.ReportManager
+  ```
+  - get_cycle_id
+	  > Return id the of cycle in jira<br>
+    > Params:<br>
+    > - **cycle**: cycle name :: *list*<br>
+
+  - create_cycle_name
+	  > Return name the of cycle test in jira<br>
+    > Params:<br>
+    > - **project_id**: id project jira :: *list*<br>
+    > - **release**: name the branch the regression :: *list*<br>
+
+  - create_folder
+	  > Return name new folder for test regression<br>
+    > Params:<br>
+    > - **projectKey**: key project jira :: *list*<br>
+    > - **folder_name**: name the folder the regression :: *list*<br>
+
+  - create_cycle_test
+	  > Return new cycle for test regression<br>
+    > Params:<br>
+    > - **folder_name**: name the folder the regression :: *str*<br>
+    > - **test_plan**: id test plan:: *str*<br>
+    > - **key**: key the project :: *str*<br>
+    > - **name_cycle**: name the cycle the regression :: *str*<br>
+    > - **descripption**: description the cycle the regression :: *str*<br>
+    > - **iteration**: iteration the cycle the regression :: *str*<br>
+    > - **owner**: name the of runner the regression :: *str*<br>
+    > - **cycle_date**: date the cycle the regression :: *str*<br>
+    > - **status**: status the cycle the regression :: *str*<br>
+
+  - save_result_runner_tests
+	  > Add scenarios to an existing cycle <br>
+    > Params:<br>
+    > - **cycle**: cycle the runner regression :: *str*<br>
+    > - **list_scenarios**: list with scenarios :: *list*<br>
+
+  - get_owner_test_case
+	  > Return Get info the of created test case<br>
+    > Params:<br>
+    > - **test_key**: name teste case :: *str*<br>
+
+  - update_cycle_execution
+	  > Change status upadate cycle test br>
+    > Params:<br>
+    > - **project_id**: id project the jira :: *str*<br>
+    > - **cycle_id**: id cycle :: *str*<br>
+    > - **status**: status the execution :: *str*<br>
