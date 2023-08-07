@@ -1,0 +1,10 @@
+README.md
+setup.py
+terminally/__init__.py
+terminally/ally.py
+terminally.egg-info/PKG-INFO
+terminally.egg-info/SOURCES.txt
+terminally.egg-info/dependency_links.txt
+terminally.egg-info/entry_points.txt
+terminally.egg-info/requires.txt
+terminally.egg-info/top_level.txt
