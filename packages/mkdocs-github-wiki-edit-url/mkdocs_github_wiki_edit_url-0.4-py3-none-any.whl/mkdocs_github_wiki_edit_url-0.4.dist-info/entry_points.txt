@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+github-wiki-edit-url = github_wiki_edit_url.plugin:GithubWikiEditUrlPlugin
