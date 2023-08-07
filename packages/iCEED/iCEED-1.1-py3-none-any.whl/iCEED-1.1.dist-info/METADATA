@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: iCEED
+Version: 1.1
+Summary: Package for customized extraction of enzyme data from bioinformatics databases
+Home-page: UNKNOWN
+Author: Rajiv Karbhal
+Author-email: rajivkarbhal@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+
+iCEED: 
+Package for customized extraction of subsets of data from enzyme entry/ies available in various Bioinformatics databases.
+
+Background and Necessity:
+
+	Enzyme data is an essential component of bioinformatics databases as enzymes are the key molecules that drive biochemical reactions in living organisms. 
+	The enzyme data in bioinformatics databases is extensive, with many databases providing enzyme information including information on their sequence, structure, function, physicochemical properties, reaction and pathways, etc. 
+	Some databases archive extensive data on enzymes, while others comprise limited information.
+	Common problems that researchers face when accessing enzyme data include difficulties in data retrieval and inconsistencies in data formats across different databases.
+	One of the major issues is different databases provide different levels of annotation, leading to discrepancies in enzyme information.
+	Additionally, there are inconsistencies or errors in the data due to incomplete or inaccurate annotations, or due to differences in data curation practices across databases. 
+	Another problem is the integration of data from multiple sources, as data from different sources can have different formats, making it difficult to integrate and compare data. 
+	Another issue is the fragmentation of enzyme data across various databases, which can make it challenging to find all relevant information in one place.
+	Therefore there is a need for a dedicated package to access and extract enzyme data from various resources. 
+
+Description:
+
+iCEED package provides different modules for customized extraction of enzyme data from following bioinformatics databases:
+
+	1) NCBI nucleotide database
+	
+	2) UniProt Protein sequece database
+	
+	3) PDB protein 3D structure database
+	
+	4) PubMed
+	
+	4) KEGG
+	
+	6) BRENDA
+	
+	7) MetaCyc
+	
+	8) InterPro
+	
+	9) PFAM
+	
+	10) Prosite
+	
+	11) ExpolrEnz
+	
+	12) IntEnz
+	
+	13) Expasy Enzyme
+
+Users can extract the data in a customized fashion by using two options,  i) Using EC number only ii) organism-specific enzyme data extraction using taxonomic ID and EC number
+
+There are a total of 11 modules:
+
+	1) ec2seq: For extracting nucleotide and protein sequences of enzyme
+	
+	2) ec2PDB: For extracting 3D structure of enzyme
+	
+	3) ec2repath: For extracting reaction and pathway data of enzyme
+	
+	4) ec2mol: For extracting small molecule data of enzyme
+	
+	5) ec2param: For extracting physicochemical parameters of enzyme
+	
+	6) ec2dofam: For extracting domain and family data of enzyme
+	
+	7) ec2site: For extracting active site and other important functional sites of the enzyme
+	
+	8) ec2go: For extracting Gene Ontology data of enzyme
+	
+	9) ec2pub: For extracting published literature on enzyme
+	
+	10) ec2org: For extracting organism data from which the enzyme is characterized
+	
+	11) ec2syn: For extracting synonyms of the enzyme
+
+Installation:
+To install this Package, simply run the following command:
+
+	pip install iCEED
+
+Dependencies:
+
+This package requires the following dependencies:
+
+	Python 3.5 or above
+	requests
+
+Usage:
+
+After installing the package, you can use it in your Python code as follows:
+
+	from iCEED import ORGEC2PDB
+	orgst = ORGEC2PDB("1.1.1.1", "9606") #Providing EC number and taxonomic ID as input
+	print(orgst.orgstr()) # Calling orgstr function and printing result
+
+The Examples folder contains detailed examples for each module.
+
+Contributions:
+
+We welcome contributions from the community! If you find a bug, have a feature request, or would like to contribute code, please contact us via email.
+
+License:
+
+This package is licensed under the MIT license. See the LICENSE file for more details.
+
+
+
