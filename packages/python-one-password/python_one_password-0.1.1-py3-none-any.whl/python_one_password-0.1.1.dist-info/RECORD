@@ -1,0 +1,13 @@
+python_one_password/__init__.py,sha256=mXAJrMuMtoJ0JJGZBpVaN7SCi0jJwzWX9sm3Pau6YiQ,590
+python_one_password/caching.py,sha256=fqyog-0Gt9QPGIg2w0qWwzpR88OoczJ_oJAkwmtjodc,3934
+python_one_password/cli.py,sha256=f_1NjHtNRa5B7MifBkMHaZp0TxFoIbgd1gZXGwkAeik,1126
+python_one_password/credentials.py,sha256=jUs0_EF4NAUwPUvlVtsWgmLZ5Q6Cv9oEaTkYOSi77SY,4422
+python_one_password/functions.py,sha256=ST6oRd4HMIQr8FOsgsQqHFNYbHo0-gQQ6LX0n_twpqM,24043
+python_one_password/skeleton.py,sha256=lFS4xg3jUxl7f0FVu_zR_JZuiOVphDv4k1whbOrMpZE,4285
+python_one_password/tags.py,sha256=REnGXyqnTQwd0T8QWZmPxTcNEcuGic1biPPm8BHN2bY,4793
+python_one_password-0.1.1.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+python_one_password-0.1.1.dist-info/METADATA,sha256=roI82VQkH3DQfPRbqZuJSpqwEySF4foUdOUXMoFVsi0,7536
+python_one_password-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+python_one_password-0.1.1.dist-info/entry_points.txt,sha256=nQthTKZsdfUdOlXsHLbywM5YiTJa_hjND41tX90GATE,68
+python_one_password-0.1.1.dist-info/top_level.txt,sha256=rKPnhZ1AeyW3HsuIiW9HPW74yTMEp_Po7q6hV03X1uA,20
+python_one_password-0.1.1.dist-info/RECORD,,
