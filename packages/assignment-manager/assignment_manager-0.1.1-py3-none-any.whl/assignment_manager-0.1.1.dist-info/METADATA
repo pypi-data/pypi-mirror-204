@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: assignment-manager
+Version: 0.1.1
+Summary: Manage reoccuring assignments and tasks.
+Home-page: https://github.com/PraxTube/assignment-manager
+Author: Prax
+Project-URL: Bug Reports, https://github.com/PraxTube/assignment-manager/issues
+Project-URL: Source, https://github.com/PraxTube/assignment-manager
+Keywords: manager,task,assignment,task-manager,assignment-manager
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich
+Requires-Dist: typer
+Requires-Dist: inquirer
+
+# Assignment Manager
