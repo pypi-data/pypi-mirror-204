@@ -1,0 +1,7 @@
+licence.txt.txt
+setup1.py
+pointclass/__init__.py
+pointclass.egg-info/PKG-INFO
+pointclass.egg-info/SOURCES.txt
+pointclass.egg-info/dependency_links.txt
+pointclass.egg-info/top_level.txt
