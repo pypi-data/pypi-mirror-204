@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mobility-tools
+Version: 0.1
+Summary: A tool to simulate the mobility behaviours of the inhabitants of a given region.
+Home-page: https://github.com/mobility-team/mobility
+Author: Louise Gontier, Félix Pouchain, Capucine-Marin Dubroca-Voisin
+Author-email: l.gontier@elioth.fr, felix.pouchain@arep.fr, capucine-marin.dubroca-voisin@arep.fr
+Requires-Python: >=3.9
+License-File: LICENSE
