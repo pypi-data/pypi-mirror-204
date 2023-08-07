@@ -1,0 +1,39 @@
+[tool.poetry]
+authors = ["Niko Ehrenfeuchter <nikolaus.ehrenfeuchter@unibas.ch>"]
+description = "PowerShell Python Citrix Tricks."
+license = "GPL-3.0-or-later"
+name = "psytricks"
+readme = "README.md"
+version = "1.0.0"
+
+[tool.poetry.urls]
+"Changelog" = "https://github.com/imcf/psytricks/blob/main/CHANGELOG.md"
+"Organisation Homepage" = "https://imcf.one/"
+"Twitter" = "https://twitter.com/imcf_basel"
+
+[tool.poetry.dependencies]
+click = "^8.1.3"
+loguru = "^0.6.0"
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+pylint = "^2.16.2"
+
+[tool.poetry.scripts]
+psytricks = "psytricks.cli:run_cli"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+# pattern = "^psytricks-((?P<epoch>\\d+)!)?(?P<base>\\d+(\\.\\d+)*)"
+style = "semver"
+vcs = "git"
+
+[tool.poetry-dynamic-versioning.substitution]
+folders = [
+  {path = "src"},
+]
+
+[build-system]
+build-backend = "poetry_dynamic_versioning.backend"
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
