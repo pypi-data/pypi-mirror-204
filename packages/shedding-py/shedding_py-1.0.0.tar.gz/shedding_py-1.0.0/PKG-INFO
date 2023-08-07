@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: shedding-py
+Version: 1.0.0
+Summary: An API wrapper for EskomSePush.
+Home-page: https://github.com/toolifelesstocode/shedding.py
+License: MIT
+Keywords: eskom,load shedding,eskomsepush
+Author: toolifelesstocode
+Author-email: luvuyosilubane50@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: aiohttp
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Dist: aiohttp (>=3.8.4,<4.0.0)
+Project-URL: Repository, https://github.com/toolifelesstocode/shedding.py
+Description-Content-Type: text/markdown
+
+# shedding.py
+
+Shedding.py is a Python wrapper for the EskomSePush API. It provides a simple interface to the API, and handles all the authentication and session management for you.
+
+
