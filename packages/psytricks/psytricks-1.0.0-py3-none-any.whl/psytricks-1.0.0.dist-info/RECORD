@@ -1,0 +1,14 @@
+psytricks/__init__.py,sha256=mbhUvVJN0cRUdvnoYoubwu9W13BNO_o3axm6Z8CLIfw,93
+psytricks/cli.py,sha256=LRaHZU6fqhm5PfgtaolC772k0hGfyD3eUhYeLTR6Byc,5145
+psytricks/decoder.py,sha256=yHpyi788SJrJgYS-IfPfNGKaxBRF6DLCqqVaAdPnOB4,2247
+psytricks/mappings.py,sha256=U5PTP9s1bBxfr5KEF8yQJbNoZ9pcISTaP9Au-O79p4Y,1801
+psytricks/ps1scripts/dummydata/GetAccessUsers.json,sha256=x-N4MFRRGNhHJvDzIsCyvV4uGVKmM1pxM7PNNa-HsTY,3014
+psytricks/ps1scripts/dummydata/GetMachineStatus.json,sha256=JU3MqZEGupZ4SR5bPSA5sISiqgMvl3lGEN_OOq7uRnQ,18009
+psytricks/ps1scripts/dummydata/GetSessions.json,sha256=r9Fh1RrYWTUyIhOrIR8agW-B-RC2lFzm7IlXctZeyhQ,4623
+psytricks/ps1scripts/psytricks-wrapper.ps1,sha256=sbby6LVDtJ7b1-d5HB7lXLrORFlwRn3YRqRcLlJD1qU,11759
+psytricks/wrapper.py,sha256=zMXEgwlC9fcAHsPEKevxqn6sdWjVhCj4i6bFfwJGGhY,11067
+psytricks-1.0.0.dist-info/entry_points.txt,sha256=alwlKs2wtw5_rlxvOUkdyiT0LEfQlcpHYIHz9A3k4n8,51
+psytricks-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+psytricks-1.0.0.dist-info/METADATA,sha256=l4CkLDlmuyRfYR-VA5ltovV3HKImIIcTnA_cP7cqRj4,4325
+psytricks-1.0.0.dist-info/LICENSE,sha256=Vt_XqGy4L-skG8d9TP2RVleRql09OJkM9OL2JjCCkFA,35059
+psytricks-1.0.0.dist-info/RECORD,,
