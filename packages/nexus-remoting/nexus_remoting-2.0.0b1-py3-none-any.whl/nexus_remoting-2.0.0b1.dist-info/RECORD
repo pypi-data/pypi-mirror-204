@@ -1,0 +1,7 @@
+nexus_remoting/__init__.py,sha256=r9rgg60wDsi4pKCDoBfBmKLmXPjpdEl6E1ZcG44swvw,24
+nexus_remoting/_encoder.py,sha256=77YQLsnT-Bjge-QQrLhY65_m11Y6AvmvLE3EIhXqTXY,7346
+nexus_remoting/_remoting.py,sha256=qpvyTR2ViryskDjSzB6fY5MifrsOkiiDNiVCh-ylHYU,9630
+nexus_remoting-2.0.0b1.dist-info/METADATA,sha256=wZoXr818BclpSdFyzZZPAI1IHYaSAop9E7M9ddfqF_E,942
+nexus_remoting-2.0.0b1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+nexus_remoting-2.0.0b1.dist-info/top_level.txt,sha256=V6I90CqQJI6q0254_lZ1STJ94OPp0m2tFJBHt_c0DLE,15
+nexus_remoting-2.0.0b1.dist-info/RECORD,,
