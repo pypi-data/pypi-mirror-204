@@ -1,0 +1,62 @@
+type: dls_multiconf.classic
+
+logging_settings:
+    console:
+        enabled: True
+        verbose: True
+    logfile:
+        enabled: True
+        directory: ${output_directory}/logfile.log
+    graypy:
+        enabled: False
+        host: 172.23.7.128
+        port: 12201
+        protocol: UDP
+
+# The external access bits.
+external_access_bits:
+    dataface_port: &ROCKINGESTER_PORT 27821
+
+# The xchembku_dataface direct access.
+xchembku_dataface_specification: &XCHEMBKU_DATAFACE_SPECIFICATION
+    type: "xchembku_lib.xchembku_datafaces.direct"
+    database:
+        type: "xchembku_lib.xchembku_databases.normsql"
+        filename: "${output_directory}/xchembku.sqlite"
+        log_level: "WARNING"
+
+visits_directory: &VISITS_DIRECTORY "${output_directory}/visits"
+visit_plates_subdirectory: &VISIT_PLATES_SUBDIRECTORY "processing/rockingester"
+novisit_directory: &NONVISIT_DIRECTORY "${output_directory}/SubwellImages_novisit"
+nobarcode_directory: &NOBARCODE_DIRECTORY "${output_directory}/SubwellImages_nobarcode"
+
+# The rockingester direct access.
+rockingester_collector_specification_direct_poll:
+    &ROCKINGESTER_COLLECTOR_SPECIFICATION_DIRECT_POLL
+    type: "rockingester_lib.collectors.direct_poll"
+    type_specific_tbd:
+        plates_directories:
+            - "${output_directory}/SubwellImages"
+        visits_directory: *VISITS_DIRECTORY
+        visit_plates_subdirectory: *VISIT_PLATES_SUBDIRECTORY
+        novisit_directory: *NONVISIT_DIRECTORY
+        nobarcode_directory: *NOBARCODE_DIRECTORY
+        xchembku_dataface_specification: *XCHEMBKU_DATAFACE_SPECIFICATION
+        ingest_only_barcodes:
+            - 98ab
+            - 98ac
+            - 98ad
+
+# The rockingester client/server composite.
+rockingester_collector_specification:
+    type: "rockingester_lib.collectors.aiohttp"
+    type_specific_tbd:
+        # The remote rockingester server access.
+        aiohttp_specification:
+            server_host: "*"
+            client_host: "127.0.0.1"
+            port: *ROCKINGESTER_PORT
+        # The local implementation of the rockingester.
+        direct_collector_specification: *ROCKINGESTER_COLLECTOR_SPECIFICATION_DIRECT_POLL
+    context:
+        start_as: process
