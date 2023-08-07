@@ -1,0 +1,11 @@
+CHANGELOG.md,sha256=o47tcl6WMsGnYVvhOzcD-33zyLEvBjRzJ8Xk_P0mCSo,274
+cookiebanner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cookiebanner/locale/de/LC_MESSAGES/django.mo,sha256=9l_UVKVbcm3mRpadwYEMjqye3NAuXasDaw16mTDtGS8,517
+cookiebanner/locale/de/LC_MESSAGES/django.po,sha256=Dik_iE644PrhUGxvhkvc1qyLpr6QyqEJhFcPaGaUa4o,897
+cookiebanner/templates/cookiebanner/bootstrap4.html,sha256=OiTa1W5hXZpDjaENCwc7sSwnRKSpUEgJwC9m1u8COlI,5780
+cookiebanner/templates/cookiebanner/vanilla.html,sha256=OxN9fCcVG7srhFOKTHQr_oLFl794v34y3YJqSBrOp8w,7163
+cookiebanner/templatetags/cookiebanner.py,sha256=Tri4MOwKO8J5HMkEB8UN-PJe5x1KDsSDQyth2llLFdI,1826
+django_cookiebanner-0.2.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+django_cookiebanner-0.2.8.dist-info/METADATA,sha256=Z4SmnxYWUxHb7nuk8sPNFA2GMJ_YFTrd6T52vjNhGKg,3196
+django_cookiebanner-0.2.8.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+django_cookiebanner-0.2.8.dist-info/RECORD,,
