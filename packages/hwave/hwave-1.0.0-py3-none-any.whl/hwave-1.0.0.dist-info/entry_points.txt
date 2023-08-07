@@ -1,0 +1,4 @@
+[console_scripts]
+hwave=hwave.qlms:main
+hwave_dos=hwave.dos:main
+
