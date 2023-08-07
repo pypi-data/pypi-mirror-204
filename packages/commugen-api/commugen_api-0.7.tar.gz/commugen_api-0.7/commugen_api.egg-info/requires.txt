@@ -1,0 +1,4 @@
+requests
+tablib
+curlify
+keyring
