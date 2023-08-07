@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: corbett
+Version: 0.1.0rc0
+Summary: Utilities for querying Google Sheets from Snowflake
+Author-email: Tom Corbett <tom.corbettco@gmail.com>
+License: BSD-3-Clause
+Keywords: one,two
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Provides-Extra: pdf
+Provides-Extra: rest
