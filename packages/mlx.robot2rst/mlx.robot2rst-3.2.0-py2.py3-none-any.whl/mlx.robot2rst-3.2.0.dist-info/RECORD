@@ -1,0 +1,12 @@
+mlx.robot2rst-3.2.0-py3.7-nspkg.pth,sha256=UsVvor4_T6srpv6IW6vGvM-hxEOev1mrVeFhjvLCrwk,524
+mlx/__robot2rst_version__.py,sha256=jXprrDLc5_o9OzizdGMr92Lmhow65AreA5_ht6m6bmA,160
+mlx/robot2rst.mako,sha256=HdFIpN4eJSNX01rcB4aw1J_eSwFwjLDudYLUHTIkYSU,2811
+mlx/robot2rst.py,sha256=Bg-mdYm1cwD1Ha5ysP4Jf2gFLNm-Wj_r811FaFrb8Yw,6529
+mlx/robot_parser.py,sha256=HdryVRddutUAZHjWOo-chHFyxRf2mgpyXUCo4Ks8srk,2616
+mlx.robot2rst-3.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mlx.robot2rst-3.2.0.dist-info/METADATA,sha256=GNaGp4Q2UgkYtmTGqDJfJGRXF4odUCLo2_wBfvryJ7U,5366
+mlx.robot2rst-3.2.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+mlx.robot2rst-3.2.0.dist-info/entry_points.txt,sha256=d8YDXeXrrPXTcKUI7HA4Onvzwi26QbtCrfgViE_gHqc,97
+mlx.robot2rst-3.2.0.dist-info/namespace_packages.txt,sha256=NCVZzyms-obPlDq2Sa--m3oyfnnmLma38KCnE6gmcFE,4
+mlx.robot2rst-3.2.0.dist-info/top_level.txt,sha256=NCVZzyms-obPlDq2Sa--m3oyfnnmLma38KCnE6gmcFE,4
+mlx.robot2rst-3.2.0.dist-info/RECORD,,
