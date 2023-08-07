@@ -1,0 +1,9 @@
+README.md
+setup.py
+obsutils/__init__.py
+obsutils/file.py
+obsutils.egg-info/PKG-INFO
+obsutils.egg-info/SOURCES.txt
+obsutils.egg-info/dependency_links.txt
+obsutils.egg-info/requires.txt
+obsutils.egg-info/top_level.txt
