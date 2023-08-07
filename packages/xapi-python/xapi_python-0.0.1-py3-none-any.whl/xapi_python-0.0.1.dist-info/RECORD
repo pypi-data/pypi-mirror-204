@@ -1,0 +1,12 @@
+xapi/__init__.py,sha256=vAxF5ywSgaRAwxsErE3v8ZN7_vG1-hKDAzkZFSY4qPs,303
+xapi/connection.py,sha256=5W3zsrDIBAKft2FwdkxpJVUjs_2OvpCLwuQIRI0bWgQ,1679
+xapi/enums.py,sha256=T7DQPvzFXFiAXJnJ4UqheoXmqbGSh9waCieF9ppIhkk,1464
+xapi/exceptions.py,sha256=kdn-aDs0m0pt9XPmSJdbMWuAl2aR2WVjOfZ9tkWr1dI,200
+xapi/socket.py,sha256=jGfat4XRd1aRObOBw3pp-vqLF0_Tk4Ew0l3_bpAkeV0,6640
+xapi/stream.py,sha256=uY8HeGH-fuyEIMhaylc4boL-kkjOhhiAqBRZuKq340g,3115
+xapi/xapi.py,sha256=o_8pgfTaL2saNIvthQBudjYKE7iZIm5WO-kEugjch1k,1104
+xapi_python-0.0.1.dist-info/LICENSE,sha256=o1R_gdDKuqObf0xcavlzX0u434C1i_GTvBDGHQILNgY,1071
+xapi_python-0.0.1.dist-info/METADATA,sha256=LLbo3fU3dWQQXd-BEI5sOVVBJ1YmBGXV_GStH-6GleE,5923
+xapi_python-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+xapi_python-0.0.1.dist-info/top_level.txt,sha256=kZXU5ucM_33ff5ZEpp6D2tPql5iyRAwXkfzZ-cvCQMk,5
+xapi_python-0.0.1.dist-info/RECORD,,
