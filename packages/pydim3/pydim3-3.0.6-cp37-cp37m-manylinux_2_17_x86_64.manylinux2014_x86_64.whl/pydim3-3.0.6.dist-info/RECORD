@@ -1,0 +1,12 @@
+dimc.cpython-37m-x86_64-linux-gnu.so,sha256=3bchkVZr3h0nIlYym6qU_c2gy0QRPGg4eoZD8t9NFc4,1206313
+dimcpp.cpython-37m-x86_64-linux-gnu.so,sha256=q21X6tCtGEk4rUA3J94xa2wYAXRxxa7JsEG2takCUc0,483625
+dimbrowserwrappercpp.cpython-37m-x86_64-linux-gnu.so,sha256=tK-afRcDmYEEtiLUg6X2jm7oddrcw-2jnr6SCIPpHQ4,51673
+dimbrowser/__init__.py,sha256=75Twj0HIcZs1vsZEFwTbO6-I_0wWrpLnmR_-AwPyL1I,35
+dimbrowser/dimbrowser.py,sha256=Sl2eDm79Wr47YlSDfXEbHSaPiDglZrwTg_wC8hbdpk4,5212
+pydim/__init__.py,sha256=kOHsQr6-qcPRXjjbVH7xVJqLY5CE9Z37pqafBm2xVvE,12342
+pydim/debug.py,sha256=Jqz3HBBf96FARGG8bmySER_6g0XVafqlSaDG3hJJW1o,6950
+pydim3.libs/libdim-1557a5b5.so.v20r11,sha256=yUrYEKFSWjRF5RI-uO0Tvs7ZLEnVba8L9VWa0Kcazok,496273
+pydim3-3.0.6.dist-info/RECORD,,
+pydim3-3.0.6.dist-info/WHEEL,sha256=E0CkEo6W7NC93sVo8jj5Y2C0iOJBJ79Iyun5srY2VI0,150
+pydim3-3.0.6.dist-info/top_level.txt,sha256=KsSfTo8UHKlSlbe1ayGhfu0jWmbTG6J1j9565eDWpVo,119
+pydim3-3.0.6.dist-info/METADATA,sha256=qiOeViHLXxKtHonFkDUUXljkbziiNWvXYcy2ESs5gn8,2935
