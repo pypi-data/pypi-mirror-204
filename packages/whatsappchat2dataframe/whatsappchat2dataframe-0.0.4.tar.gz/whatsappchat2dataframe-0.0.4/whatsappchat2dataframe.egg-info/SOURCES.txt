@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+whatsappchat2dataframe/__init__.py
+whatsappchat2dataframe/chat2dataframe.py
+whatsappchat2dataframe.egg-info/PKG-INFO
+whatsappchat2dataframe.egg-info/SOURCES.txt
+whatsappchat2dataframe.egg-info/dependency_links.txt
+whatsappchat2dataframe.egg-info/requires.txt
+whatsappchat2dataframe.egg-info/top_level.txt
