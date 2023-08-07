@@ -1,0 +1,3 @@
+recursive-include src/st_dropfill_textarea/frontend/dist *
+include README.md
+include LICENSE

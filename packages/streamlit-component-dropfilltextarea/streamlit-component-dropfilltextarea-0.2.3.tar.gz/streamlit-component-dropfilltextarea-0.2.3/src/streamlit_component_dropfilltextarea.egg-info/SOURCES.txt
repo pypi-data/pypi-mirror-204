@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/st_dropfill_textarea/__init__.py
+src/st_dropfill_textarea/frontend/dist/index.html
+src/st_dropfill_textarea/frontend/dist/css/app.58e9fcbb.css
+src/st_dropfill_textarea/frontend/dist/js/app.7306c276.js
+src/st_dropfill_textarea/frontend/dist/js/app.7306c276.js.map
+src/st_dropfill_textarea/frontend/dist/js/chunk-vendors.e7772cca.js
+src/st_dropfill_textarea/frontend/dist/js/chunk-vendors.e7772cca.js.map
+src/streamlit_component_dropfilltextarea.egg-info/PKG-INFO
+src/streamlit_component_dropfilltextarea.egg-info/SOURCES.txt
+src/streamlit_component_dropfilltextarea.egg-info/dependency_links.txt
+src/streamlit_component_dropfilltextarea.egg-info/requires.txt
+src/streamlit_component_dropfilltextarea.egg-info/top_level.txt
