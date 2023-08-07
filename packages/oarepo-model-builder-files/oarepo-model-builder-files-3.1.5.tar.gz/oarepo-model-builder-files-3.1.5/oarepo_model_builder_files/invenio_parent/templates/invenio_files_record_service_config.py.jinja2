@@ -1,0 +1,16 @@
+{% for c in model.record_service_config_components %}
+from {{ c|package_name }} import {{ c|base_name }}
+{% endfor %}
+
+class {{ model.record_service_config_class|base_name }}:
+
+    {% if files.record_service_config_bases %}
+    components = [ {% for c in model.record_service_config_components %}{{ ", " if not loop.first else "" }} {{ c|base_name }} {% endfor %}]
+    {% endif %}
+
+    @property
+    def links_item(self):
+        return {
+            "self": RecordLink("{self.url_prefix}{id}"),
+            "files": RecordLink("{self.url_prefix}{id}/files"),
+        }
