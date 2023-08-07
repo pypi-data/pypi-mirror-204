@@ -1,0 +1,10 @@
+# Test yaml file for overriding values to yaml_test.yml
+
+metrics:
+  - AUC: 0
+  - recall: 0
+  - AUC: 20
+    recall: 20
+
+param_str: overriden_param
+param_y: 25

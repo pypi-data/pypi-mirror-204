@@ -1,0 +1,43 @@
+repos:
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+
+  - repo: https://github.com/psf/black
+    rev: "23.3.0"
+    hooks:
+      - id: black
+        language_version: python3
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: "6.0.0"
+    hooks:
+      - id: flake8
+        name: flake8
+        entry: flake8 --config tox.ini
+        types: [ python ]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-added-large-files
+        args: ['--maxkb=1024'] # allow up to 1MB
+      - id: check-json
+      - id: check-yaml
+        args: ["--unsafe"] # needed to allow custom tags from gamma-config in yaml
+      - id: check-merge-conflict
+
+  - repo: local
+    hooks:
+      - id: sql_formatter
+        name: SQL formatter
+        language: python
+        entry: sql-formatter --max-line-length=120
+        files: \.sql$
+        additional_dependencies: [sql-formatter]
+
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.6.1
+    hooks:
+      - id: nbstripout

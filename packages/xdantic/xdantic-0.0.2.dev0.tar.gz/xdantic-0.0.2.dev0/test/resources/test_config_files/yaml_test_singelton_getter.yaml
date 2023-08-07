@@ -1,0 +1,4 @@
+# Test yaml file with flat and nested config
+
+param_int: 40
+param_str: b

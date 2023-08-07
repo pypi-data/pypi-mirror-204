@@ -1,0 +1,9 @@
+# Test yaml file with wrong schema
+
+metrics:
+  - AUC: 2.5
+    recall: 50
+
+param_str: a_string_param
+param_x:
+  - 42

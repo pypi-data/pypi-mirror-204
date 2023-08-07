@@ -1,0 +1,75 @@
+[build-system]
+requires = ["flit_core >=3.7.1,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.sdist]
+exclude = [
+    ".idea", "tmp", "dist", ".tox", ".pytest_cache", "notebooks", "build",
+    "docs", ".bumpversion.cfg"
+]
+
+[project]
+name = "xdantic"
+authors = [
+    {name = "Sebastian Lettner", email = "sebastian.a.lettner@gmail.com"},
+]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+version = "0.0.2.dev0"
+description = "A lightweight Python config library on top of Pydantic."
+
+dependencies = [
+    "pydantic[dotenv]>=1.10.2",
+    "pyyaml>=6.0"
+]
+
+[project.optional-dependencies]
+
+testing = [
+            "pytest",
+            "pytest-pep8",
+            "pytest-cov",
+            "black==22.6.0",
+            "isort==5.8.0",
+            "flake8==4.0.1",
+            "pre-commit",
+            "nbconvert~=7.2.2",
+            "jupyter~=1.0.0"
+]
+
+docs = [
+    "mkdocs-material",
+    "mkdocstrings[python-legacy]>=0.18",
+    "mkdocs-gen-files>=0.4.0",
+    "mkdocs-literate-nav>=0.6.0"
+]
+
+#[project.urls]
+#Source = "https://github.com/bcgx-gp-atlasCommunity/xdantic"
+
+[tool.black]
+line-length = 88
+target_version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | data
+    | sphinx
+    | dist
+    | docs
+    | notebooks
+    | sphinx
+    | venv
+  )/
+)
+'''

@@ -1,0 +1,91 @@
+name: Build Xdantic library
+on:
+  push:
+    branches:
+      - "master"
+  pull_request:
+
+env:
+  PYTHON_VERSION: 3.9
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-python@v4
+              with:
+                python-version: ${{ env.PYTHON_VERSION }}
+
+            - id: install
+              name: Install dependencies
+              run: |
+                pip install --upgrade setuptools flit wheel
+                FLIT_ROOT_INSTALL=1 PIP_FIND_LINKS=deps flit install -s --deps production --extras testing
+            - id: lint
+              name: Lint
+              run: pre-commit run --all-files
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - id: checkout
+              uses: actions/checkout@v3
+            - id: setup-python
+              uses: actions/setup-python@v4
+              with:
+                python-version: ${{ env.PYTHON_VERSION }}
+
+            - id: install-and-test
+              name: Install dependencies and test
+              run: |
+                pip install --upgrade setuptools flit wheel
+                FLIT_ROOT_INSTALL=1 PIP_FIND_LINKS=deps flit install -s --deps production --extras all
+                pytest -s test/
+            - name: Save code coverage report
+              uses: actions/upload-artifact@v3
+              with:
+                name: code-coverage-report
+                path: tmp
+
+    build-docs:
+      runs-on: ubuntu-latest
+      steps:
+        - id: checkout
+          uses: actions/checkout@v3
+        - id: setup-python
+          uses: actions/setup-python@v4
+          with:
+            python-version: ${{ env.PYTHON_VERSION }}
+
+        - id: install-deps
+          name: Install dependencies and test
+          run: |
+            pip install --upgrade setuptools flit wheel
+            FLIT_ROOT_INSTALL=1 PIP_FIND_LINKS=deps flit install -s --deps production --extras docs
+        - id: build
+          name: Build documentation
+          run: |
+            mkdocs build --site-dir build
+
+    build-package:
+      runs-on: ubuntu-latest
+      steps:
+        - id: checkout
+          uses: actions/checkout@v3
+        - id: setup-python
+          uses: actions/setup-python@v4
+          with:
+            python-version: ${{ env.PYTHON_VERSION }}
+
+        - id: install-deps
+          name: Install dependencies and test
+          run: |
+            pip install --upgrade setuptools flit wheel 
+            flit build
+
+        - id: upload-articat
+          uses: actions/upload-artifact@v3
+          with:
+            name: sdist
+            path: ./sdist
+
