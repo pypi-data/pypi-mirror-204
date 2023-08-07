@@ -1,0 +1,72 @@
+{
+  "text": "Oliv2 est un alias pour Olivier Terrier.",
+  "metadata": {
+    "language": "fr"
+  },
+  "sentences": [],
+  "annotations": [
+    {
+      "start": 24,
+      "end": 39,
+      "labelName": "person",
+      "score": 0.937533438205719,
+      "label": "Person",
+      "text": "Olivier Terrier"
+    },
+    {
+      "start": 0,
+      "end": 5,
+      "labelName": "afpperson",
+      "score": 1,
+      "terms": [
+        {
+          "identifier": "afpperson:99999",
+          "lexicon": "person",
+          "preferredForm": "Olivier Terrier"
+        },
+        {
+          "identifier": "afpperson:99998",
+          "lexicon": "person",
+          "preferredForm": "Olivier Deux"
+        }
+      ],
+      "label": "AFPPerson",
+      "text": "Oliv2"
+    },
+    {
+      "start": 0,
+      "end": 5,
+      "labelName": "afpperson",
+      "score": 1,
+      "terms": [
+        {
+          "identifier": "afpperson:99999",
+          "lexicon": "person_update",
+          "preferredForm": "Olivier Terrier",
+          "properties":{
+            "status":"D"
+          }
+        }
+      ],
+      "label": "AFPPerson",
+      "text": "Oliv2"
+    },
+    {
+      "start": 24,
+      "end": 39,
+      "labelName": "afpperson",
+      "score": 1,
+      "terms": [
+        {
+          "identifier": "afpperson:99999",
+          "lexicon": "person_update",
+          "preferredForm": "Olivier Terrier"
+        }
+      ],
+      "label": "AFPPerson",
+      "text": "Olivier Terrier"
+    }
+  ],
+  "identifier": "b9780da5501ca852e8f4cb1524adae72",
+  "title": "unknown test document"
+}
