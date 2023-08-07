@@ -1,0 +1,5 @@
+dnspython == 2.*
+requests == 2.*
+tld == 0.13.*
+jwcrypto == 1.*
+cryptography == 39.*
