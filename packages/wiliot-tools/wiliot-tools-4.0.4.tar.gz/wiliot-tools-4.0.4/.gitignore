@@ -1,0 +1,9 @@
+/secrets.py
+/token
+.idea
+__pycache__/
+*.log
+wiliot_tools/local_gateway_gui/utils/.gwUserCommands.json
+wiliot_tools/version.py
+/scratch.py
+/test_analysis.py

@@ -1,0 +1,16 @@
+setuptools_scm
+pyserial
+pandas
+numpy
+scipy
+PySimpleGUI
+pygubu==0.16
+bokeh==2.4.1
+MarkupSafe==2.0.1
+tqdm
+dash
+plotly
+paho-mqtt
+keyboard
+
+
