@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pixelfuse
+Version: 1.0.2
+Summary: Convert any file to video and video to file
+Home-page: https://github.com/TheTS-labs/PixelFuse
+License: GPL-3.0
+Keywords: video,file,converter
+Author: Roman
+Author-email: romantovt31@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ffmpegio (>=0.8.3,<0.9.0)
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: opencv-python (>=4.7.0.72,<5.0.0.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Project-URL: Repository, https://github.com/TheTS-labs/PixelFuse
+Description-Content-Type: text/markdown
+
+# PixelFuse
+
+Convert **any file to video** and video to file
+
+## 💿 Installation
+
+```bash
+  pip install git+https://github.com/TheTS-labs/PixelFuse.git
+```
+
+## Usage
+
+```bash
+python -m pixelfuse fileToVideo "test/test.jpg"
+```
+
+And you get video
+
+```bash
+python -m pixelfuse videoToFile "test/test.avi"
+```
+
+And you get your file back
+
