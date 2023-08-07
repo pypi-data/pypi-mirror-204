@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: origen-ai-ecl
+Version: 0.2.11
+Summary: 
+Author: Luis Arce
+Author-email: luis@origen.ai
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pybind11[global] (>=2.10.4,<3.0.0)
+Description-Content-Type: text/markdown
+
+# opm-origen
+### Bulding with docker-compose
+
+First, create an env variables file by copying `config.env.example` into `config.env`:
+
+```bash
+$> cp config.env.example config.env
+```
+
+If you wish to publish the package in pypi, you will have to obtain a pypi token and set the environment variable
+`PYPI_API_TOKEN` in `config.env`.
+
+After that, you can simply use docker-compose to run commands:
+
+```bash
+docker-compose run build 
+```
+
+### Building the package without docker/docker-compose
+
+## Prerequisites
+
+- Install make, cmake and g++
+- Build/Install Opm-Common
+- Build/Install Opm-Grid
+
+## Install opm packages
+
+```bash
+sudo apt-add-repository ppa:opm/ppa
+sudo apt-get update
+
+sudo apt-get install libopm-common-dev
+sudo apt-get install libopm-grid-dev
+```
+
+## How to build
+
+```bash
+git clone git@github.com:OriGenAI/opm-origen.git
+cd opm-origen
+mkdir build
+cd build
+cmake ..
+make
+```
+
+## How to use
+
+- Copy the binary under `build/lib` folder
+- Import the binary from your Python code
+- Call the library functions
+
+### Examples
+
+```python
+from origen.ai.ecl import read_transmissibility
+
+trans = read_transmissibility("path-to-data.DATA")
+print(trans)
+```
+
+### Develop
+
+You can use the main.cpp file to debug. Just call your function from there and compile the code. You will find the binary in `build/bin/main`
+
