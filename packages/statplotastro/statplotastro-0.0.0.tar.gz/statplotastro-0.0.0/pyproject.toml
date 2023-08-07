@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "statplotastro"
+version = "0.0.0"
+authors = [
+    {name="Dingyi Zhao",email="1901110228@pku.edu.cn"}
+]
+description = "A Python ToolKit for statistic plot in astronomy"
+readme ="README.md"
+requires-python = ">=3.7"
+classifiers = ["Programming Language :: Python :: 3",
+"License :: OSI Approved :: MIT License",
+"Operating System :: OS Independent",]
+
+[project.urls]
+"Homepage" ="https://github.com/dingyizhao/statplot"
+"Bug Tracker" = "https://github.com/dingyizhao/statplot/issues"
