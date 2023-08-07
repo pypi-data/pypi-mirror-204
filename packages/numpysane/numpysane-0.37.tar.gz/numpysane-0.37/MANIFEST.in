@@ -1,0 +1,2 @@
+include README
+include test/test-numpysane.py
