@@ -1,0 +1,12 @@
+pynamer/README.md,sha256=wkVAa0krFJ0QZr6KprZ4d6vVXQ3rPJ3fPDJMseWi07k,10
+pynamer/__init__.py,sha256=v6LiFCf6aoaoPUGT36M703gpcDL6zqUgmIWWqcfL1GA,1185
+pynamer/pynamer.py,sha256=SZsy0TabgodqvtjXUJTRGoKXAWW111HYb4_-nPWyL7k,9854
+pynamer/setup.txt,sha256=3KhQJOhMZ9W9PFNl7PMo32zfPW5SP8qeWAjkV42qxS4,395
+pynamer/project_name/__init__.py,sha256=gZIfOrJWg0SQJbbs38dQNqPvYDmOxI3wRPv2yat8Nyg,37
+pynamer-0.3.0.dist-info/AUTHORS.md,sha256=a15nJ-YJwQ7WqtVfgV_2oTgrx5onmHAuiKb6e39QIqA,161
+pynamer-0.3.0.dist-info/LICENSE,sha256=wdDNqaLtDFznKJIbjCAlEMg15k6oqIf_bHrH_U9O3pc,1095
+pynamer-0.3.0.dist-info/METADATA,sha256=b6HJrPOqYrrBUM4whPpr0q8T7VUs-TO7C-gFYLdgcTI,11022
+pynamer-0.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pynamer-0.3.0.dist-info/entry_points.txt,sha256=R-uDYiGMwfRs0bodZ-cxoViKJKF7CQotOpHbLt-tEpI,49
+pynamer-0.3.0.dist-info/top_level.txt,sha256=cnZa_h0oR-Ei5zXyuhbvn60iZWVxjwFqk7AxoZhMKDg,8
+pynamer-0.3.0.dist-info/RECORD,,
