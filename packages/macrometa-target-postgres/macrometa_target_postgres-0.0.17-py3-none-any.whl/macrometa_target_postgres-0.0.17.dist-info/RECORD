@@ -1,0 +1,7 @@
+macrometa_target_postgres/__init__.py,sha256=BB-8iHNYazWYZW21gqAnFkvi0yQ37niOrXZqK3SrEs4,32578
+macrometa_target_postgres/db_sync.py,sha256=PgXcafME79o8lSa1t51TDhw8GAEieU2kqpx1xNEPGk4,26958
+macrometa_target_postgres-0.0.17.dist-info/entry_points.txt,sha256=7Yjy-d7XBL2Wy2zUaA5svh1QVfjwjDBWybk5fyT59QE,76
+macrometa_target_postgres-0.0.17.dist-info/LICENSE,sha256=fIeHMpHyiXE6xd9IsfIBDraWN1K71rUwQWq5n8N5FKg,10765
+macrometa_target_postgres-0.0.17.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+macrometa_target_postgres-0.0.17.dist-info/METADATA,sha256=nQkfYXfJxG5Qj4heZ6MrHoZT6GE7ILyVjmfeL-wOkUs,1093
+macrometa_target_postgres-0.0.17.dist-info/RECORD,,
