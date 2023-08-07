@@ -1,0 +1,15 @@
+shedding/__init__.py,sha256=xSdX2-pFalawZjOfgQb6qBspe4gIBep4ppycNthnIpo,110
+shedding/_http.py,sha256=xRhFEuzMtdkqxBaT0vU1Tq8pjscsl4uU-09sgAARLBg,496
+shedding/allowance.py,sha256=8I3hrJf0iDePWTOekN_rYEnaDPV2vXYgqQM-AD6IJxA,795
+shedding/area.py,sha256=QbUY-OCqOKM4-4TnfKsFyRVtoIDCXJ2qiLqO87b2Q50,2830
+shedding/status.py,sha256=P5z1ZI_vfgOPB0EjVklc0iAQGW0VVgoxWXywUaNFstM,1152
+shedding/topics.py,sha256=XR_Srmn4LxcRtZunYHa4pPkhMhy03F_dl8t04dyzE4A,1144
+shedding/types/__init__.py,sha256=wV9dt31_xqy2XLbUsc_tQjECiUjkkgOaOGgEjZ-6iZw,89
+shedding/types/allowance.py,sha256=zp-SHBBYM3Pr_pCBXMcK2AOfz2_T2-68cRcqM9ii1oI,739
+shedding/types/area.py,sha256=iwPYQsQgA8r62zFfAMJHaob9J_ww-nWV2OG-w6kvgW0,2647
+shedding/types/status.py,sha256=AlLh5V_nTfCjVjimkn02vuyxFnrcfkbGxc5wOL36TfM,935
+shedding/types/topics.py,sha256=7E-6fzzl5tp6FPOUpzmzQ3CJs6W2z6WF8mFhRpZ6dc0,836
+shedding_py-1.0.0.dist-info/LICENSE,sha256=BA5qvd_JjveD871xdJE7R5EYBA9wiQJQfVRUhqv6CSM,1081
+shedding_py-1.0.0.dist-info/METADATA,sha256=ZZ4nLxJUfZMKphwvf7b1NsHxyc3q3FQ71Bd1tPjxanM,1423
+shedding_py-1.0.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+shedding_py-1.0.0.dist-info/RECORD,,
