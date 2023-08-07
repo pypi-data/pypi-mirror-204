@@ -1,0 +1,13 @@
+{% extends 'admin/change_form.html' %}
+
+{% block submit_buttons_bottom %}
+    {{ block.super }}
+    <div class="submit-row">
+            {% csrf_token %}
+                <input type="submit" value="Test Notify" name="_send_now">
+                <input type="submit" value="Test SystemNotify" name="_send_now_system">
+    </div>
+{% endblock %}
+
+
+
