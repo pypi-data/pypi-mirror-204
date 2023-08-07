@@ -1,0 +1,11 @@
+transformers
+torch
+numpy
+pandas
+tqdm
+sklearn
+jieba
+tensorboardX
+icetk
+yacs
+rouge
