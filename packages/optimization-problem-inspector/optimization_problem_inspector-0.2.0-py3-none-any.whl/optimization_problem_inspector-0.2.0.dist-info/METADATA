@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: optimization-problem-inspector
+Version: 0.2.0
+Summary: A tool for analysis of industrial optimization problems and their solutions
+Project-URL: Documentation, https://github.com/unknown/optimization-problem-inspector#readme
+Project-URL: Issues, https://github.com/unknown/optimization-problem-inspector/issues
+Project-URL: Source, https://github.com/unknown/optimization-problem-inspector
+Author-email: Jernej Zupančič <88.jernej@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.10
+Requires-Dist: dash
+Requires-Dist: dash-bootstrap-components
+Requires-Dist: loguru
+Requires-Dist: pandas
+Requires-Dist: pflacco
+Requires-Dist: pydantic
+Requires-Dist: pygmo
+Requires-Dist: pyyaml
+Requires-Dist: scipy
+Description-Content-Type: text/markdown
+
+# optimization-problem-inspector
+
+[![PyPI - Version](https://img.shields.io/pypi/v/optimization-problem-inspector.svg)](https://pypi.org/project/optimization-problem-inspector)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/optimization-problem-inspector.svg)](https://pypi.org/project/optimization-problem-inspector)
+[![coverage report](https://repo.ijs.si/DIS-CI/optimization-problem-inspector/badges/main/coverage.svg)](https://repo.ijs.si/DIS-CI/optimization-problem-inspector/-/commits/main)
+[![pipeline status](https://repo.ijs.si/DIS-CI/optimization-problem-inspector/badges/main/pipeline.svg)](https://repo.ijs.si/DIS-CI/optimization-problem-inspector/-/commits/main)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [Running GUI](#running-gui)
+- [License](#license)
+
+## Installation
+
+### From PyPI
+
+First create a new virtual environment and activate it or activate desired virtual environment.
+
+Now install the `optimization-problem-inspector` from PyPI with 
+
+```
+pip install optimization-problem-inspector
+```
+
+### From source
+
+You can also install the package from source. The project is hosted at:
+
+- https://repo.ijs.si/DIS-CI/optimization-problem-inspector
+
+Download the repo and cd to it. Create a fresh virtual environment with python 3.9 or higher, e.g.,
+
+```bash
+python -m venv .venv
+```
+
+Activate it with something like
+
+```bash
+# in Linux/Unix
+source .venv/bin/activate
+```
+
+Now install the package with (use `-e` flag to make and editable install if desired)
+
+```
+pip install -e .
+```
+
+This will make the package available in the currently activated virtual environment.
+
+### Installing COCO
+
+Now proceed by installing [coco](https://github.com/numbbo/coco) in the new virtual environment. The project was build and tested with the `development` branch. Other branches may work but have not been tested.
+
+> It is expected that PyPI installable version of coco will be available in the near future. When this happens the installation process for `optimization-problem-inspector` will be simplified.
+
+## Running GUI
+
+To run the `optimization-problem-inspector` GUI after installation process has completed, just type command
+
+```
+opi-gui
+```
+
+You can also run the GUI with
+
+```
+python -m optimization_problem_inspector.app
+```
+
+> Note: the desired virtual environment with `optimization-problem-inspector` has to be activated.
+
+> Note: use `python` or `python3` command, depending on what executables you have available for Python3.
+
+## Additional guides
+
+- [Development](./DEVELOPMENT.md)
+- [OPI app administration](./OPI_ADMINISTRATION.md)
+
+## License
+
+`optimization-problem-inspector` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
