@@ -1,0 +1,22 @@
+aiohttp
+aiofiles
+tqdm
+click
+
+[:python_version < "3.11"]
+importlib_resources
+
+[:python_version < "3.8"]
+typing_extensions
+
+[docs]
+sphinx>=4.2.0
+sphinx_rtd_theme
+
+[docs:python_version < "3.8"]
+importlib_metadata
+
+[test]
+pytest>=6.0
+aioresponses
+pytest-cov
