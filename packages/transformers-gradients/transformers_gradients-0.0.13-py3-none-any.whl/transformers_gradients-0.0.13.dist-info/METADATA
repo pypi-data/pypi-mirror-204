@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: transformers_gradients
+Version: 0.0.13
+Summary: Gradient-based XAI methods for TensorFlow transformers.
+Keywords: explainable ai,xai,machine learning,deep learning
+Author-email: Artem Sereda <artem.sereda@campus.tu-berlin.de>
+Maintainer-email: Artem Sereda <artem.sereda@campus.tu-berlin.de>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: tensorflow >= 2.10.0; sys_platform != 'darwin'
+Requires-Dist: tensorflow_macos >= 2.10.0; sys_platform == 'darwin'
+Requires-Dist: tensorflow_probability >= 0.18.0
+Requires-Dist: transformers >= 4.27.4 ; extra == "transformers"
+Project-URL: Homepage, https://github.com/aaarrti/TransformersXGradients
+Provides-Extra: transformers
+
+## `Transformers` X `Gradients`
+
+like GradientXInput, pun intended.
+
+Collection of gradient-based XAI methods for TensorFlow models from HuggingFace Hub.
+
+![](https://raw.githubusercontent.com/aaarrti/Transformers-X-Gradients/main/example.png)
+
+Work in Progress!!! (let him cook)
+### Roadmap
+- NLP tasks
+  - text classification
+  - QA
+  - token classification
+  - fill mask
+  - text completion ???
+- Libraries
+  - HF
+  - TensorRT
+  - TF models official
+  - keras NLP ?
+
