@@ -1,0 +1,9 @@
+bs4
+ebooklib
+matplotlib
+networkx
+pycodestyle
+requests
+requests_mock
+sphinx-rtd-theme
+wordcloud
