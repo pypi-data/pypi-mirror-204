@@ -1,0 +1,2 @@
+VERSION = "2.7.0"
+VERSION_APP = "1295"
