@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: discounts
+Version: 0.0.8
+Summary: Package created for using discount function
+Home-page: 
+Author: Akash Sane
+Author-email: x21220956@student.ncirl.ie
+License: MIT
+Keywords: discount
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a simple library created to add discount to your products or a category
+
+change Log
+==========
+
+0.0.1(23-04-2023)
+------------------
+
+- First Release

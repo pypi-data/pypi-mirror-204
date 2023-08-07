@@ -1,0 +1,1 @@
+This is a simple library created to add discount to your products or a category
