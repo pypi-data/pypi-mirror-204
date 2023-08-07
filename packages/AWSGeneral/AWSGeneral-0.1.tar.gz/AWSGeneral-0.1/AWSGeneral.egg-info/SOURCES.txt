@@ -1,0 +1,8 @@
+README.md
+setup.py
+AWSGeneral/__init__.py
+AWSGeneral.egg-info/PKG-INFO
+AWSGeneral.egg-info/SOURCES.txt
+AWSGeneral.egg-info/dependency_links.txt
+AWSGeneral.egg-info/requires.txt
+AWSGeneral.egg-info/top_level.txt
