@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "gb"
+version = "0.1.1"
+description = "A Python gopher server."
+authors = ["supakeen <cmdr@supakeen.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["pastebin"]
+repository = "https://github.com/supakeen/pinnwand"
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4"
+tornado = "^6.0"
+click = "^8.0"
+python-magic = "^0.4.27"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3"
+coverage = "^7.2"
+black = { version = "*", allow-prereleases = true }
+pytest-cov = "^4.0"
+pre-commit = "^3.2"
+mypy = "^1.2.0"
+poetry-dynamic-versioning = "^0.21.4"
+ruff = "^0.0.263"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+
+[tool.black]
+line-length = 80
+target_version = ["py36"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.eggs
+  | \.mypy_cache
+  | \.tox
+  | venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+[tool.poetry.scripts]
+gb = 'gb.__main__:main'
+
+[build-system]
+requires = ["setuptools", "wheel"]
