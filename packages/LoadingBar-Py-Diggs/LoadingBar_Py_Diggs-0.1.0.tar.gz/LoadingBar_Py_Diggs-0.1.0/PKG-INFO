@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: LoadingBar_Py_Diggs
+Version: 0.1.0
+Summary: A Simple loading bar for python.
+Author-email: Velte Hollund <vetlehoo@gmail.com>
+Project-URL: Homepage, https://github.com/VHollund/LoadingBar
+Project-URL: Bug Reports, https://github.com/VHollund/LoadingBar/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LoadingBar.Py
+### The simplest loadingbar i could think of.
+By Vetle Hollund
+
+## Usage
+
+
+```python
+pip install LoadingBar_Py_Diggs
+```
+
+## Example
+```python
+from loadingbar import LoadingBar
+
+if __name__ == '__main__':
+    k=LoadingBar(20, "█")
+    for x in range(0, 101):
+        k.update(x)
+        time.sleep(0.1)
+```
+
+

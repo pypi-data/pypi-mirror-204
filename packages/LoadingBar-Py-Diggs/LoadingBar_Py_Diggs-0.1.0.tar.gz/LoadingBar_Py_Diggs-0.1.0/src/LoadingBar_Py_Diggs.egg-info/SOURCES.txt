@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/LoadingBar_Py_Diggs.egg-info/PKG-INFO
+src/LoadingBar_Py_Diggs.egg-info/SOURCES.txt
+src/LoadingBar_Py_Diggs.egg-info/dependency_links.txt
+src/LoadingBar_Py_Diggs.egg-info/top_level.txt
+src/Loading_Bar/example.py
+src/Loading_Bar/loadingBar.py
