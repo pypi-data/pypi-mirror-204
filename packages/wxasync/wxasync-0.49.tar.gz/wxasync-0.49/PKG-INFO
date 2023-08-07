@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: wxasync
+Version: 0.49
+Summary: asyncio for wxpython
+Home-page: http://github.com/sirk390/wxasync
+Author: C.Bodt
+Author-email: sirk390@gmail.com
+License: MIT
+Requires-Python: >=3.7
+License-File: LICENSE
+
+wxasync it a library for using python 3 asyncio (async/await) with wxpython.
