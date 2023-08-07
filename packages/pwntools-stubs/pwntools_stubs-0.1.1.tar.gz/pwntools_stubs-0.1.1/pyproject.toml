@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pwntools-stubs"
+version = "0.1.1"
+description = "Incomplete, and probably incorrect, stubs for pwntools"
+authors = ["rikyiso01 <riky.isola@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "pwnlib-stubs" }, { include = "pwn-stubs" }]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pwntools = "^4.9.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pyright = "^1.1.304"
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
