@@ -1,0 +1,10 @@
+foldcomp/__init__.py,sha256=E3v_xEXBNPjG7S0DcfMbX9OXVPelyhfqp4QNcxEsWWo,99
+foldcomp/foldcomp.cpython-38-darwin.so,sha256=mQjXgorGl3VhQI-YLt784Wee1-iSMSLNJKWhalK6Eg4,1302058
+foldcomp/foldcomp.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foldcomp/setup.py,sha256=LsSVjNaxO80L4trBlmy87Wdq9hzJGbt-4gm070-v6gI,3412
+foldcomp/util.py,sha256=71_4VbjYg1DKPwyPDi_7X3XUfA1Xk6cCmMiwT7-HXBc,567
+foldcomp-0.0.5.dist-info/LICENSE.txt,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+foldcomp-0.0.5.dist-info/METADATA,sha256=AOH0I30VyKV9ejmN27SBEjlD-arfCecWvPbfcO9RW1M,8896
+foldcomp-0.0.5.dist-info/WHEEL,sha256=hyU8cA_pQHcSR_ZNv9mJZz6wcR5c4Vu9dxb2wqcfMbU,107
+foldcomp-0.0.5.dist-info/top_level.txt,sha256=x0JCgt6_Xb_gbNR2ljGuZv7clg5bP7DK9wBCHs2xSuw,9
+foldcomp-0.0.5.dist-info/RECORD,,
