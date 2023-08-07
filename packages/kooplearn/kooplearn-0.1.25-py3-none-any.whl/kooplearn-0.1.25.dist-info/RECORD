@@ -1,0 +1,17 @@
+kooplearn/__about__.py,sha256=eTnnuIkRjcbWS0UvpTGNZEFY9fjbnuCFAxKdpN6fyeA,22
+kooplearn/__init__.py,sha256=bQXOAl5JSXO4-iNv6S_L_uRwdkqer41XugpMZQUZVXA,103
+kooplearn/_keops_utils.py,sha256=yROantrNA4T19oJ4SfJK0fH8GS8rcfWkpy8apjeX2i8,1842
+kooplearn/estimators.py,sha256=JOqHiP-zfHaeTt_aOj1_zmWWWk496kwGpKJwehv2lyY,26527
+kooplearn/kernels.py,sha256=bZLHojeQo2eByD6T0MTahdSweYKmAK_dLvE5SBaquY8,7410
+kooplearn/requirements.txt,sha256=XImLq5JbL4mcF9OEVaFiU-KKPfdEMrPAIyxIy9A6bd8,73
+kooplearn/utils.py,sha256=EG9j8O_0jeAqNaEEooNHc60J05Rq0Ada7GY52IkE2MQ,10605
+kooplearn/jax/__init__.py,sha256=nhXScdOi8tVi-izKUNnDYF6L1I3FdTa08bBR5Gu7cAc,263
+kooplearn/jax/estimators.py,sha256=hQTuCba4UTivjNfGTxuKywhkQIm4PS0yyh8VfSVfH9k,8112
+kooplearn/jax/linalg.py,sha256=OrR4y3rjVBNvVPveu_Wmq7Uyu58_j6YuXLhPOTsicUk,1698
+kooplearn/jax/typing.py,sha256=9F_jnjzSolDoqZPotrEPbkLJN0f6y1H7CtOPTZAJcOY,309
+kooplearn/torch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kooplearn/torch/estimators.py,sha256=JBIhPeoluX-oFqELGkK23BL4rEmZ7BPeBtsjOWFZcl0,3757
+kooplearn/torch/typing.py,sha256=qQajrm01grRp3KZgf0dEXEi3JnisecpzCLBVNsTFWYw,332
+kooplearn-0.1.25.dist-info/METADATA,sha256=NxaghWgFkcfFUYUolcMus77O8H2WU7k9DQsA0TpkX04,1525
+kooplearn-0.1.25.dist-info/WHEEL,sha256=9MIigYJ7D5sOqAPqr0-o6tSMY_nQ7c6kvtvyeUB99YQ,87
+kooplearn-0.1.25.dist-info/RECORD,,

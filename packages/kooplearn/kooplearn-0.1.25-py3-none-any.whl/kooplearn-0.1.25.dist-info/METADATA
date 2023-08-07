@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: kooplearn
+Version: 0.1.25
+Summary: A Python package implementing kernel-based algorithms to learn the Koopman operator.
+Project-URL: Documentation, https://github.com/CSML-IIT-UCL/kooplearn#readme
+Project-URL: Issues, https://github.com/CSML-IIT-UCL/kooplearn/issues
+Project-URL: Source, https://github.com/CSML-IIT-UCL/kooplearn
+Author-email: Pietro Novelli <pietro.novelli@iit.it>
+License-Expression: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Provides-Extra: docs
+Requires-Dist: sphinx-book-theme; extra == 'docs'
+Provides-Extra: gpu
+Requires-Dist: pykeops; extra == 'gpu'
+Requires-Dist: torch; extra == 'gpu'
+Provides-Extra: jax
+Requires-Dist: einops; extra == 'jax'
+Requires-Dist: jax; extra == 'jax'
+Requires-Dist: jaxtyping; extra == 'jax'
+Requires-Dist: optax; extra == 'jax'
+Provides-Extra: torch
+Requires-Dist: einops; extra == 'torch'
+Requires-Dist: torch; extra == 'torch'
+Description-Content-Type: text/markdown
+
+# Kooplearn
+Koopman operator learning
