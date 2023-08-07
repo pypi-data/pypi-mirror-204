@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: oh-my-bloom
+Version: 0.1.0
+Summary: 中文BLOOM语言模型
+License: MIT
+Author: 善若水
+Author-email: 790990241@qq.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: deepspeed (>=0.9.0)
+Requires-Dist: lightning (>=2.0.1)
+Requires-Dist: transformers (>=4.27.1)
+Requires-Dist: wandb (>=0.14.2)
+Description-Content-Type: text/markdown
+
+<!-- PROJECT: AUTO-GENERATED DOCS START (do not remove) -->
+
+# 🪐 Project: Oh-My-Bloom
+
+中文版本bloom
+
+## 📋 project.yml
+
+The [`project.yml`](project.yml) defines the data assets required by the
+project, as well as the available commands and workflows. 
+
+### ⏯ Commands
+
+The following commands are defined by the project. They
+can be executed using `project run [name]`.Commands are only re-run if their inputs have changed.
+
+| Command | Description |
+| --- | --- |
+| `train` | 训练模型 |
+| `dev` | 调试模型训练整个流程，用于debug |
+| `fast-run` | 快速跑通训练流程，用于debug |
+
+<!-- PROJECT: AUTO-GENERATED DOCS END (do not remove) -->
