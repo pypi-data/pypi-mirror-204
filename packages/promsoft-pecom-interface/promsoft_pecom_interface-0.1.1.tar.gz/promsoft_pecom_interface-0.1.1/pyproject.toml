@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "promsoft-pecom-interface"
+version = "0.1.1"
+description = "Интерфейс HTTP API для транспортной компании PECOM "
+authors = ["Promsoft <info@promsoft.ru>"]
+readme = "README.md"
+packages = [{include = "promsoft_pecom_interface"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.10.7"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+pre-commit = "^3.2.0"
+pytest = "^7.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
