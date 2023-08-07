@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: django-viewflow
+Version: 2.0.0b3
+Summary: Reusable library to build business applications fast
+Home-page: UNKNOWN
+Author: Mikhail Podgurskiy
+Author-email: kmmbvnr@gmail.com
+License: AGPL
+Description: UNKNOWN
+Keywords: django,admin,workflow,fsm,bpm,bpmn
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Requires-Python: >=3.7
