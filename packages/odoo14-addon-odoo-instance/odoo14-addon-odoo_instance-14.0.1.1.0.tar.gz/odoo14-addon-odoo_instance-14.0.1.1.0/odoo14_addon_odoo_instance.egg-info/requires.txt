@@ -1,0 +1,3 @@
+odoo14-addon-contract
+odoo<14.1dev,>=14.0a
+pyyaml
