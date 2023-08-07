@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+seleniumKit/__init__.py
+seleniumKit/selenium.py
+selenium_kit.egg-info/PKG-INFO
+selenium_kit.egg-info/SOURCES.txt
+selenium_kit.egg-info/dependency_links.txt
+selenium_kit.egg-info/top_level.txt
