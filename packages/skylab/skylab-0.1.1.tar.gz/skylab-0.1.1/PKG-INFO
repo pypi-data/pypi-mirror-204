@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: skylab
+Version: 0.1.1
+Summary: A TUI for showing latest upcoming rocket launches.
+Home-page: https://github.com/SerhiiStets/skylab
+License: MIT
+Author: SerhiiStets
+Author-email: stets.serhii@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Requires-Dist: pytest (>=7.3.1,<8.0.0)
+Requires-Dist: pytest-cov (>=4.0.0,<5.0.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Requires-Dist: textual[dev] (>=0.19.1,<0.20.0)
+Requires-Dist: tzlocal (>=4.3,<5.0)
+Project-URL: Repository, https://github.com/SerhiiStets/skylab
+Description-Content-Type: text/markdown
+
+# Skylab
+
+Skylab is a text user interface (TUI) tool that displays upcoming space launches in a user-friendly way.
+
+## Instalation
+
+To install Skylab using pip, run the following command:
+
+```
+$ pip install skylab
+```
+
+## Usage
+
+To use Skylab, simply enter the following command in your terminal:
+
+```
+$ skylab
+```
+
+## Contributing
+
+Help in testing, development, documentation and other tasks is
+highly appreciated and useful to the project.
+
+To get started with developing skylab, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Acknowledgments
+
+This project makes use of the [The Space Devs API](https://thespacedevs.com/) to retrieve data about upcoming space launches. We would like to thank the creators of this API for providing this valuable service.
+
+## License
+
+Skylab is released under the [MIT License](LICENSE.md).
+
