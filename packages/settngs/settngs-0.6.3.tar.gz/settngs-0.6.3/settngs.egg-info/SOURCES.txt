@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+settngs/__init__.py
+settngs/__main__.py
+settngs/py.typed
+settngs.egg-info/PKG-INFO
+settngs.egg-info/SOURCES.txt
+settngs.egg-info/dependency_links.txt
+settngs.egg-info/requires.txt
+settngs.egg-info/top_level.txt
