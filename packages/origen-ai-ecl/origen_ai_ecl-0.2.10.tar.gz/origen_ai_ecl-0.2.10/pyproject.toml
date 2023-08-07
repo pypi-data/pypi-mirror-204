@@ -1,0 +1,104 @@
+[tool.poetry]
+name = "origen-ai-ecl"
+version = "0.2.10"
+description = ""
+authors = ["Luis Arce <luis@origen.ai>"]
+readme = "README.md"
+packages = [
+    {include = "origen/**/*.py"},
+    {include = "origen/**/*.so"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pybind11 = {extras = ["global"], version = "^2.10.4"}
+
+[tool.poetry.dev-dependencies]
+poethepoet = "^0.19.0"
+
+[tool.poetry.group.dev.dependencies]
+numpy = "^1.24.2"
+ecl = "^2.14.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poe.tasks]
+    _publish = 'poetry publish'
+    [tool.poe.tasks.prune-temp]
+        help='Remove all intermediary, temporal and build folders'
+        shell='rm -rf build dist; rm -rf `find|grep pyc$` || 0; rm -rf `find -type d|grep __pycache__` || 0'
+
+    [tool.poe.tasks.prune-all]
+        help='Remove the built origen.ai.ecl package, plus all intermediary, temporal and build folders'
+        sequence=[
+            'prune-temp',
+            {shell='rm -rf origen'}
+        ]
+
+    [tool.poe.tasks.build]
+        help='Build the python package for this project in dist folder'
+        sequence=[
+            'maybe_compile',
+            {shell='poetry build'}
+        ]
+
+    [tool.poe.tasks.publish]
+        help='Build and upload the package to pypi'
+        sequence = [
+            'prune-all',
+            'build',
+            '_set_pypi_token',
+            '_publish'
+        ]
+
+    [tool.poe.tasks._set_pypi_token]
+        shell = 'poetry config pypi-token.pypi "${pypy_api_token}"'
+        args = [
+            {name = "pypy_api_token", help = "The pypy token to use to publish with poetry", default = "${PYPI_API_TOKEN}", positional=true}
+        ]
+
+    [tool.poe.tasks._unittest]
+        shell='python -m unittest'
+
+    [tool.poe.tasks.test]
+        help="Run python tests"
+        sequence = [
+            'maybe_compile',
+            '_unittest'
+        ]
+
+    [tool.poe.tasks.recompile]
+        help="Build origen.ai.ecl package"
+        shell='''
+          rm -rf build origen &&
+          mkdir build &&
+          cd build &&
+          cmake .. &&
+          make CFLAGS="-std=c++11" &&
+          cd .. &&
+          mkdir -p origen/ai/ &&
+          mv build/lib/ecl.*.so origen/ai/ &&
+          touch origen/__init__.py &&
+          touch origen/ai/__init__.py
+        '''
+
+    [tool.poe.tasks.latest_published_version]
+        help="Retrieve the latest published version in pypi"
+        shell="pip index versions origen-ai-ecl 2>/dev/null |grep '^Available versions'|sed -r 's/Available versions: ([^,]+).*/\\1/g'"
+
+    [tool.poe.tasks.version]
+        help="Retrieve the poetry package version"
+        shell="poetry version -s"
+
+    [tool.poe.tasks.maybe_compile]
+        help="Compiles origen.ai.ecl if the package does not exist"
+        control.expr = "str(len(__import__('glob').glob('origen/ai/ecl.*.so')))"
+            [[tool.poe.tasks.maybe_compile.switch]]
+                case='0'
+                ref="recompile"
+            [[tool.poe.tasks.maybe_compile.switch]]
+                case='1'
+                script="builtins:print('origen.ai.ecl found, skipping compilation')"
