@@ -1,0 +1,11 @@
+doc/source/conf.py,sha256=nlgnZBFKRcRF4cUKCGaPy4iZPd17Fd9Z0f1iq6MwtUs,2222
+mrdja/ransac/__init__.py,sha256=sg3SKFWfkK6YbN_1rJxE9sDon3QzKRnupiIypQxLWUE,90
+mrdja/ransac/coreransac.py,sha256=ghi13uD2_S_Z6dUMKjM0T08i85WyFswrSA0JeKxDpy0,10809
+mrdja/ransac/coreransaccuda.py,sha256=DT8Q82MH6DWJJk9YcBrxi56L2JztywQptl7Sek3ooZs,8899
+mrdja/ransac/coreransacutils.py,sha256=HX7YMYsoImMVKLM-YH6RWocUSnsvYTYfA-e-Yk8hdHk,186
+mrdja/ransac/ransac.py,sha256=Of97q0UVFkVYyvgXBM1OEtq8Ll9hOFLuq6SmYiE2QFc,3724
+mrdja/sampling/__init__.py,sha256=15Y47FiEm1xbnzmNkyy_t3oboEb35rg7Th9s9WGsP9w,41
+mrdja/sampling/sampling.py,sha256=UaNDaXXPxPyOz7d3EKuUla7maEJVzvoXC4gX_PaeCSk,5594
+mrdja-0.0.10.dist-info/METADATA,sha256=_908lre6vBeYfpBfYZXQO6q_4jUFlaLlc4HScpPzsOM,534
+mrdja-0.0.10.dist-info/WHEEL,sha256=9MIigYJ7D5sOqAPqr0-o6tSMY_nQ7c6kvtvyeUB99YQ,87
+mrdja-0.0.10.dist-info/RECORD,,
