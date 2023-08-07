@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: arabic2latin
+Version: 1.1.1
+Summary: Convert Arabic characters to their Latin (English) homophones.
+Author: rexa222
+Author-email: rexa222@outlook.com
+License: MIT License
+        
+        Copyright (c) 2023 rexa222
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/rexa222/arabic2latin
+Project-URL: Bug Tracker, https://github.com/rexa222/arabic2latin/issues
+Keywords: arabic,homophone,arabic to english,arabic to latin
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# arabic2latin
+
+Convert Arabic characters to their Latin (English) homophone.
+
+
+## Installation
+
+Install from source:
+
+```bash
+pip install git+https://github.com/rexa222/arabic2latin
+```
+Alternatively, install from PyPI:
+```bash
+pip install arabic2latin
+```
+## Usage/Examples
+
+```python
+from arabic2latin import arabic_to_latin
+
+arabic_text = "السَّلَامُ عَلَيْكَ"
+converted_text = arabic_to_latin(arabic_text)
+
+print(converted_text)
+```
+Output:
+```text
+alsaalaamo aalayka
+```
+## Debug Mode
+If you came across a character that was not converted, you can find it using debug feature and report it as guided in the contributing section.
+```text
+converted_text = arabic_to_latin(arabic_text, debug=True)
+```
+Output:
+```text
+unknown character: ?
+```
+
+
+
+
+## Contributing
+
+If you find a bug 🐛, please open a [bug report](https://github.com/rexa222/arabic2latin/issues/new?assignees=&labels=bug&template=bug_report.md&title=). If you have an idea for an improvement or new feature 🚀, please open a [feature request](https://github.com/rexa222/arabic2latin/issues/new?assignees=&labels=Feature+request&template=feature_request.md&title=).
+

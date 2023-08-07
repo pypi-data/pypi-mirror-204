@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+arabic2latin/__init__.py
+arabic2latin/arabic2latin.py
+arabic2latin/version.py
+arabic2latin.egg-info/PKG-INFO
+arabic2latin.egg-info/SOURCES.txt
+arabic2latin.egg-info/dependency_links.txt
+arabic2latin.egg-info/top_level.txt
