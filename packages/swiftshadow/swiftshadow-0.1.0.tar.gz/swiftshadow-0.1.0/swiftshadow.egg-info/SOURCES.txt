@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+swiftshadow/__init__.py
+swiftshadow/classes.py
+swiftshadow/constants.py
+swiftshadow/helpers.py
+swiftshadow/providers.py
+swiftshadow/swiftshadow.py
+swiftshadow.egg-info/PKG-INFO
+swiftshadow.egg-info/SOURCES.txt
+swiftshadow.egg-info/dependency_links.txt
+swiftshadow.egg-info/requires.txt
+swiftshadow.egg-info/top_level.txt
