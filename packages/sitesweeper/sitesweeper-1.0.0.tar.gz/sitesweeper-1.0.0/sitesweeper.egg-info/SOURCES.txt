@@ -1,0 +1,10 @@
+README.md
+setup.py
+sitesweeper/__init__.py
+sitesweeper/__main__.py
+sitesweeper/crawler.py
+sitesweeper.egg-info/PKG-INFO
+sitesweeper.egg-info/SOURCES.txt
+sitesweeper.egg-info/dependency_links.txt
+sitesweeper.egg-info/requires.txt
+sitesweeper.egg-info/top_level.txt
